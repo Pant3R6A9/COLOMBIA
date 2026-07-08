@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conquista y Colonia - Colombia en el Tiempo</title>
+  <meta name="description" content="La irrupción colonial en el Nuevo Reino de Granada, la resistencia indígena y la Expedición Botánica.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="colonia">
+
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="precolombina.html">Precolombina</a>
+      <a href="colonia.html" class="active">Colonia</a>
+      <a href="independencia.html">Independencia</a>
+      <a href="siglo-xix.html">Siglo XIX</a>
+      <a href="siglo-xx.html">Siglo XX</a>
+      <a href="memoria.html">Memoria</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(176,58,46,0.15); color: var(--accent);">
+        Siglos XVI - XVIII / Orden Virreinal
+      </div>
+      <h1>El Nuevo Reino de Granada</h1>
+      <p>El violento choque de la Conquista, el establecimiento administrativo virreinal, la resistencia jurídica indígena y las corrientes científicas ilustradas. Haz clic para abrir los documentos y estadísticas.</p>
+    </section>
+
+    <section class="era-layout">
+      
+      <div class="timeline-section">
+        
+        <!-- Fundación y Penetración -->
+        <div class="timeline-item">
+          <div class="timeline-year">1525 - 1536</div>
+          <div class="timeline-content" data-drawer="drawer-fundacion">
+            <span class="document-badge">Conquista y Territorio</span>
+            <h3>La fundación de Santa Marta y la ruta del río Magdalena</h3>
+            <p>
+              El poblamiento hispánico en tierra firme y el Magdalena como vía principal. Haz clic para ver estadísticas de demografía y navegación colonial.
+            </p>
+            <div class="era-link">Ver Documentos &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Resistencia Jurídica -->
+        <div class="timeline-item">
+          <div class="timeline-year">1578</div>
+          <div class="timeline-content" data-drawer="drawer-torres">
+            <span class="document-badge">Archivo General de la Nación</span>
+            <h3>El Memorial de Agravios del Cacique Diego de Torres</h3>
+            <p>
+              El cacique mestizo Diego de Torres presenta peticiones ante la Corona en Madrid para defender a los Muiscas de los encomenderos. Haz clic para ver el expediente judicial.
+            </p>
+            <div class="era-link">Ver Documentos &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Geopolítica de San Andrés -->
+        <div class="timeline-item">
+          <div class="timeline-year">1803</div>
+          <div class="timeline-content" data-drawer="drawer-sanandres">
+            <span class="document-badge">Soberanía Marítima</span>
+            <h3>La Real Orden de 1803 y el Archipiélago de San Andrés</h3>
+            <p>
+              La base legal colonial que transfirió San Andrés y Providencia a la Nueva Granada. Haz clic para conocer los detalles del litigio internacional ante La Haya.
+            </p>
+            <div class="era-link">Ver Documentos &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Expedición Botánica y Comuneros -->
+        <div class="timeline-item">
+          <div class="timeline-year">1781 - 1783</div>
+          <div class="timeline-content" data-drawer="drawer-botanica">
+            <span class="document-badge">Ilustración y Rebelión</span>
+            <h3>La Expedición Botánica y la Revolución Comunera</h3>
+            <p>
+              El catastro científico y la rebelión fiscal popular del Socorro. Haz clic para ver el boceto de botánica e índices de recolección de plantas.
+            </p>
+            <div class="era-link">Ver Documentos &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+
+  <!-- Plantilla Fundación -->
+  <template id="drawer-fundacion">
+    <div class="document-badge">Expediciones de Conquista</div>
+    <h2 class="title-font">Fundación y Magdalena</h2>
+    <p>
+      El Magdalena se convirtió en la autopista comercial del Virreinato. El transporte de oro, mercancías importadas y correos dependía del boga, una labor agotadora.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Colapso Demográfico Indígena (Estimaciones del s. XVI)</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Población Indígena Inicial (1500)</span>
+            <span>100% (Base)</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="100"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Población Indígena Residual (1600)</span>
+            <span>10% (Sobreviviente)</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Diego de Torres -->
+  <template id="drawer-torres">
+    <div class="document-badge">Archivo de Indias</div>
+    <h2 class="title-font">El Cacique Diego de Torres</h2>
+    <p>
+      Hijo de español y mujer de la nobleza Muisca, Diego de Torres utilizó el derecho castellano para apelar contra el despojo. Viajó a España y expuso las quejas directamente a Felipe II.
+    </p>
+    <div class="document-view">
+[Expediente Colonia - AGN]
+"Diego de Torres, Cacique de Turmequé, pide el amparo de su Real Persona contra los oidores y encomenderos que a fuerza de azotes y prisiones nos impiden alegar derecho sobre las tierras."
+    </div>
+  </template>
+
+  <!-- Plantilla San Andrés -->
+  <template id="drawer-sanandres">
+    <div class="document-badge">Litigio Marítimo</div>
+    <h2 class="title-font">Soberanía e Historia</h2>
+    <p>
+      La Real Orden de 1803 declaró la agregación militar y administrativa del archipiélago al Virreinato de Santa Fe. Al heredarse los límites coloniales tras la independencia (uti possidetis juris), Colombia defendió con éxito su soberanía sobre las islas principales en la Corte Internacional de Justicia (La Haya).
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Área de Frontera Marítima en Disputa</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Mar territorial e islas (Colombia)</span>
+            <span>100% Soberanía Ratificada</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Expedición Botánica -->
+  <template id="drawer-botanica">
+    <div class="document-badge">Real Expedición Botánica</div>
+    <h2 class="title-font">Ciencia e Ilustración</h2>
+    <p>
+      La Expedición Botánica clasificó más de 20.000 plantas y produjo cerca de 6.000 espectaculares láminas iluminadas a mano.
+    </p>
+    <img src="assets/images/colonia_expedicion.png" alt="Dibujo Botánico de Mutis">
+    <p>
+      Las descripciones científicas sirvieron como cimiento del sentimiento patrio y de soberanía territorial de los criollos ilustrados que luego firmaron el Acta de 1810.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Censo de Láminas Científicas (1783-1816)</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Láminas Botánicas Dibujadas</span>
+            <span>~6.000 dibujos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Conquista y Colonia.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Documentos históricos custodiados en la Sección Colonia del Archivo General de la Nación.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

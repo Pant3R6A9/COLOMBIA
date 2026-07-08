@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Siglo XX - Colombia en el Tiempo</title>
+  <meta name="description" content="Conflictos agrarios, la Masacre de las Bananeras, el Bogotazo y la memoria fotográfica del siglo XX en Colombia.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="siglo-xx">
+
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="precolombina.html">Precolombina</a>
+      <a href="colonia.html">Colonia</a>
+      <a href="independencia.html">Independencia</a>
+      <a href="siglo-xix.html">Siglo XIX</a>
+      <a href="siglo-xx.html" class="active">Siglo XX</a>
+      <a href="memoria.html">Memoria</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(243,156,18,0.15); color: var(--accent);">
+        1900 - 1999 / Conflictos y Visualidades
+      </div>
+      <h1>Tensiones del Siglo XX</h1>
+      <p>La modernización económica, las luchas obreras y campesinas, las sacudidas políticas urbanas y los archivos visuales de la nación. Haz clic para explorar detalles.</p>
+    </section>
+
+    <section class="era-layout">
+      
+      <div class="timeline-section">
+        
+        <!-- Guerra de los Mil Días y Panamá -->
+        <div class="timeline-item">
+          <div class="timeline-year">1899 - 1903</div>
+          <div class="timeline-content" data-drawer="drawer-panama">
+            <span class="document-badge">Guerra Civil y Pérdida</span>
+            <h3>La Guerra de los Mil Días y la Secesión de Panamá</h3>
+            <p>
+              La confrontación civil de fin de siglo y la separación del canal. Haz clic para ver detalles diplomáticos de las fronteras.
+            </p>
+            <div class="era-link">Explorar Detalles &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Masacre de las Bananeras -->
+        <div class="timeline-item">
+          <div class="timeline-year">1928</div>
+          <div class="timeline-content" data-drawer="drawer-bananeras">
+            <span class="document-badge">Lucha Agraria</span>
+            <h3>La Masacre de las Bananeras en Ciénaga, Magdalena</h3>
+            <p>
+              La huelga de la United Fruit Company y los reportes diplomáticos del suceso. Haz clic para ver la ilustración y el telegrama estadounidense.
+            </p>
+            <div class="era-link">Explorar Detalles &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Bogotazo -->
+        <div class="timeline-item">
+          <div class="timeline-year">1948</div>
+          <div class="timeline-content" data-drawer="drawer-bogotazo">
+            <span class="document-badge">Insurgencia Urbana</span>
+            <h3>El Bogotazo y el Asesinato de Gaitán</h3>
+            <p>
+              El magnicidio del líder popular Jorge Eliécer Gaitán y la pérdida definitiva del Acta de Independencia. Haz clic para ver detalles del archivo destruido.
+            </p>
+            <div class="era-link">Explorar Detalles &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Fotoperiodismo y Archivos de Ultramar -->
+        <div class="timeline-item">
+          <div class="timeline-year">1970 - 1999</div>
+          <div class="timeline-content" data-drawer="drawer-viki">
+            <span class="document-badge">Memoria Visual</span>
+            <h3>El Archivo de Viki Ospina y los Raizales del Caribe</h3>
+            <p>
+              La fotografía de Viki Ospina en protestas obreras y el acervo audiovisual raizal. Haz clic para ver detalles del programa de televisión e imágenes familiares.
+            </p>
+            <div class="era-link">Explorar Detalles &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+
+  <!-- Plantilla Panamá -->
+  <template id="drawer-panama">
+    <div class="document-badge">Sociedad Geográfica</div>
+    <h2 class="title-font">Separación de Panamá</h2>
+    <p>
+      La Guerra de los Mil Días (1899-1902) dejó al país en la bancarrota. En noviembre de 1903, con el apoyo de buques de guerra de Estados Unidos, Panamá declaró su separación, firmando el tratado para la construcción del canal interoceánico.
+    </p>
+  </template>
+
+  <!-- Plantilla Bananeras -->
+  <template id="drawer-bananeras">
+    <div class="document-badge">Documento Desclasificado</div>
+    <h2 class="title-font">La Masacre de 1928</h2>
+    <p>
+      El pliego de peticiones de los trabajadores exigía seguros de accidentes, habitaciones higiénicas, aumentos salariales y abolición del sistema de vales/comisarías de la United Fruit Company.
+    </p>
+    <img src="assets/images/siglo_xx_bananeras.png" alt="Ilustración de la huelga y protesta de las Bananeras en 1928">
+    <p>
+      La respuesta del general Cortés Vargas fue disparar contra la multitud en la estación del tren, justificando su actuar bajo el falso temor de una invasión militar de Estados Unidos para proteger las instalaciones de la multinacional.
+    </p>
+  </template>
+
+  <!-- Plantilla Bogotazo -->
+  <template id="drawer-bogotazo">
+    <div class="document-badge">9 de Abril de 1948</div>
+    <h2 class="title-font">Gaitán y el Incendio</h2>
+    <p>
+      Los disturbios tras el asesinato de Gaitán redujeron a cenizas el palacio municipal donde reposaba el Acta de Independencia de 1810 original. El país debió ampararse en las copias oficiales del Archivo Nacional para reconstruir las firmas del nacimiento republicano.
+    </p>
+  </template>
+
+  <!-- Plantilla Viki Ospina -->
+  <template id="drawer-viki">
+    <div class="document-badge">Archivos de Ultramar</div>
+    <h2 class="title-font">Archivos del Caribe Raizal</h2>
+    <p>
+      El patrimonio del archipiélago de San Andrés se conserva mediante colecciones fotográficas que registran la vida cotidiana y el programa de televisión de 760 horas *"The Raizal People and Culture"*, registrando la identidad cultural del Caribe colombiano anglófono y creole.
+    </p>
+  </template>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Siglo XX.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Los acervos visuales y fotográficos pertenecen a los fondos del Archivo de Bogotá y la Biblioteca Luis Ángel Arango.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;800&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ==========================================
+   SISTEMA DE DISEÑO Y VARIABLES DE TEMA
+   ========================================== */
+:root {
+  /* Tema Portal / General */
+  --bg-primary: #070709;
+  --bg-secondary: #0f1013;
+  --bg-secondary-rgb: 15, 16, 19;
+  --bg-card: rgba(255, 255, 255, 0.02);
+  --border-card: rgba(255, 255, 255, 0.06);
+  --text-primary: #f3f4f6;
+  --text-secondary: #9ca3af;
+  --accent: #d4af37; /* Oro */
+  --accent-rgb: 212, 175, 55;
+  --accent-secondary: #10b981;
+  --font-title: 'Cinzel', serif;
+  --font-text: 'Inter', sans-serif;
+  --transition-speed: 0.5s;
+  --glass-blur: 16px;
+}
+
+[data-theme="precolombina"] {
+  --bg-primary: #100804;
+  --bg-secondary: #1a0f08;
+  --bg-secondary-rgb: 26, 15, 8;
+  --text-primary: #f9f5f0;
+  --text-secondary: #d7c9b8;
+  --accent: #e59866; /* Terracota */
+  --accent-rgb: 229, 152, 102;
+  --accent-secondary: #dfa823; /* Oro precolombino */
+  --bg-card: rgba(229, 152, 102, 0.03);
+  --border-card: rgba(229, 152, 102, 0.12);
+}
+
+[data-theme="colonia"] {
+  --bg-primary: #0a0909;
+  --bg-secondary: #121010;
+  --bg-secondary-rgb: 18, 16, 16;
+  --text-primary: #f3edd8; /* Pergamino */
+  --text-secondary: #c9bfa8;
+  --accent: #b03a2e; /* Carmesí eclesiástico */
+  --accent-rgb: 176, 58, 46;
+  --accent-secondary: #ca7f27; /* Latón antiguo */
+  --bg-card: rgba(176, 58, 46, 0.03);
+  --border-card: rgba(176, 58, 46, 0.12);
+}
+
+[data-theme="independencia"] {
+  --bg-primary: #030a16;
+  --bg-secondary: #071328;
+  --bg-secondary-rgb: 7, 19, 40;
+  --text-primary: #f0f4f8;
+  --text-secondary: #aebfd4;
+  --accent: #f1c40f; /* Amarillo libertador */
+  --accent-rgb: 241, 196, 15;
+  --accent-secondary: #c0392b; /* Rojo sangre de héroes */
+  --bg-card: rgba(241, 196, 15, 0.03);
+  --border-card: rgba(241, 196, 15, 0.10);
+}
+
+[data-theme="siglo-xix"] {
+  --bg-primary: #040c09;
+  --bg-secondary: #081813;
+  --bg-secondary-rgb: 8, 24, 19;
+  --text-primary: #ebf3f0;
+  --text-secondary: #a3c4b7;
+  --accent: #27ae60; /* Verde esmeralda/selva */
+  --accent-rgb: 39, 174, 96;
+  --accent-secondary: #a0522d; /* Acuarela marrón */
+  --bg-card: rgba(39, 174, 96, 0.03);
+  --border-card: rgba(39, 174, 96, 0.12);
+}
+
+[data-theme="siglo-xx"] {
+  --bg-primary: #0f1012;
+  --bg-secondary: #18191c;
+  --bg-secondary-rgb: 24, 25, 28;
+  --text-primary: #f2f3f5;
+  --text-secondary: #9ea1a8;
+  --accent: #f39c12; /* Naranja industrial */
+  --accent-rgb: 243, 156, 18;
+  --accent-secondary: #7f8c8d; /* Hierro/archivo */
+  --bg-card: rgba(243, 156, 18, 0.03);
+  --border-card: rgba(243, 156, 18, 0.10);
+}
+
+[data-theme="memoria"] {
+  --bg-primary: #121416;
+  --bg-secondary: #1a1d20;
+  --bg-secondary-rgb: 26, 29, 32;
+  --text-primary: #eceff1;
+  --text-secondary: #b0bec5;
+  --accent: #2e86c1; /* Azul paz */
+  --accent-rgb: 46, 134, 193;
+  --accent-secondary: #58d68d; /* Verde oliva/esperanza */
+  --bg-card: rgba(46, 134, 193, 0.03);
+  --border-card: rgba(46, 134, 193, 0.12);
+}
+
+/* Activar transiciones nativas de página (Chrome 126+, Safari 18.2+) */
+@view-transition {
+  navigation: auto;
+}
+
+/* ==========================================
+   ESTILOS GENERALES
+   ========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scrollbar-width: thin;
+  scrollbar-color: var(--accent) var(--bg-primary);
+}
+
+body {
+  font-family: var(--font-text);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  overflow-x: hidden;
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+h1, h2, h3, h4, .title-font {
+  font-family: var(--font-title);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--text-primary);
+}
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-secondary);
+}
+
+/* ==========================================
+   MAQUETACIÓN Y NAVEGACIÓN
+   ========================================== */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(7, 7, 9, 0.75);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border-bottom: 1px solid var(--border-card);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  view-transition-name: header-bar;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+.logo span {
+  color: var(--accent);
+}
+
+nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+nav a:hover, nav a.active {
+  color: var(--accent);
+}
+
+nav a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--accent);
+}
+
+/* ==========================================
+   COMPONENTES PRINCIPALES
+   ========================================== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(var(--accent-rgb), 0.15) 0%, rgba(0,0,0,0) 70%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  max-width: 700px;
+  margin-bottom: 2rem;
+}
+
+/* Botones Premium */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 2rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 0.875rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: #000000;
+  border: 1px solid var(--accent);
+}
+
+.btn-primary:hover {
+  background-color: transparent;
+  color: var(--accent);
+  box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.4);
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: var(--text-primary);
+  border: 1px solid var(--border-card);
+}
+
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* Grid de Épocas (Portal) */
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.era-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 2rem;
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.era-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px -5px rgba(var(--accent-rgb), 0.15);
+}
+
+.era-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.era-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.era-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+
+.era-link {
+  margin-top: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.875rem;
+  text-transform: uppercase;
+}
+
+/* Sección de Contenido de Épocas */
+.era-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 4rem;
+  padding: 4rem 0;
+}
+
+.timeline-section {
+  position: relative;
+  padding-left: 2rem;
+  border-left: 2px solid var(--border-card);
+  margin-left: 1rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: calc(-2rem - 6px);
+  top: 0.25rem;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--accent);
+  border: 2px solid var(--bg-primary);
+  box-shadow: 0 0 8px var(--accent);
+}
+
+.timeline-year {
+  font-family: var(--font-title);
+  font-size: 1.75rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 2rem;
+  border-radius: 8px;
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  transition: border-color 0.3s ease;
+}
+
+.timeline-content h3 {
+  font-size: 1.35rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  color: var(--text-secondary);
+  margin-bottom: 1.5rem;
+}
+
+.timeline-content:hover {
+  border-color: var(--accent);
+  cursor: pointer;
+}
+
+/* Fichas de Documento Histórico */
+.document-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.25rem 0.75rem;
+  background: rgba(var(--accent-rgb), 0.15);
+  color: var(--accent);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.document-view {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-card);
+  padding: 1.5rem;
+  border-radius: 6px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+  margin-top: 1rem;
+  border-left: 3px solid var(--accent);
+  white-space: pre-wrap;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* Tablas Históricas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+}
+
+th, td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-card);
+}
+
+th {
+  font-family: var(--font-title);
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+tr:hover td {
+  background: rgba(var(--accent-rgb), 0.02);
+}
+
+/* ==========================================
+   PANEL LATERAL (DRAWER) DE DETALLES
+   ========================================== */
+.detail-drawer {
+  position: fixed;
+  top: 0;
+  right: -550px;
+  width: 550px;
+  max-width: 95vw;
+  height: 100vh;
+  background: rgba(var(--bg-secondary-rgb), 0.96);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  border-left: 1px solid var(--border-card);
+  z-index: 1000;
+  transition: right 0.45s cubic-bezier(0.165, 0.84, 0.44, 1);
+  padding: 4rem 2.5rem 2.5rem 2.5rem;
+  overflow-y: auto;
+  box-shadow: -15px 0 35px rgba(0, 0, 0, 0.6);
+}
+
+.detail-drawer.open {
+  right: 0;
+}
+
+.drawer-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 2rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.drawer-close:hover {
+  color: var(--accent);
+}
+
+.drawer-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.drawer-content img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border-card);
+  margin: 1rem 0;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+}
+
+.drawer-content p {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+/* ==========================================
+   VISUALIZACIONES ESTADÍSTICAS (CSS CHARTS)
+   ========================================== */
+.stat-box {
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid var(--border-card);
+  border-radius: 6px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.stat-box h4 {
+  font-family: var(--font-title);
+  color: var(--accent);
+  margin-bottom: 1.25rem;
+  font-size: 1.05rem;
+}
+
+.chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chart-bar-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.chart-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.chart-bar-bg {
+  background: rgba(255, 255, 255, 0.05);
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.chart-bar-fill {
+  background: linear-gradient(90deg, rgba(var(--accent-rgb), 0.7), var(--accent));
+  height: 100%;
+  border-radius: 5px;
+  width: 0;
+  transition: width 1.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+/* ==========================================
+   SISTEMA DE PESTAÑAS (TABS) INTERACTIVAS
+   ========================================== */
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid var(--border-card);
+  padding-bottom: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.tab-button {
+  background: transparent;
+  border: none;
+  color: var(--text-secondary);
+  font-family: var(--font-title);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.tab-button:hover, .tab-button.active {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.tab-content {
+  display: none;
+  animation: tabFadeIn 0.5s ease forwards;
+}
+
+.tab-content.active-content {
+  display: block;
+}
+
+@keyframes tabFadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Glosario de Idiomas */
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.glossary-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 6px;
+  padding: 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+.glossary-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.glossary-word {
+  font-family: var(--font-title);
+  font-size: 1.4rem;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+}
+
+.glossary-meaning {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+/* Retratos de Personajes Rulers */
+.character-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.character-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 2.25rem;
+  transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+  backdrop-filter: blur(var(--glass-blur));
+}
+
+.character-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+  box-shadow: 0 10px 25px rgba(var(--accent-rgb), 0.1);
+}
+
+.character-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.35rem;
+  color: var(--accent);
+}
+
+.character-role {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  font-weight: 600;
+}
+
+.character-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ==========================================
+   BOTÓN FLOTANTE DE AUDIO AMBIENTAL
+   ========================================== */
+.audio-toggle {
+  position: fixed;
+  bottom: 2rem;
+  left: 2rem;
+  background: rgba(15, 16, 19, 0.75);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--border-card);
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.audio-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: scale(1.1);
+}
+
+/* ==========================================
+   BUSCADOR DE DICCIONARIO
+   ========================================== */
+.search-container {
+  margin-bottom: 2.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border-card);
+  border-radius: 6px;
+  padding: 0.85rem 1.5rem;
+  color: var(--text-primary);
+  font-family: var(--font-text);
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.search-bar:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.15);
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* ==========================================
+   LEYES DE NEMEQUENE
+   ========================================== */
+.law-card {
+  background: rgba(255, 255, 255, 0.01);
+  border-left: 3px solid var(--accent);
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 0 6px 6px 0;
+  border-top: 1px solid var(--border-card);
+  border-right: 1px solid var(--border-card);
+  border-bottom: 1px solid var(--border-card);
+}
+
+.law-card h4 {
+  font-family: var(--font-title);
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.law-card p {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+/* Citas de derechos / Pie de Página */
+footer {
+  border-top: 1px solid var(--border-card);
+  padding: 3rem 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+  background: var(--bg-secondary);
+  margin-top: 4rem;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  header {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .detail-drawer {
+    width: 100vw;
+  }
+}

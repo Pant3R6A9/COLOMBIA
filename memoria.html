@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Memoria y Paz - Colombia en el Tiempo</title>
+  <meta name="description" content="El esclarecimiento de la verdad, la desclasificación de archivos de derechos humanos y las políticas de transición.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="memoria">
+
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="precolombina.html">Precolombina</a>
+      <a href="colonia.html">Colonia</a>
+      <a href="independencia.html">Independencia</a>
+      <a href="siglo-xix.html">Siglo XIX</a>
+      <a href="siglo-xx.html">Siglo XX</a>
+      <a href="memoria.html" class="active">Memoria</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(46,134,193,0.15); color: var(--accent);">
+        Siglo XXI / Políticas de Transición
+      </div>
+      <h1>Memoria y Reconstrucción</h1>
+      <p>La construcción del derecho a la verdad, el resguardo de los archivos de derechos humanos y la plataforma transmedia del esclarecimiento. Haz clic para abrir los detalles.</p>
+    </section>
+
+    <section class="era-layout">
+      
+      <div class="timeline-section">
+        
+        <!-- Palacio de Justicia -->
+        <div class="timeline-item">
+          <div class="timeline-year">1985</div>
+          <div class="timeline-content" data-drawer="drawer-palacio">
+            <span class="document-badge">Pérdida de Archivos Judiciales</span>
+            <h3>La Toma del Palacio de Justicia</h3>
+            <p>
+              El asalto del M-19 y la retoma militar que incendió miles de archivos de investigaciones judiciales críticas. Haz clic para ver detalles del impacto documental.
+            </p>
+            <div class="era-link">Abrir Detalles &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Acuerdo de Paz de 2016 -->
+        <div class="timeline-item">
+          <div class="timeline-year">2016</div>
+          <div class="timeline-content" data-drawer="drawer-acuerdopaz">
+            <span class="document-badge">Transición Política</span>
+            <h3>El Acuerdo de Paz y la Dirección de Archivo</h3>
+            <p>
+              La firma del acuerdo de paz y la recopilación sistemática de millones de registros sobre el despojo de tierras. Haz clic para abrir estadísticas.
+            </p>
+            <div class="era-link">Abrir Detalles &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Tensión Legal -->
+        <div class="timeline-item">
+          <div class="timeline-year">Leyes y Tensiones</div>
+          <div class="timeline-content" data-drawer="drawer-leyes">
+            <span class="document-badge">Debate Jurídico</span>
+            <h3>La Tensión entre Transparencia y Protección de Datos</h3>
+            <p>
+              El debate ético y legal sobre el acceso público a las identidades de las víctimas y victimarios. Haz clic para ver los dilemas legislativos.
+            </p>
+            <div class="era-link">Abrir Detalles &rarr;</div>
+          </div>
+        </div>
+
+        <!-- El Legado Transmedia de la Comisión de la Verdad -->
+        <div class="timeline-item">
+          <div class="timeline-year">Presente</div>
+          <div class="timeline-content" data-drawer="drawer-verdad">
+            <span class="document-badge">Legado Educativo</span>
+            <h3>La Plataforma Transmedia de la Comisión de la Verdad (CEV)</h3>
+            <p>
+              El informe final y el Legado Digital Transmedia para las escuelas del país. Haz clic para ver la ilustración de paz y estadísticas de testimonios.
+            </p>
+            <div class="era-link">Abrir Detalles &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+
+  <!-- Plantilla Palacio -->
+  <template id="drawer-palacio">
+    <div class="document-badge">Archivo Judicial</div>
+    <h2 class="title-font">Toma del Palacio de Justicia</h2>
+    <p>
+      La pérdida de archivos durante el incendio de 1985 representó un vacío de verdad para decenas de investigaciones críticas de derechos humanos y narcotráfico en la época, afectando directamente la reconstrucción de la memoria de las víctimas.
+    </p>
+  </template>
+
+  <!-- Plantilla Acuerdo -->
+  <template id="drawer-acuerdopaz">
+    <div class="document-badge">Acuerdo Final</div>
+    <h2 class="title-font">Justicia Transicional</h2>
+    <p>
+      El Sistema Integral de Verdad, Justicia, Reparación y No Repetición (SIVJRNR) ha sistematizado más de 3 millones de documentos sobre víctimas del conflicto armado colombiano en zonas de colonización agrícola.
+    </p>
+  </template>
+
+  <!-- Plantilla Leyes -->
+  <template id="drawer-leyes">
+    <div class="document-badge">Legislación de Derechos Humanos</div>
+    <h2 class="title-font">Privacidad vs. Memoria</h2>
+    <p>
+      El principal dilema jurídico radica en cómo equilibrar el derecho a la verdad consagrado en la Constitución de 1991 con la Ley 1581 de 2012 de Habeas Data, la cual prohíbe la difusión pública de nombres o testimonios de víctimas de agresiones físicas o de género sin consentimiento expreso.
+    </p>
+  </template>
+
+  <!-- Plantilla Verdad -->
+  <template id="drawer-verdad">
+    <div class="document-badge">Legado Transmedia</div>
+    <h2 class="title-font">La Comisión de la Verdad</h2>
+    <p>
+      La Comisión de la Verdad (CEV) recolectó miles de testimonios individuales y colectivos a lo largo de todo el territorio nacional, estructurando un archivo transmedia digital único para educar a las futuras generaciones sobre el valor de la convivencia pacífica.
+    </p>
+    <img src="assets/images/memoria_paz.png" alt="Ilustración conceptual de memoria, esperanza, paz y reconciliación en Colombia">
+    <p>
+      El informe final está compuesto por 10 tomos temáticos (incluyendo tomos específicos sobre mujeres, minorías étnicas e impactos territoriales en el campo).
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Estadísticas del Proceso de Esclarecimiento (CEV)</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Testimonios individuales recolectados</span>
+            <span>~28.000 voces</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="95"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Organizaciones sociales aliadas</span>
+            <span>~3.000 colectivos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="70"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Memoria y Paz.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Los datos y citas proceden del Legado Digital de la Comisión para el Esclarecimiento de la Verdad y la Jurisdicción Especial para la Paz.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

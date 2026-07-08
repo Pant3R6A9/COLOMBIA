@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Independencia y República - Colombia en el Tiempo</title>
+  <meta name="description" content="Deconstrucción del mito del 20 de julio, juntas provinciales alternativas y la financiación de la independencia.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="independencia">
+
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="precolombina.html">Precolombina</a>
+      <a href="colonia.html">Colonia</a>
+      <a href="independencia.html" class="active">Independencia</a>
+      <a href="siglo-xix.html">Siglo XIX</a>
+      <a href="siglo-xx.html">Siglo XX</a>
+      <a href="memoria.html">Memoria</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(241,196,15,0.15); color: var(--accent);">
+        1810 - 1830 / Campañas Libertadoras
+      </div>
+      <h1>Transición a la República</h1>
+      <p>La deconstrucción del mito centralista del 20 de julio de 1810, el realismo regional y el enorme esfuerzo fiscal de las Provincias Unidas. Haz clic para abrir la investigación.</p>
+    </section>
+
+    <section class="era-layout">
+      
+      <div class="timeline-section">
+        
+        <!-- Desmitificando el 20 de julio -->
+        <div class="timeline-item">
+          <div class="timeline-year">1810</div>
+          <div class="timeline-content" data-drawer="drawer-juntas">
+            <span class="document-badge">Deconstrucción Histórica</span>
+            <h3>La Simultaneidad de las Juntas Provinciales</h3>
+            <p>
+              El Acta de 1810 en Santafé de Bogotá vs las autonomías federales. Haz clic para explorar la verdadera cronología regional de la independencia.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Realismo en Pasto -->
+        <div class="timeline-item">
+          <div class="timeline-year">1811 - 1824</div>
+          <div class="timeline-content" data-drawer="drawer-pasto">
+            <span class="document-badge">Resistencia Realista</span>
+            <h3>El Conflicto en Pasto y el Río Guaitara</h3>
+            <p>
+              El sur realista que defendió la soberanía de la Corona española. Haz clic para abrir estadísticas de campañas y detalles del arraigo monárquico.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- El Acta Encontrada en Silvia -->
+        <div class="timeline-item">
+          <div class="timeline-year">1948 - 2017</div>
+          <div class="timeline-content" data-drawer="drawer-acta">
+            <span class="document-badge">Hallazgo Documental</span>
+            <h3>La Copia Auténtica del Acta en Silvia, Cauca</h3>
+            <p>
+              La pérdida del original en el incendio de 1948 y el descubrimiento en Silvia. Haz clic para abrir los detalles archivísticos de este rescate.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Financiación de la Independencia -->
+        <div class="timeline-item">
+          <div class="timeline-year">1811 - 1816</div>
+          <div class="timeline-content" data-drawer="drawer-monedas">
+            <span class="document-badge">Numismática y Fiscal</span>
+            <h3>La Financiación de las Campañas Libertadoras</h3>
+            <p>
+              Acuñación provisional de monedas y emisiones locales. Haz clic para abrir la investigación numismática detallada y estadísticas fiscales.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+
+  <!-- Plantilla Juntas -->
+  <template id="drawer-juntas">
+    <div class="document-badge">Autonomía Regional</div>
+    <h2 class="title-font">Independencias Regionales</h2>
+    <p>
+      El centralismo bogotano oscureció la realidad de que **Cartagena de Indias** fue la primera provincia en declarar la independencia absoluta de España el 11 de noviembre de 1811, mientras Santafé aún gobernaba bajo el Consejo de Regencia real.
+    </p>
+    <p>
+      La Constitución de Cartagena de 1812 declaró un Estado totalmente soberano y prohibió explícitamente la trata de esclavizados.
+    </p>
+  </template>
+
+  <!-- Plantilla Pasto -->
+  <template id="drawer-pasto">
+    <div class="document-badge">Campaña del Sur</div>
+    <h2 class="title-font">El Realismo de Pasto</h2>
+    <p>
+      La defensa pastusa de la Corona española se basaba en la defensa de sus propias tierras comunitarias y su autonomía religiosa. Las campañas de Antonio Nariño y Simón Bolívar en el sur encontraron una encarnizada guerra de guerrillas patiana que costó miles de vidas a las fuerzas republicanas.
+    </p>
+  </template>
+
+  <!-- Plantilla Acta de Silvia -->
+  <template id="drawer-acta">
+    <div class="document-badge">Archivo Histórico</div>
+    <h2 class="title-font">El Acta Rescatada</h2>
+    <p>
+      La tercera copia del Acta descubierta en Silvia, Cauca, en 2017, es un documento impreso de gran formato bajo la dirección del político Rafael Duque Uribe en París en 1890, reproduciendo con exactitud paleográfica las rúbricas que se perdieron en el Bogotazo de 1948.
+    </p>
+  </template>
+
+  <!-- Plantilla Monedas -->
+  <template id="drawer-monedas">
+    <div class="document-badge">Numismática Colonial</div>
+    <h2 class="title-font">Monedas de Emergencia</h2>
+    <p>
+      Para costear las tropas y la compra de armamento extranjero, la Casa de Moneda de Cartagena acuñó la primera moneda de cobre con una efigie indígena y una palmera, en lugar del busto del rey de España.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Emisión Estimada de Moneda Patriota (1811-1815)</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Acuñación Cobre (Cartagena)</span>
+            <span>~80.000 reales</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="80"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Acuñación Plata (Bogotá Nariño)</span>
+            <span>~50.000 reales</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="50"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Independencia.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Fuentes: Catálogo de Numismática de la Casa de Moneda (Banco de la República).
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

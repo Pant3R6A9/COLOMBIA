@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colombia en el Tiempo - Portal de Memoria Histórica</title>
+  <meta name="description" content="Un viaje interactivo y crítico a través de la historia y los acervos documentales de Colombia, desde la época prehispánica hasta el siglo XXI.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Optimización de render-blocking para la carga inicial -->
+  <link rel="expect" href="#hero-main" blocking="render">
+</head>
+<body>
+
+  <!-- Encabezado Común -->
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html" class="active">Inicio</a>
+      <a href="precolombina.html">Precolombina</a>
+      <a href="colonia.html">Colonia</a>
+      <a href="independencia.html">Independencia</a>
+      <a href="siglo-xix.html">Siglo XIX</a>
+      <a href="siglo-xx.html">Siglo XX</a>
+      <a href="memoria.html">Memoria</a>
+    </nav>
+  </header>
+
+  <!-- Contenedor Principal -->
+  <main class="container">
+    
+    <!-- Hero / Bienvenida -->
+    <section class="hero" id="hero-main">
+      <div class="document-badge">Portal Oficial de Memoria</div>
+      <h1>Colombia en el Tiempo</h1>
+      <p>Un recorrido inmersivo a través de los acervos documentales, archivos históricos y la memoria de nuestro territorio. Explora cada época desde las sociedades prehispánicas hasta la era contemporánea de la paz.</p>
+      <a href="#epocas" class="btn btn-primary">Iniciar el Viaje</a>
+    </section>
+
+    <!-- Sección de Grid de Épocas -->
+    <section id="epocas">
+      <h2 class="title-font" style="text-align: center; font-size: 2.25rem; margin-bottom: 3rem;">
+        Selecciona una Época Histórica
+      </h2>
+      
+      <div class="portal-grid">
+        
+        <!-- Época Precolombina -->
+        <a href="precolombina.html" class="era-card" style="--accent: #e59866; --accent-rgb: 229,152,102;">
+          <div class="era-date">Desde el origen hasta 1492</div>
+          <h3>Época Prehispánica</h3>
+          <p>Explora el territorio antes de la llegada de los colonos. Las complejas confederaciones Muisca y Tairona, la espectacular orfebrería Quimbaya y las civilizaciones milenarias de San Agustín y Tierradentro.</p>
+          <div class="era-link">Viajar en el tiempo &rarr;</div>
+        </a>
+
+        <!-- Conquista y Colonia -->
+        <a href="colonia.html" class="era-card" style="--accent: #b03a2e; --accent-rgb: 176,58,46;">
+          <div class="era-date">1492 - 1810</div>
+          <h3>Conquista y Colonia</h3>
+          <p>El origen de la estructuración administrativa y territorial. La resistencia jurídica indígena, la Real Orden de 1803 sobre San Andrés, la Expedición Botánica y la insurrección Comunera de 1781.</p>
+          <div class="era-link">Viajar en el tiempo &rarr;</div>
+        </a>
+
+        <!-- Independencia -->
+        <a href="independencia.html" class="era-card" style="--accent: #f1c40f; --accent-rgb: 241,196,15;">
+          <div class="era-date">1810 - 1830</div>
+          <h3>Independencia y Grito</h3>
+          <p>Desconstruyendo el mito del 20 de julio de 1810. La descentralización de las juntas de gobierno provinciales, la guerra contra el imperio realista y las primeras acuñaciones de monedas republicanas.</p>
+          <div class="era-link">Viajar en el tiempo &rarr;</div>
+        </a>
+
+        <!-- Siglo XIX -->
+        <a href="siglo-xix.html" class="era-card" style="--accent: #27ae60; --accent-rgb: 39,174,96;">
+          <div class="era-date">1830 - 1899</div>
+          <h3>República y Territorio</h3>
+          <p>La delimitación cartográfica del país a través de la Comisión Corográfica y sus acuarelas. El largo e inacabado camino legislativo hacia la abolición definitiva de la esclavitud en 1851.</p>
+          <div class="era-link">Viajar en el tiempo &rarr;</div>
+        </a>
+
+        <!-- Siglo XX -->
+        <a href="siglo-xx.html" class="era-card" style="--accent: #f39c12; --accent-rgb: 243,156,18;">
+          <div class="era-date">1900 - 1999</div>
+          <h3>Tensiones del Siglo XX</h3>
+          <p>El auge económico y los conflictos obrero-agrarios. La Masacre de las Bananeras de 1928, el Bogotazo de 1948, el Frente Nacional y el archivo de fotoperiodismo político de Viki Ospina.</p>
+          <div class="era-link">Viajar en el tiempo &rarr;</div>
+        </a>
+
+        <!-- Siglo XXI / Memoria -->
+        <a href="memoria.html" class="era-card" style="--accent: #2e86c1; --accent-rgb: 46,134,193;">
+          <div class="era-date">2000 - Presente</div>
+          <h3>Memoria y Transición</h3>
+          <p>La recopilación de la verdad en la era contemporánea. El legado transmedia de la Comisión de la Verdad, el Acuerdo de Paz de 2016 y los archivos de protección de los derechos humanos.</p>
+          <div class="era-link">Viajar en el tiempo &rarr;</div>
+        </a>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Creado con fines de conservación y educación pública.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Los acervos documentales referenciados pertenecen a los registros del Archivo General de la Nación, la Biblioteca Nacional de Colombia y el Banco de la República.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

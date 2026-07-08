@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Época Precolombina - Colombia en el Tiempo</title>
+  <meta name="description" content="Descubre las complejas culturas precolombinas del territorio colombiano: Muiscas, Taironas, Quimbayas y más.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="precolombina">
+
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="precolombina.html" class="active">Precolombina</a>
+      <a href="colonia.html">Colonia</a>
+      <a href="independencia.html">Independencia</a>
+      <a href="siglo-xix.html">Siglo XIX</a>
+      <a href="siglo-xx.html">Siglo XX</a>
+      <a href="memoria.html">Memoria</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
+        Época Prehispánica / Origen
+      </div>
+      <h1>El Territorio antes de los Colonos</h1>
+      <p>Explora a profundidad el legado de las sociedades prehispánicas. Haz clic en cualquiera de las secciones para abrir la ficha de investigación detallada, ilustraciones y estadísticas clave.</p>
+    </section>
+
+    <section class="era-layout">
+      
+      <div class="timeline-section">
+        
+        <!-- Cultura Muisca -->
+        <div class="timeline-item">
+          <div class="timeline-year">Muiscas y la Confederación Chibcha</div>
+          <div class="timeline-content" data-drawer="drawer-muisca">
+            <span class="document-badge">Organización Social</span>
+            <h3>Los Señores del Altiplano Cundiboyacense</h3>
+            <p>
+              Una confederación política de cacicazgos con un avanzado sistema agrícola en terrazas y lagunas sagradas. Haz clic para explorar detalles de orfebrería, el ritual de Guatavita y demografía.
+            </p>
+            <div class="era-link">Abrir Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Cultura Tairona -->
+        <div class="timeline-item">
+          <div class="timeline-year">Taironas y la Sierra Nevada</div>
+          <div class="timeline-content" data-drawer="drawer-tairona">
+            <span class="document-badge">Ingeniería Lítica</span>
+            <h3>Los Constructores de la Sierra</h3>
+            <p>
+              Ingeniería ambiental y arquitectura circular de piedra en las alturas de la Sierra Nevada. Haz clic para abrir detalles urbanos, terrazas y la historia de Teyuna.
+            </p>
+            <div class="era-link">Abrir Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Cultura Quimbaya -->
+        <div class="timeline-item">
+          <div class="timeline-year">Orfebrería Quimbaya</div>
+          <div class="timeline-content" data-drawer="drawer-quimbaya">
+            <span class="document-badge">Técnica Metalúrgica</span>
+            <h3>Los Maestros del Oro y la Tumbaga</h3>
+            <p>
+              Avanzadas aleaciones metálicas y objetos escultóricos de poder político y sagrado. Haz clic para explorar técnicas metalúrgicas y la importancia del Poporo.
+            </p>
+            <div class="era-link">Abrir Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Cultura Zenú -->
+        <div class="timeline-item">
+          <div class="timeline-year">Cultura Zenú y el Drenaje Hidráulico</div>
+          <div class="timeline-content" data-drawer="drawer-zenu">
+            <span class="document-badge">Control del Agua</span>
+            <h3>Ingeniería Hidráulica en las Sabanas</h3>
+            <p>
+              Una de las obras de manejo hídrico más espectaculares del continente americano antiguo. Haz clic para ver mapas de canales y estadísticas de agricultura de inundación.
+            </p>
+            <div class="era-link">Abrir Investigación &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+
+  <!-- Plantilla Muisca -->
+  <template id="drawer-muisca">
+    <div class="document-badge">Ficha Arqueológica</div>
+    <h2 class="title-font">La Confederación Muisca</h2>
+    <p style="font-style: italic; opacity: 0.8;">Cultura del Altiplano Cundiboyacense (c. 800 - 1537 d.C.)</p>
+    
+    <img src="assets/images/precolombina_muisca.png" alt="Balsa Muisca del Dorado en Guatavita">
+    
+    <p>
+      La organización Muisca se dividía en dos grandes cacicazgos principales: el del **Zipa** en Bacatá (Bogotá) y el del **Zaque** en Hunza (Tunja). Su cohesión social dependía del intercambio comercial de sal marina, esmeraldas, mantas de algodón finamente tejidas y piezas ceremoniales de oro.
+    </p>
+    <p>
+      El ritual del Dorado se llevaba a cabo en la laguna de Guatavita cuando el cacique asumía el poder, cubriéndose de polvo de oro y sumergiéndose para ofrendar tesoros a los dioses del agua.
+    </p>
+
+    <a href="muiscas.html" class="btn btn-primary" style="margin-top: 0.5rem; margin-bottom: 1.5rem; width: 100%; justify-content: center;">
+      Entrar a la Enciclopedia Muisca &rarr;
+    </a>
+
+    <div class="stat-box">
+      <h4 class="title-font">Estimaciones Demográficas e Intercambio</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Población estimada (s. XVI)</span>
+            <span>650.000 hab.</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="90"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Producción de Sal (Cacicazgo de Zipa)</span>
+            <span>Alta (Excedente regional)</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="85"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Tairona -->
+  <template id="drawer-tairona">
+    <div class="document-badge">Ficha Arqueológica</div>
+    <h2 class="title-font">Los Taironas</h2>
+    <p style="font-style: italic; opacity: 0.8;">Constructores de la Sierra Nevada (c. 200 - 1600 d.C.)</p>
+    
+    <img src="assets/images/precolombina_tairona.png" alt="Terrazas de Ciudad Perdida">
+    
+    <p>
+      Los Taironas dominaron la agricultura de montaña en pendientes escarpadas, diseñando terrazas sostenidas por muros de piedra de hasta 9 metros de altura. Su sistema de comunicación consistía en caminos de piedra adoquinados que conectaban cientos de aldeas circulares y centros urbanos en la Sierra.
+    </p>
+    <p>
+      Teyuna (Ciudad Perdida) posee más de 150 terrazas de piedra que servían como viviendas, centros rituales y depósitos de almacenamiento, constituyendo una obra maestra de planeación ecológica.
+    </p>
+
+    <div class="stat-box">
+      <h4 class="title-font">Ingeniería y Urbanismo</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Densidad de población (Teyuna)</span>
+            <span>Alta (~8.000 hab.)</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="75"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Pendiente de terrazas agrícolas</span>
+            <span>Hasta 45°</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="95"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Quimbaya -->
+  <template id="drawer-quimbaya">
+    <div class="document-badge">Ficha Metalúrgica</div>
+    <h2 class="title-font">La Cultura Quimbaya</h2>
+    <p style="font-style: italic; opacity: 0.8;">Orfebres del Río Cauca (c. 500 a.C. - 1600 d.C.)</p>
+    
+    <img src="assets/images/precolombina_quimbaya.png" alt="Poporo Quimbaya de Oro en Museo">
+    
+    <p>
+      Famosos por su destreza en metalurgia, los Quimbayas crearon piezas tridimensionales de gran realismo. Inventaron sistemas de fundición a la cera perdida con núcleos de arcilla y carbón para hacer piezas huecas. 
+    </p>
+    <p>
+      La aleación de cobre y oro (tumbaga) facilitaba el vaciado a menores temperaturas y permitía dar un pulido dorado brillante al ácido. El Poporo Quimbaya (adquirido por el Banco de la República en 1939) marcó el nacimiento del Museo del Oro.
+    </p>
+
+    <div class="stat-box">
+      <h4 class="title-font">Composición Típica de la Tumbaga</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Contenido de Oro</span>
+            <span>60%</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="60"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Contenido de Cobre</span>
+            <span>30%</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="30"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Plata y otros metales</span>
+            <span>10%</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="10"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Zenú -->
+  <template id="drawer-zenu">
+    <div class="document-badge">Ficha Hidráulica</div>
+    <h2 class="title-font">El Imperio Hidráulico Zenú</h2>
+    <p style="font-style: italic; opacity: 0.8;">Control de Aguas en el Caribe (c. 200 a.C. - 1000 d.C.)</p>
+    
+    <p>
+      Los Zenúes modificaron el paisaje natural de las sabanas inundables construyendo canales perpendiculares a las corrientes de los ríos Sinú y San Jorge. Esta red regulaba la velocidad del agua y esparcía el limo fértil sobre los cultivos, permitiendo la agricultura intensiva.
+    </p>
+    <p>
+      También crearon canales de almacenamiento de agua dulce para las temporadas de sequía extrema, sirviendo a una red de pueblos distribuidos en montículos elevados que nunca se inundaban.
+    </p>
+
+    <div class="stat-box">
+      <h4 class="title-font">Dimensión del Manejo Hídrico</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Territorio intervenido por canales</span>
+            <span>500.000 Hectáreas</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="95"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Reducción de inundaciones domésticas</span>
+            <span>100%</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Época Prehispánica.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Documentos y descripciones basados en los archivos de la Red de Bibliotecas del Banco de la República y el Museo del Oro.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

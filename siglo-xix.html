@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Siglo XIX - Colombia en el Tiempo</title>
+  <meta name="description" content="El camino hacia la abolición de la esclavitud en Colombia y el mapeo cartográfico de la Comisión Corográfica.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="siglo-xix">
+
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="precolombina.html">Precolombina</a>
+      <a href="colonia.html">Colonia</a>
+      <a href="independencia.html">Independencia</a>
+      <a href="siglo-xix.html" class="active">Siglo XIX</a>
+      <a href="siglo-xx.html">Siglo XX</a>
+      <a href="memoria.html">Memoria</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(39,174,96,0.15); color: var(--accent);">
+        1830 - 1899 / Consolidación y Mapeo
+      </div>
+      <h1>República y Territorio</h1>
+      <p>La abolición gradual de la esclavitud y la hazaña científica y artística de la Comisión Corográfica para inventariar y dibujar la joven nación. Haz clic para abrir los detalles y estadísticas.</p>
+    </section>
+
+    <section class="era-layout">
+      
+      <div class="timeline-section">
+        
+        <!-- El Tránsito de la Esclavitud a la Emancipación -->
+        <div class="timeline-item">
+          <div class="timeline-year">1812 - 1852</div>
+          <div class="timeline-content" data-drawer="drawer-esclavitud">
+            <span class="document-badge">Leyes y Derechos Humanos</span>
+            <h3>El itinerario legal de la manumisión progresiva</h3>
+            <p>
+              El desmonte gradual de la servidumbre y el colapso del valor comercial de los esclavizados. Haz clic para ver el análisis de casos y gráficos de devaluación comercial.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- La Comisión Corográfica -->
+        <div class="timeline-item">
+          <div class="timeline-year">1850 - 1859</div>
+          <div class="timeline-content" data-drawer="drawer-comision">
+            <span class="document-badge">Cartografía y Arte</span>
+            <h3>La Comisión Corográfica de Agustín Codazzi</h3>
+            <p>
+              Mapeando las provincias de la Nueva Granada y dibujando las costumbres populares en acuarelas. Haz clic para ver la acuarela de época y detalles de las 10 expediciones.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+        <!-- Organización del Archivo Nacional -->
+        <div class="timeline-item">
+          <div class="timeline-year">1868</div>
+          <div class="timeline-content" data-drawer="drawer-archivo">
+            <span class="document-badge">Institucional</span>
+            <h3>Fundación del Archivo Nacional</h3>
+            <p>
+              La catalogación del patrimonio documental del país por don José María Vergara y Vergara. Haz clic para abrir el catálogo e índices temáticos.
+            </p>
+            <div class="era-link">Ver Investigación &rarr;</div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+
+  <!-- Plantilla Esclavitud -->
+  <template id="drawer-esclavitud">
+    <div class="document-badge">Manumisión Gradual</div>
+    <h2 class="title-font">Fin de la Esclavitud</h2>
+    <p>
+      La Ley de 1821 de Libertad de Partos dictaba que los hijos nacidos de madres esclavizadas eran libres pero debían servir a los amos bajo el patronato colonial hasta cumplir 18 años para amortizar los costos de su alimentación y crianza.
+    </p>
+    <p>
+      El análisis de los expedientes del Fondo Manumisión revela que, a medida que se acercaba el año de abolición absoluta (1852), los precios de los esclavizados sufrieron un colapso en el Chocó y el Cauca debido a que su período legal de servidumbre ya tenía un límite temporal fijo.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Distribución de Casos Registrados (1810-1851)</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Menor a 100 pesos (Menores de edad/ancianos)</span>
+            <span>425 casos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="100"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Entre 100 y 200 pesos (Salud limitada)</span>
+            <span>312 casos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="73"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Entre 200 y 300 pesos (Plenitud productiva)</span>
+            <span>289 casos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="68"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Superior a 300 pesos (Minería fuerte)</span>
+            <span>352 casos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="82"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Comisión Corográfica -->
+  <template id="drawer-comision">
+    <div class="document-badge">Comisión Corográfica</div>
+    <h2 class="title-font">Acuarelas y Mapas</h2>
+    <p>
+      Agustín Codazzi, militar y geógrafo italiano, lideró las expediciones cruzando cordilleras, selvas y llanuras. Acompañado por pintores, la Comisión produjo un inventario minucioso de la geografía, climas, y grupos humanos del país.
+    </p>
+    <img src="assets/images/siglo_xix_corografica.png" alt="Acuarela rural de la Comisión Corográfica de Codazzi">
+    <p>
+      Las acuarelas son una ventana etnográfica incalculable para observar los vestuarios de campesinos, indígenas, hacendados y las actividades comerciales del siglo XIX.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Alcance de la Comisión</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Expediciones de Campo</span>
+            <span>10 grandes viajes</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="100"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <!-- Plantilla Archivo -->
+  <template id="drawer-archivo">
+    <div class="document-badge">Archivo Nacional de Colombia</div>
+    <h2 class="title-font">Ordenamiento Archivístico</h2>
+    <p>
+      Don José María Vergara y Vergara ordenó centralizar y clasificar los papeles sueltos acumulados desde la época virreinal. Ideó una clasificación cronológica y temática pionera en América Latina, dividida en sección colonial y sección republicana.
+    </p>
+  </template>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Siglo XIX.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Los fondos gráficos e informes de la Comisión Corográfica reposan en la Biblioteca Nacional de Colombia.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
