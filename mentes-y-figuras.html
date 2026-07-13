@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentes e Ilustres - Colombia en el Tiempo</title>
+  <meta name="description" content="Directorio interactivo de colombianos destacados en ciencias, medicina, artes, deportes y música global.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body>
+
+  <!-- Encabezado Común -->
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Épocas Históricas</button>
+        <div class="dropdown-content">
+          <a href="precolombina.html">Época Precolombina</a>
+          <a href="colonia.html">Conquista y Colonia</a>
+          <a href="independencia.html">Independencia y Grito</a>
+          <a href="siglo-xix.html">República (Siglo XIX)</a>
+          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
+          <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <div class="dropdown-content">
+          <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
+          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
+          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="otras-culturas.html">Catálogo de Culturas</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(212,175,55,0.15); color: var(--accent);">
+        Cultura y Saberes
+      </div>
+      <h1>Mentes y Figuras Ilustres</h1>
+      <p>Un tributo a los cerebros, atletas y creadores de Colombia que han dejado una huella indeleble tanto a nivel nacional como global. Haz clic en las tarjetas para explorar sus biografías y mayores logros.</p>
+    </section>
+
+    <!-- Pestañas de categorías -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab(event, 'ciencia')">Ciencia y Medicina</button>
+      <button class="tab-button" onclick="openTab(event, 'artes')">Literatura y Artes</button>
+      <button class="tab-button" onclick="openTab(event, 'deportes')">Deportes</button>
+      <button class="tab-button" onclick="openTab(event, 'musica')">Música e Impacto</button>
+    </div>
+
+    <!-- ==========================================
+         CONTENIDOS DE LAS PESTAÑAS
+         ========================================== -->
+
+    <!-- Ciencia y Medicina -->
+    <div id="ciencia" class="tab-content active-content">
+      <div class="character-grid">
+        <!-- Rodolfo Llinás -->
+        <div class="character-card" onclick="openFigureDrawer('llinas')" style="cursor: pointer;">
+          <h3>Rodolfo Llinás</h3>
+          <div class="character-role">Neurociencia de clase mundial</div>
+          <p>
+            Uno de los padres fundadores de la neurociencia moderna, conocido por proponer la ley de la no-conectividad y sus estudios sobre las células de Purkinje en el cerebelo.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+
+        <!-- Manuel Elkin Patarroyo -->
+        <div class="character-card" onclick="openFigureDrawer('patarroyo')" style="cursor: pointer;">
+          <h3>Manuel Elkin Patarroyo</h3>
+          <div class="character-role">Inmunología y Vacunas</div>
+          <p>
+            Creador de la primera vacuna sintética contra la malaria (SPF66) en los años 80, la cual donó a la Organización Mundial de la Salud (OMS) en favor de los países en desarrollo.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+
+        <!-- Adriana Ocampo -->
+        <div class="character-card" onclick="openFigureDrawer('ocampo')" style="cursor: pointer;">
+          <h3>Adriana Ocampo</h3>
+          <div class="character-role">Geología Planetaria y NASA</div>
+          <p>
+            Directora de programas científicos de la NASA, lideró expediciones para catalogar el cráter de impacto Chicxulub en México (el meteorito que extinguió los dinosaurios).
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Literatura y Artes -->
+    <div id="artes" class="tab-content">
+      <div class="character-grid">
+        <!-- Gabriel García Márquez -->
+        <div class="character-card" onclick="openFigureDrawer('gabo')" style="cursor: pointer;">
+          <h3>Gabriel García Márquez</h3>
+          <div class="character-role">Premio Nobel de Literatura 1982</div>
+          <p>
+            Creador del realismo mágico y autor de *Cien años de soledad*, una de las novelas más influyentes del siglo XX, retratando la memoria del Caribe colombiano.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+
+        <!-- Fernando Botero -->
+        <div class="character-card" onclick="openFigureDrawer('botero')" style="cursor: pointer;">
+          <h3>Fernando Botero</h3>
+          <div class="character-role">Pintura y Escultura Monumental</div>
+          <p>
+            Pintor y escultor célebre por sus figuras voluminosas de "boterismo", cuyas esculturas monumentales de bronce adornan avenidas principales de París, Madrid y Medellín.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Deportes -->
+    <div id="deportes" class="tab-content">
+      <div class="character-grid">
+        <!-- Mariana Pajón -->
+        <div class="character-card" onclick="openFigureDrawer('pajon')" style="cursor: pointer;">
+          <h3>Mariana Pajón</h3>
+          <div class="character-role">Doble Campeona Olímpica de BMX</div>
+          <p>
+            Apodada la *"Reina del BMX"*, es la deportista colombiana más laureada de la historia olímpica, ganando dos medallas de oro y una de plata en ciclismo.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+
+        <!-- Egan Bernal -->
+        <div class="character-card" onclick="openFigureDrawer('bernal')" style="cursor: pointer;">
+          <h3>Egan Bernal</h3>
+          <div class="character-role">Ganador del Tour de Francia 2019</div>
+          <p>
+            El primer ciclista latinoamericano en ganar el Tour de Francia (el trofeo más codiciado del ciclismo de ruta global) y campeón del Giro de Italia.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Música -->
+    <div id="musica" class="tab-content">
+      <div class="character-grid">
+        <!-- Totó la Momposina -->
+        <div class="character-card" onclick="openFigureDrawer('toto')" style="cursor: pointer;">
+          <h3>Totó la Momposina</h3>
+          <div class="character-role">Canto ancestral y cumbia</div>
+          <p>
+            La voz insignia del Caribe, difusora internacional de ritmos de tamboras, cumbia y bullerengue, cantando sobre las vidas de los pescadores del río Magdalena.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES BIOGRAFÍAS)
+       ========================================== -->
+  <template id="fig-llinas">
+    <div class="document-badge">Ciencia y Saberes</div>
+    <h2 class="title-font">Rodolfo Llinás</h2>
+    <p style="font-style: italic; opacity: 0.8;">Médico Neurofisiólogo (Bogotá, 1934)</p>
+    <p>
+      Llinás es un referente histórico de la medicina. Sus investigaciones en la Universidad de Nueva York y la NASA (estudiando el cerebelo bajo gravedad cero) redefinieron la comprensión de los circuitos de la conciencia humana. 
+    </p>
+    <p>
+      Es autor de la **Ley de Llinás** sobre la despolarización intrínseca de las neuronas, demostrando que el cerebro genera su propia actividad interna incluso en ausencia de estímulos sensoriales.
+    </p>
+  </template>
+
+  <template id="fig-gabo">
+    <div class="document-badge">Literatura</div>
+    <h2 class="title-font">Gabriel García Márquez</h2>
+    <p style="font-style: italic; opacity: 0.8;">Periodista y Nobel (Aracataca, 1927 - México, 2014)</p>
+    <p>
+      "Gabo" inmortalizó el alma del Caribe en la mítica aldea de **Macondo**. Su obra cimentó el "boom latinoamericano" y fue condecorado con el Nobel de Literatura en 1982.
+    </p>
+    <p>
+      Sus escritos unieron el periodismo riguroso de investigación (como *Relato de un náufrago* y *Noticia de un secuestro*) con las tradiciones orales populares.
+    </p>
+  </template>
+
+  <template id="fig-pajon">
+    <div class="document-badge">Deporte Olímpico</div>
+    <h2 class="title-font">Mariana Pajón Londoño</h2>
+    <p style="font-style: italic; opacity: 0.8;">BMX Racing (Medellín, 1991)</p>
+    <p>
+      Inició en el ciclismo BMX a los 4 años. Logró las medallas de oro en los Juegos Olímpicos de Londres 2012 y Río 2016, y una medalla de plata en Tokio 2020. Es un referente indiscutible de disciplina y superación atlética nacional.
+    </p>
+  </template>
+
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active-content");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active-content");
+      evt.currentTarget.classList.add("active");
+    }
+
+    function openFigureDrawer(figureId) {
+      const template = document.getElementById('fig-' + figureId);
+      const drawer = document.querySelector('.detail-drawer');
+      const drawerContent = drawer.querySelector('.drawer-content');
+      
+      if (template && drawer && drawerContent) {
+        drawerContent.innerHTML = '';
+        const clone = template.content.cloneNode(true);
+        drawerContent.appendChild(clone);
+        drawer.classList.add('open');
+      }
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Directorio de Mentes e Ilustres.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

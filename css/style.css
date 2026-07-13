@@ -180,9 +180,10 @@ header {
 nav {
   display: flex;
   gap: 1.5rem;
+  align-items: center;
 }
 
-nav a {
+nav a, .dropdown-trigger {
   color: var(--text-secondary);
   text-decoration: none;
   font-size: 0.875rem;
@@ -191,9 +192,12 @@ nav a {
   text-transform: uppercase;
   transition: color 0.3s ease;
   position: relative;
+  background: transparent;
+  border: none;
+  cursor: pointer;
 }
 
-nav a:hover, nav a.active {
+nav a:hover, nav a.active, .dropdown:hover .dropdown-trigger {
   color: var(--accent);
 }
 
@@ -206,6 +210,58 @@ nav a.active::after {
   height: 2px;
   background-color: var(--accent);
 }
+
+/* Menú Desplegable (Dropdown) en Cabecera */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(15, 16, 19, 0.95);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  min-width: 240px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+  border: 1px solid var(--border-card);
+  border-radius: 4px;
+  z-index: 101;
+  padding: 0.5rem 0;
+  margin-top: 0.75rem;
+}
+
+.dropdown-content a {
+  color: var(--text-secondary);
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.dropdown-content a::after {
+  display: none !important;
+}
+
+.dropdown-content a:hover {
+  color: var(--accent);
+  background-color: rgba(255, 255, 255, 0.02);
+  padding-left: 1.75rem;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 /* ==========================================
    COMPONENTES PRINCIPALES

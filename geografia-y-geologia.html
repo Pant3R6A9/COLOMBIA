@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Geografía, Geología y Riquezas - Colombia en el Tiempo</title>
+  <meta name="description" content="Mapa interactivo de las regiones de Colombia, fallas geológicas, volcanes activos, riquezas minerales y el impacto de la minería ilegal.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Estilos específicos para el mapa y capas */
+    .map-section {
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 3rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    
+    .map-controls {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      padding: 2rem;
+      border-radius: 8px;
+      backdrop-filter: blur(var(--glass-blur));
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .control-btn {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-card);
+      border-radius: 6px;
+      color: var(--text-secondary);
+      font-family: var(--font-title);
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: all 0.3s ease;
+      text-align: left;
+    }
+    
+    .control-btn:hover, .control-btn.active {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: rgba(var(--accent-rgb), 0.05);
+      box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.1);
+    }
+    
+    .map-container {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    
+    svg#mapa-colombia {
+      width: 100%;
+      height: auto;
+      max-height: 600px;
+    }
+    
+    /* Regiones del mapa */
+    .region {
+      fill: rgba(255, 255, 255, 0.03);
+      stroke: var(--border-card);
+      stroke-width: 2;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    
+    .region:hover {
+      fill: rgba(var(--accent-rgb), 0.1);
+      stroke: var(--accent);
+    }
+    
+    /* Capas Interactivas */
+    .layer {
+      opacity: 0;
+      visibility: hidden;
+      transition: all 0.5s ease;
+    }
+    
+    .layer.active-layer {
+      opacity: 1;
+      visibility: visible;
+    }
+    
+    /* Fallas y sismos */
+    .falla-linea {
+      stroke: #e74c3c;
+      stroke-width: 3;
+      stroke-dasharray: 6 4;
+      fill: none;
+      filter: drop-shadow(0 0 4px #e74c3c);
+    }
+    
+    .volcan-nodo {
+      fill: #e74c3c;
+      stroke: #fff;
+      stroke-width: 1.5;
+      cursor: pointer;
+    }
+    
+    /* Minas y minerales */
+    .mina-nodo {
+      fill: #f1c40f;
+      stroke: #000;
+      stroke-width: 1.5;
+      cursor: pointer;
+      filter: drop-shadow(0 0 3px #f1c40f);
+    }
+    
+    .mina-ilegal-area {
+      fill: rgba(192, 57, 43, 0.3);
+      stroke: #c0392b;
+      stroke-width: 2;
+      stroke-dasharray: 4 4;
+      animation: alertPulse 2s infinite;
+    }
+    
+    /* Arqueología y Misterios */
+    .ruina-nodo {
+      fill: #2ecc71;
+      stroke: #fff;
+      stroke-width: 1.5;
+      cursor: pointer;
+      filter: drop-shadow(0 0 3px #2ecc71);
+    }
+    
+    .misterio-nodo {
+      fill: #9b59b6;
+      stroke: #fff;
+      stroke-width: 1.5;
+      cursor: pointer;
+      filter: drop-shadow(0 0 3px #9b59b6);
+    }
+    
+    @keyframes alertPulse {
+      0% { fill: rgba(192, 57, 43, 0.2); }
+      50% { fill: rgba(192, 57, 43, 0.55); }
+      100% { fill: rgba(192, 57, 43, 0.2); }
+    }
+    
+    @media (max-width: 900px) {
+      .map-section {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="precolombina">
+
+  <!-- Encabezado Común -->
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Épocas Históricas</button>
+        <div class="dropdown-content">
+          <a href="precolombina.html">Época Precolombina</a>
+          <a href="colonia.html">Conquista y Colonia</a>
+          <a href="independencia.html">Independencia y Grito</a>
+          <a href="siglo-xix.html">República (Siglo XIX)</a>
+          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
+          <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <div class="dropdown-content">
+          <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
+          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
+          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="otras-culturas.html">Catálogo de Culturas</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
+        Geografía y Riquezas
+      </div>
+      <h1>Mapa Interactivo de Colombia</h1>
+      <p>Explora la complejidad física y territorial del país. Haz clic en las regiones para ver su geografía, o activa las capas temáticas para descubrir fallas geológicas, recursos minerales e impacto ecológico.</p>
+    </section>
+
+    <!-- Sección de Mapa y Controles -->
+    <div class="map-section">
+      
+      <!-- Controles del mapa -->
+      <div class="map-controls">
+        <h3 class="title-font" style="font-size: 1.15rem; border-bottom: 1px solid var(--border-card); padding-bottom: 0.5rem;">
+          Capas de Información
+        </h3>
+        <button class="control-btn active" onclick="toggleMapLayer('base')">
+          🗺️ Regiones Naturales
+        </button>
+        <button class="control-btn" onclick="toggleMapLayer('minerales')">
+          💎 Minerales y Minería Ilegal
+        </button>
+        <button class="control-btn" onclick="toggleMapLayer('geologia')">
+          🌋 Fallas y Volcanes
+        </button>
+        <button class="control-btn" onclick="toggleMapLayer('arqueologia')">
+          🏛️ Arqueología y Misterios
+        </button>
+        
+        <p style="font-size: 0.85rem; color: var(--text-secondary); line-height: 1.5;">
+          * Haz clic en cualquier nodo o región del mapa para desplegar su ficha de investigación detallada en el panel lateral.
+        </p>
+      </div>
+      
+      <!-- Contenedor del Mapa SVG -->
+      <div class="map-container">
+        <svg id="mapa-colombia" viewBox="0 0 500 650" xmlns="http://www.w3.org/2000/svg">
+          <!-- Región Caribe -->
+          <path id="reg-caribe" class="region" d="M 120 40 Q 200 10 320 20 L 380 90 L 320 180 L 150 160 L 120 120 Z" onclick="openRegionDrawer('caribe')" />
+          <!-- Región Pacífica -->
+          <path id="reg-pacifica" class="region" d="M 120 120 L 150 160 L 140 280 L 100 450 L 90 480 L 60 460 L 80 280 Z" onclick="openRegionDrawer('pacifica')" />
+          <!-- Región Andina -->
+          <path id="reg-andina" class="region" d="M 150 160 L 320 180 L 290 260 L 270 420 L 220 500 L 160 480 L 100 450 L 140 280 Z" onclick="openRegionDrawer('andina')" />
+          <!-- Región Orinoquía -->
+          <path id="reg-orinoquia" class="region" d="M 320 180 L 460 220 L 480 340 L 320 380 L 290 260 Z" onclick="openRegionDrawer('orinoquia')" />
+          <!-- Región Amazonía -->
+          <path id="reg-amazonia" class="region" d="M 290 260 L 320 380 L 480 340 L 420 540 L 290 560 L 210 510 L 220 500 L 270 420 Z" onclick="openRegionDrawer('amazonia')" />
+          <!-- Región Insular (San Andrés y Providencia en recuadro) -->
+          <rect x="20" y="20" width="80" height="80" fill="none" stroke="var(--border-card)" stroke-dasharray="3 3" />
+          <circle id="reg-insular" cx="60" cy="60" r="15" class="region" onclick="openRegionDrawer('insular')" />
+          <text x="30" y="90" fill="var(--text-secondary)" font-size="10" font-family="var(--font-title)">S. Andrés</text>
+
+          <!-- ==========================================
+               CAPA 1: MINERALES Y MINERÍA ILEGAL
+               ========================================== -->
+          <g id="layer-minerales" class="layer">
+            <!-- Áreas de alerta por Minería Ilegal (Chocó y Bajo Cauca) -->
+            <path class="mina-ilegal-area" d="M 75 300 Q 60 380 95 440 L 120 380 Q 90 320 75 300 Z" onclick="openNodeDrawer('mineria-ilegal')" />
+            <circle class="mina-ilegal-area" cx="190" cy="220" r="30" onclick="openNodeDrawer('mineria-ilegal')" />
+            <!-- Yacimientos de Esmeraldas (Boyacá/Muzo) -->
+            <polygon class="mina-nodo" points="230,210 235,220 225,220" onclick="openNodeDrawer('esmeraldas-muzo')" />
+            <polygon class="mina-nodo" points="250,225 255,235 245,235" onclick="openNodeDrawer('esmeraldas-chivor')" />
+            <!-- Carbón del Cerrejón -->
+            <rect class="mina-nodo" x="310" y="45" width="12" height="12" onclick="openNodeDrawer('carbon-cerrejon')" />
+          </g>
+
+          <!-- ==========================================
+               CAPA 2: GEOLOGÍA Y VOLCANES
+               ========================================== -->
+          <g id="layer-geologia" class="layer">
+            <!-- Falla de Romeral (Línea sísmica activa) -->
+            <path class="falla-linea" d="M 140 160 L 145 280 L 170 360 L 180 430 L 175 490" />
+            <text x="110" y="320" fill="#e74c3c" font-size="10" font-family="var(--font-title)" transform="rotate(78, 145, 280)">Falla de Romeral</text>
+            
+            <!-- Falla de Palestina -->
+            <path class="falla-linea" d="M 200 190 L 210 290 L 230 380" style="stroke: #e67e22;" />
+
+            <!-- Volcán Nevado del Ruiz -->
+            <polygon class="volcan-nodo" points="175,270 182,282 168,282" onclick="openNodeDrawer('nevado-del-ruiz')" />
+            <!-- Volcán Galeras -->
+            <polygon class="volcan-nodo" points="140,460 147,472 133,472" onclick="openNodeDrawer('volcan-galeras')" />
+          </g>
+
+          <!-- ==========================================
+               CAPA 3: ARQUEOLOGÍA Y MISTERIOS
+               ========================================== -->
+          <g id="layer-arqueologia" class="layer">
+            <!-- Ciudad Perdida (Teyuna) -->
+            <circle class="ruina-nodo" cx="290" cy="65" r="8" onclick="openNodeDrawer('ruina-teyuna')" />
+            <!-- San Agustín -->
+            <circle class="ruina-nodo" cx="170" cy="430" r="8" onclick="openNodeDrawer('ruina-san-agustin')" />
+            <!-- Tierradentro -->
+            <circle class="ruina-nodo" cx="185" cy="405" r="8" onclick="openNodeDrawer('ruina-tierradentro')" />
+            <!-- Serranía de Chiribiquete -->
+            <circle class="misterio-nodo" cx="300" cy="450" r="10" onclick="openNodeDrawer('misterio-chiribiquete')" />
+          </g>
+        </svg>
+      </div>
+      
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES REGIONES)
+       ========================================== -->
+  <template id="region-caribe">
+    <div class="document-badge">Región Geográfica</div>
+    <h2 class="title-font">Región Caribe</h2>
+    <p>
+      Ubicada en el norte de Colombia, abarca las llanuras costeras y la imponente Sierra Nevada de Santa Marta (la montaña costera más alta del mundo).
+    </p>
+    <p>
+      **Riquezas**: Posee las mayores minas de carbón a cielo abierto del continente (El Cerrejón) y fue el territorio donde florecieron los sistemas hidráulicos Zenúes y la civilización Tairona.
+    </p>
+  </template>
+
+  <template id="region-pacifica">
+    <div class="document-badge">Región Geográfica</div>
+    <h2 class="title-font">Región Pacífica</h2>
+    <p>
+      Una de las zonas más biodiversas y lluviosas del planeta. Caracterizada por selvas húmedas tropicales densas, manglares y una densa red de ríos caudalosos.
+    </p>
+    <p>
+      **Minería e Impacto**: Históricamente rica en aluviones de oro y platino. Desafortunadamente, hoy en día es una de las áreas más afectadas por la **minería ilegal a cielo abierto**, que vierte toneladas de mercurio destruyendo cuencas de ríos como el Atrato.
+    </p>
+  </template>
+
+  <template id="region-andina">
+    <div class="document-badge">Región Geográfica</div>
+    <h2 class="title-font">Región Andina</h2>
+    <p>
+      El corazón montañoso del país, donde la cordillera de los Andes se divide en tres ramales (Occidental, Central y Oriental). Concentra la mayor parte de la población y la agricultura del altiplano.
+    </p>
+    <p>
+      **Actividad Tectónica**: Atravesada por el sistema de fallas de **Romeral** y Palestina, y coronada por volcanes activos como el Nevado del Ruiz y el Galeras.
+    </p>
+  </template>
+
+  <template id="region-amazonia">
+    <div class="document-badge">Región Geográfica</div>
+    <h2 class="title-font">Región Amazonía</h2>
+    <p>
+      La inmensa llanura selvática del sur del país, pulmón de biodiversidad.
+    </p>
+    <p>
+      **Misterios ancestrales**: Resguarda la **Serranía de Chiribiquete**, un macizo rocoso donde se han hallado millones de pictogramas rupestres milenarios que relatan las primeras cosmogonías humanas del continente.
+    </p>
+  </template>
+
+  <template id="region-orinoquia">
+    <div class="document-badge">Región Geográfica</div>
+    <h2 class="title-font">Región Orinoquía (Llanos)</h2>
+    <p>
+      Vastas sabanas planas dedicadas a la ganadería y ricas en recursos petrolíferos e hidrocarburos.
+    </p>
+  </template>
+
+  <template id="region-insular">
+    <div class="document-badge">Región Geográfica</div>
+    <h2 class="title-font">Región Insular</h2>
+    <p>
+      Compuesta por el archipiélago de San Andrés, Providencia y Santa Catalina en el mar Caribe, y las islas Gorgona y Malpelo en el océano Pacífico. Posee reservas de arrecifes de coral protegidas.
+    </p>
+  </template>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES NODOS)
+       ========================================== -->
+  <template id="node-mineria-ilegal">
+    <div class="document-badge" style="background: rgba(192,57,43,0.15); color: #c0392b;">Alerta Ambiental</div>
+    <h2 class="title-font">Minería Ilegal de Oro</h2>
+    <p>
+      La minería ilegal en el Chocó, el Bajo Cauca y zonas del Amazonas ha provocado un desastre ecológico masivo. El uso indiscriminado de **mercurio** y cianuro para separar el oro del lodo contamina las fuentes de agua dulce de las que dependen las comunidades indígenas y afrodescendientes.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font">Impacto Crítico</h4>
+      <div class="chart-container">
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Deforestación asociada</span>
+            <span>Alta (~60.000 Ha/año)</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="85" style="background: #c0392b;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+
+  <template id="node-esmeraldas-muzo">
+    <div class="document-badge">Yacimiento Mineral</div>
+    <h2 class="title-font">Esmeraldas de Muzo</h2>
+    <p>
+      Muzo (Boyacá) es conocida mundialmente como la capital de las esmeraldas. Sus gemas verdes de origen sedimentario son catalogadas como las más puras y valiosas del mercado global.
+    </p>
+  </template>
+
+  <template id="node-nevado-del-ruiz">
+    <div class="document-badge" style="background: rgba(192,57,43,0.15); color: #c0392b;">Riesgo Geológico</div>
+    <h2 class="title-font">Nevado del Ruiz</h2>
+    <p>
+      Uno de los volcanes más activos del Cinturón de Fuego de los Andes. Su erupción en noviembre de 1985 provocó la trágica desaparición de la población de Armero debido al derretimiento de sus glaciares y la posterior avalancha de lodo (lahar).
+    </p>
+  </template>
+
+  <template id="node-ruina-teyuna">
+    <div class="document-badge">Arqueología</div>
+    <h2 class="title-font">Teyuna (Ciudad Perdida)</h2>
+    <p>
+      Construida en el año 800 d.C. por los Taironas, es uno de los monumentos líticos prehispánicos más importantes de América, redescubierto arqueológicamente en los años 70 en la Sierra Nevada.
+    </p>
+  </template>
+
+  <template id="node-misterio-chiribiquete">
+    <div class="document-badge">Patrimonio de la Humanidad</div>
+    <h2 class="title-font">Serranía de Chiribiquete</h2>
+    <p>
+      Chiribiquete resguarda tepuyes sagrados donde se han registrado miles de murales rupestres pintados con ocre por tribus nómadas desde hace más de 20.000 años. Representa una de las galerías de arte prehistórico más grandes del mundo.
+    </p>
+  </template>
+
+  <!-- Pie de página -->
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Geografía y Geología.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Datos sismológicos basados en el Servicio Geológico Colombiano y el Instituto Alexander von Humboldt.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  
+  <script>
+    // Inicializar capas del mapa
+    function toggleMapLayer(layerId) {
+      // Remover activos de botones
+      const buttons = document.querySelectorAll('.control-btn');
+      buttons.forEach(btn => btn.classList.remove('active'));
+      
+      // Encontrar el botón clickeado y marcarlo activo
+      const targetBtn = Array.from(buttons).find(btn => btn.textContent.toLowerCase().includes(layerId === 'base' ? 'regiones' : layerId));
+      if (targetBtn) targetBtn.classList.add('active');
+
+      // Ocultar todas las capas interactivas
+      const layers = document.querySelectorAll('.layer');
+      layers.forEach(lyr => lyr.classList.remove('active-layer'));
+
+      // Mostrar la capa elegida
+      if (layerId !== 'base') {
+        const targetLayer = document.getElementById('layer-' + layerId);
+        if (targetLayer) targetLayer.classList.add('active-layer');
+      }
+    }
+
+    // Funciones para abrir detalles de regiones y nodos
+    function openRegionDrawer(regionId) {
+      const template = document.getElementById('region-' + regionId);
+      triggerDrawerFromTemplate(template);
+    }
+
+    function openNodeDrawer(nodeId) {
+      const template = document.getElementById('node-' + nodeId);
+      triggerDrawerFromTemplate(template);
+    }
+
+    function triggerDrawerFromTemplate(template) {
+      const drawer = document.querySelector('.detail-drawer');
+      const drawerContent = drawer.querySelector('.drawer-content');
+      
+      if (template && drawer && drawerContent) {
+        drawerContent.innerHTML = '';
+        const clone = template.content.cloneNode(true);
+        drawerContent.appendChild(clone);
+        drawer.classList.add('open');
+
+        // Animar barras
+        setTimeout(() => {
+          const fills = drawerContent.querySelectorAll('.chart-bar-fill');
+          fills.forEach(fill => {
+            const width = fill.getAttribute('data-width');
+            fill.style.width = width + '%';
+          });
+        }, 150);
+      }
+    }
+  </script>
+</body>
+</html>

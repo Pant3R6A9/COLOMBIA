@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Culturas Prehispánicas - Colombia en el Tiempo</title>
+  <meta name="description" content="Catálogo completo de todas las culturas prehispánicas registradas en Colombia: Tumaco, Calima, Guane, Wayuu, San Agustín y más.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="precolombina">
+
+  <!-- Encabezado Común -->
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Épocas Históricas</button>
+        <div class="dropdown-content">
+          <a href="precolombina.html">Época Precolombina</a>
+          <a href="colonia.html">Conquista y Colonia</a>
+          <a href="independencia.html">Independencia y Grito</a>
+          <a href="siglo-xix.html">República (Siglo XIX)</a>
+          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
+          <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <div class="dropdown-content">
+          <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
+          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
+          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="otras-culturas.html">Catálogo de Culturas</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
+        Arqueología y Legado
+      </div>
+      <h1>Catálogo de Culturas Precolombinas</h1>
+      <p>Un inventario exhaustivo de las civilizaciones, sociedades y cacicazgos que habitaron el territorio colombiano antes del siglo XVI. Haz clic en las fichas para explorar sus costumbres, territorios y piezas de arte.</p>
+    </section>
+
+    <!-- Pestañas Geográficas -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="openTab(event, 'suroccidente')">Área Suroccidental</button>
+      <button class="tab-button" onclick="openTab(event, 'central')">Área Central y Magdalena</button>
+      <button class="tab-button" onclick="openTab(event, 'caribe-norte')">Área Norte y Caribe</button>
+    </div>
+
+    <!-- ==========================================
+         CONTENIDO DE PESTAÑAS
+         ========================================== -->
+
+    <!-- Área Suroccidental -->
+    <div id="suroccidente" class="tab-content active-content">
+      <div class="character-grid">
+        <!-- Tumaco -->
+        <div class="character-card" onclick="openCultureDrawer('tumaco')" style="cursor: pointer;">
+          <h3>Tumaco-La Tolita</h3>
+          <div class="character-role">Costas de Nariño y Ecuador</div>
+          <p>
+            Destacados por su arte cerámico realista, representaciones de rostros humanos con deformaciones cefálicas y su sofisticada metalurgia del platino, lograda siglos antes que en Europa.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+
+        <!-- Calima -->
+        <div class="character-card" onclick="openCultureDrawer('calima')" style="cursor: pointer;">
+          <h3>Cultura Calima</h3>
+          <div class="character-role">Valle del Cauca</div>
+          <p>
+            Una de las tradiciones de orfebrería de oro más ricas de América, caracterizada por sus grandes pectorales repujados, narigueras gigantescas y alfileres con remates escultóricos.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+
+        <!-- San Agustín -->
+        <div class="character-card" onclick="openCultureDrawer('sanagustin')" style="cursor: pointer;">
+          <h3>San Agustín</h3>
+          <div class="character-role">Alto Magdalena (Huila)</div>
+          <p>
+            Milenaria cultura famosa por sus cientos de estatuas de piedra tallada (monolitos) con rasgos antropomorfos y felinos, asociadas a complejos santuarios funerarios.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+
+        <!-- Tierradentro -->
+        <div class="character-card" onclick="openCultureDrawer('tierradentro')" style="cursor: pointer;">
+          <h3>Tierradentro</h3>
+          <div class="character-role">Montañas del Cauca</div>
+          <p>
+            Conocida por sus hipogeos: monumentales tumbas colectivas subterráneas excavadas en la roca, con techos y columnas decorados con pinturas geométricas rojas y negras.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Área Central -->
+    <div id="central" class="tab-content">
+      <div class="character-grid">
+        <!-- Guanes -->
+        <div class="character-card" onclick="openCultureDrawer('guanes')" style="cursor: pointer;">
+          <h3>Los Guanes</h3>
+          <div class="character-role">Santander</div>
+          <p>
+            Pueblo de agricultores y tejedores asentados en el cañón del Chicamocha. Destacaron por sus finas mantas de algodón pintadas y la conservación de momias en cuevas.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+
+        <!-- Pijaos -->
+        <div class="character-card" onclick="openCultureDrawer('pijaos')" style="cursor: pointer;">
+          <h3>Los Pijaos</h3>
+          <div class="character-role">Tolima y Huila</div>
+          <p>
+            Federación guerrera que ofreció una de las resistencias más feroces del continente contra la conquista española, dominando las cordilleras con guerra de guerrillas.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+
+        <!-- Malagana -->
+        <div class="character-card" onclick="openCultureDrawer('malagana')" style="cursor: pointer;">
+          <h3>Cultura Malagana</h3>
+          <div class="character-role">Valle del Cauca</div>
+          <p>
+            Descubrimiento arqueológico reciente (1992). Reveló un estilo de orfebrería de oro pulido liso y máscaras funerarias de gran realismo y dimensiones.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Área Norte -->
+    <div id="caribe-norte" class="tab-content">
+      <div class="character-grid">
+        <!-- Wayuu -->
+        <div class="character-card" onclick="openCultureDrawer('wayuu')" style="cursor: pointer;">
+          <h3>Los Wayuu</h3>
+          <div class="character-role">La Guajira</div>
+          <p>
+            Pueblo nómada que nunca fue sometido militarmente por la corona española, manteniendo su lengua, sus clanes matrilineales y su control sobre el desierto guajiro.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+
+        <!-- Chimilas -->
+        <div class="character-card" onclick="openCultureDrawer('chimilas')" style="cursor: pointer;">
+          <h3>Los Chimilas</h3>
+          <div class="character-role">Valles del Magdalena y Cesar</div>
+          <p>
+            Grandes cazadores y recolectores del Caribe que defendieron sus tierras boscosas contra las expediciones de fundación costeras durante siglos.
+          </p>
+          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+  <template id="cult-tumaco">
+    <div class="document-badge">Tumaco-La Tolita</div>
+    <h2 class="title-font">Arte Cerámico y Platino</h2>
+    <p>
+      Asentados en la frontera de Colombia y Ecuador, los artesanos de Tumaco plasmaron con gran fidelidad la vida cotidiana, enfermedades (como el labio leporino y el bocio), retratos y la vejez en arcilla. 
+    </p>
+    <p>
+      Fueron pioneros globales en fundir el **platino** mezclándolo con oro a través de la sinterización, una hazaña metalúrgica notable dada la altísima temperatura de fusión del platino (1768 °C).
+    </p>
+  </template>
+
+  <template id="cult-calima">
+    <div class="document-badge">Cultura Calima</div>
+    <h2 class="title-font">Los Señores del Oro</h2>
+    <p>
+      El territorio Calima comprende tres fases culturales sucesivas: **Ilama, Yotoco y Sonso**. Sus caciques eran enterrados con imponentes ajuares de oro de tumbaga repujada, incluyendo narigueras colgantes y máscaras ceremoniales destinadas a transformar el rostro del gobernante en una deidad solar.
+    </p>
+  </template>
+
+  <template id="cult-sanagustin">
+    <div class="document-badge">San Agustín</div>
+    <h2 class="title-font">Monolitos y Tumbas</h2>
+    <p>
+      La estatuaria de San Agustín esculpió monolitos de piedra volcánica representando guerreros con armas de piedra, jaguares y chamanes en estado de trance (ojos almendrados y colmillos de jaguar cruzados). Sus hipogeos y dólmenes Funerarios marcaban tumbas de jefes políticos sagrados.
+    </p>
+  </template>
+
+  <template id="cult-tierradentro">
+    <div class="document-badge">Tierradentro</div>
+    <h2 class="title-font">Hipogeos Subterráneos</h2>
+    <p>
+      Las tumbas colectivas de Tierradentro son templos excavados bajo la tierra, sostenidos por pilares tallados y decorados con rombos, espirales y figuras geométricas pintadas con tintes minerales rojos y negros.
+    </p>
+  </template>
+
+  <template id="cult-guanes">
+    <div class="document-badge">Los Guanes</div>
+    <h2 class="title-font">Tejeduría y Momias</h2>
+    <p>
+      Los Guanes eran famosos por cultivar algodón y producir textiles decorados con motivos geométricos y zoomorfos. Momificaban a sus caciques colocándolos en posición fetal envueltos en mantas dentro de cuevas secas del cañón del Chicamocha.
+    </p>
+  </template>
+
+  <!-- Script de Pestañas y Drawer -->
+  <script>
+    function openTab(evt, tabName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tab-content");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active-content");
+      }
+      tablinks = document.getElementsByClassName("tab-button");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].classList.remove("active");
+      }
+      document.getElementById(tabName).classList.add("active-content");
+      evt.currentTarget.classList.add("active");
+    }
+
+    function openCultureDrawer(cultureId) {
+      const template = document.getElementById('cult-' + cultureId);
+      const drawer = document.querySelector('.detail-drawer');
+      const drawerContent = drawer.querySelector('.drawer-content');
+      
+      if (template && drawer && drawerContent) {
+        drawerContent.innerHTML = '';
+        const clone = template.content.cloneNode(true);
+        drawerContent.appendChild(clone);
+        drawer.classList.add('open');
+      }
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Catálogo de Culturas Precolombinas.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Los acervos arqueológicos se encuentran custodiados en el Museo del Oro y el Instituto Colombiano de Antropología e Historia (ICANH).
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

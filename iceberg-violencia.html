@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Iceberg de la Violencia - Colombia en el Tiempo</title>
+  <meta name="description" content="Visualización interactiva tipo iceberg sobre los niveles e hitos del conflicto y la violencia histórica de Colombia.">
+  
+  <link rel="stylesheet" href="css/style.css">
+  
+  <style>
+    /* Estilos premium para el Iceberg */
+    .iceberg-container {
+      display: flex;
+      flex-direction: column;
+      margin-top: 3rem;
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    }
+    
+    .iceberg-level {
+      padding: 3rem 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+    
+    .iceberg-level::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 10%;
+      width: 80%;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-card), transparent);
+    }
+    
+    /* Colores degradados que representan el descenso al abismo */
+    .level-1 {
+      background: linear-gradient(180deg, #1b263b 0%, #0d1b2a 100%);
+      color: #e0e1dd;
+    }
+    
+    .level-2 {
+      background: linear-gradient(180deg, #0d1b2a 0%, #08121e 100%);
+      color: #e0e1dd;
+    }
+    
+    .level-3 {
+      background: linear-gradient(180deg, #08121e 0%, #040911 100%);
+      color: #a9b2c3;
+    }
+    
+    .level-4 {
+      background: linear-gradient(180deg, #040911 0%, #010305 100%);
+      color: #7d8597;
+    }
+    
+    .level-depth {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      font-weight: 800;
+    }
+    
+    .level-title {
+      font-family: var(--font-title);
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-primary);
+    }
+    
+    .iceberg-topics {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      max-width: 900px;
+    }
+    
+    .topic-badge {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-card);
+      padding: 0.6rem 1.25rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--text-primary);
+      cursor: pointer;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+    
+    .topic-badge:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      background: rgba(var(--accent-rgb), 0.05);
+      transform: scale(1.05);
+    }
+  </style>
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body data-theme="precolombina">
+
+  <!-- Encabezado Común -->
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Épocas Históricas</button>
+        <div class="dropdown-content">
+          <a href="precolombina.html">Época Precolombina</a>
+          <a href="colonia.html">Conquista y Colonia</a>
+          <a href="independencia.html">Independencia y Grito</a>
+          <a href="siglo-xix.html">República (Siglo XIX)</a>
+          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
+          <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <div class="dropdown-content">
+          <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
+          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
+          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="otras-culturas.html">Catálogo de Culturas</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">
+        Análisis Histórico y Memoria
+      </div>
+      <h1>El Iceberg de la Violencia</h1>
+      <p>Una visualización analítica que desciende desde los conflictos del s. XXI hasta las raíces coloniales y prehispánicas más profundas de la violencia en nuestro territorio. Haz clic en las tarjetas de cada nivel.</p>
+    </section>
+
+    <!-- El Iceberg Interactivo -->
+    <div class="iceberg-container">
+      
+      <!-- Nivel 1 -->
+      <div class="iceberg-level level-1">
+        <div class="level-depth">Nivel 1: La Superficie (Conocido)</div>
+        <h2 class="level-title">Conflictos del s. XXI y Fin del s. XX</h2>
+        <div class="iceberg-topics">
+          <div class="topic-badge" onclick="openIcebergDrawer('acuerdo2016')">Acuerdo de Paz de 2016</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('carteles')">Guerra de Carteles y Pablo Escobar</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('constitucion1991')">Constitución de 1991 y Desmovilizaciones</div>
+        </div>
+      </div>
+
+      <!-- Nivel 2 -->
+      <div class="iceberg-level level-2">
+        <div class="level-depth">Nivel 2: Bajo el Agua (Poco Profundo)</div>
+        <h2 class="level-title">Bipartidismo y Lucha Agraria</h2>
+        <div class="iceberg-topics">
+          <div class="topic-badge" onclick="openIcebergDrawer('frentenacional')">El Frente Nacional (1958-1974)</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('laviolencia')">"La Violencia" Bipartidista (años 50)</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('bogotazo')">Asesinato de Gaitán y Bogotazo</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('bananeras')">La Masacre de las Bananeras (1928)</div>
+        </div>
+      </div>
+
+      <!-- Nivel 3 -->
+      <div class="iceberg-level level-3">
+        <div class="level-depth">Nivel 3: Aguas Profundas (Olvidado)</div>
+        <h2 class="level-title">Las Guerras de Constitución del s. XIX</h2>
+        <div class="iceberg-topics">
+          <div class="topic-badge" onclick="openIcebergDrawer('mildiases')">La Guerra de los Mil Días (1899-1902)</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('panama')">La Secesión y Venta de Panamá</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('guerrasciviles')">Las 9 Guerras Civiles Federalistas</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('conspiracion')">La Conspiración Septembrina (1828)</div>
+        </div>
+      </div>
+
+      <!-- Nivel 4 -->
+      <div class="iceberg-level level-4">
+        <div class="level-depth">Nivel 4: El Abismo (La Fosa Oculta)</div>
+        <h2 class="level-title">Violencia Fundacional y Virreinal</h2>
+        <div class="iceberg-topics">
+          <div class="topic-badge" onclick="openIcebergDrawer('terror')">El Régimen del Terror de Morillo</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('galan')">Descuartizamiento de José Antonio Galán (1782)</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('conquista')">Colapso Demográfico de la Conquista</div>
+          <div class="topic-badge" onclick="openIcebergDrawer('aquiminzaque')">Ejecución del Zaque Aquiminzaque (1540)</div>
+        </div>
+      </div>
+
+    </div>
+
+  </main>
+
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS (TEMPLATES)
+       ========================================== -->
+  <template id="ice-acuerdo2016">
+    <div class="document-badge" style="background: rgba(46,134,193,0.15); color: #2e86c1;">Nivel 1: Superficie</div>
+    <h2 class="title-font">Acuerdo de Paz de 2016</h2>
+    <p>
+      El desarme y desmovilización de las FARC-EP tras cuatro años de diálogos en La Habana. Abrió paso a la justicia transicional (JEP) y a la recopilación institucional del despojo de tierras.
+    </p>
+  </template>
+
+  <template id="ice-carteles">
+    <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">Nivel 1: Superficie</div>
+    <h2 class="title-font">Narcoterrorismo de Fin de Siglo</h2>
+    <p>
+      La violenta ofensiva de los carteles de Medellín (liderado por Pablo Escobar) y Cali contra el Estado para evitar la extradición. Caracterizado por atentados con carros bomba, magnicidios políticos (Luis Carlos Galán) y la voladura del avión de Avianca.
+    </p>
+  </template>
+
+  <template id="ice-bananeras">
+    <div class="document-badge" style="background: rgba(243,156,18,0.15); color: #f39c12;">Nivel 2: Bajo el Agua</div>
+    <h2 class="title-font">Masacre de las Bananeras (1928)</h2>
+    <p>
+      La huelga de trabajadores de la United Fruit Company reprimida sangrientamente por el ejército nacional en la estación de Ciénaga, Magdalena. El número de víctimas fatales osciló entre cifras oficiales bajas y estimados diplomáticos de más de 1.000 fallecidos.
+    </p>
+  </template>
+
+  <template id="ice-galan">
+    <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">Nivel 4: El Abismo</div>
+    <h2 class="title-font">Traición y Descuartizamiento</h2>
+    <p>
+      Tras liderar la Rebelión de los Comuneros en 1781, José Antonio Galán fue traicionado por las autoridades coloniales. Sentenciado a ser ahorcado y descuartizado en Bogotá (1782), sus miembros fueron expuestos en jaulas de hierro en las plazas públicas de las ciudades del Socorro, San Gil y Charalá como escarmiento.
+    </p>
+  </template>
+
+  <template id="ice-aquiminzaque">
+    <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">Nivel 4: El Abismo</div>
+    <h2 class="title-font">Muerte del último Zaque</h2>
+    <p>
+      Aquiminzaque, el legítimo líder soberano de Hunza, inicialmente toleró la presencia de los españoles. Sin embargo, ante el peligro de un levantamiento general de sus guerreros, fue decapitado públicamente en la plaza de Tunja en 1540 por orden de Hernán Pérez de Quesada, extinguiendo la dinastía espiritual muisca de Boyacá.
+    </p>
+  </template>
+
+  <script>
+    function openIcebergDrawer(topicId) {
+      const template = document.getElementById('ice-' + topicId);
+      const drawer = document.querySelector('.detail-drawer');
+      const drawerContent = drawer.querySelector('.drawer-content');
+      
+      if (template && drawer && drawerContent) {
+        drawerContent.innerHTML = '';
+        const clone = template.content.cloneNode(true);
+        drawerContent.appendChild(clone);
+        drawer.classList.add('open');
+      }
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. El Iceberg de la Violencia.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
+      Los acervos recopilados pertenecen a los registros del Centro Nacional de Memoria Histórica y la Comisión de la Verdad.
+    </p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
