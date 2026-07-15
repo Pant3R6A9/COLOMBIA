@@ -152,9 +152,11 @@
     
     /* Color base de los departamentos */
     svg#mapa-real-colombia path.departamento {
-      transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), fill 0.3s ease, stroke 0.3s ease;
+      /* Transiciones suaves y eficientes por hardware */
+      transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), fill 0.25s ease, stroke 0.25s ease;
       cursor: pointer;
       pointer-events: auto !important; /* Asegurar que escuchen los eventos del mouse */
+      transform-origin: center center;
     }
     
     /* OPTIMIZACIÓN CRÍTICA: Desactivar eventos de mouse en todos los paths que NO sean departamentos */
@@ -171,13 +173,13 @@
       pointer-events: auto !important;
     }
     
-    /* EFECTO SALTAR DEPARTAMENTO (POP OUT EN LUGAR DE ZOOM DE CÁMARA COMPLETO) */
+    /* EFECTO DE SALTO (POP OUT) 100% EFICIENTE - SIN MUTACIÓN DE DOM */
     svg#mapa-real-colombia path.departamento.active-highlight {
-      transform: scale(1.08) !important;
+      transform: scale(1.05) !important;
       stroke: var(--accent) !important;
-      stroke-width: 2px !important;
+      stroke-width: 2.5px !important;
       fill-opacity: 0.95 !important;
-      filter: drop-shadow(0 0 12px rgba(var(--accent-rgb), 0.6)) !important;
+      filter: drop-shadow(0 0 10px rgba(var(--accent-rgb), 0.5)) !important;
     }
     
     /* 1. Región Andina (Naranja/Terracota sutil) */
@@ -568,7 +570,7 @@
             
             // EFECTO DE SALTO (POP OUT) Y NOMBRE EN HOVER DEL DEPARTAMENTO
             path.addEventListener('mouseenter', () => {
-              // 1. Destacar departamento (salto)
+              // 1. Destacar departamento (salto) - SIN MUTACIÓN DE DOM (appendChild eliminado para máxima eficiencia)
               highlightDept(path);
               
               // 2. Mostrar barra informativa
@@ -639,7 +641,7 @@
         svg.appendChild(gMarkers);
       });
 
-    // Funciones para aplicar el salto (Pop Out) a nivel de escala y sombra de un departamento específico
+    // Funciones para aplicar el salto (Pop Out) de manera pura en CSS
     function highlightDept(path) {
       const cx = path.getAttribute('data-center-x');
       const cy = path.getAttribute('data-center-y');
@@ -647,8 +649,6 @@
         path.style.transformOrigin = `${cx}px ${cy}px`;
       }
       path.classList.add('active-highlight');
-      // Traer el departamento al frente del orden de renderizado para evitar que las líneas vecinas lo corten
-      path.parentElement.appendChild(path);
     }
     
     function unhighlightDept(path) {
