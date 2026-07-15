@@ -140,6 +140,21 @@
     svg#mapa-real-colombia path.departamento {
       transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
       cursor: pointer;
+      pointer-events: auto !important; /* Asegurar que escuchen los eventos del mouse */
+    }
+    
+    /* OPTIMIZACIÓN CRÍTICA: Desactivar eventos de mouse en todos los paths que NO sean departamentos */
+    svg#mapa-real-colombia path:not(.departamento) {
+      pointer-events: none !important;
+    }
+    svg#mapa-real-colombia g {
+      pointer-events: none !important; /* Desactivar eventos de grupos completos (textos, ríos) */
+    }
+    svg#mapa-real-colombia #city-markers-group {
+      pointer-events: auto !important; /* Pero mantener activos los marcadores de ciudades */
+    }
+    svg#mapa-real-colombia #city-markers-group circle {
+      pointer-events: auto !important;
     }
     
     /* 1. Región Andina (Naranja/Terracota sutil) */
@@ -206,14 +221,6 @@
     svg#mapa-real-colombia path.departamento.region-Insular:hover {
       fill: rgba(155, 89, 182, 0.4) !important;
       stroke: #9b59b6 !important;
-    }
-    
-    /* CORRECCIÓN CRÍTICA: Ocultar los textos vectorizados originales que saturan y no tienen contraste */
-    svg#mapa-real-colombia g[id^="flowRoot"] {
-      display: none !important;
-    }
-    svg#mapa-real-colombia text {
-      display: none !important;
     }
     
     /* Ríos principales en azul sutil */
@@ -474,6 +481,15 @@
           circle.setAttribute('class', 'city-marker');
           circle.setAttribute('id', 'marker-' + city.id);
           circle.setAttribute('onclick', `selectCity('${city.id}', true)`);
+          
+          // Hover especial en el marcador para que no borre la información del departamento en la barra
+          circle.addEventListener('mouseenter', () => {
+            document.getElementById('map-info-bar').innerHTML = 
+              `<span class="active-dept">${city.department}</span> (${city.region}) — Capital: ${city.name}`;
+          });
+          circle.addEventListener('mouseleave', () => {
+            document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+          });
           
           // Crear un título nativo (Tooltip) para que muestre el nombre solo al posar el mouse
           const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');

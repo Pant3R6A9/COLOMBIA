@@ -90,6 +90,23 @@
     svg#mapa-real-colombia path.departamento {
       transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
       cursor: pointer;
+      pointer-events: auto !important; /* Habilitar mouse en departamentos */
+    }
+    
+    /* OPTIMIZACIÓN CRÍTICA SÍSMICA Y MINERAL: Evitar que ríos, límites y letras capturen el mouse */
+    svg#mapa-real-colombia path:not(.departamento) {
+      pointer-events: none !important;
+    }
+    svg#mapa-real-colombia g {
+      pointer-events: none !important; /* Bloquear grupos por defecto */
+    }
+    svg#mapa-real-colombia .map-overlay-group {
+      pointer-events: auto !important; /* Habilitar interacción en las capas activas */
+    }
+    svg#mapa-real-colombia .map-overlay-group path,
+    svg#mapa-real-colombia .map-overlay-group circle,
+    svg#mapa-real-colombia .map-overlay-group polygon {
+      pointer-events: auto !important; /* Habilitar mouse en volcanes, ruinas y esmeraldas */
     }
     
     svg#mapa-real-colombia path.departamento.region-Andina {
@@ -150,14 +167,6 @@
     svg#mapa-real-colombia path.departamento.region-Insular:hover {
       fill: rgba(155, 89, 182, 0.4) !important;
       stroke: #9b59b6 !important;
-    }
-    
-    /* CORRECCIÓN CRÍTICA: Ocultar los textos vectorizados originales para evitar saturación y contrastes rotos */
-    svg#mapa-real-colombia g[id^="flowRoot"] {
-      display: none !important;
-    }
-    svg#mapa-real-colombia text {
-      display: none !important;
     }
     
     /* Capas Interactivas */
