@@ -127,13 +127,25 @@
     /* ==========================================================
        DISEÑO DE MAPA REGIONAL PREMIUM CON CONTRASTE E INTERACTIVIDAD
        ========================================================== */
+    #map-container {
+      overflow: hidden; /* Recortar el zoom de cámara dentro del contenedor */
+      border-radius: 6px;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #0d0f12;
+    }
+
     svg#mapa-real-colombia {
       background: #0d0f12;
-      border-radius: 6px;
       max-height: 72vh; /* Altura máxima estricta para que quepa entero en pantalla sin recortarse */
       width: 100%;
       height: auto;
       display: block;
+      /* Animación suave para el efecto de zoom del lente de cámara */
+      transition: transform 0.5s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transform-origin: center center;
     }
     
     /* Color base de los departamentos */
@@ -261,6 +273,23 @@
       stroke-width: 2;
     }
 
+    /* Etiqueta flotante del nombre de la ciudad activa (Limpio, dinámico) */
+    #active-city-label {
+      pointer-events: none; /* Evita bloquear interacciones del mouse */
+      font-family: var(--font-title);
+      font-size: 13px;
+      font-weight: bold;
+      fill: #ffffff;
+      text-transform: uppercase;
+      filter: drop-shadow(0 0 4px #000) drop-shadow(0 0 2px #000);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    #active-city-label.visible {
+      opacity: 1;
+    }
+
     /* Etiqueta interactiva flotante de información del mapa */
     .map-info-bar {
       margin-top: 1rem;
@@ -341,7 +370,7 @@
         Toponimia y Territorio
       </div>
       <h1>Las 32 Ciudades y Regiones</h1>
-      <p>Un recorrido por el origen y la memoria histórica de las 32 capitales de Colombia. Selecciona una ciudad de la lista para localizarla en el mapa real, o haz clic directamente en el mapa.</p>
+      <p>Un recorrido por el origen y la memoria histórica de las 32 capitales de Colombia. Pasa el cursor sobre los nodos del mapa para hacer zoom exacto y ver sus nombres históricos.</p>
     </section>
 
     <!-- Layout dividido -->
@@ -360,7 +389,7 @@
         <h3 class="title-font" style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary); text-transform: uppercase;">
           Mapa Real de Colombia
         </h3>
-        <div id="map-container" style="width: 100%; position: relative; display: flex; justify-content: center; align-items: center;">
+        <div id="map-container">
           <!-- Aquí se inyecta el SVG del mapa con JS -->
         </div>
         <!-- Barra de información dinámica para evitar saturar de texto el mapa -->
@@ -432,6 +461,11 @@
         svg.style.height = '100%';
         svg.style.display = 'block';
         
+        // Crear elemento único de texto para la ciudad activa
+        const activeLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+        activeLabel.setAttribute('id', 'active-city-label');
+        svg.appendChild(activeLabel);
+        
         // Clasificar dinámicamente cada path de departamento en su región natural e inyectar toponimia de hover
         const paths = svg.querySelectorAll('path.departamento');
         citiesData.forEach(city => {
@@ -473,7 +507,7 @@
         gMarkers.setAttribute('id', 'city-markers-group');
         
         citiesData.forEach(city => {
-          // Crear círculo marcador limpio (sin textos estáticos que saturen el mapa)
+          // Crear círculo marcador limpio
           const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
           circle.setAttribute('cx', city.x);
           circle.setAttribute('cy', city.y);
@@ -482,19 +516,35 @@
           circle.setAttribute('id', 'marker-' + city.id);
           circle.setAttribute('onclick', `selectCity('${city.id}', true)`);
           
-          // Hover especial en el marcador para que no borre la información del departamento en la barra
+          // EFECO INTERACTIVO AVANZADO: ZOOM DE LENTE DE CÁMARA Y APARICIÓN DE TEXTO
           circle.addEventListener('mouseenter', () => {
+            // 1. Mostrar barra informativa
             document.getElementById('map-info-bar').innerHTML = 
               `<span class="active-dept">${city.department}</span> (${city.region}) — Capital: ${city.name}`;
-          });
-          circle.addEventListener('mouseleave', () => {
-            document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+            
+            // 2. Aplicar zoom centrado exactamente en la ciudad
+            const pctX = (city.x / 735) * 100;
+            const pctY = (city.y / 940) * 100;
+            svg.style.transformOrigin = `${pctX}% ${pctY}%`;
+            svg.style.transform = "scale(2.4)";
+            
+            // 3. Renderizar y mostrar el texto flotante de la ciudad
+            activeLabel.setAttribute('x', city.x);
+            activeLabel.setAttribute('y', city.y - 12);
+            activeLabel.setAttribute('text-anchor', 'middle');
+            activeLabel.textContent = `${city.name} (${city.originalName})`;
+            activeLabel.classList.add('visible');
           });
           
-          // Crear un título nativo (Tooltip) para que muestre el nombre solo al posar el mouse
-          const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-          title.textContent = `${city.name} (${city.originalName})`;
-          circle.appendChild(title);
+          circle.addEventListener('mouseleave', () => {
+            document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+            
+            // 1. Resetear el zoom
+            svg.style.transform = "scale(1)";
+            
+            // 2. Ocultar y limpiar el texto flotante
+            activeLabel.classList.remove('visible');
+          });
           
           gMarkers.appendChild(circle);
         });
