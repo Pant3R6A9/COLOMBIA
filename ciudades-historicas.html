@@ -235,6 +235,14 @@
       stroke: #9b59b6 !important;
     }
     
+    /* CORRECCIÓN CRÍTICA: Ocultar los textos vectorizados originales que saturan y no tienen contraste */
+    svg#mapa-real-colombia g[id^="flowRoot"] {
+      display: none !important;
+    }
+    svg#mapa-real-colombia text {
+      display: none !important;
+    }
+    
     /* Ríos principales en azul sutil */
     svg#mapa-real-colombia g[inkscape:label="Ríos principales"] path {
       stroke: #2e86de !important;
@@ -431,7 +439,7 @@
       { id: "yopal", name: "Yopal", originalName: "El Yopo", department: "Casanare", x: 440, y: 400, region: "Orinoquía", date: "1915", desc: "Llamada así por la abundancia del árbol de Yopo, cuyas semillas eran inhaladas ritualmente por indígenas." },
       { id: "arauca", name: "Arauca", originalName: "Guahibo / Betoye", department: "Arauca", x: 490, y: 305, region: "Orinoquía", date: "1780", desc: "Tierra de pastores y llaneros en los límites con el río Arauca." },
       { id: "mitu", name: "Mitú", originalName: "Vaupés / Cubeo", department: "Vaupés", x: 560, y: 630, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
-      { id: "inirida", name: "Inírida", originalName: "Guainía", department: "Guainía", x: 615, y: 510, region: "Amazonía", date: "1963", desc: "Tierra bañada por majestuosos ríos de aguas negras en el oriente." },
+      { id: "inirida", name: "Inírida", originalName: "Guainía", department: "Guainía", x: 615, y: 510, region: "Amazonía", date: "1963", desc: "Tierra de transición fluvial en el oriente del país." },
       { id: "puertocarreno", name: "Puerto Carreño", originalName: "Orinoco / Guahibo", department: "Vichada", x: 640, y: 305, region: "Orinoquía", date: "1913", desc: "Ubicada en la confluencia de los colosales ríos Meta y Orinoco." },
       { id: "mocoa", name: "Mocoa", originalName: "Putumayo", department: "Putumayo", x: 220, y: 575, region: "Andina", date: "1563", desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico." },
       { id: "florencia", name: "Florencia", originalName: "La Perdiz", department: "Caquetá", x: 305, y: 565, region: "Amazonía", date: "1902", desc: "Nacida como puerto de extracción de caucho a inicios del siglo XX." },
@@ -466,40 +474,56 @@
         activeLabel.setAttribute('id', 'active-city-label');
         svg.appendChild(activeLabel);
         
-        // Clasificar dinámicamente cada path de departamento en su región natural e inyectar toponimia de hover
+        // Clasificación robusta de departamentos usando bounding box local y distancia a capital
         const paths = svg.querySelectorAll('path.departamento');
-        citiesData.forEach(city => {
-          const point = svg.createSVGPoint();
-          point.x = city.x;
-          point.y = city.y;
+        paths.forEach(path => {
+          const bbox = path.getBBox();
+          const localCenter = svg.createSVGPoint();
+          localCenter.x = bbox.x + bbox.width / 2;
+          localCenter.y = bbox.y + bbox.height / 2;
           
-          paths.forEach(path => {
-            if (path.isPointInFill(point)) {
-              const cleanRegion = city.region.split(' ')[0];
-              path.classList.add('region-' + cleanRegion);
-              path.setAttribute('data-dept', city.department);
-              path.setAttribute('data-region', city.region);
-              
-              // Inyectar tooltip nativo de departamento
-              const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-              title.textContent = `Departamento de ${city.department}`;
-              path.appendChild(title);
-              
-              // Agregar listeners para la barra de información dinámica
-              path.addEventListener('mouseenter', () => {
-                document.getElementById('map-info-bar').innerHTML = 
-                  `<span class="active-dept">${city.department}</span> (${city.region})`;
-              });
-              path.addEventListener('mouseleave', () => {
-                document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
-              });
-              
-              // Permitir hacer clic en el departamento entero para abrir la ficha de la ciudad capital
-              path.addEventListener('click', () => {
-                selectCity(city.id, true);
-              });
+          // Aplicar la matriz de transformación del grupo padre para obtener coordenadas SVG absolutas
+          const ctm = path.getCTM();
+          const absCenter = localCenter.matrixTransform(ctm);
+          
+          // Encontrar la ciudad capital más cercana a este centro geométrico absoluto
+          let closestCity = null;
+          let minDist = Infinity;
+          citiesData.forEach(city => {
+            const dist = Math.hypot(city.x - absCenter.x, city.y - absCenter.y);
+            if (dist < minDist) {
+              minDist = dist;
+              closestCity = city;
             }
           });
+          
+          if (closestCity) {
+            // Asignar los atributos correspondientes de forma unívoca 1-a-1
+            const cleanRegion = closestCity.region.split(' ')[0];
+            path.classList.add('region-' + cleanRegion);
+            path.setAttribute('data-dept', closestCity.department);
+            path.setAttribute('data-region', closestCity.region);
+            path.setAttribute('data-city-id', closestCity.id);
+            
+            // Inyectar tooltip nativo de departamento
+            const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+            title.textContent = `Departamento de ${closestCity.department}`;
+            path.appendChild(title);
+            
+            // Agregar listeners para la barra de información dinámica
+            path.addEventListener('mouseenter', () => {
+              document.getElementById('map-info-bar').innerHTML = 
+                `<span class="active-dept">${closestCity.department}</span> (${closestCity.region})`;
+            });
+            path.addEventListener('mouseleave', () => {
+              document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+            });
+            
+            // Permitir hacer clic en el departamento entero para abrir la ficha de la ciudad capital
+            path.addEventListener('click', () => {
+              selectCity(closestCity.id, true);
+            });
+          }
         });
         
         // Crear grupo de marcadores
