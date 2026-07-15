@@ -3,22 +3,46 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ciudades Históricas y Municipios - Colombia en el Tiempo</title>
-  <meta name="description" content="Historia de las ciudades y municipios más importantes de Colombia, sus orígenes coloniales y sus nombres prehispánicos originales.">
+  <title>Ciudades y Municipios Históricos - Colombia en el Tiempo</title>
+  <meta name="description" content="Mapa y catálogo interactivo de las 32 capitales y regiones de Colombia, sus nombres prehispánicos originales e historia.">
   
   <link rel="stylesheet" href="css/style.css?v=1.2">
   
   <style>
-    /* Estilos específicos para la sección de ciudades */
-    .search-container {
-      margin-bottom: 2rem;
+    /* Estilos específicos para la sección de 32 ciudades con mapa */
+    .cities-layout {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 3rem;
+      align-items: start;
+      margin-top: 2rem;
+    }
+    
+    .list-side {
       display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      max-height: 800px;
+      overflow-y: auto;
+      padding-right: 1rem;
+      border-right: 1px solid var(--border-card);
+    }
+    
+    .map-side {
+      position: sticky;
+      top: 100px;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
       justify-content: center;
     }
     
     .search-input {
       width: 100%;
-      max-width: 600px;
       padding: 1rem 1.5rem;
       background: rgba(255, 255, 255, 0.05);
       border: 1px solid var(--border-card);
@@ -28,6 +52,7 @@
       outline: none;
       transition: all 0.3s ease;
       font-family: var(--font-body);
+      margin-bottom: 1rem;
     }
     
     .search-input:focus {
@@ -36,20 +61,15 @@
       box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.15);
     }
     
-    .city-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-    
     .city-card {
       background: var(--bg-card);
       border: 1px solid var(--border-card);
       border-radius: 8px;
-      padding: 2rem;
+      padding: 1.5rem;
       transition: all 0.3s ease;
       position: relative;
       overflow: hidden;
+      cursor: pointer;
     }
     
     .city-card::before {
@@ -59,30 +79,33 @@
       left: 0;
       width: 4px;
       height: 100%;
-      background: var(--accent);
-      opacity: 0.7;
+      background: var(--text-secondary);
+      transition: background 0.3s ease;
     }
     
-    .city-card:hover {
-      transform: translateY(-5px);
+    .city-card.selected-card::before {
+      background: var(--accent);
+    }
+    
+    .city-card.selected-card {
       border-color: var(--accent);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+      background: rgba(var(--accent-rgb), 0.03);
+      box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.1);
     }
     
     .city-names {
       display: flex;
       flex-direction: column;
-      margin-bottom: 1rem;
     }
     
     .city-current {
       font-family: var(--font-title);
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: var(--text-primary);
     }
     
     .city-original {
-      font-size: 0.85rem;
+      font-size: 0.8rem;
       color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.05em;
@@ -90,13 +113,66 @@
     }
     
     .city-meta {
-      font-size: 0.8rem;
+      font-size: 0.75rem;
       color: var(--text-secondary);
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
       display: flex;
       gap: 1rem;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-      padding-bottom: 0.5rem;
+    }
+    
+    /* Estilos del mapa y marcas */
+    svg#mapa-real-colombia path {
+      fill: rgba(255, 255, 255, 0.06);
+      stroke: rgba(255, 255, 255, 0.2);
+      stroke-width: 1;
+      transition: all 0.3s ease;
+    }
+    
+    svg#mapa-real-colombia path:hover {
+      fill: rgba(255, 255, 255, 0.12);
+    }
+    
+    /* Ciudad seleccionada en mapa */
+    .city-marker {
+      fill: var(--text-secondary);
+      stroke: #000;
+      stroke-width: 1;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .city-marker:hover, .city-marker.active-marker {
+      fill: var(--accent);
+      r: 8;
+      filter: drop-shadow(0 0 8px var(--accent));
+    }
+    
+    .city-label {
+      font-family: var(--font-title);
+      font-size: 8px;
+      fill: var(--text-secondary);
+      opacity: 0.6;
+      pointer-events: none;
+      transition: all 0.3s ease;
+    }
+    
+    .city-marker.active-marker + .city-label {
+      fill: var(--accent);
+      font-size: 10px;
+      font-weight: bold;
+      opacity: 1;
+    }
+    
+    @media (max-width: 900px) {
+      .cities-layout {
+        grid-template-columns: 1fr;
+      }
+      .list-side {
+        max-height: 500px;
+        border-right: none;
+        border-bottom: 1px solid var(--border-card);
+        padding-bottom: 2rem;
+      }
     }
   </style>
   <link rel="expect" href="#hero-section" blocking="render">
@@ -141,166 +217,218 @@
       <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
         Toponimia y Territorio
       </div>
-      <h1>Ciudades y Municipios Históricos</h1>
-      <p>Explora la historia y la etimología de las poblaciones colombianas. Descubre el origen de sus nombres coloniales y cómo eran llamadas originalmente por las culturas indígenas precolombinas.</p>
+      <h1>Las 32 Ciudades y Regiones</h1>
+      <p>Un recorrido por el origen y la memoria histórica de las 32 capitales de Colombia. Selecciona una ciudad de la lista para localizarla en el mapa real, o haz clic directamente en el mapa.</p>
     </section>
 
-    <!-- Buscador interactivo -->
-    <div class="search-container">
-      <input type="text" class="search-input" id="citySearch" placeholder="Buscar ciudad, municipio o nombre original..." onkeyup="filterCities()">
-    </div>
-
-    <!-- Grilla de Ciudades -->
-    <div class="city-grid" id="citiesList">
+    <!-- Layout dividido -->
+    <div class="cities-layout">
       
-      <!-- Bogotá -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Bacatá</span>
-          <span class="city-current">Bogotá</span>
+      <!-- Lado izquierdo: Buscador y Lista de 32 ciudades -->
+      <div>
+        <input type="text" class="search-input" id="citySearch" placeholder="Buscar por ciudad, región o nombre original..." onkeyup="filterCities()">
+        <div class="list-side" id="citiesList">
+          <!-- Se cargan dinámicamente mediante JS -->
         </div>
-        <div class="city-meta">
-          <span>Fundación: 1538</span>
-          <span>Región: Andina</span>
-        </div>
-        <p>
-          En el idioma muysccubun de los muiscas, *Bacatá* significaba *"cercado fuera de la labranza"*. Era la sede principal del Zipazgo. Los españoles fundaron la ciudad como *Nuestra Señora de la Esperanza*, que luego se convirtió en *Santafé de Bogotá*.
-        </p>
       </div>
-
-      <!-- Tunja -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Hunza</span>
-          <span class="city-current">Tunja</span>
+      
+      <!-- Lado derecho: Mapa SVG interactivo -->
+      <div class="map-side">
+        <h3 class="title-font" style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary); text-transform: uppercase;">
+          Mapa Real de Colombia
+        </h3>
+        <div id="map-container" style="width: 100%; position: relative;">
+          <!-- Aquí se inyecta el SVG del mapa con JS -->
         </div>
-        <div class="city-meta">
-          <span>Fundación: 1539</span>
-          <span>Región: Andina</span>
-        </div>
-        <p>
-          Era la capital de la Confederación Muisca del norte, gobernada por el zaque *Hunahúa*. De la palabra *Hunza* deriva el nombre de la ciudad actual. Fue rebautizada bajo la colonia como *Santiago de Tunja*.
-        </p>
-      </div>
-
-      <!-- Cali -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Lili / Valle del Lili</span>
-          <span class="city-current">Santiago de Cali</span>
-        </div>
-        <div class="city-meta">
-          <span>Fundación: 1536</span>
-          <span>Región: Pacífica / Valle</span>
-        </div>
-        <p>
-          La palabra *Cali* proviene del idioma de los indígenas Lili de la cuenca del río Cauca. Santiago fue asignada en honor al apóstol Santiago, el patrono de la expedición conquistadora española.
-        </p>
-      </div>
-
-      <!-- Medellín -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Valle de Aburrá</span>
-          <span class="city-current">Medellín</span>
-        </div>
-        <div class="city-meta">
-          <span>Fundación: 1675</span>
-          <span>Región: Andina</span>
-        </div>
-        <p>
-          Llamada originalmente *Valle de San Bartolomé* por los exploradores, ocupaba las tierras de los indígenas Aburráes. Recibió el nombre de *Medellín* en honor a la villa extremeña homónima, cuna de Hernán Cortés.
-        </p>
-      </div>
-
-      <!-- Cartagena -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Calamarí</span>
-          <span class="city-current">Cartagena de Indias</span>
-        </div>
-        <div class="city-meta">
-          <span>Fundación: 1533</span>
-          <span>Región: Caribe</span>
-        </div>
-        <p>
-          El poblado indígena original de la bahía pertenecía a la etnia caribe de los *Calamarí* (que significaba *"cangrejo"*). Recibió el nombre de *Cartagena de Indias* por la similitud física de su bahía con la de Cartagena en España.
-        </p>
-      </div>
-
-      <!-- Sogamoso -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Suamox</span>
-          <span class="city-current">Sogamoso</span>
-        </div>
-        <div class="city-meta">
-          <span>Fundación: 1537 (conquista)</span>
-          <span>Región: Andina</span>
-        </div>
-        <p>
-          Ciudad sagrada de los muiscas dedicada al culto al Sol y residencia del Sumo Sacerdote (Iracá). Su nombre original *Suamox* significa *"Morada del Sol"*. El Templo del Sol original fue quemado accidentalmente por soldados de Gonzalo Jiménez de Quesada.
-        </p>
-      </div>
-
-      <!-- Pasto -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Past Awá</span>
-          <span class="city-current">San Juan de Pasto</span>
-        </div>
-        <div class="city-meta">
-          <span>Fundación: 1537</span>
-          <span>Región: Andina / Suroeste</span>
-        </div>
-        <p>
-          Debe su nombre a la comunidad originaria de los *Pastos* (Past Awá), que significa *"Gente de la Tierra"*. Fundada por Lorenzo de Aldana como *Villaviciosa de la Concepción de Pasto*.
-        </p>
-      </div>
-
-      <!-- Mompox -->
-      <div class="city-card">
-        <div class="city-names">
-          <span class="city-original">Mompoj</span>
-          <span class="city-current">Santa Cruz de Mompox</span>
-        </div>
-        <div class="city-meta">
-          <span>Fundación: 1537</span>
-          <span>Región: Caribe / Río</span>
-        </div>
-        <p>
-          Toma su nombre del cacique *Mompoj*, líder soberano de las tribus del río Magdalena que gobernaba la isla. Fue un gran puerto mercante fluvial exento de piratería marítima durante la colonia.
-        </p>
       </div>
 
     </div>
 
   </main>
 
-  <script>
-    // Filtro interactivo de búsqueda
-    function filterCities() {
-      var input = document.getElementById('citySearch');
-      var filter = input.value.toLowerCase();
-      var grid = document.getElementById('citiesList');
-      var cards = grid.getElementsByClassName('city-card');
-      
-      for (var i = 0; i < cards.length; i++) {
-        var card = cards[i];
-        var text = card.textContent || card.innerText;
-        if (text.toLowerCase().indexOf(filter) > -1) {
-          card.style.display = "";
-        } else {
-          card.style.display = "none";
-        }
-      }
-    }
-  </script>
+  <!-- ==========================================
+       PLANTILLAS DETALLADAS EN DRAWERS (TEMPLATES)
+       ========================================== -->
+  <div id="templates-store" style="display: none;">
+    <!-- Los templates se generan dinámicamente o se pueden rellenar -->
+  </div>
 
   <footer>
     <p>&copy; 2026 Colombia en el Tiempo. Sección: Ciudades y Nombres.</p>
   </footer>
 
   <script src="js/main.js"></script>
+  
+  <script>
+    // Base de datos de las 32 ciudades / capitales
+    const citiesData = [
+      { id: "bogota", name: "Bogotá", originalName: "Bacatá", x: 375, y: 440, region: "Andina", date: "1538", desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá." },
+      { id: "medellin", name: "Medellín", originalName: "Valle de Aburrá", x: 285, y: 345, region: "Andina", date: "1675", desc: "Tierra de los Aburráes. Nombrada en honor a la villa extremeña de Medellín en España." },
+      { id: "cali", name: "Cali", originalName: "Lili", x: 232, y: 472, region: "Pacífica / Valle", date: "1536", desc: "Toma su nombre de la etnia Lili del Valle del Cauca, cruzada por el río del mismo nombre." },
+      { id: "barranquilla", name: "Barranquilla", originalName: "Sitio de Libres", x: 330, y: 110, region: "Caribe", date: "1629", desc: "Fundada originalmente por pastores libres de control terrateniente en las riberas del Magdalena." },
+      { id: "cartagena", name: "Cartagena", originalName: "Calamarí", x: 295, y: 125, region: "Caribe", date: "1533", desc: "Originalmente poblada por los indígenas caribes Calamarí ('cangrejo'). Rediseñada como fuerte militar colonial." },
+      { id: "santamarta", name: "Santa Marta", originalName: "Gaira / Teyuna", x: 350, y: 92, region: "Caribe", date: "1525", desc: "La ciudad más antigua en pie de Colombia. Rodeada de los cacicazgos Tairona y el río Gaira." },
+      { id: "tunja", name: "Tunja", originalName: "Hunza", x: 395, y: 412, region: "Andina", date: "1539", desc: "Antigua Hunza, gran capital de la Confederación Muisca del norte, regida por el Zaque." },
+      { id: "bucaramanga", name: "Bucaramanga", originalName: "Valle de los Guanes", x: 395, y: 335, region: "Andina", date: "1622", desc: "Asentamiento minero en las tierras de los indígenas Guanes y Girón." },
+      { id: "popayan", name: "Popayán", originalName: "Pubén", x: 232, y: 512, region: "Andina / Sur", date: "1537", desc: "Sede del cacicazgo Pubenense en el alto río Cauca. Gran centro administrativo virreinal." },
+      { id: "pasto", name: "San Juan de Pasto", originalName: "Past Awá", x: 198, y: 595, region: "Andina / Suroeste", date: "1537", desc: "Del nombre de la comunidad indígena de los Pastos ('Gente de la tierra')." },
+      { id: "leticia", name: "Leticia", originalName: "Huitoto / Tikuna", x: 480, y: 890, region: "Amazonía", date: "1867", desc: "Territorio sagrado de clanes Tikuna, Cocama y Huitoto en las orillas del río Amazonas." },
+      { id: "sanandres", name: "San Andrés", originalName: "Saturnina", x: 113, y: 55, region: "Insular", date: "1822 (adhesión)", desc: "Isla caribeña con un fuerte legado raizal, anglo-africano y marítimo." },
+      { id: "cucuta", name: "Cúcuta", originalName: "Guasimales / Cúcuto", x: 422, y: 285, region: "Andina", date: "1733", desc: "Tierra gobernada por el Cacique Cúcuto. Famosa por sus cultivos de cacao coloniales." },
+      { id: "ibague", name: "Ibagué", originalName: "Valle de las Lanzas", x: 325, y: 432, region: "Andina", date: "1550", desc: "Asentamiento en el territorio del Cacique Ibagué de la etnia Pijao." },
+      { id: "neiva", name: "Neiva", originalName: "Valle de Neiva", x: 308, y: 482, region: "Andina", date: "1612", desc: "Punto de partida de expediciones coloniales en territorio de indígenas Pijaos y Yalcones." },
+      { id: "quibdo", name: "Quibdó", originalName: "Citará", x: 232, y: 382, region: "Pacífica", date: "1664", desc: "Territorio de los indígenas Citaráes en las riberas selváticas del río Atrato." },
+      { id: "villavicencio", name: "Villavicencio", originalName: "Gramalote", x: 412, y: 462, region: "Orinoquía", date: "1840", desc: "Fundado como paso de ganado del altiplano a los llanos orientales de la cuenca." },
+      { id: "yopal", name: "Yopal", originalName: "El Yopo", x: 442, y: 412, region: "Orinoquía", date: "1915", desc: "Llamada así por la abundancia del árbol de Yopo, cuyas semillas eran inhaladas ritualmente por indígenas." },
+      { id: "arauca", name: "Arauca", originalName: "Guahibo / Betoye", x: 495, y: 325, region: "Orinoquía", date: "1780", desc: "Tierra de pastores y llaneros en los límites con el río Arauca." },
+      { id: "mitu", name: "Mitú", originalName: "Vaupés / Cubeo", x: 535, y: 642, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
+      { id: "inirida", name: "Inírida", originalName: "Guainía", x: 622, y: 512, region: "Amazonía", date: "1963", desc: "Tierra bañada por majestuosos ríos de aguas negras en el oriente." },
+      { id: "puertocarreno", name: "Puerto Carreño", originalName: "Orinoco / Guahibo", x: 642, y: 335, region: "Orinoquía", date: "1913", desc: "Ubicada en la confluencia de los colosales ríos Meta y Orinoco." },
+      { id: "mocoa", name: "Mocoa", originalName: "Putumayo", x: 218, y: 565, region: "Andina / Amazonía", date: "1563", desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico." },
+      { id: "florencia", name: "Florencia", originalName: "La Perdiz", x: 300, y: 562, region: "Amazonía", date: "1902", desc: "Nacida como puerto de extracción de caucho a inicios del siglo XX." },
+      { id: "sanjose", name: "San José del Guaviare", originalName: "Guaviare", x: 432, y: 522, region: "Amazonía", date: "1910", desc: "Frontera de transición ecológica entre los llanos y la selva densa." },
+      { id: "sincelejo", name: "Sincelejo", originalName: "Cacicazgo Zenú", x: 285, y: 155, region: "Caribe", date: "1775", desc: "Toma el nombre del cacique zenú de la región de las sabanas." },
+      { id: "monteria", name: "Montería", originalName: "Valle del Sinú", x: 260, y: 185, region: "Caribe", date: "1777", desc: "Fundada a orillas del río Sinú como sitio de cacería y agricultura." },
+      { id: "valledupar", name: "Valledupar", originalName: "Cacique Upar", x: 368, y: 125, region: "Caribe", date: "1550", desc: "Valle gobernado por el gran Cacique Chimila Upar. Cuna del vallenato." },
+      { id: "riohacha", name: "Riohacha", originalName: "Süchiimma", x: 388, y: 72, region: "Caribe", date: "1535", desc: "En idioma wayuunaiki significa 'Tierra del río'. Famosa por la extracción de perlas." },
+      { id: "manizales", name: "Manizales", originalName: "Tierra de las Manizas", x: 295, y: 402, region: "Andina", date: "1849", desc: "Fundada por la Colonización Antioqueña. Toma su nombre de las piedras 'manizas'." },
+      { id: "pereira", name: "Pereira", originalName: "Cartago Viejo", x: 285, y: 412, region: "Andina", date: "1863", desc: "Ubicada en las antiguas ruinas coloniales de Cartago. Eje cafetero." },
+      { id: "armenia", name: "Armenia", originalName: "Armenia", x: 285, y: 422, region: "Andina", date: "1889", desc: "Fundada durante la expansión cafetera del Quindío." }
+    ];
+
+    // Cargar el mapa SVG y luego inyectar los marcadores
+    fetch('assets/images/colombia_departments.svg')
+      .then(response => response.text())
+      .then(svgText => {
+        const container = document.getElementById('map-container');
+        container.innerHTML = svgText;
+        
+        const svg = container.querySelector('svg');
+        svg.setAttribute('id', 'mapa-real-colombia');
+        svg.style.width = '100%';
+        svg.style.height = 'auto';
+        
+        // Crear grupo de marcadores
+        const gMarkers = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+        gMarkers.setAttribute('id', 'city-markers-group');
+        
+        citiesData.forEach(city => {
+          // Crear círculo marcador
+          const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+          circle.setAttribute('cx', city.x);
+          circle.setAttribute('cy', city.y);
+          circle.setAttribute('r', '5');
+          circle.setAttribute('class', 'city-marker');
+          circle.setAttribute('id', 'marker-' + city.id);
+          circle.setAttribute('onclick', `selectCity('${city.id}', true)`);
+          
+          // Crear etiqueta de texto (oculta por defecto, se activa en hover/click)
+          const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+          text.setAttribute('x', city.x + 8);
+          text.setAttribute('y', city.y + 3);
+          text.setAttribute('class', 'city-label');
+          text.textContent = city.name;
+          
+          gMarkers.appendChild(circle);
+          gMarkers.appendChild(text);
+        });
+        
+        svg.appendChild(gMarkers);
+      });
+
+    // Renderizar la lista de cartas a la izquierda
+    const listContainer = document.getElementById('citiesList');
+    citiesData.forEach(city => {
+      const card = document.createElement('div');
+      card.className = 'city-card';
+      card.id = 'card-' + city.id;
+      card.setAttribute('onclick', `selectCity('${city.id}', false)`);
+      
+      card.innerHTML = `
+        <div class="city-names">
+          <span class="city-original">${city.originalName}</span>
+          <span class="city-current">${city.name}</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: ${city.date}</span>
+          <span>Región: ${city.region}</span>
+        </div>
+        <p style="font-size: 0.85rem; line-height: 1.4; color: var(--text-secondary); margin: 0;">
+          ${city.desc.substring(0, 100)}...
+        </p>
+      `;
+      listContainer.appendChild(card);
+    });
+
+    // Función de selección e interactividad bidireccional
+    function selectCity(cityId, scrollToList) {
+      // 1. Quitar clases activas previas en mapa
+      document.querySelectorAll('.city-marker').forEach(m => m.classList.remove('active-marker'));
+      // Quitar clases activas en lista
+      document.querySelectorAll('.city-card').forEach(c => c.classList.remove('selected-card'));
+      
+      // 2. Activar marcador correspondiente
+      const marker = document.getElementById('marker-' + cityId);
+      if (marker) marker.classList.add('active-marker');
+      
+      // 3. Activar carta correspondiente
+      const card = document.getElementById('card-' + cityId);
+      if (card) {
+        card.classList.add('selected-card');
+        if (scrollToList) {
+          card.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+        }
+      }
+      
+      // 4. Abrir panel lateral explicativo (Drawer)
+      const city = citiesData.find(c => c.id === cityId);
+      if (city) {
+        openCityDrawer(city);
+      }
+    }
+
+    function openCityDrawer(city) {
+      const drawer = document.querySelector('.detail-drawer');
+      const drawerContent = drawer.querySelector('.drawer-content');
+      
+      if (drawer && drawerContent) {
+        drawerContent.innerHTML = `
+          <div class="document-badge">Ficha Toponímica</div>
+          <h2 class="title-font">${city.name}</h2>
+          <p style="color: var(--accent); font-weight: bold; font-size: 1.1rem; text-transform: uppercase;">
+            Nombre Original: ${city.originalName}
+          </p>
+          <hr style="border: 0; border-top: 1px solid var(--border-card); margin: 1rem 0;">
+          <p><strong>Fundación Colonial:</strong> ${city.date}</p>
+          <p><strong>Región Natural:</strong> ${city.region}</p>
+          <p style="line-height: 1.6; margin-top: 1rem;">
+            ${city.desc}
+          </p>
+        `;
+        drawer.classList.add('open');
+      }
+    }
+
+    // Buscador interactivo
+    function filterCities() {
+      const input = document.getElementById('citySearch');
+      const filter = input.value.toLowerCase();
+      
+      citiesData.forEach(city => {
+        const card = document.getElementById('card-' + city.id);
+        const marker = document.getElementById('marker-' + city.id);
+        const match = city.name.toLowerCase().includes(filter) || 
+                      city.originalName.toLowerCase().includes(filter) || 
+                      city.region.toLowerCase().includes(filter) ||
+                      city.desc.toLowerCase().includes(filter);
+                      
+        if (card) card.style.display = match ? "" : "none";
+        if (marker) {
+          marker.style.opacity = match ? "1" : "0.1";
+          marker.style.pointerEvents = match ? "auto" : "none";
+        }
+      });
+    }
+  </script>
 </body>
 </html>
