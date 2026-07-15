@@ -70,6 +70,7 @@
       position: relative;
       overflow: hidden;
       cursor: pointer;
+      flex-shrink: 0; /* Evitar que flexbox colapse el tamaño de las tarjetas */
     }
     
     .city-card::before {
@@ -96,6 +97,7 @@
     .city-names {
       display: flex;
       flex-direction: column;
+      margin-bottom: 0.5rem;
     }
     
     .city-current {
@@ -120,45 +122,85 @@
       gap: 1rem;
     }
     
-    /* Estilos del mapa y marcas */
-    svg#mapa-real-colombia path {
-      fill: rgba(255, 255, 255, 0.06);
-      stroke: rgba(255, 255, 255, 0.2);
-      stroke-width: 1;
+    /* ==========================================================
+       ESTILOS OSCUROS PREMIUM PARA EL MAPA VECTORIAL DE WIKIMEDIA
+       ========================================================== */
+    svg#mapa-real-colombia {
+      background: #0d0f12;
+      border-radius: 6px;
+    }
+    
+    /* Forzar que los departamentos tengan un diseño oscuro de alta gama */
+    svg#mapa-real-colombia path.departamento {
+      fill: #151821 !important;
+      stroke: rgba(212, 175, 55, 0.15) !important;
+      stroke-width: 1px !important;
       transition: all 0.3s ease;
     }
     
-    svg#mapa-real-colombia path:hover {
-      fill: rgba(255, 255, 255, 0.12);
+    svg#mapa-real-colombia path.departamento:hover {
+      fill: rgba(212, 175, 55, 0.08) !important;
+      stroke: var(--accent) !important;
+    }
+    
+    /* Estilar las letras vectorizadas del mapa original */
+    svg#mapa-real-colombia g[id^="flowRoot"] path {
+      fill: #a9b2c3 !important;
+    }
+    
+    svg#mapa-real-colombia text {
+      fill: #a9b2c3 !important;
+    }
+    
+    /* Ríos principales en azul sutil */
+    svg#mapa-real-colombia g[inkscape:label="Ríos principales"] path {
+      stroke: #2e86de !important;
+      stroke-width: 1px !important;
+      fill: none !important;
+      opacity: 0.4;
+    }
+    
+    /* Límites internacionales */
+    svg#mapa-real-colombia g[inkscape:label="Límites internacionales"] path {
+      stroke: rgba(255, 255, 255, 0.2) !important;
+      stroke-width: 1px !important;
+      fill: none !important;
+    }
+
+    svg#mapa-real-colombia rect {
+      stroke: rgba(255, 255, 255, 0.1) !important;
+      fill: none !important;
     }
     
     /* Ciudad seleccionada en mapa */
     .city-marker {
       fill: var(--text-secondary);
       stroke: #000;
-      stroke-width: 1;
+      stroke-width: 1.5;
       cursor: pointer;
       transition: all 0.3s ease;
+      filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
     }
     
     .city-marker:hover, .city-marker.active-marker {
       fill: var(--accent);
       r: 8;
-      filter: drop-shadow(0 0 8px var(--accent));
+      filter: drop-shadow(0 0 10px var(--accent));
     }
     
     .city-label {
       font-family: var(--font-title);
-      font-size: 8px;
+      font-size: 9px;
       fill: var(--text-secondary);
-      opacity: 0.6;
+      opacity: 0.8;
       pointer-events: none;
       transition: all 0.3s ease;
+      filter: drop-shadow(0 0 2px #000);
     }
     
     .city-marker.active-marker + .city-label {
       fill: var(--accent);
-      font-size: 10px;
+      font-size: 11px;
       font-weight: bold;
       opacity: 1;
     }
@@ -246,13 +288,6 @@
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS EN DRAWERS (TEMPLATES)
-       ========================================== -->
-  <div id="templates-store" style="display: none;">
-    <!-- Los templates se generan dinámicamente o se pueden rellenar -->
-  </div>
-
   <footer>
     <p>&copy; 2026 Colombia en el Tiempo. Sección: Ciudades y Nombres.</p>
   </footer>
@@ -260,40 +295,40 @@
   <script src="js/main.js"></script>
   
   <script>
-    // Base de datos de las 32 ciudades / capitales
+    // Base de datos calibrada de las 32 ciudades / capitales (coordenadas adaptadas al SVG real)
     const citiesData = [
-      { id: "bogota", name: "Bogotá", originalName: "Bacatá", x: 375, y: 440, region: "Andina", date: "1538", desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá." },
+      { id: "bogota", name: "Bogotá", originalName: "Bacatá", x: 385, y: 430, region: "Andina", date: "1538", desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá." },
       { id: "medellin", name: "Medellín", originalName: "Valle de Aburrá", x: 285, y: 345, region: "Andina", date: "1675", desc: "Tierra de los Aburráes. Nombrada en honor a la villa extremeña de Medellín en España." },
-      { id: "cali", name: "Cali", originalName: "Lili", x: 232, y: 472, region: "Pacífica / Valle", date: "1536", desc: "Toma su nombre de la etnia Lili del Valle del Cauca, cruzada por el río del mismo nombre." },
-      { id: "barranquilla", name: "Barranquilla", originalName: "Sitio de Libres", x: 330, y: 110, region: "Caribe", date: "1629", desc: "Fundada originalmente por pastores libres de control terrateniente en las riberas del Magdalena." },
-      { id: "cartagena", name: "Cartagena", originalName: "Calamarí", x: 295, y: 125, region: "Caribe", date: "1533", desc: "Originalmente poblada por los indígenas caribes Calamarí ('cangrejo'). Rediseñada como fuerte militar colonial." },
-      { id: "santamarta", name: "Santa Marta", originalName: "Gaira / Teyuna", x: 350, y: 92, region: "Caribe", date: "1525", desc: "La ciudad más antigua en pie de Colombia. Rodeada de los cacicazgos Tairona y el río Gaira." },
-      { id: "tunja", name: "Tunja", originalName: "Hunza", x: 395, y: 412, region: "Andina", date: "1539", desc: "Antigua Hunza, gran capital de la Confederación Muisca del norte, regida por el Zaque." },
-      { id: "bucaramanga", name: "Bucaramanga", originalName: "Valle de los Guanes", x: 395, y: 335, region: "Andina", date: "1622", desc: "Asentamiento minero en las tierras de los indígenas Guanes y Girón." },
-      { id: "popayan", name: "Popayán", originalName: "Pubén", x: 232, y: 512, region: "Andina / Sur", date: "1537", desc: "Sede del cacicazgo Pubenense en el alto río Cauca. Gran centro administrativo virreinal." },
-      { id: "pasto", name: "San Juan de Pasto", originalName: "Past Awá", x: 198, y: 595, region: "Andina / Suroeste", date: "1537", desc: "Del nombre de la comunidad indígena de los Pastos ('Gente de la tierra')." },
-      { id: "leticia", name: "Leticia", originalName: "Huitoto / Tikuna", x: 480, y: 890, region: "Amazonía", date: "1867", desc: "Territorio sagrado de clanes Tikuna, Cocama y Huitoto en las orillas del río Amazonas." },
-      { id: "sanandres", name: "San Andrés", originalName: "Saturnina", x: 113, y: 55, region: "Insular", date: "1822 (adhesión)", desc: "Isla caribeña con un fuerte legado raizal, anglo-africano y marítimo." },
-      { id: "cucuta", name: "Cúcuta", originalName: "Guasimales / Cúcuto", x: 422, y: 285, region: "Andina", date: "1733", desc: "Tierra gobernada por el Cacique Cúcuto. Famosa por sus cultivos de cacao coloniales." },
-      { id: "ibague", name: "Ibagué", originalName: "Valle de las Lanzas", x: 325, y: 432, region: "Andina", date: "1550", desc: "Asentamiento en el territorio del Cacique Ibagué de la etnia Pijao." },
-      { id: "neiva", name: "Neiva", originalName: "Valle de Neiva", x: 308, y: 482, region: "Andina", date: "1612", desc: "Punto de partida de expediciones coloniales en territorio de indígenas Pijaos y Yalcones." },
-      { id: "quibdo", name: "Quibdó", originalName: "Citará", x: 232, y: 382, region: "Pacífica", date: "1664", desc: "Territorio de los indígenas Citaráes en las riberas selváticas del río Atrato." },
-      { id: "villavicencio", name: "Villavicencio", originalName: "Gramalote", x: 412, y: 462, region: "Orinoquía", date: "1840", desc: "Fundado como paso de ganado del altiplano a los llanos orientales de la cuenca." },
-      { id: "yopal", name: "Yopal", originalName: "El Yopo", x: 442, y: 412, region: "Orinoquía", date: "1915", desc: "Llamada así por la abundancia del árbol de Yopo, cuyas semillas eran inhaladas ritualmente por indígenas." },
-      { id: "arauca", name: "Arauca", originalName: "Guahibo / Betoye", x: 495, y: 325, region: "Orinoquía", date: "1780", desc: "Tierra de pastores y llaneros en los límites con el río Arauca." },
-      { id: "mitu", name: "Mitú", originalName: "Vaupés / Cubeo", x: 535, y: 642, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
-      { id: "inirida", name: "Inírida", originalName: "Guainía", x: 622, y: 512, region: "Amazonía", date: "1963", desc: "Tierra bañada por majestuosos ríos de aguas negras en el oriente." },
-      { id: "puertocarreno", name: "Puerto Carreño", originalName: "Orinoco / Guahibo", x: 642, y: 335, region: "Orinoquía", date: "1913", desc: "Ubicada en la confluencia de los colosales ríos Meta y Orinoco." },
-      { id: "mocoa", name: "Mocoa", originalName: "Putumayo", x: 218, y: 565, region: "Andina / Amazonía", date: "1563", desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico." },
-      { id: "florencia", name: "Florencia", originalName: "La Perdiz", x: 300, y: 562, region: "Amazonía", date: "1902", desc: "Nacida como puerto de extracción de caucho a inicios del siglo XX." },
-      { id: "sanjose", name: "San José del Guaviare", originalName: "Guaviare", x: 432, y: 522, region: "Amazonía", date: "1910", desc: "Frontera de transición ecológica entre los llanos y la selva densa." },
-      { id: "sincelejo", name: "Sincelejo", originalName: "Cacicazgo Zenú", x: 285, y: 155, region: "Caribe", date: "1775", desc: "Toma el nombre del cacique zenú de la región de las sabanas." },
-      { id: "monteria", name: "Montería", originalName: "Valle del Sinú", x: 260, y: 185, region: "Caribe", date: "1777", desc: "Fundada a orillas del río Sinú como sitio de cacería y agricultura." },
-      { id: "valledupar", name: "Valledupar", originalName: "Cacique Upar", x: 368, y: 125, region: "Caribe", date: "1550", desc: "Valle gobernado por el gran Cacique Chimila Upar. Cuna del vallenato." },
-      { id: "riohacha", name: "Riohacha", originalName: "Süchiimma", x: 388, y: 72, region: "Caribe", date: "1535", desc: "En idioma wayuunaiki significa 'Tierra del río'. Famosa por la extracción de perlas." },
-      { id: "manizales", name: "Manizales", originalName: "Tierra de las Manizas", x: 295, y: 402, region: "Andina", date: "1849", desc: "Fundada por la Colonización Antioqueña. Toma su nombre de las piedras 'manizas'." },
-      { id: "pereira", name: "Pereira", originalName: "Cartago Viejo", x: 285, y: 412, region: "Andina", date: "1863", desc: "Ubicada en las antiguas ruinas coloniales de Cartago. Eje cafetero." },
-      { id: "armenia", name: "Armenia", originalName: "Armenia", x: 285, y: 422, region: "Andina", date: "1889", desc: "Fundada durante la expansión cafetera del Quindío." }
+      { id: "cali", name: "Cali", originalName: "Lili", x: 235, y: 485, region: "Pacífica / Valle", date: "1536", desc: "Toma su nombre de la etnia Lili del Valle del Cauca, cruzada por el río del mismo nombre." },
+      { id: "barranquilla", name: "Barranquilla", originalName: "Sitio de Libres", x: 315, y: 95, region: "Caribe", date: "1629", desc: "Fundada originalmente por pastores libres de control terrateniente en las riberas del Magdalena." },
+      { id: "cartagena", name: "Cartagena", originalName: "Calamarí", x: 295, y: 115, region: "Caribe", date: "1533", desc: "Originalmente poblada por los indígenas caribes Calamarí ('cangrejo'). Rediseñada como fuerte militar colonial." },
+      { id: "santamarta", name: "Santa Marta", originalName: "Gaira / Teyuna", x: 342, y: 90, region: "Caribe", date: "1525", desc: "La ciudad más antigua en pie de Colombia. Rodeada de los cacicazgos Tairona y el río Gaira." },
+      { id: "tunja", name: "Tunja", originalName: "Hunza", x: 395, y: 395, region: "Andina", date: "1539", desc: "Antigua Hunza, gran capital de la Confederación Muisca del norte, regida por el Zaque." },
+      { id: "bucaramanga", name: "Bucaramanga", originalName: "Valle de los Guanes", x: 388, y: 310, region: "Andina", date: "1622", desc: "Asentamiento minero en las tierras de los indígenas Guanes y Girón." },
+      { id: "popayan", name: "Popayán", originalName: "Pubén", x: 235, y: 530, region: "Andina / Sur", date: "1537", desc: "Sede del cacicazgo Pubenense en el alto río Cauca. Gran centro administrativo virreinal." },
+      { id: "pasto", name: "San Juan de Pasto", originalName: "Past Awá", x: 195, y: 600, region: "Andina / Suroeste", date: "1537", desc: "Del nombre de la comunidad indígena de los Pastos ('Gente de la tierra')." },
+      { id: "leticia", name: "Leticia", originalName: "Huitoto / Tikuna", x: 510, y: 885, region: "Amazonía", date: "1867", desc: "Territorio sagrado de clanes Tikuna, Cocama y Huitoto en las orillas del río Amazonas." },
+      { id: "sanandres", name: "San Andrés", originalName: "Saturnina", x: 50, y: 55, region: "Insular", date: "1822 (adhesión)", desc: "Isla caribeña con un fuerte legado raizal, anglo-africano y marítimo." },
+      { id: "cucuta", name: "Cúcuta", originalName: "Guasimales / Cúcuto", x: 430, y: 265, region: "Andina", date: "1733", desc: "Tierra gobernada por el Cacique Cúcuto. Famosa por sus cultivos de cacao coloniales." },
+      { id: "ibague", name: "Ibagué", originalName: "Valle de las Lanzas", x: 308, y: 440, region: "Andina", date: "1550", desc: "Asentamiento en el territorio del Cacique Ibagué de la etnia Pijao." },
+      { id: "neiva", name: "Neiva", originalName: "Organos", x: 295, y: 495, region: "Andina", date: "1612", desc: "Punto de partida de expediciones coloniales en territorio de indígenas Pijaos y Yalcones." },
+      { id: "quibdo", name: "Quibdó", originalName: "Citará", x: 220, y: 375, region: "Pacífica", date: "1664", desc: "Territorio de los indígenas Citaráes en las riberas selváticas del río Atrato." },
+      { id: "villavicencio", name: "Villavicencio", originalName: "Gramalote", x: 395, y: 475, region: "Orinoquía", date: "1840", desc: "Fundado como paso de ganado del altiplano a los llanos orientales de la cuenca." },
+      { id: "yopal", name: "Yopal", originalName: "El Yopo", x: 440, y: 400, region: "Orinoquía", date: "1915", desc: "Llamada así por la abundancia del árbol de Yopo, cuyas semillas eran inhaladas ritualmente por indígenas." },
+      { id: "arauca", name: "Arauca", originalName: "Guahibo / Betoye", x: 490, y: 305, region: "Orinoquía", date: "1780", desc: "Tierra de pastores y llaneros en los límites con el río Arauca." },
+      { id: "mitu", name: "Mitú", originalName: "Vaupés / Cubeo", x: 560, y: 630, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
+      { id: "inirida", name: "Inírida", originalName: "Guainía", x: 615, y: 510, region: "Amazonía", date: "1963", desc: "Tierra bañada por majestuosos ríos de aguas negras en el oriente." },
+      { id: "puertocarreno", name: "Puerto Carreño", originalName: "Orinoco / Guahibo", x: 640, y: 305, region: "Orinoquía", date: "1913", desc: "Ubicada en la confluencia de los colosales ríos Meta y Orinoco." },
+      { id: "mocoa", name: "Mocoa", originalName: "Putumayo", x: 220, y: 575, region: "Andina / Amazonía", date: "1563", desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico." },
+      { id: "florencia", name: "Florencia", originalName: "La Perdiz", x: 305, y: 565, region: "Amazonía", date: "1902", desc: "Nacida como puerto de extracción de caucho a inicios del siglo XX." },
+      { id: "sanjose", name: "San José del Guaviare", originalName: "Guaviare", x: 435, y: 530, region: "Amazonía", date: "1910", desc: "Frontera de transición ecológica entre los llanos y la selva densa." },
+      { id: "sincelejo", name: "Sincelejo", originalName: "Cacicazgo Zenú", x: 290, y: 145, region: "Caribe", date: "1775", desc: "Toma el nombre del cacique zenú de la región de las sabanas." },
+      { id: "monteria", name: "Montería", originalName: "Valle del Sinú", x: 260, y: 175, region: "Caribe", date: "1777", desc: "Fundada a orillas del río Sinú como sitio de cacería y agricultura." },
+      { id: "valledupar", name: "Valledupar", originalName: "Cacique Upar", x: 365, y: 120, region: "Caribe", date: "1550", desc: "Valle gobernado por el gran Cacique Chimila Upar. Cuna del vallenato." },
+      { id: "riohacha", name: "Riohacha", originalName: "Süchiimma", x: 388, y: 65, region: "Caribe", date: "1535", desc: "En idioma wayuunaiki significa 'Tierra del río'. Famosa por la extracción de perlas." },
+      { id: "manizales", name: "Manizales", originalName: "Tierra de las Manizas", x: 292, y: 395, region: "Andina", date: "1849", desc: "Fundada por la Colonización Antioqueña. Toma su nombre de las piedras 'manizas'." },
+      { id: "pereira", name: "Pereira", originalName: "Cartago Viejo", x: 288, y: 408, region: "Andina", date: "1863", desc: "Ubicada en las antiguas ruinas coloniales de Cartago. Eje cafetero." },
+      { id: "armenia", name: "Armenia", originalName: "Armenia", x: 288, y: 418, region: "Andina", date: "1889", desc: "Fundada durante la expansión cafetera del Quindío." }
     ];
 
     // Cargar el mapa SVG y luego inyectar los marcadores
@@ -354,7 +389,7 @@
           <span>Región: ${city.region}</span>
         </div>
         <p style="font-size: 0.85rem; line-height: 1.4; color: var(--text-secondary); margin: 0;">
-          ${city.desc.substring(0, 100)}...
+          ${city.desc}
         </p>
       `;
       listContainer.appendChild(card);
