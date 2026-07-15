@@ -55,6 +55,13 @@
       box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.1);
     }
     
+    .map-container-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
     .map-container {
       background: rgba(0, 0, 0, 0.3);
       border: 1px solid var(--border-card);
@@ -66,6 +73,7 @@
       position: relative;
       max-height: 85vh; /* Evitar desbordes del contenedor del mapa */
       overflow: hidden;
+      width: 100%;
     }
     
     /* Estilos del mapa y departamentos */
@@ -144,13 +152,12 @@
       stroke: #9b59b6 !important;
     }
     
-    /* Textos vectoriales legibles en gris sutil */
-    svg#mapa-real-colombia g[id^="flowRoot"] path {
-      fill: rgba(255, 255, 255, 0.5) !important;
+    /* CORRECCIÓN CRÍTICA: Ocultar los textos vectorizados originales para evitar saturación y contrastes rotos */
+    svg#mapa-real-colombia g[id^="flowRoot"] {
+      display: none !important;
     }
-    
     svg#mapa-real-colombia text {
-      fill: rgba(255, 255, 255, 0.5) !important;
+      display: none !important;
     }
     
     /* Capas Interactivas */
@@ -264,6 +271,31 @@
       stroke: rgba(255, 255, 255, 0.15) !important;
       fill: none !important;
     }
+
+    /* Etiqueta interactiva flotante de información del mapa */
+    .map-info-bar {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-card);
+      border-radius: 6px;
+      font-family: var(--font-title);
+      font-size: 0.95rem;
+      color: var(--text-secondary);
+      text-align: center;
+      min-height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      letter-spacing: 0.03em;
+    }
+
+    .map-info-bar span.active-dept {
+      color: var(--accent);
+      font-weight: bold;
+      margin-right: 0.5rem;
+    }
     
     @keyframes alertPulse {
       0% { fill: rgba(192, 57, 43, 0.2); }
@@ -350,8 +382,14 @@
       </div>
       
       <!-- Contenedor del Mapa SVG -->
-      <div class="map-container" id="map-holder">
-        <!-- Se inyecta dinámicamente -->
+      <div class="map-container-wrapper">
+        <div class="map-container" id="map-holder">
+          <!-- Se inyecta dinámicamente -->
+        </div>
+        <!-- Barra de información dinámica de departamentos -->
+        <div class="map-info-bar" id="map-info-bar">
+          Explora los departamentos con el cursor
+        </div>
       </div>
       
     </div>
@@ -465,38 +503,38 @@
   <script>
     // Base de datos de posicionamiento de capitales para clasificar regiones en el mapa
     const citiesDataForRegions = [
-      { name: "Bogotá", x: 385, y: 430, region: "Andina" },
-      { name: "Medellín", x: 285, y: 345, region: "Andina" },
-      { name: "Cali", x: 235, y: 485, region: "Pacífica" },
-      { name: "Barranquilla", x: 315, y: 95, region: "Caribe" },
-      { name: "Cartagena", x: 295, y: 115, region: "Caribe" },
-      { name: "Santa Marta", x: 342, y: 90, region: "Caribe" },
-      { name: "Tunja", x: 395, y: 395, region: "Andina" },
-      { name: "Bucaramanga", x: 388, y: 310, region: "Andina" },
-      { name: "Popayán", x: 235, y: 530, region: "Andina" },
-      { name: "Pasto", x: 195, y: 600, region: "Andina" },
-      { name: "Leticia", x: 510, y: 885, region: "Amazonía" },
-      { name: "San Andrés", x: 50, y: 55, region: "Insular" },
-      { name: "Cúcuta", x: 430, y: 265, region: "Andina" },
-      { name: "Ibagué", x: 308, y: 440, region: "Andina" },
-      { name: "Neiva", x: 295, y: 495, region: "Andina" },
-      { name: "Quibdó", x: 220, y: 375, region: "Pacífica" },
-      { name: "Villavicencio", x: 395, y: 475, region: "Orinoquía" },
-      { name: "Yopal", x: 440, y: 400, region: "Orinoquía" },
-      { name: "Arauca", x: 490, y: 305, region: "Orinoquía" },
-      { name: "Mitú", x: 560, y: 630, region: "Amazonía" },
-      { name: "Inírida", x: 615, y: 510, region: "Amazonía" },
-      { name: "Puerto Carreño", x: 640, y: 305, region: "Orinoquía" },
-      { name: "Mocoa", x: 220, y: 575, region: "Andina" },
-      { name: "Florencia", x: 305, y: 565, region: "Amazonía" },
-      { name: "San José", x: 435, y: 530, region: "Amazonía" },
-      { name: "Sincelejo", x: 290, y: 145, region: "Caribe" },
-      { name: "Montería", x: 260, y: 175, region: "Caribe" },
-      { name: "Valledupar", x: 365, y: 120, region: "Caribe" },
-      { name: "Riohacha", x: 388, y: 65, region: "Caribe" },
-      { name: "Manizales", x: 292, y: 395, region: "Andina" },
-      { name: "Pereira", x: 288, y: 408, region: "Andina" },
-      { name: "Armenia", x: 288, y: 418, region: "Andina" }
+      { name: "Bogotá", department: "Cundinamarca (D.C.)", x: 385, y: 430, region: "Andina" },
+      { name: "Medellín", department: "Antioquia", x: 285, y: 345, region: "Andina" },
+      { name: "Cali", department: "Valle del Cauca", x: 235, y: 485, region: "Pacífica" },
+      { name: "Barranquilla", department: "Atlántico", x: 315, y: 95, region: "Caribe" },
+      { name: "Cartagena", department: "Bolívar", x: 295, y: 115, region: "Caribe" },
+      { name: "Santa Marta", department: "Magdalena", x: 342, y: 90, region: "Caribe" },
+      { name: "Tunja", department: "Boyacá", x: 395, y: 395, region: "Andina" },
+      { name: "Bucaramanga", department: "Santander", x: 388, y: 310, region: "Andina" },
+      { name: "Popayán", department: "Cauca", x: 235, y: 530, region: "Andina" },
+      { name: "Pasto", department: "Nariño", x: 195, y: 600, region: "Andina" },
+      { name: "Leticia", department: "Amazonas", x: 510, y: 885, region: "Amazonía" },
+      { name: "San Andrés", department: "San Andrés y Providencia", x: 50, y: 55, region: "Insular" },
+      { name: "Cúcuta", department: "Norte de Santander", x: 430, y: 265, region: "Andina" },
+      { name: "Ibagué", department: "Tolima", x: 308, y: 440, region: "Andina" },
+      { name: "Neiva", department: "Huila", x: 295, y: 495, region: "Andina" },
+      { name: "Quibdó", department: "Chocó", x: 220, y: 375, region: "Pacífica" },
+      { name: "Villavicencio", department: "Meta", x: 395, y: 475, region: "Orinoquía" },
+      { name: "Yopal", department: "Casanare", x: 440, y: 400, region: "Orinoquía" },
+      { name: "Arauca", department: "Arauca", x: 490, y: 305, region: "Orinoquía" },
+      { name: "Mitú", department: "Vaupés", x: 560, y: 630, region: "Amazonía" },
+      { name: "Inírida", department: "Guainía", x: 615, y: 510, region: "Amazonía" },
+      { name: "Puerto Carreño", department: "Vichada", x: 640, y: 305, region: "Orinoquía" },
+      { name: "Mocoa", department: "Putumayo", x: 220, y: 575, region: "Andina" },
+      { name: "Florencia", department: "Caquetá", x: 305, y: 565, region: "Amazonía" },
+      { name: "San José", department: "Guaviare", x: 435, y: 530, region: "Amazonía" },
+      { name: "Sincelejo", department: "Sucre", x: 290, y: 145, region: "Caribe" },
+      { name: "Montería", department: "Córdoba", x: 260, y: 175, region: "Caribe" },
+      { name: "Valledupar", department: "Cesar", x: 365, y: 120, region: "Caribe" },
+      { name: "Riohacha", department: "La Guajira", x: 388, y: 65, region: "Caribe" },
+      { name: "Manizales", department: "Caldas", x: 292, y: 395, region: "Andina" },
+      { name: "Pereira", department: "Risaralda", x: 288, y: 408, region: "Andina" },
+      { name: "Armenia", department: "Quindío", x: 288, y: 418, region: "Andina" }
     ];
 
     // Cargar mapa e inyectar capas
@@ -509,13 +547,13 @@
         const svg = container.querySelector('svg');
         svg.setAttribute('id', 'mapa-real-colombia');
         
-        // CORRECCIÓN CRÍTICA: Forzar el viewBox original del mapa vectorial para que sea 100% responsivo y no se recorte abajo ni arriba
+        // Forzar el viewBox original del mapa vectorial para que sea 100% responsivo
         svg.setAttribute('viewBox', '0 0 735 940');
         svg.style.width = '100%';
         svg.style.height = '100%';
         svg.style.display = 'block';
         
-        // Clasificar dinámicamente cada departamento en su región natural
+        // Clasificar dinámicamente cada departamento en su región natural e inyectar interactividad
         const paths = svg.querySelectorAll('path.departamento');
         citiesDataForRegions.forEach(city => {
           const point = svg.createSVGPoint();
@@ -525,6 +563,20 @@
           paths.forEach(path => {
             if (path.isPointInFill(point)) {
               path.classList.add('region-' + city.region);
+              
+              // Inyectar tooltip nativo de departamento
+              const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+              title.textContent = `Departamento de ${city.department}`;
+              path.appendChild(title);
+              
+              // Agregar listeners para la barra de información dinámica
+              path.addEventListener('mouseenter', () => {
+                document.getElementById('map-info-bar').innerHTML = 
+                  `<span class="active-dept">${city.department}</span> (${city.region})`;
+              });
+              path.addEventListener('mouseleave', () => {
+                document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+              });
             }
           });
         });
