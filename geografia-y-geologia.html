@@ -6,7 +6,7 @@
   <title>Geografía, Geología y Riquezas - Colombia en el Tiempo</title>
   <meta name="description" content="Mapa interactivo de las regiones de Colombia, fallas geológicas, volcanes activos, riquezas minerales y el impacto de la minería ilegal.">
   
-  <link rel="stylesheet" href="css/style.css?v=1.1">
+  <link rel="stylesheet" href="css/style.css?v=1.2">
   
   <style>
     /* Estilos específicos para el mapa y capas */
@@ -74,16 +74,25 @@
     
     /* Regiones del mapa */
     .region {
-      fill: rgba(255, 255, 255, 0.03);
-      stroke: var(--border-card);
-      stroke-width: 2;
+      fill: rgba(255, 255, 255, 0.08);
+      stroke: rgba(255, 255, 255, 0.3);
+      stroke-width: 1.5;
       transition: all 0.3s ease;
       cursor: pointer;
     }
     
+    /* Colores elegantes para diferenciar las regiones naturales */
+    #reg-caribe { fill: rgba(52, 152, 219, 0.15); stroke: rgba(52, 152, 219, 0.4); }
+    #reg-pacifica { fill: rgba(26, 188, 156, 0.15); stroke: rgba(26, 188, 156, 0.4); }
+    #reg-andina { fill: rgba(230, 126, 34, 0.15); stroke: rgba(230, 126, 34, 0.4); }
+    #reg-orinoquia { fill: rgba(241, 196, 15, 0.15); stroke: rgba(241, 196, 15, 0.4); }
+    #reg-amazonia { fill: rgba(46, 204, 113, 0.15); stroke: rgba(46, 204, 113, 0.4); }
+    #reg-insular { fill: rgba(155, 89, 182, 0.2); stroke: rgba(155, 89, 182, 0.5); }
+    
     .region:hover {
-      fill: rgba(var(--accent-rgb), 0.1);
-      stroke: var(--accent);
+      fill: rgba(var(--accent-rgb), 0.25) !important;
+      stroke: var(--accent) !important;
+      filter: drop-shadow(0 0 8px rgba(var(--accent-rgb), 0.4));
     }
     
     /* Capas Interactivas */
@@ -190,6 +199,7 @@
           <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
           <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
           <a href="otras-culturas.html">Catálogo de Culturas</a>
+          <a href="ciudades-historicas.html">Ciudades y Nombres</a>
         </div>
       </div>
     </nav>

@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ciudades Históricas y Municipios - Colombia en el Tiempo</title>
+  <meta name="description" content="Historia de las ciudades y municipios más importantes de Colombia, sus orígenes coloniales y sus nombres prehispánicos originales.">
+  
+  <link rel="stylesheet" href="css/style.css?v=1.2">
+  
+  <style>
+    /* Estilos específicos para la sección de ciudades */
+    .search-container {
+      margin-bottom: 2rem;
+      display: flex;
+      justify-content: center;
+    }
+    
+    .search-input {
+      width: 100%;
+      max-width: 600px;
+      padding: 1rem 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-card);
+      border-radius: 30px;
+      color: var(--text-primary);
+      font-size: 1rem;
+      outline: none;
+      transition: all 0.3s ease;
+      font-family: var(--font-body);
+    }
+    
+    .search-input:focus {
+      border-color: var(--accent);
+      background: rgba(255, 255, 255, 0.08);
+      box-shadow: 0 0 15px rgba(var(--accent-rgb), 0.15);
+    }
+    
+    .city-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+    
+    .city-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 2rem;
+      transition: all 0.3s ease;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .city-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: var(--accent);
+      opacity: 0.7;
+    }
+    
+    .city-card:hover {
+      transform: translateY(-5px);
+      border-color: var(--accent);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+    }
+    
+    .city-names {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+    
+    .city-current {
+      font-family: var(--font-title);
+      font-size: 1.5rem;
+      color: var(--text-primary);
+    }
+    
+    .city-original {
+      font-size: 0.85rem;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 700;
+    }
+    
+    .city-meta {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      display: flex;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      padding-bottom: 0.5rem;
+    }
+  </style>
+  <link rel="expect" href="#hero-section" blocking="render">
+</head>
+<body>
+
+  <!-- Encabezado Común -->
+  <header>
+    <a href="index.html" class="logo">
+      COLOMBIA <span>EN EL TIEMPO</span>
+    </a>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Épocas Históricas</button>
+        <div class="dropdown-content">
+          <a href="precolombina.html">Época Precolombina</a>
+          <a href="colonia.html">Conquista y Colonia</a>
+          <a href="independencia.html">Independencia y Grito</a>
+          <a href="siglo-xix.html">República (Siglo XIX)</a>
+          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
+          <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
+        </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <div class="dropdown-content">
+          <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
+          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
+          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="otras-culturas.html">Catálogo de Culturas</a>
+          <a href="ciudades-historicas.html">Ciudades y Nombres</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    
+    <section class="hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
+        Toponimia y Territorio
+      </div>
+      <h1>Ciudades y Municipios Históricos</h1>
+      <p>Explora la historia y la etimología de las poblaciones colombianas. Descubre el origen de sus nombres coloniales y cómo eran llamadas originalmente por las culturas indígenas precolombinas.</p>
+    </section>
+
+    <!-- Buscador interactivo -->
+    <div class="search-container">
+      <input type="text" class="search-input" id="citySearch" placeholder="Buscar ciudad, municipio o nombre original..." onkeyup="filterCities()">
+    </div>
+
+    <!-- Grilla de Ciudades -->
+    <div class="city-grid" id="citiesList">
+      
+      <!-- Bogotá -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Bacatá</span>
+          <span class="city-current">Bogotá</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1538</span>
+          <span>Región: Andina</span>
+        </div>
+        <p>
+          En el idioma muysccubun de los muiscas, *Bacatá* significaba *"cercado fuera de la labranza"*. Era la sede principal del Zipazgo. Los españoles fundaron la ciudad como *Nuestra Señora de la Esperanza*, que luego se convirtió en *Santafé de Bogotá*.
+        </p>
+      </div>
+
+      <!-- Tunja -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Hunza</span>
+          <span class="city-current">Tunja</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1539</span>
+          <span>Región: Andina</span>
+        </div>
+        <p>
+          Era la capital de la Confederación Muisca del norte, gobernada por el zaque *Hunahúa*. De la palabra *Hunza* deriva el nombre de la ciudad actual. Fue rebautizada bajo la colonia como *Santiago de Tunja*.
+        </p>
+      </div>
+
+      <!-- Cali -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Lili / Valle del Lili</span>
+          <span class="city-current">Santiago de Cali</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1536</span>
+          <span>Región: Pacífica / Valle</span>
+        </div>
+        <p>
+          La palabra *Cali* proviene del idioma de los indígenas Lili de la cuenca del río Cauca. Santiago fue asignada en honor al apóstol Santiago, el patrono de la expedición conquistadora española.
+        </p>
+      </div>
+
+      <!-- Medellín -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Valle de Aburrá</span>
+          <span class="city-current">Medellín</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1675</span>
+          <span>Región: Andina</span>
+        </div>
+        <p>
+          Llamada originalmente *Valle de San Bartolomé* por los exploradores, ocupaba las tierras de los indígenas Aburráes. Recibió el nombre de *Medellín* en honor a la villa extremeña homónima, cuna de Hernán Cortés.
+        </p>
+      </div>
+
+      <!-- Cartagena -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Calamarí</span>
+          <span class="city-current">Cartagena de Indias</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1533</span>
+          <span>Región: Caribe</span>
+        </div>
+        <p>
+          El poblado indígena original de la bahía pertenecía a la etnia caribe de los *Calamarí* (que significaba *"cangrejo"*). Recibió el nombre de *Cartagena de Indias* por la similitud física de su bahía con la de Cartagena en España.
+        </p>
+      </div>
+
+      <!-- Sogamoso -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Suamox</span>
+          <span class="city-current">Sogamoso</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1537 (conquista)</span>
+          <span>Región: Andina</span>
+        </div>
+        <p>
+          Ciudad sagrada de los muiscas dedicada al culto al Sol y residencia del Sumo Sacerdote (Iracá). Su nombre original *Suamox* significa *"Morada del Sol"*. El Templo del Sol original fue quemado accidentalmente por soldados de Gonzalo Jiménez de Quesada.
+        </p>
+      </div>
+
+      <!-- Pasto -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Past Awá</span>
+          <span class="city-current">San Juan de Pasto</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1537</span>
+          <span>Región: Andina / Suroeste</span>
+        </div>
+        <p>
+          Debe su nombre a la comunidad originaria de los *Pastos* (Past Awá), que significa *"Gente de la Tierra"*. Fundada por Lorenzo de Aldana como *Villaviciosa de la Concepción de Pasto*.
+        </p>
+      </div>
+
+      <!-- Mompox -->
+      <div class="city-card">
+        <div class="city-names">
+          <span class="city-original">Mompoj</span>
+          <span class="city-current">Santa Cruz de Mompox</span>
+        </div>
+        <div class="city-meta">
+          <span>Fundación: 1537</span>
+          <span>Región: Caribe / Río</span>
+        </div>
+        <p>
+          Toma su nombre del cacique *Mompoj*, líder soberano de las tribus del río Magdalena que gobernaba la isla. Fue un gran puerto mercante fluvial exento de piratería marítima durante la colonia.
+        </p>
+      </div>
+
+    </div>
+
+  </main>
+
+  <script>
+    // Filtro interactivo de búsqueda
+    function filterCities() {
+      var input = document.getElementById('citySearch');
+      var filter = input.value.toLowerCase();
+      var grid = document.getElementById('citiesList');
+      var cards = grid.getElementsByClassName('city-card');
+      
+      for (var i = 0; i < cards.length; i++) {
+        var card = cards[i];
+        var text = card.textContent || card.innerText;
+        if (text.toLowerCase().indexOf(filter) > -1) {
+          card.style.display = "";
+        } else {
+          card.style.display = "none";
+        }
+      }
+    }
+  </script>
+
+  <footer>
+    <p>&copy; 2026 Colombia en el Tiempo. Sección: Ciudades y Nombres.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
