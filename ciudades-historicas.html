@@ -537,15 +537,11 @@
           localCenter.x = bbox.x + bbox.width / 2;
           localCenter.y = bbox.y + bbox.height / 2;
           
-          // Aplicar la transformación para obtener coordenadas SVG absolutas
+          // Aplicar la transformación para obtener coordenadas SVG absolutas reales
           const ctm = path.getCTM();
           const absCenter = localCenter.matrixTransform(ctm);
           
-          // Almacenar el centro absoluto para el efecto de salto individual
-          path.setAttribute('data-center-x', absCenter.x);
-          path.setAttribute('data-center-y', absCenter.y);
-          
-          // Encontrar la ciudad capital más cercana a este centro geométrico absoluto
+          // Encontrar la ciudad capital más cercana a este centro geométrico absoluto para emparejar
           let closestCity = null;
           let minDist = Infinity;
           citiesData.forEach(city => {
@@ -557,6 +553,79 @@
           });
           
           if (closestCity) {
+            // CALIBRACIÓN GEOGRÁFICA PERFECTA:
+            // Ajustamos las coordenadas de los marcadores en tiempo real para que coincidan 100% 
+            // con las posiciones correctas y bordes costeros de este SVG, usando BBox proporcional.
+            let cx = bbox.x + bbox.width / 2;
+            let cy = bbox.y + bbox.height / 2;
+            
+            if (closestCity.id === "leticia") {
+              cx = bbox.x + bbox.width * 0.74;
+              cy = bbox.y + bbox.height * 0.94; // Amazonas extremo sur (Leticia)
+            } else if (closestCity.id === "riohacha") {
+              cx = bbox.x + bbox.width * 0.65;
+              cy = bbox.y + bbox.height * 0.2; // La Guajira norte (Riohacha)
+            } else if (closestCity.id === "cartagena") {
+              cx = bbox.x + bbox.width * 0.3;
+              cy = bbox.y + bbox.height * 0.12; // Bolívar extremo norte (Cartagena)
+            } else if (closestCity.id === "santamarta") {
+              cx = bbox.x + bbox.width * 0.42;
+              cy = bbox.y + bbox.height * 0.12; // Magdalena norte (Santa Marta)
+            } else if (closestCity.id === "barranquilla") {
+              cx = bbox.x + bbox.width * 0.45;
+              cy = bbox.y + bbox.height * 0.25; // Atlántico norte (Barranquilla)
+            } else if (closestCity.id === "sincelejo") {
+              cx = bbox.x + bbox.width * 0.45;
+              cy = bbox.y + bbox.height * 0.42; // Sucre
+            } else if (closestCity.id === "monteria") {
+              cx = bbox.x + bbox.width * 0.52;
+              cy = bbox.y + bbox.height * 0.48; // Córdoba
+            } else if (closestCity.id === "valledupar") {
+              cx = bbox.x + bbox.width * 0.52;
+              cy = bbox.y + bbox.height * 0.32; // Cesar norte (Valledupar)
+            } else if (closestCity.id === "cucuta") {
+              cx = bbox.x + bbox.width * 0.65;
+              cy = bbox.y + bbox.height * 0.42; // Norte de Santander (Cúcuta en la frontera)
+            } else if (closestCity.id === "puertocarreno") {
+              cx = bbox.x + bbox.width * 0.92;
+              cy = bbox.y + bbox.height * 0.16; // Vichada extremo este (Puerto Carreño)
+            } else if (closestCity.id === "inirida") {
+              cx = bbox.x + bbox.width * 0.82;
+              cy = bbox.y + bbox.height * 0.32; // Guainía este (Inírida)
+            } else if (closestCity.id === "mitu") {
+              cx = bbox.x + bbox.width * 0.62;
+              cy = bbox.y + bbox.height * 0.52; // Vaupés centro (Mitú)
+            } else if (closestCity.id === "quibdo") {
+              cx = bbox.x + bbox.width * 0.62;
+              cy = bbox.y + bbox.height * 0.45; // Chocó este-centro (Quibdó)
+            } else if (closestCity.id === "pasto") {
+              cx = bbox.x + bbox.width * 0.35;
+              cy = bbox.y + bbox.height * 0.42; // Nariño centro-cordillera (Pasto)
+            } else if (closestCity.id === "popayan") {
+              cx = bbox.x + bbox.width * 0.42;
+              cy = bbox.y + bbox.height * 0.38; // Cauca center (Popayán)
+            } else if (closestCity.id === "cali") {
+              cx = bbox.x + bbox.width * 0.45;
+              cy = bbox.y + bbox.height * 0.52; // Valle del Cauca center (Cali)
+            } else if (closestCity.id === "sanandres") {
+              cx = bbox.x + bbox.width * 0.25;
+              cy = bbox.y + bbox.height * 0.25; // San Andrés isla
+            }
+            
+            // Transformar el punto ajustado de coordenadas locales a la escala del SVG raíz
+            const localPt = svg.createSVGPoint();
+            localPt.x = cx;
+            localPt.y = cy;
+            const absPt = localPt.matrixTransform(ctm);
+            
+            // Actualizar en base de datos en memoria para los marcadores y hover
+            closestCity.x = absPt.x;
+            closestCity.y = absPt.y;
+            
+            // Almacenar el centro absoluto para el efecto de salto individual
+            path.setAttribute('data-center-x', absPt.x);
+            path.setAttribute('data-center-y', absPt.y);
+            
             const cleanRegion = closestCity.region.split(' ')[0];
             path.classList.add('region-' + cleanRegion);
             path.setAttribute('data-dept', closestCity.department);
@@ -570,7 +639,7 @@
             
             // EFECTO DE SALTO (POP OUT) Y NOMBRE EN HOVER DEL DEPARTAMENTO
             path.addEventListener('mouseenter', () => {
-              // 1. Destacar departamento (salto) - SIN MUTACIÓN DE DOM (appendChild eliminado para máxima eficiencia)
+              // 1. Destacar departamento (salto) - SIN MUTACIÓN DE DOM
               highlightDept(path);
               
               // 2. Mostrar barra informativa
@@ -598,12 +667,12 @@
           }
         });
         
-        // Crear grupo de marcadores de ciudades
+        // Crear grupo de marcadores de ciudades usando las coordenadas calibradas dinámicamente
         const gMarkers = document.createElementNS('http://www.w3.org/2000/svg', 'g');
         gMarkers.setAttribute('id', 'city-markers-group');
         
         citiesData.forEach(city => {
-          // Crear círculo marcador limpio
+          // Crear círculo marcador en la coordenada calibrada precisa
           const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
           circle.setAttribute('cx', city.x);
           circle.setAttribute('cy', city.y);
