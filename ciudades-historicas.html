@@ -474,7 +474,7 @@
   <script>
     // Base de datos calibrada de las 32 ciudades / capitales
     const citiesData = [
-      { id: "bogota", name: "Bogotá", originalName: "Bacatá", department: "Cundinamarca (D.C.)", x: 385, y: 430, region: "Andina", date: "1538", desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá." },
+      { id: "bogota", name: "Bogotá", originalName: "Bacatá", department: "Cundinamarca", x: 385, y: 430, region: "Andina", date: "1538", desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá." },
       { id: "medellin", name: "Medellín", originalName: "Valle de Aburrá", department: "Antioquia", x: 285, y: 345, region: "Andina", date: "1675", desc: "Tierra de los Aburráes. Nombrada en honor a la villa extremeña de Medellín en España." },
       { id: "cali", name: "Cali", originalName: "Lili", department: "Valle del Cauca", x: 235, y: 485, region: "Pacífica", date: "1536", desc: "Toma su nombre de la etnia Lili del Valle del Cauca, cruzada por el río del mismo nombre." },
       { id: "barranquilla", name: "Barranquilla", originalName: "Sitio de Libres", department: "Atlántico", x: 315, y: 95, region: "Caribe", date: "1629", desc: "Fundada originalmente por pastores libres de control terrateniente en las riberas del Magdalena." },
@@ -493,7 +493,7 @@
       { id: "villavicencio", name: "Villavicencio", originalName: "Gramalote", department: "Meta", x: 395, y: 475, region: "Orinoquía", date: "1840", desc: "Fundado como paso de ganado del altiplano a los llanos orientales de la cuenca." },
       { id: "yopal", name: "Yopal", originalName: "El Yopo", department: "Casanare", x: 440, y: 400, region: "Orinoquía", date: "1915", desc: "Llamada así por la abundancia del árbol de Yopo, cuyas semillas eran inhaladas ritualmente por indígenas." },
       { id: "arauca", name: "Arauca", originalName: "Guahibo / Betoye", department: "Arauca", x: 490, y: 305, region: "Orinoquía", date: "1780", desc: "Tierra de pastores y llaneros en los límites con el río Arauca." },
-      { id: "mitu", name: "Mitú", originalName: "Vaupés / Cubeo", department: "Vaupés", x: 560, y: 630, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
+      { id: "mitu", name: "Mitú", originalName: "Vaupés", department: "Vaupés", x: 560, y: 630, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
       { id: "inirida", name: "Inírida", originalName: "Guainía", department: "Guainía", x: 615, y: 510, region: "Amazonía", date: "1963", desc: "Tierra de transición fluvial en el oriente del país." },
       { id: "puertocarreno", name: "Puerto Carreño", originalName: "Orinoco / Guahibo", department: "Vichada", x: 640, y: 305, region: "Orinoquía", date: "1913", desc: "Ubicada en la confluencia de los colosales ríos Meta y Orinoco." },
       { id: "mocoa", name: "Mocoa", originalName: "Putumayo", department: "Putumayo", x: 220, y: 575, region: "Andina", date: "1563", desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico." },
@@ -508,6 +508,42 @@
       { id: "armenia", name: "Armenia", originalName: "Armenia", department: "Quindío", x: 288, y: 418, region: "Andina", date: "1889", desc: "Fundada durante la expansión cafetera del Quindío." }
     ];
 
+    // DICCIONARIO DE MAPEO ESTÁTICO GEOGRÁFICO BIPARTITO (100% Preciso y libre de carreras de renderizado)
+    const pathIdToDeptName = {
+      "path7166": "Caldas",
+      "path6453": "Putumayo",
+      "path6417": "Chocó",
+      "path7280": "Risaralda",
+      "path6478": "Bolívar",
+      "path7210": "Sucre",
+      "path7187": "Atlántico",
+      "path7184": "Magdalena",
+      "path7175": "Cesar",
+      "path7331": "Norte de Santander",
+      "path7327": "Santander",
+      "path7313": "Boyacá",
+      "path7297": "Arauca",
+      "path7291": "Casanare",
+      "path7270": "Quindío",
+      "path7261": "Valle del Cauca",
+      "path7244": "Huila",
+      "path6475": "Tolima",
+      "path7202": "Meta",
+      "path7239": "Caquetá",
+      "path6457": "Amazonas",
+      "path3784": "Vichada",
+      "path3862": "Vaupés",
+      "path6474": "Guainía",
+      "path2967": "Guaviare",
+      "path6388": "La Guajira",
+      "path6415": "Cundinamarca",
+      "path6442": "Cauca",
+      "path7277": "Córdoba",
+      "path7281": "Nariño",
+      "path6396": "Antioquia",
+      "path6640": "San Andrés y Providencia"
+    };
+
     // Cargar el mapa SVG, clasificar regiones e inyectar marcadores
     fetch('assets/images/colombia_departments.svg')
       .then(response => response.text())
@@ -515,200 +551,199 @@
         const container = document.getElementById('map-container');
         container.innerHTML = svgText;
         
-        const svg = container.querySelector('svg');
-        svg.setAttribute('id', 'mapa-real-colombia');
-        
-        // Forzar el viewBox original del mapa vectorial para que sea 100% responsivo y no se recorte abajo ni arriba
-        svg.setAttribute('viewBox', '0 0 735 940');
-        svg.style.width = '100%';
-        svg.style.height = '100%';
-        svg.style.display = 'block';
-        
-        // Crear elemento único de texto para la ciudad activa
-        const activeLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-        activeLabel.setAttribute('id', 'active-city-label');
-        svg.appendChild(activeLabel);
-        
-        // Clasificación robusta de departamentos usando bounding box local y distancia a capital
-        const paths = svg.querySelectorAll('path.departamento');
-        paths.forEach(path => {
-          const bbox = path.getBBox();
-          const localCenter = svg.createSVGPoint();
-          localCenter.x = bbox.x + bbox.width / 2;
-          localCenter.y = bbox.y + bbox.height / 2;
-          
-          // Aplicar la transformación para obtener coordenadas SVG absolutas reales
-          const ctm = path.getCTM();
-          const absCenter = localCenter.matrixTransform(ctm);
-          
-          // Encontrar la ciudad capital más cercana a este centro geométrico absoluto para emparejar
-          let closestCity = null;
-          let minDist = Infinity;
-          citiesData.forEach(city => {
-            const dist = Math.hypot(city.x - absCenter.x, city.y - absCenter.y);
-            if (dist < minDist) {
-              minDist = dist;
-              closestCity = city;
-            }
+        // Esperamos al evento LOAD global y a una animación frame para asegurar que el navegador 
+        // haya terminado la fase de LAYOUT y render, evitando que getBBox() devuelva 0.
+        window.addEventListener('load', () => {
+          requestAnimationFrame(() => {
+            initializeMap();
           });
-          
-          if (closestCity) {
-            // CALIBRACIÓN GEOGRÁFICA PERFECTA:
-            // Ajustamos las coordenadas de los marcadores en tiempo real para que coincidan 100% 
-            // con las posiciones correctas y bordes costeros de este SVG, usando BBox proporcional.
-            let cx = bbox.x + bbox.width / 2;
-            let cy = bbox.y + bbox.height / 2;
-            
-            if (closestCity.id === "leticia") {
-              cx = bbox.x + bbox.width * 0.74;
-              cy = bbox.y + bbox.height * 0.94; // Amazonas extremo sur (Leticia)
-            } else if (closestCity.id === "riohacha") {
-              cx = bbox.x + bbox.width * 0.65;
-              cy = bbox.y + bbox.height * 0.2; // La Guajira norte (Riohacha)
-            } else if (closestCity.id === "cartagena") {
-              cx = bbox.x + bbox.width * 0.3;
-              cy = bbox.y + bbox.height * 0.12; // Bolívar extremo norte (Cartagena)
-            } else if (closestCity.id === "santamarta") {
-              cx = bbox.x + bbox.width * 0.42;
-              cy = bbox.y + bbox.height * 0.12; // Magdalena norte (Santa Marta)
-            } else if (closestCity.id === "barranquilla") {
-              cx = bbox.x + bbox.width * 0.45;
-              cy = bbox.y + bbox.height * 0.25; // Atlántico norte (Barranquilla)
-            } else if (closestCity.id === "sincelejo") {
-              cx = bbox.x + bbox.width * 0.45;
-              cy = bbox.y + bbox.height * 0.42; // Sucre
-            } else if (closestCity.id === "monteria") {
-              cx = bbox.x + bbox.width * 0.52;
-              cy = bbox.y + bbox.height * 0.48; // Córdoba
-            } else if (closestCity.id === "valledupar") {
-              cx = bbox.x + bbox.width * 0.52;
-              cy = bbox.y + bbox.height * 0.32; // Cesar norte (Valledupar)
-            } else if (closestCity.id === "cucuta") {
-              cx = bbox.x + bbox.width * 0.65;
-              cy = bbox.y + bbox.height * 0.42; // Norte de Santander (Cúcuta en la frontera)
-            } else if (closestCity.id === "puertocarreno") {
-              cx = bbox.x + bbox.width * 0.92;
-              cy = bbox.y + bbox.height * 0.16; // Vichada extremo este (Puerto Carreño)
-            } else if (closestCity.id === "inirida") {
-              cx = bbox.x + bbox.width * 0.82;
-              cy = bbox.y + bbox.height * 0.32; // Guainía este (Inírida)
-            } else if (closestCity.id === "mitu") {
-              cx = bbox.x + bbox.width * 0.62;
-              cy = bbox.y + bbox.height * 0.52; // Vaupés centro (Mitú)
-            } else if (closestCity.id === "quibdo") {
-              cx = bbox.x + bbox.width * 0.62;
-              cy = bbox.y + bbox.height * 0.45; // Chocó este-centro (Quibdó)
-            } else if (closestCity.id === "pasto") {
-              cx = bbox.x + bbox.width * 0.35;
-              cy = bbox.y + bbox.height * 0.42; // Nariño centro-cordillera (Pasto)
-            } else if (closestCity.id === "popayan") {
-              cx = bbox.x + bbox.width * 0.42;
-              cy = bbox.y + bbox.height * 0.38; // Cauca center (Popayán)
-            } else if (closestCity.id === "cali") {
-              cx = bbox.x + bbox.width * 0.45;
-              cy = bbox.y + bbox.height * 0.52; // Valle del Cauca center (Cali)
-            } else if (closestCity.id === "sanandres") {
-              cx = bbox.x + bbox.width * 0.25;
-              cy = bbox.y + bbox.height * 0.25; // San Andrés isla
-            }
-            
-            // Transformar el punto ajustado de coordenadas locales a la escala del SVG raíz
-            const localPt = svg.createSVGPoint();
-            localPt.x = cx;
-            localPt.y = cy;
-            const absPt = localPt.matrixTransform(ctm);
-            
-            // Actualizar en base de datos en memoria para los marcadores y hover
-            closestCity.x = absPt.x;
-            closestCity.y = absPt.y;
-            
-            // Almacenar el centro absoluto para el efecto de salto individual
-            path.setAttribute('data-center-x', absPt.x);
-            path.setAttribute('data-center-y', absPt.y);
-            
-            const cleanRegion = closestCity.region.split(' ')[0];
-            path.classList.add('region-' + cleanRegion);
-            path.setAttribute('data-dept', closestCity.department);
-            path.setAttribute('data-region', closestCity.region);
-            path.setAttribute('data-city-id', closestCity.id);
-            
-            // Inyectar tooltip nativo de departamento
-            const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-            title.textContent = `Departamento de ${closestCity.department}`;
-            path.appendChild(title);
-            
-            // EFECTO DE SALTO (POP OUT) Y NOMBRE EN HOVER DEL DEPARTAMENTO
-            path.addEventListener('mouseenter', () => {
-              // 1. Destacar departamento (salto) - SIN MUTACIÓN DE DOM
-              highlightDept(path);
-              
-              // 2. Mostrar barra informativa
-              document.getElementById('map-info-bar').innerHTML = 
-                `<span class="active-dept">${closestCity.department}</span> (${closestCity.region}) — Capital: ${closestCity.name}`;
-              
-              // 3. Mostrar etiqueta flotante de la ciudad
-              activeLabel.setAttribute('x', closestCity.x);
-              activeLabel.setAttribute('y', closestCity.y - 12);
-              activeLabel.setAttribute('text-anchor', 'middle');
-              activeLabel.textContent = `${closestCity.name} (${closestCity.originalName})`;
-              activeLabel.classList.add('visible');
-            });
-            
-            path.addEventListener('mouseleave', () => {
-              unhighlightDept(path);
-              document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
-              activeLabel.classList.remove('visible');
-            });
-            
-            // Permitir hacer clic en el departamento entero para abrir la ficha en el costado izquierdo
-            path.addEventListener('click', () => {
-              selectCity(closestCity.id);
-            });
-          }
         });
+      });
+
+    function initializeMap() {
+      const svg = document.getElementById('mapa-real-colombia');
+      if (!svg) return;
+      
+      // Forzar viewBox responsivo
+      svg.setAttribute('viewBox', '0 0 735 940');
+      svg.style.width = '100%';
+      svg.style.height = '100%';
+      svg.style.display = 'block';
+      
+      // Crear elemento único de texto para la ciudad activa
+      const activeLabel = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+      activeLabel.setAttribute('id', 'active-city-label');
+      svg.appendChild(activeLabel);
+      
+      const paths = svg.querySelectorAll('path.departamento');
+      paths.forEach(path => {
+        const deptName = pathIdToDeptName[path.id];
+        if (!deptName) return;
         
-        // Crear grupo de marcadores de ciudades usando las coordenadas calibradas dinámicamente
-        const gMarkers = document.createElementNS('http://www.w3.org/2000/svg', 'g');
-        gMarkers.setAttribute('id', 'city-markers-group');
+        // Encontrar la ciudad en citiesData que pertenezca a este departamento
+        const closestCity = citiesData.find(c => 
+          c.department.toLowerCase().includes(deptName.toLowerCase()) || 
+          deptName.toLowerCase().includes(c.department.toLowerCase())
+        );
         
-        citiesData.forEach(city => {
-          // Crear círculo marcador en la coordenada calibrada precisa
-          const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
-          circle.setAttribute('cx', city.x);
-          circle.setAttribute('cy', city.y);
-          circle.setAttribute('r', '6.5');
-          circle.setAttribute('class', 'city-marker');
-          circle.setAttribute('id', 'marker-' + city.id);
-          circle.setAttribute('onclick', `selectCity('${city.id}')`);
+        if (closestCity) {
+          const bbox = path.getBBox();
+          const ctm = path.getCTM();
           
-          // EFECTO EN HOVER DEL MARCADOR: SALTA EL DEPARTAMENTO CORRESPONDIENTE
-          circle.addEventListener('mouseenter', () => {
-            const deptPath = svg.querySelector(`path.departamento[data-city-id="${city.id}"]`);
-            if (deptPath) highlightDept(deptPath);
+          let cx = bbox.x + bbox.width / 2;
+          let cy = bbox.y + bbox.height / 2;
+          
+          // CALIBRACIÓN GEOGRÁFICA DE LOS MARCADORES RESPECTO A LAS FRONTERAS DEL SVG
+          if (closestCity.id === "leticia") {
+            cx = bbox.x + bbox.width * 0.74;
+            cy = bbox.y + bbox.height * 0.94; // Amazonas extremo sur (Leticia)
+          } else if (closestCity.id === "riohacha") {
+            cx = bbox.x + bbox.width * 0.65;
+            cy = bbox.y + bbox.height * 0.2; // La Guajira norte (Riohacha)
+          } else if (closestCity.id === "cartagena") {
+            cx = bbox.x + bbox.width * 0.3;
+            cy = bbox.y + bbox.height * 0.12; // Bolívar extremo norte (Cartagena)
+          } else if (closestCity.id === "santamarta") {
+            cx = bbox.x + bbox.width * 0.42;
+            cy = bbox.y + bbox.height * 0.12; // Magdalena norte (Santa Marta)
+          } else if (closestCity.id === "barranquilla") {
+            cx = bbox.x + bbox.width * 0.45;
+            cy = bbox.y + bbox.height * 0.25; // Atlántico norte (Barranquilla)
+          } else if (closestCity.id === "sincelejo") {
+            cx = bbox.x + bbox.width * 0.45;
+            cy = bbox.y + bbox.height * 0.42; // Sucre
+          } else if (closestCity.id === "monteria") {
+            cx = bbox.x + bbox.width * 0.52;
+            cy = bbox.y + bbox.height * 0.48; // Córdoba
+          } else if (closestCity.id === "valledupar") {
+            cx = bbox.x + bbox.width * 0.52;
+            cy = bbox.y + bbox.height * 0.32; // Cesar norte (Valledupar)
+          } else if (closestCity.id === "cucuta") {
+            cx = bbox.x + bbox.width * 0.65;
+            cy = bbox.y + bbox.height * 0.42; // Norte de Santander (Cúcuta)
+          } else if (closestCity.id === "puertocarreno") {
+            cx = bbox.x + bbox.width * 0.92;
+            cy = bbox.y + bbox.height * 0.16; // Vichada extremo este (Puerto Carreño)
+          } else if (closestCity.id === "inirida") {
+            cx = bbox.x + bbox.width * 0.82;
+            cy = bbox.y + bbox.height * 0.32; // Guainía este (Inírida)
+          } else if (closestCity.id === "mitu") {
+            cx = bbox.x + bbox.width * 0.62;
+            cy = bbox.y + bbox.height * 0.52; // Vaupés centro (Mitú)
+          } else if (closestCity.id === "quibdo") {
+            cx = bbox.x + bbox.width * 0.62;
+            cy = bbox.y + bbox.height * 0.45; // Chocó este-centro (Quibdó)
+          } else if (closestCity.id === "pasto") {
+            cx = bbox.x + bbox.width * 0.35;
+            cy = bbox.y + bbox.height * 0.42; // Nariño centro (Pasto)
+          } else if (closestCity.id === "popayan") {
+            cx = bbox.x + bbox.width * 0.42;
+            cy = bbox.y + bbox.height * 0.38; // Cauca center (Popayán)
+          } else if (closestCity.id === "cali") {
+            cx = bbox.x + bbox.width * 0.45;
+            cy = bbox.y + bbox.height * 0.52; // Valle del Cauca center (Cali)
+          } else if (closestCity.id === "sanandres") {
+            cx = bbox.x + bbox.width * 0.25;
+            cy = bbox.y + bbox.height * 0.25; // San Andrés isla
+          }
+          
+          // Transformar el punto de coordenadas locales a la escala absoluta del SVG
+          const localPt = svg.createSVGPoint();
+          localPt.x = cx;
+          localPt.y = cy;
+          const absPt = localPt.matrixTransform(ctm);
+          
+          // Actualizar coordenadas en la base de datos en memoria
+          closestCity.x = absPt.x;
+          closestCity.y = absPt.y;
+          
+          // Almacenar el centro absoluto para el efecto de salto individual
+          path.setAttribute('data-center-x', absPt.x);
+          path.setAttribute('data-center-y', absPt.y);
+          
+          const cleanRegion = closestCity.region.split(' ')[0];
+          path.classList.add('region-' + cleanRegion);
+          path.setAttribute('data-dept', closestCity.department);
+          path.setAttribute('data-region', closestCity.region);
+          path.setAttribute('data-city-id', closestCity.id);
+          
+          // Limpiar títulos previos si los hay
+          const oldTitles = path.querySelectorAll('title');
+          oldTitles.forEach(t => t.remove());
+          
+          // Inyectar tooltip nativo de departamento
+          const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+          title.textContent = `Departamento de ${closestCity.department}`;
+          path.appendChild(title);
+          
+          // EFECTO DE SALTO (POP OUT) Y NOMBRE EN HOVER DEL DEPARTAMENTO
+          path.addEventListener('mouseenter', () => {
+            highlightDept(path);
             
             document.getElementById('map-info-bar').innerHTML = 
-              `<span class="active-dept">${city.department}</span> (${city.region}) — Capital: ${city.name}`;
+              `<span class="active-dept">${closestCity.department}</span> (${closestCity.region}) — Capital: ${closestCity.name}`;
             
-            activeLabel.setAttribute('x', city.x);
-            activeLabel.setAttribute('y', city.y - 12);
+            activeLabel.setAttribute('x', closestCity.x);
+            activeLabel.setAttribute('y', closestCity.y - 12);
             activeLabel.setAttribute('text-anchor', 'middle');
-            activeLabel.textContent = `${city.name} (${city.originalName})`;
+            activeLabel.textContent = `${closestCity.name} (${closestCity.originalName})`;
             activeLabel.classList.add('visible');
           });
           
-          circle.addEventListener('mouseleave', () => {
-            const deptPath = svg.querySelector(`path.departamento[data-city-id="${city.id}"]`);
-            if (deptPath) unhighlightDept(deptPath);
-            
+          path.addEventListener('mouseleave', () => {
+            unhighlightDept(path);
             document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
             activeLabel.classList.remove('visible');
           });
           
-          gMarkers.appendChild(circle);
+          // Permitir hacer clic en el departamento entero para abrir la ficha en el costado izquierdo
+          path.addEventListener('click', () => {
+            selectCity(closestCity.id);
+          });
+        }
+      });
+      
+      // Dibujar los marcadores de ciudades usando las coordenadas calibradas dinámicamente
+      const gMarkers = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+      gMarkers.setAttribute('id', 'city-markers-group');
+      
+      citiesData.forEach(city => {
+        const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+        circle.setAttribute('cx', city.x);
+        circle.setAttribute('cy', city.y);
+        circle.setAttribute('r', '6.5');
+        circle.setAttribute('class', 'city-marker');
+        circle.setAttribute('id', 'marker-' + city.id);
+        circle.setAttribute('onclick', `selectCity('${city.id}')`);
+        
+        // EFECTO EN HOVER DEL MARCADOR: SALTA EL DEPARTAMENTO CORRESPONDIENTE
+        circle.addEventListener('mouseenter', () => {
+          const deptPath = svg.querySelector(`path.departamento[data-city-id="${city.id}"]`);
+          if (deptPath) highlightDept(deptPath);
+          
+          document.getElementById('map-info-bar').innerHTML = 
+            `<span class="active-dept">${city.department}</span> (${city.region}) — Capital: ${city.name}`;
+          
+          activeLabel.setAttribute('x', city.x);
+          activeLabel.setAttribute('y', city.y - 12);
+          activeLabel.setAttribute('text-anchor', 'middle');
+          activeLabel.textContent = `${city.name} (${city.originalName})`;
+          activeLabel.classList.add('visible');
         });
         
-        svg.appendChild(gMarkers);
+        circle.addEventListener('mouseleave', () => {
+          const deptPath = svg.querySelector(`path.departamento[data-city-id="${city.id}"]`);
+          if (deptPath) unhighlightDept(deptPath);
+          
+          document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+          activeLabel.classList.remove('visible');
+        });
+        
+        gMarkers.appendChild(circle);
       });
+      
+      svg.appendChild(gMarkers);
+    }
 
     // Funciones para aplicar el salto (Pop Out) de manera pura en CSS
     function highlightDept(path) {

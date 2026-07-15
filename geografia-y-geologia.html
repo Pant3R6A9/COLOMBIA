@@ -554,6 +554,42 @@
       { name: "Armenia", department: "Quindío", x: 288, y: 418, region: "Andina" }
     ];
 
+    // DICCIONARIO DE MAPEO ESTÁTICO GEOGRÁFICO BIPARTITO (100% Preciso y libre de condiciones de carrera)
+    const pathIdToDeptName = {
+      "path7166": "Caldas",
+      "path6453": "Putumayo",
+      "path6417": "Chocó",
+      "path7280": "Risaralda",
+      "path6478": "Bolívar",
+      "path7210": "Sucre",
+      "path7187": "Atlántico",
+      "path7184": "Magdalena",
+      "path7175": "Cesar",
+      "path7331": "Norte de Santander",
+      "path7327": "Santander",
+      "path7313": "Boyacá",
+      "path7297": "Arauca",
+      "path7291": "Casanare",
+      "path7270": "Quindío",
+      "path7261": "Valle del Cauca",
+      "path7244": "Huila",
+      "path6475": "Tolima",
+      "path7202": "Meta",
+      "path7239": "Caquetá",
+      "path6457": "Amazonas",
+      "path3784": "Vichada",
+      "path3862": "Vaupés",
+      "path6474": "Guainía",
+      "path2967": "Guaviare",
+      "path6388": "La Guajira",
+      "path6415": "Cundinamarca",
+      "path6442": "Cauca",
+      "path7277": "Córdoba",
+      "path7281": "Nariño",
+      "path6396": "Antioquia",
+      "path6640": "San Andrés y Providencia"
+    };
+
     // Cargar mapa e inyectar capas
     fetch('assets/images/colombia_departments.svg')
       .then(response => response.text())
@@ -561,62 +597,64 @@
         const container = document.getElementById('map-holder');
         container.innerHTML = svgText;
         
-        const svg = container.querySelector('svg');
-        svg.setAttribute('id', 'mapa-real-colombia');
-        
-        // Forzar el viewBox original del mapa vectorial para que sea 100% responsivo
-        svg.setAttribute('viewBox', '0 0 735 940');
-        svg.style.width = '100%';
-        svg.style.height = '100%';
-        svg.style.display = 'block';
-        
-        // Clasificación robusta de departamentos usando bounding box local y distancia a capital
-        const paths = svg.querySelectorAll('path.departamento');
-        paths.forEach(path => {
-          const bbox = path.getBBox();
-          const localCenter = svg.createSVGPoint();
-          localCenter.x = bbox.x + bbox.width / 2;
-          localCenter.y = bbox.y + bbox.height / 2;
-          
-          // Aplicar la matriz de transformación del grupo padre para obtener coordenadas SVG absolutas
-          const ctm = path.getCTM();
-          const absCenter = localCenter.matrixTransform(ctm);
-          
-          // Encontrar la ciudad capital más cercana a este centro geométrico absoluto
-          let closestCity = null;
-          let minDist = Infinity;
-          citiesDataForRegions.forEach(city => {
-            const dist = Math.hypot(city.x - absCenter.x, city.y - absCenter.y);
-            if (dist < minDist) {
-              minDist = dist;
-              closestCity = city;
-            }
+        window.addEventListener('load', () => {
+          requestAnimationFrame(() => {
+            initializeGeologiaMap();
           });
-          
-          if (closestCity) {
-            // Asignar los atributos correspondientes de forma unívoca 1-a-1
-            const cleanRegion = closestCity.region.split(' ')[0];
-            path.classList.add('region-' + cleanRegion);
-            
-            // Inyectar tooltip nativo de departamento
-            const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
-            title.textContent = `Departamento de ${closestCity.department}`;
-            path.appendChild(title);
-            
-            // Agregar listeners para la barra de información dinámica
-            path.addEventListener('mouseenter', () => {
-              document.getElementById('map-info-bar').innerHTML = 
-                `<span class="active-dept">${closestCity.department}</span> (${closestCity.region})`;
-            });
-            path.addEventListener('mouseleave', () => {
-              document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
-            });
-          }
         });
-        
-        // Agregar las capas explicativas
-        injectLayers(svg);
       });
+
+    function initializeGeologiaMap() {
+      const container = document.getElementById('map-holder');
+      const svg = container.querySelector('svg');
+      if (!svg) return;
+      
+      svg.setAttribute('id', 'mapa-real-colombia');
+      
+      // Forzar el viewBox original del mapa vectorial para que sea 100% responsivo
+      svg.setAttribute('viewBox', '0 0 735 940');
+      svg.style.width = '100%';
+      svg.style.height = '100%';
+      svg.style.display = 'block';
+      
+      const paths = svg.querySelectorAll('path.departamento');
+      paths.forEach(path => {
+        const deptName = pathIdToDeptName[path.id];
+        if (!deptName) return;
+        
+        // Encontrar la ciudad capital en citiesDataForRegions
+        const closestCity = citiesDataForRegions.find(c => 
+          c.department.toLowerCase().includes(deptName.toLowerCase()) || 
+          deptName.toLowerCase().includes(c.department.toLowerCase())
+        );
+        
+        if (closestCity) {
+          const cleanRegion = closestCity.region.split(' ')[0];
+          path.classList.add('region-' + cleanRegion);
+          
+          // Limpiar títulos previos si los hay
+          const oldTitles = path.querySelectorAll('title');
+          oldTitles.forEach(t => t.remove());
+          
+          // Inyectar tooltip nativo de departamento
+          const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+          title.textContent = `Departamento de ${closestCity.department}`;
+          path.appendChild(title);
+          
+          // Agregar listeners para la barra de información dinámica
+          path.addEventListener('mouseenter', () => {
+            document.getElementById('map-info-bar').innerHTML = 
+              `<span class="active-dept">${closestCity.department}</span> (${closestCity.region})`;
+          });
+          path.addEventListener('mouseleave', () => {
+            document.getElementById('map-info-bar').innerHTML = "Explora los departamentos con el cursor";
+          });
+        }
+      });
+      
+      // Agregar las capas explicativas
+      injectLayers(svg);
+    }
 
     function injectLayers(svg) {
       // CAPA 1: MINERALES
