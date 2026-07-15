@@ -70,19 +70,83 @@
     svg#mapa-real-colombia {
       width: 100%;
       height: auto;
+      background: #0d0f12;
+      border-radius: 6px;
     }
     
-    svg#mapa-real-colombia path {
-      fill: rgba(255, 255, 255, 0.05);
-      stroke: rgba(255, 255, 255, 0.15);
-      stroke-width: 1;
-      transition: all 0.3s ease;
+    /* Relleno premium por región natural para dar vida al mapa */
+    svg#mapa-real-colombia path.departamento {
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
       cursor: pointer;
     }
     
-    svg#mapa-real-colombia path:hover {
-      fill: rgba(255, 255, 255, 0.12);
-      stroke: rgba(255, 255, 255, 0.3);
+    svg#mapa-real-colombia path.departamento.region-Andina {
+      fill: rgba(230, 126, 34, 0.18) !important;
+      stroke: rgba(230, 126, 34, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Andina:hover {
+      fill: rgba(230, 126, 34, 0.35) !important;
+      stroke: #e67e22 !important;
+    }
+    
+    svg#mapa-real-colombia path.departamento.region-Caribe {
+      fill: rgba(52, 152, 219, 0.18) !important;
+      stroke: rgba(52, 152, 219, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Caribe:hover {
+      fill: rgba(52, 152, 219, 0.35) !important;
+      stroke: #3498db !important;
+    }
+    
+    svg#mapa-real-colombia path.departamento.region-Amazonía {
+      fill: rgba(46, 204, 113, 0.18) !important;
+      stroke: rgba(46, 204, 113, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Amazonía:hover {
+      fill: rgba(46, 204, 113, 0.35) !important;
+      stroke: #2ecc71 !important;
+    }
+    
+    svg#mapa-real-colombia path.departamento.region-Pacífica {
+      fill: rgba(26, 188, 156, 0.18) !important;
+      stroke: rgba(26, 188, 156, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Pacífica:hover {
+      fill: rgba(26, 188, 156, 0.35) !important;
+      stroke: #1abc9c !important;
+    }
+    
+    svg#mapa-real-colombia path.departamento.region-Orinoquía {
+      fill: rgba(241, 196, 15, 0.15) !important;
+      stroke: rgba(241, 196, 15, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Orinoquía:hover {
+      fill: rgba(241, 196, 15, 0.3) !important;
+      stroke: #f1c40f !important;
+    }
+    
+    svg#mapa-real-colombia path.departamento.region-Insular {
+      fill: rgba(155, 89, 182, 0.22) !important;
+      stroke: rgba(155, 89, 182, 0.5) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Insular:hover {
+      fill: rgba(155, 89, 182, 0.4) !important;
+      stroke: #9b59b6 !important;
+    }
+    
+    /* Textos vectoriales legibles en gris sutil */
+    svg#mapa-real-colombia g[id^="flowRoot"] path {
+      fill: rgba(255, 255, 255, 0.5) !important;
+    }
+    
+    svg#mapa-real-colombia text {
+      fill: rgba(255, 255, 255, 0.5) !important;
     }
     
     /* Capas Interactivas */
@@ -100,7 +164,7 @@
     /* Fallas y sismos */
     .falla-linea {
       stroke: #e74c3c;
-      stroke-width: 3;
+      stroke-width: 3.5;
       stroke-dasharray: 6 4;
       fill: none;
       filter: drop-shadow(0 0 5px #e74c3c);
@@ -109,15 +173,16 @@
     .volcan-nodo {
       fill: #e74c3c;
       stroke: #fff;
-      stroke-width: 1.5;
+      stroke-width: 2;
       cursor: pointer;
       transition: all 0.3s ease;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.8));
     }
     
     .volcan-nodo:hover {
       fill: #ff3333;
-      r: 8;
-      filter: drop-shadow(0 0 8px #e74c3c);
+      r: 9;
+      filter: drop-shadow(0 0 10px #e74c3c);
     }
     
     /* Minas y minerales */
@@ -127,18 +192,19 @@
       stroke-width: 1.5;
       cursor: pointer;
       transition: all 0.3s ease;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.8));
     }
     
     .mina-nodo:hover {
       fill: #fff;
-      r: 8;
-      filter: drop-shadow(0 0 8px #f1c40f);
+      r: 9;
+      filter: drop-shadow(0 0 10px #f1c40f);
     }
     
     .mina-ilegal-area {
-      fill: rgba(192, 57, 43, 0.3);
+      fill: rgba(192, 57, 43, 0.35);
       stroke: #c0392b;
-      stroke-width: 2;
+      stroke-width: 2.5;
       stroke-dasharray: 4 4;
       cursor: pointer;
       animation: alertPulse 2s infinite;
@@ -151,26 +217,48 @@
       stroke-width: 1.5;
       cursor: pointer;
       transition: all 0.3s ease;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.8));
     }
     
     .ruina-nodo:hover {
       fill: #5eff8b;
-      r: 8;
-      filter: drop-shadow(0 0 8px #2ecc71);
+      r: 9;
+      filter: drop-shadow(0 0 10px #2ecc71);
     }
     
     .misterio-nodo {
       fill: #9b59b6;
       stroke: #fff;
-      stroke-width: 1.5;
+      stroke-width: 2;
       cursor: pointer;
       transition: all 0.3s ease;
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.8));
     }
     
     .misterio-nodo:hover {
       fill: #df9cff;
-      r: 10;
-      filter: drop-shadow(0 0 8px #9b59b6);
+      r: 11;
+      filter: drop-shadow(0 0 12px #9b59b6);
+    }
+    
+    /* Ríos principales */
+    svg#mapa-real-colombia g[inkscape:label="Ríos principales"] path {
+      stroke: #2e86de !important;
+      stroke-width: 1px !important;
+      fill: none !important;
+      opacity: 0.5;
+    }
+    
+    /* Límites internacionales */
+    svg#mapa-real-colombia g[inkscape:label="Límites internacionales"] path {
+      stroke: rgba(255, 255, 255, 0.3) !important;
+      stroke-width: 1.2px !important;
+      fill: none !important;
+    }
+
+    svg#mapa-real-colombia rect {
+      stroke: rgba(255, 255, 255, 0.15) !important;
+      fill: none !important;
     }
     
     @keyframes alertPulse {
@@ -273,7 +361,7 @@
     <div class="document-badge" style="background: rgba(192,57,43,0.15); color: #c0392b;">Alerta Ambiental</div>
     <h2 class="title-font">Minería Ilegal de Oro</h2>
     <p>
-      La minería ilegal en el Chocó, el Bajo Cauca y zonas del Amazonas ha provocado un desastre ecológico masivo. El uso indiscriminado de **mercurio** y cianuro para separar el oro del lodo contamina las fuentes de agua dulce de las que dependen las comunidades indígenas y afrodescendientes.
+      La minería ilegal en el Chocó, el Bajo Cauca y zonas del Amazonas ha provocado un desaste ecológico masivo. El uso indiscriminado de **mercurio** y cianuro para separar el oro del lodo contamina las fuentes de agua dulce de las que dependen las comunidades indígenas y afrodescendientes.
     </p>
     <div class="stat-box">
       <h4 class="title-font">Impacto Crítico</h4>
@@ -371,6 +459,42 @@
   <script src="js/main.js"></script>
   
   <script>
+    // Base de datos de posicionamiento de capitales para clasificar regiones en el mapa
+    const citiesDataForRegions = [
+      { name: "Bogotá", x: 385, y: 430, region: "Andina" },
+      { name: "Medellín", x: 285, y: 345, region: "Andina" },
+      { name: "Cali", x: 235, y: 485, region: "Pacífica" },
+      { name: "Barranquilla", x: 315, y: 95, region: "Caribe" },
+      { name: "Cartagena", x: 295, y: 115, region: "Caribe" },
+      { name: "Santa Marta", x: 342, y: 90, region: "Caribe" },
+      { name: "Tunja", x: 395, y: 395, region: "Andina" },
+      { name: "Bucaramanga", x: 388, y: 310, region: "Andina" },
+      { name: "Popayán", x: 235, y: 530, region: "Andina" },
+      { name: "Pasto", x: 195, y: 600, region: "Andina" },
+      { name: "Leticia", x: 510, y: 885, region: "Amazonía" },
+      { name: "San Andrés", x: 50, y: 55, region: "Insular" },
+      { name: "Cúcuta", x: 430, y: 265, region: "Andina" },
+      { name: "Ibagué", x: 308, y: 440, region: "Andina" },
+      { name: "Neiva", x: 295, y: 495, region: "Andina" },
+      { name: "Quibdó", x: 220, y: 375, region: "Pacífica" },
+      { name: "Villavicencio", x: 395, y: 475, region: "Orinoquía" },
+      { name: "Yopal", x: 440, y: 400, region: "Orinoquía" },
+      { name: "Arauca", x: 490, y: 305, region: "Orinoquía" },
+      { name: "Mitú", x: 560, y: 630, region: "Amazonía" },
+      { name: "Inírida", x: 615, y: 510, region: "Amazonía" },
+      { name: "Puerto Carreño", x: 640, y: 305, region: "Orinoquía" },
+      { name: "Mocoa", x: 220, y: 575, region: "Andina" },
+      { name: "Florencia", x: 305, y: 565, region: "Amazonía" },
+      { name: "San José", x: 435, y: 530, region: "Amazonía" },
+      { name: "Sincelejo", x: 290, y: 145, region: "Caribe" },
+      { name: "Montería", x: 260, y: 175, region: "Caribe" },
+      { name: "Valledupar", x: 365, y: 120, region: "Caribe" },
+      { name: "Riohacha", x: 388, y: 65, region: "Caribe" },
+      { name: "Manizales", x: 292, y: 395, region: "Andina" },
+      { name: "Pereira", x: 288, y: 408, region: "Andina" },
+      { name: "Armenia", x: 288, y: 418, region: "Andina" }
+    ];
+
     // Cargar mapa e inyectar capas
     fetch('assets/images/colombia_departments.svg')
       .then(response => response.text())
@@ -383,6 +507,20 @@
         svg.style.width = '100%';
         svg.style.height = 'auto';
         
+        // Clasificar dinámicamente cada departamento en su región natural
+        const paths = svg.querySelectorAll('path.departamento');
+        citiesDataForRegions.forEach(city => {
+          const point = svg.createSVGPoint();
+          point.x = city.x;
+          point.y = city.y;
+          
+          paths.forEach(path => {
+            if (path.isPointInFill(point)) {
+              path.classList.add('region-' + city.region);
+            }
+          });
+        });
+        
         // Agregar las capas explicativas
         injectLayers(svg);
       });
@@ -393,38 +531,54 @@
       gMinerales.setAttribute('id', 'layer-minerales');
       gMinerales.setAttribute('class', 'map-overlay-group');
       
-      // Minería Ilegal (Polígono pulsante en Chocó)
+      // Minería Ilegal (Polígono en Chocó)
       const pathIlegal = document.createElementNS('http://www.w3.org/2000/svg', 'path');
       pathIlegal.setAttribute('d', 'M 220,320 C 200,350 200,420 230,450 C 240,430 250,380 220,320 Z');
       pathIlegal.setAttribute('class', 'mina-ilegal-area');
       pathIlegal.setAttribute('onclick', "openNodeDrawer('mineria-ilegal')");
+      
+      const tIlegal = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tIlegal.textContent = "Alerta: Minería Ilegal de Oro (Chocó)";
+      pathIlegal.appendChild(tIlegal);
       gMinerales.appendChild(pathIlegal);
       
       // Cerrejón (Carbón)
       const nodeCerrejon = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeCerrejon.setAttribute('cx', '370');
       nodeCerrejon.setAttribute('cy', '95');
-      nodeCerrejon.setAttribute('r', '6');
+      nodeCerrejon.setAttribute('r', '7');
       nodeCerrejon.setAttribute('class', 'mina-nodo');
       nodeCerrejon.setAttribute('onclick', "openNodeDrawer('carbon-cerrejon')");
+      
+      const tCerrejon = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tCerrejon.textContent = "Mina del Cerrejón (Carbón)";
+      nodeCerrejon.appendChild(tCerrejon);
       gMinerales.appendChild(nodeCerrejon);
 
       // Muzo (Esmeralda)
       const nodeMuzo = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeMuzo.setAttribute('cx', '360');
       nodeMuzo.setAttribute('cy', '410');
-      nodeMuzo.setAttribute('r', '6');
+      nodeMuzo.setAttribute('r', '7');
       nodeMuzo.setAttribute('class', 'mina-nodo');
       nodeMuzo.setAttribute('onclick', "openNodeDrawer('esmeraldas-muzo')");
+      
+      const tMuzo = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tMuzo.textContent = "Esmeraldas de Muzo";
+      nodeMuzo.appendChild(tMuzo);
       gMinerales.appendChild(nodeMuzo);
 
       // Chivor (Esmeralda)
       const nodeChivor = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeChivor.setAttribute('cx', '390');
       nodeChivor.setAttribute('cy', '420');
-      nodeChivor.setAttribute('r', '6');
+      nodeChivor.setAttribute('r', '7');
       nodeChivor.setAttribute('class', 'mina-nodo');
       nodeChivor.setAttribute('onclick', "openNodeDrawer('esmeraldas-chivor')");
+      
+      const tChivor = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tChivor.textContent = "Esmeraldas de Chivor";
+      nodeChivor.appendChild(tChivor);
       gMinerales.appendChild(nodeChivor);
 
       // CAPA 2: GEOLOGIA
@@ -442,18 +596,26 @@
       const nodeRuiz = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeRuiz.setAttribute('cx', '295');
       nodeRuiz.setAttribute('cy', '402');
-      nodeRuiz.setAttribute('r', '6');
+      nodeRuiz.setAttribute('r', '7');
       nodeRuiz.setAttribute('class', 'volcan-nodo');
       nodeRuiz.setAttribute('onclick', "openNodeDrawer('nevado-del-ruiz')");
+      
+      const tRuiz = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tRuiz.textContent = "Volcán Nevado del Ruiz";
+      nodeRuiz.appendChild(tRuiz);
       gGeologia.appendChild(nodeRuiz);
 
       // Galeras
       const nodeGaleras = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeGaleras.setAttribute('cx', '198');
       nodeGaleras.setAttribute('cy', '595');
-      nodeGaleras.setAttribute('r', '6');
+      nodeGaleras.setAttribute('r', '7');
       nodeGaleras.setAttribute('class', 'volcan-nodo');
       nodeGaleras.setAttribute('onclick', "openNodeDrawer('volcan-galeras')");
+      
+      const tGaleras = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tGaleras.textContent = "Volcán Galeras";
+      nodeGaleras.appendChild(tGaleras);
       gGeologia.appendChild(nodeGaleras);
 
       // CAPA 3: ARQUEOLOGIA
@@ -465,36 +627,52 @@
       const nodeTeyuna = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeTeyuna.setAttribute('cx', '350');
       nodeTeyuna.setAttribute('cy', '60');
-      nodeTeyuna.setAttribute('r', '7');
+      nodeTeyuna.setAttribute('r', '8');
       nodeTeyuna.setAttribute('class', 'ruina-nodo');
       nodeTeyuna.setAttribute('onclick', "openNodeDrawer('ruina-teyuna')");
+      
+      const tTeyuna = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tTeyuna.textContent = "Ciudad Perdida (Teyuna)";
+      nodeTeyuna.appendChild(tTeyuna);
       gArqueologia.appendChild(nodeTeyuna);
 
       // San Agustín
       const nodeSanAgustin = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeSanAgustin.setAttribute('cx', '230');
       nodeSanAgustin.setAttribute('cy', '540');
-      nodeSanAgustin.setAttribute('r', '7');
+      nodeSanAgustin.setAttribute('r', '8');
       nodeSanAgustin.setAttribute('class', 'ruina-nodo');
       nodeSanAgustin.setAttribute('onclick', "openNodeDrawer('ruina-san-agustin')");
+      
+      const tAgustin = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tAgustin.textContent = "San Agustín";
+      nodeSanAgustin.appendChild(tAgustin);
       gArqueologia.appendChild(nodeSanAgustin);
 
       // Tierradentro
       const nodeTierradentro = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeTierradentro.setAttribute('cx', '240');
       nodeTierradentro.setAttribute('cy', '500');
-      nodeTierradentro.setAttribute('r', '7');
+      nodeTierradentro.setAttribute('r', '8');
       nodeTierradentro.setAttribute('class', 'ruina-nodo');
       nodeTierradentro.setAttribute('onclick', "openNodeDrawer('ruina-tierradentro')");
+      
+      const tTierra = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tTierra.textContent = "Hipogeos de Tierradentro";
+      nodeTierradentro.appendChild(tTierra);
       gArqueologia.appendChild(nodeTierradentro);
 
       // Chiribiquete
       const nodeChiribiquete = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
       nodeChiribiquete.setAttribute('cx', '432');
       nodeChiribiquete.setAttribute('cy', '522');
-      nodeChiribiquete.setAttribute('r', '9');
+      nodeChiribiquete.setAttribute('r', '10');
       nodeChiribiquete.setAttribute('class', 'misterio-nodo');
       nodeChiribiquete.setAttribute('onclick', "openNodeDrawer('misterio-chiribiquete')");
+      
+      const tChiri = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      tChiri.textContent = "Serranía de Chiribiquete";
+      nodeChiribiquete.appendChild(tChiri);
       gArqueologia.appendChild(nodeChiribiquete);
 
       svg.appendChild(gMinerales);

@@ -123,33 +123,92 @@
     }
     
     /* ==========================================================
-       ESTILOS OSCUROS PREMIUM PARA EL MAPA VECTORIAL DE WIKIMEDIA
+       DISEÑO DE MAPA REGIONAL PREMIUM CON CONTRASTE E INTERACTIVIDAD
        ========================================================== */
     svg#mapa-real-colombia {
       background: #0d0f12;
       border-radius: 6px;
     }
     
-    /* Forzar que los departamentos tengan un diseño oscuro de alta gama */
+    /* Color base de los departamentos */
     svg#mapa-real-colombia path.departamento {
-      fill: #151821 !important;
-      stroke: rgba(212, 175, 55, 0.15) !important;
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      cursor: pointer;
+    }
+    
+    /* 1. Región Andina (Naranja/Terracota sutil) */
+    svg#mapa-real-colombia path.departamento.region-Andina {
+      fill: rgba(230, 126, 34, 0.18) !important;
+      stroke: rgba(230, 126, 34, 0.4) !important;
       stroke-width: 1px !important;
-      transition: all 0.3s ease;
+    }
+    svg#mapa-real-colombia path.departamento.region-Andina:hover {
+      fill: rgba(230, 126, 34, 0.35) !important;
+      stroke: #e67e22 !important;
     }
     
-    svg#mapa-real-colombia path.departamento:hover {
-      fill: rgba(212, 175, 55, 0.08) !important;
-      stroke: var(--accent) !important;
+    /* 2. Región Caribe (Azul sutil) */
+    svg#mapa-real-colombia path.departamento.region-Caribe {
+      fill: rgba(52, 152, 219, 0.18) !important;
+      stroke: rgba(52, 152, 219, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Caribe:hover {
+      fill: rgba(52, 152, 219, 0.35) !important;
+      stroke: #3498db !important;
     }
     
-    /* Estilar las letras vectorizadas del mapa original */
+    /* 3. Región Amazonía (Verde sutil) */
+    svg#mapa-real-colombia path.departamento.region-Amazonía {
+      fill: rgba(46, 204, 113, 0.18) !important;
+      stroke: rgba(46, 204, 113, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Amazonía:hover {
+      fill: rgba(46, 204, 113, 0.35) !important;
+      stroke: #2ecc71 !important;
+    }
+    
+    /* 4. Región Pacífica (Teal sutil) */
+    svg#mapa-real-colombia path.departamento.region-Pacífica {
+      fill: rgba(26, 188, 156, 0.18) !important;
+      stroke: rgba(26, 188, 156, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Pacífica:hover {
+      fill: rgba(26, 188, 156, 0.35) !important;
+      stroke: #1abc9c !important;
+    }
+    
+    /* 5. Región Orinoquía (Oro/Amarillo sutil) */
+    svg#mapa-real-colombia path.departamento.region-Orinoquía {
+      fill: rgba(241, 196, 15, 0.15) !important;
+      stroke: rgba(241, 196, 15, 0.4) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Orinoquía:hover {
+      fill: rgba(241, 196, 15, 0.3) !important;
+      stroke: #f1c40f !important;
+    }
+    
+    /* 6. Región Insular (Púrpura sutil) */
+    svg#mapa-real-colombia path.departamento.region-Insular {
+      fill: rgba(155, 89, 182, 0.22) !important;
+      stroke: rgba(155, 89, 182, 0.5) !important;
+      stroke-width: 1px !important;
+    }
+    svg#mapa-real-colombia path.departamento.region-Insular:hover {
+      fill: rgba(155, 89, 182, 0.4) !important;
+      stroke: #9b59b6 !important;
+    }
+    
+    /* Estilar las letras vectorizadas del mapa original en un tono claro y legible */
     svg#mapa-real-colombia g[id^="flowRoot"] path {
-      fill: #a9b2c3 !important;
+      fill: rgba(255, 255, 255, 0.5) !important;
     }
     
     svg#mapa-real-colombia text {
-      fill: #a9b2c3 !important;
+      fill: rgba(255, 255, 255, 0.5) !important;
     }
     
     /* Ríos principales en azul sutil */
@@ -157,52 +216,37 @@
       stroke: #2e86de !important;
       stroke-width: 1px !important;
       fill: none !important;
-      opacity: 0.4;
+      opacity: 0.5;
     }
     
     /* Límites internacionales */
     svg#mapa-real-colombia g[inkscape:label="Límites internacionales"] path {
-      stroke: rgba(255, 255, 255, 0.2) !important;
-      stroke-width: 1px !important;
+      stroke: rgba(255, 255, 255, 0.3) !important;
+      stroke-width: 1.2px !important;
       fill: none !important;
     }
 
     svg#mapa-real-colombia rect {
-      stroke: rgba(255, 255, 255, 0.1) !important;
+      stroke: rgba(255, 255, 255, 0.15) !important;
       fill: none !important;
     }
     
-    /* Ciudad seleccionada en mapa */
+    /* Marcadores de ciudades (Limpios, sin etiquetas de texto que ensucien) */
     .city-marker {
-      fill: var(--text-secondary);
+      fill: #ffffff;
       stroke: #000;
       stroke-width: 1.5;
       cursor: pointer;
       transition: all 0.3s ease;
-      filter: drop-shadow(0 0 3px rgba(0,0,0,0.8));
+      filter: drop-shadow(0 0 4px rgba(0,0,0,0.8));
     }
     
     .city-marker:hover, .city-marker.active-marker {
       fill: var(--accent);
       r: 8;
       filter: drop-shadow(0 0 10px var(--accent));
-    }
-    
-    .city-label {
-      font-family: var(--font-title);
-      font-size: 9px;
-      fill: var(--text-secondary);
-      opacity: 0.8;
-      pointer-events: none;
-      transition: all 0.3s ease;
-      filter: drop-shadow(0 0 2px #000);
-    }
-    
-    .city-marker.active-marker + .city-label {
-      fill: var(--accent);
-      font-size: 11px;
-      font-weight: bold;
-      opacity: 1;
+      stroke: #ffffff;
+      stroke-width: 2;
     }
     
     @media (max-width: 900px) {
@@ -331,7 +375,7 @@
       { id: "armenia", name: "Armenia", originalName: "Armenia", x: 288, y: 418, region: "Andina", date: "1889", desc: "Fundada durante la expansión cafetera del Quindío." }
     ];
 
-    // Cargar el mapa SVG y luego inyectar los marcadores
+    // Cargar el mapa SVG, clasificar regiones e inyectar marcadores
     fetch('assets/images/colombia_departments.svg')
       .then(response => response.text())
       .then(svgText => {
@@ -343,29 +387,42 @@
         svg.style.width = '100%';
         svg.style.height = 'auto';
         
+        // Clasificar dinámicamente cada path de departamento en su región natural
+        const paths = svg.querySelectorAll('path.departamento');
+        citiesData.forEach(city => {
+          const point = svg.createSVGPoint();
+          point.x = city.x;
+          point.y = city.y;
+          
+          paths.forEach(path => {
+            if (path.isPointInFill(point)) {
+              // Limpiar el nombre de la región para usarlo como clase limpia
+              const cleanRegion = city.region.split(' ')[0];
+              path.classList.add('region-' + cleanRegion);
+            }
+          });
+        });
+        
         // Crear grupo de marcadores
         const gMarkers = document.createElementNS('http://www.w3.org/2000/svg', 'g');
         gMarkers.setAttribute('id', 'city-markers-group');
         
         citiesData.forEach(city => {
-          // Crear círculo marcador
+          // Crear círculo marcador limpio (sin textos estáticos que saturen el mapa)
           const circle = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
           circle.setAttribute('cx', city.x);
           circle.setAttribute('cy', city.y);
-          circle.setAttribute('r', '5');
+          circle.setAttribute('r', '6.5');
           circle.setAttribute('class', 'city-marker');
           circle.setAttribute('id', 'marker-' + city.id);
           circle.setAttribute('onclick', `selectCity('${city.id}', true)`);
           
-          // Crear etiqueta de texto (oculta por defecto, se activa en hover/click)
-          const text = document.createElementNS('http://www.w3.org/2000/svg', 'text');
-          text.setAttribute('x', city.x + 8);
-          text.setAttribute('y', city.y + 3);
-          text.setAttribute('class', 'city-label');
-          text.textContent = city.name;
+          // Crear un título nativo (Tooltip) para que muestre el nombre solo al posar el mouse
+          const title = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+          title.textContent = `${city.name} (${city.originalName})`;
+          circle.appendChild(title);
           
           gMarkers.appendChild(circle);
-          gMarkers.appendChild(text);
         });
         
         svg.appendChild(gMarkers);
