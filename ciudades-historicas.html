@@ -39,6 +39,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      max-height: 85vh; /* Evita que la tarjeta del mapa sea más alta que el viewport */
+      overflow: hidden;
     }
     
     .search-input {
@@ -128,6 +130,10 @@
     svg#mapa-real-colombia {
       background: #0d0f12;
       border-radius: 6px;
+      max-height: 72vh; /* Altura máxima estricta para que quepa entero en pantalla sin recortarse */
+      width: 100%;
+      height: auto;
+      display: block;
     }
     
     /* Color base de los departamentos */
@@ -231,7 +237,7 @@
       fill: none !important;
     }
     
-    /* Marcadores de ciudades (Limpios, sin etiquetas de texto que ensucien) */
+    /* Marcadores de ciudades */
     .city-marker {
       fill: #ffffff;
       stroke: #000;
@@ -243,7 +249,7 @@
     
     .city-marker:hover, .city-marker.active-marker {
       fill: var(--accent);
-      r: 8;
+      r: 8.5;
       filter: drop-shadow(0 0 10px var(--accent));
       stroke: #ffffff;
       stroke-width: 2;
@@ -323,7 +329,7 @@
         <h3 class="title-font" style="font-size: 1.1rem; margin-bottom: 1rem; color: var(--text-primary); text-transform: uppercase;">
           Mapa Real de Colombia
         </h3>
-        <div id="map-container" style="width: 100%; position: relative;">
+        <div id="map-container" style="width: 100%; position: relative; display: flex; justify-content: center; align-items: center;">
           <!-- Aquí se inyecta el SVG del mapa con JS -->
         </div>
       </div>
@@ -384,8 +390,12 @@
         
         const svg = container.querySelector('svg');
         svg.setAttribute('id', 'mapa-real-colombia');
+        
+        // CORRECCIÓN CRÍTICA: Forzar el viewBox original del mapa vectorial para que sea 100% responsivo y no se recorte abajo ni arriba
+        svg.setAttribute('viewBox', '0 0 735 940');
         svg.style.width = '100%';
-        svg.style.height = 'auto';
+        svg.style.height = '100%';
+        svg.style.display = 'block';
         
         // Clasificar dinámicamente cada path de departamento en su región natural
         const paths = svg.querySelectorAll('path.departamento');
@@ -396,7 +406,6 @@
           
           paths.forEach(path => {
             if (path.isPointInFill(point)) {
-              // Limpiar el nombre de la región para usarlo como clase limpia
               const cleanRegion = city.region.split(' ')[0];
               path.classList.add('region-' + cleanRegion);
             }

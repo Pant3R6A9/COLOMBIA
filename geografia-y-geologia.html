@@ -64,14 +64,18 @@
       justify-content: center;
       align-items: center;
       position: relative;
+      max-height: 85vh; /* Evitar desbordes del contenedor del mapa */
+      overflow: hidden;
     }
     
     /* Estilos del mapa y departamentos */
     svg#mapa-real-colombia {
       width: 100%;
-      height: auto;
+      height: 100%;
       background: #0d0f12;
       border-radius: 6px;
+      max-height: 72vh; /* Evita que el SVG sea más alto que la pantalla, mostrándolo completo */
+      display: block;
     }
     
     /* Relleno premium por región natural para dar vida al mapa */
@@ -361,7 +365,7 @@
     <div class="document-badge" style="background: rgba(192,57,43,0.15); color: #c0392b;">Alerta Ambiental</div>
     <h2 class="title-font">Minería Ilegal de Oro</h2>
     <p>
-      La minería ilegal en el Chocó, el Bajo Cauca y zonas del Amazonas ha provocado un desaste ecológico masivo. El uso indiscriminado de **mercurio** y cianuro para separar el oro del lodo contamina las fuentes de agua dulce de las que dependen las comunidades indígenas y afrodescendientes.
+      La minería ilegal en el Chocó, el Bajo Cauca y zonas del Amazonas ha provocado un desastre ecológico masivo. El uso indiscriminado de **mercurio** y cianuro para separar el oro del lodo contamina las fuentes de agua dulce de las que dependen las comunidades indígenas y afrodescendientes.
     </p>
     <div class="stat-box">
       <h4 class="title-font">Impacto Crítico</h4>
@@ -504,8 +508,12 @@
         
         const svg = container.querySelector('svg');
         svg.setAttribute('id', 'mapa-real-colombia');
+        
+        // CORRECCIÓN CRÍTICA: Forzar el viewBox original del mapa vectorial para que sea 100% responsivo y no se recorte abajo ni arriba
+        svg.setAttribute('viewBox', '0 0 735 940');
         svg.style.width = '100%';
-        svg.style.height = 'auto';
+        svg.style.height = '100%';
+        svg.style.display = 'block';
         
         // Clasificar dinámicamente cada departamento en su región natural
         const paths = svg.querySelectorAll('path.departamento');
