@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colombia en el Tiempo - Portal de Memoria Histórica</title>
-  <meta name="description" content="Un viaje interactivo y crítico a través de la historia y los acervos documentales de Colombia, desde la época prehispánica hasta el siglo XXI.">
+  <title>Colombianopedia - Colombia en el Tiempo: Portal Oficial de Memoria y Patrimonio</title>
+  <meta name="description" content="La enciclopedia interactiva y documental de Colombia: recorre la historia nacional a través de scrollytelling inmersivo, mapas territoriales y archivos históricos del AGN.">
   
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <link rel="stylesheet" href="css/style.css?v=1.3">
   
   <!-- Optimización de render-blocking para la carga inicial -->
-  <link rel="expect" href="#hero-main" blocking="render">
+  <link rel="expect" href="#hero-scrolly" blocking="render">
 </head>
 <body>
 
-  <!-- Encabezado Común -->
+  <!-- Encabezado Común con Navegación y Modos -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -35,93 +35,316 @@
         <button class="dropdown-trigger">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
-          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
-          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
-          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="ciudades-historicas.html">32 Ciudades y Toponimia</a>
+          <a href="muiscas.html">Enciclopedia Muisca</a>
           <a href="otras-culturas.html">Catálogo de Culturas</a>
-          <a href="ciudades-historicas.html">Ciudades y Nombres</a>
+          <a href="leyendas-ancestrales.html">Mitos y Leyendas</a>
+          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
         </div>
       </div>
+
+      <!-- Acceso Rápido al Buscador -->
+      <button class="universal-search-trigger" style="margin-top: 0; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.8rem; width: auto; box-shadow: none;" aria-label="Abrir buscador">
+        <span>🔍 Buscar</span>
+        <span class="search-shortcut-badge" style="margin-left: 0.4rem;">⌘K</span>
+      </button>
+
+      <!-- Selector de Modo Lectura Pergamino (Gestionado por JS) -->
+      <button class="reading-mode-toggle" id="readingModeToggle" title="Alternar Modo Lectura Pergamino">
+        📜 <span>Pergamino</span>
+      </button>
     </nav>
   </header>
+
+  <!-- ==========================================================
+       SCROLLYTELLING HERO: SUMERSIÓN EN EL TERRITORIO NACIONAL
+       ========================================================== -->
+  <section class="scrolly-hero-container" id="hero-scrolly">
+    <div class="parallax-stage">
+      
+      <!-- Capa 0: Firmamento y Bóveda Celeste -->
+      <div class="parallax-layer layer-sky"></div>
+
+      <!-- Capa 1: Silueta de la Cordillera de los Andes y Picos Nevados -->
+      <div class="parallax-layer layer-mountains">
+        <svg viewBox="0 0 1440 450" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Picos lejanos -->
+          <path d="M0,450 L0,280 L180,210 L340,310 L520,180 L680,290 L860,160 L1040,270 L1220,190 L1360,260 L1440,220 L1440,450 Z" fill="#121824" opacity="0.8"/>
+          <!-- Picos con nieve estilizada -->
+          <polygon points="520,180 500,215 540,215" fill="#e2e8f0" opacity="0.6"/>
+          <polygon points="860,160 835,200 885,200" fill="#e2e8f0" opacity="0.6"/>
+          <!-- Cadena montañosa intermedia -->
+          <path d="M0,450 L0,340 L210,260 L410,360 L620,270 L830,350 L1080,250 L1290,340 L1440,280 L1440,450 Z" fill="#0b111a" opacity="0.95"/>
+        </svg>
+      </div>
+
+      <!-- Capa 2: Niebla Andina suspendida -->
+      <div class="parallax-layer layer-mist"></div>
+
+      <!-- Capa 3: Bosque de Niebla y Palmas de Cera del Quindío -->
+      <div class="parallax-layer layer-palms">
+        <svg viewBox="0 0 1440 380" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Siluetas esbeltas de Palma de Cera (Ceroxylon quindiuense) -->
+          <g fill="#0e1713" opacity="0.85">
+            <!-- Palma 1 (Izquierda) -->
+            <rect x="120" y="110" width="7" height="270" rx="3" fill="#1b2820"/>
+            <path d="M123,110 C90,80 70,120 60,140 C100,120 120,115 123,110 C126,115 146,120 186,140 C176,120 156,80 123,110 Z"/>
+            <path d="M123,110 C100,50 123,30 123,20 C123,30 146,50 123,110 Z"/>
+            
+            <!-- Palma 2 (Centro-Izquierda) -->
+            <rect x="290" y="70" width="8" height="310" rx="4" fill="#1b2820"/>
+            <path d="M294,70 C260,40 240,80 230,100 C270,80 290,75 294,70 C298,75 318,80 358,100 C348,80 328,40 294,70 Z"/>
+            <path d="M294,70 C270,10 294,0 294,-10 C294,0 318,10 294,70 Z"/>
+
+            <!-- Palma 3 (Derecha) -->
+            <rect x="1180" y="80" width="8" height="300" rx="4" fill="#1b2820"/>
+            <path d="M1184,80 C1150,50 1130,90 1120,110 C1160,90 1180,85 1184,80 C1188,85 1208,90 1248,110 C1238,90 1218,50 1184,80 Z"/>
+
+            <!-- Palma 4 (Extremo Derecho) -->
+            <rect x="1330" y="120" width="6" height="260" rx="3" fill="#1b2820"/>
+            <path d="M1333,120 C1305,95 1285,130 1275,150 C1310,130 1330,125 1333,120 C1336,125 1356,130 1391,150 C1381,130 1361,95 1333,120 Z"/>
+          </g>
+          <!-- Falda verde de montaña templada -->
+          <path d="M0,380 L0,310 Q360,250 720,300 T1440,270 L1440,380 Z" fill="#08100c"/>
+        </svg>
+      </div>
+
+      <!-- Capa 4: Selva Tropical Húmeda y Meandro de Río (Amazonas / Magdalena) -->
+      <div class="parallax-layer layer-jungle">
+        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Curva del río Magdalena / Amazonas -->
+          <path d="M0,320 L0,290 C320,240 480,310 820,260 C1120,220 1280,280 1440,250 L1440,320 Z" fill="#1a2e26"/>
+          <!-- Dosel de selva espesa -->
+          <path d="M0,320 L0,260 C80,230 140,270 240,240 C340,210 420,250 560,230 C700,210 820,260 980,220 C1120,180 1260,240 1440,210 L1440,320 Z" fill="#050a07"/>
+        </svg>
+      </div>
+
+      <!-- Capa 5: Follaje Macro Frontal (Hojas de Platanillo y Helechos) -->
+      <div class="parallax-layer layer-foreground-leaves">
+        <!-- Hoja izquierda -->
+        <svg class="leaf-macro-left" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M-40,350 C-10,250 40,160 140,100 C100,160 80,240 50,350 Z" fill="#030805" opacity="0.95"/>
+          <path d="M-50,350 C10,220 120,120 280,70 C200,150 160,260 120,350 Z" fill="#06120b" opacity="0.9"/>
+          <path d="M-20,350 C60,260 180,180 290,140 C220,220 180,300 150,350 Z" fill="#040b07" opacity="0.85"/>
+        </svg>
+        <!-- Hoja derecha -->
+        <svg class="leaf-macro-right" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M340,350 C310,250 260,160 160,100 C200,160 220,240 250,350 Z" fill="#030805" opacity="0.95"/>
+          <path d="M350,350 C290,220 180,120 20,70 C100,150 140,260 180,350 Z" fill="#06120b" opacity="0.9"/>
+        </svg>
+      </div>
+
+      <!-- Contenido Pinned Central -->
+      <div class="hero-pinned-text">
+        <div class="document-badge" style="background: rgba(var(--accent-rgb), 0.15); color: var(--accent); border: 1px solid rgba(var(--accent-rgb), 0.3);">
+          Colombianopedia · Archivo Vivo de la Nación
+        </div>
+        
+        <h1 style="font-size: 3.4rem; line-height: 1.1; margin-bottom: 1.25rem;">
+          Colombia en el Tiempo
+        </h1>
+        
+        <p style="font-size: 1.15rem; max-width: 680px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">
+          Un viaje inmersivo por la memoria viva, las civilizaciones originarias, las tensiones territoriales y los acervos documentales que han forjado nuestra identidad.
+        </p>
+
+        <!-- Barra Disparadora de Búsqueda Rápida (Universal Search Trigger) -->
+        <div class="universal-search-trigger" role="button" tabindex="0" aria-label="Buscar en la Colombianopedia">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span style="font-size: 1.2rem;">🔍</span>
+            <span>Buscar en la enciclopedia (temas, leyes, próceres, mitos)...</span>
+          </div>
+          <span class="search-shortcut-badge">⌘K / Ctrl+K</span>
+        </div>
+
+        <!-- Indicador de Desplazamiento y Sumersión -->
+        <div class="hero-submerse-indicator">
+          <span>↓ Desliza hacia abajo para sumergirte en el territorio ↓</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- Contenedor Principal -->
   <main class="container">
     
-    <!-- Hero / Bienvenida -->
-    <section class="hero" id="hero-main">
-      <div class="document-badge">Portal Oficial de Memoria</div>
-      <h1>Colombia en el Tiempo</h1>
-      <p>Un recorrido inmersivo a través de los acervos documentales, archivos históricos y la memoria de nuestro territorio. Explora cada época desde las sociedades prehispánicas hasta la era contemporánea de la paz.</p>
-      <a href="#epocas" class="btn btn-primary">Iniciar el Viaje</a>
+    <!-- Widget Dinámico: Efemérides "Un Día como Hoy en Colombia" -->
+    <div id="efemerides-box">
+      <!-- Se inyecta dinámicamente mediante main.js -->
+    </div>
+
+    <!-- Sección de Contador del Patrimonio Nacional Vivo -->
+    <section class="patrimonio-stats-section">
+      <div class="document-badge">Cifras del Territorio</div>
+      <h2 class="title-font" style="font-size: 2rem; margin-top: 0.5rem;">
+        Un País Megadiverso y Pluriétnico
+      </h2>
+      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
+        Nuestra historia está viva en la diversidad biológica, cultural y lingüística de cada rincón de la geografía colombiana.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card-heritage">
+          <div class="stat-number" data-target="32">0</div>
+          <div class="stat-label">Departamentos Soberanos</div>
+        </div>
+        <div class="stat-card-heritage">
+          <div class="stat-number" data-target="1103">0</div>
+          <div class="stat-label">Municipios y Provincias</div>
+        </div>
+        <div class="stat-card-heritage">
+          <div class="stat-number" data-target="6">0</div>
+          <div class="stat-label">Regiones Naturales</div>
+        </div>
+        <div class="stat-card-heritage">
+          <div class="stat-number" data-target="102">0</div>
+          <div class="stat-label">Pueblos Indígenas Vivos</div>
+        </div>
+        <div class="stat-card-heritage">
+          <div class="stat-number" data-target="65">0</div>
+          <div class="stat-label">Lenguas Nativas Habladas</div>
+        </div>
+      </div>
     </section>
 
     <!-- Sección de Grid de Épocas -->
-    <section id="epocas">
-      <h2 class="title-font" style="text-align: center; font-size: 2.25rem; margin-bottom: 3rem;">
-        Selecciona una Época Histórica
-      </h2>
+    <section id="epocas" style="margin-top: 5rem;">
+      <div style="text-align: center; margin-bottom: 3.5rem;">
+        <div class="document-badge" style="background: rgba(212,175,55,0.12); color: var(--accent);">
+          Cronología Transversal
+        </div>
+        <h2 class="title-font" style="font-size: 2.5rem; margin-top: 0.5rem; margin-bottom: 0.75rem;">
+          Las Seis Grandes Épocas de Colombia
+        </h2>
+        <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
+          Explora los períodos formativos con fuentes documentales del Archivo General de la Nación, la Biblioteca Nacional y el Banco de la República.
+        </p>
+      </div>
       
       <div class="portal-grid">
         
-        <!-- Época Precolombina -->
+        <!-- 1. Época Precolombina -->
         <a href="precolombina.html" class="era-card" style="--accent: #e59866; --accent-rgb: 229,152,102;">
-          <div class="era-date">Desde el origen hasta 1492</div>
+          <div class="document-badge" style="background: rgba(229,152,102,0.15); color: #e59866; margin-bottom: 0.75rem; width: fit-content;">
+            Arqueología y Territorio
+          </div>
+          <div class="era-date">Origen Milenario — 1492 d.C.</div>
           <h3>Época Prehispánica</h3>
-          <p>Explora el territorio antes de la llegada de los colonos. Las complejas confederaciones Muisca y Tairona, la espectacular orfebrería Quimbaya y las civilizaciones milenarias de San Agustín y Tierradentro.</p>
-          <div class="era-link">Viajar en el tiempo &rarr;</div>
+          <p>
+            El territorio antes del arribo hispánico. La Confederación Muisca del altiplano, las ciudades líticas Taironas en la Sierra Nevada, la orfebrería de poder Quimbaya y Calima, y los canales hidráulicos Zenúes.
+          </p>
+          <div class="era-link">Explorar Civilizaciones &rarr;</div>
         </a>
 
-        <!-- Conquista y Colonia -->
+        <!-- 2. Conquista y Colonia -->
         <a href="colonia.html" class="era-card" style="--accent: #b03a2e; --accent-rgb: 176,58,46;">
-          <div class="era-date">1492 - 1810</div>
+          <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e; margin-bottom: 0.75rem; width: fit-content;">
+            Orden Virreinal y Resistencia
+          </div>
+          <div class="era-date">1492 — 1810</div>
           <h3>Conquista y Colonia</h3>
-          <p>El origen de la estructuración administrativa y territorial. La resistencia jurídica indígena, la Real Orden de 1803 sobre San Andrés, la Expedición Botánica y la insurrección Comunera de 1781.</p>
-          <div class="era-link">Viajar en el tiempo &rarr;</div>
+          <p>
+            La instauración del Nuevo Reino de Granada. La resistencia jurídica del Cacique Diego de Torres, la Real Orden de 1803 sobre San Andrés, la Expedición Botánica de Mutis y la rebelión popular de los Comuneros en 1781.
+          </p>
+          <div class="era-link">Abrir Documentos Virreinales &rarr;</div>
         </a>
 
-        <!-- Independencia -->
+        <!-- 3. Independencia -->
         <a href="independencia.html" class="era-card" style="--accent: #f1c40f; --accent-rgb: 241,196,15;">
-          <div class="era-date">1810 - 1830</div>
+          <div class="document-badge" style="background: rgba(241,196,15,0.15); color: #f1c40f; margin-bottom: 0.75rem; width: fit-content;">
+            Ruptura y Campaña Libertadora
+          </div>
+          <div class="era-date">1810 — 1830</div>
           <h3>Independencia y Grito</h3>
-          <p>Desconstruyendo el mito del 20 de julio de 1810. La descentralización de las juntas de gobierno provinciales, la guerra contra el imperio realista y las primeras acuñaciones de monedas republicanas.</p>
-          <div class="era-link">Viajar en el tiempo &rarr;</div>
+          <p>
+            Desmitificando el 20 de julio: las juntas provinciales de Mompox y Cartagena, la resistencia realista del sur en Pasto, la tragedia del Acta quemada en 1948, las monedas de la República y la gesta del Puente de Boyacá.
+          </p>
+          <div class="era-link">Examinar Acervos Patrios &rarr;</div>
         </a>
 
-        <!-- Siglo XIX -->
+        <!-- 4. Siglo XIX -->
         <a href="siglo-xix.html" class="era-card" style="--accent: #27ae60; --accent-rgb: 39,174,96;">
-          <div class="era-date">1830 - 1899</div>
+          <div class="document-badge" style="background: rgba(39,174,96,0.15); color: #27ae60; margin-bottom: 0.75rem; width: fit-content;">
+            Soberanía, Cartografía y Leyes
+          </div>
+          <div class="era-date">1830 — 1899</div>
           <h3>República y Territorio</h3>
-          <p>La delimitación cartográfica del país a través de la Comisión Corográfica y sus acuarelas. El largo e inacabado camino legislativo hacia la abolición definitiva de la esclavitud en 1851.</p>
-          <div class="era-link">Viajar en el tiempo &rarr;</div>
+          <p>
+            La forja del mapa nacional a través de las acuarelas de la Comisión Corográfica de Codazzi y Manuel María Paz. La ley de abolición de la esclavitud de 1851 y el catálogo fundacional de Antonio Cuervo.
+          </p>
+          <div class="era-link">Ver Acuarelas y Mapas &rarr;</div>
         </a>
 
-        <!-- Siglo XX -->
+        <!-- 5. Siglo XX -->
         <a href="siglo-xx.html" class="era-card" style="--accent: #f39c12; --accent-rgb: 243,156,18;">
-          <div class="era-date">1900 - 1999</div>
+          <div class="document-badge" style="background: rgba(243,156,18,0.15); color: #f39c12; margin-bottom: 0.75rem; width: fit-content;">
+            Conflictos, Prensa y Derechos
+          </div>
+          <div class="era-date">1900 — 1999</div>
           <h3>Tensiones del Siglo XX</h3>
-          <p>El auge económico y los conflictos obrero-agrarios. La Masacre de las Bananeras de 1928, el Bogotazo de 1948, el Frente Nacional y el archivo de fotoperiodismo político de Viki Ospina.</p>
-          <div class="era-link">Viajar en el tiempo &rarr;</div>
+          <p>
+            Las luchas obreras y agrarias: la Masacre de las Bananeras (1928), el estallido del 9 de Abril tras el magnicidio de Gaitán (1948), La Violencia bipartidista, el fotoperiodismo de Viki Ospina y la Asamblea Constituyente de 1991.
+          </p>
+          <div class="era-link">Consultar Archivo Gráfico &rarr;</div>
         </a>
 
-        <!-- Siglo XXI / Memoria -->
+        <!-- 6. Siglo XXI / Memoria -->
         <a href="memoria.html" class="era-card" style="--accent: #2e86c1; --accent-rgb: 46,134,193;">
-          <div class="era-date">2000 - Presente</div>
+          <div class="document-badge" style="background: rgba(46,134,193,0.15); color: #2e86c1; margin-bottom: 0.75rem; width: fit-content;">
+            Verdad, Justicia y Convivencia
+          </div>
+          <div class="era-date">2000 — Presente</div>
           <h3>Memoria y Transición</h3>
-          <p>La recopilación de la verdad en la era contemporánea. El legado transmedia de la Comisión de la Verdad, el Acuerdo de Paz de 2016 y los archivos de protección de los derechos humanos.</p>
-          <div class="era-link">Viajar en el tiempo &rarr;</div>
+          <p>
+            La construcción colectiva de la paz en la era contemporánea: el Acuerdo Final de 2016, el legado transmedia de la Comisión de la Verdad, la JEP y los repositorios de protección de Derechos Humanos del AGN.
+          </p>
+          <div class="era-link">Conocer los Hallazgos &rarr;</div>
         </a>
 
+      </div>
+    </section>
+
+    <!-- Módulos de Profundización Rápida y Fines Pedagógicos -->
+    <section style="margin: 5rem 0; padding: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 8px;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+        <div>
+          <div class="document-badge">Herramienta Pedagógica</div>
+          <h2 class="title-font" style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 1rem;">
+            Diseñado para Aulas, Colegios e Investigadores
+          </h2>
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
+            La <strong>Colombianopedia</strong> está concebida como un recurso pedagógico abierto y riguroso. Puedes activar el <strong>Modo Pergamino</strong> para proyectar o leer en salones de clase con fondo claro y alto contraste, o usar el buscador rápido con <code>⌘K</code> para acceder al instante a cualquier tema, prócer, pueblo indígena o ley de la República.
+          </p>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <a href="geografia-y-geologia.html" class="btn btn-primary">Mapa Geológico &rarr;</a>
+            <a href="ciudades-historicas.html" class="btn btn-outline">32 Ciudades y Regiones &rarr;</a>
+          </div>
+        </div>
+        <div>
+          <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-card); border-radius: 8px; padding: 1.5rem;">
+            <h3 class="title-font" style="font-size: 1.15rem; color: var(--accent); margin-bottom: 0.75rem;">
+              🏛️ Fuentes Primarias Custodiadas
+            </h3>
+            <ul style="list-style: none; padding: 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.75rem;">
+              <li>✓ <strong>Archivo General de la Nación (AGN):</strong> Fondos de Manumisión, Milicias y Colonia.</li>
+              <li>✓ <strong>Biblioteca Nacional de Colombia:</strong> Hemeroteca y cartografía virreinal y republicana.</li>
+              <li>✓ <strong>Banco de la República:</strong> Colección Arqueológica del Museo del Oro y Red Cultural.</li>
+              <li>✓ <strong>Comisión para el Esclarecimiento de la Verdad:</strong> Informe Final "Hay Futuro si hay Verdad".</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Pie de página -->
+  <!-- Pie de página Institucional -->
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Creado con fines de conservación y educación pública.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Los acervos documentales referenciados pertenecen a los registros del Archivo General de la Nación, la Biblioteca Nacional de Colombia y el Banco de la República.
+    <p>&copy; 2026 Colombianopedia — Portal Oficial de Memoria Histórica y Patrimonio de Colombia.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.75;">
+      Iniciativa independiente sin ánimo de lucro orientada a la conservación cultural, la divulgación pedagógica escolar y la memoria histórica ciudadana.
     </p>
   </footer>
 
