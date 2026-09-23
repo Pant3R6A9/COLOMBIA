@@ -1,0 +1,2092 @@
+{
+  "metadata": {
+    "titulo": "Atlas Etnográfico y Enciclopedia de los Pueblos Indígenas del Caribe y la Sierra Nevada de Santa Marta",
+    "descripcion": "Compendio enciclopédico exhaustivo y multidisciplinario sobre las ocho naciones indígenas originarias del Caribe colombiano y la Sierra Nevada de Santa Marta: Kogui (Kágaba), Arhuaco (Iku), Wiwa, Kankuamo, Wayuu, Zenú, Chimila (Ette Ennaka) y Yukpa de la Serranía del Perijá. Reúne investigaciones etnolingüísticas, arqueológicas, farmacopea ancestral, macroingeniería de canales y microverticalidad, arquitectura sagrada, la Ley de Origen, la Línea Negra (Séshizha / Decreto 1500 de 2018) y el Sistema Normativo del Palabrero Wayuu (UNESCO).",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026",
+    "autor": "Subagente Especialista en Pueblos Indígenas del Caribe y la Sierra Nevada de Santa Marta de Colombianopedia",
+    "licencia": "Investigación Pública y Educativa - Patrimonio Cultural de la Nación",
+    "total_pueblos_documentados": 8,
+    "pueblos_incluidos": [
+      "Kogui (Kággabba)",
+      "Arhuaco (Iku / Ijka)",
+      "Wiwa (Damana)",
+      "Kankuamo (Kankuaka)",
+      "Wayuu",
+      "Zenú",
+      "Chimila (Ette Ennaka)",
+      "Yukpa"
+    ],
+    "familias_linguisticas_registradas": [
+      "Familia Chibcha (Kogui, Arhuaco, Wiwa, Kankuamo, Ette Taara)",
+      "Familia Arawak (Wayuunaiki)",
+      "Familia Caribe (Yukpa)",
+      "Sustrato Lingüístico Zenú (Lengua ancestral extinta / sustrato sabanero)"
+    ],
+    "instituciones_y_corpus_referencia": [
+      "Organización Nacional Indígena de Colombia (ONIC)",
+      "Confederación Indígena Tairona (CIT)",
+      "Organización Gonawindúa Tayrona (OGT)",
+      "Organización Wiwa Yugumaiun Bunkuanarrua Tayrona (OWYBT)",
+      "Cabildo Mayor del Resguardo Indígena Kankuamo",
+      "Junta Mayor de Palabreros Wayuu",
+      "Cabildo Mayor Regional Zenú de San Andrés de Sotavento",
+      "Consejo Comunitario del Pueblo Ette Ennaka (Issa Oki)",
+      "Asociación de Cabildos Indígenas Yukpa del Perijá",
+      "Instituto Colombiano de Antropología e Historia (ICANH)",
+      "Ministerio de Cultura de Colombia",
+      "UNESCO - Patrimonio Cultural Inmaterial de la Humanidad",
+      "Instituto Caro y Cuervo"
+    ]
+  },
+  "pueblos": [
+    {
+      "id": "kogui",
+      "nombre_comun": "Kogui",
+      "autodenominacion": "Kággabba (Gente / Hijos del Jaguar)",
+      "filiacion_etnica": "Herederos directos de la civilización Tairona clásica",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Chibcha Magdalénico / Sierra Nevada",
+        "idioma": "Kogui (Kowgian / Kaggabba)",
+        "vitalidad": "Vital / Alta pervivencia (>88% de la población como lengua materna)",
+        "descripcion_linguistica": "Lengua tonal con estructura aglutinante compleja, postposiciones y marcada distinción entre registros cotidianos y cantos esotéricos sacerdotales."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Magdalena",
+          "La Guajira",
+          "Cesar"
+        ],
+        "municipios": [
+          "Santa Marta",
+          "Ciénaga",
+          "Aracataca",
+          "Dibulla",
+          "San Juan del Cesar",
+          "Valledupar"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Don Diego",
+          "Río Buritaca",
+          "Río Guachaca",
+          "Río Palomino",
+          "Río Ancho",
+          "Río Jerez",
+          "Río San Miguel"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Kogui-Malayo-Arhuaco (declarado mediante Resolución INCORA 107 de 1980 y ampliado sucesivamente)"
+        ],
+        "asentamientos_emblematicos": [
+          "San Miguel",
+          "Takina",
+          "Makotama",
+          "Seviaka",
+          "Mamangueka",
+          "Cherúa",
+          "Morochuka"
+        ],
+        "pisos_termicos_ocupados": "Desde el litoral marino caribeño (0 msnm) hasta los páramos y nieves perpetuas (4.500 msnm)",
+        "poblacion_estimada": "Aproximadamente 16.500 a 19.000 personas (Censo DANE y registro propio de la Organización Gonawindúa Tayrona)"
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral": "Descendientes biológicos y espirituales de las élites sacerdotales Taironas que poblaron las vertientes norte y noroeste de la Sierra Nevada desde el siglo I d.C. Tras la violenta guerra de conquista española de 1599-1600 liderada por Juan Guiral Velón (que devastó asentamientos costeros como Bonda y Chengue), los ancestros Kággabba se replegaron a los cañones profundos e inaccesibles de los valles altos de Buritaca y Palomino.",
+        "estrategia_de_aislamiento_protector": "A diferencia de otros pueblos asimilados forzosamente, los Kogui implementaron una política deliberada de repliegue geográfico y hermetismo ritual, limitando el contacto con misioneros capuchinos y colonos criollos, lo que permitió preservar intacto su sistema sacerdotal y cosmológico.",
+        "impacto_del_siglo_xx_y_conflicto_armado": "A partir de la década de 1970 padecieron la colonización campesina ligada a la 'Bonanza Marimbera', el cultivo ilícito de coca y la posterior irrupción de frentes de las FARC, el ELN y los bloques paramilitares de las AUC (facciones de Hernán Giraldo). Pese al hostigamiento armado y los desplazamientos forzados, mantuvieron la autoridad de los Mamos sobre sus valles sagrados.",
+        "organizacion_representativa": "Organización Indígena Gonawindúa Tayrona (OGT), fundada en 1987 para la defensa jurídica, territorial y ambiental del territorio ancestral frente a megaproyectos viales, turísticos y mineros."
+      },
+      "cosmovision_y_filosofia": {
+        "entidad_suprema": "Jaba Séshizha / Gauteovan (La Gran Madre Universal)",
+        "filosofia_de_aluna": "Concepción ontológica según la cual el universo existió primero en el plano del pensamiento primordial (*Aluna*), en la oscuridad y el silencio (*Sé*), antes de materializarse en el plano físico. La mente cósmica de la Madre concibió nueve mundos superpuestos concebidos como un inmenso huso de hilar.",
+        "rol_de_los_hermanos_mayores": "Los Kogui se reconocen como los 'Hermanos Mayores' (*Elder Brothers*), cuya misión primordial es mantener el balance biofísico y espiritual del Corazón del Mundo (*Uba Khala*). Conciben al ser humano contemporáneo occidental como el 'Hermano Menor', cuya lógica extractivista y consumista está desestabilizando el ciclo hídrico y térmico de la Tierra.",
+        "formacion_de_los_mamos": "El Mamo (*Mámün*) es la autoridad espiritual, judicial y astronómica. Su formación tradicional se inicia en la primera infancia tras ser identificado por adivinación sagrada (*zézhi*); es recluido en la penumbra de una *Kankurwa* durante un ciclo de hasta 18 años, donde aprende la memoria del origen, astronomía, cantos sagrados y lectura de la naturaleza sin contacto con la luz solar ni la distracción del mundo físico."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Kogui / Kaggabba",
+        "fonologia": {
+          "vocales": "Sistema de 7 vocales: /a/, /e/, /i/, /o/, /u/ junto a vocales cerradas centrales /ɨ/ y nasales distintivas.",
+          "consonantes": "Oclusivas sordas y sonoras /p, b, t, d, k, g/, oclusiva glotal /ʔ/, fricativas /s, ʃ, x, h/, nasales /m, n/ y vibrante simple /ɾ/.",
+          "rasgos_prosodicos": "Acento de intensidad con función distintiva lexical y entonación melódica ritual en los cantos sagrados (*shiba*)."
+        },
+        "vocabulario_sagrado_glosado": [
+          {
+            "termino": "Aluna",
+            "traduccion": "Pensamiento primordial / Conciencia inmaterial preexistente",
+            "hermeneutica": "Matriz espiritual cósmica donde existen las almas y causas de todas las realidades antes de manifestarse físicamente."
+          },
+          {
+            "termino": "Sé",
+            "traduccion": "La noche primordial / El origen oscuro",
+            "hermeneutica": "Tiempo-espacio matricial antes del amanecer, origen de la Ley de Vida."
+          },
+          {
+            "termino": "Jaba",
+            "traduccion": "Madre / Matriz sagrada",
+            "hermeneutica": "Principio femenino de la creación, personificado en la Tierra, el mar y las lagunas de páramo."
+          },
+          {
+            "termino": "Jate",
+            "traduccion": "Padre / Sol / Deidad masculina",
+            "hermeneutica": "Fuerza fertilizadora celeste, principio rector del orden físico."
+          },
+          {
+            "termino": "Mamo",
+            "traduccion": "Sol / Iluminado / Sacerdote cósmico",
+            "hermeneutica": "Guía espiritual que opera como puente entre Aluna y la comunidad terrenal."
+          },
+          {
+            "termino": "Saga",
+            "traduccion": "Luna / Sabia anciana / Madre espiritual",
+            "hermeneutica": "Mujer de conocimiento iniciada en los ciclos de fertilidad, plantas y justicia femenina."
+          },
+          {
+            "termino": "Kankurwa",
+            "traduccion": "Casa ceremonial / Templo cósmico cónico",
+            "hermeneutica": "Representación física del útero de la Madre y de los nueve mundos superpuestos."
+          },
+          {
+            "termino": "Ezozha",
+            "traduccion": "Pagamento ritual / Retribución cósmica",
+            "hermeneutica": "Ofrenda obligatoria a los sitios sagrados para compensar lo que se extrae de la naturaleza."
+          },
+          {
+            "termino": "Zhigoneshi",
+            "traduccion": "Reciprocidad solidaria / Ayuda comunitaria mutua",
+            "hermeneutica": "Principio ético de labor colectiva sin remuneración monetaria para el bien común."
+          },
+          {
+            "termino": "Suisa",
+            "traduccion": "Poporo / Calabazo sagrado de pensamiento",
+            "hermeneutica": "Recipiente de cal marina y hoja de coca que acompaña al hombre desde su iniciación."
+          },
+          {
+            "termino": "Tuma",
+            "traduccion": "Cuenta de cuarzo o piedra sagrada precolombina",
+            "hermeneutica": "Objeto litúrgico ancestral cargado de energía telúrica para ceremonias de curación."
+          }
+        ],
+        "vitalidad_sociolinguistica": "Muy robusta en comunidades aisladas de alta montaña; bilingüismo incipiente con el castellano en zonas de contacto comercial."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "concepcion_de_la_salud": "La salud es la armonía vibracional entre el pensamiento humano, el comportamiento ético y los mandatos de la Ley de Origen. La enfermedad es la manifestación visible de un desequilibrio espiritual, una transgresión ecológica o una falta en los pagamentos a los ancestros.",
+        "uso_del_ayu_y_poporo": {
+          "especie_vegetal": "Erythroxylum novogranatense var. novogranatense (Ayú / Hoja de coca)",
+          "sustancia_mineral": "Cal marina calcinada de conchas recolectadas en el mar",
+          "dinamica_ritual": "El mambeo es un acto continuo de reflexión y rezo. El Mamo o el hombre adulto no ingiere la hoja por estimulación profana sino para concentrar la palabra verdadera y dialogar con los espíritus. El frotamiento del palillo sobre el cuello del poporo forma un collar de carbonato de calcio que registra el pensamiento y la conducta del usuario."
+        },
+        "plantas_medicinales_clave": [
+          {
+            "nombre_comun": "Frailejón de la Sierra",
+            "nombre_cientifico": "Libanothamnus occultus / Espeletia spp.",
+            "piso_termico": "Páramo (3.000 - 4.200 msnm)",
+            "uso_medico": "Infusiones pectorales para afecciones pulmonares, asma de altura y descongestión de vías respiratorias; resina quemada como sahumerio purificador."
+          },
+          {
+            "nombre_comun": "Guaco de monte",
+            "nombre_cientifico": "Mikania glomerata",
+            "piso_termico": "Bosque andino y templado (1.200 - 2.500 msnm)",
+            "uso_medico": "Antiofídico ancestral, febrífugo y tratamiento de dolores reumáticos musculares mediante emplastos y decocciones."
+          },
+          {
+            "nombre_comun": "Árnica de páramo",
+            "nombre_cientifico": "Senecio formosus",
+            "piso_termico": "Páramo alto (3.200 - 4.000 msnm)",
+            "uso_medico": "Poderoso antiinflamatorio, cicatrizante de úlceras y golpes; baños de armonización posparto dirigidos por la Saga."
+          },
+          {
+            "nombre_comun": "Anamú",
+            "nombre_cientifico": "Petiveria alliacea",
+            "piso_termico": "Bosque seco basal y premontano (0 - 1.000 msnm)",
+            "uso_medico": "Depurador sanguíneo, antiparasitario y agente de limpieza áurica para alejar enfermedades contagiosas y fiebres tropicales."
+          }
+        ],
+        "proceso_del_pagamento_ezozha": "Diagnóstico mediante 'adivinación en agua' (*sézhi*), en la que el Mamo sumerge cuentas de piedra (*tumas*) en un recipiente cónico con agua y lee el patrón de burbujas y reflexiones de luz. Se identifican los puntos geográficos donde el paciente cometió faltas; luego se entregan ofrendas compuestas por hilos de algodón nativo, semillas silvestres y restos de uñas o cabellos en los cerros sagrados para restablecer la homeostasis."
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "microverticalidad_ecologica": "Control simultáneo de parcelas en distintos pisos térmicos. Cada familia posee viviendas y sembrados a diferentes altitudes: plátano, caña, yuca y cacao en el piso cálido basal (0-800 msnm); maíz, frijol y árboles frutales en el piso templado (800-2.000 msnm); y papa, arracacha y cebolla en el piso frío alto (2.000-3.000 msnm). Las familias migran de manera rotativa estacional para atender las cosechas sin agotar los suelos.",
+        "terrazas_agricolas_y_drenajes_liticos": "Reutilización y mantenimiento de los antiguos andenes de piedra construidos por sus antepasados Taironas en laderas de alta pendiente, previniendo deslizamientos durante las lluvias torrenciales del Caribe.",
+        "textileria_y_tejido": "Hilado de algodón blanco nativo en husos verticales de madera; tejido en telar de dos postes para la confección del atuendo sagrado tradicional de dos piezas cruzadas que visten hombres y niños (la túnica blanca que simboliza la pureza de las nieves y la paz mental)."
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "la_kankurwa_kogui": "Edificación monumental cónica erigida sobre un terraplén circular de lajas de piedra. Posee una estructura de cuatro postes mayores de maderas incorruptibles (guayacán o corazón de caracolí) que representan los cuatro puntos cardinales y los cuatro pilares del cosmos. El techo de hojas de palma amarga trenzada asciende en cono hasta un vértice rematado por dos agujas cruzadas de madera que señalan el cenit estelar. La puerta de entrada orientada al oriente permite la entrada de los primeros rayos solares, marcando solsticios y equinoccios.",
+        "vivienda_familiar": "Bohíos circulares independientes con paredes de varas de caña brava entrelazada o piedra, techados de palma o paja de páramo. Generalmente una familia dispone de dos bohíos contiguos: uno femenino (para dormir y cocinar) y uno masculino."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "estructura_politica": "Teocracia comunitaria basada en el consejo de Mamos Mayores. El Cabildo Gobernador es una figura institucional adoptada ante el Estado colombiano para la interlocución legal, pero subordinado rigurosamente al dictamen moral y espiritual de los Mamos de las Kankurwas matrices (San Miguel, Makotama, Seviaka).",
+        "lineaje_y_matrimonio": "Organización en linajes patrilineales y matrilineales complementarios (*tuxen* para hombres, *dake* para mujeres), regulando estrictamente las alianzas matrimoniales entre valles para prevenir endogamias disfuncionales.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Mamo Bernardo",
+            "rol": "Mamo Mayor de la Kankurwa de Takina",
+            "aporte": "Guía espiritual principal en la defensa de los sitios sagrados de la cuenca del río Palomino y orientador de la recuperación de tierras bajas."
+          },
+          {
+            "nombre": "Mamo Shibulata",
+            "rol": "Sabio y portavoz de la vertiente norte",
+            "aporte": "Participó en el emblemático documental 'Desde el Corazón del Mundo' (The Elder Brothers' Warning, 1990) transmitido por la BBC de Londres, llevando por primera vez el mensaje ecológico Kogui a la comunidad internacional."
+          },
+          {
+            "nombre": "Mamo Manuel Moscote",
+            "rol": "Autoridad tradicional de San Miguel",
+            "aporte": "Líder de la concertación interétnica de la Sierra Nevada que impulsó la delimitación de la Línea Negra ancestral ante el gobierno nacional."
+          },
+          {
+            "nombre": "Jacinto Zarabata",
+            "rol": "Líder civil y exgobernador de la Organización Gonawindúa Tayrona",
+            "aporte": "Pionero en la titulación y saneamiento de resguardos indígenas y la construcción de programas etnoeducativos bilingües."
+          }
+        ]
+      }
+    },
+    {
+      "id": "arhuaco",
+      "nombre_comun": "Arhuaco",
+      "autodenominacion": "Iku / Ijka / Bintukua",
+      "filiacion_etnica": "Herederos del tronco sociocultural Tairona-Chibcha de la vertiente meridional",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Chibcha Magdalénico / Sierra Nevada",
+        "idioma": "Iku / Ikün (Arhuaco)",
+        "vitalidad": "Vital / Fuerte transmisión intergeneracional (>85% de hablantes nativos)",
+        "descripcion_linguistica": "Lengua de orden básico SOV, sistema de sufijación aglutinante nominal y verbal, distinción aspectual rigurosa y vocabulario metafórico ceremonial."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Cesar",
+          "Magdalena",
+          "La Guajira"
+        ],
+        "municipios": [
+          "Valledupar",
+          "Pueblo Bello",
+          "El Copey",
+          "Bosconia",
+          "Aracataca",
+          "Fundación",
+          "San Juan del Cesar"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Guatapurí",
+          "Río Ariguaní",
+          "Río Badillo",
+          "Río San Sebastián",
+          "Río Fundación",
+          "Río Garupal"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Arhuaco de la Sierra (constituido formalmente en 1974 y ampliado sucesivamente)",
+          "Resguardo Businchama",
+          "Resguardo Campoalegre"
+        ],
+        "asentamientos_emblematicos": [
+          "Nabusímake (Capital espiritual y cuna del sol)",
+          "Jewrwa",
+          "Donachui",
+          "Maruámake",
+          "Simonorwa",
+          "Zingunaka",
+          "Gunchukwa",
+          "Seykun"
+        ],
+        "pisos_termicos_ocupados": "Desde los 400 msnm en el piedemonte cesarense hasta los 4.800 msnm en lagunas glaciares de páramo",
+        "poblacion_estimada": "Aproximadamente 34.000 a 38.000 habitantes (estimaciones combinadas Censo DANE y registro interno de la Confederación Indígena Tairona)"
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral": "Custodios milenarios de los páramos del sur de la Sierra Nevada y las cabeceras de los ríos Guatapurí y Ariguaní. Resistieron las incursiones coloniales desde Valledupar en los siglos XVI y XVII.",
+        "el_regimen_misional_capuchino_1916_1982": "En 1916 el gobierno colombiano encomendó a los misioneros capuchinos el 'Orfanato de San Antonio de Padua' en Nabusímake. Los religiosos impusieron castigos físicos, raparon el cabello a los niños indígenas, prohibieron el uso de la lengua Iku y el porte del poporo y la mochila tradicional, en un intento sistemático de aculturación forzada.",
+        "la_toma_pacifica_de_nabusimake_1982": "El 7 de agosto de 1982, tras décadas de abusos, una movilización pacífica masiva de hombres, mujeres y Mamos Arhuacos ocupó pacíficamente la misión capuchina en Nabusímake, expulsando definitivamente a los frailes y fundando la Confederación Indígena Tairona (CIT), recuperando su autonomía educativa, jurídica y espiritual.",
+        "asesinato_de_los_tres_lideres_en_1990": "En noviembre de 1990, los líderes arhuacos Luis Napoleón Torres, Ángel María Torres y Antonio Huguete fueron secuestrados y torturados hasta la muerte por actores armados en el marco del conflicto civil, hito que conmocionó al país y aceleró la consagración de los derechos étnicos en la Constitución Política de 1991."
+      },
+      "cosmovision_y_filosofia": {
+        "entidad_suprema": "Kaku Serankua (El Padre Creador y Arquitecto del Mundo) y Seynekun (La Madre Tierra)",
+        "orden_cosmico": "El cosmos fue tejido por Kaku Serankua utilizando hilos invisibles de pensamiento. La Sierra Nevada es el corazón que bombea la sangre espiritual al resto del globo terráqueo; si el corazón se enferma, todo el cuerpo de la Tierra agoniza.",
+        "el_tutu_y_el_tejido_del_pensamiento": "Para los Arhuacos, pensar y tejer son un mismo verbo existencial. Tejer una mochila (*tutu*) no es una actividad decorativa ni mercantil: es estructurar la mente, rezar por el bienestar del hogar y plasmar la geometría sagrada del universo.",
+        "el_mamo_arhuaco": "Depositario del *Iwa* (la ley consuetudinaria). Coordina las ceremonias públicas en la Kankurwa comunal y es el juez ético supremo que dirime conflictos comunitarios sin cárceles ni castigos violentos, sino a través de confesiones, pagamentos espirituales y trabajos comunitarios."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Iku / Ikün",
+        "fonologia": {
+          "vocales": "Sistema de 5 vocales orales fundamentales: /a, e, i, o, u/ y vocales alargadas con valor morfonológico.",
+          "consonantes": "Inventario rico con oclusivas /p, b, t, d, k, g/, africadas /ts, tʃ, dʒ/, fricativas /s, z, ʃ, ʒ, h/ y líquidas.",
+          "morfosintaxis": "Fuerte sufijación flexiva y derivativa; morfemas de evidencialidad que indican si lo afirmado fue presenciado directamente, transmitido por tradición oral o deducido en adivinación sagrada."
+        },
+        "vocabulario_sagrado_glosado": [
+          {
+            "termino": "Kaku Serankua",
+            "traduccion": "Padre Primordial / Hacedor del mundo",
+            "hermeneutica": "Deidad demiúrgica que estableció los cimientos de piedra y las leyes de convivencia."
+          },
+          {
+            "termino": "Seynekun",
+            "traduccion": "Madre Tierra",
+            "hermeneutica": "Sustrato material y espiritual de donde brota toda vida vegetal, animal y humana."
+          },
+          {
+            "termino": "Tutu",
+            "traduccion": "Mochila sagrada de pensamiento",
+            "hermeneutica": "Útero simbólico tejido en lana o fique donde el arhuaco resguarda su poporo, hojas de coca y pertenencias."
+          },
+          {
+            "termino": "Yeru / Yurumu",
+            "traduccion": "Poporo arhuaco",
+            "hermeneutica": "Calabazo globular pulido que encarna a la mujer y la fertilidad; su pulido con cal registra la vida del hombre."
+          },
+          {
+            "termino": "Amun",
+            "traduccion": "Cal viva obtenida del mar",
+            "hermeneutica": "Sustancia purificadora mineral que activa la palabra al mezclarse con el Ayú."
+          },
+          {
+            "termino": "Yeykwun",
+            "traduccion": "Pilar del mundo / Árbol cósmico",
+            "hermeneutica": "Eje vertical que conecta las raíces subterráneas con el cielo estrellado."
+          },
+          {
+            "termino": "Duni",
+            "traduccion": "Agradecimiento / Armonía integral",
+            "hermeneutica": "Estado de gracia y gratitud cósmica pronunciado al concluir un diálogo o pagamento."
+          },
+          {
+            "termino": "Makuru",
+            "traduccion": "Gente blanca / Hermanos menores",
+            "hermeneutica": "Sociedad occidental que ignora la Ley de Origen y explota la naturaleza."
+          }
+        ],
+        "vitalidad_sociolinguistica": "Muy vigorosa. El pueblo Arhuaco mantiene programas etnoeducativos propios bilingües en colegios de Nabusímake, Jewrwa y Simonorwa."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "el_poporo_y_el_ayu": {
+          "especie_vegetal": "Erythroxylum novogranatense",
+          "significado_biocultural": "Al llegar a la pubertad, el joven Iku recibe su primer poporo de manos del Mamo en una solemne ceremonia de iniciación. El poporo representa a la mujer con quien se casa simbólicamente en comunión espiritual; el punzón representa el principio masculino creador. El acto de retirar cal del interior e impregnarla en el bolo de coca sin derramar una sola gota es testimonio de templanza, pulcritud moral y madurez psicológica."
+        },
+        "farmacopea_andina_y_paramera": [
+          {
+            "nombre_comun": "Poleo de monte",
+            "nombre_cientifico": "Minthostachys mollis",
+            "piso_termico": "Bosque altoandino (2.200 - 3.200 msnm)",
+            "uso_medico": "Digestivo carminativo, sedante suave y antiespasmódico estomacal; empleado en baños de limpieza energética tras jornadas de parto."
+          },
+          {
+            "nombre_comun": "Salvia amarga",
+            "nombre_cientifico": "Salvia bogotensis",
+            "piso_termico": "Laderas andinas secas (1.800 - 2.800 msnm)",
+            "uso_medico": "Decocción astringente para lavar heridas abiertas, frenar hemorragias y desinfectar la cavidad bucal."
+          },
+          {
+            "nombre_comun": "Cola de caballo de la Sierra",
+            "nombre_cientifico": "Equisetum bogotense",
+            "piso_termico": "Riberas de ríos y turberas de páramo (2.500 - 3.500 msnm)",
+            "uso_medico": "Diurético purificador renal, remineralizante de huesos y articulaciones desgastadas por largas caminatas montañosas."
+          },
+          {
+            "nombre_comun": "Romero de monte",
+            "nombre_cientifico": "Diplostephium spp.",
+            "piso_termico": "Subpáramo y páramo (2.800 - 3.800 msnm)",
+            "uso_medico": "Sahumerio para disipar pesadillas y tristezas del alma, estimulante circulatorio cerebral en infusiones tibias."
+          }
+        ],
+        "pagamento_y_asientos_de_pensamiento": "El Mamo arhuaco consulta las piedras sagradas y determina el 'asiento' del pagamento. Se reúnen fibras de algodón ensortijadas con hilos de lana negra y blanca, simbolizando el balance entre la luz y la oscuridad, y se depositan en lagunas sagradas del páramo de Nabusímake (como la laguna de Mamancanaca)."
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "microverticalidad_iku": "Manejo integral de gradientes ecológicos. La vertiente sur es más seca y empinada que la norte. Las familias combinan el cultivo de café orgánico bajo sombra en vertientes medias (1.200-1.800 msnm), plátano y yuca en huertas bajas, pastoreo de ovejas de lana en valles fríos (1.800-2.800 msnm) y cultivos de papa y cebolla junca.",
+        "el_cafe_organico_arhuaco": "Pioneros a nivel nacional e internacional en la producción y exportación de café orgánico de alta especialidad con certificación de comercio justo y respeto a la Madre Tierra.",
+        "el_telar_de_la_mochila_arhuaca": {
+          "materiales": "Lana virgen de oveja criolla (blanca, negra y parda natural) y fibra vegetal de fique (*Furcraea andina*).",
+          "tecnica_de_tejido": "Tejido en espiral continua comenzando desde un punto central diminuto (el ombligo de la tierra) utilizando una aguja de hueso o metal, ascendiendo en anillos concéntricos matemáticos sin costuras.",
+          "patrones_geometricos_sagrados": [
+            {
+              "nombre": "Kanzhumana",
+              "significado": "Las huellas del cangrejo / Caminos entrelazados de la vida"
+            },
+            {
+              "nombre": "Gamako",
+              "significado": "La rana sagrada / Fertilidad, lluvia y anuncios de vida"
+            },
+            {
+              "nombre": "Sikiki",
+              "significado": "La concha del caracol en espiral / Evolución del pensamiento y del tiempo"
+            },
+            {
+              "nombre": "Kunsamu",
+              "significado": "El pensamiento de los cerros sagrados y las rocas tutelares"
+            },
+            {
+              "nombre": "Kwatatuma",
+              "significado": "Las costillas de la tierra / Terrazas y fallas geológicas protectoras"
+            },
+            {
+              "nombre": "Chake",
+              "significado": "La piel de la serpiente / Renovación y vigilancia de los senderos"
+            }
+          ]
+        }
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "la_kankurwa_arhuaca": "Edificación cónica o elíptica de gran altura techada con paja de páramo o palma amarga. Existen templos diferenciados: Kankurwas masculinas (*cancurúas*) donde deliberan los hombres y Mamos bajo el influjo del poporo, y templos femeninos donde las Sagas instruyen a las doncellas en el parto, la medicina de hierbas y los códigos del tejido.",
+        "pueblo_tradicional_de_nabusimake": "Conjunto urbano ancestral caracterizado por bohíos de piedra seca laja con techos cónicos de paja, cercados por muros de piedra que delimitan las huertas familiares y senderos empedrados alineados con los cerros sagrados."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "organizacion_representativa": "Confederación Indígena Tairona (CIT), fundada en 1982, con estructura de Cabildos Mayores y Menores.",
+        "sistema_de_justicia": "Justicia propia restaurativa basada en la Ley de Origen. Los castigos occidentales de encierro son rechazados; se aplican sanciones de saneamiento territorial, jornadas de trabalho comunal de caminos y reflexiones guiadas por los Mamos.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Juan Bautista Villafaña",
+            "rol": "Cacique y líder general a principios del siglo XX",
+            "aporte": "Emprendió viajes a pie y a mula hasta Bogotá en 1916 para denunciar ante el Presidente de la República el despojo de tierras y la invasión de las misiones capuchinas."
+          },
+          {
+            "nombre": "Luis Napoleón Torres, Ángel María Torres y Antonio Huguete",
+            "rol": "Mártires de la autonomía Arhuaca (1990)",
+            "aporte": "Líderes asesinados en 1990 durante la defensa de los derechos territoriales y la soberanía de la CIT; su memoria es venerada anualmente en Nabusímake."
+          },
+          {
+            "nombre": "Leonor Zalabata Torres",
+            "rol": "Lideresa histórica arhuaca y diplomática de Colombia",
+            "aporte": "Histórica negociadora de paz, defensora de derechos humanos galardonada con el Premio Anna Lindh (2007) y nombrada en 2022 como la primera mujer indígena en ejercer como Embajadora Extraordinaria y Plenipotenciaria de Colombia ante la ONU en Nueva York."
+          },
+          {
+            "nombre": "Danilo Villafañe Torres",
+            "rol": "Gobernador indígena de la vertiente caribe y vocero climático global",
+            "aporte": "Gran arquitecto de la interlocución internacional de la Sierra Nevada en cumbres de la ONU (COP28), defensor del ecoturismo regenerativo y el diálogo intercultural; falleció heroicamente en diciembre de 2023 salvando a personas de ahogarse en el mar en Palomino."
+          },
+          {
+            "nombre": "Zarwawiko Torres",
+            "rol": "Cabildo Gobernador contemporáneo del Resguardo Arhuaco de la Sierra",
+            "aporte": "Líder en la defensa de la unificación comunitaria y la implementación del Decreto 1500 de la Línea Negra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "wiwa",
+      "nombre_comun": "Wiwa",
+      "autodenominacion": "Wiwa (Gente que engendra / Gente de calor y origen) o Sanjá",
+      "filiacion_etnica": "Herederos del tronco Tairona oriental de la Sierra Nevada",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Chibcha Magdalénico / Sierra Nevada",
+        "idioma": "Damana (Dʉmʉna / Arosario)",
+        "vitalidad": "En situación de vulnerabilidad a amenazada (~55-65% de hablantes nativos, activa revitalización en escuelas comunitarias)",
+        "descripcion_linguistica": "Lengua con sistema vocálico central característico (/ʉ/, /ɨ/), concordancia verbal mediante prefijos personales y sufijos aspectuales, rica en expresiones onomatopéyicas y fórmulas esotéricas de cantos litúrgicos."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "La Guajira",
+          "Cesar",
+          "Magdalena"
+        ],
+        "municipios": [
+          "San Juan del Cesar",
+          "Riohacha",
+          "Dibulla",
+          "Valledupar",
+          "Becerril",
+          "Santa Marta"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Ranchería",
+          "Río Badillo",
+          "Río Jerez",
+          "Río Cesar",
+          "Río Marocaso",
+          "Río Tomarrazón",
+          "Río San Salvador"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Kogui-Malayo-Arhuaco (sector oriental)",
+          "Resguardo Campoalegre",
+          "Resguardo Arroyo Volao y El Rosario"
+        ],
+        "asentamientos_emblematicos": [
+          "Achintukua (Capital política y educativa)",
+          "Tezhumke",
+          "Potrerito",
+          "La Peña de los Indios",
+          "Cherúa",
+          "Morocaso",
+          "Siminke"
+        ],
+        "pisos_termicos_ocupados": "Pisos cálido, templado y subandino (200 a 2.500 msnm), con acceso ceremonial a páramos",
+        "poblacion_estimada": "Aproximadamente 14.000 a 16.500 personas (estimaciones ONIC y censos propios de la Organización Wiwa Yugumaiun Bunkuanarrua Tayrona)"
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral": "Tradicionalmente ocuparon las faldas cálidas y medias de la vertiente nororiental de la Sierra Nevada que bajan hacia los valles de Upar y el río Ranchería. Resistieron las expediciones de conquista de Ambrosio Alfinger (1531) y las fundaciones coloniales tempranas.",
+        "el_despojo_por_haciendas_ganaderas": "Durante los siglos XIX y XX sufrieron la violenta expansión latifundista ganadera desde Valledupar y San Juan del Cesar, que despojó a las familias Wiwa de sus tierras planas y fértiles en el piedemonte, arrinconándolas hacia cañones empinados de la cuenca media del río Ranchería.",
+        "resistencia_frente_al_conflicto_y_megaproyectos": "En los años 1990 y 2000 soportaron masacres y confinamientos a manos de frentes paramilitares del Bloque Norte de las AUC y combates con las FARC. Más recientemente, han encabezado la oposición jurídica y ambiental contra la represa de El Cercado (Río Ranchería) y la megaminería de carbón a cielo abierto que desvía arroyos sagrados en La Guajira.",
+        "organizacion_representativa": "Organización Wiwa Yugumaiun Bunkuanarrua Tayrona (OWYBT), fundada para agrupar los cabildos de La Guajira y el Cesar."
+      },
+      "cosmovision_y_filosofia": {
+        "rol_de_guardianes_de_la_palabra": "En la división sagrada de funciones entre los cuatro pueblos de la Sierra, los Wiwa fueron designados por la Gran Madre como los guardianes de la palabra (*dʉmʉna*), los cantos de origen y la mediación armónica. Son los intérpretes que entonan los cantos ancestrales durante los ritos interétnicos en las Kankurwas matrices.",
+        "entidades_creadoras": "Veneran a *Shibulama*, el ancestro originario de la palabra y el canto, y a *Kaku Serankua*, en conjunción con los Padres y Madres de las aguas y los cerros sagrados de la Serranía de San Salvador.",
+        "el_poporo_wiwa": "Llamado *yeru* o *poporo*, es utilizado desde la adolescencia. Los Wiwa enfatizan que el poporo es la palabra misma que no debe ser pronunciada con ira ni con engaño: el hombre que mambea debe sostener un lenguaje dulce, templado y verídico."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Damana / Dʉmʉna",
+        "fonologia": {
+          "vocales": "Sistema de 6 a 7 vocales: /a, e, i, o, u/ más la vocal central cerrada /ɨ/ y la vocal central redondeada /ʉ/, de crucial valor fonológico en Damana.",
+          "consonantes": "Oclusivas sordas y sonoras /p, b, t, d, k, g/, oclusiva glotal /ʔ/, fricativas /s, z, ʃ, ʒ, h/ y nasales /m, n, ɲ/.",
+          "rasgos_tonales": "Patrones entonacionales en cantos ceremoniales que modifican la función retórica del discurso."
+        },
+        "vocabulario_sagrado_glosado": [
+          {
+            "termino": "Dʉmʉna",
+            "traduccion": "Habla materna / La palabra propia",
+            "hermeneutica": "Idioma originario que conecta la garganta del ser humano con el viento y las aguas cósmicas."
+          },
+          {
+            "termino": "Sʉndwa",
+            "traduccion": "Templo ceremonial sagrado Wiwa",
+            "hermeneutica": "Casa de pensamiento y aprendizaje donde los Mamos cantan la historia del mundo durante la noche."
+          },
+          {
+            "termino": "Shibulama",
+            "traduccion": "Padre ancestral del canto y la palabra",
+            "hermeneutica": "Divinidad que enseñó a los primeros sabios la métrica sagrada para armonizar la naturaleza."
+          },
+          {
+            "termino": "Kalka",
+            "traduccion": "Árbol sagrado / Bosque de conocimiento",
+            "hermeneutica": "Especie arbórea viva cuyos espíritus custodian los secretos de la medicina botánica."
+          },
+          {
+            "termino": "Zhigoneshi",
+            "traduccion": "Mano prestada / Reciprocidad sagrada",
+            "hermeneutica": "Trabajo comunitario donde cada Wiwa aporta su sudor para la siembra o la construcción comunal."
+          },
+          {
+            "termino": "Gaba",
+            "traduccion": "Madre nutricia / Espíritu femenino tutelar",
+            "hermeneutica": "Presencia sagrada en cerros y manantiales que amamanta a los animales silvestres."
+          }
+        ],
+        "vitalidad_sociolinguistica": "Vulnerable pero en notable renacimiento gracias a los Centros Etnoeducativos Rurales e institutos Wiwa de Achintukua y Potrerito, donde se enseña Damana como primera lengua escolar."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "especialidad_medica_wiwa": "Los sabios Wiwa destacan por su extraordinario dominio de la fitoterapia del bosque seco tropical y subandino, combinada con cantos de ensalmo (*shiba*) que modifican el estado anímico y corporal del enfermo.",
+        "plantas_medicinales_destacadas": [
+          {
+            "nombre_comun": "Dividivi",
+            "nombre_cientifico": "Caesalpinia coriaria",
+            "piso_termico": "Bosque seco tropical (0 - 600 msnm)",
+            "uso_medico": "Vainas ricas en taninos; cocimiento empleado para gárgaras contra amigdalitis grave, enjuagues cicatrizantes y baños para aftas bucales."
+          },
+          {
+            "nombre_comun": "Guamacho",
+            "nombre_cientifico": "Pereskia guamacho",
+            "piso_termico": "Bosque seco y piedemonte (100 - 800 msnm)",
+            "uso_medico": "Hojas emolientes y flores en infusión para aliviar inflamaciones estomacales y calmar accesos febriles en lactantes."
+          },
+          {
+            "nombre_comun": "Bálsamo de caracolí",
+            "nombre_cientifico": "Anacardium excelsum",
+            "piso_termico": "Valles fluviales húmedos (200 - 1.000 msnm)",
+            "uso_medico": "Corteza en decocción para baños desinflamatorios en articulaciones hinchadas y dolores musculares postparto."
+          },
+          {
+            "nombre_comun": "Caña agria",
+            "nombre_cientifico": "Costus spicatus",
+            "piso_termico": "Riberas sombreadas de arroyos (400 - 1.500 msnm)",
+            "uso_medico": "Tallo macerado cuyo zumo diurético combate infecciones urinarias, arenillas en los riñones y limpia el calor hepático."
+          }
+        ],
+        "el_ritual_del_canto_curativo": "El Mamo Wiwa nunca administra un remedio botánico sin entonar previamente el canto de origen de la planta. Se le pide permiso al 'Padre de la hierba' para que libere su principio vital sanador; de lo contrario, se considera que la planta queda desprovista de espíritu curativo."
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "agroecosistema_de_piedemonte_y_ladera": "Aprovechamiento de las vertientes de los ríos Ranchería y Jerez mediante policultivos estratificados: sombra alta de guamo y caracolí, estratos medios de café orgánico, plátano cuatrofilos y aguacate criollo, y estratos bajos de yuca dulce, ñame y fríjol cuarentano.",
+        "el_arte_ancestral_de_la_mochila_de_fique": {
+          "materia_prima": "Fique o maguey silvestre (*Furcraea cabuya* / *Furcraea andina*), cuyas hojas carnosas son deshebradas a mano en raspadores de madera.",
+          "hilado_y_tintura_organica": "Las fibras de fique son lavadas en arroyos cristalinos, secadas al sol y torcidas sobre el muslo en finas hebras continuas. Para teñirlas no se usan anilinas sintéticas, sino cortezas y raíces: corteza de dividivi (tonos ocres y grises), cáscara de plátano verde (tonos tostados), semillas de achiote (naranjas vivos) y barro mineral de ciénaga (negro azabache).",
+          "calidad_del_tejido": "Las mochilas Wiwa de fique destacan por una densidad de puntada extraordinariamente fina y flexible, resistente a la intemperie y a la humedad del trópico."
+        }
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "el_sundwa_wiwa": "Templo cónico mayor reservado a la congregación de los sabios. Construido con horcones centrales de madera de corazón de brasil o guayacán, muros circulares trenzados en caña brava y un imponente tejado cónico de hojas de palma de vino o palma amarga, con entrada ceremonial dirigida a los montes de La Guajira.",
+        "casas_comunales_de_achintukua": "Pueblo modelo de reasentamiento ancestral Wiwa con trazado semicircular alrededor del Sʉndwa y la plaza de asambleas, integrando materiales tradicionales con soluciones sostenibles de ventilación cruzada."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "estructura_de_gobierno": "Consejo de Mamos del Pueblo Wiwa articulado con el Cabildo Gobernador de la OWYBT. Las decisiones sobre obras públicas, salud y educación deben contar con la consulta espiritual en el Sʉndwa.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Mamo Ramón Gil Barros",
+            "rol": "Mamo Mayor y patriarca indiscutible del pueblo Wiwa",
+            "aporte": "Lideró la reunificación del pueblo Wiwa a finales del siglo XX; fundó el asentamiento modelo de Tezhumke y promovió la recuperación de las tierras bajas despojadas por la ganadería."
+          },
+          {
+            "nombre": "Antonio Bolívar Salvador",
+            "rol": "Sabio, anciano tradicional y actor indígena internacional",
+            "aporte": "Inmortalizado en el cine por su papel protagonista como el chamán 'Karamakate' en la película colombiana nominada al Óscar 'El abrazo de la serpiente' (2015), llevando la espiritualidad indígena a los escenarios culturales más prestigiosos del planeta."
+          },
+          {
+            "nombre": "Pedro Manuel Loperena",
+            "rol": "Comisionado de derechos humanos y líder de la OWYBT",
+            "aporte": "Defensor incansable ante la Comisión Interamericana de Derechos Humanos (CIDH) por la protección de las cuencas de los ríos Ranchería y Jerez frente al impacto minero."
+          }
+        ]
+      }
+    },
+    {
+      "id": "kankuamo",
+      "nombre_comun": "Kankuamo",
+      "autodenominacion": "Kankuaka (Gente de la estribación oriental / El guardián de la memoria)",
+      "filiacion_etnica": "Herederos del cuarto pilar ancestral de la Sierra Nevada de Santa Marta",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Chibcha Magdalénico / Sierra Nevada",
+        "idioma": "Lengua Kankuama ancestral (en proceso de reactivación y rescate lexical)",
+        "vitalidad": "Extinta como sistema de comunicación cotidiana a principios del siglo XX por imposición colonial y misional; pervivencia de sustrato léxico sagrado, toponimia andina, taxonomía botánica y cantos ceremoniales en proceso activo de revitalización etnoeducativa.",
+        "descripcion_linguistica": "Históricamente emparentada con el Iku y el Damana; hoy la comunidad habla una variante dialectal del castellano con profunda influencia morfológica, fonética y léxica chibcha."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Cesar"
+        ],
+        "municipios": [
+          "Valledupar (vertiente suroriental de la Sierra Nevada)"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Guatapurí",
+          "Río Badillo",
+          "Río Candela",
+          "Río Mojao",
+          "Arroyo San Felipe"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Indígena Kankuamo (reconocido legalmente mediante Resolución INCORA 012 de abril de 2003, abarcando más de 24.000 hectáreas)"
+        ],
+        "asentamientos_emblematicos": [
+          "Atánquez (Capital histórica y política)",
+          "Chemesquemena",
+          "Guatapurí",
+          "La Mina",
+          "Pontón",
+          "Mojao",
+          "Los Haticos",
+          "Las Flores",
+          "Rioseco",
+          "Murillo"
+        ],
+        "pisos_termicos_ocupados": "Pisos cálido, templado y frío de vertiente (600 a 3.000 msnm)",
+        "poblacion_estimada": "Aproximadamente 17.500 a 20.000 personas (Censo DANE y padrón del Cabildo Mayor del Resguardo Indígena Kankuamo)"
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral": "Custodios originales de la puerta oriental de la Sierra Nevada que conecta la alta montaña con el valle de los ríos Cesar y Guatapurí. Ocuparon una red densa de aldeas agrícolas antes de la llegada de los conquistadores en el siglo XVI.",
+        "el_proceso_de_aculturacion_forzada": "Por su cercanía geográfica a Valledupar, sufrieron desde el período virreinal una penetración invasiva de haciendas coloniales, encomiendas y misiones religiosas capuchinas que castigaron violentamente el habla de la lengua nativa y la vestimenta tradicional, imponiendo un mestizaje forzado que hizo que la antropología oficial los catalogara erróneamente durante décadas como 'indígenas asimilados'.",
+        "el_proceso_de_etnogenesis_y_recuperacion_cultural": "A partir de la década de 1980, los mayores y jóvenes de Atánquez iniciaron uno de los procesos de reconstrucción étnica, territorial e identitaria más admirados de América Latina (*etnogénesis kankuama*). Con el respaldo y guía espiritual de los Mamos Kogui, Arhuacos y Wiwa, los Kankuamos reconstruyeron sus Kankurwas sagradas, desempolvaron la indumentaria de algodón blanco, rescataron el tejido de sus mochilas de dos hebras y volvieron a ejercer la autoridad tradicional.",
+        "martirio_en_el_conflicto_armado_interno": "Durante los años 1990 y 2004, el pueblo Kankuamo fue objeto de un exterminio sistemático a manos de grupos paramilitares (Bloque Norte al mando de Rodrigo Tovar Pupo, alias 'Jorge 40') y frentes guerrilleros. Más de 400 líderes, autoridades y comuneros Kankuamos fueron selectivamente asesinados, lo que motivó que la Corte Constitucional de Colombia emitiera el histórico Auto 004 de 2009, declarando al pueblo Kankuamo en riesgo inminente de exterminio físico y cultural y ordenando medidas cautelares de salvaguarda urgente."
+      },
+      "cosmovision_y_filosofia": {
+        "el_cuarto_pilar_de_la_sierra": "Los Kankuamos representan el 'cuarto poste' que sostiene el Corazón del Mundo. En la cosmología de la Sierra, si uno de los cuatro postes cae, la Kankurwa cósmica se derrumba. Por ello, la recuperación de la identidad Kankuama fue asumida como un imperativo ontológico para la salvación de toda la Sierra.",
+        "los_cerros_tutelares_kankuamos": "Veneran cerros sagrados circundantes como el Cerro Murillo, el Cerro de la Mina y el pozo sagrado de Hurtado en el río Guatapurí, donde moran espíritus guardianes de las aguas y la fertilidad.",
+        "reaprendizaje_espiritual": "Los sabios kankuamos reciben instrucción y consejo constante en las Kankurwas mayores de Nabusímake y Takina, sellando una alianza indisoluble entre los cuatro pueblos hermanos."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Lengua Kankuama / Castellano Kankuamo",
+        "sustrato_y_recuperacion": "Aunque la lengua como sistema gramatical completo dejó de transmitirse en los hogares a inicios del siglo XX debido a la persecución misional, sobrevive un rico corpus léxico en la botánica médica, nombres de lugares sagrados (*Atánquez*, *Chemesquemena*, *Surimena*), prácticas agrícolas y fórmulas de saludo ceremonial.",
+        "vocabulario_sagrado_y_pervivencia_lexica": [
+          {
+            "termino": "Kankuaka",
+            "traduccion": "Pueblo del agua y la piedra / Gente de la Sierra",
+            "hermeneutica": "Nombre de autodefinición étnica que reivindica la herencia milenaria originaria."
+          },
+          {
+            "termino": "Kankurwa",
+            "traduccion": "Templo sagrado ceremonial",
+            "hermeneutica": "Espacio consagrado edificado en Atánquez y Guatapurí para la deliberación espiritual y política comunitaria."
+          },
+          {
+            "termino": "Tutu Kankuama",
+            "traduccion": "Mochila de fique de dos hebras",
+            "hermeneutica": "Pieza textil emblemática elaborada con fibra vegetal trenzada que preserva la memoria de las abuelas."
+          },
+          {
+            "termino": "Mamo",
+            "traduccion": "Sabio y guía espiritual",
+            "hermeneutica": "Máxima autoridad de conocimiento y enlace con las leyes naturales universales."
+          },
+          {
+            "termino": "Zhigoneshi",
+            "traduccion": "Trabajo solidario no asalariado",
+            "hermeneutica": "Práctica viva en las comunidades kankuamas para limpiar caminos y edificar viviendas comunales."
+          }
+        ],
+        "programa_etnoeducativo": "Implementación del Modelo Educativo Propio Kankuamo (MEPK) en escuelas del resguardo, incorporando la enseñanza de valores de la Ley de Origen y comparaciones etnolingüísticas con el Iku y el Damana."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "tradicion_de_las_médicas_y_curanderos": "Atánquez y Guatapurí son célebres por sus médicos tradicionales y sobadores de huesos, quienes conocen al detalle los secretos de las hierbas del bosque seco y templado.",
+        "botanica_curativa_kankuama": [
+          {
+            "nombre_comun": "Cañahuate / Guayacán amarillo",
+            "nombre_cientifico": "Handroanthus chrysanthus",
+            "piso_termico": "Bosque seco tropical (400 - 1.000 msnm)",
+            "uso_medico": "Corteza hervida para combatir fiebres rebeldes, afecciones hepáticas y purificar la sangre de toxinas acumuladas."
+          },
+          {
+            "nombre_comun": "Albahaca cimarrona",
+            "nombre_cientifico": "Ocimum campechianum",
+            "piso_termico": "Huertas templadas y secas (600 - 1.400 msnm)",
+            "uso_medico": "Infusión relajante estomacal, alivio de dolores de cabeza punzantes y baños tibios para sosegar el espíritu de niños asustados."
+          },
+          {
+            "nombre_comun": "Malambo",
+            "nombre_cientifico": "Croton malambo",
+            "piso_termico": "Laderas secas del valle del Cesar (300 - 800 msnm)",
+            "uso_medico": "Corteza aromática masticada o en tintura contra dolores estomacales violentos, diarreas infecciosas y como repelente antiofídico."
+          },
+          {
+            "nombre_comun": "Toronjil de la Sierra",
+            "nombre_cientifico": "Melissa officinalis / Aloysia triphylla",
+            "piso_termico": "Huertas caseras de Atánquez (800 - 1.600 msnm)",
+            "uso_medico": "Tónico cardíaco y sedante del sistema nervioso para calmar la angustia provocada por recuerdos del conflicto armado."
+          }
+        ],
+        "sanacion_emocional_colectiva": "Ceremonias de armonización comunitaria orientadas a sanar el trauma psicosocial de la violencia armada mediante pagamentos colectivos en las riberas del río Guatapurí."
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "agroforesteria_tradicional": "Cultivo de café orgánico bajo sombra de árboles nativos (guamos, cedros, caracolíes), caña panelera procesada en trapiches tradicionales de madera o hierro, plátano criollo, cacao y frutales (mango, aguacate, naranja).",
+        "el_sombrero_kankuamo": "Elaborado a partir del cogollo de la palma de cañahuate o palma amarga, tejido minuciosamente por los artesanos de Atánquez con alas anchas y copa alta.",
+        "la_mochila_kankuama_de_fique": "Famosa en todo el Caribe por su tejido de dos hebras apretadas en espiral, adornada con tintes vegetales de dividivi, mora de monte y nogal, utilizada como símbolo indestructible de identidad y resistencia cultural."
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "kankurwas_reconstruidas": "En Atánquez y Chemesquemena se erigen hoy majestuosas Kankurwas cónicas erigidas con maderas nativas y techos de palma, consagradas por los Mamos mayores como epicentros de la espiritualidad y el autogobierno indígena.",
+        "casas_tradicionales_de_bahareque": "Viviendas rectangulares de barro con armazón de caña brava y madera, pintadas con cal blanca y techadas con tejas de barro o palma, con amplios patios traseros colmados de plantas medicinales y árboles frutales."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "estructura_organizativa": "Cabildo Mayor del Resguardo Indígena Kankuamo, integrado por las autoridades locales de los 12 asentamientos del resguardo.",
+        "defensa_de_la_linea_negra": "Los Kankuamos han jugado un rol crucial en la articulación jurídica y política del Decreto 1500 de 2018, defendiendo sitios sagrados de gran vulnerabilidad en el piedemonte de Valledupar frente a la expansión urbana e industrial.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Jaime Enrique Arias Arias",
+            "rol": "Histórico Cabildo Gobernador del Pueblo Kankuamo",
+            "aporte": "Lideró durante más de dos décadas la resistencia noviolenta del pueblo Kankuamo en los años más sangrientos del conflicto armado; impulsó la titulación del resguardo en 2003 y fue vocero nacional de la ONIC."
+          },
+          {
+            "nombre": "Rosa Bolaño",
+            "rol": "Matriarca, médica tradicional y lideresa comunitaria de Atánquez",
+            "aporte": "Guardiana fundamental del conocimiento etnobotánico y tejedora mayor que transmitió a generaciones enteras las técnicas ancestrales de la mochila de fique."
+          },
+          {
+            "nombre": "Iván Luquez Mindiola",
+            "rol": "Secretario General y líder político kankuamo",
+            "aporte": "Destacado negociador en las mesas de concertación con el gobierno nacional y defensor de la consulta previa y el territorio sagrado de la Línea Negra."
+          }
+        ]
+      }
+    },
+    {
+      "id": "wayuu",
+      "nombre_comun": "Wayuu",
+      "autodenominacion": "Wayuu (Gente / Ser humano por excelencia)",
+      "filiacion_etnica": "Pueblo guerrero, pastor y marinero de la península desértica de La Guajira",
+      "filiacion_linguistica": {
+        "familia": "Familia Arawak (Maipureana)",
+        "subgrupo": "Arawak Septentrional / Caribeño",
+        "idioma": "Wayuunaiki",
+        "vitalidad": "Vital / El idioma indígena más hablado de Colombia y Venezuela (>85-90% de hablantes en Alta y Media Guajira)",
+        "dialectologia": {
+          "wuinpumüin": "Variante dialectal de 'arriba' o marítima, hablada en la Alta Guajira y costas septentrionales y orientales.",
+          "wopumüin": "Variante dialectal de 'abajo' o tierra adentro, hablada en la Media y Baja Guajira y vertientes hacia la Sierra y los Montes de Oca."
+        },
+        "descripcion_linguistica": "Lengua aglutinante con orden de constituyentes flexible pero predominantemente VSO/VOS, rica morfología verbal con marcas de persona, número, género gramatical en tercera persona (masculino vs. no-masculino), y modos evidenciales y desiderativos."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "La Guajira (Colombia)",
+          "Estado Zulia (Venezuela)"
+        ],
+        "municipios": [
+          "Uribia (Capital Indígena de Colombia)",
+          "Manaure",
+          "Maicao",
+          "Riohacha",
+          "Albania",
+          "Hatonuevo",
+          "Barrancas",
+          "Distracción",
+          "Fonseca"
+        ],
+        "subregiones_guajiras": [
+          "Alta Guajira (Wuinpumüin): Paisaje semidesértico, dunas, acantilados rocosos y serranías de Macuira y Kusina",
+          "Media Guajira: Planicies áridas, sabanas de cardonales y salinas marítimas (Manaure)",
+          "Baja Guajira: Valles fértiles regados por los ríos Ranchería y Cesar en el piedemonte de la Sierra Nevada"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo de la Alta y Media Guajira (el más extenso de Colombia, con más de 1.000.000 de hectáreas)",
+          "Resguardo de Cerro Deo",
+          "Resguardo de Lomamato",
+          "Resguardos de Trujillo, Zahíno, Rodeíto y Mayabangloma"
+        ],
+        "asentamientos_y_rancherias": "Viven en 'rancherías' (*piichipala* o *müchiura*), asentamientos dispersos habitados por familias extendidas emparentadas por vía materna.",
+        "poblacion_estimada": "Aproximadamente 380.000 a 415.000 personas en territorio colombiano (Censo DANE) y más de 450.000 en el estado Zulia de Venezuela, constituyendo la nación indígena binacional más numerosa del norte de Sudamérica."
+      },
+      "historia_y_resistencia": {
+        "indoblegable_resistencia_colonial": "A diferencia de las poblaciones del interior andino, los Wayuu jamás fueron sometidos militarmente ni domesticados bajo el régimen de encomiendas por el Imperio Español. Adoptaron tempranamente desde el siglo XVI caballos, armas de fuego de contrabando holandés e inglés, y rebaños caprinos y ovinos, convirtiéndose en jinetes temibles y diestros pastores.",
+        "rebeliones_generales_del_siglo_xviii": "En 1769 protagonizaron una monumental insurrección general anticolonial en la que más de 20.000 guerreros Wayuu asediaron destacamentos hispanos, quemaron misiones capuchinas y desalojaron a las guarniciones militares coloniales, obligando al Virreinato a negociar tratados de frontera de facto.",
+        "el_comercio_maritimo_y_perlero": "Históricos navegantes y buceadores de perlas en el Cabo de la Vela; dominaron el contrabando de perlas, maderas preciosas, sal y ganado con las islas del Caribe (Aruba, Curazao, Jamaica).",
+        "impacto_contemporaneo_de_la_megamineria": "Desde la década de 1980 enfrentan la masiva explotación carbonífera a cielo abierto de El Cerrejón (la mina a cielo abierto más grande de Latinoamérica), la cual desvió el arroyo Bruno y secó fuentes hídricas ancestrales, provocando severas crisis de desnutrición y desabastecimiento de agua que motivaron la histórica Sentencia T-302 de 2017 de la Corte Constitucional (Estado de Cosas Inconstitucional en La Guajira)."
+      },
+      "cosmovision_y_filosofia": {
+        "entidades_creadoras": {
+          "maleiwa": "Héroe creador y civilizador que formó a los primeros Wayuu a partir del barro y les otorgó sus clanes e instrumentos de vida.",
+          "mma": "La Madre Tierra, principio femenino y vientre que da cobijo a los vivos y acoge los huesos en la muerte.",
+          "juya": "La Lluvia, entidad masculina errante, viajero infatigable que fecunda a Mma con sus aguaceros torrenciales y hace florecer el desierto.",
+          "lapü": "El Sueño sagrado, canal de comunicación espiritual mediante el cual los ancestros previenen desgracias y transmiten conocimientos chamánicos."
+        },
+        "el_mas_alla_y_jepira": "Para los Wayuu la muerte física no es el final. El alma viaja hacia *Jepira* (el Cabo de la Vela), tierra sagrada en la península donde los espíritus (*Yolujaa*) habitan en felicidad compartida, pescando y pastoreando en una dimensión invisible antes de dispersarse en la lluvia o la neblina marina.",
+        "sistema_de_clanes_eiruku": "Estructura social matrilineal absoluta dividida en más de 30 linajes clánicos (*eiruku*), cada uno con un animal totémico fundador: Pushaina (pecarí), Uriana (gato de monte / tigre), Ipuana (halcón), Epieyu (buitre / aura), Jayaliyu (zorro), Juusayuu (culebra cascabel), Epinayu (venado), Wolunaiyu (perdiz). La pertenencia al clan y la sangre se transmiten exclusivamente por la madre."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Wayuunaiki",
+        "fonologia": {
+          "vocales": "Sistema de 6 vocales fonológicas: /a, e, i, o, u/ más la vocal central alta no redondeada /ɨ/ (representada ortográficamente como 'ü'). Todas presentan oposición fonológica de duración (vocales breves vs. largas: /a/ vs. /aa/).",
+          "consonantes": "Oclusivas sordas /p, t, k/, oclusiva glotal /ʔ/ (grafiada como apóstrofe '), africada sorda /tʃ/ (ch), fricativas /s, ʃ/ (sh), nasales /m, n/, líquida lateral /l/, vibrante simple /ɾ/ y semivocales /w, j/.",
+          "morfosintaxis": "Alta aglutinación y prefijación pronominal en verbos y sustantivos inalienables (partes del cuerpo, términos de parentesco)."
+        },
+        "vocabulario_sagrado_glosado": [
+          {
+            "termino": "Maleiwa",
+            "traduccion": "Dios creador / Hacedor primordial",
+            "hermeneutica": "Principio organizador de la humanidad Wayuu y asignador de los tótems clánicos."
+          },
+          {
+            "termino": "Mma",
+            "traduccion": "La Tierra",
+            "hermeneutica": "Madre nutricia que sostiene los rebaños y guarda la memoria de los antepasados."
+          },
+          {
+            "termino": "Juya",
+            "traduccion": "La Lluvia / El Invierno fecundador",
+            "hermeneutica": "Fuerza masculina que viaja desde el cielo para desatar la fertilidad en la tierra árida."
+          },
+          {
+            "termino": "Lapü",
+            "traduccion": "El Sueño / Revelación onírica",
+            "hermeneutica": "Dimensión de la conciencia donde los espíritus dialogan con los humanos despiertos."
+          },
+          {
+            "termino": "Outsü",
+            "traduccion": "Chamana / Médica tradicional",
+            "hermeneutica": "Mujer iniciada capaz de mediar entre el mundo visible y los espíritus mediante el trance."
+          },
+          {
+            "termino": "Pütchipü'üi",
+            "traduccion": "Palabrero / Portador de la palabra pacífica",
+            "hermeneutica": "Mediador jurídico y filósofo del derecho consuetudinario Wayuu."
+          },
+          {
+            "termino": "Pütchi",
+            "traduccion": "La Palabra verdadera",
+            "hermeneutica": "Instrumento sagrado para dirimir cualquier ofensa sin recurrir al derramamiento de sangre."
+          },
+          {
+            "termino": "Eiruku",
+            "traduccion": "Carne / Clan matrilineal",
+            "hermeneutica": "La herencia biológica y espiritual de la madre que vincula a todos los miembros de un clan."
+          },
+          {
+            "termino": "Kanasü",
+            "traduccion": "Dibujo geométrico sagrado tejido",
+            "hermeneutica": "Patrón abstracto que codifica constelaciones, animales y senderos del universo."
+          },
+          {
+            "termino": "Wale'kerü",
+            "traduccion": "La araña mítica tejedora",
+            "hermeneutica": "Doncella primordial que enseñó a las mujeres Wayuu el arte del hilado y el telar."
+          },
+          {
+            "termino": "Yolujaa",
+            "traduccion": "Espíritu de los muertos",
+            "hermeneutica": "Fuerza incorpórea que mora en Jepira y puede intervenir en sueños o pesadillas."
+          },
+          {
+            "termino": "Wanülüü",
+            "traduccion": "Espíritu del infortunio y la enfermedad repentina",
+            "hermeneutica": "Fuerza telúrica temible que flecha a los humanos que violan tabúes de la naturaleza."
+          }
+        ],
+        "vitalidad_sociolinguistica": "Altísima vitalidad en el norte peninsular; uso cotidiano en el comercio, la asamblea comunal y la transmisión doméstica."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "el_chamanismo_de_la_outsu": "La *Outsü* es la especialista médica y chamánica Wayuu, mayoritariamente mujer. Su vocación se manifiesta a través de un sueño (*Lapü*) o una enfermedad grave que la coloca al borde de la muerte. Es guiada por un espíritu tutelar (*Awanseele*). En trance ritual provocado por el toque sagrado del tambor *Kásha* y maracas con semillas, succiona el mal espiritual del cuerpo del paciente.",
+        "el_diagnostico_por_tabaco_yootopaa": "La chamana mastica hojas de tabaco (*yootopa'a*) y escupe el zumo aromático en cruz sobre las articulaciones del paciente, oliendo su energía corporal para detectar si el mal proviene de *Wanülüü* o de un maleficio.",
+        "farmacopea_del_desierto_guajiro": [
+          {
+            "nombre_comun": "Trupillo / Mezquite",
+            "nombre_cientifico": "Prosopis juliflora",
+            "ecosistema": "Cardonales y sabanas desérticas de La Guajira",
+            "uso_medico": "Goma del tronco en solución oftálmica contra conjuntivitis y cataratas; infusión de hojas contra afecciones bronquiales; harina de vainas nutritiva para convalecientes."
+          },
+          {
+            "nombre_comun": "Yosú (Cardón de dato)",
+            "nombre_cientifico": "Stenocereus griseus",
+            "ecosistema": "Zona árida de la Alta y Media Guajira",
+            "uso_medico": "Pulpa carnosa aplicada como cataplasma refrescante sobre quemaduras solares, fiebres altas y picaduras de escorpiones."
+          },
+          {
+            "nombre_comun": "Dividivi",
+            "nombre_cientifico": "Caesalpinia coriaria",
+            "ecosistema": "Llanuras secas de Manaure y Uribia",
+            "uso_medico": "Polvo de las vainas astringentes para secar úlceras de la piel, frenar hemorragias y desinflamar la garganta."
+          },
+          {
+            "nombre_comun": "Anamú",
+            "nombre_cientifico": "Petiveria alliacea",
+            "ecosistema": "Zonas de arroyos estacionales",
+            "uso_medico": "Baños aromáticos amargos para 'despojar' al enfermo de malas energías enviadas por *Yolujaa* o calmar dolores artríticos."
+          }
+        ],
+        "el_rito_del_segundo_entierro_anajawaa": "Institución médica y espiritual fundamental. Entre 10 y 15 años después de la muerte y del primer entierro, las mujeres ancianas del clan desentierran los restos del difunto, limpian meticulosamente cada hueso con agua de hierbas aromáticas y licor, los depositan en una pequeña urna de barro cocido y los trasladan al cementerio ancestral definitivo del clan materno. Este rito sella la curación del duelo familiar y garantiza la serenidad eterna del espíritu en Jepira."
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "agricultura_de_arroyos_estacionales_wuin": "En un territorio desértico con precipitaciones menores a 400 mm anuales, los Wayuu desarrollaron una agricultura oportunista en los lechos limosos y abanicos aluviales que se anegan efímeramente tras las lluvias de *Juya*. Siembran con gran velocidad maíz nativo (*jawa*), frijol guajiro (*kapeshuna* - *Vigna unguiculata*), melón y auyamas, que maduran en ciclos vegetativos ultracortos.",
+        "cosecha_de_agua_casimbas_y_jagueyes": {
+          "casimbas": "Pozos cilíndricos excavados a mano en la arena seca de los lechos de arroyos secos (*arroyos fósiles*), donde el agua freática se filtra naturalmente a través de capas arenosas quedando limpia y potable.",
+          "jagueyes": "Reservorios o estanques comunitarios excavados en suelos arcillosos impermeables para retener agua de escorrentía superficial destinada a los rebaños caprinos durante los meses secos de brisa (*wawai*)."
+        },
+        "el_pastoreo_adaptativo": "Manejo extensivo y trashumante de caprinos y ovinos que ramonean leguminosas del desierto (trupillo, dividivi, cactáceas). El chivo no es solo fuente alimenticia (carne, leche, queso frito), sino la principal reserva de capital social y moneda consuetudinaria en pagos de compensación.",
+        "el_tejido_sagrado_kanasu": {
+          "origen_mitologico": "La araña doncella *Wale'kerü* tejió a escondidas fajas y mochilas primorosas que maravillaron a un cazador Wayuu; este la acogió en su hogar y ella enseñó a las doncellas púberes recluidas en el encierro (*sutao*) a hilar y componer los diseños geométricos.",
+          "tecnologias_textiles": "Telar vertical tradicional de madera de trupillo (*kanasütpala*), agujas de ganchillo (*crochet*) y técnicas de urdimbre y trama doble faz.",
+          "piezas_maestras": [
+            "Chinchorro de doble faz (Kayasü): Hamaca tejida de enorme dimensión con flecos colgantes (*barriga*) colmados de calados geométricos.",
+            "Mochila Susu: Mochila cilíndrica de una sola hebra o dos hebras, con fondo circular que reproduce una estrella o mandala cósmico.",
+            "Faja masculina Si'ira: Cinturón apretado con intrincados dibujos heráldicos que porta el hombre para sujetar su guayuco (*wusi*)."
+          ],
+          "patrones_geometricos_emblematicos": [
+            {
+              "nombre": "Pasalairü",
+              "significado": "Diseño inspirado en las bandas de la mariposa / Transformación"
+            },
+            {
+              "nombre": "Molokonoutaya",
+              "significado": "El caparazón del morrocoy o tortuga terrestre / Longevidad"
+            },
+            {
+              "nombre": "Iwouyaa",
+              "significado": "La constelación de las Pléyades / Anuncio de las primeras lluvias de Juya"
+            },
+            {
+              "nombre": "Katenasü",
+              "significado": "Como la huella que deja la albarrada o cerca de varas en la tierra"
+            },
+            {
+              "nombre": "Jalianaya",
+              "significado": "La madre del diseño / La figura madre de donde brotan todas las formas geométricas"
+            },
+            {
+              "nombre": "Antajirasü",
+              "significado": "Caminos que se entrecruzan / El encuentro pacífico de los clanes"
+            }
+          ]
+        }
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "la_enramada_lumaa": "Espacio arquitectónico primordial de la ranchería. Estructura rectangular abierta en sus cuatro costados para permitir el paso ininterrumpido de los vientos alisios que mitigan el calor extremo del desierto (superando a menudo los 40 °C). Se sostiene sobre cuatro o seis horcones de madera imputrescible de guayacán o trupillo y techada con un emparrillado de varas secas de cactus (*yosú*) o caña brava. Es el salón de asambleas donde el Palabrero delibera, donde se cuelgan las hamacas para recibir visitantes y donde se vela a los difuntos.",
+        "la_casa_de_bahareque_piichi": "Vivienda habitacional rectangular o cuadrada con paredes hechas de una urdimbre de caña brava o cardón recubierta de barro arcilloso secado al sol, y techumbres de torta de barro o paja marina, que retienen el frescor de la noche y protegen contra las ventiscas de arena."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "el_sistema_normativo_del_palabrero_putchipuui": {
+          "reconocimiento_unesco": "Inscrito en 2010 en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad de la UNESCO.",
+          "la_figura_del_putchipuui": "El 'palabrero' es un orador sabio, neutral, conocedor profundo de la historia genealógica de los clanes y de las leyes ancestrales. Es contratado por el clan ofensor o por la víctima para negociar un acuerdo de compensación.",
+          "mecanismo_de_la_compensacion_makua": "La justicia Wayuu no contempla penas de cárcel ni castigos corporales. Toda ofensa (injuria, accidente, herida o muerte violenta) debe ser reparada material y espiritualmente mediante una indemnización compensatoria (*máku'a*) pagada en cabezas de ganado caprino/bovino, collares antiguos de piedras preciosas (*tumas* o *kousholu*) y chinchorros de gala. Una vez aceptada la compensación, la ofensa queda borrada para siempre, impidiendo que el clan ofendido active la sangrienta espiral de la venganza familiar (*guerra interclánica*).",
+          "el_concepto_del_alaapana": "El pago por la sangre o el dolor físico derramado, valorando la integridad corporal como patrimonio sagrado del clan materno."
+        },
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "José Dolores Arpushana",
+            "rol": "Palabrero mayor y prócer de la diplomacia consuetudinaria",
+            "aporte": "Histórico mediador de paz que resolvió incontables disputas interclánicas complejas durante el siglo XX, sentando las bases de la jurisprudencia propia Wayuu."
+          },
+          {
+            "nombre": "Remedios Fajardo",
+            "rol": "Lideresa wayuu del clan Uriana y defensora de derechos humanos",
+            "aporte": "Fundadora del Comité de Mujeres Indígenas de La Guajira Yanama, pionera en denunciar masacres como la de Bahía Portete (2004) cometida por paramilitares."
+          },
+          {
+            "nombre": "Karmen Ramírez Boscán",
+            "rol": "Lideresa del clan Epieyu, activista y parlamentaria",
+            "aporte": "Fundadora de la organización internacional 'Fuerza de Mujeres Wayuu' (Sütsüin Jiyeyu Wayuu), elegida en 2022 como Representante a la Cámara por los Colombianos en el Exterior, llevando las denuncias socioambientales de La Guajira al Congreso de la República y foros internacionales."
+          },
+          {
+            "nombre": "Débora Barros Fince",
+            "rol": "Abogada y defensora de las víctimas de Bahía Portete",
+            "aporte": "Lideró el retorno y la exigencia de justicia y reparación integral de las familias desplazadas de la Alta Guajira."
+          }
+        ]
+      }
+    },
+    {
+      "id": "zenu",
+      "nombre_comun": "Zenú",
+      "autodenominacion": "Zenú (Pueblo del agua, de las ciénagas y de la caña flecha)",
+      "filiacion_etnica": "Herederos milenarios de la civilización hidráulica de la Depresión Momposina",
+      "filiacion_linguistica": {
+        "familia": "Familia Lingüística Zenú ancestral (hipotéticamente emparentada con macro-familias Chibcha o lenguas independientes del Caribe)",
+        "idioma": "Lengua Zenú ancestral (extinta a finales del siglo XVIII)",
+        "vitalidad": "Extinta como lengua vehicular completa debido al régimen temprano de encomiendas y reducciones coloniales; persistencia monumental de un denso sustrato léxico vernáculo en la toponimia sabanera (Tolú, Chengue, Tuchín, Momil, Cereté, Chinú), términos de pesca y botánica de ciénagas, técnicas del tejido de la caña flecha y expresiones orales de las comunidades indígenas de Córdoba y Sucre.",
+        "descripcion_linguistica": "Los cronistas coloniales del siglo XVI y los estudios etnohistóricos dan cuenta de una lengua aglutinante con una rica fonología de consonantes nasales y oclusivas, hoy viva en la memoria oral y en la identidad cultural del pueblo sabanero."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Córdoba",
+          "Sucre",
+          "Bolívar",
+          "Antioquia"
+        ],
+        "municipios": [
+          "San Andrés de Sotavento",
+          "Tuchín",
+          "San Antonio de Palmito",
+          "Sampués",
+          "Momil",
+          "Chinú",
+          "Sahagún",
+          "Ciénaga de Oro",
+          "San Marcos",
+          "Ayapel",
+          "Necoclí (Urabá)"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Sinú",
+          "Río San Jorge",
+          "Río Cauca",
+          "Río Nechí",
+          "Bajo Magdalena",
+          "Ciénaga de Ayapel",
+          "Ciénaga de San Marcos",
+          "Ciénaga Grande de Lorica"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Indígena Zenú de San Andrés de Sotavento (reconocido desde la Cédula Real española de 1773, restituido legalmente y ampliado en los departamentos de Córdoba y Sucre)",
+          "Resguardo Indígena Zenú de El Volao (Necoclí, Antioquia)",
+          "Resguardo de San Antonio de Palmito (Sucre)"
+        ],
+        "asentamientos_emblematicos": [
+          "Tuchín (Capital artesanal de la Caña Flecha y cuna del Sombrero Vueltiao)",
+          "San Andrés de Sotavento",
+          "Bellavista",
+          "Vidal",
+          "Flechas",
+          "Castilleral",
+          "Cerro Vidales"
+        ],
+        "pisos_termicos_ocupados": "Llanuras bajas del Caribe y humedales de la Depresión Momposina (10 a 200 msnm)",
+        "poblacion_estimada": "Aproximadamente 250.000 a 280.000 personas (Censo DANE), constituyendo el segundo pueblo indígena más numeroso de Colombia."
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral_y_las_tres_provincias": "Desde el siglo II a.C., los Zenúes desarrollaron la civilización anfibia más avanzada del trópico americano, estructurada en tres macro-provincias complementarias: Finzenú (valle del Sinú, santuario funerario de túmulos y templos ceremoniales bajo el liderazgo de grandes cacicas), Panzenú (valle del San Jorge, despensa agrícola y centro de los grandes canales hidráulicos) y Zenufana (Bajo Cauca y Nechí, corazón minero de oro de aluvión y talleres de orfebrería en filigrana).",
+        "el_saqueo_de_las_necropolis_en_1534": "En 1534, las tropas de Pedro de Heredia saquearon a sangre y fuego los ricos túmulos funerarios de Finzenú, profanando santuarios y robando toneladas de ajuares de oro con cascabeles y figuras mamiformes. Pese a las epidemias y las encomiendas, los campesinos indígenas se replegaron a las sabanas interiores secas y a las orillas de las ciénagas.",
+        "la_cedula_real_de_1773_y_el_despojo_republicano": "En 1773, la Corona Española reconoció a los indígenas el título colonial de 83.000 hectáreas del Resguardo de San Andrés de Sotavento. Sin embargo, a lo largo del siglo XIX y principios del XX, las élites terratenientes y hacendados ganaderos de Córdoba y Sucre confabularon con notarios locales para decretar la 'inexistencia de indígenas', rematar las tierras comunales y convertir a los indígenas en peones despojados ('terrajeros').",
+        "la_lucha_por_la_recuperacion_de_tierras": "A partir de la década de 1970, el pueblo Zenú protagonizó una épica movilización de tomas pacíficas de haciendas al grito de 'La tierra para el que la trabaja', articulándose con la Asociación Nacional de Usuarios Campesinos (ANUC) y fundando el Cabildo Mayor Regional Zenú. A pesar del asesinato de decenas de líderes a manos de terratenientes y grupos paramilitares, lograron recuperar y titular más de 30.000 hectáreas de su resguardo ancestral."
+      },
+      "cosmovision_y_filosofia": {
+        "la_cultura_anfibia": "Concepción del cosmos donde el agua y la tierra no son elementos opuestos sino amantes complementarios. El Zenú se define como un 'hombre-pez' (*homo amphibiens*), capaz de habitar en la seca y en la inundación, leyendo los ciclos del río, la luna y las crecientes como latidos de la Madre Tierra.",
+        "el_liderazgo_femenino_de_la_madre": "Tradición matrilineal de origen donde las mujeres ejercieron el poder político y sacerdotal supremo. Figuras como la Cacica Toto o las diosas de los ríos encarnan la fertilidad del lodo aluvial y la capacidad creadora.",
+        "el_trenzado_como_filosofia_de_vida": "El acto de trenzar caña flecha simboliza el encadenamiento de la memoria comunitaria: los hilos blancos representan el sol, la pureza y el pensamiento despierto; los hilos negros representan la noche, la profundidad del fango de la ciénaga y la raíz de los ancestros."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Lengua Zenú ancestral / Castellano Vernáculo Zenú",
+        "sustrato_y_memoria_linguistica": "Pervivencia de un vasto inventario de voces originarias en el habla campesina sabanera: nombres de fauna de ciénaga (*hicotea*, *bocachico*, *barbudo*, *chigüiro*, *mojarra*), flora útil (*guama*, *totumo*, *bijao*, *palma de lata*, *jobo*, *caña flecha*), herramientas de laboreo (*tapiz*, *macana*, *catauro*, *chinchorro*, *tarraya*) y toponimia originaria de casi la totalidad de municipios cordobeses y sucreños.",
+        "vocabulario_sabanero_zenu": [
+          {
+            "termino": "Finzenú",
+            "traduccion": "Tierra de los túmulos sagrados y las sabanas del Sinú"
+          },
+          {
+            "termino": "Panzenú",
+            "traduccion": "Tierra del pantano fértil y los grandes canales del San Jorge"
+          },
+          {
+            "termino": "Zenufana",
+            "traduccion": "Tierra de las colinas de oro y los placeres aluviales del Nechí"
+          },
+          {
+            "termino": "Tuchín",
+            "traduccion": "Asentamiento central de artesanos del trenzado de caña flecha"
+          },
+          {
+            "termino": "Catauro",
+            "traduccion": "Canasto tejido de corteza para recoger yucas y mazorcas"
+          },
+          {
+            "termino": "Pinta",
+            "traduccion": "Diseño heráldico o geométrico trenzado en las alas del sombrero vueltiao"
+          }
+        ]
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "curanderos_rezanderos_y_sobanderos": "En las comunidades de Tuchín y San Andrés de Sotavento sobrevive una célebre casta de médicos tradicionales sabaneros especializados en 'componer' huesos fracturados mediante tablillas de guadua y manteca de hicotea, rezar mordeduras de serpientes venenosas (antiofídicos de selva) y aplicar baños de hierbas de humedal para desinflamar órganos internos.",
+        "farmacopea_del_humedal_y_la_sabana": [
+          {
+            "nombre_comun": "Caña agria",
+            "nombre_cientifico": "Costus spicatus",
+            "ecosistema": "Orillas húmedas de ciénagas y canales",
+            "uso_medico": "Zumo fresco extraído del tallo machacado para expulsar cálculos de la vejiga y calmar ardores de vías urinarias."
+          },
+          {
+            "nombre_comun": "Bija / Achiote",
+            "nombre_cientifico": "Bixa orellana",
+            "ecosistema": "Huertas caseras sabaneras",
+            "uso_medico": "Semillas ricas en carotenoides utilizadas como protector gástrico, cicatrizante tópico en heridas e ingrediente colorante medicinal."
+          },
+          {
+            "nombre_comun": "Totumo",
+            "nombre_cientifico": "Crescentia cujete",
+            "ecosistema": "Sabanas arboladas de Córdoba y Sucre",
+            "uso_medico": "Jarabe preparado con la pulpa negra fermentada con panela para expulsar flemas enquistadas en neumonías y aliviar la tos ferina."
+          },
+          {
+            "nombre_comun": "Matarratón",
+            "nombre_cientifico": "Gliricidia sepium",
+            "ecosistema": "Cercas vivas y sabanas cálidas",
+            "uso_medico": "Baños fríos de hojas restregadas para bajar rápidamente fiebres eruptivas infantiles (sarampión, varicela) y aliviar picores dérmicos."
+          }
+        ]
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "macroingenieria_hidraulica_de_camellones": {
+          "extension_monumental": "Más de 500.000 a 650.000 hectáreas en la Depresión Momposina modeladas entre el 200 a.C. y el 1000 d.C., constituyendo la mayor red de drenaje artificial y manejo ambiental de América precolombina.",
+          "morfologia_y_funcion": "Construcción de canales paralelos y perpendiculares que alcanzaban hasta 4 kilómetros de longitud y 20 a 30 metros de ancho, alternados con camellones elevados de tierra fértil de 1 a 4 metros de altura sobre las máximas crecientes fluviales.",
+          "dinamica_ecologica": "En época de invierno andino, las avenidas de los ríos Cauca, San Jorge y Magdalena eran canalizadas de forma laminar sin erosionar los cultivos; los limos ricos en materia orgánica se asentaban en los taludes. En época seca, los canales retenían millones de metros cúbicos de agua dulce, operando como inmensos criaderos y trampas de peces (bocachicos, bagres, doncellas), permitiendo hasta tres cosechas agrícolas anuales continuas de maíz, yuca y batatas."
+        },
+        "el_sombrero_vueltiao_simbolo_cultural_nacional": {
+          "reconocimiento_legal": "Declarado 'Símbolo Cultural de la Nación' mediante la Ley 908 de 2004 por el Congreso de la República de Colombia.",
+          "materia_prima": "La caña flecha (*Gynerium sagittatum*), una gramínea silvestre que crece silvestre a orillas de ciénagas y caños.",
+          "proceso_quimico_y_artesanal": [
+            "Desvenado y raspado: Se corta la hoja de caña flecha, se extrae la nervadura central con cuchillo y se obtienen tiras largas y flexibles (*ripia*).",
+            "Tratamiento para hebras blancas: Las tiras se cocinan con caña agria o zumo de limón para desmancharlas y se exponen al sol durante varios días hasta adquirir una blancura nacarada impecable.",
+            "Tratamiento para hebras negras: Las tiras se cocinan primero con hojas machacadas de bija o caña agria y luego se sumergen durante varios días en lodo negro aluvial de ciénaga, rico en sales de hierro y taninos orgánicos, produciendo una tinción negra indeleble y brillante sin químicos industriales.",
+            "El trenzado: Se tejen trenzas finísimas combinando pares de hebras blancas y negras. La finura del sombrero se clasifica por el número de pares trenzados: 19 (quinceano), 21 (veintiuno), 23, 27 y el legendario 31 (el más flexible, fino y cotizado, capaz de enrollarse sobre sí mismo y caber dentro de un pañuelo o bolsillo sin perder su forma original)."
+          ],
+          "simbologia_de_las_pintas": [
+            {
+              "nombre": "Pinta del Florón",
+              "significado": "La flor del totumo o de la caña agria / Abundancia"
+            },
+            {
+              "nombre": "Pinta de la Espina de Pescado",
+              "significado": "El esqueleto del bocachico / Gratitud al sustento del río"
+            },
+            {
+              "nombre": "Pinta del Ojo de Buey / Ojo de Perdiz",
+              "significado": "La pupila del animal silvestre / Agudeza visual y alerta en la cacería"
+            },
+            {
+              "nombre": "Pinta de la Pata de Rana",
+              "significado": "La huella del batracio en el fango / El heraldo de las lluvias benéficas"
+            },
+            {
+              "nombre": "Pinta del Pecho de Grillo",
+              "significado": "La coraza del insecto cantador / La música de las sabanas nocturnas"
+            }
+          ]
+        },
+        "orfebreria_en_filigrana_fundida": "Los Zenúes inventaron la técnica de fundición en filigrana a la cera perdida, modelando hilos de cera de abejas de menos de 0.4 mm para lograr orejeras semicirculares caladas y narigueras de asombrosa ligereza, que emulaban la textura visual de las redes de pesca y las mallas vegetales."
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "vivienda_anfibia_y_palafitica": "Tradicionalmente edificadas sobre terraplenes elevados de tierra o sobre pilotes de maderas duras resistentes al agua dulce (mangle, guayacán, campano) a orillas de caños y ciénagas, protegiendo los enseres de las crecientes estacionales.",
+        "el_bohio_sabanero": "Estructuras rectangulares o redondas con muros de tabla de palma de lata (*Bactris guineensis*) o caña flecha tejida en esterilla, con una densa techumbre de hojas secas de palma amarga (*Sabal mauritiiformis*) que mantiene la vivienda extraordinariamente fresca frente al sofocante calor sabanero."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "estructura_organizativa_moderna": "Cabildo Mayor Regional del Pueblo Zenú de San Andrés de Sotavento (Cacique Mayor Regional, secretarios y capitanes comunales de corregimientos).",
+        "guardia_indigena_zenu": "Cuerpo comunitario de control pacífico territorial, portadores de bastones de mando de madera de chonta decorados con trenzados de caña flecha blanca y negra.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Cacica Toto",
+            "rol": "Gobernante histórica suprema de Finzenú en el siglo XVI",
+            "aporte": "Lideró militar y espiritualmente la resistencia indígena en el valle del Sinú frente a las huestes invasoras de Pedro de Heredia, pasando a la historia como símbolo del poder femenino aborigen."
+          },
+          {
+            "nombre": "Celedonio Padilla",
+            "rol": "Líder indígena y mártir de la recuperación de tierras",
+            "aporte": "Campesino e indígena Zenú que impulsó la toma masiva de predios comunales en la década de 1970; su asesinato a manos de sicarios terratenientes galvanizó el movimiento indígena sabanero."
+          },
+          {
+            "nombre": "Pedro Ruiz",
+            "rol": "Cacique Mayor histórico de San Andrés de Sotavento",
+            "aporte": "Encabezó las batallas jurídicas ante el INCORA para la ampliación territorial del Resguardo y la defensa de la autonomía artesanal frente a intermediarios comerciales."
+          },
+          {
+            "nombre": "Artesanas Maestras de Tuchín",
+            "rol": "Matriarcas de la caña flecha",
+            "aporte": "Colectivos de mujeres indígenas que han custodiado la técnica ancestral del Sombrero Vueltiao, logrando la denominación de origen y la salvaguardia patrimonial."
+          }
+        ]
+      }
+    },
+    {
+      "id": "chimila_ette_ennaka",
+      "nombre_comun": "Chimila",
+      "autodenominacion": "Ette Ennaka (Gente propia / Gente del todo / Los verdaderos seres humanos)",
+      "filiacion_etnica": "Sobrevivientes milenarios de las selvas secas del río Ariguaní y llanuras del Magdalena",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Chibcha Septentrional / Llanuras del Caribe",
+        "idioma": "Ette Taara (La lengua de la gente)",
+        "vitalidad": "En peligro crítico / Severamente amenazada (~1.200 a 1.600 miembros de la comunidad, de los cuales entre 350 y 500 ancianos y adultos conservan la lengua con fluidez)",
+        "reivindicacion_linguistica": "Durante décadas clasificada equívocamente como lengua aislada o caribe; las rigurosas investigaciones de la lingüista María Trillos Amaya demostraron de manera concluyente su pertenencia científica e histórica a la Familia Chibcha, emparentada estructuralmente con las lenguas de la Sierra Nevada.",
+        "descripcion_linguistica": "Presenta contrastes tonales, un rico inventario vocálico con armonía vocálica, morfología aglutinante sufijante y complejos clasificadores nominales según la forma física de los objetos."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Magdalena",
+          "Cesar"
+        ],
+        "municipios": [
+          "Sabanas de San Ángel",
+          "Ariguaní (El Difícil)",
+          "Chibolo",
+          "El Copey",
+          "Valledupar",
+          "Santa Marta"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Ariguaní",
+          "Río Cesar",
+          "Quebrada San Ángel",
+          "Caño Chimila"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Indígena Ette Ennaka de Issa Oki ('Tierra Nueva', establecido en 1992 en Sabanas de San Ángel)",
+          "Resguardo Naara Kajmanta ('Nuestra Tierra')",
+          "Asentamientos de Diwana, Morrocoy y Las Delicias"
+        ],
+        "pisos_termicos_ocupados": "Piso cálido de bosque seco tropical y sabanas aluviales (50 a 300 msnm)",
+        "poblacion_estimada": "Aproximadamente 1.700 a 2.100 personas (Censo DANE y registros del Consejo Comunitario Ette Ennaka)"
+      },
+      "historia_y_resistencia": {
+        "dos_siglos_de_guerra_y_resistencia_selvatica": "En los siglos XVI, XVII y XVIII, los Ette Ennaka dominaban un inmenso territorio selvático entre el río Magdalena, la Sierra Nevada y la cuenca del río Cesar. Rechazaron ferozmente la dominación hispánica mediante tácticas de guerra de guerrillas selváticas, emboscadas nocturnas con flechas envenenadas y quema de encomiendas, lo que les valió el apelativo colonial de 'nación indómita y montaraz'.",
+        "las_campanas_de_exterminio_del_siglo_xviii": "Hacia finales del siglo XVIII, las autoridades coloniales del Virreinato de la Nueva Granada lanzaron brutales expediciones punitivas comandadas por José Fernando de Mier y Guerra para desarticular la selva del Ariguaní, fundando pueblos de frontera como El Difícil y San Ángel.",
+        "el_despojo_del_siglo_xx_y_la_servidumbre_ganadera": "Durante el auge ganadero y algodonero del siglo XX, las selvas fueron taladas a tala rasa. Los terratenientes despojaron a los Ette Ennaka de la totalidad de sus tierras ancestrales, quemaron sus bohíos y los sometieron a un régimen de peonaje forzado en haciendas ganaderas, donde se les prohibió hablar su lengua (*Ette Taara*) so pena de látigo.",
+        "el_renacimiento_en_issa_oki_1992": "A principios de la década de 1990, guiados por sueños proféticos de sus ancianos y con el apoyo de antropólogos y cabildos indígenas, un grupo de familias dispersas ocupó la finca 'La Sirena' en Sabanas de San Ángel, logrando que el INCORA la titulara como el Resguardo Issa Oki ('Tierra Nueva'), iniciando un renacimiento cultural sin precedentes."
+      },
+      "cosmovision_y_filosofia": {
+        "la_cultura_de_los_suenos_kakra_nawi": "Para los Ette Ennaka, el sueño (*kakra nawi*) no es una ilusión biológica, sino el estado supremo de percepción espiritual. En los sueños el alma abandona el cuerpo y viaja a través de las capas del cosmos para recibir advertencias de los ancestros, ubicar presas de cacería, descubrir plantas medicinales o anticipar la llegada de visitantes.",
+        "entidades_creadoras": {
+          "yaao": "El Jaguar Primordial, figura demiúrgica y hermano mayor de los humanos, que custodia los secretos de la selva y la ferocidad guerrera.",
+          "kakra": "La Tierra y el orden del universo concebido como un árbol colosal sostenido por raíces sagradas.",
+          "guaata": "El Sol, principio de calor y vida que ilumina las sabanas.",
+          "nari": "La Luna, guía de las mareas nocturnas, la siembra y los sueños fecundos.",
+          "kratchi": "Los Ancianos Primordiales que se transformaron en estrellas y vientos para vigilar a su pueblo."
+        }
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Ette Taara",
+        "fonologia": {
+          "vocales": "Sistema de 5 vocales orales /a, e, i, o, u/ con correlatos nasales distintivos /ã, ẽ, ĩ, õ, ũ/ y fenómenos de armonía vocálica en la raíz verbal.",
+          "consonantes": "Oclusivas sordas y sonoras /p, b, t, d, k, g/, oclusiva glotal /ʔ/, fricativas /s, ʃ, x/, nasales /m, n/ y vibrante simple /ɾ/.",
+          "sistema_tonal": "Presencia de tonos léxicos que diferencian significados en pares mínimos de palabras morfológicamente idénticas."
+        },
+        "vocabulario_sagrado_glosado": [
+          {
+            "termino": "Ette Ennaka",
+            "traduccion": "Gente propia / Gente verdadera",
+            "hermeneutica": "Autodenominación colectiva que reafirma la humanidad plena frente al apelativo despectivo 'chimila'."
+          },
+          {
+            "termino": "Ette Taara",
+            "traduccion": "La lengua propia / La voz de la gente",
+            "hermeneutica": "Idioma matricial entregado por los dioses para nombrar la flora, la fauna y los sueños."
+          },
+          {
+            "termino": "Kakra",
+            "traduccion": "El mundo / La selva viva",
+            "hermeneutica": "Espacio integral donde coexisten humanos, plantas y espíritus animales."
+          },
+          {
+            "termino": "Kakra Nawi",
+            "traduccion": "El camino del sueño",
+            "hermeneutica": "Viaje espiritual nocturno donde se revela la verdad del destino humano."
+          },
+          {
+            "termino": "Yaao",
+            "traduccion": "El Jaguar cósmico",
+            "hermeneutica": "Arquetipo de la valentía y protector de los senderos invisibles del bosque."
+          },
+          {
+            "termino": "Kragr",
+            "traduccion": "Cacique / Anciano de máxima autoridad",
+            "hermeneutica": "Líder moral y político que interpreta los sueños colectivos para guiar a la comunidad."
+          }
+        ],
+        "vitalidad_sociolinguistica": "En estado crítico pero estabilizándose mediante la Escuela Comunitaria Etnoeducativa de Issa Oki, donde los ancianos enseñan Ette Taara como lengua materna a los niños en cartillas bilingües ilustradas."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "el_diagnostico_onirico": "El médico tradicional Ette Ennaka no receta hierbas al azar: se acuesta a soñar para que el espíritu de la enfermedad se revele ante él con su forma verdadera (un animal, un viento negro o una espina) y le indique la planta exacta que neutralizará el daño.",
+        "botanica_de_la_selva_seca_del_ariguani": [
+          {
+            "nombre_comun": "Bálsamo de Tolú",
+            "nombre_cientifico": "Myroxylon balsamum",
+            "ecosistema": "Relictos de bosque seco tropical del río Ariguaní",
+            "uso_medico": "Resina balsámica perfumada recolectada del tronco para curar afecciones respiratorias graves, heridas infectadas y ahuyentar pesadillas en sahumerios."
+          },
+          {
+            "nombre_comun": "Guaco de sabana",
+            "nombre_cientifico": "Mikania micrantha",
+            "ecosistema": "Matorrales y riberas de caños",
+            "uso_medico": "Antiofídico supremo; maceración de hojas frescas ingerida de inmediato y colocada sobre la mordedura de serpientes cascabel o mapaná."
+          },
+          {
+            "nombre_comun": "Carreto / Almácigo",
+            "nombre_cientifico": "Bursera simaruba",
+            "ecosistema": "Bosque seco caducifolio",
+            "uso_medico": "Corteza exfoliante en infusión para tratar fiebres palúdicas, inflamaciones renales y purificar la sangre tras picaduras de avispas."
+          },
+          {
+            "nombre_comun": "Bejuco de cadena",
+            "nombre_cientifico": "Bauhinia glabra",
+            "ecosistema": "Selvas de galería húmedas",
+            "uso_medico": "Decocción astringente para detener cólicos diarréicos y fortalecer la matriz de las mujeres en gestación."
+          }
+        ]
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "recuperacion_agricola_en_tierras_ganaderas": "En el Resguardo Issa Oki, los Ette Ennaka han transformado potreros degradados por la ganadería intensiva en ricas agroforesterías comunitarias: siembran yuca amarga para elaborar casabe y almidón, maíz criollo blanco, batata, ñame espino, auyama y árboles frutales nativos (guama, zapote de monte, ciruela).",
+        "cesteria_en_bejuco_real": "Las artesanas son maestras en el tejido de canastos de bejuco de monte (*bejuco real*), confeccionando cestas de carga cilíndricas impermeabilizadas con resinas vegetales y esteras de hojas de palma de lata."
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "el_bohio_ette_ennaka": "Estructura rectangular alargada o circular con entramado de varas de caña brava amarradas con bejucos del bosque seco, techada con palma amarga que desciende casi hasta el suelo para evitar el embate de los vendavales de verano y mantener una penumbra interior fresca y apta para el sueño reparador."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "estructura_de_autoridad": "Consejo de Ancianos (*Kragr*) complementado con la figura del Cabildo Gobernador del Resguardo Issa Oki. Las decisiones comunitarias no se votan por mayorías numéricas sino que se alcanzan por consenso tras la interpretación comunal de los sueños.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Cacique Kragr Ancestral",
+            "rol": "Líder militar y espiritual del siglo XVIII",
+            "aporte": "Condujo las guerrillas selváticas del río Ariguaní, impidiendo durante décadas el paso de las tropas virreinales hacia Valledupar."
+          },
+          {
+            "nombre": "Juan Medina",
+            "rol": "Cacique Mayor y fundador de Issa Oki (1992)",
+            "aporte": "Visionario que soñó la reunificación de su pueblo disperso y encabezó la recuperación de la hacienda La Sirena, garantizando la supervivencia física y cultural del pueblo Ette Ennaka."
+          },
+          {
+            "nombre": "Ángel Medina",
+            "rol": "Cabildo Gobernador contemporáneo de Issa Oki",
+            "aporte": "Impulsor del rescate etnoeducativo del Ette Taara y defensor de las reservas forestales comunitarias frente a la agroindustria de palma africana."
+          }
+        ]
+      }
+    },
+    {
+      "id": "yukpa",
+      "nombre_comun": "Yukpa",
+      "autodenominacion": "Yukpa (Gente mansa / Ser humano / Hijos de la Serranía del Perijá)",
+      "filiacion_etnica": "Única etnia sobreviviente continental de la Familia Caribe en Colombia",
+      "filiacion_linguistica": {
+        "familia": "Familia Caribe",
+        "subgrupo": "Caribe Costero / Perijá-Chocó",
+        "idioma": "Yukpa (Yukpa yapontowat)",
+        "vitalidad": "En situación vulnerable a amenazada (~5.500 a 7.000 hablantes en Colombia y cerca de 11.000 en Venezuela)",
+        "dialectologia": "Posee diversos dialectos distribuidos por cañones fluviales en la Serranía del Perijá: Iroka, Socorpa, Maraca, Wasimo, Parirí, Curumaní.",
+        "descripcion_linguistica": "Orden de constituyentes flexible con preferencia SOV/OVS, morfología aglutinante, rica en sufijos direccionales, clíticos verbales de movimiento y distinciones fonológicas en consonantes palatales y velarizadas."
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Cesar (Colombia)",
+          "Estado Zulia (Venezuela)"
+        ],
+        "municipios": [
+          "Agustín Codazzi",
+          "Becerril",
+          "La Paz (Robles)",
+          "La Jagua de Ibirico",
+          "Curumaní",
+          "Chiriguaná"
+        ],
+        "subregiones_geograficas": [
+          "Serranía del Perijá (vertiente occidental andina en Colombia y oriental hacia la cuenca del Lago de Maracaibo en Venezuela)",
+          "Cañones y valles escarpados de los ríos Casacará, Maracas, Tucuy, Sororia, Sicarare y Magiriaimo"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Indígena Yukpa de Iroka (Agustín Codazzi)",
+          "Resguardo Indígena Yukpa de Socorpa (Becerril)",
+          "Resguardo Menkue-Mishe-Yukpa",
+          "Resguardo La Laguna",
+          "Resguardo El Rosario-Bella Vista"
+        ],
+        "pisos_termicos_ocupados": "Pisos cálido, templado, frío y subpáramo de ladera escarpada (300 a 3.400 msnm)",
+        "poblacion_estimada": "Aproximadamente 6.500 a 8.000 personas en Colombia (Censo DANE) y más de 12.000 en Venezuela."
+      },
+      "historia_y_resistencia": {
+        "los_antiguos_senores_del_perija": "Habitantes milenarios de las cordilleras y piedemontes del Perijá. Resistieron las incursiones coloniales tempranas de Ambrosio Alfinger en 1531. Fueron llamados 'Motilones Mansos' por cronistas coloniales para diferenciarlos de los Barí ('Motilones Bravos', de lengua Chibcha) asentados más al sur en el Catatumbo.",
+        "la_violenta_expulsion_por_la_ganaderia_y_el_algodon": "Entre 1930 y 1970, la colonización ganadera y algodonera financiada por terratenientes del Cesar desató 'cacerías humanas' y desalojos forzados de las vegas planas de los ríos Casacará y Tucuy, arrinconando a los Yukpa hacia los filos rocosos y peñascos inhóspitos de la Serranía del Perijá.",
+        "el_impacto_de_la_megamineria_de_carbon": "A partir de 1990, la llanura del Cesar se convirtió en el epicentro de la megaminería de carbón térmico a cielo abierto (complejos mineros de Prodeco, Drummond, CNR en La Jagua y Becerril), bloqueando las rutas ancestrales de movilidad de los Yukpa hacia los valles aluviales y contaminando las cabeceras fluviales.",
+        "la_historica_sentencia_t_713_de_2017": "Tras una tenaz lucha jurídica liderada por las autoridades de Iroka y Socorpa, la Corte Constitucional de Colombia expidió la Sentencia T-713 de 2017, tutelando los derechos fundamentales de los Yukpa al territorio ancestral, ordenando al Estado la delimitación y ampliación inmediata de sus resguardos y frenando la adjudicación de nuevos títulos mineros sin consulta previa."
+      },
+      "cosmovision_y_filosofia": {
+        "el_perija_como_cuerpo_ancestral": "Para los Yukpa, la Serranía del Perijá no es un macizo geológico inerte ni una fuente de carbón: es el cuerpo petrificado de sus antepasados mitológicos. Cada cima, cascada y cueva es el asiento de un espíritu tutelar (*Kumpa*). Destruir la montaña es desmembrar el cuerpo de sus dioses.",
+        "entidades_creadoras": {
+          "osemma": "El Transformador Primordial y Creador divino que modeló a los humanos a partir de troncos de madera tallada y enseñó las leyes de la convivencia comunitaria.",
+          "amorio": "Héroe mítico benefactor que robó el fuego cósmico y regaló a los Yukpa las semillas del maíz y la yuca.",
+          "kumpa": "Espíritus guardianes de las peñas altas, los vientos helados y los bosques de niebla de Perijá."
+        },
+        "el_mashiramo": "Canto y danza ceremonial sagrada ejecutada colectivamente durante las cosechas del maíz o los rituales fúnebres, donde hombres y mujeres enlazados por los hombros danzan al compás de flautas de caña para agradecer a *Osemma* la fecundidad de la tierra."
+      },
+      "linguistica_y_lengua": {
+        "idioma": "Yukpa yapontowat",
+        "fonologia": {
+          "vocales": "Sistema de 6 vocales: /a, e, i, o, u/ y la vocal central /ɨ/ típica del tronco Caribe.",
+          "consonantes": "Oclusivas sordas /p, t, k/, oclusiva glotal /ʔ/, fricativas /s, ʃ, h/, africada /tʃ/, nasales /m, n/ y semivocales /w, j/.",
+          "rasgos_sintacticos": "Verbos transitivos con prefijos que indexan simultáneamente al sujeto y al objeto (jerarquía de persona), morfología ergativa escindida y posposiciones espaciales detalladas para describir relieves montañosos empinados."
+        },
+        "vocabulario_sagrado_glosado": [
+          {
+            "termino": "Yukpa",
+            "traduccion": "Gente propia / Ser humano pacífico",
+            "hermeneutica": "Reivindicación de la humanidad armónica frente a la violencia exterior."
+          },
+          {
+            "termino": "Osemma",
+            "traduccion": "El Creador y Transformador cósmico",
+            "hermeneutica": "Demiurgo que dio forma a los ríos, valles y seres vivientes del Perijá."
+          },
+          {
+            "termino": "Amorio",
+            "traduccion": "Héroe civilizador del fuego y el maíz",
+            "hermeneutica": "Portador de la sabiduría agrícola y culinaria."
+          },
+          {
+            "termino": "Kumpa",
+            "traduccion": "Espíritu de las alturas rocosas",
+            "hermeneutica": "Fuerza telúrica protectora que custodia los nacimientos de los ríos."
+          },
+          {
+            "termino": "Mashiramo",
+            "traduccion": "Danza sagrada colectiva de la chicha y el maíz",
+            "hermeneutica": "Rito de comunión comunitaria que restablece el pacto con la Madre Tierra."
+          },
+          {
+            "termino": "Yoropo",
+            "traduccion": "Bebida ceremonial fermentada de maíz",
+            "hermeneutica": "Chicha sagrada compartida en las asambleas para consagrar acuerdos colectivos."
+          },
+          {
+            "termino": "Mankaye",
+            "traduccion": "Maíz nativo criollo de Perijá",
+            "hermeneutica": "Alimento nutricional y espiritual fundamental de la etnia."
+          }
+        ],
+        "vitalidad_sociolinguistica": "Conservada con vigor en los resguardos de la alta montaña (Iroka y Socorpa); bilingüismo con el castellano en asentamientos cercanos a las cabeceras municipales de Codazzi y Becerril."
+      },
+      "medicina_ancestral_y_farmacopea": {
+        "medicos_tradicionales_yukpa": "Conocedores profundos de los ecosistemas montanos de Perijá; combinan la herbolaria de selva nublada con la cura espiritual por el soplo y la extracción de espinas invisibles del cuerpo del paciente.",
+        "farmacopea_de_la_serrania_del_perija": [
+          {
+            "nombre_comun": "Zarzaparrilla de montaña",
+            "nombre_cientifico": "Smilax aspera / Smilax febrifuga",
+            "piso_termico": "Bosque andino nublado (1.500 - 2.600 msnm)",
+            "uso_medico": "Poderoso depurativo sanguíneo, diurético y remedio contra reumatismo articular crónico y erupciones de la piel."
+          },
+          {
+            "nombre_comun": "Corteza amarga de quina de Perijá",
+            "nombre_cientifico": "Cinchona pubescens",
+            "piso_termico": "Bosque de niebla (1.800 - 2.800 msnm)",
+            "uso_medico": "Decocción sumamente amarga utilizada históricamente para curar fiebres tercianas palúdicas y tónico digestivo reconstituyente."
+          },
+          {
+            "nombre_comun": "Achiote de monte",
+            "nombre_cientifico": "Bixa orellana (variedad silvestre kushwe)",
+            "piso_termico": "Laderas templadas (600 - 1.400 msnm)",
+            "uso_medico": "Pintura corporal ceremonial que protege la piel contra insectos hematófagos y hongos de humedad, emoliente estomacal."
+          },
+          {
+            "nombre_comun": "Guaco de peña",
+            "nombre_cientifico": "Mikania cordifolia",
+            "piso_termico": "Acantilados y riscos (1.000 - 2.200 msnm)",
+            "uso_medico": "Antídoto de emergencia ante mordeduras de serpientes rabo de chucha o corales en jornadas de cacería montañosa."
+          }
+        ]
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "agricultura_en_pendientes_extremas": "Los Yukpa cultivan en laderas de hasta 60 grados de inclinación utilizando técnicas ancestrales de tala y quema rotativa en pequeñas parcelas (*chagras* o *conucos*). Emplean barreras vivas de caña y piedras para contener la erosión del suelo durante las lluvias torrenciales.",
+        "agrobiodiversidad_nativa": "Conservan más de 12 variedades nativas de maíz criollo (*mankaye*), yuca dulce y brava, malanga, plátano popocho, frijol de monte y batata.",
+        "caceria_ancestral_con_arco_y_flechas": "Los hombres Yukpa son reconocidos arqueros. Confeccionan arcos curvados de madera flexible e imputrescible de palma de macana (*chonta*) y flechas largas de tallo de caña brava provistas de puntas afiladas de bambú, hueso o madera, emplumadas con plumas de gavilán para cazar paujiles, pavas de monte y roedores en la densa selva nublada.",
+        "cesteria_de_petacas_y_canastos": "Fabricación de cestas de carga tejidas en bejuco de monte y corteza flexible de majagua, provistas de una banda frontal (*mecapal*) que se apoya sobre la frente para transportar cargas pesadas de leña y cosechas por senderos empinados de herradura."
+      },
+      "arquitectura_sagrada_y_vivienda": {
+        "el_bohio_yukpa": "Vivienda rectangular o semicircular erigida sobre plataformas emparejadas en la ladera de la montaña. Estructura de troncos de madera resistente ensamblados con bejucos silvestres, paredes de varas de caña brava dispuestas verticalmente que permiten la circulación de aire fresco y techos a dos aguas densamente cubiertos con hojas de palma de montaña (*Geonoma*) o pasto de páramo.",
+        "la_casa_comunal_de_reuniones": "Espacio amplio donde la comunidad se reúne para moler maíz, preparar y fermentar la chicha sagrada (*yoropo*) y danzar el *Mashiramo* bajo la dirección del cacique."
+      },
+      "organizacion_sociopolitica_y_ley_de_origen": {
+        "estructura_tradicional": "Comunidades autónomas lideradas por un Cacique (*Tomaira*), elegido por su sabiduría militar, capacidad oratoria, generosidad redistributiva y conocimiento de los senderos de la montaña.",
+        "coordinacion_interresguardos": "Asociación de Cabildos Indígenas Yukpa del Perijá, entidad encargada de coordinar las mesas de concertación gubernamental para la aplicación de la Sentencia T-713 de 2017 y el saneamiento territorial.",
+        "lideres_historicos_y_contemporaneos": [
+          {
+            "nombre": "Cacique Sabino Romero",
+            "rol": "Cacique histórico y mártir del pueblo Yukpa",
+            "aporte": "Emblemático líder indígena de la Serranía del Perijá; dedicó su vida a la demarcación de las tierras ancestrales Yukpa y a la lucha frontal contra los intereses terratenientes y carboníferos, hasta su asesinato en marzo de 2013, convirtiéndose en el símbolo inmortal de la resistencia territorial de la etnia."
+          },
+          {
+            "nombre": "Edward Álvarez",
+            "rol": "Asesor jurídico, sociólogo y defensor territorial de los resguardos Yukpa de Colombia",
+            "aporte": "Artífice técnico y jurídico de la histórica Sentencia T-713 de 2017 de la Corte Constitucional colombiana, documentando palmo a palmo el territorio ancestral Yukpa frente a las multinacionales carboníferas."
+          },
+          {
+            "nombre": "Carmen Ferreira",
+            "rol": "Lideresa y médica tradicional del Resguardo Socorpa",
+            "aporte": "Voz fundamental en la defensa de la salud materno-infantil indígena y la preservación de las semillas nativas de maíz en Perijá."
+          }
+        ]
+      }
+    }
+  ],
+  "corpus_linguistico_comparado": {
+    "titulo": "Corpus Etnolingüístico Comparado de los Pueblos Indígenas del Caribe y la Sierra Nevada",
+    "familias_linguisticas": {
+      "familia_chibcha": {
+        "denominacion": "Tronco Lingüístico Chibchense",
+        "clasificacion_regional": "Subfamilia Magdalénica (Sierra Nevada de Santa Marta) y Rama Septentrional / Llanuras del Caribe",
+        "lenguas_pertenecientes": [
+          "Kogui (Kággabba)",
+          "Arhuaco (Iku / Ijka)",
+          "Wiwa (Damana / Dʉmʉna)",
+          "Kankuamo (lengua ancestral chibcha en revitalización)",
+          "Ette Taara (Chimila)"
+        ],
+        "hito_investigativo_trillos_amaya": "Las investigaciones sistemáticas de la lingüista colombiana María Trillos Amaya demostraron de forma concluyente que el Ette Taara (Chimila), históricamente considerado erróneamente como lengua aislada o caribe por cronistas y primeros etnógrafos, pertenece indiscutiblemente a la gran Familia Chibcha, emparentada morfológica y genéticamente con las lenguas de la Sierra Nevada de Santa Marta.",
+        "rasgos_tipologicos_comunes": [
+          "Morfología dominantemente aglutinante y sufijante.",
+          "Orden básico de constituyentes con verbo al final (predominio SOV).",
+          "Uso exclusivo de posposiciones en lugar de preposiciones.",
+          "Sistemas complejos de evidencialidad gramaticalizada (distinción morfológica de si el hablante presenció el hecho, lo escuchó por tradición oral o lo dedujo en adivinación espiritual).",
+          "Distinción léxica y gramatical entre registros profanos cotidianos y registros esotéricos sagrados empleados en la Kankurwa."
+        ],
+        "cuadro_comparativo_cognados": [
+          {
+            "significado": "Madre / Matriz sagrada",
+            "kogui": "Jaba / Gaba",
+            "arhuaco": "Zaku / Seynekun",
+            "wiwa": "Gaba / Zaku",
+            "ette_taara": "Naye / Naye-kakra",
+            "observacion": "Raíz arquetípica chibcha asociada al principio femenino y la fertilidad universal."
+          },
+          {
+            "significado": "Padre / Sol creador",
+            "kogui": "Jate / Mamo",
+            "arhuaco": "Kaku / Mamo",
+            "wiwa": "Kaku / Mamo",
+            "ette_taara": "Guaata / Yaao",
+            "observacion": "Principio celeste que fertiliza la tierra."
+          },
+          {
+            "significado": "Agua / Río sagrado",
+            "kogui": "Ni / Tshe",
+            "arhuaco": "Chua / Ditu",
+            "wiwa": "Duni / Ni",
+            "ette_taara": "Tiia / Tii",
+            "observacion": "Formas emparentadas con el lexema proto-chibcha *si/*ti para agua o corriente."
+          },
+          {
+            "significado": "Casa ceremonial / Templo",
+            "kogui": "Kankurwa",
+            "arhuaco": "Kankurwa / Cancurúa",
+            "wiwa": "Sʉndwa / Kankurwa",
+            "ette_taara": "Kakra-kiita",
+            "observacion": "Espacio de penumbra que emula el útero primigenio."
+          },
+          {
+            "significado": "Hoja de coca sagrada",
+            "kogui": "Ayú",
+            "arhuaco": "Ayú",
+            "wiwa": "Ayú",
+            "ette_taara": "Ayú (préstamo ritual)",
+            "observacion": "Término sagrado compartido por todas las etnias de la Sierra Nevada."
+          },
+          {
+            "significado": "Tierra / Mundo",
+            "kogui": "Uba / Séshizha",
+            "arhuaco": "Seynekun",
+            "wiwa": "Munku",
+            "ette_taara": "Kakra",
+            "observacion": "Sustrato vivo de ordenamiento cósmico."
+          }
+        ]
+      },
+      "familia_arawak": {
+        "denominacion": "Tronco Lingüístico Arawak (Maipureano)",
+        "lengua_representativa": "Wayuunaiki",
+        "cobertura_geografica": "Toda la Península de La Guajira (Colombia y Venezuela)",
+        "variantes_dialectales": {
+          "wuinpumüin": "Variante de arriba (marítima/costera): Alta Guajira y costas de Riohacha a Nazaret. Considerada la norma más conservadora fonéticamente.",
+          "wopumüin": "Variante de abajo (tierra adentro): Media y Baja Guajira, valles de Uribia a Maicao y vertientes del Perijá y Sierra Nevada."
+        },
+        "fonologia_y_grafia": {
+          "vocales": "6 fonemas vocálicos /a, e, i, o, u, ɨ/ (la 'ü' central alta no redondeada). Oposición distintiva de cantidad vocálica breve vs. larga (/a/ vs. /aa/).",
+          "consonantes": "Oclusivas /p, t, k, ʔ/ (el saltillo o glotal grafiado como apóstrofe '), africada /tʃ/ (ch), fricativas /s, ʃ/ (sh), nasales /m, n/, lateral /l/, vibrante simple /ɾ/ y aproximantes /w, j/."
+        },
+        "rasgos_gramaticales": [
+          "Morfología aglutinante con prefijos personales y abundantes sufijos de modo, tiempo, aspecto y voz.",
+          "Distinción de género gramatical en tercera persona: masculino singular vs. no-masculino (femenino singular y plural colectivo).",
+          "Posesión inalienable marcada obligatoriamente en sustantivos de partes del cuerpo y parentesco.",
+          "Sistemas de negación perifrástica y construcciones pasivas y causativas muy productivas."
+        ]
+      },
+      "familia_caribe": {
+        "denominacion": "Tronco Lingüístico Caribe",
+        "lengua_representativa": "Yukpa (Yukpa yapontowat)",
+        "singularidad_historica": "Constituye el único enclave vivo y continuo de la Familia Caribe en el territorio continental de Colombia, tras la extinción temprana en la colonia de pueblos caribes del litoral atlántico.",
+        "localizacion": "Serranía del Perijá (departamento del Cesar, Colombia y estado Zulia, Venezuela).",
+        "rasgos_fonologicos_y_morfologicos": [
+          "Sistema de 6 vocales orales con presencia de la vocal central alta /ɨ/.",
+          "Oclusiva glotal fonémica y complejas agrupaciones consonánticas en lindero silábico.",
+          "Estructura sintáctica con orden preferente SOV y OVS en oraciones transitivas.",
+          "Morfología verbal basada en jerarquía de persona (el prefijo verbal concuerda con el participante que ocupe el rango más alto en la jerarquía 1 > 2 > 3).",
+          "Uso prolífico de sufijos y posposiciones espaciales orientadas a la navegación topográfica en laderas de montaña vertical."
+        ]
+      },
+      "sustrato_linguistico_zenu": {
+        "denominacion": "Sustrato Lingüístico Sabanero Zenú",
+        "situacion": "Lengua extinta a nivel oracional desde finales del siglo XVIII debido a las reducciones eclesiales y la hispanización forzosa en encomiendas.",
+        "persistencia_en_el_habla_costena": "El pueblo Zenú transfirió al castellano vernáculo un vasto léxico relativo a la ictiología fluvial de humedales, la tecnología del tejido de caña flecha, la toponimia comarcal (Sampués, Tuchín, Momil, Cereté, Chinú, Tolú, Morroa, Chengue) y nombres vernáculos de árboles y plantas medicinales, constituyendo el alma etnolingüística de la sabana caribeña."
+      }
+    },
+    "diagnostico_de_vitalidad_unesco": [
+      {
+        "pueblo": "Wayuu",
+        "idioma": "Wayuunaiki",
+        "clasificacion": "Vital",
+        "hablantes_aprox": "Más de 600.000 (Colombia y Venezuela)",
+        "tendencia": "Alta transmisión intergeneracional y presencia en medios radiales e internet."
+      },
+      {
+        "pueblo": "Kogui",
+        "idioma": "Kogui",
+        "clasificacion": "Vital",
+        "hablantes_aprox": "15.000 - 17.000",
+        "tendencia": "Uso preferente en todos los ámbitos comunitarios y ceremoniales."
+      },
+      {
+        "pueblo": "Arhuaco",
+        "idioma": "Iku",
+        "clasificacion": "Vital",
+        "hablantes_aprox": "28.000 - 32.000",
+        "tendencia": "Fuerte identidad comunitaria y consolidación del sistema etnoeducativo bilingüe propio."
+      },
+      {
+        "pueblo": "Wiwa",
+        "idioma": "Damana",
+        "clasificacion": "Vulnerable a en peligro",
+        "hablantes_aprox": "8.000 - 10.000",
+        "tendencia": "Proceso activo de recuperación en escuelas bilingües rurales."
+      },
+      {
+        "pueblo": "Yukpa",
+        "idioma": "Yukpa",
+        "clasificacion": "Vulnerable",
+        "hablantes_aprox": "5.500 en Colombia (16.000 total binacional)",
+        "tendencia": "Amenazado por desplazamiento forzado y desarticulación territorial minera."
+      },
+      {
+        "pueblo": "Chimila",
+        "idioma": "Ette Taara",
+        "clasificacion": "En peligro crítico / Severamente amenazado",
+        "hablantes_aprox": "350 - 500 hablantes fluidos",
+        "tendencia": "Pervivencia concentrada en el Resguardo Issa Oki; programa escolar de salvaguardia de emergencia."
+      },
+      {
+        "pueblo": "Kankuamo",
+        "idioma": "Kankuamo ancestral / Castellano kankuamo",
+        "clasificacion": "En recuperación / Sustrato vivo",
+        "hablantes_aprox": "Población étnica ~18.000 (léxico sagrado)",
+        "tendencia": "Reincorporación de voces sagradas e interconexión con Iku y Damana."
+      },
+      {
+        "pueblo": "Zenú",
+        "idioma": "Zenú / Castellano sabanero",
+        "clasificacion": "Extinta como gramática / Gran sustrato vivo",
+        "hablantes_aprox": "Población étnica ~260.000",
+        "tendencia": "Defensa del sustrato vernáculo y preservación de la nomenclatura del trenzado."
+      }
+    ]
+  },
+  "medicina_ancestral_y_farmacopea": {
+    "titulo": "Tratado de Medicina Ancestral, Etnobotánica y Farmacopea Sagrada",
+    "el_poporo_y_el_ayu": {
+      "origen_y_filosofia": "El mambeo de la hoja de coca (*ayú*) y el poporo en la Sierra Nevada de Santa Marta no constituye un consumo recreativo ni profano de alcaloides, sino un sacramento ontológico y un instrumento de meditación y gobierno moral. El poporo es el libro de vida del indígena: en él queda grabada su pureza de pensamiento y su palabra verídica.",
+      "botanica_del_ayu": {
+        "nombre_cientifico": "Erythroxylum novogranatense var. novogranatense",
+        "familia_botanica": "Erythroxylaceae",
+        "morfologia_adaptativa": "Subespecie adaptada a los valles andinos y vertientes secas de la Sierra Nevada. Posee hojas elípticas más pequeñas y coriáceas que la coca amazónica (*Erythroxylum coca*), con cutícula cerosa que retiene la humedad y alto contenido de alcaloides aromáticos y minerales.",
+        "valor_nutricional": "Extraordinaria concentración de calcio biodisponible (más de 2.000 mg por 100 g de hoja seca), fósforo, hierro, potasio, magnesio, riboflavina y vitaminas A, C y E."
+      },
+      "quimica_y_alquimia_de_la_cal_marina": {
+        "materia_prima": "Conchas de caracoles y bivalvos marinos recolectados en las playas sagradas de la costa caribeña (Taganga, Bahía Concha, Don Diego, Dibulla), pertenecientes a especies como *Strombus pugilis*, *Melongena melongena* y *Donax denticulatus*.",
+        "reaccion_de_calcinacion": "Las conchas compuestas por carbonato de calcio son sometidas a un fuego ceremonial continuo con leñas duras de guayacán o dividivi a temperaturas superiores a los 850 °C: CaCO3 (sólido) + calor -> CaO (cal viva) + CO2 (gas). Al ser enfriadas y maceradas con humedad ambiental, se transforman en hidróxido de calcio Ca(OH)2 puro, una cal blanca impalpable de extrema reactividad alcalina."
+      },
+      "bioquimica_del_mambeo": {
+        "mecanismo_fisiologico": "El indígena introduce en la cavidad bucal un bolo de hojas de coca tostadas suavemente al fuego (*mambeo* o mascado) y con el palillo de madera extrae una pequeña dosis de cal marina del interior del poporo, depositándola cuidadosamente sobre el bolo sin tocar las encías.",
+        "efecto_del_ph": "La cal marina eleva instantáneamente el pH salival a valores básicos (> 8.5 a 9.0). En este medio alcalino, los alcaloides de la hoja (cocaína, ecgonina, higrina, cinamoilcocaína) se desprotonan convirtiéndose en bases libres liposolubles, lo que permite su absorción pasiva directa a través de las mucosas bucal y sublingual hacia el torrente sanguíneo, eludiendo la degradación ácida gástrica.",
+        "farmacocinetica_armonica": "A diferencia del clorhidrato de cocaína procesado sintéticamente (que genera picos plasmáticos masivos seguidos de colapso neuroquímico y adicción), el mambeo tradicional libera alcaloides de manera microdosificada, lenta y continua durante horas. Genera una suave estimulación cortical que mejora la oxigenación cerebral, suprime la fatiga física, el hambre y el mal de montaña, y estimula la lucidez mental sin alterar el juicio moral ni inducir euforia desmedida."
+      },
+      "simbolismo_del_recipiente": {
+        "el_calabazo": "Representa el vientre de la Gran Madre Tierra y el útero materno femenino.",
+        "el_palillo": "Representa el principio fálico fertilizador masculino y la aguja de la luz que conecta el cielo con la tierra.",
+        "el_frotado_sobre_el_cuello": "Al retirar el palillo de la boca humedecido en saliva y cal, el hombre frota rítmicamente el cuello del calabazo. Con el transcurrir de los meses y décadas, el carbonato de calcio se cristaliza formando una corona o collar pétreo de varios centímetros de grosor: es la escritura pétrea de su vida, donde cada milímetro cristalizado registra una vigilia de rezo y meditación."
+      }
+    },
+    "catalogo_etnobotanico_por_ecosistemas": {
+      "bosque_altoandino_y_paramo": [
+        {
+          "planta": "Frailejón de la Sierra",
+          "especie": "Libanothamnus occultus",
+          "propiedades": "Resina balsámica antiséptica y descongestionante pulmonar; hojas en decocción para el asma y tos de altura."
+        },
+        {
+          "planta": "Árnica de páramo",
+          "especie": "Senecio formosus",
+          "propiedades": "Antiinflamatorio osteoarticular, cicatrizante de traumatismos y desgarros en caminatas de montaña."
+        },
+        {
+          "planta": "Romero de monte",
+          "especie": "Diplostephium spp.",
+          "propiedades": "Estimulante circulatorio cerebral, empleado en sahumerios para despejar pensamientos sombríos y alejar pesadillas."
+        },
+        {
+          "planta": "Guaco andino",
+          "especie": "Mikania glomerata",
+          "propiedades": "Antiofídico supremo, neutralizador de venenos botánicos y descongestionante bronquial."
+        },
+        {
+          "planta": "Cola de caballo",
+          "especie": "Equisetum bogotense",
+          "propiedades": "Diurético purificador del riñón y remineralizante tisular por su alto tenor de sílice orgánica."
+        }
+      ],
+      "bosque_seco_tropical_y_desierto": [
+        {
+          "planta": "Trupillo / Mezquite",
+          "especie": "Prosopis juliflora",
+          "propiedades": "Goma exudada oftálmica contra cataratas y conjuntivitis; infusión bronquial pectoral; vainas altamente energéticas."
+        },
+        {
+          "planta": "Dividivi",
+          "especie": "Caesalpinia coriaria",
+          "propiedades": "Frutos astringentes saturados de taninos para cicatrizar heridas gangrenosas, lavar aftas y hemostasia local."
+        },
+        {
+          "planta": "Cardón de dato (Yosú)",
+          "especie": "Stenocereus griseus",
+          "propiedades": "Mucílago refrigerante para bajar la fiebre del desierto, quemaduras solares y dolor por insolación."
+        },
+        {
+          "planta": "Anamú",
+          "especie": "Petiveria alliacea",
+          "propiedades": "Fuerte bactericida, antiparasitario, analgésico y planta maestra de despojo en baños rituales de limpieza áurica."
+        },
+        {
+          "planta": "Malambo",
+          "especie": "Croton malambo",
+          "propiedades": "Corteza amarga aromática digestiva, analgésico en dolores de muelas y antídoto en picaduras de insectos ponzoñosos."
+        },
+        {
+          "planta": "Bálsamo de Tolú",
+          "especie": "Myroxylon balsamum",
+          "propiedades": "Resina expectorante antitusiva universal, cicatrizante antiséptico y sahumerio sagrado."
+        }
+      ]
+    },
+    "rituales_de_pagamento_y_armonizacion": {
+      "doctrina_del_zhigoneshi_y_ezozha": "Para los pueblos de la Sierra Nevada, el ser humano no es propietario de los bienes naturales sino un usufructuario endeudado con la Madre Tierra. Cada fruto cosechado, cada pez capturado, cada piedra extraída o cada gota de agua bebida representa una deuda energética que debe ser saldada mediante el *pagamento* ritual (*ezozha*). Omitir el pagamento causa sequías, vendavales y enfermedades colectivas.",
+      "elementos_liturgicos_del_pagamento": [
+        {
+          "elemento": "Tumas ancestrales",
+          "descripcion": "Cuentas pulidas precolombinas de cuarzo, carneliana, jaspe y nefrita halladas en antiguas ruinas taironas, consideradas condensadores de energía viva cósmica."
+        },
+        {
+          "elemento": "Hilos de algodón virgen ensortijado",
+          "descripcion": "Fibras de algodón nativo sin hilar hiladas en la dirección de las agujas del reloj, donde el Mamo 'amarra' el pensamiento y las confesiones del paciente."
+        },
+        {
+          "elemento": "Conchas de bivalvos marinos y perlas",
+          "descripcion": "Tributo devuelto a las lagunas de alta montaña para conectar la cima nevada con el océano infinito."
+        },
+        {
+          "elemento": "Oro nativo aluvial",
+          "descripcion": "Semilla solar que fertiliza el útero de la tierra."
+        },
+        {
+          "elemento": "Semillas de selva y resinas de copal",
+          "descripcion": "Ofrendas aromáticas quemadas en pebeteros cerámicos durante los solsticios y equinoccios."
+        }
+      ],
+      "la_adivinacion_sagrada_sezhi": "El Mamo utiliza una vasija cónica con agua de manantial sagrado (*marun*) y arroja cuentas de cuarzo (*tumas*). Al sumergirse, el sabio analiza la trayectoria, la formación de burbujas de aire y la refracción de la luz para diagnosticar qué cerro, río o ancestro está reclamando pagamento por una transgresión comunitaria."
+    },
+    "medicina_wayuu_y_chamanismo_outsu": {
+      "vocacion_y_eleccion": "La condición de *Outsü* (chamana) no se hereda mecánicamente ni se adquiere por aprendizaje voluntario profano: es una imposición de los espíritus a través de *Lapü* (el sueño) o como secuela de una enfermedad cataléptica en la adolescencia.",
+      "el_espiritu_auxiliar_awanseele": "Durante su consagración, la chamana recibe a su espíritu protector (*Awanseele*), una entidad del más allá que le traduce el lenguaje de los muertos y le indica las hierbas exactas para neutralizar a *Wanülüü* (el espíritu maligno de la enfermedad).",
+      "la_sesion_curativa_ketsi": "En la noche, bajo la enramada familiar, la Outsü se sienta sobre una banqueta baja frente al paciente. Se cubre la cabeza con un pañolón rojo, hace sonar rítmicamente su maraca cargada con semillas secas de capacho y entona cantos hipnóticos. Mastica tabaco fermentado (*yootopa'a*), escupe el humo y el líquido sobre las articulaciones del enfermo y realiza una succión energética sobre el órgano afectado para extraer espinas, gusanos u objetos invisibles introducidos por la hechicería.",
+      "el_segundo_entierro_de_huesos_anajawaa": "Máximo sacramento funerario y terapéutico para el linaje. A los 10 o 15 años del sepelio, las ancianas del clan materno exhuman los restos, los lavan con agua aromática y chirrinchi (aguardiente artesanal de caña), despidiendo al espíritu hacia Jepira y unificando los huesos en el osario clánico familiar."
+    }
+  },
+  "sistemas_de_cultivo_y_tecnologias": {
+    "titulo": "Sistemas de Cultivo, Macroingeniería Hidráulica y Artesanía Sagrada",
+    "microverticalidad_ecologica_sierra_nevada": {
+      "concepto_geografico": "La Sierra Nevada de Santa Marta es la formación montañosa litoral más alta del mundo: asciende desde el nivel del mar caribeño hasta los 5.775 msnm (Picos Colón y Bolívar) en una distancia lineal de apenas 42 kilómetros. Este relieve abrupto genera una compresión excepcional de todos los pisos bioclimáticos del planeta en un solo macizo.",
+      "pisos_termicos_y_calendario_agricola": [
+        {
+          "piso": "Litoral y Piedemonte Cálido (0 - 800 msnm)",
+          "ecosistema": "Bosque seco tropical y selva húmeda basal",
+          "cultivos": "Yuca dulce, plátano cuatrofilos, maíz blanco, cacao criollo, caña de azúcar, mango, aguacate y recolección de sal marina y pesca de orilla."
+        },
+        {
+          "piso": "Templado / Subandino (800 - 1.800 msnm)",
+          "ecosistema": "Bosque nublado bajo y laderas cafeteras",
+          "cultivos": "Café orgánico bajo sombra de guamo y caracolí, frijol nativo, árboles frutales, caña panelera, huertas medicinales y algodón nativo."
+        },
+        {
+          "piso": "Frío / Andino Alto (1.800 - 2.800 msnm)",
+          "ecosistema": "Bosque de niebla altoandino y robledales",
+          "cultivos": "Papa de monte, arracacha, fríjol bola roja, cebolla junca, calabazas y pastoreo rotativo de ovejas de lana."
+        },
+        {
+          "piso": "Páramo Sagrado (2.800 - 4.500 msnm)",
+          "ecosistema": "Páramo de frailejones, turberas y lagunas glaciares",
+          "uso": "Zona exclusiva de conservación estricta, recolección de plantas medicinales de altura por los Mamos y escenarios sagrados de pagamento ceremonial en lagunas."
+        },
+        {
+          "piso": "Nieves Perpetuas / Chundwa (4.500 - 5.775 msnm)",
+          "ecosistema": "Glaciares y roca desnuda",
+          "uso": "El altar supremo del mundo; morada inmaterial de los Padres y Madres Primordiales donde no se permite la perturbación humana."
+        }
+      ],
+      "estrategia_de_multirresidencia": "Una misma familia indígena posee pequeñas casas y huertas distribuidas en tres pisos térmicos distintos. Los miembros de la familia migran cíclicamente a lo largo del año para sembrar, deshierbar o cosechar en cada altitud, logrando autosuficiencia alimentaria absoluta y evitando la sobreexplotación del suelo."
+    },
+    "huertas_wayuu_en_arroyos_estacionales": {
+      "estrategia_en_medio_arido": "En el desierto de La Guajira, donde los ríos permanentes están ausentes salvo el río Ranchería, los Wayuu aprovechan los cauces secos de arroyos efímeros que se desbordan durante las breves lluvias de octubre y noviembre.",
+      "siembra_en_abanicos_aluviales": "Apenas cesan las lluvias torrenciales de *Juya*, los agricultores labran los depósitos de arena limosa enriquecida con materia orgánica arrastrada por la corriente. Siembran fríjol guajiro (*kapeshuna* - *Vigna unguiculata*), que fija nitrógeno en el suelo y resiste la aridez extrema madurando en menos de 60 días; maíz nativo criollo (*jawa*), auyamas rastreras y melones de agua.",
+      "ingenieria_de_cosecha_de_agua": {
+        "casimbas": "Pozos cilíndricos cavados con pala o palos en el lecho seco de arroyos de arena. El agua freática retenida en las capas arenosas subterráneas se filtra libre de parásitos y abastece a la ranchería durante los meses secos.",
+        "jagueyes": "Grandes albercas o represas de tierra apisonada en hondonadas de arcilla natural para recoger escorrentía superficial destinada al ganado caprino."
+      }
+    },
+    "macroingenieria_hidraulica_zenu": {
+      "magnitud_continental": "Comprende entre 500.000 y 650.000 hectáreas intervenidas de forma continua a lo largo de más de doce siglos en la Depresión Momposina (ríos San Jorge, Sinú, Cauca y Bajo Magdalena).",
+      "diseno_morfologico": "Complejo geométrico de canales artificiales excavados a mano paralelos y perpendiculares al curso natural de las aguas, configurando un patrón en 'espina de pescado' visible en fotografías aéreas y satelitales.",
+      "los_camellones_elevados": "Terraplenes artificiales de tierra de 1 a 4 metros de elevación sobre el nivel máximo de inundación, con anchos de 10 a 30 metros y longitudes que superaban los 2 kilómetros.",
+      "dinamica_ecologica_anfibia": {
+        "temporada_de_lluvias": "Al desbordarse los ríos andinos, el agua penetraba en la red infinita de canales; la fricción reducía la velocidad destructiva del caudal, evitando riadas y permitiendo que los limos fértiles y sedimentos se depositaran suavemente en los taludes de los camellones.",
+        "temporada_seca": "El agua dulce quedaba confinada en los canales actuando como reservorios permanentes. Allí proliferaban millones de bocachicos, bagres y tortugas hicoteas que quedaban retenidos en trampas naturales de agua; en la superficie de los camellones húmedos se cosechaban hasta tres cosechas anuales de maíz, yuca y camote, sosteniendo densidades poblacionales prehispánicas extraordinarias."
+      }
+    },
+    "cesteria_y_tejido_ancestral": {
+      "la_mochila_arhuaca_tutu": {
+        "materia_prima": "Lana virgen de oveja criolla de la Sierra Nevada y fique (*Furcraea andina*).",
+        "herramientas": "Huso de madera tradicional (*churo*) con volante de piedra o madera, y aguja metálica o de hueso de venado.",
+        "tecnica_del_tejido": "Hilado continuo apretado en una sola hebra que se teje en espiral matemática continua desde la base circular concéntrica (el nacimiento del mundo) hacia las paredes cilíndricas.",
+        "tinturas_ecologicas": "Hojas de nogal (tonos café oscuro), corteza de aliso (tonos rojizos), cúrcuma y mora silvestre (amarillos y violetas) y barro ferruginoso de quebrada (negro azabache).",
+        "catalogo_iconografico_sagrado": [
+          {
+            "simbolo": "Kanzhumana",
+            "significado": "Huellas de las patas del cangrejo / Representa los senderos entrelazados del destino humano y la persistencia."
+          },
+          {
+            "simbolo": "Gamako",
+            "significado": "La rana sagrada / Representa el anuncio de las lluvias, la fertilidad femenina y la concepción."
+          },
+          {
+            "simbolo": "Sikiki",
+            "significado": "La concha del caracol de monte / Representa la espiral del tiempo, la evolución espiritual y la sabiduría de la vejez."
+          },
+          {
+            "simbolo": "Kunsamu",
+            "significado": "El pensamiento de los cerros tutelares / Geometría piramidal que protege al caminante."
+          },
+          {
+            "simbolo": "Chake",
+            "significado": "La piel de la serpiente cascabel / Simboliza la vigilancia y la renovación constante de la piel de la tierra."
+          },
+          {
+            "simbolo": "Kwatatuma",
+            "significado": "Las costillas de la Madre Tierra / Representa las fallas geológicas y las terrazas de cultivo."
+          }
+        ]
+      },
+      "el_tejido_sagrado_kanasu_wayuu": {
+        "origen_mitico_walekeru": "Cuenta la tradición oral que la doncella y araña *Wale'kerü* fue hallada en el monte por un cazador Wayuu. Al ser llevada a su casa, tejía en la oscuridad de la noche hermosas fajas y mochilas sacando hilos de colores de su propia boca. Antes de marcharse, transmitió a las jóvenes del clan recluidas en el encierro (*sutao*) la ciencia del urdido y el simbolismo de los dibujos geométricos (*Kanasü*).",
+        "el_telar_vertical_kanasutpala": "Estructura vertical formada por dos maderos gruesos clavados en tierra y dos travesaños horizontales donde se monta la urdimbre de hilos de algodón.",
+        "obras_maestras_textiles": [
+          {
+            "pieza": "Chinchorro Kayasü",
+            "descripcion": "Hamaca ceremonial de doble faz con trama reversible calada y una inmensa 'barriga' o fleco colgante tejido en crochet colmado de filigranas de rombos y grecas."
+          },
+          {
+            "pieza": "Mochila Susu",
+            "descripcion": "Bolsa cilíndrica de una sola hebra tejida en punto apretado; el fondo circular (*tapa*) reproduce una estrella de ocho puntas que representa el firmamento."
+          },
+          {
+            "pieza": "Faja Si'ira",
+            "descripcion": "Cinturón masculino rígido tejido con urdimbre flotante, cargado de diseños heráldicos que identifican la casta y el clan de quien lo porta."
+          }
+        ],
+        "catalogo_geometrico_kanasu": [
+          {
+            "diseno": "Pasalairü",
+            "traduccion": "Como las franjas de la mariposa / Simboliza la transformación espiritual y la levedad."
+          },
+          {
+            "diseno": "Molokonoutaya",
+            "traduccion": "El caparazón del morrocoy / Simboliza la resistencia ante la sequía y la paciencia ancestral."
+          },
+          {
+            "diseno": "Iwouyaa",
+            "traduccion": "La constelación de las Pléyades / Marca el calendario de siembra y la llegada inminente de las lluvias de Juya."
+          },
+          {
+            "diseno": "Katenasü",
+            "traduccion": "Como el enrejado de las albarradas / Representa la protección del hogar y los rebaños."
+          },
+          {
+            "diseno": "Jalianaya",
+            "traduccion": "La madre del diseño / Patrón generador de donde brotan todas las demás figuras geométricas."
+          },
+          {
+            "diseno": "Antajirasü",
+            "traduccion": "Senderos que se cruzan / Simboliza el encuentro pacífico y el matrimonio entre clanes distintos."
+          }
+        ]
+      },
+      "el_sombrero_vueltiao_zenu": {
+        "planta_sagrada": "Caña flecha (*Gynerium sagittatum*), gramínea silvestre de riberas fluviales.",
+        "elaboracion": "Desvenado de la fibra, cocción con zumos vegetales ácidos para blanquear al sol; y tinte negro orgánico por inmersión prolongada en fango aluvial de ciénaga saturado de hierro y hojas de bija.",
+        "clasificacion_por_finura": "Sombreros de 19, 21, 23, 27 y 31 pares de hebras trenzadas. El de 31 pares es tan maleable que puede doblarse y guardarse en el bolsillo sin quebrarse.",
+        "pintas_zenu": "Iconografía inspirada en la fauna de la ciénaga y la geometría de los canales: el florón, la espina de pescado, el ojo de buey, la pata de rana y el pecho de grillo."
+      }
+    }
+  },
+  "arquitectura_sagrada_y_espacio_cosmico": {
+    "titulo": "Arquitectura Sagrada, Bioclimática y Espacio Cósmico",
+    "la_kankurwa_templo_cosmico": {
+      "morfologia_y_dimensiones": "Edificación monumental de planta circular u ovalada y techumbre cónica de paja que alcanza entre 8 y 14 metros de altura.",
+      "dualidad_de_genero": {
+        "kankurwa_masculina": "Llamada *Chivana* o *Cancurúa*. Reservada para la congregación de los Mamos, ancianos e iniciados varones. Espacio donde se mambea el ayú, se consumen los discursos de gobierno, se interpreta la astronomía y se resuelven los pleitos de la comunidad.",
+        "kankurwa_femenina": "Llamada *Mankurwa* o templo de las Sagas. Reservada para las sabias ancianas, parteras y doncellas. En ella se transmiten los secretos de la gestación humana, la recolección de semillas, las artes del hilado y los cantos lunares."
+      },
+      "simbolismo_cosmologico_de_los_nueve_mundos": "La Kankurwa es la representación tridimensional del útero cósmico de la Gran Madre y del universo entero. Su estructura cónica hacia arriba representa los nueve pisos celestes superiores por donde transita el sol y las constelaciones; pero los cimientos bajo tierra representan los nueve pisos subterráneos matriciales donde se gestó la vida antes del amanecer.",
+      "los_cuatro_postes_maestros": "La estructura descansa sobre cuatro columnas principales de madera de guayacán, caracolí o corazón de brasil clavadas en la tierra. Estos cuatro pilares representan los cuatro puntos cardinales, las cuatro etnias hermanas de la Sierra (Kogui, Arhuaco, Wiwa, Kankuamo) y los cuatro Padres espirituales que sostienen la bóveda del cielo para evitar que caiga sobre los humanos.",
+      "el_techo_conico_y_las_dos_agujas": "Vigas radiales amarradas con bejucos sin un solo clavo metálico, cubiertas con miles de hojas de palma amarga o paja de páramo trenzadas con extrema densidad. El vértice exterior remata en dos cruces o varas de madera entrecruzadas que apuntan al cenit estelar, funcionando como pararrayos espirituales que captan la energía del cosmos.",
+      "acustica_y_bioclimatica": "La orientación este-oeste de las puertas y la ausencia de ventanas genera una penumbra permanente que invita a la introspección y la agudeza auditiva; el cono de paja expulsa el humo de los fogones ceremoniales por el vértice superior y mantiene una temperatura interna templada y agradable tanto en madrugadas gélidas como en tardes calurosas."
+    },
+    "el_bohio_de_piedra_y_madera": {
+      "herencia_litica_tairona": "Continuidad directa del urbanismo lítico prehispánico evidenciado en Teyuna (Ciudad Perdida) y Pueblito Chairama. Los bohíos se construyen sobre terrazas semicirculares artificiales contenidas por muros de mampostería de piedra seca sin argamasa.",
+      "anillos_de_cimentacion": "El perímetro del bohío cuenta con un anillo basal de lajas de piedra de esquisto o granito que aísla las paredes de la humedad del suelo y canaliza las aguas pluviales a través de acequias empedradas hacia las quebradas."
+    },
+    "la_enramada_wayuu_lumaa": {
+      "arquitectura_abierta_al_viento": "Enramada rectangular abierta en sus cuatro lados, diseñada para capturar la brisa constante de los vientos alisios del noreste y proveer sombra densa en medio de temperaturas que superan los 40 °C.",
+      "materiales_constructivos": "Horcones robustos de madera incorruptible de trupillo (*Prosopis juliflora*) o guayacán; techumbre de viguetas de madera ligera recubierta de varas secas de cardón de dato (*yosú*) o caña brava amarradas con tiras de corteza.",
+      "funcion_sociopolitica": "Es el ágora de la ranchería Wayuu. Allí se cuelgan las hamacas para deliberar con el Palabrero (*Pütchipü'üi*), se reciben visitas ilustres, se celebran banquetes fúnebres de chivo asado y se instruye a los niños en los mitos ancestrales."
+    },
+    "la_casa_de_bahareque_piichi": {
+      "estructura_termica": "Vivienda familiar cerrada con armazón de postes de madera y paredes de enrejado de caña brava o listones de cactus seco rellenados con barro arcilloso mezclado con paja seca. Esta técnica de bahareque crea muros de alta inercia térmica que absorben el calor abrasador durante el día y lo liberan suavemente durante las frías y ventosas noches del desierto."
+    },
+    "bohio_palafitico_zenu_y_bohio_de_selva": {
+      "palafitos_zenu": "Viviendas elevadas sobre zancos de maderas acuáticas (campano, guayacán) erigidas en las ciénagas de Ayapel y San Marcos, adaptadas a fluctuaciones de hasta tres metros en el nivel del agua durante las crecientes fluviales.",
+      "bohios_ette_ennaka_y_yukpa": "Casas de una sola nave con techos muy inclinados de palma amarga o palma de montaña que descienden casi hasta el suelo, desviando vendavales y manteniendo la penumbra necesaria para los estados de sueño chamánico y descanso familiar."
+    }
+  },
+  "liderazgo_cosmovision_y_ley_de_origen": {
+    "titulo": "Liderazgo, Cosmovisión, Ley de Origen, Línea Negra y Sistemas Normativos",
+    "la_filosofia_de_aluna": {
+      "definicion_ontologica": "*Aluna* es la dimensión inmaterial, espiritual y mental preexistente a la creación física. En el principio de los tiempos, cuando no existía el sol, ni las rocas, ni los árboles, ni los humanos, todo existía ya en la mente de la Gran Madre en forma de pensamiento puro (*Aluna*).",
+      "la_materia_como_reflejo_de_aluna": "El mundo tangible que vemos (montañas, ríos, animales) es únicamente la manifestación material de un orden cósmico concebido previamente en Aluna. Por tanto, cada elemento de la naturaleza posee un 'espíritu' o 'dueño' en Aluna que debe ser consultado y respetado.",
+      "la_responsabilidad_de_los_hermanos_mayores": "Los cuatro pueblos indígenas de la Sierra Nevada de Santa Marta (Kogui, Arhuaco, Wiwa y Kankuamo) fueron encomendados en el amanecer primordial para fungir como los 'Hermanos Mayores', custodios sagrados encomendados a mantener el equilibrio energético del planeta a través de la meditación, el pagamento ritual y el cumplimiento de la Ley de Origen. Frente a ellos se encuentra la civilización occidental, los 'Hermanos Menores', quienes olvidaron la memoria de Aluna y destruyen la naturaleza impulsados por la codicia material."
+    },
+    "la_linea_negra_seshizha": {
+      "concepto_ancestral": "Conocida como *Séshizha* (en Kogui) o *Sheshi Zha*, es el circuito perimetral de interconexión sagrada que circunda y delimita todo el macizo de la Sierra Nevada de Santa Marta, conectando el fondo marino caribeño con los picos nevados.",
+      "el_decreto_1500_del_6_de_agosto_de_2018": {
+        "expedicion": "Promulgado por el Presidente de la República de Colombia Juan Manuel Santos tras décadas de concertación con los cuatro pueblos de la Sierra (Kogui, Arhuaco, Wiwa y Kankuamo).",
+        "alcance_juridico": "Redefine y reconoce legalmente el territorio ancestral de los cuatro pueblos a través de la delimitación georreferenciada del Sistema de Espacios Sagrados de la Línea Negra.",
+        "los_348_sitios_sagrados": "Consagra 348 coordenadas e hitos sagrados que incluyen cabos marinos (Taganga, Bahía Concha, Cabo de la Vela), desembocaduras fluviales (Ríos Jerez, Palomino, Don Diego, Buritaca, Ranchería, Guatapurí), cerros tutelares, manglares, salinas y lagunas glaciares de páramo.",
+        "principios_rectores": "Consagra los principios de integralidad territorial, interconexión ecológica y cultural del agua desde las cumbres nevadas hasta el mar, y establece la obligatoriedad estricta de la consulta previa libre e informada ante cualquier proyecto de infraestructura, minería, hidrocarburos o turismo que pueda lesionar el tejido biocultural de la Sierra."
+      }
+    },
+    "sistema_normativo_del_palabrero_wayuu_putchipuui": {
+      "declaratoria_unesco": "Inscrito en 2010 en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad de la UNESCO.",
+      "filosofia_de_la_palabra_putchi": "Para los Wayuu, la palabra (*pütchi*) es la única fuerza capaz de doblegar la furia, evitar la guerra interclánica y reparar el honor ofendido sin derramar una sola gota de sangre.",
+      "la_investidura_del_putchipuui": "El 'palabrero' es un hombre maduro dotado de profunda elocuencia, paciencia, memoria genealógica y neutralidad moral. No es un juez que impone una condena por la fuerza, sino un intermediario pacífico que camina desarmado entre los territorios de los clanes rivales llevando y trayendo mensajes conciliatorios.",
+      "mecanica_de_la_compensacion_makua": [
+        {
+          "concepto": "Responsabilidad clánica colectiva",
+          "descripcion": "En el derecho consuetudinario Wayuu, el delito no es un acto puramente individual: compromete a la totalidad del clan materno del ofensor (*eiruku*), el cual debe solidarizarse para reunir la indemnización."
+        },
+        {
+          "concepto": "El pago por la sangre o dolor (Alaapana)",
+          "descripcion": "Toda herida, muerte involuntaria u ofensa verbal tiene un valor tasado que debe ser pagado al clan materno de la víctima."
+        },
+        {
+          "concepto": "Composición de la compensación (Máku'a)",
+          "descripcion": "La reparación material se efectúa mediante la entrega solemne de rebaños de chivos, carneros, reses, caballos, collares antiguos de cuentas de piedra (*tumas*) y chinchorros finos de gala."
+        },
+        {
+          "concepto": "Extinción total de la ofensa",
+          "descripcion": "Una vez entregada y aceptada la compensación negociada por el Pütchipü'üi, la falta queda borrada espiritualmente; las familias comparten una comida solemne y queda terminantemente prohibida cualquier retaliación posterior."
+        }
+      ]
+    },
+    "lideres_historicos_y_contemporaneos": [
+      {
+        "pueblo": "Kogui",
+        "nombre": "Mamo Bernardo y Mamo Shibulata",
+        "periodo": "Siglo XX y XXI",
+        "rol": "Autoridades espirituales supremas de Takina y San Miguel",
+        "legado": "Guardianes incansables de la pureza ritual de la Sierra; alertaron a la humanidad en foros ecológicos globales sobre el colapso del ciclo hídrico y lideraron la expulsión pacífica de invasores de los valles de Buritaca."
+      },
+      {
+        "pueblo": "Arhuaco",
+        "nombre": "Leonor Zalabata Torres",
+        "periodo": "Contemporáneo (1954 - presente)",
+        "rol": "Lideresa social, negociadora de paz y Embajadora de Colombia ante la ONU",
+        "legado": "Primera mujer indígena designada Embajadora Extraordinaria y Plenipotenciaria de Colombia ante la ONU en Nueva York (2022); galardonada con el Premio Internacional de Derechos Humanos Anna Lindh (2007); histórica arquitecta de los derechos indígenas en la Constitución de 1991."
+      },
+      {
+        "pueblo": "Arhuaco",
+        "nombre": "Danilo Villafañe Torres",
+        "periodo": "1974 - 2023",
+        "rol": "Gobernador indígena Arhuaco de la vertiente caribe",
+        "legado": "Gran diplomático ambiental de la Sierra Nevada; representó a los pueblos originarios en la Cumbre Climática de la ONU (COP28 en Dubái); falleció como héroe en diciembre de 2023 en Palomino al lanzarse al mar para salvar la vida de otras personas que se ahogaban."
+      },
+      {
+        "pueblo": "Wiwa",
+        "nombre": "Mamo Ramón Gil Barros",
+        "periodo": "Siglo XX - XXI",
+        "rol": "Mamo Mayor y patriarca fundador de Tezhumke",
+        "legado": "Condujo el renacimiento territorial del pueblo Wiwa tras décadas de dispersión; recuperó tierras bajas despojadas por latifundistas y promovió el diálogo espiritual interétnico."
+      },
+      {
+        "pueblo": "Kankuamo",
+        "nombre": "Jaime Enrique Arias Arias",
+        "periodo": "Contemporáneo",
+        "rol": "Histórico Cabildo Gobernador del Pueblo Kankuamo",
+        "legado": "Líder de la resistencia pacífica en los años del exterminio paramilitar; logró la titulación del Resguardo Indígena Kankuamo en 2003 y fue vocero de la Mesa Permanente de Concertación Nacional de la ONIC."
+      },
+      {
+        "pueblo": "Wayuu",
+        "nombre": "Karmen Ramírez Boscán",
+        "periodo": "Contemporáneo",
+        "rol": "Lideresa Wayuu del clan Epieyu y Congresista de la República",
+        "legado": "Fundadora del movimiento internacional 'Fuerza de Mujeres Wayuu' (Sütsüin Jiyeyu Wayuu); elegida en 2022 Representante a la Cámara por los Colombianos en el Exterior, canalizando las demandas de soberanía hídrica de La Guajira en escenarios parlamentarios y foros globales."
+      },
+      {
+        "pueblo": "Zenú",
+        "nombre": "Cacica Toto",
+        "periodo": "Siglo XVI",
+        "rol": "Cacica Suprema de Finzenú",
+        "legado": "Símbolo histórico universal de la valentía y el poder matrilineal aborigen; organizó la resistencia militar de las sabanas del Sinú frente a los conquistadores hispanos en 1534."
+      },
+      {
+        "pueblo": "Yukpa",
+        "nombre": "Cacique Sabino Romero",
+        "periodo": "1965 - 2013",
+        "rol": "Cacique y mártir de la Serranía del Perijá",
+        "legado": "Luchador indoblegable por la demarcación de las tierras ancestrales Yukpa frente a la ganadería y las carboníferas; su asesinato por sicarios en 2013 despertó la solidaridad internacional y aceleró los fallos de protección de la Corte Constitucional."
+      },
+      {
+        "pueblo": "Chimila",
+        "nombre": "Juan Medina",
+        "periodo": "Siglo XX",
+        "rol": "Cacique Mayor y fundador de Issa Oki (1992)",
+        "legado": "Líder visionario que interpretó los sueños ancestrales de su pueblo para unificar a las familias dispersadas y encabezar la recuperación de la hacienda La Sirena en Sabanas de San Ángel."
+      }
+    ]
+  }
+}

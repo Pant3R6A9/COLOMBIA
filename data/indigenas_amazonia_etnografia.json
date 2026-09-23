@@ -1,0 +1,2000 @@
+{
+  "metadata": {
+    "titulo": "Atlas Etnográfico, Lingüístico y Cosmogónico de los Pueblos Indígenas de la Amazonía Colombiana",
+    "descripcion": "Capa enciclopédica exhaustiva de datos etnográficos, lingüísticos, arquitectónicos, agroecológicos, rituales y de memoria histórica sobre los pueblos originarios de la cuenca amazónica colombiana. Incluye caracterizaciones detalladas de 24 pueblos indígenas, familias lingüísticas mayores y lenguas aisladas, la arquitectura cosmogónica de la Maloca y el Mambeadero, el sistema agroforestal de la chagra y domesticación de la yuca brava, fiestas mayores y ritos de paso, y la memoria viva del genocidio cauchero junto a la gobernanza comunitaria contemporánea de la OPIAC.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "autor": "Subagente Especialista en Etnografía y Pueblos de la Amazonía Colombiana de Colombianopedia",
+    "cobertura_geografica": [
+      "Amazonas",
+      "Putumayo",
+      "Vaupés",
+      "Caquetá",
+      "Guaviare",
+      "Guainía"
+    ],
+    "total_pueblos_documentados": 24,
+    "total_familias_linguisticas_analizadas": 10,
+    "fuentes_academicas_y_referentes": [
+      "Instituto Colombiano de Antropología e Historia (ICANH)",
+      "Instituto Amazónico de Investigaciones Científicas (SINCHI)",
+      "Organización Nacional de los Pueblos Indígenas de la Amazonía Colombiana (OPIAC)",
+      "Universidad Nacional de Colombia - Sede Amazonía / Instituto Imani",
+      "Gerardo Reichel-Dolmatoff (Desana: Simbolismo y Chamanismo en el Vaupés)",
+      "Roberto Pineda Camacho (Holocausto en el Amazonas: Una Historia Social de la Casa Arana)",
+      "Jon Landaburu (Estudios de Lingüística Andoke y Amerindia)",
+      "Stephen Hugh-Jones (The Palm and the Pleiades: Initiation and Cosmology in Northwest Amazonia)",
+      "Christine Hugh-Jones (From the Milk River: Spatial and Temporal Processes in Northwest Amazonia)",
+      "Kaj Århem (Makuna: Gente de Agua y Chamanismo Ecológico)",
+      "DANE - Censo Nacional de Población y Vivienda (Enfoque Étnico Indígena)"
+    ]
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "huitoto_murui_muinane",
+      "nombre_comun": "Huitoto (Murui-Muinane)",
+      "autonimo": "Murui ('Gente del poniente') / Muinane ('Gente del naciente')",
+      "familia_linguistica": "Witotoano",
+      "idioma_propio": {
+        "nombre": "Murui-Muinane / Minica / Nipode",
+        "vitalidad": "En riesgo moderado a alto; hablado activamente por abuelos y adultos, con programas de revitalización escolar en La Chorrera y Araracuara.",
+        "caracteristicas_notables": "Lengua tonal con clasificadores nominales derivados de la botánica y morfología del cuerpo humano. Registro ritual sacro denominado 'Rafue'."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Putumayo",
+          "Caquetá"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Igaraparaná",
+          "Río Caraparaná",
+          "Río Caquetá",
+          "Río Putumayo"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Predio Putumayo (cerca de 5.8 millones de hectáreas)",
+          "Resguardo de Araracuara",
+          "Resguardo Huitorá",
+          "Resguardo Monochoa"
+        ],
+        "patron_asentamiento": "Ribereño y de interfluvio selvático, organizado en comunidades y aldeas articuladas alrededor de malocas comunales y centros poblados de corregimientos departamentales (La Chorrera, Puerto Alegría, Puerto Arica, El Encanto)."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 14.142 personas en territorio colombiano.",
+        "distribucion_etnica": "Distribuido en clanes tradicionales agrupados en dos grandes mitades ceremoniales o alianzas históricas (Murui en el oeste y Muinane-Witoto en el este)."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "En el principio existía la nada ('noo') y la oscuridad. El Padre Creador Móma buscó mediante el pensamiento ('diona') hasta hallar la sustancia creadora en la saliva y el aliento, condensando la tierra en la canasta primordial. Luego creó el Gran Árbol de la Abundancia (Mona Jena), de cuyo tronco y frutos nacieron los alimentos cultivables y las aguas.",
+        "concepto_rafue": "El Rafue es la Ley de Origen, la Palabra de Vida y el código ético integral. Abarca los mitos de origen, los cantos rituales nocturnos, las normas de parentesco, el calendario ecológico y la dieta espiritual requerida para evitar la destrucción del cosmos.",
+        "seres_sagrados": [
+          "Móma (Padre Creador)",
+          "Mona Jena (Árbol Cósmico de los Alimentos)",
+          "Jitoma (El Sol mítico héroe civilizador)",
+          "Buinaima (Guardián del fuego y de la fuerza del tabaco)"
+        ]
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y patrilocal estricto. La filiación, los derechos de maloca, los cantos sagrados y la herencia del mambeadero se transmiten de padre a hijo.",
+        "sistema_clanes": "Dividido en linajes y clanes con nombres de plantas, aves o mamíferos sagrados (Clan Jaguar, Clan Guacamaya, Clan Hormiga arriera, Clan Garza).",
+        "autoridad_tradicional": "El 'Dueño de Maloca' (Kumú o Sabedor Mayor), quien rige el mambeadero nocturno junto a los ancianos del concejo de palabra dulce."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe (Yúpadhe): Hoja de coca tostada con ceniza de yarumo",
+          "Ambil (Yera): Extracto concentrado de tabaco negro cocido con sales vegetales"
+        ],
+        "funcion_terapeutica": "El chamanismo Murui-Muinane se basa en 'manejar el mundo a través del tabaco y la coca'. No utilizan yagé de manera primordial; el mambe abre la mente para la palabra clara y el ambil disuelve las impurezas y agresiones espirituales.",
+        "prevencion_ecologica": "Curación del mundo ('Rafuemani') para pedir permiso a los espíritus de la selva antes de talar chagras o cazar animales mayores."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Policultivo en chagra itinerante centrada en la yuca brava (Manihot esculenta), plátano, coca, tabaco y chontaduro; pesca fluvial con trampas cacure y anzuelos; caza de danta, cerrillo y tinajo con escopeta y cerbatana tradicional.",
+        "procesamiento_alimento": "Extracción del cianuro de la yuca brava con el tipití; producción de casabe, fariña y ají negro (tucupí)."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Epicentro del horror de la Peruvian Amazon Company de Julio César Arana entre 1900 y 1930. Fueron esclavizados, flagelados en las barracas de La Chorrera y El Encanto, y diezmados en más del 80% de su población originaria.",
+        "resistencia_espiritual": "Los sabedores mantuvieron en secreto las semillas de coca y tabaco en las profundidades de la selva, reconstruyendo la palabra y la maloca tras la expulsión de los caucheros.",
+        "hitos_contemporaneos": "Creación del Gran Resguardo Predio Putumayo en 1988 y constitución de AZICATCH (Asociación de Cabildos Indígenas de La Chorrera), transformando la antigua Casa Arana en Centro de Memoria Histórica y Dignidad Indígena."
+      },
+      "retos_actuales": {
+        "amenazas": "Contaminación de ríos por minería ilegal de oro aluvial en el Caquetá y Putumayo, penetración de economías ilícitas, fragmentación cultural de jóvenes urbanizados en Leticia y Bogotá.",
+        "iniciativas": "Consolidación de la Educación Propia Intercultural (SEIP), formación de monitores ambientales indígenas y liderazgo en la Mesa Regional Amazónica."
+      }
+    },
+    {
+      "id": "bora",
+      "nombre_comun": "Bora",
+      "autonimo": "Mii-mimbia ('Hijos de la selva')",
+      "familia_linguistica": "Bora",
+      "idioma_propio": {
+        "nombre": "Bora",
+        "vitalidad": "Vulnerable; conservado en las cuencas del Igaraparaná y Caquetá, con bilingüismo en castellano en generaciones jóvenes.",
+        "caracteristicas_notables": "Lengua tonal compleja (tonos alto y bajo distintivos a nivel léxico y gramatical) con un sistema hipertrofiado de más de 350 clasificadores nominales según la forma tridimensional y textura de los objetos."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Igaraparaná",
+          "Río Caquetá",
+          "Río Cahuinarí"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Providencia",
+          "Resguardo Puerto Arica",
+          "Resguardo Predio Putumayo"
+        ],
+        "patron_asentamiento": "Aldeas ribereñas y malocas comunales circulares ubicadas en terrazas altas no inundables de los ríos tributarios."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 1.250 personas en Colombia (también presentes en la Amazonía peruana del río Ampiyacu).",
+        "distribucion_etnica": "Distribuidos en linajes patrilineales asociados a tótems zoomorfos y fitomorfos."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Emergencia primordial de la humanidad desde el vientre de la Madre Selva a través de las raíces del Árbol de la Vida. Los dioses ordenaron el universo mediante cantos tonales y el toque de percusión de los manguarés.",
+        "manguare_sagrado": "El manguaré (par de tambores rituales de troncos ahuecados tallados en madera dura) es la voz sagrada de la comunidad. Emite señales acústicas que replican con exactitud los tonos de la lengua Bora, transmitiendo mensajes complejos de fiesta, duelo o alarma a más de 20 kilómetros de distancia a través de la densa canopia.",
+        "seres_sagrados": [
+          "Niimúhé (Creador Supremo)",
+          "Dueños de los Animales de la Selva",
+          "Espíritus del Manguaré"
+        ]
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal, patrilocal y exógamo entre linajes del mismo clan totémico.",
+        "sistema_clanes": "Clanes del Canangucho, del Jaguar, del Bagre y de la Palma de Seje.",
+        "autoridad_tradicional": "El Capitán de Maloca y el Mambeador Mayor, encargados de articular las fiestas del Pijuayo (chontaduro) y de frutas silvestres."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Plantas aromáticas de purificación"
+        ],
+        "practica_medica": "Curaciones nocturnas mediante ensalmos rítmicos, soplos de tabaco y dietas estrictas de aislamiento en rastrojos vírgenes para alejar espíritus patógenos."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Cultivo de yuca amarga, batata, chontaduro, piña y arazá en chagras de ladera; pesca estacional y cacería selectiva con trampas mecánicas de lazo y fosa.",
+        "artesanias": "Tejido de hamacas de cumare y tallado magistral de los tambores manguaré en maderas de balso y caracolí."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Sufrimiento devastador durante la época de la Casa Arana; decenas de familias fueron deportadas compulsivamente al Perú durante el conflicto limítrofe colombo-peruano de 1932-1933.",
+        "repatriacion_cultural": "Retorno de sabedores a las riberas del Igaraparaná y Caquetá, refundando malocas y reinstalando el sistema de comunicación por manguaré."
+      },
+      "retos_actuales": {
+        "amenazas": "Aislamiento geográfico extremo con carencia de servicios médicos de emergencia y presión por proyectos extractivos en cuencas vecinas.",
+        "iniciativas": "Registro sonoro y patrimonialización del lenguaje del manguaré y proyectos de soberanía agroalimentaria en la chagra."
+      }
+    },
+    {
+      "id": "ocaina",
+      "nombre_comun": "Ocaina",
+      "autonimo": "Dyo'xaiya ('Gente de la flecha / Hijos del río')",
+      "familia_linguistica": "Witotoano",
+      "idioma_propio": {
+        "nombre": "Ocaina",
+        "vitalidad": "En peligro crítico de extinción (menos de 50 hablantes ancianos fluidos en Colombia y Perú).",
+        "caracteristicas_notables": "Lengua tonal con complejas armonías vocálicas y consonánticas, oclusivas glotales y un rico vocabulario descriptivo de la fauna ictiológica."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Igaraparaná",
+          "Río Putumayo"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Predio Putumayo (comunidades de La Chorrera y Puerto Arica)"
+        ],
+        "patron_asentamiento": "Vivienda comunal en malocas compartidas o dispersión en asentamientos mixtos junto a familias Murui y Bora."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 285 personas autorreconocidas en Colombia.",
+        "distribucion_etnica": "Supervivientes del exterminio cauchero agrupados en linajes reducidos."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Nacidos del corazón del mundo selvático a partir del rocío condensado sobre las hojas del tabaco primordial. Héroes gemelos vencieron a los monstruos telúricos que impedían la siembra de la yuca dulce y el maíz.",
+        "relacion_con_la_palabra": "El diálogo de mambeadero es considerado la costura cósmica que repara las heridas del mundo y restituye el aliento de los antepasados caídos."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con reglas estrictas de exogamia clánica.",
+        "autoridad_tradicional": "Consejo de ancianos sabedores y guardianes de los cantos de cacería y de siembra."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Baños con resinas de copal y corteza de siringa silvestre"
+        ],
+        "practica_medica": "Diagnóstico de dolencias mediante la auscultación del humo de tabaco y baños termales de hierbas amargas."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra tradicional amazónica, elaboración de casabe con tipití de fibra de tirite, cacería menor de aves y roedores, pesca nocturna con flechas y arpones.",
+        "cesteria": "Fabricación de canastos balayes para harina de yuca con finos diseños geométricos."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Fue una de las etnias más brutalmente diezmadas por la Casa Arana; el exterminio redujo a su población de varios miles a unas pocas decenas de sobrevivientes.",
+        "lucha_contemporanea": "Alianza con los demás pueblos de La Chorrera en AZICATCH para salvaguardar la memoria viva y evitar la extinción definitiva de su idioma."
+      },
+      "retos_actuales": {
+        "amenazas": "Pérdida casi total de hablantes maternos y asimilación forzada en contextos interétnicos.",
+        "iniciativas": "Nidos de lengua escolar y talleres intergeneracionales de transmisión de la palabra con apoyo del Ministerio de Cultura y el ICANH."
+      }
+    },
+    {
+      "id": "muinane",
+      "nombre_comun": "Muinane",
+      "autonimo": "Meecuna",
+      "familia_linguistica": "Bora",
+      "idioma_propio": {
+        "nombre": "Muinane (Bora-Muinane)",
+        "vitalidad": "En riesgo grave; hablado principalmente por personas mayores en el río Cahuinarí.",
+        "caracteristicas_notables": "Distingue tonos léxicos y posee un inventario fonológico con oclusivas palatales y un intrincado sistema de clasificadores nominales compartidos con la raíz Bora."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Cahuinarí",
+          "Río Caquetá",
+          "Sabanas de Araracuara"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo La Sabana (Río Cahuinarí)",
+          "Resguardo Predio Putumayo"
+        ],
+        "patron_asentamiento": "Malocas comunales circulares ubicadas en las sabanas arenosas y bosques de tierra firme del interfluvio Caquetá-Cahuinarí."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 550 personas en Colombia.",
+        "distribucion_etnica": "Agrupados en clanes autónomos en torno a malocas ancestrales de sabana."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "El Creador sopló su aliento caliente sobre la arcilla blanca de las riberas del Cahuinarí y dio origen a los Meecuna. La coca es concebida como el pensamiento puro del universo que aplaca el calor de las pasiones humanas.",
+        "fiestas_rituales": "La Fiesta de la Muisa (fiesta de frutas y baile de máscaras ceremoniales de corteza) para agradecer la floración y fructificación de la selva virgen."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con residencia patrilocal.",
+        "jerarquia_maloca": "El Dueño de Maloca es el eje ceremonial y político que regula las relaciones con los pueblos vecinos (Andoke, Nonuya y Huitoto)."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Cenizas de yarumo silvestre"
+        ],
+        "practica_medica": "Curación del cuerpo social a través de los cantos de mambeadero; protección de la infancia contra el 'mal de monte' ocasionado por animales enfurecidos."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra de sabana y bosque aluvial; recolección de frutos de monte (chontaduro silvestre, umarí, manaca); cacería y pesca tradicional.",
+        "alfareria": "Elaboración de tiestos y budares de cerámica para asar el casabe a partir de arcillas blancas decantadas."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Sufrimiento extremo en las corralejas caucheras del Cahuinarí; refugio clandestino en las sabanas del interfluvio donde lograron preservar linajes intactos.",
+        "reorganizacion": "Constitución de los Cabildos de La Sabana y participación activa en el Consejo Regional Indígena del Medio Amazonas (CRIMA)."
+      },
+      "retos_actuales": {
+        "amenazas": "Aislamiento vial y logístico, escasez de maestros bilingües con titulación propia y dificultades para la comercialización de productos artesanales.",
+        "iniciativas": "Planes de Vida comunitarios orientados a la protección de las cabeceras del Cahuinarí y Parque Nacional Natural Cahuinarí."
+      }
+    },
+    {
+      "id": "andoke",
+      "nombre_comun": "Andoke",
+      "autonimo": "Poosióhó ('Gente del hacha de piedra')",
+      "familia_linguistica": "Andoke (Lengua aislada)",
+      "idioma_propio": {
+        "nombre": "Andoke",
+        "vitalidad": "En peligro; hablado en el resguardo de Aduche por ancianos y adultos, con programas escolares propios de transmisión.",
+        "caracteristicas_notables": "Lengua tonal aislada estudiada por Jon Landaburu; no tiene parentesco comprobado con ninguna otra familia del continente. Posee un sistema único de concordancia y marcación de foco deíctico."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Caquetá",
+          "Río Aduche",
+          "Caño Negro (cerca de Araracuara)"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Andoke de Aduche"
+        ],
+        "patron_asentamiento": "Aldea nucleada alrededor de la Gran Maloca de Aduche y viviendas familiares a lo largo de las terrazas ribereñas del río Aduche."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 630 personas.",
+        "distribucion_etnica": "Supervivientes organizados en clanes clónicos tras la reconstrucción demográfica post-cauchera."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Los Andoke emergieron de las entrañas de las piedras milenarias del río Aduche. En el principio mítico existió una guerra entre fuerzas caníbales telúricas y los hombres verdaderos; el triunfo del héroe civilizador convirtió las hachas de piedra en el símbolo de la domesticación del bosque y la construcción de la maloca pacífica.",
+        "simbolo_del_hacha": "El hacha de piedra verde (diorita o nefrita) era el principal objeto de intercambio prehispánico en la cuenca del Caquetá; los Andoke eran los maestros mineros y talladores de estas hachas ceremoniales."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal, patrilocal y exógamo entre los clanes del Sol, del Viento, de la Hormiga y de la Garza.",
+        "autoridad_tradicional": "El 'Kumú' Andoke de Aduche, respaldado por la asamblea de cabildo del resguardo."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Resina sagrada de caraña"
+        ],
+        "practica_medica": "Canto nocturno de invocación de los ancestros líticos para solidificar la salud y curar fracturas o dolores óseos."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra de rotación lenta enriquecida con biochar y cenizas; recolección de frutos de palmas de canangucho y asaí; pesca artesanal en raudales y caza estacional.",
+        "artesanias": "Canastos de bejuco yaré y tallado en madera de animales míticos."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Considerado uno de los casos más dramáticos del siglo XX: de más de 10.000 Andokes a inicios del siglo XX, sobrevivieron menos de 50 individuos en 1932. Su renacimiento biológico y cultural es uno de los mayores triunfos de resiliencia indígena en la Amazonía.",
+        "reconstruccion": "Retorno histórico a las tierras ancestrales del río Aduche bajo el liderazgo de mayores que reconstruyeron el árbol genealógico y la lengua."
+      },
+      "retos_actuales": {
+        "amenazas": "Presión de balsas mineras ilegales en el cauce principal del río Caquetá y deforestación en zonas adyacentes.",
+        "iniciativas": "Guardia Indígena comunitaria de monitoreo ambiental y consolidación del Centro Etnoeducativo de Aduche."
+      }
+    },
+    {
+      "id": "nonuya",
+      "nombre_comun": "Nonuya",
+      "autonimo": "Nononene ('Gente del achiote / Hijos del color sagrado')",
+      "familia_linguistica": "Witotoano",
+      "idioma_propio": {
+        "nombre": "Nonuya",
+        "vitalidad": "En peligro crítico de desaparición (apenas un puñado de ancianos recuerdan el idioma en su totalidad).",
+        "caracteristicas_notables": "Lengua witotoana con sistema de vocales centrales y sufijos clasificadores de aspecto y textura botánica."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Caquetá (Peña Roja, Villa Azul)",
+          "Río Cahuinarí"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Nonuya de Villa Azul (medio Caquetá)",
+          "Resguardo Predio Putumayo"
+        ],
+        "patron_asentamiento": "Viviendas y malocas ribereñas integradas en comunidades multiétnicas del medio Caquetá."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 260 personas autorreconocidas.",
+        "distribucion_etnica": "Población reducida agrupada en familias nucleares en Villa Azul y Puerto Santander."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Nacidos del árbol sagrado del achiote (Bixa orellana), cuya pasta roja otorgó vida, calor corporal y protección mágica contra los espíritus de la putrefacción y la enfermedad.",
+        "significado_del_color": "El achiote no es mero cosmético: es armadura espiritual que recubre la piel en rituales de mambeadero y bailes de siembra."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con intensa alianza matrimonial con pueblos Muinane y Andoke.",
+        "autoridad_tradicional": "Cabildo de Villa Azul y ancianos sabedores del mambeadero."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Achiote ceremonial",
+          "Copal virgen"
+        ],
+        "practica_medica": "Pintura corporal profiláctica para recién nacidos y parturientas, alejando a los espíritus acuáticos de las ciénagas."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Cultivo de yuca brava en suelos aluviales fértiles de vega (varzea); pesca en lagunas de remanso con flechas y arpones; recolección de huevos de tortuga charapa.",
+        "ceramica": "Ollas de cocina ahumadas y platos de barro cocido decorados con tintes vegetales."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Desarraigo masivo de sus tierras originales en el bajo Putumayo y Cahuinarí por las cuadrillas de la Casa Arana.",
+        "reubicacion": "Asentamiento en la década de 1950 en Villa Azul sobre el río Caquetá, donde refundaron su cabildo autónomo."
+      },
+      "retos_actuales": {
+        "amenazas": "Extinción inminente de la lengua hablada y pérdida de los cantos litúrgicos del achiote.",
+        "iniciativas": "Proyectos etnográficos de grabación fonética y talleres de historia oral comunitaria con niños de primaria."
+      }
+    },
+    {
+      "id": "mirana",
+      "nombre_comun": "Miraña",
+      "autonimo": "Mi~múhpa ('Gente del río bajo')",
+      "familia_linguistica": "Bora",
+      "idioma_propio": {
+        "nombre": "Miraña",
+        "vitalidad": "En riesgo alto; hablado por adultos y ancianos en el bajo Caquetá cerca de la frontera con Brasil.",
+        "caracteristicas_notables": "Lengua tonal estrechamente emparentada con el Bora, pero con variación fonológica en consonantes oclusivas y nasales y tonos de contorno."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Bajo río Caquetá",
+          "Río Cahuinarí",
+          "Río Bernardo"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Miraña (corregimiento de La Pedrera y Puerto Santander)"
+        ],
+        "patron_asentamiento": "Comunidades ribereñas a orillas de los grandes remansos y raudales del bajo Caquetá (Chorro de Córdoba)."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 660 personas en Colombia.",
+        "distribucion_etnica": "Organizados en asentamientos como Puerto Córdoba y La Pedrera."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Descendientes de la gran serpiente de las aguas profundas del Caquetá. El Chorro de Córdoba es un portal mítico donde los ancestros aprendieron el arte del manguaré y las leyes de pesca comunal.",
+        "relacion_fluvial": "Cosmología acuática donde los peces son considerados tribus paralelas con sus propias malocas submarinas y caciques espirituales."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con descendencia de clanes vinculados al agua y la selva.",
+        "autoridad_tradicional": "Capitán de comunidad y médicos tradicionales del agua."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Tabaco de soplo",
+          "Agua curada en tinajas"
+        ],
+        "practica_medica": "Chamanismo fluvial: rezos para aplacar a los espíritus de las rayas y las anacondas antes de emprender expediciones de pesca en raudales."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Pesca masiva de grandes bagres (pirarucú, lechero, valentón) con redes y arpones; chagras ribereñas de yuca brava; recolección de chontaduro y uva de monte.",
+        "transporte": "Grandes canoas monóxilas talladas en tronco de cedro y laurel para remontar los peligrosos raudales."
+      },
+      "memoria_historica_y_resistencia": {
+        "genocidio_cauchero": "Sometimiento por las agencias caucheras intermediarias del bajo Caquetá y las incursiones de 'correrías' esclavistas desde Brasil.",
+        "soberania": "Resguardo pionero en el control fluvial y defensa de la soberanía fronteriza colombo-brasileña."
+      },
+      "retos_actuales": {
+        "amenazas": "Tráfico fronterizo no regulado, dragas de minería ilegal en afluentes brasileños que contaminan con mercurio los bagres migratorios.",
+        "iniciativas": "Acuerdos de pesca comunal sostenible y cogestión del Parque Nacional Natural Cahuinarí."
+      }
+    },
+    {
+      "id": "yukuna",
+      "nombre_comun": "Yukuna",
+      "autonimo": "Kamejeya ('Gente del pez perro / Señores del río')",
+      "familia_linguistica": "Arawak",
+      "idioma_propio": {
+        "nombre": "Yukuna",
+        "vitalidad": "Vulnerable pero con vitalidad comunitaria activa en las cuencas del Mirití-Paraná y Caquetá.",
+        "caracteristicas_notables": "Lengua Arawak con prefijos personales de concordancia agentiva, afijos de posesión inalienable y fonemas africados y aspirados."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Mirití-Paraná",
+          "Río Caquetá"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Mirití-Paraná",
+          "Resguardo Comeyafú"
+        ],
+        "patron_asentamiento": "Malocas comunales de gran escala a lo largo del Mirití-Paraná, centro de ceremonias de Dabucurí y Yurupary."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 1.850 personas.",
+        "distribucion_etnica": "Distribuidos en linajes patrilineales con alianzas estrechas con los Matapí y Tanimuka."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Originarios del raudal del pescado. El héroe primordial Kawerimi creó los ríos y enseñó el ritual del Dabucurí para que los humanos no se devoraran entre sí, sino que intercambiaran los dones de la selva en festines de abundancia.",
+        "baile_de_munecos": "El rito sagrado del Baile de Máscaras o Muñecos de corteza de seje, donde los danzantes personifican a los animales de monte y los espíritus originarios."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y exógamo. Mantienen alianzas interétnicas con grupos de lenguas Tukano y Arawak.",
+        "jerarquia_maloca": "Maloca gobernada por el Kumú (sabedor sagrado) y el dueño del baile o anfitrión del Dabucurí."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Yopo (en ceremonias arcaicas)",
+          "Flautas sagradas de Yurupary"
+        ],
+        "practica_medica": "Canto curativo nocturno para purificar el veneno de la selva y bendecir las primeras cosechas de chontaduro y manaca."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra agroforestal de yuca brava; recolección estacional de larvas de mojojoy, chontaduro y castañas; pesca con trampas de estera (cacure) y arpones.",
+        "artesanía_ritual": "Elaboración de trajes ceremoniales de corteza de yanchama y coronas de plumas de guacamaya y tucán."
+      },
+      "memoria_historica_y_resistencia": {
+        "impacto_cauchero": "Resistencia activa contra las patrullas caucheras adentrándose en las cabeceras protegidas del Mirití-Paraná.",
+        "liderazgo_ambiental": "Pioneros en la constitución de la Asociación de Autoridades Tradicionales del Mirití-Paraná (AATIAM) y el autogobierno territorial."
+      },
+      "retos_actuales": {
+        "amenazas": "Proyectos de bonos de carbono especulativos no consultados y presiones sobre la autonomía de sus áreas no municipalizadas.",
+        "iniciativas": "Implementación del Decreto 632 de 2018 para consolidar su Territorio Indígena de autogobierno formal."
+      }
+    },
+    {
+      "id": "matapi",
+      "nombre_comun": "Matapí",
+      "autonimo": "Jupichiya",
+      "familia_linguistica": "Arawak (Históricamente lengua propia independiente; adoptaron la lengua Arawak Yukuna)",
+      "idioma_propio": {
+        "nombre": "Yukuna-Matapí",
+        "vitalidad": "En peligro crítico respecto a su memoria fonética ancestral propia; hablan fluidamente Yukuna y castellano.",
+        "caracteristicas_notables": "Conservación de términos rituales y toponímicos de su lengua arcaica no clasificada dentro de los cantos de chamanismo."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Cabeceras del río Mirití-Paraná",
+          "Río Apaporis"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Mirití-Paraná"
+        ],
+        "patron_asentamiento": "Convivencia en las malocas del alto Mirití-Paraná en estrecha asociación con los clanes Yukuna."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 420 personas.",
+        "distribucion_etnica": "Agrupados en linajes de la 'Gente del Jaguar' y la 'Gente del Tucán'."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Surgieron de las rocas subterráneas de las cabeceras del Mirití. Poseedores del conocimiento profundo de los venenos de monte y la transmutación chamánica en jaguares para vigilar las fronteras invisibles de la selva.",
+        "rol_espiritual": "Reconocidos por todos los pueblos vecinos como los más temidos y respetados conocedores del curare y la protección mágica de la selva virgen."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con estricta exogamia clánica; alianzas matrimoniales obligatorias con clanes Yukuna y Tanimuka.",
+        "autoridad_tradicional": "Kumú mayor de la maloca ancestral de las cabeceras."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Curare sagrado de cacería",
+          "Resinas de incienso amazónico"
+        ],
+        "practica_medica": "Curación de picaduras de serpiente mediante soplos de tabaco y dietas de agua cocida con raíces desinflamatorias."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Caza especializada con cerbatana y dardos envenenados con curare; chagra tradicional y recolección de mieles silvestres de abejas sin aguijón (meliponas).",
+        "tecnologia_botanica": "Preparación secreta de fórmulas botánicas con bejucos del género Strychnos para la elaboración del curare."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia": "Su aislamiento en las cabeceras inaccesibles del Mirití les permitió ser refugio para clanes perseguidos por los caucheros.",
+        "simbiosis": "Integración cultural y lingüística con los Yukuna sin perder su dignidad e identidad linajera."
+      },
+      "retos_actuales": {
+        "amenazas": "Riesgo de dilución de su memoria linajera propia y falta de conectividad sanitaria.",
+        "iniciativas": "Participación conjunta con AATIAM en el monitoreo biológico de fauna amenazada en sus cabeceras selváticas."
+      }
+    },
+    {
+      "id": "tanimuka",
+      "nombre_comun": "Tanimuka",
+      "autonimo": "Ufaina / Õfaina ('Gente de la danta')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Tanimuka-Retuarã",
+        "vitalidad": "Vulnerable; hablado en el Apaporis y Mirití-Paraná por la mayoría de miembros adultos y jóvenes.",
+        "caracteristicas_notables": "Lengua del tronco Tukano Oriental con tonos contrastivos, rica morfología sufijante, nasalización fonológica que se difunde a través del morfema y clasificadores de volumen y orientación."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Vaupés"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Guacayá",
+          "Río Apaporis",
+          "Río Mirití-Paraná"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Yaigojé Apaporis",
+          "Resguardo Mirití-Paraná"
+        ],
+        "patron_asentamiento": "Malocas de gran tamaño emplazadas en terrazas fluviales y desembocaduras de caños estratégicos."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 720 personas.",
+        "distribucion_etnica": "Organizados en clanes patrilineales jerarquizados según el mito de la Anaconda Ancestral."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Nacidos del viaje cósmico de la Anaconda de la Leche (Yurupary), que navegó desde el Océano Atlántico remontando los ríos amazónicos y dejando a cada pueblo en su territorio sagrado con sus flautas y bailes sagrados.",
+        "chamanismo_ecologico": "Conciben la selva como un territorio compartido con los 'Dueños de la Selva'. Cada acción de tala, pesca o caza debe ser 'pagada' o concertada espiritualmente por el sabedor en el mambeadero mediante rezos nocturnos, so pena de contraer epidemias."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal, exógamo con los demás pueblos Tukano y Arawak del entorno.",
+        "autoridad_tradicional": "Kumú (Churuya), cantor ceremonial y dueño de maloca."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Yagé / Caapi (en rituales específicos)",
+          "Flautas sagradas de Yurupary"
+        ],
+        "practica_medica": "Dietas chamánicas de encierro, purificación con vómitos de agua curada y curación por pensamiento para restablecer la armonía con la fauna."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra amazónica con alta diversidad de tubérculos; pesca estacional en lagunas del Apaporis; cacería y recolección de frutos de palmas silvestres.",
+        "cesteria": "Balayes, canastos de carga (guapas) y sebucanes tejidos con bejucos seleccionados por las fases lunares."
+      },
+      "memoria_historica_y_resistencia": {
+        "defensa_apaporis": "Liderazgo histórico en la creación del Parque Nacional Natural Yaigojé Apaporis en 2009, blindando su territorio sagrado frente a solicitudes de títulos mineros de oro multinacionales.",
+        "acuerdo_propio": "Ejemplo internacional de conservación donde el resguardo indígena y el parque nacional comparten el mismo polígono geográfico bajo la ley de origen tradicional."
+      },
+      "retos_actuales": {
+        "amenazas": "Incursiones de mineros ilegales con dragas en las cabeceras remotas del Apaporis y actores armados irregulares.",
+        "iniciativas": "Guardia Indígena tradicional del Yaigojé Apaporis y programas de monitoreo de fauna con cámaras trampa operadas por sabedores."
+      }
+    },
+    {
+      "id": "makuna",
+      "nombre_comun": "Makuna",
+      "autonimo": "Yeba masã ('Gente de la tierra') / Ide masã ('Gente del agua')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Makuna (Ide masã)",
+        "vitalidad": "Vulnerable pero con fuerte arraigo comunal y transmisión materna activa.",
+        "caracteristicas_notables": "Lengua Tukano Oriental con tonos distintivos, marcada armonía nasal y un complejo sistema de sufijos de evidencialidad gramatical (distinguiendo entre lo visto personalmente, lo oído, lo inferido y lo transmitido por tradición oral)."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Vaupés",
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Pirá-Paraná",
+          "Bajo Apaporis",
+          "Caño Komeña",
+          "Caño Toaka"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo del Gran Vaupés",
+          "Resguardo Yaigojé Apaporis"
+        ],
+        "patron_asentamiento": "Malocas multifamiliares dispersas a lo largo de los caños del Pirá-Paraná, ubicadas cerca de raudales sagrados."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 1.150 personas en Colombia.",
+        "distribucion_etnica": "Organizados en dos grandes mitades ecológicas complementarias: la Gente de Agua (Ide masã) y la Gente de Tierra (Yeba masã)."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Llegaron a la tierra en el vientre de la Anaconda Canoa que remontó el Río de la Leche. Al cruzar los raudales de Ipanoré en el río Vaupés, los ancestros emergieron transformados en hombres provistos de sus saberes, plumajes y rezos sagrados.",
+        "ecosofia_makuna": "Estudiados extensamente por Kaj Århem. Su cosmología afirma que el mundo es una inmensa casa compartida donde los humanos y los animales intercambian constantemente sus formas y almas. Los peces y animales son cazadores en su propio mundo y los humanos deben comportarse como huéspedes respetuosos para no convertirse en presa de los espíritus de la selva."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal, patrilocal y exógamo estricto. Practican la exogamia lingüística: un Makuna debe casarse con una persona de otro grupo lingüístico (por ejemplo, Barasana, Tuyuca o Desano).",
+        "jerarquia_clanes": "Clanes ordenados por orden de nacimiento ancestral: Jefes de Maloca (hermanos mayores), Cantores, Sabedores/Chamanes y Servidores de la Palabra."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Yagé",
+          "Flautas de Yurupary (He)",
+          "Plumas de garza blanca y guacamaya"
+        ],
+        "figura_kumu": "El Kumú es el chamán del pensamiento y la cura cósmica; no solo sana a los enfermos individuales sino que equilibra las estaciones del año y previene las inundaciones catastróficas."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Manejo de la chagra agroforestal con más de 30 variedades de yuca brava; pesca con trampas de canasto en los raudales; recolección de hormigas manivaras y frutos silvestres.",
+        "elaboracion_casabe": "Procesamiento diario de casabe en el budare por las mujeres de la maloca, base fundamental de la nutrición familiar."
+      },
+      "memoria_historica_y_resistencia": {
+        "patrimonio_unesco": "Su sistema de conocimiento tradicional del Río Pirá-Paraná (los Jaguares de Yuruparí) fue inscrito por la UNESCO en 2011 en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad.",
+        "resistencia": "Mantenimiento inquebrantable de la vida tradicional de maloca sin permitir la penetración permanente de misiones religiosas ni agencias colonizadoras."
+      },
+      "retos_actuales": {
+        "amenazas": "Aislamiento sanitario ante emergencias complejas y presiones de actores armados en las fronteras fluviales.",
+        "iniciativas": "Gobernanza a través de ACAIPI (Asociación de Capitanes y Autoridades Indígenas del Río Pirá Paraná) y escuelas de chamanismo tradicional para jóvenes."
+      }
+    },
+    {
+      "id": "barasana",
+      "nombre_comun": "Barasana",
+      "autonimo": "Yeba masã ('Gente de la tierra / Hijos de la anaconda')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Barasana-Eduria",
+        "vitalidad": "Vulnerable pero vigorosamente hablado dentro del sistema familiar y ceremonial del Pirá-Paraná.",
+        "caracteristicas_notables": "Lengua con rica tonalidad, propagación de rasgos nasales, sufijos evidenciales cuádruples y un léxico cosmológico de altísima abstracción ontológica."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Vaupés"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Pirá-Paraná",
+          "Caño Colorado",
+          "Río Cananarí"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo del Gran Vaupés"
+        ],
+        "patron_asentamiento": "Malocas comunales rectangulares de gran porte arquitectónico distribuidas en el río Pirá-Paraná."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 950 personas.",
+        "distribucion_etnica": "Agrupados en linajes patrilineales autónomos asociados a segmentos de la Anaconda Ancestral."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Estudiados magistralmente por Stephen y Christine Hugh-Jones ('The Palm and the Pleiades' / 'From the Milk River'). El cosmos se concibe como una maloca universal: el tejado es el cielo, los postes son las montañas que sostienen el firmamento y el suelo es la corteza terrestre.",
+        "anaconda_ancestral": "El mito fundacional narra la gestación y recorrido de la Anaconda Ancestral, en cuyo cuerpo se gestaron los seres humanos, las lenguas, los instrumentos de Yurupary y las semillas de la chagra.",
+        "constelaciones_y_calendario": "Mapeo astronómico de las Pléyades y la Vía Láctea para fijar los calendarios de siembra, crecientes de los ríos y ceremonias de iniciación."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y exogamia lingüística institucionalizada. Un Barasana debe hablar barasana como lengua del padre, pero su madre suele ser Taiwano, Makuna o Desano.",
+        "alianzas": "Intercambio continuo de mujeres, saberes y alimentos con los grupos afines en festivales de Dabucurí."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Yagé (Caapi)",
+          "Flautas sagradas de Yuruparí",
+          "Bancos de pensamiento"
+        ],
+        "rito_yurupary": "El rito del He House (Casa Sagrada de Yurupary), donde se muestran las flautas de palma que encarnan los huesos de los ancestros a los jóvenes iniciados masculinos."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Policultivo agroforestal en la chagra; pesca de raudal con nasas y barbasco vegetal no contaminante; cacería selectiva de primates y roedores.",
+        "artefactos": "Fabricación de bancos ceremoniales de madera de una sola pieza y banquillos tallados con figuras zoomorfas."
+      },
+      "memoria_historica_y_resistencia": {
+        "defensa_cultural": "Custodios nucleares del Patrimonio Inmaterial de la Humanidad del Pirá-Paraná reconocido por la UNESCO.",
+        "resistencia_religiosa": "Rechazo sistemático a la destrucción de sus malocas y flautas sagradas por parte de las misiones religiosas a mediados del siglo XX."
+      },
+      "retos_actuales": {
+        "amenazas": "Riesgo de abandono de la lengua por migración de jóvenes a Mitú y carencia de infraestructura educativa propia de nivel superior.",
+        "iniciativas": "Planes de Vida de ACAIPI y centros de pensamiento tradicional en el Pirá-Paraná."
+      }
+    },
+    {
+      "id": "desano",
+      "nombre_comun": "Desano",
+      "autonimo": "Wira ('Gente del viento / Hijos del trueno')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Desano (Wira)",
+        "vitalidad": "Vulnerable; hablado por varios miles de indígenas en Colombia y Brasil.",
+        "caracteristicas_notables": "Lengua tonal con distinción gramatical de género animado/inanimado, nasalización suprasegmental y partículas de evidencialidad probatoria."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Vaupés"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Papurí",
+          "Río Vaupés",
+          "Río Tiquié",
+          "Caño Abiyú"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo del Gran Vaupés",
+          "Resguardo de la Zona Indígena de Mitú"
+        ],
+        "patron_asentamiento": "Asentamientos ribereños y comunidades de malocas a lo largo del curso medio y alto del río Papurí."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 3.650 personas en territorio colombiano.",
+        "distribucion_etnica": "Distribuida en linajes y clanes con jerarquías definidas de origen mítico."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Estudiados exhaustivamente por Gerardo Reichel-Dolmatoff en 'Amazonian Cosmos' y 'Shamanism and Art of the Eastern Tukano'. El universo es un circuito bioenergético cerrado regido por el Padre Sol (Abe), cuya energía fertilizadora fluye a través del semen, la luz, el calor y el color amarillo.",
+        "chamanismo_y_color": "Asociación del espectro cromático y las formas fofénicas inducidas por el yagé con los niveles de conciencia y las leyes de regulación de la caza. El chamán (payé) actúa como un ingeniero de energía que equilibra las entradas y salidas energéticas de la biosfera."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal, patrilocal y exogamia lingüística rigurosa.",
+        "alianzas_preferenciales": "Alianzas históricas con los Tukano, Piratapuyo y Wanano, donde cada grupo habla su propia lengua en la vida comunitaria compartida."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Yagé (Banisteriopsis caapi)",
+          "Mambe",
+          "Ambil",
+          "Sonajero ceremonial de calabaza grabado (Maraca)"
+        ],
+        "figura_paye": "El Payé cura mediante la extracción psicosomática de dardos patógenos invisibles y la recitación de fórmulas mágicas que reorganizan los circuitos de energía del paciente."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra de rotación estricta; pesca intensiva en las cabeceras del Papurí; recolección de frutos de monte; caza con trampas y arpones.",
+        "cesteria_y_madera": "Cestería fina de cumare y tallado de maracas ceremoniales con diseños geométricos que representan visiones fofénicas de yagé."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia_misional": "Tensión histórica contra el internado misional de Monfortianos en el siglo XX, preservando clandestinamente los rituales de curación y los linajes de payés.",
+        "reivindicacion": "Participación activa en el Consejo Regional Indígena del Vaupés (CRIVA) y defensa de la jurisdicción indígena propia."
+      },
+      "retos_actuales": {
+        "amenazas": "Impacto de la economía monetaria urbana en Mitú, consumo de alcohol y pérdida de la disciplina alimentaria tradicional en jóvenes.",
+        "iniciativas": "Fortalecimiento de la medicina tradicional en articulación con el sistema de salud SISPI y programas de soberanía alimentaria."
+      }
+    },
+    {
+      "id": "cubeo",
+      "nombre_comun": "Cubeo",
+      "autonimo": "Pamiwa ('Hijos de la anaconda')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Cubeo (Pamiwa)",
+        "vitalidad": "Vital a vulnerable; el grupo con mayor número de hablantes de la familia Tukano Oriental en Colombia.",
+        "caracteristicas_notables": "Lengua aglutinante sufijante con tonalidad compleja; a diferencia de otros grupos del Vaupés, los Cubeo no practican la exogamia lingüística obligatoria, lo que ha permitido una gran estabilidad demográfica de su idioma."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Vaupés"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Cuduyarí",
+          "Río Querarí",
+          "Río Vaupés medio"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo del Gran Vaupés (alrededores de Mitú y río Cuduyarí)"
+        ],
+        "patron_asentamiento": "Aldeas densamente pobladas en las orillas del Cuduyarí y Querarí, con malocas ceremoniales y casas unifamiliares adyacentes."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 6.600 personas en Colombia.",
+        "distribucion_etnica": "Organizados en tres grandes fratrias o hermandades clánicas autónomas (Bahúkwa, Hehénawa y Kuwéwa)."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Estudiados por Irving Goldman ('The Cubeo: Indians of the Northwest Amazon'). Emergieron de la Anaconda de la Tierra en el curso alto del río Vaupés. Su héroe supremo Kuwai creó los peces, la yuca y las leyes de la muerte.",
+        "ritual_del_oyne": "El célebre ritual fúnebre del Oyne (baile de las máscaras de corteza de árbol). Tras la muerte de un miembro importante, la comunidad elabora decenas de máscaras de corteza que personifican a todos los animales del bosque (el jaguar, la danta, el águila, la mariposa) para despedir el alma del difunto, apaciguar el dolor del luto y devolver su fuerza vital al cosmos ancestral."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y exógamo a nivel de fratria (se casan entre fratrias Cubeo o con miembros de otras etnias).",
+        "liderazgo": "Capitanes de comunidad y ancianos maestros de cantos fúnebres."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Yagé (Mihi)",
+          "Mambe",
+          "Ambil",
+          "Máscaras rituales de corteza",
+          "Bebida fermentada de chicha de chontaduro"
+        ],
+        "practica_medica": "Curaciones por medio de soplos y cánticos para reintegrar las partes fragmentadas del alma tras una crisis emocional o física."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Grandes chagras familiares con decenas de variedades de yuca brava; pesca con trampas de estera en raudales; cultivo de piña, caña y plátano.",
+        "artesanía": "Fabricación de máscaras ceremoniales de tela de corteza y cestería utilitaria de gran resistencia."
+      },
+      "memoria_historica_y_resistencia": {
+        "relacion_urbana": "Fueron los primeros pueblos del Vaupés en entrar en contacto estrecho con la fundación de Mitú en la década de 1930, resistiendo la aculturación y convirtiéndose en pioneros de la educación bilingüe indígena.",
+        "liderazgo_politico": "Fundadores del movimiento indígena regional en el Vaupés y líderes de la Asociación de Autoridades Tradicionales del Cuduyarí (AATIC)."
+      },
+      "retos_actuales": {
+        "amenazas": "Urbanización acelerada en la periferia de Mitú, desnutrición infantil por cambio de dieta tradicional y alcoholismo.",
+        "iniciativas": "Modelos etnoeducativos propios con bachillerato agroecológico y revitalización del ritual del Oyne."
+      }
+    },
+    {
+      "id": "wanano",
+      "nombre_comun": "Wanano",
+      "autonimo": "Kotiria ('Gente del agua / Señores del raudal')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Wanano (Kotiria)",
+        "vitalidad": "Vulnerable; hablado en el curso medio del río Vaupés y la frontera con Brasil.",
+        "caracteristicas_notables": "Lengua tonal con distinción fonémica entre oclusivas sordas y sonoras prenasalizadas, sistema de clases nominales y sufijos evidenciales de certeza epistemológica."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Vaupés"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Vaupés medio",
+          "Frontera colombo-brasileña (área de Carurú y Mitú)"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo del Gran Vaupés"
+        ],
+        "patron_asentamiento": "Aldeas ribereñas concentradas en las orillas de los grandes raudales y saltos del río Vaupés."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 1.600 personas en Colombia (y un número similar en Brasil).",
+        "distribucion_etnica": "Estructurados en linajes patrilineales ordenados jerárquicamente según el mito de origen."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Originarios del raudal sagrado de Ipanoré. Su linaje salió de la cabeza y el corazón de la Anaconda Ancestral, lo que les confirió el rango sagrado de 'Señores del Río' y guardianes de las piedras grabadas con petroglifos sagrados.",
+        "simbolismo_del_raudal": "Los raudales son los templos naturales donde residen los antepasados espirituales y donde se originó el baile de Dabucurí."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y exogamia lingüística rigurosa. Tienen relaciones preferenciales de matrimonio con los Tuyuca y Desano.",
+        "jerarquia": "División clásica entre clanes de jefes, cantores, maestros del fuego y trabajadores de la canoa."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Yagé",
+          "Tabaco de envolver en hojas de platanillo"
+        ],
+        "practica_medica": "Curación de las enfermedades causadas por espíritus de las corrientes fluviales y alivio del susto en los niños."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Pesca especializada en raudales con trampas de canasto (cacure), arpones y flechas sumergibles; chagra tradicional de yuca brava en colinas de tierra firme.",
+        "artesanía": "Elaboración de redes de pesca y remos finamente tallados y decorados con símbolos geométricos claniles."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia_fronteriza": "Mantenimiento de lazos transfronterizos con sus comunidades hermanas en Brasil, superando las divisiones administrativas estatales.",
+        "autonomia": "Liderazgo en la gestión comunitaria del río Vaupés y rechazo a las actividades extractivas en sus raudales sagrados."
+      },
+      "retos_actuales": {
+        "amenazas": "Impacto de proyectos de infraestructura fluvial no concertados y dificultades de acceso a servicios públicos básicos.",
+        "iniciativas": "Proyectos etnoeducativos transfronterizos y publicaciones bilingües Kotiria-Español-Portugués."
+      }
+    },
+    {
+      "id": "piratapuyo",
+      "nombre_comun": "Piratapuyo",
+      "autonimo": "Waikhana ('Gente del pez / Hijos del pescado sagrado')",
+      "familia_linguistica": "Tukano Oriental",
+      "idioma_propio": {
+        "nombre": "Piratapuyo (Waikhana)",
+        "vitalidad": "En peligro moderado; hablado en el río Papurí y afluentes del Vaupés.",
+        "caracteristicas_notables": "Lengua tonal de orden SOV con complejas reglas de nasalización y más de 40 clasificadores nominales para formas botánicas e instrumentos utilitarios."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Vaupés"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Papurí",
+          "Río Vaupés"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo del Gran Vaupés"
+        ],
+        "patron_asentamiento": "Comunidades ribereñas situadas a lo largo del río Papurí, en convivencia cercana con comunidades Desano y Tukano."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 880 personas en Colombia.",
+        "distribucion_etnica": "Distribuidos en linajes patrilineales autónomos."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Hijos de la Anaconda de Pescado que depositó a sus ancestros en los remansos profundos del Papurí. Su función cósmica es la de armonizar la reproducción y desove de las especies ictiológicas de la cuenca amazónica.",
+        "danza_del_pescado": "Danzas ceremoniales de intercambio donde entregan pescado ahumado a sus aliados exogámicos a cambio de tubérculos y frutas de monte."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal, patrilocal y exogamia lingüística institucionalizada. Matrimonio tradicional con miembros de las etnias Desano y Wanano.",
+        "autoridad_tradicional": "Cabildos locales y sabedores del canto sagrado del pescado."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Mambe",
+          "Ambil",
+          "Yagé",
+          "Resinas curativas de siringa"
+        ],
+        "practica_medica": "Rezos específicos para sanar cólicos gástricos y fiebres provocadas por espíritus de bagres y rayas gigantes."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Pesca artesanal especializada con anzuelos, atarrayas y nasas; chagra de yuca brava para producción de casabe y fariña; cacería de monte.",
+        "cesteria": "Fabricación de canastos balayes con diseños en espiral que evocan el movimiento de los peces en el agua."
+      },
+      "memoria_historica_y_resistencia": {
+        "defensa_fluvial": "Preservación de sus sitios sagrados de pesca en el Papurí frente a intentos de privatización o sobrepesca comercial.",
+        "fortalecimiento": "Participación activa en los congresos del Consejo Regional Indígena del Vaupés (CRIVA)."
+      },
+      "retos_actuales": {
+        "amenazas": "Escasez progresiva de peces de gran porte en cuencas de fácil acceso y migración de familias hacia asentamientos urbanos de Mitú.",
+        "iniciativas": "Planes de manejo pesquero comunitario y vedas tradicionales de pesca acordadas entre clanes."
+      }
+    },
+    {
+      "id": "tikuna",
+      "nombre_comun": "Tikuna",
+      "autonimo": "Magüta ('Gente pescada con vara por Yo'i')",
+      "familia_linguistica": "Tikuna (Lengua aislada / Familia independiente Tikuna-Yurí)",
+      "idioma_propio": {
+        "nombre": "Tikuna (Magütacü)",
+        "vitalidad": "Vital y ampliamente hablado por todas las generaciones en el Trapecio Amazónico, con bilingüismo funcional en castellano y portugués.",
+        "caracteristicas_notables": "Lengua tonal con un sistema excepcional de 5 niveles tonales de registro fonémico (del nivel 1 extra-bajo al nivel 5 extra-alto), morfología flexiva de modo-aspecto y ausencia de género gramatical."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Amazonas (cauce principal)",
+          "Río Cotuhé",
+          "Río Amacayacu",
+          "Río Loretoyacu"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Tikuna-Huitoto del Kilómetro 6 y 11",
+          "Resguardo de Arara",
+          "Resguardo de Mocagua",
+          "Resguardo de San Martín de Amacayacu",
+          "Resguardo de Puerto Nariño"
+        ],
+        "patron_asentamiento": "Grandes aldeas ribereñas a orillas del río Amazonas y lagos interiores (lagos de Tarapoto), con viviendas unifamiliares sobre pilotes (palafitos) y malocas ceremoniales."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 41.250 personas en Colombia (el pueblo indígena más numeroso de la Amazonía colombiana; suman más de 70.000 entre Colombia, Brasil y Perú).",
+        "distribucion_etnica": "Divididos en dos grandes mitades exogámicas complementarias: la Mitad de las Plumas (aves del cielo) y la Mitad de la Tierra/Planta (árboles, frutos y animales terrestres)."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Los hermanos gemelos míticos Yo'i (el sabio y creador) e Ipi (el hermano travieso y terrenal) pescaron a los ancestros Magüta con vara y anzuelo desde las aguas sagradas de la quebrada Eware, sacándolos a la orilla y dándoles sus lenguas, clanes y leyes de convivencia.",
+        "fiesta_de_la_pelazon": "La Woretücü (Fiesta de la Pelazón): Gran rito de paso femenino tras la primera menstruación de la doncella (curicaca). La joven es recluida en un compartimento cerrado (wojo) dentro de la casa comunal, donde aprende secretos de alfarería y tejido. Luego de días de fiesta con trajes ceremoniales de corteza de yanchama pintada con huito y achiote, su cabello es cortado ceremonialmente, simbolizando su renacimiento como mujer madura, fértil y autónoma ante la comunidad.",
+        "seres_sagrados": [
+          "Yo'i e Ipi (Héroes gemelos fundadores)",
+          "Nutapa (Espíritus tutelares de la selva)",
+          "Espíritus del Río Amazonas"
+        ]
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con estricta exogamia de mitad: un miembro de la mitad de las Plumas (ej. Clan Garza o Clan Guacamaya) debe casarse obligatoriamente con alguien de la mitad de la Tierra/Planta (ej. Clan Tigre, Clan Árbol o Clan Fruta).",
+        "autoridad_tradicional": "Curacas tradicionales en cada aldea, apoyados por el Consejo de Ancianos y las asociaciones de cabildos (ASCAITA, ATICAM)."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Pinturas de huito (Genipa americana)",
+          "Achiote (Bixa orellana)",
+          "Chicha fermentada de yuca (Payawarú)",
+          "Tabaco curado"
+        ],
+        "medicina_botanica": "Riquísima farmacopea de plantas de vega y sotobosque para el tratamiento de mordeduras de serpientes, afecciones de la piel y control de fertilidad."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Policultivo en chagras de varzea (inundables) y tierra firme: yuca dulce y brava, plátano, maíz, piña, copoazú y cacao silvestre; pesca artesanal masiva en lagos y cauce del Amazonas; turismo comunitario sostenible.",
+        "artesanía_emblematica": "Elaboración de pinturas en corteza de yanchama batida, tallado de animales en madera de palo de sangre (Brosimum rubescens) y tejido de cestería de chambira."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia_colonial": "Resistencia activa a las misiones jesuitas y carmelitas portuguesas en los siglos XVII y XVIII; sobrevivencia al boom del caucho y consolidación de sus resguardos en el Trapecio Amazónico tras el Tratado Salomón-Lozano.",
+        "educacion_propia": "Pioneros en la etnoeducación bilingüe e intercultural en Leticia y Puerto Nariño, con producción de libros y materiales curriculares en lengua Magütacü."
+      },
+      "retos_actuales": {
+        "amenazas": "Impacto del turismo masivo no regulado, contaminación por basuras y aguas residuales en Leticia, y penetración de actividades de narcotráfico fluvial en la triple frontera.",
+        "iniciativas": "Liderazgo en la gobernanza de los Humedales de Tarapoto (Sitio Ramsar) y proyectos de turismo indígena autogestionado en Mocagua y San Martín de Amacayacu."
+      }
+    },
+    {
+      "id": "yagua",
+      "nombre_comun": "Yagua",
+      "autonimo": "Nihamwo ('Nosotros la gente')",
+      "familia_linguistica": "Peba-Yagua",
+      "idioma_propio": {
+        "nombre": "Yagua",
+        "vitalidad": "En riesgo moderado; hablado con fluidez por ancianos y adultos, con programas de revitalización comunitaria en el bajo Putumayo y Trapecio.",
+        "caracteristicas_notables": "Única familia superviviente del tronco Peba-Yagua; lengua de verbo inicial (VSO) con rica concordancia de clíticos pronominales y clasificadores espaciales."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Amazonas",
+          "Río Cotuhé",
+          "Río Putumayo bajo",
+          "Caño Tucuchira"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Yagua del Kilómetro 12 y 16 (Leticia)",
+          "Resguardo Puerto Alegría"
+        ],
+        "patron_asentamiento": "Aldeas ribereñas y casas comunales en el bosque aluvial y terrazas medias del Trapecio Amazónico."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 1.050 personas en Colombia (también presentes en territorio peruano).",
+        "distribucion_etnica": "Organizados en clanes patrilineales exogámicos con tótems de aves y mamíferos."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Creados por Mayõ, héroe civilizador que modeló a la humanidad a partir de la médula de las palmeras de moriche. Su cosmovisión enfatiza la destreza de la mirada y el silencio del cazador.",
+        "indumentaria_sagrada": "Vestimenta icónica de faldas, muñequeras y tobilleras de fibra de palma de aguaje/moriche de vivo color anaranjado y rojo teñidas con semillas de achiote, que representan el plumaje solar de las aves guardianas."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y exógamo entre clanes terrestres y clanes de las aves.",
+        "autoridad_tradicional": "Curaca de la comunidad y maestros cazadores de cerbatana."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Pucuna (Cerbatana)",
+          "Curare sagrado de cacería",
+          "Tabaco silvestre",
+          "Achiote"
+        ],
+        "practica_medica": "Curación del 'mal aire' y de sustos mediante cantos chamánicos que imitan los reclamos de las aves de dosel alto."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Caza especializada con cerbatana de madera dura de chonta y dardos con curare; chagra de yuca dulce, plátano y achiote; pesca ribereña y recolección de frutos de palmas.",
+        "artesanía": "Fabricación artesanal de cerbatanas de precisión con carcajes de dardos y tejido de faldas de fibra de palma."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia_colonial": "Resistieron durante siglos a las misiones franciscanas retirándose a los densos bosques de interfluvio; sufrieron las correrías caucheras pero lograron mantener su identidad indumentaria y lingüística.",
+        "visibilizacion": "Reconocimiento de sus resguardos autónomos y participación activa en los eventos etnoculturales del Trapecio Amazónico."
+      },
+      "retos_actuales": {
+        "amenazas": "Folklorización comercial de su indumentaria por agencias turísticas externas y pérdida de territorios tradicionales de cacería.",
+        "iniciativas": "Gestión directa del turismo etnográfico cultural y huertos botánicos de plantas medicinales y fibras de palma."
+      }
+    },
+    {
+      "id": "cocama",
+      "nombre_comun": "Cocama",
+      "autonimo": "Kokama / Kokamilla ('Gente del río / Hijos de la anaconda')",
+      "familia_linguistica": "Tupí-Guaraní (Rama Tupí-Guaraní III)",
+      "idioma_propio": {
+        "nombre": "Kokama-Kokamilla",
+        "vitalidad": "En peligro crítico en Colombia (quedan escasos hablantes fluidos ancianos; en proceso de enseñanza a través de nidos de lengua).",
+        "caracteristicas_notables": "Lengua Tupí-Guaraní con distinción sociolingüística entre habla masculina y habla femenina (morfemas distintos utilizados según el género del hablante)."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Amazonas",
+          "Putumayo"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Amazonas (Isla de Ronda)",
+          "Río Putumayo bajo",
+          "Lagos de Tarapoto"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo San Antonio de los Lagos",
+          "Resguardo de Ronda",
+          "Resguardo de Puerto Nariño"
+        ],
+        "patron_asentamiento": "Poblados palafíticos y ribereños construidos sobre las playas e islas aluviales del río Amazonas."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 3.250 personas autorreconocidas en Colombia (amplia población en la Amazonía peruana).",
+        "distribucion_etnica": "Comunidades ribereñas articuladas en torno a la pesca comunal y la vida insular."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Descendientes directos de la Gran Anaconda Madre de las Aguas profundas (Mai-kuru). Conciben el fondo del río Amazonas como un mundo paralelo idéntico a la tierra firme, donde habitan ciudades acuáticas de espíritus y sabedores que curan en sueños.",
+        "cultura_ictiologica": "Clasificación taxonómica tradicional de más de un centenar de especies de peces y conocimiento milimétrico de las corrientes y pulsos de inundación."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Bilateral con tendencia patrilineal; comunidades regidas por asambleas de pescadores y curacas.",
+        "autoridad_tradicional": "Curaca comunal y sabedores de la pesca sagrada."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Tabaco de hoja enrollada",
+          "Baños en aguas profundas",
+          "Plantas de orilla curadas"
+        ],
+        "practica_medica": "Tratamiento de dolencias reumáticas y purificación de malas energías a través de sahumerios de tabaco y dietas de pescado blanco."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Pesca comercial y de subsistencia con canoas monóxilas, mallas y arpones; siembra estacional en playas de varzea (frijol de playa, maíz yuca dulce); cultivo de plátano en islas aluviales.",
+        "artesanía": "Alfarería tradicional con diseños polícromos de la anaconda y tejido de hamacas de fibra de chambira."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia_fluvial": "Fueron los navegantes y remeros indispensables del río Amazonas durante la colonia y la república; sufrieron despojos sucesivos pero mantuvieron el control de islas y lagos estratégicos.",
+        "revitalizacion": "Movimiento activo de recuperación de la lengua y los cantos en la Isla de Ronda y Puerto Nariño."
+      },
+      "retos_actuales": {
+        "amenazas": "Disminución de poblaciones de peces comerciales por sobrepesca no indígena y contaminación por residuos sólidos fluviales.",
+        "iniciativas": "Acuerdos de cogestión pesquera en los lagos de Tarapoto y escuelas comunitarias de lengua Kokama."
+      }
+    },
+    {
+      "id": "nukak_maku",
+      "nombre_comun": "Nukak Makú",
+      "autonimo": "Nukak ('Gente verdadera')",
+      "familia_linguistica": "Kakua-Nukak (Familia lingüística Nadahup / Makú-Puinave)",
+      "idioma_propio": {
+        "nombre": "Nukak",
+        "vitalidad": "Vulnerable; hablado por la totalidad del pueblo, aunque en riesgo por la profunda crisis demográfica y de desplazamiento forzado.",
+        "caracteristicas_notables": "Lengua tonal con rico sistema vocálico (vocales orales y nasales contrastivas), laringalización y un léxico hipersensible a microambientes ecológicos y comportamiento de presas animales."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Guaviare",
+          "Guainía"
+        ],
+        "cuencas_hidrograficas": [
+          "Interfluvio entre el Río Guaviare y el Río Inírida",
+          "Caño Makú",
+          "Río Guaviare medio"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Nukak-Makú (declarado de urgencia humanitaria)",
+          "Asentamientos de refugio temporal en San José del Guaviare"
+        ],
+        "patron_asentamiento": "Históricamente cazadores-recolectores nómadas de selva interfluvial; campamentos temporales móviles (wāka) de techos de hojas de platanillo sostenidos por varas ligeras y bejucos, que abandonaban cada 5 a 15 días según la disponibilidad estacional de frutos y caza."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 1.080 personas en Colombia.",
+        "contacto_reciente": "Los últimos nómadas de selva tropical contactados por el mundo occidental en Colombia: el contacto formal y masivo se produjo de manera fortuita en 1988 cuando un grupo emergió en Calamar (Guaviare)."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "El universo está dividido en varios niveles cósmicos superpuestos. Los Nukak viven en el nivel intermedio de la selva virgen. Los espíritus de los muertos ascienden a las copas de los árboles gigantes de la canopia cósmica donde nunca falta la cacería ni las frutas de moriche y seje.",
+        "etica_del_movimiento": "Para los Nukak, permanecer fijos en un solo lugar enferma la selva y atrae la muerte. El nomadismo no es una carencia, sino una filosofía de armonía ecológica que permite a los árboles y a los animales regenerarse tras la estancia de la banda humana."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Bilateral, organizada en bandas locales móviles de 20 a 40 personas unidas por lazos de consanguinidad y alianza matrimonial.",
+        "igualitarismo": "Sociedad altamente igualitaria sin cacicazgos centralizados; las decisiones se toman por consenso espontáneo en torno a las hamacas del campamento."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Resina vegetal de caraña",
+          "Pinturas de achiote en el rostro",
+          "Curare de cacería"
+        ],
+        "practica_medica": "Extracción chamánica de espinas invisibles del cuerpo del enfermo mediante succión ritual y cantos al anochecer."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Caza con cerbatanas de bejuco y dardos con curare (monos aulladores, paujiles, dantas); pesca con barbasco y trampas de caño; recolección nómada de frutos de palmas (canangucho, seje, patabá), miel silvestre y raíces tuberosas.",
+        "tecnologia_nomada": "Cestas de carga de hoja de palma tejidas al instante y hamacas livianas de fibra de cumare transportables a la espalda."
+      },
+      "memoria_historica_y_resistencia": {
+        "tragedia_demografica": "Tras el contacto en 1988, epidemias masivas de gripe, sarampión y neumonía diezmaron a más del 40-50% de la población total en menos de una década por carecer de anticuerpos.",
+        "despojo_y_conflicto": "Invasión de su resguardo ancestral por colonos, cultivos de uso ilícito, minas antipersonal y frentes guerrilleros y paramilitares, forzando a la mitad del pueblo al desplazamiento forzado y mendicidad en San José del Guaviare.",
+        "medidas_cautelares": "Sujetos de Medidas Cautelares de la Corte Constitucional (Auto 004 de 2009 y Auto 173 de 2012) que los declaró en riesgo inminente de extinción física y cultural."
+      },
+      "retos_actuales": {
+        "amenazas": "Desarraigo cultural, drogadicción y explotación sexual en caseríos periféricos de colonización; minas antipersonal en su territorio ancestral que impiden el retorno nómada seguro.",
+        "iniciativas": "Plan de Salvaguarda Nukak, desminado humanitario del resguardo y programas de retorno guiado a zonas seguras de selva virgen."
+      }
+    },
+    {
+      "id": "siona",
+      "nombre_comun": "Siona",
+      "autonimo": "Ganteya / ZioBain ('Gente del río de la caña brava')",
+      "familia_linguistica": "Tukano Occidental",
+      "idioma_propio": {
+        "nombre": "Siona (Ganteyabain)",
+        "vitalidad": "En peligro moderado a grave; hablado por sabedores ancianos y adultos en el río Putumayo.",
+        "caracteristicas_notables": "Lengua del tronco Tukano Occidental con rica morfología verbal, marcadores de foco, sufijos de modo y caso, y conservación de raíces fonéticas arcaicas."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Putumayo"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Putumayo (curso medio y bajo)",
+          "Río Piñuña Blanco",
+          "Río Piñuña Negro"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Buena Vista",
+          "Resguardo Santa Cruz de Piñuña Blanco",
+          "Resguardo San José de la Montaña"
+        ],
+        "patron_asentamiento": "Aldeas ribereñas y casas comunales a lo largo de las orillas del río Putumayo, en la frontera con Ecuador y Perú."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 2.600 personas en Colombia.",
+        "distribucion_etnica": "Organizados en cabildos comunitarios autónomos ribereños."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Hijos de la Gran Caña Brava primordial del río Putumayo. Su cosmología está estructurada por las revelaciones sagradas del Yagé (Nipí), que les permite viajar a los mundos superiores del cielo donde habitan los seres de la luz (Yaiku) y los antepasados sabedores.",
+        "simbologia_plumaria": "Las coronas de plumas de oropéndola, guacamaya y tucán son antenas espirituales que sintonizan la visión del chamán con los reinos celestes."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal con descendencia de linajes de curacas.",
+        "autoridad_tradicional": "El Taita o Curaca Mayor del Yagé y los Gobernadores de los Cabildos indígenas."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Yagé (Nipí)",
+          "Tabaco curado en pipa o cigarro silvestre",
+          "Collares de colmillos de jaguar y semillas de ojo de buey"
+        ],
+        "tomas_de_yage": "Ceremonias nocturnas guiadas por cantos de 'pinta' (visiones curativas) para diagnosticar enfermedades corporales y comunales."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra ribereña con policultivo de yuca dulce, plátano, maíz, chontaduro y plantas medicinales; pesca en el río Putumayo; cacería con escopeta y tramperas.",
+        "artesanía": "Elaboración de collares de semillas de la selva y cestería de fibra de chambira."
+      },
+      "memoria_historica_y_resistencia": {
+        "impacto_petrolero_y_conflicto": "Territorio duramente afectado por la bonanza del caucho, luego por la explotación petrolera desde la década de 1960 y posteriormente por el conflicto armado y las aspersiones aéreas con glifosato.",
+        "resistencia_juridica": "Acciones emblemáticas de tutela y medidas cautelares de la CIDH para el Resguardo Buena Vista contra la imposición de bloques petroleros sin consulta previa."
+      },
+      "retos_actuales": {
+        "amenazas": "Contaminación de fuentes hídricas por vertimientos hidrocarburíferos y confinamiento por remanentes de grupos armados ilegales.",
+        "iniciativas": "Guardia Indígena Siona (Kipara) para el control territorial pacífico y fortalecimiento de las tomas de medicina tradicional."
+      }
+    },
+    {
+      "id": "kofan",
+      "nombre_comun": "Kofán",
+      "autonimo": "A'i ('Gente verdadera')",
+      "familia_linguistica": "Kofán (A'ingae - Lengua aislada del piedemonte andino-amazónico)",
+      "idioma_propio": {
+        "nombre": "A'ingae",
+        "vitalidad": "Vulnerable pero con fuerte resistencia comunal y uso litúrgico activo en las tomas de medicina.",
+        "caracteristicas_notables": "Lengua aislada con triple contraste fonémico en consonantes oclusivas (sordas simples, aspiradas y glotalizadas/prenasalizadas), vocales nasales y morfología ergativa escindida."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Putumayo",
+          "Nariño"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Guamuez",
+          "Río San Miguel",
+          "Río Orito",
+          "Río Putumayo alto"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Santa Rosa del Guamuéz",
+          "Resguardo Yarinal",
+          "Resguardo Ukumari Kankhe",
+          "Resguardo Santa Rosa de Sucumbíos"
+        ],
+        "patron_asentamiento": "Aldeas en el piedemonte andino-amazónico y valles aluviales de los ríos torrentosos que bajan de la cordillera hacia la llanura amazónica."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 2.150 personas en Colombia (también presentes en la provincia de Sucumbíos, Ecuador).",
+        "distribucion_etnica": "Organizados en comunidades en torno a los linajes de los grandes Taitas tradicionales."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Creados por Chiga (el Dios Supremo Creador), quien pobló la tierra y entregó a los A'i el Yagé sagrado (Ahe) para que pudieran comunicarse directamente con los espíritus de la selva y las montañas y vivir en equilibrio.",
+        "filosofia_del_ahe": "El Yagé es la madre de todo el conocimiento, la medicina y la justicia comunitaria. Tomar Yagé es limpiar el cuerpo de impurezas, ver la verdad sin engaños y recibir la orientación de los ancestros."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Patrilineal y clánica tradicional; articulada en cabildos y el Consejo de Mayores y Taitas.",
+        "autoridad_espiritual": "El Taita Mayor es la máxima instancia moral, judicial y médica de la nación Kofán."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Yagé (Ahe)",
+          "Corona de plumas multicolores de guacamaya",
+          "Collares de hasta centenares de colmillos de pecarí y jaguar",
+          "Manto sagrado o túnica azul/blanca"
+        ],
+        "sabedores_historicos": "Taita Querubín Queta Alvarado (fallecido centenario en 2024), una de las figuras espirituales más veneradas de toda la Amazonía colombiana.",
+        "santuario_medicinal": "Creación del Santuario de Flora Plantas Medicinales Orito Ingi-Ande, primera área protegida de Colombia destinada exclusivamente a la salvaguarda de la flora medicinal tradicional bajo comanejo Kofán."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra de ladera y vega con plátano, yuca dulce, maíz, chontaduro y plantas medicinales; pesca en ríos torrentosos con atarraya; cacería menor de monte.",
+        "artesanía": "Fabricación de collares ceremoniales de semillas silvestres y tallado de bastones de mando en maderas duras."
+      },
+      "memoria_historica_y_resistencia": {
+        "lucha_contra_el_petroleo": "Resistencia frontal contra la contaminación petrolera de Texaco y Ecopetrol en Orito y el valle de Guamuéz; erradicación manual de cultivos de coca liderada por sus propios Taitas para alejar la guerra.",
+        "creacion_de_guardia": "Conformación de la Guardia Indígena Kofán para la custodia pacífica de sus límites territoriales y lugares sagrados."
+      },
+      "retos_actuales": {
+        "amenazas": "Pasivos ambientales no remediados por derrames históricos de crudo y amenazas a líderes por presencia de grupos armados residuales.",
+        "iniciativas": "Consolidación de las escuelas de formación de aprendices de botánica sagrada y medicina del yagé en Ukumari Kankhe."
+      }
+    },
+    {
+      "id": "inga",
+      "nombre_comun": "Inga",
+      "autonimo": "Runa ('Ser humano')",
+      "familia_linguistica": "Quechua Amazónico (Kichwa / Chinchaysuyu septentrional)",
+      "idioma_propio": {
+        "nombre": "Inga (Inga Kichwa)",
+        "vitalidad": "Vital en zonas rurales del Valle de Sibundoy y Yunguillo; en riesgo moderado en cabeceras municipales.",
+        "caracteristicas_notables": "Variedad amazónica del Quechua norteño adaptada al piedemonte; fonética simplificada sin eyectivas andinas sureñas, pero con un inmenso vocabulario botánico y medicinal amazónico."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Putumayo",
+          "Nariño",
+          "Baja bota caucana",
+          "Caquetá"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Putumayo alto",
+          "Río Mocoa",
+          "Río Caquetá alto",
+          "Valle de Sibundoy"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Inga de Santiago (Valle de Sibundoy)",
+          "Resguardo Inga de San Andrés",
+          "Resguardo de Yunguillo (Mocoa)",
+          "Resguardo Inga de Aponte (Nariño)"
+        ],
+        "patron_asentamiento": "Asentamientos andino-amazónicos en valles intramontanos de altura (Valle de Sibundoy a 2.200 msnm) y comunidades de piedemonte y selva baja en Mocoa y Puerto Asís."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 15.450 personas en Colombia.",
+        "distribucion_etnica": "Distribuidos en grandes cabildos históricos con amplia movilidad geográfica por todo el país."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Descendientes de los antiguos mitimaes incaicos y poblaciones originarias del piedemonte andino-selvático. Actúan como el gran puente ecológico y cósmico que une las cumbres frías de los Andes con el calor misterioso de la selva baja amazónica.",
+        "kalusturinda": "Celebran el Carnaval del Gran Día (Kalusturinda o Bëtsknaté en concordancia con los Kamëntsá): rito anual de limpieza espiritual, danza colectiva de reconciliación y ofrenda de alimentos a la Madre Tierra (Pachamama)."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Bilateral con fuerte cohesión comunitaria en torno al Cabildo de Indígenas.",
+        "autoridad_tradicional": "Gobernador del Cabildo con vara de mando, acompañado por el Taita Mayor de Medicina."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Ambiwaska (Yagé / Banisteriopsis caapi)",
+          "Ortiga curativa",
+          "Cushma (túnica de lana oscura con rayas)",
+          "Flautas y rondadores"
+        ],
+        "medicos_viajeros": "Los médicos tradicionales Ingas son célebres en toda Sudamérica como sabedores itinerantes que viajan por ciudades y pueblos diagnosticando enfermedades con plantas medicinales del piedemonte."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Agricultura de piso andino (maíz, fríjol, papa, hortalizas) en Sibundoy y chagra de piedemonte (chontaduro, yuca, plátano) en Yunguillo; ganadería tradicional en pequeña escala y medicina botánica.",
+        "textiles_y_artesanía": "Tejido en telar vertical de fajas chumbe con iconografía narrativa de la historia del pueblo y collares de chaquira multicolor."
+      },
+      "memoria_historica_y_resistencia": {
+        "liderazgo_territorial": "Defensa centenaria de las tierras comunales del Valle de Sibundoy amparadas por títulos coloniales de la Corona española; resistencia contra el despojo territorial de misiones capuchinas en el siglo XX.",
+        "reubicacion_aponte": "Gesta histórica del resguardo Inga de Aponte en Nariño, que logró la reubicación pacífica de su casco urbano tras una falla geológica catastrófica en 2015."
+      },
+      "retos_actuales": {
+        "amenazas": "Proyectos mineros de cobre y molibdeno a gran escala en el Macizo Andino-Amazónico de Mocoa y pérdida paulatina de la lengua en jóvenes urbanos.",
+        "iniciativas": "Creación de la Universidad Indígena Propia 'Musu Runakuna' y consolidación de las escuelas de pensamiento Inga."
+      }
+    },
+    {
+      "id": "kamentsa",
+      "nombre_comun": "Kamëntsá",
+      "autonimo": "Kamëntsá Biyá ('Hombres de aquí con lengua y pensamiento propio')",
+      "familia_linguistica": "Camsá (Lengua aislada del Valle de Sibundoy)",
+      "idioma_propio": {
+        "nombre": "Kamëntsá (Camsá)",
+        "vitalidad": "Vulnerable pero con activa defensa identitaria y enseñanza en el Centro Educativo Bilingüe de Sibundoy.",
+        "caracteristicas_notables": "Lengua aislada sin parentesco probado con ninguna otra familia del globo; tipología polisintética con incorporación nominal, afijos de deixis espacial tridimensional (altitudinal y direccional) y complejo sistema de modos de cortesía ritual."
+      },
+      "ubicacion_territorial": {
+        "departamentos": [
+          "Putumayo"
+        ],
+        "cuencas_hidrograficas": [
+          "Valle de Sibundoy (nacimiento del río Putumayo)"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Kamëntsá de Sibundoy",
+          "Resguardo de San Francisco"
+        ],
+        "patron_asentamiento": "Veredas agrícolas y barrios nucleados en el fértil valle intramontano de Sibundoy (2.200 msnm), rodeado de cumbres andinas y páramos."
+      },
+      "demografia": {
+        "poblacion_censo_dane": "Aproximadamente 7.600 personas en Colombia.",
+        "distribucion_etnica": "Concentrados principalmente en el municipio de Sibundoy y San Francisco (Putumayo)."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Originarios del corazón del Valle sagrado de Sibundoy. El Sol Padre y el Árbol del Trueno entregaron la sabiduría para tallar en madera las emociones del corazón humano y tejer en los chumbes la memoria cósmica para que nunca se olvidara el respeto a la Madre Tierra.",
+        "carnaval_del_perdon": "El Bëtsknaté (Día Grande / Carnaval del Perdón): Fiesta cumbre celebrada el lunes previo al Miércoles de Ceniza. Declarada manifestación del Patrimonio Cultural Inmaterial, es un ritual catártico donde la comunidad danza con música de armónicos, flautas de carrizo (kuitses) y cascabeles, vistiéndose con sayos (kusillos), plumas y coronas floridas, y pidiéndose perdón mutuo de rodillas y en abrazos para iniciar el año con el corazón limpio de resentimientos.",
+        "simbolismo_del_chumbe": "El Chumbe es una faja tejida a mano que envuelve el vientre; cada rombo y figura geométrica narra un capítulo de la historia oral, el embarazo, la siembra o los eclipses celestes."
+      },
+      "organizacion_social": {
+        "estructura_parentesco": "Bilateral; regida institucionalmente por el Cabildo Indígena Kamëntsá de Sibundoy.",
+        "autoridad_tradicional": "Taita Gobernador con su vara de mando adornada con cintas multicolores (wawa), secundado por los Taitas de Medicina y Mayores del Concejo."
+      },
+      "sistema_chamanico_y_medicina": {
+        "elementos_sagrados": [
+          "Yagé (Iajé)",
+          "Borrachero / Floripondio (Brugmansia spp.) en usos médicos ancestrales muy controlados",
+          "Ortiga silvestre de páramo"
+        ],
+        "figuras_emblematicas": "Taita Paulino Mojomboy y otros sabedores custodios de la farmacopea botánica andino-amazónica.",
+        "practica_medica": "Diagnóstico a través de la limpia con ortiga y sahumerio de copal para alejar tristezas profundas y armonizar la convivencia familiar."
+      },
+      "economia_tradicional": {
+        "subsistencia": "Chagra de altura (Jardín tradicional / 'Bëngbe wáman'): cultivo diversificado de maíz capio, fríjol bola, habas, ullucos, calabaza, hortalizas y plantas medicinales; ganadería de leche en minifundio.",
+        "arte_y_talla": "Reconocidos mundialmente por sus tallas magistrales en madera de cedro de máscaras gestuales que capturan el asombro, la alegría y el dolor, y el forrado en chaquira multicolor sobre madera con patrones visionarios."
+      },
+      "memoria_historica_y_resistencia": {
+        "resistencia_a_capuchinos": "Resistencia heroica a lo largo de la primera mitad del siglo XX frente al régimen de internados de la Prefectura Apostólica de los Capuchinos, que intentó prohibir su lengua, su vestimenta y sus prácticas médicas tradicionales.",
+        "recuperacion_cultural": "Auge y reconocimiento de sus artistas y sabedores como baluartes del patrimonio identitario de Colombia ante el mundo."
+      },
+      "retos_actuales": {
+        "amenazas": "Minifundio extremo y escasez de tierras cultivables en el valle por expansión de fincas ganaderas externas, y proyectos de explotación minera en las cabeceras de páramo.",
+        "iniciativas": "Bilingüismo Kamëntsá-Español en escuelas locales, cooperativas artesanales de tejedoras de chumbes y escuelas de música tradicional de kuitses."
+      }
+    }
+  ],
+  "familias_y_diversidad_linguistica": {
+    "descripcion_general": "La Amazonía colombiana es una de las áreas de mayor densidad y complejidad lingüística del planeta Tierra. En su territorio convergen troncos continentales milenarios, sistemas tonales sumamente desarrollados, fenómenos únicos en el mundo de exogamia lingüística institucionalizada y múltiples lenguas aisladas de alto valor filológico universal.",
+    "familias_documentadas": [
+      {
+        "familia": "Tukano Oriental",
+        "distribucion_geografica": "Vaupés, cuencas de los ríos Pirá-Paraná, Papurí, Tiquié, Cuduyarí, Querarí y bajo Apaporis.",
+        "lenguas_principales_en_colombia": [
+          "Barasana-Eduria",
+          "Makuna",
+          "Desano",
+          "Cubeo",
+          "Wanano (Kotiria)",
+          "Piratapuyo (Waikhana)",
+          "Tuyuca",
+          "Tatuyo",
+          "Siriano",
+          "Tanimuka-Retuarã",
+          "Yurutí",
+          "Carapana"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "sistema_tonal": "Lenguas de acento tonal y registros contrastivos fonémicos donde la variación de tono altera el significado léxico y las categorías gramaticales.",
+          "nasalizacion_suprasegmental": "Fenómeno fonológico excepcional: la nasalidad no es un rasgo restringido a una vocal o consonante individual, sino un rasgo morfológico de palabra o raíz completa que se propaga por armonía nasal a todos los segmentos continuos.",
+          "tipologia_y_morfologia": "Lenguas aglutinantes y exclusivamente sufijantes. Poseen una hipertrofia de clasificadores nominales (sufijos que categorizan los nombres por forma, textura, concavidad y función) y orden básico canónico SOV.",
+          "sistema_de_evidencialidad_gramatical": "Uno de los sistemas evidenciales más elaborados del planeta. El verbo flexiona obligatoriamente mediante sufijos para indicar la fuente precisa del conocimiento que afirma el hablante: 1) Evidencia visual directa, 2) Evidencia no visual (oída, olida o sentida táctilmente), 3) Inferencia por indicios físicos visibles, 4) Inferencia por deducción o conocimiento previo general, y 5) Información asumida o transmitida por tradición oral (reportativo)."
+        },
+        "fenomeno_sociolinguistico_exogamia_linguistica": {
+          "definicion_cultural": "Norma matrimonial y social obligatoria en el área del Vaupés y Pirá-Paraná, según la cual una persona no puede contraer matrimonio con alguien que hable su misma lengua paterna, considerándolo un pariente consanguíneo incestuoso.",
+          "multilinguismo_natural": "Cada individuo crece hablando fluidamente la lengua de su padre (que marca su identidad política y clánica), la lengua de su madre, la lengua del cónyuge y a menudo una o dos lenguas francas adicionales (Tukano propio o castellano). No hay jerarquía de prestigio lingüístico: todas las lenguas coexisten en condiciones de paridad dentro de la misma maloca."
+        }
+      },
+      {
+        "familia": "Witoto (Witotoano)",
+        "distribucion_geografica": "Amazonas (ríos Igaraparaná, Caraparaná, Caquetá y Putumayo) y Caquetá.",
+        "lenguas_principales_en_colombia": [
+          "Murui-Muinane (dialectos Murui, Muinane-Witoto, Minica y Nipode)",
+          "Ocaina",
+          "Nonuya"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "sistema_fonico": "Presencia de oclusiva glotal fonémica /ʔ/, consonantes nasales y vocales no redondeadas centrales y altas /ɨ/ o /ɯ/.",
+          "tipologia_morfologica": "Lenguas polisintéticas y aglutinantes con orden preferente SOV o libre determinado por el foco deíctico. Los clasificadores nominales están íntimamente vinculados a partes anatómicas de plantas y cuerpos animales.",
+          "lenguaje_ritual_rafue": "Posee un registro oral arcaico y solemne denominado 'Rafue' (Palabra de Conocimiento y Origen), exclusivo del mambeadero y los cantos ceremoniales de maloca, caracterizado por paralelismos poéticos binarios y metáforas botánicas inaccesibles al habla cotidiana profana."
+        }
+      },
+      {
+        "familia": "Bora",
+        "distribucion_geografica": "Amazonas (cuencas del Igaraparaná, Cahuinarí y Caquetá bajo) y frontera con Perú.",
+        "lenguas_principales_en_colombia": [
+          "Bora",
+          "Miraña",
+          "Muinane (Bora-Muinane)"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "sistema_tonal": "Sistema fonémico de tonos de contorno y registros alto y bajo de estricta función léxica y flexiva.",
+          "clasificadores_nominales_hipertrofiados": "Reconocido en la lingüística tipológica mundial por poseer uno de los sistemas de clasificadores más extensos de la Tierra: más de 350 clasificadores sufijales que categorizan exhaustivamente cualquier objeto del universo según su geometría sutil (láminas finas, cilindros macizos, esferas carnosas, cavidades alargadas, etc.).",
+          "comunicacion_acustica_manguare": "El lenguaje de los tambores manguaré reproduce acústicamente los tonos y patrones rítmicos exactos de las oraciones en lengua Bora, constituyendo una modalidad de habla instrumental a distancia que trasciende la visión."
+        }
+      },
+      {
+        "familia": "Arawak (Maipure) Amazónico",
+        "distribucion_geografica": "Amazonas (río Mirití-Paraná y bajo Caquetá) y cuencas del Guainía, Atabapo y Orinoco.",
+        "lenguas_principales_en_colombia": [
+          "Yukuna",
+          "Curripaco (Baniwa)",
+          "Piapoco",
+          "Matapí (por adopción lingüística histórica)",
+          "Baré (remanente histórico)"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "fonetica": "Sistemas consonánticos con distinción de aspiradas, africadas y oclusivas glotales; ricas combinaciones silábicas abiertas (CV).",
+          "tipologia": "Lenguas de orden predominantemente VSO o SVO según dinamismo narrativo; morfología mediante prefijos personales de sujeto agentivo y posesión inalienable (partes del cuerpo, parientes de sangre) y sufijos de transitividad y derivación nominal."
+        }
+      },
+      {
+        "familia": "Tikuna (Lengua Aislada / Familia Tikuna-Yurí)",
+        "distribucion_geografica": "Trapecio Amazónico colombiano, orillas del río Amazonas y zona trifronteriza con Brasil y Perú.",
+        "lenguas_principales_en_colombia": [
+          "Tikuna (Magütacü)"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "estatus_filogenetico": "Considerada una lengua aislada independiente. Estudios filológicos recientes del lingüista Fernando Santos-Granero vinculan al Tikuna con la lengua extinta Yurí (familia Tikuna-Yurí).",
+          "sistema_tonal_pentatonal": "Extraordinario sistema de 5 niveles tonales fonológicos de registro absoluto (nivel 1 al nivel 5), constituyendo uno de los esquemas tonales más ricos y raros de Sudamérica.",
+          "morfologia": "Lengua de tendencia aislante a flexiva moderada, con morfemas deícticos de distancia, ausencia de género morfológico y un orden de constituyentes fuertemente guiado por el estatuto informativo del discurso."
+        }
+      },
+      {
+        "familia": "Kofán (A'ingae - Lengua Aislada)",
+        "distribucion_geografica": "Piedemonte andino-amazónico del Putumayo y Nariño (ríos San Miguel, Guamuez y Orito).",
+        "lenguas_principales_en_colombia": [
+          "A'ingae"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "estatus_filogenetico": "Lengua aislada del piedemonte andino-amazónico, sin filiación comprobada con las familias andinas ni con las de tierras bajas.",
+          "fonetica_consonantica": "Contraste triple singular en oclusivas: sordas simples /p, t, k/, aspiradas /pʰ, tʰ, kʰ/ y sonoras oclusivas/glotalizadas /b, d, ɡ/; vocales nasales fonémicas /ã, õ, ẽ, ĩ/.",
+          "morfologia_ergativa": "Tipología aglutinante con rasgos de ergatividad escindida, donde el sujeto de verbos transitivos recibe una marca morfológica especial diferente al sujeto de intransitivos y al objeto directo."
+        }
+      },
+      {
+        "familia": "Kamëntsá (Camsá - Lengua Aislada)",
+        "distribucion_geografica": "Valle intramontano de Sibundoy (Putumayo) a 2.200 msnm.",
+        "lenguas_principales_en_colombia": [
+          "Kamëntsá (Camsá Biyá)"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "estatus_filogenetico": "Lengua estrictamente aislada, superviviente de las culturas originarias del Macizo Andino-Amazónico.",
+          "fonetica": "Inventario rico en africadas retroflejas /ʈʂ/, palatales /tʃ/ y consonantes complejas con labialización y palatalización secundaria.",
+          "deixis_espacial_tridimensional": "Complejo sistema de sufijos verbales que marcan obligatoriamente la dirección espacial tridimensional del movimiento: hacia arriba (montaña arriba), hacia abajo (hacia el valle o río), cruzando la cordillera, hacia el oriente o hacia el poniente.",
+          "incorporacion_nominal": "Capacidad polisintética de incorporar sustantivos dentro del complejo verbal y sofisticadas fórmulas de deferencia y cortesía ceremonial."
+        }
+      },
+      {
+        "familia": "Makú-Puinave / Nadahup / Kakua-Nukak",
+        "distribucion_geografica": "Interfluvios de la selva virgen del Guaviare, Guainía y Vaupés.",
+        "lenguas_principales_en_colombia": [
+          "Nukak",
+          "Kakua",
+          "Hupda",
+          "Yuhup",
+          "Puinave (considerada aislada o tronco hermano macro-puinaveano)"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "ecologia_linguistica": "Lenguas de pueblos históricamente cazadores-recolectores nómadas interfluviales, adaptadas con asombrosa precisión a la descripción sonora del bosque primario.",
+          "complejidad_vocalica": "Sistemas con gran número de vocales (hasta 12 a 15 fonemas vocálicos incluyendo vocales cerradas centrales, orales, nasales y laringalizadas con golpe de glotis).",
+          "tonalidad_de_contorno": "Contraste tonal dinámico (tonos ascendentes, descendentes y planos) que interactúa con la laringalización de la raíz."
+        }
+      },
+      {
+        "familia": "Tukano Occidental",
+        "distribucion_geografica": "Ríos Putumayo medio y Piñuña Blanco (frontera Colombia-Ecuador-Perú).",
+        "lenguas_principales_en_colombia": [
+          "Siona (Ganteyabain)",
+          "Secoya / Koreguaje (río Orteguaza en Caquetá)"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "rasgos_diferenciales": "Ramas occidentales del tronco Tukano separadas hace milenios de las orientales del Vaupés. No practican la exogamia lingüística del Vaupés; conservan el orden SOV, vocales nasales y morfología aspectual de alta precisión probatoria."
+        }
+      },
+      {
+        "familia": "Quechua Amazónico (Kichwa Inga)",
+        "distribucion_geografica": "Valle de Sibundoy, Mocoa, Puerto Asís (Putumayo) y Aponte (Nariño).",
+        "lenguas_principales_en_colombia": [
+          "Inga Kichwa"
+        ],
+        "caracterizacion_linguistica_y_fonetica": {
+          "rama_dialectal": "Quechua II-B (Chinchaysuyu norteño). Conserva la raíz aglutinante sufijante andina pero incorpora numerosos préstamos léxicos, botánicos y chamánicos de las lenguas de la selva baja amazónica, careciendo de las consonantes oclusivas aspiradas y eyectivas del quechua cusqueño o boliviano."
+        }
+      }
+    ]
+  },
+  "arquitectura_sagrada_la_maloca": {
+    "titulo": "La Maloca como Microcosmos Viviente y Templo Cósmico",
+    "descripcion_filosofica": "La Maloca amazónica no es una mera edificación residencial o refugio frente a la intemperie: es una réplica a escala física del universo, el cuerpo vivo de la divinidad creadora, el vientre gestador de la Madre Tierra y el parlamento político-religioso donde se mantiene en equilibrio el orden biosférico.",
+    "componentes_estructurales_y_simbolismo": {
+      "madero_central_axis_mundi": {
+        "nombre_tradicional": "Kumú / Pilar Maestro / Horcón Cósmico",
+        "materiales": "Troncos colosales de maderas imputrescibles del dosel primario (guayacán, canelo, palo de sangre o comino real), seleccionados mediante dietas y rezos chamánicos.",
+        "significado_cosmologico": "El madero central (o los cuatro o seis pilares maestros centrales según la tradición étnica) constituye el Axis Mundi o Eje del Mundo. Atraviesa y conecta los tres niveles fundamentales del cosmos amazónico: el inframundo subterráneo (raíces míticas de la noche y el agua primordial), el plano terrenal intermedio donde habitan los humanos y animales, y el mundo superior celeste donde moran los héroes creadores y la luz perpetua. Representa el árbol primordial que sostiene la cúpula celeste para que no se desplome sobre los seres vivos."
+      },
+      "cubierta_boveda_celeste": {
+        "nombre_tradicional": "La Piel de la Anaconda / El Manto Celeste",
+        "materiales": "Estructura de tijeras y varas curvas de chonta atadas con bejucos elásticos de yaré, techada con miles de hojas de palma de caraná (Mauritiella aculeata), palma real (Attalea insignis) o palma de chontaduro.",
+        "ingenieria_bioclimatica": "Techo de pendiente pronunciada (hasta 60 grados de inclinación) de forma cónica, elipsoidal o a dos aguas que disipa sin filtraciones precipitaciones torrenciales de más de 4.000 mm anuales. Su cúspide genera un tiro térmico natural inducido: el calor y el humo del mambeadero ascienden y se escapan por las aberturas superiores sin permitir la entrada del agua de lluvia, conservando un microclima fresco, seco y libre de mosquitos en el interior.",
+        "simbolismo_astronomico": "Las vigas y varales de la cubierta dibujan una red geométrica concéntrica que replica la carta estelar de las constelaciones amazónicas (la constelación del Jaguar, de la Anaconda y las Pléyades). Mirar hacia el techo en la penumbra de la maloca es contemplar la bóveda celeste tejida por los dioses originarios."
+      },
+      "distribucion_espacial_generos_y_clanes": {
+        "eje_solsticial_y_fluvial": "La maloca se orienta rigurosamente siguiendo el curso del sol (Este-Oeste) o la dirección de la corriente del río principal.",
+        "puerta_frontal_oriental_masculina": "Mira hacia el naciente y hacia el río. Es la entrada ceremonial, reservada a los visitantes de otras malocas, a los hombres iniciados, a los guerreros y a las delegaciones de danzantes durante los festivales de Dabucurí y Yurupary. Es el espacio público y sagrado de la palabra.",
+        "puerta_trasera_occidental_femenina": "Mira hacia el poniente, hacia la selva y hacia la chagra. Es el acceso exclusivo de las mujeres, las madres y los niños pequeños. Da acceso directo a la zona doméstica de procesamiento culinario, donde se ubican los ralladores, el sebucán (tipití) y los budares de barro cocido para asar el casabe.",
+        "perimetro_y_compartimentos_familiares": "A lo largo de los laterales curvos se distribuyen los compartimentos familiares de los diferentes linajes del clan. Cada unidad conyugal cuelga sus hamacas de chambira alrededor de un fogón familiar secundario, manteniendo la intimidad hogareña dentro de la gran casa comunal."
+      }
+    },
+    "el_mambeadero_parlamento_sagrado_nocturno": {
+      "concepto": "El Mambeadero es el corazón sagrado de la maloca, ubicado en el centro geométrico entre los horcones principales alrededor del fuego sagrado masculino. Opera simultáneamente como tribunal de justicia, parlamento deliberativo, universidad tradicional y templo filosófico.",
+      "filosofia_palabra_dulce_ikoo": {
+        "definicion": "La 'Palabra Dulce' (Ikoo en Huitoto / Rafue) es el principio ético fundamental que rige el pensamiento y la oratoria amazónica. Se contrapone tajantemente a la 'palabra caliente' (la palabra de la ira, del rencor, de la vanidad o de la confrontación agresiva).",
+        "proceso_deliberativo": "Durante la noche amazónica (desde las 8:00 p.m. hasta la madrugada), los hombres se sientan a deliberar sobre los problemas de la comunidad, las disputas familiares, la asignación de áreas de chagra y los rituales ecológicos. Toda palabra pronunciada debe pasar por el filtro purificador del mambe y el ambil, madurándose hasta convertirse en consejo pacífico, dulce y vinculante que genera consenso absoluto."
+      },
+      "los_bancos_de_pensamiento": {
+        "descripcion": "Asientos ceremoniales tallados en una sola pieza de madera dura de cedro o palo de sangre. A menudo tienen formas zoomorfas estilizadas (el jaguar, la danta o la anaconda).",
+        "funcion": "Sentarse en el banco de pensamiento exige una postura física erguida pero relajada. Simboliza que el sabedor no apoya su peso en el aire o en el capricho egoísta, sino en la solidez milenaria de la tierra y la tradición de sus ancestros."
+      },
+      "los_dos_elementos_sacramentales_inseparables": {
+        "mambe_yupadhe": {
+          "composicion": "Hojas de coca sagrada (Erythroxylum coca var. ipadu) tostadas cuidadosamente sobre un tiesto de barro y pulverizadas en un mortero cilíndrico de madera (pilón) junto con cenizas finas tamizadas de hojas secas de yarumo (Cecropia) o uva de monte.",
+          "bioquimica_tradicional": "La ceniza vegetal aporta el componente alcalino necesario para liberar los alcaloides de la coca en la mucosa bucal sin provocar alteración del pulso, sino induciendo un estado de extrema vigilia, lucidez analítica, quietud mental y elocuencia oratoria.",
+          "significado_espiritual": "El Mambe es el pensamiento puro del universo, la claridad masculina, la frescura de la mente y la capacidad de discernir con sabiduría."
+        },
+        "ambil_yera": {
+          "composicion": "Pasta densa y oscura de tabaco (Nicotiana rustica) obtenida tras días de cocción lenta y paciente de hojas maduras de tabaco con agua pura, hasta lograr una jalea concentrada a la que se le añaden sales vegetales alcalinas extraídas de la lixiviación de cenizas de palmeras silvestres o helechos de monte.",
+          "modo_consumo": "Se unta una pequeña porción con el dedo o una espátula de hueso en las encías o en la lengua, deglutiéndose lentamente junto a la saliva impregnada de mambe.",
+          "significado_espiritual": "El Ambil es la fuerza vital, la protección contra las energías destructivas, el coraje moral y la dirección inquebrantable de la voluntad. La unión del mambe (coca/pensamiento) y el ambil (tabaco/fuerza) sella la armonía perfecta de la vida."
+        }
+      }
+    }
+  },
+  "formas_de_cultivo_y_chagra_agroforestal": {
+    "titulo": "La Chagra Amazónica Itinerante y la Sabiduría del Suelo",
+    "descripcion_general": "La chagra amazónica es un sofisticado sistema agroforestal policultural de rotación y sucesión ecológica milenaria desarrollado por los pueblos originarios para cultivar de manera perpetua en los suelos ferralíticos (oxisoles y ultisoles) de la Amazonía, caracterizados por su alta acidez, toxicidad de aluminio y extrema pobreza de nutrientes biodisponibles.",
+    "el_ciclo_de_roza_tumba_y_quema_conservacionista": {
+      "seleccion_del_sitio": "El sabedor y la mujer chagualera leen los bioindicadores del bosque: presencia de ciertas micorrizas, lombrices de tierra firme y especies pioneras de dosel que señalan que el suelo ha completado su regeneración.",
+      "socola_y_tumba": "Corte manual selectivo del sotobosque y derribo de árboles medianos, dejando en pie los grandes árboles frutales y maderables protectores (moriche, castaño, cumarú).",
+      "quema_controlada_de_baja_intensidad": "Se realiza en los días más secos del verano amazónico. Es una quema rápida y superficial que no calcina los horizontes orgánicos profundos; las cenizas ricas en fósforo, potasio, calcio y magnesio actúan como enmienda calcárea inmediata que neutraliza la acidez del suelo y provee nutrientes solubles para el primer ciclo de cultivo."
+    },
+    "policultivo_agroforestal_estratificado": {
+      "diversidad_de_especies": "Una chagra tradicional amazónica alberga simultáneamente entre 30 y 50 especies vegetales y hasta 40 variedades distintas de yuca, emulando la estructura física y la estratificación vertical de la selva virgen en múltiples doseles.",
+      "estratos_verticales": [
+        {
+          "estrato": "Canopia Superior y Frutales Perennes (10 a 25 metros)",
+          "especies_principales": [
+            {
+              "nombre_comun": "Chontaduro",
+              "nombre_cientifico": "Bactris gasipaes",
+              "uso": "Fruto de alto valor calórico y proteico; madera de chonta para arcos y cerbatanas."
+            },
+            {
+              "nombre_comun": "Canangucho / Moriche",
+              "nombre_cientifico": "Mauritia flexuosa",
+              "uso": "Frutos ricos en vitamina A, fibra para cuerdas de cumare y techos de palma."
+            },
+            {
+              "nombre_comun": "Copoazú",
+              "nombre_cientifico": "Theobroma grandiflorum",
+              "uso": "Pulpa aromática para jugos y manteca vegetal nutritiva."
+            },
+            {
+              "nombre_comun": "Arazá",
+              "nombre_cientifico": "Eugenia stipitata",
+              "uso": "Fruta silvestre de alto contenido de vitamina C."
+            },
+            {
+              "nombre_comun": "Uva Caimarona",
+              "nombre_cientifico": "Pourouma cecropiifolia",
+              "uso": "Fruto dulce de racimo abundante."
+            },
+            {
+              "nombre_comun": "Castaño Amazónico",
+              "nombre_cientifico": "Bertholletia excelsa",
+              "uso": "Nuez proteica y aceite fino de almendra."
+            },
+            {
+              "nombre_comun": "Marañón silvestre",
+              "nombre_cientifico": "Anacardium occidentale",
+              "uso": "Pseudofruto y nuez tostada."
+            }
+          ]
+        },
+        {
+          "estrato": "Estrato Medio y Plantas Sagradas (2 a 5 metros)",
+          "especies_principales": [
+            {
+              "nombre_comun": "Plátano y Banano (múltiples variedades)",
+              "nombre_cientifico": "Musa spp.",
+              "uso": "Base carbohidrato cocido y asado."
+            },
+            {
+              "nombre_comun": "Coca Amazónica",
+              "nombre_cientifico": "Erythroxylum coca var. ipadu",
+              "uso": "Mambe sagrado del mambeadero y medicina analgésica."
+            },
+            {
+              "nombre_comun": "Tabaco Silvestre",
+              "nombre_cientifico": "Nicotiana rustica",
+              "uso": "Ambil sagrado, purificación espiritual e insecticida botánico."
+            },
+            {
+              "nombre_comun": "Barbasco",
+              "nombre_cientifico": "Lonchocarpus utilis",
+              "uso": "Planta ictiotóxica rica en rotenona para pesca comunal controlada."
+            },
+            {
+              "nombre_comun": "Achiote",
+              "nombre_cientifico": "Bixa orellana",
+              "uso": "Pintura corporal ceremonial, protector solar y condimento."
+            },
+            {
+              "nombre_comun": "Huito / Jagua",
+              "nombre_cientifico": "Genipa americana",
+              "uso": "Pintura corporal indeleble azul-negra para ritos de paso."
+            }
+          ]
+        },
+        {
+          "estrato": "Estrato Bajo y Tubérculos Radiculares (0 a 1.5 metros)",
+          "especies_principales": [
+            {
+              "nombre_comun": "Yuca Brava (hasta 40 variedades identificadas)",
+              "nombre_cientifico": "Manihot esculenta",
+              "uso": "Casabe, fariña, almidón de cahuana y ají negro (tucupí)."
+            },
+            {
+              "nombre_comun": "Yuca Dulce",
+              "nombre_cientifico": "Manihot esculenta var. dulcis",
+              "uso": "Consumo cocido directo en sopas y caldos."
+            },
+            {
+              "nombre_comun": "Batata o Camote",
+              "nombre_cientifico": "Ipomoea batatas",
+              "uso": "Tubérculo dulce rico en carotenos."
+            },
+            {
+              "nombre_comun": "Ñame Amazónico",
+              "nombre_cientifico": "Dioscorea trifida",
+              "uso": "Tubérculo morado o blanco de alto valor nutritivo."
+            },
+            {
+              "nombre_comun": "Mafafa / Yautía",
+              "nombre_cientifico": "Xanthosoma sagittifolium",
+              "uso": "Hojas comestibles y cormos energéticos."
+            },
+            {
+              "nombre_comun": "Ají Amazónico (múltiples ecotipos)",
+              "nombre_cientifico": "Capsicum chinense / Capsicum baccatum",
+              "uso": "Condimento umami antiséptico, conservación de carnes e ingrediente del tucupí."
+            },
+            {
+              "nombre_comun": "Piña Amazónica",
+              "nombre_cientifico": "Ananas comosus",
+              "uso": "Fruto dulce y fermentos ceremoniales de cahuana."
+            }
+          ]
+        }
+      ]
+    },
+    "domesticacion_de_la_yuca_brava_y_destoxificacion_cianogenica": {
+      "el_veneno_de_la_yuca": "La yuca brava (Manihot esculenta) contiene concentraciones potencialmente letales de glucósidos cianogénicos (principalmente linamarina y lotaustralina). Cuando el tejido vegetal se tritura, enzimas endógenas (linamarasa) liberan ácido cianhídrico (cianuro de hidrógeno, HCN), letal para el consumo humano si no es procesado mediante la tecnología tradicional.",
+      "tecnologia_milenaria_de_procesamiento": [
+        {
+          "paso": "1. Cosecha y Rallado",
+          "descripcion": "Las raíces tuberosas se desentierran, se lavan y se pelan. Luego se rallan sobre tablas de madera incrustadas con pequeñas lascas afiladas de cuarzo o piedra dura, destruyendo las células vegetales y liberando el cianuro disuelto en la masa húmeda."
+        },
+        {
+          "paso": "2. Exprimido con el Tipití (Sebucán)",
+          "descripcion": "La masa rallada se introduce en el Tipití: una manga o prensa tubular cilíndrica elástica tejida con fibras flexibles de tirite (Ischnosiphon arouma) o bejuco jacitara. El tipití se cuelga de un horcón superior y en su lazo inferior se inserta un madero donde una persona se sienta para ejercer una potente palanca mecánica. Al estirarse longitudinalmente, el diámetro del tipití se comprime brutalmente, expulsando a presión todo el jugo amargo cargado de cianuro soluble, denominado 'Yare'."
+        },
+        {
+          "paso": "3. Cernido en el Balay y Asado en el Budare",
+          "descripcion": "La masa desintoxicada (harina húmeda prensada) se desmenuza y se cierne a través del Balay (cesta plana tejida con patrones geométricos). La harina cernida se esparce sobre el Budare o tiesto plano de barro cocido caliente, donde el calor residual evapora las trazas finales de cianuro volátil y gelatiniza el almidón, cociendo grandes tortas secas circulares: el Casabe (alimento no perecedero que se conserva por meses en la humedad selvática) o tostándose en gránulos crujientes: la Fariña."
+        },
+        {
+          "paso": "4. Transformación del Veneno en Delicia: El Ají Negro (Tucupí / Catara)",
+          "descripcion": "El jugo amargo venenoso (Yare) nunca se desperdicia. Se somete a una ebullición prolongada a fuego lento durante horas, proceso térmico que descompone y volatiliza completamente el ácido cianhídrico. Al jugo reducido y espeso se le añade pasta de ají amazónico molido, hormigas culonas o manivaras y sal vegetal, convirtiéndose en el Ají Negro o Tucupí: un condimento umami oscuro, picante y conservante, catalogado entre las mayores creaciones gastronómicas del mundo indígena."
+        }
+      ]
+    },
+    "antrosoles_y_terra_preta_do_indio": {
+      "concepto": "Horizontes de suelo negro y fértil antropogénico descubiertos en diversos puntos de la Amazonía colombiana (como Araracuara, La Chorrera y riberas del Caquetá y Amazonas).",
+      "origen_indigena": "Formados a lo largo de siglos por la incorporación deliberada y acumulativa de carbón vegetal poroso de baja temperatura (biochar), fragmentos de cerámica rota, espinas de pescado, restos óseos, conchas de moluscos y excretas orgánicas alrededor de las malocas ancestrales.",
+      "propiedades_ecologicas": "El biochar retiene nutrientes e iones minerales (fósforo, nitrógeno, calcio) impidiendo que sean lavados por las lluvias torrenciales, y actúa como un refugio permanente de micorrizas y microorganismos benéficos del suelo que conservan su fertilidad durante cientos de años sin necesidad de fertilizantes químicos modernos."
+    },
+    "ciclos_de_rotacion_y_sucesion_ecologica": {
+      "fase_1_cultivo_intensivo": "Años 1 a 3: Producción masiva de yuca brava, maíz, plátano, ají y tubérculos menores.",
+      "fase_2_transicion_rastrojo_joven_japura": "Años 3 a 7: Disminuye la producción de yuca y emergen con fuerza los frutales perennes sembrados (chontaduro, arazá, copoazú, uva de monte). La parcela se convierte en un imán de fauna silvestre (dantas, pecaríes, tinajos, roedores) que acuden a alimentarse, permitiendo la cacería de cercanía sin agotar la fauna de la selva profunda.",
+      "fase_3_barbecho_forestal_purma_madura": "Años 8 a 20+: El bosque primario reconquista gradualmente el espacio a través de la regeneración natural asistida de especies pioneras y árboles de dosel. Las raíces profundas extraen minerales del subsuelo, restaurando el banco de nutrientes y la biomasa original. La chagra jamás destruye la selva: es un claro dinámico que enriquece la biodiversidad biológica y genética del bosque."
+    },
+    "el_rol_ecofeminista_de_la_mujer_amazónica": {
+      "duenas_de_la_semilla": "La mujer indígena amazónica es la Dueña de la Chagra y guardiana suprema de la agrobiodiversidad. Ellas seleccionan los esquejes de yuca, preservan las variedades genéticas más resistentes a plagas e inundaciones y transmiten este saber botánico de madre a hija.",
+      "parentesco_espiritual": "La relación de la mujer con las plantas cultivadas es de afecto y parentesco: cantan melodías secretas a las raíces al momento de sembrarlas para endulzar su temperamento y evitar que acumulen veneno amargo en exceso."
+    }
+  },
+  "tradiciones_fiestas_y_ritos_de_paso": [
+    {
+      "id": "fiesta_de_la_pelazon_tikuna",
+      "nombre": "La Fiesta de la Pelazón Tikuna (Woretücü)",
+      "pueblo": "Tikuna (Magüta)",
+      "tipo_rito": "Rito de paso e iniciación femenina a la adultez.",
+      "significado_cultural": "Marca la transición ontológica de la niña que experimenta su menarquia (primera menstruación) hacia su nueva condición de mujer adulta, miembro activo de su clan y persona capacitada para contraer matrimonio, cultivar la chagra y concebir nueva vida.",
+      "fases_del_ritual": [
+        {
+          "fase": "1. El Encierro en el Wojo",
+          "descripcion": "Inmediatamente después de la primera menstruación, la joven (curicaca) es apartada del contacto público y recluida en un compartimento cerrado de palma de caraná (el wojo), construido en un rincón de la casa o maloca. Durante semanas o meses permanece en aislamiento, protegida de los malos espíritus de la selva (Ngutapa) que se sienten atraídos por la sangre menstrual. Durante este tiempo es alimentada con dietas especiales y las ancianas sabedoras le enseñan la memoria mítica de Yo'i e Ipi, las técnicas del hilado de chambira, la alfarería y los cantos de linaje."
+        },
+        {
+          "fase": "2. Preparación de Indumentaria en Yanchama y Payawarú",
+          "descripcion": "La comunidad entera se moviliza: los hombres elaboran abundante chicha de yuca fermentada (payawarú) en grandes canoas de madera que servirán de tinajas. Se baten cortezas de árboles de yanchama (Poulsenia armata o Ficus) con mazos de madera acanalada hasta obtener una tela vegetal flexible y suave, sobre la cual los artesanos pintan con tintes indelebles de huito (Genipa americana) y achiote mascaradas y túnicas ceremoniales con figuras zoomorfas de los espíritus de la selva."
+        },
+        {
+          "fase": "3. Los Tres Días de Danza y Música de Bastones",
+          "descripcion": "La fiesta comunal dura tres días y noches sin interrupción. Hombres enmascarados personifican a los espíritus del monte y del agua, bailando al ritmo de bastones de madera golpeados contra el suelo y tambores rústicos, tomando payawarú y bromeando con los invitados."
+        },
+        {
+          "fase": "4. El Corte Ceremonial del Cabello (La Pelazón)",
+          "descripcion": "En el clímax del rito, al amanecer del último día, la joven es sacada del wojo. Las tías paternas y ancianas sabedoras toman mechón por mechón de su larga cabellera y lo arrancan ceremonialmente o lo cortan al ras con instrumentos tradicionales. Cada mechón arrancado simboliza el desprendimiento de su infancia, sus debilidades y las impurezas del pasado. Posteriormente, su cuerpo desnudo es lavado con aguas aromáticas y pintado totalmente de negro con jugo de huito para proteger su piel vulnerable. Al salir al sol vestida con plumas y fajas de cumare, la nación Tikuna la saluda con júbilo como una mujer nueva y respetada."
+        }
+      ]
+    },
+    {
+      "id": "ritual_del_dabucuri",
+      "nombre": "El Ritual del Dabucurí y las Danzas de Yurupary",
+      "pueblo": "Panamazónico del Noroeste (Tukano Oriental, Arawak, Maku: Yukuna, Matapí, Barasana, Makuna, Desano, Tanimuka)",
+      "tipo_rito": "Ceremonia panamazónica de reciprocidad, alianza interétnica e intercambio de abundancia.",
+      "significado_cultural": "El Dabucurí es el mecanismo ceremonial que previene la guerra y la mezquindad entre los diferentes clanes y pueblos de la selva. Consiste en una visita formal y festiva donde un clan anfitrión o visitante ofrece toneladas de excedentes alimentarios acumulados (pescado ahumado, carne de monte ahumada, o cosechas masivas de chontaduro, manaca o umarí) a sus aliados matrimoniales.",
+      "elementos_centrales": {
+        "mascaras_de_corteza_de_seje": "Grandes máscaras y capuchones cónicos elaborados con corteza batida de palma de seje (Oenocarpus bataua) y fibras de burití, que cubren enteramente el cuerpo del danzante. Los portadores de las máscaras encarnan a los ancestros primordiales y a los 'Dueños de la Caza y la Pesca', emitiendo bramidos guturales y zapateando sobre maderos sonoros que hacen retumbar el piso de la maloca.",
+        "flautas_sagradas_de_yurupary": "Instrumentos ceremoniales secretos confeccionados en madera de palma trenzada con bejucos y sellados con cera de abeja silvestre. Representan la voz viva de Yurupary (el héroe cósmico de la ley). Su sonido grave y telúrico emula el rugido del jaguar y el trueno; tradicionalmente su visión está estrictamente vedada a los no iniciados, considerándose portadoras de una potencia energética capaz de cegar o enfermar a quien profane su misterio.",
+        "dinamica_de_intercambio": "El grupo agasajado recibe la abundancia y se compromete formalmente a devolver la ofrenda en la siguiente estación climática con un producto complementario (por ejemplo, trocar carne de monte por pescado de raudal), sellando acuerdos matrimoniales exogámicos y alianzas de paz duradera."
+      }
+    },
+    {
+      "id": "carnaval_del_perdon_betsknate",
+      "nombre": "El Carnaval del Perdón del Valle de Sibundoy (Bëtsknaté)",
+      "pueblo": "Kamëntsá e Inga",
+      "tipo_rito": "Rito socioreligioso anual de renovación cósmica, reconciliación comunitaria y catarsis colectiva (Reconocido como Patrimonio Cultural Inmaterial por el Ministerio de Cultura y en camino a UNESCO).",
+      "fecha_y_lugar": "Se celebra el lunes anterior al Miércoles de Ceniza (Día Grande / Clestrinÿe) en el Valle de Sibundoy (Putumayo).",
+      "filosofia_del_perdon": "Conmemora el fin del ciclo agrícola y espiritual del año viejo y conmemora la resistencia histórica indígena frente al sometimiento colonial. Su núcleo ético es la catarsis y la reconciliación: parientes, vecinos y autoridades tradicionales que hayan tenido discordias o rencores a lo largo del año se piden perdón mutuamente de rodillas o fundidos en un abrazo ceremonial ('Perdóneme si en palabras o hechos le ofendí'). La comunidad entera purifica su corazón para que la tierra florezca en paz.",
+      "musica_e_instrumentos": {
+        "armonicos_y_flautas_de_carrizo": "Las flautas tradicionales de carrizo (Kuitses) de dos y tres orificios, junto a los armónicos de viento y rondadores, producen melodías hipnóticas y polifónicas de escala pentatónica andino-selvática.",
+        "percusion_y_caparazones": "Bombos y tambores de cuero de danta o cabra que marcan un pulso marcial solemne, acompañados por caparazones secos de tortuga frotados rítmicamente con cera de abeja virgen y sartas de cascabeles metálicos atados a los tobillos de los danzantes."
+      },
+      "indumentaria_y_simbologia": {
+        "kusillo_y_sayos": "Túnicas o ruanas de lana virgen de oveja tejidas en telares tradicionales con geometrías de la memoria histórica.",
+        "coronas_de_plumas_tupus": "Coronas circulares tejidas adornadas con suntuosos plumajes de guacamaya, loro y tucán que representan la irradiación de la luz solar.",
+        "collares_de_semillas": "Sartas de cientos de collares que caen sobre el pecho, elaborados con semillas silvestres de la selva (ojo de buey, lágrimas de San Pedro, chochos) y chaquiras de colores vivos que emiten sonido al bailar y actúan como escudos protectores.",
+        "la_vara_de_mando_florida": "El Taita Gobernador y los Mayores portan la 'Wawa' o bastón de mando cubierto de flores silvestres y cintas de colores, símbolo de que la autoridad indígena manda sirviendo a la comunidad y sembrando la armonía."
+      }
+    },
+    {
+      "id": "cesteria_y_textiles_sagrados",
+      "nombre": "Cestería de Cumare, Tirite y Hamacas de Fibra de Chambira",
+      "pueblo": "Común a todos los pueblos amazónicos (especial maestría en Tikuna, Witoto, Tukano y Nukak)",
+      "tipo_artefactos": "Tecnología tradicional vegetal y arte textil biocultural.",
+      "fibras_y_procesos": [
+        {
+          "fibra": "Chambira y Cumare (Astrocaryum chambira)",
+          "extraccion_y_tejido": "Las mujeres cosechan el cogollo tierno de la palma chambira. Desprenden con la uña la fina epidermis transparente de las hojas y la cocinan brevemente en agua de monte, secándola al sol hasta que adquiere un tono blanco plateado. Luego, mediante un hábil movimiento continuo sobre el muslo desnudo, frotan las fibras individuales torciéndolas en cuerdas de una resistencia mecánica asombrosa, capaces de sostener cientos de kilos sin romperse y resistir la pudrición fúngica por décadas.",
+          "la_hamaca_como_utero_cosmico": "La hamaca (chinchorro) tejida a mano con cumare no es solo una cama suspendida para evitar las alimañas del suelo: es concebida como el vientre de la madre y la placenta espiritual que acoge el sueño visionario de la persona. En la hamaca se nace, se reposa, se delibera, se ama y se envuelve al difunto en su último viaje al más allá."
+        },
+        {
+          "fibra": "Tirite (Ischnosiphon arouma) y Bejuco Yaré",
+          "extraccion_y_tejido": "Se recolectan las cañas rectas del tirite en zonas pantanosas. Se parten en tiras delgadas milimétricas y se tiñen con tintes minerales (arcillas negras de pantano) y vegetales (achiote y huito).",
+          "diseno_laberintico_del_balay": "Con estas fibras se tejen los balayes (cedazos planos circulares para cernir harina de yuca). Los patrones de urdimbre y trama forman complejas grecas geométricas que no son decorativas: son mapas mitológicos codificados que representan los meandros de la Anaconda Ancestral, las constelaciones celestes y los caminos que debe recorrer el alma para no extraviarse en el mundo espiritual."
+        },
+        {
+          "fibra": "Corteza de Yanchama (Poulsenia armata)",
+          "extraccion_y_pintura": "Láminas de corteza interior de árboles moráceos batidas pacientemente en el río con mazas acanaladas hasta ablandar la lignina y convertirlas en una tela flexible y afelpada. Lienzo sagrado sobre el cual se plasma la mitología indígena mediante tintes vegetales naturales."
+        }
+      ]
+    }
+  ],
+  "grandes_sabedores_liderazgo_y_memoria": {
+    "titulo": "Grandes Sabedores, Resistencia Histórica y Gobernanza Indígena",
+    "sabedores_del_putumayo_y_valle_de_sibundoy": [
+      {
+        "nombre": "Taita Querubín Queta Alvarado",
+        "pueblo": "Kofán (A'i)",
+        "periodo_vital": "c. 1913 - 2024 (Fallecido a los 110 años de edad)",
+        "titulo_y_territorio": "Gran Mayor y Máxima Autoridad Espiritual de la Nación Kofán en el Resguardo Ukumari Kankhe (Orito, Putumayo).",
+        "legado_y_sabiduria": "Considerado el más venerado patriarca de la medicina tradicional amazónica en Colombia. Dedicó más de nueve décadas al ejercicio de la botánica curativa y a guiar las ceremonias del Yagé (Ahe). Lideró la resistencia pacífica de su pueblo frente a los desastres ambientales de la industria petrolera y las aspersiones aéreas con glifosato en el Putumayo. Promovió la creación del Santuario de Flora Plantas Medicinales Orito Ingi-Ande y formó a decenas de médicos tradicionales en el respeto ético irrestricto a la selva y a la palabra de paz."
+      },
+      {
+        "nombre": "Taita Paulino Mojomboy",
+        "pueblo": "Kamëntsá Biyá",
+        "titulo_y_territorio": "Mayor Sabedor y Médico Tradicional del Valle de Sibundoy (Putumayo).",
+        "legado_y_sabiduria": "Custodio insustituible de la farmacopea andino-amazónica de alta montaña y piedemonte. Defensor incansable del Carnaval del Perdón (Bëtsknaté) como terapia comunitaria de salud mental y reconciliación social. Maestro en la lectura de pulsos y en la armonización de las familias mediante el pensamiento propio y la medicina sagrada de las plantas maestras."
+      },
+      {
+        "nombre": "Taita Fernando Mendivelso y Sabedores del Piedemonte",
+        "pueblo": "Tradición Médica del Yagé (Inga-Kofán-Siona)",
+        "legado_y_sabiduria": "Red de sabedores, mamas y comadronas tradicionales que preservaron los cantos y secretos de sanación botánica frente al conflicto armado, rescatando a cientos de jóvenes de la violencia mediante el arraigo cultural."
+      }
+    ],
+    "abuelos_sabedores_murui_la_chorrera_memoria_caucho": {
+      "el_genocidio_cauchero_contexto": {
+        "periodo": "1890 - 1930",
+        "empresa_perpetradora": "Peruvian Amazon Company (Casa Arana), comandada por el comerciante peruano Julio César Arana con la complicidad de inversionistas británicos.",
+        "magnitud_del_holocausto": "Explotación forzada del caucho silvestre (siringa y castilloa) mediante el endeudamiento coercitivo, torturas sistemáticas en el cepo, amputaciones, flagelaciones colectivas, quema de malocas enteras y masacres que exterminaron entre 60.000 y 80.000 indígenas de los pueblos Huitoto, Bora, Ocaina, Andoke y Muinane en las cuencas del Igaraparaná y Caraparaná.",
+        "denuncias_historicas": "Documentado internacionalmente por el diplomático británico Roger Casement en su célebre 'Libro Azul' (1912) y por el ingeniero estadounidense Walter Hardenburg en 'The Putumayo: The Devil's Paradise'."
+      },
+      "la_resistencia_espiritual_y_reconstruccion": {
+        "accion_de_los_abuelos": "En medio del horror de las barracas de La Chorrera y El Encanto, un puñado de ancianos sabedores Murui-Muinane se negó a dejar morir el conocimiento. Escondieron semillas sagradas de tabaco y coca entre sus ropas, memorizaron de noche los cantos del Rafue y los mitos de origen, y transmitieron clandestinamente la palabra en los claros de bosque virgen donde los capataces no podían entrar.",
+        "abuelos_reconstructores_emblematicos": [
+          {
+            "nombre": "Abuelo Eudocio Becerra Bigidima",
+            "rol": "Sabedor y lingüista nativo Murui que dedicó su vida a documentar y traducir los cantos sagrados del Rafue para las nuevas generaciones."
+          },
+          {
+            "nombre": "Abuelo Victoriano Gómez",
+            "rol": "Mayor de palabra dulce en La Chorrera que impulsó la refundación de las malocas de linaje tras el desmantelamiento de las agencias caucheras."
+          },
+          {
+            "nombre": "Abuelo Vicente Jitoma",
+            "rol": "Guardián de los relatos cosmogónicos de la canasta primordial y formador de líderes comunitarios en el río Igaraparaná."
+          },
+          {
+            "nombre": "Taita Hipólito Candre (Kinerai)",
+            "rol": "Sabedor Ocaina-Huitoto, coautor de obras fundamentales sobre el tabaco frío y la coca sagrada junto a antropólogos del ICANH."
+          }
+        ],
+        "resignificacion_de_la_casa_arana": "A través de AZICATCH (Asociación de Cabildos Indígenas de La Chorrera), las comunidades lograron la expulsión legal de los remanentes coloniales y la declaración de la antigua sede administrativa de la Casa Arana como Monumento Histórico Nacional y Centro de Memoria Indígena y Educación Propia: un espacio donde el dolor del exterminio se transformó en monumento vivo a la dignidad y la pervivencia cultural."
+      }
+    },
+    "opiac_y_gobernanza_propia_amazonia": {
+      "nombre_oficial": "Organización Nacional de los Pueblos Indígenas de la Amazonía Colombiana (OPIAC)",
+      "fundacion": "Fundada en noviembre de 1995 en Mitú (Vaupés), en un histórico congreso que unificó a las organizaciones indígenas de los seis departamentos amazónicos.",
+      "cobertura_y_representatividad": "Representa legítimamente a 56 pueblos indígenas amazónicos articulados en más de 64 asociaciones de autoridades tradicionales (AATIS) y cientos de cabildos, que custodian colectivamente más de 25 millones de hectáreas de resguardos legalmente titulados (más del 50% de la Amazonía colombiana).",
+      "principales_ejes_politicos_y_logros": [
+        {
+          "hito": "Decreto Ley 632 de 2018 (Territorios Indígenas en Áreas No Municipalizadas)",
+          "descripcion": "Liderazgo técnico y político decisivo en la expedición y reglamentación del Decreto 632 de 2018, norma histórica que permite a los resguardos ubicados en las áreas no municipalizadas de Amazonas, Guainía y Vaupés formalizarse como Entidades Territoriales Indígenas autónomas con personería jurídica, gobierno propio, manejo directo de transferencias fiscales del Estado y facultades plenas de ordenamiento ambiental y educativo."
+        },
+        {
+          "hito": "Defensa de la Amazonía y Lucha contra el Cambio Climático",
+          "descripcion": "Posicionamiento de los resguardos indígenas como la barrera más efectiva contra la deforestación en la Amazonía colombiana (con tasas de pérdida boscosa demostradamente inferiores a las áreas protegidas estatales). Implementación del Sistema de Monitoreo Comunitario Indígena y negociación soberana de fondos climáticos internacionales protegiendo los derechos territoriales frente a la especulación de bonos de carbono."
+        },
+        {
+          "hito": "Sistemas Propios de Salud (SISPI) y Educación (SEIP)",
+          "descripcion": "Diseño e implementación de modelos educativos etnoculturales que garantizan la enseñanza en lengua materna indígena en las aulas y articulación de la medicina tradicional de sabedores y mambeaderos con la atención sanitaria occidental mediante el Sistema Indígena de Salud Propio e Intercultural."
+        },
+        {
+          "hito": "Mesa Regional Amazónica (MRA)",
+          "descripcion": "Espacio de interlocución y concertación de alto nivel entre el Gobierno Nacional de Colombia y las autoridades tradicionales de la Amazonía para la formulación de políticas públicas con enfoque diferencial indígena."
+        }
+      ]
+    }
+  }
+}

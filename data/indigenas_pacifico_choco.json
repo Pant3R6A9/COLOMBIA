@@ -1,0 +1,979 @@
+{
+  "metadata": {
+    "titulo": "Gran Compendio Etnográfico, Lingüístico y Ecológico de los Pueblos Indígenas del Chocó Biogeográfico y la Costa Pacífica Colombiana",
+    "subtitulo": "Documentación enciclopédica integral sobre los pueblos Emberá, Wounaan, Awá y Eperara Siapidara: cosmovisiones, chamanismo del Jaibaná, etnobotánica de venenos y tinturas, tecnologías tradicionales, arquitectura vernácula del tambo palafítico, navegación fluvial y derechos bioculturales",
+    "descripcion": "Capa exhaustiva de datos antropológicos, lingüísticos, etnobotánicos y sociopolíticos sobre los cuatro grandes pueblos indígenas originarios del Chocó Biogeográfico y el litoral Pacífico de Colombia. Elaborado bajo estándares de máxima profundidad enciclopédica con base en investigaciones del Instituto Colombiano de Antropología e Historia (ICANH), la Organización Nacional Indígena de Colombia (ONIC), la Asociación de Cabildos Mayores Indígenas del Chocó (OREWA), la Unidad Indígena del Pueblo Awá (UNIPA), y jurisprudencia histórica de la Corte Constitucional de Colombia.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026",
+    "autor": "Subagente Especialista en Pueblos Indígenas del Chocó Biogeográfico y Costa Pacífica de Colombianopedia",
+    "entorno_biogeografico": {
+      "region": "Chocó Biogeográfico y Cuenca del Pacífico Colombiano",
+      "extension_aproximada_km2": 187000,
+      "delimitacion_ecologica": "Franja neotropical que se extiende desde la Serranía del Darién y el Golfo de Urabá en la frontera con Panamá, descendiendo por la vertiente occidental de la Cordillera Occidental de los Andes hasta las cuencas de los ríos Mira y Mataje en el límite con Ecuador. Abarca el litoral marino y estuarino del Océano Pacífico colombiano.",
+      "regimen_hidrologico_y_pluvial": "Considerada una de las regiones más lluviosas del planeta Tierra, con precipitaciones medias anuales que oscilan entre 8.000 mm y más de 13.000 mm en epicentros pluviales como Lloró y Tutunendo (Chocó). Red fluvial de densidad extrema conformada por macrocuencas como el Atrato, San Juan, Baudó, Micay, Patía y Mira.",
+      "clasificacion_holdridge": "Bosque pluvial tropical (bp-T), Bosque muy húmedo tropical (bmh-T), Bosque muy húmedo premontano (bmh-PM) y complejos estuarinos de manglar del Pacífico.",
+      "humedad_relativa_promedio": "85% a 98% de saturación constante, con temperaturas medias entre 26°C y 30°C en tierras bajas.",
+      "biodiversidad_endemismo": "Punto caliente de biodiversidad global (Biodiversity Hotspot) con tasas excepcionales de endemismo botánico (orquídeas, palmas, bromelias) y zoológico (anfibios dendrobátidos, reptiles, avifauna y peces de agua dulce)."
+    },
+    "fuentes_consultadas": [
+      "Instituto Colombiano de Antropología e Historia (ICANH) - Atlas Sociolingüístico y Etnográfico de los Pueblos Indígenas de Colombia",
+      "Organización Nacional Indígena de Colombia (ONIC) - Diagnósticos de Derechos Humanos y Planes de Salvaguarda Étnica",
+      "Asociación de Cabildos Mayores Indígenas del Chocó (OREWA) - Mandatos territoriales y memoria oral comunitaria",
+      "Unidad Indígena del Pueblo Awá (UNIPA) - Plan de Vida y Salvaguarda del Gran Territorio Katsa Su",
+      "Corte Constitucional de Colombia - Sentencia T-622 de 2016 (Río Atrato como sujeto de derechos) y Autos 004 de 2009 y 174 de 2011",
+      "Vasco Uribe, Luis Guillermo - Investigaciones sobre el chamanismo y la sociedad Emberá",
+      "Aguirre Licht, Daniel - Fonología y morfología comparada de las lenguas de la familia Chocó",
+      "Constenla Umaña, Adolfo - Estudios de lingüística comparativa chocoana y barbacoana",
+      "Landaburu, Jon - Clasificación y descripción de las lenguas indígenas de Colombia (Centro Colombiano de Estudios de Lenguas Aborígenes - CCELA)",
+      "Pardo, Mauricio y Chaves, Margarita - Etnografía del Chocó, tambos ribereños y sistemas de subsistencia"
+    ],
+    "total_pueblos_documentados": 4,
+    "familias_linguisticas_estudiadas": [
+      "Familia Chocó (Emberá y Woun Meu)",
+      "Familia Barbacoa (Awá Pit)"
+    ]
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "embera",
+      "nombre": "Pueblo Emberá (Gente de la Selva y los Ríos)",
+      "autoetnonimo": "Emberá / Êbêra ('Gente', 'Ser Humano', 'Persona de la Selva')",
+      "poblacion_estimada_colombia": 128500,
+      "distribucion_geografica_general": {
+        "departamentos_colombia": [
+          "Chocó",
+          "Risaralda",
+          "Caldas",
+          "Antioquia",
+          "Córdoba",
+          "Valle del Cauca",
+          "Cauca",
+          "Nariño",
+          "Putumayo",
+          "Quindío"
+        ],
+        "presencia_internacional": [
+          "Panamá (Comarca Emberá-Wounaan y Darién)",
+          "Ecuador (pequeños enclaves de migración reciente)"
+        ],
+        "heterogeneidad_ecologica": "Habitan desde las selvas hiperhúmedas aluviales a nivel del mar en el Chocó, hasta las vertientes medias y frías de la Cordillera Occidental de los Andes a más de 2.200 msnm."
+      },
+      "organizacion_sociopolitica_tradicional": {
+        "unidad_basica": "La familia extensa ribereña nucleada alrededor de un tambo o conjunto de tambos dispersos a lo largo de un afluente fluvial.",
+        "autoridad_espiritual_y_social": "El Jaibaná (médico chamánico y líder cosmológico) junto con los consejos de ancianos de linaje.",
+        "organizacion_moderna": "Cabildos Indígenas de base, Cabildos Mayores de Cuenca y Asociaciones Regionales (como OREWA, FEDEOREWA, CRIDEC, CRIR), integrados a la Organización Nacional Indígena de Colombia (ONIC).",
+        "principios_de_parentesco": "Filiación predominantemente cognática o bilateral con reglas de residencia uxorilocal o matrilocal inicial (el esposo reside temporalmente en el tambo de los suegros prestando servicios agrícolas y de pesca antes de erigir su propio tambo)."
+      },
+      "cosmovision_y_mitologia_fundacional": {
+        "deidad_creadora_suprema": "Dachi Akore / Dachi Zeze ('Nuestro Padre Creador')",
+        "descripcion_del_creador": "Deidad primordial y trascendente que concibió el cosmos, ordenó la luz y las leyes del mundo espiritual, habitando en los niveles celestes superiores. No interviene en los afanes cotidianos menores pero respalda la armonía del universo.",
+        "el_heroe_cultural_caragabi": {
+          "nombre": "Caragabí / Karagabí",
+          "rol_mitologico": "Héroe civilizador, transformador del cosmos y demiurgo de los Emberá.",
+          "hazañas_fundacionales": [
+            "El robo y la domesticación del fuego: Caragabí engañó a la hormiga arriera (custodia originaria de las brasas escondidas en su hormiguero subterráneo) para entregar el fuego a los primeros seres humanos, permitiéndoles cocinar los alimentos y protegerse de la oscuridad selvática.",
+            "El derribo del árbol primordial Jenene: En el origen no existían los ríos y las aguas estaban cautivas en las entrañas de una colosal ceiba cósmica llamada Jenene. Caragabí convocó a todos los animales de la selva para aserrar el tronco; finalmente, con la ayuda de la ardilla que cortó la última liana cimera, el árbol se desplomó: su tronco gigantesco se transformó en el río Atrato, sus ramas mayores dieron origen a los ríos San Juan y Baudó, sus hojas se convirtieron en ciénagas y humedales, y sus frutos se transformaron en todos los peces que pueblan las aguas.",
+            "La creación de los seres humanos: Caragabí moldeó las primeras figuras de personas empleando barro y masa de maíz; al insuficarse de vida, emergieron las diversas parcialidades Emberá con sus respectivos idiomas y costumbres.",
+            "La batalla contra Trutruika: El combate permanente contra las fuerzas ctónicas y destructivas del inframundo para impedir que los monstruos del fondo devoren a la humanidad."
+          ]
+        },
+        "niveles_del_universo_embera": [
+          {
+            "nivel": "Dututu (Mundo Superior Celeste)",
+            "habitantes": "Dachi Akore, espíritus de la luz, antepasados solares y entidades celestiales benefactoras."
+          },
+          {
+            "nivel": "Egoró (Mundo Terrestre)",
+            "habitantes": "Los seres humanos (Emberá), los animales visibles, las plantas, y los espíritus locales (Jais de las rocas, ríos y árboles)."
+          },
+          {
+            "nivel": "Armucura (Mundo Subterráneo e Inframundo Fluvial)",
+            "habitantes": "Espíritus de las aguas profundas, seres de la sombra y entidades patógenas gobernadas por deidades subterráneas."
+          }
+        ]
+      },
+      "parcialidades_territoriales": [
+        {
+          "id": "embera_dobida",
+          "parcialidad": "Emberá Dobidá (Gente de Río)",
+          "etimologia": "Do ('río' o 'corriente de agua') + bidá ('gente' o 'poblador')",
+          "localizacion_hidrografica": [
+            "Cuenca del Río Atrato y afluentes: Bojayá, Bebará, Napipí, Opogodó, Murindó, Salaquí, Truandó",
+            "Cuenca del Río Baudó: Alto, Medio y Bajo Baudó",
+            "Cuenca del Río San Juan: afluentes septentrionales (Docampadó, Sipí, Tadó)"
+          ],
+          "ecosistema": "Selva pluvial tropical de llanura aluvial, márgenes fluviales anegadizas y deltas interiores.",
+          "patron_de_asentamiento": "Disperso ribereño lineal. Cada unidad doméstica habita un tambo erigido sobre la margen de un río o quebrada navegable, distanciado cientos de metros del tambo vecino para salvaguardar áreas de huerto aluvial, pesca y caza exclusiva.",
+          "rasgos_culturales_distintivos": {
+            "tecnologia_naval": "Maestría en la construcción de canoas monóxilas (champas) y manejo del canalete y la palanca en aguas correntosas.",
+            "pesca_ribereña": "Uso de atarrayas tejidas con fibras de majagua, arpones múltiples de chonta y trampas de corral en bocanas.",
+            "pintura_de_jagua": "Uso diario y ritual exhaustivo del Kipará sobre la piel desnuda como camuflaje biológico y sello contra jais acuáticos.",
+            "dieta_base": "Pescado de río cocido o ahumado, plátano primitivo cocido (bala), chontaduro y frutos de palmas silvestres."
+          }
+        },
+        {
+          "id": "embera_chami",
+          "parcialidad": "Emberá Chamí (Gente de Cordillera)",
+          "etimologia": "Chamí ('cordillera', 'montaña andina' o 'cerro')",
+          "localizacion_hidrografica": [
+            "Risaralda: municipios de Pueblo Rico (Resguardo Dokabú / Gitó Dokabú), Mistrató (Resguardo San Antonio del Chamí), Guática",
+            "Caldas: Riosucio (Resguardos coloniales de Cañamomo Lomaprieta, Nuestra Señora Candelaria de la Montaña, San Lorenzo) y Supía",
+            "Antioquia: Suroeste antioqueño (Jardín: Resguardo Karmata Rúa / Cristianía; Andes, Ciudad Bolívar, Valparaíso, Támesis)",
+            "Valle del Cauca: vertientes cordilleranas de Bolívar, Dovio y Restrepo",
+            "Quindío: pequeñas parcialidades en Génova y Córdoba"
+          ],
+          "ecosistema": "Vertientes andinas y premontanas de la Cordillera Occidental, entre 1.200 y 2.400 msnm, clima templado y frío de ladera.",
+          "patron_de_asentamiento": "Mixto. Presenta tanto viviendas dispersas en laderas cafeteras como aldeas nucleadas alrededor de escuelas bilingües, casas de cabildo y capillas comunales.",
+          "rasgos_culturales_distintivos": {
+            "arte_de_la_chaquira_okama": "Confección magistral de la Okama ('camino para el cuello'), collares pectorales geométricos de chaquiras de vidrio tejidas por las mujeres, cuyos colores y figuras representan la geografía montañosa, la fertilidad, el linaje materno y el rango espiritual.",
+            "agricultura_de_ladera": "Cultivo de café con sombrío, maíz de ladera, fríjol, caña panelera para trapiches comunitarios y plátano dominico.",
+            "sincretismo_y_espiritualidad": "Devoción a los espíritus de los grandes Morros tutelares (como el Cerro Tatamá, Caramanta y cerro Munchique), conjugada con expresiones sincréticas del catolicismo popular andino.",
+            "vestimenta_tradicional": "Uso de vestidos de telas de colores encendidos (parumas femeninas combinadas con blusas brillantes de encajes y vuelos) y collares de cuentas pesadas."
+          }
+        },
+        {
+          "id": "embera_katio",
+          "parcialidad": "Emberá Katío (Gente de Selva Baja y Valles Fluviales)",
+          "etimologia": "Emberá Katío (identificados históricamente por los cronistas como 'Catíos', pobladores de los valles interandinos septentrionales y llanuras selváticas)",
+          "localizacion_hidrografica": [
+            "Córdoba: Cuenca alta del Río Sinú y Río San Jorge (Tierralta: Resguardo Karagabí y Resguardo Ibudó)",
+            "Antioquia: Región de Urabá y Occidente (Dabeiba, Mutatá, Frontino, Murindó, Vigía del Fuerte, Chigorodó)",
+            "Chocó: Cuencas septentrionales limítrofes con Urabá (Acandí, Unguía y cuenca del río Domingodó)"
+          ],
+          "ecosistema": "Selvas basales cálidas, llanuras de piedemonte y valles aluviales de los ríos Sinú y San Jorge.",
+          "patron_de_asentamiento": "Comunidades ribereñas y selváticas agrupadas a lo largo de los afluentes de cabecera de los ríos Sinú, Verde, Esmeralda y Sucio.",
+          "rasgos_culturales_distintivos": {
+            "resistencia_emblematica_contra_urra": "Historia heroica de resistencia comunitaria frente al llenado y operación de la Hidroeléctrica Urrá I (décadas de 1990 y 2000), megaproyecto que inundó sus cementerios sagrados, anegó sus mejores tierras de vega y colapsó los ciclos reproductivos del pez bocachico, transformando radicalmente su soberanía alimentaria.",
+            "memoria_de_kimy_pernia": "El liderazgo espiritual y político del mártir indígena Kimy Pernía Domicó, quien llevó la voz del pueblo Katío al Congreso de Canadá y foros mundiales, antes de su desaparición forzada a manos de estructuras paramilitares en 2001.",
+            "jaibanismo_terapeutico": "Consolidación de una de las escuelas de Jaibanás más respetadas del noroccidente colombiano, célebre por el manejo de bastones de mando y curación.",
+            "agricultura_aluvial": "Cultivo intensivo de maíz criollo, yuca, plátano hartón y chontaduro en las vegas periódicamente inundadas del Alto Sinú."
+          }
+        },
+        {
+          "id": "embera_eyabida",
+          "parcialidad": "Emberá Eyabida (Gente de Montaña y Selva Alta)",
+          "etimologia": "Eya ('montaña', 'cerro elevado' o 'selva de niebla') + bidá ('gente')",
+          "localizacion_hidrografica": [
+            "Antioquia: Vertientes escarpadas del Parque Nacional Natural Las Orquídeas, cuencas altas de Frontino, Uramita y Dabeiba",
+            "Chocó: Estribaciones de la Serranía de Los Paraguas y cordillera divisoria de aguas Cauca-Chocó"
+          ],
+          "ecosistema": "Bosque muy húmedo premontano y montano bajo (selva nublada de vertiente escarpada con pendientes mayores a 45°).",
+          "patron_de_asentamiento": "Viviendas aisladas en pequeñas terrazas naturales excavadas en las cuchillas de las montañas, dispersas a lo largo de senderos de herradura y quebradas de montaña.",
+          "rasgos_culturales_distintivos": {
+            "caza_de_fauna_de_niebla": "Uso de bodoqueras y trampas de caída para cacería especializada de roedores gigantes (guagua de montaña / Cuniculus taczanowskii), pavas de monte (Penelope) y venados de páramo.",
+            "arquitectura_adaptada_al_frio": "Tambos con zancos más cortos, dotados de cerramientos laterales de caña brava o tablas toscas para frenar los vientos gélidos nocturnos de la cordillera, conservando el fogón central de leña encendido permanentemente.",
+            "recoleccion_etnobotanica": "Manejo de helechos arborescentes, cortezas amargas de niebla y orquídeas medicinales para afecciones respiratorias y articulares."
+          }
+        }
+      ]
+    },
+    {
+      "id": "wounaan",
+      "nombre": "Pueblo Wounaan (Waunana / Noanamá)",
+      "autoetnonimo": "Wounaan ('Gente / Personas'); su lengua se denomina Woun Meu ('el hablar de la gente')",
+      "poblacion_estimada_colombia": 14200,
+      "distribucion_geografica": {
+        "departamentos_colombia": [
+          "Chocó (municipios de Litoral del San Juan -cabecera en Santa Genoveva de Docordó-, Medio San Juan, Bajo Baudó)",
+          "Valle del Cauca (Buenaventura, cuencas de los ríos San Juan, Calima y Bajo Calima)"
+        ],
+        "presencia_internacional": [
+          "Panamá (Comarca Emberá-Wounaan, Darién y riberas del río Chepo)"
+        ],
+        "habitat_ecologico": "Selva pluvial del Bajo San Juan, canales de marea, estuarios hiperhúmedos, islas fluviales y zonas de transición dulce-salobre de manglares."
+      },
+      "cosmogonia_y_origen_mitologico": {
+        "deidad_creadora_suprema": "Maach Aai ('Nuestro Padre')",
+        "el_mito_de_creacion_en_la_playa_coredo": "Según la cosmogonía Wounaan, en el principio el mundo era oscuro y desolado. Maach Aai descendió al cerro sagrado Kpará y a las playas doradas de Coredó en el río San Juan. Con arcilla fina y greda moldeó figuras de hombres y mujeres. Al dejarlas secar al sol, las sopló suavemente transmitiéndoles el 'hieu' (aliento cósmico de vida). De las figuras de barro claro nacieron los Wounaan; de las arcillas oscuras nacieron los pueblos vecinos. Maach Aai les entregó la selva, los ríos y los cantos primordiales para curar las enfermedades.",
+        "héroes_civilizadores": [
+          "Maach Aai: Creador y legislador ético que fijó los tabúes sobre la caza, el incesto y el respeto al bosque.",
+          "Ewandam: Héroe transformador que enseñó la navegación en canoa monóxila, la extracción del pigmento de jagua y el tejido de werregue."
+        ],
+        "espiritualidad_y_el_benkhun": {
+          "autoridad_espiritual": "El Benkhun (sabio tradicional y chamán Wounaan)",
+          "diferenciacion_con_el_jaibana": "Aunque cumple funciones homólogas al Jaibaná Emberá en la curación y mediación con el mundo invisible, el Benkhun basa su praxis en un ciclo propio de cantos sagrados monódicos ('nempaa') transmitidos exclusivamente en lengua Woun Meu, y utiliza bastones esculpidos con iconografía marina y fluvial de estuario."
+        }
+      },
+      "expresion_estetica_y_tecnologica": {
+        "maestria_del_werregue": "Los Wounaan son los creadores exclusivos de la cestería en fibra de palma de Werregue (Astrocaryum standleyanum), considerada una de las cumbres del arte textil indígena en el continente americano. Mediante un tejido en espiral sobre alma de paja de densidad milimétrica, elaboran vasijas, bandejas y cántaros totalmente impermeables, decorados con geometrías abstractas que relatan historias de la creación, la fauna acuática y la vida cotidiana.",
+        "pintura_corporal_minuciosa": "Desarrollo de un sistema de pintura dérmica con tintura de jagua que destaca por su trazado geométrico fino y rectilíneo, con una precisión caligráfica que cubre brazos, pecho y rostro simulando armaduras de escamas cósmicas.",
+        "musica_y_danzas_rituales": "Danza del Guagaró y danza de la Balsa ceremonial, en las cuales se ejecutan flautas de caña brava (sirú) y tambores cilíndricos de madera forrados en piel de saíno o venado."
+      }
+    },
+    {
+      "id": "awa",
+      "nombre": "Pueblo Awá (Inkal Awá / Cuaiquer)",
+      "autoetnonimo": "Inkal Awá ('Gente de la Selva / Amantes de la Selva')",
+      "poblacion_estimada_colombia": 37000,
+      "distribucion_geografica": {
+        "departamentos_colombia": [
+          "Nariño (municipios de Ricaurte, Barbacoas, Tumaco, Roberto Payán, Samaniego, Mallama, Magüí Payán)",
+          "Putumayo (municipios de Puerto Asís, Valle del Guamuez y Orito, producto de migraciones forzadas y desplazamientos)"
+        ],
+        "presencia_internacional": [
+          "Ecuador (provincias de Carchi, Esmeraldas e Imbabura, federados en la Federación de Centros Awá del Ecuador - FCAE)"
+        ],
+        "territorio_ancestral_katsa_su": "Su territorio ancestral se denomina 'Katsa Su' (El Gran Territorio-Selva), concebido como una casa viva indivisible donde cohabitan los humanos, los espíritus, los animales y las aguas en permanente reciprocidad."
+      },
+      "cosmovision_de_los_cuatro_mundos_ampara_su": {
+        "concepto_central": "La arquitectura del cosmos Awá se estructura verticalmente en cuatro mundos concéntricos o planos superpuestos denominados 'Ampara Su':",
+        "mundos": [
+          {
+            "orden": 1,
+            "nombre": "Iguatsa (El Inframundo Subterráneo)",
+            "caracteristicas": "Mundo subterráneo localizado bajo la corteza terrestre; habitado por seres de estatura diminuta (los enanos subterráneos) que cuidan las raíces primordiales de los árboles gigantes, los minerales y las fuentes subterráneas de agua dulce. Posee su propio sol tenue y sus ciclos temporales invertidos."
+          },
+          {
+            "orden": 2,
+            "nombre": "Pas Su (Este Mundo Visible / Plano Terrestre)",
+            "caracteristicas": "El plano intermedio donde habitan los seres humanos (Awá), los animales de caza, las plantas medicinales y los ríos. Es el espacio del trabajo diario, del cultivo del plátano y el maíz, pero también un entorno liminal donde los humanos deben convivir con cautela junto a los espíritus dueños del bosque."
+          },
+          {
+            "orden": 3,
+            "nombre": "Chupiniana / Katsa Su Superior (Mundo de los Espíritus y la Selva Alta)",
+            "caracteristicas": "Plano espiritual habitado por los espíritus de la selva virgen, los 'dueños' de los animales salvajes, los espíritus del trueno, el rayo, las borrascas y las almas de los curanderos y ancestros fallecidos. Desde este nivel se vigila el cumplimiento de las normas éticas ambientales de los cazadores terrestres."
+          },
+          {
+            "orden": 4,
+            "nombre": "Ampara Su Supremo (El Mundo Celestial de la Luz)",
+            "caracteristicas": "El nivel más elevado del cosmos, habitado por el Gran Creador y las fuerzas cósmicas puras. Es la morada de la paz infinita a donde aspiran ascender las almas que han vivido en estricta armonía con el Katsa Su."
+          }
+        ]
+      },
+      "organizacion_social_y_vida_comunitaria": {
+        "el_minkal_o_minga_awa": "Institución nuclear de cohesión comunitaria consistente en el trabajo colectivo solidario no remunerado en dinero. A través del Minkal, las familias se reúnen para abrir trochas selváticas, levantar tambos comunitarios, limpiar cultivos de plátano y maíz, y defender los linderos del resguardo; la jornada culmina con la ingesta comunal de sancocho de gallina criolla o carne de cacería y chicha de maíz fermentada.",
+        "curanderos_y_marrach": "Médicos tradicionales que dominan la etnobotánica de las vertientes de niebla y piedemonte. Diagnosticadores del 'mal aire' y del ataque de entidades como el 'Chutún' (espíritu de quebrada que arrebata el ánimo infantil tras un susto o transgresión de un charco sagrado). Utilizan tomas de bejucos calientes, oraciones secretas y sahumaciones con resinas aromáticas para reincorporar el alma extraviada al cuerpo.",
+        "musica_de_marimba_y_bombo": "A pesar de ser un pueblo indígena, los Awá comparten e integran magistralmente la música tradicional de marimba de chonta, bombos, cununos y guasás con cantos en lengua Awá Pit, fruto de centurias de interacción biocultural en las selvas de Barbacoas y Telembí."
+      },
+      "resistencia_historica_y_crisis_humanitaria": {
+        "impacto_del_conflicto_armado": "El pueblo Inkal Awá ha sido una de las etnias más martirizadas por el conflicto armado interno en Colombia, víctima de confinamientos territoriales prolongados, desplazamientos forzados masivos y la siembra sistemática de minas antipersonal (MAP) y municiones sin explotar (MUSE) en sus senderos ancestrales y zonas sagradas de caza por parte de actores armados ilegales.",
+        "hitos_dolorosos_de_memoria": [
+          "Masacres de Tortugaña Telembí (febrero de 2009): Asesinato selectivo y masivo de líderes y familias Awá en la espesura selvática de Barbacoas.",
+          "Masacre de El Diviso / Ricaurte (agosto de 2009): Asesinato de 12 miembros de una misma familia indígena en su tambo comunitario.",
+          "Declaratoria de Exterminio Étnico: La Corte Constitucional de Colombia declaró al pueblo Awá en inminente riesgo de exterminio físico y cultural mediante el Auto 004 de 2009 y el Auto 174 de 2011, ordenando planes urgentes de salvaguarda."
+        ],
+        "organizaciones_representativas": [
+          "UNIPA (Unidad Indígena del Pueblo Awá): Constituida en 1990 para agrupar más de 30 resguardos en Nariño; vanguardia de la defensa pacífica con bastón en mano frente a grupos armados y erradicación de cultivos ilícitos.",
+          "CAMAWARI (Cabildo Mayor Awá de Ricaurte): Organización representativa de las comunidades de la cuenca alta del río Güiza y vertientes andino-pacíficas."
+        ]
+      }
+    },
+    {
+      "id": "eperara_siapidara",
+      "nombre": "Pueblo Eperara Siapidara (Épera / Saan)",
+      "autoetnonimo": "Eperara Siapidara ('Gente propia que habla la lengua del Sia' / 'Hablantes del Sia Pedee')",
+      "poblacion_estimada_colombia": 7800,
+      "distribucion_geografica": {
+        "departamentos_colombia": [
+          "Cauca (municipios de Guapi, Timbiquí y López de Micay)",
+          "Nariño (municipios de El Charco, Olaya Herrera, Santa Bárbara de Iscuandé, La Tola y Mosquera)",
+          "Valle del Cauca (asentamientos en la cuenca del río Naya y Buenaventura)"
+        ],
+        "habitat_ecologico": "Litoral marino del Pacífico sur, franja estuarina de manglares rojos y negros, canales de marea (esteros), bocanas fluviales y selvas de aluvión costero."
+      },
+      "adaptacion_ecologica_y_cultura_anfibia": {
+        "recoleccion_de_la_piangua": "Las mujeres Eperara Siapidara son expertas piangueras que navegan en potrillos por los laberintos de manglar durante las bajas mareas para recolectar moluscos bivalvos (Anadara tuberculosa y Anadara similis) enterrados en el lodo salobre entre las raíces zancudas del mangle rojo (Rhizophora mangle).",
+        "pesca_de_estero_y_mar": "Uso de redes playeras, atarrayas y líneas de anzuelo para captura de róbalos, pargos, lisas y camarones en las desembocaduras fluviales.",
+        "cesteria_en_paja_tetera_y_chocolatillo": "Elaboración de 'petacas' (canastos cuadrangulares con tapa hermética tejida a doble faz con fibras de paja tetera / Stromanthe stromanthoides y chocolatillo / Ischnosiphon arouma), diseñadas para mantener secas las pertenencias en un entorno donde llueve más de 250 días al año.",
+        "cosmovision_fluvial_y_marina": "Veneración y respeto a los espíritus de las mareas ('pujas' y 'quiebras'), a los seres que habitan los manglares profundos y al Jaibaná tradicional conocedor de los vientos marinos y las fiebres del salitral."
+      },
+      "organizacion_y_reivindicacion": {
+        "asociaciones_representativas": "ACIES (Asociación de Cabildos Indígenas Eperara Siapidara del Cauca y Nariño), articulada a la ONIC y a las mesas territoriales del Pacífico Sur.",
+        "defensa_del_manglar": "Liderazgo en la protección de los ecosistemas de manglar frente a la contaminación por minería ilegal de oro con dragas en las cuencas altas de los ríos Timbiquí, Guapi e Iscuandé, y frente a la expansión de piscinas camaroneras industriales."
+      }
+    }
+  ],
+  "idiomas_y_familias_linguisticas": {
+    "familia_choco": {
+      "nombre_familia": "Familia Lingüística Chocó",
+      "clasificacion_filogenetica": "Familia autóctona e independiente del noroeste sudamericano y sur de Centroamérica. Históricamente se intentó vincular con el macro-Chibcha o el Caribe, pero la lingüística comparativa contemporánea (Adolfo Constenla Umaña, Daniel Aguirre Licht) la confirma como una unidad filogenética autónoma sin parentesco demostrado con otras familias.",
+      "ramas_principales": [
+        {
+          "subfamilia": "Complejo Dialectal Emberá",
+          "distribucion": "Continuo lingüístico hablado desde el Darién panameño hasta el norte del Valle del Cauca y Nariño.",
+          "lenguas_o_variedades": [
+            {
+              "variedad": "Emberá Dobidá (ríos Atrato, Baudó y San Juan)",
+              "vitalidad": "Alta en cuencas aisladas; uso cotidiano intergeneracional."
+            },
+            {
+              "variedad": "Emberá Chamí (Cordillera Occidental: Risaralda, Caldas, Antioquia)",
+              "vitalidad": "Vigorosa en resguardos rurales; bilingüismo con español en zonas cafeteras."
+            },
+            {
+              "variedad": "Emberá Katío (Alto Sinú, Urabá, Dabeiba)",
+              "vitalidad": "Alta en comunidades ribereñas; amenazada en poblaciones desplazadas a centros urbanos."
+            },
+            {
+              "variedad": "Sia Pedee / Eperara Siapidara (Litoral del Cauca y Nariño)",
+              "vitalidad": "Vigorosa en zonas litorales y de manglar; preservada en la transmisión materna."
+            }
+          ]
+        },
+        {
+          "subfamilia": "Idioma Woun Meu (Wounaan / Waunana / Noanamá)",
+          "distribucion": "Cuenca del Río San Juan (Docordó, Taparalito), Baudó y enclaves de Darién.",
+          "estatus": "Lengua claramente diferenciada, no inteligible con el complejo Emberá, con una fonología y léxico marcadamente divergentes que indican una separación ancestral de miles de años."
+        }
+      ],
+      "fonologia_comparada_choco": {
+        "sistema_vocalico": {
+          "vocales_orales": [
+            {
+              "fonema": "/a/",
+              "descripcion": "Vocal abierta central no redondeada"
+            },
+            {
+              "fonema": "/e/",
+              "descripcion": "Vocal semicerrada anterior no redondeada"
+            },
+            {
+              "fonema": "/i/",
+              "descripcion": "Vocal cerrada anterior no redondeada"
+            },
+            {
+              "fonema": "/o/",
+              "descripcion": "Vocal semicerrada posterior redondeada"
+            },
+            {
+              "fonema": "/u/",
+              "descripcion": "Vocal cerrada posterior redondeada"
+            },
+            {
+              "fonema": "/ɯ/ o /ɨ/",
+              "descripcion": "Vocal cerrada posterior no redondeada (o central no redondeada), rasgo distintivo de la familia"
+            }
+          ],
+          "vocales_nasales": [
+            {
+              "fonema": "/ã/",
+              "descripcion": "Vocal nasal abierta central"
+            },
+            {
+              "fonema": "/ẽ/",
+              "descripcion": "Vocal nasal semicerrada anterior"
+            },
+            {
+              "fonema": "/ĩ/",
+              "descripcion": "Vocal nasal cerrada anterior"
+            },
+            {
+              "fonema": "/õ/",
+              "descripcion": "Vocal nasal semicerrada posterior"
+            },
+            {
+              "fonema": "/ũ/",
+              "descripcion": "Vocal nasal cerrada posterior"
+            },
+            {
+              "fonema": "/ɯ̃/ o /ɨ̃/",
+              "descripcion": "Vocal nasal cerrada posterior no redondeada"
+            }
+          ],
+          "valor_contrastivo_de_nasalidad": "La nasalidad vocálica es fonémica y distingue pares mínimos morfológicos y léxicos fundamentales; además, opera un fenómeno generalizado de armonía nasal que contagia a las consonantes y sufijos adyacentes dentro del enunciado."
+        },
+        "sistema_consonantico": {
+          "oclusivas_sordas": "/p, t, k/",
+          "oclusivas_sonoras": "/b, d/ (con alófonos prenasalizados [mb, nd] en contextos intervocálicos)",
+          "oclusiva_glotal": "/ʔ/ (corte glótico fonémico crucial en la delimitación silábica)",
+          "africadas_y_fricativas": "/tʃ/ (ch), /s/, /h/ (aspirada faríngea o glotal)",
+          "nasales": "/m, n/",
+          "liquidas": "/ɾ/ (vibrante simple alveolar) y /r/ (vibrante múltiple en préstamos y dialectos septentrionales)",
+          "aproximantes": "/w/ (velarizada) y /j/ (palatal)"
+        },
+        "morfosintaxis": {
+          "tipologia_oracional": "SOV (Sujeto - Objeto - Verbo) canónico.",
+          "alineamiento_ergativo": "Ergatividad escindida (split-ergativity). El sujeto de un verbo transitivo debe recibir obligatoriamente el morfema de caso ergativo (-ba o -pa en Emberá; -u en Woun Meu), mientras que el sujeto de un verbo intransitivo y el objeto de un verbo transitivo se marcan con caso absolutivo cero (inmarcado).",
+          "aglutinacion": "Uso intensivo de sufijación para marcar aspecto verbal, tiempo, modo, direccionales espaciales (arriba del río, abajo del río, hacia la orilla) y evidencialidad."
+        }
+      },
+      "glosario_espiritual_y_filosofico_choco": [
+        {
+          "termino": "Jai / Zhai",
+          "lengua": "Emberá",
+          "significado_literal": "Espíritu, energía vital oculta, esencia anímica",
+          "interpretacion_cosmologica": "La fuerza primordial que habita en los elementos naturales (ríos, rocas, árboles gigantes, cerros) y en los seres vivos. Los jais no son entidades puramente inmateriales; poseen corporeidad sutil y pueden ser invocados, contenidos en bastones sagrados o domesticados por el Jaibaná para sanar o proteger a la comunidad."
+        },
+        {
+          "termino": "Jaibaná",
+          "lengua": "Emberá",
+          "significado_literal": "El que posee, domina o camina con los jais",
+          "interpretacion_cosmologica": "El maestro chamán, médico del cuerpo y del alma, filósofo y mediador entre los mundos. No ostenta poder político coercitivo, pero constituye la autoridad ontológica máxima de la sociedad Emberá."
+        },
+        {
+          "termino": "Dachi Akore / Dachi Zeze",
+          "lengua": "Emberá",
+          "significado_literal": "Nuestro Gran Padre / Nuestro Ancestro Supremo",
+          "interpretacion_cosmologica": "Deidad primordial creadora del cielo, de la luz y del cosmos. Reside en el mundo superior celeste (Dututu) y sostiene el orden universal."
+        },
+        {
+          "termino": "Caragabí / Karagabí",
+          "lengua": "Emberá",
+          "significado_literal": "El héroe creador y transformador",
+          "interpretacion_cosmologica": "Héroe cultural mítico que domesticó el fuego, derribó la ceiba Jenene para crear las aguas del río Atrato y San Juan, enseñó las artes de la caza y modeló las primeras gentes."
+        },
+        {
+          "termino": "Kipará",
+          "lengua": "Emberá",
+          "significado_literal": "Pintura corporal / diseño geométrico sagrado con jagua",
+          "interpretacion_cosmologica": "La escritura viva sobre la piel humana. Constituye una armadura espiritual que mimetiza a la persona con la serpiente boa o el caimán, confundiéndose ante los jais malévolos y otorgando protección biológica contra mosquitos e infecciones."
+        },
+        {
+          "termino": "Jenene",
+          "lengua": "Emberá",
+          "significado_literal": "La Ceiba primordial / Árbol cósmico de las aguas",
+          "interpretacion_cosmologica": "Árbol gigantesco original que contenía en su interior todos los mares y ríos del mundo. Su derribo por Caragabí estructuró la geografía fluvial del Chocó."
+        },
+        {
+          "termino": "Maach Aai",
+          "lengua": "Woun Meu (Wounaan)",
+          "significado_literal": "Nuestro Padre",
+          "interpretacion_cosmologica": "Deidad creadora suprema de los Wounaan, quien bajó a las playas de Coredó para moldear a la primera humanidad a partir de barro y arcilla soplada con su aliento cósmico."
+        },
+        {
+          "termino": "Benkhun",
+          "lengua": "Woun Meu (Wounaan)",
+          "significado_literal": "Sabio chamán / Médico tradicional",
+          "interpretacion_cosmologica": "Especialista espiritual de los Wounaan, conocedor de los cantos 'nempaa' y de los bastones ceremoniales tallados para restablecer la salud comunitaria y ambiental."
+        },
+        {
+          "termino": "Toné",
+          "lengua": "Emberá",
+          "significado_literal": "Río sagrado / Agua primordial",
+          "interpretacion_cosmologica": "La arteria viva de la Madre Tierra que conecta el mundo de la superficie con el inframundo de Armucura."
+        },
+        {
+          "termino": "Sia Pedee",
+          "lengua": "Eperara Siapidara",
+          "significado_literal": "Voz de la caña brava / Palabra propia"
+        }
+      ]
+    },
+    "familia_barbacoa": {
+      "nombre_familia": "Familia Lingüística Barbacoa",
+      "clasificacion_filogenetica": "Familia lingüística precolombina de los Andes septentrionales y piedemonte pacífico. Comprende dos ramas geográficas: el grupo septentrional (Awá Pit en Colombia y Ecuador) y el grupo meridional (Cha'palaachi del pueblo Chachi y Tsáfiki del pueblo Tsáchila en Ecuador; emparentada filogenéticamente con el Guambiano/Namtrik de los Misak en el Cauca andino).",
+      "idioma_awa_pit": {
+        "glotocodigo": "awap1243",
+        "denominacion": "Awá Pit ('La boca/palabra de la gente de la selva')",
+        "numero_hablantes_estimado": 28000,
+        "distribucion": "Piedemonte costero de Nariño (cuencas de los ríos Güiza, Telembí, Mira, San Juan de Micay) y provincias de Carchi y Esmeraldas en Ecuador.",
+        "fonologia_awa_pit": {
+          "vocales": [
+            {
+              "fonema": "/a/",
+              "descripcion": "Abierta central no redondeada"
+            },
+            {
+              "fonema": "/e/",
+              "descripcion": "Semicerrada anterior no redondeada"
+            },
+            {
+              "fonema": "/i/",
+              "descripcion": "Cerrada anterior no redondeada"
+            },
+            {
+              "fonema": "/ɨ/",
+              "descripcion": "Cerrada central no redondeada (representada como 'u' o 'ɨ' en alfabetos propios)"
+            },
+            {
+              "fonema": "/o/",
+              "descripcion": "Semicerrada posterior redondeada"
+            },
+            {
+              "fonema": "/u/",
+              "descripcion": "Cerrada posterior redondeada"
+            }
+          ],
+          "consonantes": {
+            "oclusivas": "/p, t, k, ʔ/ (oclusiva glotal fonémica)",
+            "sonoras_oclusivas": "/b, d/ (intervocálicas y posnasales)",
+            "africada": "/ts/ (africada alveolar sorda)",
+            "fricativas": "/s, ʃ/ (sh), /x/ (j velar)",
+            "nasales": "/m, n, ŋ/ (nasal velar final)",
+            "laterales_y_liquidas": "/l/ (lateral alveolar) y /ʎ/ (lateral palatal 'll')",
+            "aproximantes": "/w, j/"
+          },
+          "acento": "Acento de tono o intensidad de contorno léxico que incide en la diferenciación de raíces verbales y nominales."
+        },
+        "morfosintaxis": {
+          "orden_oracional": "SOV (Sujeto - Objeto - Verbo) estricto.",
+          "tipologia": "Lengua aglutinante, polisintética y predominantemente sufijadora.",
+          "sistema_de_evidencialidad_gramaticalizada": "Rasgo tipológico de altísima complejidad: el hablante está obligado por la gramática a codificar en la desinencia del verbo la fuente precisa de su conocimiento: 1) Evidencial directo / visual (el hablante vio la acción con sus propios ojos); 2) Evidencial inferencial (el hablante no vio la acción pero la deduce por rastros físicos evidentes); 3) Evidencial de oídas / citativo (el hablante lo conoce porque otra persona se lo relató). Hablar sin especificar la fuente de evidencia se considera una transgresión de la veracidad comunicativa."
+        },
+        "glosario_espiritual_y_filosofico_awa": [
+          {
+            "termino": "Katsa Su",
+            "significado_literal": "Gran Casa / Gran Territorio Selva",
+            "interpretacion_cosmologica": "El organismo vivo cósmico donde habitan los seres humanos, los espíritus, los árboles gigantes y los animales. El territorio no es una mercancía que se pueda parcelar o vender, sino la madre nutricia indivisible que garantiza la existencia del pueblo Inkal Awá."
+          },
+          {
+            "termino": "Ampara Su",
+            "significado_literal": "Los Cuatro Mundos / Cuatro Espacios Cósmicos",
+            "interpretacion_cosmologica": "La estructura multidimensional del universo Awá que conecta el inframundo de Iguatsa, el mundo terrestre de Pas Su, el mundo superior de Chupiniana y la morada celestial suprema."
+          },
+          {
+            "termino": "Minkal",
+            "significado_literal": "Minga / Trabajo solidario comunitario",
+            "interpretacion_cosmologica": "Principio ético de ayuda mutua sin compensación económica monetaria; la fuerza colectiva que construye el tambo, limpia el camino selvático y defiende la soberanía territorial."
+          },
+          {
+            "termino": "Chutún",
+            "significado_literal": "Espíritu de quebrada / Entidad del agua profunda",
+            "interpretacion_cosmologica": "Ser espiritual que habita en remansos sombríos, charcos y cavernas húmedas de la selva; castiga con 'mal aire' y fiebres graves a quienes transgreden el silencio del bosque o se bañan a deshoras sin pedir permiso."
+          },
+          {
+            "termino": "Marrach / Curandero",
+            "significado_literal": "El que sabe sanar / El portador de la planta",
+            "interpretacion_cosmologica": "Médico tradicional conocedor de los cantos de apaciguamiento, los bejucos calientes del piedemonte y las oraciones para equilibrar el frío y el calor en el cuerpo del enfermo."
+          },
+          {
+            "termino": "Inkal",
+            "significado_literal": "La Selva virgen e intocada / Selva primaria",
+            "interpretacion_cosmologica": "El bosque primario sagrado, libre de hachas y motosierras, donde reposan las semillas matrices de todos los seres vivientes."
+          }
+        ]
+      }
+    },
+    "vitalidad_sociolinguistica_y_etnoeducacion": {
+      "diagnostico_general": "La vitalidad lingüística en el Chocó Biogeográfico presenta una dicotomía marcada: en los territorios colectivos y resguardos fluviales aislados (Alto y Medio Baudó, afluentes del Atrato, selvas del San Juan), las lenguas originarias conservan una vitalidad vigorosa con una tasa de transmisión intergeneracional superior al 85%. Sin embargo, en comunidades periurbanas (Quibdó, Buenaventura, Tumaco) o sometidas al desplazamiento forzado sistemático, la presión de la castellanización acelera la pérdida del idioma nativo.",
+      "procesos_de_etnoeducacion_propia": [
+        "Creación de alfabetos propios unificados y avalados por las organizaciones indígenas (Alfabeto Único Emberá y Alfabeto Awá Pit aprobado por UNIPA/CAMAWARI).",
+        "Publicación de cartillas escolares bilingües interculturales que integran la toponimia ancestral, la botánica curativa y los mitos de origen en las escuelas comunitarias de resguardo.",
+        "Estatuto de profesionalización de etnoeducadores indígenas reconocidos por sus propias autoridades tradicionales.",
+        "Proyecto de Nidos de Lengua (círculos de cuidado infantil tradicional donde las ancianas sabias crían a los niños en su lengua materna antes de su ingreso a la escuela formal)."
+      ]
+    }
+  },
+  "medicina_botanica_y_chamanismo": {
+    "institucion_del_jaibana": {
+      "ontologia_y_rol_sociorreligioso": "El Jaibaná es el eje cósmico, médico y filosófico de la cultura Emberá. Su función trasciende la medicina física: es un navegante ontológico de las diferentes dimensiones del universo, capaz de transmutar su percepción para entablar alianzas con los jais (espíritus tutelares de la naturaleza), neutralizar flechas invisibles arrojadas por hechiceros malévolos y restituir el alma extraviada al cuerpo de los enfermos. No gobierna mediante imposición autoritaria, sino a través de la sabiduría oracular y el arbitraje espiritual.",
+      "niveles_del_cosmos_recorridos_en_trance": [
+        "Mundo Celeste (Dututu): Espacio luminoso donde el Jaibaná viaja espiritualmente en busca de las esencias de la luz, el trueno y la fertilidad.",
+        "Mundo Terrestre (Egoró): Donde examina las perturbaciones ecológicas, infracciones a tabúes de caza y desequilibrios territoriales.",
+        "Inframundo Acuático y Subterráneo (Armucura): El abismo bajo las aguas de los grandes ríos Atrato, Baudó y San Juan, morada de entidades peligrosas de la sombra donde el Jaibaná debe descender valerosamente para arrebatar las almas prisioneras de los pacientes al borde de la muerte."
+      ],
+      "proceso_de_iniciacion_y_aprendizaje": {
+        "fase_de_reclusion": "El aspirante a Jaibaná se somete a un aislamiento estricto de varios meses en una choza solitaria en lo profundo de la selva virgen virgen, bajo la tutela de un maestro Jaibaná anciano.",
+        "dietas_rituales_rigurosas": "Abstinencia sexual absoluta, supresión total del consumo de sal, grasas animales, carnes rojas y ají picante; ingesta exclusiva de plátano verde cocido sin sazón y agua fresca de manantial de cabecera.",
+        "plantas_sagradas_de_vision": "Consumo nocturno ceremonial de brebajes de plantas maestras enteógenas: el 'pildé' o 'dapa' (Banisteriopsis caapi / Banisteriopsis rusbyana) y preparaciones de especies de solanáceas selváticas (Brugmansia candida / Iochroma fuchsioides). Bajo el efecto catalizador de estas plantas, el aprendiz experimenta la 'muerte mística', vence el terror a los monstruos de la selva y recibe la visita directa de los espíritus que aceptan convertirse en sus jais auxiliares.",
+        "las_piedras_sagradas_jai_tu": "El maestro consagra y entrega al iniciado un conjunto de piedras de cuarzo o cantos rodados extraídos del fondo de rápidos sagrados ('jai-tú'), donde residen de forma permanente sus espíritus protectores personales.",
+        "transmision_de_cantos_jai_aneda": "Memorización de miles de versos de cantos sagrados monódicos nocturnos que operan como fórmulas sonoras de convocación, combate y apaciguamiento de los espíritus."
+      },
+      "el_altar_paripa_y_la_sesion_nocturna": {
+        "composicion_del_paripa": "Mesa ceremonial elevada erigida dentro del tambo, cubierta con hojas frescas de platanillo silvestre (Heliconia) y bijao (Calathea). Sobre ella se ubican taburetes ceremoniales tallados en madera de balsa blanca que representan espíritus auxiliares, jícaras con aguardiente y chicha, atados de albahaca cimarrona para sahumar el ambiente y los bastones sagrados de mando clavados verticalmente.",
+        "dinamica_de_la_curacion": "La ceremonia inicia a medianoche con el tambo en absoluta penumbra. El Jaibaná ingiere aguardiente y extractos vegetales, enciende un tabaco silvestre y comienza a silbar y modular los cantos sagrados mientras sacude un manojo de hojas olorosas. Los jais acuden y toman posesión de los bastones sagrados. Con su visión chamánica, el Jaibaná detecta los dardos mágicos patógenos alojados en el cuerpo del paciente y procede a succionarlos directamente con su boca sobre la piel, transfiriéndolos y neutralizándolos en la madera de los bastones antes de liberarlos purificados al río."
+      }
+    },
+    "bastones_sagrados_de_curacion_hai_wandra": {
+      "denominacion": "Hai-wandra / Jai wandrá ('Bastones sagrados de curación y mando')",
+      "naturaleza_metafisica": "Los bastones no son símbolos seculares de poder burocrático ni meras obras decorativas; constituyen antenas metafísicas, condensadores de energía cósmica y cuerpos físicos temporales donde descienden y residen los espíritus tutelares (jais) convocados por el Jaibaná durante las curaciones nocturnas.",
+      "materiales_de_talla": [
+        {
+          "material": "Madera de Balsa (Ochroma pyramidale / balso blanco)",
+          "propiedades": "Madera de extraordinaria ligereza, suavidad y porosidad celular.",
+          "uso_terapeutico": "Se emplea para esculpir bastones de curación efímera y figuras antropomorfas de exorcismo. Su naturaleza absorbente permite succionar y alojar las energías patógenas, dolores y miasmas extraídos del enfermo; tras concluir el tratamiento, estos bastones cargados de mal son arrojados al río o enterrados en la selva profunda para que las aguas disuelvan la impureza."
+        },
+        {
+          "material": "Madera de Palma de Chonta (Bactris gasipaes) y Guayacán (Handroanthus chrysanthus)",
+          "propiedades": "Maderas de altísima densidad estructural, pesadas, imputrescibles y de color negro o pardo oscuro.",
+          "uso_terapeutico": "Se utilizan para forjar los bastones permanentes de mando, defensa territorial y combate chamánico mayor contra espíritus devoradores. Son reliquias hereditarias que acompañan al Jaibaná durante toda su vida y concentran una carga acumulada de jais protectores ancestrales."
+        }
+      ],
+      "iconografia_y_figuras_esculpidas": [
+        {
+          "figura": "Rostros Antropomorfos Ancestrales",
+          "simbolismo": "Figuras alargadas con tocados cónicos o plumas estilizadas, ojos almendrados y bocas solemnes que encarnan a los primeros ancestros sabios y doncellas míticas de las aguas."
+        },
+        {
+          "figura": "El Jaguar (Ima / Zhaura)",
+          "simbolismo": "El señor de la selva y la ferocidad guerrera; invocado para espantar entidades patógenas intrusas y proteger el perímetro del tambo."
+        },
+        {
+          "figura": "La Boa / Serpiente Cósmica (Tungurahua)",
+          "simbolismo": "Símbolo de regeneración, fluidez de las aguas de río y dominio sobre el inframundo de Armucura."
+        },
+        {
+          "figura": "El Mono Aullador (Ewá)",
+          "simbolismo": "Guardián de la copa de los árboles y portador de la voz atronadora que dispersa la confusión espiritual."
+        },
+        {
+          "figura": "Aves Rapaces y Garzas de Río",
+          "simbolismo": "Mensajeros veloces entre el mundo terrestre de Egoró y el mundo celeste superior de Dututu."
+        }
+      ]
+    },
+    "pintura_corporal_con_jagua_kipara": {
+      "especie_botanica": "Genipa americana (Familia Rubiaceae), conocida como Jagua en español, Kipará en lengua Emberá y Woun Meu.",
+      "quimica_y_mecanismo_de_pigmentacion": {
+        "compuesto_activo": "Genipina (un iridoide glucósido natural incoloro presente en la pulpa inmadura del fruto verde).",
+        "reaccion_bioquimica": "Al rallar la pulpa verde y prensarla, se obtiene un zumo transparente. Al aplicarse sobre la epidermis humana, la genipina reacciona de forma espontánea con los grupos amino primarios de las proteínas (queratina) y aminoácidos libres de la piel en presencia del oxígeno del aire. Mediante un proceso de polimerización oxidativa, se forman pigmentos poliméricos de pirrolil-polímero de color azul azabache a negro profundo.",
+        "duracion_y_fijacion": "El pigmento queda químicamente fijado en la capa córnea epidérmica. Es insoluble al agua, sudor y jabones; desaparece únicamente al cabo de 10 a 15 días mediante el ciclo biológico natural de descamación celular de la piel."
+      },
+      "dimension_espiritual_y_simbolica": {
+        "armadura_metafisica_contra_jais": "En la cosmovisión Emberá y Wounaan, la piel humana desnuda e inerte es extremadamente vulnerable a la penetración de jais patógenos y miradas destructivas de espíritus selváticos. Al cubrirse con Kipará, el cuerpo se sacraliza y se convierte en una armadura gráfica viviente: los espíritus malignos ven en la persona la piel de un caimán, una serpiente boa o una criatura mítica invulnerable, pasando de largo sin atacarla.",
+        "ritos_de_paso_y_ciclos_vitales": "La aplicación de jagua es obligatoria en ritos cruciales: la iniciación femenina de la pubertad (cuando la joven permanece varios días en aislamiento y sale al tambo con su cuerpo enteramente pintado con patrones de fertilidad), ceremonias nupciales, curaciones chamánicas y preparación de cazadores para adentrarse en selvas prohibidas."
+      },
+      "dimension_biologica_y_adaptativa": {
+        "repelencia_de_vectores_tropicales": "Potente actividad insectífuga y repelente contra flebótomos del género Lutzomyia (transmisores de la leishmaniasis cutánea, conocida como úlcera de Chiclero) y mosquitos del género Anopheles (transmisores de malaria por Plasmodium falciparum y vivax). En un medio con nubes constantes de jejenes y zancudos, la jagua es un escudo profiláctico esencial.",
+        "fotoproteccion_solar": "Filtro biológico de amplio espectro contra la radiación ultravioleta extrema a la que se exponen los pescadores y navegantes de canoa durante jornadas enteras a pleno sol en los ríos abiertos.",
+        "antiseptico_y_antifungico_dermico": "Propiedades antimicrobianas comprobadas que inhiben la proliferación de hongos (tiñas, pie de atleta) y bacterias cutáneas en un ecosistema con humedad relativa constante entre el 90% y el 98%."
+      },
+      "complemento_con_achiote": {
+        "especie": "Bixa orellana (Achiote / Onoto / Bixa)",
+        "pigmento": "Bixina y norbixina (carotenoides de color rojo fuego y naranja encendido).",
+        "significado": "Representa la energía solar, la sangre, el calor vital, la fecundidad y la alegría festiva. Se combina sobre el rostro y cuerpo con el azul-negro de la jagua para armonizar las polaridades térmicas corporales (fresco/caliente) en los rituales comunitarios."
+      },
+      "semiotica_de_los_patrones_geometricos": [
+        {
+          "diseño": "Rombos concéntricos continuos",
+          "nombre_vernaculo": "Ojos de boa / Piel de anaconda",
+          "funcion": "Blindaje espiritual que confiere la visión nocturna de la serpiente y agilidad evasiva."
+        },
+        {
+          "diseño": "Líneas quebradas en zigzag",
+          "nombre_vernaculo": "Dientes de caimán / Relámpagos de Dututu",
+          "funcion": "Protección contra mordeduras de serpientes venenosas en trochas selváticas."
+        },
+        {
+          "diseño": "Cuadrículas y crucetas estilizadas",
+          "nombre_vernaculo": "Huellas de saíno / Escamas de sábalo",
+          "funcion": "Atracción propiciatoria de presas durante las expediciones colectivas de caza y pesca."
+        },
+        {
+          "diseño": "Bandas transversales continuas",
+          "nombre_vernaculo": "Cinturones de contención",
+          "funcion": "Cierre hermético de las articulaciones (muñecas, tobillos, cintura) para evitar que los malos aires penetren al torrente sanguíneo."
+        }
+      ]
+    },
+    "farmacopea_vegetal_cortezas_y_bejucos": [
+      {
+        "nombre_comun": "Barbasco de selva / Barbasco legítimo",
+        "nombre_cientifico": "Lonchocarpus utilis / Lonchocarpus urucu (Familia Fabaceae)",
+        "parte_usada": "Raíces leñosas machacadas",
+        "principio_activo": "Rotenona (isoflavonoide ictiotóxico)",
+        "mecanismo_y_uso": "Utilizado en la pesca comunitaria controlada en remansos de quebradas. La rotenona bloquea la cadena respiratoria mitocondrial a nivel celular en organismos de respiración branquial (peces), asfixiándolos temporalmente y haciéndolos flotar a la superficie sin alterar la inocuidad de su carne para el consumo humano ni contaminar el agua para mamíferos terrestres."
+      },
+      {
+        "nombre_comun": "Quina de monte / Quina del Chocó",
+        "nombre_cientifico": "Cinchona pubescens y especies afines (Familia Rubiaceae)",
+        "parte_usada": "Corteza amarga del tronco",
+        "principio_activo": "Quinina, quinidina y cinconina (alcaloides quinolínicos)",
+        "mecanismo_y_uso": "Decocción concentrada de sabor intensamente amargo tomada en tomas pautadas para yugular las fiebres terciarias y cuartanas del paludismo (malaria), estimulando la sudoración y abatiendo la parasitemia sanguínea."
+      },
+      {
+        "nombre_comun": "Zarzaparrilla chocoana",
+        "nombre_cientifico": "Smilax regelii / Smilax cordato-ovata (Familia Smilacaceae)",
+        "parte_usada": "Rizomas y bejucos leñosos",
+        "principio_activo": "Saponinas esteroidales (esmilagenina, sarsasapogenina)",
+        "mecanismo_y_uso": "Brebajes depurativos de la sangre empleados para desinflamar articulaciones artríticas, tratar reumatismos agravados por la extrema humedad selvática y curar dermatosis rebeldes."
+      },
+      {
+        "nombre_comun": "Uña de Gato del Pacífico",
+        "nombre_cientifico": "Uncaria tomentosa (Familia Rubiaceae)",
+        "parte_usada": "Corteza interna fibrosa de la liana trepadora",
+        "principio_activo": "Alcaloides oxindólicos pentacíclicos y glucósidos de ácido quinóvico",
+        "mecanismo_y_uso": "Poderoso inmunoestimulante y antiinflamatorio sistémico; utilizado para reconstituir a enfermos convalecientes tras infecciones pulmonares tropicales, diarreas disentéricas y heridas ulcerosas."
+      },
+      {
+        "nombre_comun": "Bejuco de Agua / Chupa-agua",
+        "nombre_cientifico": "Doliocarpus dentatus / Tetracera volubilis (Familia Dilleniaceae)",
+        "parte_usada": "Tallo leñoso cilíndrico seccionado en campo",
+        "principio_activo": "Savia celular vegetal rica en electrolitos minerales y agua esterilizada",
+        "mecanismo_y_uso": "Recurso vital de supervivencia en travesías selváticas. Al cortar una sección de 1 metro de este bejuco, fluye de inmediato un chorro continuo de agua cristalina, fresca, pura y estéril, que apaga la sed de cazadores y evita el consumo de aguas estancadas infestadas de parásitos amebianos."
+      },
+      {
+        "nombre_comun": "Santa María / Cordoncillo de río",
+        "nombre_cientifico": "Piper peltatum / Piper aduncum (Familia Piperaceae)",
+        "parte_usada": "Hojas carnosas aromáticas machacadas en fresco",
+        "principio_activo": "Aceites esenciales (safrol, mirceno, terpineno) y flavonoides",
+        "mecanismo_y_uso": "Emplasto hemostático y antiséptico directo aplicado sobre heridas profundas de machete para coagular rápidamente la hemorragia, calmar el dolor punzante y evitar la gangrena o sobreinfección bacteriana."
+      },
+      {
+        "nombre_comun": "Balsamillo / Bálsamo de monte",
+        "nombre_cientifico": "Myroxylon balsamum (Familia Fabaceae)",
+        "parte_usada": "Resina oleosa aromática extraída por incisión del tronco",
+        "principio_activo": "Benzoato de bencilo, cinamato de bencilo y vanillina",
+        "mecanismo_y_uso": "Cicatrizante dérmico de máxima potencia para curar úlceras crónicas de leishmaniasis; en inhalaciones y vahos calientes descongestiona los bronquios afectados por afecciones gripales tropicales."
+      }
+    ],
+    "venenos_de_ranas_doradas_phyllobates_terribilis": {
+      "especies_utilizadas": [
+        {
+          "especie": "Phyllobates terribilis (Rana dardo dorada / Golden Poison Frog)",
+          "endemismo": "Estrictamente endémica de las selvas pluviales de la cuenca baja del Río Saija (municipio de Timbiquí, departamento del Cauca) y zonas adyacentes de la costa pacífica colombiana.",
+          "status_toxicologico": "Considerada el animal vertebrado terrestre más letal y venenoso del planeta Tierra.",
+          "toxina_principal": "Batracotoxina (alcaloide esteroide neurotóxico) junto con homobatracotoxina y batracotoxinina A.",
+          "mecanismo_fisiologico": "La batracotoxina se une de forma irreversible a los canales de sodio dependientes de voltaje de las membranas excitables de neuronas y células del músculo cardíaco. Impide permanentemente el cierre o inactivación de estos canales, provocando una despolarización continua y masiva con influjo incontrolado de iones Na+. Esto produce tetania muscular generalizada, parálisis respiratoria periférica fulminante, arritmias ventriculares letales, fibrilación cardíaca y muerte en cuestión de pocos minutos.",
+          "potencia_y_dosis_letal": "La dosis letal estimada en seres humanos adultos es de apenas 100 a 150 microgramos. Un solo ejemplar silvestre adulto de Phyllobates terribilis contiene en las glándulas de su piel más de 1.000 a 1.900 microgramos de batracotoxina, cantidad suficiente para provocar la muerte fulminante de 10 a 20 seres humanos adultos o de 15.000 ratones de laboratorio.",
+          "origen_ecologico_del_veneno": "Las ranas no sintetizan la toxina de manera endógena pura; la acumulan y concentran a través de su dieta especializada de escarabajos de la familia Melyridae (género Choresine), hormigas selváticas y milpiés ricos en alcaloides precursores.",
+          "metodologia_de_extraccion_indigena": {
+            "captura_segura": "Los cazadores Emberá y Eperara Siapidara capturan la rana utilizando hojas frescas de platanillo o bijao, evitando con rigor absoluto cualquier contacto con la piel humana desnuda (incluso una rozadura sobre una microfisura dérmica puede resultar fatal).",
+            "estimulacion_glandular": "Se sujeta al anfibio sobre una vara o se le expone cuidadosamente al calor tibio de cenizas de fogón (o se frota suavemente con una espátula vegetal); el estrés térmico induce la secreción refleja de una sustancia mucosa blanquecina y espumosa altamente concentrada a través de las glándulas granulares dorsales.",
+            "respeto_al_espiritu_animal": "Con frecuencia, tras recolectar la toxina frotando la madera de los dardos, la rana es liberada con vida en la selva con reverencia y plegarias de gratitud, considerándola un ser sagrado tutelar que entrega su armadura para sustentar a la familia cazadora."
+          },
+          "preparacion_y_curado_de_dardos": {
+            "morfologia_del_dardo": "Dardos de 20 a 30 cm de longitud tallados con espina de pescado a partir de las nervaduras leñosas de la palma de chonta (Bactris gasipaes). La punta se labra con pequeñas incisiones en espiral para alojar el veneno y provocar que se parta dentro del músculo de la presa.",
+            "impregnacion_y_durabilidad": "Las puntas se impregnan girándolas repetidamente en la espuma mucosa de la rana y se dejan secar lentamente a la sombra del tambo. Una vez curado, el veneno conserva su potencia neurotóxica letal durante más de un año en el interior de las aljabas selladas con cera silvestre.",
+            "balistica_en_cerbatana": "Disparado con cerbatana a las copas del dosel arbóreo (a 30 metros de altura), el dardo paraliza instantáneamente a monos aulladores, paujiles y saínos; la toxina destruye el control neuromuscular impidiendo que la presa se aferre a las ramas o huya en la espesura."
+          }
+        },
+        {
+          "especie": "Phyllobates bicolor (Rana dardo de patas negras)",
+          "endemismo": "Cuencas altas de los ríos San Juan y Atrato en los departamentos de Chocó y Risaralda.",
+          "uso_tradicional": "Segunda especie en potencia letal utilizada por los cazadores Emberá Chamí y Dobidá para envenenar dardos de cacería menor."
+        },
+        {
+          "especie": "Oophaga histrionica (antiguamente Dendrobates histrionicus / Rana arlequín venenosa)",
+          "endemismo": "Selvas pluviales de Chocó y Antioquia.",
+          "toxina": "Histrionicotoxinas (alcaloides espiro-piperidínicos no batracotoxínicos que actúan como bloqueadores del receptor nicotínico de acetilcolina en la placa neuromuscular)."
+        }
+      ]
+    }
+  },
+  "formas_de_cultivo_y_tecnologias": {
+    "agricultura_en_vegas_fluviales_inundables": {
+      "dinamica_geomorfologica_de_aluvion": "Los grandes ríos del Chocó (Atrato, Baudó, San Juan) descienden cargados de sedimentos andinos y materia orgánica selvática. En las crecientes periódicas conocidas como 'rebalsas' o 'empates', las aguas desbordan las márgenes depositando limos aluviales fértiles sobre las vegas ribereñas. Los pueblos indígenas han perfeccionado un modelo de agricultura aluvial cíclica que aprovecha este enriquecimiento natural periódico, evitando el agotamiento de suelos que en las colinas interiores son fuertemente ácidos, lateríticos y pobres en fósforo.",
+      "sistema_de_policultivo_estratificado": "En la chacra o huerto ribereño no existen monocultivos. Se imita la arquitectura estratificada de la selva natural mediante la coexistencia de árboles de dosel, frutales medianos, arbustos tintóreos y tubérculos rastreros.",
+      "cultivos_estrategicos": [
+        {
+          "cultivo": "Chontaduro (Bactris gasipaes)",
+          "denominacion": "El 'árbol sagrado del Pacífico' y despensa soberana.",
+          "importancia_nutricional": "Fruto de valor calórico y biológico extraordinario, rico en ácidos grasos insaturados, proteínas vegetales de alta digestibilidad, carbohidratos complejos, betacarotenos (provitamina A), fósforo y calcio.",
+          "usos_integrales": "La pulpa cocida con sal se consume diariamente; machacada y fermentada da origen a la chicha de chontaduro, indispensable en las fiestas y rituales comunales de cosecha (enero a abril). Del tronco se extrae la madera negra de chonta para pisos, arpones, bodoqueras y bastones; del ápice se extrae el palmito fresco tierno."
+        },
+        {
+          "cultivo": "Plátano primitivo y Musáceas (Musa acuminata x balbisiana)",
+          "variedades": "Plátano primitivo (pequeño y dulce), hartón (grande para cocción) y dominico.",
+          "rol_en_la_dieta": "Columna vertebral de la ingesta diaria de hidratos de carbono. Se prepara asado a las brasas, en rodajas fritas o hervido y pilado en morteros de madera maciza para elaborar la 'bala' de plátano, un cilindro denso y energizante que se sirve junto al caldo de pescado o carne de monte ahumada."
+        },
+        {
+          "cultivo": "Maíz Cariaco (Zea mays raza cariaco)",
+          "caracteristicas_agronomicas": "Variedad criolla ancestral adaptada a condiciones de humedad extrema y lluvias diarias torrenciales. Posee mazorcas con granos de colores variegados (morado, amarillo, rojo, moteado) y una cutícula impermeable resistente a pudriciones fúngicas.",
+          "usos": "Elaboración de panes y envueltos cocidos al vapor en hojas de bijao, chichas rituales y harina para papillas infantiles nutritivas."
+        },
+        {
+          "cultivo": "Achiote / Onoto (Bixa orellana)",
+          "usos": "Semillas cultivadas en los márgenes del tambo; condimento colorante en sopas y caldos de pescado, y fuente del pigmento rojo ritual para pinturas faciales corporales."
+        },
+        {
+          "cultivo": "Cacao Cimarrón y Pataxte (Theobroma gileri / Theobroma bicolor)",
+          "usos": "Cacaos silvestres de aroma complejo tolerantes al exceso hídrico; semillas fermentadas para preparar bebidas energéticas rituales y grasas hidratantes de uso dérmico."
+        },
+        {
+          "cultivo": "Papachina / Malanga (Colocasia esculenta y Xanthosoma sagittifolium)",
+          "usos": "Tubérculos hidrófilos sembrados directamente en zanjas y playones anegados; constituyen el alimento de reserva estratégica durante las grandes inundaciones cuando otros cultivos quedan temporalmente sumergidos."
+        }
+      ]
+    },
+    "cesteria_de_lujo_mundial": {
+      "palma_de_werregue": {
+        "especie": "Astrocaryum standleyanum (Familia Arecaceae), palma espinosa nativa de los bosques húmedos del Chocó y el Darién.",
+        "recoleccion_artesanal": "Labor de alta destreza y riesgo físico. La palma cuenta con espinas negras afiladas de hasta 15 cm a lo largo de todo el tronco. Los artesanos trepan mediante amarres de bejuco para cortar únicamente el cogollo tierno apical sin segar la vida de la planta.",
+        "beneficio_de_la_fibra": "Las hojas del cogollo se deshilachan pacientemente con agujas de hueso o punzones para separar hebras sedosas de extraordinaria resistencia a la tracción; se lavan, se solean para blanquearlas y se hilan a mano frotándolas sobre la pierna hasta lograr cordones uniformes.",
+        "tecnica_de_tejido_en_espiral_sobre_alma_de_paja": "Se utiliza un alma central de paja o fibra rígida (cordón matriz) alrededor de la cual se cosen y enlazan microscópicamente los hilos de werregue mediante una aguja fina. La puntada es tan apretada, uniforme y densa que no deja el menor intersticio de luz.",
+        "propiedades_impermeables": "Las vasijas, cántaros y platos resultantes son completamente estancos e impermeables: pueden contener agua, miel, chicha o sopas sin que se produzca la más mínima filtración líquida.",
+        "iconografia_y_valor_artistico": "Diseños geométricos narrativos que reproducen las constelaciones, los meandros del río San Juan, la piel del lagarto y la memoria de Maach Aai. Estas piezas son valoradas a nivel mundial como obras maestras del arte contemporáneo indígena, expuestas en galerías de arte y museos de diseño en Europa, Estados Unidos y Japón."
+      },
+      "paja_toquilla_y_paja_tetera": {
+        "especies": "Carludovica palmata (Paja toquilla / Iraca) y Stromanthe stromanthoides (Paja tetera) junto a Ischnosiphon arouma (Chocolatillo).",
+        "productos": "Canastos de transporte fluvial ('guangas'), esteras flexibles para dormir sobre los pisos entablados de chonta y petacas impermeables con tapa telescópica ajustada a presión que protegen vestimentas y semillas secas en las travesías en canoa."
+      },
+      "tecnica_ancestral_del_tinte_de_lodo": {
+        "fundamento_quimico_y_bioquimico": "Proceso milenario de tinción basado en la formación de complejos organometálicos insolubles de ferrotanino (reacción tanino-hierro).",
+        "procedimiento_paso_a_paso": [
+          {
+            "fase": "1. Hervor y mordentado con taninos",
+            "descripcion": "Las fibras vegetales de werregue o iraca se hierven durante horas en ollas de barro o hierro con cortezas trituradas de árboles de selva extremadamente ricos en taninos hidrolizables y condensados, como el mangle rojo (Rhizophora mangle), el encenillo o el algarrobo de monte (Hymenaea courbaril). Los taninos penetran y se adhieren covalentemente a la matriz celular de la fibra."
+          },
+          {
+            "fase": "2. Inmersión en lodo anaeróbico férrico",
+            "descripcion": "Las fibras teñidas de castaño se extraen y se entierran inmediatamente en el fango negro del fondo de ciénagas pantanosas, esteros de manglar o remansos lentos de río, ricos en sulfato ferroso y sales de hierro reducido (Fe2+ / Fe3+) generadas por descomposición biológica anaeróbica de la hojarasca selvática."
+          },
+          {
+            "fase": "3. Reacción de quelación y fijación",
+            "descripcion": "El hierro iónico del lodo reacciona instantáneamente con los grupos fenólicos de los taninos fijados en la fibra, precipitando un compuesto quelado de tanato de hierro negro azabache profundo. El color resultante es indestructible a la luz solar, a la lluvia ácida y al desgaste por rozamiento mecánico."
+          }
+        ],
+        "otros_tintes_botanicos": [
+          {
+            "color": "Amarillo brillante y Dorado",
+            "origen": "Cocción con rizomas machacados de Cúrcuma / Azafrán de raíz (Curcuma longa / Bixa)."
+          },
+          {
+            "color": "Rojo carmesí y Terracota",
+            "origen": "Maceración en caliente de semillas de Achiote (Bixa orellana) o corteza de palo de Brasil."
+          },
+          {
+            "color": "Verde oliva selvático",
+            "origen": "Infusión de hojas trituradas de Yuquilla silvestre y bejucos de sombra."
+          },
+          {
+            "color": "Blanco crema natural",
+            "origen": "Blanqueamiento directo al sol y sereno nocturno de la fibra sin adición de mordientes."
+          }
+        ]
+      }
+    },
+    "tecnicas_de_caceria_y_pesca": {
+      "cerbatana_o_bodoquera": {
+        "denominacion": "U en lengua Emberá; Tutu en lengua Woun Meu; Bodoquera en español del Pacífico.",
+        "morfologia_y_fabricacion": "Tubo balístico recto de 2.5 a 3.5 metros de longitud. Se fabrica a partir de un tronco curado de palma de chonta o madera de gualanday, hendido longitudinalmente con precisión simétrica en dos mitades. Cada mitad se vacía internamente formando una canaleta semicilíndrica perfecta y luego se unen con brea vegetal y cera de abejas silvestres; se envuelve exteriormente en espiral con corteza de majagua y se pule el ánima interna con agua y arena silícea finísima hasta lograr un pulido espejo sin resistencia friccional. Se remata con una boquilla torneada de madera o hueso.",
+        "dardos_y_taco_de_ceiba": "Los dardos de vena de chonta llevan en su base posterior un capuchón cónico elaborado con el vilano algodonoso del fruto de la ceiba (Ceiba pentandra). Este capuchón sella herméticamente la presión del aire generado por el soplido humano súbito del cazador, impulsando el dardo a velocidades terminales de hasta 40 metros por segundo.",
+        "precision_y_silencio": "Arma de sigilo supremo para caza arborícola en el dosel de la selva (a 25-35 metros de altura). Al disparar no se genera detonación ni estampido, permitiendo abatir múltiples presas en una misma bandada o manada de primates sin que los animales se alarmen."
+      },
+      "pesca_fluvial_con_trampas_de_estera_y_corrales": [
+        {
+          "nombre_artefacto": "Corrales y Chiqueros fluviales (Cancaperos)",
+          "estructura": "Enrejados y cercas fijas construidas con caña brava (Gynerium sagittatum) y listones de chonta clavados en el lecho fangoso de caños, meandros y bocanas de quebradas tributarias.",
+          "mecanismo_hidrologico": "Aprovechan la fluctuación rítmica del nivel del agua. Durante las crecientes, los cardúmenes de bocachico, dentón y sabaleta ingresan a las ciénagas inundadas a forrajear; al bajar el nivel del río con el reflujo, la compuerta de estera se ajusta, atrapando a los peces vivos en una piscina confinada donde los pescadores seleccionan los ejemplares adultos liberando a los juveniles."
+        },
+        {
+          "nombre_artefacto": "Nasas cónicas y Chiripas de bejuco",
+          "estructura": "Canastos alargados en forma de embudo inverso tejidos con bejucos flexibles, lastrados con piedras de río y cebados con masa de yuca.",
+          "mecanismo_hidrologico": "Se colocan en los fondos pedregosos de corrientes rápidas para atrapar camarones de río gigantes (Macrobrachium americanum) y peces de fondo."
+        },
+        {
+          "nombre_artefacto": "Fisgas y Arponejos de chonta",
+          "estructura": "Varas largas de chonta rematadas en tres o cuatro púas afiladas de hierro o espinas de raya.",
+          "mecanismo_hidrologico": "Utilizadas en noches oscuras de estiaje para pesca al vuelo desde la proa de las canoas con el apoyo de antorchas resinosas o farolas."
+        }
+      ]
+    }
+  },
+  "arquitectura_e_ingenieria_fluvial": {
+    "el_tambo_palafitico_tradicional": {
+      "bioclimatica_en_selva_hiperhumeda": "El tambo indígena del Chocó representa la solución cumbre de la arquitectura vernácula mundial para habitar el trópico lluvioso saturado (precipitaciones de 8.000 a 13.000 mm anuales y humedad del 95%). Cada elemento responde a leyes termodinámicas y ecológicas precisas: disipación continua del calor por convección, aislamiento de la humedad telúrica y drenaje inmediato del agua de lluvia.",
+      "cimentacion_sobre_zancos_y_pilotes": {
+        "altura_de_elevacion": "La plataforma habitable se eleva entre 2.5 y 4.5 metros sobre la superficie del terreno.",
+        "maderas_estructurales_inmunes_al_agua": [
+          "Guayacán negro / Guayacán polvillo (Handroanthus chrysanthus): Madera de dureza diamantina con alto contenido de taninos y lignina densa que no se pudre en contacto con el suelo pantanoso.",
+          "Palma de Chonta (Bactris gasipaes): Fuste fibroso silificado impenetrable para comejenes y termitas.",
+          "Abarco (Cariniana pyriformis) y Chanul (Humiriastrum procerum): Vigas maestras de gran luz y resistencia a flexión."
+        ],
+        "funciones_defensivas_y_sanitarias": [
+          "Inmunidad frente a riadas súbitas: Durante los 'empates' o crecientes intempestivas del río Atrato o Baudó provocadas por aguaceros cordilleranos, el nivel de las aguas sube metros sin anegar la plataforma habitable.",
+          "Barrera infranqueable para serpientes y ponzoñas: Impide el acceso al hogar de víboras letales de suelo como la mapaná (Bothrops asper), la verrugosa o patoco (Lachesis muta), escorpiones y ciempiés gigantes.",
+          "Higiene microbiana: Al mantener la vivienda suspendida en el aire, se evita el moho negro y la pudrición fúngica de ropas, alimentos y esteras."
+        ]
+      },
+      "cubierta_monumental_de_alta_pendiente": {
+        "geometria_y_angulos": "Techos cónicos, piramidales o a cuatro aguas con inclinaciones acusadas de 50° a 65° de pendiente.",
+        "drenaje_hidraulico": "La pendiente pronunciada no permite que las gotas torrenciales de lluvia choquen en ángulo recto ni se empozen; el agua resbala a velocidad de vértigo por gravedad hacia los aleros exteriores volados.",
+        "hojas_de_palma_nobles": [
+          "Palma Amargo (Welfia regia): Hojas gigantes de peciolo correoso que duran más de 12 a 15 años sin pudrirse.",
+          "Palma Caraná y Paja Toquilla (Carludovica palmata): Entramado tupido que otorga un aislamiento térmico y acústico insuperable, amortiguando el ensordecedor rugido de los aguaceros selváticos (a diferencia del zinc comercial que convierte las casas en hornos resonantes)."
+        ]
+      },
+      "espacio_interior_y_ventilacion_cruzada": {
+        "ausencia_de_paredes_fijas": "El tambo carece de tabiques o muros divisorios rígidos continuos en su perímetro. Es una gran plataforma abierta de planta rectangular o poligonal protegida por el alero del techo, permitiendo que la brisa selvática circule libremente en 360 grados, refrescando el cuerpo y secando el ambiente saturado.",
+        "pisos_abiertos_de_palma_picada": "Pisos confeccionados con tablillas de palma de chonta rajada y aplanada ('palma picada') o esterilla de guadua. Las pequeñas rendijas entre tablillas permiten que el aire fresco del sotobosque sombreado bajo los zancos ascienda por convección al interior de la casa, y facilitan el aseo diario arrojando el agua y los residuos directamente al suelo vegetal exterior.",
+        "el_fogon_elevado_caja_de_barro": "Plataforma reforzada de madera cubierta por un lecho de arcilla cocida y arena de río de 15 cm de grosor donde arde el fuego de leña. El humo aromático asciende de forma continua por la techumbre: este humo impregna las hojas de palma con resinas fenólicas que las impermeabilizan de por vida, espantan insectos xilófagos (termitas y polillas), murciélagos hematófagos y mosquitos, al tiempo que ahúma carnes y pescados colgados en zarzos suspendidos.",
+        "escalera_muescada_retractable": "El acceso al tambo se realiza por un tronco único de madera dura al que se le han tallado muescas de apoyo palmar y plantar. Al caer la noche, la escalera se gira con las muescas hacia abajo o se iza a la plataforma: de este modo ningún felino (jaguar, puma), perro silvestre, enemigo o espíritu malévolo errante puede ingresar a la casa."
+      }
+    },
+    "ingenieria_naval_fluvial": {
+      "canoas_monoxilas_champas_y_potrillos": {
+        "denominacion": "Champa (embarcación mediana a grande de transporte de carga y familia); Potrillo (embarcación pequeña, ligera y veloz para pesca individual o navegación de estero); Balsa (embarcación de fondo plano).",
+        "seleccion_de_arboles_madre": "Se talan árboles colosales del dosel selvático con propiedades mecánicas hidrófugas: Cedro amargo (Cedrela odorata), Caracolí (Anacardium excelsum), Cuángare (Otoba gracilipes), Jigua (Nectandra sp.) y Chañó.",
+        "vaciado_del_tronco_y_fuego_controlado": "La canoa se labra en una sola pieza de tronco sin uniones ni ensambles de quilla. Se desbasta la madera con hacha y azuela; el interior se ahueca mediante fuego superficial controlado de virutas y raspado continuo, endureciendo la fibra residual.",
+        "apertura_de_manga_por_calor_y_cuñas": "Para ensanchar la manga y conferirle estabilidad hidrodinámica evitando que zozobre, se calienta el casco humedecido sobre hogueras lentas y se introducen transversalmente cuñas y puntales de madera de chonta progresivamente más anchos; el calor y el vapor dilatan la madera permitiendo abrir el casco sin fisurarlo.",
+        "diseño_hidrodinamico_para_raudales": "Fondo suavemente aplanado que permite navegar en playones con apenas 15 cm de agua en verano; proa y popa levantadas en suave ángulo lanzador para remontar las olas de los raudales bravos ('chorros') y resistir el oleaje cruzado en las desembocaduras marinas."
+      },
+      "canaletes_tallados": {
+        "morfologia": "Remos de tracción tallados a mano en maderas livianas y flexibles (laurel, balso macho o cedro). Hoja ancha en forma de punta de lanza o gota estilizada, asta delgada y remate superior con empuñadura ergonómica en 'T' para apoyo palmar en jornadas de paleo continuo de 12 horas.",
+        "simbolismo_estetico": "Muchos canaletes presentan tallas en relieve e incisiones de animales totémicos acuáticos (nutrias, rayas, delfines de río) pintadas con jugos de jagua y achiote para impetrar la protección de los jais durante los pasos fluviales peligrosos."
+      }
+    }
+  },
+  "liderazgo_historia_y_resistencia": {
+    "resistencias_historicas_al_regimen_colonial_espanol": {
+      "el_regimen_de_los_reales_de_minas": "Durante los siglos XVI, XVII y XVIII, las provincias coloniales del Chocó (Citará, Nóvita, San Juan, Tatamá) y de Barbacoas se constituyeron en el corazón de la minería de oro y platino de aluvión del Virreinato del Nuevo Reino de Granada. La Corona española intentó someter militar y espiritualmente a los pueblos indígenas a través de encomiendas forzadas, tributos de polvo de oro y reducciones misioneras franciscanas y jesuitas para explotar los lechos fluviales auríferos.",
+      "la_gran_rebelion_de_citaraes_y_noanamaes_1684": {
+        "año": 1684,
+        "antecedentes": "La insoportable opresión minera, los castigos físicos y la concentración forzada en pueblos de doctrina desencadenaron una conspiración confederada sin precedentes entre los Emberá (Citaráes) y los Wounaan (Noanamáes).",
+        "los_hechos": "El 4 de febrero de 1684 estalló la rebelión general coordinada a lo largo de las cuencas de los ríos Atrato y San Juan. Los caciques y Jaibanás asaltaron los Reales de Minas, quemaron los poblados coloniales, ajusticiaron a los corregidores reales, soldados y frailes doctrineros, expulsando a todos los españoles del territorio y recuperando la soberanía autónoma de la selva durante más de tres años.",
+        "impacto_historico": "La sublevación demostró a la Corona española la imposibilidad de someter a los indígenas del Chocó como mano de obra minera esclavizada y concentrada, obligando a los encomenderos a importar masivamente cuadrillas de personas esclavizadas de origen africano para la minería de aluvión."
+      },
+      "la_resistencia_de_los_sindaguas_en_barbacoas": "En el piedemonte pacífico de Nariño (ríos Telembí y Patía), los ancestros Sindaguas (rama guerrera vinculada a los pueblos Barbacoas y Awá) mantuvieron una guerra de guerrillas de más de cuatro décadas contra las expediciones de conquista militar de Popayán y Pasto, emboscando las columnas españolas con cerbatanas y dardos envenenados hasta su sangriento sometimiento militar a mediados del siglo XVII.",
+      "el_repliegue_estrategico_chocó_adentro": "Frente a las expediciones de reconquista española, los pueblos Emberá y Wounaan desplegaron una estrategia militar y cultural de repliegue selva adentro ('ríos arriba' / 'chocó adentro'): abandonaron las riberas principales y se internaron en las cabeceras remotas e inaccesibles de los ríos y quebradas, conservando intactos sus tambos dispersos, su lengua, su religión del Jaibaná y su soberanía ecológica.",
+      "territorialidades_compartidas_afro_e_indigenas": "A lo largo de los siglos XVIII y XIX, las personas africanas esclavizadas que huían de las minas auríferas (cimarrones) conformaron palenques en las riberas medias y bajas del Chocó. Entre las comunidades negras e indígenas se forjó un pacto histórico de coexistencia territorial: los indígenas habitaron las cabeceras fluviales y selvas altas de montaña, mientras las comunidades afrodescendientes se consolidaron en los cursos medios y bajos de los ríos navegables, compartiendo conocimientos botánicos, prácticas agrícolas, navegación fluvial y una memoria común de resistencia anticolonial."
+    },
+    "organizaciones_indigenas_modernas": [
+      {
+        "sigla": "OREWA",
+        "nombre_completo": "Asociación de Cabildos Mayores Indígenas del Chocó (Organización Regional Emberá Wounaan)",
+        "fundacion": "Fundada formalmente entre 1979 y 1980 en Quibdó (Chocó).",
+        "papel_historico": "Fue la organización pionera que aglutinó por primera vez a los pueblos Emberá (Dobidá, Katío, Chamí) y Wounaan en un solo bloque político de reivindicación de tierras. Enfrentó con éxito la tala indiscriminada de multinacionales madereras (como Maderas del Darién), frenó la usurpación de playones por terratenientes y lideró la titulación colectiva de más de un millón de hectáreas en resguardos indígenas ante el INCORA / INCODER. Promovió la etnoeducación bilingüe propia y la defensa del Jaibaná como figura pública de salud comunitaria."
+      },
+      {
+        "sigla": "CAMIZBA",
+        "nombre_completo": "Cabildo Mayor Indígena de la Zona del Bajo Atrato",
+        "jurisdiccion": "Cuenca baja del río Atrato y afluentes (municipios de Riosucio, Carmen del Darién y Unguía, Chocó).",
+        "luchas_emblematicas": "Baluarte irreductible de protección de las comunidades Emberá y Wounaan frente a los peores embates del paramilitarismo, el narcotráfico y el despojo de tierras para proyectos agroindustriales de palma de aceite y ganadería extensiva a finales de los años 90 y 2000. Defensores de la permanencia en el territorio y la soberanía alimentaria ribereña."
+      },
+      {
+        "sigla": "FEDEOREWA",
+        "nombre_completo": "Federación de Asociaciones de Cabildos Indígenas del Chocó",
+        "alcance": "Estructura federativa nacida de la evolución de la OREWA para articular asociaciones subregionales de cabildos en el San Juan, Baudó y Atrato medio."
+      },
+      {
+        "sigla": "UNIPA",
+        "nombre_completo": "Unidad Indígena del Pueblo Awá",
+        "fundacion": "Fundada en 1990 en Nariño.",
+        "lucha_historica": "Vanguardia de la pervivencia del pueblo Inkal Awá en más de 32 resguardos. Con bastones de mando y marchas pacíficas, ha resistido al fuego cruzado de guerrillas, paramilitares y fuerza pública, combatiendo la siembra de minas antipersonal y el despojo territorial, y liderando el Plan de Salvaguarda Étnica ordenado por la Corte Constitucional."
+      },
+      {
+        "sigla": "CAMAWARI",
+        "nombre_completo": "Cabildo Mayor Awá de Ricaurte",
+        "alcance": "Organización histórica de los resguardos Awá asentados en la vertiente del río Güiza (Ricaurte y Mallama, Nariño)."
+      },
+      {
+        "sigla": "ACIES",
+        "nombre_completo": "Asociación de Cabildos Indígenas Eperara Siapidara",
+        "alcance": "Voz política y jurídica de las comunidades Eperara Siapidara de los litorales y esteros de Cauca y Nariño."
+      }
+    ],
+    "defensa_de_titulos_colectivos_resguardos_y_derechos_bioculturales": {
+      "marco_constitucional_de_1991": "La Constitución Política de Colombia de 1991 (Artículos 329 y 330) y la ratificación del Convenio 169 de la OIT sobre Pueblos Indígenas y Tribales consagraron a los Resguardos Indígenas como propiedad colectiva inalienable, imprescriptible e inembargable, reconociendo a las autoridades tradicionales el rango de autoridades públicas con funciones de administración territorial y justicia propia dentro de sus resguardos.",
+      "resguardos_emblematicos": [
+        {
+          "nombre": "Resguardo Indígena Tahamí del Alto Andágueda",
+          "pueblo": "Emberá Katío",
+          "municipio": "Bagadó (Chocó)",
+          "extension_hectareas": 50000,
+          "hito_jurisprudencial": "En septiembre de 2014, el Tribunal de Restitución de Tierras de Antioquia profirió la histórica Sentencia de Restitución Étnica que suspendió de forma fulminante todos los títulos y solicitudes de concesión minera multinacional superpuestos sobre el resguardo, ordenando la reparación integral de los derechos territoriales comunitarios y la descontaminación de sus fuentes hídricas tras décadas de conflicto armado."
+        },
+        {
+          "nombre": "Resguardos Karagabí e Ibudó (Alto Sinú)",
+          "pueblo": "Emberá Katío",
+          "municipio": "Tierralta (Córdoba)",
+          "lucha_territorial": "Epicentro de la gesta épica contra el megaproyecto hidroeléctrico Urrá I. El liderazgo del mártir Kimy Pernía Domicó (desaparecido forzadamente en 2001) consolidó la doctrina internacional sobre el derecho fundamental a la consulta previa, libre e informada y la reparación del genocidio ecológico fluvial."
+        },
+        {
+          "nombre": "Resguardos del Río Baudó y Río San Juan",
+          "pueblo": "Emberá Dobidá y Wounaan",
+          "municipios": "Medio Baudó, Alto Baudó, Litoral del San Juan (Chocó)",
+          "extension_hectareas": "Más de 350.000 hectáreas de bosque pluvial primario protegidas bajo títulos colectivos."
+        }
+      ],
+      "sentencia_t622_de_2016_rio_atrato_sujeto_de_derechos": {
+        "tribunal": "Corte Constitucional de Colombia (Sala Sexta de Revisión, Ponente: Magistrado Jorge Iván Palacio Palacio)",
+        "declaratoria_revolucionaria": "Reconoció formalmente al Río Atrato, su cuenca y sus afluentes como una entidad viviente titular de derechos a la protección, conservación, mantenimiento y restauración integral a cargo del Estado y de las comunidades étnicas.",
+        "concepto_de_derechos_bioculturales": "La sentencia acuñó en la jurisprudencia mundial el concepto de 'Derechos Bioculturales', el cual postula que la naturaleza y los pueblos originarios forman una sola unidad indivisible: la conservación biológica de las selvas y los ríos es materialmente imposible sin garantizar la supervivencia física, cultural, lingüística y espiritual de las comunidades indígenas y afrodescendientes que han custodiado esos ecosistemas.",
+        "cuerpo_colegiado_de_guardianes_del_atrato": "Órgano colegiado de gobernanza biocultural inédito en el derecho internacional, compuesto por un delegado del Ministerio de Ambiente y 14 guardianes comunitarios elegidos por las organizaciones étnicas del territorio (incluyendo delegados indígenas de OREWA, FEDEOREWA y CAMIZBA, y delegados afrocolombianos de COCOMOPOCA, COCOMACIA y ASCOBA), con facultades para ordenar el desmantelamiento de dragas mineras ilegales con mercurio y liderar planes de descontaminación de aguas."
+      },
+      "la_guardia_indigena_como_escudo_de_paz": {
+        "definicion": "Cuerpo civil, desarmado, humanitario y voluntario integrado por mujeres, jóvenes y hombres elegidos en asambleas comunitarias para la custodia pacífica del territorio ancestral.",
+        "el_baston_de_mando": "Vara cilíndrica tallada en madera noble de palma de chonta pulida, engalanada con cintas de lana de colores encendidos (rojo, verde, blanco y azul). No es un arma contundente; encarna la autoridad moral colectiva, la paz, la memoria de los ancestros y la resistencia pacífica no violenta.",
+        "misiones_en_el_choco_y_pacifico": [
+          "Control territorial autónomo en bocanas de ríos y senderos selváticos para impedir la incursión de actores armados ilegales en escuelas y tambos sagrados.",
+          "Acompañamiento humanitario a comunidades en confinamiento por combates o desplazamientos forzados.",
+          "Búsqueda, rescate y protección de líderes indígenas amenazados.",
+          "Erradicación manual pacífica comunitaria de cultivos de uso ilícito dentro de los resguardos.",
+          "Custodia de los sitios sagrados donde habitan los jais y las plantas maestras de la farmacopea tradicional."
+        ]
+      }
+    }
+  }
+}

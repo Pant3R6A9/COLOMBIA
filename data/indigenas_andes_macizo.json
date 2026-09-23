@@ -1,0 +1,1275 @@
+{
+  "metadata": {
+    "titulo": "Gran Compendio Enciclopédico de los Pueblos Indígenas de los Andes, Macizo Colombiano y Cuenca del Cauca",
+    "descripcion": "Capa exhaustiva de datos etnográficos, lingüísticos, agroculturales, arquitectónicos, cosmológicos y de resistencia histórica sobre los pueblos originarios de la cordillera de los Andes, el Macizo Colombiano, el Nudo de los Pastos, el Valle del Alto Cauca y los cabildos muiscas en recuperación del altiplano cundiboyacense.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026",
+    "autor": "Subagente Especialista en Pueblos Indígenas de los Andes, Macizo Colombiano y Cuenca del Cauca de Colombianopedia",
+    "alcance_geografico": [
+      "Macizo Colombiano (Estrella Fluvial de Colombia)",
+      "Nudo de los Pastos y cañón del Guáitara",
+      "Valle del Río Cauca y vertientes de la Cordillera Central y Occidental",
+      "Tierradentro (cuenca del río Páez)",
+      "Valle del Alto Magdalena y serranía del Pacandé (Tolima y Huila)",
+      "Altiplano Cundiboyacense (Sabana de Bogotá y valles de Tunja, Sogamoso y Ubaté)"
+    ],
+    "marcos_juridicos_y_constitucionales": {
+      "constitucion_politica_1991": [
+        "Artículo 7: Reconocimiento y protección de la diversidad étnica y cultural de la Nación colombiana.",
+        "Artículo 10: Oficialidad de las lenguas y dialectos de los grupos étnicos en sus territorios.",
+        "Artículo 246: Jurisdicción Especial Indígena (JEI) y ejercicio de funciones jurisdiccionales dentro de su ámbito territorial según sus propias normas y procedimientos.",
+        "Artículo 329 y 330: Naturaleza inalienable, imprescriptible e inembargable de los resguardos indígenas; conformación y gobierno de las Entidades Territoriales Indígenas (ETI) a través de Cabildos y Consejos Tradicionales."
+      ],
+      "normativa_internacional": "Convenio 169 de la Organización Internacional del Trabajo (OIT) sobre Pueblos Indígenas y Tribales (incorporado mediante Ley 21 de 1991) y Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas (2007).",
+      "jurisprudencia_hito": [
+        "Sentencia T-025 de 2004 y Auto 004 de 2009 de la Corte Constitucional: Declaratoria del estado de cosas inconstitucional por el impacto desproporcionado del conflicto armado interno y el riesgo inminente de extinción física y cultural de pueblos indígenas colombianos.",
+        "Sentencia SU-039 de 1997 y Sentencia T-129 de 2011: Doctrina constitucional vinculante sobre el derecho fundamental a la Consulta Previa, Libre e Informada (CPLI)."
+      ]
+    },
+    "total_pueblos_documentados": 11,
+    "pueblos_catalogo": [
+      "Nasa (Paeces)",
+      "Misak (Guambianos)",
+      "Yanacona",
+      "Pastos",
+      "Quillacingas",
+      "Pijao",
+      "Coconuco",
+      "Totoró",
+      "Polindara",
+      "Ambaló",
+      "Cabildos Muiscas en Recuperación del Altiplano"
+    ]
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "nasa",
+      "nombre_comun": "Nasa",
+      "exonomo_historico": "Páez (denominación impuesta en las crónicas españolas del siglo XVI)",
+      "autonimo": "Nasa",
+      "significado_autonimo": "'Gente' o 'seres humanos' en lengua Nasa Yuwe.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 243176,
+        "departamentos_presencia": [
+          "Cauca",
+          "Valle del Cauca",
+          "Tolima",
+          "Huila",
+          "Putumayo",
+          "Caquetá",
+          "Meta"
+        ],
+        "territorio_nuclear": "Tierradentro (municipios de Páez e Inzá, vertiente oriental de la Cordillera Central del Cauca) y Norte del Cauca (Toribío, Jambaló, Caldono, Santander de Quilichao, Corinto, Miranda, Caloto, Buenos Aires).",
+        "pisos_termicos": "Desde tierras cálidas de vega aluvial (1.000 msnm) hasta valles templados, laderas andinas frías y páramos (hasta 4.000 msnm en el Macizo de Tierradentro y estribaciones del Nevado del Huila).",
+        "cuencas_hidrograficas_clave": [
+          "Río Páez",
+          "Río La Plata",
+          "Río Palo",
+          "Río Desbaratado",
+          "Río Mondomo",
+          "Río Cauca"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildo Indígena de origen colonial resignificado como gobierno propio autónomo, elegido anualmente en asamblea comunitaria.",
+        "organizaciones_representativas": [
+          "CRIC (Consejo Regional Indígena del Cauca, fundado en Toribío en 1971)",
+          "ACIN (Asociación de Cabildos Indígenas del Norte del Cauca - Cxhab Wala Kiwe)",
+          "Asociación de Autoridades Tradicionales Indígenas de Tierradentro (Nasa Çxhâçxha)",
+          "ONIC (Organización Nacional Indígena de Colombia)"
+        ],
+        "espacios_deliberativos": "La Asamblea General Comunitaria (máxima autoridad decisoria) y la Minga (trabajo y deliberación colectiva sin jerarquías mercantiles).",
+        "cuerpo_defensa_territorial": "Kiwe Thegnas (Guardia Indígena Comunitaria de Paz)."
+      },
+      "cosmovision_y_espiritualidad": {
+        "deidades_y_fuerzas_primordiales": {
+          "uma_y_tay": "Fuerzas cósmicas complementarias: Uma (energía femenina, la Madre Tierra, el agua nutriente y la noche) y Tay (energía solar, el fuego, el trueno masculino creador). El universo se mantiene en equilibrio dinámico mediante su interacción.",
+          "juan_tama_de_la_estrella": "Líder sagrado, hijo de la estrella y del agua, enviado para guiar política y espiritualmente al pueblo Nasa ante la invasión territorial.",
+          "los_a": "Espíritus tutelares de la selva, los ojos de agua, las cavernas y los cerros, a quienes se debe pedir permiso y ofrendar antes de intervenir el territorio."
+        },
+        "concepcion_espacio_temporal": "El tiempo es una espiral viviente. No existe la linealidad progresiva occidental; el pasado camina frente a nosotros guiando los pasos, mientras el futuro viene tras nosotros tejiéndose con las acciones presentes.",
+        "armonizacion_cosmica": "Todo desequilibrio social o enfermedad física es producto de la pérdida de armonía con los espíritus de la naturaleza y con la comunidad, requiriendo ceremonias colectivas de 'refrescamiento' (pu'yakxn)."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "The'Wala (médicos y sabios tradicionales que interpretan la naturaleza, el pulso y los sueños).",
+        "metodos_diagnostico": "Lectura profunda del pulso arterial (yat) y oniromancia interpretativa (ksxa'w).",
+        "practicas": "Sahumerios con plantas amargas y dulces, baños en lagunas sagradas, mambeo de hoja de coca andina (jiibx) y pagamento espiritual."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "El Tul (huerto agroforestal tradicional biodiverso adyacente a la vivienda).",
+        "cultivos_cardinales": [
+          "Maíz blanco y capio",
+          "Frijol guapucha trepador",
+          "Arracacha",
+          "Ulluco",
+          "Yuca de montaña",
+          "Café bajo sombra",
+          "Plátano dominico"
+        ],
+        "estrategia_agricola": "Policultivo en pisos térmicos combinados, trueque de semillas nativas y rotación de suelos con descanso biológico."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de bahareque repelladas con barro y paja, o tapia pisada en zonas altas; techos a dos y cuatro aguas con paja de páramo o teja de barro, organizadas en torno a la tulpa (fogón de tres piedras).",
+        "textileria": "Hilado de lana virgen de oveja en huso de madera; tejido de ruanas gruesas, capisayos y chumbes sagrados con telar vertical y de cintura.",
+        "musica": "Chirimía caucana compuesta por flautas traversas de carrizo (ku'vi), bombo mayor, tambora redoblante y raspadores de calabazo."
+      },
+      "lucha_historica_y_resistencia": {
+        "resistencia_colonial": "Guerra implacable contra los capitanes de Sebastián de Belalcázar; confederación de Tierradentro que impidió la dominación española durante más de un siglo.",
+        "títulos_coloniales": "Consolidación de los resguardos de Tierradentro por Juan Tama de la Estrella ante la Real Audiencia de Quito en el siglo XVII.",
+        "lucha_moderna": "Movimiento de recuperación de tierras liderado por Manuel Quintín Lame a inicios del siglo XX; fundación del CRIC en 1971; proceso de Liberación de la Madre Tierra en las haciendas cañeras del norte del Cauca."
+      }
+    },
+    {
+      "id": "misak",
+      "nombre_comun": "Misak",
+      "exonomo_historico": "Guambiano (denominación colonial española derivada del cacicazgo del río Piendamó)",
+      "autonimo": "Namuy Misak",
+      "significado_autonimo": "'Nuestra propia gente' o 'gente del territorio de las aguas' en lengua Namtrik.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 28500,
+        "departamentos_presencia": [
+          "Cauca",
+          "Huila"
+        ],
+        "territorio_nuclear": "Resguardo de Guambía (municipio de Silvia, vertiente occidental de la Cordillera Central) y resguardos satélites de La María (Piendamó), Morales, Caldono y reasentamientos en el Huila (La Plata, La Argentina).",
+        "pisos_termicos": "Pisos térmicos frío andino y páramo de alta montaña (2.500 a 3.800 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Piendamó",
+          "Río Cofre",
+          "Río Palacé",
+          "Río Manchay",
+          "Laguna de Las Delicias"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildo Mayor del Pueblo Misak de Guambía, regido por los Tatas (mayores gobernadores) y las Mamas (lideresas tradicionales).",
+        "organizaciones_representativas": [
+          "AISO (Movimiento de Autoridades Indígenas del Suroccidente)",
+          "AICO (Autoridades Indígenas de Colombia por la Pacha Mama)",
+          "Cabildo de Guambía",
+          "CRIC (coordinación histórica de base)"
+        ],
+        "espacios_deliberativos": "Asamblea Permanente del Pueblo Misak, La Tulpa comunitaria y los recorridos de linderos territoriales.",
+        "principios_fundacionales": "'Recuperar la tierra para recuperarlo todo: la autoridad, la lengua, el pensamiento y la dignidad ancestral'."
+      },
+      "cosmovision_y_espiritualidad": {
+        "origen_mitico": "Hijos del agua nacidos de los grandes derrumbes y torrentes (Piurek) que descendieron de las lagunas sagradas del páramo de Las Delicias tras el llanto cósmico de los cerros.",
+        "dualidad_kallim_y_latolata": "Kallim (principio masculino, luz, fuerza de la cumbre) y Lata-lata (principio femenino, sombra, vientre de la quebrada y receptividad). La vida solo germina de su entrelazamiento armónico.",
+        "el_caracol_del_tiempo": "El tiempo es una espiral cónica o caracol (kapary). El pasado está adelante, pues ya fue vivido y sus huellas son visibles a los ojos; el presente es el paso que se apoya en la huella ancestral; el porvenir está atrás, invisible y gestándose en la espalda.",
+        "lagunas_sagradas": "Laguna de Las Delicias, Laguna de los Curiquingas y los páramos de los Coconucos, espacios donde habitan los espíritus del trueno y el arcoíris (Mantsip)."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Méró-pɨk (sabios tradicionales y armonizadores del agua y el viento).",
+        "practicas": "Limpiezas de espanto en los nacimientos de agua, uso medicinal de frailejón, ruda de páramo y baños de ortiga brava para alejar los aires de muerte.",
+        "relacion_mente_cuerpo": "La enfermedad es 'desarmonía térmica y espiritual' generada por transgresiones al código territorial y alimentario."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Huerta o Tul Misak en laderas escarpadas.",
+        "cultivos_cardinales": [
+          "Cebolla de rama (allium fistulosum)",
+          "Papa parda pastusa, mambera y chaucha",
+          "Ulluco (mulluk)",
+          "Maíz capio",
+          "Repollo",
+          "Haba andina",
+          "Ajo criollo"
+        ],
+        "practicas_conservacion": "Construcción de zanjas de infiltración en contorno contra la erosión, abonos de gallinaza, estiércol de oveja y ceniza vegetal de leña de aliso."
+      },
+      "materialidad_y_artes": {
+        "indumentaria_identitaria": {
+          "hombres": "El 'Capisayo' o ruana de telar rectangular con rayas horizontales azules y negras, sujeto a la cintura por un cinturón de cuero; anaco azul añil tableado, bufanda tejida de colores y sombrero circular de paño (tampal kuari).",
+          "mujeres": "Anaco azul oscuro o negro bordado en el dobladillo con hilos brillantes, rebozo fucsia o morado prendido con broche de plata, collares masivos de chaquira blanca (que representan el collar del río de estrellas) y sombrero de paja nacuma."
+        },
+        "textileria": "Uso del telar vertical tradicional (kallim) donde urdimbre y trama representan la interacción de las fuerzas cósmicas; hilado manual con huso de madera fina de quishuar.",
+        "arquitectura": "Casas de tapia pisada encaladas, con techos de paja de páramo o teja artesanal, ventanas pequeñas para retener el calor y cocina central con fogón de tres piedras."
+      },
+      "lucha_historica_y_resistencia": {
+        "antigua_recuperacion": "Expulsión del terraje en los años setenta: toma pacífica de las haciendas Las Delicias, La Chimba y Ambaló que habían usurpado sus tierras originarias.",
+        "manifiesto_guambiano": "Publicación del histórico 'Manifiesto Guambiano' de 1980 proclamando su autonomía frente al Estado y los partidos tradicionales.",
+        "derribo_simbolico_colonial": "Acción directa no violenta en septiembre de 2020: derribo de la estatua ecuestre del conquistador Sebastián de Belalcázar en el Morro de Tulcán (Popayán), reivindicando la memoria de los caciques asesinados."
+      }
+    },
+    {
+      "id": "yanacona",
+      "nombre_comun": "Yanacona",
+      "exonomo_historico": "Yanaconas (término quechua hispanizado aplicado a las poblaciones del Macizo)",
+      "autonimo": "Pueblo Yanacona del Macizo Colombiano",
+      "significado_autonimo": "Etimológicamente del quechua 'yana' (ayudante/servidor) y 'kuna' (pluralizador); resignificado políticamente por el pueblo como 'hombres y mujeres libres guardianes del corazón del Macizo'.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 38400,
+        "departamentos_presencia": [
+          "Cauca",
+          "Huila"
+        ],
+        "territorio_nuclear": "Macizo Colombiano: municipios de San Sebastián, La Vega, Almaguer, Bolívar, Sotará, Santa Rosa y Rosas. Resguardos emblemáticos: Guachicono, Pancitará, Caquiona, Rioblanco, San Antonio, Guambía-Yanacona.",
+        "pisos_termicos": "Páramo, subpáramo y pisos templados (entre 1.800 y 3.600 msnm), custodiando la Estrella Fluvial de Colombia.",
+        "cuencas_hidrograficas_clave": [
+          "Nacimiento del Río Magdalena (Laguna de la Magdalena)",
+          "Nacimiento del Río Cauca (Laguna del Buey)",
+          "Nacimiento del Río Caquetá",
+          "Nacimiento del Río Patía"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildo Mayor Yanacona y Cabildos Menores Locales de Resguardo.",
+        "organizaciones_representativas": [
+          "Cabildo Mayor Yanacona (reconocido en el seno del CRIC)",
+          "Asociación de Cabildos del Macizo Colombiano (ACIMAC)",
+          "Mesa de Concertación Territorial del Macizo"
+        ],
+        "espacios_deliberativos": "Congreso del Pueblo Yanacona, Asambleas de Resguardo y faenas comunitarias de convite/minga."
+      },
+      "cosmovision_y_espiritualidad": {
+        "geografia_sagrada": "El Macizo es el útero de Colombia y el corazón de la vida, donde nacen las cuatro arterias de agua dulce más vitales del territorio nacional. La protección de los páramos de Las Papas, Santo Domingo y el cerro de Lerma es mandato cósmico innegociable.",
+        "sincretismo_ancestral": "Fusión entre la devoción andina a los Apus (cerros protectores), la Pachamama y las festividades católicas resignificadas del 'Amo Jesús' (Amo Jesús de Yanaconas, Amo de Puelenje) y las Vírgenes del páramo.",
+        "musica_de_chirimia": "La chirimía yanacona es medicina del alma y vínculo con los muertos; sus sones de bambuco viejo, pasillo y sanjuanito acompañan mingas y entierros de angelitos."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Médicos tradicionales, hierbateros, sobadores y parteras del Macizo.",
+        "practicas": "Lectura de las nubes y los vientos del Macizo para prever heladas y sequías; baños de limpieza con poleo, ruda, altamisa y romerillo; curaciones de 'mal de aire' y 'mal de espanto'."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Chagra tradicional yanacona en ladera.",
+        "cultivos_cardinales": [
+          "Papas nativas (pastusa, tuquerreña, colorada)",
+          "Maíz morocho y amarillo",
+          "Frijol capio y cacha",
+          "Ulluco",
+          "Arracacha blanca",
+          "Trigo de molienda en molinos de piedra hidráulicos",
+          "Haba"
+        ],
+        "practicas_conservacion": "Intercambio solidario de semillas en las ferias del Macizo, rotación con barbecho largo y abonos de estiércol ovino."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de tapia pisada masiva revocadas con cal y boñiga, con corredores de madera y techos de paja o teja de barro cocido; adaptadas al intenso frío y vientos de la alta montaña.",
+        "textileria": "Tejido de cobijas, ruanas y polainas de lana gruesa de oveja en telar horizontal de pedales y telar de palo rústico.",
+        "instrumentos": "Construcción artesanal de flautas de carrizo de peña, tamboras de cuero de chivo y caparazones de armadillo para raspadores rítmicos."
+      },
+      "lucha_historica_y_resistencia": {
+        "origenes_andinos": "Herederos de los mitimaes andinos y comunidades locales precolombinas que consolidaron su territorio en la época virreinal.",
+        "recuperacion_de_resguardos": "Proceso sistemático desde 1980 para recomponer resguardos coloniales que habían sido liquidados por terratenientes payaneses, reconstituyendo 31 cabildos en el Cauca y Huila.",
+        "defensa_ecologica": "Liderazgo en la declaratoria del Macizo Colombiano como Reserva de la Biosfera por la UNESCO y resistencia frontal contra la megaminería de oro y proyectos de represas en el Alto Magdalena y Alto Cauca."
+      }
+    },
+    {
+      "id": "pastos",
+      "nombre_comun": "Pastos",
+      "autonimo": "Pueblo Indígena de los Pastos",
+      "significado_autonimo": "Autodenominación ancestral vinculada a los habitantes originarios de la altiplanicie andina transfronteriza del Carchi-Nariño.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 163870,
+        "departamentos_presencia": [
+          "Nariño",
+          "Putumayo (asentamientos en Orito y Valle del Guamuez)",
+          "Provincia del Carchi (Ecuador, continuidad transfronteriza)"
+        ],
+        "territorio_nuclear": "Altiplano de Túquerres e Ipiales (Nudo de los Pastos): municipios de Ipiales, Cumbal, Túquerres, Guachucal, Aldana, Pupiales, Córdoba, Potosí, Iles, Funes, Contadero, Mallama.",
+        "pisos_termicos": "Pisos frío andino y páramo de alta montaña volcánica (2.800 a 4.200 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Guáitara (cañón del Guáitara)",
+          "Río Carchi-San Juan",
+          "Laguna de la Cocha (Guamuez)",
+          "Laguna de Cumbal",
+          "Laguna Verde del Volcán Azufral"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Grandes Cabildos Indígenas de Resguardo de origen colonial amparados en títulos centenarios, con Gobernadores de Resguardo y Alguaciles Mayores.",
+        "organizaciones_representativas": [
+          "Autoridades Tradicionales Indígenas del Pueblo Pasto (AITP)",
+          "AICO (Autoridades Indígenas de Colombia)",
+          "Mesa Binacional del Pueblo Pasto (Colombia-Ecuador)"
+        ],
+        "espacios_deliberativos": "Congreso de Autoridades del Pueblo Pasto, Asambleas Generales de Resguardo y Mingas de Limpieza de Caminos y Canales."
+      },
+      "cosmovision_y_espiritualidad": {
+        "simbolo_sagrado": "El 'Sol de los Pastos' o 'Estrella de Ocho Puntas' (representación geométrica cósmica plasmada en la cerámica de Capulí, Piartal y Tuza): encarna el equilibrio del universo, los cuatro solsticios y equinoccios, las cuatro direcciones sagradas y la dualidad cielo-tierra.",
+        "volcanes_tutelares": "El Volcán Cumbal, el Volcán Chiles y el Volcán Azufral con su Laguna Verde: moradas de los espíritus mayores que rigen las heladas, los temblores y las lluvias.",
+        "lagunas_y_origen": "Laguna de La Cocha y Laguna de Cumbal concebidas como ojos de agua sagrados de donde brotaron los primeros seres humanos.",
+        "fiestas_rituales": "Fiesta de San Juan y San Pedro, Danza de las Guaguas de Pan (ofrenda de panes antropomorfos gigantescos en altares escalonados en señal de gratitud agrícola) y Corpus Christi."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Taitas médicos tradicionales, curanderos, sobadores y componedores de huesos.",
+        "practicas": "Curación de frío con emplastos de grasa de cuy y tabaco; sahumerios de frailejón para afecciones bronquiales; limpias de susto con ruda, ortiga y cuy negro vivo que absorbe las impurezas energéticas del paciente.",
+        "lectura_agroclimatica": "Observación del anidamiento de las aves de laguna y la posición de la neblina en las faldas de los volcanes para determinar las fechas exactas de siembra."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Chagra andina de páramo y minifundio comunal.",
+        "cultivos_cardinales": [
+          "Papas nativas (parda pastusa, tuquerreña, ratona, colorada, chaucha)",
+          "Ulluco (chugua)",
+          "Ibia (oca)",
+          "Cubio (mashua)",
+          "Cebada perlada y trigo",
+          "Haba andina",
+          "Mote de maíz capio"
+        ],
+        "crianza_animal": "Cría tradicional de cuyes (Cavia porcellus) en la cocina de leña, constituyendo la principal fuente proteica ritual y abono de alta fertilidad para las huertas."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas tradicionales de tapia pisada con muros de hasta un metro de espesor, cimientos de piedra volcánica y techos de teja de barro o paja de páramo; cocinas térmicas con fogón bajo de leña.",
+        "textileria": "Hilado de lana virgen de oveja criolla en rueca y huso; tejido en telar vertical y horizontal de ruanas gruesas impermeables al frío, cobijas de cuatro esquinas y bufandas.",
+        "alfareria": "Continuidad de las técnicas cerámicas de barniz de Pasto (mopa-mopa) en la comarca y alfarería tradicional para ollas sorderas de cocción lenta."
+      },
+      "lucha_historica_y_resistencia": {
+        "resistencia_anti_incaica": "Feroz defensa militar en el río Guáitara que detuvo el avance expansivo de Huayna Cápac hacia el norte.",
+        "insurreccion_de_tuquerres_y_guaitarilla_1800": "Rebelión indígena masiva liderada por los hermanos Rodríguez y Ramón Cucas Calderón contra los abusos de los diezmos coloniales y el corregidor Clavijo.",
+        "defensa_de_la_frontera_agricola": "Resistencia contemporánea contra los tratados de libre comercio, el ingreso de papa transgénica foránea y la defensa de las semillas nativas en el paro agrario y mingas binacionales."
+      }
+    },
+    {
+      "id": "quillacingas",
+      "nombre_comun": "Quillacingas",
+      "autonimo": "Pueblo Quillacinga",
+      "significado_autonimo": "De origen quechua: 'Quilla' (Luna) y 'Cinga' (nariz o faz), traducido como 'Gente con nariguera de media luna' o 'Hijos de la Luna', habitantes del Valle de Atriz.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 21500,
+        "departamentos_presencia": [
+          "Nariño"
+        ],
+        "territorio_nuclear": "Valle de Atriz y laderas orientales y septentrionales del Volcán Galeras: corregimientos y resguardos de San Juan de Pasto (Jenoy, Obonuco, Catambuco, Jongovito, Pandiaco, Mocondino, Santa Bárbara) y municipios de Tangua, La Florida, Nariño, Chachagüí, Buesaco y Consacá.",
+        "pisos_termicos": "Pisos templados y fríos andinos (1.900 a 3.200 msnm) dominados por la silueta del Volcán Galeras.",
+        "cuencas_hidrograficas_clave": [
+          "Río Pasto",
+          "Río Bobo",
+          "Quebrada Chapal",
+          "Río Guáitara",
+          "Quebrada Miraflores"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildos Indígenas de Resguardo reconocidos por el Ministerio del Interior y asambleas de corregimiento.",
+        "organizaciones_representativas": [
+          "Asociación de Cabildos Quillacingas del Valle de Atriz",
+          "AICO",
+          "Consejo Mayor Quillacinga"
+        ],
+        "espacios_deliberativos": "Asambleas comunales de cabildo, convites veredales para mantenimiento de acueductos comunitarios y mingas agrícolas."
+      },
+      "cosmovision_y_espiritualidad": {
+        "urcunina_el_volcan_galeras": "El Volcán Galeras (llamado en lengua originaria 'Urcunina' o 'Montaña de Fuego') es considerado el abuelo protector y regulador cósmico del territorio. Sus fumarolas son respiraciones que anuncian cambios telúricos y espirituales.",
+        "culto_lunar": "Veneración ancestral a la Luna (Quilla) como patrona de la fertilidad femenina, la gestación de los cultivos y la regulación de las mareas internas del cuerpo.",
+        "petroglifos_sagrados": "Sitios arqueológicos con grabados rupestres como la Piedra del Higuerón (en Jenoy) y los monolitos de Catambuco, que marcan cartografías espirituales y astronómicas de alineación solsticial."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Curanderos de páramo, yerbateras y parteras tradicionales de Atriz.",
+        "practicas": "Uso de plantas calientes (sauco, eucalipto, ruda, manzanilla y poleo) para contrarrestar los vientos helados que descienden del Galeras; masajes terapéuticos para recomponer zafaduras y espantos corporales."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "Chagras minifundistas periurbanas y rurales de ladera volcánica.",
+        "cultivos_cardinales": [
+          "Maíz amarillo y blanco",
+          "Frijol voluble",
+          "Arracacha",
+          "Col crespa",
+          "Cebolla",
+          "Papa parda y pastusa",
+          "Zanahoria criolla",
+          "Frutales andinos (mora, lulo de castilla, uvilla)"
+        ],
+        "practicas_conservacion": "Enmiendas con ceniza volcánica natural rica en minerales y abono fermentado de bovino y porcino."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Construcciones tradicionales de bahareque de carrizo con mortero de barro y bosta, y casas de tapia pisada con teja de barro.",
+        "artesanias": "Artesanos del barniz vegetal de Pasto (mopa-mopa, Elaeagia pastoensis), talla en madera de aliso y cestería en fibra de chin de páramo."
+      },
+      "lucha_historica_y_resistencia": {
+        "proceso_de_visibilizacion": "Reconstitución jurídica y cultural en las décadas de 1990 y 2000 tras décadas de políticas de asimilación estatal que pretendieron declarar extinto al pueblo Quillacinga.",
+        "defensa_de_la_zona_de_amenaza_volcanica": "Resistencia comunitaria pacífica frente a los intentos estatales de reubicación forzada masiva de los resguardos de Jenoy y Catambuco por la actividad del Volcán Galeras, defendiendo el derecho a convivir armónicamente con su montaña ancestral."
+      }
+    },
+    {
+      "id": "pijao",
+      "nombre_comun": "Pijao",
+      "exonomo_historico": "Pijaos (generalización colonial sobre la confederación guerrera del Alto Magdalena)",
+      "autonimo": "Pueblo Pijao (Pinao / Coyaimas y Natagaimas)",
+      "significado_autonimo": "Etimología asociada a las confederaciones libres de los valles del río Magdalena (Yuma) y las estribaciones de la Cordillera Central.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 58700,
+        "departamentos_presencia": [
+          "Tolima",
+          "Huila",
+          "Quindío"
+        ],
+        "territorio_nuclear": "Sur y centro del Tolima: municipios de Coyaima, Natagaima, Ortega, Chaparral, San Antonio, Purificación, Prado, Dolores, Saldaña y cabildos periurbanos de Ibagué.",
+        "pisos_termicos": "Pisos cálido de valle interandino (400 a 800 msnm) y laderas de media montaña (hasta 2.200 msnm en la Cordillera Central).",
+        "cuencas_hidrograficas_clave": [
+          "Río Magdalena (Yuma)",
+          "Río Saldaña",
+          "Río Coello",
+          "Río Chenche",
+          "Cerro sagrado del Pacandé"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Red densa de Cabildos y Resguardos Indígenas con gobernadores elegidos democráticamente.",
+        "organizaciones_representativas": [
+          "CRIT (Consejo Regional Indígena del Tolima, fundado en 1982)",
+          "ARIT (Asociación de Resguardos Indígenas del Tolima)",
+          "FITI (Federación Indígena Territorial del Tolima)",
+          "ONIC"
+        ],
+        "espacios_deliberativos": "Congreso de los Pueblos Indígenas del Tolima y asambleas de cabildo en enramadas tradicionales."
+      },
+      "cosmovision_y_espiritualidad": {
+        "cerro_sagrado_pacande": "El Cerro del Pacandé (en Natagaima): pirámide natural y epicentro místico donde residen las deidades protectoras del río y de las tormentas, sitio de peregrinación y ceremonias solares.",
+        "el_mohan_y_espiritus_del_rio": "El Mohán no como monstruo folclórico, sino como el ancestro chamánico guardián de los remolinos y las cavernas profundas del río Saldaña y Magdalena, que castiga a quienes contaminan el agua o pescan en exceso.",
+        "danzas_rituales": "La Danza del Baile Bravo, el bambuco pijao y los cantos ceremoniales de invocación a la lluvia en épocas de sequía extrema."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Médicos tradicionales pijaos, rezadores del Pacandé, yerbateros y componedores.",
+        "practicas": "Sahumerios con resinas de cují, uso del tabaco amargo para purgar malas energías, emplastos de verbena y cañafístula para fiebres del trópico."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Parcela o Chagra de vega y monte seco.",
+        "cultivos_cardinales": [
+          "Maíz guacamayo y chocoano",
+          "Yuca dulce y amarga",
+          "Plátano cachaco",
+          "Ajonjolí criollo",
+          "Cacha (frijol de monte)",
+          "Totumo",
+          "Ahuyama criolla",
+          "Frutales (guayaba, mango común, mamoncillo)"
+        ],
+        "pesca_artesanal": "Pesca de río en el Saldaña y Magdalena con atarraya y flecha durante la subienda anual de bocachico, bagre y nicuro."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de bahareque fino con caña brava y barro gredoso, techos cónicos o a dos aguas de palma real o iraca, frescas y ventiladas para el calor abrasador del valle.",
+        "artesanias": "Alfarería tradicional de barro negro de La Chamba (municipio de Guamo), cestería en junco y tejido de sombreros de paja de iraca (sombrero tolimense)."
+      },
+      "lucha_historica_y_resistencia": {
+        "guerra_de_los_pijaos_1538_1611": "Más de siete décadas de resistencia militar irreductible contra la corona española comandada por los caciques Calarcá, Chanama y Bituima, hostigando las ciudades de Cartago e Ibagué hasta la campaña de exterminio de Juan de Borja.",
+        "legado_de_quintin_lame": "Manuel Quintín Lame vivió y luchó en Ortega (Tolima) desde la década de 1920 hasta su muerte en 1967, organizando los cabildos del sur del Tolima y fundando las escuelas indígenas de pensamiento jurídico propio."
+      }
+    },
+    {
+      "id": "coconuco",
+      "nombre_comun": "Coconuco",
+      "autonimo": "Pueblo Coconuco",
+      "significado_autonimo": "'Gente de la montaña humeante o del páramo' en tradición vernácula andina.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 17800,
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "territorio_nuclear": "Cadena volcánica de los Coconucos y piedemonte: municipios de Puracé y Coconuco. Resguardos emblemáticos: Coconuco, Puracé y Paletará.",
+        "pisos_termicos": "Pisos templado alto, frío andino, páramo y superpáramo volcánico (2.300 a 4.600 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Nacimiento y cuenca alta del Río Cauca",
+          "Río San Antonio",
+          "Aguas termales de Pilche y San Juan",
+          "Cadena de los 15 volcanes de Coconuco (Puracé, Pan de Azúcar, Sotará)"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildos de Resguardo agrupados en la Asociación de Cabildos Genococonuco.",
+        "organizaciones_representativas": [
+          "Cabildos de Puracé, Coconuco y Paletará",
+          "CRIC (zona Centro)",
+          "AISO"
+        ],
+        "espacios_deliberativos": "Asamblea Permanente del Pueblo Coconuco, Guardia Indígena local y mingas de trabajo en páramo."
+      },
+      "cosmovision_y_espiritualidad": {
+        "el_volcan_purace_chisnamu": "El volcán Puracé (Chisnamú) es el gran ancestro del fuego subterráneo que calienta las venas de agua de la tierra. Su azufre purifica y sus fumarolas son avisos cósmicos.",
+        "aguas_termales_sagradas": "Los manantiales termales (Pilche) son espacios curativos donde se equilibran las temperaturas del cuerpo y se armonizan las energías pesadas con ofrendas de chicha y tabaco.",
+        "condor_de_los_andes": "Ave sagrada mensajera entre los volcanes nevados y los sabios del cabildo."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Médicos tradicionales de la montaña humeante, armonizadores y rezanderos.",
+        "practicas": "Baños termales combinados con infusiones frías de páramo para sanar reumatismos, parálisis faciales por 'golpe de aire' y desarmonías psíquicas."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "Chagras de altura y vegas templadas.",
+        "cultivos_cardinales": [
+          "Papa criolla y pastusa",
+          "Ullucos",
+          "Haba",
+          "Maíz de montaña",
+          "Trigo",
+          "Hortalizas de clima frío",
+          "Trucha arcoíris en estanques comunitarios"
+        ],
+        "ganaderia_comunitaria": "Manejo comunitario de hatos lecheros en el valle de Paletará con cooperativas lecheras indígenas propias."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de tapia pisada gruesa con teja de barro y fogón de leña constante para contrarrestar las temperaturas bajo cero del páramo de Paletará.",
+        "textileria": "Hilado de lana virgen de oveja para mantas, ruanas de lana cruda y fajas bordadas.",
+        "turismo_comunitario_propio": "Administración autónoma indígena de los sitios ecoturísticos de los termales y el Parque Nacional Natural Puracé."
+      },
+      "lucha_historica_y_resistencia": {
+        "pioneros_del_cric": "El Resguardo de Coconuco fue uno de los núcleos fundacionales más aguerridos del Consejo Regional Indígena del Cauca en 1971; la líder y mártir María Mandiguagua y decenas de comuneros ofrendaron su vida en la recuperación de las haciendas usurpadas por la élite payanesa.",
+        "cierre_y_recuperacion_de_minas_de_azufre": "Lucha frontal para frenar la explotación minera contaminante de azufre en las laderas del Volcán Puracé, logrando la restauración ambiental del territorio sagrado."
+      }
+    },
+    {
+      "id": "totoro",
+      "nombre_comun": "Totoró",
+      "autonimo": "Tontotó / Totoróez",
+      "significado_autonimo": "Autónimo ancestral del pueblo originario de la vertiente oriental del río Palacé.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 9600,
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "territorio_nuclear": "Municipio de Totoró: vertiente interandina que conecta Popayán con Tierradentro a través del páramo de Las Delicias.",
+        "pisos_termicos": "Pisos templado, frío y páramo andino (2.200 a 3.500 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Palacé",
+          "Río Cofre",
+          "Lagunas del páramo de Malvazá"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildo Indígena del Resguardo de Totoró, estructurado con Gobernador, Teniente, Alcaldes y Comisarios.",
+        "organizaciones_representativas": [
+          "Cabildo del Pueblo Totoró",
+          "CRIC (zona Oriente)",
+          "AISO"
+        ],
+        "espacios_deliberativos": "Asamblea General de Comuneros de Totoró y mingas veredales de apertura de vías y siembra."
+      },
+      "cosmovision_y_espiritualidad": {
+        "espiritualidad_del_viento": "Veneración a los espíritus de las cumbres de Calvache y Malvazá; respeto reverencial a las corrientes de viento que transitan entre el Macizo y la cuenca del Magdalena.",
+        "guardianes_del_camino": "Pueblo puente entre las tradiciones del suroccidente (Misak) y las de Tierradentro (Nasa), integrando saberes de ambas vertientes."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Médicos tradicionales y mayores depositarios de la memoria oral.",
+        "practicas": "Curación con yerbas silvestres de páramo, sobijos con unto de sebo de oveja y plantas calientes; rituales de apaciguamiento de los duendes de las quebradas."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Huerta tradicional totoróez.",
+        "cultivos_cardinales": [
+          "Papa parda y chaucha",
+          "Ulluco",
+          "Cebolla",
+          "Maíz morocho",
+          "Frijol",
+          "Repollo",
+          "Hortalizas menores"
+        ],
+        "conservacion": "Preservación comunitaria de semillas nativas de tubérculos de frío y abonos orgánicos a base de estiércol y ceniza."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de bahareque y tapia pisada con tejas de barro y aleros anchos de madera.",
+        "textileria": "Tejido de ruanas de lana pura de oveja, anacos y chumbes con diseños geométricos que simbolizan las lagunas y los cerros tutelares.",
+        "musica": "Agrupaciones de chirimía con tamboras de madera de balso y cueros templados."
+      },
+      "lucha_historica_y_resistencia": {
+        "revitalizacion_linguistica": "Liderazgo ejemplar en la creación de los 'Nidos de Lengua' para salvar de la extinción la variante dialectal Nam Trik de Totoró, enseñándola a niños de preescolar junto a los ancianos sabedores.",
+        "autonomia_educativa": "Construcción del Sistema Educativo Indígena Propio (SEIP) con currículos arraigados en el calendario agroastronómico andino."
+      }
+    },
+    {
+      "id": "polindara",
+      "nombre_comun": "Polindara",
+      "autonimo": "Pueblo Polindara",
+      "significado_autonimo": "Autodenominación ancestral de la comarca del río Palacé.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 5200,
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "territorio_nuclear": "Municipio de Totoró (veredas y resguardo de Polindara, en la margen del río Palacé, inmediaciones de Popayán).",
+        "pisos_termicos": "Piso templado y frío andino (1.800 a 2.600 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Palacé",
+          "Quebrada La Honda",
+          "Río Molino"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildo Indígena de Polindara.",
+        "organizaciones_representativas": [
+          "Cabildo de Polindara",
+          "CRIC (zona Oriente)",
+          "ONIC"
+        ],
+        "espacios_deliberativos": "Asambleas comunitarias y mingas de pensamiento agroecológico."
+      },
+      "cosmovision_y_espiritualidad": {
+        "la_luna_y_el_ciclo_agricola": "La cosmovisión polindara organiza la vida colectiva según los cuatro estados lunares: siembra en luna menguante para tubérculos y raíces; recolección de semillas en luna llena; descanso de la tierra en luna nueva.",
+        "espiritualidad_de_las_aguas": "Respeto a los espíritus de las quebradas tributarias del río Palacé mediante pagamentos de sal marina y hojas aromáticas."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Terapeutas tradicionales, sobadores y sobanderos veredales.",
+        "practicas": "Tratamiento de dolencias musculares mediante cataplasmas de romero, ruda y sauco macerado con aguardiente casero; armonización comunitaria de conflictos intrafamiliares."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Huerta familiar polindara.",
+        "cultivos_cardinales": [
+          "Maíz amarillo",
+          "Arracacha",
+          "Frijol cacha",
+          "Yuca de altura",
+          "Plátano",
+          "Café tradicional bajo sombra",
+          "Frutas andinas"
+        ],
+        "abonos": "Preparación comunitaria de caldolimonio, biopreparados de ortiga y compostajes con restos de cosecha y ceniza de leña."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de bahareque de carrizo con vigas de guadua y cubiertas de zinc o teja de barro, con amplios corredores y huerta cercada con limoncillo.",
+        "artesanado": "Hilado doméstico de lana y confección de alpargatas y canastos de bejuco y mimbre."
+      },
+      "lucha_historica_y_resistencia": {
+        "cuna_de_quintin_lame": "Territorio donde nació el líder Manuel Quintín Lame Chantre (en la vereda El Borbollón en 1880); tierra testigo de sus primeros levantamientos contra el sistema oprobioso del terraje.",
+        "reconstitucion_del_resguardo": "Lucha tenaz en los estrados judiciales y en la carretera Panamericana para lograr la titulación definitiva de sus tierras de resguardo colonial reconocidas formalmente en 2003."
+      }
+    },
+    {
+      "id": "ambalo",
+      "nombre_comun": "Ambaló",
+      "autonimo": "Pueblo Ambaló",
+      "significado_autonimo": "Autodenominación ancestral del pueblo originario del río Piendamó.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 6800,
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "territorio_nuclear": "Municipio de Silvia (Resguardo de Ambaló, colindante con Guambía y Quizgó).",
+        "pisos_termicos": "Piso templado alto, frío andino y páramo (2.200 a 3.400 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Piendamó",
+          "Río Silvia",
+          "Lagunas de las Tres Cruces"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Cabildo Indígena del Resguardo de Ambaló.",
+        "organizaciones_representativas": [
+          "Cabildo de Ambaló",
+          "CRIC (zona Oriente)",
+          "AISO"
+        ],
+        "espacios_deliberativos": "Asamblea General de Ambaló y comisiones comunitarias de tierras y salud propia."
+      },
+      "cosmovision_y_espiritualidad": {
+        "cerro_de_las_tres_cruces": "Cerro sagrado tutelar donde se realizaban las ceremonias ancestrales antes de la imposición de cruces coloniales; morada de los espíritus dueños del agua y las cosechas.",
+        "la_chirimia_como_oracion": "La música de chirimía es el lenguaje que sintoniza las emociones humanas con los latidos de la tierra y los espíritus del páramo."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Médicos tradicionales, hierbateras y parteras.",
+        "practicas": "Lectura de orina y pulso, baños de páramo para purificar el cuerpo y ahuyentar los 'malos aires' provocados por el contacto con osamentas o entierros antiguos."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Chagra andina ambaloeña.",
+        "cultivos_cardinales": [
+          "Papa mambera y pastusa",
+          "Ulluco",
+          "Cebolla junca",
+          "Maíz blanco",
+          "Frijol capio",
+          "Hortalizas de páramo"
+        ],
+        "conservacion": "Prácticas de arado con bueyes en surcos transversales a la pendiente para retener la tierra y abonado con estiércol madurado de oveja."
+      },
+      "materialidad_y_artes": {
+        "vivienda": "Casas de tapia pisada y bahareque con techos de paja o teja, integradas a los corrales de ovejas.",
+        "textileria": "Tejido en telar vertical de fajas, ruanas de dos caras (una blanca y otra oscura) y cobijas de lana hilada a mano.",
+        "musica": "Tradición de conjuntos de chirimía autóctona para festividades del Solsticio y patronales."
+      },
+      "lucha_historica_y_resistencia": {
+        "recuperacion_de_tierras_de_hacienda": "Enconada resistencia de más de tres décadas contra el despojo terrateniente; toma pacífica de predios de haciendas que invadían su resguardo colonial otorgado por la Corona en 1713.",
+        "erradicacion_del_terraje": "Expulsión definitiva del pago de tributo en trabajo personal servil en la década de 1970."
+      }
+    },
+    {
+      "id": "cabildos_muiscas_en_recuperacion",
+      "nombre_comun": "Cabildos Muiscas en Recuperación del Altiplano Cundiboyacense",
+      "autonimo": "Muysca / Pueblo Muisca Chibcha",
+      "significado_autonimo": "'Muysca': persona, ser humano, gente del territorio sagrado de Bacatá y Hunza.",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 16400,
+        "departamentos_presencia": [
+          "Bogotá Distrito Capital",
+          "Cundinamarca",
+          "Boyacá"
+        ],
+        "territorio_nuclear": "Comunidades y Cabildos Indígenas formalmente reconocidos en el Altiplano Cundiboyacense: Cabildo Indígena de Suba (Bogotá), Cabildo Indígena de Bosa (Bogotá), Cabildo Indígena de Cota (Cundinamarca), Cabildo Indígena de Chía (Cundinamarca), Cabildo Indígena de Sesquilé (Cundinamarca), y procesos de auto-reconocimiento en Ubaté, Tunja, Ráquira y Sogamoso.",
+        "pisos_termicos": "Piso frío andino de altiplanicie y páramos sagrados (2.500 a 3.700 msnm).",
+        "humedales_y_lagunas_sagradas": [
+          "Humedal Tibabuyes (Humedal Juan Amarillo, en Suba)",
+          "Humedal Tibanica (en Bosa)",
+          "Humedal La Conejera (en Suba)",
+          "Humedal Jaboque (en Engativá)",
+          "Laguna de Guatavita (Sesquilé)",
+          "Laguna de Iguaque (cuna mítica de Bachué)",
+          "Laguna de Siecha (Guasca)",
+          "Laguna de Fúquene"
+        ]
+      },
+      "organizacion_sociopolitica": {
+        "forma_gobierno": "Gobernadores de Cabildo Indígena, Vicegobernadores, Alguaciles y Consejos de Mayores y Sabedores.",
+        "organizaciones_representativas": [
+          "Cabildo Indígena Muisca de Suba (reconocido en 1991)",
+          "Cabildo Indígena Muisca de Bosa (reconocido en 1999)",
+          "Cabildo Indígena Muisca de Cota",
+          "Cabildo Indígena Muisca de Chía",
+          "Cabildo Indígena Muisca de Sesquilé",
+          "ONIC",
+          "Asociación de Autoridades Tradicionales del Pueblo Muisca"
+        ],
+        "espacios_deliberativos": "El Cusmuy o Bohío Sagrado de Pensamiento, círculos de palabra de mayores y asambleas generales de comuneros registrados en los censos étnicos oficiales."
+      },
+      "cosmovision_y_espiritualidad": {
+        "creadores_y_ancestros": {
+          "chiminigagua": "Fuerza lumínica y principio creador primordial del universo que dispersó la luz mediante aves negras resplandecientes.",
+          "bachue": "Madre nutricia que emergió de la laguna de Iguaque con un niño de la mano para poblar la tierra y que, tras cumplir su labor civilizatoria, regresó a las aguas convertida en gran serpiente cósmica.",
+          "bochica": "Maestro civilizador, portador de las leyes, el tejido del algodón y la orfebrería, quien fracturó con su vara de oro la roca del Tequendama para desaguar la Sabana de Bogotá inundada por Chibchacum."
+        },
+        "recuperacion_de_la_memoria_lacustre": "Los humedales urbanos no son zanjas de drenaje, sino cuerpos de agua sagrados (tibabuyes: 'tierra de labradores') que conectan el mundo subterráneo con las constelaciones celestes.",
+        "el_cusmuy": "Estructura arquitectónica circular de bahareque y paja que reproduce el cosmos muisca: el poste central representa el eje del mundo (axis mundi), el techo cónico representa la bóveda celeste y el piso de tierra la matriz generadora."
+      },
+      "medicina_y_sabiduria": {
+        "especialistas": "Chyquy (sacerdotes y sabios tradicionales en revitalización), Tytas, Mayores y Mayores del Consejo de Sabiduría.",
+        "practicas": "Círculos de palabra en el Cusmuy, pagamentos con tabaco, sal y chicha en las lagunas de páramo y humedales; sahumerios de ruda, romero y eucalipto para limpieza de energías citadinas; uso de la hoja de coca andina en mambeadero sagrado."
+      },
+      "soberania_alimentaria": {
+        "unidad_productiva": "La Huerta Muisca periurbana y comunitaria.",
+        "cultivos_cardinales": [
+          "Maíz sabanero ancestral",
+          "Cubios (mashua)",
+          "Chuguas (ulluco)",
+          "Ibias (oca)",
+          "Calabaza y victoria",
+          "Quinua andina",
+          "Uchuva",
+          "Hierbas medicinales andinas"
+        ],
+        "recuperacion_agricola": "Recuperación de semillas ancestrales en huertas pedagógicas de Suba y Bosa frente al avance del cemento y la especulación inmobiliaria urbana."
+      },
+      "materialidad_y_artes": {
+        "vivienda_y_templos": "Reconstrucción de Cusmuys (bohíos ceremoniales) de tapia pisada, bahareque y cubierta de caña brava con paja; en el ámbito familiar, preservación de casonas de adobe en los antiguos núcleos veredales.",
+        "textileria": "Tejido de mantas y chumbes con hilado manual de algodón y lana virgen, plasmando ranas, serpientes y espirales en tintes naturales de nogal, chilca y cochinilla.",
+        "ceramica_y_orfebreria_ritual": "Técnicas de modelado cerámico de múcuras para chicha y reinterpretación de tunjos votivos en cobre y plata."
+      },
+      "lucha_historica_y_resistencia": {
+        "resistencia_a_la_disolucion_republicana": "Resistencia legal contra las leyes decimonónicas de liquidación forzada de resguardos indígenas (leyes de 1850 y 1877 que pretendían convertir la propiedad colectiva en parcelas individuales enajenables).",
+        "visibilizacion_y_reconocimiento": "Lucha tenaz en el marco de la Constitución de 1991 para que el Estado reconociera la pervivencia física y cultural de los Muiscas urbanos y rurales tras siglos de supuesta extinción etnográfica oficial.",
+        "defensa_de_humedales": "Movilización comunitaria victoriosa para frenar la urbanización y canalización de los humedales Tibabuyes (Juan Amarillo) y La Conejera en Bogotá, protegiendo los santuarios hidrobiológicos ancestrales."
+      }
+    }
+  ],
+  "sistemas_linguisticos_y_familias": {
+    "nasa_yuwe": {
+      "nombre": "Nasa Yuwe (o Yuwe Páez)",
+      "autonimo": "Nasa Yuwe ('la boca o idioma de la gente')",
+      "filiacion_linguistica": "Lengua aislada andina (clasificación tipológica independiente; los intentos históricos de vincularla a las familias Chibcha, Barbacoana o Macro-Tucanoana carecen de evidencia comparativa concluyente).",
+      "vitalidad_sociolinguistica": "Aproximadamente 60.000 a 80.000 hablantes nativos con diversos grados de bilingüismo (Nasa Yuwe - Español). Vital y transmitida intergeneracionalmente en Tierradentro (Páez e Inzá) y zonas altas de Toribío y Jambaló; en riesgo de desplazamiento en zonas bajas periurbanas.",
+      "rasgos_fonologicos": {
+        "complejidad_consonantica": "Inventario consonántico altamente sofisticado con distinciones de modo y articulación entre oclusivas simples, palatalizadas, aspiradas y glotalizadas (p, t, k, pʲ, tʲ, kʲ, pʰ, tʰ, kʰ, ts, tʃ, dy).",
+        "sistema_vocalico": "Cuatro vocales básicas (a, e, i, u) que se cuadruplican funcionalmente mediante contrastes fonológicos de: 1) orales cortas, 2) orales largas, 3) nasales cortas, 4) nasales largas, 5) laringalizadas / glotalizadas o aspiradas.",
+        "prosodia": "Acento dinámico con valor morfológico y demarcativo."
+      },
+      "rasgos_gramaticales": {
+        "orden_sintactico": "Sujeto - Objeto - Verbo (SOV) estricto.",
+        "morfologia": "Lengua predominantemente aglutinante y sufijante con una vasta batería de morfemas de caso gramatical (ergativo/nominativo, acusativo, dativo, comitativo, locativo, instrumental).",
+        "evidencialidad_obligatoria": "El sistema verbal exige codificar obligatoriamente la fuente del conocimiento del hablante mediante sufijos evidenciales específicos: si la acción fue vista directamente por el emisor, si fue escuchada por testimonio ajeno, si fue inferida por sus huellas o si fue revelada en el mundo de los sueños (ksxa'w)."
+      },
+      "glosario_clave_y_terminologia": [
+        {
+          "termino": "Nasa",
+          "significado": "Persona, ser humano, gente del pueblo."
+        },
+        {
+          "termino": "Yuwe",
+          "significado": "Palabra, boca, lenguaje, idioma."
+        },
+        {
+          "termino": "Uma Kiwe",
+          "significado": "Madre Tierra, territorio sagrado viviente."
+        },
+        {
+          "termino": "The'Wala",
+          "significado": "Sabio espiritual, médico tradicional, el que escucha el pulso y armoniza."
+        },
+        {
+          "termino": "Kiwe Thegnas",
+          "significado": "Guardias y defensores de la tierra y de la vida (Guardia Indígena)."
+        },
+        {
+          "termino": "Ksxa'w",
+          "significado": "El mundo del sueño, revelación ontológica nocturna."
+        },
+        {
+          "termino": "Pu'yakxn",
+          "significado": "Ceremonia sagrada de refrescamiento y desahogo de energías pesadas."
+        },
+        {
+          "termino": "Jiibx",
+          "significado": "Hoja de coca andina sagrada."
+        },
+        {
+          "termino": "Ku'j",
+          "significado": "Bastón de mando de madera de chonta con cintas ceremoniales."
+        },
+        {
+          "termino": "Yat",
+          "significado": "Casa, morada familiar, el pulso corporal."
+        }
+      ],
+      "educacion_y_revitalizacion": "Red de Escuelas Bilingües Interculturales Comunitarias del CRIC y el Proyecto Educativo Comunitario (PEC), con producción de cartillas, diccionarios fonológicos unificados y programas universitarios en la Universidad Autónoma Indígena Intercultural (UAIIN) de Popayán."
+    },
+    "namtrik_barbacoano": {
+      "nombre": "Namtrik (Lengua Misak / Guambiano)",
+      "autonimo": "Nam Trik ('nuestra lengua / la palabra de nosotros')",
+      "filiacion_linguistica": "Familia Lingüística Barbacoana (rama Coconucana o Septentrional, estrechamente emparentada con el Totoró, Polindara, Coconuco extinto y en grado más distante con el Awá Pit del Pacífico nariñense y las lenguas Chachi y Tsáfiqui de Ecuador).",
+      "vitalidad_sociolinguistica": "Alrededor de 23.000 hablantes activos. Alto nivel de preservación intergeneracional en el Resguardo de Guambía (Silvia), donde es la lengua materna cotidiana de casi la totalidad de la población infantil y juvenil.",
+      "variantes_dialectales": [
+        "Namtrik de Guambía (variante nuclear y mayoritaria)",
+        "Nam Trik de Totoró (variante dialectal en alto riesgo de extinción, en proceso activo de revitalización)",
+        "Dialecto de Ambaló y Coconuco (relictos léxicos y toponímicos preservados en comunidades campesino-indígenas)"
+      ],
+      "rasgos_fonologicos": {
+        "fonologia_segmental": "Inventario rico en consonantes retroflejas (sr, ts), consonantes palatales (ɲ, ʎ, tʃ) y distinción fonológica entre oclusivas sordas y sonoras.",
+        "sistema_vocalico": "Cinco fonemas vocálicos fundamentales (a, e, i, o, u) con distinciones de duración vocálica y entonación melódica ligada al contorno oracional."
+      },
+      "rasgos_gramaticales": {
+        "alineamiento_morfosintactico": "Alineamiento de tipo Ergativo-Absolutivo: el sujeto de un verbo transitivo lleva una marca morfológica explícita (ergativo), mientras que el sujeto de un verbo intransitivo y el objeto directo de un transitivo comparten el mismo caso no marcado (absolutivo).",
+        "orden_basico": "Sujeto - Objeto - Verbo (SOV).",
+        "deixis_espaciotemporal": "Sistema verbal altamente sofisticado que expresa la dirección del movimiento respecto al río (aguas arriba vs. aguas abajo) y el tiempo cíclico en espiral."
+      },
+      "glosario_clave_y_terminologia": [
+        {
+          "termino": "Namuy Misak",
+          "significado": "Nuestra propia gente, nosotros mismos."
+        },
+        {
+          "termino": "Nam Trik",
+          "significado": "Nuestra palabra, nuestro idioma."
+        },
+        {
+          "termino": "Piurek",
+          "significado": "Hijos del agua nacidos de los torrentes y deslizamientos."
+        },
+        {
+          "termino": "Kallim",
+          "significado": "Principio masculino cósmico, telar vertical tradicional."
+        },
+        {
+          "termino": "Lata-lata",
+          "significado": "Principio femenino cósmico, complementariedad."
+        },
+        {
+          "termino": "Tampal Kuari",
+          "significado": "Sombrero circular tradicional de paño o nacuma."
+        },
+        {
+          "termino": "Méró-pɨk",
+          "significado": "Sabio espiritual tradicional, curandero del agua."
+        },
+        {
+          "termino": "Kapary",
+          "significado": "La espiral cósmica del tiempo."
+        },
+        {
+          "termino": "Wixarxap",
+          "significado": "Nidos de lengua para la transmisión intergeneracional infantil."
+        },
+        {
+          "termino": "Chik / Shur",
+          "significado": "El fogón y el fuego sagrado de la vivienda."
+        }
+      ],
+      "educacion_y_revitalizacion": "El modelo de Escuela Agroantropológica Misak de Guambía y el Instituto Técnico Agropecuario Indígena de Guambía (ITAG), donde toda la instrucción primaria y media se desarrolla bajo inmersión bilingüe y pedagogía del caracol del saber."
+    },
+    "quechua_inga_macizo": {
+      "nombre": "Quechua / Inga (Runa Shimi / Inga Kichwa)",
+      "autonimo": "Inga Kichwa / Runa Shimi ('lengua de la gente')",
+      "filiacion_linguistica": "Familia Lingüística Quechua, rama periférica Quechua II-B (Quechua Norteño o Septentrional, emparentado con el Kichwa de las tierras altas y bajas del Ecuador y Perú).",
+      "vitalidad_sociolinguistica": "Aproximadamente 18.000 hablantes de la comunidad Inga en el Valle de Sibundoy (Putumayo), municipios andinos de Nariño (Aponte, La Cruz) y valles del Macizo Colombiano en Cauca y Huila. Coexistencia e influencia histórica profunda con las comunidades Yanacona y Pastos.",
+      "rasgos_gramaticales_y_fonologicos": {
+        "aglutinacion": "Lengua aglutinante pura con concatenación de sufijos regulares a una raíz invariable.",
+        "orden_oracional": "Sujeto - Objeto - Verbo (SOV).",
+        "ausencia_de_genero_gramatical": "No existen artículos de género masculino/femenino en sustantivos o adjetivos; la complementariedad biológica se marca con morfemas independientes (kari: macho/hombre; warmi: hembra/mujer)."
+      },
+      "filosofia_y_conceptos_rectores": [
+        {
+          "concepto": "Pachamama",
+          "traduccion": "Madre Cosmos / Espacio-Tiempo Sagrado",
+          "descripcion": "No es solo la tierra cultivable, sino la totalidad ontológica del tiempo, el espacio, los ecosistemas y las fuerzas celestes."
+        },
+        {
+          "concepto": "Sumak Kawsay",
+          "traduccion": "El Buen Vivir / Vida en Plenitud",
+          "descripcion": "Filosofía andina comunitaria basada en la armonía material y espiritual con la naturaleza y la comunidad, en abierta contraposición a la acumulación capitalista."
+        },
+        {
+          "concepto": "Ayni",
+          "traduccion": "Reciprocidad Sagrada",
+          "descripcion": "'Hoy por ti, mañana por mí'. Principio cósmico y económico de intercambio solidario de energía y trabajo comunal sin remuneración dineraria."
+        },
+        {
+          "concepto": "Minka / Minga",
+          "traduccion": "Trabajo Colectivo Festivo",
+          "descripcion": "Convocatoria masiva de trabajo comunitario para obras de beneficio colectivo (caminos, cosechas, casas) acompañada de comida y chicha."
+        },
+        {
+          "concepto": "Yachak / Sinchi",
+          "traduccion": "Sabio / Hombre de Conocimiento Chamánico",
+          "descripcion": "Guía espiritual depositario del saber de las plantas maestras andino-amazónicas (yagé/ayahuasca, tabaco, coca)."
+        },
+        {
+          "concepto": "Taita",
+          "traduccion": "Padre / Anciano Venerable",
+          "descripcion": "Trato respetuoso concedido a los médicos tradicionales y autoridades consuetudinarias."
+        },
+        {
+          "concepto": "Mama",
+          "traduccion": "Madre / Anciana Guía",
+          "descripcion": "Autoridad femenina espiritual y portadora de la sabiduría del cuidado de la vida."
+        }
+      ],
+      "huella_en_el_macizo_colombiano": "Aunque el pueblo Yanacona adoptó mayoritariamente el castellano en los siglos XVIII y XIX tras la fragmentación colonial, su estructura lingüística subyacente, toponimia y léxico agrícola mantienen una raíz quechua indeleble (ayllu, chagra, cuy, minga, guagua, taita, achira, ulluco)."
+    },
+    "muysccubun_recuperacion": {
+      "nombre": "Muysccubun (Lengua Muisca / Chibcha del Altiplano)",
+      "autonimo": "Muysccubun ('el idioma de la gente / la lengua de los muyscas')",
+      "filiacion_linguistica": "Familia Lingüística Chibchense (rama Magdalena-Cundicocuyana, emparentada filogenéticamente con el U'wa / Tunebo de Boyacá-Santander, el Barí del Catatumbo, el Chimila de la Sierra Nevada y las lenguas de la Sierra Nevada de Santa Marta: Kogui, Iku-Arhuaco, Wiwa y Kankuamo).",
+      "contexto_historico_de_extincion": "Fue la lengua general del Altiplano Cundiboyacense hablada por más de medio millón de personas en el siglo XVI. A pesar de haber sido codificada gramaticalmente por misioneros, fue declarada prohibida por la Real Cédula de Carlos III del 10 de mayo de 1770, que ordenó la extinción coactiva de los idiomas nativos e impuso el castellano exclusivo en el Virreinato. El último hablante fluido tradicional falleció a finales del siglo XVIII.",
+      "fuentes_documentales_primarias": [
+        "Gramática, vocabulario y catecismo de la lengua general que le dicen mosca (Fray Bernardo de Lugo, Madrid, 1619).",
+        "Manuscrito anónimo 158 de la Biblioteca Nacional de Colombia (Gramática y vocabulario de la lengua chibcha, siglo XVII).",
+        "Manuscrito anónimo 2922 de la Biblioteca Nacional de Colombia (Diccionario y confesionario en lengua mosca).",
+        "Doctrinas y catecismos de la Orden de Predicadores (Dominicos) y de la Compañía de Jesús en Santafé de Bogotá."
+      ],
+      "proceso_contemporaneo_de_recuperacion": {
+        "iniciativas_academicas_y_comunitarias": "Trabajo conjunto iniciado a partir del año 2008 entre lingüistas profesionales (Facundo Saravia, Diego Gómez, entre otros) e investigadores de los Cabildos Indígenas de Suba, Bosa, Cota, Chía y Sesquilé a través del Colectivo Muysccubun.",
+        "fonologia_reconstruida": {
+          "vocales": "Sistema de 6 vocales fonémicas: cinco vocales estándar /a, e, i, o, u/ y la vocal central cerrada no redondeada /ɨ/ (representada en las fuentes coloniales con signos especiales, 'y' o 'ch').",
+          "consonantes": "Oclusivas sordas (p, t, k), fricativas (s, ʃ, h), nasales (m, n), aproximante lateral y semivocales (w, j)."
+        },
+        "nidos_de_lengua_y_cusmuys": "Enseñanza de cantos rituales, saludos protocolares, toponimia sagrada y fórmulas de bendición comunitaria a niños y jóvenes en los Cusmuys de Suba y Bosa."
+      },
+      "toponimia_viva_del_altiplano": [
+        {
+          "toponimo": "Bacatá (Bogotá)",
+          "etimologia_muysccubun": "Baccatâ / Facatá",
+          "significado": "'Cercado fuera de la labranza' o 'remate de campos de siembra'."
+        },
+        {
+          "toponimo": "Zipaquirá",
+          "etimologia_muysccubun": "Zipa-qui-rá",
+          "significado": "'Tierra o cercado del pie del Zipa'."
+        },
+        {
+          "toponimo": "Chía",
+          "etimologia_muysccubun": "Chíe / Chía",
+          "significado": "'Luna' o 'luz nocturna', santuario de la diosa de la Luna."
+        },
+        {
+          "toponimo": "Suacha (Soacha)",
+          "etimologia_muysccubun": "Sua-cha",
+          "significado": "'Hombre del Sol' o 'morada de Sua (el dios Sol)'."
+        },
+        {
+          "toponimo": "Fusagasugá",
+          "etimologia_muysccubun": "Fusa-gazu-gá",
+          "significado": "'Mujer que se esconde detrás del monte'."
+        },
+        {
+          "toponimo": "Guatavita",
+          "etimologia_muysccubun": "Guata-vita",
+          "significado": "'Punto en lo alto' o 'cumbre de la cordillera' (sede de la laguna sagrada del rito dorado)."
+        },
+        {
+          "toponimo": "Sugamuxi (Sogamoso)",
+          "etimologia_muysccubun": "Suamox / Sugamuxi",
+          "significado": "'Morada del Sol' o 'ciudad sagrada del Sumo Sacerdote de Sua'."
+        },
+        {
+          "toponimo": "Tequendama",
+          "etimologia_muysccubun": "Tequendama",
+          "significado": "'El que quebró el peñasco' o 'el que abrió el abismo de las aguas'."
+        },
+        {
+          "toponimo": "Ubaté",
+          "etimologia_muysccubun": "Uba-tê",
+          "significado": "'Tierra de la fruta' o 'valle del sembrado'."
+        },
+        {
+          "toponimo": "Tibabuyes (Suba)",
+          "etimologia_muysccubun": "Tyba-buy-es",
+          "significado": "'Tierra de labradores y capitanes' (humedal sagrado)."
+        }
+      ],
+      "vocabulario_revitalizado": [
+        {
+          "palabra": "Muysca",
+          "significado": "Ser humano, persona, gente de la tierra."
+        },
+        {
+          "palabra": "Chyquy",
+          "significado": "Sacerdote, médico espiritual, consagrado a los templos."
+        },
+        {
+          "palabra": "Cusmuy",
+          "significado": "Bohío ceremonial circular sagrado."
+        },
+        {
+          "palabra": "Cuca",
+          "significado": "Seminario o escuela sagrada de formación sacerdotal y astronómica."
+        },
+        {
+          "palabra": "Güecha",
+          "significado": "Guerrero valiente, defensor de la comunidad y del territorio."
+        },
+        {
+          "palabra": "Zue (Sua)",
+          "significado": "El Sol sagrado, dador de luz y calor."
+        },
+        {
+          "palabra": "Chía",
+          "significado": "La Luna sagrada, protectora de la noche y el agua."
+        },
+        {
+          "palabra": "Bie",
+          "significado": "Agua, río, arroyo cristalino."
+        },
+        {
+          "palabra": "Tyba",
+          "significado": "Capitán o jefe administrativo comarcal."
+        },
+        {
+          "palabra": "Fao",
+          "significado": "Aire, viento que transita por la cordillera."
+        }
+      ]
+    }
+  },
+  "medicina_tradicional_y_filosofia": {
+    "los_thewala_sabios_del_pulso": {
+      "nombre": "Los The'Wala (Médicos Tradicionales del Pueblo Nasa)",
+      "significado_y_rol": "En lengua Nasa Yuwe, The' significa 'ancestro / raíz / sabiduría' y Wala significa 'grande / supremo'. Los The'Wala son los 'Grandes Sabios de la Raíz', videntes cósmicos y equilibradores del mundo material y espiritual.",
+      "la_lectura_del_pulso_yat": {
+        "descripcion": "El pulso arterial es concebido como la voz interior de la sangre y el aliento del alma. El The'Wala posa sus yemas sobre las arterias radiales de ambas muñecas del paciente, así como en las sienes, cuello y articulaciones.",
+        "semiotica_del_pulso": "El pulso 'habla': revela si la persona padece de una enfermedad 'caliente' (provocada por fiebres, iras, discordias o agresiones) o una enfermedad 'fría' (provocada por el susto, el contacto con los muertos, la pérdida del ánima o el descuido en páramos); asimismo, detecta si el cuerpo ha sido invadido por espíritus de la vegetación o del agua tras transgredir normas sagradas."
+      },
+      "la_lectura_de_los_suenos_ksxaw": {
+        "descripcion": "El sueño (Ksxa'w) no es una alucinación pasiva ni un mero subconsciente individual freudiano, sino una dimensión ontológica real donde el espíritu se desprende del cuerpo físico para viajar en el tiempo cósmico y encontrarse con los ancestros.",
+        "interpretacion": "El The'Wala interpreta los símbolos oníricos comunitarios: soñar con aguas turbias anticipa desbordamientos o incursiones armadas violentas; soñar con chicha derramada alerta sobre derramamiento de sangre; soñar con bueyes bravos señala persecución de terratenientes o fuerzas foráneas; soñar con la madre o la luna despejada indica tiempos de bendición agrícola y paz comunitaria."
+      },
+      "el_rito_de_refrescamiento_puyakxn": {
+        "descripcion": "Ceremonia nocturna realizada en los sitios sagrados de páramo o en las orillas de ríos cristalinos. A través de baños con aguas maceradas de plantas aromáticas silvestres, soplos de tabaco y hojas de coca masticada, el The'Wala 'refresca' a las familias, a los líderes comunitarios amenazados y a los combatientes que retornan de la guerra, dispersando las energías de odio y muerte."
+      }
+    },
+    "filosofia_uma_kiwe_y_armonizacion": {
+      "concepcion_de_uma_kiwe": "Uma Kiwe (Madre Tierra) es un organismo vivo, consciente y sagrado. No es un recurso inerte, un depósito de materias primas ni una mercancía transable en bolsas de valores. La humanidad no es dueña de la tierra; la humanidad es apenas una hebra más en el tejido cósmico de su cuerpo. Herir a la tierra mediante minería a cielo abierto, monocultivos con agrotóxicos o represas hidroeléctricas es herir el vientre materno y enfermar a los pueblos que habitan en ella.",
+      "los_espiritus_sucios_y_pesados_wewenxi": {
+        "definicion": "Los 'espíritus sucios', pesados o de desarmonía (we'wenxi / kx'a) surgen cuando se rompen los pactos ancestrales de respeto: el despojo violento de tierras, los asesinatos selectivos, el narcotráfico, la codicia individual y la profanación de cementerios y lagunas sagradas.",
+        "armonizacion_colectiva": "Cuando una comunidad experimenta divisiones internas, suicidios de jóvenes o masacres externas, el Cabildo y las autoridades tradicionales convocan a una gran 'armonización territorial'. En ella, toda la comunidad se reúne en ayuno ritual, mambea coca andina (jiibx) durante toda la noche, bebe chicha de maíz fermentada en múcuras sagradas y ora al compás de la música autóctona hasta apaciguar las fuerzas telúricas irritadas."
+      },
+      "el_mambeo_y_la_palabra_de_vida": "Mambear o masticar hoja de coca con cal apagada (mambiada) no es un acto recreativo ni adictivo; es el 'endulce de la palabra'. La coca aclara la mente, apacigua la ira, permite reflexionar con serenidad en las asambleas comunitarias y une los corazones en un solo pensamiento colectivo."
+    },
+    "catalogo_plantas_sagradas": [
+      {
+        "nombre_comun": "Coca Andina",
+        "nombre_cientifico": "Erythroxylum coca var. coca",
+        "nombre_indigena": "Jiibx (Nasa Yuwe) / Koka (Quechua)",
+        "habitat": "Zonas andinas templadas y valles interandinos (1.200 a 2.000 msnm).",
+        "usos_medicinales_y_espirituales": "Alimento supremo de resistencia física para ascender páramos; analgésico estomacal; digestivo; medicina para armonizar asambleas comunitarias; vehículo de comunión con los ancestros mediante el mambeo sagrado. Sagrada e intocable para fines bélicos o químicos."
+      },
+      {
+        "nombre_comun": "Frailejón",
+        "nombre_cientifico": "Espeletia spp. (Espeletia hartwegiana, Espeletia grandiflora)",
+        "nombre_indigena": "Mohán del Páramo / Planta de Agua",
+        "habitat": "Páramos del Macizo Colombiano y Nudo de los Pastos (3.000 a 4.300 msnm).",
+        "usos_medicinales_y_espirituales": "Cosechador y sembrador de la niebla y el agua líquida. Sus hojas resinosas y velludas se usan ceremonialmente en vahos y tisanas para curar la tos ferina, bronquitis, asma de montaña y el 'enfriamiento de matriz'. Su resina se usa como incienso protector en viviendas."
+      },
+      {
+        "nombre_comun": "Árnica Andina",
+        "nombre_cientifico": "Chaptalia nutans / Senecio formosus",
+        "nombre_indigena": "Flor de Golpe / Árnica de Páramo",
+        "habitat": "Laderas frías y subpáramos pedregosos (2.500 a 3.600 msnm).",
+        "usos_medicinales_y_espirituales": "Poderoso antiinflamatorio y analgésico muscular tras las faenas extenuantes de apertura de caminos y mingas de siembra; aplicada en cataplasmas con aguardiente y sal marina para desvanecer hematomas, luxaciones y reumatismos."
+      },
+      {
+        "nombre_comun": "Romerillo",
+        "nombre_cientifico": "Hypericum laricifolium / Diplostephium spp.",
+        "nombre_indigena": "Chilca de páramo / Limpiador del Alma",
+        "habitat": "Zonas de matorral paramuno y bordes de bosque de niebla (2.800 a 3.800 msnm).",
+        "usos_medicinales_y_espirituales": "Antiséptico natural, repelente de malas energías y 'mal de ojo' en recién nacidos. Utilizado en sahumerios y baños de despojo para purificar a las personas que han estado en contacto con campos de batalla o enfermedades infectocontagiosas."
+      },
+      {
+        "nombre_comun": "Ruda",
+        "nombre_cientifico": "Ruta graveolens",
+        "nombre_indigena": "Ruda de castilla / Planta de fuego",
+        "habitat": "Huertas andinas templadas y frías (1.800 a 3.000 msnm).",
+        "usos_medicinales_y_espirituales": "Planta de energía 'caliente' por excelencia. Expulsa el frío interno, alivia los cólicos menstruales intensos, ahuyenta a los malos espíritus y 'espantos' nocturnos que merodean las casas; colgada detrás de las puertas como amuleto de protección territorial."
+      },
+      {
+        "nombre_comun": "Ortiga Mayor / Chamba",
+        "nombre_cientifico": "Urtica dioica / Urera baccifera",
+        "nombre_indigena": "Chamba / Pringamoza / Ishanga",
+        "habitat": "Bordes de caminos y huertas húmedas andinas (1.500 a 3.200 msnm).",
+        "usos_medicinales_y_espirituales": "Activador circulatorio inmediato; purificador sanguíneo. En la Jurisdicción Especial Indígena, el 'baño o toque con ortiga en las piernas' es aplicado como 'remedio y corrección comunitaria' para quienes cometen faltas morales o hurtos, 'despertando la sangre y la mente' hacia el trabajo honrado."
+      }
+    ]
+  },
+  "agroecologia_chagra_y_soberania_alimentaria": {
+    "el_tul_y_la_chagra_andina": {
+      "concepto": "El Tul (en lengua Nasa) o Chagra (en la tradición andina y del Macizo): sistema agroforestal tradicional multiespecífico y vertical que emula la estructura y dinámica de los bosques de niebla tropicales.",
+      "filosofia_del_policultivo": "La tierra aborrece el monocultivo, pues el monocultivo es soledad, agotamiento del suelo y dependencia comercial foránea. El Tul reúne en una misma parcela decenas de especies que cooperan biológica y energéticamente.",
+      "estratificacion_vertical": {
+        "estrato_emergente_y_arboreo": "Árboles de sombrío, leña y frutos: aliso andino (Alnus acuminata) fijador de nitrógeno en el suelo; guamo macheto (Inga edulis); quishuar; nogal andino; y frutales como brevo, tomate de árbol, mora y chontaduro en vertientes cálidas.",
+        "estrato_medio_trepador": "Maíz criollo ancestral (Zea mays) asociado de forma simbiótica con el fríjol guapucha o fríjol cacha (Phaseolus polyanthus / coccineus). El tallo del maíz sirve de soporte vivo al frijol, mientras los nódulos radiculares del frijol capturan nitrógeno atmosférico para nutrir al maíz.",
+        "estrato_arbustivo_y_herbaceo": "Arracacha blanca y amarilla (Arracacia xanthorrhiza); yuca de monte; coles perennes; cebolla de rama; y plantas aromáticas/medicinales en los bordes que actúan como barreras biológicas repelentes de insectos plaga.",
+        "estrato_rastrero_protector": "Calabazas, ahuyamas criollas y vitorias (Cucurbita ficifolia). Sus hojas gigantescas cubren completamente la superficie de la tierra, reteniendo la humedad en tiempos secos, amortiguando el impacto erosivo de los aguaceros andinos y asfixiando a las arvenses competidoras.",
+        "estrato_subterraneo_tuberculos": "Tuberosas y rizomas andinos altamente nutritivos adaptados al frío extremo de la cordillera."
+      }
+    },
+    "catalogo_tuberculos_andinos": [
+      {
+        "nombre_comun": "Ulluco (o Chugua)",
+        "nombre_cientifico": "Ullucus tuberosus",
+        "nombre_indigena": "Mulluk (Misak) / Ullucu (Quechua)",
+        "pisos_termicos": "Frío andino y páramo (2.400 a 3.600 msnm).",
+        "caracteristicas_y_preparacion": "Tubérculo mucilaginoso de colores vivos (amarillo, fucsia, verde veteado), resistente a heladas nocturnas. Consumido cocido en sopas tradicionales (sancocho de ullucos, sopa de guiso) y mote; rico en vitamina C, almidones de lenta absorción y mucílagos protectores del tracto digestivo."
+      },
+      {
+        "nombre_comun": "Cubio (o Mashua)",
+        "nombre_cientifico": "Tropaeolum tuberosum",
+        "nombre_indigena": "Cubio / Mashua",
+        "pisos_termicos": "Alta montaña andina y páramo (2.600 a 3.800 msnm).",
+        "caracteristicas_y_preparacion": "Tubérculo alargado cónico de sabor picante característico debido a su alto contenido de glucosinolatos e isotiocianatos, los cuales actúan en el suelo como nematicidas y fungicidas biológicos naturales. Consumido hervido en cocidos andinos campesinos y muiscas; posee propiedades diuréticas y medicinales para dolencias de próstata y riñón."
+      },
+      {
+        "nombre_comun": "Ibia (u Oca)",
+        "nombre_cientifico": "Oxalis tuberosa",
+        "nombre_indigena": "Ibia / Oqa",
+        "pisos_termicos": "Pisos fríos (2.500 a 3.400 msnm).",
+        "caracteristicas_y_preparacion": "Tubérculo cilíndrico amarillento o rojizo con ojos marcados. Tradicionalmente se 'asolea' (se expone al sol durante varios días tras la cosecha) para degradar el ácido oxálico amargo y transformar sus almidones en azúcares dulces, consumiéndose asada, hervida o en dulces tradicionales de páramo."
+      },
+      {
+        "nombre_comun": "Papas Nativas Ancestrales",
+        "nombre_cientifico": "Solanum tuberosum andigenum / Solanum phureja",
+        "nombres_locales": "Papa criolla de año, papa chaucha, mambera, tuquerreña, parda pastusa, ratona, manzana, colorada y ojo de buey.",
+        "pisos_termicos": "Frío andino y páramo (2.200 a 3.700 msnm).",
+        "caracteristicas_y_preparacion": "Base calórica indiscutible de las familias andinas del Cauca y Nariño. Gran diversidad genética de pulpas amarillas, violetas y jaspeadas ricas en antioxidantes y antocianinas; tolerancia genética a la 'gota' o tizón tardío (Phytophthora infestans) desarrollada tras milenios de selección campesina-indígena."
+      }
+    ],
+    "conservacion_de_semillas_y_abonos_organicos": {
+      "custodios_de_semillas_nativas": "Redes de familias comunitarias dedicadas a rescatar, seleccionar y multiplicar semillas criollas no modificadas genéticamente, resistiendo a la privatización impuesta por resoluciones estatales como la Resolución 9.70 del Instituto Colombiano Agropecuario (ICA).",
+      "ferias_de_trueque_kxsxaw_trueque": "Espacios solemnes y festivos de intercambio no monetario de semillas, esquejes, saberes y plantas medicinales entre pisos térmicos: la gente del páramo baja papa y ulluco para intercambiarlos por plátano, caña y café de las familias de vertiente baja.",
+      "abonos_organicos_ancestrales": {
+        "ceniza_de_fogon_tulpa": "La ceniza vegetal recogida a diario del fogón de leña es rica en potasio soluble, fósforo, calcio y micronutrientes. Se esparce sobre los caballones de siembra para neutralizar la acidez de los suelos volcánicos andinos y actuar como repelente natural contra babosas y gusanos trozadores.",
+        "estiercol_compostado": "Compostaje profundo de estiércol fermentado de ovejas, ganado vacuno y camas de cría de cuyes, mezclado con hojarasca de bosque, bagazo de caña y cal agrícola viva (caldolimonio), produciendo abonos humificados de gran vitalidad biológica sin recurrir a fertilizantes químicos de síntesis petroquímica."
+      }
+    }
+  },
+  "arquitectura_textileria_y_simbologia": {
+    "arquitectura_vernacula_y_la_tulpa": {
+      "casas_de_tapia_pisada": {
+        "tecnica_constructiva": "Edificación mediante grandes encofrados o cajones de madera móvil ('tapiales') apoyados sobre zócalos de piedra de río; el barro arcilloso seleccionado se humedece y se mezcla con paja de páramo cortada, cal viva y estiércol de buey (que aporta bacterias estabilizantes y fibras de celulosa). Se apisona intensamente a golpe de pisón de madera dura hasta lograr una densidad pétrea.",
+        "propiedades_bioclimaticas": "Muros monolíticos de 60 a 90 centímetros de espesor dotados de una colosal inercia térmica: absorben la radiación solar diurna y la liberan gradualmente en el interior durante las heladas nocturnas, garantizando un microclima cálido y seco en altitudes superiores a los 2.800 msnm."
+      },
+      "bahareque_de_carrizo_y_guadua": {
+        "tecnica_constructiva": "Estructura portante de maderas duras de montaña (guayacán, aliso o pino colombiano) entramada con una doble malla tejida de caña brava, carrizo de páramo o tiras de guadua machacada; el vacío central se 'embarra' a presión con una argamasa plástica de tierra arcillosa y estiércol madurado.",
+        "propiedades_sismorresistentes": "Extraordinaria flexibilidad estructural y ligereza. Al estar ubicados sobre la Falla de Romeral y en zonas de intensa sismicidad volcánica en el Cauca y Nariño, las paredes de bahareque disipan la energía sísmica deformándose elásticamente sin colapsar catastróficamente sobre los habitantes."
+      },
+      "la_tulpa_o_fogon_de_tres_piedras_nak_chak": {
+        "descripcion": "El corazón sagrado de la vivienda indígena andina. Consiste en tres grandes piedras volcánicas enterradas en el suelo de la cocina que sostienen las ollas sobre las brasas de leña encendida continuamente.",
+        "simbolismo_cosmologico": "Las tres piedras representan la tríada fundamental cósmica: 1) Los ancestros (la raíz y la memoria histórica), 2) La comunidad viva presente (el trabajo y la solidaridad), 3) Las generaciones venideras (la pervivencia futura). Alrededor del fuego de la tulpa se educa a los hijos, se deliberan las decisiones del cabildo, se consumen los alimentos compartidos y se ahuyentan los fríos del cuerpo y del espíritu."
+      }
+    },
+    "textileria_andina_y_vestuario_tradicional": {
+      "el_telar_vertical_kallim": {
+        "descripcion": "Estructura compuesta por dos maderos verticales robustos plantados o apoyados contra las paredes y dos travesaños horizontales donde se urden los hilos de lana de oveja. Trabajar en el telar vertical exige tejer de pie o de rodillas, emulando la postura de reverencia ante el telar de la creación.",
+        "significado_simbolico": "La urdimbre vertical representa la conexión cósmica entre el cielo y la tierra; la trama horizontal entrelazada representa las relaciones comunitarias y el tejido social que sostiene la vida."
+      },
+      "el_capisayo_misak": {
+        "descripcion": "Prenda masculina icónica del pueblo Misak confeccionada íntegramente en lana virgen de oveja. Es un manto rectangular tupido con finas rayas horizontales continuas alternadas en tonos azul oscuro añil, negro natural y blanco crudo.",
+        "simbologia_y_porte": "Se viste enrollado alrededor del torso y se sujeta firmemente a la cintura; su diseño de rayas horizontales representa los estratos geológicos de la montaña, las terrazas de cultivo de las laderas y los diferentes niveles del cielo andino. Protege al comunero de la lluvia torrencial y de los vientos helados de Guambía."
+      },
+      "la_ruana_nasa_y_el_anaco": {
+        "descripcion": "La ruana Nasa es una prenda tejida en telar rústico con lana pura de oveja sin desengrasar (conservando la lanolina natural que repele el agua de lluvia). En combinación con el 'anaco' (falda tradicional de paño grueso oscuro tableado ceñida a la cintura), configura un traje adaptado a los senderos escarpados y trochas enlodadas de Tierradentro y la cordillera."
+      }
+    },
+    "el_chumbe_ceremonial_como_libro_textil": {
+      "definicion": "El Chumbe es una faja larga y angosta tejida primorosamente por las mujeres sabedoras indígenas (en comunidades Nasa, Misak, Yanacona, Pastos e Inga) mediante telar de cintura o telar de palitos.",
+      "el_chumbe_como_escritura_ancestral": "En una sociedad originariamente de tradición oral, el Chumbe opera como un auténtico 'libro textil' o documento historiográfico donde las mujeres inscriben la memoria, el calendario agrícola, los mitos de origen y la cartografía espiritual del territorio.",
+      "iconografia_y_semiotica": [
+        {
+          "figura": "El Rombo (Ombligo / Matriz)",
+          "simbolismo": "Representa el centro de la vida, el útero fértil de la mujer y de Uma Kiwe, el punto sagrado de conexión entre el ser y la tierra."
+        },
+        {
+          "figura": "La Espiral Cósmica (Kapary)",
+          "simbolismo": "El devenir del tiempo cíclico; el caracol de la existencia donde todo retorno es un nuevo comienzo en un plano superior de conciencia."
+        },
+        {
+          "figura": "El Ojo de Agua / La Laguna",
+          "simbolismo": "Cuna primordial del pueblo; nacimiento de los ríos sagrados y espejo del cielo."
+        },
+        {
+          "figura": "La Serpiente de Dos Cabezas",
+          "simbolismo": "La dualidad cósmica complementaria (día y noche, frío y calor, hombre y mujer) y el río que zigzaguea por el valle."
+        },
+        {
+          "figura": "Los Senderos Cruzados",
+          "simbolismo": "Los caminos de herradura de la cordillera andina y las encrucijadas de decisiones históricas del pueblo en asamblea."
+        }
+      ],
+      "funciones_rituales_y_maternales": "El chumbe es utilizado por las madres para fajar a los recién nacidos durante sus primeros meses, brindándoles firmeza en la columna, protegiendo su ombligo de malos aires y transmitiéndoles directamente en la piel los símbolos de protección de la comunidad. Asimismo, las mujeres adultas lo ciñen a su cintura para contener la matriz y resguardar su energía vital."
+    }
+  },
+  "liderazgo_politico_y_resistencia_historica": {
+    "la_cacica_gaitana_1538": {
+      "nombre": "La Cacica Gaitana (Guaitipán)",
+      "epoca": "Año 1538 - 1542 (Siglo XVI)",
+      "territorio_rebelde": "Alto Magdalena, Valle de Timaná (actual departamento del Huila y estribaciones del Macizo Colombiano).",
+      "pueblos_confederados": "Yalcones, Pijaos, Paeces (Nasa) y Timanaes.",
+      "antecedentes_del_conflicto": "El capitán español Pedro de Añasco, lugarteniente de Sebastián de Belalcázar, fundó la villa de Guacacallo (Timaná) y comenzó una brutal campaña de sometimiento y exacción tributaria. Ante la negativa de Timanco (hijo joven de la cacica Gaitana) a rendir pleitesía y entregar alimentos y sirvientes, Añasco ordenó apresarlo y cometer un acto de barbarie atroz: hacerlo quemar vivo en una hoguera en presencia de su propia madre para aterrorizar a la población indígena.",
+      "el_levantamiento_y_la_insurreccion": "Movida por el dolor y la dignidad herida, la Cacica Gaitana no se amedrentó: cabalgó y recorrió noche y día los señoríos vecinos, forjando una formidable alianza militar interétnica que reunió a más de 12.000 guerreros indígenas armados con lanzas de chonta, flechas y dardos envenenados.",
+      "la_emboscada_y_el_juicio_historico": "En 1538, las fuerzas de Gaitana emboscaron a Pedro de Añasco y a su patrulla de caballería en las gargantas del río. Tras aniquilar a sus escoltas, capturaron vivo al capitán invasor. La Cacica Gaitana presidió el juicio de las comunidades: lo condujo con una soga al cuello por todos los poblados arrasados para mostrar la caída del verdugo y, en acto de justicia ancestral por la incineración de su hijo, ordenó arrancarle los ojos (pues con sus ojos codició el oro y la tierra ajena) y ejecutarlo ritualmente.",
+      "significado_y_legado": "Primera gran victoria militar indígena anticolonial documentada en el territorio colombiano; símbolo imperecedero de la dignidad, liderazgo político femenino y resistencia irreductible de los pueblos andinos."
+    },
+    "juan_tama_de_la_estrella": {
+      "nombre": "Juan Tama de la Estrella (Liban Tama)",
+      "epoca": "Siglo XVII (c. 1650 - 1715)",
+      "territorio": "Tierradentro (cuenca alta del río Páez, Cauca) y estribaciones del Nevado del Huila.",
+      "pueblo": "Pueblo Nasa (Paez).",
+      "origen_mitico_y_sagrado": "Relata la tradición oral que Juan Tama fue engendrado por la unión cósmica de la estrella celeste y el trueno sagrado, siendo depositado en forma de niño de luz sobre las aguas turbulentas de la quebrada Lucero o del río Páez. Fue encontrado por los médicos tradicionales (The'Wala) flotando en un remolino; para que sobreviviera y pudiera cumplir su misión redentora, fue alimentado exclusivamente con leche materna de siete mujeres vírgenes de Tierradentro.",
+      "estrategia_politico_juridica": "Comprendiendo que la resistencia puramente armada resultaba insuficiente frente al avance burocrático de la Corona Española, Juan Tama fusionó el poder chamánico con un dominio magistral del derecho imperial hispano. Realizó la épica travesía a pie y a caballo desde Tierradentro hasta la Real Audiencia de Quito.",
+      "los_titulos_coloniales_de_resguardo": "Ante los magistrados de la Real Audiencia de Quito, Juan Tama protocolizó y obtuvo los Títulos Coloniales de Resguardo de Vitoncó, San Francisco, Lame, Tacueyó y Toribío a finales del siglo XVII. Delimitó las fronteras sagradas de Tierradentro apelando a cerros, lagunas y ríos inamovibles, logrando el reconocimiento de la propiedad colectiva inalienable para su pueblo.",
+      "trascendencia_hacia_la_laguna_sagrada": "Habiendo dejado redactado su testamento político y asegurados los títulos territoriales, Juan Tama convocó a sus sabedores en el páramo de Moras y se sumergió solemnemente en las aguas gélidas de la Laguna de Juan Tama junto a su compañera espiritual, regresando a la dimensión inmortal de donde había brotado. Los The'Wala aún acuden a dicha laguna a ofrendarle pagamento y recibir sus consejos políticos.",
+      "legado": "Los títulos de Juan Tama son el baluarte legal supremo con el cual los Nasa ganaron litigios territoriales durante la Colonia, la República y en las cortes constitucionales contemporáneas."
+    },
+    "manuel_quintin_lame": {
+      "nombre": "Manuel Quintín Lame Chantre",
+      "nacimiento_y_muerte": "26 de octubre de 1880 (El Borbollón, Silvia, Cauca) - 25 de mayo de 1967 (Ortega, Tolima)",
+      "filiacion": "Líder indígena caucano de ascendencia Nasa y Yanacona.",
+      "contexto_historico_el_terraje": "Nacido en el seno de una familia de peones indígenas sometidos al sistema oprobioso del 'terraje': servidumbre feudal mediante la cual los terratenientes caucanos despojaban a las comunidades de sus tierras comunales y luego les exigían trabajar gratuitamente varios días a la semana en sus haciendas a cambio de permitirles construir una choza y cultivar una huerta precaria en los riscos de páramo.",
+      "el_movimiento_de_la_quintinada_1910_1925": "Lame organizó un vasto levantamiento pacífico y legalista de miles de indígenas en el Cauca, Huila, Valle y Tolima. Sus postulados centrales fueron: 1) Negativa absoluta a seguir pagando terraje a los hacendados, 2) Defensa irrestricta de los Cabildos Indígenas y los Resguardos amparados en títulos coloniales, 3) Reconocimiento de los derechos civiles indígenas y 4) Reconstitución de la gran República Indígena.",
+      "persecucion_y_encarcelamiento": "Fue perseguido con saña por las fuerzas policiales y paramilitares de los terratenientes caucanos. Pasó más de 108 veces por prisión, acumulando cerca de diez años de encierro carcelario donde aprendió autodidácticamente a leer y redactar memoriales jurídicos basados en la Ley 89 de 1890.",
+      "obra_cumbre_los_pensamientos_del_indio": "En 1939, tras recuperar su libertad, redactó en Ortega su obra filosófica y política magistral: 'Los pensamientos del indio que se educó dentro de las selvas colombianas'. En ella sostiene que la naturaleza es la universidad suprema, denuncia el colonialismo epistemológico de los letrados blancos y proclama el derecho inalienable de los indígenas a autogobernarse según sus propias leyes y cosmologías.",
+      "traslado_al_tolima_y_vejez": "En la década de 1920 se radicó en Ortega y Chaparral (Tolima), reorganizando los cabildos Pijaos desmantelados y defendiendo el Gran Resguardo de Ortega y Chaparral hasta su fallecimiento en 1967.",
+      "influencia_historica": "Figura tutelar del movimiento indígena colombiano contemporáneo; sus ideas y métodos de resistencia jurídica inspiraron directamente la creación del Consejo Regional Indígena del Cauca (CRIC) en 1971 y el nacimiento de las organizaciones de derechos humanos indígenas en todo el país."
+    },
+    "guardia_indigena_nacional_kiwe_thegnas": {
+      "nombre_propio": "Kiwe Thegnas (Guardia Indígena Nacional de Colombia)",
+      "significado_linguistico": "En lengua Nasa Yuwe: Kiwe significa 'Tierra / Territorio' y Thegnas significa 'Cuidadores / Protectores / Defensores'. Se traduce como 'Protectores de la Tierra y la Vida'.",
+      "naturaleza_y_doctrina_no_armada": "Cuerpo civil y humanitario de autoprotección comunitaria no armada, compuesto por hombres, mujeres, jóvenes, niños ('semilleros de guardia') y ancianos designados por las asambleas populares de los cabildos. No reciben salario ni armas de fuego; su misión es defender la soberanía comunitaria, la armonía territorial y los derechos humanos mediante la resistencia civil pacífica.",
+      "el_baston_de_chonta_kuj_y_las_cintas": {
+        "el_baston_de_mando": "Elaborado con madera de chonta negra (palma de gran dureza y resistencia), consagrado espiritualmente por los The'Wala en ceremonias de refrescamiento lacustre.",
+        "la_cinta_verde": "Representa la Madre Tierra (Uma Kiwe), la naturaleza viva, la esperanza colectiva y los campos de siembra comunales.",
+        "la_cinta_roja": "Representa la sangre sagrada derramada por los ancestros (desde Gaitana y Juan Tama hasta Quintín Lame y los mártires contemporáneos) en defensa inquebrantable de la libertad y el territorio.",
+        "concepcion_filosofica": "El bastón no es un garrote ni un arma ofensiva; es una vara de autoridad moral, armonía espiritual y mandato asambleario. Portar el bastón exige humildad, autocontrol y respeto absoluto a la comunidad."
+      },
+      "acciones_heroicas_de_paz_y_mediacion": [
+        "Expulsión pacífica de actores armados ilegales (guerrillas de las FARC, ELN, disidencias, grupos paramilitares) y tropas estatales de sus centros poblados, escuelas y sitios sagrados, interponiéndose desarmados con sus bastones en alto.",
+        "Rescate humanitario de líderes comunitarios y ciudadanos civiles secuestrados, adentrándose en las cumbres montañosas para exigir su liberación inmediata.",
+        "Desactivación comunitaria y señalización de campos minados antipersonal en caminos veredales para proteger la vida de niños y campesinos.",
+        "Custodia pacífica de las grandes marchas sociales, la Minga Nacional y las movilizaciones del Paro Nacional en defensa de la vida y el territorio."
+      ],
+      "reconocimientos_internacionales": {
+        "premio_front_line_defenders_2020": "En diciembre de 2020, la Guardia Indígena del Norte del Cauca (Kiwe Thegnas) fue galardonada con el prestigioso Premio Front Line Defenders para Defensores de Derechos Humanos en Riesgo en Dublín (Irlanda), reconociendo su modelo único y valiente de autoprotección pacífica colectiva frente al asedio del conflicto armado.",
+        "premio_nacional_de_paz_y_nominaciones": "Distinguida con el Premio Nacional de Paz en Colombia y reconocida internacionalmente como uno de los ejemplos de construcción de paz comunitaria de base más inspiradores del planeta."
+      }
+    }
+  }
+}

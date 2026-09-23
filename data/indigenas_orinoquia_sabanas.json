@@ -1,0 +1,1086 @@
+{
+  "metadata": {
+    "titulo": "Gran Compendio Etnográfico, Lingüístico y Cosmogónico de los Pueblos Indígenas de la Orinoquía, Sabanas y Piedemonte de Colombia",
+    "subagente": "Subagente Especialista en Pueblos Indígenas de la Orinoquía, Sabanas y Piedemonte de Colombianopedia",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "descripcion": "Base de datos exhaustiva y de máxima profundidad enciclopédica sobre las diez naciones originarias de las sabanas inundables, bosques de galería y vertientes de piedemonte de la Orinoquía colombiana. Incluye análisis detallado de familias lingüísticas, fonología y estados de vitalidad; medicina tradicional, chamanismo mariké y ritos del Yopo y el Itomo; biotecnología milenaria de la yuca brava, prensas de sebucán, casabe y kumache; arquitectura bioclimática de malocas de palma; y cosmovisiones míticas frente a los hitos de resistencia territorial (Kaliawiri, Ruiría U'wa y la memoria de las Guahibiadas y La Rubiera).",
+    "marcos_normativos_y_jurisprudenciales": [
+      "Constitución Política de Colombia de 1991: Artículos 1, 7 (diversidad étnica y cultural), 10 (lenguas oficiales), 63 (bienes inalienables, imprescriptibles e inembargables), 246 (Jurisdicción Especial Indígena) y 329 (Entidades Territoriales Indígenas).",
+      "Convenio 169 de la Organización Internacional del Trabajo (OIT) sobre Pueblos Indígenas y Tribales (Ley 21 de 1991).",
+      "Ley 1381 de 2010 (Ley de Lenguas Nativas de Colombia) - Salvaguarda y fomento de los idiomas aborígenes.",
+      "Corte Constitucional de Colombia - Sentencia SU-039 de 1997: Hito jurisprudencial sobre Consulta Previa y supervivencia del pueblo U'wa frente a la explotación petrolera en el bloque Samoré.",
+      "Corte Constitucional de Colombia - Auto 004 de 2009: Declaración de estado de cosas inconstitucional por amenaza inminente de extinción física y cultural de pueblos indígenas por conflicto armado y despojo (incluye a los pueblos Cuiba, Chiricoa, Amorúa, Hitnü, Achagua y Sáliba).",
+      "Decreto Ley 4633 de 2011: Medidas de asistencia, atención, reparación integral y de restitución de derechos territoriales a las víctimas pertenecientes a los pueblos y comunidades indígenas."
+    ],
+    "fuentes_primarias_academicas_y_testimoniales": [
+      "Instituto Colombiano de Antropología e Historia (ICANH) - Atlas Sociolingüístico de Pueblos Indígenas de Colombia y monografías etnográficas de la Orinoquía.",
+      "Reichel-Dolmatoff, Gerardo - 'El chamán y el jaguar: Estudio de las drogas narcóticas entre los indios de Colombia' y tratados de ecología chamánica.",
+      "Morey, Robert V. & Morey, Nancy C. - 'Los Guahibo: Etnohistoria de un pueblo de los Llanos Colombo-Venezolanos' y estudios de contacto interétnico en Casanare y Meta.",
+      "Correa Rubio, François - 'Por el camino de la anaconda remedio' y recopilaciones de sistemas agrícolas de la cuenca orinoquense-amazónica.",
+      "Jaramillo Jaramillo, Efraín - Peritajes antropológicos, testimonios de los Werjayá y crónicas de resistencia del pueblo U'wa en el Sarare y Cubará.",
+      "Landaburu, Jon - Archivo de Lenguas Indígenas de Colombia (ALIC) del CCELA / Universidad de los Andes e investigaciones sobre lenguas de la Orinoquía.",
+      "Centro Nacional de Memoria Histórica (CNMH) - 'Pueblos Indígenas en los Llanos Orientales: Violencia, Despojo y Resistencia' y reconstrucción forense-histórica de La Rubiera.",
+      "Organización Nacional Indígena de Colombia (ONIC) y Asociación de Cabildos y Autoridades Tradicionales U'wa (Asou'wa) - Pronunciamientos doctrinales y cosmogónicos."
+    ],
+    "total_pueblos_documentados": 10,
+    "pueblos_incluidos": [
+      "Sikuani (Guahibo)",
+      "U'wa (Tunebos)",
+      "Achagua",
+      "Piapoco (Dzéwene)",
+      "Sáliba",
+      "Cuiba (Wamonae)",
+      "Amorúa (Jamorúa)",
+      "Masiguare",
+      "Chiricoa",
+      "Betoye"
+    ]
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "sikuani",
+      "nombre": "Sikuani (Guahibo / Hiwi)",
+      "autodenominacion": "Hiwi / Jowi ('Gente verdadera' o 'Nuestra gente')",
+      "exonominacion_historica": "Guahibos (denominación impuesta en crónicas coloniales de misioneros y encomenderos)",
+      "familia_linguistica": "Familia Guahibana",
+      "ubicacion_geografica": {
+        "region": "Orinoquía colombiana (Altillanura plana y serranía disectada)",
+        "departamentos": [
+          "Vichada",
+          "Meta",
+          "Casanare",
+          "Guainía",
+          "Guaviare"
+        ],
+        "municipios_principales": [
+          "Cumaribo (epicentro demográfico)",
+          "Puerto Gaitán",
+          "Puerto Carreño",
+          "Santa Rosalía",
+          "La Primavera",
+          "Orocué",
+          "Mapiripán"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Meta",
+          "Río Vichada",
+          "Río Tomo",
+          "Río Tuparro",
+          "Río Muco",
+          "Río Bita",
+          "Río Guaviare"
+        ],
+        "ecosistemas_habitados": [
+          "Sabanas hiperestacionales de altillanura (bancos y bajos)",
+          "Bosques de galería (matas de monte)",
+          "Esteros y complejos de morichales",
+          "Afloramientos rocosos graníticos del Escudo Guayanés"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Unificado Selva de Matavén (compartido interétnico, el segundo más extenso de Colombia)",
+          "Resguardo Wacoyo (Puerto Gaitán)",
+          "Resguardo Domo Planas (Puerto Gaitán)",
+          "Resguardo Corocito",
+          "Resguardo Santa Rosalía",
+          "Resguardo Saracure y Cada"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 52.000 a 60.000 personas en territorio colombiano (más de 25.000 adicionales en el estado Amazonas y Apure, Venezuela).",
+        "representatividad_regional": "Constituye el pueblo indígena numéricamente más numeroso y territorialmente más extendido de toda la cuenca de la Orinoquía colombiana.",
+        "distribucion_etaria": "Población joven con pirámide de base ancha; más del 48% es menor de 18 años, conviviendo con una disminución progresiva de ancianos sabios depositarios de la memoria oral."
+      },
+      "organizacion_social_y_politica": {
+        "sistema_de_parentesco": "Clanes patrilineales y patrilocales exogámicos denominados 'momowi' o 'tsani', asociados totémicamente a espíritus animales y fuerzas de la naturaleza (Mawishi / Clan Danta; Néwirü / Clan Tigre-Jaguar; Clan Venado; Clan Perro de Agua; Clan Chigüiro).",
+        "residencia_posmarital": "Uxorilocalidad / matrilocalidad temporal obligatoria durante los primeros años: el novio debe prestar servicios domésticos y agrícolas prolongados al padre de la novia ('servicio del novio') en la chagra de sus suegros antes de fundar un hogar autónomo o regresar al territorio de su propio linaje patrilineal.",
+        "autoridades_tradicionales": {
+          "autoridad_politico_civil": "El Capitán o Gobernador del Cabildo: Líder electo por consenso comunitario para representar al colectivo ante el Estado, administrar recursos del Sistema General de Participaciones (SGP) y coordinar la guardia indígena local.",
+          "autoridad_espiritual_y_medica": "El Dollowén (Chamán mayor / vidente cósmico) y el Mariké (médico herbolario y rezador): Ejercen el arbitraje moral supremo, diagnostican desequilibrios ecológicos y median entre los humanos y los seres celestes."
+        }
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "transicion_historica": "Tradición milenaria nómada y seminómada de cazadores-recolectores pedestres de sabana abierta; durante la estación seca ('kawo') recorrían los esteros y médanos recolectando frutos silvestres, cazando venado sabanero y pescando. En los siglos XIX y XX, acorralados por la expansión ganadera y misiones, transicionaron a una horticultura sedentaria de bosque de galería.",
+        "agricultura_de_chagra": "Cultivo diversificado en vegas aluviales ('katsa') donde el eje calórico monocultural es la yuca brava amarga (Manihot esculenta), complementada con maíz, plátano, batata, piña de sabana y caña dulce.",
+        "caza_y_pesca": "Caza con arco y flecha de curare y veneno vegetal en selvas de ribera (danta, pecarí de collar, pajuil, mono cotudo); pesca diurna y nocturna en canoas con arpones y anzuelos en raudales y meandros."
+      },
+      "cosmovision_resumen": {
+        "origen_del_mundo": "Creación ordenada por los hermanos míticos Kuwai y Purubén. El cosmos está estratificado en niveles celestes ('tsamani') donde habitan los seres inmortales, el mundo intermedio terrestre ('wajupia') y los mundos húmedos subterráneos.",
+        "mito_fundacional_kaliawiri": "El árbol de la vida Kaliawiri, derribado para derramar sobre la tierra todas las semillas y ríos del mundo.",
+        "relacion_con_la_naturaleza": "Pacto ontológico de no depredación: los animales de monte tienen sus propios chamanes y 'dueños espirituales' a quienes el cazador debe pedir permiso ceremonial mediante el humo de tabaco; matar en exceso o desperdiciar carne acarrea el ataque de dardos patógenos invisibles."
+      },
+      "estado_vulnerabilidad_actual": {
+        "amenazas_territoriales": "Expansión agresiva de macroproyectos de monocultivo agroindustrial (palma aceitera, soya, maíz tecnificado, pino y acacia para celulosa) y exploración de hidrocarburos que cercan los caminos ancestrales de trashumancia.",
+        "aculturacion_y_lengua": "Pérdida de la lengua nativa en comunidades periurbanas de Puerto Gaitán y Puerto Carreño; desplazamiento forzado por actores armados ilegales que controlan corredores fluviales de narcotráfico hacia Venezuela.",
+        "amparo_judicial": "Amparados por el Auto 004 de 2009 de la Corte Constitucional como pueblo en situación de confinamiento y vulnerabilidad de derechos fundamentales."
+      }
+    },
+    {
+      "id": "uwa",
+      "nombre": "U'wa (Tunebos)",
+      "autodenominacion": "U'wa ('Gente que sabe pensar, cantar y hablar la palabra viva')",
+      "exonominacion_historica": "Tunebos (denominación peyorativa colonial derivada del río Cobaría o la reducción de Tame/Tunebia)",
+      "familia_linguistica": "Familia Chibcha (Rama Magdalénica / Istmo-Colombiana)",
+      "ubicacion_geografica": {
+        "region": "Piedemonte llanero, serranía del Sarare y vertientes orientales de la Cordillera Oriental",
+        "departamentos": [
+          "Boyacá",
+          "Arauca",
+          "Norte de Santander",
+          "Santander",
+          "Casanare"
+        ],
+        "municipios_principales": [
+          "Cubará (Boyacá - cabecera del resguardo principal)",
+          "Saravena (Arauca)",
+          "Fortul (Arauca)",
+          "Tame (Arauca)",
+          "Toledo (Norte de Santander)",
+          "Chitagá (Norte de Santander)",
+          "Concepción (Santander)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Cobaría",
+          "Río Arauca",
+          "Río Royata",
+          "Río Oiká",
+          "Río Bojabá",
+          "Río Margua"
+        ],
+        "ecosistemas_habitados": [
+          "Nieves perpetuas y páramos de la Sierra Nevada del Cocuy / Güicán ('Kajka-Ika')",
+          "Bosques andinos de niebla y vertiente húmeda",
+          "Selvas húmedas tropicales de piedemonte y llanura del Sarare"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Unido U'wa (abarcando más de 220.000 hectáreas en Boyacá, Norte de Santander y Santander)",
+          "Resguardo Angosturas",
+          "Resguardo Playas de Bojabá"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 7.800 a 9.500 habitantes.",
+        "distribucion_clánica": "Población distribuida en clanes geográficos autónomos articulados por una estricta endogamia comunal y alianzas exogámicas interclánicas reglamentadas por la ley sagrada de Sira.",
+        "preservacion_etnica": "Uno de los pueblos con menor índice de mestizaje biológico y mayor cohesión identitaria y espiritual de los Andes y el piedemonte orinoquense."
+      },
+      "organizacion_social_y_politica": {
+        "sistema_de_clanes": "Ocho clanes ancestrales territoriales federados: Kubaruwa (el clan custodio del centro sagrado de Cobaría), Tegría, Cobaría, Rinconada, Bawaná, Bokota, Sínsiga y Arauca. Cada clan custodia un cuadrante del cosmos y un repertorio litúrgico exclusivo de cantos.",
+        "gobierno_propio": "Asociación de Cabildos y Autoridades Tradicionales U'wa (Asou'wa), respaldada por el Cabildo Mayor. No obstante, las decisiones políticas, territoriales y de negociación exterior están rígidamente subordinadas a la deliberación y veto de los sacerdotes sabios Werjayás.",
+        "los_werjayas": "Casta sacerdotal de sabios cantadores, médicos del cosmos y guías ontológicos. Viven en retiros sagrados, guardan severos ayunos de sal, ají y contacto mundano, y entonan cantos continuos que sostienen el equilibrio energético y evitan que el mundo se desplome."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "verticalidad_ecologica": "Manejo milenario de microcuencas en gradiente altitudinal: poseen viviendas temporales y parcelas escalonadas desde las cálidas selvas del piedemonte (500 msnm) donde cultivan yuca, maíz, plátano y cacao silvestre; pasando por las faldas templadas medias donde siembran fríjol y frutales; hasta las tierras altas de páramo donde recolectan plantas sagradas y practican ceremonias de purificación.",
+        "prohibicion_de_depredacion": "Tienen estrictos tabúes de cacería y pesca en determinadas épocas lunares y cuencas altas de cabecera de páramo consideradas santuarios intangibles donde residen los espíritus de las nieves."
+      },
+      "cosmovision_resumen": {
+        "ley_de_origen_sira": "El universo fue creado por el principio divino Sira mediante cantos armónicos. El mundo está estructurado como una inmensa casa ceremonial en niveles superpuestos sostenida por vigas invisibles de energía sonora.",
+        "sacralidad_de_ruiria": "El petróleo es Ruiría, la sangre líquida de la Madre Tierra (Rikowa). Extraerla implica matar a la madre, romper el balance de las capas tectónicas y liberar desgracias apocalípticas sobre toda la humanidad.",
+        "pacto_de_suicidio_colectivo": "Doctrina de dignidad ancestral: ante la profanación industrial irremediable de su territorio sagrado, prefieren precipitarse colectivamente al abismo del Peñón de los Muertos antes que presenciar la muerte espiritual de su cultura y la violación de la ley de Sira."
+      },
+      "estado_vulnerabilidad_actual": {
+        "amenazas_extractivas": "Permanente asedio de licencias de exploración de gas y petróleo (pozo Gibraltar, Magallanes y nuevos bloques de Ecopetrol en Arauca y Boyacá).",
+        "turismo_no_regulado": "Presión de montañistas y operadores turísticos sobre el Parque Nacional Natural El Cocuy / Zizuma, que profana las lagunas sagradas y glaciares tutelares.",
+        "conflicto_armado": "Presencia histórica de grupos insurgentes (ELN, disidencias) en el corredor del Sarare, minado antipersonal y hostigamientos armados en sus caminos interclánicos."
+      }
+    },
+    {
+      "id": "achagua",
+      "nombre": "Achagua",
+      "autodenominacion": "Achagua / Ajagua",
+      "exonominacion_historica": "Achaguas (cronistas coloniales como Juan Rivero y José Gumilla)",
+      "familia_linguistica": "Familia Arawak (Maipureana)",
+      "ubicacion_geografica": {
+        "region": "Llanos Orientales (Altillanura y vegas del río Meta)",
+        "departamentos": [
+          "Meta",
+          "Casanare (presencia histórica)"
+        ],
+        "municipios_principales": [
+          "Puerto López (Meta)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Meta",
+          "Río Yucao",
+          "Río Guatequía",
+          "Río Casanare (histórico)"
+        ],
+        "ecosistemas_habitados": [
+          "Vegas de inundación aluvial",
+          "Bosques de galería densos",
+          "Sabana abierta confinada"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Umapo (Puerto López - resguardo compartido y núcleo central)",
+          "Resguardo El Turpial"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 800 a 1.200 personas.",
+        "situacion_demografica": "Pueblo en grave riesgo demográfico por siglos de reducción forzada, mestizaje asimétrico, dispersión territorial y despojo de sus tierras planas fértiles."
+      },
+      "organizacion_social_y_politica": {
+        "sistema_historico": "Antiguamente estructurados en grandes cacicazgos confederados jerárquicos ribereños con linajes matrilineales y jefes redistribuidores de bienes suntuarios.",
+        "situacion_contemporanea": "Organización en Cabildo Local reconocido por el Ministerio del Interior; estrecha convivencia y alianzas matrimoniales defensivas con el pueblo Piapoco en el resguardo de Umapo.",
+        "autoridad_moral": "Ancianos rezadores y mujeres tejedoras de casabe y alfarería, quienes retienen los últimos relatos de los viajes comerciales y los rituales funerarios acuáticos."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "cultivo_de_vega": "Agricultura intensiva en vegas fértiles de río, altamente productiva en yuca amarga, plátano, caña y batata.",
+        "la_quiripa_moneda_ancestral": "Hito histórico: Los Achagua fueron los grandes artífices de la 'Quiripa', sartas de discos milimétricos tallados en conchas de caracoles acuáticos de río que operaron como la divisa y moneda comercial hegemónica de la cuenca del Orinoco, los Llanos y los Andes en la época precolombina y colonial temprana. Comerciaban quiripa a cambio de sal muisca, oro, hamacas y plumajes finos.",
+        "pesca_ribereña": "Manejo experto de redes de mano y arpones para la pesca de bagre rayado, coporo y curvina en el río Meta."
+      },
+      "cosmovision_resumen": {
+        "el_dios_kuwai": "Veneración al demiurgo creador Kuwai, quien enseñó a modelar el barro, a encender el fuego y a procesar el veneno de la yuca amarga.",
+        "ritos_del_agua": "Concepción de los grandes ríos como autopistas de serpientes celestiales y morada de los genios protectores de la ictiofauna a los que no se debe ofender arrojando inmundicias."
+      },
+      "estado_vulnerabilidad_actual": {
+        "peligro_critico_de_extincion": "Catalogado formalmente por la Corte Constitucional (Auto 004 de 2009) como pueblo en inminente riesgo de extinción física y cultural por despojo de tierras y presión demográfica colona.",
+        "crisis_de_la_lengua": "Menos de 200 ancianos mantienen fluidez conversacional en lengua Achagua; las nuevas generaciones son predominantemente hispanohablantes o bilingües con el Piapoco."
+      }
+    },
+    {
+      "id": "piapoco",
+      "nombre": "Piapoco (Dzéwene)",
+      "autodenominacion": "Dzéwene / De'e ('Hijos del Tucán Mítico')",
+      "exonominacion_historica": "Piapoco (derivado del término despectivo chibcha/guahibo para tucán o habladores de garganta)",
+      "familia_linguistica": "Familia Arawak (Maipureana)",
+      "ubicacion_geografica": {
+        "region": "Llanuras fluviales de transición entre la Orinoquía y la Amazonía",
+        "departamentos": [
+          "Vichada",
+          "Meta",
+          "Guainía"
+        ],
+        "municipios_principales": [
+          "Puerto Gaitán (Meta)",
+          "Cumaribo (Vichada)",
+          "Puerto Carreño (Vichada)",
+          "Inírida (Guainía)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Vichada",
+          "Río Guaviare",
+          "Río Meta",
+          "Río Uva",
+          "Río Matavén"
+        ],
+        "ecosistemas_habitados": [
+          "Bosques riparios densos",
+          "Zonas de rebalse e inundación periódica",
+          "Cachiveras y rápidos rocosos"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Unificado Selva de Matavén (Vichada)",
+          "Resguardo Murélago (Puerto Gaitán)",
+          "Resguardo El Merey"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 4.500 a 6.000 habitantes.",
+        "vitalidad_demografica": "Crecimiento demográfico moderado con sostenimiento de comunidades extensas articuladas a lo largo de caños y ríos tributarios del Guaviare y Vichada."
+      },
+      "organizacion_social_y_politica": {
+        "clanes_totemicos": "Estructurados en linajes y clanes patrilineales totémicos exogámicos: el Clan del Tucán (Dzéwene), el Clan de la Danta, el Clan de la Hormiga Arriera y el Clan de la Garza. Los matrimonios deben concertarse obligatoriamente entre clanes de diferente tótem.",
+        "maestria_naval": "Legendarios como los constructores más diestros de curiaras o canoas monóxilas de un solo tronco de cedro y cachicamo en los Llanos, con las que surcaban los peligrosos raudales de Maipures y el Guaviare.",
+        "autoridad_tradicional": "Liderazgo dual ejercido por el Capitán de la comunidad y el sabio anciano cantor conocedor de los mitos de Kuwe."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "agricultura_de_selva": "Cultivo de chagras de corte y quema donde producen variedades selectas de yuca brava amarga de alto almidón, piña amazónica, tubérculos y frutales.",
+        "artesania_del_cumare": "Artesanos destacados en el tejido de hamacas de cumare con finos tintes vegetales, sebucanes elásticos y canastos catumares para cargar cosechas."
+      },
+      "cosmovision_resumen": {
+        "mito_de_kuwe": "Kuwe es el gran demiurgo que creó el mundo en el raudal de Hipana, dotó a los hombres de lenguaje, asignó las reglas de los clanes, confeccionó las primeras flautas y venció a los monstruos caníbales de las aguas.",
+        "respeto_al_ictiosistema": "Creencia en la existencia de ciudades subacuáticas donde viven los jefes espirituales de los peces; los pescadores no deben abusar de los cardúmenes de mijao ni violar las tallas de veda biológica impuestas por el chamán."
+      },
+      "estado_vulnerabilidad_actual": {
+        "colonizacion_y_coca": "Afectaciones por cultivos de uso ilícito en la frontera entre Guaviare y Vichada; contaminación de aguas por agroquímicos industriales en las cuencas bajas del Meta.",
+        "salvaguarda_linguistica": "Conservan su lengua con vitalidad intergeneracional en las comunidades de cabecera de selva, aunque con pérdida en enclaves urbanos."
+      }
+    },
+    {
+      "id": "saliba",
+      "nombre": "Sáliba",
+      "autodenominacion": "Sáliba",
+      "exonominacion_historica": "Sálivas (consignados en crónicas misionales jesuíticas del padre Gumilla y Rivero)",
+      "familia_linguistica": "Familia Sáliba-Piaroa",
+      "ubicacion_geografica": {
+        "region": "Orinoquía central (Sabanas y meandros del río Meta)",
+        "departamentos": [
+          "Casanare",
+          "Vichada"
+        ],
+        "municipios_principales": [
+          "Orocué (Casanare - corazón histórico y cultural de la nación Sáliba)",
+          "Santa Rosalía (Vichada)",
+          "Puerto Carreño (Vichada)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Meta",
+          "Río Cravo Sur",
+          "Caño San Miguel",
+          "Caño Duya"
+        ],
+        "ecosistemas_habitados": [
+          "Sabanas inundables ribereñas",
+          "Medanos arenosos y vegas fértiles",
+          "Bosques de galería del bajo Meta"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo El Consejo (Orocué)",
+          "Resguardo Saladillo (Orocué)",
+          "Resguardo San Juanito (Orocué)",
+          "Resguardo Médano del Guaviare",
+          "Resguardo Paravare"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 3.200 a 4.500 personas.",
+        "concentracion_territorial": "Más del 85% de la población se encuentra concentrada en los resguardos circundantes al municipio de Orocué (Casanare)."
+      },
+      "organizacion_social_y_politica": {
+        "herencia_misional_y_resistencia": "Pueblo con una densa historia de contacto; fueron congregados en reducciones jesuíticas en los siglos XVII y XVIII, adoptando la estructura de cabildos de origen hispánico que luego resignificaron como escudo de autogobierno territorial.",
+        "autoridades_propias": "Cabildo Mayor del Pueblo Sáliba de Orocué, coordinado con capitanes locales de cada resguardo.",
+        "la_danza_del_carrizo": "Emblema identitario inquebrantable: Las fiestas tradicionales se articulan en torno al 'Carrizo', donde parejas de flautas de pan de caña brava (macho y hembra) ejecutan complejas polifonías al son del tambor y la maraca sagrada, marcando las alianzas sociales y las etapas de la cosecha."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "horticultura_y_pesca": "Cultivo diversificado de yuca amarga, casabe horneado en budares planos de arcilla, maíz, caña y plátano; pescadores diestros en el río Meta y lagunas estacionales.",
+        "ceramica_y_alfareria": "Famosos históricamente por su alfarería de barro cocido decorada con incisiones y pinturas minerales para budares de casabe y tinajas fermentadoras de chicha de moriche."
+      },
+      "cosmovision_resumen": {
+        "el_mito_de_puru_y_cunaviche": "En el tiempo primordial, la serpiente colosal Cunaviche aterrorizaba a las gentes de los Llanos y devoraba a sus hijos. El dios Purú descendió del cielo, entabló una batalla titánica y atravesó a la bestia con una flecha divina. De las entrañas en descomposición de la serpiente brotaron gusanos que Purú transformó en los seres humanos de los diferentes pueblos.",
+        "respeto_al_rio": "El río Meta es considerado el espinazo hídrico donde confluyen las almas de los antepasados."
+      },
+      "estado_vulnerabilidad_actual": {
+        "expansion_ganadera_y_petrolera": "Cercamiento de resguardos por haciendas ganaderas intensivas y pozos petroleros del Casanare sur; polución de caños tradicionales de pesca.",
+        "proceso_de_revitalizacion_linguistica": "La lengua materna se encuentra amenazada, pero el pueblo lidera un potente proceso de etnoeducación en las escuelas rurales de Orocué con producción de cartillas y fonotecas bilingües."
+      }
+    },
+    {
+      "id": "cuiba",
+      "nombre": "Cuiba (Wamonae)",
+      "autodenominacion": "Wamonae ('Nosotros, la verdadera gente')",
+      "exonominacion_historica": "Cuibas / Kuiva / Chiricoas (denominación genérica colona)",
+      "familia_linguistica": "Familia Guahibana",
+      "ubicacion_geografica": {
+        "region": "Sabanas abiertas y llanuras disectadas del norte y centro de la Orinoquía",
+        "departamentos": [
+          "Arauca",
+          "Casanare",
+          "Vichada"
+        ],
+        "municipios_principales": [
+          "Cravo Norte (Arauca)",
+          "Hato Corozal (Casanare)",
+          "Paz de Ariporo (Casanare)",
+          "La Primavera (Vichada)",
+          "Santa Rosalía (Vichada)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Capanaparo",
+          "Río Arauca",
+          "Río Casanare",
+          "Río Ariporo",
+          "Río Meta",
+          "Río Tomo"
+        ],
+        "ecosistemas_habitados": [
+          "Sabanas inundables hiperestacionales (playones arenosos y esteros)",
+          "Morichales abiertos y matas de monte aisladas",
+          "Médanos y dunas fósiles de sabana"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Caño Mochuelo (Casanare - enclave multiétnico de refugio)",
+          "Resguardo La Pascua (Vichada)",
+          "Comunidades del río Capanaparo"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 2.800 a 3.800 habitantes en Colombia (con grupos nómadas binacionales transfronterizos con el estado Apure, Venezuela).",
+        "situacion_demografica": "Severamente diezmados a lo largo del siglo XX por cacerías humanas y desnutrición; población actualmente concentrada en resguardos de confinamiento ecológico."
+      },
+      "organizacion_social_y_politica": {
+        "nomadismo_estacional": "Constituyen uno de los últimos grupos humanos con núcleos de cazadores-recolectores nómadas de sabana en el continente suramericano. Su organización social tradicional se divide en bandas locales móviles de 20 a 50 individuos vinculados por lazos consanguíneos y conyugales.",
+        "subgrupos_regionales": [
+          "Mayayero (río Arauca y Capanaparo)",
+          "Maimachi (río Casanare y Cravo Norte)",
+          "Domo (río Ariporo y Meta)",
+          "Tampiwi"
+        ],
+        "vivienda_ligera": "No construían malocas permanentes, sino paravientos o 'chiqueros' efímeros de hojas de palma y platanillo orientados contra la dirección de los vientos dominantes, que abandonaban tras agotar los recursos locales."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "caza_y_recoleccion_pura": "Especialistas en la cacería de venado sabanero, armadillo (cachicamo), chigüiro y danta con arco y flechas largas de caña brava con puntas de madera dura labrada o hueso de danta.",
+        "cosecha_de_playa_y_moriche": "En la temporada seca recolectaban miles de huevos de tortuga charapa (Podocnemis expansa) y terecay en las playas de los ríos Casanare y Meta; en invierno se alimentaban de la pulpa del moriche, mieles silvestres de abejas nativas sin aguijón y raíces de sabana."
+      },
+      "cosmovision_resumen": {
+        "animismo_de_sabana": "El universo está habitado por fuerzas invisibles encarnadas en los animales de monte. El cazador cuiba establece una comunicación empática con la presa; si una presa es herida y sufre innecesariamente, su espíritu atormenta al cazador.",
+        "el_yopo_guia": "Uso permanente del yopo por los ancianos para 'soñar el camino de la caza' y orientar la marcha nómada hacia los aguajes donde abrevan los rebaños de saínos."
+      },
+      "estado_vulnerabilidad_actual": {
+        "victimas_de_las_guahibiadas": "El pueblo que padeció de forma más sistemática el genocidio colonial de las 'guahibiadas', siendo la Masacre de La Rubiera (1968) el caso más atroz y documentado de su historia.",
+        "confinamiento_en_caño_mochuelo": "El hacinamiento territorial forzado en el resguardo Caño Mochuelo ha provocado crisis alimentaria, agotamiento de la fauna de cacería y epidemias de tuberculosis."
+      }
+    },
+    {
+      "id": "amorua",
+      "nombre": "Amorúa (Jamorúa / Mariposo)",
+      "autodenominacion": "Amorúa / Jamorúa",
+      "exonominacion_historica": "Mariposos (denominación regional llanera)",
+      "familia_linguistica": "Familia Guahibana",
+      "ubicacion_geografica": {
+        "region": "Sabanas de la cuenca media y baja del río Orinoco",
+        "departamentos": [
+          "Vichada"
+        ],
+        "municipios_principales": [
+          "Puerto Carreño (Vichada)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Bita (primer río protegido de Colombia)",
+          "Río Tomo",
+          "Río Tuparro",
+          "Río Orinoco"
+        ],
+        "ecosistemas_habitados": [
+          "Sabanas disectadas de altillanura",
+          "Morichales y bosques de vega del río Bita",
+          "Asentamientos periurbanos vulnerables de Puerto Carreño"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Amorúa Caño Mesetas",
+          "Comunidades de Morichalito y orillas del río Bita"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 500 a 900 personas.",
+        "situacion_critica": "Población extremadamente reducida, con alto porcentaje de familias desplazadas en condiciones de extrema pobreza en la periferia urbana de Puerto Carreño."
+      },
+      "organizacion_social_y_politica": {
+        "nucleos_familiares_moviles": "Históricamente organizados en clanes familiares seminómadas de sabana que alternaban campamentos temporales a lo largo de las playas y caños del río Bita.",
+        "liderazgo_fragmentado": "Pérdida de la figura tradicional de capitanes fuertes debido a la dispersión forzada y la dependencia de asistencialismo estatal en zonas de frontera."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "pesca_artesanal_y_recoleccion": "Pesca con flecha y anzuelo en aguas claras del río Bita, recolección estacional de frutos de palma moriche y seje, y pequeñas siembras de yuca brava en las cejas de monte.",
+        "vulnerabilidad_alimentaria": "Grave pérdida de soberanía alimentaria por la privatización de tierras de sabana para monocultivos forestales y cotos privados de pesca deportiva."
+      },
+      "cosmovision_resumen": {
+        "espiritualidad_del_bita": "Concepción del río Bita y sus raudales como arterias vivas custodiadas por serpientes cósmicas de luz que bendicen la reproducción de los peces.",
+        "ritos_con_yopo": "Práctica residual del consumo ceremonial nocturno de yopo entre los ancianos para pedir protección contra epidemias y malos espíritus."
+      },
+      "estado_vulnerabilidad_actual": {
+        "extrema_vulnerabilidad": "Priorizados por la Corte Constitucional (Auto 004 de 2009) por encontrarse al borde de la disolución étnica y física a causa del hambre, mendicidad y explotación laboral."
+      }
+    },
+    {
+      "id": "masiguare",
+      "nombre": "Masiguare",
+      "autodenominacion": "Masiguare (rama clánica Kuiba)",
+      "exonominacion_historica": "Masiguaris / Cuibas del Casanare",
+      "familia_linguistica": "Familia Guahibana",
+      "ubicacion_geografica": {
+        "region": "Llanuras y esteros inundables del piedemonte y sabana araucano-casanareña",
+        "departamentos": [
+          "Casanare",
+          "Arauca"
+        ],
+        "municipios_principales": [
+          "Hato Corozal (Casanare)",
+          "Paz de Ariporo (Casanare)",
+          "Cravo Norte (Arauca)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Lipa",
+          "Río Ele",
+          "Río Casanare",
+          "Caño Mochuelo"
+        ],
+        "ecosistemas_habitados": [
+          "Esteros y sabanas anegadizas",
+          "Bancos de sabana alta",
+          "Matas de monte riparias"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Caño Mochuelo (Casanare)"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 350 a 550 habitantes.",
+        "confinamiento_resguardal": "La totalidad de su población sobreviviente se encuentra recluida dentro de los límites del resguardo Caño Mochuelo."
+      },
+      "organizacion_social_y_politica": {
+        "identidad_clanica": "Clan territorial guahibano de tradición nómada que operaba en las sabanas abiertas entre el Casanare y el Arauca, vinculado lingüísticamente al complejo dialectal Cuiba.",
+        "estructura_de_banda": "Cohesión interna sustentada en el respeto a los ancianos cazadores y cantadores de genealogías ancestrales."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "subsistencia_en_confinamiento": "Forzados a una microagricultura de yuca brava en las escasas vegas disponibles de Caño Mochuelo, complementada con pesca de remanso con barbasco vegetal y arpones.",
+        "crisis_de_caza": "Imposibilidad de realizar sus rutas tradicionales de cacería debido a las alambradas y cercas de las grandes haciendas ganaderas que rodean su resguardo."
+      },
+      "cosmovision_resumen": {
+        "culto_a_los_animales_libres": "Memoria viva de los tiempos míticos de la sabana sin cercas de alambre, donde el venado y el chigüiro eran hermanos que dialogaban con los primeros ancianos Masiguare.",
+        "inhalacion_de_yopo": "Sesiones rituales con yopo pulverizado para curar mordeduras de serpientes y proteger a las mujeres parturientas."
+      },
+      "estado_vulnerabilidad_actual": {
+        "riesgo_de_colapso": "Emergencia humanitaria recurrente por brotes de infecciones respiratorias agudas, desnutrición crónica infantil y falta de agua potable durante la temporada seca de sabana."
+      }
+    },
+    {
+      "id": "chiricoa",
+      "nombre": "Chiricoa",
+      "autodenominacion": "Chiricoa",
+      "exonominacion_historica": "Chiricoas (cronistas coloniales y hacendados del siglo XIX)",
+      "familia_linguistica": "Familia Guahibana",
+      "ubicacion_geografica": {
+        "region": "Sabanas del Sarare y llanos del norte de Arauca",
+        "departamentos": [
+          "Arauca"
+        ],
+        "municipios_principales": [
+          "Tame",
+          "Arauquita",
+          "Fortul",
+          "Cravo Norte"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Ele",
+          "Río Lipa",
+          "Río Cravo Norte",
+          "Río Arauca"
+        ],
+        "ecosistemas_habitados": [
+          "Sabana inundable del Sarare",
+          "Matas de monte perturbadas por colonización",
+          "Comunidades de refugio compartidas con los Hitnü y Betoye"
+        ],
+        "resguardos_emblematicos": [
+          "Comunidades del resguardo San José del Lipa",
+          "Asentamientos dispersos en Tame"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Menos de 150 a 200 personas supervivientes en Colombia.",
+        "estado_critico": "Uno de los pueblos en situación más crítica de desaparición demográfica y cultural de todo el continente americano."
+      },
+      "organizacion_social_y_politica": {
+        "desestructuracion_historica": "Antiguos jinetes y caminantes nómadas que dominaban las llanuras araucanas; sufrieron la aniquilación de sus jefaturas tradicionales por masacres ganaderas y la fragmentación total de sus familias en resguardos de otras etnias."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "asimilacion_de_supervivencia": "Jornaleros agrícolas temporales en fincas de colonos, recolectores esporádicos y horticultura de subsistencia precaria."
+      },
+      "cosmovision_resumen": {
+        "perdida_cosmogonica": "Gran parte de los mitos originarios y cantos de linaje se han silenciado con la muerte de los últimos ancianos monolingües; sobreviven fragmentos sobre el poder de los vientos del norte y el respeto al espíritu del jaguar."
+      },
+      "estado_vulnerabilidad_actual": {
+        "peligro_inminente_de_extincion": "Declarados por la Corte Constitucional en inminente extinción física y cultural. Menos de 15 personas mayores dominan la lengua materna con fluidez, lo que sitúa al idioma al borde de la extinción definitiva."
+      }
+    },
+    {
+      "id": "betoye",
+      "nombre": "Betoye",
+      "autodenominacion": "Betoye / Betoy",
+      "exonominacion_historica": "Jiraras / Betoyes / Ele / Lolacas (antiguas etnias coloniales del Sarare)",
+      "familia_linguistica": "Lengua Betoi (Tradición independiente aislada; actualmente en revitalización léxica frente al español llanero)",
+      "ubicacion_geografica": {
+        "region": "Piedemonte araucano y llanuras del Cravo Norte",
+        "departamentos": [
+          "Arauca"
+        ],
+        "municipios_principales": [
+          "Tame (epicentro histórico y poblacional)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Cravo Norte",
+          "Caño Negro",
+          "Caño Caimanero",
+          "Río Tame"
+        ],
+        "ecosistemas_habitados": [
+          "Sabanas altas de piedemonte",
+          "Bosques de vega y humedales del Cravo Norte"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Roqueros (Tame)",
+          "Resguardo San José del Lipa",
+          "Resguardo Bayoneros",
+          "Resguardo Puyeros",
+          "Resguardo Velazqueros",
+          "Resguardo Macariñao"
+        ]
+      },
+      "demografia": {
+        "poblacion_estimada_censo_dane_onic": "Aproximadamente 3.800 a 5.000 habitantes.",
+        "vitalidad_comunitaria": "Importante crecimiento y afirmación demográfica comunitaria gracias a su sólida organización política en cabildos y resguardos reconocidos."
+      },
+      "organizacion_social_y_politica": {
+        "etnogenesis_historica": "Surgieron como una confederación etnogénica a partir de la congregación forzada en las misiones jesuíticas de Tame en el siglo XVIII, amalgamando etnias afines (Jiraras, Betoyes, Ele, Lolacas, Quilifayes y Lucalias) bajo una identidad común de resistencia.",
+        "gobierno_propio": "Asociación de Cabildos y Autoridades Tradicionales Indígenas del Departamento de Arauca (ASCATIDAR) y Cabildo Mayor Betoye de Tame; guardia indígena activa en la protección territorial comunitaria."
+      },
+      "modos_de_subsistencia_y_ecologia": {
+        "agricultura_diversificada": "Manejo de chagras ribereñas con policultivo de plátano hartón, yuca dulce y brava, maíz cariaco, cacao y frutales amazónico-orinoquenses; pesca estacional con atarraya y flecha en el Cravo Norte.",
+        "ganaderia_comunitaria_menor": "Cría de especies menores y ganado vacuno comunal para la soberanía alimentaria de las escuelas indígenas."
+      },
+      "cosmovision_resumen": {
+        "memoria_ancestral_del_monte": "Veneración a los espíritus de los antiguos caciques Jiraras enterrados en las colinas de Tame; celebración de las danzas comunales del Chigüiro y el Pavo Real en las fiestas del santo patrono y encuentros interresguardos.",
+        "relacion_con_la_tierra": "La tierra es vista como un cuerpo sagrado comunal que no puede venderse ni parcelarse a particulares foráneos."
+      },
+      "estado_vulnerabilidad_actual": {
+        "escenario_de_guerra": "Históricamente atrapados en el fuego cruzado del conflicto armado en Arauca entre guerrilla del ELN, disidencias de las FARC y fuerza pública; asesinatos selectivos de capitanes y amenazas a líderes de la guardia indígena.",
+        "revitalizacion_de_la_lengua": "La lengua original Betoi perdió a sus últimos hablantes fluidos a mediados del siglo XX, pero la comunidad lidera con el Instituto Caro y Cuervo un proyecto pionero de reconstrucción léxica, toponímica y canto ritual para reincorporarla a la educación bilingüe."
+      }
+    }
+  ],
+  "familias_linguisticas_y_glosario": {
+    "familias_linguisticas": [
+      {
+        "familia": "Familia Guahibana",
+        "clasificacion_filogenetica": "Familia lingüística autóctona de la Orinoquía, sin parentesco genético comprobado con otras macrofamilias suramericanas.",
+        "lenguas_integrantes": [
+          {
+            "lengua": "Sikuani (Guahibo)",
+            "variantes_dialectales": [
+              "Waü (dialecto del río Meta y Vichada central)",
+              "Parawá (dialecto del río Meta abajo)",
+              "Tsahiti (dialecto del río Tomo)",
+              "Hamorúa"
+            ],
+            "numero_hablantes_estimado": "Más de 45.000 hablantes activos en Colombia.",
+            "estado_vitalidad": "Vulnerable (fuerte vitalidad comunitaria en resguardos rurales, pero con riesgo de asimilación urbana)."
+          },
+          {
+            "lengua": "Cuiba (Wamonae)",
+            "variantes_dialectales": [
+              "Mayayero",
+              "Maimachi",
+              "Domo",
+              "Tampiwi"
+            ],
+            "numero_hablantes_estimado": "Aproximadamente 2.200 hablantes.",
+            "estado_vitalidad": "En peligro (amenazado por el confinamiento territorial y la ruptura del modo de vida nómada)."
+          },
+          {
+            "lengua": "Hitnü (Macaguane)",
+            "localizacion": "Ríos Ele y Lipa (Arauca)",
+            "numero_hablantes_estimado": "Aproximadamente 500 hablantes.",
+            "estado_vitalidad": "En peligro grave (asfixiado por violencia armada y degradación ecológica)."
+          },
+          {
+            "lengua": "Guayabero (Jiw)",
+            "localizacion": "Río Guaviare y Mapiripán (Guaviare / Meta)",
+            "numero_hablantes_estimado": "Aproximadamente 1.800 hablantes.",
+            "estado_vitalidad": "En peligro (impactado por desplazamiento forzado masivo)."
+          }
+        ],
+        "rasgos_tipologicos_y_gramaticales": {
+          "fonologia": "Sistema de 6 vocales orales (/a/, /e/, /i/, /o/, /u/, /ɨ/) con contrapartes nasales distintivas; contraste de oclusivas sordas y sonoras; ausencia de consonantes líquidas vibrantes múltiples.",
+          "morfosintaxis": "Lenguas de morfología altamente polisintética y aglutinante; orden básico constituyente SOV (Sujeto - Objeto - Verbo) con flexibilidad discursiva a OVS cuando el objeto asume prominencia focal o tópico.",
+          "clasificadores_nominales": "Poseen un sofisticado sistema de clasificadores numerales y adjetivales según la geometría y textura del objeto (formas cilíndricas, esféricas, planas y laminares, flexibles o líquidas)."
+        }
+      },
+      {
+        "familia": "Familia Chibcha",
+        "clasificacion_filogenetica": "Estirpe Chibchana, subrama Magdalénica (vinculada a los pueblos de la Sierra Nevada de Santa Marta y la antigua confederación Muisca).",
+        "lenguas_integrantes": [
+          {
+            "lengua": "U'wa (U'w Cuwa)",
+            "dialectos_clanicos": [
+              "Kubaruwa",
+              "Tegría",
+              "Cobaría",
+              "Rinconada",
+              "Bawaná",
+              "Bokota"
+            ],
+            "numero_hablantes_estimado": "Aproximadamente 7.500 hablantes nativos.",
+            "estado_vitalidad": "Vulnerable con alta tasa de transmisión generacional endógena dentro del resguardo."
+          }
+        ],
+        "rasgos_tipologicos_y_gramaticales": {
+          "fonologia": "Presencia de tono o prominencia acentual tonal contrastiva que distingue morfemas léxicos idénticos; rica gama de diptongos y vocales centrales.",
+          "morfosintaxis": "Lengua aglutinante de núcleo final; orden estricto SOV; sistema de alineamiento morfosintáctico con rasgos de ergatividad escindida (split ergativity).",
+          "registro_liturgico_esoterico_ruwa": "Los sacerdotes Werjayás manejan el 'Ruwa', un registro lingüístico sagrado hermético y arcaico compuesto exclusivamente por metáforas metafísicas y fórmulas poéticas incomprensible para el común de la población, utilizado para dialogar con Sira durante los rituales de equilibrio cósmico."
+        }
+      },
+      {
+        "familia": "Familia Arawak (Maipureana)",
+        "clasificacion_filogenetica": "Rama Maipureana septentrional, el tronco lingüístico más extenso de Suramérica antes del contacto europeo.",
+        "lenguas_integrantes": [
+          {
+            "lengua": "Piapoco (Wenca / Dzéwene)",
+            "numero_hablantes_estimado": "Aproximadamente 3.500 a 4.200 hablantes fluidos.",
+            "estado_vitalidad": "Vulnerable (vigente en la vida familiar y chamanismo)."
+          },
+          {
+            "lengua": "Achagua",
+            "numero_hablantes_estimado": "Menos de 200 ancianos hablantes fluidos.",
+            "estado_vitalidad": "En peligro crítico de extinción (en proceso de rescate urgente por el ICANH y el Instituto Caro y Cuervo)."
+          }
+        ],
+        "rasgos_tipologicos_y_gramaticales": {
+          "fonologia": "Sistemas de 4 a 5 vocales; escasa presencia de consonantes oclusivas sonoras; acento métrico yodizado.",
+          "morfosintaxis": "Lenguas de marcación en el núcleo (head-marking); estructura actancial activa-estativa; prefijos pronominales que marcan simultáneamente posesión inalienable (partes del cuerpo, parentesco) y sujeto de transitivos; clasificadores botánicos adheridos a sustantivos de árboles y lianas."
+        }
+      },
+      {
+        "familia": "Familia Sáliba-Piaroa",
+        "clasificacion_filogenetica": "Familia compacta que agrupa a la lengua Sáliba de los Llanos y la lengua Piaroa (Wótjüja) de las selvas y serranías orinoquenses de Guainía y Venezuela.",
+        "lenguas_integrantes": [
+          {
+            "lengua": "Sáliba",
+            "localizacion_principal": "Orocué (Casanare) y Santa Rosalía (Vichada)",
+            "numero_hablantes_estimado": "Aproximadamente 1.400 a 1.800 hablantes.",
+            "estado_vitalidad": "En peligro (respaldada activamente por proyectos de inmersión escolar y lingüística comunitaria)."
+          }
+        ],
+        "rasgos_tipologicos_y_gramaticales": {
+          "fonologia": "Distinción de vocales laringealizadas y nasales; rico inventario de oclusivas glotales.",
+          "morfosintaxis": "Distinción obligatoria de género gramatical binario (masculino vs. femenino/neutro); orden sintáctico canónico SOV; sufijación verbal cumulativa de tiempo, aspecto y modo epistémico."
+        }
+      }
+    ],
+    "glosario_cosmogonico_y_etnolinguistico": [
+      {
+        "termino": "Kaliawiri",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "El árbol cósmico primordial de la vida. De acuerdo con la mitología de creación, de su tronco y ramas brotaron todas las plantas cultivables, las semillas de yuca amarga, las frutas de moriche y los grandes ríos de la Orinoquía cuando fue derribado por Kuwai y los seres míticos."
+      },
+      {
+        "termino": "Kuwai / Kuwé",
+        "lengua_origen": "Sikuani / Piapoco (Arawak)",
+        "definicion": "Demiurgo primordial, héroe cultural y maestro civilizador. Modeló a los primeros seres humanos, les entregó el fuego sagrado, enseñó las técnicas para neutralizar el cianuro de la yuca brava e instruyó a los hombres en la música de las flautas sagradas."
+      },
+      {
+        "termino": "Dollowén",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "Chamán supremo y vidente espiritual. Capaz de desdoblar su alma para viajar a los diferentes estratos celestes ('tsamani') montado en su banco sagrado de madera zoomorfa bajo el influjo extático del Yopo."
+      },
+      {
+        "termino": "Mariké",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "Médico tradicional, maestro herbolario y rezador. Poseedor de los conjuros botánicos, las dietas de sanación y el arte de succionar y soplar dardos de brujería mediante el humo purificador de tabaco."
+      },
+      {
+        "termino": "Ruiría",
+        "lengua_origen": "U'wa (Chibcha)",
+        "definicion": "El petróleo crudo, categorizado como la sangre viva de la Madre Tierra (Rikowa). Sustancia cósmica sagrada encargada de regular el calor interno del planeta y alimentar los estratos del cosmos. Su profanación extractiva acarrea el colapso del mundo."
+      },
+      {
+        "termino": "Sira",
+        "lengua_origen": "U'wa (Chibcha)",
+        "definicion": "Dios supremo, padre ordenador del cosmos y dador de la ley de origen en la cosmología U'wa. Creó el universo mediante el canto sagrado y asignó a los U'wa el deber ineludible de sostener el balance planetario."
+      },
+      {
+        "termino": "Werjayá",
+        "lengua_origen": "U'wa (Chibcha)",
+        "definicion": "Sacerdote cósmico, médico sagrado y cantor ancestral de la nación U'wa. Ejerce la máxima autoridad espiritual y custodia el lenguaje litúrgico esotérico 'Ruwa'."
+      },
+      {
+        "termino": "Yopo (Dópa / Jopa)",
+        "lengua_origen": "Sikuani / Cuiba / Achagua",
+        "definicion": "Polvo enteógeno sagrado obtenido de las semillas tostadas y pulverizadas del árbol leguminoso Anadenanthera peregrina, mezcladas con cenizas alcalinas de corteza de caracolí o conchas de caracol fluvial. Inhalado con huesos huecos de ala de garza."
+      },
+      {
+        "termino": "Sebucán (Tipití / Tseroroko / Wora)",
+        "lengua_origen": "Taíno / Sikuani / Arawak",
+        "definicion": "Prensa cilíndrica elástica trenzada en espiral con tiras de cumare o jacitara. Aplica tracción mecánica longitudinal para contraerse radialmente y exprimir el veneno cianhídrico de la yuca brava rallada."
+      },
+      {
+        "termino": "Budare (Aripe / Sarito)",
+        "lengua_origen": "Caribe / Sáliba / Sikuani",
+        "definicion": "Plancha circular y plana de barro cocido refractario o metal colocada sobre fogones de leña, donde se tuesta y desintoxica térmicamente la harina de yuca amarga para hornear el casabe o tostar el mañoco."
+      },
+      {
+        "termino": "Itomo",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "Ceremonia litúrgica mortuoria de segundo entierro. Consiste en la exhumación de los restos óseos del difunto tras años de inhumación, su lavado minucioso, su pintura con pasta roja de achiote sagrado y su entierro definitivo en canastos tejidos de cumare para apaciguar el espíritu errante ('morowai')."
+      },
+      {
+        "termino": "Quiripa",
+        "lengua_origen": "Achagua (Arawak)",
+        "definicion": "Moneda precolombina indígena constituida por sartas de pequeñas cuentas discoidales talladas y pulidas en valvas de caracoles fluviales. Fue la divisa mercantil por excelencia de los Llanos Orientales y el Orinoco."
+      },
+      {
+        "termino": "Purú",
+        "lengua_origen": "Sáliba",
+        "definicion": "Deidad creadora celestial de la mitología Sáliba que dio muerte a la serpiente antropófaga Cunaviche y moldeó a los primeros seres humanos a partir de las criaturas nacidas de sus restos."
+      },
+      {
+        "termino": "Yare",
+        "lengua_origen": "Arawak / Guahibo",
+        "definicion": "Jugo lechoso altamente tóxico que escurre de la yuca brava durante el prensado en el sebucán; saturado de linamarina y ácido cianhídrico letal. Al hervirse prolongadamente por horas se transforma en la base comestible del kumache."
+      },
+      {
+        "termino": "Kumache (Ají negro / Catara)",
+        "lengua_origen": "Sikuani / Piapoco",
+        "definicion": "Salsa espesa sagrada y condimento umami de altísimo valor nutricional, elaborado mediante la cocción prolongada del yare desintoxicado con ajíes picantes secos y hormigas bachaco (Atta laevigata) tostadas."
+      },
+      {
+        "termino": "Mañoco (Fariña)",
+        "lengua_origen": "Arawak / Sikuani",
+        "definicion": "Harina tostada de granos crujientes obtenida de la pulpa deshidratada y fermentada de yuca brava en el budare. Alimento imperecedero de travesía que no se descompone en ambientes húmedos de selva o sabana."
+      },
+      {
+        "termino": "Sasá",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "El tabaco sagrado silvestre (Nicotiana rustica). Utilizado en grandes tabacos envueltos en cortezas finas como vehículo insustituible para rezar, soplar el cuerpo de los enfermos y neutralizar la ponzoña de espíritus del bosque."
+      },
+      {
+        "termino": "Morowai",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "El alma-sombra del difunto que queda flotando erráticamente cerca de sus parientes vivos tras la muerte física, causando enfermedades si no se realiza el segundo entierro ritual del Itomo."
+      },
+      {
+        "termino": "Katsa",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "La chagra o huerto agroforestal tradicional desmontado en el bosque de galería mediante roza y quema controlada para sembrar yuca amarga y policultivos."
+      },
+      {
+        "termino": "Dopain",
+        "lengua_origen": "Sikuani (Guahibo)",
+        "definicion": "Acción chamánica curativa que combina el soplado de humo de tabaco, la salivación ritual y el canto ensalmador sobre las partes doloridas del paciente para extraer dardos patógenos invisibles."
+      }
+    ]
+  },
+  "medicina_botanica_y_ritos_sagrados": {
+    "chamanismo_de_sabana_y_medicos_marike": {
+      "estructura_chamanica": "En las sabanas de la Orinoquía, el chamanismo no es una simple práctica médica, sino la institución cosmogónica que regula las relaciones ecológicas entre los humanos, los animales y los espíritus dueños del monte.",
+      "jerarquias_espirituales": [
+        {
+          "rol": "Dollowén (El Vidente del Yopo)",
+          "funciones": "Especialista en la proyección astral y el éxtasis visionario. Inhala el Yopo nocturno para desprender su espíritu, elevarse a los cielos cósmicos ('tsamani'), dialogar con los demiurgos Kuwai y Purubén, y anticipar amenazas meteorológicas, cacerías o epidemias."
+        },
+        {
+          "rol": "Kupenani (El Extractor de Dardos)",
+          "funciones": "Chamán guerrero y protector. Combate en el plano invisible a los hechiceros hostiles ('tsimanani') que disparan dardos mágicos ponzoñosos de espina de raya o pelos de oruga a los miembros de la comunidad."
+        },
+        {
+          "rol": "Mariké (El Médico Rezador y Botánico)",
+          "funciones": "Custodio del conocimiento fitoterapéutico de sabana y selva. Domina las propiedades curativas de cientos de raíces, cortezas, resinas y hojas; compone los ensalmes de saliva y humo de tabaco, y formula los baños termales con hierbas aromáticas."
+        }
+      ],
+      "el_banco_sagrado_de_chaman": {
+        "materialidad": "Tallado minuciosamente de una sola pieza en maderas duras e incorruptibles de bosque de ribera (guayacán, carreto o cachicamo).",
+        "morfologia_zoomorfa": "Posee la forma estilizada de un jaguar agazapado, un caimán de río o un ave rapaz nocturna con ojos incrustados de cuarzo o resina brillante.",
+        "significado_ontologico": "Es el punto de anclaje terrenal del chamán. Cuando el Dollowén inhala el Yopo y viaja al cielo, su cuerpo físico permanece sentado en el banco; el banco actúa como un altar protector que 'sostiene' su vida física para evitar que su alma se extravíe en el cosmos y no pueda retornar."
+      },
+      "la_terapia_del_soplo_dopain": {
+        "mecanismo_curativo": "El Mariké fuma grandes cigarros de tabaco silvestre (sasá) hasta concentrar el humo denso en su boca; masculla rezos sagrados en voz baja impregnando el humo con su propia energía anímica vital, y luego lo insufla con fuerza ('sopla') sobre la coronilla, el pecho, las articulaciones o la herida abierta del paciente, enfriando la fiebre, purificando la sangre y expulsando la energía de la enfermedad."
+      }
+    },
+    "el_rito_sagrado_del_yopo": {
+      "especie_botanica_y_fitoquimica": {
+        "nombre_cientifico": "Anadenanthera peregrina (L.) Speg. (Familia Fabaceae / Mimosoideae)",
+        "nombres_locales": "Yopo, dópa, jopa, cohoba, niopo",
+        "morfologia": "Árbol caducifolio de 8 a 20 metros de altura, con corteza rugosa verrugosa y legumbres aplanadas leñosas que contienen de 8 a 15 semillas circulares brillantes de color pardo castaño.",
+        "alcaloides_activos": "Las semillas albergan concentraciones excepcionales de triptaminas enteógenas: Bufotenina (5-hidroxi-dimetiltriptamina / 5-OH-DMT) como alcaloide mayoritario (hasta un 7.5% en peso seco), acompañada de N,N-DMT (dimetiltriptamina) y 5-MeO-DMT (5-metoxi-dimetiltriptamina). Son agonistas potentes y selectivos de los receptores serotonérgicos 5-HT2A del sistema nervioso central humano."
+      },
+      "proceso_alquimico_de_elaboracion": {
+        "paso_1_recoleccion_y_desvainado": "Las vainas maduras se cosechan en los bosques secos de sabana al culminar la estación lluviosa.",
+        "paso_2_tostado_termico": "Las semillas son tostadas lentamente sobre tiestos cerámicos o comales a fuego manso. El calor expande el endospermo y fractura la cáscara externa lignificada, la cual se retira manualmente con delicadeza.",
+        "paso_3_molienda": "Los embriones limpios son triturados en un mortero de madera dura especial hasta convertirlos en una harina fina y homogénea.",
+        "paso_4_adicion_del_reactivo_alcalino": "Se calcinan al fuego conchas de caracoles fluviales gigantes (Pomacea glauca o Pomacea urceus) o corteza seca de caracolí (Anacardium excelsum) hasta obtener una cal viva blanca y pura (óxido de calcio) o ceniza alcalina rica en carbonato de potasio. Esta ceniza se tamiza y se mezcla en proporción exacta (aproximadamente una parte de ceniza por tres partes de polvo de semilla).",
+        "fundamento_quimico": "La ceniza alcalina eleva drásticamente el pH de la mezcla (pH > 9.5). Este medio fuertemente básico desprotona las sales triptamínicas a su forma molecular de 'base libre' lipofílica, permitiendo que al ser inhaladas atraviesen a velocidad instantánea las mucosas nasales y la barrera hematoencefálica, desencadenando el trance en menos de dos minutos."
+      },
+      "parafernalia_ritual": {
+        "bandejas_de_madera": "Bandejas rectangulares o semicirculares primorosamente labradas en maderas duras de guayacán o balata, con bordes peraltados y mangos esculpidos con representaciones zoomorfas de serpientes, caimanes o jaguares bicéfalos.",
+        "espatulas_de_hueso": "Pequeñas cucharillas o espátulas labradas en hueso de fémur de venado sabanero o hueso de danta para dosificar y nivelar las líneas del polvo fino sobre la bandeja.",
+        "tubos_de_inhalacion_en_hueso_de_garza": "Instrumentos tubulares confeccionados con los huesos largos y huecos de las alas de la garza blanca real (Ardea alba) o el garrapatero: tubos individuales rectos para autoinhalación o tubos dobles bifurcados en forma de 'Y' o 'V', unidos con resina de caraña y decorados con hilos teñidos de cumare. Los tubos en 'V' permiten la inhalación simultánea y profunda en ambas fosas nasales a la vez."
+      },
+      "la_ceremonia_nocturna_y_el_trance_visionario": {
+        "contexto_espiritual": "La ceremonia del Yopo se celebra al caer la noche en la maloca comunal o en un círculo apartado de la sabana, bajo el absoluto silencio de los asistentes profanos.",
+        "el_acto_de_insuflacion": "Dos chamanes se sientan frente a frente. Uno de ellos carga el tubo con la dosis precisa de yopo, lo inserta en las fosas nasales del compañero y sopla con fuerza explosiva desde el otro extremo. El receptor experimenta un ardor nasal violento, lagrimeo copioso, sudoración profusa y una sensación inmediata de 'fuego en la cabeza'.",
+        "la_metamorfosis_en_jaguar": "Bajo la acción enteógena de la bufotenina y la DMT, el chamán experimenta visiones geométricas luminiscentes, sensación de ingravidez y la disolución de los límites corpóreos humanos: siente que su piel se cubre con las manchas del jaguar, que su visión penetra la oscuridad total de la sabana y que puede volar hacia las moradas astrales de Kuwai para recibir revelaciones y consultar el porvenir de la comunidad."
+      }
+    },
+    "el_rito_del_itomo_segundo_entierro": {
+      "ontologia_funeraria_sikuani": "Para los pueblos Sikuani y Cuiba, la muerte física no termina el lazo entre el individuo y la comunidad. El ser humano posee múltiples principios anímicos; uno de ellos, el 'morowai' (sombra o fantasma), permanece apegado a sus pertenencias y parientes, y si no se le ayuda a desprenderse definitivamente mediante el Itomo, vaga por la sabana como un espíritu doliente y vengativo que causa locura, parálisis y muerte entre sus descendientes.",
+      "fases_rituales_del_itomo": [
+        {
+          "fase": "Primera Inhumación (Entierro Primario)",
+          "descripcion": "El cadáver recién fallecido es lavado, envuelto en su propio chinchorro de cumare y sepultado en una fosa poco profunda en la tierra o en un montículo arenoso de sabana, junto con sus pertenencias de caza o cestería. Allí permanece durante un lapso de 1 a 3 años, tiempo necesario para que la carne sea totalmente devorada por los microorganismos y la tierra purifique los huesos."
+        },
+        {
+          "fase": "Exhumación Sagrada y Lavado Limpiador",
+          "descripcion": "Convocada la ceremonia del Itomo por los parientes, las mujeres ancianas del clan proceden a abrir la fosa. Extraen los restos óseos con inmenso respeto, limpiando minuciosamente cualquier adherencia de tierra o materia orgánica con agua tibia aromatizada con hojas de albahaca silvestre y corteza de moriche."
+        },
+        {
+          "fase": "Pintura Ritual con Achiote y Ocre Rojo",
+          "descripcion": "Los huesos completamente limpios y secos son pintados a mano con una densa pasta roja sagrada preparada con semillas molidas de achiote (Bixa orellana), resina balsámica de caraña y ocre mineral rojizo. El color rojo simboliza la vitalidad eterna, el fuego de la creación y la coraza mágica que impide que los demonios subterráneos devoren el principio espiritual del ancestro."
+        },
+        {
+          "fase": "El Gran Canto de Despedida y Consumo de Yarake",
+          "descripcion": "Los huesos pintados se introducen en un canasto ceremonial de cumare especialmente tejido o en una urna funeraria de arcilla. Durante dos días y dos noches, la comunidad entera se congrega en torno al canasto óseo; las ancianas entonan cantos fúnebres de duelo desgarrador recordando las virtudes del difunto, mientras los hombres beben copiosas cantidades de 'yarake' (chicha fermentada de yuca brava) y danzan en círculos rítmicos para consolar al alma."
+        },
+        {
+          "fase": "Entierro Definitivo y Pacificación del Alma",
+          "descripcion": "Al amanecer del tercer día, el canasto de huesos es llevado a un cementerio sagrado ancestral, a una cueva oculta en los afloramientos graníticos o sepultado definitivamente en tierra bendecida por el Dollowén. El morowai queda finalmente pacificado y emprende su vuelo definitivo al reino celeste de Kuwai, cortándose todo vínculo patógeno con los vivos."
+        }
+      ]
+    },
+    "plantas_medicinales_de_sabana_y_morichal": [
+      {
+        "nombre_comun": "Palma Moriche (Árbol de la Vida)",
+        "nombre_cientifico": "Mauritia flexuosa L.f.",
+        "habitat": "Morichales de sabana inundable y vegas pantanosas permanentes.",
+        "propiedades_medicinales_y_nutricionales": "La pulpa de su fruto rojizo posee la mayor concentración natural conocida de betacarotenos (provitamina A), tocoferoles (vitamina E) y ácidos grasos esenciales insaturados; consumida para regenerar la piel, prevenir la ceguera nocturna y nutrir a madres lactantes. El tronco caído fermenta y cría las larvas de coleóptero 'mojojoy' (Rhynchophorus palmarum), fuente medicinal de aceites puros utilizados contra la desnutrición y neumonía."
+      },
+      {
+        "nombre_comun": "Palma Seje (Milpesos)",
+        "nombre_cientifico": "Oenocarpus bataua Mart.",
+        "habitat": "Bosques de galería húmedos y piedemonte.",
+        "propiedades_medicinales_y_nutricionales": "Del mesocarpo de su fruto se extrae por cocción y decantación un aceite transparente de composición lipídica idéntica al aceite de oliva virgen. Es el remedio maestro indígena por excelencia contra el asma, bronquitis crónica, tuberculosis y parasitosis intestinal infantil."
+      },
+      {
+        "nombre_comun": "Tabaco Sagrado (Sasá)",
+        "nombre_cientifico": "Nicotiana rustica / Nicotiana tabacum",
+        "habitat": "Huertos familiares y chagras.",
+        "propiedades_medicinales_y_nutricionales": "Planta axial de la farmacopea indígena. Sus hojas secadas y fermentadas contienen nicotina y anabasina en altas dosis. Actúa como antiséptico tópico potente contra miasis de larvas de mosca en la piel, emético purgante en envenenamientos, y su humo es el vehículo vehicular de toda bendición y diagnóstico chamánico."
+      },
+      {
+        "nombre_comun": "Resina de Caraña",
+        "nombre_cientifico": "Protium carana Marchand / Protium heptaphyllum",
+        "habitat": "Bosques de galería y serranías de altillanura.",
+        "propiedades_medicinales_y_nutricionales": "Exudado gomorresinoso aromático rico en terpenos (amirenona, limoneno). Se aplica tibia en parches sobre las sienes para cefaleas severas, en cataplasmas sobre el pecho para disolver flemas bronquiales y sobre heridas infectadas como potente bálsamo bactericida y cicatrizante."
+      },
+      {
+        "nombre_comun": "Sarrapia (Haba Tonka)",
+        "nombre_cientifico": "Dipteryx odorata (Aubl.) Willd.",
+        "habitat": "Bosques aluviales del Orinoco y Vichada.",
+        "propiedades_medicinales_y_nutricionales": "Sus semillas secas acumulan grandes cristales de cumarina natural. Empleada como tintura febrífuga, diaforética para sudar fiebres palúdicas, espasmolítica estomacal y potente tónico aromático de sabana."
+      },
+      {
+        "nombre_comun": "Barbasco",
+        "nombre_cientifico": "Lonchocarpus utilis A.C. Sm. / Deguelia utilis",
+        "habitat": "Chagras ribereñas y bordes de selva.",
+        "propiedades_medicinales_y_nutricionales": "Liana cuyas raíces concentran rotenona, un potente inhibidor mitocondrial del complejo I de la cadena de transporte de electrones. Utilizado en expediciones comunitarias de pesca en remansos estacionales: asfixia reversiblemente a los peces al impedir su respiración branquial sin contaminar la carne para el consumo humano ni perjudicar a mamíferos que beben el agua."
+      },
+      {
+        "nombre_comun": "Curare",
+        "nombre_cientifico": "Chondrodendron tomentosum Ruiz & Pav. / Strychnos guianensis",
+        "habitat": "Selvas densas de piedemonte y matas de monte profundo.",
+        "propiedades_medicinales_y_nutricionales": "Veneno de cacería preparado mediante decocción prolongada de cortezas leñosas ricas en alcaloides isoquinolínicos (D-tubocurarina) o toxiferinas. Bloquea de forma competitiva los receptores nicotínicos de acetilcolina en la placa neuromuscular motora, causando parálisis flácida instantánea del sistema respiratorio de monos y aves arbóreas, sin representar ningún peligro toxicológico al ingerir la carne cocida por vía gastrointestinal."
+      }
+    ]
+  },
+  "cultivo_y_tecnologia_yuca_brava": {
+    "manejo_de_chagras_katsa": {
+      "agroforesteria_en_bosques_de_galeria": "Los suelos de la altillanura y sabana de la Orinoquía (oxisoles y ultisoles) son antiguos, hiperácidos, altamente lixiviados y con toxicidad por aluminio. Por ello, los pueblos indígenas establecen sus chagras ('katsa') en las estrechas franjas de bosques de galería ('matas de monte') y vegas de inundación de los ríos, donde la deposición anual de sedimentos aluviales y la biomasa vegetal aportan nutrientes esenciales.",
+      "ciclo_de_roza_tumba_y_quema_controlada": "Durante los meses de verano seco (enero a marzo), se realiza el desyerbe del sotobosque y la tala selectiva de árboles leñosos, dejando en pie las palmas protectoras y frutales de gran porte. A finales de marzo, justo antes de las primeras lluvias, se ejecuta una quema circular controlada. La ceniza vegetal actúa como enmienda agronómica inmediata: neutraliza la acidez del suelo, eleva el pH e inyecta fósforo, potasio, calcio y magnesio indispensables para la rizogénesis.",
+      "policultivo_estratificado": "En una misma chagra coexisten verticalmente múltiples especies: estrato aéreo alto con plátano y banano; estrato medio con entre 15 y 30 clones genéticos diferentes de yuca brava amarga y yuca dulce; estrato bajo con batata, ñame, ají chirel y piña; y bordes protegidos con tabaco y achiote. Esta heterogeneidad botánica imita la estructura natural del bosque, repele plagas monófagas y mantiene la humedad del suelo.",
+      "rotacion_y_barbecho_regenerativo": "Una chagra se explota intensivamente durante 2 a 3 años consecutivos. Luego entra en descanso prolongado o 'rastrojo' durante 8 a 15 años. Durante este periodo, la comunidad no la abandona por completo: sigue recolectando frutos secundarios mientras el bosque secundario regenera la fertilidad química y microbiológica del suelo antes de un nuevo ciclo agrícola."
+    },
+    "bioquimica_de_la_toxicidad_y_domesticacion": {
+      "especie_botanica": "Manihot esculenta Crantz (Familia Euphorbiaceae)",
+      "distincion_yuca_dulce_vs_yuca_brava": "Mientras que las variedades de yuca dulce (Manihot dulcis) poseen contenidos inocuos de glucósidos cianogénicos concentrados casi exclusivamente en la corteza exterior pelable, la yuca brava o amarga posee concentraciones letales distribuidas masivamente por todo el parénquima interno de la raíz reservante.",
+      "fitoquimica_de_los_glucosidos_cianogenicos": "La raíz acumula dos glucósidos cianogénicos biosintetizados a partir de aminoácidos: Linamarina (aproximadamente 95% del total) y Lotaustralina (5%). En la célula vegetal intacta, estos glucósidos se encuentran resguardados de forma inocua dentro de las vacuolas.",
+      "la_reaccion_enzimatica_letal": "Cuando la raíz es pelada, rallada o masticada, las membranas celulares se rompen y la linamarina entra en contacto con la enzima endógena Linamarasa (localizada en la pared celular). La linamarasa hidroliza la linamarina liberando glucosa y acetona cianhidrina. Esta última molécula, descompuesta espontáneamente o catalizada por la enzima hidroxi-nitrilo liasa, libera Ácido Cianhídrico gaseoso y disuelto (HCN / Cianuro de Hidrógeno).",
+      "concentraciones_y_letalidad_humana": "La yuca brava fresca contiene entre 100 y más de 450 mg de HCN por cada kilogramo de pulpa rallada. Una dosis oral de 50 a 60 mg de HCN puro es letal para un adulto de 70 kg: el ion cianuro (CN-) se une de inmediato con afinidad irreversible al átomo de hierro férrico (Fe3+) del hemo en la enzima Citocromo c oxidasa (Complejo IV) de las mitocondrias, bloqueando de raíz la cadena de transporte de electrones y provocando anoxia citotóxica celular y asfixia fulminante en cuestión de minutos.",
+      "domesticacion_cultural": "A través de una milenaria ingeniería biocultural empírica, los pueblos de la Orinoquía domesticaron la yuca brava porque su alta toxicidad cianogénica constituye una coraza química natural que impide que las raíces sean devoradas bajo tierra por plagas de insectos, bachacos, roedores, hongos y cerdos salvajes, garantizando una producción calórica abundante y segura en ecosistemas tropicales."
+    },
+    "tecnologia_del_sebucan_y_procesamiento": {
+      "el_sebucan_manga_biomecanica": {
+        "morfologia_y_tejido": "El sebucán (tipití en tupi-guaraní, tseroroko en sikuani) es un tubo cilíndrico alargado tejido helicoidalmente en sarga diagonal utilizando tiras de fibra vegetal elástica de cumare (Astrocaryum chambira) o mimbre jacitara (Desmoncus sp.). Posee una lazada u 'oreja' en el extremo superior y un bucle cerrado en el extremo inferior.",
+        "mecanismo_fisico_de_extraccion": "Al rellenarse con la masa húmeda de yuca brava recién rallada en los ralladores de madera con puntas de piedra o dientes metálicos, el sebucán se engruesa diametralmente y se acorta en longitud. Posteriormente, se cuelga firmemente de una viga de la casa y se atraviesa una larga palanca de madera a través del bucle inferior. Una o dos mujeres se sientan en el extremo de la palanca o le atan piedras de río pesadas.",
+        "fuerza_centripeta": "La tracción longitudinal estira el cilindro hacia abajo, provocando que la trama trenzada se contraiga diametralmente hacia adentro con una fuerza radial centrípeta gigantesca. La compresión exprime mecánicamente la masa y drena hacia el exterior el jugo lechoso saturado de cianuro soluble ('yare'), que gotea por la punta inferior hacia una vasija de recolección."
+      },
+      "tamizado_en_manare": "La masa exprimida, convertida en un cilindro seco y quebradizo desprovisto de la mayor parte del jugo tóxico, se saca del sebucán y se pasa por el 'manare' (cedazo plano circular tejido con finas hebras de cumare) para desintegrar los grumos fibrosos y obtener una sémola homogénea y aireada.",
+      "transformacion_culinaria_y_desintoxicacion_final": {
+        "el_horneado_del_casabe": "La harina tamizada se vierte uniformemente sobre el 'budare' (disco circular refractario de barro cocido o plancha de hierro calentada al rojo con leña de monte). A temperaturas superiores a los 100°C ocurren tres fenómenos bioquímicos decisivos: 1) El calor evapora instantáneamente cualquier residuo de ácido cianhídrico remanente, ya que el punto de ebullición del HCN es sumamente bajo (25.6°C); 2) La enzima linamarasa se desnaturaliza térmicamente para siempre; 3) Los almidones sufren gelatinización y dextrinización superficial, soldando los granos de harina en una gran torta plana, circular, crocante y dorada de 60 a 90 cm de diámetro: el Casabe.",
+        "propiedades_del_casabe": "Pan sagrado de sabana y selva. Al deshidratarse por completo al sol tras el asado, el casabe puede almacenarse en canastos secos hasta por dos años sin enmohecerse, corromperse ni ser colonizado por gorgojos, siendo la ración de marcha fundamental de navegantes y cazadores.",
+        "el_mañoco_o_fariña": "Si la harina de yuca exprimida se somete a una ligera fermentación húmeda de 24 a 48 horas y luego se tuesta en el budare bajo agitación constante con palas de madera, los almidones se compactan en pequeños gránulos esféricos crujientes y tostados: el Mañoco. Se consume hidratado en agua fresca ('yuki'), mezclado con pescado o caldos calientes de cacería.",
+        "el_yare_y_la_creacion_del_kumache": "Los pueblos indígenas de la Orinoquía no desperdician el veneno extraído. El jugo lechoso recolectado ('yare') se hierve en grandes ollas de barro a borbotones durante más de cuatro a seis horas continuas. La ebullición prolongada volatiliza por completo el ácido cianhídrico en forma de vapor inofensivo que se disipa en el aire, mientras los azúcares reductores y aminoácidos se concentran por evaporación. Al extracto negro y espeso resultante se le añade abundante ají seco triturado (Capsicum chinense) y hormigas bachaco tostadas (Atta laevigata), transformándolo en el 'Kumache' (o catara), un condimento sagrado de sabor umami penetrante, altamente antiséptico y protector digestivo."
+      }
+    },
+    "cesteria_y_redes_en_palma_de_cumare": {
+      "especie_y_cosecha": {
+        "nombre_botanico": "Astrocaryum chambira Burret (Familia Arecaceae)",
+        "nombre_comun": "Palma de cumare, chambira, tucum",
+        "extraccion_de_la_fibra": "Se cosechan con extremo cuidado los cogollos terminales inmaduros de las palmas adultas. Las artesanas abren las hojas plegadas, separan con una aguja o con la uña la delgadísima cutícula epidérmica fibrosa del resto de la pulpa verde, hierven las fibras en agua con ceniza durante minutos para ablandarlas y blanquearlas, y las exponen al rocío nocturno y a la sombra para secarlas."
+      },
+      "tecnica_milenaria_del_hilado_en_el_muslo": "La artesana se sienta descalza en el suelo; toma dos hebras de fibra de cumare previamente humedecidas, las apoya sobre la piel de su muslo desnudo y las hace rodar hacia adelante con la palma de la mano abierta aplicando presión uniforme, e inmediatamente las enrolla en sentido contrario hacia atrás. La doble torsión simultánea produce un cordel continuo, uniforme, sin nudos y de una resistencia mecánica a la tracción y al roce hídrico que supera a la fibra de cáñamo o algodón."
+    },
+    "productos_artesanales_iconicos": [
+      {
+        "objeto": "Chinchorro Sikuani de Cumare",
+        "descripcion": "Obra cumbre del tejido indígena orinoquense. Tejido en telar vertical tradicional sin aguja, utilizando técnicas de urdimbre continua y trama entrelazada. Las maestras tejedoras incorporan complejos diseños geométricos abstractos que codifican mitos ancestrales: las escamas de la anaconda primordial (Guío), las huellas del jaguar de sabana o las constelaciones astrales del invierno. El chinchorro es el lecho de descanso bioclimático por excelencia, fresco al mediodía y aislante en la madrugada."
+      },
+      {
+        "objeto": "Catumare (Cesto de Carga Dorsal)",
+        "descripcion": "Canasto cilíndrico o de prisma rectangular tejido con esterilla de cumare reforzado con aros de bejuco de monte. Dispone de una banda ancha de fibra trenzada llamada mecapal que se apoya sobre la frente del cargador, permitiendo transportar hasta 50 kilogramos de tubérculos de yuca brava desde la chagra hasta la vivienda con equilibrio ergonómico vertebral."
+      },
+      {
+        "objeto": "Manare (Cedazo Cernidor)",
+        "descripcion": "Disco plano tejido en sarga calada con finas varillas de corteza de palma y ligaduras de cumare. Su entramado calibrado permite separar la fibra basta del almidón fino de la yuca brava recién exprimida."
+      },
+      {
+        "objeto": "Redes de Pesca y Atarrayas",
+        "descripcion": "Mallas tejidas a mano con hilo fino de cumare impermeabilizado con savia de árboles tintóreos; utilizadas en las cachiveras y caños de sabana para la captura masiva de bagres, bocachicos y coporos durante la subienda."
+      }
+    ]
+  },
+  "arquitectura_tradicional": {
+    "las_malocas_ovales_de_sabana": {
+      "contexto_climatico": "El bioma de sabana hiperestacional de los Llanos Orientales impone dos condiciones meteorológicas adversas: en época seca (diciembre a marzo), intensos vientos alisios del noreste con ráfagas continuas de más de 60 km/h que desecan el suelo y elevan polvaredas; en época lluviosa (abril a noviembre), tempestades monzónicas de lluvias torrenciales acompañadas de vendavales eléctricos e inundación de las vegas bajas.",
+      "diseno_aerodinamico_y_bioclimatico": {
+        "geometria_oval_y_parabolica": "A diferencia de las construcciones rectangulares coloniales que ofrecen paredes verticales rígidas contra el viento, las casas comunales y malocas tradicionales sikuani, piapoco y sáliba poseen una planta ovalada, elíptica o en ábside semicircular. Esta forma de gota o huso aerodinámico permite que las violentas corrientes de aire llanero fluyan alrededor de la estructura disipando la presión del viento sin generar empujes que puedan fracturar la armadura.",
+        "faldones_descendentes_hasta_el_suelo": "El tejado a cuatro aguas curvadas posee una inclinación sumamente pronunciada (entre 55° y 70°) que desciende ininterrumpidamente desde el caballete central hasta quedar a escasos 50 o 70 centímetros del suelo. Esta disposición cumple una triple función protectora: 1) Evacua instantáneamente torrentes de agua lluvia evitando encharcamientos; 2) Protege los costados de la lluvia lateral arrastrada por los temporales; 3) Actúa como un escudo contra el viento huracanado, canalizándolo sobre la cúspide de la cubierta."
+      },
+      "cubierta_vegetal_aislante": {
+        "palma_real_y_palma_moriche": "La techumbre se confecciona mediante el traslape sucesivo de miles de hojas maduras de Palma Real (Attalea butyracea / palma mapora) o Palma Moriche (Mauritia flexuosa), cosidas y entrelazadas sobre varas de bambú o latas de caña brava.",
+        "termoregulacion_natural": "El grosor de la cubierta vegetal (frecuentemente superior a los 25 o 30 centímetros de follaje compactado) crea un microclima excepcional. Durante las horas de radiación solar cenital extrema, cuando la temperatura exterior en la sabana supera los 38°C a 40°C a la sombra, el interior de la maloca se mantiene a unos frescos y ventilados 24°C a 26°C gracias a la nula conductividad térmica de la palma y al escape del aire caliente por los caballetes de ventilación superior. Durante las noches heladas de sabana, retiene el calor de los fogones comunales."
+      },
+      "estructura_portante_y_ensamble_sin_clavos": {
+        "maderas_nobles_de_bosque_de_galeria": "Los postes maestros ('horcones') que soportan el peso axial de la armadura son troncos gruesos de maderas de grano cerrado altamente resistentes a la humedad, pudrición y termitas: Guayacán polvillo (Handroanthus chrysanthus), Acacio negro, Canelo de ciénaga y Madero negro (Algarrobo).",
+        "amarres_elasticos_con_bejuco": "En la arquitectura tradicional no se emplean clavos metálicos, pernos ni pegamentos. Todos los nudos y empalmes estructurales entre vigas, soleras y tijeras se atan mediante gruesos bejucos leñosos silvestres, predominantemente el mimbre de monte (Heteropsis flexuosa) o bejuco de agua. Estos amarres elásticos permiten que toda la maloca funcione como una estructura viva flexible: cuando las ráfagas de temporal azotan la cubierta, la estructura se flecta milimétricamente y disipa la energía cinética del viento sin sufrir roturas rígidas."
+      },
+      "organizacion_del_espacio_social_y_simbolico": {
+        "el_centro_sagrado": "El espacio central bajo el caballete más alto es el área pública y ceremonial. Allí se ubica el fogón ritual, el banco de jaguar del Dollowén, los instrumentos de música sagrada y el espacio despejado donde se danzan los bailes comunales y se inhala el Yopo.",
+        "la_periferia_familiar": "En los costados perimetrales, entre los postes intermedios, cada familia nuclear cuelga sus chinchorros de cumare alrededor de un pequeño fogón doméstico donde preparan sus alimentos y ahúman carnes de cacería.",
+        "el_emparrillado_elevado": "Sobre los tirantes superiores de madera se construyen altillos o zarzos enrejados donde se almacenan las reservas secas de casabe, los canastos catumares, las redes y las semillas seleccionadas de siembra, manteniéndolas a salvo de la humedad del suelo y de los animales rastreros."
+      }
+    }
+  },
+  "cosmovision_y_luchas_territoriales": {
+    "el_arbol_primordial_de_la_vida_kaliawiri": {
+      "el_tiempo_originario_kajuyali": "En la mitología de creación Sikuani, durante la era primordial llamada Kajuyali, los animales y los humanos eran un mismo pueblo y compartían la palabra. Sin embargo, la tierra era una estepa seca y estéril donde no existía ningún cultivo; los seres primigenios pasaban hambre y consumían únicamente barro blanco y raíces amargas de sabana.",
+      "el_secreto_del_picure_tsawa": "El roedor mítico Tsawa (el picure o acure) descubrió accidentalmente en lo profundo de la selva virgen un árbol colosal y magnífico llamado Kaliawiri. En sus ramas florecían simultáneamente todas las plantas nutricias del cosmos: yuca dulce, yuca brava amarga, maíz de colores, plátanos, piñas, batatas, moriches y papayas. Tsawa comenzó a alimentarse a escondidas cada mañana y regresaba a la aldea con el vientre lleno y oloroso a frutas dulces, escondiendo las semillas.",
+      "el_descubrimiento_y_la_asamblea_de_los_animales": "Sospechando de Tsawa, el héroe sabio Kuwai ordenó a la lagartija y al pájaro carpintero que lo siguieran sin ser vistos. Al descubrir el árbol prodigioso, Kuwai convocó a una gran asamblea de todos los seres míticos. Todos comprendieron que mientras el alimento estuviera cautivo en un solo árbol gigantesco, el mundo permanecería en la miseria; era necesario talar a Kaliawiri para dispersar sus semillas y alimentos por toda la faz de la tierra.",
+      "el_hachado_epico_y_la_resistencia_magica": "Los animales se turnaron durante semanas golpeando el tronco ciclópeo con hachas de piedra pulida. No obstante, cada noche, cuando los leñadores se retiraban a dormir exhaustos, los espíritus guardianes del árbol hacían que las astillas cortadas volvieran a pegarse milagrosamente a la corteza, amaneciendo el tronco intacto. Kuwai descubrió el encanto y colocó al sapo como centinela nocturno, logrando finalmente cercenar la base del tronco.",
+      "la_caida_cosmogonica_y_el_nacimiento_de_la_geografia": "A pesar de haber sido cortado en su base, Kaliawiri no caía porque su frondosa copa estaba amarrada fuertemente a las bóvedas del cielo por gigantescas lianas cósmicas. Kuwai envió a la ardilla y al perezoso a trepar hasta las nubes para cortar los bejucos celestes con sus dientes. Cuando la última liana fue seccionada, el árbol de la vida se desplomó con un rugido ensordecedor que estremeció la tierra:",
+      "la_dispersion_de_la_abundancia": [
+        "Del tronco hueco derribado brotó un torrente inagotable de agua dulce que formó los grandes ríos de la Orinoquía: el Río Meta, el Río Orinoco, el Río Vichada y el Río Guaviare.",
+        "De las ramas fracturadas que cayeron sobre la sabana nacieron los bosques de galería y los frondosos esteros de morichal.",
+        "De las astillas y esquejes esparcidos nacieron las infinitas variedades de yuca brava amarga que hoy siembran las mujeres sikuani en sus chagras.",
+        "El tocón petrificado de la base de Kaliawiri permanece visible en la geografía sagrada: cerros y afloramientos rocosos graníticos tutelares, como el mítico Cerro de Mataveni y los tepuyes de la serranía del Escudo Guayanés, son venerados hoy como los restos inmortales del árbol cósmico."
+      ]
+    },
+    "la_nacion_uwa_y_la_defensa_sagrada_de_ruiria": {
+      "los_guardianes_del_equilibrio_planetario": "Para el pueblo U'wa, el mundo fue ordenado armónicamente por el dios creador Sira. Los U'wa fueron ubicados en su territorio ancestral de Kajka-Ika (desde las nieves del Nevado del Cocuy hasta las selvas del Sarare) con la misión ontológica sagrada de mantener en equilibrio las leyes del cosmos mediante los ayunos, las dietas de sal y los cantos ininterrumpidos de los sacerdotes Werjayás. En su cosmovisión, si los U'wa dejan de cantar o permiten la profanación de su territorio, el sol se extinguirá y el planeta entero perecerá.",
+      "la_ontologia_de_ruiria_frente_al_capital_petrolero": "Mientras que para el Estado y las corporaciones multinacionales el petróleo es un 'recurso natural no renovable' cuantificable en barriles y divisas fiscales, para la cosmovisión U'wa el petróleo es Ruiría: la sangre viviente que circula por las entrañas de la Madre Tierra (Rikowa). Ruiría es el fluido sagrado que regula la temperatura de la corteza, apoya los pilares de las montañas y nutre las venas subterráneas de agua dulce. 'El petróleo es Ruiría, la sangre sagrada de la Madre Tierra, y extraerla rompe el equilibrio del universo'. Extraer petróleo equivale a clavar una aguja letal en el corazón de la propia madre.",
+      "el_conflicto_con_oxy_en_el_bloque_samore_1990_2002": "En 1992, el Ministerio de Minas y Energía otorgó una concesión petrolera a la multinacional estadounidense Occidental Petroleum (OXY) en asociación con Ecopetrol para explorar el bloque Samoré (más de 200.000 hectáreas), superpuesto casi en su totalidad sobre el territorio ancestral U'wa en los departamentos de Boyacá, Arauca y Norte de Santander. El gobierno colombiano aprobó la licencia ambiental sin realizar una consulta previa genuina con las autoridades tradicionales.",
+      "la_advertencia_solemne_de_suicidio_colectivo": "Ante el avance de la maquinaria petrolera protegida por contingentes militares, la Asamblea General del Pueblo U'wa y sus sabios Werjayás emitieron una declaración de resistencia pacífica sin precedentes en la historia contemporánea: si el Estado y la compañía Oxy insistían en taladrar la sangre de la Madre Tierra en Samoré, la nación U'wa entera (hombres, ancianos, mujeres embarazadas y niños) marcharía solemnemente hacia los cantiles escarpados de la Sierra Nevada del Cocuy y se lanzaría al vacío en un suicidio colectivo ritual.",
+      "el_precedente_del_peñon_de_los_muertos": "Esta determinación no era una metáfora retórica, sino la reactivación de una memoria histórica de dignidad radical: en el siglo XVII, sus ancestros Guane y Tunebos prefirieron lanzarse al abismo del Peñón de los Muertos antes que capitular ante la servidumbre forzada y los abusos de los conquistadores y encomenderos españoles. Para los U'wa, la muerte física colectiva es preferible a la humillación espiritual y a la complicidad con el asesinato de la Madre Tierra.",
+      "repercusiones_legales_y_triunfo_historico": {
+        "sentencia_su_039_de_1997": "La Corte Constitucional de Colombia falló a favor del pueblo U'wa en una de las sentencias más influyentes de la jurisprudencia latinoamericana (Sentencia SU-039 de 1997), tutelando su derecho fundamental a la consulta previa como instrumento indispensable para salvaguardar la supervivencia física, cultural y espiritual de las minorías étnicas.",
+        "el_premio_ambiental_goldman_1998": "El líder espiritual y presidente del Cabildo Mayor U'wa, Berito Kuwaru'wa, fue galardonado en 1998 con el prestigioso Premio Ambiental Goldman (considerado el Nobel Verde) en San Francisco, visibilizando la lucha de su pueblo en los más altos foros de derechos humanos de la ONU y forzando a los fondos de pensiones y accionistas de Wall Street a cuestionar las inversiones de Oxy.",
+        "la_retirada_de_oxy_2002": "Tras una década de bloqueos pacíficos de vías, huelgas de hambre, victorias jurídicas y presión internacional masiva, la multinacional Occidental Petroleum anunció en mayo de 2002 la renuncia y devolución formal del bloque Samoré al Estado colombiano. Este hecho representó una victoria paradigmática de la espiritualidad indígena sobre los megaproyectos extractivos globales."
+      }
+    },
+    "las_guahibiadas_y_la_masacre_de_la_rubiera_1968": {
+      "el_fenomeno_colonial_de_las_guahibiadas": "A lo largo de los siglos XIX y gran parte del siglo XX, las sabanas de Arauca, Casanare y Vichada fueron escenario de una de las prácticas más aberrantes de barbarie colonial: las 'guahibiadas' o cacerías de indios. Arraigada en la mentalidad de los colonos ganaderos blancos ('criollos llaneros'), imperaba la convicción racista de que los indígenas de sabana (especialmente Guahibos y Cuibas nómadas) no eran seres humanos racionales ni personas portadoras de derechos, sino 'alimañas', 'salvajes' o animales de monte que competían con las reses por el pasto y el agua.",
+      "la_mecanica_del_terror": "Hacendados y peones organizaban partidas a caballo equipadas con rifles de cacería, machetes y jaurías de perros de presa para salir a las sabanas a emboscar campamentos indígenas pacíficos. Asesinaban indiscriminadamente a los hombres y mujeres adultas, incendiaban sus viviendas ligeras de palma y secuestraban a los niños pequeños para criarlos forzadamente como peones domésticos serviles sin remuneración en los hatos ganaderos (conocidos regionalmente como 'indios de servicio').",
+      "la_masacre_de_la_rubiera_26_de_diciembre_de_1968": {
+        "los_hechos": "El 26 de diciembre de 1968, en el hato ganadero 'La Rubiera', ubicado en las sabanas del municipio de Cravo Norte (Arauca), un grupo de colonos y peones ganaderos tendió una trampa criminal a una banda familiar de 18 indígenas nómadas Cuiba (Wamonae). Fingiendo intenciones amistosas, los ganaderos los invitaron a una abundante comida navideña de carne de res asada en el corral de la hacienda.",
+        "la_emboscada": "Cuando los indígenas se encontraban sentados en el suelo, completamente desarmados, confiados y comiendo, los colonos se apostaron tras las trancas de madera y abrieron fuego a quemarropa con escopetas y revólveres. Aquellos que quedaron heridos intentando arrastrarse fueron rematados a machetazos y golpes de hacha. Dieciséis personas (entre ellas mujeres gestantes, ancianos y niños de corta edad) fueron asesinadas; sus cuerpos fueron rociados con gasolina e incinerados en un intento de borrar la evidencia. Dos sobrevivientes heridos lograron escapar entre los pajonales y caminaron durante días hasta encontrar refugio con misioneros y denunciar el genocidio."
+      },
+      "el_juicio_penal_de_villavicencio_1970_1972": {
+        "el_cinismo_de_los_asesinos": "Capturados los autores materiales confesos de la matanza, fueron sometidos a juicio penal con jurado de conciencia en Villavicencio (Meta) en 1970. En sus declaraciones judiciales ante el tribunal, los colonos admitieron los homicidios con total naturalidad y asombro por estar presos. Uno de los acusados declaró con frialdad ante el juez: 'Yo no sabía que matar indios era delito; toda la vida aquí en el Llano se ha sabido que matar a un indio es como matar a un venado o a un chigüiro'.",
+        "el_argumento_del_error_invencible": "La defensa de los acusados argumentó que sus clientes actuaron amparados por un 'error de hecho invencible' o inimputabilidad cultural, alegando que crecieron en un medio social llanero donde la costumbre generalizada y aceptada era la eliminación violenta de los indígenas nómadas considerados invasores del ganado.",
+        "el_escandalo_de_la_absolucion_inicial": "El jurado de conciencia de Villavicencio emitió un veredicto absolutorio inicial para los asesinos, fundamentado en la ignorancia invencible de la ley. La sentencia absolutoria desató una ola de indignación moral y política sin precedentes en Colombia y en la comunidad internacional: antropólogos, sociólogos, facultades de derecho y periódicos de todo el mundo repudiaron el fallo como la legalización judicial del genocidio racista.",
+        "segundo_juicio_y_condena": "Ante la conmoción pública, el Tribunal Superior de Villavicencio anuló el juicio viciado. En un segundo juicio celebrado en 1972, los perpetradores de la Masacre de La Rubiera fueron declarados penalmente responsables y condenados a penas de 24 años de prisión, sentando el precedente inequívoco de que los indígenas son personas humanas plenas sujetas a la protección integral del derecho penal colombiano."
+      },
+      "punto_de_inflexion_para_el_movimiento_indigena_colombiano": {
+        "el_despertar_de_la_conciencia_colectiva": "La tragedia de La Rubiera desgarró el velo de invisibilidad sobre las atrocidades cometidas en las fronteras de colonización ganadera y minera de Colombia. Se convirtió en el catalizador histórico decisivo que impulsó a los líderes indígenas a comprender que la dispersión y el aislamiento los condenaban a la aniquilación física.",
+        "genezis_del_cric_y_la_onic": "El escándalo de La Rubiera articuló la solidaridad nacional entre pueblos ancestrales: aceleró en 1971 la consolidación del Consejo Regional Indígena del Cauca (CRIC), impulsó la creación del Consejo Regional Indígena del Guaviare y Vichada (CRIVA) y precipitó en 1982 la fundación de la Organización Nacional Indígena de Colombia (ONIC) bajo la bandera de 'Unidad, Tierra, Cultura y Autonomía'.",
+        "la_revolucion_constitucional_de_1991": "La memoria histórica de las guahibiadas y de La Rubiera nutrió de forma directa los debates de la Asamblea Nacional Constituyente de 1991. Liderados por constituyentes indígenas como Francisco Rojas Birry y Lorenzo Muelas, se consagró en la nueva Carta Magna el carácter pluriétnico y multicultural de la Nación colombiana, reconociendo a los resguardos como propiedad colectiva inajenable, inembargable e imprescriptible, y elevando a rango constitucional la personalidad jurídica y los derechos fundamentales de todos los pueblos originarios de las sabanas y selvas de Colombia."
+      }
+    }
+  }
+}
