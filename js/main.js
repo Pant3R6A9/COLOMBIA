@@ -18,6 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initEfemeridesWidget();
   initPatrimonioCounters();
   initParallaxFallback();
+  initMuseumCards3D();
+  initHeroGoldenStardust();
 });
 
 /**
@@ -238,12 +240,14 @@ function initAmbientAudioSynth() {
     isPlaying = true;
     btn.innerHTML = '🔇';
     btn.title = 'Silenciar ambiente';
+    document.querySelectorAll('.sound-bar').forEach(b => b.classList.add('playing'));
   }
 
   function stopSound() {
     if (!audioCtx) return;
     masterGain.gain.setValueAtTime(masterGain.gain.value, audioCtx.currentTime);
     masterGain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1); // fade-out
+    document.querySelectorAll('.sound-bar').forEach(b => b.classList.remove('playing'));
 
     setTimeout(() => {
       if (windSource) windSource.stop();
@@ -927,3 +931,167 @@ function initParallaxFallback() {
     }
   }, { passive: true });
 }
+
+/**
+ * ==========================================
+ * SISTEMA DE MUSEO DE VANGUARDIA (AWWWARDS TIER)
+ * ==========================================
+ */
+
+/**
+ * 1. Reflejo Especular Dinámico y Tilt 3D Tangible
+ */
+function initMuseumCards3D() {
+  const cards = document.querySelectorAll(
+    '.museum-card-3d, .glass-card, .monumental-card, .culture-card, .chapter-card, .episode-card, .patrimonio-card, .power-card, .tomo-card, .legend-card, .deity-card'
+  );
+  if (!cards.length) return;
+
+  cards.forEach(card => {
+    let bounds = null;
+
+    function onPointerEnter() {
+      bounds = card.getBoundingClientRect();
+      card.style.transition = 'transform 0.1s ease-out, box-shadow 0.3s ease, border-color 0.3s ease';
+    }
+
+    function onPointerMove(e) {
+      if (!bounds) bounds = card.getBoundingClientRect();
+      const x = e.clientX - bounds.left;
+      const y = e.clientY - bounds.top;
+      const w = bounds.width;
+      const h = bounds.height;
+
+      const px = Math.max(0, Math.min(100, (x / w) * 100));
+      const py = Math.max(0, Math.min(100, (y / h) * 100));
+
+      card.style.setProperty('--mouse-x', `${px.toFixed(1)}%`);
+      card.style.setProperty('--mouse-y', `${py.toFixed(1)}%`);
+
+      // Inclinación 3D sutil (física sobria de galería de arte)
+      const rotX = ((0.5 - (y / h)) * 7).toFixed(2);
+      const rotY = (((x / w) - 0.5) * 7).toFixed(2);
+      card.style.transform = `perspective(1000px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-4px)`;
+    }
+
+    function onPointerLeave() {
+      card.style.transition = 'transform 0.5s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.5s ease, border-color 0.3s ease';
+      card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      card.style.removeProperty('--mouse-x');
+      card.style.removeProperty('--mouse-y');
+      bounds = null;
+    }
+
+    card.addEventListener('pointerenter', onPointerEnter, { passive: true });
+    card.addEventListener('pointermove', onPointerMove, { passive: true });
+    card.addEventListener('pointerleave', onPointerLeave, { passive: true });
+  });
+}
+
+/**
+ * 2. Motor de Polvo de Oro Cósmico y Partículas Ambientales
+ */
+function initHeroGoldenStardust() {
+  let canvasList = Array.from(document.querySelectorAll('.hero-particles-canvas'));
+
+  if (canvasList.length === 0) {
+    const heroTarget = document.querySelector(
+      '.scrolly-hero-container, .hero-content-split, .hero-precolombina, .hero-colonia, .hero-independencia, .hero-muisca, .dossier-hero, .hero-mentes, .hero-leyendas, #hero-section'
+    );
+    if (heroTarget) {
+      const c = document.createElement('canvas');
+      c.className = 'hero-particles-canvas';
+      if (getComputedStyle(heroTarget).position === 'static') {
+        heroTarget.style.position = 'relative';
+      }
+      heroTarget.prepend(c);
+      canvasList.push(c);
+    }
+  }
+
+  canvasList.forEach(canvas => {
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    let width = 0;
+    let height = 0;
+    let particles = [];
+    const PARTICLE_COUNT = 40;
+
+    function resize() {
+      const parent = canvas.parentElement || document.body;
+      const rect = parent.getBoundingClientRect();
+      width = canvas.width = rect.width || window.innerWidth;
+      height = canvas.height = Math.max(300, rect.height || 500);
+    }
+
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
+
+    class GoldenParticle {
+      constructor() {
+        this.reset(true);
+      }
+      reset(initial = false) {
+        this.x = Math.random() * width;
+        this.y = initial ? Math.random() * height : height + 10;
+        this.size = Math.random() * 2.2 + 0.6;
+        this.speedY = Math.random() * 0.4 + 0.15;
+        this.speedX = (Math.random() - 0.5) * 0.3;
+        this.baseAlpha = Math.random() * 0.55 + 0.2;
+        this.alpha = this.baseAlpha;
+        this.twinkleSpeed = Math.random() * 0.025 + 0.008;
+        this.twinklePhase = Math.random() * Math.PI * 2;
+        const golds = [
+          '212, 175, 55',
+          '245, 215, 127',
+          '255, 235, 170',
+          '230, 190, 70'
+        ];
+        this.color = golds[Math.floor(Math.random() * golds.length)];
+      }
+      update() {
+        this.y -= this.speedY;
+        this.x += this.speedX + Math.sin(this.y * 0.015) * 0.25;
+        this.twinklePhase += this.twinkleSpeed;
+        this.alpha = this.baseAlpha * (0.6 + 0.4 * Math.sin(this.twinklePhase));
+
+        if (this.y < -15 || this.x < -15 || this.x > width + 15) {
+          this.reset();
+        }
+      }
+      draw() {
+        ctx.save();
+        ctx.beginPath();
+        ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(${this.color}, ${this.alpha})`;
+        ctx.shadowColor = `rgba(${this.color}, 0.8)`;
+        ctx.shadowBlur = this.size * 3;
+        ctx.fill();
+        ctx.restore();
+      }
+    }
+
+    for (let i = 0; i < PARTICLE_COUNT; i++) {
+      particles.push(new GoldenParticle());
+    }
+
+    let isVisible = true;
+    document.addEventListener('visibilitychange', () => {
+      isVisible = !document.hidden;
+    });
+
+    function renderLoop() {
+      if (isVisible) {
+        ctx.clearRect(0, 0, width, height);
+        for (let i = 0; i < particles.length; i++) {
+          particles[i].update();
+          particles[i].draw();
+        }
+      }
+      requestAnimationFrame(renderLoop);
+    }
+    renderLoop();
+  });
+}
+
