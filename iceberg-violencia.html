@@ -3,113 +3,277 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Iceberg de la Violencia - Colombia en el Tiempo</title>
-  <meta name="description" content="Visualización interactiva tipo iceberg sobre los niveles e hitos del conflicto y la violencia histórica de Colombia.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
-  
+  <title>El Iceberg de la Violencia: Estratigrafía del Conflicto — Colombianopedia</title>
+  <meta name="description" content="Análisis historiográfico tipo iceberg que desciende desde la superficie mediática del siglo XXI hasta las fosas inmemoriales de la violencia colonial y fundacional en Colombia.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="expect" href="#hero-section" blocking="render">
+
   <style>
-    /* Estilos premium para el Iceberg */
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --crimson-blood: #ef4444;
+      --crimson-dark: #7f1d1d;
+      --ice-surface: #38bdf8;
+      --ice-abyss: #030712;
+      --obsidian-surface: #07090e;
+      --border-iceberg: rgba(239, 68, 68, 0.25);
+    }
+
     .iceberg-container {
-      display: flex;
-      flex-direction: column;
-      margin-top: 3rem;
-      border: 1px solid var(--border-card);
-      border-radius: 8px;
-      overflow: hidden;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
     }
-    
-    .iceberg-level {
-      padding: 3rem 2rem;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+
+    .hero-iceberg {
+      background: linear-gradient(180deg, rgba(239,68,68,0.14) 0%, rgba(7,9,14,0) 100%),
+                  radial-gradient(circle at 50% 15%, rgba(56,189,248,0.12), transparent 70%);
+      border: 1px solid var(--border-iceberg);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3.5rem;
       text-align: center;
-      transition: all 0.3s ease;
       position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
     }
-    
-    .iceberg-level::after {
+
+    .hero-iceberg::before {
       content: '';
       position: absolute;
-      bottom: 0;
-      left: 10%;
-      width: 80%;
-      height: 1px;
-      background: linear-gradient(90deg, transparent, var(--border-card), transparent);
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--ice-surface), var(--crimson-blood), transparent);
     }
-    
-    /* Colores degradados que representan el descenso al abismo */
-    .level-1 {
-      background: linear-gradient(180deg, #1b263b 0%, #0d1b2a 100%);
-      color: #e0e1dd;
-    }
-    
-    .level-2 {
-      background: linear-gradient(180deg, #0d1b2a 0%, #08121e 100%);
-      color: #e0e1dd;
-    }
-    
-    .level-3 {
-      background: linear-gradient(180deg, #08121e 0%, #040911 100%);
-      color: #a9b2c3;
-    }
-    
-    .level-4 {
-      background: linear-gradient(180deg, #040911 0%, #010305 100%);
-      color: #7d8597;
-    }
-    
-    .level-depth {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.2em;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-      font-weight: 800;
-    }
-    
-    .level-title {
-      font-family: var(--font-title);
-      font-size: 1.6rem;
-      margin-bottom: 1.5rem;
-      color: var(--text-primary);
-    }
-    
-    .iceberg-topics {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-      max-width: 900px;
-    }
-    
-    .topic-badge {
-      background: rgba(255, 255, 255, 0.03);
-      border: 1px solid var(--border-card);
-      padding: 0.6rem 1.25rem;
-      border-radius: 4px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      color: var(--text-primary);
-      cursor: pointer;
-      transition: all 0.3s ease;
-      backdrop-filter: blur(10px);
-    }
-    
-    .topic-badge:hover {
-      border-color: var(--accent);
-      color: var(--accent);
-      background: rgba(var(--accent-rgb), 0.05);
-      transform: scale(1.05);
-    }
-  </style>
-  <link rel="expect" href="#hero-section" blocking="render">
-</head>
-<body data-theme="precolombina">
 
-  <!-- Encabezado Común -->
+    .iceberg-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid var(--crimson-blood);
+      border-radius: 50px;
+      color: #fca5a5;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-iceberg h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-iceberg h1 span {
+      background: linear-gradient(135deg, #fca5a5 0%, #ef4444 50%, #7f1d1d 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Estratigrafía del Iceberg */
+    .iceberg-structure {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.8);
+      margin-bottom: 3.5rem;
+    }
+
+    .depth-tier {
+      padding: 3rem 2.5rem;
+      position: relative;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      transition: background 0.3s ease;
+    }
+
+    .depth-tier:last-child {
+      border-bottom: none;
+    }
+
+    .tier-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .tier-level-num {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .tier-epoch {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    .tier-title {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 0.8rem;
+    }
+
+    .tier-desc {
+      color: #cbd5e1;
+      font-size: 1rem;
+      line-height: 1.7;
+      max-width: 900px;
+      margin-bottom: 2rem;
+    }
+
+    /* Degradados por profundidad */
+    .tier-surface {
+      background: linear-gradient(180deg, #101c2e 0%, #0d1624 100%);
+      border-top: 4px solid var(--ice-surface);
+    }
+    .tier-surface .tier-level-num { color: var(--ice-surface); }
+
+    .tier-shallow {
+      background: linear-gradient(180deg, #0d1624 0%, #090e18 100%);
+      border-top: 4px solid #f59e0b;
+    }
+    .tier-shallow .tier-level-num { color: #f59e0b; }
+
+    .tier-deep {
+      background: linear-gradient(180deg, #090e18 0%, #060810 100%);
+      border-top: 4px solid #ef4444;
+    }
+    .tier-deep .tier-level-num { color: #ef4444; }
+
+    .tier-abyss {
+      background: linear-gradient(180deg, #060810 0%, #020306 100%);
+      border-top: 4px solid #991b1b;
+    }
+    .tier-abyss .tier-level-num { color: #fca5a5; }
+
+    /* Fichas temáticas dentro de cada nivel */
+    .topics-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .topic-chip {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .topic-chip:hover {
+      transform: translateY(-4px);
+      border-color: #ef4444;
+      background: rgba(239, 68, 68, 0.08);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(239, 68, 68, 0.3);
+    }
+
+    .chip-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+
+    .chip-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+      line-height: 1.3;
+      margin-bottom: 0.8rem;
+    }
+
+    .chip-action {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #ef4444;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+    }
+
+    /* Modal de Dossier */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid #ef4444;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px rgba(239, 68, 68, 0.3);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #fff; }
+  </style>
+</head>
+<body data-theme="siglo-xx">
+
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -117,7 +281,7 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
@@ -128,10 +292,10 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
-          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+          <a href="iceberg-violencia.html" class="active">Iceberg de la Violencia</a>
           <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
           <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
           <a href="otras-culturas.html">Catálogo de Culturas</a>
@@ -141,135 +305,383 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">
-        Análisis Histórico y Memoria
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL ICEBERG
+       ========================================== -->
+  <main class="iceberg-container">
+
+    <section class="hero-iceberg" id="hero-section">
+      <div class="iceberg-badge">
+        <span>⚠️</span> Investigación Forense & Memoria Histórica <span>⚠️</span>
       </div>
-      <h1>El Iceberg de la Violencia</h1>
-      <p>Una visualización analítica que desciende desde los conflictos del s. XXI hasta las raíces coloniales y prehispánicas más profundas de la violencia en nuestro territorio. Haz clic en las tarjetas de cada nivel.</p>
+      <h1>El Iceberg de la <span>Violencia Histórica</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.15rem; line-height: 1.8;">
+        La violencia en Colombia no comenzó con el narcotráfico ni en los años cincuenta: es una estructura estratigráfica de varios siglos construida sobre el despojo agrario, el exterminio colonial, la intolerancia dogmática y el silencio impuesto. Desciende por cada estrato para examinar las verdades ocultas bajo la superficie.
+      </p>
     </section>
 
-    <!-- El Iceberg Interactivo -->
-    <div class="iceberg-container">
-      
-      <!-- Nivel 1 -->
-      <div class="iceberg-level level-1">
-        <div class="level-depth">Nivel 1: La Superficie (Conocido)</div>
-        <h2 class="level-title">Conflictos del s. XXI y Fin del s. XX</h2>
-        <div class="iceberg-topics">
-          <div class="topic-badge" onclick="openIcebergDrawer('acuerdo2016')">Acuerdo de Paz de 2016</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('carteles')">Guerra de Carteles y Pablo Escobar</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('constitucion1991')">Constitución de 1991 y Desmovilizaciones</div>
-        </div>
-      </div>
+    <!-- La Estructura Estratigráfica del Iceberg -->
+    <div class="iceberg-structure">
 
-      <!-- Nivel 2 -->
-      <div class="iceberg-level level-2">
-        <div class="level-depth">Nivel 2: Bajo el Agua (Poco Profundo)</div>
-        <h2 class="level-title">Bipartidismo y Lucha Agraria</h2>
-        <div class="iceberg-topics">
-          <div class="topic-badge" onclick="openIcebergDrawer('frentenacional')">El Frente Nacional (1958-1974)</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('laviolencia')">"La Violencia" Bipartidista (años 50)</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('bogotazo')">Asesinato de Gaitán y Bogotazo</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('bananeras')">La Masacre de las Bananeras (1928)</div>
+      <!-- NIVEL 1: LA SUPERFICIE ILUMINADA -->
+      <section class="depth-tier tier-surface">
+        <div class="tier-header">
+          <div class="tier-level-num">Nivel 1 • La Superficie Visible</div>
+          <div class="tier-epoch">1989 – Presente</div>
         </div>
-      </div>
+        <h2 class="tier-title">La Memoria Mediática y el Conflicto Contemporáneo</h2>
+        <p class="tier-desc">
+          Los hechos más visibles en la opinión pública y los medios masivos de comunicación: los grandes carteles de la cocaína, los procesos de paz contemporáneos y el esfuerzo de la justicia transicional por esclarecer la verdad.
+        </p>
+        <div class="topics-grid">
+          <div class="topic-chip" onclick="openIcebergModal('acuerdopaz')">
+            <div>
+              <div class="chip-badge">2016 • Justicia Transicional</div>
+              <div class="chip-title">El Acuerdo del Teatro Colón y la JEP</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
 
-      <!-- Nivel 3 -->
-      <div class="iceberg-level level-3">
-        <div class="level-depth">Nivel 3: Aguas Profundas (Olvidado)</div>
-        <h2 class="level-title">Las Guerras de Constitución del s. XIX</h2>
-        <div class="iceberg-topics">
-          <div class="topic-badge" onclick="openIcebergDrawer('mildiases')">La Guerra de los Mil Días (1899-1902)</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('panama')">La Secesión y Venta de Panamá</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('guerrasciviles')">Las 9 Guerras Civiles Federalistas</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('conspiracion')">La Conspiración Septembrina (1828)</div>
-        </div>
-      </div>
+          <div class="topic-chip" onclick="openIcebergModal('carteles')">
+            <div>
+              <div class="chip-badge">1984 – 1993 • Narcoterrorismo</div>
+              <div class="chip-title">La Guerra de los Carteles de la Droga</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
 
-      <!-- Nivel 4 -->
-      <div class="iceberg-level level-4">
-        <div class="level-depth">Nivel 4: El Abismo (La Fosa Oculta)</div>
-        <h2 class="level-title">Violencia Fundacional y Virreinal</h2>
-        <div class="iceberg-topics">
-          <div class="topic-badge" onclick="openIcebergDrawer('terror')">El Régimen del Terror de Morillo</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('galan')">Descuartizamiento de José Antonio Galán (1782)</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('conquista')">Colapso Demográfico de la Conquista</div>
-          <div class="topic-badge" onclick="openIcebergDrawer('aquiminzaque')">Ejecución del Zaque Aquiminzaque (1540)</div>
+          <div class="topic-chip" onclick="openIcebergModal('falsospositivos')">
+            <div>
+              <div class="chip-badge">2002 – 2008 • Ejecuciones Extrajudiciales</div>
+              <div class="chip-title">Los 6.402 'Falsos Positivos'</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('bojaya')">
+            <div>
+              <div class="chip-badge">2 de Mayo de 2002 • Chocó</div>
+              <div class="chip-title">La Masacre de Bojayá en la Iglesia</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- NIVEL 2: LAS AGUAS SOMBRÍAS -->
+      <section class="depth-tier tier-shallow">
+        <div class="tier-header">
+          <div class="tier-level-num">Nivel 2 • Aguas Sombrías</div>
+          <div class="tier-epoch">1928 – 1989</div>
+        </div>
+        <h2 class="tier-title">Bipartidismo, Enclaves Agrarios y Exclusión Política</h2>
+        <p class="tier-desc">
+          Las raíces socioeconómicas del conflicto moderno: el choque obrero contra los monopolios extranjeros, el linchamiento y guerra fratricida de "La Violencia" y el aniquilamiento de alternativas políticas civiles.
+        </p>
+        <div class="topics-grid">
+          <div class="topic-chip" onclick="openIcebergModal('bananeras')">
+            <div>
+              <div class="chip-badge">1928 • Ciénaga</div>
+              <div class="chip-title">La Masacre de las Bananeras</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('bogotazo')">
+            <div>
+              <div class="chip-badge">9 de Abril de 1948</div>
+              <div class="chip-title">El Magnicidio de Jorge Eliécer Gaitán</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('unionpatriotica')">
+            <div>
+              <div class="chip-badge">1984 – 2002 • Sentencia CIDH</div>
+              <div class="chip-title">El Genocidio Político de la UP</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('palaciojusticia')">
+            <div>
+              <div class="chip-badge">6 y 7 de Noviembre de 1985</div>
+              <div class="chip-title">El Holocausto del Palacio de Justicia</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NIVEL 3: EL ABISMO REPUBLICANO -->
+      <section class="depth-tier tier-deep">
+        <div class="tier-header">
+          <div class="tier-level-num">Nivel 3 • El Abismo Republicano</div>
+          <div class="tier-epoch">1819 – 1903</div>
+        </div>
+        <h2 class="tier-title">Las 9 Guerras Civiles y la Devastación Constitucional</h2>
+        <p class="tier-desc">
+          Durante el siglo XIX, la naciente república se desangró en nueve conflictos armados nacionales por el monopolio del poder, la tenencia de la tierra, la educación laica y el control clerical de las conciencias.
+        </p>
+        <div class="topics-grid">
+          <div class="topic-chip" onclick="openIcebergModal('mildiases')">
+            <div>
+              <div class="chip-badge">1899 – 1902 • 100.000 Muertos</div>
+              <div class="chip-title">La Guerra de los Mil Días y Palonegro</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('panama')">
+            <div>
+              <div class="chip-badge">3 de Noviembre de 1903</div>
+              <div class="chip-title">La Mutilación y Secesión de Panamá</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('supremos')">
+            <div>
+              <div class="chip-badge">1839 – 1842 • Pasto</div>
+              <div class="chip-title">La Guerra de los Supremos</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('leycaballos')">
+            <div>
+              <div class="chip-badge">1888 • Régimen de Núñez</div>
+              <div class="chip-title">La 'Ley de los Caballos' y la Censura</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- NIVEL 4: LA FOSA INMEMORIAL -->
+      <section class="depth-tier tier-abyss">
+        <div class="tier-header">
+          <div class="tier-level-num">Nivel 4 • La Fosa Inmemorial</div>
+          <div class="tier-epoch">1499 – 1816</div>
+        </div>
+        <h2 class="tier-title">Violencia Virreinal, Despojo y Descuartizamiento</h2>
+        <p class="tier-desc">
+          Los cimientos ocultos de la dominación territorial: el suplicio corporal público como pedagogía del terror, la servidumbre minera forzosa y la trata de seres humanos como mercancía.
+        </p>
+        <div class="topics-grid">
+          <div class="topic-chip" onclick="openIcebergModal('galan')">
+            <div>
+              <div class="chip-badge">1782 • Plaza Mayor de Santafé</div>
+              <div class="chip-title">El Suplicio de José Antonio Galán</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('trataesclavos')">
+            <div>
+              <div class="chip-badge">Siglos XVI – XIX • Cartagena</div>
+              <div class="chip-title">El Asiento de Negros y la Trata Esclavista</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('aquiminzaque')">
+            <div>
+              <div class="chip-badge">1540 • Plaza de Tunja</div>
+              <div class="chip-title">La Decapitación del Zaque Aquiminzaque</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+
+          <div class="topic-chip" onclick="openIcebergModal('colapsocaribe')">
+            <div>
+              <div class="chip-badge">1499 – 1550 • Costa Norte</div>
+              <div class="chip-title">El Colapso Demográfico Indígena</div>
+            </div>
+            <div class="chip-action">Ver Expediente &rarr;</div>
+          </div>
+        </div>
+      </section>
 
     </div>
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
-       ========================================== -->
-  <template id="ice-acuerdo2016">
-    <div class="document-badge" style="background: rgba(46,134,193,0.15); color: #2e86c1;">Nivel 1: Superficie</div>
-    <h2 class="title-font">Acuerdo de Paz de 2016</h2>
-    <p>
-      El desarme y desmovilización de las FARC-EP tras cuatro años de diálogos en La Habana. Abrió paso a la justicia transicional (JEP) y a la recopilación institucional del despojo de tierras.
-    </p>
-  </template>
-
-  <template id="ice-carteles">
-    <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">Nivel 1: Superficie</div>
-    <h2 class="title-font">Narcoterrorismo de Fin de Siglo</h2>
-    <p>
-      La violenta ofensiva de los carteles de Medellín (liderado por Pablo Escobar) y Cali contra el Estado para evitar la extradición. Caracterizado por atentados con carros bomba, magnicidios políticos (Luis Carlos Galán) y la voladura del avión de Avianca.
-    </p>
-  </template>
-
-  <template id="ice-bananeras">
-    <div class="document-badge" style="background: rgba(243,156,18,0.15); color: #f39c12;">Nivel 2: Bajo el Agua</div>
-    <h2 class="title-font">Masacre de las Bananeras (1928)</h2>
-    <p>
-      La huelga de trabajadores de la United Fruit Company reprimida sangrientamente por el ejército nacional en la estación de Ciénaga, Magdalena. El número de víctimas fatales osciló entre cifras oficiales bajas y estimados diplomáticos de más de 1.000 fallecidos.
-    </p>
-  </template>
-
-  <template id="ice-galan">
-    <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">Nivel 4: El Abismo</div>
-    <h2 class="title-font">Traición y Descuartizamiento</h2>
-    <p>
-      Tras liderar la Rebelión de los Comuneros en 1781, José Antonio Galán fue traicionado por las autoridades coloniales. Sentenciado a ser ahorcado y descuartizado en Bogotá (1782), sus miembros fueron expuestos en jaulas de hierro en las plazas públicas de las ciudades del Socorro, San Gil y Charalá como escarmiento.
-    </p>
-  </template>
-
-  <template id="ice-aquiminzaque">
-    <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e;">Nivel 4: El Abismo</div>
-    <h2 class="title-font">Muerte del último Zaque</h2>
-    <p>
-      Aquiminzaque, el legítimo líder soberano de Hunza, inicialmente toleró la presencia de los españoles. Sin embargo, ante el peligro de un levantamiento general de sus guerreros, fue decapitado públicamente en la plaza de Tunja en 1540 por orden de Hernán Pérez de Quesada, extinguiendo la dinastía espiritual muisca de Boyacá.
-    </p>
-  </template>
-
-  <script>
-    function openIcebergDrawer(topicId) {
-      const template = document.getElementById('ice-' + topicId);
-      const drawer = document.querySelector('.detail-drawer');
-      const drawerContent = drawer.querySelector('.drawer-content');
-      
-      if (template && drawer && drawerContent) {
-        drawerContent.innerHTML = '';
-        const clone = template.content.cloneNode(true);
-        drawerContent.appendChild(clone);
-        drawer.classList.add('open');
-      }
-    }
-  </script>
+  <!-- Modal de Dossier Forense -->
+  <div class="modal-overlay" id="icebergModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeIcebergModal()">&times;</button>
+      <div id="modalIcebergBody"></div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. El Iceberg de la Violencia.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Los acervos recopilados pertenecen a los registros del Centro Nacional de Memoria Histórica y la Comisión de la Verdad.
-    </p>
+    <p>&copy; 2026 Colombianopedia — Estratigrafía de la Memoria y los Derechos Humanos. Enlace con los fondos documentales de la CEV, el CNMH y la JEP.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const icebergData = {
+      acuerdopaz: {
+        title: "El Acuerdo de Paz de 2016 y el Sistema Integral de Verdad",
+        badge: "Nivel 1: Superficie • Justicia Transicional",
+        content: `
+          <p>Firmado el 24 de noviembre de 2016 en el Teatro Colón de Bogotá entre el Estado colombiano y las FARC-EP, este acuerdo culminó un conflicto armado de más de medio siglo.</p>
+          <p>Estableció un sistema inédito de justicia restaurativa con tres pilares: la <strong>Jurisdicción Especial para la Paz (JEP)</strong>, la <strong>Comisión para el Esclarecimiento de la Verdad (CEV)</strong> y la <strong>Unidad de Búsqueda de Personas Dadas por Desaparecidas (UBPD)</strong>, poniendo a las víctimas y la no repetición en el centro del derecho.</p>
+        `
+      },
+      carteles: {
+        title: "La Narcopolítica y el Asedio Terrorista (1984 – 1993)",
+        badge: "Nivel 1: Superficie • Narcoterrorismo",
+        content: `
+          <p>Liderados por el Cartel de Medellín de Pablo Escobar y el Cartel de Cali de los Rodríguez Orejuela, los capos libraron una guerra sin cuartel contra el Estado bajo el lema <em>«Preferimos una tumba en Colombia que una cárcel en Estados Unidos»</em>.</p>
+          <p>El país sufrió el estallido del avión de Avianca (107 muertos en 1989), el atentado con camión bomba contra el DAS en Paloquemao y los asesinatos del ministro Rodrigo Lara Bonilla, el director de El Espectador Guillermo Cano y el líder Luis Carlos Galán.</p>
+        `
+      },
+      falsospositivos: {
+        title: "Las 6.402 Ejecuciones Extrajudiciales ('Falsos Positivos')",
+        badge: "Nivel 1: Superficie • Crimen de Estado",
+        content: `
+          <p>Entre 2002 y 2008, unidades del Ejército Nacional asesinaron ilegítimamente a al menos 6.402 jóvenes civiles inocentes (en Soacha, Antioquia, Casanare, Cesar, Huila y Meta), haciéndolos pasar por bajas guerrilleras en combate para inflar cifras operativas y acceder a premios, dinero y permisos de vacaciones.</p>
+          <p>La JEP imputó como crímenes de guerra y de lesa humanidad a generales y brigadieres, visibilizando la valentía incansable del colectivo de las Madres de Soacha (MAFAPO).</p>
+        `
+      },
+      bojaya: {
+        title: "La Masacre de Bojayá en la Iglesia de Bellavista (2002)",
+        badge: "Nivel 1: Superficie • Crímenes en Comunidades Étnicas",
+        content: `
+          <p>El 2 de mayo de 2002, durante intensos combates entre el frente 58 de las FARC y paramilitares del Bloque Élmer Cárdenas en el río Atrato (Chocó), un cilindro bomba lanzado por la guerrilla penetró el techo de la iglesia de Bellavista donde se refugiaban centenares de campesinos afrodescendientes e indígenas.</p>
+          <p>La explosión mató instantáneamente a 79 personas (entre ellas 48 niños) y dejó más de 100 heridos graves, convirtiéndose en el símbolo más desgarrador del confinamiento y desamparo de las comunidades étnicas del Pacífico.</p>
+        `
+      },
+      bananeras: {
+        title: "La Masacre de las Bananeras (1928)",
+        badge: "Nivel 2: Aguas Sombrías • Represión Sindical",
+        content: `
+          <p>En diciembre de 1928, en la estación de tren de Ciénaga (Magdalena), miles de huelguistas de la United Fruit Company que reclamaban condiciones salariales dignas fueron masacrados con fuego de ametralladoras por orden del general Carlos Cortés Vargas.</p>
+          <p>El suceso demostró la subordinación violenta del aparato armado del Estado a los intereses de compañías extractivas transnacionales.</p>
+        `
+      },
+      bogotazo: {
+        title: "El Bogotazo y la Detonación de 'La Violencia' (1948)",
+        badge: "Nivel 2: Aguas Sombrías • Magnicidio Político",
+        content: `
+          <p>El 9 de abril de 1948 fue asesinado el líder popular Jorge Eliécer Gaitán en el centro de Bogotá. La insurrección civil quemó el corazón urbano y desató una conflagración partidista en los campos entre las bandas sicariales conservadoras («Pájaros» y «Chulavitas») y las guerrillas liberales del Llano, cobrando más de 200.000 vidas campesinas.</p>
+        `
+      },
+      unionpatriotica: {
+        title: "El Genocidio Político de la Unión Patriótica (1984 – 2002)",
+        badge: "Nivel 2: Aguas Sombrías • Exterminio Sistemático",
+        content: `
+          <p>Surgida tras los acuerdos de paz de La Uribe en 1984 como partido político civil de izquierda, la Unión Patriótica sufrió el asesinato sistemático de más de 5.700 de sus militantes, incluidos dos candidatos presidenciales (Jaime Pardo Leal y Bernardo Jaramillo Ossa), senadores, alcaldes y concejales.</p>
+          <p>En enero de 2023, la Corte Interamericana de Derechos Humanos condenó al Estado colombiano por complicidad y participación activa en este genocidio político.</p>
+        `
+      },
+      palaciojusticia: {
+        title: "El Holocausto del Palacio de Justicia (1985)",
+        badge: "Nivel 2: Aguas Sombrías • Destrucción de la Justicia",
+        content: `
+          <p>El asalto del comando 'Iván Marino Ospina' del M-19 y la brutal retoma militar con blindados EE-09 en noviembre de 1985 terminó en un incendio voraz que destruyó la sede de las altas cortes y miles de expedientes penales.</p>
+          <p>Murieron 98 personas, incluidos 11 magistrados de la Corte Suprema, y once empleados de la cafetería fueron sacados vivos del edificio y desaparecidos forzadamente por agentes de inteligencia militar.</p>
+        `
+      },
+      mildiases: {
+        title: "La Guerra de los Mil Días y la Carnicería de Palonegro (1899 – 1902)",
+        badge: "Nivel 3: El Abismo • Guerra Civil Fratricida",
+        content: `
+          <p>La más sangrienta de las guerras civiles colombianas enfrentó al gobierno conservador de Manuel Antonio Sanclemente con las fuerzas revolucionarias liberales. En la <strong>Batalla de Palonegro</strong> (Santander, mayo de 1900), combatieron cuerpo a cuerpo más de 22.000 hombres durante quince días ininterrumpidos en trincheras fétidas de cadáveres insepultos.</p>
+          <p>El saldo final de más de 100.000 muertos arruinó la economía nacional y sumió al país en la bancarrota.</p>
+        `
+      },
+      panama: {
+        title: "La Secesión de Panamá (1903)",
+        badge: "Nivel 3: El Abismo • Pérdida Geopolítica",
+        content: `
+          <p>Aprovechando el agotamiento militar de la Guerra de los Mil Días y el rechazo del Senado en Bogotá al Tratado Herrán-Hay, el gobierno estadounidense de Theodore Roosevelt promovió y financió la separación de Panamá con la presencia de cañoneras militares en las costas de Colón.</p>
+          <p>Colombia perdió su activo geográfico más valioso: el istmo que conectaba los dos océanos del planeta.</p>
+        `
+      },
+      supremos: {
+        title: "La Guerra de los Supremos (1839 – 1842)",
+        badge: "Nivel 3: El Abismo • Caudillismo Regional",
+        content: `
+          <p>Detonada por una ley que ordenaba suprimir cuatro conventos menores en Pasto para financiar escuelas públicas, caudillos provinciales autodenominados «Jefes Supremos» se rebelaron en armas contra el gobierno central de José Ignacio de Márquez.</p>
+          <p>El conflicto fragmentó a la recién nacida República de la Nueva Granada y fijó el patrón de caudillismos armados regionales que duró todo el siglo XIX.</p>
+        `
+      },
+      leycaballos: {
+        title: "La 'Ley de los Caballos' y el Estado Policivo de 1888",
+        badge: "Nivel 3: El Abismo • Censura y Destierro",
+        content: `
+          <p>La Ley 61 de 1888, promulgada durante el régimen conservador de la Regeneración, facultaba al presidente de la República para encarcelar o desterrar sumariamente y sin juicio judicial a cualquier opositor que perturbara el orden público o criticara al clero.</p>
+          <p>Cientos de intelectuales y periodistas fueron exiliados y las imprentas opositoras clausuradas con candados militares.</p>
+        `
+      },
+      galan: {
+        title: "El Suplicio y Descuartizamiento de José Antonio Galán (1782)",
+        badge: "Nivel 4: La Fosa Inmemorial • Pedagogía del Terror",
+        content: `
+          <p>Tras la traición de las Capitulaciones de Zipaquirá en la Rebelión de los Comuneros, el líder campesino José Antonio Galán fue ejecutado en la Plaza Mayor de Santafé el 1 de febrero de 1782.</p>
+          <p>La sentencia virreinal ordenó que su cadáver fuera descuartizado: su cabeza fue metida en una jaula de hierro y expuesta en Guaduas; su brazo derecho en El Socorro, el izquierdo en San Gil; su pie derecho en Charalá y el izquierdo en Mogotes; sus bienes confiscados y sus descendientes declarados infames.</p>
+        `
+      },
+      trataesclavos: {
+        title: "Cartagena y el Horror de la Trata Negrera Transatlántica",
+        badge: "Nivel 4: La Fosa Inmemorial • Esclavitud",
+        content: `
+          <p>Durante dos siglos, Cartagena de Indias fue el principal puerto negrero del imperio español en América del Sur. Más de 150.000 personas capturadas en África fueron transportadas encadenadas en las bodegas inmundas de los galeones negreros donde un 20% perecía de asfixia y disentería.</p>
+          <p>Marcados con hierro candente (*carimba*) en el pecho y las espaldas, fueron forzados a trabajar en las minas de aluvión del Chocó y las plantaciones de caña de azúcar.</p>
+        `
+      },
+      aquiminzaque: {
+        title: "La Decapitación del Zaque Aquiminzaque en Tunja (1540)",
+        badge: "Nivel 4: La Fosa Inmemorial • Aniquilación de Dinastías",
+        content: `
+          <p>Hernán Pérez de Quesada, temeroso de una sublevación general muisca, ordenó aprehender a los principales señores confederados reunidos para celebrar la boda de su líder.</p>
+          <p>En la plaza central de Hunza (Tunja), en 1540, el último Zaque libre <strong>Aquiminzaque</strong> y sus caciques aliados fueron decapitados con hacha ante su pueblo horrorizado, extinguiendo de un golpe sangriento la dinastía milenaria de Boyacá.</p>
+        `
+      },
+      colapsocaribe: {
+        title: "El Colapso Demográfico de los Pueblos Indígenas (1499 – 1550)",
+        badge: "Nivel 4: La Fosa Inmemorial • Conquista",
+        content: `
+          <p>En las primeras décadas de la invasión hispánica, las incursiones de aperreamiento (cacería con perros de guerra mastines), las masacres de las huestes de Pedrarias Dávila y las epidemias importadas de viruela y sarampión diezmaron en más de un 85% a los pueblos originarios de las costas de Urabá, Santa Marta y las sabanas del Sinú.</p>
+        `
+      }
+    };
+
+    function openIcebergModal(key) {
+      const item = icebergData[key];
+      if (!item) return;
+
+      const body = document.getElementById('modalIcebergBody');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #ef4444; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          ${item.badge}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 1.2rem; line-height: 1.2;">
+          ${item.title}
+        </h2>
+        <div style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8;">
+          ${item.content}
+        </div>
+      `;
+
+      document.getElementById('icebergModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeIcebergModal() {
+      document.getElementById('icebergModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'icebergModal') closeIcebergModal();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeIcebergModal();
+    });
+  </script>
 </body>
 </html>
