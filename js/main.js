@@ -453,12 +453,23 @@ function initUniversalSearch() {
         fetch('data/indigenas_andes_macizo.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/indigenas_orinoquia_sabanas.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/indigenas_amazonia_etnografia.json').then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch('data/secretos_amazonia_documentada.json').then(r => r.ok ? r.json() : null).catch(() => null)
+        fetch('data/secretos_amazonia_documentada.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_vaupes_tukanas.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_apaporis_arawak.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_nomadas_maku.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_caqueta_chiribiquete.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_guainia_inirida.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_llanos_frontera.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_darien_caribe_remanente.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/tribus_andes_interandinos.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/censo_maestro_115_pueblos_indigenas.json').then(r => r.ok ? r.json() : null).catch(() => null)
       ];
 
       const [
         precolombina, colonia, sigloXIX, sigloXX, regiones,
-        indigCaribe, indigPacifico, indigAndes, indigOrinoquia, indigAmazonia, secretosAmazonia
+        indigCaribe, indigPacifico, indigAndes, indigOrinoquia, indigAmazonia, secretosAmazonia,
+        vaupesTukano, apaporisArawak, nomadasMaku, caquetaChiribiquete, guainiaInirida,
+        llanosFrontera, darienCaribe, andesInterandinos, censoMaestro
       ] = await Promise.all(fetchPromises);
 
       // 1. Civilizaciones Prehispánicas y Museo del Oro
@@ -634,6 +645,114 @@ function initUniversalSearch() {
             category: "Enigma Amazónico Documentado",
             url: "memoria.html",
             desc: (sec.resumen_cientifico || sec.descripcion || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 12. Clanes Tukano del Vaupés
+      if (vaupesTukano && vaupesTukano.monografias_exhaustivas_de_las_ocho_naciones) {
+        vaupesTukano.monografias_exhaustivas_de_las_ocho_naciones.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre_comun || p.nombre} (${p.filiacion_linguistica?.idioma || 'Tukano Oriental'})`,
+            category: "Pueblo Indígena Vaupés",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision_y_filosofia?.mito_origen || p.resumen || p.significado_etnonimo || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 13. Clanes del Apaporis y Arawak
+      if (apaporisArawak && apaporisArawak.naciones_indigenas) {
+        apaporisArawak.naciones_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.id} (${p.perfil_etnolinguistico?.afiliacion_linguistica || 'Apaporis'})`,
+            category: "Pueblo Indígena Apaporis",
+            url: "otras-culturas.html",
+            desc: (p.cosmologia_y_mitologia?.anaconda_canoa || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 14. Nómadas Nadahup / Makú
+      if (nomadasMaku && nomadasMaku.monografias_detalladas_pueblos) {
+        Object.values(nomadasMaku.monografias_detalladas_pueblos).forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.pueblo || p.nombre || p.id} (${p.linguistica?.familia || 'Nadahup / Makú'})`,
+            category: "Pueblo Indígena Nómada",
+            url: "otras-culturas.html",
+            desc: (p.etnoecologia_y_patron_nomada?.ciclos_estacionales || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 15. Caquetá, Putumayo y Chiribiquete
+      if (caquetaChiribiquete && caquetaChiribiquete.pueblos_indigenas) {
+        caquetaChiribiquete.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Caquetá / Putumayo'})`,
+            category: "Pueblo Indígena Caquetá",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision_y_mitologia?.origen_sagrado || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 16. Cuenca de Guainía, Atabapo e Inírida
+      if (guainiaInirida && guainiaInirida.pueblos_indigenas) {
+        guainiaInirida.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Guainía / Río Negro'})`,
+            category: "Pueblo Indígena Guainía",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision_y_mitologia?.ciclo_mitico || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 17. Sabanas Fronterizas de Arauca y Vichada
+      if (llanosFrontera && llanosFrontera.pueblos_indigenas_sabanas_fronterizas) {
+        llanosFrontera.pueblos_indigenas_sabanas_fronterizas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Llanos / Sabanas'})`,
+            category: "Pueblo Indígena Llanos",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision_y_espiritualidad?.origen_mitico || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 18. Darién y Caribe Remanente
+      if (darienCaribe && darienCaribe.pueblos) {
+        darienCaribe.pueblos.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Darién / Caribe'})`,
+            category: "Pueblo Indígena Darién / Caribe",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision_y_espiritualidad?.origen_sagrado || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 19. Valles Interandinos y Cauca
+      if (andesInterandinos && andesInterandinos.pueblos_indigenas) {
+        andesInterandinos.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Andes Interandinos'})`,
+            category: "Pueblo Indígena Andino",
+            url: "otras-culturas.html",
+            desc: (p.etnohistoria_y_resistencia?.origen_ancestral || p.resumen || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 20. Censo Maestro de las 115 Naciones Indígenas
+      if (censoMaestro && censoMaestro.catalogo_completo_115) {
+        censoMaestro.catalogo_completo_115.forEach(p => {
+          searchDatabase.push({
+            title: `Censo Oficial: Pueblo ${p.nombre} (${p.familia})`,
+            category: "Censo Canónico 115 Pueblos",
+            url: "otras-culturas.html",
+            desc: `Nación indígena colombiana en ${p.region} (${p.depto}). Familia lingüística: ${p.familia}. Reconocida por DANE y ONIC.`
           });
         });
       }

@@ -1,0 +1,681 @@
+{
+  "metadata": {
+    "titulo": "Atlas Etnográfico, Lingüístico, Arqueológico y Territorial de las Naciones de Caquetá, Putumayo y Serranía de Chiribiquete",
+    "subtitulo": "Documentación exhaustiva de los pueblos Karijona, Coreguaje, Tama, Nonuya, Muinane y Andoke en la bisagra biocultural del Noroeste Amazónico Colombiano",
+    "descripcion": "Capa enciclopédica de datos etnográficos, lingüísticos, arqueológicos, tecnológicos, farmacológicos y de memoria histórica sobre las naciones originarias de las cuencas del río Caquetá, río Orteguaza, río Caguán, río Putumayo, río Yarí y la Serranía de Chiribiquete. Abarca el análisis fonológico y gramatical de cuatro familias y lenguas aisladas, el complejo pictográfico y cosmológico del Hombre-Jaguar en Chiribiquete, las tecnologías prehispánicas de llanchama batida y las hachas líticas de Aduche, la farmacopea sagrada de ipadú, yoco y ambil, el régimen de exterminio de la Casa Arana, la deportación forzada al Perú en 1932 y la heroica marcha de retorno que cimentó el Consejo Regional Indígena del Medio Amazonas (CRIMA).",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "autor": "Subagente Especialista en Caquetá, Putumayo y Serranía de Chiribiquete de Colombianopedia",
+    "cobertura_geografica": {
+      "departamentos": [
+        "Caquetá",
+        "Putumayo",
+        "Amazonas",
+        "Guaviare",
+        "Huila"
+      ],
+      "macrocuencas_fluviales": [
+        "Cuenca del Río Caquetá (Medio y Alto Caquetá)",
+        "Cuenca del Río Orteguaza",
+        "Cuenca del Río Caguán",
+        "Cuenca del Río Putumayo",
+        "Cuenca del Río Yarí",
+        "Cuenca del Río Cahuinarí",
+        "Cuenca del Río Aduche",
+        "Cuenca del Río Mesay y Cuñare"
+      ],
+      "hitos_orograficos_y_ecosistemas": [
+        "Serranía de Chiribiquete (Tepuyes y formaciones precámbricas del Escudo Guayanés)",
+        "Piedemonte Amazónico Caqueteño",
+        "Sabanas de Araracuara y Terrazas Aluviales Antiguas",
+        "Llanura Selva Húmeda Tropical Interfluvial",
+        "Cañón y Raudales del Río Caquetá (Angosturas y Araracuara)",
+        "Macizo y Vertiente Oriental Andino-Amazónica (Huila-Caquetá)"
+      ]
+    },
+    "total_naciones_documentadas": 6,
+    "familias_linguisticas_presentes": [
+      "Familia Caribe (Karijona)",
+      "Familia Tukano Occidental (Coreguaje, Tama)",
+      "Familia Witoto-Bora / Rama Witotoana (Nonuya)",
+      "Familia Witoto-Bora / Rama Bora (Muinane)",
+      "Lengua Aislada Independiente (Andoke)"
+    ],
+    "fuentes_academicas_y_referentes_documentales": [
+      "Carlos Castaño-Uribe: 'Chiribiquete: La Maloka Cósmica de los Hombres Jaguar' (2019)",
+      "Jon Landaburu: 'La langue des Andoke (Amazonie colombienne)' (CNRS / Universidad de los Andes, 1979) y estudios comparativos amerindios",
+      "Roberto Pineda Camacho: 'Holocausto en el Amazonas: Una Historia Social de la Casa Arana' (1999/2000)",
+      "Juan Álvaro Echeverri: 'The People of the Center of the World' e investigaciones etnolingüísticas Nonuya-Muinane",
+      "María Emilia Montes Rodríguez: 'Estudios de lengua y cultura Nonuya y revitalización etnolingüística en el Caquetá Medio'",
+      "Francisco Ortiz: 'Etnohistoria de los pueblos Karijona y lenguas Caribe de la Amazonía colombiana'",
+      "Sir Roger Casement: 'The Black Diaries and the Amazon Putumayo Blue Book' (1912)",
+      "Walter Hardenburg: 'The Devil's Paradise: Travels in the Peruvian Amazon Region and an Account of the Atrocities on the Putumayo' (1912)",
+      "Thomas van der Hammen: 'Arqueología y paleoecología de la Serranía de Chiribiquete y la cuenca del Caquetá'",
+      "Instituto Colombiano de Antropología e Historia (ICANH): Atlas de Culturas Indígenas de Colombia",
+      "Organización Nacional de los Pueblos Indígenas de la Amazonía Colombiana (OPIAC)",
+      "Consejo Regional Indígena del Medio Amazonas (CRIMA)",
+      "Consejo Regional Indígena del Orteguaza Medio Caquetá (CRIREC)",
+      "Parques Nacionales Naturales de Colombia: Plan de Manejo PNN Serranía de Chiribiquete y PNN Cahuinarí",
+      "DANE: Censo Nacional de Población y Vivienda (Enfoque Étnico Indígena)"
+    ]
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "karijona",
+      "nombre_comun": "Karijona",
+      "variantes_graficas": [
+        "Carijona",
+        "Kalihona",
+        "Caridjona",
+        "Omagua-Caribe",
+        "Hianacoto-Umaua",
+        "Tsahatsaha",
+        "Guaque"
+      ],
+      "autonimo": "Karijona / Kalihona",
+      "etimologia_autonimo": "En las lenguas caribes septentrionales, la raíz 'kari' o 'kara' denota 'humano', 'persona' o 'gente valerosa', completada con el morfema nominalizador pluralizador '-hona' o '-jona', traduciéndose como 'Gente Verdadera' o 'Los Hombres del Valor'. Históricamente denominados por los primeros exploradores coloniales y caucheros como Omaguas del Yarí (sin relación genética con los Omaguas de habla tupí del Amazonas) y Hianacoto-Umaua en los cañones rocosos del alto Yarí.",
+      "filiacion_linguistica": {
+        "familia": "Caribe",
+        "rama": "Caribe Amazónico Meridional / Septentrional Colombiano (única cuña lingüística caribe relicta en la cuenca suroriental de la Amazonía colombiana)",
+        "codigo_iso": "cbd",
+        "estado_vitalidad": "En peligro crítico extremo (fase de extinción inminente a nivel de hablantes fluidos, clasificada por UNESCO y MinCultura como en riesgo superior)",
+        "hablantes_censados": "Menos de una decena (aproximadamente entre 6 y 9 ancianos sabedores fluidos vivos documentados por el Instituto Caro y Cuervo y la Universidad Nacional), residiendo de manera dispersa en Puerto Colombia (departamento de Guaviare), La Pedrera y Mirití-Paraná (departamento de Amazonas).",
+        "analisis_fonologico": {
+          "inventario_vocalico": "Sistema de 6 vocales orales fundamentales (/a, e, i, ɨ, o, u/) con contrastes de duración vocálica fonológica (distinción entre vocales breves y largas). La vocal alta central no redondeada /ɨ/ cumple una función medular en raíces morfológicas aspectuales.",
+          "inventario_consonantico": "Oclusivas sordas bilabial, alveolar y velar (/p, t, k/), oclusiva glotal (/ʔ/), fricativas alveolar y glotal (/s, h/), nasales bilabial y alveolar (/m, n/), vibrante alveolar simple líquida (/ɾ/), y aproximantes labiovelar y palatal (/w, j/).",
+          "procesos_fonologicos": "Marcada tendencia a la lenición intervocálica, palatalización de oclusivas ante vocales anteriores (/i/) y síncope de vocales breves átonas en raíces complejas compuestas."
+        },
+        "sistema_tonal": "No constituye una lengua tonal en sentido fonémico estricto (a diferencia de las lenguas vecinas Tukano o Witoto-Bora), sino una lengua de acento de intensidad y altura melódica condicionada por la estructura silábica métrica y la duración vocálica de las raíces verbales.",
+        "morfosintaxis_y_tipologia": {
+          "orden_sintactico": "Predominantemente OVS (Objeto-Verbo-Sujeto) en cláusulas transitivas independientes neutras, con variaciones a SOV según las exigencias del foco pragmático y el discurso.",
+          "alineamiento": "Muestra un sistema morfosintáctico de ergatividad escindida (split ergativity), característico de la familia Caribe: las construcciones verbales nominalizadas y dependientes siguen un patrón ergativo/absolutivo, mientras que las cláusulas principales de aspecto imperfectivo operan bajo sistemas de marcación activa/inactiva.",
+          "complejidad_morfologica": "Estructura altamente aglutinante y polisintética con profusa sufijación verbal que codifica tiempo, aspecto, modo, transitividad y marcas obligatorias de evidencialidad testimonial e inferencial. Ausencia total de distinciones de género gramatical en los sustantivos."
+        },
+        "iniciativas_revitalizacion": "Documentación etnolingüística intensiva realizada por Francisco Ortiz, Camilo Robayo y el Instituto Caro y Cuervo; proyectos de transcripción fonética y digitalización de cantos épicos tradicionales conservados por los abuelos Julio y Camilo Karijona en Puerto Colombia; nidos escolares comunitarios de transmisión intergeneracional apoyados por Parques Nacionales Naturales de Colombia y OPIAC."
+      },
+      "territorio_y_geografia": {
+        "departamentos": [
+          "Guaviare",
+          "Caquetá",
+          "Amazonas"
+        ],
+        "municipios_y_corregimientos": [
+          "San José del Guaviare",
+          "Calamar",
+          "Miraflores",
+          "Solano",
+          "Puerto Santander",
+          "Mirití-Paraná",
+          "La Pedrera"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Yarí (Alto y Medio Yarí)",
+          "Río Mesay",
+          "Río Cuñare",
+          "Río Amú",
+          "Río Vaupés",
+          "Río Caquetá",
+          "Río Itilla",
+          "Río Macaya"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Puerto Colombia (río Guaviare / caño La Fuga)",
+          "Resguardo Indígena La Yuquera (San José del Guaviare)",
+          "Resguardo Predio Putumayo (sector Mirití-Paraná / Puerto Santander)"
+        ],
+        "patron_asentamiento_ecosistema": "Asentamiento histórico de bosque húmedo tropical denso intercalado con los macizos rocosos de arenisca y tepuyes precámbricos del Escudo Guayanés. Desarrollaban un patrón de malocas comunales distanciadas entre sí por varios días de camino fluvial, situadas estratégicamente sobre colinas y abrigos rocosos protegidos contra incursiones enemigas en los cañones del río Yarí y Mesay."
+      },
+      "demografia_y_censo": {
+        "poblacion_censo_dane": "Aproximadamente 425 personas que se autorreconocen como pertenecientes al pueblo Karijona en el Censo Nacional de Población y Vivienda (DANE).",
+        "distribucion_comunitaria": "La mayoría habita en la comunidad de Puerto Colombia sobre el río Guaviare (más de 250 personas), con núcleos familiares menores en asentamientos urbanos de San José del Guaviare y familias dispersas en el bajo Caquetá y Mirití-Paraná.",
+        "clanes_y_linajes_historicos": "Históricamente federados en grandes linajes patrilineales con nombres totémicos de animales predadores y elementos del firmamento: Clan del Jaguar de Sangre, Clan del Águila Arpía, Clan del Trueno y Clan del Viento del Tepuy."
+      },
+      "arqueologia_y_arte_rupestre_chiribiquete": {
+        "vinculo_ancestral_con_los_tepuyes": "En la cosmogonía Karijona, la Serranía de Chiribiquete no es una simple formación orográfica, sino el ombligo sagrado del universo denominado 'Ite Okomo' ('La Gran Casa Maloka de los Jaguares Primordiales' o 'Los Altar-Postes del Origen'). Representan los pilares petrificados que sostienen la bóveda celeste impidiendo que la oscuridad superior se desplome sobre la selva terrenal.",
+        "los_piaies_y_el_acceso_exclusivo": "Bajo la severa Ley de Origen Karijona, las cumbres de los tepuyes y los abrigos rocosos superiores eran espacios estrictamente tabú e intangibles para el común de la población; estaba prohibido construir viviendas profanas, cazar o recolectar en sus inmediaciones. Únicamente los chamanes de mayor rango y jerarquía espiritual, los 'Piaies' (chamanes jaguar), estaban autorizados para ascender a los santuarios rupestres en fechas astronómicamente señaladas.",
+        "el_culto_al_hombre_jaguar_y_teriomorfismo": "El jaguar (Panthera onca) encarna al demiurgo supremo del cosmos, señor del fuego primordial y custodio de la energía biológica. En las pictografías rupestres de Chiribiquete se plasman escenas explícitas de metamorfosis antropozoormórfica: hombres cuyas extremidades adquieren la anatomía muscular del felino, rostros humanos de los que brotan colmillos cruzados prominentes y torsos decorados con rosetas punteadas idénticas a la piel del jaguar.",
+        "hiperlordosis_ritual_y_trance_enteogenico": "Las figuras de chamanes pintadas en los frisos rocosos exhiben con frecuencia una curvatura dorsal extrema (hiperlordosis ritual espástica), postura neuromuscular inducida por la insuflación masiva de alcaloides triptamínicos (yopo extraído de Anadenanthera peregrina y rapé de Virola theiodora). Esta postura simboliza el desprendimiento del alma corporal y el vuelo extático del chamán hacia la cima del tepuy para parlamentar con las deidades creadoras.",
+        "quimica_de_los_pigmentos_milenarios": {
+          "hematita_y_ocres": "Uso predominante de ocre ferruginoso natural basado en hematita pura (óxido de hierro III, Fe2O3) para generar la gama de rojos intensos, bermellones y púrpuras, complementado con goethita (oxihidróxido de hierro) para tonalidades amarillas y ocres cálidos.",
+          "presencia_de_cinabrio": "Los análisis arqueométricos revelan trazas significativas de cinabrio (sulfuro de mercurio, HgS), un mineral inexistente en el zócalo geológico precámbrico de Chiribiquete. Su presencia confirma la existencia de complejas redes de intercambio ritual prehispánico a larga distancia con etnias de los cinturones volcánicos de la cordillera de los Andes.",
+          "aglutinantes_biologicos": "Los polvos minerales se maceraban finamente y se mezclaban con sustancias orgánicas aglutinantes que garantizaron su adherencia milenaria contra la intemperie: látex de siringa/hevea silvestre (Hevea guianensis), resina de copal virgen (Protium heptaphyllum) y grasas animales decantadas de danta y armadillo.",
+          "estratigrafia_y_fechamientos": "Estratigrafías arqueológicas dirigidas por Carlos Castaño-Uribe y Thomas van der Hammen con dataciones por radiocarbono (C-14) calibradas que abarcan desde el 20.000 AP (Pleistoceno tardío) hasta épocas subactuales, evidenciando más de setenta mil pinturas rupestres en más de 60 abrigos rocosos."
+        }
+      },
+      "tecnologias_materiales": {
+        "corteza_batida_de_llanchama": "Elaboración de túnicas y lienzos ceremoniales a partir de la corteza viva interior del árbol de llanchama (Poulsenia armata o Ficus insipida). La corteza se desprende en fajas cilíndricas del tronco, se lava pacientemente en caños de agua corriente para disolver la savia lechosa corrosiva y se golpea rítmicamente sobre maderos duros con mazos ranurados hasta disgregar la lignina y expandir el tejido vegetal en una tela flexible, suave y sumamente duradera.",
+        "tinturas_vegetales": "Decoración de las prendas de llanchama con figuras de serpientes emplumadas, soles y rosetas de jaguar utilizando extractos vegetales indelebles: huito o jagua (Genipa americana) que produce un pigmento negro azulado tras oxidarse al aire, y achiote (Bixa orellana) para rojos y anaranjados brillantes.",
+        "ingenieria_fluvial_y_trampas": "Construcción de canoas monóxilas de cedro amargo diseñadas con proas reforzadas para atravesar los cañones y raudales rocosos del río Yarí; ensamblaje de trampas de pesca fijas (cacures) en las cascadas menores y uso de cerbatanas de chonta con dardos de curare (Strychnos guianensis) para la caza arbórea silenciosa."
+      },
+      "medicina_farmacologia_y_chamanismo": {
+        "mambeo_de_ipadu": "Cosecha manual de hojas tiernas de coca amazónica (Erythroxylum coca var. ipadu). Las hojas se tuestan a fuego suave en vasijas de barro refractario, se trituran en morteros de madera pesada de comino y se ciernen cuidadosamente. El polvo verde se amalgama en proporciones milimétricas con la ceniza alcalina cernida de hojas de yarumo (Cecropia peltata), generando una base de carbonato potásico que optimiza la liberación sublingual de los alcaloides en el mambeadero nocturno.",
+        "ambil_de_tabaco": "Cocción prolongada de hojas maduras de tabaco negro (Nicotiana rustica) hasta obtener una pasta viscosa azabache, saturada con sales vegetales lixiviadas de cenizas de cortezas y cáscaras secas. El ambil disuelve las tensiones agresivas y consagra la palabra recta durante los debates maloqueros.",
+        "complejo_enteogenico_del_yopo": "Insuflación nasal de rapés enteogénicos pulverizados de semillas de yopo (Anadenanthera peregrina) y savia de Virola, utilizados por el chamán para alcanzar el estado de videncia oracular y diagnóstico de afecciones provocadas por dardos mágicos del monte."
+      },
+      "memoria_historica_genocidio_y_resistencia": {
+        "resistencia_belica_ancestral": "Durante los siglos XVII y XVIII, los Karijona fueron temidos por las expediciones coloniales debido a su organización bélica y al control férreo de los pasos fluviales del Yarí, destruyendo múltiples intentos de misiones católicas y desalojando destacamentos armados.",
+        "el_genocidio_cauchero": "A finales del siglo XIX y primeras décadas del siglo XX, las empresas gomeras y cuadrillas armadas de caucheros (vinculadas a la casa de Crisóstomo Hernández y a la Peruvian Amazon Company) penetraron en el Yarí y el bajo Vaupés armadas con rifles de repetición. Los campamentos y malocas Karijona fueron incendiados sistemáticamente, miles de indígenas fueron acribillados o sometidos a trabajos forzados en las barracas de siringa, provocando una catástrofe demográfica que redujo a la nación a pequeños núcleos dispersos de refugiados.",
+        "dispersion_y_resiliencia": "Los sobrevivientes debieron emprender éxodos forzados hacia regiones marginales del Guaviare, el Mirití-Paraná y el Caquetá medio, resistiendo en el aislamiento y resguardando en el secreto ceremonial los cantos milenarios del santuario de Chiribiquete."
+      },
+      "gobernanza_y_retos_actuales": {
+        "organizacion_comunitaria": "Participación activa en la OPIAC y en mesas de concertación con Parques Nacionales Naturales de Colombia para la salvaguarda de la Serranía de Chiribiquete, exigiendo el cumplimiento estricto del principio de intangibilidad y no intervención turística profana sobre sus sitios sagrados.",
+        "retos_criticos": "Riesgo inminente de extinción de la lengua hablada ante la avanzada edad de los últimos ancianos sabedores; presiones de deforestación ilegal y ganadería extensiva en el cinturón de amortiguación noroccidental de Chiribiquete (franja Calamar-Miraflores-San Vicente del Caguán)."
+      }
+    },
+    {
+      "id": "coreguaje",
+      "nombre_comun": "Coreguaje",
+      "variantes_graficas": [
+        "Korebaju",
+        "Koreguaje",
+        "Correguaxe",
+        "Guaje",
+        "Chaibaju"
+      ],
+      "autonimo": "Korebaju (Kore'baju / Chaibaju)",
+      "etimologia_autonimo": "Compuesto morfológico derivado de 'kore' (la tierra fértil, la arcilla de sembrar, el barro nutricio de las vegas del río) y 'baju' (persona, gente, nacidos de). Traduce literalmente 'Gente de la Tierra'. Históricamente también se autodenominaban 'Chaibaju', que significa 'Gente del Tigre/Jaguar', reconociendo su filiación espiritual con las fuerzas protectoras del felino.",
+      "filiacion_linguistica": {
+        "familia": "Tukano",
+        "rama": "Tukano Occidental (subrama meridional, estrechamente emparentada con el Siona, Secoya, Macaguaje y Tetete)",
+        "codigo_iso": "coe",
+        "estado_vitalidad": "Vulnerable pero con vigorosa resistencia comunitaria; hablada activamente en el entorno doméstico y ceremonial por adultos y ancianos, con consolidación en escuelas etnoeducativas propias aunque amenazada por la presión urbana circundante en Florencia y Milán.",
+        "hablantes_censados": "Aproximadamente entre 2.200 y 2.600 personas de habla nativa fluida en las comunidades del departamento del Caquetá.",
+        "analisis_fonologico": {
+          "inventario_vocalico": "Consta de 6 vocales orales fundamentales (/a, e, i, ɨ, o, u/) y 6 vocales nasales fonémicas contrastivas (/ã, ẽ, ĩ, ɨ̃, õ, ũ/). La nasalidad vocálica es distintiva y altera radicalmente el significado del léxico.",
+          "difusion_de_nasalidad": "Presenta el fenómeno suprasegmental de armonía nasal o difusión nasal progresiva y regresiva, en el cual una consonante o vocal nasal contagia el rasgo [+nasal] a través de morfemas enteros dentro de la palabra fonológica.",
+          "inventario_consonantico": "Oclusivas sordas y sonoras (/p, t, k, kʷ, b, d/), oclusiva glotal (/ʔ/), africada sorda alveolar (/tʃ/), fricativas sorda alveolar y glotal (/s, h/), y aproximantes (/w, j/)."
+        },
+        "sistema_tonal": "Lengua tonal con distinción funcional de dos registros tonales contrastivos: tono alto y tono bajo. El contorno tonal interactúa con el acento léxico para delimitar unidades morfológicas y diferenciar tiempos verbales perfectivos de imperfectivos.",
+        "morfosintaxis_y_tipologia": {
+          "orden_sintactico": "Predominantemente SOV (Sujeto-Objeto-Verbo), con rigurosa posición final del complejo verbal flexionado.",
+          "clasificadores_nominales": "Posee uno de los sistemas de clasificadores nominales más densos y prolíficos del noroeste amazónico (más de 45 sufijos clasificadores). Los sustantivos, adjetivos, numerales y demostrativos deben concordar obligatoriamente incorporando morfemas clasificadores que indican forma tridimensional (cilíndrica, plana, globular, filamentosa), textura, origen botánico, animatez o función doméstica.",
+          "evidencialidad_gramatical": "El sistema verbal codifica de manera obligatoria cinco niveles de evidencialidad gramaticalizada en las desinencias verbales: evidencia visual directa (el hablante vio la acción), evidencia sensorial no visual (el hablante lo oyó o sintió), inferencia lógica deducida, reporte de terceras personas (asumido/dicho) y conocimiento asumido tradicional."
+        },
+        "iniciativas_revitalizacion": "La Escuela Normal Superior Indígena de San Luis del Orteguaza funciona como semillero etnoeducativo bilingüe; programas del Consejo Regional Indígena del Orteguaza Medio Caquetá (CRIREC); creación de materiales pedagógicos ilustrados y cartillas de gramática propia en lengua korebaju."
+      },
+      "territorio_y_geografia": {
+        "departamentos": [
+          "Caquetá"
+        ],
+        "municipios_y_corregimientos": [
+          "Milán (epicentro territorial e histórico)",
+          "Solano",
+          "Florencia",
+          "Puerto Rico",
+          "Valparaíso",
+          "San Vicente del Caguán"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Orteguaza (eje medular de la vida social Korebaju)",
+          "Río Caquetá (Medio y Alto Caquetá)",
+          "Río Peneya",
+          "Quebrada Niñeras",
+          "Río Mecaya",
+          "Río Rutuya",
+          "Río Bodoquero"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Maticurú",
+          "Resguardo Indígena San Luis del Orteguaza",
+          "Resguardo Indígena Gorgonia",
+          "Resguardo Indígena Quimané",
+          "Resguardo Indígena Jericó Consaya",
+          "Resguardo Indígena Jaicoche",
+          "Resguardo Indígena El Manantial"
+        ],
+        "patron_asentamiento_ecosistema": "Planicies aluviales y terrazas bajas de inundación periódica (vegas fértiles de río) y lomeríos boscosos del piedemonte amazónico. Viven en asentamientos nucleados ribereños organizados alrededor de casas comunales y cabildos, alternando viviendas unifamiliares construidas sobre pilotes de madera para protegerse de las crecientes del río Orteguaza."
+      },
+      "demografia_y_censo": {
+        "poblacion_censo_dane": "Aproximadamente 3.250 a 3.600 personas autorreconocidas como Coreguaje en el censo oficial del DANE.",
+        "distribucion_comunitaria": "Distribuidas en más de 27 resguardos y comunidades legalmente constituidas a lo largo del curso fluvial del Orteguaza y el río Caquetá, con concentración mayoritaria en el municipio de Milán.",
+        "organizacion_clani": "Estructurados en clanes y linajes patrilineales patrilocales vinculados a antiguos troncos míticos: el Clan del Jaguar, el Clan del Gavilán, el Clan del Bagre Pintadillo y el Clan del Maíz Dulce."
+      },
+      "cosmovision_y_espiritualidad": {
+        "mito_origen": "El demiurgo civilizador Chuhu (el Abuelo Creador Cósmico) extrajo a los primeros seres humanos del fondo del agua y de la arcilla sagrada del río Orteguaza. Tras enfrentarse a anacondas gigantes y fieras del inframundo, canalizó los ríos, domesticó el curso de las aguas y entregó a los Korebaju las plantas civilizadoras: el maíz nutricio, la yuca dulce y brava, el ipadú, el tabaco y el sagrado bejuco de Yoco.",
+        "el_jaguar_chaiko": "El felino es considerado el guardián de las fronteras biológicas y el hermano espiritual de los ancianos sabedores. Durante los trances curativos, el Jaibaná asume la visión y la fuerza muscular del jaguar para combatir espíritus agresores.",
+        "rituales_y_fiestas": "La Fiesta de la Chicha de Maíz y del Yagé; ceremonias de purificación matutina con Yoco; danzas de fertilidad agrícola acompañadas de flautas de caña brava y cascabeles de semillas de maraca."
+      },
+      "tecnologias_materiales": {
+        "corteza_batida_llanchama": "Elaboración de trajes ceremoniales, capas y faldas de corteza batida de llanchama (Poulsenia armata), ricamente pintadas con tintes naturales de huito (Genipa americana) y achiote (Bixa orellana), luciendo grecas geométricas que simbolizan los meandros del Orteguaza y las constelaciones cósmicas.",
+        "trampas_fluviales_en_raudales": "Maestría en la construcción de complejas trampas de empalizada (cacures) levantadas con estacas de maderas pesadas amarradas con bejucos en los afluentes menores y gargantas de raudales; elaboración de nasas cónicas (matapís) para atrapar peces durante la subienda anual.",
+        "fibras_de_cumare": "Artesanía en fibra de palma de cumare (Astrocaryum chambira), procesando y torciendo hilos resistentes sobre el muslo para tejer chinchorros, mochilas de carga y redes de mano finas e imputrescibles."
+      },
+      "medicina_farmacologia_y_chamanismo": {
+        "el_bejuco_sagrado_del_yoco": {
+          "especie_y_fitoquimica": "Paullinia yoco (familia Sapindaceae), una liana leñosa silvestre de gran grosor que trepa en los bosques primarios. Su corteza viva contiene una de las concentraciones naturales más altas de cafeína pura conocidas en el reino vegetal (entre 2.8% y 4.2% del peso seco), combinada con teobromina y compuestos polifenólicos.",
+          "el_ritual_del_raspado_matutino": "Todos los días, entre las 4:00 y las 5:00 de la madrugada, antes del brote del sol y en riguroso ayuno, el jefe de familia o el sabedor raspa con una concha afilada o machete la corteza fresca exterior de un trozo de Yoco directamente sobre una totuma con agua fresca. Con las manos exprime la pulpa raspada generando una emulsión lechosa, astringente y espumosa que se bebe de inmediato.",
+          "efectos_fisiologicos_y_medicos": "El Yoco actúa como un emético y purgante estomacal suave que limpia las mucosidades gástricas y toxinas biliares, suprimiendo de golpe la somnolencia, el hambre y el agotamiento muscular, y confiriendo un vigor físico excepcional para navegar y abrir chagras. Posee además comprobadas virtudes antipiréticas y profilácticas contra las fiebres palúdicas de la selva."
+        },
+        "mambeo_de_ipadu_y_ambil": "Consumo cotidiano y solemne de mambe de hojas de ipadú tostadas con ceniza de hojas secas de yarumo silvestre, acompañado del ambil de tabaco negro cocido con sal vegetal de cáscaras de frutos de monte, sellando acuerdos de convivencia pacífica en los cabildos.",
+        "el_complejo_del_yage": "El Jaibaná o taita coreguaje lidera las tomas nocturnas de yagé (Banisteriopsis caapi cocido con hojas de Diplopterys cabrerana / chagropanga). En el trance chamánico, el taita viaja al cosmos superior para restaurar la armonía biológica de la comunidad, diagnosticar males causados por transgresiones a la selva y extraer dardos mágicos patógenos mediante rezos y succiones corporales."
+      },
+      "memoria_historica_genocidio_y_resistencia": {
+        "resistencia_a_las_reducciones_misioneras": "Durante los siglos XVII y XVIII resistieron las reducciones forzadas de misioneros franciscanos en las cabeceras del Orteguaza, rechazando la concentración forzosa en pueblos de doctrina.",
+        "el_impacto_de_la_quina_y_el_caucho": "En la segunda mitad del siglo XIX y principios del XX sufrieron la invasión despiadada de colonos, quineros y caucheros en el alto Caquetá. Fueron víctimas de trabajo esclavo, despojo de tierras fértiles y epidemias traídas por los forasteros (viruela y sarampión), asimilando en su seno a sobrevivientes de pueblos hermanos diezmados como los Tama y Macaguaje.",
+        "la_defensa_territorial_contemporanea": "En las últimas cuatro décadas, el pueblo Coreguaje ha debido afrontar la presión armada del conflicto interno, el narcotráfico y las fumigaciones con glifosato en sus chagras, además de la exploración de hidrocarburos en el bloque petrolero del Orteguaza. Han respondido fortaleciendo la Guardia Indígena y el Consejo Regional Indígena del Orteguaza Medio Caquetá (CRIREC)."
+      },
+      "gobernanza_y_retos_actuales": {
+        "organizacion_sociopolitica": "Articulación federada en el CRIREC y filiación nacional en la OPIAC y la ONIC. Operan mediante cabildos locales con autoridades tradicionales y comités de salud propia.",
+        "retos_actuales": "Contaminación de las aguas del río Orteguaza por agroquímicos y residuos urbanos de Florencia; amenazas de líderes ambientales; necesidad urgente de protección jurídica frente a concesiones extractivas."
+      }
+    },
+    {
+      "id": "tama",
+      "nombre_comun": "Tama",
+      "variantes_graficas": [
+        "Tamas del Caguán",
+        "Dujos",
+        "Tama-Dujos del Huila",
+        "Dujos de Rivera",
+        "Tama del Orteguaza"
+      ],
+      "autonimo": "Tama / Dujo-Tama",
+      "etimologia_autonimo": "El vocablo 'Tama' en las lenguas Tukano Occidental ancestrales hace referencia a la 'Gente de las Cabeceras' o 'Hijos del Río Bravo'. Por su parte, la designación 'Dujo' (o Duho) conservada por los descendientes en el valle alto del Magdalena traduce en la memoria ancestral 'Hombres del Origen' o 'Los que se Asientan en el Lugar Sagrado'.",
+      "filiacion_linguistica": {
+        "familia": "Tukano",
+        "rama": "Tukano Occidental (rama septentrional/central, estrechamente articulada con el dialecto Macaguaje y el tronco Korebaju)",
+        "codigo_iso": "ten",
+        "estado_vitalidad": "Lengua dormida / extinta en su uso oral independiente cotidiano; en proceso de reconstrucción de memoria léxica y fórmulas ceremoniales en las comunidades de Huila y Caquetá, con adopción del Korebaju en la Amazonía y del castellano en el valle andino.",
+        "analisis_etnolinguistico_historico": "Registros coloniales de cronistas y frailes franciscanos del siglo XVIII (como fray Jerónimo de Escobar y expedientes de la Real Audiencia de Santafé) confirman que la lengua Tama compartía con el Coreguaje el sistema fonológico de 6 vocales orales y nasales, la armonía nasal morfológica y un intrincado repertorio de clasificadores de forma. Tras las deportaciones coloniales forzosas al valle del Huila, los Tamas reasentados en encomiendas sufrieron una acelerada imposición del castellano colonial, preservando sin embargo fitonimia medicinal, nombres de cerros y léxico ritual de mambeo y chicha.",
+        "distincion_critica_con_juan_tama_de_la_estrella": "Es un imperativo historiográfico y etnográfico clarificar la total independencia identitaria entre el Pueblo Indígena Tama (de estirpe Tukano Occidental y origen amazónico en el Caguán/Huila) y la célebre figura mítica y política de 'Juan Tama de la Estrella' (Liban Tama). Este último fue un prócer, héroe legendario y médico tradicional (The'Wala) del Pueblo Nasa (Páez) de Tierradentro en el departamento del Cauca, perteneciente a la familia lingüística Nasa Yuwe. Aunque comparten la homonimia fonética del nombre 'Tama', pertenecen a universos cosmogónicos, troncos lingüísticos y territorios absolutamente diferenciados."
+      },
+      "trayectoria_etnohistorica_y_dos_vertientes": {
+        "territorio_ancestral_originario": "Las cuencas vírgenes del río Caguán (Medio y Alto Caguán), el río Guayas, el río Cuemaní y la ladera montañosa oriental de la cordillera Oriental que conecta los páramos andinos con la selva baja del Caquetá.",
+        "vertiente_1_los_dujos_del_huila": {
+          "deportaciones_y_encomiendas_coloniales": "A lo largo de los siglos XVII y XVIII, tropas expedicionarias españolas y frailes franciscanos llevaron a cabo capturas sistemáticas y traslados forzados de centenares de indígenas Tama y Andaquí desde la selva del Caguán a través de las trochas de la cordillera Oriental hacia el valle alto del río Magdalena. Fueron congregados forzosamente en las encomiendas y pueblos de indios de San Antonio del Caguán, Rivera, Neiva y Palermo en el actual departamento del Huila.",
+          "pervivencia_y_titulos_coloniales": "Pese al desarraigo territorial y a la pérdida paulatina de su lengua materna bajo el régimen de hacienda servil, este contingente mantuvo viva su conciencia colectiva denominándose 'Los Dujos' o 'Tamas del Caguán'. Custodiaron celosamente los Títulos Coloniales de Resguardo otorgados por la Corona Española en los siglos XVII y XVIII, manteniendo prácticas de medicina tradicional herbolaria, respeto a las lagunas de montaña y organización comunitaria.",
+          "reconstitucion_contemporanea": "En las últimas décadas del siglo XX y principios del siglo XXI, la comunidad Dujo-Tama de Rivera y Neiva lideró un proceso ejemplar de reconstrucción etnohistórica y autoafirmación étnica, logrando el reconocimiento jurídico oficial de su Cabildo Indígena Dujo de Rivera ante la Dirección de Asuntos Indígenas del Ministerio del Interior y la ONIC."
+        },
+        "vertiente_2_resguardos_del_caguan_y_orteguaza_en_caqueta": {
+          "repliegue_selvatico_y_alianza_korebaju": "Las fracciones del pueblo Tama que eludieron las deportaciones coloniales permanecieron en las selvas del río Caguán. Con el advenimiento de las correrías caucheras y las devastadoras epidemias de finales del siglo XIX, los Tamas se replegaron hacia el bajo Caguán y la confluencia con los ríos Orteguaza y Caquetá, estableciendo alianzas de convivencia y parentesco con el pueblo Coreguaje.",
+          "pervivencia_territorial_en_solano": "Muchos linajes Tama se integraron armónicamente con los Korebaju, aportando sus cantos y conocimientos de pesca. En la actualidad, su autoadscripción e identidad perviven con fuerza institucional en el Resguardo Indígena Tama de La Esperanza y El Manantial, en jurisdicción del municipio de Solano y Cartagena del Chairá, donde defienden su especificidad étnica Tama dentro del movimiento indígena del Caquetá."
+        }
+      },
+      "demografia_y_censo": {
+        "poblacion_censo_dane": "Aproximadamente entre 550 y 750 personas autorreconocidas como pertenecientes al Pueblo Tama / Dujo en el consolidado del Censo Nacional de Población y Vivienda (DANE), distribuidas entre las comunidades del Caquetá y los cabildos urbanos y rurales del departamento del Huila.",
+        "asentamientos_principales": "Cabildo Indígena Dujo de Rivera (Huila), parcialidades en Neiva y Resguardo Indígena Tama de La Esperanza (Solano / Cartagena del Chairá, Caquetá)."
+      },
+      "cosmovision_y_memoria": {
+        "el_origen_del_caguan": "Memoria mítica de la emergencia primordial en las cabeceras rocosas del río Caguán, concebido como una gran arteria de energía cósmica que comunica las alturas frías de los Andes con la matriz caliente de la selva amazónica.",
+        "espiritualidad_de_la_montana_y_el_rio": "Veneración sincrética de los cerros tutelares de la cordillera Oriental (el cerro Pacandé y los picos del Huila) articulada con la memoria fluvial amazónica de los dueños de los caños y peces.",
+        "medicina_herbolaria_tradicional": "Uso tradicional continuado de plantas purgantes, baños de corteza de árboles amargos para extraer la pesadez del cuerpo, raspado de yoco conservado por sabedores del Caguán y elaboración ceremonial de chicha de maíz fermentada."
+      },
+      "tecnologias_y_subsistencia": {
+        "agricultura_de_chagra_y_cultivo_andino": "En el Caquetá, manejo tradicional de la chagra de yuca dulce, plátano, maíz y frutales amazónicos; en el Huila, adaptación al policultivo campesino en minifundios comunitarios combinando maíz, fríjol, achira y frutales con crianza de especies menores.",
+        "cesteria_y_fibras": "Tejido artesanal en fibras de cumare e iraca, confeccionando canastos, esteras y sombreros tradicionales que sintetizan la herencia amazónica y el saber andino."
+      },
+      "memoria_historica_y_resistencia": {
+        "la_resistencia_al_desarraigo": "Supervivencia heroica frente a dos siglos de régimen de hacienda en el Huila, conservando la memoria genealógica de abuelos y bisabuelos nacidos en la selva del Caguán que transmitieron la historia oral de la fuga colonial.",
+        "hitos_organizativos": "Participación activa en el Consejo Regional Indígena del Huila (CRIHU) y en el CRIREC del Caquetá; articulación nacional con la ONIC en la defensa de los derechos territoriales y la educación propia intercultural."
+      },
+      "gobernanza_y_retos_actuales": {
+        "retos_en_el_huila": "Recuperación efectiva de tierras para el Cabildo Dujo de Rivera; superación de la fragmentación territorial por megaproyectos y monocultivos en el alto Magdalena; rescate de la memoria lingüística ancestral.",
+        "retos_en_el_caqueta": "Afectación por la deforestación acelerada en la cuenca del Caguán y presencia de frentes armados ilegales; titulación y saneamiento integral del Resguardo Tama de La Esperanza."
+      }
+    },
+    {
+      "id": "nonuya",
+      "nombre_comun": "Nonuya",
+      "variantes_graficas": [
+        "Nünüya",
+        "Nononene",
+        "Muu Mênane",
+        "Gente del Achiote"
+      ],
+      "autonimo": "Muu Mênane (Nononene)",
+      "etimologia_autonimo": "Formado por el étimo 'Muu' (el fruto sagrado del achiote, Bixa orellana, que proporciona la pasta bermellón de la pintura ritual) y 'Mênane' (gente, hijos, linaje de la sangre vegetal). Traduce fielmente 'La Gente del Achiote' o 'El Pueblo del Color Sagrado y de la Pintura de la Vida'. El término colonial 'Nonuya' corresponde a una adaptación fonética exterior de 'Nünüya'.",
+      "filiacion_linguistica": {
+        "familia": "Witoto",
+        "rama": "Witotoano (rama Witotoana de la macrofamilia Witoto-Bora, con características gramaticales profundamente diferenciadas respecto a los dialectos Murui o Minica)",
+        "codigo_iso": "noj",
+        "estado_vitalidad": "En peligro crítico extremo / lengua latente (dormida) en proceso de revitalización etnolingüística; clasificada en estado de altísima urgencia documental.",
+        "hablantes_censados": "Menos de media docena de ancianos sabedores que conservan el léxico ceremonial, la memoria de cantos tradicionales y la capacidad de interactuar lingüísticamente. El fallecimiento en años recientes de los últimos ancianos completamente fluidos (como don Mamerto Ríos, don Humberto Ayarce y don Rafael Grande) colocó a la lengua en una coyuntura histórica donde la comunidad lidera su reactivación.",
+        "analisis_fonologico": {
+          "inventario_vocalico": "Consta de 6 vocales orales (/a, e, i, ɨ, o, u/) con presencia determinante de la vocal alta central no redondeada /ɨ/ y procesos fonológicos de nasalización vocálica contextuada.",
+          "inventario_consonantico": "Oclusivas sordas y sonoras (/p, t, k, b, d, g/), oclusiva glotal (/ʔ/), africadas alveolar sorda y palatal sonora (/tʃ, dʒ/), fricativas (/s, h/), nasales (/m, n, ɲ/) y aproximantes (/w, j/)."
+        },
+        "sistema_tonal": "Lengua tonal con distinción de registros tonales alto y bajo. La asignación tonal en las sílabas radicales determina categorías léxicas y distinciones aspectuales verbales.",
+        "morfosintaxis_y_clasificadores": {
+          "clasificadores_botanicos": "Estructura altamente polisintética enriquecida por un sofisticado sistema de sufijos clasificadores nominales vinculados íntimamente a la morfología vegetal (hojas planas, tallos cilíndricos, cortezas, vainas de semillas, lianas flexibles, savias lechosas) y a las cualidades táctiles del entorno selvático.",
+          "morfologia_verbal": "Flexión verbal aglutinante con complejas cadenas de sufijación para aspecto continuativo, desiderativo y marcas directas de causatividad e intencionalidad."
+        },
+        "iniciativas_revitalizacion": "Acompañamiento científico de destacadas lingüistas y antropólogos como María Emilia Montes (Universidad Nacional de Colombia), Juan Álvaro Echeverri y Jon Landaburu; proyectos de 'nidos de lengua' en el Resguardo de Villa Azul (medio Caquetá) y comunidad de Peña Roja; sistematización de fonotecas etnolingüísticas con cantos del achiote registrados a finales del siglo XX; incorporación de módulos de lengua Nonuya en el Proyecto Educativo Comunitario (PEC) escolar."
+      },
+      "territorio_y_geografia": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "municipios_y_corregimientos": [
+          "Puerto Santander (Amazonas - corregimiento departamental)",
+          "Araracuara",
+          "Solano (Caquetá)",
+          "La Chorrera (Amazonas)"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Caquetá (Medio Caquetá)",
+          "Río Cahuinarí",
+          "Quebrada Peña Roja",
+          "Río Putumayo (territorio ancestral del despojo prelapsario)"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Nonuya de Villa Azul (epicentro de la reconstrucción cultural en el medio Caquetá)",
+          "Resguardo Predio Putumayo (territorio histórico)",
+          "Comunidad multiétnica de Peña Roja"
+        ],
+        "patron_asentamiento_ecosistema": "Vegas aluviales fértiles y terrazas ribereñas del río Caquetá medio en confluencia con el curso bajo del Cahuinarí. Aldea nucleada alrededor de la Gran Maloka comunal de Villa Azul, rodeada por chagras tradicionales de policultivo y selva densa de tierra firme sobre suelos de terra preta e intercalaciones arenosas."
+      },
+      "demografia_y_censo": {
+        "poblacion_censo_dane": "Aproximadamente entre 240 y 310 personas autorreconocidas como pertenecientes al Pueblo Nonuya en el censo oficial del DANE.",
+        "distribucion_comunitaria": "La gran mayoría habita en el Resguardo Nonuya de Villa Azul sobre el río Caquetá medio, con familias residentes en Peña Roja, Puerto Santander, Araracuara y Leticia.",
+        "organizacion_familiar": "Linajes patrilineales asociados a nombres de aves sagradas, peces de remanso y variedades botánicas de achiote, articulados estrechamente a través de alianzas matrimoniales con los pueblos Muinane, Andoke y Huitoto vecinos."
+      },
+      "cosmovision_y_el_achiote_sagrado": {
+        "mito_origen": "Los Muu Mênane brotaron de las vainas maduras del Gran Árbol Cósmico del Achiote (Bixa orellana), plantado por el Creador en el nacimiento del mundo. Para los Nonuya, el achiote no es un mero cosmético o adorno estético superficial: es la sustancia primordial de la vida, la sangre vegetal sagrada que confiere calor vital, salud biológica y fortaleza inmunológica al cuerpo humano.",
+        "armadura_espiritual_contra_los_espiritus": "La pintura corporal con pasta roja de achiote cocido funciona como un escudo o armadura espiritual. Otorga invisibilidad mágica al ser humano frente a los demonios cazadores del bosque (los espíritus de las ciénagas y sombras de la selva) que transmiten enfermedades mortales. Es indispensable para ungir el cuerpo de las madres parturientas y de los recién nacidos.",
+        "fiestas_rituales": "El Baile del Achiote (Muu Rafue), festividad solemne de integración comunitaria donde se consumen alimentos tradicionales, se bendicen las semillas de la chagra y se entonan los cantos ancestrales que relatan el nacimiento de la vegetación amazónica."
+      },
+      "tecnologias_materiales": {
+        "corteza_batida_llanchama": "Elaboración de lienzos y máscaras rituales de corteza batida de llanchama, teñidas con motivos geométricos sagrados usando pasta concentrada de achiote (rojo bermellón) y zumo de huito (negro azulado), representando la piel de la anaconda y el plumaje de la guacamaya roja.",
+        "procesamiento_de_la_yuca_brava": "Manufactura tradicional de canastos y del cilindro prensador tipití (o matafrío) tejido en fibra de yaré para extraer el cianuro de la yuca brava (Manihot esculenta); elaboración de tiestos y budares de cerámica refractaria para el asado del casabe y la preparación de almidón y tucupí (ají negro cocido con zumo desintoxicado de yuca).",
+        "alfareria_y_trampas": "Alfarería decorada con tintes minerales y resina de copal; trampas de corral y arpones triples de madera dura para la pesca en las lagunas de varzea del río Caquetá."
+      },
+      "medicina_farmacologia_y_chamanismo": {
+        "mambeo_de_ipadu_y_ceniza_de_yarumo": "Elaboración del mambe (coca pulverizada mezclada con ceniza alcalina cernida de hojas de yarumo). En la maloka de Villa Azul, el mambeadero es el recinto donde 'se cura la palabra', permitiendo el flujo de la sensatez y la resolución pacífica de diferencias entre clanes.",
+        "ambil_de_tabaco": "Elaboración de pasta de ambil de tabaco negro reducido a fuego lento y enriquecido con sales minerales extraídas de cenizas de cacao silvestre y yarumo, utilizado como disolvente de agresividades espirituales.",
+        "farmacopea_del_achiote": "Uso medicinal de la pulpa fresca de las semillas de achiote mezclada con aceite de palma de seje (Oenocarpus bataua) para tratar quemaduras cutáneas, cicatrizar heridas profundas, repeler jejenes y mosquitos vectores del dengue y la malaria, y desparasitar el tracto digestivo infantil."
+      },
+      "memoria_historica_el_holocausto_y_el_retorno": {
+        "el_martirio_en_la_casa_arana": "Antes de la irrupción del caucho, los Nonuya eran un pueblo próspero de miles de habitantes en las cuencas del bajo Cahuinarí y el río Caraparaná. Entre 1900 y 1925, las cuadrillas armadas de Julio César Arana y la Peruvian Amazon Company los sometieron a un régimen de terror inimaginable: cientos fueron asesinados en el cepo por negarse a recolectar gomas silvestres, torturados con flagelos o diezmados por el hambre planificada. Hacia 1930 sobrevivían menos del 5% del censo original.",
+        "la_deportacion_forzada_al_peru_en_1932": "Durante la guerra colombo-peruana de 1932-1933, los capataces de la Casa Arana, para evitar que las comunidades indígenas cayeran bajo el control del Estado colombiano y borrar las evidencias de sus crímenes, deportaron forzosamente en balsas y vapores a las familias Nonuya hacia territorio peruano en las riberas del río Ampiyacu y Pebas, reteniéndolos en condiciones de servidumbre.",
+        "la_heroica_marcha_de_retorno_por_la_selva": "Rechazando el destierro forzado, familias Nonuya lideradas por ancianos y abuelas protagonizaron un escape legendario en las décadas de 1930 y 1940. Guiados por la sabiduría de la selva y sin senderos trazados, caminaron cientos de kilómetros a pie a través de la densa manigua virgen, cruzando a nado el río Putumayo y los pantanos del Cahuinarí, esquivando cazadores de esclavos hasta alcanzar las márgenes seguras del río Caquetá medio.",
+        "refundacion_de_villa_azul_y_crima": "En la década de 1950 refundaron la comunidad de Villa Azul. En los años 70 y 80 fueron fundadores entusiastas del Consejo Regional Indígena del Medio Amazonas (CRIMA), alcanzando la titulación inalienable del Resguardo Nonuya de Villazul y salvaguardando su dignidad colectiva."
+      },
+      "gobernanza_y_retos_actuales": {
+        "liderazgo_educativo": "Consolidación del Centro Educativo Comunitario de Villa Azul orientado a la revitalización etnolingüística; formación de jóvenes investigadores comunitarios en registro fonográfico y documental de la memoria del achiote.",
+        "retos_actuales": "Protección de las riberas del río Caquetá frente a la minería ilegal aluvial de dragas de oro que contaminan las aguas con mercurio; acceso a servicios de salud intercultural en una región de difícil acceso fluvial."
+      }
+    },
+    {
+      "id": "muinane",
+      "nombre_comun": "Muinane",
+      "variantes_graficas": [
+        "Bora-Muinane",
+        "Meecuna",
+        "Muinane de La Sabana",
+        "Iepomue"
+      ],
+      "autonimo": "Meecuna / Iepomue",
+      "etimologia_autonimo": "En lengua muinane, 'Meecuna' e 'Iepomue' denota 'Hijos de la Palmera del Centro' o 'La Gente de la Palmera Sagrada del Origen', en referencia a la gran palmera mítica de canangucha o chontaduro que en el inicio del mundo sirvió como columna axial del cosmos.",
+      "filiacion_linguistica": {
+        "familia": "Bora",
+        "rama": "Bora-Muinane (familia lingüística Bora independiente; clasificada por algunos autores dentro del macro-filo Bora-Witoto pero con raíces gramaticales y léxicas enteramente separadas del Huitoto)",
+        "codigo_iso": "bmr",
+        "estado_vitalidad": "En riesgo alto a muy alto; hablada con fluidez por adultos mayores y ancianos sabedores, con decreciente transmisión intergeneracional espontánea en la juventud, mitigada por proyectos educativos locales.",
+        "hablantes_censados": "Aproximadamente entre 160 y 230 hablantes fluidos en territorio colombiano, concentrados en el Resguardo La Sabana sobre el río Cahuinarí y en comunidades del río Caquetá.",
+        "aclaracion_critica_taxonomica": "Es un requerimiento científico esencial distinguir la Lengua Muinane (perteneciente a la Familia BORA, código ISO: bmr, hablada en La Sabana y río Cahuinarí) del dialecto o variante 'Muinane' de la Lengua Uitoto (Nipode / Murui-Muinane, perteneciente a la Familia WITOTO). Aunque comparten el exónimo colonial 'Muinane' ('gente del este/naciente' en huitoto), se trata de dos lenguas radicalmente distintas e ininteligibles entre sí.",
+        "analisis_fonologico": {
+          "inventario_consonantico": "Posee una rica serie de consonantes oclusivas sordas y sonoras palatalizadas (/pʲ, tʲ, kʲ, bʲ, dʲ, gʲ/), oclusivas simples (/p, t, k, b, d, g/), oclusiva glotal (/ʔ/), africadas palatales (/tʃ, dʒ/), fricativas (/s, ʃ, h/), nasales (/m, n, ɲ/) y aproximantes (/w, j/).",
+          "inventario_vocalico": "Consta de 6 vocales fonémicas (/a, e, i, ɨ, o, u/) con contrastes de duración vocálica distintiva."
+        },
+        "sistema_tonal": "Lengua rigurosamente tonal con distinción funcional de dos registros tonales primarios: tono alto y tono bajo. El tono es fonológicamente distintivo tanto a nivel léxico (dos palabras idénticas en segmentos se diferencian únicamente por el tono) como morfológico en la flexión aspectual y deíctica del verbo.",
+        "morfosintaxis_y_clasificadores": {
+          "sistema_monumental_de_clasificadores": "El Muinane posee uno de los sistemas de clasificadores nominales más fascinantes de la lingüística descriptiva mundial, con más de 65 clasificadores nominales productivos. Estos clasificadores dividen el cosmos material y conceptual según categorías geométricas precisas: formas esféricas, cuerpos cilíndricos largos y delgados, cuerpos cilíndricos gruesos, superficies planas delgadas, superficies planas gruesas, cuerpos huecos tubulares, paquetes fibrosos, agregados granulares y consistencias viscosas.",
+          "concordancia_clasificatoria": "Los clasificadores se adhieren obligatoriamente a los sustantivos, demostrativos, numerales, adjetivos y verbos, garantizando una exhaustiva red de concordancia dentro de la oración."
+        },
+        "iniciativas_revitalizacion": "Enseñanza activa en la escuela del Resguardo La Sabana en el río Cahuinarí; elaboración de cartillas de alfabetización bilingüe y diccionarios pedagógicos comunitarios Muinane-Español en articulación con el Ministerio de Educación Nacional e investigadores del Instituto Caro y Cuervo; talleres sabatinos de memoria oral en la maloka comunal."
+      },
+      "territorio_y_geografia": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "municipios_y_corregimientos": [
+          "Puerto Santander (Amazonas)",
+          "Araracuara",
+          "La Chorrera",
+          "Solano (Caquetá)"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Cahuinarí (corazón territorial ancestral)",
+          "Río Caquetá (Medio Caquetá)",
+          "Sabanas de Araracuara",
+          "Caño Monochoa",
+          "Río Bernardo"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena La Sabana (Río Cahuinarí)",
+          "Resguardo Indígena Monochoa",
+          "Resguardo Predio Putumayo"
+        ],
+        "patron_asentamiento_ecosistema": "Ecosistema singular de enclaves de sabanas arenosas naturales oligotróficas (arenas blancas hidromórficas del Terciario) insertas en medio de la gran masa de bosque húmedo tropical de tierra firme en el interfluvio Caquetá-Cahuinarí. Construyen monumentales malokas circulares de techumbre cónica de paja de caraná de extraordinaria elevación arquitectónica, erigidas en las nacientes protegidas de los caños."
+      },
+      "demografia_y_censo": {
+        "poblacion_censo_dane": "Aproximadamente entre 550 y 650 personas que se autorreconocen como Muinane en el Censo Nacional de Población y Vivienda (DANE).",
+        "distribucion_comunitaria": "La mayoría reside en el Resguardo La Sabana (río Cahuinarí) y en el Resguardo Monochoa sobre el río Caquetá medio, con familias en Puerto Santander y Leticia.",
+        "clanes_y_linajes": "Organizados patrilinealmente en clanes con nombres totémicos de palmas y animales sagrados: Clan de la Palma de Canangucha, Clan de la Palma de Seje, Clan del Paujil de Piedra y Clan del Venado Colorado."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "El Padre Demiurgo dio vida a los Meecuna soplando su aliento tibio sobre la arcilla blanquecina de las sabanas del Cahuinarí y fundó en el centro del mundo el Gran Árbol-Palmera que distribuyó las semillas alimenticias a los linajes originarios.",
+        "la_fiesta_de_la_muisa": "Festividad ritual suprema de la Muisa (fiesta del agradecimiento de las frutas silvestres: chontaduro, umarí, canangucha, manaca). Durante semanas la comunidad elabora trajes y capuchones monumentales de corteza de llanchama batida que representan a los seres tutelares del bosque, danzando rítmicamente al son de los tambores maguaré para garantizar la continuidad estacional de las lluvias y la fecundidad biológica de los montes.",
+        "los_tambores_maguare": "Tallado de pares sagrados de tambores de hendidura en grandes leños de madera dura ahuecada (un tambor macho y un tambor hembra de tonalidades acústicas complementarias), empleados como sistema ancestral de comunicación sonora capaz de proyectar mensajes articulados a través de más de 20 kilómetros de selva."
+      },
+      "tecnologias_materiales": {
+        "corteza_batida_llanchama": "Extraordinaria maestría en la confección de trajes ceremoniales y máscaras antropomorfas de corteza batida de llanchama (Poulsenia armata), que cubren por entero el cuerpo del danzante en la fiesta de la Muisa, pintadas con trazos caleidoscópicos utilizando tintes vegetales de huito, achiote y carayurú.",
+        "cesteria_fina_en_yare": "Tejido de canastos de carga de gran resistencia (manares, catangas y balayes) a partir de fibras del bejuco yaré (Heteropsis flexuosa), seleccionadas por su elasticidad e impermeabilidad frente a las lluvias torrenciales.",
+        "trampas_hidraulicas_y_alfareria": "Instalación de trampas de esterilla y cacures en los saltos rocosos de los caños tributarios del Cahuinarí; alfarería cocida con arcillas blancas refractarias de sabana para elaborar los grandes budares redondos donde se tuesta la fariña y el casabe."
+      },
+      "medicina_farmacologia_y_chamanismo": {
+        "mambeo_de_ipadu": "Elaboración del mambe a partir de hojas de coca tostadas en tiesto y mezcladas con la ceniza alcalina cernida de hojas de yarumo de sabana, consumido en la solemne rueda nocturna de la maloka para ordenar el pensamiento y guiar las decisiones colectivas.",
+        "ambil_de_tabaco": "Pasta concentrada de tabaco negro cocido con sales minerales extraídas de cenizas de cortezas y cáscaras vegetales, utilizado como purificador de impurezas espirituales.",
+        "dietas_y_prevencion": "Chamanismo preventivo enfocado en la imposición de dietas alimenticias estrictas a los jóvenes cazadores para evitar la retaliación energética del 'Dueño de los Animales' de la selva virgen."
+      },
+      "memoria_historica_genocidio_y_retorno": {
+        "el_azote_cauchero_en_sabana": "A comienzos del siglo XX, las sabanas del Cahuinarí fueron ocupadas por cuadrillas armadas de la Peruvian Amazon Company de Julio César Arana, estableciendo puestos de control y barracas en Sabana y Atenas. Los Muinane fueron sometidos a jornadas inhumanas de sangría de caucho silvestre; quienes no cumplían las cuotas de goma sufrían flagelaciones despiadadas, encierro en el cepo de madera y ejecuciones masivas que diezmaron a los linajes clánicos tradicionales.",
+        "deportacion_al_peru_1932": "Al estallar las tensiones fronterizas entre Colombia y Perú en 1932, los administradores caucheros obligaron a punta de fusil a las familias Muinane a desplazarse hacia territorio peruano en las cuencas de los ríos Ampiyacu y Nanay para conservar su fuerza de trabajo esclava y evitar reclamos colombianos.",
+        "la_fuga_heroica_por_el_interfluvio": "Aprovechando la conclusión de las hostilidades bélicas, abuelos sabedores y familias Muinane huyeron clandestinamente de los fundos peruanos y marcharon durante meses a pie a través de la densa selva virgen inexplorada del interfluvio Putumayo-Caquetá, vadeando ciénagas y el río Putumayo hasta reintegrarse a sus sabanas nativas del río Cahuinarí.",
+        "refundacion_y_crima": "Refundación del Resguardo Indígena La Sabana en el Cahuinarí; papel fundador en el Consejo Regional Indígena del Medio Amazonas (CRIMA) y participación protagónica en la consolidación del Parque Nacional Natural Cahuinarí como zona de conservación biocultural."
+      },
+      "gobernanza_y_retos_actuales": {
+        "planes_de_vida": "Formulación e implementación del Plan de Vida Comunitario de La Sabana y Monochoa, orientado a la soberanía alimentaria, la educación intercultural bilingüe y la salvaguarda de los saberes del mambeadero.",
+        "retos_actuales": "Dificultad de acceso geográfico y elevados costos de transporte fluvial para el abastecimiento de insumos básicos; amenazas de minería ilegal en ríos limítrofes y necesidad de relevar a los maestros bilingües tradicionales."
+      }
+    },
+    {
+      "id": "andoke",
+      "nombre_comun": "Andoke",
+      "variantes_graficas": [
+        "Andoque",
+        "Poosiohó",
+        "Cho'oba",
+        "Gente del Hacha de Piedra",
+        "Paasiaja"
+      ],
+      "autonimo": "Poosiohó ('Gente del Hacha de Piedra') / Cho'oba",
+      "etimologia_autonimo": "Compuesto morfológico sagrado formado por 'poosi' (hacha de piedra pulida milenaria) y el morfema colectivo clánico 'hó' (gente, linaje, pueblo nacido de). Traduce con exactitud 'La Gente del Hacha de Piedra'. El término 'Cho'oba' hace referencia a 'La Gente del Origen Cósmico'. La denominación colonial 'Andoke' o 'Andoque' fue una deformación gráfica impuesta por los misioneros y agentes caucheros a partir de vocablos huitotos peyorativos.",
+      "filiacion_linguistica": {
+        "familia": "LENGUA AISLADA (Independiente / Huérfana)",
+        "rama": "Aislada absoluta (sin parentesco genético comprobado con ninguna otra familia lingüística de América del Sur o del mundo; hipótesis de conexión con macro-Gê, Witoto o Arawak han sido categóricamente descartadas por la lingüística histórica)",
+        "codigo_iso": "ano",
+        "estado_vitalidad": "Vulnerable a en peligro, pero con un admirable y extraordinario proceso comunitario de recuperación lingüística y revitalización generacional en el Resguardo de Aduche; hablada activamente por sabedores mayores, adultos y enseñada con devoción a las nuevas generaciones en la escuela local.",
+        "hablantes_censados": "Aproximadamente entre 380 y 450 hablantes y semihablantes en el Resguardo Andoke de Aduche (departamento del Amazonas / Caquetá medio).",
+        "analisis_fonologico": {
+          "investigacion_de_referencia": "Descrita de forma magistral y fundacional por el eminente lingüista Jon Landaburu en su obra 'La langue des Andoke (Amazonie colombienne)' (CNRS, 1979) y posteriores estudios sobre la tipología gramatical del espacio y el foco.",
+          "inventario_vocalico": "Posee un complejo y riquísimo sistema de 9 vocales orales (/i, e, ɛ, ɨ, ə, a, u, o, ɔ/) y 6 vocales nasales fonémicas correspondientes (/ĩ, ẽ, ɨ̃, ã, ũ, õ/). La riqueza de vocales medias abiertas y cerradas es inusual en la Amazonía.",
+          "inventario_consonantico": "Oclusivas sordas y sonoras (/p, t, k, b, d/), oclusiva glotal (/ʔ/), fricativas sorda alveolar y glotal (/s, h/), africada (/tʃ/), nasales (/m, n, ɲ/) y aproximantes (/w, j/)."
+        },
+        "sistema_tonal": "Lengua estrictamente tonal con un contraste de dos registros tonales distintivos: tono alto y tono bajo. El contorno tonal modifica el significado radical de las palabras y cumple funciones de diferenciación morfológica en las marcas de concordancia clítica.",
+        "morfosintaxis_y_tipologia": {
+          "sistema_de_concordancia_de_foco": "Presenta una de las arquitecturas sintácticas más originales del planeta, caracterizada por un sistema de marcación de foco mediante prefijos clasificadores: el verbo no concuerda primordialmente con el sujeto gramatical neutro, sino que incorpora obligatoriamente prefijos que concuerdan con el elemento pragmáticamente focalizado o tematizado en la cláusula.",
+          "clasificadores_nominales_incorporados": "Rico repertorio de sufijos y prefijos clasificadores que discriminan forma geométrica, rigidez, consistencia y animatez, operando tanto en el ámbito nominal como dentro de la estructura predicativa verbal.",
+          "alineamiento": "Muestra rasgos de ergatividad escindida y jerarquía de persona en la selección de índices pronominales."
+        },
+        "iniciativas_revitalizacion": "Consolidación de la Escuela Comunitaria de Aduche con currículo propio Andoke-Español; publicación y reedición de los materiales lingüísticos de Jon Landaburu adaptados a manuales escolares etnoeducativos; programas de registro sonoro de mitos del Hacha de Piedra y cantos de linaje transmitidos por los ancianos en la maloka."
+      },
+      "territorio_y_geografia": {
+        "departamentos": [
+          "Amazonas",
+          "Caquetá"
+        ],
+        "municipios_y_corregimientos": [
+          "Puerto Santander (Amazonas - corregimiento departamental)",
+          "Araracuara",
+          "Solano (Caquetá)"
+        ],
+        "cuencas_hidrograficas": [
+          "Río Aduche (afluente de la margen sur del río Caquetá, corazón geográfico andoke)",
+          "Río Caquetá (Medio Caquetá)",
+          "Cañón y Raudales de Araracuara",
+          "Quebrada del Hacha",
+          "Quebrada de las Guaduas"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Andoke de Aduche (territorio colectivo consolidado de más de 63.000 hectáreas)",
+          "Zonas de comanejo del Parque Nacional Natural Cahuinarí"
+        ],
+        "patron_asentamiento_ecosistema": "Planicies aluviales de vega, lomeríos y terrazas altas del río Aduche, rodeadas por escarpes rocosos precámbricos del Escudo Guayanés cubiertos de selva húmeda tropical densa y bien conservada. Asentamiento nucleado en Aduche con malokas tradicionales situadas a distancias estratégicas para el mambeadero y la deliberación política."
+      },
+      "demografia_y_censo": {
+        "poblacion_censo_dane": "Aproximadamente entre 520 y 610 personas autorreconocidas como Andoke en el Censo Nacional de Población y Vivienda (DANE).",
+        "distribucion_comunitaria": "La inmensa mayoría reside de forma concentrada y autónoma en el Resguardo de Aduche sobre el río Caquetá medio, con núcleos menores de estudiantes y trabajadores en Araracuara, Puerto Santander, Florencia y Bogotá.",
+        "organizacion_social_por_clanes": "Estructura social patrilineal estricta distribuida en clanes con nombres de seres y entidades cósmicas: Clan del Hacha de Piedra (Poosiohó), Clan del Venado (Dyo'pahó), Clan de la Hormiga Arriera (Pöhó), Clan del Jaguar (Duwahó), Clan de la Garrapata (Ta'nahó) y Clan del Gusano de Chonta."
+      },
+      "cosmovision_y_mitologia": {
+        "mito_origen": "Los Andoke brotaron del interior profundo de las rocas vivas del río Aduche. En el amanecer de los tiempos míticos, la tierra era un caos dominado por fuerzas antropófagas caníbales y seres monstruosos del inframundo. El demiurgo civilizador Nemepöhó petrificó a las entidades destructoras en los riscos de Araracuara y otorgó a los antepasados el secreto sagrado de quebrar y pulir la piedra verde. El Hacha de Piedra (Poosi) se convirtió en el tótem primordial de la civilización, la pacificación de la selva y el símbolo de la construcción de la maloka armónica.",
+        "el_dueno_de_maloka": "El kumú o Dueño de Maloka rige el mambeadero nocturno de palabra dulce como eje espiritual indiscutible, armonizando las relaciones con los pueblos vecinos (Nonuya, Muinane y Huitoto) y regulando los intercambios matrimoniales.",
+        "rituales_y_bailes": "El Baile de la Cacería y del Chontaduro; danzas de máscaras de corteza batida de llanchama que celebran el triunfo civilizador del Hombre de Piedra sobre los espíritus caníbales."
+      },
+      "arqueologia_y_mineria_prehispanica_del_hacha_de_piedra": {
+        "las_canteras_sagradas_de_aduche_y_araracuara": "Durante miles de años antes de la llegada de los colonizadores europeos, los Andoke fueron los señores mineros, canteros y talladores líticos por excelencia de toda la cuenca amazónica noroccidental. En los cañones y formaciones rocosas precámbricas del río Aduche y Araracuara explotaban canteras de rocas ígneas y metamórficas ultrabásicas de extraordinaria tenacidad y dureza: dioritas, basaltos, anfibolitas y nefritas verdes.",
+        "cadena_operativa_litica": {
+          "extraccion": "Fracturación de los bloques rocosos mediante el método de termoclastia (fuego sostenido sobre la roca viva seguido por el choque térmico de agua fría vertida súbitamente).",
+          "desbaste_y_picado": "Desbaste primario por percusión directa con pesados percutores de cuarzo fluvial, seguido de un picado fino para regularizar los biseles y dar forma a la preforma lítica.",
+          "pulimento_fluvial": "Un monumental y extenuante trabajo de pulimento abrasivo llevado a cabo sobre las lajas de arenisca a orillas del río Aduche, utilizando agua corriente de río y arenas silíceas de cuarzo puro como abrasivo manual, hasta conferir a las hojas de las hachas filos simétricos perfectos y superficies relucientes de brillo especular.",
+          "enmangado_ergonomico": "Las hojas pulidas se aseguraban en mangos ergonómicos de maderas duras pesadas (guayacán o chonta) mediante resina de brea de copal virgen mezclada con cenizas alcalinas, amarradas fuertemente con cuerdas inextensibles de fibra de cumare (Astrocaryum chambira)."
+        },
+        "redes_de_trueque_panamazonicas": "Las hachas de piedra pulida de los Andoke eran el bien suntuario y utilitario más valioso de toda la cuenca amazónica prehispánica. A través de redes fluviales de trueque que cubrían miles de kilómetros por los ríos Caquetá, Putumayo, Vaupés, Río Negro y Marañón, las hachas andoke eran intercambiadas a larga distancia a cambio de panes de sal gema y sal marina de la cordillera de los Andes, veneno de curare de alta toxicidad del alto Amazonas, finas cerámicas decoradas y plumas sagradas de aves exóticas."
+      },
+      "tecnologias_materiales": {
+        "corteza_batida_llanchama": "Elaboración tradicional de trajes y máscaras de corteza de llanchama (Poulsenia armata), batida pacientemente con mazos ranurados sobre troncos pulidos y teñida con pasta de achiote y huito para las fiestas rituales de clan.",
+        "trampas_hidraulicas_en_raudales": "Construcción de empalizadas de pesca fijas (cacures) en los raudales rocosos del río Aduche y Caquetá medio para atrapar grandes peces migratorios (bagres pintadillos, valentones y pirarucús); uso estacional y controlado de barbasco vegetal en caños de remanso.",
+        "alfareria_y_cesteria": "Manufactura de grandes budares y cazuelas cerámicas refractarias; tejido de canastos de yaré y balayes para el procesamiento integral de la yuca brava."
+      },
+      "medicina_farmacologia_y_chamanismo": {
+        "mambeo_de_ipadu_y_ceniza_de_yarumo": "Elaboración rigurosa de mambe de coca pulverizada mezclada con ceniza alcalina cernida de hojas secas de yarumo silvestre. El mambeo nocturno en la maloka de Aduche es el espacio supremo de concentración filosófica donde se transmiten los mitos del origen de la piedra.",
+        "ambil_de_tabaco": "Pasta viscosa de tabaco negro cocido con sales de cenizas vegetales alcalinas, consumido en pequeñas dosis sublinguales para aclarar el juicio y sellar la paz entre familias.",
+        "chamanismo_de_la_piedra": "Los médicos tradicionales Andoke invocan la incorruptibilidad y dureza mística de la diorita y el basalto para 'blindar' energéticamente el cuerpo de los miembros del clan contra maleficios, flechas espirituales y enfermedades parasitarias."
+      },
+      "memoria_historica_el_holocausto_y_el_renacimiento": {
+        "el_casi_exterminio_en_la_casa_arana": "A inicios del siglo XX, los Andoke conformaban una próspera y poderosa confederación de más de 10.000 individuos distribuidos en decenas de asentamientos maloqueros a lo largo del río Aduche y Araracuara. Durante el auge del caucho (1900-1925), fueron víctimas directas de una campaña de exterminio sistemático dirigida por la Peruvian Amazon Company de Julio César Arana y sus sanguinarios capataces (entre ellos Alfredo Montt). Quienes no entregaban las cuotas quincenales de goma silvestre eran encadenados al cepo hasta morir deshidratados, flagelados con látigos de manatí o fusilados en masa. Malokas enteras fueron incendiadas con sus habitantes adentro. Hacia 1932, de los más de 10.000 Andokes originales quedaban con vida menos de 50 individuos en todo el planeta, constituyendo uno de los capítulos de mayor salvajismo genocida documentados en la historia moderna.",
+        "la_deportacion_forzada_al_peru_en_1932": "Durante la guerra colombo-peruana de 1932, los administradores caucheros deportaron forzosamente en vapores a los últimos sobrevivientes Andoke hacia territorio peruano en el río Ampiyacu para conservarlos en régimen de servidumbre.",
+        "la_heroica_marcha_de_retorno_y_el_abuelo_fierro": "En una de las mayores epopeyas de resistencia indígena registradas en la historia americana, el legendario sabedor Andoke conocido como el 'Abuelo Fierro' organizó en secreto a los sobrevivientes y protagonizó una fuga audaz de las haciendas peruanas. Durante meses caminaron a través de la selva virgen inexplorada sin sendas conocidas, guiándose por los astros celestes y el curso de los caños, vadeando ríos crecidos y subsistiendo de frutos silvestres, hasta regresar a su venerado río Aduche.",
+        "el_milagro_del_renacimiento_demografico": "En el río Aduche levantaron de nuevo la maloka, encendieron el mambeadero de la dignidad y refundaron los linajes clánicos. En 1988 el Estado colombiano reconoció sus derechos territoriales inalienables mediante la titulación del Resguardo Indígena Andoke de Aduche. Hoy en día, habiendo multiplicado su población a más de 500 personas y conservando viva su lengua aislada única en el mundo, los Andoke representan el testimonio vivo más conmovedor de la resiliencia y el renacimiento indígena en la Amazonía colombiana."
+      },
+      "gobernanza_y_retos_actuales": {
+        "liderazgo_en_el_crima": "Papel fundador y directivo en el Consejo Regional Indígena del Medio Amazonas (CRIMA); participación en la Guardia Indígena y comités de monitoreo socioambiental.",
+        "retos_actuales": "Defensa de la cuenca del río Aduche contra las incursiones de minería ilegal aluvial de oro; fortalecimiento de la infraestructura educativa y sanitaria en el resguardo; consolidación de la investigación etnolingüística propia con apoyo académico internacional."
+      }
+    }
+  ],
+  "sintesis_tematicas_transversales": {
+    "complejo_arqueologico_serrania_chiribiquete": {
+      "titulo": "Serranía de Chiribiquete: La Maloka Cósmica del Hombre-Jaguar y el Santuario Rupestre Milenario",
+      "estatus_patrimonial": "Parque Nacional Natural de 4.3 millones de hectáreas, declarado Patrimonio Mixto de la Humanidad (Cultural y Natural) por la UNESCO en julio de 2018.",
+      "custodia_ancestral_karijona": "En la tradición oral de los Karijona (de lengua Caribe), la serranía recibe el nombre de 'Ite Okomo' ('La Gran Casa de los Jaguares' o 'Los Altar-Postes del Origen'). Para su ley sagrada, las cumbres de los tepuyes eran estrictamente intangibles; solo los chamanes de mayor rango ('Piaies') tenían autorización para ascender periódicamente a los abrigos rocosos a realizar pagamentos espirituales y repintar con ocre las figuras deterioradas, renovando el pacto cósmico de reproducción biológica y fertilidad con el dueño de los animales.",
+      "magnitud_rupestre_y_abrigos": "Se han inventariado más de 75.000 pictografías rupestres individuales distribuidas a lo largo de más de 60 abrigos rocosos y murales monumentales (entre ellos Cerro Campana, Abrigo del Arco, Cerro Pintado, Abrigo de los Jaguares y Abrigo de las Manos).",
+      "cronologia_y_fechamientos_c14": "Estratigrafías arqueológicas dirigidas por Carlos Castaño-Uribe y Thomas van der Hammen con dataciones radiocarbónicas continuas desde 20.000 AP (Pleistoceno tardío) hasta tiempos históricos subactuales, demostrando una continuidad pictórica y chamánica ininterrumpida a lo largo de doscientos siglos.",
+      "analisis_fisico_quimico_de_pigmentos": {
+        "hematita_y_ocres_ferruginosos": "Uso primordial de hematita pura (óxido de hierro III, Fe2O3) y goethita extraídas de areniscas ferruginosas locales de la Formación Araracuara/Chiribiquete, proporcionando las tonalidades rojas, bermellones y ocres que se mineralizaron sobre la roca de cuarcita.",
+        "presencia_de_cinabrio_andino": "Comprobación arqueométrica de trazas de cinabrio (sulfuro de mercurio, HgS), mineral foráneo de origen volcánico andino traído por antiquísimas redes de trueque fluvial transamazónico antes del contacto europeo.",
+        "aglutinantes_biologicos": "Maceración con sustancias orgánicas fijadoras: látex de siringa/hevea silvestre (Hevea guianensis), resina de copal virgen (Protium heptaphyllum) y grasas animales decantadas de danta y armadillo."
+      },
+      "iconografia_y_hermeneutica_chamanica": {
+        "el_culto_al_hombre_jaguar": "El felino (Panthera onca) como deidad solar y telúrica rectora del equilibrio ecosistémico. Escenas explícitas de metamorfosis antropozoormórfica: humanos con colmillos cruzados prominentes, garras retráctiles y piel adornada con círculos concéntricos de rosetas.",
+        "hiperlordosis_ritual_y_trance_psicotropico": "Chamanes representados con el tronco arqueado hacia atrás en una postura espástica extrema (hiperlordosis), provocada por la insuflación masiva de rapés enteogénicos de yopo (Anadenanthera peregrina) y savia de Virola theiodora, simbolizando el éxtasis del vuelo místico del alma.",
+        "las_escaleras_cosmicas_al_cielo": "Estructuras verticales escalonadas que ascienden desde el suelo hacia círculos solares, representando el Axis Mundi por el cual el sabedor asciende a las dimensiones celestes.",
+        "huellas_de_manos": "Cientos de impresiones de manos humanas plasmadas tanto en positivo (impronta de la palma untada en pintura) como en negativo (siluetas pulverizadas mediante cañas huecas), como sellos de iniciación e identidad espiritual.",
+        "megafauna_pleistocenica": "Pinturas de fauna extinta del Pleistoceno tardío (caballos americanos extintos, perezosos gigantes terrestres y gonfoterios) en los estratos pictóricos más arcaicos."
+      },
+      "politica_actual_de_conservacion": "Régimen de reserva estricta e intangibilidad absoluta. Prohibición total de turismo terrestre convencional para evitar la alteración de microclimas y proteger a los pueblos en aislamiento voluntario (fracciones nómadas Karijona y Yurí-Passé) que transitan por la serranía."
+    },
+    "complejo_tecnologico_material": {
+      "titulo": "Arqueología Tecnológica: Llanchama Batida, Hachas de Piedra de Aduche y Trampas de Raudal",
+      "corteza_batida_de_llanchama": {
+        "especies_botanicas": "Corteza interior viva de los árboles Poulsenia armata y Ficus insipida (familia Moraceae).",
+        "cadena_de_procesamiento": "Extracción en tiras cilíndricas del tronco vivo sin matar el árbol; inmersión prolongada en caños de agua corriente para disolver la savia lechosa ácida; maceración rítmica manual con mazos de madera dura ranurada (macanas de batir) sobre leños lisos hasta disgregar la lignina y expandir el entramado celulósico en lienzos elásticos, resistentes e impermeables.",
+        "tinturas_vegetales_ancestrales": "Teñido decorativo con tintes naturales indelebles: huito o jagua (Genipa americana) para pigmentos negro-azulados mediante la oxidación de la genipina con las proteínas de la tela; achiote (Bixa orellana) para rojos brillantes gracias a la bixina; y carayurú (Arrabidaea chica) para tonos púrpuras y granates solemnes.",
+        "usos_rituales": "Confección de trajes ceremoniales masculinos, faldas femeninas, capuchones de danza para el Baile de la Muisa (Muinane) y el Baile del Achiote (Nonuya), y envoltorios sagrados de reliquias clánicas."
+      },
+      "industria_litica_andoke_las_hachas_de_aduche": {
+        "materia_prima_litica": "Afloramientos rocosos precámbricos del cañón del río Aduche y Araracuara, de donde extraían rocas metamórficas e ígneas ultrabásicas de textura microcristalina y extrema dureza: dioritas, basaltos, anfibolitas y nefritas verdes.",
+        "tecnologia_de_manufactura": "Termoclastia controlada con fuego y agua fría para fracturar los grandes bloques; desbaste por percusión directa con percutores de cuarzo fluvial; picado fino de regularización de biseles; y pulimento abrasivo en las lajas fluviales de arenisca usando agua corriente y arena silícea de cuarzo puro.",
+        "enmangado_con_brea_y_cumare": "Fijación de la hoja de piedra pulida en mangos de maderas de gran densidad (guayacán o chonta) mediante una masilla de resina de copal mezclada con cenizas vegetales, asegurada con ataduras inextensibles de fibra de cumare (Astrocaryum chambira).",
+        "redes_de_intercambio_panamazonicas": "Las hachas de piedra andoke funcionaron durante siglos como la moneda de intercambio de mayor valor de la Amazonía noroccidental. Eran trocadas por sal gema de la cordillera andina, curare de las tierras altas amazónicas, alfarería fina y plumas de guacamayas a cientos de kilómetros de distancia."
+      },
+      "trampas_fluviales_y_pesca_en_raudales": {
+        "el_cacure": "Monumental empalizada y trampa fija construida con estacas de maderas densas y varas de chonta entrelazadas, levantada transversalmente en los saltos y gargantas rocosas de los ríos Caquetá, Yarí y Orteguaza para atrapar bagres rayados, valentones y pirarucús durante los ciclos de subienda migratoria.",
+        "el_matapi": "Trampa tubular cónica tejida finamente con tiras del bejuco yaré (Heteropsis flexuosa), instalada pasivamente en la desembocadura de los caños tributarios para la captura de peces medianos y camarones de río.",
+        "barbasco_comunitario": "Maceración estacional y controlada de raíces de barbasco (Lonchocarpus utilis), cuya rotenona produce asfixia temporal en los peces en caños de remanso sin contaminar el agua ni alterar la aptitud de la carne para el consumo humano."
+      }
+    },
+    "farmacopea_sagrada_y_medicina_ancestral": {
+      "titulo": "Farmacopea Sagrada y Complejo Médico de la Palabra Dulce: Ipadú, Yoco y Ambil",
+      "mambeo_de_ipadu_y_ceniza_alcalina_de_yarumo": {
+        "especie_vegetal": "Erythroxylum coca var. ipadu, variedad domesticada adaptada genéticamente a los suelos lateríticos extremadamente ácidos (oxisoles y ultisoles) de la selva húmeda tropical amazónica.",
+        "procesamiento_alquimico": "Tostado cuidadoso a fuego indirecto de las hojas tiernas de coca en tiestos cerámicos para preservar los alcaloides; pulverización en pilón de madera dura; y tamizado fino en cedazos de corteza vegetal.",
+        "quimica_de_la_ceniza_de_yarumo": "Se queman hojas secas caídas de yarumo (Cecropia peltata / Cecropia sciadophylla) o de uva de monte (Pourouma cecropiifolia). Sus cenizas, excepcionalmente ricas en sales de carbonato potásico y carbonato cálcico, se mezclan con el polvo de coca. La presencia del álcali eleva el pH bucal a más de 8.5, desprotonando la molécula de cocaína y convirtiéndola en base libre lipófila, lo que posibilita su difusión pasiva inmediata a través de la mucosa oral hacia los capilares sanguíneos.",
+        "dimension_filosofica_de_la_palabra_dulce": "En el mambeadero nocturno de la maloka, el mambe no es un estimulante profano: es el vehículo sagrado de la 'Palabra Dulce', que disuelve las pasiones destructivas, aquieta la cólera, ordena el pensamiento y permite la toma armónica de decisiones políticas y comunitarias."
+      },
+      "bejuco_sagrado_del_yoco_paullinia_yoco": {
+        "botanica_y_fitoquimica": "Liana leñosa gigante de la familia Sapindaceae característica del piedemonte amazónico de Caquetá y Putumayo. Su corteza contiene entre 2.8% y 4.2% de cafeína pura en peso seco, acompañada de teobromina, taninos astringentes y resinas purificadoras.",
+        "liturgia_del_raspado_matutino": "Se consume a las 4:00 o 5:00 a.m. en riguroso ayuno por los sabedores Korebaju, Inga y Siona. Se raspa la corteza viva fresca sobre una totuma con agua fresca, exprimiendo la pulpa con las manos para obtener una emulsión lechosa, espumosa y amarga que se bebe de inmediato.",
+        "fisiologia_terapeutica": "Purga el tracto gastrointestinal de flemas y parásitos, suprime de golpe la fatiga física y el hambre durante jornadas enteras de caza o boga, despeja la agudeza sensorial y opera como un agente profiláctico natural indispensable contra el paludismo y las fiebres selváticas."
+      },
+      "ambil_de_tabaco_negro_chimo_o_yera": {
+        "elaboracion_y_reduccion": "Cocción lenta y prolongada de hojas maduras de tabaco negro (Nicotiana rustica / tabacum) en ollas de barro durante varios días consecutivos hasta evaporar el agua y concentrar un jarabe espeso y azabache de altísima graduación de nicotina.",
+        "adicion_de_sales_vegetales": "Se incorporan sales alcalinas extraídas de la lixiviación y evaporación lenta de cenizas de cortezas y cáscaras secas de frutos de monte, estabilizando el extracto en una pasta homogénea.",
+        "uso_simbolico_y_medico": "Se aplica con la yema del dedo o una espátula de madera sobre las encías. El ambil 'amarra la palabra recta', limpia las impurezas del corazón humano, neutraliza energías de hechicería y complementa el efecto reflexivo del mambe de ipadú."
+      }
+    },
+    "genocidio_cauchero_deportacion_y_epopeya_del_retorno": {
+      "titulo": "El Holocausto de la Casa Arana, la Deportación Forzada de 1932 y la Epopeya Heroica del Retorno Selvático",
+      "el_imperio_del_terror_de_la_casa_arana": {
+        "la_peruvian_amazon_company": "Empresa gomera constituida por Julio César Arana y registrada en la Bolsa de Londres en 1907, con centros de explotación forzada en La Chorrera, El Encanto, Atenas, Matanzas, Entre Ríos y Sabana.",
+        "mecanismos_de_sometimiento": "Sistema de endeudamiento forzoso ('enganche'), cacerías humanas ('correrías') perpetradas por capataces mercenarios armados con rifles Winchester (Armando Normand, Alfredo Montt, Víctor Macedo) secundados por guardianes barbadenses.",
+        "metodos_de_tortura_y_muerte": "Uso despiadado del cepo de madera (troncos pesados con orificios donde las víctimas permanecían inmovilizadas durante semanas en posturas deformantes), azotes masivos con látigos de cuero de manatí crudo, mutilaciones de extremidades por no entregar la cuota quincenal de goma, quema viva de familias dentro de sus malokas y muerte por hambre deliberada.",
+        "magnitud_del_exterminio": "Se documenta históricamente el exterminio de entre 60.000 y 80.000 indígenas de los pueblos Huitoto, Bora, Ocaina, Andoke, Nonuya, Muinane y Karijona en un lapso de 25 años. Los Andoke pasaron de más de 10.000 a escasos 50 sobrevivientes; los Nonuya perdieron el 95% de su censo original.",
+        "denuncias_internacionales": "El Libro Azul elaborado por el cónsul británico Sir Roger Casement (1912) y las crónicas de Walter Hardenburg ('The Devil's Paradise') conmocionaron al mundo exponiendo la esclavitud cometida en aras del auge automotriz e industrial del caucho."
+      },
+      "la_deportacion_forzada_al_peru_en_1932": {
+        "contexto_geopolitico": "Tras la firma del Tratado Lozano-Salomón y al desatarse la guerra colombo-peruana de 1932 por el control del puerto de Leticia y el río Putumayo, los administradores de la Casa Arana decidieron retirar su mano de obra servil hacia territorio peruano para no perder a sus peones ni dejar testigos vivos ante las tropas de Colombia.",
+        "el_traslado_forzoso": "Miles de sobrevivientes de los pueblos Huitoto, Bora, Ocaina, Muinane, Nonuya y Andoke fueron obligados a punta de fusil a abordar lanchas de vapor y balsas rústicas, siendo transportados hacia las cuencas de los ríos Ampiyacu, Pebas y Nanay en el Perú, donde fueron reubicados en condiciones de servidumbre en haciendas gomeras peruanas."
+      },
+      "la_heroica_marcha_de_retorno_por_la_selva": {
+        "la_fuga_organizada": "Familias enteras de los pueblos Andoke, Nonuya, Muinane y Huitoto se rehusaron a morir en el destierro peruano. Aprovechando descuidos de los capataces al concluir el conflicto bélico, organizaron fugas nocturnas coordinadas.",
+        "la_travesia_por_la_manigua_virgen": "Guiados por sabedores heroicos (entre ellos el emblemático Abuelo Fierro de los Andoke y líderes clánicos Nonuya y Muinane), grupos de hombres, mujeres, ancianos y niños caminaron a pie durante meses a lo largo de cientos de kilómetros de selva virgen sin caminos trazados. Sin brújulas ni herramientas, guiándose exclusivamente por las estrellas, el vuelo de las aves y las cuencas de los ríos, cruzaron a nado el caudaloso río Putumayo y los pantanos del Cahuinarí, esquivando cazadores de fugitivos hasta alcanzar las márgenes seguras del río Caquetá medio.",
+        "refundacion_territorial": "Refundación de los asentamientos ancestrales en Villa Azul (Nonuya), Aduche (Andoke), La Sabana (Muinane) y Puerto Santander, volviendo a encender el fuego del mambeadero que los invasores intentaron apagar."
+      },
+      "el_renacimiento_del_crima_y_el_predio_putumayo": {
+        "creacion_del_crima": "En las décadas de 1970 y 1980, los sabedores y cabildos de las comunidades del Caquetá medio se unieron para fundar el Consejo Regional Indígena del Medio Amazonas (CRIMA), primera gran organización gremial y política de la región.",
+        "titulacion_del_predio_putumayo_1988": "El movimiento indígena liderado por CRIMA y OPIAC conquistó en abril de 1988 la expedición del histórico Decreto gubernamental que tituló el Gran Resguardo Indígena Predio Putumayo (con más de 5.8 millones de hectáreas, el mayor resguardo de Colombia), reconociendo la propiedad inalienable de las comunidades sobre su territorio ancestral.",
+        "la_casa_arana_como_santuario_de_dignidad": "La antigua sede del terror cauchero en La Chorrera fue recuperada por los pueblos indígenas y convertida en la Casa de la Sabiduría y Centro de Memoria Histórica Indígena, gestionada por AZICATCH como símbolo supremo de la victoria de la vida sobre el genocidio."
+      }
+    },
+    "atlas_sociolinguistico_y_vitalidad": {
+      "titulo": "Atlas Sociolingüístico Comparativo y Matriz de Vitalidad Lingüística",
+      "comparativa_tipologica": {
+        "familia_caribe_karijona": "Aglutinante/polisintética, orden básico OVS / SOV, ergatividad escindida en nominalizaciones, ausencia de género gramatical, sistema no tonal (acento de intensidad métrica), estado crítico extremo (<10 ancianos hablantes).",
+        "familia_tukano_occidental_coreguaje_tama": "Polisintética, orden estricto SOV, 6 vocales orales y 6 nasales con difusión suprasegmental de nasalidad, sistema tonal de dos registros (alto/bajo), más de 45 clasificadores nominales, paradigma obligatorio de 5 grados de evidencialidad verbal; Coreguaje vulnerable con transmisión escolar, Tama lengua dormida.",
+        "familia_witoto_nonuya": "Polisintética, orden SOV/SVO, vocal alta central no redondeada /ɨ/, sistema tonal contrastivo, clasificadores nominales botánicos y texturales integrados en el sustantivo, estado crítico extremo / latente (<5 ancianos sabedores de cantos).",
+        "familia_bora_muinane": "Polisintética con marcada serie de oclusivas palatalizadas, sistema rigurosamente tonal léxico y morfológico (alto/bajo), catálogo colosal de más de 65 clasificadores nominales de geometría tridimensional, estado en riesgo alto a muy alto.",
+        "lengua_aislada_andoke": "Aislada absoluta, 9 vocales orales y 6 nasales, sistema tonal contrastivo de dos alturas, sistema revolucionario de concordancia de foco mediante prefijos clasificadores, clasificadores de forma incorporados, ergatividad escindida, vitalidad en notable recuperación comunitaria."
+      },
+      "estrategias_de_revitalizacion_etnoeducativa": [
+        "Nidos lingüísticos comunitarios con inmersión temprana para primera infancia orientados por abuelos sabedores.",
+        "Sistematización de fonotecas digitales de alta fidelidad con cantos ceremoniales de achiote, del hacha de piedra y de los tepuyes.",
+        "Escuelas Normales Superiores y Proyectos Educativos Comunitarios (PEC) bilingües interculturales gestionados por los cabildos.",
+        "La pedagogía tradicional del mambeadero nocturno como el espacio primario e insustituible de transmisión del pensamiento oral ancestral."
+      ]
+    }
+  }
+}

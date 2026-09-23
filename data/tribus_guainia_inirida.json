@@ -1,0 +1,1014 @@
+{
+  "metadata": {
+    "titulo": "Atlas Etnográfico, Lingüístico y Territorial de los Pueblos Indígenas de la Cuenca Guainía, Atabapo y Río Negro (Estrella Fluvial de Inírida y Escudo Guayanés)",
+    "subtitulo": "Documentación exhaustiva de las naciones Kurripako, Piaroa (Wötjüja), Baniva, Yavitero, Guarequena (Warekena), Baré y Mapayerri",
+    "descripcion": "Capa enciclopédica de rigor antropológico, lingüístico, geográfico, agroecológico y de derechos humanos sobre las naciones originarias que convergen en la macro-confluencia hídrica de la Estrella Fluvial de Inírida y las cuencas binacionales del Guainía, Atabapo e Isana / Río Negro. Integra sistemas lingüísticos comparados (familias Arawak del Norte y Salibana), geografía sagrada del Escudo Guayanés y petroglifos de raudales, complejos tecnológicos ancestrales de la yuca brava (ralladores lítico-resinosos y cestería de chiquichiqui), teología chamánica y farmacopea del yopo, así como el diagnóstico crítico de las amenazas por minería ilegal de aluvión/coltán, toxicología por bioacumulación de mercurio y procesos de gobernanza territorial indígena bajo el Decreto Ley 632 de 2018.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "autor": "Subagente Especialista en la Cuenca de Guainía, Atabapo y Río Negro de Colombianopedia",
+    "cobertura_geografica": {
+      "departamentos_colombia": [
+        "Guainía",
+        "Vichada"
+      ],
+      "areas_no_municipalizadas_guainia": [
+        "Cacahual",
+        "La Guadalupe",
+        "Morichal Nuevo",
+        "Pana Pana (Campo Alegre)",
+        "Puerto Colombia",
+        "San Felipe"
+      ],
+      "municipios_colombia": [
+        "Inírida (Capital departamental del Guainía)",
+        "Barrancominas (Guainía)",
+        "Cumaribo (Vichada - cuencas Tomo, Tuparro, Matavén)"
+      ],
+      "fronterizos_transnacionales": [
+        "Estado Amazonas (Venezuela: municipios Atabapo, Maroa, Río Negro)",
+        "Estado do Amazonas (Brasil: municipio São Gabriel da Cachoeira / Río Negro / Içana)"
+      ]
+    },
+    "pueblos_documentados_total": 7,
+    "familias_linguisticas_analizadas": [
+      "Familia Arawak (Maipureana del Norte)",
+      "Familia Salibana (Sáliba-Piaroa)"
+    ],
+    "fuentes_academicas_y_referentes": [
+      "Instituto Colombiano de Antropología e Historia (ICANH)",
+      "Instituto Amazónico de Investigaciones Científicas (SINCHI)",
+      "Instituto Caro y Cuervo (Lenguas Indígenas de Colombia y Atlas Lingüístico)",
+      "Organización Nacional de los Pueblos Indígenas de la Amazonía Colombiana (OPIAC)",
+      "Asociación de Cabildos y Autoridades Tradicionales Indígenas del Guainía (ASOCRIGUA)",
+      "Alexandra Y. Aikhenvald (Gramática del Baré, Warekena del Xié y Lenguas Arawak del Noroeste Amazónico)",
+      "Esteban Emilio Mosonyi & Jorge Carlos Mosonyi (El idioma yavitero, manual de lenguas indígenas y fonología del Baniva de Maroa)",
+      "Robin M. Wright (Cosmología, chamanismo e historia de los Baniwa/Kurripako del Alto Río Negro)",
+      "Jonathan D. Hill (Keepers of the Sacred Chants: The Poetics of Ritual Power in an Amazonian Society)",
+      "Nicolas Journet (La paix des jardins: Structures sociales des Indiens curripaco du haut Rio Negro)",
+      "Joanna Overing (The Piaroa: A People of the Orinoco Basin / The Anthropology of Love and Anger)",
+      "Omar González-Ñáñez (Mitología de los pueblos Arawak del río Negro y Guainía)",
+      "Roberto Lizarralde (Etnohistoria y demografía indígena de la cuenca del Casiquiare)",
+      "Berta Ribeiro (A arte do trançado dos índios do Brasil y tecnología tradicional de ralladores de yuca)",
+      "DANE - Censo Nacional de Población y Vivienda (Enfoque Étnico Indígena)"
+    ]
+  },
+  "geografia_sagrada_y_ecosistemas": {
+    "estrella_fluvial_de_inirida_ramsar": {
+      "nombre_oficial": "Sitio Ramsar No. 2216 - Complejo de Humedales Estrella Fluvial de Inírida (EFI)",
+      "fecha_designacion": "8 de julio de 2014 (Decreto presidencial 1275 de 2014)",
+      "extension_hectareas": 253000.0,
+      "confluencia_macro_hidrografica": "Confluencia cuádruple de los ríos Inírida, Guaviare, Atabapo y la margen occidental del macro-río Orinoco, constituyendo el nudo hidrográfico de transición biogeográfica más singular del norte de América del Sur.",
+      "dinamica_de_aguas_negras_y_blancas": {
+        "rios_de_aguas_negras": {
+          "tributarios": [
+            "Río Inírida (curso medio y bajo)",
+            "Río Atabapo",
+            "Caño Bocón",
+            "Río Guainía"
+          ],
+          "caracteristicas_limnologicas": "Aguas extremadamente transparentes de tono pardo-rojizo oscuro ('color té cargado'), altamente ácidas (pH entre 4.0 y 5.2), carentes de sólidos en suspensión y con concentraciones casi nulas de nutrientes inorgánicos (ultraoligotróficas). Su coloración se debe a la lixiviación masiva de compuestos polifenólicos, ácidos húmicos y fúlvicos procedentes de la descomposición incompleta de la hojarasca en suelos podzoles de arenas blancas cuarcíticas (campinaranas y bosques de varillal)."
+        },
+        "rios_de_aguas_blancas_lechosas": {
+          "tributarios": [
+            "Río Guaviare"
+          ],
+          "caracteristicas_limnologicas": "Aguas de origen andino cargadas de sedimentos arcillo-limosos en suspensión, ricas en sales minerales disueltas (calcio, magnesio, fósforo), conductividad eléctrica moderada a alta y pH neutro (6.8 a 7.4). Al confluir con el río Inírida y Atabapo frente a la ciudad de Inírida y San Fernando de Atabapo, las masas de agua corren paralelas sin mezclarse durante kilómetros debido a sus acusadas diferencias de densidad, temperatura y carga iónica."
+        },
+        "implicaciones_ecologicas": "La franja de contacto entre aguas negras y blancas genera zonas ecotonales hiperproductivas ('varzeas' y 'rebalses' estacionales) donde las especies ictícolas migratorias desovan, sustentando los ciclos reproductivos de más de 470 especies de peces registradas."
+      },
+      "biodiversidad_simbolica_y_fauna_sagrada": {
+        "ictiofauna": "Bagre rayado (Pseudoplatystoma punctifer), valentón o lechero (Brachyplatystoma filamentosum), pavón real (Cichla temensis), cachama negra (Colossoma macropomum), piraña caribe (Serrasalmus rhombeus), pez payara (Hydrolycus scomberoides) y más de 90 especies de peces ornamentales exportados mundialmente (disco, escalar, tetra cardenal).",
+        "mamiferos_acuaticos": "Delfín rosado de río (Inia geoffrensis), delfín gris o tonina (Sotalia fluviatilis), nutria gigante o lobo de río (Pteronura brasiliensis) y manatí amazónico (Trichechus inunguis).",
+        "flora_endemica": "Flor de Inírida de invierno (Guacamaya superba) y flor de Inírida de verano (Schoenocephalium teretifolium), plantas monocotiledóneas rupícolas endémicas de las sabanas de arena blanca y lajas graníticas del Escudo Guayanés."
+      },
+      "significado_cosmogonico": "Para las etnias Arawak y Puinave, la Estrella Fluvial es concebida como el 'Ombligo del Mundo Acuático'. En este punto de confluencia convergieron los clanes primordiales tras la gran inundación mítica provocada por la tala del Árbol Cósmico de los Alimentos; aquí los chamanes leen las estaciones de subienda mediante la observación de las constelaciones de agua."
+    },
+    "cerros_de_mavecure_y_monolitos_guayaneses": {
+      "geologia_y_orogenesis": {
+        "era_geologica": "Precámbrico (Paleoproterozoico / Mesoproterozoico, datados entre 1.700 y 1.800 millones de años de antigüedad).",
+        "litologia": "Monolitos graníticos y granodioríticos tipo domo (inselbergs / montes islas) pertenecientes al Cratón de Guayana y al Complejo Granítico de Mitú.",
+        "geomorfologia": "Afloramientos rocosos desnudos de perfil parabólico pulidos durante eones por erosión hídrica y eólica, desprovistos de vegetación leñosa continua excepto por matas de bromelias rupícolas, orquídeas líticas y líquenes xerofíticos."
+      },
+      "las_tres_montanas_sagradas": [
+        {
+          "nombre": "Cerro Mavicure (Mavecure)",
+          "altura_sobre_nivel_rio": "Aproximadamente 170 metros",
+          "significado_cultural": "El cerro accesible donde tradicionalmente los jóvenes cazadores recibían pruebas de temple; en su base reposa la comunidad indígena Kurripako y Puinave de El Remanso."
+        },
+        {
+          "nombre": "Cerro Mono",
+          "altura_sobre_nivel_rio": "Aproximadamente 480 metros",
+          "significado_cultural": "Monolito escarpado e inaccesible asociado míticamente a los clanes de simios y al guardián de las alturas; morada de vientos tempestuosos."
+        },
+        {
+          "nombre": "Cerro Pájaro",
+          "altura_sobre_nivel_rio": "Aproximadamente 712 metros",
+          "significado_cultural": "El monolito más imponente y vertiginoso de la tríada. Considerado el nido primordial del Pájaro Mítico del Trueno y el trono cósmico desde donde los demiurgos vigilan el curso del río Inírida."
+        }
+      ],
+      "mitologia_kurripako_y_puinave_de_los_cerros": {
+        "la_morada_de_kuwai": "En la tradición Kurripako, los cerros de Mavecure no son rocas inertes: son los cuerpos petrificados de los ancestros y la morada eterna del demiurgo Kuwai. Desde el vientre de estas piedras emergió el sonido primordial de los instrumentos sagrados de Yurupary; las grietas verticales en la roca son interpretadas como las marcas dejadas por los latigazos rituales de la iniciación cósmica.",
+        "la_leyenda_de_la_princesa_inirida": "Relato etnohistórico recreado por los pueblos del Guainía: Inírida, mujer de extraordinaria belleza espiritual dotada de la sabiduría de las plantas curativas, fue asediada por un pretendiente arrogante que intentó violentar su voluntad mediante bebedizos de amor. Para escapar de la dominación y no quebrar la paz de su pueblo, ascendió a las alturas del Cerro Pájaro y se internó en la niebla. Su cuerpo se transformó en la roca misma y su espíritu brotó de las arenas como la Flor de Inírida (Guacamaya superba), flor perenne que jamás se marchita ni pierde su brillo purpúreo tras ser cortada, emblema eterno de la dignidad de las mujeres originarias del Guainía."
+      }
+    },
+    "petroglifos_sagrados_de_los_raudales": {
+      "principales_sitios_rupestres": [
+        {
+          "sitio": "Raudal de Mapiripana (Río Guaviare)",
+          "descripcion_rupestre": "Extensas lajas de granito pulidas por el caudal torrencial donde se grabaron frisos enteros de figuras ornitomorfas, espirales dobles y constelaciones fluviales visibles únicamente durante la estación seca de aguas bajas."
+        },
+        {
+          "sitio": "Raudal de Zamuro y Raudal del Muerto (Río Atabapo / Orinoco)",
+          "descripcion_rupestre": "Lajas graníticas en la frontera colombo-venezolana con petroglifos de rostros enmascarados de Yurupary, lagartos solares de extremidades digitadas y líneas serpenteantes que trazan las cartas de navegación de los raudales."
+        },
+        {
+          "sitio": "Cerro Pintado y Raudal Pintado (Cuenca del Inírida)",
+          "descripcion_rupestre": "Murales de petroglifos monumentales que superan los dos metros de envergadura, destacando una colosal figura antropomorfa con diadema solar y cetro de mando, flanqueada por ciervos y anacondas."
+        },
+        {
+          "sitio": "Raudales de San José y Yurupary (Ríos Inírida y Guainía)",
+          "descripcion_rupestre": "Grabados litotécnicos incisos mediante percusión y abrasión con arena cuarzosa, representando las huellas podomorfas y rastros corporales dejados por Kuwai cuando el mundo era blando como arcilla húmeda."
+        }
+      ],
+      "ontologia_y_funcion_ritual_del_arte_rupestre": "Los petroglifos de los raudales no son expresiones estéticas decorativas ni grafitis prehistóricos: son 'Marcadores Ontológicos de la Ley de Origen'. Según los sabedores Kurripako y Warekena, estos grabados fueron inscritos directamente por los demiurgos para fijar en la piedra las coordenadas cósmicas de los clanes, advertir a los canoeros sobre los remolinos letales gobernados por los 'Dueños del Agua' (Iñapirikure / Umáwali) y servir de altares donde el navegante debe soplar tabaco o esparcir gotas de agua bendecida antes de desafiar la correntada."
+    }
+  },
+  "comparativa_linguistica_macro": {
+    "familia_arawak_del_norte": {
+      "arbol_filogenetico_y_ramas": {
+        "tronco": "Tronco Lingüístico Arawak (Maipureano)",
+        "subfamilia": "Arawak del Norte (Rama Alto Río Negro - Guainía - Orinoco)",
+        "lenguas_documentadas": [
+          "Kurripako (Baniwa do Içana / Walimanai)",
+          "Baniva (Baniva de Maroa / Kurrim)",
+          "Warekena (Guarequena / Walé:kena del Xié y Guainía)",
+          "Baré (Barawana del Casiquiare y Río Negro)",
+          "Yavitero (Pareni del río Yavita - extinto en hablantes fluidos)"
+        ]
+      },
+      "fonologia_comparada": {
+        "sistema_vocalico": "Sistemas típicamente pentavocálicos /i, e, a, o, u/ o tetravocálicos /i, e, a, u/. Presencia de contraste fonológico de longitud vocálica (vocales breves vs. largas, ej. /a/ vs. /aː/) y nasalización fonémica en Kurripako y Baniva de Maroa.",
+        "sistema_consonantico": "Inventario consonántico marcado por la oposición fonológica entre oclusivas sordas simples /p, t, k/ y oclusivas sordas aspiradas /pʰ, tʰ, kʰ/ (rasgo prominente en Kurripako y Warekena). Presencia de oclusiva glotal fonémica /ʔ/, africadas /ts, tʃ/, sibilantes /s, h/, nasales /m, n, ɲ/, y líquida vibrante simple /ɾ/ con alófono lateral [l]. Notablemente, el Baré es una de las pocas lenguas Arawak de la región que desarrolló oclusivas sonoras contrastivas /b, d, g/.",
+        "prosodia_y_tonalidad": "El Baniva de Maroa y el Kurripako presentan rasgos de acento de tono o registro tonal incipiente estudiados por Esteban Emilio Mosonyi, donde la modulación tonal de la raíz distingue significados léxicos y gramaticales."
+      },
+      "sistema_prefijos_pronominales_arawak": {
+        "paradigma_proto_arawak_y_variantes_locales": {
+          "1_persona_singular_1SG": {
+            "proto_arawak": "*nu- / *no-",
+            "kurripako": "nu-",
+            "baniva": "nu-",
+            "warekena": "nu-",
+            "bare": "nu-",
+            "yavitero": "nu-",
+            "glosa": "'yo / mi'"
+          },
+          "2_persona_singular_2SG": {
+            "proto_arawak": "*pi-",
+            "kurripako": "pi-",
+            "baniva": "pi-",
+            "warekena": "pi-",
+            "bare": "bi-",
+            "yavitero": "pi-",
+            "glosa": "'tú / tu'"
+          },
+          "3_persona_singular_masculino_3SG_M": {
+            "proto_arawak": "*ri- / *li- / *i-",
+            "kurripako": "ri- (dialectos karro/kheni) / li- (dialectos kurri/isana)",
+            "baniva": "li-",
+            "warekena": "ri-",
+            "bare": "i-",
+            "yavitero": "li-",
+            "glosa": "'él / su (de él)'"
+          },
+          "3_persona_singular_femenino_3SG_F": {
+            "proto_arawak": "*thu- / *ru- / *ro-",
+            "kurripako": "ru- / ro-",
+            "baniva": "ju-",
+            "warekena": "du-",
+            "bare": "i-nu- / u-",
+            "yavitero": "ru-",
+            "glosa": "'ella / su (de ella)'"
+          },
+          "1_persona_plural_1PL": {
+            "proto_arawak": "*wa-",
+            "kurripako": "wa-",
+            "baniva": "wa-",
+            "warekena": "wa-",
+            "bare": "wa-",
+            "yavitero": "wa-",
+            "glosa": "'nosotros / nuestro'"
+          },
+          "2_persona_plural_2PL": {
+            "proto_arawak": "*ji- / *i-",
+            "kurripako": "i- / ji-",
+            "baniva": "ji-",
+            "warekena": "i-",
+            "bare": "i-",
+            "yavitero": "i-",
+            "glosa": "'ustedes / vuestro'"
+          },
+          "3_persona_plural_3PL": {
+            "proto_arawak": "*na-",
+            "kurripako": "na-",
+            "baniva": "na-",
+            "warekena": "na-",
+            "bare": "na-",
+            "yavitero": "na-",
+            "glosa": "'ellos/ellas / su (de ellos)'"
+          },
+          "reflexivo_impersonal_correferencial": {
+            "proto_arawak": "*pa-",
+            "kurripako": "pa-",
+            "baniva": "pa-",
+            "warekena": "pa-",
+            "bare": "pa-",
+            "yavitero": "pa-",
+            "glosa": "'uno mismo / se / posesión general de la persona'"
+          }
+        },
+        "alienabilidad_e_inalienabilidad_nominal": {
+          "principio_morfosintactico": "En todas las lenguas Arawak de la cuenca Guainía-Río Negro rige una distinción ontológica estricta entre nombres inalienables (posesión inherente u obligatoria) y nombres alienables (posesión transferible o contingente).",
+          "nombres_inalienables": {
+            "campos_semanticos": "Partes anatómicas del cuerpo humano, términos de parentesco consanguíneo, relaciones espaciales y artefactos corporales indisociables del ser.",
+            "morfologia": "Llevan obligatoriamente el prefijo pronominal directo antepuesto a la raíz sin sufijo tematizador adicional. Ejemplo en Kurripako: nu-kapi ('mi mano'), pi-kapi ('tu mano'), ri-kapi ('su mano de él'); nu-ida ('mi cabello'); nu-ri ('mi hijo').",
+            "forma_absolutiva_no_poseida": "Si un sustantivo inalienable es enunciado sin poseedor (ej. 'una mano cercenada' o 'un ojo'), es agramatical dejar la raíz desnuda; requiere obligatoriamente un sufijo absolutivo/privativo (*-i, *-si, *-ri). Ejemplo en Kurripako: kapi-i ('mano en general / mano desprendida')."
+          },
+          "nombres_alienables": {
+            "campos_semanticos": "Objetos manufacturados (canoas, ralladores, flechas, hamacas), animales domésticos o de caza, plantas cultivadas y bienes muebles transables.",
+            "morfologia": "No pueden unirse directamente al prefijo pronominal sin sufrir un proceso de tematización morfológica mediante sufijos clasificadores de posesión (*-te, *-ne, *-pe, *-re). Ejemplo en Kurripako: tsimáti ('rallador de yuca') -> nu-tsimatí-te ('mi rallador'); iita ('canoa') -> nu-itá-te ('mi canoa')."
+          }
+        },
+        "morfologia_verbal_y_alineamiento_escindido": "Las lenguas Arawak exhiben un patrón de alineamiento morfosintáctico de tipo activo-inactivo (o estativo-activo): el sujeto de un verbo transitivo (A) y el sujeto de un verbo intransitivo de acción voluntaria (Sa) se marcan con el conjunto de prefijos pronominales (*nu-, *pi-, *ri-). En cambio, el objeto de un verbo transitivo (O) y el sujeto de un verbo intransitivo de estado o proceso involuntario (So, ej. 'caerse', 'morir', 'tener fiebre') se marcan mediante un paradigma divergente de sufijos o enclíticos pronominales pospuestos al verbo."
+      },
+      "dialectologia_cuencas_guainia_atabapo_isana": {
+        "criterio_lingüistico_de_isoglosas": "En la macrocuenca del Guainía-Isana-Atabapo, los dialectos del continuo Kurripako-Baniwa se autodefinen y clasifican interétnicamente a partir de la combinación lexical binaria entre la forma afirmativa ('sí') y la partícula negativa ('no'):",
+        "variedades_dialectales_mayores": [
+          {
+            "dialecto": "Aja-Kurri (Áhírrí / Áadzi)",
+            "particula_afirmativa": "Aja ('sí')",
+            "particula_negativa": "Kurri ('no')",
+            "distribucion_geografica": "Cuenca media y alta del río Isana (Brasil) y cabeceras del río Cuiarí y Guainía (Colombia).",
+            "rasgo_fonologico": "Tendencia a la palatalización de oclusivas ante vocales anteriores y retención de africadas alveolares."
+          },
+          {
+            "dialecto": "Õjõ-Karro (Öjkarro / Ojo-Carro)",
+            "particula_afirmativa": "Õjõ ('sí')",
+            "particula_negativa": "Karro ('no')",
+            "distribucion_geografica": "Curso medio y bajo del río Guainía (comunidades de San Felipe, Puerto Colombia) y río Inírida.",
+            "rasgo_fonologico": "Vocal nasal posterior /õ/ fuertemente articulada y oclusiva velar sorda /k/ en la negación."
+          },
+          {
+            "dialecto": "Ẽjẽ-Kheni (Éje-Kéni / Ehe-Khenim)",
+            "particula_afirmativa": "Ẽjẽ ('sí')",
+            "particula_negativa": "Kheni / Khenim ('no')",
+            "distribucion_geografica": "Río Atabapo, caño Pimichín y confluencia hacia San Fernando de Atabapo.",
+            "rasgo_fonologico": "Aspiración velarizada [x] o glotal [h] en lugar de oclusivas plenas; fricatización marcada."
+          },
+          {
+            "dialecto": "Õjõ-Ñame (Uju-ñame / Ojo-ñame)",
+            "particula_afirmativa": "Õjõ ('sí')",
+            "particula_negativa": "Ñame ('no')",
+            "distribucion_geografica": "Sector fronterizo del brazo Casiquiare y confluencia Guainía-Río Negro.",
+            "rasgo_fonologico": "Uso de la nasal palatal /ɲ/ en el morfema de negación."
+          }
+        ]
+      }
+    },
+    "familia_salibana": {
+      "clasificacion_filogenetica": {
+        "familia": "Familia Lingüística Sáliba-Piaroa (Salibana)",
+        "estatus": "Familia lingüística independiente y compacta del norte de Sudamérica, sin parentesco filogenético demostrado con el tronco Arawak, Caribe ni Tukano.",
+        "lenguas_integrantes": [
+          "Piaroa (Wötjüja / De'arua - cuencas del Orinoco, Vichada, Guaviare y Atabapo)",
+          "Sáliba (Llanos del Meta y Casanare / Orocué)",
+          "Máko / Wirö (ríos Ventuari y Cuao - subvariedad o lengua hermana en estado crítico)"
+        ]
+      },
+      "fonologia_y_tonalidad_piaroa": {
+        "sistema_vocalico": "Sistema de 6 vocales orales /a, e, i, ɨ, o, u/ que contrastan fonémicamente con 6 vocales nasales correspondientes /ã, ẽ, ĩ, ɨ̃, õ, ũ/. La vocal central cerrada /ɨ/ es fundamental en la morfología verbal.",
+        "sistema_consonantico": "Destaca la presencia de la oclusiva glotal fonémica /ʔ/ (saltillo), oclusivas sordas aspiradas /pʰ, tʰ, kʰ/, africada postalveolar sorda /tʃ/, fricativa lateral /ɬ/ (o aproximante lateral sorda característica), fricativa glotal /h/ y nasales /m, n/.",
+        "estructura_silabica": "Predominio de sílabas (C)V(C), con restricciones fonotácticas severas en posición de coda."
+      },
+      "morfologia_y_clasificadores": {
+        "tipologia": "Lengua sintética fuertemente aglutinante y predominantemente sufijante.",
+        "sistema_de_clasificadores_nominales": "Posee más de 40 clasificadores morfológicos obligatorios que categorizan cualquier sustantivo según su morfología geométrica tridimensional: cuerpos alargados y rígidos (varas, árboles), cuerpos laminares planos y flexibles (hojas, cortezas), esferas compactas (frutos, piedras), cavidades tubulares huecas, líquidos o entidades celestes.",
+        "sistema_de_evidencialidad": "El verbo Piaroa codifica gramaticalmente en su desinencia cómo el hablante obtuvo la información que transmite: evidencia visual directa (lo vio con sus propios ojos), evidencia no-visual o inferencial (lo escuchó, olió o dedujo por rastros) o conocimiento de transmisión mítica/ancestral heredada de Wahari."
+      }
+    }
+  },
+  "tecnologias_ancestrales_y_comercio_interetnico": {
+    "ralladores_de_yuca_brava_kurripako": {
+      "nombre_tradicional": "Tsimáti (Kurripako) / Ralador de mandioca brava",
+      "significado_cultural": "Obra cumbre de la litotecnología y la carpintería sagrada del Noroeste Amazónico. Más que un utensilio culinario, es considerado un artefacto demiúrgico portador de la energía del jaguar y de las constelaciones celestes, indispensable para transmutar el veneno vegetal en vida humana.",
+      "proceso_de_manufactura_y_materiales": {
+        "tabla_de_madera_soporte": {
+          "especies_botanicas": "Maderas duras de grano denso, imputrescibles y resistentes a los ácidos cianogénicos: Aspidosperma excelsum (comúnmente llamada macacauba o palo rosa), Couma macrocarpa (muwa / lechechiva), Dacryodes chimantensis (madera de caraña) o Erisma uncinatum (jacarandá de agua).",
+          "labrado": "El madero es hendido con cuñas, devastado con hachuelas y pulido pacientemente con hojas ásperas de yarumo (Cecropia) hasta formar una tabla rectangular ligeramente cóncava en su faz anterior, de 80 a 120 cm de longitud por 35 a 50 cm de ancho."
+        },
+        "dientes_de_pedernal_y_cuarzo": {
+          "materia_prima_litica": "Nódulos de cuarzo blanco lechoso hidrotermal o pedernal silíceo de extrema dureza (escala de Mohs 7), extraídos de vetas específicas de las lajas precámbricas.",
+          "tecnica_de_talla": "Los artesanos fracturan los núcleos líticos mediante percusión directa con martillos de diorita hasta obtener miles de esquirlas diminutas, piramidales y cortantes de 2 a 4 milímetros de altura.",
+          "incrustacion": "Con un punzón de hueso de danta o clavo de chonta, el artesano perfora una a una miles de diminutas cavidades en la madera dura, encajando las esquirlas líticas con la punta afilada expuesta y orientada en un ángulo diagonal milimétrico que garantiza el desgarre eficiente de la fibra de yuca sin atorarse."
+        },
+        "sellado_con_resina_de_breo_y_carbon": {
+          "fuente_resinosa": "Resina gomosa aromática recolectada de la corteza del árbol de breo o almécega (Protium hebetatum, Protium carana / Burseraceae).",
+          "formulacion_del_aglomerante": "La resina virgen se calienta en tiestos cerámicos a fuego lento y se mezcla en proporciones exactas con carbón vegetal de madera dura finamente tamizado y cenizas de corteza rica en sílice. El resultado es un mástique negro hidrorepelente ('breu').",
+          "aplicacion_y_curado": "Se vierte caliente sobre toda la superficie dentada del rallador, penetrando en cada intersticio mediante frotado con espátulas de palma. Al enfriar y oxidar a la intemperie, la resina polimeriza adquiriendo una dureza comparable al basalto, blindando la madera contra el agua ácida y anclando las esquirlas líticas de por vida."
+        },
+        "patrones_geometricos_y_mitologia": "Las esquirlas de pedernal no se disponen aleatoriamente: siguen estrictos diseños geométricos ancestrales trazados previamente con tintes de achiote. Los patrones reproducen las manchas de la piel del jaguar cósmico (Dzawi), las escamas romboidales de la Gran Anaconda Primordial (Umáwali), meandros escalonados de los ríos celestes y signos de clanes, actuando como firmas litotécnicas de los linajes fabricantes."
+      },
+      "red_comercial_interetnica_y_monopolio": {
+        "monopolio_tecnologico_kurripako": "Históricamente, los Kurripako y Baniwa poseían el monopolio indiscutido de la manufactura de ralladores de yuca con incrustaciones de piedra en todo el Noroeste Amazónico. Ningún otro pueblo vecino (ni los grupos Tukano Oriental del Vaupés, ni los Puinave, ni los Yanomami del alto Orinoco, ni los Piaroa) dominaba la fórmula del sellado de breo ni la geometría de incrustación con tal durabilidad.",
+        "rutas_de_intercambio": "Los ralladores Kurripako se convirtieron en la principal 'divisa de cambio' y bien de prestigio de un vasto circuito comercial pan-regional de más de 1.500 kilómetros a lo largo de las cuencas del Guainía, Río Negro, Casiquiare, Vaupés, Caquetá y Orinoco.",
+        "bienes_obtenidos_en_trueque": "A cambio de sus ralladores, los Kurripako recibían canoas monóxilas de cedro dulce talladas por los Cubeo; cerbatanas de caña brava y frascos de curare virgen elaborados por los Piaroa y Yekuana; chinchorros finos de cumare tejidos por los Desano; adornos ceremoniales de plumas de guacamaya de los Barasana; y herramientas metálicas (machetes, hachas, anzuelos) de los comerciantes ribereños."
+      }
+    },
+    "cesteria_y_fibras_de_chiquichiqui_leopoldinia_piassaba": {
+      "especie_y_ecologia": {
+        "nombre_cientifico": "Leopoldinia piassaba (Arecaceae)",
+        "nombres_comunes": "Palma de chiquichiqui (Colombia / Venezuela), Piassava do Rio Negro (Brasil).",
+        "habitat": "Exclusiva de las sabanas de arena blanca hidromórfica, rebalses estacionales y márgenes anegadizas de ríos de aguas negras ácidas (alto Río Negro, Guainía, Xié y caño Pimichín)."
+      },
+      "propiedades_mecanicas_y_resistencia": {
+        "origen_de_la_fibra": "Las vainas foliares persistentes en el tronco de la palma producen una densa cabellera de fibras adventicias lignificadas de color castaño oscuro o negro que cuelgan verticalmente, alcanzando longitudes de hasta 1.8 a 2.2 metros.",
+        "cualidades_tecnicas": "Extraordinaria resistencia a la tracción mecánica, flexibilidad ante la torsión, impermeabilidad biológica total frente a la pudrición bacteriana y fúngica en aguas negras ácidas, resistencia a la abrasión salobre y capacidad de no acumular electricidad estática."
+      },
+      "artefactos_ancestrales_y_usos_comunitarios": [
+        {
+          "artefacto": "Aturá de Chiquichiqui (Canasto de carga pesada)",
+          "descripcion": "Canasto cónico o cilíndrico de tejido abierto o entrelazado rígido que se cuelga a la espalda mediante una faja frontal de corteza (mecapal). Diseñado para cargar entre 50 y 70 kg de tubérculos de yuca brava desde la chagra por trochas enfangadas sin deformarse ni quebrarse bajo la lluvia torrencial."
+        },
+        {
+          "artefacto": "Cables y jarcias fluviales para canoas",
+          "descripcion": "Cuerdas trenzadas a mano con hebras de chiquichiqui de 3 a 5 cabos. Utilizadas para remontar raudales violentos ('sirgar' o remolcar embarcaciones entre las rocas); a diferencia de las fibras de cáñamo o algodón, la fibra de chiquichiqui no se pudre aunque permanezca sumergida durante meses en el lecho del río."
+        },
+        {
+          "artefacto": "Cacures y trampas de pesca",
+          "descripcion": "Esteras de varillas de chonta aseguradas con costuras apretadas de chiquichiqui que se instalan transversalmente en las bocanas de los caños durante las bajantes para atrapar peces sin que la fuerza de la corriente desbarate la estructura."
+        },
+        {
+          "artefacto": "Escobas y cepillos tradicionales",
+          "descripcion": "Gavillas de fibra atadas con bejucos yaré destinadas al barrido de las lajas comunales y viviendas tradicionales."
+        }
+      ],
+      "el_ciclo_extractivo_historico_de_la_piassaba": "Desde mediados del siglo XIX hasta bien entrado el siglo XX, la fibra de chiquichiqui fue objeto de una intensa fiebre extractiva paralela a la del caucho. Casas comerciales de Manaos y Ciudad Bolívar engancharon a familias enteras de indígenas Kurripako, Baré y Warekena en el sistema de endeudamiento forzoso ('habilito') para internarse en los pantanos de arena blanca ('chiquichiquiales') a cosechar miles de toneladas de fibra. Esta materia prima se exportaba a Europa y Estados Unidos para la fabricación de cabos navales de marina mercante y cepillos rotatorios industriales para el barrido urbano de metrópolis como Londres y París."
+    },
+    "procesamiento_yuca_brava_y_seguridad_alimentaria": {
+      "toxicidad_y_detoxificacion": {
+        "quimica_del_veneno": "La yuca brava o amarga (Manihot esculenta Crantz) concentra en sus raíces tuberosas elevados niveles de glucósidos cianogénicos (linamarina y lotaustralina). Cuando el tejido vegetal es triturado mecánicamente, la enzima endógena linamarasa hidroliza los glucósidos liberando acetocianhidrina y rápidamente gas cianuro de hidrógeno (ácido cianhídrico / ácido prúsico - HCN), un tóxico mitocondrial letal que inhibe la citocromo c oxidasa celular provocando asfixia química inmediata en mamíferos.",
+        "complejo_tecnologico_de_detoxificacion": "Las culturas de la cuenca Guainía-Río Negro desarrollaron un refinado sistema biofísico de ingeniería para despojar al tubérculo de todo rastro venenoso: rallado litotécnico (rompe membranas celulares y maximiza liberación enzimática de HCN libre), prensado hidráulico por torsión en el sebucán (expulsa el jugo cianhídrico disuelto) y cocción pirogénica en budare (el calor superior a 80 °C volatiliza cualquier molécula residual de cianuro gaseoso, volviendo el alimento completamente inocuo y nutritivo)."
+      },
+      "cadena_de_derivados_gastronomicos": [
+        {
+          "producto": "Casabe (Pópora)",
+          "proceso_y_valor": "Gran torta circular plana de masa de yuca prensada horneada sobre el budare de barro o hierro. Secada al sol tras la cocción, queda totalmente deshidratada y puede almacenarse durante más de 6 a 12 meses en la selva húmeda sin pudrirse ni criar hongos. Constituye el pan básico de expediciones fluviales y faenas de caza."
+        },
+        {
+          "producto": "Mañoco (Fariña granulada)",
+          "proceso_y_valor": "Harina gruesa y crujiente de color dorado elaborada revolviendo y tostando continuamente la masa de yuca sobre el budare a fuego medio. Se consume diluido en agua fresca de río formando la 'yucuta', bebida refrescante e hipercalórica que quita la sed y el hambre durante las largas jornadas de boga en canoa."
+        },
+        {
+          "producto": "Tucupí / Ají Negro",
+          "proceso_y_valor": "El jugo lechoso amarillo extraído por el sebucán ('yare'), cargado de cianuro concentrado, es hervido pacientemente durante 12 a 24 horas continuas hasta que el calor destruye íntegramente las toxinas. El líquido se reduce a una salsa espesa, caramelizada y de intenso color pardo oscuro (reacción de Maillard). Se condimenta con chiles silvestres amazónicos (Capsicum chinense), hormigas limoneras o cabezas de pescado ahumado, transformándose en un condimento de alto valor proteico, vitamínico y sabor umami profundo que previene infecciones gastrointestinales."
+        },
+        {
+          "producto": "Chicha de Yuca (Yalaki / Payawarú)",
+          "proceso_y_valor": "Bebida fermentada ritual preparada a base de tortas de casabe tostadas disueltas en agua y enriquecidas con enzimas salivares o tubérculos fermentados. Elemento central de reciprocidad en la fiesta del Dabucurí."
+        }
+      ]
+    }
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "kurripako",
+      "nombre_comun": "Kurripako",
+      "autonimo": "Walimanai ('Hijos de nuestra gente') / Aakwenai ('Nuestra gente que habla')",
+      "exonomos_y_variantes": [
+        "Curripaco",
+        "Kurripaco",
+        "Coripaco",
+        "Baniwa do Içana (en Brasil)",
+        "Wakuénai"
+      ],
+      "familia_linguistica": "Familia Arawak (Maipureano del Norte / Rama Alto Río Negro - Isana)",
+      "idioma_propio": {
+        "nombre": "Kurripako (Waku)",
+        "estado_vitalidad_unesco": "Vulnerable pero con fuerte vitalidad comunitaria en el ámbito doméstico y ceremonial; bilingüismo extendido con español en Colombia y portugués en Brasil.",
+        "inventario_fonologico": {
+          "vocales": "4 timbres vocálicos /i, e, a, u/ con distinción fonológica de longitud (breves vs. largas: a, aː) y nasalización contrastiva (ã, ẽ, ĩ, ũ).",
+          "consonantes": "Oclusivas sordas /p, t, k/, oclusivas aspiradas /pʰ, tʰ, kʰ/, africadas /ts, tʃ/, sibilantes /s, h/, nasales /m, n, ɲ/, líquida vibrante /ɾ/, semivocales /w, j/.",
+          "tonos": "Acento de tono contrastivo con patrones melódicos que diferencian raíces verbales homófonas."
+        },
+        "morfologia_y_sintaxis": "Lengua polisintética aglutinante con orden de constituyentes flexible orientado a la estructura de la información (predominio SVO / VSO). Marcación de persona mediante prefijos pronominales inalienables y sufijos de transitividad.",
+        "dialectos_principales": [
+          "Aja-Kurri (Áhírrí - cuenca del Isana y alto Guainía)",
+          "Õjõ-Karro (Öjkarro - curso medio del río Guainía e Inírida)",
+          "Ẽjẽ-Kheni (Éje-kéni - río Atabapo)",
+          "Õjõ-Ñame (bajo Guainía y Casiquiare)"
+        ]
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Guainía",
+          "Vichada"
+        ],
+        "municipios_y_anm": [
+          "Inírida",
+          "Barrancominas",
+          "Pana Pana",
+          "Puerto Colombia",
+          "San Felipe",
+          "La Guadalupe"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Guainía (desde sus cabeceras hasta la frontera con Brasil y Venezuela)",
+          "Río Inírida (curso medio y bajo)",
+          "Río Isana y río Cuiarí",
+          "Río Atabapo"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Cuenca Alta del Río Inírida (1.272.000 ha)",
+          "Resguardo Parte Selva de Matavén (compartido)",
+          "Resguardos de los Ríos Guainía y Atabapo",
+          "Resguardo El Remanso (al pie de los Cerros de Mavecure)"
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Aproximadamente 9.500 a 11.200 personas según registros del DANE y padrones de ASOCRIGUA.",
+        "poblacion_transfronteriza": "Más de 7.000 personas en Brasil (Río Içana / São Gabriel da Cachoeira) y 4.500 en Venezuela (Estado Amazonas / Maroa y San Fernando de Atabapo). Población étnica global superior a los 22.000 habitantes."
+      },
+      "cosmovision_y_mitologia": {
+        "el_ciclo_de_kuwai": "Kuwai es el héroe demiurgo primordial cuya anatomía mítica estaba compuesta de canciones, viento y agujeros sonoros. Cuando cantaba, el mundo que antes era diminuto comenzó a dilatarse y florecer. De su cuerpo incinerado en la hoguera cósmica brotaron las palmas sagradas con cuya madera se tallaron las flautas secretas de Yurupary, vehículos acústicos que contienen las leyes del parentesco, la moral y la alianza.",
+        "inapirikure_el_gran_transformador": "Hermano o tío de Kuwai, deidad astuta que engañó a las fieras caníbales del tiempo primordial, domesticó los ríos y ordenó la descendencia de los clanes humanos asignando a cada linaje su cuenca fluvial y su especialidad técnica.",
+        "geografia_sagrada": "Los Cerros de Mavecure (morada pétrea de Kuwai), el raudal de Hípana en el río Aiary (origen cósmico de la humanidad donde Kuwai nació sobre una laja) y los raudales del Guainía."
+      },
+      "organizacion_social": {
+        "estructura_clanos_y_fratrias": "Organización social patrilineal dividida en fratrías exogámicas jerárquicas estrictas. Cada fratría se compone de clanes consanguíneos ordenados según el orden mítico de nacimiento de los hermanos ancestrales:",
+        "fratrias_mayores": [
+          {
+            "fratria": "Hohodene ('Hijos del Gavilán Sol')",
+            "rol_tradicional": "Linaje de mayor jerarquía política; detentadores de los grandes jefes de guerra y oradores rituales."
+          },
+          {
+            "fratria": "Walipere-dakenai ('Hijos de los Nietos de la Danta')",
+            "rol_tradicional": "Linaje sabedor asociado a la fertilidad de la tierra, la agricultura de chagra y la cestería fina."
+          },
+          {
+            "fratria": "Dzawinai ('Gente del Jaguar')",
+            "rol_tradicional": "Clan de chamanes guerreros y guardianes de las fronteras territoriales."
+          },
+          {
+            "fratria": "Adzanene ('Gente de la Guartinaja')",
+            "rol_tradicional": "Músicos rituales y cantores de iniciación."
+          },
+          {
+            "fratria": "Waripena ('Gente del Viento / Caraná')",
+            "rol_tradicional": "Maestros artesanos y especialistas en navegación fluvial."
+          }
+        ],
+        "reglas_matrimoniales": "Exogamia clánica rigurosa: un miembro de la fratría Hohodene jamás puede contraer matrimonio con alguien de su propio clan o fratría; debe casarse obligatoriamente con miembros de fratrías aliadas (ej. Walipere-dakenai) o con pueblos vecinos Arawak (Warekena, Baré, Piapoco).",
+        "residencia": "Patrilocal: la mujer se traslada a residir a la comunidad del esposo tras el matrimonio formal."
+      },
+      "tecnologias_emblematicas": {
+        "ralladores_de_yuca": "Monopolio artesanal absoluto en la talla de ralladores litotécnicos incrustados con pedernal y sellados con breo.",
+        "cesteria_chiquichiqui": "Tejido de canastos aturá y atarrayas fluviales de máxima resistencia a la humedad ácida.",
+        "construccion_naval": "Canotaje y boga de larga distancia; adaptación de canoas a motor con quillas de madera dura."
+      },
+      "historia_contacto_y_resistencia": {
+        "periodo_misional_colonial": "Resistencia activa a las reducciones jesuíticas y carmelitas del siglo XVIII en el Alto Río Negro; huida estratégica hacia las cabeceras remotas de los ríos Isana y Guainía.",
+        "el_movimiento_mesianico_de_venancio_kamiko_1857": "En la década de 1850, el profeta y chamán Kurripako-Baniwa Venancio Kamiko (Venancio 'Christu') lideró una insurrección milenarista en las cuencas del Isana y Guainía. Proclamándose el Cristo indígena, combinó símbolos católicos (cruces de palo, abstinencia, cantos) con chamanismo Arawak, ordenando a su pueblo cesar el pago de tributos a los comerciantes blancos y expulsar a los colonos. El movimiento sacudió los imperios de Brasil, Nueva Granada y Venezuela hasta su violenta represión militar.",
+        "la_epoca_cauchera_y_tomas_funes": "Entre 1900 y 1921, el tirano del Amazonas venezolano Tomás Funes instauró un régimen de terror en San Carlos de Río Negro que diezmó a las cuadrillas de siringueros Kurripako en el Guainía y Casiquiare mediante flagelaciones colectivas y ejecuciones sumarias.",
+        "impacto_de_las_misiones_evangelicas_nuevas_tribus": "A partir de 1948, la misionera estadounidense Sophie Muller introdujo el fundamentalismo evangélico en el Guainía. Aunque erradicó el consumo de bebidas alcohólicas y destruyó materialmente las flautas sagradas de Yurupary, tradujo el Nuevo Testamento a lengua Kurripako alfabetizando masivamente a la población y permitiendo una apropiación endógena de los textos sagrados que fortaleció la lengua materna frente al castellano."
+      },
+      "retos_actuales": {
+        "mineria_ilegal": "Asedio constante de barcazas mineras en los ríos Inírida y Guainía que destruyen los fondos rocosos de pesca tradicional.",
+        "contaminacion_por_mercurio": "Concentraciones críticas de metilmercurio en su dieta cotidiana de peces carnívoros.",
+        "gobernanza": "Liderazgo en ASOCRIGUA para la formalización de los Territorios Indígenas en las Áreas No Municipalizadas de Puerto Colombia y Pana Pana bajo el Decreto 632 de 2018."
+      }
+    },
+    {
+      "id": "piaroa",
+      "nombre_comun": "Piaroa",
+      "autonimo": "Wötjüja ('Gente sabia, tranquila y pacífica') / De'arua ('Dueños de la selva y de las montañas')",
+      "exonomos_y_variantes": [
+        "Piaroa",
+        "Wothuha",
+        "Huottöja",
+        "De'aruhua",
+        "Guaiqueríes del Orinoco (en crónicas coloniales tempranas)"
+      ],
+      "familia_linguistica": "Familia Salibana (Sáliba-Piaroa)",
+      "idioma_propio": {
+        "nombre": "Wötjüja / Piaroa",
+        "estado_vitalidad_unesco": "Vulnerable en Colombia debido a la dispersión geográfica y la presión del castellano en centros urbanos; vigoroso y con alta transmisión intergeneracional en las selvas de Venezuela.",
+        "inventario_fonologico": {
+          "vocales": "6 vocales orales /a, e, i, ɨ, o, u/ y 6 vocales nasales fonémicas /ã, ẽ, ĩ, ɨ̃, õ, ũ/.",
+          "consonantes": "Oclusivas sordas y aspiradas /p, pʰ, t, tʰ, k, kʰ/, oclusiva glotal fonémica /ʔ/, africada /tʃ/, fricativa lateral /ɬ/, fricativa glotal /h/, nasales /m, n/, vibrante simple /ɾ/.",
+          "prosodia": "Acento de intensidad libre con alargamiento vocálico en sílabas tónicas."
+        },
+        "morfologia_y_sintaxis": "Lengua sintética de tendencia aglutinante con orden de constituyentes pragmático (SOV / SVO). Amplio sistema de sufijos derivacionales, más de 40 clasificadores nominales y morfemas de evidencialidad obligatoria.",
+        "dialectos_principales": [
+          "Variedad del Alto Cuao y Autana (Venezuela)",
+          "Variedad del Río Manapiare",
+          "Variedad del Río Vichada y Caño Matavén (Colombia)"
+        ]
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Vichada",
+          "Guainía"
+        ],
+        "municipios_y_anm": [
+          "Cumaribo (Vichada)",
+          "Inírida (Guainía - asentamientos periurbanos y comunidades ribereñas)",
+          "Barrancominas (Guainía)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Orinoco (curso medio y raudales)",
+          "Caño Matavén",
+          "Río Vichada (curso bajo)",
+          "Río Guaviare (margen norte)",
+          "Río Atabapo (desembocadura)"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo de la Selva de Matavén (1.860.000 ha - corazón territorial multiétnico en Vichada)",
+          "Comunidades del Caño San Joaquín y caño Uva",
+          "Asentamientos de Inírida (barrio La Primavera y sectores periféricos)"
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Aproximadamente 1.400 a 1.900 personas registradas en el Censo DANE y censos comunitarios de Matavén.",
+        "poblacion_transfronteriza": "Más de 15.000 personas en el Estado Amazonas de Venezuela (cuencas de los ríos Autana, Cuao, Sipapo, Cataniapo y Manapiare). Población global superior a los 17.000 habitantes."
+      },
+      "cosmovision_y_mitologia": {
+        "teologia_de_wahari_y_buoka": {
+          "wahari_el_creador_terrenal": "Wahari (Wajari) es el héroe civilizador primordial que modeló el mundo habitado por los seres humanos. Dotado del poder de la palabra cantada y de la contención emocional, Wahari derribó el gigantesco Árbol Cósmico de los Frutos (el cerro Autana en la serranía venezolana), haciendo brotar de sus ramas cortadas las semillas cultivables de la yuca, el plátano, el maíz y el tabaco. Creó a las gentes Piaroa a partir del barro sagrado y les entregó las leyes de la convivencia armónica.",
+          "buoka_la_contraparte_caotica": "Hermano mayor o contraparte mítica de Wahari. Personifica la fuerza biológica desmedida, la pulsión sexual desbordada, el hambre voraz y la locura de los venenos. Mientras Wahari instituyó la agricultura y el autocontrol, Buoka inventó los tóxicos vegetales, los espíritus agresivos de la selva (marimá) y las enfermedades parasitarias. Las tensiones míticas entre Wahari y Buoka simbolizan la lucha perpetua entre la civilización pacífica y la violencia destructiva.",
+          "el_cerro_autana_wahari_kuwai": "El colosal tepuy de piedra con cuevas colgadas en el vacío es concebido como el tocón petrificado del Árbol de la Abundancia derribado por Wahari; santuario espiritual de máxima veneración."
+        },
+        "el_gran_ritual_del_warime": "La ceremonia colectiva más trascendental de la nación Wötjüja. Se celebra coincidiendo con la maduración masiva de los frutos silvestres de la selva (seje, manaca, cucurito). Hombres iniciados confeccionan y visten máscaras monumentales de corteza batida que personifican a los animales sagrados (el pecarí barbacha, el mono tití, la danta), danzando durante días al ritmo de trompetas de corteza enrollada para renovar la alianza entre la sociedad humana y los amos de la naturaleza."
+      },
+      "organizacion_social_y_etica_convivencial": {
+        "el_anarquismo_convivencial_piaroa": "Estudiado magistralmente por la antropóloga británica Joanna Overing. La sociedad Piaroa carece por completo de autoridades coercitivas, tribunales, castigos físicos o jerarquías autoritarias. Se rige por una filosofía moral de autonomía individual absoluta articulada con una estética de la reciprocidad voluntaria.",
+        "la_proscripcion_de_la_ira": "La ira o la cólera (i'de) es considerada la más letal de las locuras y una enfermedad espiritual infecciosa capaz de atraer a los monstruos de la selva. Cualquier manifestación de agresividad física o verbal es severamente repudiada socialmente. Quien siente ira debe aislarse en la selva o recurrir al chamán para ser purificado con soplos de tabaco.",
+        "la_vivienda_tradicional_itso_de": "La churuata cónica monumental construida con postes de maderas incorruptibles y techumbre helicoidal de hojas de palma de cucurito que desciende hasta el suelo. Es concebida como un microcosmos viviente: el poste central representa el eje del universo por donde descienden los espíritus celestes, y su espacio interno alberga a toda la parentela sin divisiones físicas de tabique, estimulando la deliberación continua y el diálogo suave."
+      },
+      "sistema_chamanico_y_medicina_del_yopo": {
+        "jerarquia_de_sabedores": [
+          {
+            "tipo": "Meñeruwá ('Dueño de los Cantos')",
+            "rol": "El médico tradicional y patriarca espiritual de la comunidad. Domina cientos de cantos metafóricos sagrados (meñe). Durante la noche, sentado en su banquillo tallado, canta sin interrupción durante 8 a 10 horas, proyectando un domo invisible de protección psíquica que envuelve a la aldea para repeler los ataques de los espíritus patógenos de la montaña."
+          },
+          {
+            "tipo": "Rüwá (Sabedor Visionario)",
+            "rol": "El maestro del trance enteogénico que inhala los polvos sagrados para abandonar el cuerpo físico, viajar a las cavernas de los tepuyes y negociar con los espíritus amos de la caza las almas de las presas necesarias para la subsistencia."
+          }
+        ],
+        "el_complejo_enteogenico": {
+          "yopo_nua": "Polvo visionario preparado a partir de semillas tostadas y pulverizadas de Anadenanthera peregrina (Leguminosae), mezcladas con cenizas alcalinas de corteza o caracoles fluviales. Contiene concentraciones elevadas de bufotenina (5-HO-DMT), 5-MeO-DMT y N,N-DMT. Su efecto disuelve la percepción ordinaria abriendo la visión a los mundos primordiales de Wahari.",
+          "tuipa": "Preparación chamánica en polvo compuesta de raíces y extractos botánicos que despeja la mente y limpia el canal nasal de impurezas antes del trance.",
+          "instrumentos_de_inhalacion": "Tubos bifurcados en forma de 'Y' o cañas simples talladas a partir de huesos largos (tibias) de aves mayores de la selva (paujil copete de piedra Crax alector o garzas de río), decoradas con motas de plumón blanco pegadas con cera de abeja melipona.",
+          "tabaco_en_rollo_y_chimo": "Hojas de tabaco negro curadas y amasadas en rollos densos amarrados con cortezas. El humo y el extracto de tabaco constituyen el vehículo purificador que enfría la agresividad y sella las heridas del alma."
+        }
+      },
+      "historia_contacto_y_resistencia": {
+        "defensa_de_la_cuenca_del_orinoco": "Los Piaroa mantuvieron una resistencia tenaz frente a las incursiones esclavistas de los Caribes en los siglos XVII y XVIII, refugiándose en los laberintos rocosos y valles interserranos de los ríos Cuao y Sipapo inaccesibles para las embarcaciones enemigas.",
+        "autoproteccion_frente_a_las_caucherais": "A diferencia de pueblos ribereños llanos que fueron exterminados en masa, los Piaroa limitaron el contacto con los frentes extractivos del caucho mediante un repliegue estratégico hacia las cabeceras boscosas.",
+        "el_resguardo_selva_de_mataven_hito_de_paz": "A finales del siglo XX, las comunidades Piaroa del Vichada se articularon con otros cinco pueblos indígenas (Sikuani, Puinave, Curripaco, Cubeo y Amorúa) en una histórica gesta política que culminó en 2003 con la unificación y titulación de la Selva de Matavén (más de 1.8 millones de hectáreas), consolidando un modelo autónomo de coexistencia interétnica y protección del bosque húmedo tropical."
+      },
+      "retos_actuales": {
+        "presencia_de_actores_armados_ilegales": "Tránsito de disidencias armadas en las rutas fluviales del Orinoco y Vichada que perturban la autonomía territorial y amenazan la vida de los líderes tradicionales.",
+        "debilitamiento_intergeneracional": "Atracción de los jóvenes hacia los centros poblados de Puerto Carreño e Inírida, con la consiguiente pérdida de los saberes profundos de los cantos chamánicos Meñe que demandan décadas de memorización rigurosa."
+      }
+    },
+    {
+      "id": "baniva",
+      "nombre_comun": "Baniva",
+      "autonimo": "Baniva / Kurrim ('Los que hablan Kurrim')",
+      "exonomos_y_variantes": [
+        "Baniva del Orinoco",
+        "Baniva de Maroa",
+        "Baniwa (término ambiguo)",
+        "Kurrim-aha",
+        "Abane (en registros del siglo XVIII)"
+      ],
+      "familia_linguistica": "Familia Arawak (Maipureano del Norte / Subgrupo Orinoco - Río Negro)",
+      "idioma_propio": {
+        "nombre": "Baniva de Maroa (Kurrim)",
+        "estado_vitalidad_unesco": "En peligro crítico de extinción (menos de 20 hablantes ancianos fluidos en la frontera colombo-venezolana); objeto de estudios fonológicos mayores por Esteban Emilio Mosonyi.",
+        "inventario_fonologico": {
+          "vocales": "4 vocales básicas /i, e, a, u/ con alargamiento vocálico y nasalización fonémica.",
+          "consonantes": "Oclusivas sordas /p, t, k/, africada /ts/, fricativas /s, h/, nasales /m, n/, líquida /ɾ/, aproximantes /w, j/.",
+          "tonalidad": "Sistema prosódico tonal de dos niveles de altura que cumple funciones gramaticales de distinción morfológica."
+        },
+        "morfologia_y_sintaxis": "Morfología basada en prefijos de persona inalienables compartidos con el tronco Arawak del Norte (nu-, pi-, li-, ju-, wa-, ji-, na-). Notoria afinidad estructural y léxica con el extinto Yavitero.",
+        "distincion_etnolinguistica_crucial": "La lingüística moderna y el ICANH subrayan que el 'Baniva de Maroa / Kurrim' es una lengua netamente distinta del 'Baniwa de Içana' (el cual es una variante del Kurripako/Walimanai). Aunque comparten la raíz etimológica Arawak, su inteligibilidad mutua es muy restringida."
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Guainía"
+        ],
+        "municipios_y_anm": [
+          "Inírida (comunidades periurbanas y ribereñas)",
+          "Pana Pana",
+          "San Felipe"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Atabapo (frontera binacional)",
+          "Río Guainía (curso alto)",
+          "Caño Pimichín y caño San Miguel",
+          "Río Tomo (cabeceras históricas)"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardos de los ríos Atabapo e Inírida",
+          "Resguardo El Paujil",
+          "Comunidades de Maroa (Venezuela) y San Fernando de Atabapo"
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Aproximadamente 250 a 450 personas autoreconocidas según el Censo DANE en Guainía.",
+        "poblacion_transfronteriza": "Alrededor de 1.800 personas censadas en el Municipio Autónomo Maroa del Estado Amazonas de Venezuela. Población total aproximada a los 2.200 habitantes."
+      },
+      "cosmovision_y_mitologia": {
+        "el_origen_en_las_lajas_del_atabapo": "La cosmovisión Baniva sitúa el origen primordial de sus linajes en las formaciones rocosas que bordean el río Atabapo. Mitos de transformación donde los héroes primordiales esculpieron los canales del río con varas de madera dura para permitir el paso de los peces de subienda.",
+        "el_respeto_a_los_espiritus_del_monte": "Creencia en amos espirituales dueños de los bancos de arena y los rebalses de agua negra; necesidad de realizar sahumerios de resina de carurú antes de levantar campamentos estacionales de pesca."
+      },
+      "organizacion_social": {
+        "estructura_familiar": "Históricamente organizados en clanes patrilineales exogámicos; con el intenso mestizaje y la desarticulación demográfica del siglo XX, la estructura se replegó a familias extensas nucleadas alrededor de los abuelos custodios del territorio.",
+        "practica_del_dabucuri": "Mantenimiento del Dabucurí como rito de intercambio solidario de pescado ahumado, manaca y mañoco con las comunidades Kurripako y Piaroa vecinas."
+      },
+      "tecnologias_ancestrales": {
+        "alfareria_de_budares": "Histórica maestría en el modelado de budares de arcilla refractaria mezclada con cenizas de caraipe (corteza de árbol rica en sílice) que impedía la fisura por calor extremo.",
+        "elaboracion_de_manoco": "Productores afamados de mañoco fino y casabe blanco de alta pureza comercializado en los puertos del Atabapo."
+      },
+      "historia_contacto_y_resistencia": {
+        "el_istmo_de_pimichin_y_el_paso_de_las_canoas": "El territorio Baniva en torno al río Atabapo y caño Pimichín fue el eje neurálgico del paso de canoas entre las cuencas del Orinoco y el Amazonas desde tiempos coloniales. Los Baniva fueron forzados como remeros, bogas y cargadores de embarcaciones a través de la selva por exploradores como Alexander von Humboldt y colonizadores hispanos.",
+        "el_yugo_de_tomas_funes": "Maroa y el alto Guainía fueron zonas de cacería humana durante la dictadura de Tomás Funes (1913-1921), lo que provocó una drástica caída demográfica y la dispersión clandestina de familias Baniva hacia la margen colombiana del Guainía.",
+        "resistencia_cultural": "A pesar de la pérdida casi total de su lengua viva, los ancianos han liderado talleres de reconstrucción de la memoria toponímica y cantos tradicionales junto a lingüistas del Instituto Caro y Cuervo."
+      },
+      "retos_actuales": {
+        "extincion_linguistica_inminente": "Urgencia extrema de implementar semilleros de memoria fonética y registro en audio/video con los últimos sabedores octogenarios que retienen el habla fluida.",
+        "impacto_minero_fronterizo": "Contaminación por dragas mineras en el curso binacional del río Atabapo que destruye los lechos arenosos de desove."
+      }
+    },
+    {
+      "id": "yavitero",
+      "nombre_comun": "Yavitero",
+      "autonimo": "Pareni / Yavitero ('Gente de la sabana del río Yavita')",
+      "exonomos_y_variantes": [
+        "Yavitero",
+        "Yabiteros",
+        "Parene",
+        "Gente de Yavita"
+      ],
+      "familia_linguistica": "Familia Arawak (Maipureano del Norte / Rama Orinoco - Río Negro)",
+      "idioma_propio": {
+        "nombre": "Yavitero (Pareni)",
+        "estado_vitalidad_unesco": "Lengua extinta en su uso comunicativo cotidiano (fallecimiento de su última hablante fluida documentada, doña Hortensia, en 1984); preservada en corpus gramaticales, fonotecas de archivo y memorias léxicas familiares.",
+        "investigacion_y_rescate_de_mosonyi": "El eminente lingüista venezolano Jorge Carlos Mosonyi dedicó su tesis doctoral de 1987 ('El idioma yavitero: ensayo de gramática y diccionario') al rescate sistemático de esta lengua, trabajando durante años con los últimos ancianos en Yavita y Puerto Ayacucho, labor complementada por Esteban Emilio Mosonyi en el 'Manual de Lenguas Indígenas de Venezuela' (2000).",
+        "inventario_fonologico_documentado": {
+          "vocales": "4 timbres vocálicos /i, e, a, u/ con correlatos largos /iː, eː, aː, uː/ y procesos de armonía vocálica.",
+          "consonantes": "Oclusivas sordas /p, t, k/, fricativa glotal /h/, africada /ts/, nasales /m, n, ɲ/, líquida /ɾ/, aproximantes /w, j/.",
+          "rasgo_arcaico": "El Yavitero preservaba formas fonológicas extraordinariamente arcaicas del Proto-Arawak, sirviendo de piedra angular para la reconstrucción de la filogenia de las lenguas amazónicas del norte."
+        },
+        "morfologia": "Estricta marcación de posesión inalienable mediante prefijos de persona (nu-, pi-, li-, ru-, wa-, i-, na-); sistema de sufijos nominalizadores y deícticos de distancia."
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Guainía"
+        ],
+        "municipios_y_anm": [
+          "Inírida (descendientes radicados en resguardos periurbanos y del río Guainía)",
+          "San Felipe"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Yavita y río Temi (afluentes del Atabapo en la margen oriental)",
+          "Caño Pimichín (afluente del río Guainía)",
+          "Río Atabapo y río Guainía"
+        ],
+        "resguardos_emblematicos": [
+          "Asentamientos ancestrales de Yavita y Pimichín",
+          "Resguardo Indígena de Inírida (comunidades pluriétnicas de acogida)"
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Población que se autorreconoce como descendiente del pueblo Yavitero estimada entre 80 y 160 personas en Guainía.",
+        "poblacion_transfronteriza": "Aproximadamente 300 a 500 personas en la localidad histórica de Yavita y Puerto Ayacucho (Venezuela). Población total de linaje superior a las 500 personas."
+      },
+      "etnohistoria_del_camino_de_yavita_a_pimichin": {
+        "el_varador_estrategico": "El 'Camino de Yavita a Pimichín' (un istmo selvático terrestre de aproximadamente 14 kilómetros que separa el río Temi/Atabapo del río Guainía) constituyó durante siglos la arteria geopolítica y de transporte más crucial de América del Sur septentrional: el nudo que une la cuenca del Orinoco con la cuenca del Amazonas sin necesidad de navegar el riesgoso brazo Casiquiare.",
+        "los_indigenas_porteadores": "Desde el siglo XVIII, las autoridades coloniales españolas y posteriormente republicanas sometieron a la población Yavitero a trabajar como cargadores forzados y porteadores de carga pesada. Eran los encargados de transportar sobre sus espaldas fardos de mercancías y de arrastrar pesadas canoas de madera (curiaras y bongos) sobre troncos redondeados a través del lodazal selvático.",
+        "el_testimonio_de_humboldt_1800": "En mayo de 1800, el sabio Alexander von Humboldt y Aimé Bonpland atravesaron este varador con la ayuda directa de los indígenas de Yavita, arrastrando su canoa por tierra firme durante varios días para ingresar triunfantes a las aguas negras del Guainía y Río Negro, dejando testimonios admirados sobre la pericia fluvial y la resistencia física de los Yavitero."
+      },
+      "memoria_cultural_y_legado": {
+        "tradicion_oral": "Los descendientes conservan la memoria de los cantos de boga, las leyendas sobre las sirenas de las aguas negras (Iuara) y el conocimiento de maderas de monte para la construcción de remos y canaletes ligeros.",
+        "agroecologia": "Prácticas de manejo de chagras en suelos arenosos ácidos y domesticación de variedades locales de yuca amarga, pijiguao (chontaduro) y manaca."
+      },
+      "retos_actuales": {
+        "perdida_de_la_lengua_materna": "El desafío histórico de mantener viva la identidad de un pueblo cuya lengua formal se silenció en el plano cotidiano, promoviendo la apropiación de las grabaciones y vocabularios de Mosonyi en las escuelas etnoeducativas.",
+        "reparacion_historica": "Visibilización del rol histórico de los Yavitero en la articulación fluvial del país frente a siglos de servidumbre forzada."
+      }
+    },
+    {
+      "id": "guarequena",
+      "nombre_comun": "Guarequena (Warekena)",
+      "autonimo": "Walé:kena ('Nietos del Picure' / Linaje sagrado del roedor mítico Walé)",
+      "exonomos_y_variantes": [
+        "Warekena",
+        "Guarequena",
+        "Uarequena",
+        "Arequena",
+        "Warekena del Xié"
+      ],
+      "familia_linguistica": "Familia Arawak (Maipureano del Norte / Rama Río Negro - Guainía)",
+      "idioma_propio": {
+        "nombre": "Warekena (Walé:kena)",
+        "estado_vitalidad_unesco": "En peligro de extinción en Colombia; vulnerable a moderadamente activo en las aldeas del río Xié en Brasil; documentado extensamente por la lingüista Alexandra Y. Aikhenvald y el antropólogo Omar González-Ñáñez.",
+        "inventario_fonologico": {
+          "vocales": "5 timbres vocálicos /i, e, a, o, u/ con nasalización fonémica y alargamiento.",
+          "consonantes": "Oclusivas sordas y aspiradas /p, pʰ, t, tʰ, k, kʰ/, africadas /ts, tʃ/, sibilantes /s, h/, nasales /m, n/, vibrante simple /ɾ/, semivocales /w, j/.",
+          "complejidad_morfofonologica": "Procesos morfofonológicos muy productivos de elisión vocálica en juntura de morfemas y asimilación de prefijos pronominales."
+        },
+        "morfologia_y_sintaxis": "Lengua aglutinante polisintética. Prefijos pronominales obligatorios (nu-, pi-, ri-, du-, wa-, i-, na-). Notorio por su distinción morfológica de género gramatical femenino (du-) frente a masculino (ri-) en la tercera persona del singular.",
+        "distincion_entre_warekena_viejo_y_del_xie": "Aikhenvald demostró que el habla contemporánea del río Xié es estructuralmente un dialecto Arawak emparentado estrechamente con el continuo Baniwa/Kurripako, mientras que el 'Warekena Viejo' (lengua ancestral ya extinta) presentaba rasgos más afines al Mandahuaca."
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Guainía"
+        ],
+        "municipios_y_anm": [
+          "San Felipe (Guainía - orillas del río Guainía frente a Venezuela)",
+          "Puerto Colombia",
+          "Inírida"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Guainía (curso medio y bajo)",
+          "Caño San Miguel (afluente estratégico de la margen occidental)",
+          "Río Xié (en territorio brasileño contiguo)",
+          "Río Negro"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardo Indígena de San Felipe y Caño San Miguel",
+          "Aldea de Guzmán Blanco / Wayánapi (en la orilla venezolana del Guainía)",
+          "Comunidades del Río Xié (Brasil - Tierra Indígena Alto Rio Negro)"
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Aproximadamente 380 a 550 personas censadas en el departamento de Guainía (San Felipe y corregimientos aledaños).",
+        "poblacion_transfronteriza": "Cerca de 600 personas en Venezuela (Guzmán Blanco / Maroa) y alrededor de 1.100 en Brasil (Río Xié). Población étnica global estimada en más de 2.200 habitantes."
+      },
+      "cosmovision_y_mitologia": {
+        "el_mito_del_picure_wale": "El etnónimo Walé:kena ('nietos del picure') condensa su mito fundacional: el picure (Dasyprocta punctata), roedor silvestre célebre por su inteligencia y rapidez, fue el animal primordial que descubrió el fuego sagrado oculto en el tronco de un árbol y sustrajo las primeras estacas de yuca brava de la maloca de los demonios primordiales, entregándoselas a los humanos para que no murieran de hambre. Los Guarequena se consideran descendientes de este linaje benefactor.",
+        "el_culto_y_danzas_de_yurupary": "Comparten con los Kurripako el respeto ceremonial a las flautas de Yurupary; las danzas rituales marcan la transición de los adolescentes hacia la vida adulta mediante cantos en los que se recitan las genealogías fluviales del río Xié y Guainía."
+      },
+      "organizacion_social_y_modos_de_vida": {
+        "estructura_de_linajes": "Clanes patrilineales exogámicos con residencia virilocal. Alianzas matrimoniales constantes con comunidades Kurripako y Baré de la cuenca.",
+        "manejo_agroforestal": "Agricultura itinerante de roza y quema en laderas aluviales; cultivo de más de una decena de variedades de yuca brava adaptadas a suelos ácidos y pobres en fósforo; recolección de frutos de palmas de monte (seje Oenocarpus bataua, manaca Euterpe precatoria, chiquichiqui Leopoldinia piassaba).",
+        "artesania": "Tejido de balayes de arumá (Ischnosiphon arouma) con diseños geométricos laberínticos y confección de chinchorros de fibra de cumare."
+      },
+      "historia_contacto_y_resistencia": {
+        "frontera_entre_tres_imperios": "El territorio Guarequena en el río Guainía y Xié fue escenario de continuas disputas de demarcación y correrías militares entre portugueses, españoles y republicanos durante los siglos XVIII y XIX. Los caciques Guarequena aprendieron a negociar su autonomía moviéndose fluidamente entre las tres fronteras para eludir castigos fiscales o enrolamientos forzados.",
+        "el_impacto_de_las_misiones_salesianas": "En el siglo XX, la presencia de misiones salesianas en el lado brasileño y de Nuevas Tribus en el lado colombiano introdujo cambios en las pautas de asentamiento, pero los ancianos preservaron la memoria oral y los saberes de la selva.",
+        "resistencia_minera": "En las últimas décadas, la comunidad de San Felipe y caño San Miguel ha expulsado en reiteradas ocasiones a mineros furtivos que intentaban instalar dragas de succión en sus caños comunales."
+      },
+      "retos_actuales": {
+        "presion_minera_y_grupos_armados": "Corredores de movilidad fluvial utilizados por grupos al margen de la ley que perturban la seguridad alimentaria y la cacería de monte.",
+        "fortalecimiento_etnoeducativo": "Implementación de materiales pedagógicos bilingües en las escuelas de San Felipe para evitar que los niños abandonen el uso del Walé:kena."
+      }
+    },
+    {
+      "id": "bare",
+      "nombre_comun": "Baré",
+      "autonimo": "Baré / Barawana / Balé",
+      "exonomos_y_variantes": [
+        "Baré",
+        "Barauna",
+        "Barawana",
+        "Indios del Casiquiare",
+        "Rionegrinos"
+      ],
+      "familia_linguistica": "Familia Arawak (Maipureano del Norte / Rama Río Negro - Casiquiare)",
+      "idioma_propio": {
+        "nombre": "Baré (Barawana)",
+        "estado_vitalidad_unesco": "Lengua en estado terminal / extinta como idioma de comunicación cotidiana (fallecimiento de los últimos hablantes ancianos en la década de 1990 en Venezuela y Brasil, entre ellos don Candelário da Silva documentado por Aikhenvald); proceso contemporáneo de recuperación de la identidad y léxico en comunidades de base.",
+        "monografia_de_alexandra_aikhenvald": "La lingüista Alexandra Y. Aikhenvald publicó en 1995 la obra de referencia mundial 'Baré' (Lincom Europa / LW/Materials 100), logrando un rescate morfosintáctico exhaustivo a partir de grabaciones con los últimos hablantes sobrevivientes antes de su desaparición física.",
+        "inventario_fonologico_documentado": {
+          "vocales": "4 timbres vocálicos /i, e, a, u/.",
+          "consonantes": "Oclusivas sordas y sonoras /p, b, t, d, k, g/ (rasgo altamente atípico y distintivo entre las lenguas Arawak de la región), africada /tʃ/, fricativas /s, h/, nasales /m, n/, líquida vibrante /r/ y lateral /l/, aproximantes /w, j/.",
+          "contacto_historico_con_nheengatu": "Debido a la influencia de los misioneros carmelitas y comerciantes portugueses en el siglo XVIII y XIX, el pueblo Baré experimentó una temprana sustitución lingüística hacia el Nheengatu (Língua Geral Amazônica / Tupi-Guarani simplificado), que sirvió como lingua franca regional en el Río Negro durante más de un siglo antes de la adopción del castellano y portugués."
+        },
+        "morfologia": "Uso de prefijos pronominales inalienables (nu-, bi-, i-, i-nu-, wa-, i-, na-); marcación de aspecto y modo verbal mediante una compleja cadena de sufijos."
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Guainía"
+        ],
+        "municipios_y_anm": [
+          "Inírida (comunidades periurbanas y cabildos urbanos)",
+          "San Felipe",
+          "Puerto Colombia",
+          "La Guadalupe"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Negro (tramo trinacional de Cucuí / San Carlos)",
+          "Brazo Casiquiare (desembocadura)",
+          "Río Guainía (curso bajo)",
+          "Caño San Miguel"
+        ],
+        "resguardos_emblematicos": [
+          "Resguardos de la zona de San Felipe y La Guadalupe",
+          "San Carlos de Río Negro y Santa Rosa de Amanadona (Venezuela)",
+          "Tierra Indígena Médio e Alto Rio Negro (Brasil)"
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Aproximadamente 320 a 500 personas autoreconocidas según el DANE y cabildos locales en Guainía.",
+        "poblacion_transfronteriza": "Más de 3.500 personas en Venezuela (Municipio Río Negro) y cerca de 11.000 personas autoreconocidas como Baré en Brasil (FOIRN). Población étnica total superior a los 15.000 habitantes."
+      },
+      "cosmovision_y_memoria": {
+        "el_rio_negro_como_camino_ancestral": "Para los Baré, las aguas oscuras del Río Negro y el prodigio geográfico del brazo Casiquiare (el canal natural que conecta dos de las mayores cuencas del planeta) son el cuerpo místico de una gran serpiente que nutrió a los seres humanos. Conservan mitos sobre los 'encantos' acuáticos y espíritus que habitan en los remansos profundos.",
+        "identidad_rionegrina": "A pesar de la pérdida lingüística del Baré clásico, el pueblo construyó una identidad biocultural rionegrina sólida: conocimiento experto de las corrientes fluviales, botánica curativa de la selva inundable y cantos tradicionales de Dabucurí adaptados en Nheengatu."
+      },
+      "organizacion_social_y_subsistencia": {
+        "pesca_fluvial_especializada": "Los Baré son considerados maestros pescadores en aguas negras: diestros en el arponeo nocturno de peces payara, pavón y cachama a la luz de hachones o linternas, y en el tendido de mallas y trampas cacure en los rebalses de igapó.",
+        "procesamiento_de_fariña": "Grandes productores de mañoco y casabe blanco, abasteciendo históricamente a los poblados y puestos de avanzada del Río Negro.",
+        "organizacion_comunitaria": "Estructurados en cabildos indígenas en Colombia, afiliados a ASOCRIGUA, y fuertemente articulados en Brasil a través de la FOIRN (Federação das Organizações Indígenas do Rio Negro)."
+      },
+      "historia_contacto_y_resistencia": {
+        "epicentro_del_genocidio_de_tomas_funes_1913_1921": "San Carlos de Río Negro, corazón del territorio Baré, fue el centro neurálgico del terror sangriento impuesto por el coronel venezolano Tomás Funes durante el auge de las gomas elásticas (caucho y balata). Funes asesinó al gobernador legítimo Roberto Pulido y durante ocho años fusiló a más de 400 personas, esclavizó a familias Baré enteras en las barracas caucheras del Casiquiare y exterminó a líderes indígenas que se negaron a entregar a sus hijos como peones. El terror culminó en 1921 cuando el general revolucionario Emilio Arévalo Cedeño capturó la plaza y fusiló sumariamente a Funes en el paredón de San Carlos, evento recordado por los abuelos como el fin de la pesadilla.",
+        "resurgimiento_etnico_contemporaneo": "En las últimas dos décadas, el pueblo Baré ha liderado uno de los procesos de reafirmación étnica y organizativa más potentes de la cuenca amazónica, demostrando que la identidad originaria y los derechos territoriales persisten con vigor a pesar del silenciamiento lingüístico forzado."
+      },
+      "retos_actuales": {
+        "mineria_ilegal_y_dragas_transfronterizas": "Contaminación por mercurio y dragas que operan en los límites de Colombia, Brasil y Venezuela en el área de la Piedra del Cocuy y San Gabriel.",
+        "articulacion_trinacional": "Necesidad de fortalecer mesas binacionales y trinacionales de salud indígena y vigilancia ambiental fluvial."
+      }
+    },
+    {
+      "id": "mapayerri",
+      "nombre_comun": "Mapayerri",
+      "autonimo": "Mapayerri (Mapayeri / Mapaye)",
+      "exonomos_y_variantes": [
+        "Mapayeri",
+        "Mapaye",
+        "Indígenas del río Tomo y Tuparro",
+        "Nómadas de Nacuanëdorro"
+      ],
+      "familia_linguistica": "Familia Arawak (Maipureano) con fuerte convergencia histórica y sociolingüística con la Familia Guahibana (Sikuani)",
+      "idioma_propio": {
+        "nombre": "Mapayerri",
+        "estado_vitalidad_unesco": "En peligro inminente de extinción / Situación crítica extrema; pueblo con menos de 85 integrantes sobrevivientes; objeto de investigaciones emergentes de documentación lingüística y rescate de la tradición oral por parte del Instituto Caro y Cuervo y lingüistas colombianos.",
+        "rasgos_sociolinguisticos": "Bilingüismo forzado con el idioma Sikuani debido a la convivencia obligada y el desplazamiento forzado; los mayores conservan el léxico originario de nombres de plantas, animales, herramientas de caza y toponimia de los ríos Tomo y Tuparro.",
+        "afinidad_filogenetica": "Considerado históricamente por la lingüística comparada como un enclave o dialecto de la familia Arawak que habitó el interior selvático entre el Vichada y Guainía, sometido a un prolongado proceso de contacto y préstamos intensivos con los grupos cazadores de la familia Guahibana."
+      },
+      "territorio_y_geografia": {
+        "departamentos_colombia": [
+          "Vichada",
+          "Guainía"
+        ],
+        "municipios_y_anm": [
+          "Cumaribo (Vichada - sector de Nacuanëdorro, suroriente del municipio)",
+          "Barrancominas (Guainía - cabeceras y límites selváticos)",
+          "Inírida"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Tomo (curso medio y alto)",
+          "Río Tuparro (cabeceras en el interior selvático)",
+          "Caño Matavén (franja de cabeceras)",
+          "Caño Bocón (curso norte)"
+        ],
+        "territorio_ancestral_y_solicitud_de_resguardo": [
+          "Sector ancestral de Nacuanëdorro (traslape ecológico con el Parque Nacional Natural El Tuparro)",
+          "Solicitud de constitución del Resguardo Indígena Mapayerri ante la Agencia Nacional de Tierras (ANT) en curso y amparada por medidas cautelares judiciales de Restitución de Tierras."
+        ]
+      },
+      "demografia_censal": {
+        "poblacion_colombia": "Población extremadamente reducida: entre 70 y 85 personas registradas (aproximadamente 15 a 18 núcleos familiares nucleares). Es una de las naciones indígenas con menor cantidad de individuos de toda Colombia.",
+        "situacion_demografica": "Graves problemas de endogamia forzada, altísima mortalidad infantil por enfermedades prevenibles (infecciones respiratorias agudas y desnutrición) y extrema vulnerabilidad biológica frente a agentes infecciosos externos."
+      },
+      "modo_de_vida_tradicional_y_etnohistoria": {
+        "pueblo_nomada_de_selva_y_sabana": "Hasta las últimas décadas del siglo XX, los Mapayerri fueron un pueblo primordialmente nómada y cazador-recolector del interior selvático y los bosques de galería interfluviales, desplazándose libremente a través de las cuencas no navegables entre Colombia y los llanos del sur venezolano sin establecer poblados fijos.",
+        "tecnologia_y_subsistencia_ancestral": "Cazadores diestros con cerbatana y dardos envenenados con curare, arco y flechas de caña brava; recolección estacional de frutos silvestres (moriche, seje, cucurito), miel de abejas nativas sin aguijón (meliponas) y tubérculos silvestres del bosque; pesca en charcas temporales con barbasco vegetal.",
+        "vivienda_itinerante": "Paravientos ligeros o tapavientos semicirculares construidos con hojas de palma de platanillo tejidas en minutos sobre varas encorvadas, abandonados al agotar los recursos de caza de la zona."
+      },
+      "impacto_del_conflicto_y_sedentarizacion_forzada": {
+        "el_fin_del_nomadismo": "A partir de la década de 1990 y los primeros años de la década de 2000, la violenta colonización del interior de Cumaribo por cultivos ilícitos de hoja de coca, la llegada de frentes guerrilleros de las FARC, grupos paramilitares y colonos armados cercaron los corredores tradicionales de movilidad nómada. Los Mapayerri sufrieron amenazas directas, campos minados en sus trochas de cacería y el despojo de sus fuentes de agua.",
+        "sedentarizacion_precaria_en_nacuanedorro": "Obligados a replegarse y abandonar su trashumancia, el grupo se asentó precariamente en un punto fijo en Nacuanëdorro (Cumaribo), debiendo improvisar faenas agrícolas de chagra sedentaria para las que carecían de experiencia tecnológica suficiente, lo que desató episodios de hambre crónica."
+      },
+      "marco_juridico_y_proteccion_constitucional": {
+        "auto_004_de_2009_de_la_corte_constitucional": "La Honorable Corte Constitucional de Colombia declaró formalmente al pueblo Mapayerri en inminente riesgo de exterminio físico y cultural como consecuencia del conflicto armado interno y el abandono estructural del Estado, ordenando al Gobierno Nacional el diseño urgente de un 'Plan de Salvaguarda Étnica'.",
+        "medidas_cautelares_de_restitucion_de_tierras": "El Juzgado Primero Civil del Circuito Especializado en Restitución de Tierras de Villavicencio expidió históricas medidas cautelares protegiendo el territorio de Nacuanëdorro frente a terceros ocupantes y ordenando a la Agencia Nacional de Tierras (ANT) culminar el procedimiento de titulación definitiva del resguardo para evitar la extinción total del pueblo."
+      },
+      "retos_actuales": {
+        "supervivencia_fisica_inmediata": "Garantizar brigadas médicas permanentes de atención primaria, agua potable y seguridad alimentaria nutricional para evitar el fallecimiento de infantes y ancianos.",
+        "titulacion_definitiva_del_territorio": "Entrega material del título colectivo de resguardo en Nacuanëdorro con delimitación que respete su traslape ambiental con el PNN El Tuparro.",
+        "registro_y_revitalizacion_de_su_memoria": "Acompañamiento etnolingüístico no invasivo para registrar y proteger el léxico propio y los relatos cosmogónicos de los últimos sabedores sobrevivientes."
+      }
+    }
+  ],
+  "chamanismo_y_medicina_tradicional_piaroa_wotjuja": {
+    "teologia_wahari_y_buoka": {
+      "la_creacion_del_cosmos": "La teología Wötjüja concibe la creación no como un acto mágico instantáneo de benevolencia, sino como un proceso titánico y peligroso de destilación de sustancias espirituales cósmicas. El universo preexistente estaba saturado de energías feroces, desórdenes y apetitos monstruosos encarnados en gigantes y deidades primordiales.",
+      "la_sabiduria_de_wahari": "Wahari purificó el mundo mediante el canto sagrado y el autocontrol ético. Para dar vida a los seres humanos, debió luchar contra sus propios impulsos y burlar las trampas mortales sembradas por Buoka. Wahari representa el principio del conocimiento que cuida la vida: inventó el budare para transformar la yuca venenosa en alimento dulce, enseñó la fabricación de la cerbatana para cazar sin derramar sangre innecesaria y legó las reglas de parentesco que evitan el incesto.",
+      "la_leccion_moral_de_buoka": "Buoka, con su glotonería y desobediencia a los tabúes cósmicos, es la advertencia encarnada de lo que ocurre cuando el ser humano se deja arrastrar por la desmesura, la avaricia o el rencor. El sabedor Wötjüja no adora a los héroes míticos como dioses inmaculados; medita sobre sus contradicciones para comprender las flaquezas de la naturaleza humana."
+    },
+    "complejo_enteogenico_yopo_tuipa_tabaco": {
+      "alquimia_del_yopo": {
+        "semillas_sagradas": "Las vainas leguminosas del árbol silvestre de Yopo (Anadenanthera peregrina) se cosechan durante la estación seca en las orillas de sabana. Las semillas se tuestan delicadamente sobre comales de barro hasta que la cutícula exterior estalla.",
+        "mezcla_alcalina": "Se pelan las semillas y se muelen en un mortero cóncavo de madera dura junto a una pasta blanca obtenida al calcinar al fuego conchas de caracoles caracolarios fluviales (Pomacea urceus / Ampullariidae) y cenizas de corteza vegetal. La cal viva resultante (óxido/hidróxido de calcio) alcaliniza la mezcla, transformando los alcaloides de triptamina en bases libres hidrosolubles que se absorben instantáneamente a través de la mucosa respiratoria.",
+        "alcaloides_activos": "Elevadas concentraciones de bufotenina (5-hidroxi-dimetiltriptamina), 5-metoxi-dimetiltriptamina (5-MeO-DMT) y N,N-dimetiltriptamina (DMT). Produce un viaje visionario vertiginoso caracterizado por intensas geometrías luminosas fractales, sensación de disolución del ego corporal y apertura perceptual a las dimensiones espirituales invisibles de la selva."
+      },
+      "el_tuipa_y_el_tabaco_purificador": {
+        "tuipa": "Sustancia pulverulenta aromática elaborada con raíces de herbáceas sagradas del bosque que se aspira antes de la ceremonia para despejar los senos paranasales, inducir una ligera analgesia y predisponer el espíritu a la visión.",
+        "el_tabaco_sagrado_wape": "El tabaco (Nicotiana rustica) no se utiliza con fines recreativos de adicción, sino como vehículo sacramental. El Meñeruwá consume chimó (pasta densa de tabaco cocido) o inhala humo de tabaco puro en rollo, soplando ráfagas humeantes sobre la coronilla, el pecho y las sienes del enfermo para enfriar la fiebre espiritual provocada por los dardos invisibles de la selva."
+      },
+      "el_aparato_de_inhalacion": "Tubos ceremoniales de inhalación confeccionados con huesos largos y pulidos de aves nobles del bosque (huesos alares o patas de paujil Crax alector o garza real Ardea cocoi), ensamblados con cera negra de abejas meliponas silvestres y decorados con anillos de plumas iridiscentes de tucán. La inhalación puede ser efectuada por autosoplado o mediante el soplado recíproco de un compañero de trance que envía una ráfaga súbita de polvo al conducto nasal del chamán."
+    },
+    "jerarquia_chamanica_meneruwa_y_ruwa": {
+      "el_meneruwa_guardian_de_la_vida": "El Meñeruwá ('Dueño de los Cantos') es la figura espiritual más reverenciada. Su poder radica en la palabra poética codificada: conoce de memoria ciclos míticos que duran noches enteras. Al cantar, modula frecuencias sonoras que 'enfrían' las emanaciones ponzoñosas del bosque y curan a los niños enfermos de diarrea o fiebres agudas provocadas por la transgresión involuntaria de un cazador.",
+      "el_ruwa_viajero_astral": "El Rüwá es el chamán visionario que emprende el vuelo extático hacia las moradas invisibles situadas en las cumbres escarpadas de los cerros de granito (itso'de celestiales). Allí parlamenta con los 'Amos de los Peces' y 'Dueños de la Caza', pidiendo permiso para que la comunidad pueda alimentarse y ofreciendo a cambio cantos y oraciones de agradecimiento."
+    },
+    "etica_de_la_convivencia_y_control_de_la_ira": {
+      "filosofia_moral": "El chamanismo Piaroa no está disociado de su vida política: es el garante de la convivencia pacífica. Joanna Overing documentó que entre los Piaroa el ideal supremo del ser humano no es el heroísmo bélico ni la acumulación de riquezas, sino el estado de 'tranquilidad, amabilidad y buen humor' (titeje).",
+      "la_violencia_como_aberracion": "No existen guerras de agresión interétnica en la tradición Piaroa. El ejercicio de la violencia física o la manifestación de cólera (i'de) es conceptuado como una locura autodestructiva. Quien no puede dominar su ira es considerado un peligro público, pues su furia atrae hacia la maloca a los monstruos carnívoros de Buoka."
+    }
+  },
+  "impacto_socioambiental_ecologia_y_gobernanza": {
+    "mineria_ilegal_aluvion_oro_coltan": {
+      "mineria_de_aluvion_en_rios_guainia_inirida_y_atabapo": {
+        "maquinaria_utilizada": "Flotillas de barcazas extractivas de gran calado ('dragas' y 'dragones') equipadas con bombas de succión de 8 a 12 pulgadas, motores diésel de alta potencia y tolvas de lavado aluvial continuo que operan en los cauces del río Inírida, caño Bocón, río Guainía y río Atabapo.",
+        "impacto_geomorfologico": "Succión masiva de sedimentos del lecho del río que desestabiliza las riberas boscosas (bosques de rebalse e igapó), enturbia catastróficamente las aguas negras cristalinas impidiendo la penetración de la luz solar para la fotosíntesis del fitoplancton, y destruye los refugios rocosos naturales donde desovan los peces ornamentales y de consumo."
+      },
+      "extraccion_ilegal_de_coltan_y_tierras_raras": {
+        "contexto_geologico": "Las formaciones precámbricas del Escudo Guayanés albergan yacimientos estratigráficos de arenas negras de columbita-tantalita (coltán), ricas en niobio, tantalio, titanio y minerales radiactivos como torio y uranio.",
+        "focos_de_explotacion": "Canteras a cielo abierto excavadas clandestinamente en la Serranía del Naquén, en el corazón del Parque Nacional Natural Puinawai y en las cabeceras protegidas del Resguardo Cuenca Alta del Río Inírida.",
+        "actores_criminales": "Tráfico ilegal transnacional controlado por estructuras armadas ilegales (disidencias de las FARC frentes 16 y Acacio Medina, y miembros del ELN), que cobran tributos extorsivos por gramo extraído y transportan los minerales en avionetas y lanchas rápidas hacia Venezuela y Brasil con destino al mercado tecnológico global."
+      }
+    },
+    "toxicologia_y_contaminacion_por_mercurio": {
+      "quimica_ambiental_en_aguas_negras": {
+        "proceso_de_metilacion_acelerada": "El mercurio metálico inorgánico (Hg0) utilizado para amalgamar el oro aluvial es vertido en grandes volúmenes a las corrientes de agua. En los ecosistemas de aguas negras ácidas (pH entre 4.0 y 5.2), cálidas (26 a 30 °C), con baja concentración de oxígeno disuelto y ricas en materia orgánica disuelta (ácidos húmicos y fúlvicos), las bacterias anaerobias reductoras de sulfato metilan el mercurio a una velocidad cinco veces superior a la de los ríos andinos de aguas blancas.",
+        "formacion_de_metilmercurio": "La molécula resultante, el catión monometilmercurio (CH3Hg+), es un compuesto organometálico lipofílico altamente tóxico que se une irreversiblemente a los grupos sulfhidrilo de las proteínas biológicas."
+      },
+      "bioacumulacion_y_biomagnificacion_trofica": {
+        "mecanismo": "El metilmercurio no se metaboliza ni se excreta eficientemente: asciende y se multiplica exponencialmente a través de cada eslabón de la cadena trófica acuática (fitoplancton -> zooplancton -> peces herbívoros/detritívoros -> peces carnívoros medianos -> grandes peces piscívoros depredadores tope).",
+        "especies_de_consumo_con_niveles_alarmantes": [
+          {
+            "especie": "Valentón / Bagre Lechero (Brachyplatystoma filamentosum / B. vaillantii)",
+            "nivel_trofico": "Piscívoro depredador tope de gran porte",
+            "concentracion_mercurio_detectada": "1.8 a 3.8 mg/kg (ppm) de mercurio en tejido muscular fresco (entre 3 y 7 veces por encima del límite máximo permisible de la OMS fijado en 0.5 mg/kg)."
+          },
+          {
+            "especie": "Bagre Rayado / Pintadillo (Pseudoplatystoma punctifer)",
+            "nivel_trofico": "Piscívoro bentónico superior",
+            "concentracion_mercurio_detectada": "1.2 a 2.5 mg/kg de mercurio en músculo."
+          },
+          {
+            "especie": "Piraña Caribe / Piraña Negra (Serrasalmus rhombeus / S. manueli)",
+            "nivel_trofico": "Carnívoro depredador y carroñero",
+            "concentracion_mercurio_detectada": "1.4 a 2.4 mg/kg de mercurio."
+          },
+          {
+            "especie": "Pavón Real (Cichla temensis)",
+            "nivel_trofico": "Piscívoro voraz diurno",
+            "concentracion_mercurio_detectada": "0.9 a 1.9 mg/kg de mercurio."
+          }
+        ]
+      },
+      "impacto_en_la_salud_humana_de_las_poblaciones_indigenas": {
+        "vulnerabilidad_dietaria": "A diferencia de las poblaciones urbanas que consumen pescado de manera ocasional, los pueblos ribereños de Guainía (Kurripako, Puinave, Piaroa, Warekena) tienen en el pescado fluvial su única fuente de proteína diaria (ingesta promedio de 300 a 500 gramos diarios por persona).",
+        "sintomatologia_clinica_y_neurotoxicidad": "Estudios epidemiológicos del Instituto Nacional de Salud (INS), Universidad Nacional y SINCHI han documentado concentraciones de mercurio en muestras de cabello de hasta 15 a 45 µg/g (cuando el límite de seguridad de la OMS es de 2 µg/g). Provoca un cuadro crónico de intoxicación por mercurio (síndrome similar a la Enfermedad de Minamata): parestesias periféricas (adormecimiento de labios y extremidades), pérdida concéntrica del campo visual ('visión tubular'), temblores intencionales, ataxia cerebelosa y deterioro cognitivo irreversible.",
+        "teratogenia_y_dano_fetal": "El metilmercurio atraviesa libremente la barrera placentaria y la barrera hematoencefálica del feto, concentrándose en el cerebro del embrión en desarrollo. Ocasiona una alta tasa de abortos espontáneos, microcefalia, parálisis cerebral infantil y retrasos psicomotores severos en los niños nacidos en comunidades ribereñas del Inírida y Guainía."
+      }
+    },
+    "gobernanza_territorial_y_movimiento_indigena": {
+      "organizaciones_representativas": [
+        {
+          "sigla": "ASOCRIGUA",
+          "nombre": "Asociación de Cabildos y Autoridades Tradicionales Indígenas del Guainía",
+          "rol": "Organización matriz representativa de más de 60 comunidades indígenas del departamento, articuladora del diálogo político con el Estado colombiano y defensora de los derechos colectivos."
+        },
+        {
+          "sigla": "Consejo Indígena de Guainía",
+          "nombre": "Consejo Indígena Departamental de Guainía",
+          "rol": "Instancia máxima de concertación política y gobierno propio de las autoridades tradicionales de las diferentes etnias."
+        },
+        {
+          "sigla": "COINPA",
+          "nombre": "Consejo de Organizaciones Indígenas de Pana Pana y Atabapo",
+          "rol": "Articulación regional de resguardos del sur de Guainía para el control territorial fronterizo y proyectos productivos de soberanía alimentaria."
+        },
+        {
+          "sigla": "AATI Río Negro",
+          "nombre": "Asociación de Autoridades Tradicionales Indígenas del Río Negro y Guainía",
+          "rol": "Vigilancia comunitaria fluvial binacional en articulación con las organizaciones indígenas de Brasil (FOIRN) y Venezuela."
+        }
+      ],
+      "el_decreto_ley_632_de_2018_hito_de_autonomia": {
+        "alcance_historico": "El Decreto Ley 632 de 2018 constituye el instrumento normativo más revolucionario para los pueblos indígenas de la Amazonía colombiana. Reglamenta la conformación de los 'Territorios Indígenas en Áreas No Municipalizadas' de los departamentos de Amazonas, Guainía y Vaupés.",
+        "implicaciones_en_el_guainia": "Permite que los resguardos ubicados en las 6 Áreas No Municipalizadas de Guainía (Cacahual, La Guadalupe, Morichal Nuevo, Pana Pana, Puerto Colombia y San Felipe) se organicen como Consejos Indígenas con estatus de entidades territoriales públicas de carácter especial. Esto faculta a los pueblos originarios para administrar directamente los recursos del Sistema General de Participaciones (SGP), formular sus propios Planes de Vida territoriales, y ejercer jurisdicción ambiental y educativa sin depender de alcaldías coloniales impuestas.",
+        "resistencia_frente_a_la_municipalizacion_forzada": "Las organizaciones indígenas del Guainía han resistido enérgicamente los intentos de la clase política tradicional de transformar las ANM en municipios convencionales (como ocurrió con la polémica municipalización de Barrancominas en 2019), defendiendo que el modelo del Decreto 632 garantiza la soberanía de los cabildos y la preservación de los saberes ancestrales."
+      },
+      "guardias_indigenas_y_monitoreo_ambiental_fluvial": "Consolidación de las Guardias Indígenas y redes de monitores comunitarios ambientales dotados de tecnología satelital (GPS, drones, imágenes de radar) para detectar y denunciar en tiempo real la incursión de dragas mineras ilegales, proteger las cabeceras vírgenes del Parque Nacional Natural Puinawai y custodiar la Estrella Fluvial de Inírida como un santuario biocultural inviolable para las generaciones venideras."
+    }
+  }
+}

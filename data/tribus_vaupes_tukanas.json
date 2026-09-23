@@ -1,0 +1,796 @@
+{
+  "metadata": {
+    "titulo": "Enciclopedia Monográfica Exhaustiva de los Pueblos Indígenas Tukano Oriental del Vaupés, Pirá-Paraná y Tiquié",
+    "subtitulo": "Lingüística de Evidencialidad Quíntuple, Exogamia Patrilineal, Farmacopea Sagrada, Tecnologías de la Chagra, Arquitectura de Maloca, Complejo de Yuruparí y Amparo Constitucional",
+    "version": "1.0.0",
+    "fecha_edicion": "2026-09-23",
+    "autor": "Subagente Especialista en los Pueblos Indígenas Tukano del Vaupés de Colombianopedia",
+    "cobertura_geografica": {
+      "departamento": "Vaupés (y zonas limítrofes transfronterizas con Guaviare, Guainía, Amazonas y el Estado de Amazonas en Brasil)",
+      "cuencas_principales": [
+        "Río Vaupés (curso alto, medio y bajo, raudales de Yuruparí, Ipanoré y Caruru)",
+        "Río Pirá-Paraná (el río sagrado del pez y corazón del chamanismo jaguar)",
+        "Río Tiquié (cuenca alta y media, caños Abiyú y Macucú, territorio binacional Colombia-Brasil)",
+        "Río Papurí (confluencia de pueblos ribereños e interfluviales)",
+        "Río Cananarí (enclave de los Eduria/Taiwano y cerros de formación tepuyana)",
+        "Río Paca (cuenca de los Siriano y Yurutí)",
+        "Caño Ti (afluente del Pirá-Paraná, territorio Tatuyo y Carapana)",
+        "Caño Yapú (cabeceras y raudales Tatuyo)",
+        "Caño Yabarí (resguardo de los Pisamira, cercanías de Mitú)",
+        "Caño Colorado (afluente del Pirá-Paraná, linajes Barasano del Norte)"
+      ],
+      "resguardos_emblematicos": [
+        "Gran Resguardo Indígena del Vaupés (más de 3.3 millones de hectáreas)",
+        "Resguardo Indígena Parte Oriental del Vaupés",
+        "Resguardo Indígena Río Pirá-Paraná (administrado por ACAIPI)",
+        "Resguardo Indígena Yaigojé Apaporis",
+        "Resguardo Indígena del Alto Tiquié"
+      ]
+    },
+    "pueblos_monografiados": [
+      "Tatuyo (Pamoa)",
+      "Tuyuca (Dokapuara / Utapinõmakãphõná)",
+      "Carapana (Mötea / Muteamasa)",
+      "Siriano (Ciriano / Sihea / Tubü)",
+      "Yurutí (Wajiara)",
+      "Pisamira (Papiwa / Wasina)",
+      "Taiwano (Eduria / Ukwena)",
+      "Barasano del Norte (Yeba masa / Paneroa)"
+    ],
+    "fuentes_academicas_y_referentes_etnograficos": [
+      "Gerardo Reichel-Dolmatoff (Desana: Simbolismo y Chamanismo de los Indios Tukano del Vaupés; El Chamán y el Jaguar; Basketry of the Indians of the Vaupés)",
+      "Stephen Hugh-Jones (The Palm and the Pleiades: Initiation and Cosmology in Northwest Amazonia; Waribí and the Ancestral Anaconda)",
+      "Christine Hugh-Jones (From the Milk River: Spatial and Temporal Processes in Northwest Amazonia)",
+      "Janet Barnes (Evidentials in the Tuyuca Verb; Tuyuca Grammar and Phonology, SIL / Summer Institute of Linguistics)",
+      "Kaj Århem (Makuna: Social Organization, Cosmology and Shamanism in the Colombian Amazon)",
+      "Jean E. Jackson (The Fish People: Linguistic Exogamy and Tukanoan Identity in Northwest Amazonia)",
+      "Elsa Gomez-Imbert (Morphologie et phonologie barasana; Les langues du Piraparana)",
+      "Jon Landaburu (Estudios de clasificación, morfología y evidencialidad en lenguas amerindias)",
+      "Arthur Sorensen (Multilingualism in the Northwest Amazon, American Anthropologist)",
+      "Instituto Colombiano de Antropología e Historia (ICANH - Atlas Sociolingüístico y Etnográfico de Colombia)",
+      "Corte Constitucional de Colombia (Auto 004 de 2009, Sentencia T-025 de 2004 sobre riesgo de exterminio físico y cultural)",
+      "UNESCO (Inscripción de 2011: Conocimiento tradicional de los chamanes jaguares de Yuruparí en la Lista Representativa del Patrimonio Cultural Inmaterial de la Humanidad)",
+      "ACAIPI (Asociación de Capitanes y Autoridades Tradicionales Indígenas del Río Pirá Paraná - Plan de Vida y Cartografía Sagrada)",
+      "CRIVA (Consejo Regional Indígena del Vaupés)",
+      "OPIAC (Organización de los Pueblos Indígenas de la Amazonía Colombiana)"
+    ]
+  },
+  "marco_sociolinguistico_tukano_oriental": {
+    "arbol_filogenetico_y_clasificacion": {
+      "tronco_mayor": "Tukano (Tucanoano)",
+      "subfamilia": "Tukano Oriental (dividida diacrónicamente de la rama Occidental hace más de 2.500 años)",
+      "subdivisiones_dialectales": {
+        "rama_oriental_norte": [
+          "Tukano (Ye'pâ-masa / lengua vehicular predominante)",
+          "Wanano (Kotiria)",
+          "Piratapuyo (Waikhana)"
+        ],
+        "rama_oriental_central": [
+          "Tuyuca (Dokapuara)",
+          "Tatuyo (Pamoa)",
+          "Carapana (Mötea)",
+          "Siriano (Sihea)",
+          "Yurutí (Wajiara)",
+          "Pisamira (Papiwa)",
+          "Desano (Wíra)",
+          "Cubeo (Pamiwa / particular dentro del grupo por poseer rasgos morfológicos arcaicos y menor rigidez exogámica)"
+        ],
+        "rama_oriental_sur": [
+          "Barasano del Norte (Yeba masa)",
+          "Taiwano / Eduria (Ukwena)",
+          "Makuna (Yebamasã)",
+          "Tanimuka-Retuarã (Ufaina)"
+        ]
+      }
+    },
+    "rasgos_gramaticales_estructurales": {
+      "tipologia_morfologica": "Lenguas aglutinantes, polisintéticas moderadas y de flexión exclusivamente sufijante. No existen prefijos genuinos en la morfología verbal ni nominal.",
+      "orden_sintactico_canonico": "SOV (Sujeto - Objeto - Verbo) estricto en oraciones matrices, con movilidad pragmática del constituyente focalizado hacia la posición preverbal inmediata.",
+      "armonia_nasal_suprasegmental": {
+        "definicion_fonologica": "La nasalidad no es un fonema aislado ni un rasgo restringido a una vocal o consonante particular; es un rasgo morfológico y prosódico que opera a nivel de toda la raíz o palabra morfológica fonológica.",
+        "propagacion": "Si una raíz posee el rasgo suprasegmental [+nasal], este se difunde bidireccionalmente infectando a todas las vocales y consonantes sonantes (/w/, /j/, /r/) y transformando las oclusivas sonoras /b/, /d/, /g/ en sus alófonos nasales [m], [n], [ŋ]. Las oclusivas sordas actúan como consonantes bloqueadoras opacas al flujo nasal.",
+        "implicacion_lexica": "Pares mínimos enteros se distinguen exclusivamente por la nasalización suprasegmental de la palabra completa, cambiando de raíz oral a raíz nasal."
+      },
+      "sistema_tonal_contrastivo": {
+        "descripcion": "Lenguas tonales de registro con oposición contrastiva entre Tono Alto (H) y Tono Bajo (L), complementados en ciertas lenguas como el Barasana y Tatuyo por contornos modulados ascendentes y descendentes.",
+        "carga_funcional": "El tono cumple doble función: léxica (diferencia lexemas homófonos de distinto significado) y morfológica (marca flexiones de tiempo, persona gramatical, aspecto perfectivo o modo imperativo)."
+      },
+      "hipertrofia_de_clasificadores_nominales": {
+        "descripcion": "Poseen un inventario de entre 40 y más de 140 sufijos clasificadores nominales obligatorios que concatenan forma geométrica tridimensional, dimensionalidad, textura, consistencia, estado biológico y función utilitaria.",
+        "ejemplos_categoricos": [
+          "Clasificador de objetos alargados y rígidos cilíndricos (árboles, palos, cerbatanas, maderos kumú)",
+          "Clasificador de superficies delgadas, planas y flexibles (hojas de árbol, papel, telas de corteza)",
+          "Clasificador de superficies circulares planas y rígidas (balayes, budares de hornear casabe, discos solares)",
+          "Clasificador de cuerpos esféricos o carnosos macizos (frutos de chontaduro, huevos, ojos, cabezas de animales)",
+          "Clasificador de recipientes cóncavos, vasijas y cavidades (ollas de barro, canoas, malocas)",
+          "Clasificador de fibras filiformes y bejucos trenzados (cuerdas de cumare, lianas de yagé, venas sanguíneas)",
+          "Clasificador de acumulaciones en polvo granular fino (mambe de coca, fariña, ceniza de yarumo)"
+        ]
+      }
+    },
+    "sistema_de_evidencialidad_gramaticalizada_de_cinco_niveles": {
+      "fundamento_epistemologico": "En las lenguas Tukano Oriental, especialmente en su exponente más célebre tipológicamente a nivel mundial, el Tuyuca (analizado por Janet Barnes), ningún hablante puede emitir un enunciado declarativo en pasado o presente sin especificar morfológicamente mediante un sufijo flexivo obligatorio la vía sensorial y el estatus epistémico a través del cual adquirió el conocimiento. La verdad y la verificación empírica forman parte indisoluble de la gramática.",
+      "los_cinco_niveles_canonicos": [
+        {
+          "nivel": 1,
+          "categoria_epistemica": "Testimonio Visual Directo",
+          "denominacion_linguistica": "Evidencial Visual (Direct Visual Evidence)",
+          "significado_filosofico": "El hablante declara que presenció el acontecimiento con sus propios ojos corporales en el momento exacto en que ocurría. Es el grado máximo de certeza empírica.",
+          "sufijo_paradigma_tuyuca_3ra_pers_masc_pasado": "-wi (o variantes alomórficas según clase verbal)",
+          "ejemplo_glosado": {
+            "expresion": "Díi-wi",
+            "segmentacion": "díi (jugar) + wi (3ra.persona.masculina.pasado.VISUAL)",
+            "traduccion_literal": "Él jugó",
+            "significado_contextual_pleno": "Él jugó al fútbol o pelota, y yo lo vi personalmente con mis propios ojos mientras jugaba."
+          },
+          "contexto_etnografico": "Se utiliza para narrar avistamientos de animales en el río, presencia de canoas que arriban a la maloca o acciones cotidianas observadas presencialmente."
+        },
+        {
+          "nivel": 2,
+          "categoria_epistemica": "Evidencia Sensorial No Visual",
+          "denominacion_linguistica": "Evidencial Sensorial No-Visual (Non-Visual Sensory: Auditory, Olfactory, Tactile, Gustatory)",
+          "significado_filosofico": "El hablante afirma que el suceso ocurrió porque lo escuchó directamente, lo olió, lo tocó en la oscuridad o lo saboreó, pero sin haberlo visto con la vista ocular.",
+          "sufijo_paradigma_tuyuca_3ra_pers_masc_pasado": "-ti (o -tiro en ciertos dialectos)",
+          "ejemplo_glosado": {
+            "expresion": "Díi-ti",
+            "segmentacion": "díi (jugar) + ti (3ra.persona.masculina.pasado.NO_VISUAL)",
+            "traduccion_literal": "Él jugó",
+            "significado_contextual_pleno": "Él jugó; no lo estuve viendo porque estaba dentro de la maloca, pero escuché con absoluta claridad sus gritos, risas y el golpe del balón."
+          },
+          "contexto_etnografico": "Indispensable en la selva pluvial espesa, donde los animales (como el jaguar o las dantas) o el rugido de las trompetas de Yuruparí se escuchan o huelen antes de poder ser divisados entre el follaje."
+        },
+        {
+          "nivel": 3,
+          "categoria_epistemica": "Inferencia por Evidencia Indicial / Huellas Físicas",
+          "denominacion_linguistica": "Evidencial Aparente o Inferencia Indicial (Apparent / Inferred from physical traces)",
+          "significado_filosofico": "El hablante no vio el acontecimiento ni lo escuchó cuando acontecía, pero observa con posterioridad huellas físicas inequívocas, restos materiales o signos patentes en el entorno que conducen necesariamente a la conclusión de que el hecho tuvo lugar.",
+          "sufijo_paradigma_tuyuca_3ra_pers_masc_pasado": "-yi",
+          "ejemplo_glosado": {
+            "expresion": "Díi-yi",
+            "segmentacion": "díi (jugar) + yi (3ra.persona.masculina.pasado.INFERENCIAL_INDICIAL)",
+            "traduccion_literal": "Él jugó (al parecer / según las huellas)",
+            "significado_contextual_pleno": "Él jugó; no estuve allí ni escuché nada, pero acabo de salir al campo de juego y veo sus huellas frescas en el lodo y la pelota tirada donde él suele dejarla."
+          },
+          "contexto_etnografico": "Utilizado por cazadores para rastrear pisadas de cacería en el suelo húmedo, ramas quebradas por dantas o brasas humeantes en un campamento abandonado."
+        },
+        {
+          "nivel": 4,
+          "categoria_epistemica": "Asunción / Deducción Lógica Teórica",
+          "denominacion_linguistica": "Evidencial Asumido o Deductivo (Assumed / Deductive from General World Knowledge)",
+          "significado_filosofico": "El hablante no cuenta con evidencia sensorial directa ni con huellas físicas inmediatas que inspeccionar, pero deduce con razonamiento lógico que el hecho ocurrió con base en el conocimiento general de las pautas habituales del sujeto, el ciclo biológico, el clima o la costumbre inmemorial.",
+          "sufijo_paradigma_tuyuca_3ra_pers_masc_pasado": "-ki (o -kũ en variantes de aspecto)",
+          "ejemplo_glosado": {
+            "expresion": "Díi-ki",
+            "segmentacion": "díi (jugar) + ki (3ra.persona.masculina.pasado.ASUMIDO)",
+            "traduccion_literal": "Él debió jugar / Asumo que jugó",
+            "significado_contextual_pleno": "Él jugó; no lo vi, no lo escuché ni he visto huellas, pero todos los días a las cuatro de la tarde él juega sin falta, por lo que asumo con toda certeza razonable que jugó."
+          },
+          "contexto_etnografico": "Emplea la deducción astronómica, estacional y social: anticipar que en la maloca vecina ya encendieron el fogón o que en época de desove los peces están subiendo los raudales."
+        },
+        {
+          "nivel": 5,
+          "categoria_epistemica": "Citativo de Oídas / Información de Segunda Mano",
+          "denominacion_linguistica": "Evidencial Reportativo o Citativo (Hearsay / Second-Hand / Quotative)",
+          "significado_filosofico": "El hablante asevera el hecho porque otra persona se lo contó de palabra, o proviene de una cadena de transmisión oral de terceros o de relatos ancestrales ('dicen que', 'me contaron que'). El hablante no se responsabiliza de la constatación empírica directa.",
+          "sufijo_paradigma_tuyuca_3ra_pers_masc_pasado": "-hĩyi (o -hĩro)",
+          "ejemplo_glosado": {
+            "expresion": "Díi-hĩyi",
+            "segmentacion": "díi (jugar) + hĩyi (3ra.persona.masculina.pasado.REPORTATIVO)",
+            "traduccion_literal": "Dicen que él jugó / Me contaron que jugó",
+            "significado_contextual_pleno": "Él jugó; yo no lo presencié ni tengo indicios propios, pero su hermano vino a la maloca y me relató que estuvo jugando."
+          },
+          "contexto_etnografico": "Fundamental en la política intercomunitaria para transmitir mensajes entre malocas distantes del Pirá-Paraná y Tiquié, y en la narración de mitos cosmogónicos milenarios transmitidos de generación en generación."
+        }
+      ],
+      "impacto_cultural_y_juridico": {
+        "etica_de_la_palabra": "El rigor de este sistema elimina la ambigüedad, el rumor infundado y la difamación. En la asamblea de la maloca, acusar a alguien con un sufijo de testimonio visual cuando en realidad se poseía evidencia de oídas constituye una falta moral y espiritual gravísima sujeta a sanción chamánica.",
+        "precision_probatoria": "En la resolución tradicional de conflictos territoriales o familiares, el concejo de ancianos y el Kumú evalúan los testimonios cruzando el nivel evidencial de los declarantes."
+      }
+    },
+    "fenomeno_sociolinguistico_de_la_exogamia_linguistica": {
+      "definicion_y_norma_matrimonial": {
+        "regla_de_oro": "En el sistema cultural del Vaupés, la lengua materna de una persona no es simplemente un medio de comunicación, sino la sustancia viva de su identidad clánica, patrilineal y biogenética. Está terminantemente prohibido contraer matrimonio con una persona que hable la misma lengua paterna que uno mismo.",
+        "concepto_de_incesto_linguistico": "Quienes comparten la misma lengua paterna son considerados hermanos consanguíneos primordiales (*tenyemasa* o parientes uterinos/agnáticos paralelos). Tomar por cónyuge a alguien del mismo idioma equivale al más aberrante de los incestos cósmicos y atraería maldiciones espirituales, infertilidad y deformidades sobre la maloca."
+      },
+      "la_ecuacion_lengua_patrilinaje_y_alianza": {
+        "transmision_patrilineal": "Cada individuo, sea hombre o mujer, hereda de por vida y de manera indeleble la lengua de su padre. Aunque una mujer pase toda su vida adulta viviendo en la maloca de su esposo en una comunidad lejana, jamás cambia su identidad lingüística paterna.",
+        "matrimonio_y_residencia_patrilocal": "Al casarse, la mujer se traslada a residir a la maloca del linaje de su esposo (patrilocalidad). En consecuencia, en una sola maloca viven hombres que hablan la lengua local patrilineal (por ejemplo, Barasano), casados con mujeres que provienen de naciones aliadas y continúan hablando sus lenguas originarias (Tatuyo, Tuyuca, Desano, Carapana).",
+        "alianzas_simetricas_de_afinidad": "Los pueblos Tukano están agrupados en pares y tríadas de intercambio conyugal prescrito (hermanos clasificatorios versus afines o cuñados / *tenyemasa* vs. *yemba*), garantizando el flujo constante de mujeres, cantos sagrados y bienes materiales a lo largo de los ríos."
+      },
+      "multilinguismo_natural_institucionalizado": {
+        "entorno_domestico_poliglota": "Un niño nacido en una maloca del Vaupés escucha desde su primer día de vida la lengua de su padre (hablada por el padre, sus tíos paternos y hermanos mayores), la lengua de su madre (hablada directamente por ella al arrullarlo y amamantarlo), las lenguas de sus tías políticas (esposas de los hermanos de su padre, procedentes de diversas tribus) y las lenguas de visitantes ceremoniales.",
+        "adquisicion_sin_diglosia": "Para la edad de 7 a 10 años, un infante entiende con total soltura entre tres y cinco lenguas indígenas distintas y es capaz de hablar al menos dos o tres de ellas con acento nativo perfecto. Los niños desarrollan una 'conciencia metalingüística' precoz, asociando cada lengua a una persona específica sin mezclar jamás los vocabularios.",
+        "paridad_y_ausencia_de_jerarquia": "A diferencia de las sociedades occidentales donde una lengua hegemónica subordina a las lenguas minoritarias, en el sistema del Vaupés tradicional no existe jerarquía de prestigio intrínseco: hablar Tukano, Tatuyo, Siriano o Tuyuca tiene exactamente el mismo valor ontológico y dignidad sagrada en el tejido de la vida amazónica."
+      }
+    }
+  },
+  "farmacopea_sagrada_y_medicina_tradicional": {
+    "descripcion_epistemologica": "Para los pueblos Tukano del Vaupés, la medicina, la botánica, la alimentación y la cosmología forman una sola unidad orgánica. Las plantas sagradas no se consideran meros principios activos químicos, sino 'personas-vegetales' dotadas de aliento divino, linaje mítico y espíritu tutelar que se comunican con los chamanes mediante la dieta rigurosa y el rezo.",
+    "complejo_de_las_cuatro_plantas_maestras": [
+      {
+        "nombre_comun": "Yagé (Kají / Pida / Bejuco del Alma)",
+        "nombre_cientifico": "Banisteriopsis caapi (familia Malpighiaceae)",
+        "asociaciones_botanicas_y_aditivos": [
+          "Diplopterys cabrerana (Chaliponga / Ocoyagé / Chagropanga, rica en N,N-DMT y 5-MeO-DMT)",
+          "Psychotria viridis (Chacruna / vegetal acompañante con altos contenidos de N,N-DMT)"
+        ],
+        "bioquimica_farmacologica": "Sinergia molecular de neurofarmacología avanzada: las beta-carbolinas del tallo de B. caapi (harmina, harmalina y tetrahidroharmina) actúan como inhibidores reversibles y potentes de la enzima monoaminooxidasa gastrointestinal (IMAO-A), permitiendo que la molécula triptamínica enteógena N,N-dimetiltriptamina (DMT) de la chaliponga o chacruna sobreviva a la degradación digestiva, cruce la barrera hematoencefálica y se una a los receptores serotoninérgicos 5-HT2A del córtex cerebral humano.",
+        "preparacion_ritual": "La liana se recolecta en zonas vírgenes de interfluvio; se limpia ceremonialmente la corteza y se machacan los tallos con mazos de madera dura. Se dispone en ollas de barro nuevas en capas alternadas con las hojas tiernas de chaliponga. La cocción sagrada es dirigida exclusivamente por el Kumú o Payé mayor, extendiéndose a fuego continuo y lento entre 18 y 36 horas mientras se soplan rezos de tabaco para enfriar la agresividad espiritual de la planta. Se realiza en ayuno riguroso, abstinencia sexual y proscripción absoluta de sal, ají y azúcares.",
+        "dimension_cosmologica_y_terapeutica": "El yagé es la 'Canoa Cósmica' y la 'Cuerda del Sol' que conecta las siete capas del cielo con los ríos subterráneos. Permite al chamán desdoblar su cuerpo físico, adquirir la visión del Jaguar y remontar el Río de Leche hasta la Maloca Primordial para dialogar con los Dueños de los Animales (Wai Mahsã), curar enfermedades provocadas por flechas invisibles de rencor, restituir la energía vital descarriada de los enfermos y regular la veda de cacería en el territorio."
+      },
+      {
+        "nombre_comun": "Mambe de Coca (Pátú / Hãho)",
+        "nombre_cientifico": "Erythroxylum coca var. ipadu (familia Erythroxylaceae)",
+        "caracteristicas_agrobotanicas": "Variedad amazónica domesticada exclusivamente en las tierras bajas de la selva pluvial. Posee hojas de mayor lámina, menor concentración de taninos amargos y un perfil suave de alcaloides adaptado al consumo continuado a lo largo de las vigilias nocturnas.",
+        "proceso_de_elaboracion": {
+          "recoleccion": "Efectuada exclusivamente por hombres en las horas de la mañana, arrancando hoja por hoja con cuidado de no desgarrar las ramas vivas del arbusto.",
+          "tostado": "En un tiesto o budare de barro caliente a fuego muy suave, las hojas verdes se revuelven de forma continua con un haz de ramitas para evaporar la humedad sin quemar la clorofila ni desnaturalizar los principios activos.",
+          "pilado": "Las hojas crujientes se vierten en un mortero alto de madera dura (pilón) y se machacan con un mazo pesado en golpes rítmicos de cadencia ceremonial.",
+          "activador_alcalino": "Se queman hojas maduras caídas del árbol de Yarumo (Cecropia peltata / Cecropia sciadophylla) o de Pourouma cecropiifolia; la ceniza blanca resultante se tamiza minuciosamente a través de una tela y se incorpora al mortero en proporción balanceada. La ceniza aporta carbonatos y sales minerales que elevan el pH salival a un rango alcalino (pH ~8.5-9.0), permitiendo la liberación libre y absorción sublingual directa de los microalcaloides y nutrientes a través de la mucosa oral.",
+          "tamizado_final": "El polvo verde brillante se pasa repetidamente por un tamiz fino de tela o fibra de arumã hasta obtener un polvo impalpable como harina de seda que no causa irritación mecánica en las vías respiratorias."
+        },
+        "funcion_sociocultural_la_palabra_dulce": "El mambe no es un estimulante para el ocio ni para el desgaste físico desordenado; es el vehículo sagrado de la 'Palabra Dulce' (Hãho). En el mambeadero nocturno de la maloca, los ancianos y jóvenes mastican el bolo de mambe alojado entre la mejilla y la encía. El mambe despeja la mente de pasiones turbulentas, enfría la ira, agudiza la concentración y abre el entendimiento filosófico para concertar la paz, planificar la siembra y recordar los cantos de los ancestros."
+      },
+      {
+        "nombre_comun": "Ambil de Tabaco (Mũũ / Yera)",
+        "nombre_cientifico": "Nicotiana tabacum / Nicotiana rustica (familia Solanaceae)",
+        "elaboracion_artesanal": {
+          "coccion": "Centenares de hojas de tabaco negro maduro se hierven a fuego lento en grandes ollas cerámicas durante días enteros, reduciendo el extracto acuoso hasta obtener un jarabe negro y denso de alta viscosidad.",
+          "sales_vegetales_de_filtro": "Las sales purificadoras no son sal común marina (NaCl), la cual está prohibida en el sistema ritual amazónico. Se elaboran quemando las inflorescencias, cortezas o peciolos de palmeras silvestres específicas (Chamaedorea, Bactris gasipaes, Astrocaryum) o cáscaras secas de cacao de monte. La ceniza se somete a lixiviación con agua limpia a través de un embudo cónico de hojas; el líquido filtrado cargado de sales de potasio se hierve hasta la sequedad completa, obteniendo un polvo cristalino salino.",
+          "mezcla": "La sal vegetal se amasa lentamente con la pasta negra de tabaco en caliente, logrando una emulsión estable de color negro azabache de consistencia melosa llamada ambil."
+        },
+        "metodo_de_uso_y_farmacodinamia": "Se toma una pequeña porción con la punta del dedo índice o con una espátula de madera pulida y se unta sobre los dientes inferiores, encías o bajo la lengua. La nicotina concentrada se absorbe instantáneamente junto al bolo de mambe de coca.",
+        "significado_metafisico": "El ambil y el mambe son la pareja cósmica inseparable de la sabiduría: 'La coca es el cuerpo y el pensamiento dulce; el tabaco es el espíritu y el discernimiento penetrante'. El ambil quema las intenciones falsas, sella las alianzas entre clanes con juramentos irrevocables y erige un escudo energético contra brujerías o dardos de envidia."
+      },
+      {
+        "nombre_comun": "Carayurú (Chica / Krayurú / Vermellón Sagrado)",
+        "nombre_cientifico": "Arrabidaea chica (sinónimo taxonómico válido: Fridericia chica, familia Bignoniaceae)",
+        "botanica_y_cosecha": "Enredadera leñosa trepadora que crece en los bordes de la selva y riberas de los caños. Se cosechan las hojas adultas coriáceas que concentran pigmentos flavonoides antociánicos únicos (como la carajurina y carajurona).",
+        "proceso_de_extraccion_del_pigmento": "Las hojas verdes recolectadas se dejan fermentar ligeramente sumergidas en agua tibia dentro de canoas viejas o bateas. Cuando el agua adquiere un tono cobrizo, se bate vigorosamente con las manos y ramas para oxigenar la infusión; el pigmento vegetal insoluble oxida y precipita lentamente hacia el fondo en forma de un lodo rojo bermellón intenso. Este sedimento se colecta con hojas, se comprime y se deseca al sol formando pastillas sólidas o un polvo carmín fino de extraordinaria pureza cromática.",
+        "propiedades_farmacologicas_y_antisepticas": {
+          "cicatrizante_y_astringente": "Posee una alta concentración de taninos y flavonoides que coagulan rápidamente exudados dérmicos, acelerando la epitelización de heridas abiertas y quemaduras.",
+          "antiseptico_y_antimicotico": "Eficaz protector contra infecciones cutáneas bacterianas y micóticas endémicas de la humedad extrema de la selva (como tiñas y úlceras leishmanicas).",
+          "fotoproteccion_solar": "El pigmento mineralizado actúa como una pantalla física reflectora que previene las quemaduras actínicas en la piel de los navegantes durante las largas jornadas a remo bajo el sol incandescente de los ríos."
+        },
+        "simbolismo_ritual_y_pintura_corporal": "El carayurú es el color rojo primordial, la sustancia que condensa la sangre de la Anaconda Ancestral y la energía vital del Sol (Abe). Durante las fiestas de Yuruparí y el Dabucurí, los hombres y mujeres dibujan sobre sus pómulos, frente, brazos y torso complicados arabescos geométricos con carayurú mezclado con resina aromática de caraña. Estos trazos no son adornos profanos: sellan los poros corporales y las aberturas del cuerpo para que no penetren las impurezas de los espíritus de la selva durante el trance ceremonial. También se usa para ungir y consagrar los maderos de las trompetas sagradas y las máscaras de corteza."
+      }
+    ]
+  },
+  "tecnologias_y_sistemas_agroforestales": {
+    "la_chagra_amazonica_pohe": {
+      "definicion_y_modelo": "La chagra (Pohe en Tukano) es un sistema agroforestal tradicional multiespecífico, itinerante y altamente adaptado a los suelos oxisoles y ultisoles de la Amazonía, caracterizados por su extrema acidez, lixiviación pluvial y pobreza en nutrientes minerales.",
+      "ciclo_agroecologico": {
+        "seleccion_del_sitio": "El sabedor Kumú consulta a los espíritus de la selva para identificar un fragmento de bosque maduro donde no habiten seres protectores celosos ni salados animales.",
+        "tumba_y_quema_controlada": "Los hombres desbrozan el sotobosque y tumban los árboles con hachas; la biomasa vegetal se deja secar durante las semanas de verano y se enciende una quema controlada que transforma la madera en ceniza alcalina rica en fósforo, potasio y calcio, fertilizando la capa superficial sin erosionarla.",
+        "siembra_estratificada": "Las mujeres introducen más de 40 a 60 variedades distintas de cultivos ordenados en pisos verticales que imitan la estructura del bosque natural:",
+        "estratos_productivos": [
+          "Estrato superior o dosel: Frutales perennes como el Chontaduro (Bactris gasipaes), Umarí (Poraqueiba sericea), Uva caimarona (Pourouma cecropiifolia), Copoazú (Theobroma grandiflorum) y Guamos (Inga spp.).",
+          "Estrato medio: Musáceas (plátano y banano), Achiote (Bixa orellana), Carayurú (Arrabidaea chica), arbustos de Coca (Erythroxylum coca var. ipadu) y matas de Tabaco (Nicotiana).",
+          "Estrato rasante o radicular: Múltiples variedades de Yuca brava (Manihot esculenta), Yuca dulce, Batata (Ipomoea batatas), Ñame amazónico (Dioscorea trifida), Piña silvestre (Ananas comosus) y Ají amazónico (Capsicum chinense).",
+          "Plantas mágicas y medicinales de borde: Jengibre selvático, barbasco para la pesca y hierbas aromáticas para sahumerios."
+        ],
+        "descanso_y_regeneracion_barbecho": "Tras 3 o 4 años de cosecha continua de yuca, la chagra se deja en descanso (rastrojo o 'chagra vieja'). Las especies frutales continúan alimentando a la fauna silvestre y a los humanos durante 15 a 25 años, mientras el bosque secundario cicatriza el suelo y regenera la biomasa original antes de cualquier nueva apertura."
+      },
+      "cosmologia_y_rol_de_genero": "La chagra es el territorio sagrado de la mujer. Así como el hombre engendra en el vientre materno mediante la mediación del Sol, la mujer engendra las raíces de la yuca en el vientre de la Tierra. El deshierbe y la cosecha se acompañan de cantos secretos para que las plantas crezcan dulces y no retengan amargura espiritual."
+    },
+    "complejo_tecnologico_de_la_yuca_brava_manihot_esculenta": {
+      "bioquimica_de_la_toxicidad_del_acido_cianhidrico": {
+        "mecanismo_biologico": "Las variedades de yuca brava (Ki) contienen altas concentraciones de glucósidos cianogénicos, predominantemente linamarina y lotaustralina, que superan ampliamente los 100 mg de cianuro por kilogramo de pulpa fresca (dosis letal para el consumo humano sin procesar).",
+        "liberacion_enzimatica": "Al macerar o rallar mecánicamente las células de la raíz tuberosa, los glucósidos entran en contacto con la enzima endógena linamarasa, hidrolizándose en glucosa y cianhidrina de acetona, la cual se descompone espontáneamente liberando ácido cianhídrico libre (HCN o ácido prúsico), un potente inhibidor de la cadena respiratoria mitocondrial (bloquea la citocromo c oxidasa tisular).",
+        "la_solucion_tecnologica_milenaria": "Los pueblos Tukano diseñaron un complejo instrumental biomecánico y termodinámico perfecto para purificar y transformar este veneno mortal en el sustento alimentario más noble de la selva."
+      },
+      "el_rallador_litico_maderero_jime": {
+        "anatomia_y_materiales": "Consiste en un tablón ancho de madera dura e imputrescible (generalmente de raíces fúlcreas de palma paxiúba o maderos densos de cedro silvestre). En la cara cóncava superior se tallan surcos milimétricos siguiendo trazos geométricos en forma de espina de pescado o rombos.",
+        "incrustacion_litica": "Los hombres quiebran cantos rodados de cuarzo lechoso o sílex en cientos de pequeñas esquirlas triangulares extremadamente cortantes. Cada esquirla se clava a mano en los orificios del tablón con una disposición angular calculada.",
+        "sellado_impermeable": "Toda la superficie con los dientes de piedra se embadurna con una gruesa capa de resina gomosa natural de árboles silvestres (látex de Balata / Manilkara bidentata, resina de Couma macrocarpa o breo de Protium), mezclada con hollín y cenizas. Al solidificar, la resina fija las piedras de forma pétrea y hace al rallador completamente inmune al agua y a los ácidos corrosivos del jugo de la yuca.",
+        "operacion": "La mujer se sienta en el suelo de la maloca, apoya el extremo del rallador sobre una gran canoa o batea de madera y desliza las raíces peladas con movimientos enérgicos de vaivén, desintegrando el tubérculo en una pulpa húmeda homogénea."
+      },
+      "el_tipiti_o_sebucan": {
+        "ingenieria_textil_elastica": "Es un prodigio de la ingeniería indígena. Se trata de un cilindro tubular largo (de 2 a 3 metros de longitud y unos 15 a 20 centímetros de diámetro en reposo) tejido a mano por los hombres en sarga diagonal entrecruzada utilizando tiras de la corteza fibrosa de la palma Arumã (Ischnosiphon arouma).",
+        "principio_mecanico": "La geometría del tejido en malla romboidal flexible aprovecha la física del trenzado de compresión por elongación axial: cuando el tubo se tracciona longitudinalmente en sus extremos, el diámetro transversal se reduce de manera forzada, generando una presión radial centrípeta gigantesca sobre el contenido interno.",
+        "procedimiento_de_extraccion": "La mujer introduce la pulpa húmeda de yuca rallada dentro del tipití hasta llenarlo. El asa superior del cilindro se suspende de una viga resistente de la maloca. A través del lazo inferior se inserta una palanca larga de madera; la mujer se sienta en el extremo de la palanca o coloca grandes piedras sobre ella para ejercer un efecto de palanca multiplicado. A medida que el tipití se estira hacia el suelo, el tubo aprieta con fuerza arrolladora la masa, expulsando a través de los intersticios del tejido todo el jugo lechoso venenoso cargado de cianuro (llamado 'yare' o 'manicuera'), el cual se recolecta en vasijas de barro situadas abajo. La masa remanente en el interior queda convertida en un cilindro seco y desmenuzable libre de toxinas solubles."
+      },
+      "elaboracion_del_casabe_y_la_farinha": {
+        "casabe": "La masa seca extraída del tipití se desmenuza y se pasa por un balay cernidor para separar las fibras gruesas. La harina tamizada se vierte sobre un budare circular caliente de barro cocido o hierro (po'po), esparciéndola con una paleta hasta formar una capa homogénea. El calor residual gelatiniza el almidón de la yuca uniendo las partículas en una sola torta circular flexible de más de un metro de diámetro; se voltea con maestría para tostar la otra cara y luego se seca al sol en los techos de la maloca. El casabe es un alimento ligero, quebradizo, neutro y totalmente imputrescible, capaz de conservarse durante meses en el clima húmedo amazónico.",
+        "farinha_poka": "Para elaborar la fariña (põ'ka), la pulpa de yuca se somete a una ligera fermentación en agua durante dos o tres días (yuca brava puba), se prensa en el tipití y luego se tuesta en grandes calderos a fuego vivo, removiéndola de manera incesante con una espátula de madera durante varias horas. Los granos se secan y cristalizan en pequeñas bolitas crujientes y doradas de altísimo valor calórico, alimento de combate y viaje indispensable para las travesías en canoa."
+      },
+      "el_tucupi_y_la_salsa_de_aji_negro": "El líquido venenoso (yare) expulsado por el tipití jamás se desecha indiscriminadamente. Al ser el ácido cianhídrico un gas sumamente volátil con un punto de ebullición de tan solo 26 °C, el jugo se coloca en grandes ollas de barro y se hierve a fuego vivo durante 8 a 14 horas ininterrumpidas. El calor desnaturaliza la linamarasa y volatiliza por completo el cianuro, transformando el líquido en un caldo oscuro, espeso y aromático. Se le añaden ajíes amazónicos machacados (Capsicum chinense), hormigas manivacat tostadas y sal vegetal, logrando el legendario Tucupí o salsa de ají negro, un condimento con alto contenido de ácido glutámico natural (umami) que preserva la carne y el pescado ahumado."
+    },
+    "cesteria_de_balay_waja_y_geometria_cosmologica": {
+      "materia_prima_y_recoleccion": "La cestería Tukano se confecciona con los tallos rectos de la palma arumã (Ischnosiphon arouma / familia Marantaceae). Los hombres cortan las cañas en la selva, las hienden longitudinalmente en tiras calibradas con dientes y uñas, y separan la corteza satinada brillante de la médula porosa.",
+      "tecnicas_de_tintura_ancestral": "Para lograr los contrastes bicolores, la mitad de las tiras de arumã se tiñen de negro profundo sumergiéndolas en un lodo especial de fondo de caño rico en sales de hierro y mezclado con hojas machacadas de plantas ricas en taninos y hollín vegetal del fogón; la otra mitad conserva su tono marfil o crema natural.",
+      "el_balay_waja_y_su_simbolismo_cosmologico": {
+        "significado_del_objeto": "El balay (Waja) es una bandeja circular plana con reborde reforzado, utilizada en la vida cotidiana para servir el casabe y limpiar los granos. Cosmológicamente, cada balay es una representación a escala reducida del disco de la Tierra flotando en las aguas primordiales.",
+        "patrones_geometricos_tejidos": [
+          "El diseño de la Gran Anaconda (Oyakö / Yujupinë): Trazos en zigzag y rombos continuos que replican las escamas dorsales de la serpiente cósmica que trajo a la humanidad a lo largo del río.",
+          "Los ojos del Jaguar (Yai Kapoa): Cuadriláteros concéntricos que evocan la mirada del chamán capaz de ver en las tinieblas de la noche.",
+          "El laberinto de las aguas y raudales: Líneas quebradas que señalan las cachiveras peligrosas donde la Canoa de la Creación se detuvo a parir a los ancestros.",
+          "La constelación de las Pléyades y la Cruz del Sur: Puntos entrelazados que sincronizan el calendario de siembra en la chagra."
+        ]
+      }
+    }
+  },
+  "arquitectura_sagrada_la_maloca_tukana_wii": {
+    "la_maloca_como_cuerpo_y_macrocosmos": {
+      "concepto_wi_i": "La Maloca Tukana (Wi'i) no es una vivienda doméstica en el sentido arquitectónico occidental: es el Universo entero condensado en un espacio edificado y, a la vez, es el cuerpo vivo y yacente de la Gran Anaconda Primordial (Pamuri Piro).",
+      "correspondencias_anatomicas_y_cosmicas": {
+        "el_techo": "La techumbre cónica o a dos aguas, tejida con miles de palmas de caraná o milpesos, representa la bóveda celeste. La cumbrera superior es la Vía Láctea, la trayectoria estelar donde habitan los antepasados divinos.",
+        "el_piso": "El suelo de tierra batida, nivelado y purificado con rezos, es la superficie terrenal por donde caminan los seres humanos vivientes.",
+        "las_paredes_y_estacas": "Las paredes laterales bajas representan las montañas del confín del mundo y los límites de la selva virgen.",
+        "las_vigas_y_travesanos": "Las vigas transversales representan las costillas de la Anaconda Cósmica, y el madero cumbrero central es su espina dorsal vertebral.",
+        "el_espacio_subterraneo": "Debajo del suelo batido se sepultaban tradicionalmente los huesos de los ancestros en urnas cerámicas, conectando la maloca con el mundo subterráneo de las aguas oscuras y los orígenes."
+      }
+    },
+    "orientacion_cardinal_y_cosmica_este_oeste": {
+      "alineacion_solar": "Toda maloca tradicional del Vaupés y Pirá-Paraná se erige siguiendo un estricto eje longitudinal orientado de Este a Oeste, calcando la trayectoria diaria del Padre Sol (Abe) a través del firmamento.",
+      "el_curso_del_rio_de_leche": "El eje Este-Oeste simboliza igualmente la ruta migratoria de la Anaconda Canoa de la Creación (Hikö Pamuri Diako), que subió desde el Océano Atlántico primigenio hacia el poniente remontando el Amazonas, el Río Negro y las cataratas del Vaupés hasta alcanzar el Pirá-Paraná."
+    },
+    "los_cuatro_maderos_kumu_yuka": {
+      "significado_mitico": "En el centro de la maloca se clavan los cuatro grandes pilares maestros de madera dura (Kumú yuka / Maderos del Chamán). Representan a los cuatro primeros héroes creadores y sostenedores del firmamento cósmico que impiden que el cielo caiga sobre la Tierra.",
+      "el_circulo_sagrado_del_mambeadero": "En el espacio cuadrangular delimitado por estos cuatro maderos se ubica el centro neurálgico ritual de la maloca: el mambeadero. Allí se sitúan los bancos de madera tallada zoomorfa con forma de jaguar o anaconda donde toman asiento el Kumú y los sabedores mayores para mambear coca, consumir ambil y deliberar durante la noche."
+    },
+    "distribucion_espacial_y_flujos_de_genero": {
+      "puerta_este_oma_wi_i_puerta_masculina": {
+        "ubicacion_y_acceso": "Ubicada en la fachada frontal oriental de la maloca. Es la entrada principal, ancha y solemne.",
+        "usuarios_y_actividades": "Acceso reservado a los varones de la maloca, a las delegaciones de visitantes de otras comunidades y a los danzantes ceremoniales del Dabucurí. Conduce a la mitad delantera de la maloca, destinada a la deliberación política, el mambeadero, el canto ritual, el adiestramiento de los jóvenes iniciados y el almacenamiento de los instrumentos sagrados.",
+        "simbolismo": "Asociada a la luz del amanecer, la fuerza solar masculina, la palabra pública, la guerra, el chamanismo y el intercambio matrimonial exterior."
+      },
+      "puerta_oeste_romia_wi_i_puerta_femenina": {
+        "ubicacion_y_acceso": "Ubicada en la fachada posterior occidental de la maloca. Es más baja y discreta.",
+        "usuarios_y_actividades": "Acceso reservado a las mujeres y niños de la maloca. Conecta directamente con la senda que conduce a las chagras agrícolas, al puerto de baño y lavado en el río y al depósito de leña. Conduce a la mitad trasera de la maloca, donde se ubican los fogones familiares, los budares para tostar casabe, los ralladores y los chinchorros conyugales.",
+        "simbolismo": "Asociada al ocaso, a la noche fértil, al agua nutricia, a la matriz generadora de alimentos y a la crianza de la descendencia."
+      }
+    }
+  },
+  "complejo_ritual_del_yuripari": {
+    "el_yuripari_he_biki_y_la_ley_de_origen": {
+      "etimologia_y_concepto": "Yuruparí (término de la lengua general nheengatú derivado del mito original Tukano He Biki / Ko'o / Yeba Kedaña) no es un demonio como pretendieron describirlo los misioneros evangelizadores: es la personificación de la Ley de Origen, la fuerza primigenia del trueno, el calor solar fertilizador y el Gran Antepasado civilizador.",
+      "rito_de_paso_e_iniciacion": "El ritual del Yuruparí es la máxima ceremonia de iniciación masculina de los pueblos del Vaupés. Los jóvenes púberes son separados de sus madres y recluidos en la maloca sagrada. Durante varias semanas se someten a ayunos rigurosos, baños rituales de agua helada al alba, ingestión de plantas depurativas y azotes ceremoniales con varas de yarumo para fortalecer su carácter y purgar toda flaqueza infantil. Mueren simbólicamente como niños dependientes y renacen investidos como adultos plenos portadores de la memoria cósmica."
+    },
+    "trompetas_sagradas_de_corteza_mimi_he_buhuru": {
+      "factura_organologica": "Las trompetas y flautas de Yuruparí (He buhurü / Mimi) son instrumentos de viento sacros elaborados enrollando tiras continuas y helicoidales de la corteza fresca de palmeras como la paxiúba o puy (Iriartea deltoidea) o madera de miriti, unidas con tiras elásticas de bejuco y boquillas de madera pulida selladas con cera negra de abejas silvestres meliponas.",
+      "acustica_y_metafisica_sonora": "Emiten una resonancia gutural profunda, telúrica y estremecedora que hace vibrar físicamente el suelo de la maloca. Este sonido no es música humana profana: es la voz física y viva de los Ancestros de la Anaconda y el rugido del Jaguar Cósmico comunicándose con los iniciados.",
+      "tabu_visual_estricto": "La visión ocular directa de las trompetas de Yuruparí está sujeta al más inviolable tabú sobre las mujeres no iniciadas y los niños pequeños. Según el mito fundacional, en los tiempos primordiales las mujeres poseían las trompetas y gobernaban la maloca, pero los hombres se las arrebataron para restablecer el orden reproductivo. Si una mujer ve las trompetas sagradas, la tradición advierte que la maloca caería en desgracia mortal o infertilidad; por ello, durante la ceremonia, las mujeres son enclaustradas en la parte posterior de la maloca o trasladadas a una choza distante en la selva, escuchando únicamente el eco sobrecogedor de los instrumentos en la noche selvática."
+    },
+    "el_dabucuri_la_fiesta_de_la_abundancia_y_reciprocidad": {
+      "institucion_antropologica": "El Dabucurí es el sistema ceremonial de intercambio y donación ritual entre malocas y naciones de diferente lengua paterna unidas por vínculos de alianza matrimonial exogámica.",
+      "dinamica_del_don": "Una maloca anfitriona acumula y ahúma durante semanas o meses toneladas de pescado del río, carnes de cacería (danta, cerrillo, pajuil), canastos colmados de fariña o grandes tinajas de chicha fermentada de frutos silvestres (especialmente de Chontaduro, palma de Miriti o Umarí). Se cursa una invitación solemne a una maloca aliada (los cuñados / afines).",
+      "celebracion_y_danza": "Los visitantes arriban en sus mejores canoas ataviados con coronas de plumas de águila arpía, collares de dientes de jaguar y bastones de sonajas. Durante tres días y tres noches se suceden danzas colectivas ininterrumpidas, cantos responsoriales guiados por el Bayá (maestro de danza) y libaciones de chicha. Al culminar, la maloca anfitriona entrega ceremonialmente toda la montaña de comida a los invitados sin exigir retribución inmediata, sellando una deuda de reciprocidad sagrada que la maloca invitada deberá devolver con otro Dabucurí al año siguiente."
+    },
+    "los_sabedores_kumu_versus_paye_y_los_rezos_khetioka": {
+      "el_kumu_sacerdote_pensador": "El Kumú es el sabedor por excelencia, el filósofo-sacerdote del cosmos y la autoridad espiritual máxima de la maloca. No se dedica ordinariamente a la hechicería ni al exorcismo de posesiones: su tarea es el 'manejo del mundo' a través del pensamiento inmóvil y la meditación profunda en su banco sagrado. Es el guardián de los mitos de origen, de la genealogía clánica inmemorial y del calendario ecológico astral (sigue la posición de las constelaciones en la Vía Láctea para sincronizar la siembra, las vedas de pesca y los rituales).",
+      "el_paye_yai_chaman_sanador": "El Payé o Yai es el chamán activo, médico y terapeuta de campo. Manipula el humo del tabaco, consume yagé y se transforma espiritualmente en jaguar para viajar a las guaridas de los espíritus de la selva. Diagnostica maleficios, succiona del cuerpo de los enfermos pequeños dardos invisibles (espinas, piedras o gusanos espirituales proyectados por brujos rivales) y repara las fracturas energéticas provocadas por transgresiones alimentarias.",
+      "los_rezos_kumua_khetioka": "Son oraciones formulas complejas y susurros sagrados (Khetioka) que el Kumú pronuncia soplando humo de tabaco sobre los alimentos, sobre el agua del recién nacido, sobre la sangre menstrual de las jóvenes púberes o sobre los cuerpos de los cazadores. Los rezos 'enfrían' la ferocidad de la carne de cacería, neutralizan la agresividad de las plantas y garantizan que la interacción entre el ser humano y la selva no desate la furia de los Dueños del Monte."
+    }
+  },
+  "monografias_exhaustivas_de_las_ocho_naciones": [
+    {
+      "id": "tatuyo",
+      "nombre_comun": "Tatuyo",
+      "autonimo": "Pamoa / Pamowá ('Gente Armadillo' o 'Gente Tatú')",
+      "etimologia_y_significado": "Pamoa deriva de 'pamo' (armadillo gigante de la Amazonía / Priodontes maximus). En la mitología, el armadillo es el excavador cósmico que perforó los caminos subterráneos de la Tierra para dar salida a las aguas del inframundo y permitir el paso de la luz primordial.",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Central",
+        "idioma": "Tatuyo (Pamoa ocó)",
+        "vitalidad": "Vulnerable pero viva; hablada activamente en el entorno doméstico de las malocas de los caños Ti y Yapú, amenazada por la penetración del español en las escuelas concentradas de Mitú."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés",
+        "cuencas_hidrograficas": [
+          "Río Pirá-Paraná (curso superior)",
+          "Caño Ti (afluente principal)",
+          "Caño Yapú",
+          "Caño Colorado (cabeceras)"
+        ],
+        "resguardos": "Gran Resguardo Indígena del Vaupés y Resguardo Parte Oriental del Vaupés",
+        "centros_comunitarios": "Papanaua, Yapú, San Gabriel del Caño Ti"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 485 personas registradas como autorreconocidas en Colombia.",
+        "conteo_tradicional_aatis": "Alrededor de 600 individuos agrupados en comunidades tradicionales ribereñas.",
+        "tendencia": "Estable pero demográficamente reducida y vulnerable a la dispersión urbana."
+      },
+      "cosmovision_y_mito_de_origen": "Los Tatuyo emergieron de la Canoa Anaconda (Oyakö) en el raudal de Ipanoré en el río Vaupés. Cuando la Anaconda de la Transformación se detuvo en las rocas del caño Ti, el ancestro Pamoa descendió empuñando un cayado de madera aromática y abrió una caverna donde brotó el agua cristalina que no se enturbia. Los Tatuyo recibieron el don de conocer las entrañas de la tierra, la arcilla para las ollas rituales y los cantos secretos para sanar las picaduras de rayas de río.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Patrilineal, patrilocal y exógama estricta. Linajes ordenados jerárquicamente de hermano mayor a menor: linaje de jefes gobernantes, linaje de cantores kumúa, linaje de guerreros cuidadores de la frontera y linaje de servidores.",
+        "alianzas_exogamicas_preferenciales": [
+          "Barasano (con quienes mantienen una complementariedad ritual simbiótica inmemorial)",
+          "Tuyuca (intercambio a través de las cabeceras fluviales)",
+          "Carapana",
+          "Makuna"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Especialistas reconocidos en toda la cuenca del Pirá-Paraná por la manufactura de cestería de arumã fina con tintes de lodo férrico negro y por la alfarería tradicional de ollas cerámicas refractarias para la cocción de yagé y budares para hornear casabe.",
+      "situacion_juridica_y_auto_004": "Amparados expresamente por el Auto 004 de 2009 de la Corte Constitucional como pueblo en riesgo inminente de exterminio cultural debido a su reducida masa demográfica, la presión de grupos armados en las rutas fluviales del Vaupés y la precaria infraestructura médica tradicional en sus caños ancestrales."
+    },
+    {
+      "id": "tuyuca",
+      "nombre_comun": "Tuyuca",
+      "autonimo": "Dokapuara / Utapinõmakãphõná ('Gente de la Piedra de Arcilla' o 'Hijos de la Anaconda de Agua')",
+      "etimologia_y_significado": "Dokapuara proviene de 'doka' (barro rojizo / arcilla) y 'puara' (gente o nacidos del río). En fuentes históricas se les denominó Doceapuara o Tuyuca (del tupí 'tuyu' = barro/fango).",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Central",
+        "idioma": "Tuyuca (Dokapuara)",
+        "vitalidad": "Vital en la cuenca del Tiquié; es la lengua de prestigio cotidiano en sus comunidades. Célebre universalmente en la lingüística por su sistema de 5 evidenciales gramaticales, tonos fonémicos y armonía nasal perfecta.",
+        "investigacion_linguistica_emblematica": "Gramática de Janet Barnes (1984, 1999) y estudios fonológicos del Instituto Caro y Cuervo."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés (Colombia) y Estado de Amazonas (Brasil / frontera binacional)",
+        "cuencas_hidrograficas": [
+          "Río Tiquié (curso alto y medio, columna vertebral del pueblo Tuyuca)",
+          "Caño Macucú",
+          "Caño Abiyú",
+          "Caño Onça"
+        ],
+        "resguardos": "Gran Resguardo Indígena del Vaupés y Terras Indígenas Alto Rio Negro en Brasil.",
+        "centros_comunitarios": "San José del Tiquié, Teresita, Frontera, Bellavista"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 740 personas en territorio colombiano.",
+        "poblacion_total_binacional": "Alrededor de 1.800 personas sumando las comunidades de la cuenca brasileña del Tiquié.",
+        "tendencia": "Demográficamente activa y organizada con fuerte resistencia etnoeducativa."
+      },
+      "cosmovision_y_mito_de_origen": "Los Tuyuca emergieron del cuerpo central de la Gran Anaconda de Leche (Hikö Pamuri Mahsã) cuando remontaba los raudales de la cachivera de Ipanoré. Al llegar a las cabeceras rocosas del río Tiquié, la Anaconda golpeó con su cola las lajas de piedra dejando marcadas las huellas de los primeros Tuyuca. Su ancestro fundador recibió las semillas de la coca dulce y los cantos que calman los vendavales selváticos.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Sistema patrilineal estricto dividido en clanes jerarquizados por orden de nacimiento mítico. La dignidad de Kumú se transmite por línea directa del clan de mayor rango ceremonial.",
+        "alianzas_exogamicas_preferenciales": [
+          "Desano (alianza histórica mayor en el río Papurí y Tiquié)",
+          "Tukano propio (Ye'pâ-masa)",
+          "Piratapuyo (Waikhana)",
+          "Bará"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Constructores consumados de grandes canoas monóxilas labradas en troncos gigantescos de Itaúba y cedro, indispensables para sortear los raudales tormentosos del Tiquié; destacados por la confección de bancos de madera tallada pulida y coronas de plumas sagradas de garza blanca y paujil.",
+      "situacion_juridica_y_auto_004": "Pueblo protegido por el Auto 004 de 2009. Su condición binacional transfronteriza genera desafíos singulares en la prestación de servicios de salud, control militar fronterizo y homologación de derechos territoriales entre Colombia y Brasil."
+    },
+    {
+      "id": "carapana",
+      "nombre_comun": "Carapana",
+      "autonimo": "Mötea / Muteamasa ('Gente de la Paja / Caña Brava' o 'Gente Hormiga Arriera')",
+      "etimologia_y_significado": "Mötea alude a las cañas bravas de los raudales y a la tenacidad laboriosa de las hormigas de la selva. En lengua general se les llamó Carapana ('gente de los zancudos o zancudo volador').",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Central",
+        "idioma": "Carapana (Mötea ocó)",
+        "vitalidad": "En riesgo moderado a alto; hablada con fluidez por ancianos y adultos en el caño Ti y Pirá-Paraná, con fuerte bilingüismo en Tukano y español entre las generaciones jóvenes."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés (y zonas de tránsito hacia Guaviare)",
+        "cuencas_hidrograficas": [
+          "Caño Ti",
+          "Río Pirá-Paraná (curso medio)",
+          "Río Papurí (afluentes)",
+          "Río Vaupés medio"
+        ],
+        "resguardos": "Gran Resguardo Indígena del Vaupés y Resguardo Parte Oriental del Vaupés",
+        "centros_comunitarios": "Caño Ti, San Luis, Santa Cruz"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 412 personas registradas en Colombia.",
+        "conteo_tradicional_aatis": "Cerca de 500 personas en comunidades ribereñas del Vaupés.",
+        "tendencia": "Población pequeña con alto riesgo de pérdida de hablantes si no se revitalizan los nidos de lengua."
+      },
+      "cosmovision_y_mito_de_origen": "Los ancestros Carapana emergieron en el Raudal de las Golondrinas del río Vaupés. Durante la navegación primordial de la Canoa Anaconda, recibieron la encomienda cósmica de custodiar las recetas del ambil de tabaco y los cantos de fermentación de la chicha de chontaduro que impiden que los comensales se intoxiquen espiritualmente durante las grandes ceremonias del Dabucurí.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Patrilinajes exógamos estructurados en clanes asociados a aves de rapiña y hormigas sagradas. Mantienen una estricta etiqueta de hospitalidad en la maloca.",
+        "alianzas_exogamicas_preferenciales": [
+          "Tatuyo (vecinos inmediatos en el Caño Ti)",
+          "Siriano (a través de los caminos de monte hacia el Paca)",
+          "Yurutí",
+          "Barasano"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Maestría en la elaboración de tipitíes de tracción mecánica elástica de gran longitud para procesar yuca brava amarga, y en el tallado de espátulas y recipientes de calabazo pulido para conservar el ambil de tabaco.",
+      "situacion_juridica_y_auto_004": "Focalizados como pueblo en riesgo crítico de extinción por el Auto 004 de 2009 de la Corte Constitucional de Colombia debido a la pérdida territorial histórica, las secuelas de la bonanza coquera de finales del siglo XX y la falta de garantías para la transmisión intergeneracional de su lengua."
+    },
+    {
+      "id": "siriano",
+      "nombre_comun": "Siriano",
+      "autonimo": "Ciriano / Sihea / Tubü ('Gente del Sol / Rayo' o 'Gente del Pez Dorado')",
+      "etimologia_y_significado": "Sihea designa el destello cegador del rayo que hiende la tormenta y el pez de escama resplandeciente. En la tradición local, son los descendientes de la descarga luminosa con que el Padre Sol fecundó las aguas primordiales.",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Central",
+        "idioma": "Siriano (Sihea ocó)",
+        "vitalidad": "Vulnerable; posee una elevada inteligibilidad mutua con el idioma Desano (comparte más del 85% de vocabulario básico y estructuras verbales similares), lo que facilita el diálogo interétnico continuo.",
+        "particularidades": "Marcadores tonales sutiles y morfología evidencial de cinco valores idéntica a la matriz regional."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés",
+        "cuencas_hidrograficas": [
+          "Río Paca (cuenca principal histórica)",
+          "Caño Viña",
+          "Río Papurí (confluencias)",
+          "Afluentes del medio Vaupés"
+        ],
+        "resguardos": "Gran Resguardo Indígena del Vaupés",
+        "centros_comunitarios": "Paca, Caño Viña, Villa Fátima, Wacurabá"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 890 personas censadas en el territorio nacional.",
+        "conteo_tradicional_aatis": "Alrededor de 1.100 personas integradas a comunidades mixtas y malocas tradicionales.",
+        "tendencia": "Población de tamaño medio en el contexto del Vaupés, con cohesión comunitaria en el río Paca."
+      },
+      "cosmovision_y_mito_de_origen": "El antepasado cósmico Sihea descendió de las alturas celestiales en forma de un rayo luminoso sobre la cumbre de un cerro de piedra en las cabeceras del río Paca. Allí talló en la roca las marcas de su cuerpo antes de sumergirse en el remanso para unirse a la Anaconda Canoa. Por ello, los Siriano se consideran los guardianes de las piedras solares y los conocedores de las tormentas y los relámpagos que abren la temporada de desove de los peces.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Organización patrilineal jerárquica dividida en clanes mayores y menores. Los ancianos Kumúa Siriano son altamente reputados por su conocimiento de la ornitología sagrada y de los vientos.",
+        "alianzas_exogamicas_preferenciales": [
+          "Desano (alianza canónica milenaria; los Siriano se casan con Desanos al considerarse afines complementarios)",
+          "Bará",
+          "Tukano propio",
+          "Wanano"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Gran pericia en la manufactura de balayes ceremoniales con diseños de constelaciones celestes, trampas cacure de mimbre para peces medianos y chinchorros de fibra de cumare (Astrocaryum chambira) de alta elasticidad.",
+      "situacion_juridica_y_auto_004": "Cobijados por las medidas cautelares y órdenes del Auto 004 de 2009 de la Corte Constitucional, participando activamente a través de CRIVA en la construcción de su Plan de Salvaguarda Étnica frente a las amenazas de minería ilegal y dispersión migratoria hacia Mitú."
+    },
+    {
+      "id": "yuruti",
+      "nombre_comun": "Yurutí",
+      "autonimo": "Wajiara / Toteyo ('Gente de la Pava de Monte' o 'Hijos del Río de la Pava')",
+      "etimologia_y_significado": "Wajiara alude a la pava silvestre amazónica (Penelope jacquacu), ave de vuelo discreto y canto modulado vinculada a la dispersión de semillas de árboles frutales en el dosel de la selva.",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Central",
+        "idioma": "Yurutí (Wajiara ocó)",
+        "vitalidad": "Vulnerable; hablado en el curso alto del río Paca y caño Yi. Mantiene firmeza en las comunidades alejadas de los centros urbanos pero retrocede en áreas de contacto con misiones.",
+        "rasgos_gramaticales": "Armonía nasal estricta y amplio paradigma de sufijos clasificadores de botánica selvática."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés (y zonas de frontera con Guaviare)",
+        "cuencas_hidrograficas": [
+          "Río Paca (curso alto)",
+          "Caño Yi",
+          "Caño Tui",
+          "Afluentes de cabecera del Papurí"
+        ],
+        "resguardos": "Gran Resguardo Indígena del Vaupés",
+        "centros_comunitarios": "Santa María del Paca, San José del Yi, Puerto Colombia"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 610 personas censadas en Colombia.",
+        "conteo_tradicional_aatis": "Alrededor de 750 personas.",
+        "tendencia": "Comunidad concentrada territorialmente con fuerte arraigo ribereño."
+      },
+      "cosmovision_y_mito_de_origen": "Los Wajiara nacieron cuando la Canoa Anaconda tocó los lechos pedregosos del alto Paca. El Gran Espíritu les entregó las flautas de bambú y los rezos de apaciguamiento de los animales feroces del monte. Los Yurutí tienen la misión cósmica de regular el paso de los cardúmenes de peces migratorios y proteger las colpas saladas donde los cerillos y tapires beben agua mineralizada.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Sistema patrilineal exógamo articulado en clanes con nombres de aves y árboles maestros (Clan Pava, Clan Cedro, Clan Garza).",
+        "alianzas_exogamicas_preferenciales": [
+          "Siriano (vecinos en el mismo río Paca)",
+          "Tuyuca",
+          "Cubeo (en las zonas de transición hacia el norte)",
+          "Carapana"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Especialistas en la construcción de complejas trampas de empalizada fija (cacures y matapas) construidas en los raudales de los ríos para capturar peces en las grandes subiendas; diestros en el procesamiento de tinturas naturales de carayurú y huito (Genipa americana).",
+      "situacion_juridica_y_auto_004": "Pueblo amparado por el Auto 004 de 2009. Su territorio sufrió la intromisión de frentes guerrilleros y economías extractivas durante décadas, requiriendo el fortalecimiento de la guardia indígena comunitaria para la protección de sus cabeceras fluviales sagradas."
+    },
+    {
+      "id": "pisamira",
+      "nombre_comun": "Pisamira",
+      "autonimo": "Papiwa / Pasamira / Wasina ('Gente del Pez Redondo' o 'Gente del Pequeño Tucán')",
+      "etimologia_y_significado": "Papiwa designa al tucancito verde de plumaje tornasolado y al pez plateado de los remansos tranquilos. Es uno de los pueblos más pequeños y singulares de toda la Amazonía colombiana.",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Central / Septentrional",
+        "idioma": "Pisamira (Papiwa ocó)",
+        "vitalidad": "En peligro crítico de extinción (Critically Endangered). Cuenta con menos de 25 a 35 hablantes fluidos ancianos. Ha sufrido una intensa presión de desplazamiento sociolingüístico hacia la lengua Tukano dominante y hacia el español en Mitú.",
+        "esfuerzos_de_rescate": "Documentación lingüística urgente impulsada por el Instituto Caro y Cuervo y colectivos de jóvenes nativos en el caño Yabarí."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés",
+        "cuencas_hidrograficas": [
+          "Caño Yabarí (afluente del río Vaupés medio, territorio nuclear Pisamira)",
+          "Río Vaupés (inmediaciones de la cabecera municipal de Mitú)"
+        ],
+        "resguardos": "Gran Resguardo Indígena del Vaupés (comunidad específica de Yabarí)",
+        "centros_comunitarios": "Aldea de Yabarí (a escasos kilómetros fluviales de Mitú)"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 120 personas reconocidas como Pisamira en Colombia.",
+        "conteo_tradicional_aatis": "Alrededor de 150 a 180 personas, muchas de las cuales han contraído matrimonio con otros pueblos Tukano y residen en barrios periféricos de Mitú.",
+        "tendencia": "Extremadamente alarmante; riesgo inminente de desaparición física y desaparición total de la lengua si desaparecen los últimos abuelos hablantes."
+      },
+      "cosmovision_y_mito_de_origen": "Los ancestros Papiwa nacieron en las lajas rocosas del caño Yabarí. Según la memoria mítica, emergieron de un huevo cósmico depositado por la Anaconda en una cavidad de piedra pulida. Recibieron el secreto de los cantos curativos de cuna para proteger el alma tierna de los recién nacidos y los secretos del humo sagrado para espantar los malos sueños provocados por los espíritus de la selva virgen.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Originalmente clanes patrilineales jerarquizados; debido a la brutal caída demográfica del siglo XX provocada por epidemias de sarampión y la explotación cauchera, su estructura clánica colapsó parcialmente, refundiéndose en una sola unidad comunal de parentesco.",
+        "alianzas_exogamicas_preferenciales": [
+          "Tukano propio (con quienes conviven estrechamente)",
+          "Cubeo",
+          "Siriano",
+          "Desano"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Conservan la maestría tradicional en la recolección silvestre de mieles de abejas meliponas sin aguijón y en la cestería de pequeños balayes ceremoniales con motivos geométricos escalonados.",
+      "situacion_juridica_y_auto_004": "Caso emblemático de extrema urgencia en el Auto 004 de 2009 de la Corte Constitucional de Colombia. La Corte ordenó planes de choque prioritarios e inmediatos para evitar la extinción biológica y cultural de los Pisamira, destacando la urgencia de proyectos de etnoeducación propia, retorno territorial integral y subsidios a los abuelos custodios de la lengua ancestral."
+    },
+    {
+      "id": "taiwano",
+      "nombre_comun": "Taiwano",
+      "autonimo": "Eduria / Ukwena / Taibano ('Gente Ortiga' o 'Hijos del Camino de la Estrella')",
+      "etimologia_y_significado": "Eduria proviene de 'edu' (planta de ortiga brava sagrada utilizada en las purificaciones rituales masculinas). Ukwena alude a la gente que camina por la senda de las estrellas celestes.",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Sur (Meridional)",
+        "idioma": "Taiwano / Eduria",
+        "vitalidad": "Vulnerable; forma un continuo dialectal sumamente cercano y mutuamente inteligible con el idioma Barasano, con el que comparte más del 80% de convergencia morfosintáctica y léxica.",
+        "particularidades": "Rica prosodia tonal con acentos de contorno descendente y sofisticada flexión verbal de aspecto durativo e incoativo."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés",
+        "cuencas_hidrograficas": [
+          "Río Cananarí (territorio nuclear tradicional)",
+          "Caño Piedra Negra",
+          "Río Pirá-Paraná (curso medio y bajo)",
+          "Cerros de Taraira y formaciones tepuyanas del sur"
+        ],
+        "resguardos": "Resguardo Indígena Río Pirá-Paraná y Gran Resguardo del Vaupés",
+        "centros_comunitarios": "Piedra Negra, Puerto Paloma, Caño Guayabero"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 320 personas registradas en Colombia.",
+        "conteo_tradicional_aatis": "Alrededor de 400 a 450 personas integradas a las comunidades del Pirá-Paraná y Cananarí.",
+        "tendencia": "Población reducida pero con extraordinaria fortaleza cultural, chamanismo activo y preservación intacta de la maloca tradicional."
+      },
+      "cosmovision_y_mito_de_origen": "Los Eduria surgieron en el Cerro de Piedra Negra en el río Cananarí. La Anaconda Ancestral de la Creación posó allí su cuerpo y al mudar de piel dejó sobre la roca viva las escamas resplandecientes que se transformaron en los primeros hombres Eduria. Por ello, son considerados los guardianes de los cerros de piedra y de los vientos de las tormentas australes. Poseen un lazo cósmico indisoluble con el ciclo de Yuruparí, siendo co-guardianes del saber sagrado He Yaia.",
+      "organizacion_social_y_clanes": {
+        "estructura": "Patrilinajes jerárquicos ordenados en rangos estrictos: linaje de Jefes de Maloca, linaje de Kumúa mayores del tabaco, linaje de Cantores de Danza (Bayá) y linaje de cazadores.",
+        "alianzas_exogamicas_preferenciales": [
+          "Barasano (intercambio nupcial simbiótico e histórico; los Eduria son afines estructurales indispensables de los Barasano)",
+          "Makuna",
+          "Tatuyo"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Artesanos legendarios de la plumería ceremonial sagrada: elaboran coronas y diademas espectaculares combinando plumas de guacamaya escarlata, águila arpía, gallito de roca y garza blanca montadas sobre aros de corteza fina; talladores de cerbatanas de madera de puy de más de tres metros de longitud.",
+      "situacion_juridica_y_auto_004": "Pueblo protegido por el Auto 004 de 2009. Como miembros activos de la Asociación ACAIPI del Pirá-Paraná, los Eduria son parte fundamental de la declaratoria de la UNESCO de 2011 sobre el Chamanismo Jaguar de Yuruparí, liderando la resistencia pacífica contra intentos de prospección minera en los cerros sagrados del Cananarí."
+    },
+    {
+      "id": "barasano_del_norte",
+      "nombre_comun": "Barasano del Norte",
+      "autonimo": "Yeba masa / Paneroa ('Gente de la Tierra / Gente del Universo')",
+      "etimologia_y_significado": "Yeba masa proviene de 'Yeba' (la Tierra primordial, el suelo sagrado, el polvo cósmico fecundado por el Sol) y 'masa' (gente, humanidad originaria). Paneroa alude a los linajes originarios del Pirá-Paraná.",
+      "afiliacion_linguistica": {
+        "familia": "Tukano Oriental",
+        "subrama": "Sur (Meridional)",
+        "idioma": "Barasano (Yeba ocó)",
+        "vitalidad": "Vital y plenamente vigente en la cuenca del Pirá-Paraná; una de las lenguas indígenas mejor preservadas y con mayor transmisión intergeneracional viva en el entorno de la maloca tradicional.",
+        "investigacion_etnolinguistica_emblematica": "Estudiada exhaustivamente por Christine Hugh-Jones, Stephen Hugh-Jones y Elsa Gomez-Imbert."
+      },
+      "territorio_ancestral_y_cuencas": {
+        "departamento": "Vaupés",
+        "cuencas_hidrograficas": [
+          "Río Pirá-Paraná (la cuenca sagrada entera, corazón del chamanismo del Vaupés)",
+          "Caño Colorado",
+          "Caño Pato",
+          "Caño San Bernardo",
+          "Afluentes del Cananarí"
+        ],
+        "resguardos": "Resguardo Indígena Río Pirá-Paraná (ACAIPI) y Gran Resguardo del Vaupés",
+        "centros_comunitarios": "San Miguel, Pato, Caño Colorado, Santa Isabel"
+      },
+      "demografia": {
+        "censo_dane_2018": "Aproximadamente 630 personas censadas en Colombia.",
+        "conteo_tradicional_aatis": "Alrededor de 750 a 850 individuos que habitan en malocas comunitarias a lo largo del Pirá-Paraná.",
+        "tendencia": "Demografía sólida y altamente cohesionada bajo el sistema de gobierno propio de las autoridades tradicionales."
+      },
+      "cosmovision_y_mito_de_origen": "Los Yeba masa descienden directamente de Yeba Biki (el Abuelo de la Tierra y Creador Primordial). El río Pirá-Paraná es para ellos el cuerpo extendido del Pez Cósmico. En su viaje de creación, la Anaconda de Leche parió a los linajes Barasano asignándoles el centro geográfico y espiritual del mundo. Son los custodios por antonomasia de los instrumentos de Yuruparí y de la Casa Sagrada (He Wi'i). Cada rincón de su territorio está marcado por petroglifos, raudales y cerros donde los ancestros dejaron depositada la fuerza vital inagotable del universo.",
+      "organizacion_social_y_clanes": {
+        "estructura": "El modelo sociopolítico clánico más refinado y riguroso de la Amazonía noroccidental. Los linajes patrilineales se dividen en rangos hereditarios con funciones cósmicas intransferibles:",
+        "jerarquia_de_linajes": [
+          "Linaje Yuvá (Los Jefes de Maloca / Hermano Mayor): Gobernantes políticos y custodios del orden territorial y diplomático.",
+          "Linaje Kumú (Los Sacerdotes y Filósofos): Sabedores del pensamiento, rezadores del mambeadero y guías del calendario ecológico.",
+          "Linaje Yai (Los Chamanes Jaguares): Médicos operativos, curadores de enfermedades espirituales y combatientes contra fuerzas oscuras.",
+          "Linaje Bayá (Los Maestros de Danza y Canto): Custodios de la memoria lírica, cantores de Dabucurí y tocadores de sonajas.",
+          "Linaje Bia (Los Guerreros y Pescadores / Hermano Menor): Encargados del abastecimiento material, defensa territorial y expediciones fluviales."
+        ],
+        "alianzas_exogamicas_preferenciales": [
+          "Taiwano / Eduria (sus principales aliados matrimoniales y hermanos de ritual)",
+          "Tatuyo (alianza continua en el alto Pirá-Paraná)",
+          "Makuna (vecinos en el bajo Pirá-Paraná y Apaporis)",
+          "Tuyuca"
+        ]
+      },
+      "tecnologias_y_cultura_material": "Arquitectos de las malocas más colosales, perfectas y estéticamente imponentes de la Amazonía; constructores de bancos de madera dura tallados en una sola pieza con motivos de anaconda y jaguar; tejedores de balayes con mapas estelares y elaboradores de instrumentos de viento sagrados.",
+      "situacion_juridica_y_auto_004": "Pueblo protegido por el Auto 004 de 2009 de la Corte Constitucional de Colombia. Los Barasano del Norte son líderes fundadores de la Asociación ACAIPI. En 2011 lograron el hito histórico mundial de que la UNESCO declarara el 'Conocimiento tradicional de los chamanes jaguares de Yuruparí' (He Yaia Kedaña) como Patrimonio Cultural Inmaterial de la Humanidad. Actualmente lideran la implementación del Decreto 632 de 2018 para consolidar su territorio como Entidad Territorial Indígena autónoma."
+    }
+  ],
+  "marco_juridico_derechos_colectivos_y_auto_004": {
+    "jurisprudencia_constitucional": {
+      "sentencia_t_025_de_2004": "Sentencia hito de la Corte Constitucional de Colombia que declaró el 'Estado de Cosas Inconstitucional' frente a la crisis humanitaria del desplazamiento forzado interno en el país.",
+      "auto_004_de_2009": {
+        "expedicion": "Emitido el 26 de enero de 2009 por la Sala Especial de Seguimiento de la Corte Constitucional (Magistrado Ponente: Manuel José Cepeda Espinosa).",
+        "declaratoria_fundamental": "La Corte declaró formalmente que más de 34 pueblos indígenas de Colombia, con mención enfática y directa sobre las naciones indígenas del departamento del Vaupés (Carapana, Siriano, Pisamira, Tatuyo, Taiwano, Tuyuca, Yurutí, Barasano), se encuentran en grave 'riesgo inminente de exterminio físico y cultural' como consecuencia directa del conflicto armado interno, el desplazamiento forzado, el abandono estructural estatal y la invasión de sus territorios ancestrales.",
+        "factores_determinantes_del_riesgo_en_el_vaupes": [
+          "Presencia histórica de frentes armados ilegales (FARC, disidencias, grupos armados organizados) disputándose corredores fluviales estratégicos de narcotráfico hacia Brasil y la cuenca del Río Negro.",
+          "Reclutamiento ilícito forzado de niños, niñas y jóvenes indígenas en los internados y comunidades ribereñas, fracturando la cadena de transmisión generacional del conocimiento sagrado.",
+          "Confinamiento de comunidades enteras en sus malocas por amenazas, siembra de minas antipersonal en senderos de chagra y restricción de navegación nocturna en los ríos.",
+          "Asesinato selectivo y hostigamiento contra líderes tradicionales, sabedores Kumúa y capitanes de maloca, considerados objetivos por oponerse al avance armado.",
+          "Fragilidad demográfica crítica en pueblos como el Pisamira (con poco más de un centenar de personas) y Carapana, donde la muerte o desplazamiento de un puñado de sabedores amenaza con extinguir por completo la cultura y la lengua.",
+          "Avance de la minería ilegal de oro aluvial y dragado con vertimiento de mercurio en las cabeceras de ríos sagrados como el Taraira, Cananarí y afluentes del Vaupés, envenenando las cadenas tróficas de peces de subsistencia."
+        ],
+        "ordenes_estructurales_de_la_corte": {
+          "orden_segunda": "Ordenar al Gobierno Nacional y al Ministerio del Interior la formulación e implementación inmediata de 'Planes de Salvaguarda Étnica' específicos, concertados y construidos mediante Consulta Previa con las autoridades tradicionales de cada pueblo en riesgo.",
+          "componentes_obligatorios_del_plan_de_salvaguarda": [
+            "Protección territorial integral y saneamiento de resguardos ancestrales.",
+            "Garantía de seguridad alimentaria y protección de las chagras tradicionales.",
+            "Salud propia intercultural y rescate de la farmacopea sagrada botánica.",
+            "Etnoeducación propia, revitalización de las lenguas indígenas en peligro y preservación de la maloca como escuela cósmica.",
+            "Prevención urgente del reclutamiento forzado y atención a víctimas de desplazamiento."
+          ]
+        }
+      }
+    },
+    "gobernanza_propia_y_aatis": {
+      "definicion_aatis": "Las Asociaciones de Autoridades Tradicionales Indígenas (AATIs) son las entidades públicas de carácter especial mediante las cuales los pueblos del Vaupés ejercen su autogobierno, jurisdicción especial indígena y administración territorial.",
+      "asociaciones_emblematicas_del_vaupes": [
+        {
+          "sigla": "CRIVA",
+          "nombre": "Consejo Regional Indígena del Vaupés",
+          "alcance": "Organización sombrilla departamental que articula a las más de 25 etnias del Vaupés ante el Estado colombiano, la OPIAC y la ONIC."
+        },
+        {
+          "sigla": "ACAIPI",
+          "nombre": "Asociación de Capitanes y Autoridades Tradicionales Indígenas del Río Pirá Paraná",
+          "alcance": "Autoridad territorial ancestral del Pirá-Paraná (pueblos Barasano, Eduria, Tatuyo, Makuna). Pioneros mundiales en cartografía sagrada, ordenamiento ambiental biocultural y gestión autónoma sin intermediarios."
+        },
+        {
+          "sigla": "ACIMA",
+          "nombre": "Asociación de Cabildos Indígenas del Medio Apaporis",
+          "alcance": "Gobernanza del río Apaporis y resguardo Yaigojé Apaporis."
+        },
+        {
+          "sigla": "AATIZOT",
+          "nombre": "Asociación de Autoridades Tradicionales Indígenas de la Zona de Tiquié",
+          "alcance": "Gestión del territorio ancestral Tuyuca y pueblos ribereños de la cuenca del Tiquié."
+        }
+      ],
+      "decreto_ley_632_de_2018_y_las_etis": {
+        "significado_historico": "Decreto presidencial expedido bajo facultades constitucionales extraordinarias para reglamentar los Territorios Indígenas en las áreas no municipalizadas de los departamentos de Amazonas, Guainía y Vaupés.",
+        "efecto_juridico": "Permite que las AATIs (como ACAIPI) se registren y operen formalmente como Consejos Indígenas con estatus de Gobiernos Locales Autónomos, administrando directamente los recursos del Sistema General de Participaciones (SGP), la educación, la salud y la protección ambiental de sus selvas sin subordinarse a alcaldías foráneas."
+      }
+    },
+    "reconocimiento_internacional_unesco_2011": {
+      "declaratoria": "Patrimonio Cultural Inmaterial de la Humanidad (Inscrito en 2011 en la Lista Representativa de la UNESCO).",
+      "titulo_oficial": "Conocimiento tradicional de los chamanes jaguares de Yuruparí (He Yaia Kedaña)",
+      "pueblos_titulares": "Pueblos indígenas de la cuenca del río Pirá-Paraná y afluentes (Barasano, Taiwano/Eduria, Tatuyo, Makuna, Tuyuca, Carapana).",
+      "fundamento_de_la_unesco": "Reconocimiento a un sistema integrado e inmemorial de sabiduría ecológica, cosmología, música sagrada, normas éticas de manejo territorial y rituales de Yuruparí que ha preservado la selva amazónica en estado prístino durante milenios mediante la regulación espiritual de la relación entre el ser humano y la naturaleza."
+    }
+  },
+  "metricas_y_sintesis_del_corpus": {
+    "total_pueblos_indigenas_documentados": 8,
+    "familia_linguistica_predominante": "Tukano Oriental (ramas Norte, Central y Sur)",
+    "niveles_de_evidencialidad_gramaticalizada": 5,
+    "elementos_farmacopea_sagrada_analizados": 4,
+    "tecnologias_y_dispositivos_materiales_descritos": [
+      "Chagra agroforestal estratificada de policultivo itinerante",
+      "Rallador lítico-maderero con incrustaciones de cuarzo y resina de balata (Jime)",
+      "Tipití elástico de sarga de arumã para extracción mecánica de ácido cianhídrico",
+      "Budare refractario para cocción de casabe no perecedero",
+      "Tostador continuo de fariña granulada (põ'ka)",
+      "Olla de reducción térmica prolongada para salsa de ají negro (Tucupí)",
+      "Balay cestero de arumã con geometría cosmológica serpentina de la Anaconda (Waja)"
+    ],
+    "componentes_arquitectonicos_de_la_maloca_documentados": [
+      "Eje Este-Oeste solar y fluvial de la Anaconda Canoa",
+      "Cuatro maderos sagrados centrales del Kumú (pilares del firmamento)",
+      "Puerta frontal Este masculina (Õma wi'i) y mambeadero",
+      "Puerta posterior Oeste femenina (Romia wi'i) y procesamiento de yuca",
+      "Techumbre de caraná como Vía Láctea y bóveda celeste"
+    ],
+    "dimensiones_rituales_de_yuripari": [
+      "Rito de paso e iniciación de púberes masculinos",
+      "Trompetas y flautas sagradas de corteza (Mimi / He buhurü)",
+      "Tabú visual femenino estricto y custodia mítica",
+      "Fiesta de reciprocidad y diplomacia del Dabucurí",
+      "Rezos de enfriamiento del mundo (Khetioka) del Kumú"
+    ],
+    "marco_juridico_vinculante": [
+      "Constitución Política de Colombia de 1991 (Arts. 7, 8, 10, 70, 246, 286, 329, 330)",
+      "Sentencia T-025 de 2004 y Auto 004 de 2009 de la Corte Constitucional",
+      "Decreto Ley 632 de 2018 para Entidades Territoriales Indígenas",
+      "Patrimonio Inmaterial de la Humanidad UNESCO 2011 (He Yaia Kedaña)"
+    ]
+  }
+}

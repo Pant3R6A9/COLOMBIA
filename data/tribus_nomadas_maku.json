@@ -1,0 +1,713 @@
+{
+  "metadata": {
+    "titulo": "Atlas Etnográfico, Filogenético y de Derechos de los Pueblos Nómadas Nadahup, Kakua-Nukak, Puinave y Aislados de los Interfluvios Amazónicos",
+    "subtitulo": "Monografía exhaustiva sobre los cazadores-recolectores de tierra firme, fonología tonal de hasta 5 tonos, campamentos estacionales he-waya de platanillo, hamacas de cumare, etnobiología del dosel, farmacopea y memoria de la crisis humanitaria de contacto",
+    "version": "1.0.0",
+    "fecha_edicion": "2026-09-23",
+    "autor": "Subagente Especialista en Pueblos Nómadas Nadahup / Makú y Aislados de Colombianopedia",
+    "proyecto": "Colombianopedia - Enciclopedia del Patrimonio Étnico, Biocultural e Histórico de Colombia",
+    "cobertura_geografica": [
+      "Guaviare (Interfluvio Guaviare-Inírida, San José del Guaviare, Calamar, Tomachipán, Caño Makú, El Retorno, Charras, Aguabonita)",
+      "Vaupés (Cuencas del Tiquié, Papurí, Querarí, Cuduyarí, Pirá-Paraná, Apaporis, Caño Yapú, Caño Wacará, Caño Ti, Mitú, Taraira)",
+      "Guainía (Cuenca del río Inírida, Caño Bocón, Caño Uva, Cerros de Mavecure, Puerto Inírida, Barranco Minas)",
+      "Caquetá (Interfluvios de los ríos Orteguaza, Mecaya, Senseya y curso medio del río Caquetá)",
+      "Putumayo (Interfluvio Putumayo-Caquetá y piedemonte amazónico etnohistórico)",
+      "Amazonas (Sector septentrional del río Apaporis y frontera binacional colombo-brasileña del Traíra)"
+    ],
+    "total_pueblos_documentados": 6,
+    "pueblos_documentados_exhaustivamente": [
+      "Kakua (Cacua / Bará Makú)",
+      "Hupda (Hup / Jupda)",
+      "Yuhupdeh (Yuhup)",
+      "Puinave (Wãnsöhöt) del río Inírida",
+      "Macaguaje (Etnia y lengua extinta o remanente del Putumayo/Caquetá, reconstrucción etnohistórica)",
+      "Nukak (Makú-Nukak - Análisis exhaustivo del último pueblo de contacto inicial en 1988, despojo territorial y trashumancia)"
+    ],
+    "familias_linguisticas_estudiadas": [
+      "Familia Nadahup (Hupda, Yuhupdeh, Dâw, Nadëb)",
+      "Familia Kakua-Nukak (Kakua, Nukak)",
+      "Familia / Lengua Aislada Puinave (Wãnsöjöt)",
+      "Familia Tukano Occidental (Ramas interfluviales extintas: Macaguaje)"
+    ],
+    "marcos_juridicos_y_jurisprudencia_relevante": [
+      "Constitución Política de Colombia de 1991 (Artículos 7, 8, 10, 70, 246 y 330)",
+      "Convenio 169 de la OIT sobre Pueblos Indígenas y Tribales en Países Independientes (Ley 21 de 1991)",
+      "Sentencia T-025 de 2004 de la Corte Constitucional (Estado de Cosas Inconstitucional en materia de desplazamiento forzado)",
+      "Auto 004 de 2009 de la Corte Constitucional (Protección perentoria frente al riesgo inminente de exterminio físico y cultural de 34 pueblos indígenas, incluyendo prioritariamente a los pueblos nómadas)",
+      "Auto 173 de 2012 de la Corte Constitucional (Medidas cautelares de urgencia y Plan de Salvaguarda Específico e Inaplazable para el Pueblo Nukak)",
+      "Auto 266 de 2017 de la Corte Constitucional (Seguimiento riguroso a las órdenes de retorno, desminado humanitario y protección integral)",
+      "Decreto Ley 4633 de 2011 (Reparación integral y restitución de derechos territoriales a comunidades indígenas víctimas del conflicto armado)",
+      "Decreto 1232 de 2018 (Sistema Nacional de Prevención y Protección para Pueblos Indígenas en Aislamiento y Contacto Inicial - PIACI)"
+    ],
+    "fuentes_academicas_y_referentes_etnologicos": [
+      "Epps, Patience (2008). 'A Grammar of Hup'. Mouton de Gruyter, Berlín/Nueva York.",
+      "Bolaños, Katherine (2016). 'A Grammar of Kakua'. LOT Publications / University of Texas at Austin.",
+      "Girón, Jesús Mario (2008). 'Una gramática del Puinave'. Vrije Universiteit Amsterdam.",
+      "Mahecha Rubio, Dany & Carlos Franky Calvo (1999). 'Los Nukak: Nómadas de la Amazonia colombiana'. Universidad Nacional de Colombia.",
+      "Cabrera Becerra, Gabriel, Carlos Franky & Dany Mahecha (1999). 'Los Nukak: Vida nómada y relaciones interétnicas en el Guaviare'. Fundación Gaia Amazonas.",
+      "Pozzobon, Rui (1991). 'Parentesco e organização social dos Maku'. Universidade Federal do Rio de Janeiro.",
+      "Reichel-Dolmatoff, Gerardo (1971). 'Amazonian Cosmos: The Sexual and Religious Symbolism of the Desana Indians'. University of Chicago Press.",
+      "Jackson, Jean E. (1983). 'The Fish People: Linguistic Exogamy and Tukanoan Identity in Northwest Amazonia'. Cambridge University Press.",
+      "Silverwood-Cope, Peter L. (1990). 'Os Makú: Povo Caçador do Noroeste da Amazônia'. Editora UnB, Brasilia.",
+      "Landaburu, Jon (2000). 'Clasificación de las lenguas indígenas de Colombia'. Centro Colombiano de Estudios de Lenguas Aborígenes (CCELA), Universidad de los Andes.",
+      "Castellví, Marcelino de (1934-1940). 'La lengua Macaguaje y las familias lingüísticas del Caquetá y Putumayo'. CILEAC, Sibundoy.",
+      "Rivet, Paul (1912). 'Affinités du Miranya et du Maku'. Journal de la Société des Américanistes.",
+      "Koch-Grünberg, Theodor (1906). 'Die Indianerstämme am oberen Rio Negro und Yapurá'. Zeitschrift für Ethnologie.",
+      "Corte Constitucional de Colombia. Relatoría de Sentencias y Autos de Seguimiento T-025/2004, Auto 004/2009, Auto 173/2012, Auto 266/2017.",
+      "ACNUR / UNHCR Colombia (2011-2024). 'Diagnósticos humanitarios sobre el pueblo indígena Nukak Makú en el departamento del Guaviare'.",
+      "Defensoría del Pueblo de Colombia (2020-2025). 'Informes de seguimiento a la alerta temprana y situación de derechos humanos de los pueblos nómadas de la Amazonía'."
+    ]
+  },
+  "marco_teorico_antropologico_y_linguistico": {
+    "deconstruccion_critica_del_termino_maku": {
+      "etimologia_y_origen_peyorativo": "El vocablo 'Makú' no constituye un autónimo de ninguna etnia o comunidad indígena, sino un exónimo despectivo de probable raíz arawak (curripaco/baniwa: 'ma-aku', traducible como 'los mudos', 'los que carecen de habla inteligible' o 'salvajes'). Dicha denominación fue adoptada y difundida ampliamente por los grupos de la familia lingüística Tukano Oriental (como los Desana, Bará, Tukano, Cubeo y Tuyuca) para referirse a los pobladores que habitaban en el interior de la selva virgen y carecían de asentamientos ribereños permanentes.",
+      "connotacion_colonial_y_discriminatoria": "Históricamente, los pueblos ribereños sedentarios utilizaron el apelativo para situar a los cazadores-recolectores en el peldaño inferior de la jerarquía regional del Noroeste Amazónico, atribuyéndoles una condición subordinada de 'peones', 'siervos' o grupos sin linaje sagrado. Esta visión estigmatizante fue asimilada acríticamente por cronistas caucheros, exploradores y misioneros católicos y protestantes en los siglos XIX y XX, naturalizando relaciones de servidumbre forzada.",
+      "superacion_epistemologica_contemporanea": "La antropología y la lingüística contemporáneas rechazan tajantemente el uso genérico, homogenizador e insultante de la etiqueta 'Makú'. En su lugar, la investigación rigurosa reivindica los autónimos con los que cada pueblo se define en su propia lengua: Kákwa ('personas'), Húpdeh ('gente verdadera'), Yühüpdeh ('gente de la selva virgen'), Wãnsöhöt ('hijos de Düj nacidos del agua') y Nukak ('la gente'), reservando para la filogenia científica las familias lingüísticas Nadahup y Kakua-Nukak."
+    },
+    "el_dualismo_ecologico_gente_de_rio_vs_gente_de_centro": {
+      "dicotomia_territorial": "El Noroeste Amazónico se encuentra vertebrado por un profundo dualismo sociocultural entre dos formas opuestas y complementarias de habitar el bioma selvático: la 'Gente de Río' (conformada por pueblos de las familias Tukano Oriental y Arawak) que habitan las márgenes de los grandes ríos de aguas negras y blancas (Vaupés, Papurí, Tiquié, Guainía), y la 'Gente de Centro' o 'Gente de Selva' (Nadahup, Kakua-Nukak) que dominan las terrazas no inundables de tierra firme y los interfluvios selváticos.",
+      "simbiosis_asimetrica_tradicional": "Lejos de existir un aislamiento estanco, ambas poblaciones desarrollaron durante siglos un complejo sistema de simbiosis ecológica e intercambio asimétrico. Los cazadores-recolectores nómadas aportaban productos exclusivos del dosel y la tierra firme: carne ahumada de mamíferos arborícolas (monos churucos, aulladores) y aves de copa (paujiles), veneno de curare de máxima pureza, mieles vírgenes de abejas sin aguijón (Meliponas), fibra de cumare para hamacas elásticas, resinas antiofídicas y hemostáticas (caraña) y mano de obra temporal para el desmonte de chagras. A cambio, los ribereños entregaban fariña (harina tostada de yuca brava), casabe, ollas de arcilla cocida, ají negro (tucupí) y, en tiempos modernos, anzuelos y herramientas de metal.",
+      "tension_jerarquica_y_autonomia_nomada": "A pesar de que los horticultores fluviales elaboraron un discurso mítico en el cual se autoproclamaban superiores (descendientes de la Anaconda Canoa y dueños de la maloca cósmica de Yurupary), los pueblos de interfluvio preservaron una tenaz autonomía cultural y territorial. Su capacidad para dispersarse en la espesura del bosque primario les confirió una ventaja estratégica inigualable, permitiéndoles resistir tanto el dominio de las malocas ribereñas como las cacerías de esclavos indígenas durante el holocausto cauchero."
+    },
+    "filogenia_linguistica_y_tipologia_gramatical": {
+      "ruptura_del_constructo_maku_puinave": "Durante décadas se agrupó a estas lenguas bajo la hipotética macrofamilia 'Makú-Puinave' propuesta por Joseph Greenberg y Čestmír Loukotka. No obstante, las investigaciones rigurosas de la lingüística descriptiva y comparativa moderna (Patience Epps 2008, Katherine Bolaños 2016, Jesús Mario Girón 2008, Valteir Martins 2005) demostraron la inexistencia de correspondencias fonológicas regulares y cognados básicos compartidos, disolviendo de manera definitiva dicha macrofamilia.",
+      "familias_linguisticas_validadas": {
+        "familia_nadahup": "Familia conformada por cuatro lenguas plenamente emparentadas: Hup (Hupda), Yuhup (Yuhupdeh), Dâw y Nadëb. Se extiende entre el departamento del Vaupés en Colombia y el estado de Amazonas en Brasil.",
+        "familia_kakua_nukak": "Familia lingüística independiente compuesta exclusivamente por dos idiomas hermanos: Kakua (hablado en el Vaupés central) y Nukak (hablado en el interfluvio Guaviare-Inírida). Aunque comparten rasgos de difusión areal con Nadahup, constituyen un tronco filogenético separado.",
+        "lengua_puinave_wansojot": "Lengua genéticamente aislada (stock independiente). No guarda parentesco demostrable con Nadahup ni con Kakua-Nukak.",
+        "familia_tukano_occidental_remanente": "El extinto idioma Macaguaje perteneció filogenéticamente a la rama occidental de la familia Tukano (emparentado con Siona, Secoya y Koreguaje), desvirtuando su histórica clasificación colonial como 'makú'."
+      },
+      "sistemas_tonales_extremos_hasta_cinco_tonos": {
+        "descripcion_y_tonogenesis": "A diferencia de las lenguas de las tierras altas andinas, las familias lingüísticas Nadahup (Makú) y Kakua-Nukak han desarrollado características tonales extremas (hasta 5 tonos en Hupda y Kakua) mediante tonogénesis, impulsada por la pérdida histórica de consonantes codas y la monosilabización de morfemas léxicos.",
+        "el_sistema_de_cinco_tonos_en_hupda": "El Hupda posee hasta 5 tonos fonémicos contrastivos en sílabas pesadas acentuadas: Tono Alto (/H/), Tono Bajo (/L/), Tono Ascendente (/LH/), Tono Descendente (/HL/) y Tono Descendente Glotalizado (/HLˀ/). El tono es estrictamente léxico y un cambio de altura tonal transforma radicalmente el significado de la raíz.",
+        "el_sistema_de_cinco_tonos_en_kakua": "El Kakua presenta igualmente un sistema de contornos melódicos complejos (hasta 5 tonos y registros moraicos: alto, bajo, ascendente, descendente y descendente-laringalizado) asociados a la estructura bimoraica de la sílaba y al cierre glótico fonémico."
+      },
+      "morfologia_de_raices_monosilabicas": {
+        "estructura_canonica": "La inmensa mayoría de las raíces léxicas (nominales y verbales) en las lenguas Nadahup y Kakua-Nukak son rigurosamente monosilábicas (CVC, CVˀC). La gramática se expande mediante procesos de aglutinación y encadenamiento de sufijos a la derecha del predicado verbal, codificando tiempo, aspecto, modo, negación y evidencialidad."
+      },
+      "ausencia_de_clasificadores_nominales_fluviales": {
+        "contraste_areal_fundamental": "El rasgo tipológico más sobresaliente frente a las lenguas del área del río Negro y Vaupés radica en la ausencia de clasificadores nominales típicos de los ríos (es decir, carencia de los complejos sistemas de clasificadores obligatorios de forma tridimensional). Mientras las lenguas Tukano Oriental y Arawak emplean entre 40 y más de 100 sufijos clasificadores según la geometría de los objetos (laminar, cilíndrico, cóncavo, alargado, filamentoso), el Hup, el Yuhup, el Kakua y el Nukak carecen de estos clasificadores fluviales de forma o poseen únicamente inventarios residuales mínimos, recurriendo a la composición léxica directa y a sistemas deícticos espaciales hipersensibles a la topografía de la selva virgen."
+      }
+    }
+  },
+  "patrones_culturales_materiales_y_ecologicos_comunes": {
+    "arquitectura_nomada_he_waya": {
+      "concepto_y_denominaciones": "El campamento estacional de refugio provisional recibe los nombres vernáculos de 'he-waya' (en Hupda y Yuhupdeh) y 'wāka' o 'waya' (en Nukak y Kakua). Constituye una obra maestra de arquitectura silvícola efímera: ultraligera, biodegradable y concebida para brindar abrigo impermeable inmediato bajo las precipitaciones torrenciales amazónicas.",
+      "materiales_botanicos_constructivos": {
+        "armazon": "Varas delgadas, elásticas y resistentes cortadas en el sotobosque, provenientes principalmente de árboles juveniles de familias Burseraceae (Protium) y Lecythidaceae (Eschweilera). Se clavan en dos hileras convergentes y se curvan hacia el centro formando arcos ojivales o cobertizos a dos aguas atados en la cumbrera.",
+        "techumbre_impermeable": "Frondas monumentales del platanillo silvestre (Phenakospermum guyannense, familia Strelitziaceae) y hojas gigantes de Heliconia (Heliconia bihai, Heliconia episcopalis). Los pecíolos se entretejen longitudinalmente en las varas transversales en escamas imbricadas superpuestas que canalizan el agua de lluvia hacia el exterior sin goteras.",
+        "ataduras_y_fijaciones": "Cintas de bejuco de yaré (Heteropsis tenuis / Heteropsis jenmanii), lianas hemiepífitas de gran resistencia a la tracción que no requieren nudos complejos y se fijan por torsión en verde."
+      },
+      "dinamica_de_asentamiento_y_fuego_perpetuo": {
+        "velocidad_constructiva": "Una banda nómada de 20 a 30 personas levanta un campamento completo de varios cobertizos en menos de una a dos horas al término de una jornada de marcha.",
+        "disposicion_en_herradura": "Los refugios se disponen en semicírculo o herradura, orientando las espaldas de los techos en contra de la dirección predominante de los vientos de tormenta.",
+        "fuego_perpetuo_individual": "Cada unidad conyugal o familiar enciende y mantiene un fuego perenne que arde día y noche debajo o junto a las hamacas. Cumple cuatro funciones vitales insustituibles: 1) Calentar el cuerpo desnudo frente al descenso térmico nocturno (18-20°C con 95% de humedad); 2) Generar columnas de humo constante que ahuyentan zancudos, flebótomos y jejenes vectores de enfermedades (Lutzomyia y Anopheles); 3) Mantener en ahumado lento continuo las carnes de cacería en barbacoas suspendidas; 4) Preservar las brasas encendidas para transportarlas en la siguiente marcha mediante tizones envueltos en hojas verdes."
+      },
+      "filosofia_ecologica_de_la_trashumancia": {
+        "ciclos_de_abandono": "El he-waya se habita durante un lapso de 3 a 15 días continuos. El campamento se levanta y se abandona cuando la cacería escasea en un radio de 5 a 8 km, cuando maduran otros rodales distantes de palmas, o por razones cosmológicas como la muerte de un miembro o la acumulación de miasmas que atraen espíritus selváticos.",
+        "regeneracion_inmediata": "Al abandonar el he-waya, la estructura de varas y hojas se pudre y se reintegra a la capa de mantillo orgánico del bosque en cuestión de semanas. El nomadismo representa un mecanismo de equilibrio ecológico perfecto que evita la degradación de los suelos frágiles de tierra firme y la extinción local de la fauna."
+      }
+    },
+    "fibra_de_cumare_y_cultura_material": {
+      "palma_de_cumare_astrocaryum_chambira": {
+        "extraccion_sostenible": "La palma de cumare o chambira (Astrocaryum chambira) es la proveedora de fibra vegetal por excelencia. Crece silvestre en el bosque de tierra firme. Los recolectores trepan el estípite espinoso para cosechar exclusivamente los cogollos terminales cerrados, permitiendo que la palma continúe viva y rebrote.",
+        "procesamiento_e_hilado": "Las hojas del cogollo se desgajan manualmente para separar la finísima epidermis dorsal que contiene las fibras textiles. Las hebras se hierven o se lavan, se secan al sol matutino y se hilan rodándolas con la palma de la mano sobre el muslo desnudo, formando cordones bicatenarios de increíble resistencia a la tracción mecánica y a la degradación por hongos tropicales."
+      },
+      "hamaca_nomada_cumare": {
+        "tejido_y_ergonomia": "Se teje en bastidores portátiles provisionales utilizando técnicas de malla de lazada continua o nudos abiertos. La hamaca de cumare es liviana (pesa menos de 800 gramos), se comprime al tamaño de un puño dentro del canasto de carga, no retiene agua de lluvia, permite una ventilación corporal óptima y aísla al durmiente de serpientes, hormigas y escorpiones del suelo selvático."
+      },
+      "canastos_de_carga_y_mecapal": {
+        "catumare_y_guanga": "Canastos de carga tejidos con frondas de palma o bejuco yaré en tejido hexagonal abierto, diseñados para amoldarse a la espalda humana.",
+        "mecapal_craneal": "Banda ancha confeccionada con corteza interna fibrosa de árboles moráceos o cumare trenzado que se apoya sobre la frente del caminante, descargando el peso (hasta 35-40 kg de infantes, carne ahumada, semillas y cerbatanas) a lo largo del eje óseo vertebral y liberando las manos para la marcha."
+      }
+    },
+    "etnobiologia_cinegetica_y_toxicologia_del_curare": {
+      "cerbatana_del_dosel_puy": {
+        "confeccion_de_precision": "Fabricada a partir del tronco recto de palmas de madera durísima como la chonta (Iriartea deltoidea o Socratea exorrhiza) o Bactris gasipaes. Se bisela longitudinalmente el tronco en dos mitades, se labra y pule el canal interior con arena silícea y agua hasta obtener un ánima lisa como cristal, y se vuelven a unir herméticamente con resinas de breo y corteza en espiral.",
+        "dimensiones_y_mira_balistica": "Alcanzan entre 2,5 y 3,8 metros de largo. En el tercio distal se adhiere con cera negra o resina de peramán un diente incisivo inferior del roedor agutí (Dasyprocta fuliginosa) o colmillo de mono, que sirve como alza o mira balística para compensar la refracción lumínica del follaje y el viento del dosel."
+      },
+      "dardos_y_algodon_de_ceiba": {
+        "dardo": "Finas varillas de 25 a 30 cm talladas del nervio central o pecíolo leñoso de la palma de seje (Oenocarpus bataua), aguzadas en la punta.",
+        "propulsion_neumatica": "La base del dardo se envuelve con una pequeña mota de borra sedosa obtenida de las cápsulas maduras de la ceiba gigante (Ceiba pentandra o Chorisia insignis / Pachira aquatica), logrando un ajuste milimétrico en el ánima que permite disparos neumáticos silenciosos de hasta 30 a 40 metros de altura vertical."
+      },
+      "bioquimica_y_farmacodinamia_del_curare": {
+        "formulacion_botanica": "El curare tradicional de los interfluvios se elabora mediante la cocción lenta de raspaduras de corteza de bejucos leñosos gigantes de Menispermaceae (Curarea tecunarum, Abuta grandifolia) combinados con Loganiaceae (Strychnos toxifera, Strychnos guianensis).",
+        "mecanismo_fisiologico": "Bloqueador neuromuscular competitivo no despolarizante. La d-tubocurarina compite con la acetilcolina por los receptores nicotínicos colinérgicos en la placa motora terminal del músculo estriado. Genera parálisis flácida periférica ascendente: primero párpados y cuello, luego extremidades, y finalmente parálisis de los músculos intercostales y el diafragma torácico, produciendo la asfixia incruenta de presas de copa alta en 2 a 5 minutos.",
+        "inocuidad_digestiva": "Al ser macromoléculas hidrofílicas con amonios cuaternarios de carga permanente, los alcaloides del curare no se absorben a través de la mucosa gástrica ni intestinal humana intacta, por lo que la carne cocinada de la presa cazada se consume con absoluta seguridad toxicológica."
+      },
+      "presas_del_dosel_y_suelo": {
+        "primates": "Mono churuco o barrigudo (Lagothrix lagothricha), mono aullador o coto (Alouatta seniculus), micos capuchinos (Sapajus apella / Cebus albifrons) y mono nocturno (Aotus vociferans).",
+        "aves_de_copa": "Paujil negro de pico azul o amarillo (Crax alector, Crax globulosa), pavas de monte (Penelope jacquacu) y tucanes (Ramphastos tucanus).",
+        "roedores_y_mamiferos_terrestres": "Agutí o guatín (Dasyprocta fuliginosa), lapa o paca (Cuniculus paca), armadillos (Priodontes maximus / Dasypus) y pecaríes (Pecari tajacu)."
+      }
+    },
+    "etnobiologia_recolectora_mieles_y_frutos": {
+      "meliponicultura_silvestre_caza_de_mieles": {
+        "abejas_sin_aguijon_meliponini": "Conocimiento etnoentomológico de más de dos decenas de especies de abejas nativas sin aguijón: 'miel de monte real' (Melipona eburnea), abeja culinegra (Melipona compressipes), abejas angelitas (Tetragonisca angustula) y especies de los géneros Trigona, Scaptotrigona y Partamona.",
+        "rastreo_auditivo_y_recoleccion_sostenible": "Los cazadores localizan las colonias por el zumbido en las copas de los árboles gigantes o rastreando el vuelo de las pecoreadoras hacia las oquedades leñosas. Trepan con estribos de bejuco y abren una compuerta pequeña con gubia de diente de roedor o machete, extrayendo los potes de cerumen con miel madura y 'pan de abeja' (polen fermentado con alto valor vitamínico y proteico), sellando la oquedad con barro y resina para no destruir la colmena."
+      },
+      "frutos_silvestres_y_complejo_de_palmas": {
+        "palma_de_seje_oenocarpus_bataua_patawa": "Sus racimos de hasta 30 kg contienen frutos drupáceos con un mesocarpio rico en aceite de perfil idéntico al aceite de oliva (ácido oleico y linoleico). Los frutos se ablandan en agua tibia (nunca hirviendo) y se despulpan en bateas de madera para producir la 'leche de seje', bebida espesa y altamente energética que constituye la base calórica en épocas de fructificación.",
+        "uva_de_monte_pourouma_cecropiifolia": "Uva de monte o caimarona (Pourouma cecropiifolia, familia Urticaceae). Racimos de frutos dulces de pulpa translúcida y jugosa, recolectados sacudiendo los árboles o derribando racimos maduros.",
+        "moriche_mauritia_flexuosa": "Frutos de cananguchales ricos en betacarotenos y ácidos grasos.",
+        "larvas_de_mojojoy_rhynchophorus_palmarum": "Larvas grasas del coleóptero de palma criadas deliberadamente en troncos de palmas derribadas, consumidas como manjar proteico crudo o asado."
+      }
+    },
+    "medicina_tradicional_farmacopea_y_terapeutica_de_travesia": {
+      "venenos_vegetales_de_contacto_y_resinas_antiofidicas": {
+        "resina_de_carana_protium_heptaphyllum": "Exudado gomoso aromático cicatrizante, antiséptico y hemostático. Se calienta al fuego y se unta sobre cortes profundos, mordeduras y picaduras, sellando la herida con una membrana protectora estéril que previene miasis parasitarias (Dermatobia hominis).",
+        "resina_de_copal_hymenaea_courbaril": "Resina dura usada en sahumerios terapéuticos dentro del he-waya para descongestionar el aparato respiratorio y alejar espíritus patógenos.",
+        "resinas_y_preparados_antiofidicos": "Decocciones y emplastos de cortezas de bejucos de guaco (Mikania glomerata / Mikania guaco) aplicados tópicamente y bebidos de urgencia ante mordeduras de serpientes viperinas (Bothrops atrox y Lachesis muta). Sus compuestos cumarínicos bloquean parcialmente la necrosis proteolítica del veneno.",
+        "venenos_vegetales_de_contacto": "Látex de especies de Euphorbiaceae y bejucos ictiotóxicos (Lonchocarpus / barbasco) empleados para inmovilizar peces en caños secos y como ungüentos cáusticos para erradicar verrugas y parásitos dérmicos."
+      },
+      "hojas_calientes_y_masajes_terapeuticos_de_travesia": {
+        "hojas_calientes_para_dolores_de_marcha": "Tras extenuantes marchas diarias de 20 a 30 km cruzando bajíos lodosos, varaderos y selva encharcada con cargas pesadas a la cabeza, los nómadas sufren enfriamiento articular, tendinitis y lumbalgias agudas. Para combatirlos, recolectan hojas de cordoncillo silvestre (Piper aduncum), frondas tiernas de platanillo y Siparuna guianensis. Estas hojas se calientan directamente sobre las cenizas del fogón con gotas de grasa animal y se aplican como apósitos térmicos sobre la espalda, articulaciones y pantorrillas.",
+        "masajes_terapeuticos_de_descompresion": "Sabedores y ancianas aplican masajes profundos mediante presiones mecánicas y amasamiento con manteca tibia de danta (Tapirus terrestris) o grasa de mono churuco. Esta grasa rica en triglicéridos insaturados penetra profundamente, disuelve contracturas musculares y evacúa el ácido láctico acumulado tras las jornadas de travesía."
+      }
+    }
+  },
+  "monografias_detalladas_pueblos": {
+    "kakua_bara_maku": {
+      "identificacion": {
+        "id": "kakua_bara_maku",
+        "nombre_comun": "Kakua (Cacua / Bará Makú)",
+        "autonimo_ipa": "Kákwa [kǎːkwà]",
+        "significado_autonimo": "'Personas' o 'Gente verdadera del monte'",
+        "sinonimos_y_variantes": [
+          "Cacua",
+          "Kákwa",
+          "Bará Makú (exónimo colonial asignado por los Bará)",
+          "Bara-Makú del caño Wacará"
+        ]
+      },
+      "filogenia_linguistica_y_rasgos_tonales": {
+        "familia_linguistica": "Familia Kakua-Nukak (subgrupo independiente de Nadahup, demostrado por Katherine Bolaños 2016)",
+        "sistema_de_cinco_tonos": "Posee un sofisticado sistema fonológico con 5 tonos distintivos asociados a la mora silábica: Tono Alto (H), Tono Bajo (L), Tono Ascendente (LH), Tono Descendente (HL) y Tono Descendente Laringalizado con oclusión glótica [HLˀ]. La inflexión melódica cambia el significado de las raíces.",
+        "raices_monosilabicas": "Estructura radical CVC y CVˀC estrictamente monosilábica o bimoraica, con procesos de nasalización consonántica y vocálica de propagación armónica.",
+        "ausencia_de_clasificadores_nominales_fluviales": "Carece por completo de la batería de clasificadores de forma geométrica tridimensional del Tukano Oriental y Arawak; recurre a nombres compuestos directos y marcadores de caso aglutinantes.",
+        "vitalidad": "En peligro crítico demográfico y lingüístico; hablado por adultos y ancianos en comunidades de Caño Wacará y Caño Ti, con desplazamiento hacia la lengua Bará y Tukano en niños."
+      },
+      "territorio_demografia_y_asentamiento": {
+        "departamento": "Vaupés",
+        "municipio": "Mitú (cuenca alta y media del río Vaupés)",
+        "hidrografia_especifica": [
+          "Caño Wacará",
+          "Caño Ti",
+          "Caño Macú",
+          "Interfluvio entre el río Papurí y el río Querarí"
+        ],
+        "poblacion_estimada": "Entre 250 y 300 personas.",
+        "resguardo_legal": "Resguardo Indígena Parte Oriental del Vaupés (asentamientos en Wacará compartidos con los Bará)."
+      },
+      "modo_de_vida_nomada_y_campamento_he_waya": {
+        "patron_nomada": "Históricamente nómadas de interfluvio que recorrían un corredor de más de 300 km de bosque de tierra firme; actualmente semisedentarios en aldeas satélites pero manteniendo expediciones cinegéticas de varias semanas.",
+        "arquitectura_he_waya": "Construcción provisional de paravientos y cobertizos he-waya de 3 a 5 días con varas flexibles de sotobosque y cubierta impermeable de hojas de platanillo silvestre (Phenakospermum guyannense) o Heliconia atadas con yaré.",
+        "hamacas_de_cumare": "Hilado manual y tejido de hamacas elásticas de cumare (Astrocaryum chambira) que acompañan al cazador en todas sus travesías."
+      },
+      "etnobiologia_cinegetica_y_recoleccion": {
+        "caza_del_dosel_con_cerbatana_y_curare": "Cerbatana de chonta (Bactris gasipaes / Iriartea) con alza de diente de guatín; dardos untados de curare concentrado de Curarea tecunarum para cazar monos churucos, aulladores y paujiles.",
+        "mieles_silvestres": "Extracción experta de miel de abejas sin aguijón Melipona (miel de tierra y miel de tronco) y Trigona en los árboles maduros del interfluvio.",
+        "palmas_y_frutos": "Procesamiento de frutos de palma de seje (Oenocarpus bataua) para leche vegetal de milpesos, patawa y recolección de uva de monte (Pourouma cecropiifolia)."
+      },
+      "medicina_tradicional_farmacopea_y_travesia": {
+        "resinas_antiofidicas_y_de_carana": "Uso de resina fresca de caraña (Protium heptaphyllum) como sello antiséptico para heridas de caza; decocciones amargas de corteza de guaco ante mordeduras de serpientes.",
+        "hojas_calientes_y_masajes": "Aplicación de hojas calientes de Piper y platanillo junto a masajes con grasa de danta para aliviar la fatiga muscular y lumbalgias de las marchas."
+      },
+      "drama_humanitario_relaciones_interetnicas_y_derechos": {
+        "simbiosis_asimetrica_con_los_bara": "Sometimiento histórico a relaciones asimétricas con los indígenas Bará (Tukano Oriental), quienes los consideraban peones de chagra; a cambio recibían fariña y ollas, manteniendo en secreto su autonomía de selva.",
+        "crisis_sanitaria_y_cultural": "Afecciones respiratorias agudas crónicas, tuberculosis y pérdida territorial.",
+        "marco_constitucional": "Pueblo protegido judicialmente por la Corte Constitucional mediante el emblemático Auto 004 de 2009 en el listado de etnias en riesgo inminente de extinción física y cultural."
+      }
+    },
+    "hupda_jupda": {
+      "identificacion": {
+        "id": "hupda_jupda",
+        "nombre_comun": "Hupda (Hup / Jupda)",
+        "autonimo_ipa": "Húpdeh [húp-dèh]",
+        "significado_autonimo": "'Gente verdadera' ('húp' = persona humana; '-dèh' = plural colectivo)",
+        "sinonimos_y_variantes": [
+          "Hup",
+          "Jupda",
+          "Húpdeh",
+          "Makú-Hupda",
+          "Ubdé"
+        ]
+      },
+      "filogenia_linguistica_y_rasgos_tonales": {
+        "familia_linguistica": "Familia Nadahup (lengua nuclear de la familia, descrita exhaustivamente por Patience Epps 2008)",
+        "sistema_de_cinco_tonos": "Posee 5 tonos fonémicos sobre sílabas pesadas acentuadas: Tono Alto (/H/), Tono Bajo (/L/), Tono Ascendente (/LH/), Tono Descendente (/HL/) y Tono Descendente Glotalizado (/HLˀ/). El tono es fonémico y distingue pares mínimos morfológicos y léxicos.",
+        "raices_monosilabicas": "Morfología de raíces léxicas predominantemente monosilábicas (CVC) sin prefijación, con complejas cadenas de sufijos aglutinantes a la derecha de la raíz verbal.",
+        "ausencia_de_clasificadores_nominales_fluviales": "Carece de los clasificadores de forma tridimensional del área fluvial del Vaupés; emplea composición nominal directa y marcado gramatical de caso ergativo-absolutivo.",
+        "vitalidad": "Vitalidad alta en la cuenca del Tiquié y Yapú, hablado activamente por niños y adultos en comunidades binacionales."
+      },
+      "territorio_demografia_y_asentamiento": {
+        "departamentos_estados": "Vaupés (Colombia) y Estado de Amazonas (Brasil)",
+        "municipios": "Mitú y Taraira (Colombia); São Gabriel da Cachoeira (Brasil)",
+        "hidrografia_especifica": [
+          "Cuenca alta del río Tiquié",
+          "Caño Yapú",
+          "Caño Macú",
+          "Afluentes selváticos del río Papurí"
+        ],
+        "poblacion_estimada": "En Colombia ~350-450 personas; en Brasil ~1.600-1.800 personas; total binacional aproximado de 2.000 a 2.200 personas.",
+        "resguardo_legal": "Gran Resguardo Indígena del Vaupés (Colombia) y Terra Indígena Alto Rio Negro (Brasil)."
+      },
+      "modo_de_vida_nomada_y_campamento_he_waya": {
+        "patron_nomada": "Cazadores-recolectores de bosque de tierra firme que rotan sus campamentos estacionales he-waya cada 10 a 14 días para sincronizarse con los pulsos ecológicos del dosel.",
+        "arquitectura_he_waya": "Armazón de varas flexibles de Protium y Eschweilera techadas con hojas de platanillo silvestre (Phenakospermum guyannense) y Heliconia imbricadas, fijadas con bejuco yaré.",
+        "hamacas_de_cumare": "Hamacas ultraligeras de cumare (Astrocaryum chambira) tejidas en lazada elástica, suspendidas alrededor de fogones nocturnos individuales."
+      },
+      "etnobiologia_cinegetica_y_recoleccion": {
+        "caza_del_dosel_con_cerbatana_y_curare": "Cerbatanas de palma de hasta 3 metros de longitud con dardos propulsados con motas de ceiba (Ceiba pentandra) y tratados con curare de Strychnos toxifera y Curarea tecunarum; caza de monos churucos (Lagothrix), aulladores (Alouatta) y paujiles (Crax).",
+        "mieles_silvestres": "Maestría en la búsqueda y extracción de miel de abejas Melipona y Trigona mediante tubos finos de bambú.",
+        "palmas_y_frutos": "Procesamiento de frutos de seje (Oenocarpus bataua) para leche de milpesos rica en ácido oleico, recolección de uva de monte (Pourouma cecropiifolia) y extracción de sales de ceniza de palma."
+      },
+      "medicina_tradicional_farmacopea_y_travesia": {
+        "resinas_antiofidicas_y_de_carana": "Resina de caraña (Protium) para sellar heridas abiertas; cataplasmas amargas de corteza de guaco (Mikania) contra mordeduras de víboras Bothrops.",
+        "hojas_calientes_y_masajes": "Fricciones de hojas calientes de Piper y Siparuna guianensis calentadas al rescoldo con grasa de danta (Tapirus terrestris) para calmar la fatiga muscular de largas travesías."
+      },
+      "drama_humanitario_relaciones_interetnicas_y_derechos": {
+        "relacion_con_los_tukano": "Histórica simbiosis asimétrica con los Tukano del río Tiquié: intercambio de curare, hamacas y carne de monte por fariña y herramientas, preservando una fuerte autonomía lingüística de selva.",
+        "presiones_actuales": "Contaminación minera en zonas de cabecera y vulnerabilidad sanitaria.",
+        "marco_constitucional": "Sujetos de protección prioritaria bajo el Auto 004 de 2009 de la Corte Constitucional de Colombia."
+      }
+    },
+    "yuhupdeh": {
+      "identificacion": {
+        "id": "yuhupdeh_yuhup",
+        "nombre_comun": "Yuhupdeh (Yuhup)",
+        "autonimo_ipa": "Yühüpdeh [jɨ̀hɨ́pdèh]",
+        "significado_autonimo": "'La gente de la selva virgen' o 'Los seres humanos de adentro'",
+        "sinonimos_y_variantes": [
+          "Yuhup",
+          "Yühüp",
+          "Yuhupde",
+          "Makú-Yuhup",
+          "Gente del Pirá-Paraná y Apaporis"
+        ]
+      },
+      "filogenia_linguistica_y_rasgos_tonales": {
+        "familia_linguistica": "Familia Nadahup (rama meridional de la familia)",
+        "sistema_de_cinco_tonos": "Sistema fonológico con 4 a 5 tonos contrastivos y una marcada presencia de oclusiones glotales fonémicas y laringalización vocálica.",
+        "raices_monosilabicas": "Monosilabismo estricto en raíces verbales y nominales (CVC), con vocales nasales y vocal central cerrada [ɨ]; sufijación aglutinante compleja.",
+        "ausencia_de_clasificadores_nominales_fluviales": "Ausencia absoluta de clasificadores de forma geométrica fluviales; describe el espacio mediante deícticos de selva y topografía canópica.",
+        "vitalidad": "En peligro por aislamiento y reducido número demográfico en territorio colombiano, mayor vitalidad en cuencas brasileñas."
+      },
+      "territorio_demografia_y_asentamiento": {
+        "departamentos_estados": "Vaupés y Amazonas (Colombia); Estado de Amazonas (Brasil)",
+        "municipios": "Taraira y Mitú (Colombia); Japurá (Brasil)",
+        "hidrografia_especifica": [
+          "Interfluvio entre el río Tiquié y el río Pirá-Paraná",
+          "Cabeceras del río Apaporis y río Traíra (Taraira)",
+          "Caño Piraña",
+          "Caño Castanha"
+        ],
+        "poblacion_estimada": "En Colombia ~200-300 personas; en Brasil ~600-800 personas; total binacional ~1.000 miembros.",
+        "resguardo_legal": "Gran Resguardo Indígena del Vaupés y zona de influencia del Parque Yaigojé-Apaporis."
+      },
+      "modo_de_vida_nomada_y_campamento_he_waya": {
+        "patron_nomada": "Trashumancia en las zonas más recónditas de tierra firme de la cuenca del Apaporis, evitando las vías fluviales transitadas para resguardar su integridad biológica y cultural.",
+        "arquitectura_he_waya": "Cobertizos provisionales he-waya de ramas flexibles y hojas de platanillo silvestre (Phenakospermum guyannense), de rápido desmonte y reubicación periódica.",
+        "hamacas_de_cumare": "Hamacas de fibra de cumare (Astrocaryum chambira) tejidas a mano, ligeras y térmicas."
+      },
+      "etnobiologia_cinegetica_y_recoleccion": {
+        "caza_del_dosel_con_cerbatana_y_curare": "Uso de cerbatanas largas con curare extraído de lianas de Curarea y Strychnos en serranías rocosas; cacería de primates del dosel y roedores de tierra firme.",
+        "mieles_silvestres": "Colecta experta de miel de abejas sin aguijón Melipona de tronco y tierra.",
+        "palmas_y_frutos": "Aprovechamiento estacional de la palma de seje (Oenocarpus bataua), patawa y de la uva de monte (Pourouma cecropiifolia)."
+      },
+      "medicina_tradicional_farmacopea_y_travesia": {
+        "resinas_antiofidicas_y_de_carana": "Resina de caraña balsámica para cicatrización; cataplasmas de corteza macerada contra ponzoñas de serpientes de selva.",
+        "hojas_calientes_y_masajes": "Masajes musculares con grasa de tapir (Tapirus terrestris) y cataplasmas de hojas calientes de Piper para restablecer la movilidad tras cruzar caños anegados."
+      },
+      "drama_humanitario_relaciones_interetnicas_y_derechos": {
+        "amenazas_territoriales": "Invasión de dragas de minería ilegal de oro en el río Taraira y Apaporis, vertimiento de mercurio y presiones de actores armados en pasos fronterizos.",
+        "marco_constitucional": "Pueblo amparado por el Auto 004 de 2009 de la Corte Constitucional de Colombia como etnia en riesgo de exterminio."
+      }
+    },
+    "puinave_wansohot": {
+      "identificacion": {
+        "id": "puinave_wansohot",
+        "nombre_comun": "Puinave (Wãnsöhöt) del río Inírida",
+        "autonimo_ipa": "Wãnsöhöt / Wãnsöjöt [wã̃sə̃hət]",
+        "significado_autonimo": "'Gente del nacimiento de las aguas' o 'Los hijos de Düj creados en las piedras sagradas'",
+        "sinonimos_y_variantes": [
+          "Wãnsöhöt",
+          "Wãnsöjöt",
+          "Uaipi",
+          "Puinaves del río Inírida y cerros de Mavecure"
+        ]
+      },
+      "filogenia_linguistica_y_rasgos_tonales": {
+        "familia_linguistica": "Familia Lingüística Puinave (Lengua Aislada / Stock Independiente; definitivamente excluida de Nadahup por Jesús Mario Girón 2008)",
+        "sistema_de_tonos": "Posee dos tonos fonémicos contrastivos fundamentales: Tono Alto (/H/) y Tono Bajo (/L/), que producen pares mínimos en raíces nominales y verbales monosilábicas y disilábicas.",
+        "raices_monosilabicas_y_nasalidad": "Raíces CVC y disilábicas con fuerte nasalización vocálica fonémica (/ã/, /ẽ/, /ĩ/, /õ/, /ũ/, /ə̃/) y procesos de armonía nasal expansiva.",
+        "ausencia_de_clasificadores_nominales_fluviales": "No presenta los complejos inventarios de clasificadores numerales de forma de las familias Tukano y Arawak del entorno hidrográfico regional.",
+        "vitalidad": "Vitalidad moderada a alta; hablado activamente por miles de personas en comunidades a lo largo del río Inírida y caños tributarios."
+      },
+      "territorio_demografia_y_asentamiento": {
+        "departamentos": "Guainía y Vichada (Colombia); Estado Amazonas (Venezuela)",
+        "municipios": "Inírida, Barranco Minas, Mapiripana, San Felipe",
+        "hidrografia_especifica": [
+          "Río Inírida (eje fluvial primordial)",
+          "Caño Bocón",
+          "Caño Uva",
+          "Caño Guasacaví",
+          "Cerros de Mavecure (Mavecure, Pajarito y Mavari)"
+        ],
+        "poblacion_estimada": "Aproximadamente 7.000 a 8.500 personas en Colombia (el pueblo más numeroso de la macrozona).",
+        "resguardos_emblematicos": [
+          "Resguardo Indígena Cuenca Alta del Río Inírida",
+          "Resguardo Almidón-La Ceiba",
+          "Resguardo Remanso-Chorrobocón"
+        ]
+      },
+      "modo_de_vida_nomada_y_campamento_he_waya": {
+        "transicion_historica": "Etnia originariamente cazadora-recolectora de interfluvio que realizaba trashumancia estacional con campamentos provisionales de platanillo, transitando con los siglos hacia la horticultura de chagra ribereña y la vida comunal en aldeas fluviales.",
+        "cesteria_maestra_y_cumare": "Artesanos cimeros de la Amazonía en el tejido del balay (plato ceremonial con iconografías míticas de Düj), canastos catumare con mecapal y hamacas de cumare (Astrocaryum chambira)."
+      },
+      "etnobiologia_cinegetica_y_recoleccion": {
+        "caza_y_pesca": "Uso tradicional de cerbatanas de palma para cacería de monos y aves en los bosques que circundan los tepuyes de granito; pesca especializada en aguas negras con trampas cacure y anzuelos.",
+        "recoleccion_de_miel_y_frutos": "Cosecha de mieles de abejas Meliponas; aprovechamiento masivo de racimos de palma de seje (Oenocarpus bataua) y uva de monte (Pourouma cecropiifolia)."
+      },
+      "medicina_tradicional_farmacopea_y_travesia": {
+        "farmacopea_y_resinas": "Uso de resinas antisépticas de caraña (Protium) y copal; extractos botánicos antiofídicos de bejucos del Escudo Guayanés para tratar mordeduras de serpientes.",
+        "masajes_y_hojas_calientes": "Aplicación de compresas de hojas calientes y masajes terapéuticos para dolores de travesía en las faenas de cacería en las serranías."
+      },
+      "drama_humanitario_relaciones_interetnicas_y_derechos": {
+        "amenazas_actuales": "Grave contaminación por minería ilegal de oro y coltán en la cuenca del Inírida que vierte mercurio en los ríos, y presencia de grupos armados ilegales.",
+        "marco_constitucional": "Beneficiarios de órdenes de protección y del Plan de Salvaguarda Étnica ordenado en la Sentencia T-025 de 2004."
+      }
+    },
+    "macaguaje_etnohistoria": {
+      "identificacion": {
+        "id": "macaguaje_etnohistoria",
+        "nombre_comun": "Macaguaje (Etnia y lengua extinta o remanente del Putumayo/Caquetá, reconstrucción etnohistórica)",
+        "autonimo_reconstruido": "Airubain / Airubá (autónimo clánico del río Mecaya)",
+        "sinonimos_y_variantes": [
+          "Makaguaje",
+          "Macaguaxe",
+          "Airubain",
+          "Piojé-Macaguaje",
+          "Gente del río Mecaya y Senseya"
+        ]
+      },
+      "filogenia_linguistica_y_rasgos_tonales": {
+        "familia_linguistica": "Familia Lingüística Tukano Occidental (rama interfluvial, estrechamente emparentada con Siona, Secoya y Koreguaje)",
+        "clarificacion_del_rotulo_maku": "Fueron denominados erróneamente 'Makú' en crónicas coloniales y del siglo XIX debido a su modo de vida silvícola trashumante de interfluvio, pero los vocabularios históricos recolectados demuestran sin duda su filiación Tukano Occidental.",
+        "rasgos_linguisticos_reconstruidos": "Vocabularios documentados por Crevaux (1883), Rivet (1912), Koch-Grünberg (1906) y Castellví (1934-1940) demuestran raíces monosilábicas y disilábicas, nasalización vocálica contrastiva, consonantes glotalizadas y morfología verbal aglutinante.",
+        "estatus_actual": "Lengua y etnia extinta como comunidad lingüística independiente; remanentes genéticos y etnohistóricos asimilados en comunidades Koreguaje del Caquetá."
+      },
+      "territorio_historico_y_demografia": {
+        "departamentos_historicos": "Caquetá y Putumayo",
+        "cuencas_hidrograficas": [
+          "Río Mecaya (tributario del río Caquetá)",
+          "Río Senseya",
+          "Río Orteguaza medio y bajo",
+          "Interfluvio selvático entre el río Caquetá y el río Putumayo"
+        ],
+        "poblacion_historica": "Poblaciones de varios miles a mediados del siglo XIX, reducidas a unos pocos individuos hacia 1940.",
+        "estatus_etnohistorico": "Extinción como entidad autónoma; testimonio del etnocidio de pueblos interfluviales."
+      },
+      "modo_de_vida_nomada_y_campamento_he_waya": {
+        "patron_de_asentamiento": "Habitaban campamentos provisionales móviles en el interior de los bosques de tierra firme, evitando deliberadamente las riberas transitadas para evadir expediciones esclavistas y colonizadoras.",
+        "refugios_y_cumare": "Erigían cobertizos estacionales de ramas ligeras y hojas trenzadas similares al he-waya y utilizaban hamacas de fibra de cumare (Astrocaryum chambira)."
+      },
+      "etnobiologia_cinegetica_y_recoleccion": {
+        "armas_y_presas": "Cazadores de selva virgen con cerbatanas, dardos con venenos vegetales de corteza y trampas de fosa; cacería de mamíferos arborícolas y roedores.",
+        "recoleccion": "Mieles silvestres de abejas Meliponas, frutos de palma de seje (Oenocarpus bataua) y uva de monte (Pourouma cecropiifolia)."
+      },
+      "medicina_tradicional_farmacopea_y_travesia": {
+        "farmacopea": "Venenos vegetales de contacto para cacería y pesca en pozas de caño; emplastos de resinas antiofídicas y cortezas amargas de bosque; masajes y cataplasmas de hojas tibias para dolencias de marcha."
+      },
+      "drama_humanitario_genocidio_cauchero_y_extincion": {
+        "colapso_epidemiologico": "Epidemias sucesivas de viruela, sarampión y gripe propagadas por el tráfico fluvial a finales del siglo XIX devastaron las bandas Macaguaje carentes de anticuerpos.",
+        "el_terror_cauchero_de_la_casa_arana": "Durante la fiebre extractiva del caucho, capataces armados de la Peruvian Amazon Company de Julio César Arana y caucheros locales persiguieron, esclavizaron y asesinaron a las bandas Macaguaje del Mecaya y Senseya para forzarlas a trabajar en las siringas.",
+        "asimilacion_final": "Los pocos sobrevivientes dispersos se refugiaron entre los Koreguaje del río Orteguaza y los Siona del Putumayo, donde el idioma y la identidad autónoma se extinguieron gradualmente hacia mediados del siglo XX.",
+        "leccion_historica": "Constituye un caso paradigmático y doloroso de alerta etnohistórica sobre las consecuencias letales que acarrea la invasión armada y extractivista sobre los pueblos cazadores de interfluvio."
+      }
+    },
+    "nukak_maku": {
+      "identificacion": {
+        "id": "nukak_maku",
+        "nombre_comun": "Nukak (Makú-Nukak - Análisis exhaustivo del último pueblo de contacto inicial en 1988, despojo territorial y trashumancia)",
+        "autonimo_ipa": "Nukak [nɨkâk]",
+        "significado_autonimo": "'La gente' o 'Los seres humanos verdaderos'",
+        "sinonimos_y_variantes": [
+          "Nukak",
+          "Nükâk",
+          "Makú del Guaviare",
+          "Nukak-Makú",
+          "Los últimos nómadas de la selva virgen de Colombia"
+        ]
+      },
+      "filogenia_linguistica_y_rasgos_tonales": {
+        "familia_linguistica": "Familia Kakua-Nukak (rama independiente compartida de manera exclusiva con el Kakua)",
+        "sistema_tonal_y_vocalico": "Posee dos tonos fonémicos de nivel primarios: Tono Alto (/H/) y Tono Bajo (/L/), articulados con modulaciones melódicas ascendentes y descendentes según la estructura moraica silábica. Seis vocales orales (/a/, /e/, /i/, /o/, /u/, /ɨ/) y seis vocales nasales correspondientes (/ã/, /ẽ/, /ĩ/, /õ/, /ũ/, /ɨ̃/). La vocal central alta no redondeada [ɨ] y el cierre glótico fonémico [ʔ] son pilares fonológicos.",
+        "raices_monosilabicas": "Estructura radical estrictamente monosilábica (CVC, CVʔ). Morfología altamente aglutinante mediante sufijación en serie a la derecha del verbo.",
+        "ausencia_de_clasificadores_nominales_fluviales": "Carencia absoluta de clasificadores morfológicos de forma geométrica del entorno fluvial. La orientación espacial se estructura mediante deícticos topológicos de selva virgen: dirección de la canopia, escorrentía de caños menores y sombra solar bajo el dosel.",
+        "vitalidad": "Hablada por casi la totalidad de la etnia; no obstante, se halla gravemente amenazada por la ruptura de la vida nómada en los asentamientos periurbanos de San José del Guaviare."
+      },
+      "territorio_ancestral_y_demografia": {
+        "departamentos": [
+          "Guaviare",
+          "Guainía"
+        ],
+        "municipios": [
+          "San José del Guaviare",
+          "El Retorno",
+          "Calamar",
+          "Barranco Minas"
+        ],
+        "hidrografia_ancestral": [
+          "Interfluvio selvático entre el río Guaviare y el río Inírida",
+          "Cuenca de Caño Makú",
+          "Caño Chipape",
+          "Caño Chekera",
+          "Caño Bocón",
+          "Laguna Pabón"
+        ],
+        "resguardo_legal": "Resguardo Indígena Nukak-Makú, formalizado en 1993 y ampliado en 1997 a cerca de 954.480 hectáreas de bosque tropical húmedo.",
+        "poblacion_censo_dane": "Aproximadamente 1.080 personas, de las cuales más del 65% se encuentran expulsadas de su resguardo ancestral en condición de desplazamiento forzado y confinamiento periurbano."
+      },
+      "modo_de_vida_nomada_y_campamento_he_waya": {
+        "trashumancia_continua": "Eran los últimos nómadas estrictos de la Amazonía colombiana. Desplazamientos continuos cada 3 a 10 días en circuitos estacionales de más de 800.000 hectáreas, organizados en bandas móviles (muno) de 15 a 30 integrantes.",
+        "arquitectura_waka_o_he_waya": "Construcción del campamento provisional (wāka o he-waya) en menos de 60 minutos con varas flexibles de arbolillos del sotobosque dobladas en arcos, techadas con grandes hojas de platanillo silvestre (Phenakospermum guyannense) o Heliconia superpuestas como tejas impermeables fijadas con bejuco yaré (Heteropsis).",
+        "el_fuego_y_la_hamaca_de_cumare": "Suspensión de hamacas de cumare (Astrocaryum chambira) a escasos 30 cm del suelo, con fuegos individuales encendidos debajo día y noche para abrigar el cuerpo y dispersar insectos con humo continuo.",
+        "filosofia_del_movimiento": "Para los Nukak, permanecer fijos en un solo lugar enferma la selva y atrae la muerte; el nomadismo es un principio de armonía que permite a la naturaleza y a la banda humana regenerarse recíprocamente."
+      },
+      "etnobiologia_cinegetica_y_recoleccion": {
+        "caza_del_dosel_con_puy_y_curare": "Uso supremo de la cerbatana (puy) de madera de chonta con alza de diente de roedor; dardos propulsados con motas de ceiba (Ceiba pentandra) e impregnados con curare concentrado de Curarea tecunarum; caza especializada de monos churucos (Lagothrix lagothricha), aulladores (Alouatta seniculus), micos nocturnos (Aotus), paujiles (Crax alector) y roedores agutíes (Dasyprocta). Tabú estricto contra la caza de la danta y venados en ciertas épocas.",
+        "mieles_silvestres": "Colecta experta de miel de abejas nativas sin aguijón Melipona (miel de tierra y de tronco) y Trigona, rastreando su pecoreo en las copas de los árboles.",
+        "palmas_y_frutos_del_bosque": "Recolección y procesamiento masivo de frutos de seje (Oenocarpus bataua) para leche vegetal de milpesos (patawa); moriche (Mauritia flexuosa); uva de monte (Pourouma cecropiifolia) y cosecha de larvas grasas de mojojoy (Rhynchophorus palmarum)."
+      },
+      "medicina_tradicional_farmacopea_y_travesia": {
+        "resina_de_carana_protium_heptaphyllum": "Bálsamo hemostático y antiséptico untado sobre desgarros de piel y picaduras para evitar infecciones y miasis de moscas de monte.",
+        "hojas_calientes_y_masajes": "Compresas térmicas de hojas de Piper y platanillo pasadas por las brasas aplicadas sobre la columna vertebral y piernas cansadas; masajes profundos con grasa de mono churuco para relajar tendones tras largas jornadas.",
+        "chamanismo_de_extraccion": "Extracción chamánica de dardos invisibles arrojados por espíritus de la selva (Nemep) mediante cantos crepusculares y succión sobre el tórax del enfermo."
+      },
+      "drama_humanitario_contacto_despojo_y_derechos": {
+        "el_contacto_violento_de_1988_de_los_nukak_maku": "El contacto violento de 1988 de los Nukak Makú se produjo en abril de 1988, cuando un contingente de 43 indígenas Nukak (familias enteras hambrientas, enfermas y desorientadas) emergió intempestivamente en el caserío de Calamar (Guaviare), huyendo de incursiones armadas, talas y colonización en su territorio.",
+        "epidemias_respiratorias_y_mortalidad_inicial": "Tras el contacto inicial, se desataron epidemias respiratorias de las cuales murió más del 40% de la población inicial en menos de un lustro: al carecer totalmente de defensas inmunológicas, padecieron infecciones respiratorias agudas fulminantes (gripe, neumonía, bronquitis aguda), sarampión, tosferina, malaria y hepatitis vírica, muriendo entre el 40% y el 50% de la población total.",
+        "conflicto_armado_coca_y_minas_antipersonal": "A partir de la década de 1990, su territorio ancestral fue invadido por frentes guerrilleros de las FARC (Frente 44 y Frente 1), estructuras paramilitares del Bloque Centauros y colonos vinculados al cultivo ilícito de coca. Los actores armados sembraron miles de Minas Antipersonal (MAP) y MUSE a lo largo de los senderos nómadas ancestrales, mutilando a cazadores y bloqueando las rutas estacionales.",
+        "desplazamiento_forzado_hacia_san_jose_del_guaviare": "El desplazamiento forzado hacia San José del Guaviare por la guerrilla y paramilitares fracturó definitivamente la trashumancia. Las bandas nómadas fueron confinadas en campamentos periurbanos precarios de San José del Guaviare (Aguabonita, Charras, Villa Leonor, El Refugio), sumidas en el hacinamiento bajo lonas plásticas, mendicidad forzada, desnutrición crónica infantil severa, adicción a solventes químicos en jóvenes y explotación sexual infantil por terceros.",
+        "justicia_constitucional_sentencia_t025_y_autos": {
+          "sentencia_t_025_de_2004": "Declaratoria del Estado de Cosas Inconstitucional por la vulneración masiva de derechos de los desplazados por el conflicto.",
+          "auto_004_de_2009": "Declaratoria de los Nukak Makú como pueblo en riesgo inminente de exterminio físico y cultural, ordenando un Plan de Salvaguarda Étnica inaplazable con enfoque nómada diferencial.",
+          "auto_173_de_2012": "Órdenes perentorias específicas para el pueblo Nukak: desminado humanitario certificado de su resguardo ancestral, saneamiento territorial frente a colonos, cese de militarización y brigadas médicas integrales permanentes.",
+          "auto_266_de_2017": "Seguimiento judicial estricto constatando el retraso estatal y ordenando medidas urgentes de desminado y garantías de retorno a la selva virgen interfluvial."
+        }
+      }
+    }
+  },
+  "marco_juridico_y_jurisprudencia_constitucional": {
+    "sentencia_t_025_de_2004": {
+      "tribunal": "Corte Constitucional de Colombia",
+      "magistrado_ponente": "Manuel José Cepeda Espinosa",
+      "tesis_juridica": "Declaratoria formal del Estado de Cosas Inconstitucional (ECI) por la violación masiva, sistemática y continua de los derechos fundamentales de las personas desplazadas forzadamente en Colombia.",
+      "dimension_etnica": "Estableció que los pueblos indígenas sufren una vulneración cualitativamente agravada por el desarraigo de su territorio ancestral, configurando una amenaza directa de desaparición cultural y biológica."
+    },
+    "auto_004_de_2009": {
+      "tribunal": "Corte Constitucional de Colombia (Sala Especial de Seguimiento)",
+      "magistrado_ponente": "Manuel José Cepeda Espinosa",
+      "asunto": "Protección de los derechos fundamentales de los pueblos indígenas desplazados en riesgo de exterminio físico y cultural",
+      "reconocimiento_de_urgencia": "Declaró a 34 pueblos indígenas de Colombia en riesgo inminente de desaparición por la violencia armada, priorizando con carácter urgente a los pueblos nómadas y cazadores de la Amazonía: Nukak Makú, Kakua y demás etnias de interfluvio.",
+      "ordenes_estructurales": [
+        "Formulación concertada de Planes de Salvaguarda Étnica con enfoque diferencial de nomadismo para evitar la extinción.",
+        "Diseño e implementación de un Programa de Garantía de Derechos Territoriales y Humanitarios.",
+        "Adopción de medidas sanitarias de choque y asistencia alimentaria inmediata."
+      ]
+    },
+    "auto_173_de_2012": {
+      "tribunal": "Corte Constitucional de Colombia (Sala de Seguimiento)",
+      "magistrado_ponente": "Luis Ernesto Vargas Silva",
+      "asunto": "Medidas cautelares de urgencia y Plan de Salvaguarda Específico e Inaplazable para el Pueblo Nukak",
+      "constatacion_judicial": "Verificó que los niños y ancianos Nukak continuaban muriendo en los asentamientos periurbanos de San José del Guaviare por hambre y enfermedades curables, y que el Estado no había implementado el Plan de Salvaguarda ordenado en 2009.",
+      "ordenes_perentorias": [
+        "Diseño e implementación inmediata del Plan de Salvaguarda Específico para el Pueblo Nukak respetando su condición nómada.",
+        "Desminado humanitario integral y prioritario de las 954.000 hectáreas del Resguardo Nukak.",
+        "Saneamiento territorial expulsando pacíficamente a colonos y fincas ganaderas invasoras.",
+        "Brigadas médicas de salud diferencial permanente con traductores propios y alimentación adecuada."
+      ]
+    },
+    "auto_266_de_2017": {
+      "tribunal": "Corte Constitucional de Colombia",
+      "asunto": "Seguimiento riguroso a las medidas de retorno seguro, desminado y erradicación de violencias contra el pueblo Nukak",
+      "mandato": "Reiteración de las órdenes de desminado y exigencia al ICBF, Unidad de Víctimas y Fiscalía de frenar las redes de mendicidad y explotación sexual de menores Nukak en las periferias de San José del Guaviare."
+    },
+    "decreto_ley_4633_de_2011": {
+      "descripcion": "Régimen especial de medidas de asistencia, atención, reparación integral y de restitución de derechos territoriales a las víctimas pertenecientes a los pueblos y comunidades indígenas.",
+      "relevancia": "Reconoce al territorio ancestral como víctima directa del conflicto cuando ha sido sembrado de minas antipersonal o despojado por el narcotráfico."
+    },
+    "decreto_1232_de_2018_piaci": {
+      "norma": "Decreto 1232 de 2018 (Ministerio del Interior)",
+      "objeto": "Creación del Sistema Nacional de Prevención y Protección de los Derechos de los Pueblos Indígenas en Aislamiento y Contacto Inicial (PIACI).",
+      "principios_rectores": [
+        "Principio de No Contacto: Garantía irrestricta de aislamiento autodeterminado para pueblos en aislamiento voluntario.",
+        "Principio de Precaución Sanitaria: Prohibición de actividades que puedan generar contacto involuntario o transmisión epidemiológica.",
+        "Protocolo para Pueblos de Contacto Inicial: Blindaje territorial, barreras epidemiológicas y respeto pleno a la trashumancia en selva virgen."
+      ]
+    }
+  },
+  "glosario_etnobotanico_y_terminologico": {
+    "terminologia_vernacula_y_antropologica": {
+      "he_waya_o_waka": "Refugio provisional móvil y campamento estacional nómada erigido con varas ligeras de sotobosque y techado impermeable de hojas gigantes de platanillo silvestre (Phenakospermum guyannense) o Heliconia.",
+      "puy": "Cerbatana de caza tradicional fabricada del tronco pulido y biselado de palmas duras (Iriartea / Bactris), equipada con alza de diente de roedor o mono.",
+      "curare": "Veneno de cacería por excelencia a base de alcaloides isoquinolínicos de Curarea tecunarum y Strychnos toxifera, que produce parálisis neuromuscular respiratoria en las presas del dosel.",
+      "cumare_chambira": "Palma Astrocaryum chambira de cuyos cogollos se extrae la fibra epidérmica textil para tejer hamacas elásticas ultraligeras y cuerdas de transporte.",
+      "seje_patawa": "Palma Oenocarpus bataua rica en aceite oleico consumida como emulsión calórica densa ('leche de seje') durante las travesías.",
+      "uva_de_monte": "Árbol Pourouma cecropiifolia con frutos dulces drupáceos recolectados en los recorridos trashumantes de interfluvio.",
+      "carana": "Resina aromática antiséptica y cicatrizante extraída del tronco de Protium heptaphyllum, usada para sellar heridas de marcha y repeler insectos.",
+      "balay": "Plato ceremonial de cestería fina con iconografías sagradas elaborado por los pueblos del Inírida (Puinave) y Vaupés.",
+      "mecapal": "Banda ancha de fibra vegetal apoyada en la frente para acarrear pesados canastos dorsales durante largas marchas selváticas.",
+      "tonogenesis": "Proceso evolutivo de cambio fonológico mediante el cual una lengua adquiere distinciones tonales léxicas a partir de la pérdida de consonantes codas y laringalización."
+    },
+    "taxonomia_biologica_exhaustiva": {
+      "phenakospermum_guyannense": {
+        "nombre_comun": "Platanillo silvestre / Plátano de monte",
+        "familia": "Strelitziaceae",
+        "rol_etnobiologico": "Frondas de 2 a 3 metros de largo para la techumbre impermeable de los campamentos he-waya."
+      },
+      "astrocaryum_chambira": {
+        "nombre_comun": "Palma de cumare / Chambira",
+        "familia": "Arecaceae",
+        "rol_etnobiologico": "Fibras de cogollo hiladas al muslo para tejer hamacas nómadas indestructibles al agua y hongos."
+      },
+      "oenocarpus_bataua": {
+        "nombre_comun": "Palma de seje / Milpesos / Patawa",
+        "familia": "Arecaceae",
+        "rol_etnobiologico": "Frutos para la bebida oleosa de seje y pecíolos leñosos para astillar dardos de cerbatana."
+      },
+      "pourouma_cecropiifolia": {
+        "nombre_comun": "Uva caimarona / Uva de monte / Cucura",
+        "familia": "Urticaceae",
+        "rol_etnobiologico": "Frutos carnosos dulces recolectados en el dosel y sotobosque durante la marcha estacional."
+      },
+      "curarea_tecunarum": {
+        "nombre_comun": "Bejuco de curare",
+        "familia": "Menispermaceae",
+        "rol_etnobiologico": "Corteza hervida para obtener d-tubocurarina que paraliza presas en la canopia."
+      },
+      "protium_heptaphyllum": {
+        "nombre_comun": "Árbol de caraña / Breo blanco",
+        "familia": "Burseraceae",
+        "rol_etnobiologico": "Resina antiséptica hemostática y repelente de insectos para heridas de travesía."
+      },
+      "mikania_glomerata": {
+        "nombre_comun": "Bejuco de guaco / Planta antiofídica",
+        "familia": "Asteraceae",
+        "rol_etnobiologico": "Corteza y hojas amargas aplicadas tópicamente y bebidas contra veneno de víboras Bothrops y Lachesis."
+      },
+      "piper_aduncum": {
+        "nombre_comun": "Cordoncillo silvestre / Hoja caliente",
+        "familia": "Piperaceae",
+        "rol_etnobiologico": "Hojas calentadas al fuego para masajes compresivos desinflamantes tras largas marchas."
+      },
+      "ceiba_pentandra": {
+        "nombre_comun": "Ceiba bonga / Algodón de ceiba",
+        "familia": "Malvaceae",
+        "rol_etnobiologico": "Borra vegetal sedosa para el tapón neumático en la base de los dardos de cerbatana."
+      },
+      "melipona_eburnea": {
+        "nombre_comun": "Abeja sin aguijón / Miel de monte real",
+        "familia": "Apidae (Tribu Meliponini)",
+        "rol_etnobiologico": "Miel silvestre bactericida y polen de alto valor nutricional extraídos sin talar el árbol nodriza."
+      },
+      "lagothrix_lagothricha": {
+        "nombre_comun": "Mono churuco / Mono barrigudo",
+        "familia": "Atelidae",
+        "rol_etnobiologico": "Presa primordial de caza con cerbatana; carne ahumada y grasa para masajes corporales."
+      },
+      "tapirus_terrestris": {
+        "nombre_comun": "Danta o tapir amazónico",
+        "familia": "Tapiridae",
+        "rol_etnobiologico": "Grasa de la almohadilla dorsal usada en fricciones de fisioterapia tradicional para lumbalgias."
+      }
+    }
+  },
+  "tabla_comparativa_matricial": [
+    {
+      "pueblo": "Kakua (Cacua / Bará Makú)",
+      "familia_linguistica": "Familia Kakua-Nukak",
+      "tonos_fonemicos": "5 tonos (Alto, Bajo, Ascendente, Descendente, Laringalizado)",
+      "morfologia_radical": "Monosilábica / Bimoraica CVC",
+      "clasificadores_de_forma": "Ausentes (composición nominal directa)",
+      "cuenca_interfluvio": "Interfluvio Papurí - Querarí - Vaupés (Caño Wacará, Caño Ti)",
+      "tipo_vivienda_tradicional": "Campamento provisional estacional he-waya de platanillo",
+      "arma_caza_primaria": "Cerbatana de chonta con curare de Curarea tecunarum",
+      "frutos_y_mieles": "Miel de abejas Meliponas, seje (Oenocarpus bataua) y uva de monte",
+      "medicina_travesia": "Resina de caraña (Protium) y masajes con hojas calientes",
+      "estado_demografico": "Crítico (~250-300 personas)",
+      "marco_amparo_prioritario": "Auto 004 de 2009 de la Corte Constitucional"
+    },
+    {
+      "pueblo": "Hupda (Hup / Jupda)",
+      "familia_linguistica": "Familia Nadahup",
+      "tonos_fonemicos": "5 tonos distintivos en sílabas pesadas acentuadas",
+      "morfologia_radical": "Monosilábica CVC con sufijación aglutinante",
+      "clasificadores_de_forma": "Ausentes (sin clasificadores de forma de río)",
+      "cuenca_interfluvio": "Cuenca alta del río Tiquié, Caño Yapú y Papurí",
+      "tipo_vivienda_tradicional": "Campamento he-waya rotativo cada 10 a 14 días",
+      "arma_caza_primaria": "Cerbatana de 3 m con curare de Strychnos / Curarea",
+      "frutos_y_mieles": "Mieles Melipona (miel de tierra), seje patawa y uva de monte",
+      "medicina_travesia": "Resinas antiofídicas de guaco, caraña y masajes con grasa de danta",
+      "estado_demografico": "Vulnerable binacional (~2.000-2.200 entre Colombia y Brasil)",
+      "marco_amparo_prioritario": "Auto 004 de 2009 y Resguardo Gran Vaupés"
+    },
+    {
+      "pueblo": "Yuhupdeh (Yuhup)",
+      "familia_linguistica": "Familia Nadahup",
+      "tonos_fonemicos": "4 a 5 tonos con marcada oclusión glotal fonémica",
+      "morfologia_radical": "Monosilábica con vocales nasales y vocal central [ɨ]",
+      "clasificadores_de_forma": "Ausentes",
+      "cuenca_interfluvio": "Interfluvio Tiquié - Pirá-Paraná - Apaporis (Caño Piraña)",
+      "tipo_vivienda_tradicional": "Campamento efímero he-waya de tierra firme en selva virgen",
+      "arma_caza_primaria": "Cerbatana con curare concentrado de serranía rocosa",
+      "frutos_y_mieles": "Mieles de abejas silvestres sin aguijón, seje y uva caimarona",
+      "medicina_travesia": "Cataplasmas antiofídicas, caraña y hojas calientes de Piper",
+      "estado_demografico": "En peligro (~250 en Colombia; ~700 en Brasil)",
+      "marco_amparo_prioritario": "Auto 004 de 2009 y Yaigojé-Apaporis"
+    },
+    {
+      "pueblo": "Puinave (Wãnsöhöt)",
+      "familia_linguistica": "Familia Puinave (Lengua Aislada / Stock Independiente)",
+      "tonos_fonemicos": "2 tonos fonémicos (Alto y Bajo)",
+      "morfologia_radical": "Monosilábica y Disilábica con nasalidad expansiva",
+      "clasificadores_de_forma": "Ausentes (sin clasificadores masivos de río)",
+      "cuenca_interfluvio": "Río Inírida, Caño Bocón y Cerros de Mavecure",
+      "tipo_vivienda_tradicional": "Históricamente campamento nómada; hoy aldeas sedentarias ribereñas",
+      "arma_caza_primaria": "Cerbatana tradicional y pesca fluvial especializada",
+      "frutos_y_mieles": "Mieles Melipona, racimos de seje (Oenocarpus) y moriche",
+      "medicina_travesia": "Resinas de caraña y copal, masajes térmicos de travesía",
+      "estado_demografico": "Población mayoritaria (~7.000 - 8.500 personas)",
+      "marco_amparo_prioritario": "Sentencia T-025 de 2004 y Resguardos del Inírida"
+    },
+    {
+      "pueblo": "Macaguaje (Airubain)",
+      "familia_linguistica": "Familia Tukano Occidental (Interfluvial)",
+      "tonos_fonemicos": "Tonalidad y nasalidad propias de Tukano Occidental",
+      "morfologia_radical": "Monosilábica / Disilábica con prefijación/sufijación",
+      "clasificadores_de_forma": "Parciales según reconstrucción etnohistórica",
+      "cuenca_interfluvio": "Ríos Mecaya, Senseya y Caquetá medio (Caquetá/Putumayo)",
+      "tipo_vivienda_tradicional": "Campamentos móviles de ramas y hojas de selva interior",
+      "arma_caza_primaria": "Cerbatana con venenos vegetales y trampas de fosa",
+      "frutos_y_mieles": "Mieles de abejas silvestres, seje patawa y uva de monte",
+      "medicina_travesia": "Venenos vegetales de contacto, resinas y hojas tibias",
+      "estado_demografico": "Extinto como entidad autónoma; remanentes en Koreguaje",
+      "marco_amparo_prioritario": "Memoria etnohistórica viva y lección sobre genocidio cauchero"
+    },
+    {
+      "pueblo": "Nukak (Makú-Nukak)",
+      "familia_linguistica": "Familia Kakua-Nukak",
+      "tonos_fonemicos": "2 tonos fonémicos fundamentales con contornos moraicos",
+      "morfologia_radical": "Monosilábica estricta (CVC, CVʔ) con vocal [ɨ] y nasalidad",
+      "clasificadores_de_forma": "Totalmente ausentes; deícticos espaciales del dosel",
+      "cuenca_interfluvio": "Interfluvio Guaviare - Inírida (Caño Makú, Laguna Pabón)",
+      "tipo_vivienda_tradicional": "Campamento estacional wāka / he-waya de platanillo y cumare",
+      "arma_caza_primaria": "Cerbatana puy con curare de Curarea tecunarum",
+      "frutos_y_mieles": "Caza de mieles Meliponas, seje patawa y uva de monte",
+      "medicina_travesia": "Resina de caraña, compresas de hojas calientes y masajes",
+      "estado_demografico": "En riesgo inminente de extinción física y cultural (~1.080 personas)",
+      "marco_amparo_prioritario": "Sentencia T-025/04, Auto 004/09, Auto 173/12 y Auto 266/17"
+    }
+  ]
+}

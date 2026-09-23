@@ -1,0 +1,926 @@
+{
+  "metadata": {
+    "titulo": "Etnografía, Lingüística y Sistemas Claneros del Río Apaporis y la Familia Arawak Amazónica",
+    "subtitulo": "Documentación exhaustiva de los clanes, transición lingüística interétnica, cosmogonía de la Anaconda Ancestral, arquitectura de maloca, farmacopea sagrada y resistencia territorial en el Yaigojé Apaporis y el Bajo Caquetá",
+    "version": "1.0.0",
+    "fecha_compilacion": "2026-09-23",
+    "autor": "Subagente Especialista en Clanes del Río Apaporis y Familia Arawak Amazónica de Colombianopedia",
+    "cobertura_geografica": [
+      "Departamento del Amazonas (Corregimientos de La Pedrera, Mirití-Paraná, Puerto Santander, Taraira)",
+      "Departamento del Vaupés (Municipios de Mitú, Carurú, Taraira; Corregimientos de Pacoa, Yavaraté, Papunaua)",
+      "Departamento del Caquetá (Bajo Caquetá, Solano)"
+    ],
+    "cuencas_hidrograficas_estudiadas": [
+      "Río Apaporis (Alto, Medio y Bajo)",
+      "Río Cananarí",
+      "Río Mirití-Paraná",
+      "Río Pirá-Paraná",
+      "Río Vaupés (Uaupés)",
+      "Río Caquetá (Japurá)",
+      "Río Cahuinarí",
+      "Caño Guacayá",
+      "Caño Popeyacá",
+      "Caño Aduche"
+    ],
+    "total_pueblos_documentados": 7,
+    "pueblos_incluidos": [
+      "Kawiyarí (Cabiyarí / Kawillari)",
+      "Tariano (Tariana / Taliaseri)",
+      "Yauna (Yahuna / Kamejeya del Bajo Apaporis)",
+      "Letuama (Añu / Retuarã)",
+      "Tanimuka (Õfaina / Ufaina)",
+      "Yukuna (Kamejeya)",
+      "Matapí (Jupichiya / Upichia)"
+    ],
+    "fuentes_academicas_y_referentes": [
+      "Alexandra Y. Aikhenvald (The Tariana Language of Northwest Amazonia, Cambridge University Press; Language Contact in Amazonia, Oxford University Press)",
+      "Stephen Hugh-Jones (The Palm and the Pleiades: Initiation and Cosmology in Northwest Amazonia, Cambridge University Press)",
+      "Christine Hugh-Jones (From the Milk River: Spatial and Temporal Processes in Northwest Amazonia, Cambridge University Press)",
+      "Kaj Århem (Makuna: Social Organization and History; Ecosofía y Chamanismo en el Río Pirá-Paraná)",
+      "Jon Landaburu & CCELA (Centro Colombiano de Estudios de Lenguas Aborígenes, Universidad de los Andes)",
+      "Gerardo Reichel-Dolmatoff (Desana: Simbolismo y Chamanismo; El Chamán y el Jaguar; Basketry of the Indians of the Vaupés)",
+      "Roberto Pineda Camacho (Holocausto en el Amazonas: Una Historia Social de la Casa Arana, Planeta / Banco de la República)",
+      "Carlos Castaño-Uribe (Chiribiquete: La Maloka Cósmica de los Hombres Jaguar, Parques Nacionales Naturales)",
+      "Richard Evans Schultes & Robert F. Raffauf (The Healing Forest: Medicinal and Toxic Plants of Northwest Amazonia, Dioscorides Press)",
+      "Thomas van der Hammen (El Manejo del Mundo: Naturaleza y Sociedad entre los Yukuna de la Amazonía Colombiana, Tropenbos)",
+      "Elizabeth Reichel D. (La Geopolítica Chamánica de los Tanimuka y Yukuna del Mirití-Paraná)",
+      "Asociación de Capitanes Indígenas del Yaigojé Apaporis (ACIYA) & Gaia Amazonas",
+      "Asociación de Autoridades Tradicionales Indígenas del Mirití-Paraná (AATIAM)",
+      "Corte Constitucional de Colombia (Sentencia T-384A de 2014 sobre la protección del PNN Yaigojé Apaporis frente a la minería transnacional)"
+    ]
+  },
+  "fundamentos_transversales": {
+    "linguistica_de_contacto_y_frontera_arawak_tukano": {
+      "descripcion_general": "La cuenca del río Apaporis y el interfluvio con el Mirití-Paraná y el Vaupés constituyen uno de los laboratorios sociolingüísticos y de contacto de lenguas más fascinantes del planeta. En esta región convergen dos de los troncos lingüísticos más extendidos de la Amazonía sudamericana: la gran familia Arawak (Maipureana) y la familia Tukano Oriental. Lejos de constituir compartimentos aislados, estas naciones han desarrollado a lo largo de milenios un sistema de bilingüismo y multilingüismo institucionalizado, regulado por la norma social de la exogamia lingüística.",
+      "el_sistema_de_exogamia_linguistica": {
+        "definicion_sociologica": "En el área cultural del Vaupés-Apaporis, la lengua paterna no es únicamente un vehículo de comunicación, sino la insignia ontológica de pertenencia clánica ('la voz de los ancestros'). Rige una prohibición estricta de contraer matrimonio con alguien que hable la misma lengua propia o pertenezca a la misma fratría ancestral.",
+        "dinamica_hogar_multilingue": "Dentro de una misma maloca comunal, los miembros adultos conviven hablando cotidianamente dos, tres o cuatro lenguas distintas. El padre se dirige a sus hijos en su lengua patrilineal; la madre responde e instruye a sus hijos en su propia lengua materna (por ejemplo, padre Tanimuka [Tukano] y madre Yukuna [Arawak]); y los visitantes de otras etnias usan sus respectivos idiomas. Los niños desarrollan una competencia pasiva y activa multidireccional desde la primera infancia, considerando de pésima educación social mezclar léxico o alterar la pureza fonológica de cada idioma ('code-switching' estigmatizado).",
+        "respeto_a_la_voz_patrilineal": "El individuo hereda inmutablemente la filiación clánica y la lengua de su padre, pero venera y comprende la lengua de la línea materna, estableciendo redes de reciprocidad y protección ceremonial."
+      },
+      "difusion_areal_y_convergencia_gramatical": {
+        "rasgos_compartidos": "Siglos de contacto continuo entre lenguas Arawak (Tariano, Kawiyarí, Yukuna) y lenguas Tukano Oriental (Tanimuka, Letuama, Barasana, Makuna, Tukano) han provocado una profunda difusión de rasgos morfosintácticos sin necesidad de sustitución de vocabulario básico.",
+        "sistema_de_evidencialidad": "Las lenguas Arawak de la región incorporaron o afinaron subsistemas de sufijos evidenciales obligatorios calcalcados del Tukano Oriental, exigiendo que el hablante explicite en cada verbo la fuente exacta de su conocimiento: información vista directamente por el ojo, información escuchada o percibida por otro sentido, información inferida a partir de evidencias físicas, o información transmitida por relato ancestral mítico.",
+        "clasificadores_nominales_antropomorficos_y_botanicos": "Extensa proliferación de morfemas clasificadores que agrupan los sustantivos según su geometría espacial (alargado rígido, laminar flexible, esférico, cóncavo) o su relación con partes del cuerpo y anatomía vegetal.",
+        "armonia_nasal_y_tonalidad": "Contagio fonético donde patrones prosódicos y fenómenos de propagación suprasegmental de la nasalidad característicos del Tukano Oriental han permeado las variantes fonológicas de las hablas Arawak limítrofes."
+      },
+      "patrones_historicos_de_sustitucion_y_perdida_linguistica": {
+        "caso_tariano": "El pueblo Tariano (de incuestionable filiación filogenética Arawak) abandonó paulatinamente su lengua vernácula en el río Vaupés para adoptar el idioma Tukano Oriental (Ye'pâ-masa). Este fenómeno se aceleró por la hegemonía comercial del Tukano como lengua franca regional, los internados misionales salesianos que prohibieron las hablas minoritarias y la presión exogámica en los raudales de Iauaretê, dejando la lengua Tariana en estado de peligro crítico con escasos ancianos hablantes fluidos.",
+        "caso_matapi": "El pueblo Matapí (Jupichiya) perdió su lengua ancestral autónoma (una lengua amazónica independiente extinguida durante el genocidio cauchero de la Casa Arana en el río Cahuinarí) al buscar refugio entre los Yukuna del Mirití-Paraná. Los Matapí adoptaron en su totalidad la lengua Arawak Yukuna, manteniendo no obstante intacta su filiación clánica, su identidad ritual y un léxico esotérico arcaico exclusivo de los cantos de curare.",
+        "caso_kawiyari": "El enclave Kawiyarí del río Cananarí, aislado a centenares de kilómetros de otros pueblos Arawak y rodeado completamente por grupos Tukano Oriental (Barasana, Taiwano, Cubeo), sobrevive con un bilingüismo asimétrico extremo donde las nuevas generaciones enfrentan una acelerada absorción por el Barasana y el castellano."
+      }
+    },
+    "cosmogonia_y_ciclo_ritual_del_apaporis": {
+      "el_gran_viaje_de_la_anaconda_ancestral": {
+        "nombre_mitico": "La Anaconda Canoa / Anaconda de Agua / Yuí-Gojé / Mũhĩpũ",
+        "narrativa_fundacional": "En el tiempo primordial de la oscuridad, antes de que el Sol alumbrara la selva, los Primeros Creadores enviaron a la Gran Anaconda Canoa navegando desde la Puerta del Agua en el Océano Atlántico (Río de la Leche) remontando la inmensa serpiente del Río Amazonas, ingresando por el Caquetá y adentrándose por el cauce indómito del río Apaporis. Dentro del vientre tubular de la Anaconda viajaban los ancestros fundadores de toda la humanidad, dotados de sus respectivas cajas de plumas sagradas, flautas de Yurupary, bastones sonajeros y semillas primordiales de coca y tabaco.",
+        "la_geografia_sagrada_y_las_cachiveras": "A medida que la Anaconda remontaba el río, sus aletas y su lomo hendían los macizos del Escudo Guayanés, quebrando la roca y originando los raudales y cachiveras sagradas que marcan el curso del Apaporis. Cada raudal es la petrificación viva de un episodio de la creación, un portal interdimensional entre el mundo subterráneo de los espíritus (*He*) y la superficie terrenal.",
+        "el_raudal_del_jirijirimo_jigirigodo": {
+          "toponimo_ancestral": "Jigirigodó / Jirijirimo ('El Lecho Cósmico de la Anaconda' o 'La Cama del Guío')",
+          "descripcion_cosmologica": "Es el punto geodésico y espiritual culminante del curso medio del Apaporis. En este estrecho cañón labrado en cuarcitas precámbricas de más de 1.600 millones de años, el río es estrangulado por gigantescos farallones verticales donde las aguas caen en una serie de cascadas escalonadas en forma de herradura continua. Para los pueblos del Apaporis, Jigirigodó es la cama donde la Gran Anaconda se detuvo a mudar de piel; las rocas pulidas son los huevos primordiales petrificados y las pozas profundas son los respiraderos de los dueños espirituales del agua (*Wai-masã*). Nadie puede pescar o talar en las orillas de Jirijirimo sin la previa 'curación' o conjuro propiciatorio del Kumú en el mambeadero, so pena de ser arrastrado al fondo por la serpiente cósmica."
+        },
+        "la_cachivera_de_yuisi_raudal_de_la_libertad": {
+          "significado": "Paso ceremonial del bajo Apaporis, donde la Anaconda expulsó a los clanes del agua y delimitó los lindes territoriales sagrados de los Yauna, Tanimuka y Makuna."
+        }
+      },
+      "el_baile_del_muneco_ipina_fiesta_del_chontaduro": {
+        "denominaciones": "Ipiña (Yukuna/Matapí) / Baile del Muñeco / Rito de los Espíritus Enmascarados / Fiesta del Chontaduro (Tori)",
+        "temporada_y_calendario_ecologico": "Se celebra entre los meses de enero y marzo, coincidiendo con la fructificación masiva de la palma de chontaduro (*Bactris gasipaes*). Marca el punto álgido de abundancia en la selva y el momento de saldar las deudas de energía vital con los espíritus de la naturaleza.",
+        "las_mascaras_de_corteza_de_yanchama": {
+          "materia_prima": "Corteza vegetal del árbol de Yanchama (*Poulsenia armata*, familia Moraceae; complementada ocasionalmente con *Ficus radula*).",
+          "proceso_de_confeccion": "Los hombres de la maloca se internan en la selva profunda tras guardar estricta abstinencia sexual y dietética. Cortan cilindros del tronco de Yanchama, desprenden la corteza fibrosa interna (líber) y la sumergen en las corrientes del caño. Luego, con mazos de madera dura sobre un tronco liso, golpean rítmicamente la corteza durante horas hasta desfibrarla y tornarla en una tela suave, maleable y de color blanco cremoso. Con esta tela confeccionan largos trajes enteros tubulares y capuchas cónicas que cubren por completo el cuerpo y rostro del danzante.",
+          "iconografia_y_pigmentos_rituales": "Sobre la tela de yanchama, los iniciados pintan complejos motivos geométricos, laberintos concéntricos y siluetas zoomorfas utilizando pigmentos naturales: negro obtenido del carbón vegetal y jugo de huito/jagua (*Genipa americana*), rojo brillante extraído de las semillas de achiote (*Bixa orellana*) y ocres minerales extraídos de arcillas ferruginosas de barrancos fluviales.",
+          "personificacion_teatral": "Cada máscara representa a un ser espiritual de la selva: el Jaguar de la Selva (*Yai*), el Murciélago Vampiro, la Danta Primordial, el Chulo Rey, la Avispa Brava, la Avispa de Fuego, o el Demonio de la Selva (*Mawari*). Al calzarse la máscara de yanchama, el danzante pierde temporalmente su identidad humana: su cuerpo es poseído y habitado por el espíritu primordial que representa."
+        },
+        "coreografia_y_consumo_de_chicha": {
+          "la_chicha_de_chontaduro": "Durante semanas previas, las mujeres recolectan quintales de frutos carnosos de chontaduro, los cocinan en gigantescas pailas de barro, los pelan y descorazonan, y los mastican o machacan con mazos en canoas ceremoniales para fermentar una chicha espesa, oleosa, intensamente anaranjada y de alto valor calórico.",
+          "irrupcion_de_los_enmascarados": "Al atardecer, los danzantes enmascarados salen sigilosamente de la espesura del monte imitando los chillidos, graznidos y bramidos de los animales. Irrumpen en la maloca corriendo y blandiendo varas, mientras las mujeres y niños observan con reverencial pavor. Bailan en círculos concéntricos alrededor del eje central de la maloca, entonando cantos responsoriales arcaicos al compás de bastones sonajeros con cascabeles de pezuñas de pecarí (*Tayassu pecari*). La fiesta dura de 48 a 72 horas continuas hasta vaciar las canoas de chicha, momento en el cual las máscaras son desvestidas y ritualmente retiradas o quemadas en el caño para que los espíritus regresen apaciguados a su dimensión invisible."
+        }
+      },
+      "el_culto_y_las_trompetas_de_yurupary": {
+        "terminologia": "Yurupary / Hee / Mĩhĩ / Jurupary",
+        "instrumentos_sagrados": "Grandes trompetas y flautas aerófonas fabricadas con madera de palma de paxiuba (*Socratea exorrhiza*) y enrolladas con largas espirales de corteza vegetal, guardadas permanentemente en el fondo lodoso de caños secretos donde no pueden ser vistas por miradas no autorizadas.",
+        "significado_y_tabu": "Representa la voz del Héroe Solar y la encarnación del orden cosmológico original. El sonido profundo, vibrante y bronco de las flautas de Yurupary es la fertilización mística de la selva y el tránsito de los jóvenes varones hacia la adultez guerrera y chamánica. El tabú visual sobre las mujeres y niños es estricto; en la antigüedad, la transgresión accidental acarreaba la pena de muerte ritual impuesta por los guardianes de la palabra."
+      }
+    },
+    "medicina_tradicional_y_etnobotanica_sagrada": {
+      "yoco_paullinia_yoco": {
+        "taxonomia": {
+          "especie": "Paullinia yoco R.E. Schultes & Killip",
+          "familia": "Sapindaceae",
+          "morfologia_y_habitat": "Liana o bejuco leñoso gigante trepador de dosel, que alcanza más de 35 metros de altura en la selva pluvial húmeda primaria bien conservada de los interfluvios Caquetá-Putumayo-Apaporis. No fructifica en huertos abiertos y requiere árboles hospederos longevos."
+        },
+        "bioquimica_y_fitoquimica": {
+          "alcaloide_principal": "Cafeína pura (1,3,7-trimetilxantina), con presencia secundaria de teobromina y teofilina.",
+          "concentracion_extraordinaria": "La corteza fresca de las ramas y troncos maduros contiene concentraciones de cafeína que oscilan entre el 2.7% y el 4.6% del peso seco vegetal, superando los niveles del grano de café arábica (1.1-1.5%) e igualando o superando al guaraná amazónico (*Paullinia cupana*).",
+          "matriz_de_polifenoles_y_taninos": "A diferencia de las infusiones calientes, en la corteza fresca del Yoco la cafeína se encuentra bioquímicamente enlazada con taninos condensados (proantocianidinas de alto peso molecular) y saponinas triterpénicas ácidas."
+        },
+        "cinetica_farmacologica_y_modo_de_preparacion": {
+          "preparacion_estrictamente_en_frio": "El bejuco de Yoco jamás se somete al fuego o a hervor. A las 4:30 o 5:00 de la madrugada, antes del despuntar del alba, el cazador raspa con el filo del machete la corteza leñosa rugosa exterior del bejuco. Las virutas aromáticas y jugosas se depositan en una pequeña jícara o totuma con agua fresca del río o de manantial y se exprimen enérgicamente con la palma de la mano. El líquido adquiere una consistencia lechosa, turbia y espumosa de tonalidad parda acanelada.",
+          "absorcion_duodenal_sostenida": "Al no alterarse la estructura molecular por el calor térmico, los enlaces cafeína-tanino resisten la hidrólisis ácida inmediata del estómago y pasan al duodeno, donde se disocian lentamente a lo largo de un período de 8 a 14 horas continuas.",
+          "efectos_fisiologicos_en_la_caceria_selvatica": "Otorga una alerta psicomotora cristalina, agudeza visual y auditiva amplificada y resistencia física sin taquicardia, temblor periférico o rebote de fatiga. Es un poderoso anorexígeno y antidiurético natural: anula por completo la sensación de hambre y sed, permitiendo al cazador Letuama, Tanimuka o Yukuna rastrear manadas de zaínos o dantas durante jornadas extenuantes de más de 30 kilómetros a través de pantanos y varillales sin llevar provisiones de comida."
+        },
+        "rol_chamanico_purificador": {
+          "dosis_emetica_matutina": "Tomado en ayunas a dosis altas y concentradas, el Yoco limpia las secreciones mucosas del tracto digestivo y produce un vómito terapéutico purificador que los sabedores denominan 'lavado de la bilis negra', preparando el cuerpo para recibir la palabra del mambe."
+        }
+      },
+      "curare_strychnos_toxifera": {
+        "taxonomia_y_morfologia": {
+          "especie_base": "Strychnos toxifera Robert H. Schomb. ex Benth. (Familia Loganiaceae), combinada regionalmente con especies del género Chondrodendron (Familia Menispermaceae).",
+          "habitat": "Bejucos masivos de tronco rugoso y zarcillos leñosos que ascienden hacia la canopia de las selvas no inundables (tierra firme) del Apaporis y Mirití-Paraná."
+        },
+        "fitoquimica_y_fisiologia_del_envenenamiento": {
+          "alcaloides_cuaternarios": "Toxiferina I, C-curarina y alcaloides bisindólicos de altísima toxicidad neuromuscular.",
+          "mecanismo_de_accion": "Bloqueador neuromuscular competitivo no despolarizante. La toxiferina se une selectivamente a los receptores colinérgicos nicotínicos de la placa motora terminal del músculo esquelético, impidiendo la unión de la acetilcolina. El resultado es una parálisis flácida progresiva: inicia en los músculos extraoculares de la mirada, pasa a los músculos fonadores y del cuello, se extiende a las extremidades y finalmente paraliza los músculos intercostales y el diafragma, causando la muerte por asfixia en cuestión de minutos, con el animal manteniendo la conciencia plena hasta el colapso hipóxico.",
+          "seguridad_alimentaria": "Al ser macromoléculas de amonio cuaternario hidrófilas, los alcaloides del curare no se absorben por el tracto gastrointestinal humano normal si la mucosa no tiene heridas abiertas. La carne del animal cazado con dardo envenenado es 100% comestible y digestible, sin alterar su sabor ni intoxicar a la familia comensal."
+        },
+        "tecnologia_artesanal_y_secreto_clanico_matapi": {
+          "la_coccion_lenta": "Los sabedores raspan la corteza radicular y del tallo bajo, la maceran y la filtran a través de embudos de hojas de platanillo. El líquido filtrado se hierve a fuego muy lento en ollas de barro especiales durante días enteros hasta que adquiere la viscosidad de un alquitrán oscuro y brillante.",
+          "aditivos_adherentes_y_vasodilatadores": "Se le añaden resinas pegajosas para fijar el veneno a la punta afilada de las tablillas de palma de chontaduro y zumos de ají silvestre (*Capsicum*) o venenos de hormigas para favorecer la microcirculación local en la herida de la presa.",
+          "la_prueba_del_curare": "El maestro Matapí o Yukuna comprueba la efectividad del veneno disparando un dardo con la cerbatana (*sarabatana*) hacia un mono aullador en la copa más alta del dosel (30-40 metros). Si el mono suelta la rama y cae desplomado antes de poder dar un salto al árbol vecino, el veneno se considera de grado mayor ('curare de tres hojas')."
+        }
+      },
+      "breo_protium_heptaphyllum": {
+        "taxonomia": {
+          "especie": "Protium heptaphyllum (Aubl.) Marchand",
+          "familia": "Burseraceae",
+          "nombres_locales": "Breo, Breu branco, Incienso amazónico, We'e (en hablas del Apaporis)"
+        },
+        "quimica_resinosa": {
+          "constituyentes": "Resina oleosa rica en triterpenos pentacíclicos (amiri-resinas), monoterpenos volátiles (alfa-pineno, limoneno) y sesquiterpenos de intenso aroma balsámico y propiedades hidrófugas."
+        },
+        "aplicaciones_etnotecnologicas": {
+          "calafateo_e_impermeabilizacion_naval": "Es la sustancia indispensable para la tecnología fluvial amazónica. Tras ahuecar el tronco de cedro o canelo para fabricar la canoa y ensanchar sus bordes mediante fuego controlado, los orificios, uniones y grietas de la madera se sellan aplicando breo fundido al calor mezclado con carbón pulverizado. Al enfriarse, forma un polímero vítreo, elástico e impermeable al agua dulce que resiste años de embate contra las piedras en los raudales de Jirijirimo.",
+          "teas_y_antorchas_fluviales": "Varas de madera envueltas en resina seca de breo sirven como antorchas que no se apagan con las ráfagas de lluvia tropical durante las cacerías nocturnas de caimanes y pacas.",
+          "sahumerio_y_purificacion_espiritual": "Puesta sobre las brasas del fogón ceremonial en el centro de la maloca, la resina de breo desprende un humo blanco espeso de aroma dulce y penetrante. Este sahumerio actúa como bactericida y repelente biológico contra nubes de jejenes y zancudos (*Anopheles*), y espiritualmente neutraliza las energías de celos, envidias y presencias demoníacas de la selva antes de iniciar los cantos nocturnos de mambeadero."
+        }
+      },
+      "mambe_y_ambil_la_palabra_dulce": {
+        "el_mambe_yupadhe": "Hojas seleccionadas de coca amazónica (*Erythroxylum coca* var. *ipadu*), tostadas en tiesto de barro, machacadas en mortero de madera dura (*tacón*) y mezcladas homogéneamente con ceniza tamizada de hojas de yarumo plateado (*Cecropia peltata*) o de hojas tiernas de uva caimarona (*Pourouma cecropiifolia*). La ceniza alcalina eleva el pH bucal, facilitando la absorción transmucosa de los alcaloides cocainicos para calmar la mente y propiciar la palabra reflexiva sin euforia.",
+        "el_ambil_yera": "Pasta espesa de tabaco negro (*Nicotiana tabacum*) cocido lentamente durante 48 horas y reducido hasta obtener un jarabe denso, adicionado con sales vegetales lixiviadas de cenizas de troncos de palma. Se unta con un dedo sobre las encías para 'asentar el pensamiento' y desterrar la cólera."
+      }
+    },
+    "arquitectura_sagrada_de_la_maloca_del_apaporis": {
+      "morfologia_y_geometria_espacial": {
+        "tipologia": "Maloca cónica y abovedada parabólica continua, de planta elipsoidal o circular alargada.",
+        "diferencia_con_otras_regiones": "Mientras las malocas del alto Vaupés y Pirá-Paraná (Barasana, Desano) tienden a ser de planta estrictamente rectangular con techos a dos aguas y testeros planos, y las malocas del Caquetá medio (Murui-Huitoto) son gigantescas semiesferas circulares con domo alto, la maloca tradicional de los pueblos del Apaporis y Mirití-Paraná (Yukuna, Matapí, Tanimuka, Letuama) perfeccionó una volumetría abovedada que nace desde el suelo sin paredes verticales independientes: el techo de palma se comba en una curva continua que evoca el vientre curvado de la Gran Anaconda Cósmica y la cúpula celeste."
+      },
+      "ingenieria_estructural_y_materiales": {
+        "los_cuatro_pilares_maestros_kome": "La estructura descansa sobre cuatro colosales columnas de madera incorruptible talladas en troncos de maderas densas del bosque primario (como el guayacán, palo de arco o cumala). Estos cuatro postes representan los cuatro hermanos demiurgos que sostienen las cuatro esquinas de la bóveda del universo.",
+        "arcos_flexibles_y_vigas_curvas": "Para lograr la silueta abovedada, los constructores empalman maderos elásticos de maderables selváticos seleccionados según la luna menguante, atándolos exclusivamente con bejucos trepadores leñosos de altísima resistencia a la tracción (como el bejuco yupatí o bejuco de canasto), sin clavar un solo elemento metálico.",
+        "cubierta_de_palma_carana_o_iraca": "El techado se teje meticulosamente con miles de hojas de palma caraná (*Mauritiella aculeata*) o de palma de milpesos (*Oenocarpus bataua*). La superposición escamada de las hojas garantiza un aislamiento térmico total contra el tórrido sol ecuatorial y un drenaje perfecto de los aguaceros torrenciales amazónicos."
+      },
+      "acustica_ceremonial_y_resonancia_espiritual": {
+        "la_maloca_como_caja_de_resonancia_musical": "La curvatura parabólica de la bóveda y la textura fibrosa absorbente de la palma entretejida confieren al espacio interno una acústica extraordinaria. Elimina los ecos estridentes pero magnifica las frecuencias bajas y subgraves producidas por los resonadores corporales e instrumentales.",
+        "amplificacion_de_los_cantos_guturales": "Los cantos ceremoniales nocturnos del Kumú y los coros responsoriales masculinos se entonan en timbres guturales profundos y respiración diafragmática continua. La concavidad del techo devuelve la voz hacia el centro del mambeadero, envolviendo a los oyentes en una matriz sonora tridimensional donde parece que los ancestros cantaran suspendidos desde el cielo.",
+        "el_zapateo_y_los_bastones_de_danza": "El piso de la maloca es de arcilla apisonada endurecida con decocciones vegetales. Durante los bailes rituales, los danzantes golpean al unísono el suelo con bastones sonajeros y taconean con fuerza; las ondas sonoras mecánicas viajan a través del suelo y rebotan en la bóveda, generando una vibración infrasónica palpable en el tórax de los participantes que induce estados alterados de conciencia sinérgica colectiva."
+      },
+      "zonificacion_cosmologica_y_sociologia_del_espacio": {
+        "eje_este_oeste": "La maloca se orienta rigurosamente siguiendo la trayectoria solar. La puerta principal mira hacia el Oriente (el naciente, el nacimiento de la vida, el Río de la Leche de donde emergió la Anaconda); la puerta trasera mira hacia el Poniente (el ocaso, el sendero de los muertos hacia las catacumbas del Más Allá).",
+        "el_mambeadero_central": "Ubicado en el cuadrante oriental entre los cuatro pilares maestros. Es el santuario exclusivo de los hombres adultos iniciados, donde reposa el gran banco ceremonial de madera tallada en forma de jaguar o anaconda, el tiesto del mambe y la jícara de ambil. Allí se teje el 'hilo del pensamiento sagrado' cada noche hasta la madrugada.",
+        "espacios_femeninos_y_cocinas": "Las zonas perimetrales y laterales traseras albergan los fogones domésticos, los chinchorros conyugales y las mesas de preparación del casabe y la fariña, dominadas por la autoridad de las mujeres sabedoras de la chagra y dueñas de la yuca brava."
+      }
+    },
+    "memoria_historica_genocidio_cauchero_y_gobernanza_territorial": {
+      "el_holocausto_cauchero_de_la_casa_arana_y_las_correrias": {
+        "periodo_y_operacion": "Entre 1895 y 1930, la cuenca baja y media del Caquetá y los afluentes como el Cahuinarí, Mirití y Apaporis fueron invadidos por los frentes extractivos del empresario peruano Julio César Arana y su conglomerado The Peruvian Amazon Company.",
+        "las_correrias_y_el_terror": "Patrullas armadas de capataces secundados por mercenarios ('muchachos de confianza' o 'racionales') asaltaban las malocas en expediciones punitivas denominadas 'correrías'. Los pueblos indígenas eran forzados bajo pena de tortura, cepo, mutilación de miembros y degüello masivo a entregar cuotas mensuales de látex de caucho (*Hevea brasiliensis* y *Castilla elastica*).",
+        "el_exterminio_en_el_cahuinari": "El río Cahuinarí, cuna de los clanes Matapí y de etnias vecinas como los Andoke y Muinane, fue uno de los epicentros de mayor devastación. Más del 85% de la población de la cuenca pereció o fue deportada forzosamente hacia los centros de concentración de La Chorrera y El Encanto. Los sobrevivientes Matapí huyeron hacia las cabeceras inhóspitas del Mirití-Paraná, donde la barrera geográfica de los raudales frenó el avance de las lanchas caucheras."
+      },
+      "estrategias_ancestrales_de_resistencia": {
+        "refugio_en_los_interfluvios": "Muchos clanes del Apaporis (Kawiyarí, Tanimuka, Yauna) desmantelaron temporalmente sus grandes malocas ribereñas y se dispersaron en campamentos móviles en los bosques de colina y laberintos rocosos del escudo guayanés, camuflando los accesos a sus chagras y borrando sus huellas en los caños.",
+        "resistencia_chamánica_y_preservacion_de_semillas": "Los ancianos y Kumús mantuvieron a salvo en envoltorios impermeables de hojas y breo las semillas originarias de tabaco y coca mambe, protegiendo las fórmulas rituales y esperando el colapso del auge cauchero para refundar la vida comunal."
+      },
+      "el_parque_nacional_natural_yaigoje_apaporis_y_la_victoria_antiminera": {
+        "creacion_del_parque": "Creado mediante la Resolución 2079 del 27 de octubre de 2009 por el Ministerio de Ambiente de Colombia, abarcando una extensión colosal de 1.056.000 hectáreas en los departamentos de Vaupés y Amazonas.",
+        "solapamiento_puro_con_el_resguardo_indigena": "El PNN Yaigojé Apaporis presenta la singularidad jurídica de estar completamente traslapado con el Resguardo Indígena Yaigojé Apaporis (titulado a favor de las etnias Tanimuka, Macuna, Cabiyarí, Barasana, Letuama, Yauna, Tuyuca, Yujup-Makú). Fue concebido a solicitud expresa de las propias autoridades indígenas agrupadas en ACIYA (Asociación de Capitanes Indígenas del Yaigojé Apaporis) como un escudo jurídico internacional para salvaguardar sus sitios sagrados.",
+        "la_agresion_minera_de_cosigo_resources": {
+          "el_conflicto": "Dos días después de la firma del decreto de creación del Parque, el Instituto Colombiano de Geología y Minería (Ingeominas) otorgó de manera irregular el contrato de concesión minera No. HKT-08031 a la multinacional minera de origen canadiense Cosigo Resources Ltd. La empresa pretendía desarrollar una gigantesca mina de oro a cielo abierto en el cerro y raudal sagrado de Yuisi (La Libertad), corazón mitológico del Apaporis.",
+          "la_resistencia_de_aciya_y_la_batalla_legal": "Los capitanes y sabedores tradicionales de ACIYA, negándose a aceptar sobornos y prebendas de la empresa minera, iniciaron una gesta de resistencia jurídica y política respaldados por la Fundación Gaia Amazonas y prestigiosas firmas de derechos humanos.",
+          "el_fallo_historico_de_la_corte_constitucional": "Mediante la histórica Sentencia T-384A de 2014, la Corte Constitucional de Colombia protegió de manera definitiva y vinculante los derechos fundamentales al territorio sagrado, a la consulta previa y al medio ambiente de los pueblos indígenas del Apaporis. La Corte ordenó la nulidad irrevocable de todo título o concesión minera en el Yaigojé Apaporis, consolidando el principio de que los sitios sagrados de la Ley de Origen indígena poseen jerarquía constitucional inviolable sobre cualquier interés extractivo mercantil."
+        }
+      },
+      "mosaico_de_resguardos_del_bajo_caqueta_y_apaporis": {
+        "resguardo_yaigoje_apaporis": "1.056.000 hectáreas entre Amazonas y Vaupés, gobernado por ACIYA.",
+        "resguardo_miriti_parana": "Más de 1.300.000 hectáreas en el departamento de Amazonas, gobernado por AATIAM (Asociación de Autoridades Tradicionales Indígenas del Mirití-Paraná), territorio de Yukuna, Matapí, Letuama y Tanimuka.",
+        "resguardo_comeyafu": "Territorio ancestral en la ribera del río Caquetá cercano a La Pedrera.",
+        "resguardo_puerto_cordoba": "Enclave ribereño en la desembocadura del Mirití en el Caquetá.",
+        "resguardo_del_gran_vaupes": "Colosal reserva territorial de más de 3.8 millones de hectáreas donde habitan los Kawiyarí, Tariano, Barasana, Cubeo y demás etnias del sistema fluvial Vaupés-Cananarí."
+      }
+    }
+  },
+  "naciones_indigenas": [
+    {
+      "id": "kawiyari",
+      "nombres": {
+        "nombre_comun": "Kawiyarí",
+        "variantes_ortograficas": [
+          "Cabiyarí",
+          "Kabiyarí",
+          "Kawillari",
+          "Cabiuarí",
+          "Cauyari"
+        ],
+        "autonimo": "Kawillari ('Los Hijos de la Anaconda Celeste' / 'Gente del Cananarí')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Arawak (Maipureana)",
+        "subfamilia_rama": "Arawak del Alto Río Negro / Noroeste Amazónico",
+        "idioma": "Kawiyarí",
+        "vitalidad_linguistica": "En peligro crítico (Critically Endangered). Menos de 120 hablantes fluidos ancianos y adultos; la casi totalidad de la población menor de 35 años tiene como primera lengua el Barasana, Cubeo o castellano.",
+        "contacto_y_asimilacion_interclanera": "Constituye un enclave geográfico y sociolingüístico único: es el único pueblo de habla Arawak asentado de forma perenne en el curso medio del río Apaporis y su afluente el Cananarí, en medio de un mar territorial de pueblos Tukano Oriental. Por normas de exogamia lingüística, los hombres Kawiyarí desposan mujeres Barasana, Taiwano o Tatuyo; como la madre educa a los niños en los primeros años de vida en la maloca, la lengua materna cotidiana se ha volcado hacia el Tukano Oriental, provocando un retroceso acelerado de la lengua vernácula Kawiyarí pero enriqueciéndola con préstamos morfosintácticos y evidenciales."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Vaupés",
+          "Amazonas"
+        ],
+        "cuencas_principales": [
+          "Río Cananarí (principal eje de asentamiento)",
+          "Medio Río Apaporis",
+          "Caño Morroco",
+          "Raudal de Jirijirimo (límite sagrado oriental)"
+        ],
+        "figuras_territoriales": [
+          "Resguardo del Gran Vaupés",
+          "Resguardo Yaigojé Apaporis (zona de influencia compartida)"
+        ],
+        "patron_asentamiento": "Asentamientos ribereños y malocas comunales emplazadas en terrazas aluviales altas no inundables del Cananarí, cercadas por afloramientos rocosos y rápidos fluviales que protegen el acceso a las chagras."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 380 a 450 personas distribuidas en comunidades como Santa Cruz, Puerto Morroco y asentamientos sobre el Cananarí.",
+        "estructura_etaria": "Población mayoritariamente joven, con marcada pérdida de transmisión intergeneracional de la lengua ancestral frente al ascenso del bilingüismo Barasana-Español."
+      },
+      "sistema_de_clanes_y_organizacion_social": {
+        "regla_de_descendencia": "Patrilineal y patrilocal estricta, con prohibición absoluta de matrimonio endogámico dentro de la fratría Kawiyarí.",
+        "origen_clanico_mitico": "Los clanes nacieron de las vértebras y costillas de la Anaconda Celeste al chocar contra las piedras del Cerro Cananarí.",
+        "clanes_y_linajes_principales": [
+          {
+            "nombre_clan": "Yari-masã (Clan de la Anaconda de Agua Dulce)",
+            "estatus": "Linaje principal de jefes de maloca y guardianes del saber de la palabra mambeada.",
+            "totem": "Anaconda verde (*Eunectes murinus*) y pez pintadillo."
+          },
+          {
+            "nombre_clan": "Kuphi-masã (Clan de la Garza Real)",
+            "estatus": "Linaje ceremonial de maestros de canto (*Baya*) y danzas de plumas.",
+            "totem": "Garza blanca y garza morena."
+          },
+          {
+            "nombre_clan": "Yai-masã (Clan del Jaguar de Piedra)",
+            "estatus": "Linaje de sabedores chamánicos y protectores territoriales de las cachiveras.",
+            "totem": "Jaguar negro (*Panthera onca*) y ocelote."
+          },
+          {
+            "nombre_clan": "Mũrĩ-masã (Clan de la Nutria Gigante)",
+            "estatus": "Linaje de pescadores expertos y constructores de canoas ceremoniales.",
+            "totem": "Nutria gigante de río (*Pteronura brasiliensis*)."
+          }
+        ],
+        "alianzas_matrimoniales_preferenciales": "Alianzas históricas simbióticas con los Barasana (del caño Colorado y Pirá-Paraná), los Taiwano (Eduria) y los Tatuyo, con quienes comparten ceremonias de Dabucurí e intercambio de productos."
+      },
+      "cosmogonia_rituales_y_espiritualidad": {
+        "conexion_con_jigirigodo": "Consideran que el estruendo perpetuo del raudal de Jirijirimo es la voz de la Anaconda Madre llamando a los sabedores a no olvidar la Ley de Origen.",
+        "el_baile_del_yurupary_he": "Celebran los rituales de paso masculinos con las flautas sagradas de Yurupary; las flautas Kawiyarí se diferencian por estar grabadas con incisiones que reproducen el diseño de las escamas de la anaconda fluvial.",
+        "fiesta_del_dabucuri": "Intercambio ceremonial de fariña, pescado ahumado y canastos de pupunha con sus aliados Tukano."
+      },
+      "cultura_material_y_etnobotanica": {
+        "canoas_de_corteza_y_breo": "Especialistas en la extracción de resina de Breo (*Protium heptaphyllum*) de los bosques de cananguchal para sellar las juntas de sus canoas y ahuyentar mosquitos con sahumerios durante el mambeadero.",
+        "consumo_de_mambe_y_ambil": "Uso diario y nocturno de *Erythroxylum coca* y pasta de tabaco negro como núcleo de cohesión social y diálogo intergeneracional."
+      },
+      "memoria_historica_y_retos": {
+        "impacto_cauchero": "Su localización aislada en el Cananarí, río de difícil navegación jalonado por rápidos y piedras filosas, les permitió resistir mejor las correrías que diezmaron a los pueblos del bajo Caquetá, funcionando como refugio de familias dispersas.",
+        "retos_actuales": "Revitalización lingüística escolar urgente, protección de sus cerros sagrados frente a la minería ilegal del oro aluvial y fortalecimiento de la educación propia bilingüe."
+      }
+    },
+    {
+      "id": "tariano",
+      "nombres": {
+        "nombre_comun": "Tariano",
+        "variantes_ortograficas": [
+          "Tariana",
+          "Tarianos",
+          "Taliaseri"
+        ],
+        "autonimo": "Taliaseri ('La Gente de los Grandes Raudales' / 'Hijos del Rayo')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Arawak (Maipureana)",
+        "subfamilia_rama": "Rama Norte / Río Negro-Vaupés",
+        "idioma": "Tariana (ancestral) / Tukano Oriental (vehicular contemporáneo)",
+        "vitalidad_linguistica": "Situación sociolingüística paradigmática de sustitución lingüística. La lengua Tariana está categorizada en Peligro Crítico (Critically Endangered), contando únicamente con cerca de 100 hablantes activos fluidos (ancianos) en la cuenca transfronteriza del Vaupés colombo-brasileño.",
+        "transicion_y_adopcion_del_tukano": "Los Tarianos protagonizan el caso más exhaustivamente estudiado de convergencia y asimilación lingüística en la Amazonía (investigado por la lingüista Alexandra Aikhenvald). Habiendo migrado desde el norte (cuencas del río Ayari e Içana) hacia el valle del río Vaupés, se integraron plenamente a la red exogámica de los pueblos Tukano Oriental. A lo largo del siglo XIX y XX, por la hegemonía del Tukano propio como lengua comercial regional, la imposición de internados salesianos y la norma de exogamia lingüística, la totalidad de los clanes Tariano adoptaron el Tukano como idioma de uso cotidiano. Antes de desaparecer en el habla diaria de los jóvenes, el Tariana absorbió por difusión de contacto el complejo sistema de cinco niveles de evidencialidad, distinciones de modo y calcos gramaticales idénticos a los del Tukano Oriental."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Vaupés (Colombia)",
+          "Estado de Amazonas (Brasil)"
+        ],
+        "cuencas_principales": [
+          "Río Vaupés (Medio y Alto Vaupés, zona de Iauaretê y Mitú)",
+          "Río Papurí",
+          "Río Tiquié"
+        ],
+        "figuras_territoriales": [
+          "Resguardo del Gran Vaupés (Colombia)",
+          "Terra Indígena Alto Rio Negro (Brasil)"
+        ],
+        "patron_asentamiento": "Comunidades nucleadas a lo largo de los grandes raudales del río Vaupés, compartiendo poblados y centros ceremoniales con familias Tukano, Desano y Wanano."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 2.050 personas en la cuenca binacional del Vaupés (~400 en Colombia, ~1.650 en Brasil).",
+        "identidad_etnica": "A pesar de no hablar activamente la lengua Tariana en su mayoría, la autoidentificación étnica y el orgullo clánico Tariano permanecen inquebrantables: la identidad se define por la descendencia patrilineal sagrada y no meramente por el idioma materno."
+      },
+      "sistema_de_clanes_y_organizacion_social": {
+        "regla_de_descendencia": "Patrilineal con jerarquía de clanes rígidamente estratificados según el orden de nacimiento místico de los ancestros.",
+        "estructura_jerarquica_de_los_clanes_tariano": [
+          {
+            "rango": 1,
+            "nombre_clan": "Kwemu / Yavi-dakenai (Hermanos Mayores / Jefes)",
+            "funcion_tradicional": "Autoridad política de la maloca, portadores del bastón de mando, administradores de las relaciones exteriores y diplomacia matrimonial."
+          },
+          {
+            "rango": 2,
+            "nombre_clan": "Paida / Itatana (Cantores y Maestros de Danza)",
+            "funcion_tradicional": "Custodios de los cantos de Dabucurí, maestros de la flauta y coreógrafos de las fiestas de chontaduro y caxirí."
+          },
+          {
+            "rango": 3,
+            "nombre_clan": "Buena / Malisi (Sabedores Chamánicos / Kumú)",
+            "funcion_tradicional": "Curadores del mundo, encargados de bendecir los alimentos, proteger a los recién nacidos y comunicarse con los espíritus del trueno."
+          },
+          {
+            "rango": 4,
+            "nombre_clan": "Walipere-dakenai (Guerreros y Protectores)",
+            "funcion_tradicional": "Vigilantes del territorio, constructores de trampas de pesca en las cachiveras y defensores comunales."
+          }
+        ],
+        "alianzas_matrimoniales_preferenciales": "Matrimonios exogámicos obligatorios con clanes Tukano (Ye'pâ-masa), Wanano (Kotiria), Desano y Pira-Tapuya."
+      },
+      "cosmogonia_rituales_y_espiritualidad": {
+        "mito_del_trueno_primordial": "Descienden de los ancestros celestes del Trueno (*Iñapirikuni*), quienes bajaron a la tierra en forma de relámpagos para purificar los ríos y enseñar la pesca en los raudales de Iauaretê.",
+        "culto_al_yurupary": "Participación central en los rituales de flautas y trompetas sagradas; preservan narrativas orales sobre cómo los ancestros arrebataron las flautas de poder a las mujeres primordiales.",
+        "fiestas_de_dabucuri": "Ofrendas recíprocas masivas de pescado asado al humo y chicha de yuca fermentada con sus vecinos Tukano."
+      },
+      "cultura_material_y_arquitectura": {
+        "maloca_rectangular_vaupesina": "A diferencia de las cónicas del Apaporis, construyen las malocas de testeros planos y planta rectangular características del sistema del río Vaupés, con madera de balata y paxiuba.",
+        "coronas_de_plumas": "Maestría en la confección de tocados ceremoniales con plumas de guacamaya roja, tucán y garza blanca utilizados en las danzas sagradas."
+      },
+      "memoria_historica_y_retos": {
+        "impacto_misionero_salesiano": "A partir de 1914, las misiones salesianas establecieron internados que castigaban corporalmente el uso del Tariana, acelerando la hegemonía del Tukano y el portugués/español.",
+        "iniciativas_de_rescate": "Talleres de revitalización lingüística escolar con base en las gramáticas de Aikhenvald y registro sonoro de los últimos rezos de ancianos en Iauaretê y Mitú."
+      }
+    },
+    {
+      "id": "yauna",
+      "nombres": {
+        "nombre_comun": "Yauna",
+        "variantes_ortograficas": [
+          "Yahuna",
+          "Jauna",
+          "Yäuna",
+          "Kamejeya del Apaporis"
+        ],
+        "autonimo": "Kamejeya ('Gente del Ocelote' / 'Hijos del Fuego del Río')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Tukano Oriental",
+        "subfamilia_rama": "Rama Meridional del Apaporis",
+        "idioma": "Yauna (Yahuna)",
+        "vitalidad_linguistica": "Prácticamente extinta como lengua cotidiana; menos de una docena de ancianos recuerdan cantos ceremoniales, fórmulas de conjuro y listas de léxico toponímico. La población contemporánea habla fluidamente Tanimuka, Makuna, Yukuna o castellano.",
+        "asimilacion_interclanera": "Diezmados durante la fiebre del caucho, los remanentes del pueblo Yauna se integraron en las malocas de los Tanimuka y Makuna en el bajo Apaporis, transfiriendo su memoria mítica y territorial pero adoptando el dialecto Tanimuka-Retuarã para la comunicación cotidiana."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Amazonas",
+          "Vaupés"
+        ],
+        "cuencas_principales": [
+          "Bajo Río Apaporis",
+          "Caño Popeyacá",
+          "Raudal de la Libertad (Yuisi)",
+          "Caño Taraira",
+          "Río Pirá-Paraná inferior"
+        ],
+        "figuras_territoriales": [
+          "Resguardo Yaigojé Apaporis",
+          "Parque Nacional Natural Yaigojé Apaporis"
+        ],
+        "patron_asentamiento": "Históricamente asentados en las terrazas próximas a las grandes cachiveras y cañones del bajo Apaporis; actualmente habitan en pequeñas comunidades ribereñas y malocas familiares dispersas."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 120 a 160 personas que conservan memoria viva de su linaje Yauna en el censo comunitario del Yaigojé Apaporis.",
+        "caracter_minoritario": "Uno de los pueblos demográficamente más reducidos y vulnerables del complejo del Apaporis."
+      },
+      "sistema_de_clanes_y_organizacion_social": {
+        "regla_de_descendencia": "Patrilineal estricta articulada en fratrías de fuego y agua.",
+        "clanes_y_linajes_ancestrales": [
+          {
+            "nombre_clan": "Yai-kamejeya (Clan del Ocelote de la Selva)",
+            "funcion_sagrada": "Custodios del conocimiento chamánico nocturno y la transmutación en felino para vigilar los límites de los caños."
+          },
+          {
+            "nombre_clan": "Muhe-masã (Clan de la Anaconda de Fuego)",
+            "funcion_sagrada": "Guardianes del secreto del fuego primordial y de los petroglifos del raudal de la Libertad."
+          },
+          {
+            "nombre_clan": "Wai-masã (Clan de los Señores del Pescado Dorado)",
+            "funcion_sagrada": "Maestros del calendario de subienda de peces y administradores de las trampas cacure en los rápidos."
+          }
+        ],
+        "alianzas_matrimoniales_preferenciales": "Intercambio matrimonial continuo con los Tanimuka (Õfaina), Letuama y Makuna."
+      },
+      "cosmogonia_rituales_y_espiritualidad": {
+        "guardianes_del_canon_de_jirijirimo_y_yuisi": "En la cosmología Yauna, el curso del Apaporis es la columna vertebral de la deidad creadora; el cañón rocoso de Jirijirimo y el raudal de Yuisi representan el corazón y el plexo solar de la tierra. Los Yauna tenían la responsabilidad espiritual de alimentar con rezos y mambe a los genios pétreos que habitan las grutas inundadas.",
+        "petroglifos_sagrados": "Autores e intérpretes tradicionales de los complejos grabados rupestres zoomorfos y antropomorfos tallados sobre los basaltos y areniscas del raudal de la Libertad, que marcan las constelaciones celestes del ciclo estacional del agua.",
+        "flautas_de_yurupary": "Sus flautas eran labradas con madera de chontaduro negro y custodiadas en las profundidades de los caños tributarios del Popeyacá."
+      },
+      "cultura_material_y_etnobotanica": {
+        "curare_y_venenos_de_caza": "Consumados conocedores de las lianas de *Strychnos* de la serranía del Taraira; preparaban un veneno de acción ultrarrápida para cerbatana utilizado en la cacería de monos churucos y paujiles.",
+        "uso_de_resinas": "Aprovechamiento de la resina de Breo (*Protium heptaphyllum*) y ceras de abejas silvestres meliponas para impermeabilizar canastos y flechas ceremoniales."
+      },
+      "memoria_historica_y_retos": {
+        "resistencia_a_las_correrias_caucheras": "Sufrieron persecuciones directas por cuadrillas de caucheros provenientes del Caquetá y de Brasil. Gran parte de su población fue masacrada o dispersada hacia las selvas del interior.",
+        "papel_en_aciya": "Pese a su reducido número demográfico, los líderes Yauna jugaron un papel crucial como testigos ancestrales y autoridades consultivas en la creación del Parque Nacional Natural Yaigojé Apaporis y la expulsión de la minera Cosigo Resources."
+      }
+    },
+    {
+      "id": "letuama",
+      "nombres": {
+        "nombre_comun": "Letuama",
+        "variantes_ortograficas": [
+          "Retuarã",
+          "Añu",
+          "Letuaba",
+          "Upia",
+          "Tanimboka-Retuama"
+        ],
+        "autonimo": "Añu ('Gente Pájaro de la Selva' / 'Hijos del Río de la Guacamaya')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Tukano Oriental",
+        "subfamilia_rama": "Rama Meridional (Continuo Tanimuka-Retuarã)",
+        "idioma": "Retuarã (Tanimuka-Retuarã)",
+        "vitalidad_linguistica": "Vulnerable. Hablado con fluidez por adultos y ancianos en las malocas del Mirití-Paraná y Caquetá; las generaciones escolares jóvenes son bilingües en castellano y manifiestan influencias del Yukuna.",
+        "bilinguismo_simbiotico_con_los_yukuna": "Los Letuama configuran uno de los casos más perfectos de matrimonio exogámico interétnico e interlingüístico continuo. Aunque lingüísticamente su habla (Retuarã) forma una sola lengua estructuralmente inteligible con el Tanimuka, socialmente los Letuama constituyen una unidad exogámica separada que busca alianzas matrimoniales preferenciales con el pueblo Yukuna (de lengua Arawak). Como resultado, casi todos los adultos Letuama son perfectamente bilingües en Retuarã y Yukuna, dominando los códigos ceremoniales de ambas tradiciones."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_principales": [
+          "Río Mirití-Paraná",
+          "Río Caquetá (tramo medio e inferior)",
+          "Caño Guacayá",
+          "Caño Aduche"
+        ],
+        "figuras_territoriales": [
+          "Resguardo Mirití-Paraná",
+          "Resguardo Comeyafú",
+          "Resguardo Puerto Córdoba"
+        ],
+        "patron_asentamiento": "Malocas comunales de gran envergadura emplazadas en las márgenes del río Mirití-Paraná y en las bocas de caños ricos en pesca, rodeadas de chagras policulturales escalonadas."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 850 a 1.050 personas.",
+        "distribucion": "Concentrados en el curso medio y bajo del Mirití-Paraná y comunidades ribereñas del río Caquetá hacia La Pedrera."
+      },
+      "sistema_de_clanes_y_organizacion_social": {
+        "regla_de_descendencia": "Patrilineal estricta; exogamia obligatoria con respecto a los clanes Añu y alianzas cruzadas con clanes Yukuna y Matapí.",
+        "clanes_y_linajes_letuama": [
+          {
+            "nombre_clan": "Umua-masã (Clan de la Guacamaya Escarlata)",
+            "rol": "Linaje superior de dueños de maloca y guardianes del canasto sagrado de la palabra.",
+            "totem": "Guacamaya bandera (*Ara macao*)."
+          },
+          {
+            "nombre_clan": "Yawa-masã (Clan del Gavilán Tijereta)",
+            "rol": "Linaje de cantores ceremoniales y maestros de coreografía en el Baile del Muñeco.",
+            "totem": "Gavilán tijereta (*Elanoides forficatus*)."
+          },
+          {
+            "nombre_clan": "Mẽne-masã (Clan del Mono Chorote)",
+            "rol": "Linaje de cazadores silenciosos de selva adentro y expertos en trampas de tierra firme.",
+            "totem": "Mono lanudo o churuco (*Lagothrix lagothricha*)."
+          },
+          {
+            "nombre_clan": "Kope-masã (Clan del Tucán de Garganta Blanca)",
+            "rol": "Linaje de sabedores médicos de plantas amargas y curación de picaduras de ofidios.",
+            "totem": "Tucán pechiblanco (*Ramphastos tucanus*)."
+          }
+        ],
+        "reciprocidad_interetnica": "Intercambian trabajo comunitario en mingas con los Yukuna para la tumba, quema y siembra de chagras comunales de yuca brava."
+      },
+      "cosmogonia_rituales_y_espiritualidad": {
+        "participacion_estelar_en_el_baile_del_muneco_ipina": "Junto con los Yukuna, los Letuama son los máximos oficiantes del Baile del Muñeco durante la fructificación del chontaduro. Confeccionan decenas de máscaras de corteza de yanchama (*Poulsenia armata*) que personifican a las aves y cuadrúpedos de la creación.",
+        "el_dabucuri_de_pescado": "Celebración de festines donde entregan toneladas de bocachico y bagre ahumado a las malocas anfitrionas, sellando la paz y renovando los pactos matrimoniales.",
+        "chamanismo_de_la_palabra": "El Kumú Letuama trabaja en estrecha comunión con los sabedores Arawak en el mambeadero nocturno, rezando la protección contra las fiebres y enfermedades transmitidas por los espíritus del monte."
+      },
+      "cultura_material_y_etnobotanica": {
+        "consumo_matutino_del_yoco_paullinia_yoco": "Tradición rigurosa de raspado del bejuco de Yoco al romper la aurora (4:30 a.m.) para beber la emulsión espumosa en frío. Los hombres afirman que sin el Yoco 'el cazador camina con ojos ciegos y piernas pesadas'; el Yoco les permite recorrer durante 12 horas la densa selva sin ingerir alimentos sólidos.",
+        "curare_y_cerbatanas": "Emplean cerbatanas de palma de paxiuba pulidas interiormente con arena fina y cera, disparando flechillas untadas con curare de *Strychnos toxifera* adquirido por trueque con los Matapí.",
+        "sellado_con_breo": "Uso del breo blanco para impermeabilizar vasijas de barro cocido y calafatear las canoas de carga."
+      },
+      "memoria_historica_y_resistencia": {
+        "el_frente_del_miriti": "Durante el genocidio cauchero de Arana, el río Mirití-Paraná sufrió asaltos directos pero la espesura de la selva y las alianzas defensivas entre Letuama y Yukuna permitieron conservar malocas intactas en las cabeceras.",
+        "gobernanza_con_aatiam": "Cofundadores de la Asociación de Autoridades Tradicionales Indígenas del Mirití-Paraná, liderando la gestión autónoma en salud, educación propia y ordenamiento territorial ambiental."
+      }
+    },
+    {
+      "id": "tanimuka",
+      "nombres": {
+        "nombre_comun": "Tanimuka",
+        "variantes_ortograficas": [
+          "Tanimuca",
+          "Õfaina",
+          "Ufaina",
+          "Gente Danta",
+          "Tanimboka"
+        ],
+        "autonimo": "Õfaina ('Gente de la Danta' / 'Los Guardianes del Río de la Sabiduría')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Tukano Oriental",
+        "subfamilia_rama": "Rama Meridional del Apaporis",
+        "idioma": "Tanimuka (Tanimuka-Retuarã)",
+        "vitalidad_linguistica": "Vulnerable pero vigoroso. Hablado cotidianamente en el seno de la maloca y comunidades del Yaigojé Apaporis y Mirití por niños, jóvenes y ancianos. Cuenta con vitalidad superior a la de sus vecinos Yauna y Kawiyarí.",
+        "bilinguismo_y_red_interetnica": "Fluido bilingüismo con el Yukuna (Arawak) y castellano, con dominio pasivo de lenguas vecinas Tukano Oriental como el Makuna y Barasana."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Amazonas",
+          "Vaupés"
+        ],
+        "cuencas_principales": [
+          "Confluencia del Río Apaporis y el Río Mirití-Paraná",
+          "Río Guacayá",
+          "Caño Oikoyá",
+          "Río Caquetá (zona de Puerto Córdoba y La Pedrera)",
+          "Bajo Apaporis"
+        ],
+        "figuras_territoriales": [
+          "Resguardo Yaigojé Apaporis (eje medular de su gobierno)",
+          "Resguardo Mirití-Paraná",
+          "Resguardo Puerto Córdoba",
+          "Parque Nacional Natural Yaigojé Apaporis"
+        ],
+        "patron_asentamiento": "Malocas cónicas y abovedadas dispersas en terrazas fluviales estratégicas cerca de los raudales de pesca y confluencias fluviales mayores."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 1.100 a 1.300 personas.",
+        "distribucion_clánica": "Articulados en múltiples linajes patrilineales consolidados en las cuencas del Guacayá, Apaporis y Mirití."
+      },
+      "sistema_de_clanes_y_profundizacion_jerarquica": {
+        "estructura_estratificada_en_cinco_estamentos": "El sistema clanero Tanimuka representa uno de los modelos de especialización funcional más elaborados y jerárquicos del Noroeste Amazónico, ordenado según el momento en que los ancestros primordiales salieron de la boca de la Anaconda Canoa:",
+        "estamentos_y_sibs_ancestrales": [
+          {
+            "estamento": "1. Eha-masã (Los Primogénitos / Jefes de Maloca)",
+            "funcion_politica_y_ritual": "Ostentan la dignidad de dueños de maloca (*Malokeros*). Portan la corona de plumas mayores y custodian el bastón ceremonial de mando. Administran la redistribución comunal de alimentos y conducen la diplomacia interétnica.",
+            "totem_asociado": "Danta macho primordial (*Tapirus terrestris*) y Águila Arpía."
+          },
+          {
+            "estamento": "2. Kumúa (Los Chamanes del Pensamiento y de la Cura)",
+            "funcion_politica_y_ritual": "Sabedores mayores que permanecen toda la noche en el banco de mambeadero manejando el calendario ecológico, curando las enfermedades invisibles del monte y pactando con los Dueños de los Animales (*Wai-masã*).",
+            "totem_asociado": "Jaguar del agua (*Yaigojé*) y Serpiente de cascabel."
+          },
+          {
+            "estamento": "3. Bayá (Los Cantores y Maestros de Danza)",
+            "funcion_politica_y_ritual": "Especialistas de la memoria oral y musical. Memorizan genealogías de cientos de generaciones, entonan los cantos sagrados del Yurupary y dirigen las coreografías complejas del Baile del Muñeco.",
+            "totem_asociado": "Pájaro mochilero y Garza cantora."
+          },
+          {
+            "estamento": "4. Yaia (Los Guerreros y Protectores Territoriales)",
+            "funcion_politica_y_ritual": "Tradicionalmente encargados de la defensa armada del territorio, la exploración de selvas vírgenes y la custodia de los accesos a los raudales sagrados; hoy son los líderes de la Guardia Indígena Tradicional.",
+            "totem_asociado": "Ocelote y Puma."
+          },
+          {
+            "estamento": "5. Wãma (Los Servidores y Agricultores de Base)",
+            "funcion_politica_y_ritual": "Expertos en la apertura de grandes chagras, corte de madera para la maloca, pesca colectiva con barbasco y elaboración masiva de casabe y fariña.",
+            "totem_asociado": "Hormiga arriera (*Atta*) y Puerco manao (*Tayassu pecari*)."
+          }
+        ],
+        "alianzas_matrimoniales_preferenciales": "Estricta exogamia clánica. Se casan sistemáticamente con clanes Yukuna (Kamejeya), Letuama y Makuna."
+      },
+      "cosmogonia_rituales_y_curacion_del_mundo": {
+        "el_concepto_de_curacion_del_mundo": "Para los Tanimuka, la selva no es un almacén de recursos libres, sino una inmensa maloca cósmica gobernada por espíritus dueños. Cada danta cazada, cada árbol talado para una canoa o cada pez capturado es una 'deuda energética'. Si el Kumú no realiza el rezo nocturno en el mambeadero para 'pagar espiritualmente' a los guardianes invisibles, la selva cobra la deuda enviando epidemias, accidentes de cacería o sequías.",
+        "el_mito_de_la_danta_solar": "La Danta primordial descendió del cielo con un zurrón de hojas de coca y semillas de yuca brava en su vientre, legándolas al primer hombre Tanimuka a orillas del Guacayá.",
+        "el_ritual_de_las_flautas_hee": "Confección y toque de las trompetas de Yurupary durante las cosechas de frutas silvestres (umari, milpesos, seje)."
+      },
+      "medicina_etnobotanica_y_sustento": {
+        "el_yoco_en_la_vida_cotidiana": "Uso generalizado de *Paullinia yoco* como tónico matutino en ayunas para la cacería de monte adentro. Los hombres conservan bejucos protegidos en zonas de reserva biológica comunitaria.",
+        "extraccion_de_breo_y_curare": "Preparación de breo (*Protium heptaphyllum*) para antorchas de pesca nocturna con arpón en el Apaporis; intercambio de curare con los clanes Matapí.",
+        "agroforesteria_de_la_chagra": "Cultivo de más de 25 variedades tradicionales de yuca brava (*Manihot esculenta*), procesadas diariamente con tipití de fibra vegetal para eliminar el cianuro glucosídico y elaborar casabe y almidón dulce."
+      },
+      "liderazgo_historico_y_la_gesta_de_yaigoje_apaporis": {
+        "protagonismo_en_aciya": "Los capitanes y sabedores Tanimuka conformaron la vanguardia política de la Asociación de Capitanes Indígenas del Yaigojé Apaporis (ACIYA). Su convicción espiritual de que el territorio sagrado es inajenable impulsó la declaratoria del Parque Nacional Natural en 2009.",
+        "derrota_de_la_minera_cosigo_resources": "Frente a la pretensión de Cosigo Resources de perforar el cerro sagrado de Yuisi, los mayores Tanimuka dictaminaron en el mambeadero que el oro (*nyí*) es el excremento de la anaconda primordial y el corazón magnético de la selva; extraerlo acarrearía la muerte cósmica del río. Su resistencia jurídica culminó en la Sentencia T-384A de 2014, victoria de trascendencia internacional para los pueblos indígenas del mundo."
+      }
+    },
+    {
+      "id": "yukuna",
+      "nombres": {
+        "nombre_comun": "Yukuna",
+        "variantes_ortograficas": [
+          "Yucuna",
+          "Yukuna-Arawak",
+          "Kamejeya"
+        ],
+        "autonimo": "Kamejeya ('La Gente de las Cachiveras' / 'Los Hijos del Agua Dulce')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Arawak (Maipureana)",
+        "subfamilia_rama": "Arawak Noroccidental / Río Negro-Caquetá",
+        "idioma": "Yukuna",
+        "vitalidad_linguistica": "Vulnerable pero con fuerte resistencia comunitaria. Hablado por más del 70% de la población en el río Mirití-Paraná y Caquetá, con programas activos de educación propia escolar bilingüe y transmisión intergeneracional en la maloca.",
+        "caracteristicas_linguisticas_notables": "Lengua aglutinante y polisintética con ricos prefijos de persona (nu- 'yo', pi- 'tú', ri- 'él', wa- 'nosotros'), marcas de posesión inalienable para partes del cuerpo y parentesco, y un sofisticado catálogo de sufijos clasificadores numerales y nominales para categorizar seres vivos y objetos inanimados según su forma cilíndrica, plana, porosa o tubular."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_principales": [
+          "Río Mirití-Paraná (eje central de su territorio ancestral)",
+          "Río Caquetá (tramo comprendido entre Araracuara y La Pedrera)",
+          "Caño Bernardo",
+          "Caño Popeyacá (zona limítrofe con el Apaporis)"
+        ],
+        "figuras_territoriales": [
+          "Resguardo Mirití-Paraná",
+          "Resguardo Comeyafú",
+          "Resguardo Puerto Córdoba",
+          "Resguardo Curare-Los Ingleses"
+        ],
+        "patron_asentamiento": "Grandes malocas abovedadas comunales distribuidas a lo largo de las riberas del Mirití-Paraná, con aldeas satélites adyacentes a las escuelas de etnoeducación y huertos familiares."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 1.900 a 2.300 personas.",
+        "poblacion_mayoritaria": "Constituye la nación de filiación lingüística Arawak demográficamente más numerosa y cohesionada del interfluvio Caquetá-Mirití."
+      },
+      "sistema_de_clanes_y_red_de_alianzas_arawak": {
+        "complejo_sistema_clanico_exogamo": "Los Yukuna están organizados en una confederación de clanes o linajes patrilineales autónomos pero interconectados, que comparten el territorio y los ciclos rituales:",
+        "clanes_fundacionales_yukuna": [
+          {
+            "nombre_clan": "Kamejeya (El Linaje Primordial del Pez Perro / Señores del Río)",
+            "preeminencia": "Considerado el linaje fundacional de mayor prestigio; ostentan los derechos originales de la maloca matriz del Mirití y el conocimiento de la historia cosmogónica de Kawerimi."
+          },
+          {
+            "nombre_clan": "Jurupí-masã (Clan del Pájaro Tucán)",
+            "preeminencia": "Maestros del canto de alabanza, dueños de las flautas menores y especialistas en la curación de recién nacidos."
+          },
+          {
+            "nombre_clan": "Wapura-masã (Clan del Bagre Rayado / Pescadores)",
+            "preeminencia": "Custodios de las artes de pesca en los raudales mayores y fabricación de trampas fluviales de tejido cerrado (*cacure*)."
+          },
+          {
+            "nombre_clan": "Enépiti-masã (Clan del Viento y la Tempestad)",
+            "preeminencia": "Sabedores climáticos encargados de manejar las lluvias, propiciar los vientos favorables para la quema de la chagra y dispersar tempestades destructivas."
+          },
+          {
+            "nombre_clan": "Ujúe-masã (Clan del Jaguar Negro)",
+            "preeminencia": "Guerreros y chamanes de combate espiritual, estrechamente ligados por lazos de sangre a los Matapí."
+          }
+        ],
+        "matrimonio_exogamico_con_pueblos_tukano_y_matapi": "Los clanes Yukuna no se casan entre sí si pertenecen a la misma línea patrilineal cercana. Sus alianzas matrimoniales estratégicas son concertadas predominantemente con los Letuama y Tanimuka (de habla Tukano Oriental) y con los Matapí (sus hermanos simbióticos), tejiendo una red multilingüe y de lealtades políticas a prueba de crisis."
+      },
+      "cosmogonia_y_el_gran_baile_del_muneco_ipina": {
+        "el_heroe_civilizador_kawerimi": "Kawerimi ordenó el mundo, domesticó los monstruos acuáticos del río Caquetá y enseñó a los Yukuna las reglas de la hospitalidad y la redistribución comunal. Para evitar que los humanos pelearan por escasez de comida, instituyó el Dabucurí y el Baile del Muñeco.",
+        "maestria_suprema_en_las_mascaras_de_yanchama": "Los Yukuna son los más consumados artesanos de las vestimentas completas de Yanchama (*Poulsenia armata*) en toda la Amazonía. Confeccionan trajes continuos que cubren desde los tobillos hasta la coronilla, coronados por máscaras cónicas con orejas esculpidas y rostros pintados con diseños geométricos que representan a más de 30 espíritus y animales diferentes.",
+        "el_teatro_cosmologico_del_ipina": "Durante el Baile del Chontaduro, los hombres enmascarados realizan representaciones teatrales satíricas y cómicas que desmitifican los temores al bosque: el danzante que personifica al Jaguar finge cazar a los espectadores, el enmascarado del Perezoso baila en cámara lenta despertando carcajadas, y el enmascarado del Murciélago aletea sobre las tinajas de chicha. Es un catarsis colectiva que renueva el pacto de convivencia entre la humanidad y el bosque tropical."
+      },
+      "cultura_material_medicina_y_sustento": {
+        "cesteria_sagrada_y_balayes": "Elaboran balayes circulares con bejuco de yaré tejido con complejos patrones iconográficos geométricos que representan serpientes y soles cósmicos, utilizados para cernir la fariña.",
+        "el_yoco_y_las_plantas_maestras": "Consumo de *Paullinia yoco* como energizante matutino antes de ingresar a la selva; manejo de huertos medicinales con más de 80 especies de plantas para fiebres, diarreas, leishmaniasis y mordeduras de serpientes.",
+        "fabricacion_de_mambe_y_ambil": "Sus malocas albergan gigantescos morteros de mambeadero labrados en troncos de madera de cumala, donde se elabora el mambe de hoja de coca tostada con yarumo."
+      },
+      "memoria_historica_liderazgo_y_autonomia": {
+        "resistencia_a_la_casa_arana": "Soportaron incursiones de las cuadrillas caucheras de La Chorrera; organizaron redes clandestinas de aviso en el Mirití-Paraná mediante golpes de manguaré para alertar a las malocas y permitir su huida a campamentos secretos.",
+        "liderazgo_en_aatiam": "Pioneros en la consolidación de la Asociación de Autoridades Tradicionales Indígenas del Mirití-Paraná (AATIAM), impulsando la declaratoria de sus territorios como entidades territoriales indígenas autónomas conforme al Decreto Ley 632 de 2018."
+      }
+    },
+    {
+      "id": "matapi",
+      "nombres": {
+        "nombre_comun": "Matapí",
+        "variantes_ortograficas": [
+          "Yupichia",
+          "Jupichiya",
+          "Upichia",
+          "Matapís",
+          "Gente de Cahuinarí"
+        ],
+        "autonimo": "Jupichiya / Upichia ('Gente del Jaguar' / 'Los Guardianes del Cerro de los Venenos')"
+      },
+      "filiacion_etnolinguistica": {
+        "familia_linguistica": "Arawak (por adopción lingüística total del Yukuna; históricamente lengua ancestral propia extinta)",
+        "subfamilia_rama": "Arawak Noroccidental / Yukuna-Matapí",
+        "idioma": "Yukuna-Matapí (la lengua ancestral Matapí se extinguió; hoy hablan el idioma Arawak Yukuna)",
+        "vitalidad_linguistica_y_perdida_historica": "Caso dramático y heroico de supervivencia étnica frente a la extinción lingüística. La lengua ancestral Matapí (que diversos lingüistas presumen que fue una lengua aislada independiente o una rama arcaica divergentísima del Noroeste Amazónico) desapareció por completo durante las tres primeras décadas del siglo XX como consecuencia directa del exterminio de sus sabedores y ancianos durante el genocidio cauchero de la Casa Arana en el río Cahuinarí. Al refugiarse los pocos sobrevivientes entre los clanes Yukuna del río Mirití-Paraná, los Matapí adoptaron en su totalidad la lengua Arawak Yukuna para su vida cotidiana y educación. Sin embargo, en el secreto de sus rezos nocturnos de curare y en los cantos sagrados de curación chamánica, los ancianos Kumú aún pronuncian arcaicas fórmulas, ensalmos y nombres de deidades que corresponden a los vestigios fonéticos fosilizados de su lengua originaria perdida."
+      },
+      "geografia_y_territorio": {
+        "departamentos": [
+          "Amazonas"
+        ],
+        "cuencas_principales": [
+          "Cabeceras del Río Mirití-Paraná (asentamiento actual)",
+          "Río Cahuinarí (territorio de origen ancestral pre-cauchero)",
+          "Caño Bernardo",
+          "Río Caquetá (zona de influencia)"
+        ],
+        "figuras_territoriales": [
+          "Resguardo Mirití-Paraná",
+          "Parque Nacional Natural Cahuinarí (territorio ancestral de memoria)"
+        ],
+        "patron_asentamiento": "Malocas comunales situadas en las zonas más altas y selváticas del alto Mirití-Paraná, compartiendo territorio pero manteniendo espacios ceremoniales propios."
+      },
+      "demografia": {
+        "poblacion_estimada": "Aproximadamente 450 a 520 personas.",
+        "caracter_identitario": "Aunque numéricamente reducidos y lingüísticamente yukunizados, mantienen una conciencia clánica y un orgullo étnico extraordinario: ser 'Jupichiya' representa una jerarquía chamánica única reconocida por todos los pueblos vecinos."
+      },
+      "sistema_de_clanes_y_mantenimiento_identitario": {
+        "patrilinealidad_estricta": "Organización en linajes patrilineales cerrados con funciones esotéricas específicas:",
+        "clanes_y_linajes_matapi": [
+          {
+            "nombre_clan": "Yai-jupichiya (Clan del Jaguar Negro de las Rocas)",
+            "jerarquia": "Linaje principal de grandes Kumús y maestros del curare. Se les atribuye la capacidad chamánica de desdoblarse en jaguares invisibles para proteger la selva contra invasores.",
+            "totem": "Jaguar melánico (*Panthera onca*)."
+          },
+          {
+            "nombre_clan": "Aka-jupichiya (Clan del Águila Arpía)",
+            "jerarquia": "Linaje de guardianes de las alturas y dueños de los cantos de cacería en el dosel.",
+            "totem": "Águila arpía (*Harpia harpyja*)."
+          },
+          {
+            "nombre_clan": "Mũhĩ-jupichiya (Clan de la Gran Boa Constrictor)",
+            "jerarquia": "Custodios de los secretos de los caños profundos y curadores de venenos de serpientes de tierra firme.",
+            "totem": "Boa constrictor (*Boa constrictor*)."
+          }
+        ],
+        "matrimonio_exogamico": "Alianzas conyugales obligatorias con clanes Yukuna (Kamejeya) y clanes Tukano (Tanimuka y Letuama)."
+      },
+      "los_grandes_maestros_del_curare_y_la_farmacopea_sagrada": {
+        "reputacion_panamazonica": "En todo el Noroeste Amazónico, desde el Vaupés hasta el Caquetá, los Matapí son temidos y reverenciados como los supremos alquimistas del curare. Nadie elabora un veneno tan potente, concentrado y duradero como los Kumús Jupichiya.",
+        "la_quimica_sagrada_de_strychnos_toxifera": "Conocen minuciosamente las diferencias estacionales en la savia de los bejucos de *Strychnos toxifera* y *Strychnos guianensis*. Recolectan la corteza únicamente en fases lunares específicas para evitar que el alcaloide se degrade con el exceso de agua de lluvia.",
+        "el_laboratorio_del_curare": "La cocción del curare es un acto sagrado que se realiza en un cobertizo apartado en la espesura del monte, lejos de miradas de mujeres y niños. El maestro mantiene un ayuno estricto de sal, ají y contacto sexual. El veneno se cuece durante tres a cinco días hasta concentrar una pasta densa que se vierte en pequeñas calabazas o recipientes de arcilla cocida que se comercializan o truecan en toda la cuenca del Apaporis y Caquetá por fariña, hamacas de algodón y coronas de plumas.",
+        "uso_del_yoco_y_breo": "Consumidores expertos de *Paullinia yoco* al amanecer para sus largas jornadas de recolección de lianas medicinales; uso del breo de *Protium heptaphyllum* para sellar herméticamente las calabazas donde se guarda el curare."
+      },
+      "cosmogonia_y_ciclo_ritual": {
+        "la_maloca_abovedada_del_alto_miriti": "Construyen magníficas malocas abovedadas donde la acústica amplifica sus cantos ceremoniales de invocación a los espíritus del monte.",
+        "participacion_en_el_ipina": "Aportan danzantes enmascarados de Yanchama en el Baile del Muñeco, encarnando los espíritus del Jaguar y los monstruos de la selva virgen con danzas feroces y vigorosas."
+      },
+      "memoria_historica_del_cahuinari_y_resistencia": {
+        "el_genocidio_cauchero_en_el_rio_cahuinari": "A finales del siglo XIX, las malocas Matapí del río Cahuinarí fueron arrasadas a sangre y fuego por las cuadrillas de capataces de la Peruvian Amazon Company. Miles de indígenas fueron encadenados y obligados a extraer goma en condiciones de servidumbre asesina; los que se negaban eran quemados vivos dentro de sus malocas o arrojados a las corrientes fluviales.",
+        "el_exodo_al_miriti_parana": "Un puñado de familias conducidas por sabedores clarividentes logró romper el cerco cauchero y cruzó a pie la densa selva del interfluvio hasta alcanzar el alto Mirití-Paraná, donde fueron acogidos fraternalmente por los clanes Yukuna mediante pactos de paz y entrega de tierras.",
+        "gobernanza_actual": "Socios fundamentales de AATIAM; participan en la vigilancia comunitaria de los bosques y en proyectos de investigación endógena sobre la flora medicinal y la conservación de la fauna amenazada."
+      }
+    }
+  ],
+  "analisis_comparativo_y_sintesis_etnologica": {
+    "matriz_comparativa_de_las_siete_naciones": [
+      {
+        "nacion": "Kawiyarí (Cabiyarí)",
+        "familia_linguistica_genetica": "Arawak",
+        "lengua_vehicular_cotidiana": "Barasana / Cubeo / Castellano (Arawak en peligro crítico)",
+        "territorio_fluvial_clave": "Río Cananarí y Medio Apaporis (Vaupés)",
+        "rasgo_clanico_distintivo": "Único enclave Arawak en cuenca Tukano; clanes de Anaconda Celeste y Garza",
+        "alianzas_matrimoniales_nucleares": "Barasana, Taiwano, Tatuyo",
+        "complejo_ritual_emblematico": "Yurupary de Jirijirimo / Dabucurí de fariña",
+        "planta_maestra_o_tecnologia_botanica": "Breo (*Protium heptaphyllum*) de calafateo y Mambe (*Erythroxylum coca*)"
+      },
+      {
+        "nacion": "Tariano",
+        "familia_linguistica_genetica": "Arawak",
+        "lengua_vehicular_cotidiana": "Tukano Oriental (Ye'pâ-masa) (Arawak casi extinto)",
+        "territorio_fluvial_clave": "Río Vaupés (Iauaretê, Mitú)",
+        "rasgo_clanico_distintivo": "Clanes jerarquizados por orden de nacimiento (Jefes, Cantores, Kumús, Guerreros)",
+        "alianzas_matrimoniales_nucleares": "Tukano, Wanano, Desano",
+        "complejo_ritual_emblematico": "Dabucurí del Vaupés y flautas sagradas de Iñapirikuni",
+        "planta_maestra_o_tecnologia_botanica": "Chicha de yuca fermentada y tabaco de rezo"
+      },
+      {
+        "nacion": "Yauna (Yahuna)",
+        "familia_linguistica_genetica": "Tukano Oriental",
+        "lengua_vehicular_cotidiana": "Tanimuka / Makuna / Yukuna (Yauna en memoria de rezos)",
+        "territorio_fluvial_clave": "Bajo Apaporis (Raudal de la Libertad, Popeyacá)",
+        "rasgo_clanico_distintivo": "Clanes de la Anaconda de Fuego y Ocelote de Roca; guardianes de petroglifos",
+        "alianzas_matrimoniales_nucleares": "Tanimuka, Makuna, Letuama",
+        "complejo_ritual_emblematico": "Rituales en los cañones sagrados de Jigirigodó y Yuisi",
+        "planta_maestra_o_tecnologia_botanica": "Curare de cerbatana y resinas balsámicas"
+      },
+      {
+        "nacion": "Letuama (Añu)",
+        "familia_linguistica_genetica": "Tukano Oriental",
+        "lengua_vehicular_cotidiana": "Retuarã (Tukano) / Bilingüismo fluido en Yukuna (Arawak)",
+        "territorio_fluvial_clave": "Río Mirití-Paraná y Caquetá",
+        "rasgo_clanico_distintivo": "Gente Pájaro; clanes de Guacamaya Escarlata, Gavilán y Mono Chorote",
+        "alianzas_matrimoniales_nucleares": "Yukuna (Arawak) y Matapí",
+        "complejo_ritual_emblematico": "Baile del Muñeco (Ipiña) y fiesta de máscaras de Yanchama",
+        "planta_maestra_o_tecnologia_botanica": "Yoco (*Paullinia yoco*) matutino y corteza de Yanchama (*Poulsenia armata*)"
+      },
+      {
+        "nacion": "Tanimuka (Õfaina)",
+        "familia_linguistica_genetica": "Tukano Oriental",
+        "lengua_vehicular_cotidiana": "Tanimuka (vital) / Bilingüismo en Yukuna y Castellano",
+        "territorio_fluvial_clave": "Confluencia Apaporis-Mirití, Guacayá, Puerto Córdoba",
+        "rasgo_clanico_distintivo": "Gente Danta; estratificación quíntuple (Jefes, Chamanes, Cantores, Guerreros, Servidores)",
+        "alianzas_matrimoniales_nucleares": "Yukuna, Letuama, Makuna",
+        "complejo_ritual_emblematico": "Curación del Mundo en mambeadero y trompetas de Yurupary",
+        "planta_maestra_o_tecnologia_botanica": "Yoco matutino de cacería prolongada y domesticación de 25 variedades de yuca brava"
+      },
+      {
+        "nacion": "Yukuna (Kamejeya)",
+        "familia_linguistica_genetica": "Arawak",
+        "lengua_vehicular_cotidiana": "Yukuna (alta vitalidad y lealtad comunal)",
+        "territorio_fluvial_clave": "Río Mirití-Paraná y Caquetá medio (Comeyafú)",
+        "rasgo_clanico_distintivo": "Confederación de linajes Kamejeya, Jurupí, Wapura, Enépiti y Ujúe",
+        "alianzas_matrimoniales_nucleares": "Letuama, Tanimuka, Matapí",
+        "complejo_ritual_emblematico": "Baile del Muñeco (Ipiña) supremo / Dabucurí de redistribución",
+        "planta_maestra_o_tecnologia_botanica": "Trajes enteros de Yanchama (*Poulsenia armata*), Mambe (*Erythroxylum coca*) y Ambil"
+      },
+      {
+        "nacion": "Matapí (Jupichiya)",
+        "familia_linguistica_genetica": "Arawak (por adopción lingüística; lengua ancestral propia extinguida)",
+        "lengua_vehicular_cotidiana": "Yukuna (Arawak) / Fórmulas arcaicas secretas en rezos",
+        "territorio_fluvial_clave": "Alto Mirití-Paraná (originarios del Cahuinarí)",
+        "rasgo_clanico_distintivo": "Gente del Jaguar Negro; sabedores temidos y supremos alquimistas del veneno",
+        "alianzas_matrimoniales_nucleares": "Yukuna, Tanimuka, Letuama",
+        "complejo_ritual_emblematico": "Cocción chamánica secreta del curare y danzas de Yanchama",
+        "planta_maestra_o_tecnologia_botanica": "Curare maestro (*Strychnos toxifera*), Yoco (*Paullinia yoco*) y Breo (*Protium heptaphyllum*)"
+      }
+    ],
+    "matriz_etnobotanica_de_plantas_maestras_y_tecnologia_quimica": [
+      {
+        "nombre_comun": "Yoco",
+        "nombre_cientifico": "Paullinia yoco R.E. Schultes & Killip",
+        "familia_botanica": "Sapindaceae",
+        "principio_activo_principal": "Cafeína pura (2.7% - 4.6% peso seco) acomplejada naturalmente con taninos condensados (proantocianidinas) y saponinas.",
+        "modo_de_extraccion": "Raspado de corteza fresca de tallos leñosos maduros; maceración y exprimido enérgico manual en agua fría de río (jamás hervida).",
+        "accion_fisiologica_y_beneficio": "Liberación lenta y sostenida de cafeína a nivel duodenal por 8 a 14 horas continuas; supresión absoluta del apetito y la sed; estimulación psicomotora pura sin taquicardia ni rebote de fatiga.",
+        "rol_cultural_y_ritual": "Elixir matutino de cazadores y sabedores en el Apaporis y Mirití (Letuama, Tanimuka, Matapí); lavado digestivo emético purificador al amanecer."
+      },
+      {
+        "nombre_comun": "Curare",
+        "nombre_cientifico": "Strychnos toxifera Robert H. Schomb. ex Benth. (y especies afines)",
+        "familia_botanica": "Loganiaceae",
+        "principio_activo_principal": "Toxiferina I, C-curarina y alcaloides bisindólicos cuaternarios.",
+        "modo_de_extraccion": "Raspado y lixiviación de corteza radicular; cocción lenta de días enteros en ollas de barro con aditivos resinosos y zumos vegetales hasta obtener consistencia de brea negra.",
+        "accion_fisiologica_y_beneficio": "Bloqueo competitivo de receptores nicotínicos de acetilcolina en la placa neuromuscular; parálisis flácida respiratoria letal inmediata en animales; carne 100% inocua y apta para el consumo humano.",
+        "rol_cultural_y_ritual": "Tecnología maestra de cacería con cerbatana en la selva alta; especialidad esotérica y secreto clánico exclusivo de los Matapí y Yukuna."
+      },
+      {
+        "nombre_comun": "Breo (Incienso amazónico)",
+        "nombre_cientifico": "Protium heptaphyllum (Aubl.) Marchand",
+        "familia_botanica": "Burseraceae",
+        "principio_activo_principal": "Triterpenos amirínicos pentacíclicos, alfa-pineno, limoneno y resinas balsámicas hidrófugas.",
+        "modo_de_extraccion": "Incisión en la corteza de árboles maduros; recolección de lágrimas de resina coagulada blanca-verdosa.",
+        "accion_fisiologica_y_beneficio": "Propiedades poliméricas impermeabilizantes al calor; humo antiséptico, repelente de insectos vectores y relajante del sistema nervioso central.",
+        "rol_cultural_y_ritual": "Calafateo hermético de canoas de madera para navegación en los raudales de Jirijirimo; teas de cacería nocturna; sahumerio purificador de la maloca antes del mambeadero."
+      },
+      {
+        "nombre_comun": "Yanchama (Tela de corteza)",
+        "nombre_cientifico": "Poulsenia armata (Miq.) Standl.",
+        "familia_botanica": "Moraceae",
+        "principio_activo_principal": "Fibras de celulosa y lignina flexibles del floema secundario (líber).",
+        "modo_de_extraccion": "Corte de cilindros de corteza en luna menguante; inmersión en agua de caño y macerado rítmico con mazos de madera dura hasta obtener tela maleable.",
+        "accion_fisiologica_y_beneficio": "Textil vegetal de alta resistencia, aislante térmico y superficie idónea para la fijación de pigmentos minerales y vegetales.",
+        "rol_cultural_y_ritual": "Confección de trajes de cuerpo entero y máscaras zoomorfas para el Baile del Muñeco (Ipiña / Chontaduro); materialización de los espíritus de la selva."
+      },
+      {
+        "nombre_comun": "Coca amazónica (Mambe)",
+        "nombre_cientifico": "Erythroxylum coca var. ipadu Plowman",
+        "familia_botanica": "Erythroxylaceae",
+        "principio_activo_principal": "Alcaloides tropánicos (cocaína natural en bajas dosis equilibradas: 0.2% - 0.5%) combinados con sales minerales de ceniza vegetal.",
+        "modo_de_extraccion": "Tueste en tiesto de arcilla, triturado en mortero de madera cumala y tamizado con ceniza alcalina de hojas de yarumo (*Cecropia*) o uva caimarona (*Pourouma*).",
+        "accion_fisiologica_y_beneficio": "Mejora de la oxigenación cerebral, resistencia al sueño y fatiga, claridad oratoria y serenidad contemplativa sin excitación psicomotriz.",
+        "rol_cultural_y_ritual": "El corazón de la 'Palabra de Vida' en el mambeadero; vehículo de diálogo entre hombres, armonización política y gobierno propio."
+      },
+      {
+        "nombre_comun": "Tabaco amazónico (Ambil)",
+        "nombre_cientifico": "Nicotiana tabacum L. / Nicotiana rustica L.",
+        "familia_botanica": "Solanaceae",
+        "principio_activo_principal": "Nicotina concentrada y alcaloides piridínicos en matriz de sales vegetales de palma.",
+        "modo_de_extraccion": "Cocción prolongada de hojas de tabaco negro durante 48 horas hasta reducir a jalea viscosa; mezcla con sales lixiviadas de ceniza de troncos de palma.",
+        "accion_fisiologica_y_beneficio": "Absorción transmucosa bucal; disipación de la ansiedad, fijación de la atención mental y protección espiritual contra pensamientos agresivos.",
+        "rol_cultural_y_ritual": "Complemento indispensable del mambe; sustancia purificadora que 'limpia el pecho' para hablar con veracidad."
+      }
+    ],
+    "sintesis_de_la_arquitectura_comparada_de_malocas": {
+      "maloca_del_apaporis_miriti": {
+        "pueblos_constructores": "Yukuna, Matapí, Tanimuka, Letuama, Yauna, Kawiyarí",
+        "forma_geometrica": "Bóveda parabólica continua / Cónica elíptica sin paredes verticales",
+        "simbolismo_ontologico": "Vientre de la Gran Anaconda Madre Cósmica y cúpula del cielo primordial",
+        "propiedades_acusticas": "Cámara parabólica que absorbe ecos agudos y amplifica frecuencias subgraves; acústica de alta inmersión para cantos guturales diafragmáticos y zapateo ceremonial sobre arcilla",
+        "resistencia_climatica": "Máxima resistencia a vientos alisios y drenaje continuo de lluvias torrenciales amazónicas por la inclinación acentuada de las hojas de caraná"
+      },
+      "maloca_del_alto_vaupes": {
+        "pueblos_constructores": "Tariano, Wanano, Tukano, Desano",
+        "forma_geometrica": "Planta rectangular alargada con techo a dos aguas y dos testeros verticales planos",
+        "simbolismo_ontologico": "Canoa invertida posada sobre la tierra tras el descenso del Río de la Leche",
+        "propiedades_acusticas": "Acústica lineal de pasillo procesional propicia para danzas en hilera y desfiles de flautas de Yurupary",
+        "resistencia_climatica": "Requiere aleros voladizos extensos para proteger las paredes frontales de corteza o tablas"
+      }
+    },
+    "gobernanza_territorial_y_blindaje_biocultural": {
+      "la_alianza_institucional_aciya_aatiam": "Las asociaciones de capitanes y autoridades tradicionales de las dos cuencas coordinan un corredor continuo de más de 2.5 millones de hectáreas de bosques primarios intactos.",
+      "la_sentencia_t_384a_de_2014_jurisprudencia_hito": "Ratificación por la máxima corte judicial de Colombia de que la Ley de Origen y los sitios sagrados de las naciones indígenas tienen primacía sobre licencias mineras e hidrocarburos.",
+      "el_decreto_ley_632_de_2018": "Hito histórico que permite la puesta en funcionamiento de los Territorios Indígenas en las áreas no municipalizadas de los departamentos de Amazonas, Vaupés y Guainía, garantizando la administración directa de los recursos fiscales del Estado colombiano por parte de los propios gobiernos indígenas ancestrales."
+    }
+  }
+}

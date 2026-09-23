@@ -1,0 +1,793 @@
+{
+  "metadata": {
+    "titulo": "Gran Compendio Etnográfico, Lingüístico, Etnobotánico y Testimonial de las Naciones Indígenas de las Sabanas Fronterizas de Arauca, Casanare y Vichada",
+    "subagente": "Subagente Especialista en Sabanas Fronterizas de Arauca, Casanare y Vichada de Colombianopedia",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "descripcion": "Tratado monográfico exhaustivo y base de datos canónica sobre los pueblos originarios nómadas, seminómadas y ribereños de los Llanos colombo-venezolanos: Hitnü (Macaguane/Jitnu) de las selvas del Lipa y Caño Ele; Jiw (Guayabero/Mitúa) de los ríos Guaviare y Ariari; Yaruro (Pumé) de la frontera de Arauca, Casanare y Apure; Tsiripu (Siripu/Guahibos trashumantes); Mariposo (comunidades nómadas de sabana abierta); y el macro-complejo Cuiba (Wamonae/Kuiva) con sus subgrupos constitutivos Chiricoa, Masiware, Mayayero y Mayarí. Integra análisis filogenético y fonológico comparado (diferenciación fonética del Jiw frente al Sikuani central y especificidad aislada del Pumé), biomecánica y adaptaciones cinegéticas de sabana (arquería larga de chonta negra, cuerdas de cumare y puntas óseas, cosecha estacional de charapas y terecays en playones), farmacopea sagrada y medicina empírica (Yopo/Dopa, tabaco de sabana, corteza de alcornoque para quemaduras y antídotos botánicos para envenenamiento por mantarrayas de río Potamotrygon), y la reconstrucción forense e histórica de las tragedias de despojo: las 'guahibiadas', la Masacre de La Rubiera (1968), el confinamiento por campos minados en las selvas de Lipa (Arauca) y el amparo judicial supremo del Auto 004 de 2009 de la Corte Constitucional.",
+    "marcos_normativos_y_jurisprudenciales": [
+      "Constitución Política de Colombia de 1991: Artículos 1, 7 (diversidad étnica y cultural), 8 (protección de riquezas culturales y naturales), 10 (oficialidad de las lenguas nativas en sus territorios), 63 (tierras comunales de grupos étnicos inalienables, imprescriptibles e inembargables), 70 (igualdad y dignidad de culturas), 246 (Jurisdicción Especial Indígena) y 329-330 (Entidades Territoriales Indígenas y Resguardos).",
+      "Convenio 169 de la Organización Internacional del Trabajo (OIT) sobre Pueblos Indígenas y Tribales en Países Independientes, adoptado mediante Ley 21 de 1991.",
+      "Corte Constitucional de Colombia - Sentencia T-025 de 2004: Declaratoria del Estado de Cosas Inconstitucional ante la vulneración masiva y sistemática de derechos fundamentales de la población desplazada por el conflicto armado interno.",
+      "Corte Constitucional de Colombia - Auto 004 de 2009 (Sala Especial de Seguimiento a la Sentencia T-025 de 2004): Declaratoria de riesgo inminente de exterminio físico y cultural de 34 pueblos indígenas a causa del conflicto armado y el despojo territorial forzado; amparo categórico a los pueblos Cuiba, Hitnü, Jiw (Guayabero), Chiricoa y pueblos afines de la cuenca orinoquense.",
+      "Corte Constitucional de Colombia - Auto 382 de 2010: Adopción de medidas cautelares y conminación al diseño de un Plan Provisional Urgente de atención humanitaria, desminado humanitario y seguridad alimentaria para los pueblos Hitnü (Jitnu) y Makaguán en el departamento de Arauca.",
+      "Corte Constitucional de Colombia - Auto 173 de 2012: Medidas cautelares y órdenes urgentes de protección integral para el pueblo indígena Jiw (Guayabero) frente al desplazamiento masivo, confinamiento y precariedad sanitaria en Guaviare y Meta.",
+      "Decreto Ley 4633 de 2011: Marco de medidas de asistencia, atención, reparación integral y de restitución de derechos territoriales a las víctimas pertenecientes a los pueblos y comunidades indígenas.",
+      "Ley 1381 de 2010 (Ley de Lenguas Nativas de Colombia): Salvaguarda, revitalización, rescate y documentación de los idiomas aborígenes en inminente riesgo de extinción."
+    ],
+    "fuentes_primarias_academicas_y_testimoniales": [
+      "Instituto Colombiano de Antropología e Historia (ICANH) - Atlas Sociolingüístico de Pueblos Indígenas de Colombia, Informes Etnográficos de la Orinoquía y Monografías de Resguardos.",
+      "Arcand, Bernard - 'The Cuiva Band: An Indian Tribe of the Llanos of Colombia' (Universidad de Cambridge, 1972) y estudios sobre la ecología, movilidad y nomadismo de las bandas Cuiba del río Capanaparo.",
+      "Morey, Robert V. & Morey, Nancy C. - 'Los Guahibo: Etnohistoria de un pueblo de los Llanos Colombo-Venezolanos' (1973) y 'Foragers and Farmers of the Eastern Lowlands' (1974).",
+      "Queixalós, Francisco - 'Diccionario de la lengua Sikuani' (1998), 'Estudios de lingüística guahibana' (1988) y análisis comparativo de la morfosintaxis y fonología de la Familia Guahibana.",
+      "Mosonyi, Esteban Emilio & Mosonyi, Jorge - 'Manual de lenguas indígenas de Venezuela' (Caracas, 2000) y 'Morfología y tipología del idioma Yaruro (Pumé)'.",
+      "Leeds, Anthony - 'The Yaruro Incipient Tropical Forest Horticulturists' (1961); Greaves, Russell - 'Forager adaptations, land tenure, and the sacred ritual of Tõhé among the Savanna Pumé' (2000).",
+      "Waller, John & Waller, Adreana - 'Guayabero: Fonología y Gramática Descriptiva' (Editorial Townsend / SIL, 1976-1985); Keels, Jack - 'Guayabero Syntax' (1985).",
+      "Reichel-Dolmatoff, Gerardo - 'El chamán y el jaguar: Estudio de las drogas narcóticas entre los indios de Colombia' y tratados sobre la botánica enteogénica del Yopo (Anadenanthera peregrina).",
+      "Centro Nacional de Memoria Histórica (CNMH) - 'Pueblos Indígenas en los Llanos Orientales: Violencia, Despojo y Resistencia' e investigación sociojurídica sobre el juicio de La Rubiera.",
+      "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición (CEV) - Tomo Étnico 'Resistir no es aguantar: Violaciones a los derechos humanos de los pueblos indígenas durante el conflicto armado'.",
+      "Asociación de Cabildos Tradicionales Indígenas de Arauca (ASCATIDAR) y Organización Nacional Indígena de Colombia (ONIC) - Diagnósticos comunitarios y pronunciamientos de salvaguarda de los pueblos Hitnü, Betoye, U'wa y Cuiba."
+    ],
+    "total_pueblos_documentados": 6,
+    "pueblos_incluidos": [
+      "Hitnü (Macaguane / Jitnu)",
+      "Jiw (Guayabero / Mitúa)",
+      "Yaruro (Pumé)",
+      "Tsiripu (Siripu / Guahibos trashumantes)",
+      "Mariposo (Comunidades nómadas de sabana abierta)",
+      "Cuiba (Wamonae / Kuiva) y sus subgrupos Chiricoa, Masiware, Mayayero y Mayarí"
+    ]
+  },
+  "pueblos_indigenas_sabanas_fronterizas": [
+    {
+      "id": "hitnu",
+      "nombre": "Hitnü (Macaguane / Jitnu)",
+      "autodenominacion": "Hitnü / Jitnu ('Nuestra gente' / 'Los seres humanos de la selva y el agua')",
+      "exonominacion_colonial_republicana": "Macaguane / Macaguán / Cuiba del Lipa (denominación genérica aplicada por misioneros jesuitas y colonos)",
+      "clasificacion_linguistica": {
+        "tronco": "Familia Guahibana",
+        "rama": "Rama Septentrional Independiente (altamente divergente)",
+        "lengua": "Hitnü (Jitnu)",
+        "vitalidad": "En peligro crítico (severa reducción de hablantes fluidos monolingües; asfixiada por confinamiento armado)"
+      },
+      "distribucion_geografica_y_territorial": {
+        "departamento": "Arauca",
+        "municipios": [
+          "Arauquita",
+          "Cravo Norte",
+          "Tame",
+          "Fortul"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Ele",
+          "Río Lipa",
+          "Caño Lipa",
+          "Caño Colorado",
+          "Caño Caimanero",
+          "Río Cravo Norte"
+        ],
+        "ecosistemas_especificos": [
+          "Selva húmeda de galería del Lipa (relicto boscoso de transición orinoquense-amazónica)",
+          "Morichales hidromórficos de Caño Ele",
+          "Sabanas inundables bajas (bajos, esteros y bancos de médano)",
+          "Vegas aluviales estacionales"
+        ],
+        "resguardos_y_comunidades": [
+          "Resguardo Indígena San José del Lipa",
+          "Resguardo La Vorágine",
+          "Comunidades de Caño Ele y Caño Colorado",
+          "Asentamiento Asocata (Arauquita)"
+        ]
+      },
+      "demografia_y_censo": {
+        "poblacion_estimada": "Aproximadamente 650 a 850 personas.",
+        "distribucion_etaria": "Pirámide demográfica profundamente erosionada; altísima tasa de mortalidad infantil por desnutrición aguda y enfermedades diarreicas/respiratorias, con menos del 5% de la población por encima de los 55 años.",
+        "estado_de_alerta_demografica": "Alerta roja demográfica por contracción biológica, endogamia forzada por confinamiento y pérdida violenta de cazadores adultos en minas antipersonal."
+      },
+      "filogenia_y_analisis_linguistico": {
+        "posicion_filogenetica": "Dentro de la familia Guahibana, el Hitnü conforma junto con el Hitanü (Iguanito) una rama septentrional diferenciada tempranamente del núcleo proto-guahibano común. Su aislamiento geográfico secular en los bosques hiperhúmedos del Lipa preservó giros morfológicos y lexicales únicos.",
+        "rasgos_fonologicos": "Presenta 6 vocales orales (/a/, /e/, /i/, /o/, /u/, /ɨ/) con contrapartes nasales no completamente simétricas; fuerte presencia de oclusiones glotales intervocálicas y una serie de consonantes oclusivas sordas (/p/, /t/, /k/) y nasales (/m/, /n/). Tiende a la elisión vocálica rápida en habla conectada.",
+        "morfosintaxis": "Lengua aglutinante con orden constituyente no marcado SOV (Sujeto - Objeto - Verbo). Complejo sistema de sufijación verbal aspectual y direccional. Conserva clasificadores numerales vinculados a la consistencia botánica (cilíndricos para maderas/árboles, redondeados para frutos/tubérculos, laminares para hojas de palma)."
+      },
+      "modo_de_vida_y_adaptacion_a_la_sabana": {
+        "nomadismo_estacional_forestal": "A diferencia de los Sikuani de altillanura abierta, los Hitnü son primordialmente caminantes de selva riparia y bosque de galería denso. Históricamente no fundaban asentamientos fijos, sino campamentos provisionales erigidos en las 'matas de monte' y orillas de meandros fluviales.",
+        "campamentos_trashumantes": "Estructuras ligeras compuestas por enramadas o paravientos ('chiqueros') armados en pocas horas con varas de madera blanda clavadas en ángulo oblícuo y techadas con grandes hojas de platanillo silvestre (Heliconia) o palmas de moriche (Mauritia flexuosa) y seje (Oenocarpus bataua). El campamento se levantaba y abandonaba en ciclos de dos a cuatro semanas para no esquilmar los comederos de animales ni atraer presencias hostiles.",
+        "tecnologia_de_arqueria_y_caza": {
+          "arcos_largos_de_chonta": "Arcos de gran envergadura (entre 1.80 y 2.15 metros) elaborados con madera densa y elástica de palma de chonta negra (Bactris gasipaes o Iriartea deltoidea), labrada minuciosamente con raspadores de piedra y dientes de roedor, y pulida con grasa de sajino para impedir su resquebrajamiento por la humedad del monte.",
+          "cuerdas_de_cumare": "Cuerdas confeccionadas con fibra pura de palma de cumare (Astrocaryum chambira), hilada en el muslo mediante torsión doble ininterrumpida y recubierta con cera virgen de abejas meliponas (angelitas) para impermeabilizarla frente a las lluvias torrenciales.",
+          "astiles_y_puntas_oseas": "Vástagos de flecha confeccionados con caña brava silvestre (Gynerium sagittatum), estabilizados en la culata con dos plumas de paujil o guacamaya atadas helicoidalmente. Las puntas son de tres órdenes: 1) Puntas lanceoladas de madera de chonta para mamíferos menores; 2) Puntas óseas aserradas talladas de fémures o tibias de pecarí y chigüiro para venados y dantas, diseñadas para desangrar rápidamente la presa; 3) Puntas arpón con espina caudal de mantarraya de río (Potamotrygon) para peces mayores.",
+          "presas_fundamentales": "Pecarí de collar o saíno (Dicotyles tajacu), huangana o pecarí labiado (Tayassu pecari), chigüiro (Hydrochoerus hydrochaeris), armadillo cachicamo (Dasypus novemcinctus), mono cotudo (Alouatta seniculus) y venado soche (Mazama americana)."
+        },
+        "pesca_y_cosecha_estacional_de_playa": {
+          "pesca_con_flecha_y_barbasco": "En la temporada invernal de aguas altas, pescan al acecho entre los morichales inundados disparando flechas con punta de madera dentada; en verano, aplican barbasco vegetal macerado (Lonchocarpus utilis) en los caños de meandro estancados para aturdir bagres, coporos y palometas.",
+          "recoleccion_de_huevos_de_tortuga": "Durante la temporada seca (diciembre a marzo), las bandas Hitnü descendían históricamente a las orillas y playones del río Lipa y río Ele para recolectar sistemáticamente millares de huevos de tortuga charapa (Podocnemis expansa) y tortuga terecay (Podocnemis unifilis). Los huevos eran enterrados en arena tibia para su consumo fresco o ahumados sobre barbacoas para conservación como ración proteica."
+        },
+        "recoleccion_vegetal": "Cosecha silvestre de frutos de moriche (Mauritia flexuosa), pepas de palma cucurita (Attalea maripa), miel virgen de abejas nativas sin aguijón y extracción de larvas comestibles de coleópteros de moriche (Rhynchophorus palmarum, conocidas como mojojoy o muji)."
+      },
+      "sistema_medico_chamanismo_y_etnobotanica": {
+        "chamanismo_y_el_yopo": {
+          "nombre_ritual": "Dopa / Yopa / Nupa",
+          "especie_botanica": "Anadenanthera peregrina (L.) Speg. (Familia Fabaceae, subfamilia Mimosoideae).",
+          "preparacion": "Las semillas de las vainas secas se tuestan suavemente a fuego indirecto sobre planchas de arcilla, se despojan de la testa exterior coriácea y se machacan en un mortero de madera noble con una mezcla calibrada de conchas calcinadas de caracol fluvial (Pomacea urceus) o cenizas alcalinas de corteza de yarumo (Cecropia). La mezcla pulverizada fina se deja reposar hasta adquirir un color grisáceo y olor picante penetrante.",
+          "parafernalia": "Uso de tablas de inhalar ('yoperas') finamente talladas en maderas de canelo o guayacán con relieves de serpientes y jaguares tutelares; la inhalación se realiza por parejas mediante tubos bifurcados en 'Y' elaborados con huesos huecos de ala de alcaraván (Burhinus bistriatus) o garza morena.",
+          "experiencia_y_funcion": "Contiene alcaloides triptamínicos: 5-hidroxi-dimetiltriptamina (Bufotenina), N,N-DMT y 5-MeO-DMT. El chamán o sabio Hitnü entra en un trance extático donde su espíritu ('itü') abandona el cuerpo y viaja por el dosel cósmico de la selva para identificar los espíritus agresores (chupadores de aliento), diagnosticar epidemias comunitarias y negociar con los 'Dueños del Agua' el permiso de cacería."
+        },
+        "el_tabaco_de_sabana": {
+          "especie_botanica": "Nicotiana tabacum L. y Nicotiana rustica L.",
+          "uso": "Hojas curadas al humo y enrolladas en cigarros rústicos. El sabio aspira grandes bocanadas de humo y las sopla enérgicamente sobre la fontanela de los recién nacidos, las sienes de enfermos febriles y sobre las armas de caza para conferirles puntería certera y protegerlas del encantamiento del monte. El jugo concentrado (ambil) mezclado con ceniza se usa como masticatorio estimulante para resistir días enteros de acecho sin comer."
+        },
+        "farmacopea_de_emergencia_y_sabana": {
+          "emplastos_de_alcornoque_para_quemaduras": {
+            "especie": "Alcornoque de sabana (Bowdichia virgilioides Kunth, Fabaceae).",
+            "morfologia_y_recoleccion": "Árbol resistente al fuego característico de las sabanas altas y bordes de monte; su corteza exterior es gruesa, corchosa, profundamente fisurada y cenicienta.",
+            "fitoquimica": "Concentra abundantes taninos catéquicos condensados (12-18%), flavonoides astringentes, triterpenos (lupeol, betulósido) y alcaloides derivados de la quinolizidina (alcorneína, bowdichina).",
+            "preparacion_y_aplicacion": "La corteza fresca se raspa profundamente, se macera en agua hervida o tibia y se bate hasta formar una pasta viscosa parduzca. Este emplasto húmedo se extiende directamente sobre quemaduras de segundo y tercer grado (ocasionadas por quemas descontroladas de pajonal o accidentes con fogones comunales).",
+            "mecanismo_biologico": "Los taninos precipitan las proteínas de la dermis dañada formando una biopelícula impermeable que detiene la exudación de plasma, previene la sobreinfección por Pseudomonas aeruginosa y Staphylococcus aureus, reduce drásticamente el dolor urente por bloqueo de terminaciones nerviosas libres e induce la reepitelización acelerada sin queloides hipertróficos."
+          },
+          "antidotos_botanicos_para_picadura_de_mantarraya": {
+            "agente_agresor": "Mantarrayas de río o rayas fluviales (Potamotrygon motoro, Potamotrygon orbignyi, Familia Potamotrygonidae). Ocurre cuando el indígena pisa inadvertidamente el pez semienterrado en los arenales o fondos limosos de los caños del Lipa y Ele.",
+            "fisiopatologia_del_veneno": "El aguijón caudal serrado de dentina inyecta un veneno complejo que contiene proteasas líticas, fosfodiesterasas, 5-nucleotidasas, hialuronidasas y péptidos vasoconstrictores térmicamente lábiles. Provoca isquemia local severa, dolor paroxístico atroz, necrosis colicuativa de tejidos profundos, úlcera fétida y riesgo de gangrena o sepsis bacteriana secundaria.",
+            "protocolo_indigena_tradicional": "1) Desnaturalización térmica inmediata: Aplicación urgente de calor extremo local tolerado (inmersión del pie en agua casi hirviendo o aplicación de piedras de río recalentadas al fuego envueltas en hojas húmedas) por encima de los 45°C-50°C durante 60 minutos, lo que produce la desnaturalización irreversible de las proteínas tóxicas termolábiles; 2) Lavado con decocción concentrada de corteza de guásimo (Guazuma ulmifolia) y alcornoque para retirar el moco tegumentario remanente; 3) Cataplasma hemostática y analgésica: Macerado fresco de hojas de bejuco de guaco (Mikania glomerata / Mikania cordifolia), cuyas cumarinas (o-hidroxicinámico) ejercen potente acción vasodilatadora que contrarresta la isquemia periférica, combinada con hojas machacadas de matarratón de monte (Gliricidia sepium); 4) Sellado con resina viscosa de árbol de copaiba (Copaifera officinalis) como barrera bactericida y regenerador tisular."
+          }
+        }
+      },
+      "memoria_historica_violencia_y_vulnerabilidad": {
+        "impacto_petrolero_y_despojo": "Desde la década de 1980, el descubrimiento y explotación del megacampo petrolero Caño Limón y el tendido del oleoducto Caño Limón-Coveñas atravesaron de forma traumática el corazón de las selvas del Lipa y Caño Ele. La deforestación de los bosques de galería, la contaminación de caños por derrames y la apertura de carreteras de prospección destruyeron las sendas milenarias de trashumancia de las bandas Hitnü.",
+        "el_confinamiento_atroz_por_campos_minados": "En el marco del conflicto armado interno entre las guerrillas del ELN (Frente Domingo Laín Sáenz), las FARC-EP (Frentes 10 y 45), paramilitares de las AUC (Bloque Vencedores de Arauca) y la Fuerza Pública, las selvas del Lipa fueron convertidas en uno de los territorios con mayor densidad de Minas Antipersonal (MAP) y Municiones Sin Explosionar (MUSE) del planeta. Los senderos tradicionales donde los cazadores Hitnü buscaban saínos y recolectaban moriche quedaron tapizados de explosivos plásticos y 'quiebrapatas'.",
+        "consecuencias_humanitarias": "Docenas de cazadores, mujeres y niños Hitnü sufrieron amputaciones traumáticas de extremidades inferiores o murieron desangrados en la manigua sin atención médica. Ante el terror de las minas, la comunidad quedó literalmente confinada en minifundios improductivos de los resguardos San José del Lipa y La Vorágine. El cese forzado de la cacería y recolección desató hambrunas catastróficas, con prevalencia de desnutrición aguda severa superior al 40% en niños menores de 5 años y brotes incontrolados de tuberculosis multirresistente.",
+        "amparo_judicial_constitucional": "La Corte Constitucional de Colombia, en su providencia de seguimiento Auto 004 de 2009, declaró al pueblo Hitnü como una de las etnias en situación más crítica de riesgo de extinción física y cultural. Posteriormente, emitió el categórico Auto 382 de 2010, ordenando de forma específica y prioritaria al gobierno nacional el desminado humanitario de emergencia de las selvas del Lipa, la provisión ininterrumpida de alimentos y agua potable, la asignación de tierras seguras sin contaminación bélica y la formulación del Plan Provisional Urgente de Salvaguarda Etnica."
+      }
+    },
+    {
+      "id": "jiw",
+      "nombre": "Jiw (Guayabero / Mitúa)",
+      "autodenominacion": "Jiw ('Gente' / 'Personas de la cuenca fluvial')",
+      "exonominacion_colonial_republicana": "Guayabero / Mitúa / Mitiwa / Cunimía (designaciones dadas por misioneros en el río Ariari y Guayabero)",
+      "clasificacion_linguistica": {
+        "tronco": "Familia Guahibana",
+        "rama": "Rama Suroccidental Independiente",
+        "lengua": "Jiw (Guayabero)",
+        "vitalidad": "En peligro (afectada por desplazamiento masivo, confinamiento periurbano y escolarización monocultural)"
+      },
+      "distribucion_geografica_y_territorial": {
+        "departamentos": [
+          "Guaviare",
+          "Meta"
+        ],
+        "municipios": [
+          "San José del Guaviare",
+          "Mapiripán",
+          "Puerto Concordia",
+          "Puerto Rico"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Guaviare",
+          "Río Ariari",
+          "Río Guayabero",
+          "Caño La Fuga",
+          "Caño San José",
+          "Caño Makusito"
+        ],
+        "ecosistemas_especificos": [
+          "Franja ecotonal de transición entre las sabanas de la Orinoquía y el bosque húmedo tropical amazónico",
+          "Bosques aluviales de vega inundable",
+          "Playones e islas arenosas fluviales",
+          "Morichales y varzeas riparias"
+        ],
+        "resguardos_y_asentamientos": [
+          "Resguardo Indígena Barrancón (San José del Guaviare - enclave crítico periurbano de desplazados)",
+          "Resguardo La María (San José del Guaviare)",
+          "Resguardo Mocuare (Mapiripán)",
+          "Asentamiento El Refugio",
+          "Resguardo Naexal Lajt (Puerto Concordia)"
+        ]
+      },
+      "demografia_y_censo": {
+        "poblacion_estimada": "Aproximadamente 2.300 a 2.900 personas.",
+        "distribucion_territorial_anomala": "Más del 60% de su población sobrevive desterrada fuera de sus territorios ancestrales de vega fluvial, habitando en campamentos de desplazados en condiciones de hacinamiento y miseria.",
+        "tendencia_demografica": "Vulnerable y precaria; tasas de natalidad altas contrarrestadas por mortalidad infantil por gastroenteritis, parásitos hídricos y suicidio juvenil derivado de la desarticulación cultural."
+      },
+      "filogenia_y_analisis_linguistico": {
+        "posicion_filogenetica": "El Jiw (Guayabero) constituye la rama suroccidental de la familia Guahibana. Los análisis lexicogenéticos de Queixalós y los estudios estructurales de John y Adreana Waller sitúan al Jiw como la lengua que presenta la mayor distancia interna respecto al Sikuani central y al Cuiba, evidenciando una divergencia temporal de más de mil quinientos años de separación territorial y contacto con lenguas del Noroeste amazónico (Tukano oriental y Nadahup).",
+        "diferenciacion_fonetica_frente_al_sikuani": {
+          "inventario_consonantico_singular": "El Jiw conserva una oclusiva glotal fonémica distintiva /ʔ/ (representada como apóstrofo o saltillo) en raíces y linderos morfológicos (ejemplo: contrastes mínimos entre /kaʔa/ y /kaː/), mientras que en el Sikuani central la oclusiva glotal ha desaparecido o se ha reducido a pausas de juntura no fonémicas.",
+          "presencia_de_fricativa_bilabial": "Posee la fricativa sorda bilabial /ɸ/ (a menudo transcrita como 'f' o 'ph'), sonido consonántico ausente en el dialecto Sikuani central de altillanura, donde las labiales se restringen a /p/ y /b/ o aproximantes sonoras /w/.",
+          "fonema_africado_postalveolar": "El Jiw articula de forma fonémica estable la africada postalveolar sorda /tʃ/ ('ch'), mientras que en el Sikuani existe la africada alveolar /ts/.",
+          "estructura_silabica_y_codas": "A diferencia de la rigurosa preferencia del Sikuani por sílabas abiertas tipo (C)V, el Jiw exhibe una alta frecuencia de sílabas cerradas nativas con codas consonánticas en posición final de palabra y morfema (estructuras CVC, VCC), otorgándole una acústica percusiva y entrecortada.",
+          "sistema_vocalico_y_ausencia_de_nasales_puras": "Mientras que el Sikuani estándar posee un sistema doble y simétrico de 6 vocales orales (/a/, /e/, /i/, /o/, /u/, /ɨ/) versus 6 vocales nasales contrastivas (/ã/, /ẽ/, /ĩ/, /õ/, /ũ/, /ɨ̃/) capaces de alterar por sí solas el significado de las raíces, el Jiw no cuenta con un subsistema fonológico de vocales nasales plenas; la nasalización en Jiw es fonéticamente alofónica y dependiente de la proximidad a consonantes nasales (/m/, /n/)."
+        },
+        "morfologia_y_sintaxis": "Morfología polisintética y aglutinante. Presenta una arquitectura de afijación donde las marcas pronominales de persona, causatividad y aspecto temporal se condensan en el verbo. El orden canónico es SOV, con alternancias motivadas por pragmática discursiva."
+      },
+      "modo_de_vida_y_adaptacion_a_la_sabana": {
+        "cultura_anfibia_y_fluvial": "Los Jiw han perfeccionado una simbiosis milenaria entre los grandes ríos de aguas blancas (el Ariari y el Guaviare) y los caños menores de aguas negras que nacen en los morichales. Son extraordinarios navegantes en canoas monóxilas de cedro o cachicamo y pescadores de corriente.",
+        "campamentos_trashumantes_estacionales": "Durante los meses de verano seco (diciembre a marzo), las familias Jiw se desplazaban a lo largo de las playas arenosas formando campamentos estacionales móviles. Levantaban estructuras efímeras consistentes en varas cruzadas y techos de hojas de palma de moriche o iraca (Carludovica palmata), desprovistas de paredes, para maximizar la ventilación de la brisa fluvial y evitar la acumulación de jejenes.",
+        "tecnologia_de_arqueria_y_caza": {
+          "arcos_de_chonta_y_cuerda_de_cumare": "Arcos de caza confeccionados de chonta negra seleccionada de troncos adultos curados a la sombra, con cuerdas torsadas de fibra de cumare (Astrocaryum chambira) de triple hebra que brindan enorme tensión balística.",
+          "puntas_de_caza_y_arpones": "Puntas óseas extraídas de patas de saíno y chigüiro para cacería terrestre en las matas de monte; para la caza de primates en el dosel, empleaban flechas con puntas de madera embadurnadas con resinas urticantes o curare suave; para los quelonios acuáticos y grandes peces, confeccionan flechas-arpón con cabeza de hueso desprendible atada a una línea de cumare para cobrar la presa bajo el agua.",
+          "especies_cazadas": "Danta de tierras bajas (Tapirus terrestris), pecarí de collar (Dicotyles tajacu), chigüiro (Hydrochoerus hydrochaeris), caimán de anteojos (Caiman crocodilus), mono capuchino y paujiles."
+        },
+        "pesca_intensiva_y_barbasco": "La pesca aporta más del 70% de la proteína tradicional. Emplean arpones, trampas cónicas de mimbre (cacures) en meandros y expediciones colectivas con barbasco (Lonchocarpus utilis) en pozos secos en febrero, capturando valentones, bagres rayados (Pseudoplatystoma fasciatum), bocachicos (Prochilodus mariae) y cachamas.",
+        "cosecha_de_playas_charapa_y_terecay": {
+          "estacion_de_postura": "Entre enero y marzo, las playas e islas arenosas del río Guaviare se convertían en el escenario central de subsistencia. Miles de tortugas charapas (Podocnemis expansa) y terecays (Podocnemis unifilis) salían por las noches a desovar en las dunas altas de arena.",
+          "cosecha_sostenible": "Las familias Jiw localizaban las nidadas enterradas guiándose por las huellas de arrastre en la arena húmeda de la madrugada y utilizando varillas finas de madera para tantear el terreno blando. Recolectaban miles de huevos ricos en albúmina y grasa, consumían una porción fresca, secaban al sol y ahumaban otra para almacenamiento en cestos de cumare, y extraían aceite de tortuga para cocinar y alumbrar las chozas."
+        }
+      },
+      "sistema_medico_chamanismo_y_etnobotanica": {
+        "el_yopo_y_el_viaje_visionario": {
+          "preparacion_liturgica": "Tostado ritual de semillas de Anadenanthera peregrina mezcladas con cal de caracol acuático y cenizas de corteza silvestre. La aspiración se efectúa mediante tubos nasales dobles.",
+          "ontologia_chamánica": "El chamán Jiw (denominado localmente wãt o sabedor del mundo) inhala el polvo sagrado para visualizar el cuerpo transparente del paciente enfermo, ubicar dardos mágicos introducidos por chamanes enemigos y comunicarse con los 'Dueños del Río' (seres espirituales de los meandros) para calmar las tormentas de agua."
+        },
+        "tabaco_de_sabana": "Inhalado en humo continuo y aplicado en baños tibios de infusión sobre los ojos de los jóvenes cazadores para limpiarles la mirada ('aguzar la vista') antes de internarse en el monte.",
+        "medicina_para_picaduras_de_raya_y_quemaduras": {
+          "picadura_de_mantarraya_de_rio": "Las mantarrayas de fondo limoso (Potamotrygon spp.) representan un peligro cotidiano para los pescadores Jiw que caminan descalzos en los meandros. El protocolo tradicional consiste en el drenaje inmediato de la sangre coagulada, inmersión inmediata en agua muy caliente para neutralizar las toxinas termo-sensibles del aguijón, aplicación de cataplasmas machacadas de corteza de alcornoque (Bowdichia virgilioides) para coagular y desinfectar la herida, lavados con zumo de bejuco de guaco (Mikania) y vendajes con corteza interna de majagua.",
+          "emplastos_de_alcornoque": "La corteza cocida de Bowdichia virgilioides es el remedio supremo de la sabana para quemaduras solares agudas de pescadores y lesiones traumáticas por fricción de cuerdas de cumare."
+        }
+      },
+      "memoria_historica_violencia_y_vulnerabilidad": {
+        "la_guerra_en_el_guaviare_y_la_masacre_de_mapiripan": "El territorio ancestral Jiw quedó en el epicentro de la expansión de cultivos ilícitos de hoja de coca y de los enfrentamientos armados entre los frentes 1, 7 y 44 de las FARC-EP y las estructuras paramilitares de las Autodefensas Unidas de Colombia (AUC - Bloque Centauros). La fatídica Masacre de Mapiripán en julio de 1997 marcó el inicio de un éxodo violento generalizado; familias enteras fueron desplazadas bajo amenaza de exterminio o reclutamiento forzado de menores.",
+        "el_drama_del_confinamiento_en_barrancon": "Cientos de familias Jiw desplazadas fueron reasentadas de manera precaria en las afueras de San José del Guaviare, en el predio militarizado de Barrancón. Confinados en un espacio reducido sin acceso al río ni a tierras de cacería, los Jiw sufrieron el choque brutal de la mendicidad urbana, desnutrición infantil catastrófica, adicciones y proliferación de infecciones de transmisión sexual.",
+        "amparo_judicial_constitucional": "La Corte Constitucional declaró al pueblo Jiw como víctima prioritaria en el Auto 004 de 2009. Ante el incumplimiento de las agencias del Estado y el agravamiento de la crisis sanitaria y territorial, la Corte emitió el Auto 173 de 2012, ordenando la reubicación digna y urgente de las familias confinadas en Barrancón, el saneamiento territorial de sus resguardos ancestrales en el río Guaviare, brigadas médicas permanentes y la creación inmediata de un Plan Integral de Salvaguarda Etnica."
+      }
+    },
+    {
+      "id": "yaruro",
+      "nombre": "Yaruro (Pumé)",
+      "autodenominacion": "Pumé ('La gente verdadera' / 'Los seres humanos')",
+      "exonominacion_colonial_republicana": "Yaruros (denominación histórica dada por frailes andaluces y colonos en el río Meta y Arauca)",
+      "clasificacion_linguistica": {
+        "tronco": "LENGUA AISLADA (Lengua independiente sin parentesco filogenético demostrado)",
+        "rama": "Aislada / Unclassified",
+        "lengua": "Pumé (Yaruro / Pumé mot)",
+        "vitalidad": "En Colombia en peligro extremo (población transfronteriza mínima en resguardos de Arauca y Casanare); en Venezuela vulnerable con vitalidad en comunidades de sabana"
+      },
+      "distribucion_geografica_y_territorial": {
+        "departamentos_en_colombia": [
+          "Arauca",
+          "Casanare",
+          "Vichada"
+        ],
+        "municipios": [
+          "Cravo Norte",
+          "Hato Corozal",
+          "Paz de Ariporo"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Arauca",
+          "Río Meta",
+          "Río Capanaparo",
+          "Río Cinaruco",
+          "Río Cunaviche",
+          "Caño Mochuelo"
+        ],
+        "ecosistemas_especificos": [
+          "Médanos y dunas eólicas fósiles de sabana abierta",
+          "Matas de monte y bosques secos de galería",
+          "Playones arenosos de los grandes ríos fronterizos",
+          "Esteros y sabanas inundables interfluviales"
+        ],
+        "resguardos_y_enclaves": [
+          "Resguardo Indígena Caño Mochuelo (Casanare - refugio multiétnico)",
+          "Asentamientos fronterizos estacionales a lo largo del río Arauca y Capanaparo"
+        ]
+      },
+      "demografia_y_censo": {
+        "poblacion_en_colombia": "Aproximadamente 180 a 320 individuos censados en territorio colombiano (con movilidad fluida transfronteriza).",
+        "poblacion_binacional_venezuela": "Aproximadamente 8.500 a 10.000 hablantes en el estado Apure (Venezuela), distribuidos entre las sabanas de Cinaruco-Capanaparo y las riberas fluviales.",
+        "situacion_demografica": "En territorio colombiano se encuentran al borde de la invisibilización y absorción étnica por coexistir con etnias mayoritarias en Caño Mochuelo."
+      },
+      "filogenia_y_analisis_linguistico": {
+        "condicion_de_lengua_aislada": "El Pumé constituye uno de los más fascinantes enigmas lingüísticos de Suramérica. A pesar de haber sido clasificado tentativamente en el pasado por autores decimonónicos dentro de macrofamilias hipotéticas como la Macro-Chibcha o Macro-Jê, las investigaciones rigurosas contemporáneas (Mosonyi 2000, Adelaar 2004, Campbell 2012) han demostrado de forma concluyente que el Pumé carece de cognados genéticos o correspondencias fonológicas sistemáticas con ninguna otra familia lingüística del continente.",
+        "rasgos_tipologicos_y_fonologicos": {
+          "sistema_vocalico": "Posee un inventario rico de 6 vocales orales (/a/, /e/, /i/, /o/, /u/, /ɨ/) con una serie completa de vocales nasales fonémicas contrastivas (/ã/, /ẽ/, /ĩ/, /õ/, /ũ/, /ɨ̃/) y longitud vocálica distintiva en ciertas raíces verbales.",
+          "inventario_consonantico": "Oclusivas sordas y sonoras (/p/, /t/, /k/, /b/, /d/, /g/), oclusiva glotal /ʔ/, fricativas alveolar /s/ y glotal /h/, nasales /m/, /n/, líquida vibrante /r/ y semiconsonantes labial /w/ y palatal /j/.",
+          "morfosintaxis_aglutinante": "Estructura aglutinante con tendencia a la marcación en el núcleo; orden sintáctico básico SOV con marcada flexibilidad tipológica. Sistema de alineamiento morfosintáctico con rasgos de ergatividad escindida condicionada por el tiempo y aspecto verbal."
+        },
+        "division_sociolinguistica_y_ecologica": {
+          "pume_de_rio": "Habitan las orillas de ríos principales (Arauca, Cunaviche, Capanaparo); practican horticultura ribereña, pesca continua y mantienen mayor bilingüismo con el español.",
+          "pume_de_sabana_o_campesinos_de_medano": "Bandas que habitan en los médanos arenosos del interior de la sabana; nómadas pedestres dedicados exclusivamente a la cacería de armadillo, pecarí y recolección de raíces y tubérculos silvestres, con monolingüismo elevado."
+        }
+      },
+      "modo_de_vida_y_adaptacion_a_la_sabana": {
+        "trashumancia_en_medanos_y_matas_de_monte": "Los Pumé de sabana dominan un ecosistema extremadamente árido y hostil durante el verano: las formaciones dunares o médanos fósiles de sabana y las matas de monte dispersas. Construyen campamentos temporales con vientos cruzados techados con hojas de palma mapora o moriche, orientados minuciosamente para evitar la entrada del polvo arrastrado por los vientos alisios del noreste.",
+        "tecnologia_de_arqueria_y_caza": {
+          "arcos_largos_de_madera_negra": "Arcos de hasta 2 metros de longitud elaborados en madera negra de palma de chonta o macana; cuerdas de fibra de cumare (Astrocaryum chambira) con acabado en cera de abejas silvestres.",
+          "flechas_especializadas": "Flechas con vástagos de caña brava silvestre (Gynerium sagittatum); puntas confeccionadas con hueso pulido de pierna de saíno para caza mayor terrestre (venado sabanero Odocoileus cariacou, pecarí de collar Dicotyles tajacu, chigüiro Hydrochoerus hydrochaeris); flechas con puntas de madera dura labrada en arista para pájaros y roedores; y flechas con aguijones óseos de mantarraya para peces de remanso.",
+          "el_armadillo_como_recurso_critico": "En las sabanas arenosas, son expertos rastreadores de armadillos cachicamos (Dasypus novemcinctus y Dasypus sabanicola), a los que extraen de madrigueras subterráneas profundas mediante varas flexibles y humo de paja."
+        },
+        "cosecha_estacional_de_playa_charapa_y_terecay": "En la estación seca de bajante máxima (enero-marzo), las bandas Pumé acampan en los playones del río Arauca y Capanaparo para recolectar masivamente huevos de tortuga charapa (Podocnemis expansa) y terecay (Podocnemis unifilis). Los huevos son consumidos crudos o cocidos al vapor de arena caliente y su grasa es procesada en vasijas de barro para la conservación de cecinas de pescado."
+      },
+      "sistema_medico_chamanismo_y_espiritualidad": {
+        "el_culto_ritual_nocturno_del_tohe": {
+          "definicion_del_rito": "El Tõhé (o Tohe) es la ceremonia religiosa y médica suprema del pueblo Pumé. Se celebra de noche en el patio central del campamento y puede prolongarse ininterrumpidamente durante 10 a 14 horas hasta el amanecer.",
+          "el_canto_chamanico": "A diferencia de otros pueblos orinoquenses donde prima el consumo masivo de alucinógenos triptamínicos como el Yopo, en el Tõhé el vehículo central de éxtasis y trance místico es el canto chamánico colectivo y la ingestión repetida de humo espeso de tabaco sagrado. El chamán o cantador principal (tõhe kwi / tõhe-o), que puede ser tanto hombre como mujer, entona melodías polifónicas complejas acompañado de una maraca sagrada decorada con plumas de garza.",
+          "panteon_celestial": "Durante el trance del Tõhé, el espíritu del chamán viaja al estrato cósmico occidental para entrevistarse directamente con Kuma, la deidad femenina suprema y madre creadora del universo, y con los héroes Poana (la gran serpiente) e Itsiwé. Los cantos transmiten las instrucciones de Kuma para sanar a los enfermos, apaciguar las fiebres y asegurar la fertilidad de las sabanas."
+        },
+        "tabaco_de_sabana": "Elemento imprescindible en toda la vida social y terapéutica; el tabaco seco se fuma continuamente para ahuyentar a los 'duendes del monte' (espíritus tiw) que causan locura y diarreas en los niños.",
+        "farmacopea_empirica": {
+          "alcornoque_para_quemaduras": "Uso de emplastos de corteza de alcornoque (Bowdichia virgilioides) machacada en agua fría sobre quemaduras causadas por incendios espontáneos de sabana seca.",
+          "picadura_de_mantarraya_fluvial": "Lavado con agua caliente para romper la cadena toxínica de las proteasas del veneno de Potamotrygon, seguido de cataplasmas frescas de hojas maceradas de guaco (Mikania) y vendaje con corteza astringente para prevenir flemones necrosantes."
+        }
+      },
+      "memoria_historica_violencia_y_vulnerabilidad": {
+        "las_cacerias_de_sabana": "Históricamente considerados por los ganaderos llaneros de Arauca y Apure como nómadas errantes carentes de derechos, los Yaruro sufrieron embestidas violentas de 'guahibiadas' que los forzaron a replegarse a las zonas más áridas e inhóspitas de los médanos interfluviales.",
+        "confinamiento_en_caño_mochuelo": "Las familias que cruzaron a territorio colombiano buscando escapar de la violencia ganadera quedaron recluidas dentro de los límites del Resguardo Caño Mochuelo (Casanare), donde su lengua y costumbres afrontan el riesgo de dilución frente a etnias más numerosas como los Sikuani y Cuiba.",
+        "proteccion_constitucional": "Amparados bajo los mandatos protectores del Auto 004 de 2009 de la Corte Constitucional como comunidad binacional en riesgo inminente de extinción biológica y cultural en territorio patrio."
+      }
+    },
+    {
+      "id": "tsiripu",
+      "nombre": "Tsiripu (Siripu / Guahibos trashumantes)",
+      "autodenominacion": "Tsiripu / Siripu ('Hijos de la sabana y el viento')",
+      "exonominacion_colonial_republicana": "Siripus / Guahibos cerreros / Nómadas del Ariporo",
+      "clasificacion_linguistica": {
+        "tronco": "Familia Guahibana",
+        "rama": "Rama Central (microdialecto en peligro extremo)",
+        "lengua": "Tsiripu",
+        "vitalidad": "En peligro crítico / casi extinta (menos de una veintena de ancianos con memoria léxica activa; desplazada por el sikuani y español)"
+      },
+      "distribucion_geografica_y_territorial": {
+        "departamentos": [
+          "Casanare",
+          "Vichada"
+        ],
+        "municipios": [
+          "Paz de Ariporo",
+          "Hato Corozal",
+          "La Primavera"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Caño Mochuelo",
+          "Río Ariporo",
+          "Río Casanare",
+          "Río Meta"
+        ],
+        "ecosistemas_especificos": [
+          "Bancos altos de sabana arenosa",
+          "Esteros de inundación hiperestacional",
+          "Matas de monte riparias",
+          "Morichales estacionales"
+        ],
+        "resguardos_y_asentamientos": [
+          "Resguardo Indígena Caño Mochuelo (Casanare - comunidad San José del Ariporo)",
+          "Asentamientos residuales dispersos en las sabanas del bajo Casanare"
+        ]
+      },
+      "demografia_y_censo": {
+        "poblacion_estimada": "Menos de 90 a 160 individuos supervivientes.",
+        "situacion_demografica": "Grupo demográficamente colapsado; altísimo grado de mestizaje forzado y asimilación comunitaria con familias Cuiba y Sikuani dentro del resguardo."
+      },
+      "filogenia_y_analisis_linguistico": {
+        "posicion_filogenetica": "Subvariante lingüística del complejo guahibano central. Mantiene rasgos morfosintácticos muy afines al Cuiba y Sikuani pero con divergencias fonéticas en la pronunciación de las consonantes fricativas y un léxico vernáculo especializado en la toponimia de los esteros secos y bancos de sabana.",
+        "estado_sociolinguistico": "Pérdida casi absoluta de la transmisión generacional; los niños y jóvenes han adoptado el sikuani como lengua franca indígena o el español llanero."
+      },
+      "modo_de_vida_y_adaptacion_a_la_sabana": {
+        "el_nomadismo_pedestre_radical": "Representaban el arquetipo más puro del cazador-recolector pedestre de sabana abierta. No sembraban chagras ni construían viviendas permanentes; se desplazaban en pequeñas bandas de 15 a 30 individuos siguiendo el curso de los animales de caza y la maduración estacional de frutos silvestres.",
+        "campamentos_trashumantes": "Armaban enramadas efímeras ('chiqueros') con ramas dobladas de arbustos de sabana y hojas de palma de moriche, orientadas contra los vientos alisios dominantes. El campamento se desmantelaba tras pocos días o semanas para evitar huellas persistentes ante posibles partidas de colonos agresores.",
+        "arquería_y_armas": {
+          "arcos_de_chonta": "Arcos largos confeccionados de chonta negra con cuerdas de fibra de cumare (Astrocaryum chambira) hiladas a mano sobre el muslo.",
+          "puntas_oseas": "Flechas de caña brava con puntas de hueso afilado de tibia de pecarí y mandíbulas de roedores para cacería de saíno (Dicotyles tajacu), chigüiro (Hydrochoerus hydrochaeris) y venado de sabana.",
+          "cosecha_estacional_de_playa": "En los meses de verano recolectaban millares de huevos de tortuga charapa (Podocnemis expansa) y terecay (Podocnemis unifilis) en las playas del río Casanare y Meta, ahumándolos para subsistencia durante los traslados."
+        }
+      },
+      "sistema_medico_chamanismo_y_etnobotanica": {
+        "chamanismo_del_yopo": "Sesiones rituales con polvo de Yopo (Anadenanthera peregrina) inhalado con tubos de hueso de ave para comunicarse con los espíritus protectores de la sabana y solicitar lluvias suaves en épocas de sequía abrasadora.",
+        "tabaco_de_sabana": "Uso profiláctico contra mordeduras de ofidios y purificación de campamentos temporales.",
+        "emplastos_de_alcornoque_y_antidotos_de_raya": "Corteza de Bowdichia virgilioides aplicada en emplastos sobre quemaduras de sabana; lavados calientes y cataplasmas de hojas de guaco (Mikania) para mitigar las picaduras necrotizantes de mantarrayas de río (Potamotrygon)."
+      },
+      "memoria_historica_violencia_y_vulnerabilidad": {
+        "victimas_de_las_guahibiadas": "El pueblo Tsiripu fue sistemáticamente diezmado durante las 'guahibiadas' del siglo XIX y mediados del siglo XX en Casanare. Al ser considerados nómadas sin tierra, los ganaderos los tiroteaban a la vista en los bancos de sabana.",
+        "el_confinamiento_en_caño_mochuelo": "En la década de 1970, los escasos sobrevivientes Tsiripu fueron congregados en el resguardo Caño Mochuelo. La pérdida de sus inmensas sabanas de trashumancia generó desnutrición severa y pérdida del modo de vida nómada ancestral.",
+        "amparo_judicial": "Amparados por el Auto 004 de 2009 de la Corte Constitucional como etnia en inminente extinción física y cultural que demanda medidas urgentes de salvaguarda lingüística y territorial."
+      }
+    },
+    {
+      "id": "mariposo",
+      "nombre": "Mariposo (Comunidades nómadas de sabana abierta)",
+      "autodenominacion": "Amorúa / Jamorúa (facción nómada de sabana abierta conocida como Mariposo)",
+      "exonominacion_colonial_republicana": "Mariposos (apodo impuesto por colonos por su movilidad incesante de mata en mata como mariposas de sabana)",
+      "clasificacion_linguistica": {
+        "tronco": "Familia Guahibana",
+        "rama": "Rama Central (complejo Amorúa-Cuiba)",
+        "lengua": "Mariposo / Amorúa de sabana",
+        "vitalidad": "En peligro crítico (fuerte presión de asimilación lingüística por el Sikuani mayoritario y el español)"
+      },
+      "distribucion_geografica_y_territorial": {
+        "departamentos": [
+          "Vichada",
+          "Casanare"
+        ],
+        "municipios": [
+          "Santa Rosalía",
+          "La Primavera",
+          "Puerto Carreño",
+          "Paz de Ariporo"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Meta",
+          "Río Bita",
+          "Río Tomo",
+          "Caño Mochuelo"
+        ],
+        "ecosistemas_especificos": [
+          "Sabanas abiertas de altillanura plana no inundable y bancos altos",
+          "Matas de monte aisladas (islas boscosas en medio del pajonal)",
+          "Morichales lineales de cabecera de caño",
+          "Playones de arenas blancas del río Meta"
+        ],
+        "resguardos_y_asentamientos": [
+          "Comunidades dentro del Resguardo Caño Mochuelo (Casanare)",
+          "Familias dispersas en asentamientos ribereños del río Meta (Vichada)"
+        ]
+      },
+      "demografia_y_censo": {
+        "poblacion_estimada": "Aproximadamente 120 a 200 personas.",
+        "vulnerabilidad_demografica": "Dispersión familiar extrema, subregistro censal recurrente y condiciones sanitarias precarias que amenazan su continuidad biológica."
+      },
+      "filogenia_y_analisis_linguistico": {
+        "posicion_filogenetica": "Variante dialectal intrínsecamente relacionada con la lengua Amorúa de la familia Guahibana. Posee distinciones fonéticas en el timbre de las vocales centrales (/ɨ/) y un repertorio de términos vinculados a la recolección botánica de sabana seca que difiere del Sikuani estándar.",
+        "riesgo_de_extincion": "La pérdida de las rutas de movilidad ha fragmentado la comunidad de habla, quedando reducida a conversaciones entre ancianos en el ámbito doméstico."
+      },
+      "modo_de_vida_y_adaptacion_a_la_sabana": {
+        "nomadismo_interfluvial": "Eran célebres por su capacidad de atravesar a pie descalzo inmensas extensiones de sabana abrasadora entre el río Casanare y el río Tomo. Se movían en bandas familiares pequeñas, utilizando las matas de monte como refugios térmicos durante las horas de sol canicular.",
+        "campamentos_trashumantes": "Levantaban paravientos desmontables armados con varas de madera de sabana atadas con bejucos y cubiertas con hojas de palma de moriche (Mauritia flexuosa) o mapora (Attalea butyracea). Al agotarse las frutas o la caza local, desmantelaban el refugio sin dejar alteraciones en el entorno natural.",
+        "tecnologia_de_arqueria_y_caza": {
+          "arcos_de_chonta_negra": "Arcos largos confeccionados de chonta negra seleccionada por su dureza, con cuerdas de cumare (Astrocaryum chambira) trenzadas con resinas protectoras.",
+          "puntas_oseas_de_caza": "Flechas de caña brava con puntas de hueso pulido de pierna de saíno y chigüiro para derribar venados sabaneros (Odocoileus cariacou) y pecaríes; espinas de raya para cacería subacuática.",
+          "cosecha_estacional_de_huevos": "En verano descendían a las amplias playas del río Meta para cosechar millares de huevos de charapa (Podocnemis expansa) y terecay (Podocnemis unifilis), base proteica indispensable para la estación seca."
+        },
+        "recoleccion_silvestre": "Cosecha de moriche, pepas de palma real, mieles de abejas nativas y extracción de raíces tuberosas silvestres de sabana resistentes a la sequía."
+      },
+      "sistema_medico_chamanismo_y_etnobotanica": {
+        "uso_del_yopo_y_tabaco": "Inhalación de Yopo (Anadenanthera peregrina) mediante tubos nasales de hueso de garza para trance adivinatorio y orientación de las marchas de cacería; sahumerios de tabaco soplado para bendecir las armas y curar el espanto de los niños.",
+        "medicina_para_quemaduras_y_picaduras": {
+          "alcornoque_para_quemaduras": "Emplastos fríos de corteza de alcornoque (Bowdichia virgilioides) para tratar las graves quemaduras causadas por las llamaradas de pajonal estacional.",
+          "picadura_de_mantarraya": "Aplicación inmediata de compresas muy calientes para desnaturalizar las toxinas del aguijón de Potamotrygon, lavado con corteza astringente y cataplasmas de bejuco de guaco (Mikania) para prevenir necrosis tisular."
+        }
+      },
+      "memoria_historica_violencia_y_vulnerabilidad": {
+        "las_cacerias_de_indios": "Al igual que los Cuiba y Tsiripu, los Mariposo fueron víctimas directas de las 'guahibiadas' ejecutadas por hacendados ganaderos que consideraban que los indígenas 'asustaban y mataban las reses'. Muchas bandas fueron emboscadas a balazos en los playones del Meta.",
+        "crisis_humanitaria_actual": "La instalación de cercas de alambre de púa en los hatos ganaderos y la expansión de monocultivos agroindustriales (palma aceitera y pino) bloquearon sus caminos de sabana. Confinados en Caño Mochuelo o en la periferia de pueblos del Meta, sufren mendicidad y desnutrición.",
+        "amparo_constitucional": "Protegidos por el Auto 004 de 2009 de la Corte Constitucional como pueblo originario en situación de extrema vulnerabilidad y peligro inminente de desaparición física."
+      }
+    },
+    {
+      "id": "cuiba",
+      "nombre": "Cuiba (Wamonae / Kuiva) y sus Subgrupos",
+      "autodenominacion": "Wamonae ('Nosotros mismos' / 'La verdadera gente de la sabana y el río')",
+      "exonominacion_colonial_republicana": "Cuibas / Kuiva / Chiricoas (denominación general impuesta por colonos e historiadores)",
+      "clasificacion_linguistica": {
+        "tronco": "Familia Guahibana",
+        "rama": "Rama Central (complejo dialectal Cuiba)",
+        "lengua": "Cuiba (Wamonae)",
+        "vitalidad": "En peligro (amenazada por confinamiento en resguardos de hacinamiento y sedentarización forzada)"
+      },
+      "distribucion_geografica_y_territorial": {
+        "departamentos": [
+          "Arauca",
+          "Casanare",
+          "Vichada"
+        ],
+        "municipios": [
+          "Cravo Norte (Arauca)",
+          "Hato Corozal (Casanare)",
+          "Paz de Ariporo (Casanare)",
+          "La Primavera (Vichada)",
+          "Santa Rosalía (Vichada)",
+          "Tame (Arauca)",
+          "Arauquita (Arauca)"
+        ],
+        "cuencas_hidrograficas_vitales": [
+          "Río Capanaparo",
+          "Río Arauca",
+          "Río Casanare",
+          "Río Ariporo",
+          "Río Cravo Norte",
+          "Río Meta",
+          "Río Ele",
+          "Caño Mochuelo"
+        ],
+        "ecosistemas_especificos": [
+          "Sabanas inundables hiperestacionales (playones fluviales, bancos de arena, bajos y esteros)",
+          "Matas de monte y bosques de galería riparios",
+          "Morichales y dunas de sabana abierta"
+        ],
+        "resguardos_y_asentamientos": [
+          "Resguardo Indígena Caño Mochuelo (Casanare - enclave multiétnico que alberga a Masiware y Mayarí)",
+          "Resguardo La Pascua (Vichada)",
+          "Resguardo San José del Lipa (Arauca)",
+          "Comunidades del río Capanaparo y Cravo Norte"
+        ]
+      },
+      "demografia_y_censo": {
+        "poblacion_estimada": "Aproximadamente 3.200 a 4.000 personas en Colombia (más de 1.500 adicionales en el estado Apure, Venezuela).",
+        "distribucion_por_subgrupos": "Fraccionados en bandas locales históricas con distintos grados de conservación cultural y confinamiento territorial.",
+        "situacion_demografica": "Diezmados a lo largo de dos siglos de persecución ganadera; actualmente concentrados en resguardos cerrados con crisis de soberanía alimentaria."
+      },
+      "filogenia_y_analisis_linguistico": {
+        "posicion_filogenetica": "El Cuiba forma parte central de la familia Guahibana, mostrando gran cercanía léxica con el Sikuani pero con diferencias morfológicas sistemáticas: un sistema propio de clasificadores nominales según forma y función biológica, y una morfología verbal altamente aglutinante con sufijos de modo evidencial.",
+        "complejo_dialectal": "Comprende dialectos bien identificados que se corresponden con los subgrupos territoriales: Mayayero, Maimachi, Domo, Tampiwi, Chiricoa y Masiware."
+      },
+      "los_cuatro_subgrupos_fundamentales": [
+        {
+          "subgrupo_id": "chiricoa",
+          "nombre": "Subgrupo Chiricoa",
+          "territorio_historico": "Sabanas del Sarare, Arauquita, Tame y Caño Ele (Arauca).",
+          "caracteristicas_etnicas": "Antiguos guerreros y cazadores nómadas montados a caballo en el siglo XIX; sufrieron una persecución feroz que los redujo a menos de 150 sobrevivientes en San José del Lipa y Tame.",
+          "estado_actual": "En riesgo inminente de extinción física y lingüística absoluta, priorizados por el Auto 004 de 2009."
+        },
+        {
+          "subgrupo_id": "masiware",
+          "nombre": "Subgrupo Masiware (Masiguare)",
+          "territorio_historico": "Sabanas y esteros entre el río Casanare y el río Ariporo (Casanare y Arauca).",
+          "caracteristicas_etnicas": "Banda clánica de sabana anegadiza experta en la pesca estacional y caza de chigüiro; confinados hoy en su totalidad en el Resguardo Caño Mochuelo (~450 personas) sufriendo hambre por la imposibilidad de salir a sus sabanas ancestrales cercadas por haciendas.",
+          "estado_actual": "Vulnerabilidad severa por hacinamiento y pérdida de autonomía económica."
+        },
+        {
+          "subgrupo_id": "mayayero",
+          "nombre": "Subgrupo Mayayero",
+          "territorio_historico": "Cuencas de los ríos Arauca, Capanaparo y Cravo Norte.",
+          "caracteristicas_etnicas": "Especialistas de río y bosque de galería; maestros de la canoa monóxila, de la arquería subacuática para pesca de cachama y valentón, y de la cosecha de nidadas de quelonios en las playas de verano.",
+          "estado_actual": "Población binacional transfronteriza acosada por actores armados ilegales en la frontera de Cravo Norte y Apure."
+        },
+        {
+          "subgrupo_id": "mayari",
+          "nombre": "Subgrupo Mayarí",
+          "territorio_historico": "Sabanas abiertas y morichales del bajo Casanare y río Ariporo.",
+          "caracteristicas_etnicas": "Cazadores pedestres de sabana abierta especializados en la cacería de venado sabanero y armadillos; incorporados parcialmente al resguardo Caño Mochuelo.",
+          "estado_actual": "Riesgo de aculturación y pérdida de la memoria botánica tradicional."
+        }
+      ],
+      "modo_de_vida_y_adaptacion_a_la_sabana": {
+        "nomadismo_estacional_y_matas_de_monte": "Los Cuiba han constituido uno de los testimonios etnográficos más extraordinarios de nomadismo estacional en Suramérica (estudiados magistralmente por Bernard Arcand). Su ciclo anual está determinado por el ritmo binario de las aguas: en invierno (lluvias), se refugian en las 'matas de monte' de tierras altas para cazar mamíferos terrestres que huyen de las inundaciones; en verano (sequía), se dispersan por los playones de los grandes ríos.",
+        "campamentos_trashumantes": "Habitáculos extremadamente ligeros: paravientos efímeros ('chiqueros') construidos en menos de una hora con varas inclinadas cubiertas de palma de moriche o platanillo. No modifican el suelo ni talan el bosque; al levantar el campamento, la vegetación se regenera espontáneamente.",
+        "tecnologia_de_arqueria_larga_de_chonta_y_cumare": {
+          "arcos_monumentales": "Arcos de arquería larga de entre 1.90 y 2.20 metros de longitud, confeccionados exclusivamente con madera de chonta negra (Bactris gasipaes o Iriartea deltoidea). Esta madera posee una densidad extraordinaria y un módulo de elasticidad que permite almacenar una energía cinética descomunal sin quebrarse ante la humedad extrema de las sabanas.",
+          "cuerdas_de_cumare": "Cuerdas confeccionadas de fibra de palma de cumare (Astrocaryum chambira), hiladas con la técnica de rodado sobre el muslo descalzo a doble torsión compensada y saturadas con cera virgen de abejas silvestres meliponas.",
+          "puntas_oseas_y_astiles": "Vástagos rectos de caña brava silvestre (Gynerium sagittatum) emplumados con timoneras de paujil. Las puntas de caza son obras maestras de bioingeniería lítica y ósea: 1) Puntas largas de hueso labrado de tibia o fémur de pecarí y chigüiro con muescas retráctiles para asegurar el desangrado rápido de venados y saínos; 2) Puntas de aguijón caudal dentado de mantarraya de río (Potamotrygon) para cacería y pesca mayor; 3) Puntas romas de madera dura para aturdir aves sin dañar el plumaje.",
+          "especies_cazadas": "Pecarí de collar (Dicotyles tajacu), huangana (Tayassu pecari), chigüiro (Hydrochoerus hydrochaeris), venado sabanero (Odocoileus cariacou), danta (Tapirus terrestris), armadillo y lapa."
+        },
+        "cosecha_estacional_de_playa_charapa_y_terecay": {
+          "la_gran_estacion_de_verano": "Entre enero y marzo, las bandas Cuiba descienden a las inmensas playas del río Capanaparo, Casanare y Meta. Durante esta época de aguas mínimas se produce la ovoposición masiva de las tortugas charapas (Podocnemis expansa) y terecays (Podocnemis unifilis).",
+          "tecnicas_de_cosecha": "Los Cuiba rastrean pacientemente las huellas en la arena al despuntar el alba, detectan los nidos subterráneos sondeando con varillas y desentierran con las manos millares de huevos. Una parte sustancial se consume fresca; otra se cuece y deshidrata al sol sobre mantas de fibra de palma; y otra se funde a fuego lento en ollas de barro para extraer el preciado aceite de tortuga, rico en ácidos grasos, utilizado como alimento energético, repelente de insectos y medicina pectoral."
+        }
+      },
+      "sistema_medico_chamanismo_y_etnobotanica": {
+        "el_chamanismo_del_yopo": {
+          "especie_y_preparacion": "Semillas de Anadenanthera peregrina (Dopa / Yopa) tostadas y reducidas a polvo fino con cal de concha de caracol acuático fluvial (Pomacea).",
+          "la_vision_del_cazador": "Para los Cuiba, el Yopo no es sólo un ritual curativo, sino una herramienta cinegética indispensable: los ancianos y cazadores expertos inhalan Yopo al atardecer para 'soñar el camino de la caza', visualizando con exactitud dónde abrevarán los rebaños de pecaríes al día siguiente y anticipando las emboscadas de enemigos o jaguares."
+        },
+        "tabaco_de_sabana": "Inhalación de humo espeso para espantar las miasmas del bosque y consumo de pasta de tabaco (ambil) con sales vegetales alcalinas como vigorizante de marcha.",
+        "emplastos_de_corteza_de_alcornoque_para_quemaduras": {
+          "especie": "Bowdichia virgilioides Kunth (Alcornoque de sabana).",
+          "accion_terapeutica": "La corteza exterior, rica en taninos condensados astringentes y triterpenos antiinflamatorios (lupeol), se raspa fresca y se aplica en cataplasma viscosa sobre la piel quemada en incendios de sabana o accidentes con brasas, deteniendo la pérdida de suero y acelerando la cicatrización sin cicatrices retráctiles."
+        },
+        "antidotos_y_tratamiento_para_picadura_de_mantarraya_de_rio": {
+          "agente_y_gravedad": "Picadura en playones por Potamotrygon motoro u orbignyi. El veneno contiene enzimas proteolíticas y péptidos necrotizantes que causan dolor lacerante inmediato e isquemia grave.",
+          "secuencia_terapeutica": "1) Inmersión inmediata de la extremidad afectada en agua fluvial muy caliente (o aplicación de ceniza tibia de fogón) para desnaturalizar las toxinas proteicas termolábiles; 2) Decocción y lavado profundo con corteza de alcornoque y guásimo; 3) Cataplasma tópica con hojas trituradas de bejuco de guaco (Mikania spp.), cuyas altas concentraciones de cumarinas actúan como potente vasodilatador y analgésico antiinflamatorio que previene la gangrena local; 4) Sellado antiséptico con resina pura de copaiba (Copaifera officinalis)."
+        }
+      },
+      "memoria_historica_violencia_y_vulnerabilidad": {
+        "el_fenomeno_sistematico_de_las_guahibiadas": "A lo largo de los siglos XIX y gran parte del siglo XX, las sabanas de Arauca, Casanare y Vichada fueron escenario de las 'guahibiadas': expediciones de cacería humana planificadas y ejecutadas por terratenientes y peones llaneros armados a caballo con carabinas y jaurías de perros. Bajo la doctrina racista colonial de que los indígenas eran 'alimañas' o animales sin alma que competían con el ganado por el pasto y el agua, se masacraban campamentos enteros y se secuestraban a los niños ('chinitos') para explotarlos como sirvientes domésticos sin sueldo en las haciendas.",
+        "la_masacre_de_la_rubiera_1968": {
+          "los_hechos": "El 26 de diciembre de 1968, en el hato ganadero La Rubiera (municipio de Cravo Norte, Arauca), un grupo de peones y hacendados tendió una trampa a una banda pacífica de 18 indígenas nómadas Cuiba (Wamonae), invitándolos amigablemente a un asado navideño de novillo en el corral de la hacienda.",
+          "la_matanza": "Cuando los indígenas se encontraban desarmados, sentados en el suelo comiendo la carne asada, los ganaderos abrieron fuego a quemarropa con escopetas y revólveres, y remataron a los heridos a machetazos y golpes de hacha. Asesinaron a 16 personas (mujeres embarazadas, ancianos y niños pequeños) y rociaron los cadáveres con gasolina para incinerarlos. Dos indígenas heridos lograron escapar entre los pajonales y denunciaron la barbarie.",
+          "el_escandalo_del_juicio_de_villavicencio": "Capturados los asesinos confesos, fueron juzgados en 1970 en Villavicencio ante un jurado de conciencia. En sus testimonios ante el juez, declararon con absoluta naturalidad: 'Yo no sabía que matar indios era delito; en el Llano siempre se ha sabido que matar a un indio es como matar a un chigüiro o a un venado'. El jurado de conciencia los absolvió inicialmente bajo la figura de 'error de hecho invencible', desatando un escándalo de indignación moral global.",
+          "segundo_juicio_y_condena_1972": "Ante la presión mundial de antropólogos, universidades y prensa internacional, el Tribunal Superior de Villavicencio anuló el fallo absolutorio. En un segundo juicio celebrado en 1972, los perpetradores fueron condenados a 24 años de prisión, sentando el precedente histórico de que los pueblos indígenas son sujetos de plenos derechos humanos protegidos por la ley penal."
+        },
+        "el_confinamiento_en_el_resguardo_caño_mochuelo": "Para escapar de las guahibiadas, muchas bandas Cuiba (especialmente Masiware y Mayarí) fueron concentradas por el Estado en el Resguardo Caño Mochuelo (Casanare). Encerrados en 94.000 hectáreas compartidas con otras 12 etnias y rodeados de alambradas de haciendas ganaderas que les impiden cazar en las sabanas abiertas, los Cuiba sufren una crisis humanitaria crónica de desnutrición infantil, tuberculosis y colapso de su soberanía alimentaria nómada.",
+        "amparo_judicial_constitucional": "Amparados con la máxima prioridad por el Auto 004 de 2009 de la Corte Constitucional de Colombia, que ordenó la adopción urgente de medidas cautelares, restitución y ampliación de tierras ancestrales, y un plan integral de protección para evitar la extinción definitiva del pueblo Cuiba."
+      }
+    }
+  ],
+  "secciones_transversales_tematicas": {
+    "filogenia_linguistica_comparada": {
+      "descripcion": "Análisis diacrónico y sincrónico comparado de los troncos y ramas lingüísticas de las sabanas orinoquenses colombo-venezolanas.",
+      "la_familia_guahibana": {
+        "clasificacion_interna": [
+          {
+            "rama": "Rama Suroccidental",
+            "lenguas": [
+              "Jiw (Guayabero / Mitúa)"
+            ],
+            "rasgos": "Máxima divergencia temporal interna; presencia de oclusiva glotal fonémica /ʔ/, fricativa bilabial /ɸ/, africada postalveolar /tʃ/, y sílabas cerradas CVC."
+          },
+          {
+            "rama": "Rama Septentrional",
+            "lenguas": [
+              "Hitnü (Macaguane / Jitnu)",
+              "Hitanü (Iguanito)"
+            ],
+            "rasgos": "Divergencia marcada por aislamiento en bosques hiperhúmedos del Lipa; morfología verbal diferenciada y clasificadores geométricos singulares."
+          },
+          {
+            "rama": "Rama Central",
+            "lenguas": [
+              "Sikuani (Hiwi)",
+              "Cuiba (Wamonae)",
+              "Amorúa",
+              "Tsiripu",
+              "Mariposo"
+            ],
+            "rasgos": "Continuum dialectal fluido con alta inteligibilidad mutua entre variantes vecinas; subsistema simétrico de 6 vocales orales y 6 nasales fonémicas contrastivas; riguroso predominio de sílabas abiertas CV."
+          }
+        ],
+        "tabla_comparativa_fonetica_jiw_vs_sikuani": {
+          "parametro_fonetico": [
+            {
+              "rasgo": "Oclusiva glotal /ʔ/",
+              "jiw_guayabero": "Fonema pleno distintivo con pares mínimos contrastivos en raíces léxicas.",
+              "sikuani_central": "Ausente como fonema distintivo; reducida a límite de juntura alofónico o elidida por completo."
+            },
+            {
+              "rasgo": "Fricativa bilabial sorda /ɸ/",
+              "jiw_guayabero": "Presente de manera estable en posición de ataque silábico (ej. /ɸat/ 'fuego').",
+              "sikuani_central": "Inexistente; las consonantes labiales se limitan a las oclusivas /p/, /b/ y la aproximante sonora /w/."
+            },
+            {
+              "rasgo": "Africadas",
+              "jiw_guayabero": "Africada postalveolar sorda /tʃ/ ('ch') bien diferenciada.",
+              "sikuani_central": "Africada alveolar sorda /ts/ articulada con la punta de la lengua contra los alvéolos."
+            },
+            {
+              "rasgo": "Estructura silábica y codas",
+              "jiw_guayabero": "Admite codas consonánticas formando sílabas cerradas nativas CVC y VCC de acústica áspera y percusiva.",
+              "sikuani_central": "Marcada restricción a sílabas abiertas tipo (C)V; las palabras tienden a terminar invariablemente en vocal."
+            },
+            {
+              "rasgo": "Vocales nasales fonémicas",
+              "jiw_guayabero": "Ausencia de serie contrastiva independiente; la nasalidad vocálica es puramente contextual o alofónica.",
+              "sikuani_central": "Sistema fonológico doble con 6 vocales orales contrastando con 6 vocales nasales independientes (/ã/, /ẽ/, /ĩ/, /õ/, /ũ/, /ɨ̃/)."
+            }
+          ]
+        }
+      },
+      "la_singularidad_aislada_del_pume_yaruro": {
+        "debate_historico": "Considerada históricamente por diversos autores como posible miembro de macrofamilias especulativas (Macro-Chibcha, Macro-Caribe o Macro-Jê), los estudios contemporáneos exhaustivos de Esteban Emilio Mosonyi confirman su condición irrefutable de Lengua Aislada sin parientes vivos.",
+        "singularidades_tipologicas": [
+          "Morfología aglutinante con flexión acumulativa de tiempo, modo y persona en el verbo.",
+          "Sistema de ergatividad escindida: alineamiento absolutivo-ergativo condicionado por la transitividad y el aspecto verbal.",
+          "Inventario fonético con distinción de vocales nasales independientes, longitud vocálica y presencia de oclusiva glotal.",
+          "Léxico mitológico y botánico hermético, sin correspondencias cognadas en el léxico pan-guahibano circundante."
+        ]
+      }
+    },
+    "tecnologia_y_adaptacion_al_bioma_de_sabana": {
+      "dinamica_hiperestacional_de_la_orinoquia": "La altillanura y sabana inundable llanera imponen un régimen hidrológico bimodal extremo: una estación seca abrasadora (verano, diciembre a marzo) con déficit hídrico severo y quemas espontáneas de pajonal; y una estación lluviosa monzónica (invierno, abril a noviembre) donde hasta el 70% de la sabana queda sumergida bajo las aguas de desborde de los grandes ríos.",
+      "arquitectura_ligera_de_los_campamentos_trashumantes": {
+        "el_chiquero_o_paraviento": "Estructura móvil confeccionada en 30 a 60 minutos: varas flexibles de arbustos de sabana clavadas en semicírculo o en ángulo oblicuo en la arena, entrelazadas con hojas maduras de palma de moriche (Mauritia flexuosa) o mapora. No tienen paredes ni pisos elevados; su inclinación aerodinámica disipa los vientos alisios del verano y permite desalojar el agua de los aguaceros repentinos.",
+        "microclima_y_movilidad": "Al no acumular basuras permanentes ni heces en un punto fijo, el nomadismo previene la propagación de parásitos intestinales e infecciones dérmicas. El abandono periódico permite la regeneración natural de la biomasa vegetal."
+      },
+      "arqueria_larga_de_chonta_y_cumare": {
+        "madera_de_chonta_negra": "Bactris gasipaes o Iriartea deltoidea. La madera del córtex exterior de estas palmas posee haces vasculares silicificados sumamente apretados embebidos en una matriz lignificada, lo que le confiere una resistencia a la tracción superior a los 140 MPa y una elasticidad excepcional para soportar la flexión prolongada sin deformación plástica permanente.",
+        "hilado_de_la_cuerda_de_cumare": "Astrocaryum chambira. Las fibras de la cutícula foliar inmadura se extraen a mano y se tuercen sobre el muslo descalzo formando un cordel continuo de dos o tres hebras entrelazadas en torsión z/s compensada. La cuerda es encerada con cera virgen de abejas meliponas nativas, lo que sella los microporos contra el agua fluvial y evita el ablandamiento bajo la lluvia.",
+        "balistica_y_puntas_oseas": "Los arcos de 1.90 a 2.20 metros generan una curva de tracción de más de 50 a 65 libras, capaz de impulsar flechas pesadas de caña brava de 1.80 metros a través de la densa vegetación ribereña. Las puntas de hueso labrado de tibia o fémur de pecarí penetran la piel coriácea de los chigüiros y saínos rompiendo arterias mayores y provocando un choque hipovolémico fulminante."
+      },
+      "cosecha_estacional_de_playa_quelonios": {
+        "especies_recolectadas": [
+          {
+            "especie": "Tortuga Charapa (Podocnemis expansa, Familia Podocnemididae)",
+            "biologia": "El quelonio de agua dulce más grande de Suramérica (hasta 80-90 cm y más de 45 kg). Desova exclusivamente de noche en los playones arenosos consolidados entre enero y febrero; cada hembra deposita entre 80 y 150 huevos esféricos de cáscara blanda.",
+            "aprovechamiento": "Consumo de huevos frescos y cocidos; extracción tradicional de aceite de tortuga para cocinar y curar afecciones respiratorias."
+          },
+          {
+            "especie": "Tortuga Terecay (Podocnemis unifilis)",
+            "biologia": "Quelonio fluvial mediano (35-45 cm y 8-12 kg). Desova tanto de día como de noche en playones arenosos e islas fluviales; deposita de 20 a 35 huevos alargados.",
+            "aprovechamiento": "Caza manual de hembras ovopositoras y recolección intensiva de nidadas, base calórica insustituible de la trashumancia veraniega."
+          }
+        ]
+      }
+    },
+    "etnofarmacologia_medicina_tradicional_y_chamanismo": {
+      "el_yopo_dopa_yopa": {
+        "taxonomia_y_quimica": "Anadenanthera peregrina (L.) Speg. Las semillas contienen entre un 3% y un 7.5% de alcaloides triptamínicos: 5-hidroxi-N,N-dimetiltriptamina (Bufotenina), N,N-DMT y 5-metoxi-DMT.",
+        "alquimia_preparatoria": "Tostado suave de las semillas en tiesto de arcilla hasta que se desprenda la cutícula coriácea. Las almendras se muelen finamente en morteros de madera dura y se les añade un 25% a 30% de cal obtenida por calcinación de conchas de caracol de agua dulce (Pomacea urceus / Pomacea flagellata) o cenizas ricas en carbonato potásico de corteza de Cecropia o Bowdichia. La alcalinidad eleva el pH de la mezcla, liberando los alcaloides triptamínicos en forma de base libre no protonada, lo que maximiza su absorción transmembrana a través de la mucosa nasal.",
+        "parafernalia_ritual": "Tablas yoperas de madera fina (guayacán, canelo) con mangos antropomorfos y zoomorfos (figuras de anacondas y jaguares); inhaladores bifurcados en 'Y' elaborados con huesos largos huecos de aves acuáticas (alcaraván, garza).",
+        "experiencia_neurofenomenologica": "Produce un trance enteogénico fulminante a los 60 segundos de la insuflación: fosfenos luminosos, midriasis, sensación de descorporalización, vuelo chamánico hacia el estrato celeste de los espíritus creadores y revelación oracular de enfermedades y animales de monte."
+      },
+      "tabaco_de_sabana": {
+        "especies": "Nicotiana tabacum y Nicotiana rustica.",
+        "usos": "1) Sahumerio y soplo protector sobre fontanelas de neonatos y armas de caza; 2) Preparación de ambil (pasta concentrada por cocción prolongada del jugo de hojas de tabaco con cenizas vegetales ricas en sales alcalinas) que se consume colocándolo en la encía para suprimir el hambre, la fatiga y agudizar la concentración auditiva en la selva."
+      },
+      "emplastos_de_corteza_de_alcornoque_para_quemaduras": {
+        "especie_botanica": "Bowdichia virgilioides Kunth (Familia Fabaceae, subfamilia Papilionoideae / Faboideae).",
+        "nombre_vulgar": "Alcornoque de sabana, alcornoque llanero, sucupira blanca.",
+        "fitoquimica_de_la_corteza": "Contiene entre 12% y 18% de taninos condensados o procianidinas, triterpenos pentacíclicos libres y glicosilados (lupeol, ácido betulínico), alcaloides quinolizidínicos (alcorneína, bowdichina) y flavonoides astringentes.",
+        "mecanismo_terapeutico": "Al aplicarse el macerado fresco de la corteza corchosa sobre quemaduras de sabana, los taninos reaccionan con las proteínas séricas exudadas formando un coagulo protector insoluble (escara artificial) que aísla las terminaciones nerviosas dérmicas expuestas, anulando el dolor urente paroxístico. El lupeol y los flavonoides inhiben la vía de la ciclooxigenasa y lipooxigenasa reduciendo el edema inflamatorio, mientras que las propiedades bactericidas intrínsecas previenen la colonización por bacterias nosocomiales u oportunistas de sabana."
+      },
+      "protocolo_para_envenenamiento_por_mantarraya_de_rio_potamotrygon": {
+        "biologia_del_accidente": "Las mantarrayas de agua dulce (Potamotrygon motoro, Potamotrygon orbignyi, Potamotrygon schroederi) habitan en fondos lodosos y playas arenosas poco profundas. El aguijón caudal dentado está recubierto por un epitelio glandular que se desgarra al clavarse en el pie o pierna de la víctima, introduciendo un veneno necrotizante con actividad fosfodiesterásica, hialuronidásica y proteolítica que desencadena vasoespasmo severo, cianosis isquémica local, dolor lancinante intolerable y necrosis tisular profunda.",
+        "pasos_del_protocolo_indigena": [
+          {
+            "fase": "1. Termoterapia de choque (Desnaturalización proteica)",
+            "accion": "Inmersión inmediata de la extremidad lesionada en agua lo más caliente posible que el paciente pueda soportar (48°C a 52°C) o aplicación de ceniza de fogón tibia durante 60 a 90 minutos. Las toxinas y enzimas necrosantes del veneno son proteínas polipeptídicas altamente termolábiles; el calor desnaturaliza irreversiblemente su estructura terciaria y cuaternaria, inactivando la toxicidad lítica y aliviando de forma casi instantánea el dolor espasmódico."
+          },
+          {
+            "fase": "2. Lavado astringente y extraccion de esquirlas",
+            "accion": "Lavado minucioso de la herida con decocción caliente de corteza de alcornoque (Bowdichia virgilioides) y guásimo (Guazuma ulmifolia) para eliminar fragmentos del tegumento del aguijón y coagular sangrados venosos."
+          },
+          {
+            "fase": "3. Cataplasma antiofidica y vasodilatadora de Guaco",
+            "accion": "Aplicación de emplasto de hojas frescas machacadas de bejuco de guaco (Mikania glomerata / Mikania cordifolia). Las cumarinas naturales del guaco provocan vasodilatación periférica rápida, combatiendo la isquemia arterial inducida por el veneno, reduciendo el edema y bloqueando la formación de úlceras necrosantes."
+          },
+          {
+            "fase": "4. Sellado cicatrizante y bactericida",
+            "accion": "Aplicación de resina pura de bálsamo de copaiba (Copaifera officinalis) sobre la herida limpia, formando una película protectora antiséptica que acelera la granulación dérmica."
+          }
+        ]
+      }
+    },
+    "memoria_historica_genocidio_y_justicia_reparadora": {
+      "las_guahibiadas_cacerias_humanas_de_sabana": {
+        "origen_y_doctrina": "Las 'guahibiadas' fueron partidas sistemáticas de cacería humana llevadas a cabo por terratenientes, colonos y peones ganaderos en los Llanos Orientales de Colombia y Venezuela desde el periodo colonial hasta bien avanzada la segunda mitad del siglo XX. El término derivaba de la designación genérica 'guahibo' usada despectivamente para englobar a todos los pueblos indígenas trashumantes (Sikuani, Cuiba, Hitnü, Tsiripu, Mariposo).",
+        "ideologia_de_la_deshumanizacion": "El colono ganadero construyó una frontera civilizatoria violenta basada en la categorización racista del indígena como 'irracional', 'chunchu', 'salvaje' o 'animal de monte' que carecía de alma y de derechos de propiedad sobre la tierra. Los indígenas eran vistos como depredadores naturales del ganado que robaban reses para subsistir en sus antiguos territorios usurpados.",
+        "modalidad_operativa": "Hacendados y peones montaban a caballo armados con carabinas Winchester, escopetas, revólveres, machetes y perros de presa. Al divisar un campamento de nómadas en una mata de monte o playón fluvial, rodeaban el lugar y abrían fuego indiscriminado contra hombres, mujeres y ancianos. Las viviendas eran quemadas y los niños pequeños eran secuestrados para ser 'criados' como peones domésticos serviles sin salario ni escolaridad en las cocinas y corrales de las haciendas (conocidos como 'indiecitos de servicio' o 'chinitos')."
+      },
+      "la_masacre_de_la_rubiera_1968": {
+        "fecha_y_lugar": "26 de diciembre de 1968, Hato ganadero La Rubiera, jurisdicción de Cravo Norte, Intendencia Nacional de Arauca.",
+        "reconstruccion_de_la_emboscada": "Un grupo de peones y administradores ganaderos (entre ellos Marcelino Jiménez, Pedro Calderón, Luis Enrique Rondón y otros) planearon eliminar a una banda trashumante Cuiba (Wamonae) de 18 integrantes que merodeaba pacíficamente cerca del hato. Fingiendo cordialidad navideña, los invitaron a una comilona de carne de res recién asada en los corrales de la hacienda. Confiados y hambrientos, los indígenas acudieron desarmados y se sentaron en el suelo a comer.",
+        "el_ataque_armado_y_la_quema": "A una señal acordada, los colonos parapetados tras las cercas de madera abrieron fuego con escopetas y revólveres. Dieciséis personas (hombres, ancianos, mujeres embarazadas y niños de corta edad) fueron acribilladas y rematadas con machetes. Los victimarios apilaron los cadáveres en una fosa, les arrojaron leña y gasolina, y les prendieron fuego durante horas para borrar todo vestigio. Dos indígenas sobrevivientes lograron escapar heridos entre la maleza y caminaron durante días hasta alcanzar un puesto misionero en Venezuela y denunciar la atrocidad.",
+        "el_primer_juicio_de_villavicencio_1970": "Capturados los autores materiales confesos, fueron conducidos a juicio penal con jurado de conciencia en la ciudad de Villavicencio en 1970. En sus confesiones judiciales, los asesinos no mostraron arrepentimiento alguno, afirmando con frialdad: 'Para nosotros, matar un indio era como matar un chigüiro; desde pequeños nos enseñaron en el Llano que el indio era una plaga del monte'. El jurado de conciencia emitió un veredicto absolutorio fundado en la doctrina del 'error invencible de prohibición', argumentando que los imputados crecieron en una subcultura llanera donde el homicidio de indígenas era considerado una práctica habitual e impune.",
+        "la_conmocion_internacional_y_el_segundo_juicio_1972": "La absolución judicial de los autores de La Rubiera desató una ola de indignación moral sin precedentes en Colombia y en la comunidad internacional. Intelectuales, juristas, facultades de antropología de Europa y América, y comités de derechos humanos de la ONU condenaron el fallo como la legalización del genocidio racista. El Tribunal Superior de Villavicencio anuló el juicio viciado y ordenó un nuevo proceso en 1972, donde los acusados fueron declarados culpables y sentenciados a penas ejemplares de 24 años de prisión.",
+        "significado_historico": "La Rubiera fracturó para siempre el pacto de impunidad colonial en los Llanos, impulsó la organización del movimiento indígena en la Orinoquía (creación de organizaciones regionales que confluirían en la ONIC en 1982) y preparó el terreno doctrinal para el reconocimiento constitucional de la diversidad étnica en la Asamblea Constituyente de 1991."
+      },
+      "confinamiento_y_guerra_en_las_selvas_del_lipa_arauca": {
+        "geopolitica_del_conflicto": "El departamento de Arauca, particularmente las selvas del Lipa y Caño Ele habitadas por los Hitnü y Betoye, ha sido durante décadas un enclave estratégico del conflicto armado colombiano por la presencia del megacampo petrolero Caño Limón y corredores de retaguardia hacia Venezuela.",
+        "la_tragedia_de_las_minas_antipersonal": "Guerrillas del ELN (Frente Domingo Laín Sáenz) y las FARC-EP (Frentes 10 y 45) sembraron masivamente las sendas forestales con minas antipersonal (MAP) y artefactos explosivos improvisados para proteger sus campamentos de las operaciones del Ejército y de los paramilitares de las AUC. El pueblo Hitnü, eminentemente caminante y recolector, quedó atrapado en medio de un campo minado invisible.",
+        "consecuencias_vitales": "Múltiples cazadores sufrieron la pérdida de piernas y brazos al pisar artefactos mientras rastreaban saínos; mujeres que recolectaban moriche fallecieron mutiladas. El terror a las minas paralizó las expediciones de cacería y recolección, forzando a los Hitnü a confinarse en pequeños núcleos residenciales donde la escasez absoluta de alimentos derivó en una epidemia de desnutrición aguda marasmática que cobró la vida de decenas de niños."
+      },
+      "jurisprudencia_constitucional_de_salvaguarda_etnica": {
+        "auto_004_de_2009": "Hito jurídico monumental de la Corte Constitucional de Colombia (Sala de Seguimiento a la Sentencia T-025 de 2004). Declaró que los pueblos indígenas de Colombia sufren un impacto desproporcionado del conflicto armado que amenaza su supervivencia biológica y cultural, configurando un riesgo inminente de extinción física. Protegió perentoriamente a 34 pueblos originarios, incluyendo de manera taxativa a los Cuiba, Hitnü, Jiw (Guayabero) y Chiricoa, ordenando al Gobierno Nacional la formulación concertada de Planes de Salvaguarda Etnica para cada pueblo.",
+        "auto_382_de_2010_especifico_hitnu": "Providencia de seguimiento exclusiva que atiende la catástrofe humanitaria de los pueblos Hitnü y Makaguán en Arauca. La Corte ordenó: 1) Desminado humanitario urgente y prioritario en las selvas del Lipa y Caño Ele; 2) Entrega inmediata de raciones alimentarias culturalmente adecuadas y agua potable para frenar la mortandad infantil; 3) Adquisición y saneamiento de tierras no contaminadas con minas; 4) Atención médica especializada para frenar el colapso por tuberculosis.",
+        "auto_173_de_2012_especifico_jiw": "Ordenó la adopción inmediata de medidas cautelares para el pueblo Jiw (Guayabero) desterrado en el asentamiento de Barrancón (San José del Guaviare) y en el Meta, exigiendo el retorno seguro o reubicación concertada en tierras aptas, la titulación colectiva de resguardos y la atención prioritaria de la niñez indígena.",
+        "el_resguardo_caño_mochuelo_casanare": "Creado en 1986 con 94.670 hectáreas en el extremo nororiental de Casanare, Caño Mochuelo es un microcosmos multiétnico de refugio donde conviven forzadamente 14 comunidades pertenecientes a 10 pueblos indígenas distintos (Cuiba, Masiware, Mayarí, Amorúa, Tsiripu, Sikuani, Sáliba, Piapoco, Yaruro y Maiben-Masiware). El resguardo sufre un colapso ecológico inminente: las tierras son insuficientes para la caza y recolección nómada de más de 3.500 indígenas, provocando sobrepesca, agotamiento de fauna silvestre, hacinamiento y crisis de soberanía alimentaria."
+      }
+    }
+  },
+  "glosario_etnografico_y_linguistico": [
+    {
+      "termino": "Dopa / Yopa / Nupa",
+      "etimologia": "Término en lenguas de la Familia Guahibana (Hitnü, Jiw, Cuiba, Sikuani)",
+      "definicion": "Polvo enteogénico sagrado preparado a partir de las semillas tostadas y pulverizadas de Anadenanthera peregrina mezcladas con cal de caracol fluvial. Vehículo chamánico de vuelo extático, diagnóstico de enfermedades y visión oracular de la cacería de sabana."
+    },
+    {
+      "termino": "Tõhé / Tohe",
+      "etimologia": "Voz de la lengua aislada Pumé (Yaruro)",
+      "definicion": "Ceremonia litúrgica nocturna de cantos polifónicos y sahumerios de tabaco sagrado guiada por cantadores chamánicos masculinos o femeninos (tõhe kwi) para comunicarse con Kuma, la deidad creadora femenina del cosmos, y curar dolencias comunitarias."
+    },
+    {
+      "termino": "Chiquero / Enramada paraviento",
+      "etimologia": "Término vernáculo de los Llanos Orientales adoptado en la literatura antropológica",
+      "definicion": "Habitáculo rústico y efímero característico de los campamentos trashumantes Cuiba, Hitnü y Tsiripu, compuesto por varas inclinadas cubiertas con hojas de palma de moriche o platanillo, erigido en minutos y abandonado sin alterar el ecosistema de sabana."
+    },
+    {
+      "termino": "Guahibiada",
+      "etimologia": "Derivado del etnónimo Guahibo con sufijo peyorativo colonial-republicano",
+      "definicion": "Expedición punitiva y cacería humana organizada por terratenientes y peones ganaderos armados a caballo para masacrar indígenas de sabana, saquear sus campamentos y secuestrar a sus niños para servidumbre doméstica forzada en los hatos llaneros."
+    },
+    {
+      "termino": "Alcornoque de Sabana",
+      "etimologia": "Bowdichia virgilioides Kunth",
+      "definicion": "Árbol xerofítico de la sabana hiperestacional cuya corteza corchosa, sumamente rica en taninos condensados astringentes y lupeol, es utilizada en emplastos empíricos por los pueblos llaneros para curar quemaduras de tercer grado y desinfectar picaduras de mantarrayas de río."
+    },
+    {
+      "termino": "Potamotrygon",
+      "etimologia": "Género taxonómico de la familia Potamotrygonidae (mantarrayas de agua dulce)",
+      "definicion": "Peces cartilaginosos fluviales que habitan los playones y fondos limosos de los ríos llaneros; su aguijón caudal serrado inyecta un veneno proteolítico y necrotizante termolábil tratado tradicionalmente por los pueblos indígenas con inmersión en agua caliente y cataplasmas de guaco."
+    },
+    {
+      "termino": "Cumare",
+      "etimologia": "Astrocaryum chambira Burret",
+      "definicion": "Palma espinosa de sabana y piedemonte cuyas hojas tiernas proporcionan una fibra vegetal de extraordinaria tenacidad mecánica a la tracción, hilada en el muslo para confeccionar cuerdas de arquería larga, chinchorros y redes de carga."
+    },
+    {
+      "termino": "Chonta / Macana",
+      "etimologia": "Bactris gasipaes Kunth / Iriartea deltoidea",
+      "definicion": "Palma de madera negra de extrema densidad, dureza y resiliencia balística, empleada tradicionalmente por las etnias nómadas para fabricar los arcos largos de caza de más de 2 metros de longitud."
+    },
+    {
+      "termino": "Charapa y Terecay",
+      "etimologia": "Podocnemis expansa y Podocnemis unifilis",
+      "definicion": "Quelonios fluviales emblemáticos de las cuencas del Orinoco y Amazonas. Sus desoves masivos en playones arenosos durante los meses secos de verano sustentaban la dieta y trashumancia veraniega de los pueblos llaneros."
+    }
+  ]
+}

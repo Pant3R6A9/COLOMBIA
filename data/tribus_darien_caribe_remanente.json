@@ -1,0 +1,1127 @@
+{
+  "metadata": {
+    "titulo": "Atlas Etnográfico, Lingüístico y Memoria Histórica del Darién, Caribe Ancestral y Resistencia Étnica",
+    "subtitulo": "Compendio enciclopédico de alta profundidad sobre las naciones Gunadule, Mokaná, Nutabe, Senufaná y Tahamí: lingüística comparada, cosmogonía del arte de las Molas, medicina y chamanismo tradicional, arqueometalurgia y procesos contemporáneos de reconstrucción étnica y resistencia",
+    "descripcion": "Capa enciclopédica exhaustiva y rigurosa sobre cinco naciones originarias fundamentales de los litorales caribeños, las selvas del Darién-Urabá y las cuencas andinas del río Cauca, Porce y Nechí en Colombia. Contiene análisis detallados de la lingüística Chibcha y los sustratos prehispánicos extintos (Malibú, Mokaná, Nutabe, Zenú, Tahamí); la técnica y cosmología protectora de las Molas (Mor); las instituciones chamánicas del Inatuledi y el Nelé con sus cantos rituales (Ikarkana) y muñecos de balsa (Ukurwalas); el histórico reconocimiento del Pueblo Nutabe por la Resolución 0071 de 2017 del Ministerio del Interior ante la tragedia ecológica y funeraria de Hidroituango en Orobajo; el renacimiento identitario del Cabildo Mayor Mokaná en Tubará en torno al santuario megalítico de Piedra Pintada; y la etnohistoria y pervivencia orfebre y campesina de los pueblos Senufaná y Tahamí.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026",
+    "autor": "Subagente Especialista en el Darién, Caribe Ancestral y Resistencia Étnica de Colombianopedia",
+    "licencia": "Investigación Pública y Educativa - Patrimonio Cultural Inmaterial y Derechos Bioculturales de la Nación",
+    "total_naciones_documentadas": 5,
+    "naciones_incluidas": [
+      "Guna Dule (Gunadule / Tule / Cuna)",
+      "Mokaná (Mocaná)",
+      "Nutabe (Nutabes del Cañón del Río Cauca)",
+      "Senufaná (Zenufaná / Señorío del Bajo Cauca y Nechí)",
+      "Tahamí (Tahamíes de las Montañas de Antioquia)"
+    ],
+    "familias_y_sustratos_linguisticos_registrados": [
+      "Familia Chibcha - Rama Ístmica / Dóragua (Dulegaya / Gunadule)",
+      "Familia Chibcha - Rama Septentrional / Cañón del Cauca (Sustrato Lingüístico Nutabe)",
+      "Familia Malibú / Sustrato Mokaná-Malibú del Bajo Magdalena y Litoral Atlántico (Mokaná)",
+      "Tronco Macro-Chibcha / Sustrato Lingüístico Zenú (Senufaná)",
+      "Familia Chibcha - Rama Andino-Magdalénica de la Cordillera Central (Sustrato Lingüístico Tahamí)"
+    ],
+    "marcos_normativos_y_jurisprudenciales_clave": [
+      "Constitución Política de Colombia de 1991 (Artículos 7, 8, 10, 68, 70, 246 y 330: Diversidad étnica, lenguas oficiales, autonomía y jurisdicción especial indígena)",
+      "Resolución 0071 del 19 de mayo de 2017 expedida por la Dirección de Asuntos Indígenas, Rom y Minorías del Ministerio del Interior de Colombia (Reconocimiento oficial e inscripción de la Comunidad Indígena de Orobajo del Pueblo Nutabe)",
+      "Convenio 169 de la OIT sobre Pueblos Indígenas y Tribales (Ley 21 de 1991)",
+      "Corte Constitucional de Colombia - Auto 004 de 2009 (Protección de pueblos indígenas en peligro de exterminio físico y cultural por el conflicto armado, incluyendo expresamente al Pueblo Gunadule)",
+      "Corte Constitucional de Colombia - Auto 173 de 2012 (Medidas cautelares y salvaguarda urgente para pueblos amenazados del Chocó y Antioquia)",
+      "Corte Constitucional de Colombia - Sentencia T-622 de 2016 (Reconocimiento del Río Atrato, sus afluentes y comunidades ribereñas e indígenas como sujeto de derechos bioculturales)",
+      "Decreto y Registro Nacional de Cabildos del Ministerio del Interior de 1998 (Reconocimiento formal de la reemergencia del Pueblo Indígena Mokaná del Atlántico)",
+      "Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas (2007)"
+    ],
+    "instituciones_y_corpus_referencia": [
+      "Organización Nacional Indígena de Colombia (ONIC)",
+      "Congreso General de la Cultura Guna / Onmaked Nmar Danayeb (Resguardos de Arquía y Caimán Nuevo)",
+      "Cabildo Mayor Indígena Mokaná de Tubará y Consejo Regional Indígena del Atlántico (CRIA)",
+      "Cabildo Indígena del Pueblo Nutabe de Orobajo y Movimiento Ríos Vivos Antioquia",
+      "Cabildos Indígenas Zenú del Bajo Cauca (El Bagre, Zaragoza, Caucasia) y Cabildo Mayor Regional Zenú",
+      "Organización Indígena de Antioquia (OIA)",
+      "Asociación de Cabildos Mayores Indígenas del Chocó (OREWA)",
+      "Instituto Colombiano de Antropología e Historia (ICANH)",
+      "Banco de la República - Museo del Oro de Colombia",
+      "Instituto Caro y Cuervo - Seminario Andrés Bello y Atlas Lingüístico-Etnográfico de Colombia (ALEC)",
+      "Centro Colombiano de Estudios de Lenguas Aborígenes (CCELA) - Universidad de los Andes",
+      "Archivo General de la Nación de Colombia (Fondos Caciques e Indios, Visitas y Minas)"
+    ]
+  },
+  "pueblos": [
+    {
+      "id": "guna_dule",
+      "nombre_comun": "Guna Dule (Gunadule / Tule / Cuna)",
+      "autodenominacion": "Gunadule (compuesto por 'Guna' = superficie terrestre/tierra emergida, y 'Dule' = ser humano, persona originaria; literalmente: 'Persona que habita sobre la superficie de la Madre Tierra') / Tule",
+      "filiacion_etnica": "Nación originaria milenaria del Chocó Biogeográfico, el Golfo de Urabá, la Serranía del Darién y el archipiélago costero de Gunayala. Pueblo transfronterizo con autogobierno ancestral y sistema milenario de congresos generales.",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Rama Ístmica / Grupo Dóragua-Chibcha (históricamente afín a la lengua Cueva y emparentada con el Bribri, Cabécar, Ngäbe-Buglé y Teribe)",
+        "idioma": "Dulegaya (Gunagaya / Lengua del Pueblo Dule)",
+        "vitalidad": "Vital en sus comunidades nativas. En los resguardos colombianos de Arquía y Caimán Nuevo más del 78% de la población mantiene el Dulegaya como lengua materna y de comunicación hogareña y asamblearia, coexistiendo en bilingüismo diglósico con el español. Reconocida como patrimonio lingüístico inmaterial de la Nación.",
+        "descripcion_fonologica": {
+          "sistema_vocalico": "Consta de 4 timbres vocálicos fonémicos fundamentales: /a/, /e/, /i/, /u/ (con ausencia de vocal posterior media /o/ en el sistema prototípico profundo, articulándose en ocasiones alofónicamente). Presenta oposición fonológica distintiva entre vocales breves y vocales largas (p. ej. 'ba' vs 'baa'), lo que incide en el significado lexical y aspectual.",
+          "sistema_consonantico": "Posee un inventario de 17 segmentos consonánticos estructurado mediante una rigurosa correlación de tensión y longitud fonológica: oposición entre consonantes laxas/lenes (cortas, sonoras o fricativizadas intervocálicamente) y consonantes tensas/geminadas (oclusivas sordas largas y fuertes: /p/ vs /pp/, /t/ vs /tt/, /k/ vs /kk/, /s/ vs /ss/, /m/ vs /mm/, /n/ vs /nn/, /l/ vs /ll/). Incluye además vibrante alveolar simple /r/ y aproximantes semiconsonánticas /w/ y /y/.",
+          "rasgos_prosodicos_y_acento": "Acento dinámico preferencialmente penúltimo con modulación melódica tonal en los registros poéticos y de canto litúrgico, donde la duración vocálica se prolonga rítmicamente para marcar las cláusulas ceremoniales."
+        },
+        "morfosintaxis": {
+          "tipologia": "Lengua predominantemente aglutinante, sufijadora y con rasgos polisintéticos en la incorporación nominal verbal. Marcada riqueza en morfemas derivativos y flexivos de modo, tiempo, aspecto y evidencialidad.",
+          "orden_sintactico_basico": "SOV (Sujeto - Objeto - Verbo). El orden puede variar a OSV en contextos de topicalización enfática en los discursos del Onmaked.",
+          "sistema_de_clasificadores_numerales": "Excepcional sistema de clasificadores numerales obligatorios que cuantifican a los sustantivos según su morfología espacial, volumen o esencia: sufijo '-kwa' para objetos esféricos o redondeados (frutas, piedras, semillas); '-sar' o '-mar' para árboles, maderas y troncos; '-ka' para hojas delgadas y telas; '-dule' para seres humanos; '-walu' para objetos largos cilíndricos.",
+          "evidencialidad": "Sufijos verbales obligatorios que especifican si la acción fue vista directamente por el hablante, inferida por huellas o transmitida por el relato mítico de los ancestros."
+        },
+        "registros_sociolinguistiques": {
+          "registro_cotidiano": "Sunmakked: habla coloquial y doméstica utilizada en la vida cotidiana familiar, faenas agrícolas y pesca.",
+          "registro_liturgico_asambleario": "Igar sunmakke / Suar mimi: lenguaje sacerdotal y poético empleado por los Saklas (autoridades) en el Onmaked (asamblea comunitaria). Emplea vocablos arcaicos, metáforas cosmológicas complejas y paralelismos formales.",
+          "registro_terapeutico_chamanico": "Gandur sunmakke / Inamar igar: lenguaje esotérico empleado por los cantores y médicos (Inatuledis y Gandures) en las curaciones rituales, incomprensible para el común de la gente y articulado a espíritus tutelares."
+        },
+        "vocabulario_ancestral_glosado": [
+          {
+            "termino": "Bab Dumat",
+            "traduccion": "El Gran Padre Cósmico / Creador Primordial",
+            "etimologia": "De 'Baba' (padre) y 'Dumat' (grande, inmenso, soberano).",
+            "categoria": "Teónimo / Cosmogonía",
+            "hermeneutica_o_uso": "Principio espiritual masculino que concibió la estructura del cosmos en colaboración armónica con la Madre Creadora."
+          },
+          {
+            "termino": "Nan Dumat / Nabgwana",
+            "traduccion": "La Gran Madre / La Madre Tierra Sagrada",
+            "etimologia": "De 'Nana' (madre), 'Dumat' (inmensa), y 'Nabgwana' (vientre de la tierra viva).",
+            "categoria": "Teónimo / Filosofía",
+            "hermeneutica_o_uso": "Entidad cósmica primordial viviente. El planeta Tierra no es considerado un objeto físico inerte sino el vientre nutricio femenino que provee la existencia a todos los seres."
+          },
+          {
+            "termino": "Mor / Mola",
+            "traduccion": "Vestimenta tradicional de capas / Tejido del alma femenina",
+            "etimologia": "Voz ancestral dulegaya para camisa, vestimenta protectora y tela superpuesta.",
+            "categoria": "Arte textil / Símbolo cosmológico",
+            "hermeneutica_o_uso": "Pieza textil de capas de tela recortadas con la técnica de aplicación invertida. Representa la arquitectura laberíntica del cosmos y opera como coraza espiritual."
+          },
+          {
+            "termino": "Galu (pl. Galukana)",
+            "traduccion": "Fortaleza cósmica / Recinto sagrado laberíntico de los espíritus",
+            "etimologia": "Raíz 'Galu' que denota muralla, cerco sagrado o estrato dimensional inexpugnable.",
+            "categoria": "Cosmología / Geografía sagrada",
+            "hermeneutica_o_uso": "Lugares espirituales ubicados en las montañas, el mar y los distintos estratos cósmicos donde residen los amos de los animales, plantas y las matrices del diseño textil."
+          },
+          {
+            "termino": "Nia",
+            "traduccion": "Espíritu hostil / Entidad patógena desestabilizadora / Demonio",
+            "etimologia": "Término primordial para designar entes invisibles caóticos.",
+            "categoria": "Ontología espiritual / Medicina",
+            "hermeneutica_o_uso": "Fuerzas del caos que acechan a las personas para raptar su 'purba' (alma/sombra), provocando enfermedades graves, locura o muerte."
+          },
+          {
+            "termino": "Purba",
+            "traduccion": "Alma / Doble invisible / Esencia espiritual inmaterial",
+            "etimologia": "Concepto central de la ontología dule: la sombra vital que anima a todo cuerpo vivo, árbol, roca o río.",
+            "categoria": "Ontología animista",
+            "hermeneutica_o_uso": "Todo lo creado posee 'purba'. La pérdida o cautiverio del 'purba' a manos de un Nia es la causa causal de toda patología según la medicina gunadule."
+          },
+          {
+            "termino": "Inatuledi",
+            "traduccion": "Médico herbolario / Botánico tradicional / Conocedor de las plantas",
+            "etimologia": "De 'Ina' (medicina vegetal, planta curativa) y 'Tuledi' (quien guía, domina o administra).",
+            "categoria": "Institución médica",
+            "hermeneutica_o_uso": "Sabio botánico que adquiere su conocimiento mediante riguroso aprendizaje empírico con ancianos maestros. Diagnostica y prepara pócimas, baños y sahumerios."
+          },
+          {
+            "termino": "Nelé (Nele)",
+            "traduccion": "Vidente nato / Clarividente chamánico / Soberano de los sueños",
+            "etimologia": "Voz ancestral asociada a la luz interior, la membrana sagrada y la visión espiritual.",
+            "categoria": "Institución chamánica",
+            "hermeneutica_o_uso": "Chamán que no se hace por voluntad propia sino que es reconocido al nacer por haber nacido envuelto en el saco amniótico íntegro. Posee la facultad innata de viajar al mundo invisible en sueños."
+          },
+          {
+            "termino": "Ikarkana (Igar / Ikar)",
+            "traduccion": "Caminos sagrados / Cantos terapéuticos y cósmicos rituales",
+            "etimologia": "De 'Ikar' (camino, vía, sendero) y el sufijo pluralizador '-kana'.",
+            "categoria": "Canto litúrgico y curativo",
+            "hermeneutica_o_uso": "Largos cantos orales en verso esotérico que trazan el camino espiritual que el médico y sus espíritus aliados recorren para rescatar el alma enferma o guiar el nacimiento."
+          },
+          {
+            "termino": "Ukurwala (Ukkurwala)",
+            "traduccion": "Árbol sagrado de balsa / Madera líder de los muñecos protectores",
+            "etimologia": "Nombre científico Ochroma pyramidale. 'Ukkur' (balsa) y 'Wala' (árbol/tronco).",
+            "categoria": "Etnobotánica sagrada / Escultura ritual",
+            "hermeneutica_o_uso": "Considerado el rey y líder del bosque. De su madera liviana y viva se tallan los muñecos protectores 'nuchukana' para alojar espíritus curativos."
+          },
+          {
+            "termino": "Nuchu (pl. Nuchukana)",
+            "traduccion": "Muñeco de madera consagrado / Receptáculo de espíritu guardián",
+            "etimologia": "De la raíz 'Nuchu', intermediario espiritual antropomorfo o zoomorfo.",
+            "categoria": "Objeto litúrgico medicinal",
+            "hermeneutica_o_uso": "Figuras talladas en maderas sagradas (balsa, cedro, mangle). No son ídolos de adoración sino casas somáticas temporales donde habitan espíritus auxiliares que defienden la casa y al enfermo."
+          },
+          {
+            "termino": "Muu",
+            "traduccion": "La Gran Abuela Creadora / Fuerza cósmica de la gestación uterina",
+            "etimologia": "Arquetipo femenino primordial del útero y de la modelación del feto.",
+            "categoria": "Cosmogonía / Obstetricia sagrada",
+            "hermeneutica_o_uso": "Deidad femenina que modela los órganos y extremidades del embrión en el vientre materno. Si retiene con excesivo celo el alma de la madre, produce partos distócicos o hemorragias."
+          },
+          {
+            "termino": "Sabdur",
+            "traduccion": "Jagua / Fruto sagrado de tintura negra protectora",
+            "etimologia": "Genipa americana. Fruto cuya savia se oxida en un color negro azabache indeleble.",
+            "categoria": "Etnobotánica / Pintura corporal",
+            "hermeneutica_o_uso": "Savia utilizada para la pintura corporal ancestral que antecedió a las molas. Su aroma y color repelen la mirada nociva de los Nia y fortalecen la piel."
+          },
+          {
+            "termino": "Nisar",
+            "traduccion": "Bija / Achiote sagrado de tintura roja vital",
+            "etimologia": "Bixa orellana. Pigmento vegetal rojo carmesí.",
+            "categoria": "Etnobotánica / Pintura ritual",
+            "hermeneutica_o_uso": "Símbolo de la sangre, el vigor solar y la fertilidad. Se aplica en el rostro de las mujeres y en ritos de pubertad."
+          },
+          {
+            "termino": "Warsi",
+            "traduccion": "Tabaco ceremonial en rollo o pipa ritual",
+            "etimologia": "Nicotiana tabacum de cultivo tradicional dule.",
+            "categoria": "Planta sagrada de humo",
+            "hermeneutica_o_uso": "El tabaco se fuma 'al revés' (con la brasa hacia adentro de la boca) por el curandero para proyectar un cono de humo denso purificador sobre los nuchus y el paciente."
+          },
+          {
+            "termino": "Sía",
+            "traduccion": "Cacao sagrado",
+            "etimologia": "Theobroma cacao. Grano fundamental de sahumerio.",
+            "categoria": "Planta sagrada ceremonial",
+            "hermeneutica_o_uso": "Ocho o dieciséis granos de cacao son arrojados en los braseros de barro ('sia saba') durante las ceremonias para alimentar a los nuchus y purificar el aire con su fragancia."
+          },
+          {
+            "termino": "Inna Suit",
+            "traduccion": "La Gran Fiesta de la Chicha Larga / Rito Mayor de Pubertad Femenina",
+            "etimologia": "De 'Inna' (chicha fermentada de maíz y caña) y 'Suit' (largo, solemne, de varios días).",
+            "categoria": "Rito de paso",
+            "hermeneutica_o_uso": "Ceremonia comunitaria solemne en la que se corta ritualmente el cabello de la doncella que ha alcanzado la pubertad, consagrándola como mujer adulta bajo el resguardo de la mola."
+          },
+          {
+            "termino": "Iko Inna",
+            "traduccion": "Ceremonia de la perforación del tabique nasal",
+            "etimologia": "De 'Iko' (aguja/punzón de espina) e 'Inna' (chicha ritual).",
+            "categoria": "Rito de paso corporal",
+            "hermeneutica_o_uso": "Rito infantil femenino en el cual se perfora el tabique nasal para colocar la argolla de oro ('olasu'), insignia de pureza e identidad inalienable de la mujer gunadule."
+          },
+          {
+            "termino": "Sakla (Sahila)",
+            "traduccion": "Autoridad comunitaria civil y moral / Cacique de cabildo",
+            "etimologia": "Cabeza del consejo, líder que canta las leyes ancestrales acostado en la hamaca del Onmaked.",
+            "categoria": "Organización política tradicional",
+            "hermeneutica_o_uso": "Líder electo que guía a la comunidad no por la fuerza armada sino por la autoridad ética de su palabra y su dominio de la historia oral."
+          },
+          {
+            "termino": "Onmaked Dumat",
+            "traduccion": "Congreso General de la Cultura / Magna Asamblea",
+            "etimologia": "De 'Onmaked' (reunión, asamblea de deliberación) y 'Dumat' (suprema).",
+            "categoria": "Sistema de gobierno propio",
+            "hermeneutica_o_uso": "Máximo órgano de decisión política, jurídica y cultural del pueblo Gunadule, donde se armonizan las normas comunitarias y se defiende la soberanía territorial."
+          }
+        ],
+        "toponimia_y_flora_rescatada": [
+          {
+            "termino": "Maggilagundiwala",
+            "tipo": "Topónimo e hidrónimo mayor",
+            "significado_tradicional": "Río del señor Maggila / Asentamiento del resguardo ancestral de Arquía",
+            "municipio_o_area": "Unguía, Chocó (costa occidental del Golfo de Urabá / bajo Atrato)",
+            "contexto_etnobotanico_o_geografico": "Cuenca fluvial rica en manglares y selvas aluviales donde habita la comunidad Gunadule de Arquía, custodios del límite biogeográfico del Darién."
+          },
+          {
+            "termino": "Ibgigundiwala",
+            "tipo": "Topónimo e hidrónimo mayor",
+            "significado_tradicional": "Río del árbol de higuerón o de la bonga / Resguardo de Caimán Nuevo",
+            "municipio_o_area": "Necoclí y Turbo, Antioquia (costa oriental del Golfo de Urabá)",
+            "contexto_etnobotanico_o_geografico": "Territorio ancestral de llanuras litorales y colinas bajas del Urabá antioqueño, caracterizado por sus estuarios, cocoteros y cultivos de vega."
+          },
+          {
+            "termino": "Ukkurwala (Ochroma pyramidale)",
+            "tipo": "Fitónimo sagrado",
+            "significado_tradicional": "Árbol de balsa, soberano de las maderas terapéuticas",
+            "municipio_o_area": "Selvas del Darién y estribaciones de la Serranía de Abibe",
+            "contexto_etnobotanico_o_geografico": "Especie biológica clave (Cultural Keystone Species) empleada indispensablemente para el tallado de los muñecos nuchukana por su naturaleza porosa que alberga esencias espirituales."
+          },
+          {
+            "termino": "Bisep (Ocimum micranthum / Basilicum silvestre)",
+            "tipo": "Fitónimo medicinal aromático",
+            "significado_tradicional": "Planta sagrada de fragancia dulce celestial",
+            "municipio_o_area": "Huertos familiares de Arquía y Caimán Nuevo",
+            "contexto_etnobotanico_o_geografico": "Una de las cuatro hierbas cósmicas odoríferas (junto a Kowa, Nono y Siakwa) utilizada para baños de atracción espiritual y apaciguamiento de la mente."
+          },
+          {
+            "termino": "Ailagundiwala",
+            "tipo": "Topónimo fluvial",
+            "significado_tradicional": "Río de los árboles de mangle rojo",
+            "municipio_o_area": "Delta del río Atrato y ciénagas de Marriaga",
+            "contexto_etnobotanico_o_geografico": "Canales de navegación tradicional en canoas monóxilas para la recolección de moluscos y pesca de camarón."
+          }
+        ]
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Chocó",
+          "Antioquia"
+        ],
+        "municipios": [
+          "Unguía (Chocó)",
+          "Necoclí (Antioquia)",
+          "Turbo (Antioquia)"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Arquía",
+          "Río Atrato (delta y bocas del Atrato)",
+          "Río Caimán Nuevo",
+          "Río Necoclí",
+          "Litoral del Golfo de Urabá y Mar Caribe"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Indígena Maggilagundiwala (Arquía), constituido formalmente en el municipio de Unguía (Chocó)",
+          "Resguardo Indígena Ibgigundiwala (Caimán Nuevo), constituido en los municipios de Turbo y Necoclí (Antioquia)"
+        ],
+        "asentamientos_emblematicos": [
+          "Arquía (cabecera comunitaria en Chocó)",
+          "Caimán Nuevo Central",
+          "Caimán Viejo",
+          "Zapzurro y Capurganá (asentamientos históricos de tránsito ancestral)",
+          "Bocas del Atrato y Titumate"
+        ],
+        "pisos_termicos_y_ecosistemas": "Litoral marino costero, estuarios salobres, manglares densos de Rhizophora y Avicennia, llanuras aluviales húmedas y vertientes de la Serranía del Darién (0 a 600 msnm). Bosque muy húmedo tropical (bmh-T).",
+        "poblacion_estimada_y_censo": "Aproximadamente 2.600 a 3.100 personas en territorio colombiano según el censo del DANE y los censos propios del Onmaked Nmar Danayeb. Forman parte de una nación binacional transfronteriza de más de 85.000 personas sumando las cuatro comarcas de Panamá (Gunayala, Madungandí, Wargandí y Tagarkunyal)."
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral_y_etnohistoria": "Los Gunadule son los herederos directos de las sociedades orfebres y ribereñas que poblaron las márgenes del Golfo de Urabá y el Darién mucho antes de la era cristiana. Protagonizaron el primer contacto de resistencia continental contra las huestes invasoras de Alonso de Ojeda, Rodrigo de Bastidas y Vasco Núñez de Balboa. Los Gunadule atacaron y lograron la ruina de la colonia de San Sebastián de Urabá (1510) mediante flechas envenenadas y forzaron el repliegue de los primeros campamentos castellanos.",
+        "alianza_con_corsarios_y_rebelion_colonial": "Durante los siglos XVII y XVIII, para contrarrestar la feroz dominación y las expediciones de castigo de la Real Audiencia de Santa Fe, los líderes Gunadule establecieron alianzas geopolíticas con piratas, bucaneros y corsarios ingleses y franceses, así como con la fallida colonia escocesa de Nueva Caledonia en Darién (1698). Su conocimiento de los intrincados manglares y ríos impidió la consolidación de asentamientos coloniales españoles en el Darién.",
+        "la_revolucion_dule_de_1925_y_autonomia": "En febrero de 1925, guiados por el Nelé Kantule y Simral Colman, el pueblo se levantó en armas en la histórica Revolución Dule frente a los intentos del gobierno panameño de prohibir forzosamente el uso de las molas, la argolla nasal y la lengua materna, logrando la firma de tratados que crearon el régimen autonómico de comarcas indígenas más sólido de América Latina, con repercusiones de dignidad en las comunidades de Colombia.",
+        "el_conflicto_armado_colombiano_y_el_auto_004": "A partir de la década de 1980, los resguardos colombianos de Arquía y Caimán Nuevo quedaron atrapados en la encrucijada del conflicto armado por el control geoestratégico del Urabá y la frontera con Panamá. Padecieron asesinatos selectivos de autoridades tradicionales, confinamiento forzoso por minas antipersonal y presiones de frentes guerrilleros y bloques paramilitares (AUC - Bloques Bananero y Elmer Cárdenas). En respuesta, la Corte Constitucional emitió el Auto 004 de 2009, declarando al pueblo Gunadule como una de las naciones indígenas en inminente riesgo de exterminio físico y cultural, ordenando un Plan de Salvaguarda Étnica integral.",
+        "organizacion_representativa": "Gobierno autónomo ejercido por el Onmaked Nmar Danayeb (Congreso General de la Cultura y Congreso General Político Gunadule de Colombia), articulado binacionalmente con el Congreso General de Gunayala y representado ante las instancias nacionales por la OIA (Antioquia), OREWA (Chocó) y la ONIC."
+      },
+      "cosmovision_y_espiritualidad": {
+        "mitologia_de_origen": "El cosmos fue concebido por Bab Dumat y Nan Dumat como una estructura multidimensional compuesta por dieciséis estratos superpuestos: ocho niveles celestes en el supramundo y ocho niveles en el inframundo o vientre de Nabgwana. En el centro de la creación creció el inmenso árbol mítico de la vida y el agua (Paluwala), cuyas ramas sostenían los ríos, las semillas de todas las plantas comestibles y las especies animales.",
+        "el_arte_sagrado_de_las_molas": {
+          "denominacion_vernacula": "Mor / Mola (pl. Molagana)",
+          "tecnica_textil_de_aplicacion_invertida": "Las molas son confeccionadas exclusivamente por las mujeres mediante la técnica de 'aplicación invertida' (reverse appliqué). Consiste en superponer de 2 a 7 capas de telas finas de algodón de colores contrastantes (rojo, amarillo, azul marino, verde y negro). Con tijeras finas y afiladas, la artesana corta con precisión milimétrica franjas y motivos geométricos en la capa superior, doblándolos hacia adentro y cosiéndolos con puntadas microscópicas invisibles para dejar al descubierto el color de las telas subyacentes, creando texturas de relieve visual de asombrosa sofisticación óptica.",
+          "transicion_desde_la_pintura_corporal_ancestral": "Originalmente, en la época prehispánica y temprana colonia, la cosmovisión y los diagramas protectores no se plasmaban sobre telas sino directamente sobre la epidermis humana. Hombres y mujeres cubrían sus cuerpos desnudos con elaborados laberintos, grecas y espirales trazados con el tinte negro de 'sabdur' (jagua) y el rojo de 'nisar' (bija). Con la penetración comercial de telas europeas de algodón liso a partir de los siglos XVIII y XIX, las sabias mujeres Gunadule transfirieron las pinturas corporales sagradas al soporte textil de las blusas, preservando la misma función mística en un nuevo formato material.",
+          "revelacion_mitica_y_la_heroina_nagagiryai": "La tradición oral enseña que los diseños de las molas no fueron una invención humana mundana, sino una revelación cósmica. La gran sabia y heroína civilizadora Nagagiryai (también llamada Kikadiryai) fue elegida por los dioses para viajar en éxtasis chamánico hacia los recintos sagrados de 'Galu Dugbis' y 'Galu Matutu'. Allí contempló los vestidos celestiales que lucían las hijas de Nan Dumat y las deidades de las nubes y las flores. Al descender nuevamente a la tierra física, Nagagiryai enseñó a las mujeres la técnica de cortar y tejer los misterios del universo en las telas.",
+          "simbolismo_de_los_caminos_laberinticos_galus": "Las composiciones abstractas de las molas tradicionales ('mola nuchu', 'mola sergan') representan las fortalezas cósmicas o 'Galus'. Sus grecas, espirales continuas y caminos laberínticos reproducen los senderos del cosmos y los desfiladeros del inframundo por donde deben transitar las almas. Los patrones nunca se cierran abruptamente: presentan desvíos y encrucijadas que simbolizan la infinita complejidad de la vida y la interconexión de todas las criaturas.",
+          "funcion_protectora_apotropaica_contra_el_nia": "La mola posee una función de escudo protector espiritual fundamental. Los 'Nia' (espíritus patógenos malignos) acechan continuamente en los bosques, manglares y senderos. Los intrincados laberintos geométricos de las telas atrapan, deslumbran y confunden la mirada del Nia. Al no poder encontrar la entrada ni la salida del dédalo visual tejido en el pecho y la espalda de la mujer, el espíritu maléfico queda desorientado e imposibilitado de penetrar los orificios vitales de la persona para succionar su 'purba'.",
+          "proteccion_del_feto_y_la_mujer_gestante": "Durante el embarazo, la mujer y la criatura en desarrollo son sumamente frágiles ante el asalto de entidades invisibles. La fuerza primordial femenina 'Muu' guía la maduración embrionaria en el vientre. Si un Nia interfiere, el feto puede nacer deforme o morir. La mola que viste la gestante actúa como una muralla de contención física y energética que sella el vientre materno. Asimismo, en las ceremonias de paso femenino (Inna Suit o fiesta del corte de cabello y paso a la adultez; e Iko Inna o perforación del tabique para el anillo de oro), la mola consagra el cuerpo de la mujer como templo inviolable de la vida y portador de la memoria étnica de la nación."
+        },
+        "medicina_ancestral_y_chamanismo": {
+          "la_dualidad_medica_inatuledi_vs_nele": "La medicina tradicional Gunadule está estructurada bajo una magistral división de sabiduría entre el Inatuledi (médico botánico empírico) y el Nelé (clarividente chamánico nato). Mientras el Inatuledi cura a través del conocimiento experimental de las plantas y sus dosis materiales, el Nelé opera en el plano metafísico y espiritual.",
+          "el_nele_vidente_de_nacimiento_con_saco_amniotico": "El Nelé no elige su condición ni aprende su don en una escuela humana: nace predestinado. Es identificado al nacer porque llega al mundo envuelto completamente en el saco amniótico intacto (el 'velo sagrado' o membrana placentaria). Las parteras y ancianos reconocen la señal de los grandes profetas. El Nelé posee la capacidad congénita de ver a través de las cosas visibles, comunicarse con los espíritus amos de la selva y viajar durante el sueño ('gabed') a las profundidades de los mundos inferiores para descubrir qué espíritu Nia ha secuestrado el alma del enfermo, diagnosticando el origen invisible del padecimiento.",
+          "el_inatuledi_maestro_botanico": "El Inatuledi es el sabio farmacólogo de la comunidad. Dedica décadas a estudiar bajo la tutela de un maestro anciano los secretos de cientos de especies de plantas de la selva primaria y los manglares: sus hojas, lianas, raíces, cortezas y exudados resinosos. Sabe a qué hora del día debe ser recolectada cada planta, cómo deben ser orientadas las raíces y qué rezos propiciatorios deben pronunciarse para despertar el 'purba' curativo del vegetal.",
+          "cantos_medicinales_ceremoniales_ikarkana": [
+            {
+              "nombre_canto": "Muu-Ikar (Muu-Igala)",
+              "traduccion_y_funcion": "El Camino de Muu / El gran canto épico para el parto dificultoso",
+              "descripcion_ritual": "Cuando una mujer en cinta experimenta un trabajo de parto obstruido o hemorragias graves que ponen en peligro su vida, el cantor sagrado entona este monumental canto épico de miles de versos. El canto narra el viaje espiritual del chamán y su ejército de muñecos de madera (nuchukana) hacia el palacio de la abuela primordial Muu, quien en su afán creador ha retenido el alma de la parturienta. El médico libra una batalla chamánica en los senderos uterinos cósmicos, vence a los monstruos que custodian la matriz y libera el alma de la madre, permitiendo que la criatura descienda y nazca en paz. Analizado célebremente por el antropólogo Claude Lévi-Strauss como la manifestación suprema de la eficacia simbólica en la curación psicofisiológica."
+            },
+            {
+              "nombre_canto": "Nia-Ikar",
+              "traduccion_y_funcion": "El Camino del Espíritu Hostil / Exorcismo de la locura y estados alterados",
+              "descripcion_ritual": "Canto litúrgico para arrancar al paciente de las garras de demonios que han trastornado su mente o causado parálisis. Describe la persecución del espíritu captor a través de los ríos profundos del inframundo."
+            },
+            {
+              "nombre_canto": "Apsogedi-Ikar",
+              "traduccion_y_funcion": "El Canto de la Gran Purificación Colectiva de Epidemias",
+              "descripcion_ritual": "Ceremonia colectiva mayor que se prolonga durante cuatro a ocho días continuos cuando una peste, virus o catástrofe azota al resguardo. El gran cantor Apsogedi convoca a los espíritus de toda la naturaleza para barrer con sahumerios continuos los miasmas patógenos de la aldea."
+            },
+            {
+              "nombre_canto": "Bisep-Ikar",
+              "traduccion_y_funcion": "El Canto de las Cuatro Plantas Aromáticas Sagradas",
+              "descripcion_ritual": "Invocación a las plantas perfumadas (Bisep, Kowa, Nono y Siakwa) para bañar el cuerpo, disipar la melancolía, atraer la buena fortuna y dotar de magnetismo y belleza a las jóvenes en sus ritos de paso."
+            }
+          ],
+          "munecos_curativos_ukurwalas_y_nuchus": {
+            "materia_prima_sagrada": "Tallados primordialmente en madera de balsa (Ukurwala / Ochroma pyramidale), madera reina por su porosidad espiritual, liviandad y nobleza; alternada con cedro (Urwala), mangle y guayacán.",
+            "naturaleza_espiritual": "Los 'nuchukana' no son considerados ídolos ni objetos de pleitesía, sino vehículos o recipientes físicos consagrados que albergan espíritus auxiliares benevolentes de la naturaleza. Cada médico posee una corte de decenas de nuchus antropomorfos guardados celosamente en canastos de caña brava.",
+            "activacion_ritual": "Durante la entonación de los Ikarkana, el médico sahúma los nuchus con humo de tabaco y cacao; los espíritus invisibles que duermen en la madera de balsa despiertan, reciben armas espirituales (lanzas de rayo y escudos invisibles) y se internan por los desfiladeros del cosmos para batallar contra los Nia y rescatar el 'purba' extraviado del paciente."
+          },
+          "terapeutica_de_banos_y_sahumerios": {
+            "banos_con_plantas_amargas_de_manglar": "Decocciones preparadas con cortezas de mangle rojo (Rhizophora), mangle negro (Avicennia) y lianas silvestres amargas del sotobosque, aplicadas en baños fríos al amanecer durante varios días consecutivos para purgar la fiebre, cortar el veneno de mordedura de serpiente y limpiar toxinas energéticas.",
+            "sahumerios_de_cacao_y_tabaco": "Quema ininterrumpida de granos de cacao sagrado (Sía) sobre braseros de arcilla ('sia saba') con ascuas de carbón vegetal, combinados con semillas de ají picante (Kapi) para ahuyentar entidades astrales pesadas. Empleo del cigarro de tabaco (Warsi), fumado con la brasa hacia adentro de la boca por el terapeuta para insuflar chorros de humo caliente sobre la cabeza, pecho y articulaciones del enfermo."
+          }
+        }
+      },
+      "economia_y_tecnologias_ancestrales": {
+        "sistemas_productivos": "Economía tradicional diversificada basada en la agricultura de vega y colina ('nainu'), pesca marítima y estuarina, recolección en manglares y elaboración artesanal de molas y cestería.",
+        "soberania_alimentaria": "Cultivo de plátano, yuca dulce, maíz cariaco, ñame, caña de azúcar, cacao, arroz de secano y frutales (aguacate, guanábana, guama, borojó). La pesca en el Golfo de Urabá se realiza en canoas monóxilas ('ulu') talladas en troncos de ceiba, capturando róbalo, sierra, pargo y camarones.",
+        "comercializacion_justa_de_molas": "Las molas elaboradas por las mujeres representan el principal ingreso monetario directo para las familias de Arquía y Caimán Nuevo, comercializándose en mercados de comercio justo y cooperativas comunitarias que defienden el diseño tradicional frente al plagio industrial textil."
+      }
+    },
+    {
+      "id": "mokana",
+      "nombre_comun": "Mokaná (Mocaná)",
+      "autodenominacion": "Mokaná (interpretado etnohistóricamente como 'Hombres de la tierra firme / Gente sin plumas', marcando su distinción frente a las poblaciones caribes navegantes de ultramar)",
+      "filiacion_etnica": "Pueblo indígena originario del departamento del Atlántico y del bajo río Magdalena. Custodios de una milenaria tradición de alfarería formativa (Tradición Malambo), saberes botánicos de bosque seco tropical y una vigorosa memoria lítica grabada en petroglifos sagrados.",
+      "filiacion_linguistica": {
+        "familia": "Familia Malibú (junto a los Pacabuey y Malibúes ribereños del bajo Magdalena) / Propuesta filológica de parentesco Macro-Chibcha o Arawak",
+        "subgrupo": "Rama Mokaná-Malibú septentrional",
+        "idioma": "Lengua Mokaná ancestral (extinta en su práctica conversacional diaria tras la violenta hispanización colonial del siglo XVI y XVII, pero preservada en un riquísimo sustrato lingüístico toponímico, fitonímico y en expresiones del español campesino del Atlántico)",
+        "reconstruccion_sustrato": {
+          "evidencias_documentales": "Preservada en expedientes de visitas coloniales del Archivo General de la Nación de Colombia (visitas de Juan de Villabona y Zubiaurre en 1610-1611 a los pueblos de indios de Tubará, Galapa y Malambo), crónicas de Fray Pedro Simón y testimonios eclesiásticos del siglo XVI vinculados a la evangelización de San Luis Beltrán en Tubará.",
+          "analisis_fonetico_inferido": "El sustrato toponímico y léxico evidencia una clara preferencia por patrones silábicos CV (Consonante-Vocal) y CVC, terminaciones vocálicas abiertas (/a/, /o/, /u/), sonorización de oclusivas intervocálicas (/b/, /d/, /g/), frecuencia de consonantes nasales (/m/, /n/) y oclusiva sorda velar /k/.",
+          "proceso_de_rescate_y_reivindicacion": "En las últimas tres décadas, el Cabildo Mayor Indígena Mokaná de Tubará, en articulación con las autoridades escolares etnoeducativas de Galapa, Baranoa y Malambo y lingüistas de la Universidad del Atlántico, ha desarrollado un proceso de compilación y pedagogía comunitaria del vocabulario originario, incorporándolo a los Planes de Vida, ceremonias públicas y cartillas escolares para afianzar la identidad étnica de las nuevas generaciones."
+        },
+        "vocabulario_ancestral_glosado": [
+          {
+            "termino": "Kasmhashoru",
+            "traduccion": "Piedra Pintada / La esquina tranquila del Dios Hu",
+            "etimologia": "Voz indígena conservada por la tradición oral de Tubará; 'Kasmha' (rincón sagrado, remanso) y 'Shoru' (morada del espíritu supremo solar).",
+            "categoria": "Topónimo sacro / Arqueoastronomía",
+            "hermeneutica_o_uso": "Nombre ancestral del monumento megalítico con petroglifos ubicado en El Morro, considerado la biblioteca de piedra de la memoria Mokaná."
+          },
+          {
+            "termino": "Hu",
+            "traduccion": "El Sol / Principio supremo de calor, luz y fertilidad",
+            "etimologia": "Raíz monosilábica asociada a la energía celestial vivificante.",
+            "categoria": "Teónimo cósmico",
+            "hermeneutica_o_uso": "Divinidad solar primordial a la que los ancestros Mokaná dedicaban rogativas y ofrendas durante los solsticios en la cima de los cerros."
+          },
+          {
+            "termino": "Mokaná",
+            "traduccion": "Gente de la tierra firme / Hombres sin plumas",
+            "etimologia": "Etnónimo documentado desde el siglo XVI para los pobladores autóctonos de las serranías del Atlántico.",
+            "categoria": "Autoetnónimo",
+            "hermeneutica_o_uso": "Término que reivindica la condición de labradores, alfareros y cazadores de las tierras altas costeras."
+          },
+          {
+            "termino": "Juaruco",
+            "traduccion": "Cerro sagrado de observación cósmica y refugio",
+            "etimologia": "Oronymo ancestral de las serranías de Tubará.",
+            "categoria": "Topónimo sagrado",
+            "hermeneutica_o_uso": "Elevación montañosa utilizada para la observación de los vientos, constelaciones y como atalaya de avistamiento defensivo."
+          },
+          {
+            "termino": "Malambo",
+            "traduccion": "Árbol medicinal de corteza milagrosa / Título del cacicazgo mayor ribereño",
+            "etimologia": "Croton malambo o Calycophyllum candidissimum.",
+            "categoria": "Fitónimo y teónimo político",
+            "hermeneutica_o_uso": "Nombre del cacique supremo del bajo Magdalena y del árbol sagrado cuya corteza febrífuga y aromática curaba fiebres y dolores estomacales."
+          },
+          {
+            "termino": "Tubará",
+            "traduccion": "Sitio de encuentro de las aguas / Ojo de agua sagrado",
+            "etimologia": "Topónimo que hace referencia a los manantiales de agua dulce que brotan en la serranía.",
+            "categoria": "Topónimo e hidrónimo",
+            "hermeneutica_o_uso": "Capital ancestral y espiritual del pueblo Mokaná, donde confluyen manantiales cristalinos venerados por los antiguos."
+          },
+          {
+            "termino": "Galapa",
+            "traduccion": "Lugar de árboles frondosos / Asentamiento de la cañada sombreada",
+            "etimologia": "Topónimo asociado a los valles aluviales fértiles de bosque seco.",
+            "categoria": "Topónimo",
+            "hermeneutica_o_uso": "Cacicazgo ancestral célebre por su rica producción alfarera y agrícola antes y durante la colonia."
+          },
+          {
+            "termino": "Usiacurí",
+            "traduccion": "Arroyo del pavo de monte / Aguas sagradas termales",
+            "etimologia": "De 'Usi' (pavo real silvestre o gucharaca) y 'Curí' (arroyo, vertiente de agua mineral).",
+            "categoria": "Topónimo e hidrónimo",
+            "hermeneutica_o_uso": "Valle sagrado con manantiales de aguas medicinales sulfurosas utilizadas por los sabedores indígenas para curar afecciones osteomusculares."
+          },
+          {
+            "termino": "Baranoa",
+            "traduccion": "Lugar de aguas tranquilas / Asentamiento de los ciruelos",
+            "etimologia": "Topónimo derivado del cacique Baranoa y de las corrientes fluviales apacibles.",
+            "categoria": "Topónimo",
+            "hermeneutica_o_uso": "Asentamiento agrícola ancestral dedicado al cultivo de yuca, maíz y frutales."
+          },
+          {
+            "termino": "Piojó",
+            "traduccion": "Tierra de las colinas altas / Dominio del cacique Pipinto",
+            "etimologia": "Topónimo de la serranía más elevada del departamento del Atlántico.",
+            "categoria": "Topónimo",
+            "hermeneutica_o_uso": "Atalaya geográfica natural desde donde los vigías indígenas controlaban el litoral caribeño."
+          },
+          {
+            "termino": "Budare (Aripe)",
+            "traduccion": "Plato de barro refractario circular para tostar el cazabe",
+            "etimologia": "Término del sustrato cerámico ancestral del Caribe.",
+            "categoria": "Tecnología alfarera tradicional",
+            "hermeneutica_o_uso": "Gran disco de arcilla cocida utilizado sobre tres piedras de fogón para deshidratar y cocer la harina de yuca amarga."
+          },
+          {
+            "termino": "Totumo (Tapara)",
+            "traduccion": "Fruto globular del árbol Crescentia cujete",
+            "etimologia": "Fitónimo originario para los recipientes y sonajas ceremoniales.",
+            "categoria": "Cultura material / Botánica",
+            "hermeneutica_o_uso": "Vaciado y secado para elaborar calabazos de agua, vajillas sagradas, cucharas y maracas de percusión ritual."
+          }
+        ],
+        "toponimia_y_flora_rescatada": [
+          {
+            "termino": "Árbol de Malambo (Croton malambo)",
+            "tipo": "Fitónimo medicinal cumbre",
+            "significado_tradicional": "Corteza aromática de poder curativo febrífugo y digestivo",
+            "municipio_o_area": "Malambo, Tubará y serranías del Atlántico",
+            "contexto_etnobotanico_o_geografico": "Planta medicinal insigne de la farmacopea Mokaná, empleada históricamente en infusiones y masticaciones para detener diarreas, fiebres palúdicas y dolores cólicos."
+          },
+          {
+            "termino": "Totumo (Crescentia cujete)",
+            "tipo": "Fitónimo utilitario y ceremonial",
+            "significado_tradicional": "Árbol de las vasijas sagradas y sonajas",
+            "municipio_o_area": "Tubará, Galapa y Baranoa",
+            "contexto_etnobotanico_o_geografico": "Base material de utensilios domésticos tradicionales y de maracas rituales en los cantos de curación de los rezanderos."
+          },
+          {
+            "termino": "Bejuco Real y Bejuco Saragüey",
+            "tipo": "Fitónimo de fibra vegetal",
+            "significado_tradicional": "Lianas resistentes del monte para el tejido",
+            "municipio_o_area": "Serranías de Tubará y Usiacurí",
+            "contexto_etnobotanico_o_geografico": "Fibras silvestres cosechadas en menguante para la milenaria cestería de canastos, esteras y techumbres de bahareque."
+          },
+          {
+            "termino": "Guayacán Jobo y Caracolí",
+            "tipo": "Fitónimos de maderas mayores",
+            "significado_tradicional": "Árboles protectores de los arroyos y manantiales",
+            "municipio_o_area": "Arroyo Tubará, cuencas de Galapa y Luruaco",
+            "contexto_etnobotanico_o_geografico": "Árboles monumentales venerados como los abuelos del bosque seco que retienen el agua dulce subterránea."
+          }
+        ]
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Atlántico"
+        ],
+        "municipios": [
+          "Tubará (sede del Cabildo Mayor y capital espiritual)",
+          "Galapa",
+          "Malambo",
+          "Puerto Colombia",
+          "Baranoa",
+          "Usiacurí",
+          "Piojó",
+          "Luruaco"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Cuenca baja occidental del Río Magdalena",
+          "Arroyo Grande y Arroyo Tubará",
+          "Ciénaga de Mallorquín",
+          "Laguna de Luruaco",
+          "Litoral del Mar Caribe (bocas de Ceniza a Puerto Velero)"
+        ],
+        "resguardos_constituidos": [
+          "Resguardo Colonial Histórico de Tubará (con títulos coloniales de la Corona española del siglo XVII y XVIII, parcelado en el siglo XIX y hoy reivindicado en territorio ancestral)",
+          "Cabildos Indígenas con personería jurídica y registro ante el Ministerio del Interior: Cabildo Mayor Indígena Mokaná de Tubará, Cabildo Menor de Galapa, Cabildo Menor de Malambo, Cabildo Menor de Puerto Colombia, Cabildo Menor de Baranoa"
+        ],
+        "asentamientos_emblematicos": [
+          "Tubará (casco urbano y veredas El Morro, Juaruco, Guaimaral)",
+          "Galapa (barrios y veredas de tradición alfarera)",
+          "Malambo (asentamientos cercanos a la ciénaga y yacimientos arqueológicos)",
+          "Puerto Colombia (veredas Salgar y Sabanilla)",
+          "Baranoa (vereda Sibarco y Campeche)"
+        ],
+        "pisos_termicos_y_ecosistemas": "Bosque seco tropical (bs-T) y ecosistemas litorales marinos y estuarinos. Relieve de serranías costeras (Serranía de Tubará, elevaciones de 0 a 520 msnm en Cerro La Vieja y cerro Piojó). Temperaturas cálidas medias de 27°C a 30°C.",
+        "poblacion_estimada_y_censo": "Más de 24.500 a 29.000 personas autoidentificadas y censadas en los padrones de los cabildos del Pueblo Mokaná reconocidos por el Ministerio del Interior y el DANE, constituyendo la etnia indígena mayoritaria del departamento del Atlántico."
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral_y_etnohistoria": "Los Mokaná descienden de las sociedades que florecieron en las riberas del bajo Magdalena y el litoral atlántico desde el Formativo. Desarrollaron una próspera economía mixta de agricultura de yuca amarga y maíz, pesca fluvial y recolección de moluscos marinos. Sus caciques ejercían una gobernanza confederada conectada por redes de trueque con los Zenúes y los Taironas.",
+        "choque_colonial_y_encomiendas": "En las primeras décadas del siglo XVI sufrieron la incursión violenta de Pedro de Heredia y sus lugartenientes. Los cacicazgos de Tubará, Galapa y Malambo fueron sometidos a severos regímenes de encomienda para tributar alimentos, madera y trabajo servil a los puertos de Cartagena de Indias y Santa Marta. Fray Luis Beltrán (San Luis Beltrán) evangelizó en Tubará hacia 1562-1565, intentando desarraigar la adoración de petroglifos y dioses solares.",
+        "la_invisibilizacion_republicana_y_despojo": "Durante las reformas agrarias liberales de 1850 en el Estado Soberano de Bolívar, los resguardos indígenas de Tubará, Galapa y Malambo fueron declarados legalmente 'extinguidos' y disueltos bajo el argumento positivista de que sus pobladores ya eran 'campesinos mestizos asimilados'. Sus tierras comunales fueron privatizadas por hacendados ganaderos, silenciando oficialmente la identidad Mokaná durante más de un siglo.",
+        "el_renacimiento_del_cabildo_mayor_mokaná": "Tras la promulgación de la Constitución de 1991, los mayores, rezanderos y líderes de Tubará y los municipios vecinos iniciaron un poderoso proceso de memoria y movilización étnica (etnogénesis o reemergencia). Demostraron la pervivencia continua de sus linajes familiares, sus prácticas curativas, su alfarería tradicional y su apego a lugares sagrados como Piedra Pintada.",
+        "reconocimiento_estatal_y_articulacion": "En 1998, el Ministerio del Interior expidió la certificación de existencia e inscripción oficial del Pueblo Mokaná en el Registro de Comunidades Indígenas. Desde entonces, el Cabildo Mayor de Tubará y sus cabildos menores integran el Consejo Regional Indígena del Atlántico (CRIA) y la Organización Nacional Indígena de Colombia (ONIC), contando con su propia Guardia Indígena y fortaleciendo sus sistemas de justicia propia y etnoeducación."
+      },
+      "cosmovision_y_espiritualidad": {
+        "mitologia_y_sitios_sagrados": {
+          "piedra_pintada_kasmhashoru": {
+            "denominacion": "Petroglifos de Piedra Pintada (Kasmhashoru)",
+            "localizacion": "Vereda El Morro, municipio de Tubará, en las estribaciones de la Serranía de Tubará.",
+            "caracteristicas_arqueologicas": "Monumento megalítico de arenisca de gran escala con decenas de petroglifos tallados en bajorrelieve mediante percusión e incisión lítica. Fechado preliminarmente en varios cientos y miles de años.",
+            "simbolismo_cosmologico": "Considerado la 'biblia de piedra' o libro sagrado de los Mokaná. Contiene una compleja cartografía astral y mitológica: espirales que marcan el recorrido anual del Sol (Dios Hu) y los ciclos estacionales; soles radiantes; representaciones de la figura sagrada del 'mono cotudo' (Alouatta seniculus), venerado en la memoria oral como el anunciador sagrado de las lluvias bienhechoras y símbolo supremo de fertilidad comunitaria; figuras de ranas (invocación al agua), serpientes y rostros de ancestros.",
+            "rituales_comunitarios": "Punto de peregrinación obligada para los cabildos durante los solsticios de verano e invierno y los equinoccios, donde se celebran círculos de palabra, pagamento espiritual con semillas nativas y armonización del territorio."
+          },
+          "petroglifos_sierra_de_san_antonio": {
+            "denominacion": "Petroglifos de la Sierra de San Antonio y Pan de Azúcar",
+            "localizacion": "Límites entre Tubará y Galapa.",
+            "descripcion": "Estaciones líticas secundarias con grabados antropomorfos y zoomorfos en las rutas ceremoniales de tránsito entre los cerros y los valles de cultivo."
+          }
+        },
+        "complejo_arqueologico_de_malambo": {
+          "trascendencia_historica": "Yacimiento arqueológico de trascendencia continental excavado a mediados del siglo XX por Carlos Angulo Valdés y Gerardo Reichel-Dolmatoff. Evidenció que desde el 1200 a.C. floreció en Malambo una sociedad alfarera sedentaria ribereña de asombroso dominio técnico.",
+          "innovacion_del_cazabe": "La aparición de los 'budares' cerámicos en Malambo demostró la domesticación y procesamiento tecnificado de la yuca amarga (Manihot esculenta) para extraer el ácido cianhídrico venenoso mediante ralladores y tipitís, convirtiéndola en pan de cazabe de larga conservación, soporte energético fundamental de la civilización caribeña precolombina."
+        },
+        "artesanias_sagradas": {
+          "alfareria_ancestral_de_galapa_y_malambo": "Continuidad del modelado a mano en arcillas seleccionadas de las cañadas. Creación de vasijas ceremoniales, tinajas de agua, silbatos zoomorfos y platos decorados con incisiones que reproducen los motivos gráficos de Piedra Pintada.",
+          "talla_de_mascaras_y_madera": "Elaboración de máscaras totémicas talladas en madera de balso y ceiba (toros, tigres, monos, caimanes) en Galapa, piezas que alimentan danzas rituales de origen prehispánico articuladas sincréticamente a las festividades carnestoléndicas.",
+          "cesteria_en_bejuco_e_iraca": "Tejido manual de cestería utilitaria y fina en Usiacurí y Tubará empleando fibras de bejuco silvestre cosechado bajo las fases de la luna menguante para garantizar su durabilidad frente a insectos."
+        },
+        "medicina_tradicional": {
+          "curanderos_y_rezanderos": "Especialistas de la medicina comunitaria: sobadores, parteras y rezanderos de 'mal de ojo' y 'culebrilla'.",
+          "uso_del_malambo_y_plantas_del_bosque_seco": "Macerados de corteza de Malambo en aguardiente para fiebres y dolores abdominales; empleo de hojas de matarratón para baños febrífugos; savia de totumo cocida para afecciones respiratorias graves y asma; y lavados con hojas de orégano orejón y albahaca morada para despojar energías pesadas."
+        }
+      },
+      "economia_y_tecnologias_ancestrales": {
+        "agricultura_de_bosque_seco": "Policultivo tradicional en huertas familiares ('pancoger'): siembra de yuca dulce y amarga, maíz criollo, millo, ajonjolí, fríjol cabecita negra, batata, ñame y frutales (guayaba, mango, ciruela costeña, níspero, zapote).",
+        "artesanias_como_motor_economico": "Galapa y Usiacurí operan como polos artesanales de renombre nacional donde las familias indígenas generan ingresos mediante la venta de cestería, cerámica y máscaras de madera tallada.",
+        "pesca_artesanal": "Práctica de pesca ribereña y marítima con atarraya y líneas de mano en la desembocadura del río Magdalena, ciénagas de Mallorquín y playas de Salgar y Puerto Colombia."
+      }
+    },
+    {
+      "id": "nutabe",
+      "nombre_comun": "Nutabe (Nutabes del Cañón del Río Cauca)",
+      "autodenominacion": "Nutabe (interpretado como 'Gente del río de oro / Habitantes de los desfiladeros y las peñas')",
+      "filiacion_etnica": "Pueblo indígena milenario del cañón escarpado del río Cauca en el norte y occidente de Antioquia. Célebres constructores de puentes colgantes de bejuco, agricultores de terrazas y maestros del barequeo artesanal de oro de aluvión.",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Rama Chibcha Septentrional / Andino-Magdalénica (emparentada estrechamente con la lengua Tahamí y con influencias léxicas de frontera con lenguas Chocó-Catío y Cueva)",
+        "idioma": "Lengua Nutabe (extinta en su estructura morfosintáctica hablada pero con una vibrante pervivencia como sustrato lingüístico profundo en la toponimia del cañón, en el léxico técnico del barequeo del oro y en la tradición oral de las familias de Orobajo)",
+        "reconstruccion_sustrato": {
+          "cronistas_de_indias_de_referencia": "Ampliamente documentada en las crónicas tempranas de Pedro Cieza de León (Crónica del Perú, 1553, caps. X al XII sobre la provincia de Guaca y el valle de Nore), Fray Pedro Simón (Noticias Historiales) y Juan de Castellanos (Elegías de Varones Ilustres de Indias).",
+          "patrones_lexicos_y_toponimicos": "Presencia recurrente de formantes morfológicos y toponímicos con terminaciones en '-be' (río/gente), '-que' (frío/desfiladero), '-bá' (roca/altura), '-tá' (terreno cultivado): Nutabe, Orobajo, Sinitavé, Cuerquia, Peque, Sinifaná, Guaca, Nore.",
+          "lexico_ancestral_minero": "El pueblo Nutabe conservó en su memoria un vocabulario técnico especializado para el beneficio del oro aluvial que prescindió de cualquier químico contaminante y preservó nombres originarios de herramientas, formaciones del río y vetas."
+        },
+        "vocabulario_ancestral_glosado": [
+          {
+            "termino": "Nutibara",
+            "traduccion": "Gran señor soberano / Cacique supremo del cañón y los valles de Guaca",
+            "etimologia": "Nombre del líder histórico de la resistencia indígena contra las tropas de Francisco César.",
+            "categoria": "Antropónimo histórico / Liderazgo",
+            "hermeneutica_o_uso": "Cacique epónimo supremo que unificó a los pueblos del cañón del Cauca en una confederación defensiva en el siglo XVI."
+          },
+          {
+            "termino": "Guarcama",
+            "traduccion": "Hermano y comandante guerrero de Nutibara / Guardián del paso del río",
+            "etimologia": "Antropónimo militar nutabe.",
+            "categoria": "Antropónimo militar",
+            "hermeneutica_o_uso": "Estratega militar que combatió a los primeros conquistadores en las gargantas del río Cauca."
+          },
+          {
+            "termino": "Orobajo",
+            "traduccion": "Asentamiento sagrado del río del oro bajo",
+            "etimologia": "Topónimo histórico de la vega aluvial del río Cauca sumergida por Hidroituango.",
+            "categoria": "Topónimo sagrado y mártir",
+            "hermeneutica_o_uso": "Corazón histórico de la comunidad indígena Nutabe reconocida por el Estado en 2017."
+          },
+          {
+            "termino": "Batea Nutabe",
+            "traduccion": "Plato cónico de madera de caracolí para lavado de oro",
+            "etimologia": "Voz ancestral para el instrumento lítico o de madera de beneficio gravimétrico.",
+            "categoria": "Tecnología minera originaria",
+            "hermeneutica_o_uso": "Instrumento tallado en una sola pieza de tronco de caracolí con centro cónico parabólico que separa las arenas negras del oro fino sin usar mercurio."
+          },
+          {
+            "termino": "Chupadera",
+            "traduccion": "Herramienta manual de succión de arenas auríferas en grietas del río",
+            "etimologia": "Término del léxico tradicional del barequeo del cañón del Cauca.",
+            "categoria": "Tecnología tradicional",
+            "hermeneutica_o_uso": "Aparato de vacío manual accionado por buceo a pulmón para extraer el oro atrapado en las fracturas de la roca bajo el agua torrentosa."
+          },
+          {
+            "termino": "Canalón",
+            "traduccion": "Canal tallado en tierra y piedra para lavado de laderas",
+            "etimologia": "Técnica de beneficio aluvial aprovechando caídas naturales de agua.",
+            "categoria": "Tecnología hidráulica",
+            "hermeneutica_o_uso": "Zanja excavada en terrazas donde la fuerza de una corriente de quebrada lava el material pedregoso reteniendo las chispas de oro en el lecho."
+          },
+          {
+            "termino": "Oro Corrido",
+            "traduccion": "Oro aluvial nativo arrastrado por la corriente del Río Cauca",
+            "etimologia": "Expresión vernácula nutabe para el oro purificado por el agua.",
+            "categoria": "Cosmología y minería",
+            "hermeneutica_o_uso": "Considerado el oro más puro, 'semilla viva' que el río desgaja de las montañas para entregarla como sustento a sus hijos barequeros."
+          },
+          {
+            "termino": "Sinitavé",
+            "traduccion": "Valle sagrado de las terrazas de cultivo y sal",
+            "etimologia": "Topónimo indígena del cañón medio del Cauca.",
+            "categoria": "Topónimo",
+            "hermeneutica_o_uso": "Asentamiento ancestral donde confluían caminos prehispánicos de intercambio de salmueras."
+          },
+          {
+            "termino": "Cuerquia",
+            "traduccion": "Desfiladero o corriente de agua fría de la montaña",
+            "etimologia": "De la raíz '-que' (frío) y '-quia' (río/cañón).",
+            "categoria": "Topónimo e hidrónimo",
+            "hermeneutica_o_uso": "Actual municipio de San Andrés de Cuerquia, zona limítrofe de los resguardos y terrazas de altura."
+          },
+          {
+            "termino": "Ituango",
+            "traduccion": "Tierra de pendientes empinadas / Río de la salina",
+            "etimologia": "Topónimo autóctono del norte de Antioquia.",
+            "categoria": "Topónimo",
+            "hermeneutica_o_uso": "Epicentro territorial del cañón habitado por los clanes confederados nutabes."
+          }
+        ],
+        "toponimia_y_flora_rescatada": [
+          {
+            "termino": "Caracolí (Anacardium excelsum)",
+            "tipo": "Fitónimo tutelar de ribera",
+            "significado_tradicional": "Árbol sagrado del cañón de cuyas raíces y troncos se tallan las bateas",
+            "municipio_o_area": "Cañón del río Cauca, veredas de Orobajo, Sabanalarga y Peque",
+            "contexto_etnobotanico_o_geografico": "Árbol monumental que fija las playas del río; su madera fibrosa y liviana no absorbe agua en exceso, siendo perfecta para labrar las bateas de barequeo."
+          },
+          {
+            "termino": "Bejuco Negro y Bejuco Cadena",
+            "tipo": "Fitónimo de bioingeniería",
+            "significado_tradicional": "Lianas colosales para tejer los puentes colgantes prehispánicos",
+            "municipio_o_area": "Desfiladeros rocosos del río Cauca e Ituango",
+            "contexto_etnobotanico_o_geografico": "Material de resistencia tensil insuperable utilizado por los ingenieros nutabes para suspender puentes peatonales sobre abismos de más de 40 metros."
+          },
+          {
+            "termino": "Ceiba Barrigona (Pseudobombax septenatum)",
+            "tipo": "Fitónimo del bosque subxerofítico",
+            "significado_tradicional": "Árbol guardián del cañón que almacena agua en su tronco",
+            "municipio_o_area": "Laderas áridas de Sabanalarga y Toledo",
+            "contexto_etnobotanico_o_geografico": "Especie endémica adaptada al cañón seco; sus fibras sedosas se empleaban para acolchados y mechas de fuego ritual."
+          },
+          {
+            "termino": "Caña Brava (Gynerium sagittatum)",
+            "tipo": "Fitónimo estructural",
+            "significado_tradicional": "Planta de tallo hueco y elástico para bahareque y canastos",
+            "municipio_o_area": "Vegas y playas aluviales del río Cauca",
+            "contexto_etnobotanico_o_geografico": "Materia prima para levantar las paredes de bahareque de las casas de Orobajo y construir trampas cónicas de pesca."
+          }
+        ]
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Antioquia"
+        ],
+        "municipios": [
+          "Sabanalarga",
+          "Peque",
+          "Ituango",
+          "Toledo",
+          "Briceño",
+          "San Andrés de Cuerquia"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Cañón del Río Cauca (cuenca media y baja)",
+          "Río Ituango",
+          "Río San Andrés",
+          "Río Sinitavé",
+          "Quebradas Orobajo, La Honda, Sinifaná y El Tinto"
+        ],
+        "resguardos_constituidos_y_comunidades": [
+          "Comunidad Indígena de Orobajo del Pueblo Nutabe (formalmente reconocida e inscrita mediante Resolución 0071 del 19 de mayo de 2017 del Ministerio del Interior)",
+          "Veredas de asentamiento histórico oficial: Orobajo, La Loma, La Aurora y La Meseta (Municipio de Sabanalarga); Llanón, Cañaona, Guayabal y La Bastilla (Municipio de Peque); El Tinto, La Florida, La Honda y La Hundida (Municipio de Ituango)"
+        ],
+        "asentamientos_emblematicos": [
+          "Orobajo (asentamiento histórico ancestral inundado en mayo de 2018)",
+          "La Loma y Barbillas",
+          "Guayabal y Llanón (Peque)",
+          "El Tinto y La Honda (Ituango)",
+          "Sabanalarga (zona urbana de reasentamiento forzoso)"
+        ],
+        "pisos_termicos_y_ecosistemas": "Cañón profundo subxerofítico intramontano y bosque seco tropical (bs-T) en el fondo del cañón del río Cauca (250 a 600 msnm), ascendiendo abruptamente por laderas escarpadas a bosques premontanos y montanos fríos de más de 2.200 msnm. Temperaturas elevadas en el cañón (hasta 36°C) con escasa pluviosidad estacional.",
+        "poblacion_estimada_y_censo": "La resolución inicial de 2017 acreditó a 57 familias nucleares originarias de Orobajo (unas 250 a 300 personas). El censo ampliado del Pueblo Nutabe en proceso de autoidentificación y retorno en los municipios del cañón supera las 1.400 personas organizadas en torno a su cabildo indígena."
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral_y_la_gesta_de_nutibara": "En la época prehispánica, los Nutabes gobernaban la estratégica cuenca del río Cauca. En 1537, el capitán español Francisco César penetró en el valle de Guaca seducido por las leyendas del oro sepulcral. El gran Cacique Nutibara, su hermano Guarcama y miles de guerreros nutabes libraron una encarnizada batalla en los desfiladeros del cañón, emboscando a los conquistadores y obligándolos a una dramática retirada. Posteriores expediciones al mando de Juan de Vadillo y Jorge Robledo lograron fracturar la confederación mediante el fuego y la caballería, obligando a los sobrevivientes a refugiarse en los cañones más profundos de Orobajo.",
+        "invisibilizacion_como_campesinos_del_canon": "A lo largo de los siglos XVIII, XIX y XX, el Estado colonial y republicano dio por 'extintos' a los Nutabes para extinguir sus resguardos y titular las ricas playas y minas de aluvión a concesiones mineras foráneas. Las familias nutabes resistieron en el aislamiento agreste del cañón de Orobajo, manteniendo su autarquía comunitaria, sus lazos consanguíneos, el cultivo de vegas de pancoger y la práctica diaria del barequeo tradicional sin químicos.",
+        "el_megaproyecto_hidroituango_y_el_etnocidio_cultural": "A partir del año 2010, la construcción del megaproyecto hidroeléctrico Hidroituango (a cargo de Empresas Públicas de Medellín - EPM e Hidroituango S.A.) transformó radicalmente el cañón del Cauca. La obra impuso desalojos, bloqueos de las playas de barequeo y la militarización de la zona. En mayo de 2018, la contingencia técnica del taponamiento del túnel de desviación y el riesgo inminente de colapso de la presa forzó el cierre de compuertas y el llenado anticipado de emergencia del embalse.",
+        "la_inundacion_de_orobajo_y_el_cementerio_sagrado": "El llenado intempestivo del embalse de Hidroituango sumergió por completo el caserío ancestral de Orobajo bajo más de 70 metros de agua represada. La inundación sepultó para siempre sus viviendas de bahareque, las escuelas, los árboles centenarios de ceiba y caracolí, sus playas aluviales y, de manera devastadora, su **cementerio sagrado ancestral**. En este cementerio reposaban los restos de los abuelos, bisabuelos y antepasados de las familias nutabes; la profanación y desaparición del cementerio bajo el agua causó un trauma colectivo irreparable, violando el derecho al duelo, a la custodia de sus difuntos y a la memoria biológica comunitaria, provocando un desplazamiento forzado forzoso hacia Sabanalarga, Ituango y las barriadas periféricas de Medellín.",
+        "la_resolucion_0071_de_2017_del_ministerio_del_interior": "Como fruto de una valiente y perseverante lucha liderada por el Cabildo Indígena Nutabe de Orobajo, con el apoyo del Movimiento Ríos Vivos, peritajes etnológicos del ICANH y juristas de derechos humanos, la Dirección de Asuntos Indígenas, Rom y Minorías del Ministerio del Interior expidió la **Resolución 0071 del 19 de mayo de 2017**. Mediante este acto administrativo histórico, el Estado colombiano reconoció formalmente e inscribió a la Comunidad Indígena de Orobajo del Pueblo Nutabe en el Registro Nacional de Comunidades Indígenas, revirtiendo más de un siglo de invisibilización estatal forzada. Este reconocimiento obligó a la apertura de procesos de consulta previa, medidas de reparación colectiva integral y la exigencia irrenunciable de compra de un nuevo territorio colectivo para reubicar dignamente a la comunidad desterrada.",
+        "organizacion_representativa": "Cabildo Indígena del Pueblo Nutabe de Orobajo, articulado al Movimiento Ríos Vivos Antioquia, a la Organización Indígena de Antioquia (OIA) y a la ONIC."
+      },
+      "cosmovision_y_cultura_material": {
+        "ontologia_del_rio_padre_cauca": "Para el pueblo Nutabe, el río Cauca no es un cuerpo de agua inerte o un recurso energético explotable, sino un ser vivo sintiente, sagrado y tutelar: el 'Río Padre'. El río entrega el oro aluvial según el estado de pureza espiritual y el comportamiento ético del barequero. La minería tradicional de la batea no agrede al río; por el contrario, limpia y remueve sus sedimentos. Destruir el río o represar sus aguas vivas constituye para la cosmovisión nutabe una ofensa cósmica contra las fuerzas que sostienen la vida en la cordillera.",
+        "el_barequeo_artesanal_sagrado": "Práctica económica, social y ritual central. Empleo de la batea de caracolí, la chupadera manual y el canalón de piedra. No se utiliza mercurio ni cianuro. El oro extraído en escamas es fundido en crisoles pequeños o comercializado para sostener a la familia. Las mujeres ('barequeras') son las guardianas de las técnicas más sutiles de lavado y separación de chispas microscópicas de oro.",
+        "ingenieria_de_puentes_colgantes_prehispanicos": "Los Nutabes alcanzaron fama legendaria entre los cronistas españoles por su prodigiosa ingeniería civil vernácula. Sobre los cañones abruptos del río Cauca tendían puentes colgantes de bejuco negro y caña brava trenzada, fijados a inmensos pilares de roca natural o troncos de caracolí. Estas estructuras permitían el tránsito seguro de tropas y cargadores de maíz a alturas de vértigo sobre los raudales.",
+        "agricultura_de_terrazas_y_pesca": "Aprovechamiento de las laderas empinadas del cañón mediante bancales y terrazas escalonadas para cultivar maíz capio, fríjol, yuca, plátano y tabaco. Durante la época de 'subienda' (cuando los peces remontan el río Cauca desde las ciénagas del Caribe), las familias pescaban bagres rayados, bocachicos y sabaletas utilizando atarrayas de algodón y nasas de mimbre, secando y salando el pescado para el sustento anual."
+      },
+      "economia_y_tecnologias_ancestrales": {
+        "barequeo_y_subsistencia": "Economía basada en la reciprocidad y el trabajo mancomunado ('mano cambiada'): cuadrillas familiares de barequeo que combinaban la búsqueda de oro con el cultivo de las vegas y la recolección de leña seca.",
+        "impacto_y_demanda_de_reparacion": "Tras la pérdida material de sus playas por el embalse de Hidroituango, la economía tradicional colapsó, transformando a la comunidad en receptora de subsidios transitorios mientras se concreta la restitución y titulación de una hacienda colectiva donde puedan restablecer su autonomía agroalimentaria y cultural."
+      }
+    },
+    {
+      "id": "senufana",
+      "nombre_comun": "Senufaná (Zenufaná / Señorío del Bajo Cauca y Nechí)",
+      "autodenominacion": "Zenufaná (Linaje prehispánico del oro y provincia hegemónica metalúrgica de la Gran Confederación Zenú)",
+      "filiacion_etnica": "Una de las tres grandes provincias federadas de la civilización prehispánica Zenú (junto a Finzenú y Panzenú). Considerada el centro minero, de fundición y taller orfebre cumbre de la América precolombina.",
+      "filiacion_linguistica": {
+        "familia": "Tronco Macro-Chibcha / Lengua Zenú (en debate etnolingüístico con adscripciones al grupo Caribe o lengua aislada regional)",
+        "subgrupo": "Variante dialectal Zenufaná de las cuencas del Nechí y bajo Cauca",
+        "idioma": "Lengua Zenú ancestral (extinta como sistema lingüístico de habla continua desde el siglo XVII debido a las mitas mineras coloniales, pero preservada en un robusto sustrato toponímico en el Bajo Cauca y Nordeste antioqueño y en el léxico gremial de la minería tradicional de aluvión)",
+        "reconstruccion_sustrato": {
+          "fuentes_etnohistoricas": "Crónicas de Fray Pedro de Aguado (Recopilación Historial), Pedro Cieza de León, Juan de Castellanos y documentos de los Reales de Minas de Zaragoza y Remedios en el Archivo General de la Nación.",
+          "toponimia_aurifera_y_fluvial": "Preservación de hidrónimos y orónimos con terminaciones en '-chí', '-rú', '-gí', '-tó': Nechí, Cuturú, Tigüí, Bagre, Urá, Tarazá, Guamo, Caucasia.",
+          "lexico_metalurgico_ancestral": "Vocablos de la orfebrería y minería de aluvión que pasaron al castellano regional: mazamorra, jagua, batea, tumbaga, fundición a la cera perdida."
+        },
+        "vocabulario_ancestral_glosado": [
+          {
+            "termino": "Zenufaná (Senufaná)",
+            "traduccion": "Tierra de los orfebres / Provincia de las minas de oro del Nechí",
+            "etimologia": "De 'Zenú' (nombre del pueblo/río) y el formante '-faná' (provincia del señorío aurífero).",
+            "categoria": "Topónimo y etnónimo civilizatorio",
+            "hermeneutica_o_uso": "Provincia hegemónica del reino Zenú que abastecía de metal precioso y joyas a Finzenú y Panzenú."
+          },
+          {
+            "termino": "Nechí",
+            "traduccion": "Río de oro / Corriente de peces dorados",
+            "etimologia": "De la raíz indígena 'Ne-' (oro/brillo) y '-chí' (río, agua abundante).",
+            "categoria": "Hidrónimo mayor",
+            "hermeneutica_o_uso": "Macrocuenca fluvial aurífera donde se asentaron los principales talleres orfebres prehispánicos."
+          },
+          {
+            "termino": "Tumbaga",
+            "traduccion": "Aleación sagrada de oro y cobre",
+            "etimologia": "Voz indígena antillana y caribeña adoptada por los metalurgistas zenúes.",
+            "categoria": "Arqueometalurgia",
+            "hermeneutica_o_uso": "Aleación que rebajaba el punto de fusión del oro a menos de 950°C y permitía el vaciado de hilos de filigrana extremadamente delgados."
+          },
+          {
+            "termino": "Cuturú",
+            "traduccion": "Asentamiento ancestral ribereño del Nechí",
+            "etimologia": "Topónimo indígena conservado en el corregimiento de Cuturú (Caucasia/Nechí).",
+            "categoria": "Topónimo histórico",
+            "hermeneutica_o_uso": "Antiguo poblado de orfebres y pescadores de ciénaga."
+          },
+          {
+            "termino": "Jagua",
+            "traduccion": "Arena negra pesada rica en magnetita e ilmenita que acompaña al oro",
+            "etimologia": "Término del léxico minero de aluvión.",
+            "categoria": "Minería tradicional",
+            "hermeneutica_o_uso": "Concentrado oscuro que se separa en el fondo de la batea mediante frotamiento con hojas jabonosas para aislar el oro."
+          },
+          {
+            "termino": "Mazamorra",
+            "traduccion": "Lavado de arenas aluviales en las márgenes del río",
+            "etimologia": "Voz vernácula para el barequeo libre de subsistencia.",
+            "categoria": "Minería tradicional",
+            "hermeneutica_o_uso": "Oficio ancestral de los mazamorreros y mazamorreras que recorren los bancos de grava del río Nechí."
+          }
+        ],
+        "toponimia_y_flora_rescatada": [
+          {
+            "termino": "Río Nechí",
+            "tipo": "Hidrónimo mayor",
+            "significado_tradicional": "Río de oro",
+            "municipio_o_area": "El Bagre, Nechí, Zaragoza y Caucasia",
+            "contexto_etnobotanico_o_geografico": "Eje fluvial vertebrador de la provincia de Zenufaná, célebre mundialmente por sus ricos depósitos de placer aurífero."
+          },
+          {
+            "termino": "Palma de Vino (Attalea butyracea)",
+            "tipo": "Fitónimo tutelar de sabana y vegas",
+            "significado_tradicional": "Palma dadora de savia dulce fermentada y techumbre",
+            "municipio_o_area": "Llanuras de Caucasia y Bajo Nechí",
+            "contexto_etnobotanico_o_geografico": "Especie vegetal multipropósito aprovechada para extraer vino de palma en ceremonias y techar los tambos comunales."
+          },
+          {
+            "termino": "Ceiba de Bonga (Ceiba pentandra)",
+            "tipo": "Fitónimo monumental",
+            "significado_tradicional": "Árbol cósmico que sostiene las aguas y alberga los espíritus",
+            "municipio_o_area": "Riberas del bajo Cauca y Nechí",
+            "contexto_etnobotanico_o_geografico": "Árbol sagrado bajo cuya sombra se reunían los consejos de orfebres y se botaban las canoas aluviales."
+          },
+          {
+            "termino": "Barbasco (Lonchocarpus utilis)",
+            "tipo": "Fitónimo ictiotóxico sagrado",
+            "significado_tradicional": "Raíz aturdidora para la pesca selectiva en ciénagas",
+            "municipio_o_area": "Ciénagas de amortiguación de Nechí",
+            "contexto_etnobotanico_o_geografico": "Macerado de raíz arrojado en brazos muertos de agua para aturdir temporalmente a los peces sin envenenar la carne ni afectar los alevines."
+          }
+        ]
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Antioquia",
+          "Bolívar",
+          "Córdoba"
+        ],
+        "municipios": [
+          "El Bagre (Antioquia)",
+          "Zaragoza (Antioquia)",
+          "Caucasia (Antioquia)",
+          "Nechí (Antioquia)",
+          "Cáceres (Antioquia)",
+          "Tarazá (Antioquia)",
+          "Segovia y Remedios (estribaciones mineras de la cordillera)",
+          "San Jacinto del Cauca (Bolívar)"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Nechí",
+          "Río Cauca (tramo del Bajo Cauca)",
+          "Río Porce (tramo bajo y desembocadura en el Nechí)",
+          "Río Tigüí",
+          "Río Bagre",
+          "Complejo cenagoso del Bajo Cauca y San Jorge"
+        ],
+        "resguardos_constituidos_y_comunidades": [
+          "Cabildos Indígenas Zenú del Bajo Cauca antioqueño (reconocidos por la Dirección de Asuntos Indígenas del Ministerio del Interior): Cabildo Indígena Zenú de El Bagre, Cabildos Indígenas Zenú de Zaragoza, Cabildos Indígenas de Caucasia y Cáceres",
+          "Población integrada a la estructura del Cabildo Mayor Regional Zenú de San Andrés de Sotavento y articulada a la Asociación de Cabildos Indígenas del Bajo Cauca"
+        ],
+        "asentamientos_emblematicos": [
+          "El Bagre (comunidades de Bijao, Puerto López)",
+          "Zaragoza (asentamientos ribereños del Nechí)",
+          "Cuturú y Palomar (Caucasia)",
+          "Cáceres (asentamientos de las márgenes del Cauca)"
+        ],
+        "pisos_termicos_y_ecosistemas": "Llanuras aluviales bajas inundables, humedales, ciénagas de amortiguación y colinas de selva húmeda tropical (0 a 200 msnm). Clima cálido húmedo con precipitaciones copiosas y altas temperaturas constantes.",
+        "poblacion_estimada_y_censo": "Más de 6.800 a 8.500 indígenas zenúes asentados en los municipios del Bajo Cauca antioqueño registrados en los censos de los cabildos locales y el DANE, quienes reivindican la memoria territorial de Zenufaná."
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral_y_la_triada_zenu": "La civilización Zenú estructuró su territorio prehispánico en tres grandes señoríos confederados complementarios: Finzenú (en el valle del río Sinú, santuario religioso, centro de sepulturas reales gobernado por una gran Cacica); Panzenú (en el valle del río San Jorge, inmenso granero agrícola con más de 500.000 hectáreas de canales y camellones hidráulicos); y Zenufaná (en las cuencas del Nechí y bajo Cauca, corazón minero y taller de los orfebres). Zenufaná aportaba el oro en bruto y las joyas ceremoniales que circulaban por todo el norte de Suramérica.",
+        "la_fiebre_del_oro_colonial_y_reales_de_minas": "En el siglo XVI, el mito de las riquezas de Zenufaná atrajo las expediciones de saqueo de Pedro y Alonso de Heredia. Al descubrir los ricos aluviones del Nechí, la Corona española fundó en 1581 la ciudad de Zaragoza de las Palmas y posteriormente los Reales de Minas de Remedios y Cáceres. La población originaria fue sometida a la mita minera en condiciones infrahumanas; las epidemias de viruela y el agotamiento físico provocaron una catástrofe demográfica.",
+        "encuentro_historico_con_el_cimarronaje_africano": "Ante el colapso demográfico indígena, la Corona importó miles de personas esclavizadas de África occidental para trabajar las minas de Zaragoza y Nechí. Aquellos esclavizados que escaparon hacia las selvas (cimarrones) conformaron palenques libres a lo largo de las quebradas del Nechí. En estos palenques se produjo un histórico proceso de convivencia, ayuda mutua y mestizaje biocultural con los remanentes indígenas de Zenufaná: los nativos transmitieron a los cimarrones el conocimiento de las arenas auríferas, las plantas medicinales y la navegación en batea, mientras los afrodescendientes aportaron técnicas metalúrgicas de forja y organización defensiva cimarrona.",
+        "pervivencia_y_resistencia_contemporanea": "A lo largo de los siglos XIX y XX, las comunidades indígenas mantuvieron su presencia en el Bajo Cauca antioqueño, articuladas al pueblo Zenú. En la actualidad libran una ardua resistencia frente al despojo generado por la minería mecanizada a gran escala con dragas industriales y retroexcavadoras que utilizan mercurio, contaminando las aguas del río Nechí y destruyendo los lechos tradicionales de barequeo. Exigen la titulación y saneamiento de sus resguardos territoriales y la descontaminación de su hábitat ribereño."
+      },
+      "arqueometalurgia_sagrada_y_la_filigrana": {
+        "cumbre_tecnica_de_la_filigrana_fundida_a_la_cera_perdida": "La civilización Zenú alcanzó su cénit orfebre en los talleres de Zenufaná a través de la técnica de 'filigrana fundida a la cera perdida' (cast filigree). A diferencia de la filigrana europea (que suelda hilos mecánicamente con soplete), los orfebres de Zenufaná vaciaban la joya completa con todos sus hilos en una sola fundición de metal líquido.",
+        "proceso_tecnologico_ancestral": [
+          "Paso 1: Recolección de cera virgen de abejas nativas sin aguijón (Meliponini), mezclada con resina vegetal para darle consistencia maleable y elástica.",
+          "Paso 2: Trefilado manual de hilos de cera de calibre capilar (inferiores a un milímetro) haciéndolos rodar sobre tablas de madera pulida.",
+          "Paso 3: Tejido y entrecruzado de los hilos de cera sobre matrices curvas de arcilla, creando encajes geométricos de grecas, zigzags y mallas abiertas.",
+          "Paso 4: Adición de figuras zoomorfas modeladas en relieve (aves acuáticas, felinos, caimanes, peces).",
+          "Paso 5: Envoltura de la pieza en sucesivas capas de barbotina fina de arcilla mezclada con carbón vegetal molido hasta conformar un molde refractario hermético provisto de canales de colada.",
+          "Paso 6: Calentamiento del molde al fuego para derretir y evacuar la cera ('cera perdida'), dejando el espacio hueco exacto de la red textil.",
+          "Paso 7: Vaciado de tumbaga (aleación de oro y cobre) fundida en crisoles a más de 950°C, llenando cada diminuto canal por gravedad y presión capilar.",
+          "Paso 8: Rotura del molde cerámico una vez frío y tratamiento de dorado por oxidación ácida (mise-en-couleur / depletion gilding): inmersión de la pieza en jugos ácidos de plantas (oxalatos) y frotamiento con arena fina para eliminar el cobre superficial, revelando un acabado de oro puro deslumbrante."
+        ],
+        "simbolismo_cosmologico_del_tejido_metalico": "Para los sabios de Zenufaná, el universo entero era un tejido viviente trenzado por los dioses creadores. La orfebrería de filigrana no era un simple adorno suntuario, sino la materialización del cosmos: las célebres orejeras semicirculares caladas reproducían las alas extendidas de las aves acuáticas (garzas, patos aguja) que bucean en las ciénagas, uniendo el cielo, la tierra y el mundo subacuático en una sola joya solar."
+      },
+      "economia_y_tecnologias_ancestrales": {
+        "mineria_tradicional_de_aluvion": "Barequeo en playas y orillas de los ríos Nechí y Bagre mediante el uso de bateas cónicas de madera dura y canalones artesanales.",
+        "agricultura_de_humedal_y_vegas": "Siembra de maíz, yuca, arroz de vega, plátano y frutales en las llanuras de inundación enriquecidas por los limos fluviales fértiles.",
+        "pesca_de_cienaga": "Captura de bocachico, bagre pintado, comelón y blanquillo en el complejo de ciénagas mediante atarrayas de fibra y canoas de madera."
+      }
+    },
+    {
+      "id": "tahami",
+      "nombre_comun": "Tahamí (Tahamíes de las Montañas de Antioquia)",
+      "autodenominacion": "Tahamí (interpretado como 'Hombres de las alturas / Señores de las montañas y terrazas andinas')",
+      "filiacion_etnica": "Nación indígena milenaria de agricultores intensivos, tejedores de algodón y orfebres de la Cordillera Central en el oriente y nordeste de Antioquia. Contemporáneos, vecinos y confederados comerciales de los Nutabes.",
+      "filiacion_linguistica": {
+        "familia": "Familia Chibcha",
+        "subgrupo": "Rama Chibcha Andino-Magdalénica de la Cordillera Central (estrechamente afín a la lengua Nutabe y con conexiones léxicas con el Muisca septentrional y Guane)",
+        "idioma": "Lengua Tahamí (extinta en su fluidez conversacional desde el siglo XVIII tras la implantación de encomiendas y pueblos de indios, pero viva a través de un denso e indeleble sustrato toponímico, antroponímico y cultural en todo el oriente antioqueño)",
+        "reconstruccion_sustrato": {
+          "evidencias_en_cronicas_coloniales": "Consignada en los relatos de los primeros conquistadores y visitadores de la Gobernación de Antioquia: Gaspar de Rodas, Fray Pedro Simón y los expedientes de tasaciones de tributos de los siglos XVI y XVII custodiados en el Archivo General de la Nación.",
+          "antroponimia_viva_el_apellido_quirama": "Supervivencia excepcional del antropónimo del gran cacique 'Quirama' como apellido familiar vivo en los municipios de Montebello, El Carmen de Viboral, Rionegro y Medellín, constituyendo un linaje biológico directo indiscutible.",
+          "toponimia_mayor": "Presencia indiscutible de topónimos de origen tahamí en los municipios y valles más prominentes del departamento de Antioquia: Quirama, Guarne, Marinilla, Samaná, Nare, Porce, Bitagüí, Curití."
+        },
+        "vocabulario_ancestral_glosado": [
+          {
+            "termino": "Quirama",
+            "traduccion": "Gran señor sagrado de las alturas / Soberano del Valle de San Nicolás",
+            "etimologia": "Antropónimo y título del cacique supremo del oriente antioqueño.",
+            "categoria": "Antropónimo sagrado y toponímico",
+            "hermeneutica_o_uso": "Líder emblemático tahamí que defendió la autonomía territorial y cuya memoria bautiza hoy el célebre Recinto Quirama en El Carmen de Viboral."
+          },
+          {
+            "termino": "Yamesí",
+            "traduccion": "Señor de las aguas y selvas del río Nare",
+            "etimologia": "Nombre del cacicazgo fluvial fronterizo con el río Magdalena.",
+            "categoria": "Antropónimo y territorio",
+            "hermeneutica_o_uso": "Cacique tahamí aliado que dominaba el comercio fluvial hacia el bajo y medio Magdalena."
+          },
+          {
+            "termino": "Guarne",
+            "traduccion": "Asentamiento de las huertas fértiles y fuentes de salmuera",
+            "etimologia": "Topónimo indígena conservado en el municipio de Guarne.",
+            "categoria": "Topónimo minero y agrícola",
+            "hermeneutica_o_uso": "Centro de producción salina terrestre y cultivo de maíz de clima frío."
+          },
+          {
+            "termino": "Marinilla",
+            "traduccion": "Valle de terrazas andinas y arroyos cristalinos",
+            "etimologia": "Topónimo de la cuenca alta del oriente antioqueño.",
+            "categoria": "Topónimo",
+            "hermeneutica_o_uso": "Asentamiento agrícola densamente poblado en la época prehispánica."
+          },
+          {
+            "termino": "Samaná",
+            "traduccion": "Río torrentoso de las vertientes boscosas",
+            "etimologia": "Hidrónimo mayor de la vertiente del Magdalena.",
+            "categoria": "Hidrónimo",
+            "hermeneutica_o_uso": "Cuenca fluvial que comunicaba los altiplanos fríos con las selvas cálidas."
+          },
+          {
+            "termino": "Nare",
+            "traduccion": "Puerto y confluencia de aguas navegables",
+            "etimologia": "Topónimo del río y puerto sobre el Magdalena.",
+            "categoria": "Topónimo e hidrónimo",
+            "hermeneutica_o_uso": "Principal enclave de comercio interétnico de sal, mantas y oro."
+          }
+        ],
+        "toponimia_y_flora_rescatada": [
+          {
+            "termino": "Maíz Capio y Maíz Chocleño (Zea mays)",
+            "tipo": "Fitónimo nutricional sagrado",
+            "significado_tradicional": "Maíz andino harinoso de ciclo largo",
+            "municipio_o_area": "Valle de San Nicolás, Rionegro, Sonsón y Marinilla",
+            "contexto_etnobotanico_o_geografico": "Base alimentaria absoluta de la sociedad tahamí; cultivado en terrazas de ladera con rotación de fríjol y arracacha."
+          },
+          {
+            "termino": "Fique o Cabuya (Furcraea andina)",
+            "tipo": "Fitónimo textil estructural",
+            "significado_tradicional": "Planta de hojas espinosas de fibra resistente",
+            "municipio_o_area": "Guarne, San Vicente Ferrer y Rionegro",
+            "contexto_etnobotanico_o_geografico": "Materia prima ancestral para elaborar costales de carga, alpargatas, cuerdas y redes de trueque."
+          },
+          {
+            "termino": "Nogal de Montaña (Juglans neotropica)",
+            "tipo": "Fitónimo tintóreo y maderable",
+            "significado_tradicional": "Árbol sagrado de tinte negro azabache",
+            "municipio_o_area": "Bosques de niebla de Santa Rosa de Osos y Sonsón",
+            "contexto_etnobotanico_o_geografico": "Su corteza y nuez se hervían para teñir de negro las mantas de algodón ceremonial y pintar los postes de bahareque."
+          },
+          {
+            "termino": "Frailejón (Espeletia spp.)",
+            "tipo": "Fitónimo de páramo",
+            "significado_tradicional": "Planta peluda guardiana de las lagunas del nacimiento del agua",
+            "municipio_o_area": "Páramos de Sonsón y Altiplano Norte",
+            "contexto_etnobotanico_o_geografico": "Venerada como antena espiritual de las alturas donde moran los ancestros primordiales."
+          }
+        ]
+      },
+      "territorio_y_demografia": {
+        "departamentos": [
+          "Antioquia"
+        ],
+        "municipios": [
+          "Rionegro",
+          "El Carmen de Viboral",
+          "Marinilla",
+          "Guarne",
+          "El Retiro",
+          "El Santuario",
+          "Sonsón",
+          "La Ceja",
+          "Santa Rosa de Osos",
+          "San Vicente Ferrer",
+          "Concepción",
+          "Santo Domingo",
+          "Guatapé",
+          "El Peñol",
+          "San Carlos",
+          "San Rafael",
+          "Puerto Nare"
+        ],
+        "cuencas_hidrograficas_principales": [
+          "Río Porce (tramo medio)",
+          "Río Medellín / Aburrá (vertientes orientales)",
+          "Río Nare",
+          "Río Samaná Norte",
+          "Río Negro",
+          "Río Buey",
+          "Vertiente occidental del Río Magdalena"
+        ],
+        "resguardos_constituidos_y_comunidades": [
+          "Resguardo Colonial Histórico de San Antonio del Peñol de Guatapé (creado en 1714 para congregar a los remanentes indígenas tahamíes de la provincia, disuelto en la época republicana)",
+          "Procesos contemporáneos de recuperación de memoria étnica y cabildos en reconstrucción en el oriente antioqueño y Valle de Aburrá"
+        ],
+        "asentamientos_emblematicos": [
+          "El Carmen de Viboral (Vereda Quirama y Recinto Quirama)",
+          "Rionegro (antiguo valle de las mantas)",
+          "Guarne (enclave de salinas y terrazas)",
+          "El Peñol (antiguo pueblo de indios)",
+          "Marinilla y El Santuario"
+        ],
+        "pisos_termicos_y_ecosistemas": "Altiplanos andinos fríos, valles intermontanos templados y páramos de alta montaña (1.200 a 3.200 msnm). Bosque húmedo montano bajo (bh-MB) y ecosistemas de páramo.",
+        "poblacion_estimada_y_censo": "Población originaria asimilada y mestizada en el campesinado tradicional del oriente antioqueño. Comunidades de memoria e investigadores calculan en decenas de miles los descendientes directos que preservan rasgos bioculturales y apellidos autóctonos como Quirama."
+      },
+      "historia_y_resistencia": {
+        "origen_ancestral_y_senorios": "Los Tahamíes ocuparon la vertiente oriental de la Cordillera Central desde periodos precerámicos. A diferencia de las bandas nómadas de selva baja, conformaron una sociedad sedentaria densa, organizada en señoríos autónomos confederados bajo la égida de caciques de gran prestigio moral y militar como Quirama.",
+        "la_alianza_comercial_con_los_nutabes": "Mantenían una relación simbiótica y pacífica con sus vecinos Nutabes del cañón del Cauca. Los Tahamíes aportaban mantas de algodón hiladas y teñidas, sal terrestre evaporada en Guarne, maíz y frutos de tierra fría; a cambio, los Nutabes proveían oro nativo de aluvión, conchas marinas y sal marina obtenida del comercio con el Golfo de Urabá.",
+        "el_choque_colonial_y_los_pueblos_de_indios": "A finales del siglo XVI, el gobernador Gaspar de Rodas y la Real Audiencia ejecutaron la política de reducción forzada en 'Pueblos de Indios' para despojar a los Tahamíes de los fértiles valles del Rionegro y Marinilla, entregándolos a encomenderos y colonos españoles. Se crearon asentamientos de concentración como San Antonio del Peñol y San Jerónimo. La mita agrícola y la servidumbre doméstica diezmaron su estructura política independiente.",
+        "pervivencia_del_sustrato_en_el_campesinado_antioqueno": "La población tahamí no desapareció en el vacío: constituyó el cimiento biológico, tecnológico y cultural primordial sobre el cual se edificó el campesinado tradicional del Oriente antioqueño ('cultura paisa montañera'). El campesino heredó de los Tahamíes las técnicas agrícolas de rotación de maíz y fríjol en laderas escarpadas, la construcción de viviendas en bahareque de caña brava y barro pisado, el laboreo del fique, la culinaria del maíz y un vasto universo de etnobotánica medicinal y relatos orales sobre espíritus tutelares de las montañas.",
+        "reivindicacion_contemporanea": "En las últimas décadas, el Centro de Pensamiento y Convenciones 'Recinto Quirama' en El Carmen de Viboral, junto a movimientos comunitarios y académicos de Rionegro y Guarne, ha rescatado la figura del Cacique Quirama y la memoria viva de los Tahamíes como pilar insustituible de la identidad regional frente a la urbanización e industrialización acelerada."
+      },
+      "cosmovision_y_cultura_material": {
+        "espiritualidad_de_las_montanas_y_lagunas": "Los Tahamíes concebían las altas cumbres de la cordillera y las lagunas de páramo (como las lagunas de Sonsón y Guarne) como moradas de espíritus sagrados que controlaban las lluvias, los rayos y la fertilidad de las cosechas. En ellas realizaban ofrendas votivas de figuras de tumbaga y mantas consagradas.",
+        "ingenieria_agricola_en_terrazas_de_ladera": "Desarrollaron una magistral bioingeniería de conservación de suelos. Para cultivar en las abruptas pendientes andinas sin provocar deslizamientos por las fuertes lluvias, levantaron terrazas escalonadas reforzadas con muros de piedra seca y zanjas de drenaje, lo que permitía sembrar maíz continuo y conservar la capa orgánica del suelo.",
+        "explotacion_de_fuentes_salinas_terrestres": "Pozos salobres en Guarne y valles aledaños donde el agua de manantial con alto contenido mineral era evaporada en ollas cerámicas sobre fogones encendidos día y noche. La sal obtenida en bloques compactos constituía la principal moneda de cambio en los mercados interétnicos.",
+        "industria_textil_del_algodon": "Expertos hilanderos que empleaban husos de madera de palma y torteros líticos decorados con incisiones geométricas. Confeccionaban mantas de algodón tupido pintadas con tintes vegetales (nogal, achiote, añil) que servían de abrigo frente a las heladas de la cordillera y de prenda suntuaria de intercambio."
+      },
+      "economia_y_tecnologias_ancestrales": {
+        "agricultura_diversificada": "Soberanía alimentaria cimentada en la tríada mesoamericana adaptada a los Andes: maíz, fríjol y calabaza/vitoria, complementada con arracacha, yuca andina, camote y frutales de clima frío (moras silvestres, uchuvas, tomate de árbol).",
+        "artesanias_heredadas": "El trabajo de la cerámica en barro cocido de El Carmen de Viboral (tradición lozera que evolucionó en el siglo XIX) tiene sus raíces en los yacimientos arcillosos explotados milenariamente por los alfareros tahamíes."
+      }
+    }
+  ],
+  "estudios_transversales_y_sintesis": {
+    "comparativa_sustratos_linguisticos_y_toponimicos": {
+      "sintesis": "Análisis comparativo de las cinco naciones documentadas que demuestra la presencia dominante de la macro-familia Chibcha (con sus variantes Dulegaya en el litoral del Darién-Urabá, y los sustratos Nutabe y Tahamí en las cuencas del Cauca y la Cordillera Central), interactuando con la Familia Malibú (Mokaná) en el bajo Magdalena y el sustrato Zenú (Senufaná) en las cuencas mineras del Nechí.",
+      "matriz_lexico_toponimica": [
+        {
+          "pueblo": "Guna Dule",
+          "familia_linguistica": "Familia Chibcha (Rama Ístmica)",
+          "vitalidad": "Vital (>78% de hablantes nativos)",
+          "termino_emblematico": "Galu / Nuchu / Mor",
+          "toponimos_clave": "Maggilagundiwala (Arquía), Ibgigundiwala (Caimán Nuevo)"
+        },
+        {
+          "pueblo": "Mokaná",
+          "familia_linguistica": "Familia Malibú / Sustrato Mokaná",
+          "vitalidad": "Sustrato lingüístico / En revitalización",
+          "termino_emblematico": "Kasmhashoru / Hu / Budare",
+          "toponimos_clave": "Tubará, Galapa, Malambo, Usiacurí, Baranoa, Piojó"
+        },
+        {
+          "pueblo": "Nutabe",
+          "familia_linguistica": "Familia Chibcha (Rama Septentrional)",
+          "vitalidad": "Sustrato lingüístico / Léxico minero vivo",
+          "termino_emblematico": "Nutibara / Batea / Chupadera",
+          "toponimos_clave": "Orobajo, Sabanalarga, Peque, Ituango, Cuerquia, Sinitavé"
+        },
+        {
+          "pueblo": "Senufaná",
+          "familia_linguistica": "Tronco Macro-Chibcha / Lengua Zenú",
+          "vitalidad": "Sustrato lingüístico / Léxico de aluvión",
+          "termino_emblematico": "Tumbaga / Filigrana fundida",
+          "toponimos_clave": "Nechí, Cuturú, El Bagre, Zaragoza, Caucasia, Tarazá"
+        },
+        {
+          "pueblo": "Tahamí",
+          "familia_linguistica": "Familia Chibcha (Rama Andino-Magdalénica)",
+          "vitalidad": "Sustrato lingüístico y antroponímico vivo",
+          "termino_emblematico": "Quirama / Yamesí / Salmuera",
+          "toponimos_clave": "Quirama, Guarne, Marinilla, Samaná, Nare, Porce, El Peñol"
+        }
+      ]
+    },
+    "cartografia_sagrada_y_sitios_arqueologicos": {
+      "sintesis": "Cartografía de los nodos ceremoniales, petroglifos y asentamientos históricos que testimonian la resistencia y la memoria viva de estas naciones originarias:",
+      "hitos_cartograficos": [
+        {
+          "sitio": "Recintos Sagrados Galus (Gunadule)",
+          "ubicacion": "Serranía del Darién y estrato cósmico invisible",
+          "relevancia": "Fortalezas espirituales donde residen los amos de los seres vivos y la matriz de las molas."
+        },
+        {
+          "sitio": "Monumento Megalítico de Piedra Pintada (Mokaná)",
+          "ubicacion": "Vereda El Morro, Tubará (Atlántico)",
+          "relevancia": "Biblioteca lítica con petroglifos milenarios del Dios Hu, monos cotudos y espirales solares."
+        },
+        {
+          "sitio": "Caserío y Cementerio Sagrado de Orobajo (Nutabe)",
+          "ubicacion": "Cañón del río Cauca (Sabanalarga/Peque/Ituango, Antioquia)",
+          "relevancia": "Territorio ancestral y necrópolis sagrada inundada en mayo de 2018 por el embalse de Hidroituango."
+        },
+        {
+          "sitio": "Talleres Orfebres y Placeres del Río Nechí (Senufaná)",
+          "ubicacion": "Cuenca del Nechí y bajo Cauca (El Bagre, Zaragoza, Caucasia)",
+          "relevancia": "Epicentro de la filigrana fundida a la cera perdida y del barequeo ancestral de oro de aluvión."
+        },
+        {
+          "sitio": "Recinto Quirama y Terrazas del Valle de San Nicolás (Tahamí)",
+          "ubicacion": "El Carmen de Viboral, Rionegro y Guarne (Antioquia)",
+          "relevancia": "Sede del cacicazgo de Quirama, terrazas agrícolas de ladera y fuentes salinas prehispánicas."
+        }
+      ]
+    },
+    "arqueometalurgia_y_tecnologias_comparadas": {
+      "sintesis": "Comparación tecnológica y cosmogónica de la transformación de materiales entre los cinco pueblos:",
+      "ejes_tecnologicos": {
+        "filigrana_fundida_zenufana": "Cumbre de la microfundición a la cera perdida en tumbaga (oro-cobre) en una sola pieza sin soldaduras mecánicas.",
+        "barequeo_gravimetrico_nutabe": "Beneficio de oro aluvial mediante batea cónica de caracolí y chupaderas manuales, sin el empleo de agentes químicos contaminantes.",
+        "aplicacion_invertida_gunadule": "Superposición y corte milimétrico de telas de algodón para conformar molas que protegen el feto y el cuerpo contra entidades patógenas Nia.",
+        "alfareria_formativa_mokana": "Modelado manual de budares para cocer cazabe y vasijas ceremoniales con incisiones de motivos rupestres.",
+        "terrazas_y_salinas_tahami": "Bancales escalonados de piedra para domesticar pendientes andinas y pailas cerámicas para evaporación de salmueras terrestres."
+      }
+    },
+    "redes_de_intercambio_fluvio_maritimo_prehispanico": {
+      "sintesis": "Reconstrucción del gran circuito macro-regional de intercambio comercial y cultural que articulaba el Mar Caribe con el interior andino:",
+      "dinamica_de_rutas": "Desde el Golfo de Urabá (Gunadule) ingresaban caracoles marinos, sal marina y conchas hacia el río Atrato y pasos de montaña del Darién; estos conectaban con el cañón del río Cauca donde los Nutabes aportaban oro en escamas y pescado seco; el río Nechí (Senufaná) abastecía de joyas de filigrana fundida; a su vez, por los pasos de la cordillera, los Tahamíes suministraban mantas finas de algodón teñido y sal terrestre evaporada de Guarne, mientras el río Magdalena y sus litorales comunicaban con los alfareros y cazadores Mokaná del Atlántico. Esta vasta red fluvio-marítima garantizaba la complementariedad ecológica y la circulación de bienes sagrados."
+    },
+    "etnogenesis_reemergencia_y_justicia_reparativa": {
+      "sintesis": "Evolución jurídica y política contemporánea de los procesos de autoreconocimiento, resistencia frente a megaproyectos y salvaguarda de derechos fundamentales:",
+      "marcos_analiticos": {
+        "resistencia_nutabe_resolucion_0071_de_2017": "Hito paradigmático donde una comunidad declarada 'extinta' por más de un siglo derrota la invisibilización oficial tras el desastre socioambiental de Hidroituango, logrando su inscripción como Pueblo Indígena y la exigencia de restitución territorial integral.",
+        "reemergencia_mokana_de_1998": "Reorganización comunitaria del Cabildo Mayor de Tubará que rescató sus títulos coloniales, sus sitios sagrados de petroglifos y su identidad étnica en el marco de la Constitución de 1991.",
+        "salvaguarda_gunadule_auto_004_de_2009": "Reconocimiento por la Corte Constitucional de la gravedad del conflicto armado en el Darién y el Urabá, blindando a los resguardos de Arquía y Caimán Nuevo bajo medidas de protección étnica cautelar y derechos bioculturales (Sentencia T-622 de 2016).",
+        "pervivencia_zenufana_bajo_cauca": "Lucha de los cabildos indígenas zenúes del Bajo Cauca antioqueño frente a la gran minería mecanizada, defendiendo la descontaminación por mercurio del río Nechí y la titulación de resguardos."
+      }
+    }
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "metadata": {
+    "titulo": "Gran Compendio Etnohistórico y Arqueológico de las Naciones de los Valles Interandinos, Santanderes y Pueblos del Cauca y Tolima",
+    "subtitulo": "Documentación monográfica de pueblos originarios, enclaves de reetnización andina, memoria de resistencia y restitución territorial biocultural",
+    "descripcion": "Capa enciclopédica exhaustiva sobre ocho naciones y pueblos indígenas de los valles interandinos (Magdalena y Cauca), los Santanderes (Chicamocha y Serranía de los Yariguíes), el valle del Alto Magdalena en Huila y Tolima, y los enclaves etnoterritoriales de Silvia, Inzá y Totoró en el departamento del Cauca. Integra análisis de etnohistoria, lingüística comparada, tecnología lítica y orfebre, arqueología funeraria y momificación, deformaciones rituales, agricultura de ladera, medicina tradicional con rezos de tabaco y farmacopea andina, luchas agrarias del quintinismo y sentencias históricas de restitución de tierras.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026",
+    "autor": "Subagente Especialista en Valles Interandinos, Santanderes y Pueblos del Cauca de Colombianopedia",
+    "alcance_geografico": [
+      "Cañón del Río Chicamocha, Mesa de los Santos, Zapatoca, Barichara y Guanentá (Santander)",
+      "Serranía de los Yariguíes y cuencas bajas del Carare, Opón, Sogamoso y Magdalena Medio santandereano",
+      "Valle del Alto Magdalena y piedemonte de la Cordillera Oriental en Rivera y Neiva (Huila)",
+      "Valles secos interandinos y cuencas de los ríos Saldaña, Chenche y Magdalena en Natagaima, Coyaima, Ortega y Chaparral (Tolima)",
+      "Altas laderas de la Cordillera Central y cuencas de los ríos Piendamó y Palacé en Silvia y Totoró (Cauca)",
+      "Cañón del río Guanacas y cuenca de Tierradentro en Inzá (Cauca)"
+    ],
+    "marcos_juridicos_y_constitucionales": {
+      "constitucion_politica_1991": [
+        "Artículo 7: Reconocimiento y protección estatal de la diversidad étnica y cultural de la Nación colombiana.",
+        "Artículo 10: Oficialidad de las lenguas y dialectos indígenas en sus territorios territoriales.",
+        "Artículo 63 y 329: Inalienabilidad, imprescriptibilidad e inembargabilidad de las tierras comunales de resguardo indígena.",
+        "Artículo 246: Reconocimiento pleno de la Jurisdicción Especial Indígena (JEI) y del ejercicio de gobierno propio comunitario.",
+        "Artículo 330: Autonomía territorial mediante Cabildos y Consejos de Autoridades Tradicionales para la gestión ambiental y socioeconómica."
+      ],
+      "normativa_internacional": "Convenio 169 de la OIT sobre Pueblos Indígenas y Tribales (incorporado mediante Ley 21 de 1991) y Declaración de las Naciones Unidas sobre los Derechos de los Pueblos Indígenas (2007).",
+      "jurisprudencia_hito_y_justicia_transicional": [
+        "Auto 004 de 2009 de la Corte Constitucional: Declaratoria de riesgo inminente de extinción física y cultural por conflicto armado y despojo territorial forzado.",
+        "Sentencia de Restitución de Tierras del Tribunal Superior del Distrito Judicial de Bogotá (Sala Especializada de Restitución) a favor del Resguardo Indígena Dujos / El Pital (municipio de Rivera, Huila), restituyendo títulos coloniales históricos de más de tres siglos.",
+        "Medidas cautelares y demandas de restitución étnica ante tribunales agrarios de la Unidad de Restitución de Tierras (URT) amparando al Resguardo Indígena Quizgó (Silvia, Cauca).",
+        "Informes y audiencias ante la Comisión para el Esclarecimiento de la Verdad (CEV) y la Jurisdicción Especial para la Paz (JEP) sobre el genocidio histórico y petrolero del Pueblo Yariguí impulsado por enclaves extractivos internacionales y omisión estatal en el siglo XX.",
+        "Ley 89 de 1890: Resignificada por el movimiento indígena liderado por Manuel Quintín Lame como trinchera jurídica de defensa de los resguardos coloniales."
+      ]
+    },
+    "total_pueblos_documentados": 8,
+    "catalogo_pueblos": [
+      "Guane",
+      "Yariguí",
+      "Dujos",
+      "Quizgó",
+      "Guanaca",
+      "Polindara",
+      "Ambaló",
+      "Pijao del Tolima"
+    ]
+  },
+  "pueblos_indigenas": [
+    {
+      "id": "guane",
+      "nombre_comun": "Guane",
+      "autonimo": "Pueblo Guane",
+      "significado_autonimo": "Denominación ancestral de los linajes originarios del Cañón del Chicamocha y la Mesa de Xerira (Mesa de los Santos), asociada etimológicamente a la 'tierra de las mantas finas y el sol de las peñas'.",
+      "exonomo_historico": "Guanes (registrado por los cronistas Gonzalo Jiménez de Quesada, Fray Pedro Simón y Lucas Fernández de Piedrahita en las campañas de 1540).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 2850,
+        "estado_reconocimiento": "Pueblo en proceso activo de reetnización, autoidentificación y reconstrucción organizativa de cabildos indígenas en Santander.",
+        "departamentos_presencia": [
+          "Santander"
+        ],
+        "municipios_enclave": [
+          "Barichara (corregimiento de Guane y veredas aledañas)",
+          "Los Santos (Mesa de los Santos / antigua meseta de Xerira)",
+          "Zapatoca (cañón del río Sogamoso y río Suárez)",
+          "Curití (cañón del Chicamocha y cavernas kársticas)",
+          "San Gil",
+          "Villanueva",
+          "Cabrera",
+          "Jordán Sube (fondo del cañón del Chicamocha)",
+          "Aratoca",
+          "Mogotes"
+        ],
+        "territorio_nuclear": "Cuenca media y baja del cañón del Río Chicamocha, altiplanicie de la Mesa de los Santos, cañones de los ríos Suárez, Fonce y Guanentá, y serranías secas de Zapatoca y Barichara.",
+        "pisos_termicos": "Desde el fondo xerofítico semiárido del cañón del Chicamocha (450 a 800 msnm) hasta las mesetas y altiplanicies templadas y frías de la Mesa de los Santos y Zapatoca (1.600 a 2.200 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Chicamocha",
+          "Río Suárez (antiguo río Saravita)",
+          "Río Fonce",
+          "Río Sogamoso",
+          "Quebrada Barichara",
+          "Quebrada La Laja"
+        ],
+        "relieve_y_geografia_sagrada": "El colosal Cañón del Chicamocha con sus abismos de más de mil metros de profundidad, la Mesa de Xerira (Mesa de los Santos) como ara cósmica solar, las cavernas kársticas funerarias y los monolitos de Butaregua y Macaregua."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "familia": "Macro-Chibcha / Chibchense Septentrional",
+          "rama": "Magdalénica o Cundiboyacense-Santandereana",
+          "parentesco_dialectal": "Estrechamente emparentada con el Muyskkubun (lengua muisca del altiplano cundiboyacense) y el Uwa/Tunebo de la Sierra Nevada del Cocuy. Compartía con el Muisca raíces morfosintácticas aglutinantes, prefijos clasificadores y fonemas velares y glotales característicos.",
+          "toponimia_e_hidronimia_superviviente": [
+            "Chicamocha: 'Hijo del hilo plateado o corriente que corta la montaña sagrada'",
+            "Barichara: 'Lugar de buen descanso junto al abismo o sitio de árboles florecidos'",
+            "Xerira: Nombre prehispánico de la Mesa de los Santos",
+            "Macaregua: Enclave del cacicazgo del tabaco y las piedras altas",
+            "Butaregua: 'Tierra del sol naciente'",
+            "Lubigará, Chanchón, Corocora, Choagüete, Guane"
+          ],
+          "estado_vital": "Lengua histórica extinta en su uso cotidiano durante el siglo XVIII a raíz de la imposición del castellano colonial y la disolución forzosa de los pueblos de indios; corpus rescatado mediante toponimia, documentos coloniales del Archivo General de la Nación y procesos contemporáneos de reconstrucción léxica."
+        },
+        "cronica_historica_y_resistencia": {
+          "cacicazgos_confederados": "Estructura sociopolítica descentralizada en señoríos comarcales tributarios y confederados: Guanentá (señor supremo del valle del Fonce), Butaregua, Macaregua, Lubigará y Chanchón.",
+          "invasion_espanola_1540": "En 1540, el capitán Martín Galeano, teniente de Gonzalo Jiménez de Quesada, penetró en el territorio Guane con tropas de caballería, perros de presa y arcabuces. Enfrentó una feroz resistencia en el desfiladero de Chanchón y en el Peñón de los Muertos.",
+          "el_holocausto_del_peñon": "Antes de doblegarse a la esclavitud de la encomienda y la mita agraria, cientos de familias guanes completas prefirieron saltar tomadas de las manos hacia el vacío de los riscos del Cañón del Chicamocha, convirtiendo el abismo en un mausoleo sagrado de libertad innegociable.",
+          "encomienda_y_mestizaje": "Los sobrevivientes fueron reducidos en 1570 al Pueblo de Indios de Guane (hoy corregimiento de Barichara). El despojo de tierras comunales por encomenderos y la posterior asimilación campesina generó un intenso mestizaje donde los saberes agroartesanales guanes (tejeduría de mantas, laboreo del tabaco y talla de piedra) pasaron a fundar la cultura campesina santandereana."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "fardos_funerarios_y_momificacion": {
+          "sitios_emblematicos": [
+            "Cueva de los Tamarindos (Mesa de los Santos, excavada por Justus Wolfram Schottelius en 1941)",
+            "Cueva de Los Tolú (San Gil / Cabrera)",
+            "Cueva del Indio (Zapatoca)",
+            "Cueva de La Purnia (Los Santos)"
+          ],
+          "proceso_de_momificacion": "Desecación natural y tratamiento mortuorio especializado: los cuerpos eran deshidratados aprovechando las corrientes de aire seco, cálido y constante de las cavernas calcáreas del cañón. Se colocaban en posición fetal o genuflexa (cuclillas), atados fuertemente con cuerdas de fique para compactar las extremidades contra el tórax.",
+          "ajuar_funerario": "Los difuntos eran envueltos en múltiples capas (hasta siete) de finísimas telas y mantas de algodón blanco y polícromo, acompañados de torteros de hilar tallados en esteatita, mochilas de fique, vasijas ceremoniales con granos de maíz y chicha seca, collares de cuentas de concha marina (evidencia de intercambio a larga distancia) y caracoles tallados."
+        },
+        "deformacion_craneal_ritual": {
+          "tipo": "Deformación craneal tubular oblicua (cráneo alargado hacia atrás y arriba).",
+          "metodologia": "Aplicación de tablillas de madera atadas con bandas compresoras de algodón y fibras de fique sobre los huesos frontal y occipital de los lactantes durante los primeros meses de vida, cuando las fontanelas y suturas craneales son maleables.",
+          "significado_sociocultural": "Marcador biocultural de estatus jerárquico, linaje chamánico y diferenciación étnica frente a los pueblos Yariguí y Muisca; simbolizaba la elevación espiritual hacia las fuerzas celestes y solares."
+        },
+        "textileria_ancestral": {
+          "materia_prima": "Algodón silvestre andino (Gossypium barbadense y Gossypium hirsutum) recolectado en las vegas ribereñas del Chicamocha y Suárez.",
+          "herramientas": "Husos de madera dura y torteros o volantes de huso manufacturados en arcilla cocida y piedra, decorados con grabados incisos de espirales y triángulos.",
+          "mantas_policromas": "Tejidas en telares de cintura o faja vertical; alcanzaban densidades textiles admiradas por cronistas españoles como superiores a las telas europeas de la época. Eran pintadas a pincel y teñidas con pigmentos naturales indelebles: achiote (Bixa orellana) para tonos rojizos y anaranjados; añil silvestre (Indigofera suffruticosa) para tonos azulados y verdosos; cáscara de nogal y carbón vegetal para negros profundos; y cortezas de árboles para ocres.",
+          "disenos": "Geometría sagrada compuesta por grecas continuas, rombos concéntricos, meandros y figuras laberínticas que representaban el curso del río Chicamocha y la piel de la serpiente cascabel."
+        },
+        "fique_y_cesteria": {
+          "fibra": "Fique o cabuya (Furcraea andina y Furcraea cabuya).",
+          "productos": "Elaboración de alpargatas con suelas de trenzas apretadas, cuerdas de alta resistencia para puentes colgantes sobre el Chicamocha, mochilas de carga, chinchorros y redes de captura."
+        }
+      },
+      "agricultura_de_ladera_y_subsistencia": {
+        "manejo_de_bancales_y_terrazas": "Construcción de terrazas de cultivo en las laderas escarpadas del cañón del Chicamocha, sostenidas por muros de contención de piedra seca (pircas o albarradas) para frenar la erosión eólica e hídrica y crear microclimas térmicos que conservaban la humedad nocturna.",
+        "acequias_e_irrigacion": "Canalización de aguas de quebradas de alta montaña mediante zanjas empedradas para regar parcelas en temporadas de sequía.",
+        "huertas_de_pan_coger": [
+          "Maíz amarillo y blanco (base de los bollos, arepas de maíz pelao y chicha)",
+          "Frijol silvestre y frijol petaco",
+          "Tabaco originario (recolectado y cultivated en las vegas del Suárez)",
+          "Yuca dulce de ladera",
+          "Batata o camote",
+          "Ahuyama criolla",
+          "Ají picante y piña de monte"
+        ],
+        "hormiga_culona": {
+          "especie": "Atta laevigata (reinas aladas recolectadas en los primeros aguaceros de abril y mayo).",
+          "valor_ritual_y_nutricional": "Tradición milenaria guane considerada manjar sagrado de fertilidad, ofrenda nupcial para recién casados y fuente densa de proteínas y ácidos grasos; tostadas en tiestos de barro con sal marina."
+        }
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "sabedores": "Mohanes, rezadores de tabaco y ancianas sobadoras.",
+        "el_rezo_del_tabaco": "El tabaco amargo (Nicotiana rustica) no era un producto recreativo sino un puente sacramental con el cosmos. Los mohanes quemaban hojas secas en braseros o fumaban puros enrollados para soplar el humo sobre enfermos, ahuyentando miasmas y desequilibrios espirituales provocados por 'aires de cueva' o 'mal de peña'.",
+        "farmacopea_andina_xerofitica": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada en decocción para controlar fiebres agudas, afecciones estomacales y purgaciones hepáticas; machacada en cataplasma para limpiar heridas infectadas.",
+          "altamisa": "Ambrosia peruviana: Planta maestra para 'despojos' y 'sahumerios'; baños calientes para regular el ciclo menstrual y ahuyentar malas energías acumuladas en el cuerpo.",
+          "arnica_de_pena": "Chaptalia nutans / Senecio spp.: Macerada en aguardiente casero para sobar golpes, torceduras articulares, dolores reumáticos causados por la humedad nocturna del cañón y fatiga de caminantes por los senderos escarpados."
+        },
+        "banos_en_ojos_de_agua": "Inmersiones en pozos y cascadas de quebradas tutelares para limpiar el 'susto' o espanto tras caídas o encuentros con espíritus de los abismos."
+      },
+      "reivindicacion_y_proceso_de_reetnizacion": {
+        "cabildos_en_reconstruccion": "Constitución de los Cabildos Indígenas Guane en Barichara y en la Mesa de los Santos, agrupando a familias que conservan memoria genealógica, rasgos fenotípicos y prácticas agroecológicas y artesanales ancestrales.",
+        "recuperacion_patrimonial": "Campañas comunitarias e institucionales para la protección de los abrigos rocosos con arte rupestre (petroglifos y pictografías en ocre) y exigencia de restitución ética y repatriación de las momias y ajuares guanes expuestos en vitrinas museísticas sin consentimiento comunitario.",
+        "defensa_ecoterritorial": "Oposición comunitaria a proyectos extractivos de minería de yeso y calizas y a la sobreexplotación turística e inmobiliaria descontrolada en la Mesa de los Santos y Barichara, protegiendo las fuentes de agua y los senderos ancestrales."
+      }
+    },
+    {
+      "id": "yarigui",
+      "nombre_comun": "Yariguí",
+      "autonimo": "Pueblo Yariguí (Quiriquires / Opones y Cararaes)",
+      "significado_autonimo": "Vocablo originario caribe que alude a los 'Hombres señores de las selvas y de las fieras del agua grande'.",
+      "exonomo_historico": "Yariguíes, Opones, Carare, Infieles de la Serranía (apelativos de las crónicas virreinales y de los diarios de concesionarios petroleros).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 1650,
+        "estado_reconocimiento": "Pueblo víctima de genocidio sistemático y dispersión territorial forzada, en dinámico proceso contemporáneo de reconstrucción de cabildo, memoria oral y visibilización de sobrevivientes mestizo-indígenas en Santander y Magdalena Medio.",
+        "departamentos_presencia": [
+          "Santander"
+        ],
+        "municipios_enclave": [
+          "Barrancabermeja (antiguo puerto ribereño y centro del enclave de Mares)",
+          "San Vicente de Chucurí (piedemonte de la Serranía de los Yariguíes)",
+          "El Carmen de Chucurí",
+          "Zapatoca (vertiente occidental montañosa)",
+          "Betulia",
+          "Puerto Wilches",
+          "Simacota",
+          "Bajo Simacota y cuenca del río Opón",
+          "Landázuri (cuenca del río Carare)"
+        ],
+        "territorio_nuclear": "La imponente cordillera selvática de la Serranía de los Yariguíes, los valles aluviales y humedales de los ríos Sogamoso, Opón, Carare, Cascajales y la margen oriental del gran río Magdalena (Yuma).",
+        "pisos_termicos": "Desde la llanura aluvial cálida y húmeda del Magdalena Medio (70 a 200 msnm) hasta las cumbres nubladas y selvas pluviales de la Serranía de los Yariguíes (hasta 3.200 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Magdalena (Yuma)",
+          "Río Sogamoso",
+          "Río Opón",
+          "Río Carare",
+          "Río Chucurí",
+          "Ciénaga de San Silvestre",
+          "Ciénaga del Opón"
+        ],
+        "relieve_y_geografia_sagrada": "El espinazo montañoso de la Serranía de los Yariguíes, laberinto de cañones kársticos, cavernas profundas y ciénagas laberínticas consideradas vientre nutridor del bocachico y refugio cósmico de los espíritus de la selva virgen."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "familia": "Caribe Continental",
+          "rama": "Caribe del Magdalena / Opón-Carare",
+          "caracteristicas_linguisticas": "Fonología con oclusivas sordas y sonoras marcadas, ausencia de tono fonémico, estructura oracional SOV (Sujeto-Objeto-Verbo), y sufijación nominal de posesión inalienable. Compartía estrechas afinidades con las lenguas de los pueblos Yukpa de la Serranía del Perijá y los Muzos y Colimas del occidente de Boyacá.",
+          "lexicografia_historica": "Rescatada parcialmente a finales del siglo XIX y principios del XX por exploradores y misioneros (Roberto Pineda Giraldo, Paul Rivet, y apuntes de vocabulario Opón-Carare recopilados antes del colapso de las últimas parcialidades libres).",
+          "estado_vital": "Severamente fracturada en su continuidad de habla fluida por el genocidio del siglo XX; sobrevive un denso sustrato en la toponimia comarcal, nombres de peces y plantas de la selva, y cantos de resistencia comunitaria en proceso de etnogénesis."
+        },
+        "resistencia_historica_y_el_cacique_pipaton": {
+          "resistencia_colonial": "Durante más de 120 años, los Yariguíes impidieron el control español de la arteria fluvial del río Magdalena. Emboscaban los bergantines y champanes españoles mediante canoas rápidas y certeras ráfagas de flechas.",
+          "el_cacique_pipaton_y_yarima": "Entre finales del siglo XVI y las primeras décadas del siglo XVII, el Cacique Pipatón lideró una confederación de miles de guerreros yariguíes. Aliado con esclavizados cimarrones huidos de las minas y haciendas coloniales, Pipatón asoló los puestos virreinales desde Simacota hasta Puerto Real. Capturado anciano mediante engaño en 1601 y recluido en un convento en Santafé, logró huir de regreso a sus selvas sagradas donde continuó hostigando a la Corona hasta su muerte.",
+          "la_cacica_yarima": "Símbolo de dignidad y mando militar femenino yariguí, estratega de emboscadas fluviales y defensora de la Serranía."
+        },
+        "el_exterminio_republicano_y_petrolero": {
+          "las_cacerias_de_lengerke_siglo_xix": "Hacia 1860-1880, el comerciante alemán Geo von Lengerke obtuvo concesiones estatales para abrir caminos de herradura hacia el río Magdalena y explotar quina, madera y tagua. Lengerke armó cuadrillas mercenarias pagando recompensas monetarias por pares de orejas de indígenas Yariguíes, desatando una cacería humana genocida.",
+          "la_concesion_de_mares_y_la_troco_siglo_xx": "El golpe de gracia ocurrió con la Concesión de Mares, otorgada por el Estado colombiano en 1905 a Roberto De Mares e inaugurada a escala industrial en 1918 con el traspaso a la Tropical Oil Company (Troco, filial de la Standard Oil de New Jersey). La perforación de pozos petroleros en los campos La Cira-Infantas y Barrancabermeja requirió 'limpiar' militarmente las selvas. Capataces, guardias armados y cuadrillas talaron la selva tropical, infectaron a las comunidades con gripe y viruela, y asesinaron a tiros a los últimos núcleos familiares yariguíes que defendían sus pozos naturales de aceite mineral ('manantiales de nafta sagrada').",
+          "la_declaratoria_ficticia_de_extincion": "En las décadas de 1940 y 1950, la antropología oficial y el Estado declararon 'oficialmente extinguido' al pueblo Yariguí para consolidar los títulos de propiedad petrolera y latifundista ganadera, invisibilizando a los sobrevivientes refugiados en las partes altas de la Serranía."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "armamento_y_estrategia_militar": {
+          "picas_de_chonta": "Armas de choque de dos a tres metros de longitud labradas en el corazón durísimo y fibroso de la palma de chonta (Bactris gasipaes), endurecidas al fuego y con puntas biseladas capaces de atravesar armaduras y coseletes españoles.",
+          "flechas_envenenadas": "Varas ligeras de caña brava con puntas de madera dentadas o púas de raya de río, impregnadas con ponzoñas extraídas de resinas vegetales tóxicas (látex de euforbiáceas y curare selvático) y secreciones cutáneas de anfibios venenosos; provocaban asfixia respiratoria y colapso cardiovascular en minutos.",
+          "tactica_de_guerrilla_selvatica": "Despliegue de emboscadas relámpago aprovechando los recodos de los ríos y la densidad de los manglares y pantanos; señuelos en senderos con fosos camuflados provistos de estacas afiladas envenenadas en el fondo."
+        },
+        "navegacion_fluvial_y_pesca": {
+          "canoas_monoxilas": "Embarcaciones talladas de un solo tronco macizo de ceiba bongo, cedro o caracolí, diseñadas para cortar raudales tempestuosos en el río Magdalena y navegar laberintos ciénagas.",
+          "artes_de_pesca": "Uso de flechas especiales para pesca con puntas trifurcadas, nasas de bejuco y envenenamiento controlado de caños cerrados mediante maceración de raíz de barbasco (Lonchocarpus spp.)."
+        },
+        "abrigos_rocosos_y_asentamientos": "Campamentos estacionales móviles en cavernas y cornisas rocosas de la Serranía de los Yariguíes; cerámica utilitaria de pasta gruesa resistente al fuego y metates líticos para molienda de granos."
+      },
+      "sistemas_productivos_y_soberania_alimentaria": {
+        "policultivo_de_roza_y_quema_itinerante": "Apertura de pequeñas claros en la selva para siembra combinada en tres estratos vegetales, permitiendo la regeneración biológica del suelo tras tres cosechas.",
+        "cultivos_cardinales": [
+          "Maíz de monte resistente a la alta humedad",
+          "Yuca brava (procesada en sebucanes para extraer el ácido cianhídrico y preparar cazabe) y yuca dulce",
+          "Plátano primitivo (introducido en el s. XVII y adoptado ampliamente)",
+          "Batata dulce",
+          "Frutales de selva: guanábana silvestre, caimo, chontaduro y corozo de palma"
+        ],
+        "pesca_y_caza": "Captura abundante de bocachico (Prochilodus magdalenae), bagre pintado, blanquillo y manatí del Magdalena; cacería de danta de montaña, zaíno, venado colorado y aves de dosel con cerbatanas y dardos."
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "espiritualidad_del_jaguar_y_las_aguas": "El jaguar de la serranía era el alter ego espiritual supremo del chamán yariguí; las ciénagas y pozos de petróleo natural eran concebidos como la sangre de la Madre Tierra que no debía ser profanada.",
+        "medicos_rezadores": "Chamanes curanderos y rezadores de tabaco silvestre que mediaban con los dueños espirituales de los animales de monte antes de iniciar las cacerías.",
+        "farmacopea_de_selva_y_serrania": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada contra mordeduras de serpientes venenosas (como coadyuvante antiofídico), fiebres del pantano (malaria/paludismo) y lavado de afecciones cutáneas micóticas generadas por la humedad selvática.",
+          "altamisa": "Ambrosia peruviana: Macerada en aguas tibias de río para baños purificadores de guerreros tras combates y curación de fiebres rebeldes.",
+          "arnica_de_pena": "Chaptalia nutans: Recolectada en los farallones de la Serranía para preparar compresas contra luxaciones, hematomas por caídas en riscos y dolores reumáticos articulares provocados por la densa niebla de montaña."
+        }
+      },
+      "reivindicacion_de_derechos_y_memoria_historica": {
+        "reconocimiento_del_genocidio_yarigui": "Impulso ante la Comisión de la Verdad y la JEP del caso Yariguí como un modelo flagrante de genocidio económico y extractivista perpetrado en alianza entre el Estado y capitales petroleros extranjeros (Concesión de Mares / Troco / Standard Oil).",
+        "creacion_del_pnn_serrania_de_los_yariguies": "El Parque Nacional Natural Serranía de los Yariguíes (creado en 2005) es reivindicado por las comunidades en reetnización no solo como un santuario biológico, sino como el territorio sagrado ancestral inalienable donde reposa la memoria y la sangre de sus ancestros insumisos.",
+        "el_cabildo_yarigui_en_reconstitucion": "Articulación de cabildos indígenas y asociaciones de memoria viva en Barrancabermeja y San Vicente de Chucurí, afirmando la pervivencia cultural e identitaria de los descendientes de Pipatón y Yarima."
+      }
+    },
+    {
+      "id": "dujos",
+      "nombre_comun": "Dujos",
+      "autonimo": "Comunidad Indígena Tama-Dujos del Resguardo El Pital",
+      "significado_autonimo": "Identidad etnohistórica comunitaria forjada en la síntesis sagrada de los linajes Dujos y Tama bajo la conducción cósmica del Cacique Juan Tama.",
+      "exonomo_historico": "Indios Dujos de Neiva, Tamas del Valle de Neiva (denominaciones en títulos coloniales de los siglos XVII y XVIII).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 980,
+        "estado_reconocimiento": "Resguardo Indígena de Origen Colonial plenamente reconocido y amparado por histórica sentencia judicial de Restitución de Tierras Étnicas.",
+        "departamentos_presencia": [
+          "Huila"
+        ],
+        "municipios_enclave": [
+          "Rivera (vereda El Pital y valles ribereños)",
+          "Neiva (zona rural oriental y piedemonte cordillerano)",
+          "Campoalegre"
+        ],
+        "territorio_nuclear": "Vereda El Pital y cuenca del río Arenoso y río Neiva, en el valle del Alto Magdalena y piedemonte de la Cordillera Oriental del departamento del Huila.",
+        "pisos_termicos": "Piso cálido de valle interandino seco (480 a 700 msnm) y piedemonte templado de colinas andinas (hasta 1.400 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Magdalena (Yuma)",
+          "Río Arenoso",
+          "Río Neiva",
+          "Quebrada La Medina",
+          "Quebrada El Pital"
+        ],
+        "relieve_y_geografia_sagrada": "Las terrazas aluviales fértiles del río Magdalena, las colinas de arcilla rojiza del Alto Magdalena y los santuarios rupestres grabados en las piedras megalíticas del río Arenoso."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "origen_etnohistorico": "Proceso singular de etnogénesis andino-amazónica. Los Dujos eran originarios del Valle del Alto Magdalena emparentados con grupos pijaos y paeces; durante el siglo XVII se integraron con parcialidades de la nación Tama trasladadas desde el piedemonte amazónico (cuenca del Caguán/Orteguaza) bajo el amparo de los títulos virreinales del Cacique Juan Tama de la Estrella.",
+          "sustrato_linguistico": "Tradición bilingüe histórica de contacto entre lenguas macro-chibcha/paezana y tucano occidental (Tama), actualmente castellanohablantes con un rico léxico agrario y medicinal vernáculo, toponimias propias y cantos ceremoniales de invocación fluvial."
+        },
+        "titulo_colonial_del_resguardo_el_pital": {
+          "merced_virreinal_de_tierras": "El Resguardo de El Pital fue constituido formalmente mediante títulos coloniales otorgados en 1612 y ratificados en 1679 por la Real Audiencia de Santafé de Bogotá, reconociendo la propiedad comunal inalienable sobre las fértiles tierras de vega del río Arenoso.",
+          "despojo_hacendatario_siglo_xx": "A lo largo de los siglos XIX y XX, terratenientes y familias de la élite política del Huila cercaron ilegalmente las tierras del resguardo mediante alteración de linderos, expulsión violenta de comuneros y quema de bohíos para expandir latifundios arroceros, algodoneros y haciendas ganaderas de ceba, arrinconando a los indígenas en pequeños solares pedregosos."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "petroglifos_y_paisaje_rupestre": {
+          "sitio_emblematico": "Petroglifos del Río Arenoso y quebrada La Medina.",
+          "iconografia": "Cientos de grabados incisos en enormes rocas de arenisca: espirales concéntricas (que representan el movimiento cósmico del agua y la serpiente mítica), figuras antropomorfas orantes, máscaras solares y representaciones zoomorfas de lagartos y ranas; marcan los linderos espirituales del territorio Dujo y sitios de pagamento ancestral."
+        },
+        "alfareria_y_utensilios": "Tradición alfarera de tinajas y múcuras de greda cocida para fermentar chicha de maíz y refrescar agua en el clima cálido del valle; manufactura de batanes de piedra para triturar granos.",
+        "trapiches_paneleros_comunitarios": "Manejo comunal de trapiches artesanales de tracción animal y motor campesino para la molienda de caña dulce (Saccharum officinarum), produciendo panela en bloque, melao y guarapo para sostener las faenas colectivas de trabajo (mingas de siembra y deshierbe)."
+      },
+      "agricultura_de_ladera_y_valle": {
+        "sistemas_de_riego_ancestral": "Apertura y mantenimiento de acequias comunales que derivan aguas del río Arenoso y quebradas hacia las huertas, posibilitando cosechas continuas a pesar de las severas temporadas de sequía del Alto Magdalena.",
+        "huertas_de_pan_coger": [
+          "Maíz tradicional amarillo y cariaco",
+          "Yuca dulce de vega",
+          "Plátano guineo y hartón",
+          "Cacao criollo de fino aroma cultivado bajo sombra de árboles nativos (dinde, caracolí)",
+          "Frutales tropicales: guanábana, mango común, guayaba y papayuela",
+          "Ahuyama, cilantro cimarrón y ají dulce"
+        ]
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "especialistas": "Médicos tradicionales, rezadores de tabaco amargo y parteras tradicionales.",
+        "rezos_de_tabaco": "El rezador enciende el tabaco puro andino para 'leer' en la ceniza y en las volutas de humo las causas de la enfermedad (mal de aire, espanto, enviaciones de envidia) y soplar sobre los puntos vulnerables del paciente coronas de humo purificador.",
+        "farmacopea_propia": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada como depurativo en fiebres gástricas, tónico amargo digestivo y desinflamatorio en afecciones urinarias.",
+          "altamisa": "Ambrosia peruviana: Utilizada en ramilleos y baños tibios para 'bajar el calor' de los niños con mal de ojo y en sahumerios de viviendas contra pesadillas y discordias familiares.",
+          "arnica_de_pena": "Chaptalia nutans: Preparada en emplastos y ungüentos con manteca vegetal para desinflamar torceduras, contusiones de arado y dolores lumbares de jornaleros."
+        },
+        "banos_en_ojos_de_agua": "Inmersiones curativas en las cascadas y remansos de la quebrada La Medina para vigorizar el cuerpo y pedir permiso a los espíritus guardianes antes de las siembras."
+      },
+      "reivindicacion_de_derechos_y_sentencia_historica": {
+        "sentencia_restitucion_tierras_el_pital": "Hito jurídico nacional: El Tribunal Superior del Distrito Judicial de Bogotá (Sala Especializada en Restitución de Tierras) profirió histórica sentencia reconociendo y ordenando la restitución jurídica y material de los títulos coloniales del Resguardo El Pital en Rivera (Huila). El fallo ordenó desalojar a ocupantes de mala fe, sanear más de 300 hectáreas despojadas por haciendas privadas y restituir la posesión territorial colectiva al pueblo Dujos.",
+        "guardia_indigena_y_autogobierno": "Consolidación del Cabildo Indígena Tama-Dujos, constitución de su Guardia Indígena propia para el control territorial pacífico y defensa del río Arenoso frente a proyectos de hidroeléctricas y contaminación agroquímica."
+      }
+    },
+    {
+      "id": "quizgo",
+      "nombre_comun": "Quizgó",
+      "autonimo": "Pueblo Indígena Quizgüeño",
+      "significado_autonimo": "Identidad ancestral y gentilicio originario de los habitantes del territorio de Quizgó, vinculado etimológicamente a la comarca de los vientos sagrados del páramo y las fuentes de agua dulce.",
+      "exonomo_historico": "Indios de Quisgó / Parcialidad de Quizgó (documentos coloniales de la Gobernación de Popayán, siglo XVIII).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 4120,
+        "estado_reconocimiento": "Resguardo Indígena de Origen Colonial legalmente constituido y amparado por sentencias y medidas cautelares de restitución étnica de tierras.",
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "municipios_enclave": [
+          "Silvia (resguardo y veredas de Quizgó: Trápiche, Bellavista, Buena Vista, La Palma, San Antonio, entre otras)"
+        ],
+        "territorio_nuclear": "Alta cuenca de los ríos Piendamó y Quizgó, estribaciones de la Cordillera Central del Cauca, municipio de Silvia (colindante con Guambía, Ambaló y Tierradentro).",
+        "pisos_termicos": "Piso templado alto, frío andino y páramo de alta montaña (2.400 a 3.500 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Piendamó",
+          "Río Quizgó",
+          "Quebrada El Trapiche",
+          "Laguna de Quizgó",
+          "Laguna de Las Tres Cruces"
+        ],
+        "relieve_y_geografia_sagrada": "Laderas andinas de pendientes pronunciadas, cerros tutelares sagrados, nacimientos de agua y lagunas glaciares de páramo concebidas como ojos cósmicos donde habitan los espíritus protectores del agua y los truenos."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "familia": "Familia Lingüística Barbacoana",
+          "rama": "Coconucana / Namtrik",
+          "relacion_interetnica": "Históricamente compartían el tronco lingüístico Namtrik (emparentado con el Guambiano/Misak, Ambaló y Totoró), manteniendo simultáneamente una estrecha alianza geográfica e interétnica con el pueblo Nasa a través de los pasos de montaña hacia Tierradentro (incorporando léxico y conceptos de la cosmovisión Nasa Yuwe).",
+          "situacion_sociolinguistica": "Tras siglos de castellanización compulsiva escolar y discriminación hacendataria, el pueblo Quizgó lidera un vigoroso plan de recuperación lingüística orientado por sabedores y dinamizadores en escuelas comunitarias de su resguardo."
+        },
+        "titulo_colonial_y_resistencia": {
+          "titulo_de_1700": "El Resguardo de Quizgó cuenta con Título Colonial expedido en el año 1700 por la Corona Española, documento sagrado resguardado en baúles comunitarios que certifica los límites ancestrales frente a las haciendas criollas de Silvia y Popayán.",
+          "lucha_contra_el_terraje": "Durante los siglos XIX y XX, las familias quizgüeñas fueron sometidas al oprobioso sistema del terraje, obligadas a pagar con trabajo personal no remunerado a los hacendados para tener derecho a sembrar pequeñas parcelas de subsistencia. A partir de los años 70, Quizgó se sumó al nacimiento del Consejo Regional Indígena del Cauca (CRIC), recuperando pacíficamente mediante tomas masivas de tierra las haciendas que invadían su resguardo colonial."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "agricultura_de_ladera_en_bancales": "Acondicionamiento milenario de laderas con pendientes superiores al 45% mediante bancales escalonados, zanjas de coronación y muros vegetales con arbustos nativos (chilcos, alisos y chusques) para evitar cárcavas y deslaves causados por las fuertes lluvias andinas.",
+        "textileria_de_lana_virgen": "Hilado doméstico de lana pura de oveja en husos de madera de arrayán; tejido en telares verticales de anacos oscuros para mujeres, fajas o chumbes con iconografía geométrica de rombos y lagunas, chalinas abrigadas y ruanas de dos caras hiladas a mano.",
+        "trapiches_comunitarios_de_ladera": "Trapiches instalados en las partes medias y templadas del resguardo (vereda Trápiche) adaptados a cañas de altura resistentes a las bajas temperaturas, elaborando panela dulce que abastece a toda la comunidad."
+      },
+      "soberania_alimentaria_y_chagras_de_frio": {
+        "unidad_productiva": "La Chagra o Huerta Tradicional de Frío.",
+        "tuberculos_menores_y_semillas_nativas": [
+          "Papas nativas: papa mambera, colorada, pastusa, parda pastusa y criolla",
+          "Ulluco o chigua (Ullucus tuberosus) de diversos colores",
+          "Ibias (Oxalis tuberosa)",
+          "Cubios o mashua (Tropaeolum tuberosum)",
+          "Maíz capio blanco y amarillo de clima frío",
+          "Haba andina y arveja criolla",
+          "Cebolla junca, col crespa y hortalizas menores"
+        ],
+        "conservacion": "Trueque interétnico de semillas nativas en mercados comunitarios de Silvia y conservación comunitaria de abonos orgánicos a base de estiércol ovino fermentado y ceniza de leña."
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "especialistas": "Pulsadores, médicos tradicionales quizgüeños y sobadores.",
+        "banos_frios_en_lagunas_de_paramo": "Práctica espiritual central: inmersiones antes del amanecer en las gélidas lagunas de páramo tutelares (Lagunas de Quizgó y Las Tres Cruces) para 'refrescar' el pensamiento, cortar maleficios, desterrar la pereza y fortalecer el espíritu de gobernadores y comuneros antes de asumir cargos o mingas.",
+        "rezadores_de_tabaco": "Uso ceremonial del tabaco para limpiar la atmósfera de asambleas y diagnosticar el origen espiritual de dolencias físicas.",
+        "farmacopea_del_paramo": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada en infusiones para purificar el hígado, combatir el empacho estomacal y aliviar fiebres andinas.",
+          "altamisa": "Ambrosia peruviana: Hierba cardinal para sahumares y baños de asiento en mujeres en posparto y armonización de personas 'cargadas' de malas energías.",
+          "arnica_de_pena": "Chaptalia nutans / Senecio spp.: Recolectada en las peñas escarpadas de páramo para tratar reumatismo articular, afecciones óseas agravadas por el frío glacial y traumatismos en faenas agrícolas."
+        }
+      },
+      "reivindicacion_de_derechos_y_justicia_etnica": {
+        "restitucion_de_tierras_y_medidas_cautelares": "El Resguardo Indígena de Quizgó ha sido beneficiario de medidas cautelares y demandas de restitución de derechos territoriales étnicos presentadas por la Unidad de Restitución de Tierras (URT) ante la justicia agraria especializada, ordenando la protección de su territorio frente al confinamiento, las presiones armadas del conflicto y la seguridad jurídica sobre predios de ampliación.",
+        "participacion_en_el_cric": "Miembro activo de la Zona Oriente del Consejo Regional Indígena del Cauca (CRIC); articulación de la Guardia Indígena Kiwe Thegnas como custodios desarmados de la vida y el territorio."
+      }
+    },
+    {
+      "id": "guanaca",
+      "nombre_comun": "Guanaca",
+      "autonimo": "Pueblo Indígena Guanaca",
+      "significado_autonimo": "Gente originaria del Valle de Guanacas y custodios de la cordillera del Paso sagrado.",
+      "exonomo_historico": "Indios Guanacos / Resguardo de Guanacas (crónicas coloniales y actas de visita virreinal de la Gobernación de Popayán).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 1250,
+        "estado_reconocimiento": "Resguardo Indígena de Origen Colonial con cabildo propio legalmente reconocido ante el Ministerio del Interior.",
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "municipios_enclave": [
+          "Inzá (resguardo y veredas de Guanacas, Tierradentro)",
+          "Límites cordilleranos con Páez (Belalcázar) y Silvia"
+        ],
+        "territorio_nuclear": "Vertiente oriental de la Cordillera Central en el municipio de Inzá, cañón del río Guanacas y cuenca alta del río Ullucos (Tierradentro, Cauca).",
+        "pisos_termicos": "Piso templado alto, frío andino y páramo de alta montaña (1.900 a 3.600 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Guanacas",
+          "Río Ullucos",
+          "Río Páez",
+          "Quebrada El Salado",
+          "Páramo de Guanacas y Las Delicias"
+        ],
+        "relieve_y_geografia_sagrada": "El histórico y agreste Páramo y Paso de Guanacas, cañones profundos de pendientes quebradas, cascadas sagradas de montaña y cavernas ceremoniales vinculadas al complejo funerario de Tierradentro."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "clasificacion": "Sustrato de transición macro-chibcha / paezana (Nasa Yuwe) con elementos de contacto barbacoano (Namtrik).",
+          "complejidad_etnohistorica": "Los Guanacas fueron reconocidos desde el siglo XVI como una parcialidad diferenciada de los Paeces circundantes, con autoridades propias y control exclusivo sobre el estratégico Paso de Guanacas (la vía cordillerana que enlazaba el Valle de Popayán con La Plata y el río Magdalena).",
+          "situacion_actual": "Hablantes de castellano con una densa presencia de vocabulario Nasa Yuwe y toponimia originaria guanaca; proceso en marcha de reafirmación lingüística e identitaria."
+        },
+        "el_paso_de_guanacas_y_la_independencia": {
+          "importancia_estrategica": "El Paso de Guanacas fue el paso montañoso más temido y transitado de la historia virreinal y republicana. Por sus senderos de niebla cruzaron tropas libertadoras (incluido Simón Bolívar en sus campañas del sur); los indígenas Guanacas actuaban como baquianos, arrieros y defensores del paso.",
+          "resguardo_colonial": "Amparado por cédulas reales del siglo XVII que protegieron sus linderos frente al avance de colonos payaneses; defensa secular de su autonomía comunal frente a la fragmentación de resguardos en el siglo XIX."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "vinculo_con_tierradentro": "El territorio Guanaca limita directamente con el Parque Arqueológico Nacional de Tierradentro. En sus colinas se encuentran vestigios de cámaras funerarias subterráneas (hipogeos tallados en toba volcánica con pilares y nichos decorados con pintura mural geométrica roja y negra), tumbas de cancel y petroglifos líticos que atestiguan una continuidad cultural milenaria.",
+        "puentes_de_bejuco_y_camineria": "Técnicas ancestrales de construcción de puentes colgantes de guadua y bejucos trenzados sobre las gargantas del río Guanacas y empedrado de senderos de herradura de alta pendiente.",
+        "trapiches_paneleros": "Molienda colectiva de caña dulce en trapiches veredales con ruedas de madera y tracción hidráulica o animal."
+      },
+      "agricultura_de_ladera_interandina": {
+        "bancales_y_policultivos": "Manejo de terrazas de cultivo en laderas empinadas del cañón de Guanacas, integrando franjas de amortiguación vegetal para retener sedimentos.",
+        "cultivos_cardinales": [
+          "Café especial de alta montaña cultivado bajo sombrío de guamo y plátano",
+          "Caña panelera de ladera",
+          "Maíz chocoano y amarillo tradicional",
+          "Frijol cargamanto y frijol de monte",
+          "Arracacha, yuca andina y plátano guineo",
+          "Tubérculos menores en las zonas altas: ulluco y papas nativas"
+        ]
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "especialistas": "The' Walas (médicos y sabios tradicionales), rezadores y parteras.",
+        "armonizacion_en_paramos_y_cascadas": "Baños fríos y pagamentos de tabaco y coca en las cabeceras del río Guanacas y en el Páramo de Las Delicias para limpiar el cuerpo de miasmas y desarmonizaciones provocadas por conflictos o contacto con energías pesadas.",
+        "farmacopea_tradicional": {
+          "verbena_negra": "Stachytarpheta cayennensis: Infusiones purgantes para el estómago, tratamiento de fiebres intermitentes y baños corporales para 'enfriar la sangre'.",
+          "altamisa": "Ambrosia peruviana: Utilizada en limpias energéticas, sahumerios con hojas secas sobre brasas para purificar las casas y baños para dolores menstruales.",
+          "arnica_de_pena": "Chaptalia nutans: Maceración alcohólica utilizada en fricciones sobre articulaciones adoloridas por las heladas del páramo y esguinces musculares."
+        }
+      },
+      "organizacion_sociopolitica_y_derechos": {
+        "autogobierno": "Cabildo Indígena de Guanaca, asamblea comunitaria y Guardia Indígena.",
+        "articulacion_zonal": "Filial de la Asociación de Autoridades Tradicionales Indígenas de Tierradentro (Nasa Çxhâçxha) y del CRIC, garantizando la articulación interétnica y la defensa unificada de los derechos territoriales del oriente caucano.",
+        "defensa_de_la_educacion_propia": "Implementación del Sistema Educativo Indígena Propio (SEIP) con currículos arraigados en el calendario agroecológico y la memoria del Paso de Guanacas."
+      }
+    },
+    {
+      "id": "polindara",
+      "nombre_comun": "Polindara",
+      "autonimo": "Pueblo Polindara",
+      "significado_autonimo": "Autodenominación ancestral del linaje originario del río Palacé.",
+      "exonomo_historico": "Indios de Polindara (expedientes coloniales de la Gobernación de Popayán y archivos notariales del siglo XIX).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 5400,
+        "estado_reconocimiento": "Resguardo Indígena de Origen Colonial reconstituido formalmente en 2003 tras décadas de recuperación comunitaria.",
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "municipios_enclave": [
+          "Totoró (veredas y resguardo de Polindara: El Borbollón, Santa Bárbara, San Antonio, La Chorrera)",
+          "Límites periféricos con Popayán y Cajibío"
+        ],
+        "territorio_nuclear": "Cuenca media y alta del río Palacé y quebrada La Honda, municipio de Totoró, estribaciones occidentales de la Cordillera Central en el oriente caucano.",
+        "pisos_termicos": "Piso templado alto y frío andino (1.800 a 2.700 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Palacé",
+          "Quebrada La Honda",
+          "Río Molino",
+          "Quebrada El Borbollón"
+        ],
+        "relieve_y_geografia_sagrada": "Laderas onduladas de la cuenca del Palacé, bosques de niebla relictos, fuentes termales y ojos de agua sagrados donde nacen las corrientes que descienden hacia Popayán."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "familia": "Familia Lingüística Barbacoana",
+          "rama": "Coconucana / Namtrik (variante Polindara)",
+          "particularidad_historica": "El Polindara constituye una de las ramas históricas del continuo dialectal Coconucano (junto al Totoró, Guambiano y Coconuco). Compartía estructuras gramaticales aglutinantes y sufijos de caso locativo y absolutivo.",
+          "revitalizacion": "Programa comunitario de dinamización lingüística y reconstrucción de léxico botánico, toponímico y agroastronómico en nidos de lengua y escuelas interculturales del resguardo."
+        },
+        "cuna_de_manuel_quintin_lame": {
+          "nacimiento_del_lider": "En la vereda El Borbollón, en el seno de la hacienda que usurpaba las tierras de Polindara, nació en 1880 el máximo líder de la resistencia indígena colombiana del siglo XX: Manuel Quintín Lame Chantre.",
+          "la_experiencia_del_terraje": "Allí Lame presenció el encarcelamiento de sus padres y hermanos por sembrar sin permiso de los terratenientes y el oprobio del 'terraje' (el pago obligatorio con días de trabajo gratuito por el derecho a vivir en su propia tierra ancestral). En Polindara concibió su primer ideario de rebelión contra las haciendas feudales payanesas.",
+          "disolucion_y_reconstitucion_del_resguardo": "El resguardo colonial fue disuelto de facto en el siglo XIX mediante decretos departamentales pro-terratenientes. En 2003, tras casi un siglo de luchas, tomas pacíficas de haciendas y demandas judiciales, el Estado colombiano emitió la resolución de reconstitución jurídica del Resguardo de Polindara."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "canales_y_acequias_de_ladera": "Sistemas de zanjas y acequias de contorno en la cuenca del Palacé para captar agua de escorrentía y regular la humedad en parcelas minifundistas.",
+        "trapiches_comunitarios": "Trapiches veredales para la molienda de caña dulce de piso medio, complementados con talleres de carpintería y herrería comunal.",
+        "artesanado_de_lana_y_fique": "Hilado de lana de oveja para ruanas y cobijas; tejido de alpargatas con capellada de hilo y suela de cabuya trenzada; confección de canastos de bejuco y carrizo para cosechas."
+      },
+      "soberania_alimentaria_y_huertas_familiares": {
+        "unidad_productiva": "La Huerta Familiar Polindara.",
+        "cultivos_cardinales": [
+          "Maíz amarillo tradicional (variedades capio y diente de maíz)",
+          "Arracacha blanca y amarilla",
+          "Frijol cacha y frijol voluble",
+          "Yuca andina de altura",
+          "Plátano comino y guineo",
+          "Café tradicional bajo sombrío de árboles nativos y plátano",
+          "Frutas andinas: mora silvestre, tomate de árbol, lulo y granadilla"
+        ],
+        "abonos_organicos": "Preparación comunitaria de caldolimonio, biopreparados de ortiga macerada y compostajes con ceniza de leña y bosta ovina."
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "sabedores": "Pulsadores, sobadores veredales y curanderas de hierbas.",
+        "banos_frios_de_madrugada": "Práctica ritual en las aguas corrientes del río Palacé a las cuatro de la madrugada para despojar al cuerpo del 'pespunte' (enfermedad por agotamiento) y preparar a los comuneros para las asambleas y trabajos colectivos.",
+        "rezos_de_tabaco": "Uso del tabaco amargo para consultar el estado del territorio y sellar acuerdos de reconciliación en pleitos familiares.",
+        "farmacopea_ancestral": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada en té concentrado como antipirético en fiebres gripales, afecciones renales leves y desparasitante tradicional infantil.",
+          "altamisa": "Ambrosia peruviana: Hojas machacadas para baños de despojo contra malas influencias y cataplasmas tibias sobre vientres adoloridos.",
+          "arnica_de_pena": "Chaptalia nutans: Utilizada como remedio soberano en masajes y compresas contra luxaciones, torceduras y dolores de cintura provocados por las faenas agrícolas de azadón."
+        }
+      },
+      "organizacion_sociopolitica_y_resistencia": {
+        "gobierno_propio": "Cabildo Indígena de Polindara, electo anualmente en magna asamblea general comunitaria.",
+        "guardia_indigena": "Kiwe Thegnas de Polindara, cuerpo comunitario de protección pacífica y control territorial sobre la vía que comunica Popayán con Totoró.",
+        "articulacion_politica": "Pilar histórico del CRIC Zona Oriente; activa defensa de la soberanía alimentaria y custodia del río Palacé frente a contaminaciones de aguas residuales urbanas de Popayán."
+      }
+    },
+    {
+      "id": "ambalo",
+      "nombre_comun": "Ambaló",
+      "autonimo": "Pueblo Ambaló",
+      "significado_autonimo": "Autodenominación ancestral originaria del río Piendamó y los cerros sagrados de Silvia.",
+      "exonomo_historico": "Indios de Ambaló / Parcialidad de Ambaló (expedientes coloniales de la Real Audiencia de Quito y Popayán).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 7100,
+        "estado_reconocimiento": "Resguardo Indígena de Origen Colonial reconocido con amparo constitucional y titulación formal saneada.",
+        "departamentos_presencia": [
+          "Cauca"
+        ],
+        "municipios_enclave": [
+          "Silvia (resguardo y veredas de Ambaló: Las Delicias, Ambaló Centro, La Aguada, Miraflores, El Calvario)"
+        ],
+        "territorio_nuclear": "Alta cuenca del río Piendamó y río Silvia, flancos orientales de la Cordillera Central en el municipio de Silvia (colindante con Guambía y Quizgó).",
+        "pisos_termicos": "Piso templado alto, frío andino y páramo de alta montaña (2.300 a 3.500 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Piendamó",
+          "Río Silvia",
+          "Laguna de Las Tres Cruces",
+          "Quebrada Ambaló",
+          "Cerro Sagrado de Las Tres Cruces / El Calvario"
+        ],
+        "relieve_y_geografia_sagrada": "Altiplanicies andinas de páramo, peñascos rocosos imponentes, cerros tutelares sagrados y lagunas de alta montaña consideradas morada de los espíritus de la lluvia y las cosechas."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "familia": "Familia Lingüística Barbacoana",
+          "rama": "Coconucana / Namui Wam - Namtrik (variante Ambaló)",
+          "memoria_linguistica": "La lengua histórica de Ambaló es una variante del Namtrik con especificidades fonéticas locales. Aunque el castellano se impuso por la escuela colonial y republicana, la lengua originaria subsiste en la toponimia de todo el territorio, en los cantos de chirimía, en los nombres de las plantas medicinales y en el vocabulario ritual empleado por los médicos tradicionales.",
+          "recuperacion": "Desarrollo del proyecto educativo propio para la revitalización oral y escrita del Namtrik en niños y jóvenes del resguardo."
+        },
+        "titulo_colonial_de_1713_y_la_lucha_contra_el_despojo": {
+          "titulo_virreinal": "El Resguardo de Ambaló fue reconocido solemnemente mediante Título Colonial expedido en 1713 por la Real Audiencia de Quito, demarcando con precisión las tierras comunales de páramo y valle.",
+          "la_usurpacion_hacendataria": "En los siglos XIX y XX, terratenientes de la élite de Popayán y Silvia invadieron progresivamente el resguardo mediante escrituras fraudulentas, instalando las haciendas ganaderas Ambaló y Las Delicias y sometiendo a los indígenas a la servidumbre del terraje.",
+          "recuperacion_en_los_anos_70": "A partir de 1971, los comuneros ambaloeños organizaron la toma pacífica y masiva de las tierras de hacienda dentro de los linderos del título de 1713. Pese a masacres, encarcelamientos y hostigamiento armado estatal y terrateniente, lograron la recuperación total de sus tierras y la expulsión definitiva del terraje."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "bancales_y_camellones_andinos": "Construcción milenaria de bancales y camellones en pendientes pronunciadas para controlar el escurrimiento de aguas glaciares y evitar que las heladas nocturnas quemen las raíces de los tubérculos.",
+        "cortavientos_vivos": "Barreras agroforestales plantadas con árboles nativos de alta montaña: aliso (Alnus acuminata), quishuar (Buddleja incana) y chusque para frenar los vientos helados del páramo.",
+        "textileria_tradicional": "Tejido en telar vertical de suelo de la indumentaria autóctona ambaloeña: anacos pesados de lana virgen de oveja hilada a mano, ruanas de doble faz (con una cara clara y otra oscura) y fajas ceremoniales; confección de sombreros de paja y fajas apretadas."
+      },
+      "soberania_alimentaria_y_chagras_de_paramo": {
+        "unidad_productiva": "La Chagra Andina Ambaloeña.",
+        "tuberculos_menores_y_variedades_de_papa": [
+          "Papas nativas: papa mambera, pastusa, parda y criolla amarilla",
+          "Ulluco o chigua (Ullucus tuberosus)",
+          "Ibias (Oxalis tuberosa)",
+          "Cubios o mashua (Tropaeolum tuberosum)",
+          "Maíz capio blanco",
+          "Haba andina",
+          "Cebolla junca cultivada en terrazas",
+          "Hortalizas de clima frío"
+        ],
+        "manejo_agroecologico": "Arado con bueyes en surcos transversales a la pendiente para retener la capa orgánica y abonado sistemático con estiércol madurado de oveja y ceniza vegetal."
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "sabedores": "Médicos tradicionales ambaloeños, hierbateras y parteras comunitarias.",
+        "el_cerro_sagrado_de_las_tres_cruces": "Epicentro ceremonial prehispánico donde residen los espíritus dueños del agua y los truenos; sitio de pagamentos con sal, plantas dulces y oraciones de agradecimiento.",
+        "banos_frios_en_lagunas_tutelares": "Baños rituales de purificación en las lagunas sagradas de páramo a más de 3.200 msnm para despojar al cuerpo de 'malos aires' provocados por entierros antiguos y limpiar el pensamiento de las autoridades antes de las asambleas.",
+        "farmacopea_del_frio": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada como tónico amargo digestivo, desinflamatorio hepático y remedio contra fiebres intermitentes.",
+          "altamisa": "Ambrosia peruviana: Utilizada en baños de vapor para mujeres recién paridas y despojos energéticos corporales.",
+          "arnica_de_pena": "Chaptalia nutans / Senecio spp.: Recolectada en las cumbres rocosas para elaborar cataplasmas tibias y linimentos en alcohol contra reumatismo andino, artritis agravada por la humedad y luxaciones articulares."
+        }
+      },
+      "organizacion_sociopolitica_y_autogobierno": {
+        "cabildo_indigena": "Cabildo Indígena del Resguardo de Ambaló, máxima autoridad ejecutiva y comunitaria electa por asamblea.",
+        "afiliacion_organizativa": "Miembro histórico del Consejo Regional Indígena del Cauca (CRIC) y del Movimiento de Autoridades Indígenas del Suroccidente (AISO).",
+        "educacion_propia_y_seip": "Consolidación de escuelas comunitarias propias orientadas bajo el Sistema Educativo Indígena Propio (SEIP), con enseñanza articulada al calendario agroastronómico andino y la memoria histórica de recuperación de tierras."
+      }
+    },
+    {
+      "id": "pijao_del_tolima",
+      "nombre_comun": "Pijao del Tolima",
+      "autonimo": "Pueblo Pijao (Pinao / Coyaimas, Natagaimas y parcialidades de Ortega y Chaparral)",
+      "significado_autonimo": "Etimología asociada a las confederaciones libres de los señores de los ríos y de las serranías secas del Yuma y la Cordillera Central.",
+      "exonomo_historico": "Pijaos (generalización de las crónicas virreinales para designar a la más feroz y tenaz confederación guerrera que enfrentó al imperio español).",
+      "demografia_y_territorio": {
+        "poblacion_estimada_censo": 62400,
+        "estado_reconocimiento": "Red densa de más de 120 Cabildos y Resguardos Indígenas formalmente reconocidos en el departamento del Tolima, en vigoroso proceso de consolidación de su identidad campesino-indígena.",
+        "departamentos_presencia": [
+          "Tolima",
+          "Huila",
+          "Quindío"
+        ],
+        "municipios_enclave": [
+          "Natagaima (epicentro espiritual en el Cerro del Pacandé y cabildos de vega)",
+          "Coyaima (antiguo resguardo colonial de Coyaimas y Natagaimas)",
+          "Ortega (tierra de la resistencia quintinista y cabildos de ladera)",
+          "Chaparral (estribaciones de la Cordillera Central)",
+          "San Antonio",
+          "Purificación",
+          "Prado",
+          "Saldaña",
+          "Dolores",
+          "Guamo (centro alfarero ancestral de La Chamba)"
+        ],
+        "territorio_nuclear": "Valles secos interandinos del Alto Magdalena y llanuras aluviales de los ríos Saldaña y Chenche, junto a las laderas quebradas y serranías de la Cordillera Central tolimense.",
+        "pisos_termicos": "Piso cálido de valle seco interandino (350 a 600 msnm) y laderas templadas y frías de media montaña cordillerana (hasta 2.400 msnm).",
+        "cuencas_hidrograficas_clave": [
+          "Río Magdalena (Yuma)",
+          "Río Saldaña (río tutelar pijao)",
+          "Río Cucuana",
+          "Río Tetuán",
+          "Río Chenche",
+          "Río Coello",
+          "Cerro Sagrado del Pacandé"
+        ],
+        "relieve_y_geografia_sagrada": "El Cerro Sagrado del Pacandé (en Natagaima) como pirámide natural y ara cósmica solar, las serranías pedregosas del sur del Tolima, los farallones del cañón del Saldaña y los profundos remolinos fluviales donde reside el Mohán."
+      },
+      "etnohistoria_y_linguistica": {
+        "sustrato_y_filiacion_linguistica": {
+          "clasificacion": "Familia Lingüística Caribe Septentrional o Familia Independiente Pijao (clasificada por Loukotka y Rivet como familia aislada o emparentada con el tronco caribe continental).",
+          "sustrato_vivo": "Aunque la lengua como idioma vehicular cotidiano sufrió un corte violento tras la guerra de exterminio colonial del siglo XVII, sobrevive un densísimo sustrato lingüístico en la hidronimia comarcal (Saldaña, Chenche, Cucuana), en la toponimia (Pacandé, Calarcá, Natagaima, Coyaima), en la fitonimia medicinal, en fórmulas sagradas de rezadores de tabaco y en el léxico vernáculo campesino tolimense.",
+          "lexicografia_historica": "Vocabularios Pijao documentados en crónicas coloniales de Fray Pedro Simón y recopilaciones archivísticas del Archivo General de la Nación."
+        },
+        "la_gran_guerra_de_los_pijaos_1538_1611": {
+          "siete_decadas_de_fuego": "La Confederación Pijao sostuvo más de 70 años de guerra ininterrumpida contra la invasión de la Corona Española, impidiendo la comunicación entre Santafé de Bogotá y Popayán y hostigando las ciudades de Ibagué, Cartago y Neiva.",
+          "el_cacique_calarca_y_lideres_guerreros": "El Gran Cacique Calarcá se erigió como el estratega militar y político más temido por el imperio español, coordinando ataques en emboscada junto a caciques insignes como Chanama, Ibagué, Bituima y Cuinche.",
+          "la_campana_de_exterminio_de_juan_de_borja": "Entre 1606 y 1611, el Presidente de la Real Audiencia Don Juan de Borja encabezó una campaña militar despiadada de tierra arrasada: utilizó jaurías de perros alanos para despedazar combatientes y civiles, incendió sementeras completas para provocar hambrunas inducidas y pasó a degüello a poblaciones enteras. Tras la caída en combate de Calarcá, los sobrevivientes se replegaron a las serranías secas de Coyaima y Natagaima, conservando sus títulos comunales de resguardo durante el periodo virreinal."
+        },
+        "manuel_quintin_lame_en_el_sur_del_tolima": {
+          "el_refugio_y_la_reorganizacion": "Perseguido y encarcelado en el Cauca, el líder indígena Manuel Quintín Lame se trasladó en 1922 al sur del Tolima (municipios de Ortega, Chaparral y San Antonio).",
+          "la_reconstitucion_de_cabildos": "Lame organizó los cabildos indígenas del Gran Resguardo de Ortega y Chaparral, fundó escuelas autónomas campesino-indígenas y alfabetizó a cientos de comuneros en el conocimiento de sus derechos ancestrales y en la defensa jurídica basada en la Ley 89 de 1890.",
+          "obra_filosofica": "En Ortega (Tolima) redactó en 1939 su obra cumbre: 'Los pensamientos del indio que se educó dentro de las selvas colombianas', manifiesto filosófico, jurídico y espiritual que deslumbró a la intelectualidad crítica del país. Quintín Lame luchó incansablemente hasta su muerte en Ortega en 1967, dejando una semilla imborrable de dignidad y soberanía territorial."
+        }
+      },
+      "arqueologia_y_tecnologias": {
+        "metalurgia_y_orfebreria_tolima_pijao": {
+          "complejo_orfebre": "Los Pijaos y sus ancestros de la cultura arqueológica Tolima fueron maestros insuperables de la metalurgia en oro de alto quilate y tumbaga (aleación oro-cobre).",
+          "tecnicas": "Fundición a la cera perdida con núcleos de arcilla y carbón, vaciado en moldes bivalvos, martillado laminar, repujado y dorado por oxidación superficial (despate con jugos ácidos vegetales para resaltar el brillo áureo sobre el cobre).",
+          "iconografia_mitica": "Creación de los célebres pectorales antropomorfos estilizados de planos simétricos perfectos: el 'hombre-murciélago' con alas extendidas y colas de pez, deidades solares aladas, remates de bastones con figuras de anfibios y narigueras caladas (magníficamente exhibidas en el Museo del Oro de Bogotá), que simbolizaban la transmutación del chamán en animal volador para viajar entre los planos cósmicos."
+        },
+        "ceramica_funeraria_y_urnas_del_tolima": {
+          "urnas_cinerarias": "Grandes vasijas de pasta arcillosa rojiza y negra, pulidas y decoradas con engobes ocres y blancos; sobre sus tapas modelaban figuras antropomorfas sedentes con las manos sobre las rodillas o máscaras con narigueras tubulares.",
+          "complejo_de_la_chamba": "La tradición alfarera milenaria pervive directamente hoy en el corregimiento de La Chamba (municipio de Guamo), donde las artesanas modelan a mano vajillas de barro negro y rojo pulidas con cantos rodados de río y ahumadas en bosta seca, herencia técnica directa de la alfarería pijao."
+        },
+        "armamento_y_tacticas_militares_de_choque": {
+          "picas_de_chonta_negra": "Lanzas de hasta cuatro metros fabricadas con el leño negro de la palma de chonta (Bactris gasipaes), de dureza metálica y letalidad en formaciones de combate cerrado.",
+          "flechas_envenenadas": "Varas de caña brava con puntas de hueso de venado o espinas de raya marina, impregnadas con veneno extraído de sapos venenosos y resinas cáusticas de la selva.",
+          "emboscadas_en_desfiladeros": "Estrategia de cerco en gargantas fluviales y pasos estrechos de montaña, combinada con trincheras ocultas revestidas de púas venenosas para descabalgar a jinetes españoles."
+        }
+      },
+      "sistemas_productivos_y_soberania_alimentaria": {
+        "agricultura_de_ladera_y_vega_seca": "Manejo de terrazas de cultivo en las estribaciones cordilleranas y apertura de canales de irrigación derivados de los ríos Saldaña y Chenche para regar las tierras calientes del valle en temporadas de calor abrasador.",
+        "huertas_de_pan_coger": [
+          "Maíz criollo: variedades guacamayo, chocoano, cariaco y diente de caballo",
+          "Yuca dulce y yuca agria",
+          "Plátano cachaco y hartón",
+          "Frijol cacha y frijol tapado de monte",
+          "Ajonjolí criollo",
+          "Ahuyama criolla y totumo (para vasijas y recipientes de agua)",
+          "Frutales de clima cálido: mango común, mamoncillo, guayaba agria y guanábana"
+        ],
+        "trapiches_comunitarios_de_cana_dulce": "Fabricación artesanal de panela de hoja, melao y guarapo fermentado que alimenta las faenas agrícolas colectivas y celebraciones rituales.",
+        "pesca_artesanal_fluvial": "Pesca estacional en los ríos Saldaña y Magdalena durante la 'subienda' anual de bocachico (Prochilodus magdalenae), bagre rayado, nicuro y pataló, empleando atarrayas de hilo fino tejidas a mano y arpones tradicionales."
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "el_cerro_sagrado_del_pacande": "Ubicado en Natagaima, es el corazón espiritual del pueblo Pijao. Pirámide natural donde moran los ancestros tutelares y las deidades de las tormentas; sitio sagrado de peregrinación y ceremonias solares.",
+        "el_mohan_y_los_espiritus_del_rio": "El Mohán es comprendido no como un mito de terror folclórico, sino como el gran ancestro chamánico guardián de las aguas y de las profundidades del río Saldaña; castiga a quienes contaminan las fuentes o pescan con dinamita y protege a los pescadores tradicionales que le ofrendan tabaco y sal marina.",
+        "medicos_rezadores_de_tabaco": "Sabios que diagnostican enfermedades mediante el rezo y la combustión ritual de hojas de tabaco amargo (Nicotiana rustica), realizando sahumerios con resina de cují y copal para ahuyentar malas energías.",
+        "farmacopea_del_alto_magdalena": {
+          "verbena_negra": "Stachytarpheta cayennensis: Empleada en decocciones contra fiebres tropicales (dengue, paludismo), afecciones digestivas y baños corporales para bajar la inflamación.",
+          "altamisa": "Ambrosia peruviana: Utilizada en ramilleos y baños aromáticos para alejar el 'mal aire' y limpiar a personas afectadas por el espanto.",
+          "arnica_de_pena": "Chaptalia nutans: Macerada en aguardiente casero para sobar golpes, torceduras y dolores de cintura provocados por las duras jornadas de recolección agrícola."
+        }
+      },
+      "organizacion_sociopolitica_y_pervivencia_campesino_indigena": {
+        "estructura_de_gobierno": "Red comunitaria de más de 120 cabildos indígenas en los municipios de Natagaima, Coyaima, Ortega, Chaparral, Purificación y Prado, encabezados por sus respectivos gobernadores de cabildo.",
+        "organizaciones_representativas": [
+          "CRIT (Consejo Regional Indígena del Tolima, fundado en 1982)",
+          "ARIT (Asociación de Resguardos Indígenas del Tolima)",
+          "FITI (Federación Indígena Territorial del Tolima)",
+          "ACIT (Asociación de Cabildos Indígenas del Tolima)",
+          "ONIC (Organización Nacional Indígena de Colombia)"
+        ],
+        "la_pervivencia_campesino_indigena": "Proceso emblemático de resistencia cultural donde las comunidades del Tolima, tras décadas de asimilación impuesta que pretendió encasillarlas como simple campesinado mestizo, asumieron con orgullo su raíz identitaria y territorial Pijao, blindando jurídicamente sus tierras ancestrales comunales frente al latifundio y megaproyectos extractivos.",
+        "defensa_ecoterritorial": "Oposición activa y movilización comunitaria frente a proyectos de represas hidroeléctricas en la cuenca del río Saldaña y concesiones de megaminería a cielo abierto en la Cordillera Central tolimense."
+      }
+    },
+    {
+      "id": "panzaleo",
+      "nombre": "Panzaleo",
+      "nombre_comun": "Pueblo Indígena Panzaleo",
+      "autodenominacion": "Kichwa Panzaleo / Runakuna",
+      "filiacion_linguistica": {
+        "familia": "Familia Quechua / Sustrato Lingüístico Panzaleo preincaico independiente",
+        "idioma": "Kichwa andino y castellano vernáculo con marcado sustrato fonético ancestral",
+        "descripcion": "Lengua aglutinante con fonología que conserva vocabulario toponímico y fitonímico preincaico del nudo de los Pastos y los Andes septentrionales."
+      },
+      "ubicacion_geografica_y_territorio": {
+        "departamentos": ["Nariño"],
+        "municipios": ["Ipiales", "Córdoba", "Potosí", "Puerres"],
+        "region": "Andina - Nudo de los Pastos y frontera colombo-ecuatoriana",
+        "pisos_termicos": "Páramo y subpáramo andino (2.600 a 3.600 msnm)"
+      },
+      "etnohistoria_y_resistencia": {
+        "origen_ancestral": "Pobladores milenarios de los valles interandinos y laderas de páramo. Resistieron sucesivamente la expansión militar del Tahuantinsuyo incaico y la posterior conquista española. Formaron alianzas de intercambio comercial y ceremonial con los pueblos Pastos y Quillacingas a través de los caminos de herradura del Guáitara.",
+        "reconstitucion_identitaria": "Tras siglos de invisibilización institucional que pretendió catalogarlos como campesinos andinos indiferenciados, las familias y parcialidades Panzaleo en Nariño han recuperado sus estructuras de gobierno ancestral, sus asambleas y sus autoridades de cabildo indígena reconocidas constitucionalmente."
+      },
+      "sistemas_productivos_y_tecnologias": {
+        "agricultura_de_paramo": "Manejo de terrazas agrícolas escalonadas y huertas familiares ('chacras') cultivadas con tubérculos andinos tradicionales: melloco/ulluco (Ullucus tuberosus), oca (Oxalis tuberosa), mashua/cubio (Tropaeolum tuberosum), haba criolla y diversas variedades de papas nativas de altura.",
+        "textileria_de_lana": "Hilado tradicional en huso y telar de madera de lana virgen de oveja para la confección de ruanas oscuras, cobijas gruesas y fajas de abrigo imprescindibles para el frío extremo del altiplano nariñense.",
+        "minga_comunitaria": "Práctica institucionalizada del trabajo solidario colectivo para la apertura de acequias de riego, siembras y cosechas, y mantenimiento de caminos veredales."
+      },
+      "medicina_tradicional_y_espiritualidad": {
+        "cosmovision_andina": "Veneración y respeto a la Pachamama (Madre Tierra) y a los cerros tutelares (Taitas nevados y volcanes del sur: Cumbal, Chiles y Galeras) como entidades vivientes y protectoras de los ciclos hidrológicos.",
+        "farmacopea_andina": {
+          "chilca": "Baccharis latifolia: Hojas calientes en emplastos para descongestionar articulaciones entumecidas por el frío y torceduras.",
+          "ortiga_mayor": "Urtica dioica: Utilizada en baños de frotación cutánea matutina para estimular la circulación sanguínea, limpiar el cansancio físico y activar la vitalidad del pensamiento.",
+          "marco": "Ambrosia arborescens: Infusiones digestivas y sahumerios ceremoniales de purificación ambiental."
+        },
+        "banos_en_ojos_de_agua": "Rito de inmersión al amanecer en nacimientos de agua pura de páramo para armonizar el cuerpo, renovar las fuerzas del espíritu y pedir permiso a los dueños espirituales del páramo."
+      },
+      "organizacion_sociopolitica_y_derechos": {
+        "gobierno_propio": "Cabildo Indígena Panzaleo con Gobernador, Alguaciles y Consejo de Mayores elegidos democráticamente en asamblea comunitaria.",
+        "afiliacion_organizativa": "Articulación con autoridades indígenas de Nariño (AICO y ONIC) y redes binacionales de pueblos originarios de la cuenca andina.",
+        "defensa_del_paramo": "Liderazgo en la preservación de los humedales y colchones de agua de los páramos del sur de Nariño frente a la frontera agrícola comercial intensiva y la contaminación de fuentes hídricas."
+      }
+    }
+  ]
+}
