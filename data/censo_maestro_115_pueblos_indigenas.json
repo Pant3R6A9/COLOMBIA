@@ -1,0 +1,815 @@
+{
+  "metadata": {
+    "titulo": "Censo y Matriz Maestra de las Naciones Indígenas Originarias de Colombia",
+    "fuente": "ONIC, DANE Censo Nacional 2018, Ministerio del Interior (Auto 004/2009) e Instituto Caro y Cuervo",
+    "total_pueblos_reconocidos": 115,
+    "marco_legal": "Constitución Política de Colombia 1991 (Arts. 7, 8, 10, 70, 246 y 330) y Convenio 169 OIT"
+  },
+  "catalogo_completo_115": [
+    {
+      "id": "wayuu",
+      "nombre": "Wayuu",
+      "familia": "Arawak",
+      "region": "Caribe",
+      "depto": "La Guajira, Cesar"
+    },
+    {
+      "id": "kogui",
+      "nombre": "Kogui (Kágaba)",
+      "familia": "Chibcha",
+      "region": "Caribe - Sierra Nevada",
+      "depto": "Magdalena, La Guajira, Cesar"
+    },
+    {
+      "id": "arhuaco",
+      "nombre": "Arhuaco (Iku)",
+      "familia": "Chibcha",
+      "region": "Caribe - Sierra Nevada",
+      "depto": "Cesar, Magdalena"
+    },
+    {
+      "id": "wiwa",
+      "nombre": "Wiwa (Damana)",
+      "familia": "Chibcha",
+      "region": "Caribe - Sierra Nevada",
+      "depto": "La Guajira, Cesar"
+    },
+    {
+      "id": "kankuamo",
+      "nombre": "Kankuamo",
+      "familia": "Chibcha",
+      "region": "Caribe - Sierra Nevada",
+      "depto": "Cesar"
+    },
+    {
+      "id": "zenu",
+      "nombre": "Zenú",
+      "familia": "Sin clasificar / Chocoana ancestral",
+      "region": "Caribe",
+      "depto": "Córdoba, Sucre, Antioquia"
+    },
+    {
+      "id": "chimila",
+      "nombre": "Chimila (Ette Ennaka)",
+      "familia": "Chibcha",
+      "region": "Caribe",
+      "depto": "Magdalena, Cesar"
+    },
+    {
+      "id": "yukpa",
+      "nombre": "Yukpa",
+      "familia": "Caribe",
+      "region": "Caribe - Perijá",
+      "depto": "Cesar"
+    },
+    {
+      "id": "mokana",
+      "nombre": "Mokaná",
+      "familia": "Malibú / Muisca-Chibcha sustrato",
+      "region": "Caribe",
+      "depto": "Atlántico"
+    },
+    {
+      "id": "senufana",
+      "nombre": "Senufaná",
+      "familia": "Zenú sustrato",
+      "region": "Caribe / Antioquia",
+      "depto": "Antioquia"
+    },
+    {
+      "id": "embera_dobida",
+      "nombre": "Emberá Dobidá",
+      "familia": "Chocó",
+      "region": "Pacífico",
+      "depto": "Chocó"
+    },
+    {
+      "id": "embera_chami",
+      "nombre": "Emberá Chamí",
+      "familia": "Chocó",
+      "region": "Pacífico / Andina",
+      "depto": "Risaralda, Caldas, Antioquia, Valle"
+    },
+    {
+      "id": "embera_katio",
+      "nombre": "Emberá Katío",
+      "familia": "Chocó",
+      "region": "Pacífico / Caribe",
+      "depto": "Córdoba, Antioquia, Chocó"
+    },
+    {
+      "id": "embera_eyabida",
+      "nombre": "Emberá Eyabida",
+      "familia": "Chocó",
+      "region": "Pacífico / Andina",
+      "depto": "Antioquia"
+    },
+    {
+      "id": "wounaan",
+      "nombre": "Wounaan (Noanamá)",
+      "familia": "Chocó",
+      "region": "Pacífico",
+      "depto": "Chocó, Valle del Cauca"
+    },
+    {
+      "id": "awa",
+      "nombre": "Awá (Inkal Awá / Cuaiquer)",
+      "familia": "Barbacoa",
+      "region": "Pacífico",
+      "depto": "Nariño, Putumayo"
+    },
+    {
+      "id": "eperara_siapidara",
+      "nombre": "Eperara Siapidara",
+      "familia": "Chocó",
+      "region": "Pacífico",
+      "depto": "Cauca, Nariño, Valle"
+    },
+    {
+      "id": "nasa",
+      "nombre": "Nasa (Paeces)",
+      "familia": "Aislada / Paezana",
+      "region": "Andina",
+      "depto": "Cauca, Valle, Huila, Tolima, Putumayo"
+    },
+    {
+      "id": "misak",
+      "nombre": "Misak (Guambianos)",
+      "familia": "Barbacoa",
+      "region": "Andina",
+      "depto": "Cauca, Huila"
+    },
+    {
+      "id": "yanacona",
+      "nombre": "Yanacona",
+      "familia": "Quechua / Castellano ancestral",
+      "region": "Andina - Macizo",
+      "depto": "Cauca, Huila, Valle"
+    },
+    {
+      "id": "pastos",
+      "nombre": "Pastos",
+      "familia": "Barbacoa sustrato",
+      "region": "Andina",
+      "depto": "Nariño, Putumayo"
+    },
+    {
+      "id": "quillacingas",
+      "nombre": "Quillacingas",
+      "familia": "Sustrato Quillacinga",
+      "region": "Andina",
+      "depto": "Nariño"
+    },
+    {
+      "id": "pijao",
+      "nombre": "Pijao",
+      "familia": "Caribe sustrato",
+      "region": "Andina",
+      "depto": "Tolima"
+    },
+    {
+      "id": "coconuco",
+      "nombre": "Coconuco",
+      "familia": "Barbacoa",
+      "region": "Andina",
+      "depto": "Cauca"
+    },
+    {
+      "id": "totoro",
+      "nombre": "Totoró",
+      "familia": "Barbacoa (Namtrik)",
+      "region": "Andina",
+      "depto": "Cauca"
+    },
+    {
+      "id": "polindara",
+      "nombre": "Polindara",
+      "familia": "Barbacoa sustrato",
+      "region": "Andina",
+      "depto": "Cauca"
+    },
+    {
+      "id": "ambalo",
+      "nombre": "Ambaló",
+      "familia": "Barbacoa sustrato",
+      "region": "Andina",
+      "depto": "Cauca"
+    },
+    {
+      "id": "quizgo",
+      "nombre": "Quizgó",
+      "familia": "Barbacoa sustrato",
+      "region": "Andina",
+      "depto": "Cauca"
+    },
+    {
+      "id": "guanaca",
+      "nombre": "Guanaca",
+      "familia": "Barbacoa sustrato",
+      "region": "Andina",
+      "depto": "Cauca"
+    },
+    {
+      "id": "muisca",
+      "nombre": "Muisca (Cabildos Altiplano)",
+      "familia": "Chibcha",
+      "region": "Andina",
+      "depto": "Cundinamarca, Boyacá, Bogotá"
+    },
+    {
+      "id": "nutabe",
+      "nombre": "Nutabe",
+      "familia": "Chibcha sustrato",
+      "region": "Andina",
+      "depto": "Antioquia"
+    },
+    {
+      "id": "tahami",
+      "nombre": "Tahamí",
+      "familia": "Chibcha sustrato",
+      "region": "Andina",
+      "depto": "Antioquia"
+    },
+    {
+      "id": "dujos",
+      "nombre": "Dujos (Tama del Huila)",
+      "familia": "Tucano sustrato",
+      "region": "Andina",
+      "depto": "Huila"
+    },
+    {
+      "id": "sikuani",
+      "nombre": "Sikuani (Hiwi)",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Vichada, Meta, Casanare, Guainía, Guaviare"
+    },
+    {
+      "id": "uwa",
+      "nombre": "Uwa (Tunebos)",
+      "familia": "Chibcha",
+      "region": "Orinoquía / Andina",
+      "depto": "Boyacá, Arauca, Norte de Santander, Santander"
+    },
+    {
+      "id": "achagua",
+      "nombre": "Achagua",
+      "familia": "Arawak",
+      "region": "Orinoquía",
+      "depto": "Meta, Casanare"
+    },
+    {
+      "id": "piapoco",
+      "nombre": "Piapoco (Dzéwene)",
+      "familia": "Arawak",
+      "region": "Orinoquía",
+      "depto": "Vichada, Guainía, Meta"
+    },
+    {
+      "id": "saliba",
+      "nombre": "Sáliba",
+      "familia": "Sáliba-Piaroa",
+      "region": "Orinoquía",
+      "depto": "Casanare, Vichada"
+    },
+    {
+      "id": "cuiba",
+      "nombre": "Cuiba (Wamonae)",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Arauca, Casanare, Vichada"
+    },
+    {
+      "id": "amorua",
+      "nombre": "Amorúa",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Vichada"
+    },
+    {
+      "id": "masiguare",
+      "nombre": "Masiguare",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Casanare, Arauca"
+    },
+    {
+      "id": "chiricoa",
+      "nombre": "Chiricoa",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Arauca"
+    },
+    {
+      "id": "betoye",
+      "nombre": "Betoye",
+      "familia": "Chibcha / Aislada",
+      "region": "Orinoquía",
+      "depto": "Arauca"
+    },
+    {
+      "id": "hitnu",
+      "nombre": "Hitnü (Macaguane)",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Arauca"
+    },
+    {
+      "id": "jiw",
+      "nombre": "Jiw (Guayabero)",
+      "familia": "Guahibana",
+      "region": "Orinoquía / Amazonía",
+      "depto": "Guaviare, Meta"
+    },
+    {
+      "id": "piaroa",
+      "nombre": "Piaroa (Wothuha)",
+      "familia": "Sáliba-Piaroa",
+      "region": "Orinoquía / Amazonía",
+      "depto": "Vichada, Guainía"
+    },
+    {
+      "id": "puinave",
+      "nombre": "Puinave (Wãnsöhöt)",
+      "familia": "Puinave-Makú",
+      "region": "Orinoquía / Amazonía",
+      "depto": "Guainía, Vichada"
+    },
+    {
+      "id": "kurripako",
+      "nombre": "Kurripako (Baniwa)",
+      "familia": "Arawak",
+      "region": "Orinoquía / Amazonía",
+      "depto": "Guainía, Vichada"
+    },
+    {
+      "id": "yaruro",
+      "nombre": "Yaruro (Pumé)",
+      "familia": "Aislada",
+      "region": "Orinoquía",
+      "depto": "Arauca, Casanare"
+    },
+    {
+      "id": "huitoto",
+      "nombre": "Huitoto (Murui-Muinane)",
+      "familia": "Huitoto",
+      "region": "Amazonía",
+      "depto": "Amazonas, Putumayo, Caquetá"
+    },
+    {
+      "id": "bora",
+      "nombre": "Bora",
+      "familia": "Bora",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "ocaina",
+      "nombre": "Ocaina",
+      "familia": "Huitoto",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "muinane",
+      "nombre": "Muinane",
+      "familia": "Bora",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "andoke",
+      "nombre": "Andoke",
+      "familia": "Aislada",
+      "region": "Amazonía",
+      "depto": "Amazonas, Caquetá"
+    },
+    {
+      "id": "nonuya",
+      "nombre": "Nonuya",
+      "familia": "Huitoto",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "mirana",
+      "nombre": "Miraña",
+      "familia": "Bora",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "yukuna",
+      "nombre": "Yukuna",
+      "familia": "Arawak",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "matapi",
+      "nombre": "Matapí",
+      "familia": "Yukuna-Arawak",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "tanimuka",
+      "nombre": "Tanimuka",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Amazonas, Vaupés"
+    },
+    {
+      "id": "letuama",
+      "nombre": "Letuama",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "makuna",
+      "nombre": "Makuna",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés, Amazonas"
+    },
+    {
+      "id": "barasana",
+      "nombre": "Barasana",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "desano",
+      "nombre": "Desano",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "cubeo",
+      "nombre": "Cubeo",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "wanano",
+      "nombre": "Wanano (Kotiria)",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "piratapuyo",
+      "nombre": "Piratapuyo",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "tatuyo",
+      "nombre": "Tatuyo",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "tuyuca",
+      "nombre": "Tuyuca",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "carapana",
+      "nombre": "Carapana",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "siriano",
+      "nombre": "Siriano",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "yuruti",
+      "nombre": "Yurutí",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "pisamira",
+      "nombre": "Pisamira",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "taiwano",
+      "nombre": "Taiwano (Eduria)",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "barasano_del_sur",
+      "nombre": "Barasano del Sur",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "kawiyari",
+      "nombre": "Kawiyarí (Cabiyarí)",
+      "familia": "Arawak",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "tariano",
+      "nombre": "Tariano",
+      "familia": "Arawak",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "karijona",
+      "nombre": "Karijona (Carijona)",
+      "familia": "Caribe",
+      "region": "Amazonía - Chiribiquete",
+      "depto": "Guaviare, Caquetá, Amazonas"
+    },
+    {
+      "id": "tikuna",
+      "nombre": "Tikuna (Magüta)",
+      "familia": "Tikuna (Aislada)",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "yagua",
+      "nombre": "Yagua",
+      "familia": "Peba-Yagua",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "cocama",
+      "nombre": "Cocama",
+      "familia": "Tupí-Guaraní",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "nukak_maku",
+      "nombre": "Nukak Makú",
+      "familia": "Nadahup / Makú",
+      "region": "Amazonía",
+      "depto": "Guaviare"
+    },
+    {
+      "id": "kakua",
+      "nombre": "Kakua (Cacua)",
+      "familia": "Kakua-Nukak",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "hupda",
+      "nombre": "Hupda (Jupda)",
+      "familia": "Nadahup",
+      "region": "Amazonía",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "yuhup",
+      "nombre": "Yuhupdeh",
+      "familia": "Nadahup",
+      "region": "Amazonía",
+      "depto": "Vaupés, Amazonas"
+    },
+    {
+      "id": "siona",
+      "nombre": "Siona (Ganteya)",
+      "familia": "Tukano Occidental",
+      "region": "Amazonía",
+      "depto": "Putumayo"
+    },
+    {
+      "id": "kofan",
+      "nombre": "Kofán (A'i)",
+      "familia": "A'ingae (Aislada)",
+      "region": "Amazonía",
+      "depto": "Putumayo, Nariño"
+    },
+    {
+      "id": "coreguaje",
+      "nombre": "Coreguaje (Korebaju)",
+      "familia": "Tukano Occidental",
+      "region": "Amazonía",
+      "depto": "Caquetá"
+    },
+    {
+      "id": "inga",
+      "nombre": "Inga",
+      "familia": "Quechua",
+      "region": "Amazonía / Andina",
+      "depto": "Putumayo, Nariño, Caquetá, Cauca"
+    },
+    {
+      "id": "kamentsa",
+      "nombre": "Kamëntsá (Camsá)",
+      "familia": "Kamëntsá (Aislada)",
+      "region": "Amazonía - Sibundoy",
+      "depto": "Putumayo"
+    },
+    {
+      "id": "baniva",
+      "nombre": "Baniva",
+      "familia": "Arawak",
+      "region": "Amazonía - Guainía",
+      "depto": "Guainía"
+    },
+    {
+      "id": "yavitero",
+      "nombre": "Yavitero",
+      "familia": "Arawak",
+      "region": "Amazonía - Guainía",
+      "depto": "Guainía"
+    },
+    {
+      "id": "guarequena",
+      "nombre": "Guarequena (Warekena)",
+      "familia": "Arawak",
+      "region": "Amazonía - Guainía",
+      "depto": "Guainía"
+    },
+    {
+      "id": "mapayerri",
+      "nombre": "Mapayerri",
+      "familia": "Arawak",
+      "region": "Amazonía - Vichada/Guainía",
+      "depto": "Vichada, Guainía"
+    },
+    {
+      "id": "macaguaje",
+      "nombre": "Macaguaje",
+      "familia": "Tukano Occidental",
+      "region": "Amazonía",
+      "depto": "Caquetá"
+    },
+    {
+      "id": "tama",
+      "nombre": "Tama",
+      "familia": "Tukano Occidental",
+      "region": "Amazonía",
+      "depto": "Caquetá"
+    },
+    {
+      "id": "yauna",
+      "nombre": "Yauna",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "yuri",
+      "nombre": "Yuri (Aroje)",
+      "familia": "Tikuna-Yurí",
+      "region": "Amazonía - PNN Puré",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "passe",
+      "nombre": "Passé",
+      "familia": "Arawak",
+      "region": "Amazonía - PNN Puré",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "carabayo",
+      "nombre": "Carabayo",
+      "familia": "Yurí / Passé",
+      "region": "Amazonía - PNN Puré",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "guane",
+      "nombre": "Guane (Cabildos Santander)",
+      "familia": "Chibcha sustrato",
+      "region": "Andina",
+      "depto": "Santander"
+    },
+    {
+      "id": "yarigui",
+      "nombre": "Yariguí (Memoria y Cabildo)",
+      "familia": "Caribe sustrato",
+      "region": "Andina - Magdalena Medio",
+      "depto": "Santander"
+    },
+    {
+      "id": "panzaleo",
+      "nombre": "Panzaleo",
+      "familia": "Quechua / Barbacoa sustrato",
+      "region": "Andina - Nariño",
+      "depto": "Nariño"
+    },
+    {
+      "id": "kuna_tule",
+      "nombre": "Guna Dule (Kuna Tule)",
+      "familia": "Chibcha",
+      "region": "Pacífico - Darién",
+      "depto": "Antioquia, Chocó"
+    },
+    {
+      "id": "tsiripu",
+      "nombre": "Tsiripu",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Casanare, Vichada"
+    },
+    {
+      "id": "mariposo",
+      "nombre": "Mariposo",
+      "familia": "Guahibana",
+      "region": "Orinoquía",
+      "depto": "Vichada"
+    },
+    {
+      "id": "yaruro_pume",
+      "nombre": "Yaruro (Pumé)",
+      "familia": "Aislada",
+      "region": "Orinoquía",
+      "depto": "Arauca"
+    },
+    {
+      "id": "yuhupdeh",
+      "nombre": "Yuhupdeh (Maku)",
+      "familia": "Nadahup",
+      "region": "Amazonía - Vaupés",
+      "depto": "Vaupés, Amazonas"
+    },
+    {
+      "id": "hupda_maku",
+      "nombre": "Hupda (Jupda Maku)",
+      "familia": "Nadahup",
+      "region": "Amazonía - Vaupés",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "kakua_maku",
+      "nombre": "Kakua (Bará Maku)",
+      "familia": "Kakua-Nukak",
+      "region": "Amazonía - Vaupés",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "taiwano_eduria",
+      "nombre": "Taiwano (Eduria)",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía - Vaupés",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "barasano_norte",
+      "nombre": "Barasano del Norte (Waimaja)",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía - Vaupés",
+      "depto": "Vaupés"
+    },
+    {
+      "id": "letuama_upia",
+      "nombre": "Letuama (Upia)",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía - Mirití",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "matapi_jupichiya",
+      "nombre": "Matapí (Jupichiya)",
+      "familia": "Yukuna-Arawak",
+      "region": "Amazonía - Mirití",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "yauna_jee",
+      "nombre": "Yauna (Kamejeya)",
+      "familia": "Tukano Oriental",
+      "region": "Amazonía - Apaporis",
+      "depto": "Amazonas"
+    },
+    {
+      "id": "bora_mirana",
+      "nombre": "Bora-Miraña",
+      "familia": "Bora",
+      "region": "Amazonía - Caquetá",
+      "depto": "Amazonas"
+    }
+  ]
+}
