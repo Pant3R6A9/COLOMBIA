@@ -3,351 +3,2109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Colombianopedia - Colombia en el Tiempo: Portal Oficial de Memoria y Patrimonio</title>
-  <meta name="description" content="La enciclopedia interactiva y documental de Colombia: recorre la historia nacional a través de scrollytelling inmersivo, mapas territoriales y archivos históricos del AGN.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.3">
-  
-  <!-- Optimización de render-blocking para la carga inicial -->
-  <link rel="expect" href="#hero-scrolly" blocking="render">
+  <title>Colombia en el Tiempo — La Gran Enciclopedia de la Memoria, las Naciones Originarias y la Tierra</title>
+  <meta name="description" content="Portal monumental y oficial de memoria histórica de Colombia: 115 pueblos originarios, 20.000 años de arte rupestre, acervos del Archivo General de la Nación, geología y verdad.">
+  <meta name="theme-color" content="#070709">
+
+  <!-- Tipografías de Alta Jerarquía Histórica -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
+
+  <style>
+    /* ==========================================================
+       ESTILOS EXCLUSIVOS: PORTAL MONUMENTAL Y HERO EXPERIENCE
+       ========================================================== */
+
+    /* Desactivar botón flotante simple para usar la cápsula avanzada */
+    .audio-toggle {
+      display: none !important;
+    }
+
+    /* Iluminación Ambiental y Fondo Dinámico */
+    body {
+      background-color: var(--bg-primary);
+      position: relative;
+    }
+
+    /* ==========================================================
+       CABECERA Y NAVEGACIÓN UNIFICADA (14 PÁGINAS)
+       ========================================================== */
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(7, 7, 9, 0.82);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+      padding: 0.85rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background 0.3s ease, border-color 0.3s ease;
+    }
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+
+    .logo-monumental {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      text-decoration: none;
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      color: #fff;
+    }
+
+    .logo-monumental .gold-text {
+      background: linear-gradient(135deg, #fff3cf 0%, #e5c05b 50%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    }
+
+    .logo-badge-icon {
+      width: 28px;
+      height: 28px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle, #f5d77f 0%, #aa7c11 100%);
+      border-radius: 50%;
+      color: #070709;
+      font-size: 0.9rem;
+      box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      gap: 1.25rem;
+    }
+
+    .nav-links-cluster {
+      display: flex;
+      align-items: center;
+      gap: 1.15rem;
+    }
+
+    .nav-item-link, .dropdown-trigger-btn {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.825rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      transition: all 0.25s ease;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.4rem 0.6rem;
+      border-radius: 4px;
+    }
+
+    .nav-item-link:hover, .dropdown-trigger-btn:hover, .nav-item-link.active {
+      color: #ffd700;
+      background: rgba(212, 175, 55, 0.08);
+    }
+
+    .nav-item-link.active {
+      border-bottom: 2px solid var(--accent);
+    }
+
+    /* Menús Desplegables Mejorados */
+    .nav-dropdown {
+      position: relative;
+    }
+
+    .nav-dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: rgba(12, 13, 17, 0.96);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(212, 175, 55, 0.25);
+      border-radius: 8px;
+      min-width: 270px;
+      padding: 0.65rem 0;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.75);
+      z-index: 1001;
+      list-style: none;
+      margin-top: 0.35rem;
+    }
+
+    .nav-dropdown:hover .nav-dropdown-menu,
+    .nav-dropdown:focus-within .nav-dropdown-menu {
+      display: block;
+      animation: fadeInDown 0.25s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .nav-dropdown-menu a {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.65rem 1.25rem;
+      color: #e5e7eb;
+      text-decoration: none;
+      font-size: 0.825rem;
+      font-weight: 500;
+      transition: all 0.2s ease;
+    }
+
+    .nav-dropdown-menu a:hover {
+      background: rgba(212, 175, 55, 0.12);
+      color: #ffd700;
+      padding-left: 1.5rem;
+    }
+
+    .nav-dropdown-menu .menu-era-tag {
+      font-size: 0.65rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.15rem 0.45rem;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.08);
+      margin-left: auto;
+    }
+
+    /* Acciones del Header (Buscador y Lectura) */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .header-search-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      padding: 0.4rem 0.85rem;
+      border-radius: 20px;
+      color: var(--text-primary);
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .header-search-btn:hover {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: #ffd700;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      font-size: 1.25rem;
+      padding: 0.4rem 0.65rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    /* ==========================================================
+       HERO CINEMATOGRÁFICO MONUMENTAL
+       ========================================================== */
+    .hero-cinematic-stage {
+      position: relative;
+      min-height: 94vh;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1.5rem 6rem;
+      background: radial-gradient(ellipse at 50% 25%, rgba(212, 175, 55, 0.14) 0%, rgba(7, 7, 9, 0.85) 65%, #070709 100%);
+    }
+
+    /* Canvas de Partículas Doradas en Vivo */
+    #hero-particles-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+    }
+
+    /* Bóveda y Capas de Silueta */
+    .hero-ambient-glow {
+      position: absolute;
+      width: 70vw;
+      height: 70vw;
+      max-width: 900px;
+      max-height: 900px;
+      background: radial-gradient(circle, rgba(212, 175, 55, 0.18) 0%, rgba(16, 185, 129, 0.05) 45%, transparent 70%);
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: blur(50px);
+      pointer-events: none;
+      z-index: 1;
+      animation: pulseAura 10s ease-in-out infinite alternate;
+    }
+
+    @keyframes pulseAura {
+      0% { transform: translate(-50%, -50%) scale(0.92); opacity: 0.7; }
+      100% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+    }
+
+    /* Siluetas de los Andes y Palmas en el Fondo */
+    .hero-backdrop-silhouette {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 380px;
+      pointer-events: none;
+      z-index: 2;
+      opacity: 0.55;
+    }
+
+    .hero-backdrop-silhouette svg {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* Contenido Central Pinned del Hero */
+    .hero-content-wrapper {
+      position: relative;
+      z-index: 5;
+      text-align: center;
+      max-width: 1060px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-document-emblem {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.45rem 1.25rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.38);
+      border-radius: 30px;
+      color: #ffd700;
+      font-size: 0.785rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+      margin-bottom: 1.75rem;
+      animation: emblemShine 4s ease-in-out infinite alternate;
+    }
+
+    @keyframes emblemShine {
+      0% { box-shadow: 0 0 15px rgba(212, 175, 55, 0.15); border-color: rgba(212, 175, 55, 0.3); }
+      100% { box-shadow: 0 0 28px rgba(212, 175, 55, 0.45); border-color: rgba(245, 215, 127, 0.7); }
+    }
+
+    /* TÍTULO CON GRADIENTE ÁUREO MONUMENTAL */
+    .hero-monumental-title {
+      font-family: var(--font-title);
+      font-size: clamp(2.4rem, 6.2vw, 5rem);
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: 0.05em;
+      margin-bottom: 1.2rem;
+      text-transform: uppercase;
+      background: linear-gradient(135deg, #FFFFFF 0%, #FFF3CF 22%, #F5D77F 45%, #D4AF37 68%, #AA7C11 88%, #FFE89E 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 6px 25px rgba(212, 175, 55, 0.35));
+    }
+
+    .hero-monumental-subtitle {
+      font-family: var(--font-title);
+      font-size: clamp(1.05rem, 2.3vw, 1.6rem);
+      font-weight: 600;
+      color: #e5e7eb;
+      letter-spacing: 0.06em;
+      line-height: 1.35;
+      max-width: 860px;
+      margin-bottom: 1.5rem;
+      text-shadow: 0 2px 10px rgba(0, 0, 0, 0.8);
+    }
+
+    .hero-manifesto-text {
+      font-size: 1.05rem;
+      color: var(--text-secondary);
+      max-width: 760px;
+      line-height: 1.7;
+      margin-bottom: 2.25rem;
+    }
+
+    /* Barra Rápida de Búsqueda Hero */
+    .hero-search-bar {
+      width: 100%;
+      max-width: 640px;
+      background: rgba(18, 20, 26, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.4);
+      border-radius: 40px;
+      padding: 0.95rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #d1d5db;
+      font-size: 0.95rem;
+      cursor: pointer;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5), inset 0 0 12px rgba(212, 175, 55, 0.05);
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      margin-bottom: 2.25rem;
+    }
+
+    .hero-search-bar:hover {
+      border-color: #ffd700;
+      background: rgba(26, 29, 38, 0.95);
+      box-shadow: 0 0 30px rgba(212, 175, 55, 0.35);
+      transform: translateY(-2px);
+    }
+
+    /* BOTONES DE ACCIÓN PRINCIPALES (CTA) */
+    .hero-cta-cluster {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.15rem;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .btn-hero {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      padding: 0.9rem 1.85rem;
+      border-radius: 8px;
+      font-family: var(--font-text);
+      font-weight: 700;
+      font-size: 0.875rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      text-decoration: none;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .btn-hero-primary {
+      background: linear-gradient(135deg, #ffd700 0%, #d4af37 60%, #b8860b 100%);
+      color: #070709;
+      border: 1px solid #ffd700;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.4);
+    }
+
+    .btn-hero-primary:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(212, 175, 55, 0.6);
+      filter: brightness(1.1);
+    }
+
+    .btn-hero-secondary {
+      background: rgba(16, 185, 129, 0.12);
+      color: #10b981;
+      border: 1px solid rgba(16, 185, 129, 0.45);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-hero-secondary:hover {
+      background: rgba(16, 185, 129, 0.22);
+      border-color: #34d399;
+      color: #ecfdf5;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 24px rgba(16, 185, 129, 0.3);
+    }
+
+    .btn-hero-tertiary {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-primary);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-hero-tertiary:hover {
+      background: rgba(255, 255, 255, 0.1);
+      border-color: var(--accent);
+      color: #ffd700;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    }
+
+    /* CONTADORES DINÁMICOS DE IMPACTO */
+    .hero-stats-band {
+      width: 100%;
+      max-width: 1080px;
+      background: rgba(15, 17, 23, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(212, 175, 55, 0.22);
+      border-radius: 12px;
+      padding: 1.75rem 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.55);
+    }
+
+    .stat-box-monumental {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0.5rem 0.75rem;
+      position: relative;
+    }
+
+    .stat-box-monumental:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 15%;
+      height: 70%;
+      width: 1px;
+      background: linear-gradient(180deg, transparent, rgba(212, 175, 55, 0.3), transparent);
+    }
+
+    .stat-number-cluster {
+      display: flex;
+      align-items: baseline;
+      justify-content: center;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .stat-box-monumental .stat-number {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 3.4vw, 2.75rem);
+      font-weight: 800;
+      color: #ffd700;
+      letter-spacing: 0.02em;
+    }
+
+    .stat-box-monumental .stat-suffix {
+      font-family: var(--font-title);
+      font-size: clamp(1.4rem, 2.5vw, 2rem);
+      font-weight: 800;
+      color: #ffd700;
+      margin-left: 2px;
+    }
+
+    .stat-box-monumental .stat-caption {
+      font-size: 0.8rem;
+      color: #9ca3af;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      line-height: 1.35;
+      max-width: 200px;
+    }
+
+    /* ==========================================================
+       SECCIÓN: VITRINA DE TESOROS NACIONALES (GLASSMORPHISM)
+       ========================================================== */
+    .tesoros-section {
+      margin: 6rem 0;
+      position: relative;
+    }
+
+    .section-headline-block {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .section-badge-gold {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 20px;
+      color: #ffd700;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title-monumental {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: 0.04em;
+      color: #f3f4f6;
+      margin-bottom: 0.85rem;
+    }
+
+    .section-description-monumental {
+      color: var(--text-secondary);
+      font-size: 1.05rem;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.65;
+    }
+
+    .tesoros-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2.5rem;
+    }
+
+    .tesoro-card {
+      background: rgba(18, 20, 27, 0.65);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      position: relative;
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+    }
+
+    .tesoro-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--tesoro-accent, #ffd700), transparent);
+      opacity: 0.7;
+      transition: opacity 0.3s ease;
+    }
+
+    .tesoro-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(212, 175, 55, 0.45);
+      box-shadow: 0 25px 50px rgba(0, 0, 0, 0.6), 0 0 25px rgba(212, 175, 55, 0.15);
+    }
+
+    .tesoro-media {
+      position: relative;
+      height: 250px;
+      overflow: hidden;
+      background: #0d0f14;
+    }
+
+    .tesoro-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .tesoro-card:hover .tesoro-media img {
+      transform: scale(1.06);
+    }
+
+    .tesoro-media-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(7, 7, 9, 0.1) 0%, rgba(7, 7, 9, 0.85) 100%);
+    }
+
+    .tesoro-category-tag {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(7, 7, 9, 0.8);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #ffd700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    .tesoro-body {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .tesoro-title {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+      line-height: 1.25;
+    }
+
+    .tesoro-text {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .tesoro-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.75rem;
+    }
+
+    .tesoro-pill {
+      font-size: 0.725rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 12px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: #94a3b8;
+      font-weight: 500;
+    }
+
+    .tesoro-action-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: #ffd700;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      transition: all 0.25s ease;
+      align-self: flex-start;
+    }
+
+    .tesoro-action-link:hover {
+      color: #fff;
+      transform: translateX(4px);
+    }
+
+    /* ==========================================================
+       CARRUSEL / EXPLORADOR DE ÉPOCAS HISTÓRICAS
+       ========================================================== */
+    .epocas-explorer-section {
+      margin: 6rem 0;
+      position: relative;
+    }
+
+    .carousel-controls-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .carousel-nav-arrows {
+      display: flex;
+      gap: 0.75rem;
+    }
+
+    .carousel-arrow-btn {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .carousel-arrow-btn:hover {
+      background: rgba(212, 175, 55, 0.2);
+      border-color: #ffd700;
+      color: #ffd700;
+    }
+
+    .carousel-dots-tracker {
+      display: flex;
+      gap: 0.5rem;
+      align-items: center;
+    }
+
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .carousel-dot.active {
+      width: 28px;
+      border-radius: 6px;
+      background: #ffd700;
+      box-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+    }
+
+    /* Pista Deslizante del Carrusel */
+    .carousel-track-container {
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      display: flex;
+      gap: 1.75rem;
+      padding: 1rem 0.25rem 2rem;
+      scroll-behavior: smooth;
+    }
+
+    .carousel-track-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .era-carousel-card {
+      flex: 0 0 360px;
+      scroll-snap-align: start;
+      background: rgba(18, 20, 27, 0.7);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid rgba(255, 255, 255, 0.09);
+      border-radius: 12px;
+      padding: 1.85rem;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .era-carousel-card::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--era-accent, #ffd700);
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.3s ease;
+    }
+
+    .era-carousel-card:hover {
+      transform: translateY(-8px);
+      border-color: var(--era-accent, #ffd700);
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55), 0 0 20px rgba(var(--era-accent-rgb, 212, 175, 55), 0.15);
+    }
+
+    .era-carousel-card:hover::after {
+      transform: scaleX(1);
+    }
+
+    .era-header-pill {
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.25rem 0.65rem;
+      border-radius: 4px;
+      background: rgba(var(--era-accent-rgb, 212, 175, 55), 0.15);
+      color: var(--era-accent, #ffd700);
+      margin-bottom: 0.75rem;
+      width: fit-content;
+    }
+
+    .era-timeline-years {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--era-accent, #ffd700);
+      margin-bottom: 0.4rem;
+      font-family: var(--font-text);
+    }
+
+    .era-card-title {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    .era-card-description {
+      color: #94a3b8;
+      font-size: 0.9rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .era-card-meta {
+      font-size: 0.75rem;
+      color: #cbd5e1;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .era-card-meta span {
+      font-weight: 600;
+      color: var(--era-accent, #ffd700);
+    }
+
+    /* ==========================================================
+       CÁPSULA DE AUDIO AMBIENTAL ELEGANTE
+       ========================================================== */
+    .soundscape-capsule {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      z-index: 999;
+      background: rgba(12, 14, 19, 0.92);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border: 1px solid rgba(212, 175, 55, 0.35);
+      border-radius: 36px;
+      padding: 0.5rem 0.9rem 0.5rem 0.75rem;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.7), 0 0 20px rgba(212, 175, 55, 0.15);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .soundscape-capsule:hover {
+      border-color: #ffd700;
+      box-shadow: 0 20px 45px rgba(0, 0, 0, 0.8), 0 0 25px rgba(212, 175, 55, 0.3);
+    }
+
+    .soundscape-play-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #ffd700, #b8860b);
+      border: none;
+      color: #070709;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(212, 175, 55, 0.4);
+      transition: transform 0.2s ease, filter 0.2s ease;
+      flex-shrink: 0;
+    }
+
+    .soundscape-play-btn:hover {
+      transform: scale(1.08);
+      filter: brightness(1.15);
+    }
+
+    .soundscape-info {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .soundscape-status-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9ca3af;
+      font-weight: 700;
+    }
+
+    .soundscape-current-name {
+      font-size: 0.8rem;
+      color: #fff;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    /* Animación del Ecualizador */
+    .soundscape-equalizer {
+      display: flex;
+      align-items: flex-end;
+      gap: 3px;
+      height: 16px;
+      padding: 0 4px;
+    }
+
+    .eq-bar {
+      width: 3px;
+      background: #ffd700;
+      border-radius: 2px;
+      height: 3px;
+      transition: height 0.2s ease;
+    }
+
+    .soundscape-capsule.playing .eq-bar:nth-child(1) { animation: soundBar 1.1s infinite alternate; }
+    .soundscape-capsule.playing .eq-bar:nth-child(2) { animation: soundBar 0.8s 0.2s infinite alternate; }
+    .soundscape-capsule.playing .eq-bar:nth-child(3) { animation: soundBar 1.3s 0.1s infinite alternate; }
+    .soundscape-capsule.playing .eq-bar:nth-child(4) { animation: soundBar 0.9s 0.3s infinite alternate; }
+
+    @keyframes soundBar {
+      0% { height: 3px; }
+      100% { height: 16px; }
+    }
+
+    /* Panel Desplegable de Selección de Paisaje Sonoro */
+    .soundscape-modal-drawer {
+      display: none;
+      position: absolute;
+      bottom: calc(100% + 12px);
+      right: 0;
+      width: 310px;
+      background: rgba(14, 16, 22, 0.96);
+      backdrop-filter: blur(24px);
+      -webkit-backdrop-filter: blur(24px);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: 14px;
+      padding: 1.25rem;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8);
+    }
+
+    .soundscape-capsule.open .soundscape-modal-drawer {
+      display: block;
+      animation: fadeInUp 0.25s ease;
+    }
+
+    .drawer-title {
+      font-family: var(--font-title);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #ffd700;
+      margin-bottom: 0.25rem;
+    }
+
+    .drawer-subtitle {
+      font-size: 0.75rem;
+      color: #9ca3af;
+      margin-bottom: 1rem;
+      line-height: 1.4;
+    }
+
+    .soundscape-options-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .sound-option-btn {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.65rem 0.85rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      color: #e5e7eb;
+      font-size: 0.82rem;
+      cursor: pointer;
+      text-align: left;
+      transition: all 0.2s ease;
+    }
+
+    .sound-option-btn:hover, .sound-option-btn.active {
+      background: rgba(212, 175, 55, 0.15);
+      border-color: #ffd700;
+      color: #ffd700;
+    }
+
+    .sound-option-btn .opt-icon {
+      font-size: 1.15rem;
+    }
+
+    .sound-volume-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding-top: 0.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.75rem;
+      color: #9ca3af;
+    }
+
+    .sound-volume-slider {
+      flex-grow: 1;
+      accent-color: #ffd700;
+      cursor: pointer;
+    }
+
+    /* ==========================================================
+       MODO PERGAMINO / LUZ DE LECTURA (COMPATIBILIDAD INTEGRAL)
+       ========================================================== */
+    [data-reading-mode="pergamino"] .hero-cinematic-stage {
+      background: radial-gradient(ellipse at 50% 25%, rgba(160, 64, 24, 0.08) 0%, rgba(246, 238, 227, 0.95) 75%, #f6eee3 100%) !important;
+    }
+
+    [data-reading-mode="pergamino"] .hero-monumental-title {
+      background: linear-gradient(135deg, #422206 0%, #873600 50%, #b9770e 100%) !important;
+      -webkit-background-clip: text !important;
+      -webkit-text-fill-color: transparent !important;
+      filter: none !important;
+    }
+
+    [data-reading-mode="pergamino"] .hero-monumental-subtitle {
+      color: #4a3622 !important;
+      text-shadow: none !important;
+    }
+
+    [data-reading-mode="pergamino"] .hero-stats-band,
+    [data-reading-mode="pergamino"] .tesoro-card,
+    [data-reading-mode="pergamino"] .era-carousel-card,
+    [data-reading-mode="pergamino"] .soundscape-capsule,
+    [data-reading-mode="pergamino"] .soundscape-modal-drawer {
+      background: rgba(255, 255, 255, 0.88) !important;
+      border-color: rgba(120, 85, 45, 0.25) !important;
+      box-shadow: 0 10px 30px rgba(90, 55, 25, 0.08) !important;
+    }
+
+    [data-reading-mode="pergamino"] .tesoro-title,
+    [data-reading-mode="pergamino"] .era-card-title,
+    [data-reading-mode="pergamino"] .soundscape-current-name {
+      color: #231608 !important;
+    }
+
+    [data-reading-mode="pergamino"] .tesoro-text,
+    [data-reading-mode="pergamino"] .era-card-description {
+      color: #5e4730 !important;
+    }
+
+    [data-reading-mode="pergamino"] .hero-search-bar {
+      background: rgba(255, 255, 255, 0.9) !important;
+      border-color: rgba(120, 85, 45, 0.3) !important;
+      color: #5e4730 !important;
+    }
+
+    /* ==========================================================
+       RESPONSIVIDAD Y ADAPTACIÓN MÓVIL
+       ========================================================== */
+    @media (max-width: 1024px) {
+      .hero-stats-band {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+      .stat-box-monumental:nth-child(2)::after {
+        display: none;
+      }
+      .tesoros-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 860px) {
+      header {
+        padding: 0.85rem 1.25rem;
+      }
+      .nav-links-cluster {
+        display: none;
+      }
+      .nav-links-cluster.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(10, 11, 15, 0.98);
+        backdrop-filter: blur(25px);
+        padding: 1.5rem;
+        border-bottom: 1px solid rgba(212, 175, 55, 0.3);
+        gap: 1rem;
+        align-items: flex-start;
+      }
+      .nav-dropdown-menu {
+        position: static;
+        display: block;
+        background: transparent;
+        box-shadow: none;
+        border: none;
+        padding-left: 1rem;
+        min-width: unset;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .hero-cinematic-stage {
+        padding: 3rem 1rem 5rem;
+      }
+      .hero-stats-band {
+        grid-template-columns: 1fr;
+      }
+      .stat-box-monumental::after {
+        display: none !important;
+      }
+      .btn-hero {
+        width: 100%;
+        justify-content: center;
+      }
+      .soundscape-capsule {
+        bottom: 1rem;
+        right: 1rem;
+      }
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
-  <!-- Encabezado Común con Navegación y Modos -->
+  <!-- ==========================================================
+       1. ENCABEZADO COMÚN IMPECABLE (14 PÁGINAS UNIFICADAS)
+       ========================================================== -->
   <header>
-    <a href="index.html" class="logo">
-      COLOMBIA <span>EN EL TIEMPO</span>
-    </a>
-    <nav>
-      <a href="index.html" class="active">Inicio</a>
-      <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
-        <div class="dropdown-content">
-          <a href="precolombina.html">Época Precolombina</a>
-          <a href="colonia.html">Conquista y Colonia</a>
-          <a href="independencia.html">Independencia y Grito</a>
-          <a href="siglo-xix.html">República (Siglo XIX)</a>
-          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
-          <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
+    <div class="header-left">
+      <a href="index.html" class="logo-monumental" aria-label="Inicio de Colombianopedia">
+        <span class="logo-badge-icon">🇨🇴</span>
+        <span>COLOMBIA <span class="gold-text">EN EL TIEMPO</span></span>
+      </a>
+    </div>
+
+    <nav class="nav-container" aria-label="Navegación principal">
+      <div class="nav-links-cluster" id="mainNavLinks">
+        <!-- 1. Inicio -->
+        <a href="index.html" class="nav-item-link active">Inicio</a>
+
+        <!-- 2 a 7. Dropdown de las 6 Épocas Históricas -->
+        <div class="nav-dropdown">
+          <button class="dropdown-trigger-btn" aria-haspopup="true" aria-expanded="false">
+            Épocas Históricas ▾
+          </button>
+          <ul class="nav-dropdown-menu">
+            <li>
+              <a href="precolombina.html">
+                <span>Época Precolombina</span>
+                <span class="menu-era-tag">Origen</span>
+              </a>
+            </li>
+            <li>
+              <a href="colonia.html">
+                <span>Conquista y Colonia</span>
+                <span class="menu-era-tag">1492–1810</span>
+              </a>
+            </li>
+            <li>
+              <a href="independencia.html">
+                <span>Independencia y Grito</span>
+                <span class="menu-era-tag">1810–1830</span>
+              </a>
+            </li>
+            <li>
+              <a href="siglo-xix.html">
+                <span>República (Siglo XIX)</span>
+                <span class="menu-era-tag">1830–1899</span>
+              </a>
+            </li>
+            <li>
+              <a href="siglo-xx.html">
+                <span>Tensiones del Siglo XX</span>
+                <span class="menu-era-tag">1900–1999</span>
+              </a>
+            </li>
+            <li>
+              <a href="memoria.html">
+                <span>Memoria y Paz (Siglo XXI)</span>
+                <span class="menu-era-tag">2000–Pres.</span>
+              </a>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
-        <div class="dropdown-content">
-          <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
-          <a href="ciudades-historicas.html">32 Ciudades y Toponimia</a>
-          <a href="muiscas.html">Enciclopedia Muisca</a>
-          <a href="otras-culturas.html">Catálogo de Culturas</a>
-          <a href="leyendas-ancestrales.html">Mitos y Leyendas</a>
-          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
-          <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
+
+        <!-- 8 a 14. Dropdown de los 7 Módulos de la Enciclopedia -->
+        <div class="nav-dropdown">
+          <button class="dropdown-trigger-btn" aria-haspopup="true" aria-expanded="false">
+            Módulos Enciclopedia ▾
+          </button>
+          <ul class="nav-dropdown-menu">
+            <li><a href="otras-culturas.html">🏛️ Atlas de las 115 Tribus</a></li>
+            <li><a href="muiscas.html">✨ Enciclopedia Muisca & Dorado</a></li>
+            <li><a href="geografia-y-geologia.html">🌋 Geología, Fallas & Regiones</a></li>
+            <li><a href="ciudades-historicas.html">🗺️ 32 Ciudades & Toponimia</a></li>
+            <li><a href="leyendas-ancestrales.html">📜 Mitos & Leyendas Vivas</a></li>
+            <li><a href="mentes-y-figuras.html">🖋️ Grandes Mentes e Ilustres</a></li>
+            <li><a href="iceberg-violencia.html">🧊 Iceberg de la Memoria</a></li>
+          </ul>
         </div>
       </div>
 
-      <!-- Acceso Rápido al Buscador -->
-      <button class="universal-search-trigger" style="margin-top: 0; padding: 0.35rem 0.85rem; border-radius: 20px; font-size: 0.8rem; width: auto; box-shadow: none;" aria-label="Abrir buscador">
-        <span>🔍 Buscar</span>
-        <span class="search-shortcut-badge" style="margin-left: 0.4rem;">⌘K</span>
-      </button>
+      <!-- Acciones de Cabecera: Buscador ⌘K y Selector de Modo Pergamino -->
+      <div class="header-actions">
+        <button class="header-search-btn universal-search-trigger" aria-label="Abrir buscador universal (⌘K)">
+          <span>🔍</span>
+          <span style="font-weight: 500;">Buscar</span>
+          <span class="search-shortcut-badge">⌘K</span>
+        </button>
 
-      <!-- Selector de Modo Lectura Pergamino (Gestionado por JS) -->
-      <button class="reading-mode-toggle" id="readingModeToggle" title="Alternar Modo Lectura Pergamino">
-        📜 <span>Pergamino</span>
-      </button>
+        <button class="reading-mode-toggle" id="readingModeToggle" title="Alternar Modo Lectura Pergamino">
+          📜 <span>Pergamino</span>
+        </button>
+
+        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir menú de navegación">
+          ☰
+        </button>
+      </div>
     </nav>
   </header>
 
   <!-- ==========================================================
-       SCROLLYTELLING HERO: SUMERSIÓN EN EL TERRITORIO NACIONAL
+       2. HERO CINEMATOGRÁFICO MONUMENTAL
        ========================================================== -->
-  <section class="scrolly-hero-container" id="hero-scrolly">
-    <div class="parallax-stage">
-      
-      <!-- Capa 0: Firmamento y Bóveda Celeste -->
-      <div class="parallax-layer layer-sky"></div>
-
-      <!-- Capa 1: Silueta de la Cordillera de los Andes y Picos Nevados -->
-      <div class="parallax-layer layer-mountains">
-        <svg viewBox="0 0 1440 450" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Picos lejanos -->
-          <path d="M0,450 L0,280 L180,210 L340,310 L520,180 L680,290 L860,160 L1040,270 L1220,190 L1360,260 L1440,220 L1440,450 Z" fill="#121824" opacity="0.8"/>
-          <!-- Picos con nieve estilizada -->
-          <polygon points="520,180 500,215 540,215" fill="#e2e8f0" opacity="0.6"/>
-          <polygon points="860,160 835,200 885,200" fill="#e2e8f0" opacity="0.6"/>
-          <!-- Cadena montañosa intermedia -->
-          <path d="M0,450 L0,340 L210,260 L410,360 L620,270 L830,350 L1080,250 L1290,340 L1440,280 L1440,450 Z" fill="#0b111a" opacity="0.95"/>
-        </svg>
-      </div>
-
-      <!-- Capa 2: Niebla Andina suspendida -->
-      <div class="parallax-layer layer-mist"></div>
-
-      <!-- Capa 3: Bosque de Niebla y Palmas de Cera del Quindío -->
-      <div class="parallax-layer layer-palms">
-        <svg viewBox="0 0 1440 380" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Siluetas esbeltas de Palma de Cera (Ceroxylon quindiuense) -->
-          <g fill="#0e1713" opacity="0.85">
-            <!-- Palma 1 (Izquierda) -->
-            <rect x="120" y="110" width="7" height="270" rx="3" fill="#1b2820"/>
-            <path d="M123,110 C90,80 70,120 60,140 C100,120 120,115 123,110 C126,115 146,120 186,140 C176,120 156,80 123,110 Z"/>
-            <path d="M123,110 C100,50 123,30 123,20 C123,30 146,50 123,110 Z"/>
-            
-            <!-- Palma 2 (Centro-Izquierda) -->
-            <rect x="290" y="70" width="8" height="310" rx="4" fill="#1b2820"/>
-            <path d="M294,70 C260,40 240,80 230,100 C270,80 290,75 294,70 C298,75 318,80 358,100 C348,80 328,40 294,70 Z"/>
-            <path d="M294,70 C270,10 294,0 294,-10 C294,0 318,10 294,70 Z"/>
-
-            <!-- Palma 3 (Derecha) -->
-            <rect x="1180" y="80" width="8" height="300" rx="4" fill="#1b2820"/>
-            <path d="M1184,80 C1150,50 1130,90 1120,110 C1160,90 1180,85 1184,80 C1188,85 1208,90 1248,110 C1238,90 1218,50 1184,80 Z"/>
-
-            <!-- Palma 4 (Extremo Derecho) -->
-            <rect x="1330" y="120" width="6" height="260" rx="3" fill="#1b2820"/>
-            <path d="M1333,120 C1305,95 1285,130 1275,150 C1310,130 1330,125 1333,120 C1336,125 1356,130 1391,150 C1381,130 1361,95 1333,120 Z"/>
-          </g>
-          <!-- Falda verde de montaña templada -->
-          <path d="M0,380 L0,310 Q360,250 720,300 T1440,270 L1440,380 Z" fill="#08100c"/>
-        </svg>
-      </div>
-
-      <!-- Capa 4: Selva Tropical Húmeda y Meandro de Río (Amazonas / Magdalena) -->
-      <div class="parallax-layer layer-jungle">
-        <svg viewBox="0 0 1440 320" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Curva del río Magdalena / Amazonas -->
-          <path d="M0,320 L0,290 C320,240 480,310 820,260 C1120,220 1280,280 1440,250 L1440,320 Z" fill="#1a2e26"/>
-          <!-- Dosel de selva espesa -->
-          <path d="M0,320 L0,260 C80,230 140,270 240,240 C340,210 420,250 560,230 C700,210 820,260 980,220 C1120,180 1260,240 1440,210 L1440,320 Z" fill="#050a07"/>
-        </svg>
-      </div>
-
-      <!-- Capa 5: Follaje Macro Frontal (Hojas de Platanillo y Helechos) -->
-      <div class="parallax-layer layer-foreground-leaves">
-        <!-- Hoja izquierda -->
-        <svg class="leaf-macro-left" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M-40,350 C-10,250 40,160 140,100 C100,160 80,240 50,350 Z" fill="#030805" opacity="0.95"/>
-          <path d="M-50,350 C10,220 120,120 280,70 C200,150 160,260 120,350 Z" fill="#06120b" opacity="0.9"/>
-          <path d="M-20,350 C60,260 180,180 290,140 C220,220 180,300 150,350 Z" fill="#040b07" opacity="0.85"/>
-        </svg>
-        <!-- Hoja derecha -->
-        <svg class="leaf-macro-right" viewBox="0 0 300 350" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M340,350 C310,250 260,160 160,100 C200,160 220,240 250,350 Z" fill="#030805" opacity="0.95"/>
-          <path d="M350,350 C290,220 180,120 20,70 C100,150 140,260 180,350 Z" fill="#06120b" opacity="0.9"/>
-        </svg>
-      </div>
-
-      <!-- Contenido Pinned Central -->
-      <div class="hero-pinned-text">
-        <div class="document-badge" style="background: rgba(var(--accent-rgb), 0.15); color: var(--accent); border: 1px solid rgba(var(--accent-rgb), 0.3);">
-          Colombianopedia · Archivo Vivo de la Nación
-        </div>
-        
-        <h1 style="font-size: 3.4rem; line-height: 1.1; margin-bottom: 1.25rem;">
-          Colombia en el Tiempo
-        </h1>
-        
-        <p style="font-size: 1.15rem; max-width: 680px; color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">
-          Un viaje inmersivo por la memoria viva, las civilizaciones originarias, las tensiones territoriales y los acervos documentales que han forjado nuestra identidad.
-        </p>
-
-        <!-- Barra Disparadora de Búsqueda Rápida (Universal Search Trigger) -->
-        <div class="universal-search-trigger" role="button" tabindex="0" aria-label="Buscar en la Colombianopedia">
-          <div style="display: flex; align-items: center; gap: 0.75rem;">
-            <span style="font-size: 1.2rem;">🔍</span>
-            <span>Buscar en la enciclopedia (temas, leyes, próceres, mitos)...</span>
-          </div>
-          <span class="search-shortcut-badge">⌘K / Ctrl+K</span>
-        </div>
-
-        <!-- Indicador de Desplazamiento y Sumersión -->
-        <div class="hero-submerse-indicator">
-          <span>↓ Desliza hacia abajo para sumergirte en el territorio ↓</span>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Contenedor Principal -->
-  <main class="container">
+  <section class="hero-cinematic-stage" id="hero-cinematografico">
     
-    <!-- Widget Dinámico: Efemérides "Un Día como Hoy en Colombia" -->
-    <div id="efemerides-box">
-      <!-- Se inyecta dinámicamente mediante main.js -->
+    <!-- Canvas Interactivo de Partículas y Destellos Dorados -->
+    <canvas id="hero-particles-canvas"></canvas>
+
+    <!-- Resplandor Ambiental Sagrado -->
+    <div class="hero-ambient-glow"></div>
+
+    <!-- Silueta Vectorial Monumental de la Cordillera de los Andes y Palmas -->
+    <div class="hero-backdrop-silhouette">
+      <svg viewBox="0 0 1440 380" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Cordillera Andina de Fondo -->
+        <path d="M0,380 L0,260 L140,210 L280,290 L460,170 L620,250 L780,140 L980,240 L1160,160 L1320,240 L1440,190 L1440,380 Z" fill="#0b0e14" opacity="0.85"/>
+        <!-- Siluetas de Palmas de Cera del Quindío (Ceroxylon quindiuense) -->
+        <g fill="#070a0d" opacity="0.95">
+          <rect x="180" y="80" width="6" height="300" rx="3" fill="#141a22"/>
+          <path d="M183,80 C150,55 130,95 120,115 C160,95 180,90 183,80 C186,90 206,95 246,115 C236,95 216,55 183,80 Z"/>
+          <rect x="1220" y="90" width="7" height="290" rx="3" fill="#141a22"/>
+          <path d="M1223,90 C1190,65 1170,105 1160,125 C1200,105 1220,100 1223,90 C1226,100 1246,105 1286,125 C1276,105 1256,65 1223,90 Z"/>
+        </g>
+        <!-- Meandro del Río Grande de la Magdalena y Selva -->
+        <path d="M0,380 L0,320 C340,270 510,340 850,290 C1150,250 1310,310 1440,280 L1440,380 Z" fill="#040608"/>
+      </svg>
     </div>
 
-    <!-- Sección de Contador del Patrimonio Nacional Vivo -->
-    <section class="patrimonio-stats-section">
-      <div class="document-badge">Cifras del Territorio</div>
-      <h2 class="title-font" style="font-size: 2rem; margin-top: 0.5rem;">
-        Un País Megadiverso y Pluriétnico
-      </h2>
-      <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto;">
-        Nuestra historia está viva en la diversidad biológica, cultural y lingüística de cada rincón de la geografía colombiana.
+    <!-- Contenido Monumental Central -->
+    <div class="hero-content-wrapper">
+      
+      <!-- Insignia Patrimonial -->
+      <div class="hero-document-emblem">
+        <span>🏛️</span> Colombianopedia · Gran Archivo de la Memoria y la Tierra
+      </div>
+
+      <!-- TÍTULO CON GRADIENTE ÁUREO MONUMENTAL -->
+      <h1 class="hero-monumental-title">
+        COLOMBIA EN EL TIEMPO
+      </h1>
+
+      <!-- SUBTÍTULO OFICIAL -->
+      <p class="hero-monumental-subtitle">
+        La Gran Enciclopedia de la Memoria, las Naciones Originarias y la Tierra
       </p>
 
-      <div class="stats-grid">
-        <div class="stat-card-heritage">
-          <div class="stat-number" data-target="32">0</div>
-          <div class="stat-label">Departamentos Soberanos</div>
-        </div>
-        <div class="stat-card-heritage">
-          <div class="stat-number" data-target="1103">0</div>
-          <div class="stat-label">Municipios y Provincias</div>
-        </div>
-        <div class="stat-card-heritage">
-          <div class="stat-number" data-target="6">0</div>
-          <div class="stat-label">Regiones Naturales</div>
-        </div>
-        <div class="stat-card-heritage">
-          <div class="stat-number" data-target="102">0</div>
-          <div class="stat-label">Pueblos Indígenas Vivos</div>
-        </div>
-        <div class="stat-card-heritage">
-          <div class="stat-number" data-target="65">0</div>
-          <div class="stat-label">Lenguas Nativas Habladas</div>
-        </div>
-      </div>
-    </section>
+      <!-- Manifiesto Narrativo -->
+      <p class="hero-manifesto-text">
+        Un periplo documental inmersivo a través de los pictogramas rupestres del Guaviare, la cosmogonía de las 115 naciones indígenas, los pergaminos virreinales del AGN, las transformaciones geopolíticas y la dignificación testimonial de nuestra paz.
+      </p>
 
-    <!-- Sección de Grid de Épocas -->
-    <section id="epocas" style="margin-top: 5rem;">
-      <div style="text-align: center; margin-bottom: 3.5rem;">
-        <div class="document-badge" style="background: rgba(212,175,55,0.12); color: var(--accent);">
-          Cronología Transversal
+      <!-- Disparador Rápido del Buscador con ⌘K -->
+      <div class="hero-search-bar universal-search-trigger" role="button" tabindex="0" aria-label="Buscar en la enciclopedia nacional">
+        <div style="display: flex; align-items: center; gap: 0.85rem;">
+          <span style="font-size: 1.25rem;">🔍</span>
+          <span>Buscar entre 115 tribus, fondos del AGN, próceres, geología, mitos y leyes...</span>
         </div>
-        <h2 class="title-font" style="font-size: 2.5rem; margin-top: 0.5rem; margin-bottom: 0.75rem;">
-          Las Seis Grandes Épocas de Colombia
-        </h2>
-        <p style="color: var(--text-secondary); max-width: 650px; margin: 0 auto; font-size: 1.05rem;">
-          Explora los períodos formativos con fuentes documentales del Archivo General de la Nación, la Biblioteca Nacional y el Banco de la República.
+        <span class="search-shortcut-badge">⌘K / Ctrl+K</span>
+      </div>
+
+      <!-- BOTONES DE ACCIÓN PRINCIPALES (CTA) -->
+      <div class="hero-cta-cluster">
+        <!-- CTA 1: Atlas 115 Tribus -->
+        <a href="otras-culturas.html" class="btn-hero btn-hero-primary">
+          <span>🌿 Explorar el Gran Atlas de las 115 Tribus</span>
+          <span style="font-size: 1.1rem;">&rarr;</span>
+        </a>
+
+        <!-- CTA 2: Secretos del Amazonas y Memoria -->
+        <a href="memoria.html" class="btn-hero btn-hero-secondary">
+          <span>🕊️ Secretos del Amazonas y Memoria</span>
+          <span style="font-size: 1.1rem;">&rarr;</span>
+        </a>
+
+        <!-- CTA 3: Cartografía Tectónica y Geología -->
+        <a href="geografia-y-geologia.html" class="btn-hero btn-hero-tertiary">
+          <span>🌋 Cartografía Tectónica y Geología</span>
+          <span style="font-size: 1.1rem;">&rarr;</span>
+        </a>
+      </div>
+
+      <!-- CONTADORES DINÁMICOS EN VIVO (STATS DE IMPACTO) -->
+      <div class="hero-stats-band">
+        
+        <!-- Stat 1: 115 Naciones Indígenas Monografiadas -->
+        <div class="stat-box-monumental">
+          <div class="stat-number-cluster">
+            <span class="stat-number" data-target="115">0</span>
+          </div>
+          <div class="stat-caption">Naciones Indígenas Monografiadas</div>
+        </div>
+
+        <!-- Stat 2: 20.000 Años de Historia y Arte Rupestre -->
+        <div class="stat-box-monumental">
+          <div class="stat-number-cluster">
+            <span class="stat-number" data-target="20000">0</span>
+          </div>
+          <div class="stat-caption">Años de Historia y Arte Rupestre</div>
+        </div>
+
+        <!-- Stat 3: 6 Regiones Naturales Vivas -->
+        <div class="stat-box-monumental">
+          <div class="stat-number-cluster">
+            <span class="stat-number" data-target="6">0</span>
+          </div>
+          <div class="stat-caption">Regiones Naturales Vivas</div>
+        </div>
+
+        <!-- Stat 4: 236.000+ Palabras de Investigación Documental Verificada -->
+        <div class="stat-box-monumental">
+          <div class="stat-number-cluster">
+            <span class="stat-number" data-target="236000">0</span><span class="stat-suffix">+</span>
+          </div>
+          <div class="stat-caption">Palabras de Investigación Verificada</div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- ==========================================================
+       CONTENEDOR PRINCIPAL DEL PORTAL
+       ========================================================== -->
+  <main class="container">
+
+    <!-- WIDGET DINÁMICO: EFEMÉRIDES HISTÓRICAS DE COLOMBIA -->
+    <div id="efemerides-box">
+      <!-- Se inyecta dinámicamente mediante js/main.js -->
+    </div>
+
+    <!-- ==========================================================
+         3. SECCIÓN: VITRINA DE TESOROS NACIONALES (GLASSMORPHISM)
+         ========================================================== -->
+    <section class="tesoros-section" id="tesoros-nacionales">
+      <div class="section-headline-block">
+        <div class="section-badge-gold">Acervos de la Humanidad & Archivos Vivos</div>
+        <h2 class="section-title-monumental">Vitrina de Tesoros Nacionales</h2>
+        <p class="section-description-monumental">
+          Cuatro grandes monumentos de nuestra memoria: desde los murales sagrados del Holoceno en Chiribiquete hasta la custodia científica del AGN y la verdad transformadora.
         </p>
       </div>
-      
-      <div class="portal-grid">
+
+      <div class="tesoros-grid">
         
-        <!-- 1. Época Precolombina -->
-        <a href="precolombina.html" class="era-card" style="--accent: #e59866; --accent-rgb: 229,152,102;">
-          <div class="document-badge" style="background: rgba(229,152,102,0.15); color: #e59866; margin-bottom: 0.75rem; width: fit-content;">
-            Arqueología y Territorio
+        <!-- Pilar 1: El Chamanismo del Jaguar de Yuruparí y Chiribiquete -->
+        <article class="tesoro-card" style="--tesoro-accent: #e59866;">
+          <div class="tesoro-media">
+            <img src="assets/images/precolombina_yurupary.jpg" alt="Pinturas rupestres de Chiribiquete y Chamanismo del Jaguar" loading="lazy">
+            <div class="tesoro-media-overlay"></div>
+            <span class="tesoro-category-tag">UNESCO · Patrimonio Mixto</span>
           </div>
-          <div class="era-date">Origen Milenario — 1492 d.C.</div>
-          <h3>Época Prehispánica</h3>
-          <p>
-            El territorio antes del arribo hispánico. La Confederación Muisca del altiplano, las ciudades líticas Taironas en la Sierra Nevada, la orfebrería de poder Quimbaya y Calima, y los canales hidráulicos Zenúes.
+          <div class="tesoro-body">
+            <h3 class="tesoro-title">El Chamanismo del Jaguar de Yuruparí y Chiribiquete</h3>
+            <p class="tesoro-text">
+              La Serranía de Chiribiquete y la cuenca del Pirá Paraná custodian más de 75.000 pinturas rupestres que datan de hace 20.000 años. El complejo ritual del Yuruparí expresa la relación simbiótica entre el hombre-jaguar, la selva y el cosmos primordial.
+            </p>
+            <div class="tesoro-highlights">
+              <span class="tesoro-pill">Serranía de Chiribiquete</span>
+              <span class="tesoro-pill">Río Pirá Paraná</span>
+              <span class="tesoro-pill">Tepuyes Sagrados</span>
+              <span class="tesoro-pill">Arte Ocre del Holoceno</span>
+            </div>
+            <a href="precolombina.html" class="tesoro-action-link">
+              <span>Explorar Arqueología y Mitos</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Pilar 2: La Orfebrería Prehispánica y la Leyenda del Dorado -->
+        <article class="tesoro-card" style="--tesoro-accent: #ffd700;">
+          <div class="tesoro-media">
+            <img src="assets/images/muisca_tunjo.png" alt="Orfebrería precolombina y Balsa Muisca del Dorado" loading="lazy">
+            <div class="tesoro-media-overlay"></div>
+            <span class="tesoro-category-tag">Museo del Oro · Banco de la República</span>
+          </div>
+          <div class="tesoro-body">
+            <h3 class="tesoro-title">La Orfebrería Prehispánica y la Leyenda del Dorado</h3>
+            <p class="tesoro-text">
+              El prodigio de la aleación de tumbaga y el vaciado a la cera perdida forjado por Muiscas, Quimbayas y Taironas. Más que riquezas minerales, cada tunjo y pectoral constituía un receptáculo votivo consagrado a los lagos glaciares y a la investidura del Zipa.
+            </p>
+            <div class="tesoro-highlights">
+              <span class="tesoro-pill">Balsa de Guatavita</span>
+              <span class="tesoro-pill">Vaciado a la Cera Perdida</span>
+              <span class="tesoro-pill">Aleación Sagrada Tumbaga</span>
+              <span class="tesoro-pill">Poporos Quimbaya</span>
+            </div>
+            <a href="muiscas.html" class="tesoro-action-link">
+              <span>Descubrir el Enigma Muisca</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Pilar 3: La Real Expedición Botánica y el Archivo Colonial del AGN -->
+        <article class="tesoro-card" style="--tesoro-accent: #27ae60;">
+          <div class="tesoro-media">
+            <img src="assets/images/colonia_expedicion.png" alt="Láminas botánicas de Mutis y Fondo Colonial AGN" loading="lazy">
+            <div class="tesoro-media-overlay"></div>
+            <span class="tesoro-category-tag">Archivo General de la Nación (AGN)</span>
+          </div>
+          <div class="tesoro-body">
+            <h3 class="tesoro-title">La Real Expedición Botánica y el Archivo Colonial del AGN</h3>
+            <p class="tesoro-text">
+              Iniciada en 1783 bajo la dirección de José Celestino Mutis en Mariquita y Santafé, catalogó miles de especies de la flora andina a través de maestros acuarelistas criollos, sembrando las bases científicas y la conciencia territorial de la Independencia.
+            </p>
+            <div class="tesoro-highlights">
+              <span class="tesoro-pill">José Celestino Mutis (1783)</span>
+              <span class="tesoro-pill">Pintores Criollos de Mariquita</span>
+              <span class="tesoro-pill">Fondos Manumisión & Virreinato</span>
+              <span class="tesoro-pill">Quina & Cinchona</span>
+            </div>
+            <a href="colonia.html" class="tesoro-action-link">
+              <span>Revisar Documentos Coloniales</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+        <!-- Pilar 4: La Comisión de la Verdad y la Construcción de la Paz -->
+        <article class="tesoro-card" style="--tesoro-accent: #2e86c1;">
+          <div class="tesoro-media">
+            <img src="assets/images/memoria_paz.png" alt="Comisión de la Verdad e Informe Hay Futuro Si Hay Verdad" loading="lazy">
+            <div class="tesoro-media-overlay"></div>
+            <span class="tesoro-category-tag">Acervo Testimonial · Verdad & Dignidad</span>
+          </div>
+          <div class="tesoro-body">
+            <h3 class="tesoro-title">La Comisión de la Verdad y la Construcción de la Paz</h3>
+            <p class="tesoro-text">
+              El repositorio transmedia del esclarecimiento histórico derivado del Acuerdo Final de 2016. Con más de 30.000 testimonios de víctimas en territorios remotos, el informe "Hay Futuro si hay Verdad" y la JEP fundamentan el pacto cívico de la No Repetición.
+            </p>
+            <div class="tesoro-highlights">
+              <span class="tesoro-pill">Informe Hay Futuro si hay Verdad</span>
+              <span class="tesoro-pill">Acuerdo de Paz de 2016</span>
+              <span class="tesoro-pill">Jurisdicción Especial de Paz (JEP)</span>
+              <span class="tesoro-pill">Justicia Restaurativa</span>
+            </div>
+            <a href="memoria.html" class="tesoro-action-link">
+              <span>Consultar Hallazgos de Memoria</span> &rarr;
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==========================================================
+         4. CARRUSEL / EXPLORADOR DE ÉPOCAS HISTÓRICAS
+         ========================================================== -->
+    <section class="epocas-explorer-section" id="explorador-epocas">
+      <div class="section-headline-block">
+        <div class="section-badge-gold">Cronología Transversal de la Nación</div>
+        <h2 class="section-title-monumental">Las Seis Grandes Épocas de Colombia</h2>
+        <p class="section-description-monumental">
+          Navega a través de las transformaciones sociopolíticas de nuestra tierra, documentadas con fuentes del Archivo General de la Nación, la Biblioteca Nacional y el Museo Nacional.
+        </p>
+      </div>
+
+      <!-- Barra de Control del Carrusel -->
+      <div class="carousel-controls-bar">
+        <div class="carousel-dots-tracker" id="carouselDots">
+          <button class="carousel-dot active" data-index="0" aria-label="Ir a Época Precolombina"></button>
+          <button class="carousel-dot" data-index="1" aria-label="Ir a Conquista y Colonia"></button>
+          <button class="carousel-dot" data-index="2" aria-label="Ir a Independencia"></button>
+          <button class="carousel-dot" data-index="3" aria-label="Ir a Siglo XIX"></button>
+          <button class="carousel-dot" data-index="4" aria-label="Ir a Siglo XX"></button>
+          <button class="carousel-dot" data-index="5" aria-label="Ir a Siglo XXI Memoria"></button>
+        </div>
+
+        <div class="carousel-nav-arrows">
+          <button class="carousel-arrow-btn" id="prevEraBtn" aria-label="Época anterior">‹</button>
+          <button class="carousel-arrow-btn" id="nextEraBtn" aria-label="Época siguiente">›</button>
+        </div>
+      </div>
+
+      <!-- Pista Deslizante con las 6 Eras -->
+      <div class="carousel-track-container" id="eraCarouselTrack">
+        
+        <!-- Era 1: Precolombina -->
+        <a href="precolombina.html" class="era-carousel-card" style="--era-accent: #e59866; --era-accent-rgb: 229, 152, 102;">
+          <span class="era-header-pill">Arqueología & Cosmogonía</span>
+          <div class="era-timeline-years">Origen Milenario — 1492 d.C.</div>
+          <h3 class="era-card-title">Época Precolombina</h3>
+          <p class="era-card-description">
+            Confederaciones del altiplano Muisca, ciudadelas líticas Taironas en la Sierra Nevada de Santa Marta, complejos hidráulicos Zenúes y la orfebrería sagrada de Calima y Quimbaya.
           </p>
-          <div class="era-link">Explorar Civilizaciones &rarr;</div>
+          <div class="era-card-meta">
+            <span>Explorar Civilizaciones</span> &rarr;
+          </div>
         </a>
 
-        <!-- 2. Conquista y Colonia -->
-        <a href="colonia.html" class="era-card" style="--accent: #b03a2e; --accent-rgb: 176,58,46;">
-          <div class="document-badge" style="background: rgba(176,58,46,0.15); color: #b03a2e; margin-bottom: 0.75rem; width: fit-content;">
-            Orden Virreinal y Resistencia
-          </div>
-          <div class="era-date">1492 — 1810</div>
-          <h3>Conquista y Colonia</h3>
-          <p>
-            La instauración del Nuevo Reino de Granada. La resistencia jurídica del Cacique Diego de Torres, la Real Orden de 1803 sobre San Andrés, la Expedición Botánica de Mutis y la rebelión popular de los Comuneros en 1781.
+        <!-- Era 2: Colonia -->
+        <a href="colonia.html" class="era-carousel-card" style="--era-accent: #b03a2e; --era-accent-rgb: 176, 58, 46;">
+          <span class="era-header-pill">Orden Virreinal & Resistencia</span>
+          <div class="era-timeline-years">1492 — 1810</div>
+          <h3 class="era-card-title">Conquista y Colonia</h3>
+          <p class="era-card-description">
+            El Nuevo Reino de Granada, la resistencia jurídica del Cacique Diego de Torres, la Real Orden de 1803 sobre San Andrés, la Expedición Botánica y la insurrección Comunera de 1781.
           </p>
-          <div class="era-link">Abrir Documentos Virreinales &rarr;</div>
+          <div class="era-card-meta">
+            <span>Ver Fondos Virreinales</span> &rarr;
+          </div>
         </a>
 
-        <!-- 3. Independencia -->
-        <a href="independencia.html" class="era-card" style="--accent: #f1c40f; --accent-rgb: 241,196,15;">
-          <div class="document-badge" style="background: rgba(241,196,15,0.15); color: #f1c40f; margin-bottom: 0.75rem; width: fit-content;">
-            Ruptura y Campaña Libertadora
-          </div>
-          <div class="era-date">1810 — 1830</div>
-          <h3>Independencia y Grito</h3>
-          <p>
-            Desmitificando el 20 de julio: las juntas provinciales de Mompox y Cartagena, la resistencia realista del sur en Pasto, la tragedia del Acta quemada en 1948, las monedas de la República y la gesta del Puente de Boyacá.
+        <!-- Era 3: Independencia -->
+        <a href="independencia.html" class="era-carousel-card" style="--era-accent: #f1c40f; --era-accent-rgb: 241, 196, 15;">
+          <span class="era-header-pill">Ruptura & Gesta Libertadora</span>
+          <div class="era-timeline-years">1810 — 1830</div>
+          <h3 class="era-card-title">Independencia y República</h3>
+          <p class="era-card-description">
+            Las Juntas Provinciales de Mompox y Cartagena, el Acta del 20 de Julio quemada en 1948, la resistencia realista de Pasto y las batallas decisivas del Pantano de Vargas y Boyacá.
           </p>
-          <div class="era-link">Examinar Acervos Patrios &rarr;</div>
+          <div class="era-card-meta">
+            <span>Consultar Documentos Patrios</span> &rarr;
+          </div>
         </a>
 
-        <!-- 4. Siglo XIX -->
-        <a href="siglo-xix.html" class="era-card" style="--accent: #27ae60; --accent-rgb: 39,174,96;">
-          <div class="document-badge" style="background: rgba(39,174,96,0.15); color: #27ae60; margin-bottom: 0.75rem; width: fit-content;">
-            Soberanía, Cartografía y Leyes
-          </div>
-          <div class="era-date">1830 — 1899</div>
-          <h3>República y Territorio</h3>
-          <p>
-            La forja del mapa nacional a través de las acuarelas de la Comisión Corográfica de Codazzi y Manuel María Paz. La ley de abolición de la esclavitud de 1851 y el catálogo fundacional de Antonio Cuervo.
+        <!-- Era 4: Siglo XIX -->
+        <a href="siglo-xix.html" class="era-carousel-card" style="--era-accent: #27ae60; --era-accent-rgb: 39, 174, 96;">
+          <span class="era-header-pill">Cartografía, Leyes & Territorio</span>
+          <div class="era-timeline-years">1830 — 1899</div>
+          <h3 class="era-card-title">República del Siglo XIX</h3>
+          <p class="era-card-description">
+            Las acuarelas de la Comisión Corográfica de Agustín Codazzi y Manuel María Paz, la histórica Ley de Abolición de la Esclavitud de 1851 y los debates federales de Rionegro.
           </p>
-          <div class="era-link">Ver Acuarelas y Mapas &rarr;</div>
+          <div class="era-card-meta">
+            <span>Examinar Acuarelas & Mapas</span> &rarr;
+          </div>
         </a>
 
-        <!-- 5. Siglo XX -->
-        <a href="siglo-xx.html" class="era-card" style="--accent: #f39c12; --accent-rgb: 243,156,18;">
-          <div class="document-badge" style="background: rgba(243,156,18,0.15); color: #f39c12; margin-bottom: 0.75rem; width: fit-content;">
-            Conflictos, Prensa y Derechos
-          </div>
-          <div class="era-date">1900 — 1999</div>
-          <h3>Tensiones del Siglo XX</h3>
-          <p>
-            Las luchas obreras y agrarias: la Masacre de las Bananeras (1928), el estallido del 9 de Abril tras el magnicidio de Gaitán (1948), La Violencia bipartidista, el fotoperiodismo de Viki Ospina y la Asamblea Constituyente de 1991.
+        <!-- Era 5: Siglo XX -->
+        <a href="siglo-xx.html" class="era-carousel-card" style="--era-accent: #f39c12; --era-accent-rgb: 243, 156, 18;">
+          <span class="era-header-pill">Conflictos, Prensa & Derechos</span>
+          <div class="era-timeline-years">1900 — 1999</div>
+          <h3 class="era-card-title">Tensiones del Siglo XX</h3>
+          <p class="era-card-description">
+            La Masacre de las Bananeras (1928), el magnicidio de Gaitán y el 9 de Abril (1948), La Violencia bipartidista, el fotoperiodismo de Viki Ospina y la Constituyente de 1991.
           </p>
-          <div class="era-link">Consultar Archivo Gráfico &rarr;</div>
+          <div class="era-card-meta">
+            <span>Acceder a Prensa Histórica</span> &rarr;
+          </div>
         </a>
 
-        <!-- 6. Siglo XXI / Memoria -->
-        <a href="memoria.html" class="era-card" style="--accent: #2e86c1; --accent-rgb: 46,134,193;">
-          <div class="document-badge" style="background: rgba(46,134,193,0.15); color: #2e86c1; margin-bottom: 0.75rem; width: fit-content;">
-            Verdad, Justicia y Convivencia
-          </div>
-          <div class="era-date">2000 — Presente</div>
-          <h3>Memoria y Transición</h3>
-          <p>
-            La construcción colectiva de la paz en la era contemporánea: el Acuerdo Final de 2016, el legado transmedia de la Comisión de la Verdad, la JEP y los repositorios de protección de Derechos Humanos del AGN.
+        <!-- Era 6: Siglo XXI / Memoria -->
+        <a href="memoria.html" class="era-carousel-card" style="--era-accent: #2e86c1; --era-accent-rgb: 46, 134, 193;">
+          <span class="era-header-pill">Verdad, Diálogo & Futuro</span>
+          <div class="era-timeline-years">2000 — Presente</div>
+          <h3 class="era-card-title">Memoria y Paz (Siglo XXI)</h3>
+          <p class="era-card-description">
+            El Acuerdo Final de Paz de 2016, los diez tomos del informe transmedia de la Comisión de la Verdad, la JEP, la preservación de archivos de DD.HH. y las garantías de No Repetición.
           </p>
-          <div class="era-link">Conocer los Hallazgos &rarr;</div>
+          <div class="era-card-meta">
+            <span>Explorar Testimonios</span> &rarr;
+          </div>
         </a>
 
       </div>
     </section>
 
-    <!-- Módulos de Profundización Rápida y Fines Pedagógicos -->
-    <section style="margin: 5rem 0; padding: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 8px;">
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
+    <!-- ==========================================================
+       MÓDULOS DE PROFUNDIZACIÓN Y CARTOGRAFÍA DE LA NACIÓN
+       ========================================================== -->
+    <section style="margin: 5rem 0; padding: 2.5rem; background: var(--bg-card); border: 1px solid var(--border-card); border-radius: 12px; backdrop-filter: blur(16px);">
+      <div style="display: grid; grid-template-columns: 1.2fr 1fr; gap: 3rem; align-items: center;">
         <div>
-          <div class="document-badge">Herramienta Pedagógica</div>
-          <h2 class="title-font" style="font-size: 2rem; margin-top: 0.5rem; margin-bottom: 1rem;">
-            Diseñado para Aulas, Colegios e Investigadores
+          <div class="document-badge" style="background: rgba(212,175,55,0.12); color: var(--accent); margin-bottom: 0.75rem;">
+            Pedagogía & Acceso Universal
+          </div>
+          <h2 class="title-font" style="font-size: 2.1rem; margin-bottom: 1rem; color: #fff;">
+            Diseñado para Aulas, Investigadores y la Ciudadanía
           </h2>
-          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem;">
-            La <strong>Colombianopedia</strong> está concebida como un recurso pedagógico abierto y riguroso. Puedes activar el <strong>Modo Pergamino</strong> para proyectar o leer en salones de clase con fondo claro y alto contraste, o usar el buscador rápido con <code>⌘K</code> para acceder al instante a cualquier tema, prócer, pueblo indígena o ley de la República.
+          <p style="color: var(--text-secondary); line-height: 1.7; margin-bottom: 1.5rem; font-size: 0.98rem;">
+            La <strong>Colombianopedia</strong> es un bien común abierto, riguroso y libre de publicidad. Activa el <strong>Modo Pergamino</strong> para lectura clara en proyecciones escolares, o consulta los módulos cartográficos de toponimia y tectónica nacional.
           </p>
           <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-            <a href="geografia-y-geologia.html" class="btn btn-primary">Mapa Geológico &rarr;</a>
-            <a href="ciudades-historicas.html" class="btn btn-outline">32 Ciudades y Regiones &rarr;</a>
+            <a href="geografia-y-geologia.html" class="btn btn-primary">Fallas Geológicas & Regiones &rarr;</a>
+            <a href="ciudades-historicas.html" class="btn btn-outline">Toponimia de 32 Ciudades &rarr;</a>
+            <a href="otras-culturas.html" class="btn btn-outline">Atlas 115 Naciones &rarr;</a>
           </div>
         </div>
-        <div>
-          <div style="background: rgba(0,0,0,0.3); border: 1px solid var(--border-card); border-radius: 8px; padding: 1.5rem;">
-            <h3 class="title-font" style="font-size: 1.15rem; color: var(--accent); margin-bottom: 0.75rem;">
-              🏛️ Fuentes Primarias Custodiadas
-            </h3>
-            <ul style="list-style: none; padding: 0; color: var(--text-secondary); font-size: 0.9rem; display: flex; flex-direction: column; gap: 0.75rem;">
-              <li>✓ <strong>Archivo General de la Nación (AGN):</strong> Fondos de Manumisión, Milicias y Colonia.</li>
-              <li>✓ <strong>Biblioteca Nacional de Colombia:</strong> Hemeroteca y cartografía virreinal y republicana.</li>
-              <li>✓ <strong>Banco de la República:</strong> Colección Arqueológica del Museo del Oro y Red Cultural.</li>
-              <li>✓ <strong>Comisión para el Esclarecimiento de la Verdad:</strong> Informe Final "Hay Futuro si hay Verdad".</li>
-            </ul>
-          </div>
+
+        <div style="background: rgba(0, 0, 0, 0.4); border: 1px solid rgba(212, 175, 55, 0.2); border-radius: 10px; padding: 1.75rem;">
+          <h3 class="title-font" style="font-size: 1.2rem; color: #ffd700; margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem;">
+            <span>🏛️</span> Custodios Documentales de Referencia
+          </h3>
+          <ul style="list-style: none; padding: 0; color: #cbd5e1; font-size: 0.88rem; display: flex; flex-direction: column; gap: 0.85rem;">
+            <li>✓ <strong>Archivo General de la Nación (AGN):</strong> Fondos de Manumisión, Virreinato y República.</li>
+            <li>✓ <strong>Biblioteca Nacional de Colombia:</strong> Cartografía histórica, hemeroteca y códices.</li>
+            <li>✓ <strong>Banco de la República:</strong> Colección Arqueológica del Museo del Oro y Red Cultural.</li>
+            <li>✓ <strong>Comisión de la Verdad:</strong> Archivo testimonial transmedia "Hay Futuro si hay Verdad".</li>
+          </ul>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Pie de página Institucional -->
+  <!-- ==========================================================
+       5. CÁPSULA DE AUDIO AMBIENTAL ELEGANTE
+       ========================================================== -->
+  <aside class="soundscape-capsule" id="soundscapeCapsule" aria-label="Reproductor de Paisajes Sonoros">
+    
+    <!-- Botón Principal de Reproducción / Pausa -->
+    <button class="soundscape-play-btn" id="soundPlayToggleBtn" title="Reproducir Paisaje Sonoro" aria-label="Alternar reproducción de audio">
+      ▶
+    </button>
+
+    <!-- Ecualizador Animado -->
+    <div class="soundscape-equalizer" aria-hidden="true">
+      <div class="eq-bar"></div>
+      <div class="eq-bar"></div>
+      <div class="eq-bar"></div>
+      <div class="eq-bar"></div>
+    </div>
+
+    <!-- Indicador y Disparador del Panel de Paisajes -->
+    <div class="soundscape-info" id="soundscapeDrawerTrigger" title="Haz clic para cambiar paisaje sonoro">
+      <span class="soundscape-status-label">Paisaje Sonoro</span>
+      <span class="soundscape-current-name" id="currentSoundscapeLabel">Viento Andino</span>
+    </div>
+
+    <!-- Cajón Desplegable para Seleccionar Paisajes Sonoros -->
+    <div class="soundscape-modal-drawer" id="soundscapeDrawer">
+      <div class="drawer-title">Atmósfera Sonora de Colombia</div>
+      <div class="drawer-subtitle">Síntesis acústica procedural en vivo mediante Web Audio API (sin descargas pesadas).</div>
+
+      <div class="soundscape-options-list">
+        <button class="sound-option-btn active" data-sound="viento">
+          <span class="opt-icon">🏔️</span>
+          <div>
+            <strong>Viento Andino</strong>
+            <div style="font-size: 0.72rem; color: #9ca3af;">Páramos y picos de la Cordillera</div>
+          </div>
+        </button>
+
+        <button class="sound-option-btn" data-sound="selva">
+          <span class="opt-icon">🌿</span>
+          <div>
+            <strong>Selva Amazónica</strong>
+            <div style="font-size: 0.72rem; color: #9ca3af;">Río Caquetá, dosel y rumor vivo</div>
+          </div>
+        </button>
+
+        <button class="sound-option-btn" data-sound="lluvia">
+          <span class="opt-icon">🌧️</span>
+          <div>
+            <strong>Lluvia del Pacífico</strong>
+            <div style="font-size: 0.72rem; color: #9ca3af;">Chocó biogeográfico y aguacero tropical</div>
+          </div>
+        </button>
+      </div>
+
+      <div class="sound-volume-wrapper">
+        <span>Volumen:</span>
+        <input type="range" class="sound-volume-slider" id="soundVolumeSlider" min="0" max="1" step="0.05" value="0.5" aria-label="Volumen del paisaje sonoro">
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ==========================================================
+       PIE DE PÁGINA INSTITUCIONAL
+       ========================================================== -->
   <footer>
-    <p>&copy; 2026 Colombianopedia — Portal Oficial de Memoria Histórica y Patrimonio de Colombia.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.75;">
-      Iniciativa independiente sin ánimo de lucro orientada a la conservación cultural, la divulgación pedagógica escolar y la memoria histórica ciudadana.
-    </p>
+    <div class="container" style="padding: 2rem 0;">
+      <p style="font-family: var(--font-title); font-size: 1.1rem; color: #ffd700; margin-bottom: 0.5rem;">
+        COLOMBIA EN EL TIEMPO
+      </p>
+      <p>&copy; 2026 Colombianopedia — Portal Oficial de Memoria Histórica y Patrimonio de Colombia.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.75; max-width: 680px; margin-left: auto; margin-right: auto;">
+        Iniciativa independiente de libre acceso orientada a la conservación cultural, la divulgación pedagógica escolar, la memoria viva y la reconciliación ciudadana.
+      </p>
+    </div>
   </footer>
 
+  <!-- SCRIPT PRINCIPAL DE LA PLATAFORMA -->
   <script src="js/main.js"></script>
+
+  <!-- ==========================================================
+       SCRIPTS EXCLUSIVOS DE LA PORTADA HERO & SOUNDSCAPE
+       ========================================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      /* ----------------------------------------------------
+         1. MOTOR DE PARTÍCULAS DORADAS DEL HERO (LIVIANO & GPU)
+         ---------------------------------------------------- */
+      (function initHeroParticles() {
+        const canvas = document.getElementById('hero-particles-canvas');
+        if (!canvas) return;
+        const ctx = canvas.getContext('2d');
+        let width = canvas.width = canvas.parentElement.offsetWidth;
+        let height = canvas.height = canvas.parentElement.offsetHeight;
+
+        window.addEventListener('resize', () => {
+          if (!canvas.parentElement) return;
+          width = canvas.width = canvas.parentElement.offsetWidth;
+          height = canvas.height = canvas.parentElement.offsetHeight;
+        });
+
+        // Crear 45 partículas doradas estilizadas
+        const particlesCount = 45;
+        const particles = [];
+        for (let i = 0; i < particlesCount; i++) {
+          particles.push({
+            x: Math.random() * width,
+            y: Math.random() * height,
+            radius: Math.random() * 2.2 + 0.8,
+            speedY: Math.random() * 0.35 + 0.15,
+            speedX: (Math.random() - 0.5) * 0.25,
+            alpha: Math.random() * 0.6 + 0.2,
+            pulseSpeed: Math.random() * 0.02 + 0.01,
+            pulsePhase: Math.random() * Math.PI * 2
+          });
+        }
+
+        let isVisible = true;
+        const observer = new IntersectionObserver(([entry]) => {
+          isVisible = entry.isIntersecting;
+        });
+        observer.observe(canvas);
+
+        function renderParticles() {
+          if (isVisible) {
+            ctx.clearRect(0, 0, width, height);
+
+            particles.forEach(p => {
+              p.y -= p.speedY;
+              p.x += p.speedX;
+              p.pulsePhase += p.pulseSpeed;
+
+              // Reciclar si sale por arriba o los lados
+              if (p.y < -10) { p.y = height + 10; p.x = Math.random() * width; }
+              if (p.x < -10) p.x = width + 10;
+              if (p.x > width + 10) p.x = -10;
+
+              const currentAlpha = p.alpha * (0.6 + 0.4 * Math.sin(p.pulsePhase));
+
+              ctx.beginPath();
+              ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+              ctx.fillStyle = `rgba(245, 215, 127, ${currentAlpha})`;
+              ctx.shadowColor = '#d4af37';
+              ctx.shadowBlur = 8;
+              ctx.fill();
+            });
+          }
+          requestAnimationFrame(renderParticles);
+        }
+        renderParticles();
+      })();
+
+      /* ----------------------------------------------------
+         2. CARRUSEL INTERACTIVO DE LAS SEIS ÉPOCAS
+         ---------------------------------------------------- */
+      (function initEraCarousel() {
+        const track = document.getElementById('eraCarouselTrack');
+        const prevBtn = document.getElementById('prevEraBtn');
+        const nextBtn = document.getElementById('nextEraBtn');
+        const dots = document.querySelectorAll('.carousel-dot');
+        if (!track || !prevBtn || !nextBtn) return;
+
+        const cardWidth = 380; // Ancho + gap
+
+        prevBtn.addEventListener('click', () => {
+          track.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+        });
+
+        nextBtn.addEventListener('click', () => {
+          track.scrollBy({ left: cardWidth, behavior: 'smooth' });
+        });
+
+        dots.forEach(dot => {
+          dot.addEventListener('click', () => {
+            const index = parseInt(dot.getAttribute('data-index'), 10);
+            track.scrollTo({ left: index * cardWidth, behavior: 'smooth' });
+          });
+        });
+
+        // Actualizar dots según scroll
+        track.addEventListener('scroll', () => {
+          const scrollLeft = track.scrollLeft;
+          const activeIndex = Math.min(Math.round(scrollLeft / cardWidth), dots.length - 1);
+          dots.forEach((d, i) => {
+            d.classList.toggle('active', i === activeIndex);
+          });
+        }, { passive: true });
+      })();
+
+      /* ----------------------------------------------------
+         3. SINTETIZADOR DE PAISAJES SONOROS (WEB AUDIO API)
+         ---------------------------------------------------- */
+      (function initSoundscapeEngine() {
+        const capsule = document.getElementById('soundscapeCapsule');
+        const playBtn = document.getElementById('soundPlayToggleBtn');
+        const currentNameLabel = document.getElementById('currentSoundscapeLabel');
+        const drawerTrigger = document.getElementById('soundscapeDrawerTrigger');
+        const volumeSlider = document.getElementById('soundVolumeSlider');
+        const optionBtns = document.querySelectorAll('.sound-option-btn');
+
+        if (!capsule || !playBtn) return;
+
+        let audioCtx = null;
+        let isPlaying = false;
+        let currentMode = 'viento'; // 'viento', 'selva', 'lluvia'
+        let masterGain = null;
+        let activeNodes = [];
+
+        // Generador de búfer de ruido rosa/marrón
+        function createNoiseBuffer(ctx, duration = 3) {
+          const bufferSize = ctx.sampleRate * duration;
+          const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
+          const data = buffer.getChannelData(0);
+          let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
+
+          for (let i = 0; i < bufferSize; i++) {
+            const white = Math.random() * 2 - 1;
+            b0 = 0.99886 * b0 + white * 0.0555179;
+            b1 = 0.99332 * b1 + white * 0.0750759;
+            b2 = 0.96900 * b2 + white * 0.1538520;
+            b3 = 0.86650 * b3 + white * 0.3104856;
+            b4 = 0.55000 * b4 + white * 0.5329522;
+            b5 = -0.7616 * b5 - white * 0.0168980;
+            data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 * 0.5362) * 0.11;
+            b6 = white * 0.115926;
+          }
+          return buffer;
+        }
+
+        function stopCurrentSound() {
+          activeNodes.forEach(node => {
+            try {
+              if (node.stop) node.stop();
+              if (node.disconnect) node.disconnect();
+            } catch (e) {}
+          });
+          activeNodes = [];
+        }
+
+        function buildSoundscape(mode) {
+          if (!audioCtx) return;
+          stopCurrentSound();
+
+          const noiseBuf = createNoiseBuffer(audioCtx, 4);
+
+          if (mode === 'viento') {
+            // VIENTO ANDINO: Filtro pasa-banda barrido con LFO
+            const windSource = audioCtx.createBufferSource();
+            windSource.buffer = noiseBuf;
+            windSource.loop = true;
+
+            const bandpass = audioCtx.createBiquadFilter();
+            bandpass.type = 'bandpass';
+            bandpass.frequency.value = 420;
+            bandpass.Q.value = 3.5;
+
+            const lfo = audioCtx.createOscillator();
+            lfo.frequency.value = 0.14; // Oscilación lenta de ráfaga
+            const lfoGain = audioCtx.createGain();
+            lfoGain.gain.value = 220;
+
+            lfo.connect(lfoGain);
+            lfoGain.connect(bandpass.frequency);
+
+            windSource.connect(bandpass);
+            bandpass.connect(masterGain);
+
+            lfo.start();
+            windSource.start();
+            activeNodes.push(windSource, lfo, bandpass, lfoGain);
+
+          } else if (mode === 'selva') {
+            // SELVA AMAZÓNICA: Rumor de río + micro-insectos modulados
+            const riverSource = audioCtx.createBufferSource();
+            riverSource.buffer = noiseBuf;
+            riverSource.loop = true;
+
+            const riverFilter = audioCtx.createBiquadFilter();
+            riverFilter.type = 'lowpass';
+            riverFilter.frequency.value = 320;
+
+            riverSource.connect(riverFilter);
+            riverFilter.connect(masterGain);
+            riverSource.start();
+            activeNodes.push(riverSource, riverFilter);
+
+            // Canto sutil de cigarras/grillos amazónicos
+            const insectOsc = audioCtx.createOscillator();
+            insectOsc.type = 'sine';
+            insectOsc.frequency.value = 4600;
+
+            const insectGain = audioCtx.createGain();
+            insectGain.gain.value = 0.015;
+
+            const tremolo = audioCtx.createOscillator();
+            tremolo.frequency.value = 22; // Modulación rápida
+            const tremoloGain = audioCtx.createGain();
+            tremoloGain.gain.value = 0.012;
+
+            tremolo.connect(tremoloGain);
+            tremoloGain.connect(insectGain.gain);
+
+            insectOsc.connect(insectGain);
+            insectGain.connect(masterGain);
+
+            insectOsc.start();
+            tremolo.start();
+            activeNodes.push(insectOsc, tremolo, insectGain, tremoloGain);
+
+          } else if (mode === 'lluvia') {
+            // LLUVIA DEL PACÍFICO: Dosel denso de aguacero tropical
+            const rainSource = audioCtx.createBufferSource();
+            rainSource.buffer = noiseBuf;
+            rainSource.loop = true;
+
+            const rainFilter = audioCtx.createBiquadFilter();
+            rainFilter.type = 'lowpass';
+            rainFilter.frequency.value = 1100;
+
+            const highpass = audioCtx.createBiquadFilter();
+            highpass.type = 'highpass';
+            highpass.frequency.value = 220;
+
+            rainSource.connect(rainFilter);
+            rainFilter.connect(highpass);
+            highpass.connect(masterGain);
+
+            rainSource.start();
+            activeNodes.push(rainSource, rainFilter, highpass);
+          }
+        }
+
+        function startAudio() {
+          if (!audioCtx) {
+            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+            masterGain = audioCtx.createGain();
+            masterGain.gain.setValueAtTime(parseFloat(volumeSlider.value) * 0.3, audioCtx.currentTime);
+            masterGain.connect(audioCtx.destination);
+          }
+          if (audioCtx.state === 'suspended') {
+            audioCtx.resume();
+          }
+
+          buildSoundscape(currentMode);
+          isPlaying = true;
+          capsule.classList.add('playing');
+          playBtn.innerHTML = '⏸';
+          playBtn.title = 'Pausar sonido ambiente';
+        }
+
+        function pauseAudio() {
+          stopCurrentSound();
+          isPlaying = false;
+          capsule.classList.remove('playing');
+          playBtn.innerHTML = '▶';
+          playBtn.title = 'Reproducir sonido ambiente';
+        }
+
+        playBtn.addEventListener('click', () => {
+          if (isPlaying) {
+            pauseAudio();
+          } else {
+            startAudio();
+          }
+        });
+
+        // Alternar Cajón de Selección
+        drawerTrigger.addEventListener('click', (e) => {
+          e.stopPropagation();
+          capsule.classList.toggle('open');
+        });
+
+        document.addEventListener('click', (e) => {
+          if (!capsule.contains(e.target)) {
+            capsule.classList.remove('open');
+          }
+        });
+
+        // Selector de Paisaje
+        optionBtns.forEach(btn => {
+          btn.addEventListener('click', () => {
+            optionBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            currentMode = btn.getAttribute('data-sound');
+
+            const names = {
+              'viento': 'Viento Andino',
+              'selva': 'Selva Amazónica',
+              'lluvia': 'Lluvia del Pacífico'
+            };
+            currentNameLabel.textContent = names[currentMode];
+
+            if (isPlaying) {
+              buildSoundscape(currentMode);
+            }
+          });
+        });
+
+        // Control de Volumen
+        volumeSlider.addEventListener('input', (e) => {
+          if (masterGain && audioCtx) {
+            masterGain.gain.setValueAtTime(parseFloat(e.target.value) * 0.35, audioCtx.currentTime);
+          }
+        });
+      })();
+
+      /* ----------------------------------------------------
+         4. MENÚ MÓVIL RESPONSIVO
+         ---------------------------------------------------- */
+      (function initMobileNav() {
+        const toggleBtn = document.getElementById('mobileMenuToggle');
+        const navLinks = document.getElementById('mainNavLinks');
+        if (!toggleBtn || !navLinks) return;
+
+        toggleBtn.addEventListener('click', () => {
+          navLinks.classList.toggle('mobile-open');
+          toggleBtn.textContent = navLinks.classList.contains('mobile-open') ? '✕' : '☰';
+        });
+      })();
+
+    });
+  </script>
 </body>
 </html>

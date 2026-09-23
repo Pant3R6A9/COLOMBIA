@@ -3,14 +3,730 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Memoria y Paz - Colombia en el Tiempo</title>
-  <meta name="description" content="El esclarecimiento de la verdad, la desclasificación de archivos de derechos humanos y las políticas de transición.">
+  <title>Memoria, Verdad y Secretos de la Amazonía - Colombianopedia Dossier</title>
+  <meta name="description" content="Dossier de investigación histórica y científica (estilo National Geographic / Smithsonian) sobre Chiribiquete, la Terra Preta, pueblos en aislamiento voluntario (PIAVI), farmacopea sagrada, el genocidio cauchero de la Casa Arana, el Predio Putumayo, Bananeras, Bogotazo y el Informe Final de la Comisión de la Verdad.">
   
   <link rel="stylesheet" href="css/style.css?v=1.2">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Cinzel+Decorative:wght@700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    /* ==========================================================================
+       ESTILOS EDITORIALES DOSSIER: SMITHSONIAN / NATIONAL GEOGRAPHIC
+       ========================================================================== */
+    :root {
+      --header-height: 80px;
+      --font-editorial: 'Newsreader', Georgia, serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      --natgeo-yellow: #f4c430;
+      --smithsonian-blue: #1b4965;
+      --smithsonian-gold: #c69214;
+      --ochre-chiribiquete: #a73c24;
+      --selva-deep: #0b1a13;
+      --selva-accent: #2a9d8f;
+      --soil-black: #161412;
+      --paper-aged: #f4ebd9;
+      --paper-border: #d4c2a5;
+    }
+
+    /* Corrección estricta de despeje del header */
+    .dossier-main-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    /* Friso y encabezado superior de revista */
+    .dossier-journal-header {
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 1.25rem;
+      margin-bottom: 2.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      font-weight: 600;
+    }
+    .journal-mark {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      color: var(--accent);
+    }
+    .journal-mark::before {
+      content: "";
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    /* Hero Principal Editorial */
+    .dossier-hero {
+      position: relative;
+      background: linear-gradient(135deg, rgba(11,26,19,0.92) 0%, rgba(18,20,22,0.96) 50%, rgba(20,13,8,0.92) 100%);
+      border: 1px solid rgba(212,175,55,0.25);
+      border-radius: 8px;
+      padding: 3.5rem 3rem;
+      margin-bottom: 3.5rem;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+      overflow: hidden;
+    }
+    .dossier-hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 380px;
+      height: 100%;
+      background: radial-gradient(circle at 80% 30%, rgba(212,175,55,0.12), transparent 70%);
+      pointer-events: none;
+    }
+    .dossier-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(212,175,55,0.12);
+      border: 1px solid rgba(212,175,55,0.35);
+      color: var(--accent);
+      padding: 0.4rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      border-radius: 30px;
+      margin-bottom: 1.5rem;
+    }
+    .dossier-hero h1 {
+      font-family: var(--font-title);
+      font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+      line-height: 1.15;
+      font-weight: 800;
+      color: #fff;
+      margin-bottom: 1.25rem;
+      letter-spacing: -0.01em;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    }
+    .dossier-hero h1 span.gold-highlight {
+      color: var(--accent);
+      font-family: 'Cinzel Decorative', var(--font-title);
+      display: inline-block;
+    }
+    .dossier-hero-lead {
+      font-family: var(--font-editorial);
+      font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+      line-height: 1.6;
+      color: #d1d5db;
+      max-width: 950px;
+      margin-bottom: 2rem;
+      font-style: italic;
+    }
+    .dossier-metadata-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      padding-top: 1.5rem;
+      font-size: 0.85rem;
+    }
+    .meta-item-label {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      font-size: 0.7rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+    .meta-item-val {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    /* Píldoras de Navegación Rápida / Sumario */
+    .dossier-toc-nav {
+      position: sticky;
+      top: var(--header-height, 80px);
+      z-index: 40;
+      background: rgba(18, 20, 22, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-card);
+      border-radius: 6px;
+      padding: 0.6rem 1rem;
+      margin-bottom: 3.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      overflow-x: auto;
+      scrollbar-width: thin;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+    }
+    .dossier-toc-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-weight: 800;
+      color: var(--accent);
+      white-space: nowrap;
+      padding-right: 0.5rem;
+      border-right: 1px solid var(--border-card);
+    }
+    .toc-pill {
+      color: var(--text-secondary);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 600;
+      padding: 0.4rem 0.85rem;
+      border-radius: 20px;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+      background: rgba(255,255,255,0.02);
+      border: 1px solid transparent;
+    }
+    .toc-pill:hover, .toc-pill:focus {
+      color: #fff;
+      background: rgba(212,175,55,0.15);
+      border-color: rgba(212,175,55,0.4);
+    }
+
+    /* Secciones Maestras y Encabezados de Capítulo */
+    .dossier-section {
+      margin-bottom: 5rem;
+      scroll-margin-top: calc(var(--header-height, 80px) + 3.5rem);
+    }
+    .chapter-eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      color: var(--accent);
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.25em;
+      margin-bottom: 0.75rem;
+    }
+    .chapter-eyebrow::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+    }
+    .chapter-title {
+      font-family: var(--font-title);
+      font-size: clamp(1.8rem, 3.2vw, 2.7rem);
+      line-height: 1.2;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .chapter-subtitle {
+      font-family: var(--font-editorial);
+      font-size: 1.25rem;
+      color: var(--text-secondary);
+      line-height: 1.6;
+      margin-bottom: 2.5rem;
+      max-width: 1000px;
+    }
+
+    /* Tarjetas de Revista Editorial (Smithsonian Grid) */
+    .smithsonian-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+    }
+    .magazine-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+    .magazine-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(212,175,55,0.45);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.5);
+    }
+    .magazine-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      opacity: 0.6;
+    }
+    .card-kicker {
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .card-headline {
+      font-family: var(--font-title);
+      font-size: 1.4rem;
+      line-height: 1.3;
+      color: #fff;
+      margin-bottom: 1rem;
+    }
+    .card-body {
+      font-family: var(--font-text);
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: #cbd5e1;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+    .card-meta-list {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 1.5rem 0;
+      border-top: 1px dashed rgba(255,255,255,0.1);
+      border-bottom: 1px dashed rgba(255,255,255,0.1);
+      padding-top: 0.8rem;
+      padding-bottom: 0.8rem;
+      font-size: 0.85rem;
+    }
+    .card-meta-list li {
+      display: flex;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.3rem 0;
+    }
+    .meta-name {
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+    .meta-val {
+      color: #fff;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* Botón disparador de detalle para drawers de main.js */
+    .dossier-action-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0.8rem 1.25rem;
+      background: rgba(212,175,55,0.08);
+      border: 1px solid rgba(212,175,55,0.3);
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .dossier-action-btn:hover {
+      background: var(--accent);
+      color: #111;
+      border-color: var(--accent);
+      box-shadow: 0 4px 15px rgba(212,175,55,0.3);
+    }
+
+    /* Módulo Especial: Comparador Edafológico (Oxisol vs Terra Preta) */
+    .soil-comparator {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      background: rgba(0,0,0,0.4);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      padding: 2.5rem;
+      margin-bottom: 2.5rem;
+      box-shadow: inset 0 0 40px rgba(0,0,0,0.6);
+    }
+    .soil-column {
+      padding: 1.5rem;
+      border-radius: 6px;
+      border: 1px solid rgba(255,255,255,0.05);
+    }
+    .soil-oxisol {
+      background: linear-gradient(180deg, rgba(160,64,24,0.15) 0%, rgba(20,10,5,0.4) 100%);
+      border-left: 4px solid #c0392b;
+    }
+    .soil-terrapreta {
+      background: linear-gradient(180deg, rgba(42,157,143,0.15) 0%, rgba(5,15,10,0.4) 100%);
+      border-left: 4px solid #2ecc71;
+    }
+    .soil-header {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .soil-tag {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    .soil-oxisol .soil-tag { background: rgba(192,57,43,0.3); color: #e74c3c; }
+    .soil-terrapreta .soil-tag { background: rgba(46,204,113,0.3); color: #2ecc71; }
+    .soil-metric-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px dotted rgba(255,255,255,0.1);
+      padding: 0.6rem 0;
+      font-size: 0.9rem;
+    }
+
+    /* Bloques de Fórmulas y Mecanismo Bioquímico */
+    .biochem-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.75rem;
+      margin-bottom: 2.5rem;
+    }
+    .biochem-card {
+      background: rgba(15, 23, 42, 0.4);
+      border: 1px solid rgba(56, 189, 248, 0.2);
+      border-radius: 6px;
+      padding: 1.75rem;
+      position: relative;
+    }
+    .biochem-card::before {
+      content: "MOLECULAR / CLINICAL SPEC";
+      position: absolute;
+      top: -0.6rem;
+      right: 1.5rem;
+      background: #0f172a;
+      border: 1px solid rgba(56, 189, 248, 0.4);
+      color: #38bdf8;
+      font-size: 0.6rem;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      padding: 0.15rem 0.5rem;
+      letter-spacing: 0.1em;
+    }
+    .biochem-title {
+      font-family: var(--font-title);
+      font-size: 1.25rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .formula-tag {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #38bdf8;
+      background: rgba(56, 189, 248, 0.1);
+      padding: 0.2rem 0.5rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 0.75rem;
+    }
+    .biochem-desc {
+      font-size: 0.9rem;
+      line-height: 1.65;
+      color: #cbd5e1;
+    }
+
+    /* Módulo de Documentos Facsimilares y Archivos Desclasificados */
+    .facsimile-showcase {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+    }
+    .facsimile-card {
+      background: #fdfaf2;
+      color: #2b1f14;
+      border: 1px solid #d4c2a5;
+      border-radius: 4px;
+      padding: 2.2rem;
+      position: relative;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      font-family: var(--font-editorial);
+    }
+    .facsimile-card::before {
+      content: "";
+      position: absolute;
+      inset: 8px;
+      border: 1px dashed rgba(160,64,24,0.3);
+      pointer-events: none;
+    }
+    .facsimile-stamp {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      border: 2px solid #a04018;
+      color: #a04018;
+      font-family: var(--font-mono);
+      font-weight: 700;
+      font-size: 0.65rem;
+      padding: 0.2rem 0.5rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      transform: rotate(-4deg);
+      opacity: 0.85;
+    }
+    .facsimile-source {
+      font-family: var(--font-mono);
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: #7c5e3d;
+      margin-bottom: 0.5rem;
+    }
+    .facsimile-title {
+      font-family: var(--font-title);
+      font-size: 1.25rem;
+      color: #1a0f08;
+      margin-bottom: 0.75rem;
+      line-height: 1.3;
+    }
+    .facsimile-excerpt {
+      font-size: 1rem;
+      line-height: 1.65;
+      color: #3b2a1a;
+      margin-bottom: 1.25rem;
+      font-style: italic;
+    }
+    .facsimile-citation {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: #634d35;
+      border-top: 1px solid #e2d2bb;
+      padding-top: 0.75rem;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    /* Muro Testimonial Coral (National Geographic Pull Quotes) */
+    .testimonial-mosaic {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+      gap: 2rem;
+      margin-bottom: 3.5rem;
+    }
+    .testimonial-block {
+      background: rgba(255,255,255,0.02);
+      border-left: 3px solid var(--accent);
+      padding: 1.75rem 2rem;
+      border-radius: 0 6px 6px 0;
+      position: relative;
+    }
+    .testimonial-quote {
+      font-family: var(--font-editorial);
+      font-size: 1.15rem;
+      line-height: 1.6;
+      color: #f1f5f9;
+      font-style: italic;
+      margin-bottom: 1rem;
+    }
+    .testimonial-author {
+      font-family: var(--font-text);
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--accent);
+    }
+    .testimonial-role {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+    }
+
+    /* Grilla de los 10 Tomos de la Comisión de la Verdad */
+    .tomos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .tomo-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-card);
+      border-radius: 6px;
+      padding: 1.75rem;
+      position: relative;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+    .tomo-card:hover {
+      background: rgba(46,134,193,0.08);
+      border-color: rgba(46,134,193,0.5);
+      transform: translateY(-3px);
+    }
+    .tomo-number {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+      letter-spacing: 0.1em;
+    }
+    .tomo-title {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      line-height: 1.3;
+    }
+    .tomo-sub {
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+    .tomo-quote-pill {
+      font-family: var(--font-editorial);
+      font-size: 0.85rem;
+      font-style: italic;
+      color: #cbd5e1;
+      border-left: 2px solid rgba(46,134,193,0.6);
+      padding-left: 0.6rem;
+    }
+
+    /* Línea de tiempo interactiva integrada */
+    .dossier-timeline {
+      position: relative;
+      border-left: 2px solid rgba(212,175,55,0.3);
+      margin-left: 1.5rem;
+      padding-left: 2.5rem;
+      margin-bottom: 3.5rem;
+    }
+    .timeline-node {
+      position: relative;
+      margin-bottom: 2.5rem;
+    }
+    .timeline-node::before {
+      content: "";
+      position: absolute;
+      left: calc(-2.5rem - 6px);
+      top: 0.35rem;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 10px var(--accent);
+    }
+    .node-epoch {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 0.3rem;
+    }
+    .node-title {
+      font-family: var(--font-title);
+      font-size: 1.3rem;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+    .node-text {
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: #cbd5e1;
+      max-width: 900px;
+    }
+
+    /* Glosario Científico con buscador integrado */
+    .glossary-filter-bar {
+      margin-bottom: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .glossary-input {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid var(--border-card);
+      border-radius: 4px;
+      padding: 0.75rem 1.2rem;
+      color: #fff;
+      font-size: 0.9rem;
+      min-width: 320px;
+      flex-grow: 1;
+    }
+    .glossary-input:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 15px rgba(212,175,55,0.2);
+    }
+    .glossary-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+    }
+    .term-card {
+      background: rgba(255,255,255,0.02);
+      border: 1px solid var(--border-card);
+      border-radius: 4px;
+      padding: 1.25rem;
+      transition: border-color 0.2s;
+    }
+    .term-name {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: var(--accent);
+      margin-bottom: 0.3rem;
+    }
+    .term-domain {
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      margin-bottom: 0.6rem;
+    }
+    .term-def {
+      font-size: 0.85rem;
+      line-height: 1.6;
+      color: #cbd5e1;
+    }
+
+    /* Responsive */
+    @media (max-width: 850px) {
+      .dossier-hero {
+        padding: 2.2rem 1.5rem;
+      }
+      .soil-comparator {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+      }
+      .dossier-timeline {
+        margin-left: 0.5rem;
+        padding-left: 1.5rem;
+      }
+      .timeline-node::before {
+        left: calc(-1.5rem - 6px);
+      }
+    }
+  </style>
 </head>
 <body data-theme="memoria">
 
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -42,127 +758,872 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(46,134,193,0.15); color: var(--accent);">
-        Siglo XXI / Políticas de Transición
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL DEL DOSSIER
+       Despeje total garantizado para el título principal
+       ========================================== -->
+  <main class="dossier-main-container">
+
+    <!-- Membrete de Revista Científica -->
+    <div class="dossier-journal-header">
+      <div class="journal-mark">Smithsonian & National Geographic Research Protocol • Edición Colombianopedia</div>
+      <div>Dossier Especial: Arqueología Pleistocénica & Acervos de la Verdad</div>
+      <div>Actualización Científica: 2026</div>
+    </div>
+
+    <!-- Hero de Gran Formato -->
+    <section class="dossier-hero" id="hero-section">
+      <div class="dossier-hero-badge">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" style="display:inline-block;"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+        Dossier Editorial de Investigación Histórica y Científica
       </div>
-      <h1>Memoria y Reconstrucción</h1>
-      <p>La construcción del derecho a la verdad, el resguardo de los archivos de derechos humanos y la plataforma transmedia del esclarecimiento. Haz clic para abrir los detalles.</p>
+      <h1>Memoria, Verdad y <span class="gold-highlight">Secretos de la Amazonía</span></h1>
+      <p class="dossier-hero-lead">
+        De las pictografías de 20.000 años de Chiribiquete y la geoingeniería molecular de la Terra Preta, al holocausto del caucho de la Casa Arana, la restitución soberana del Predio Putumayo y los 10 tomos del Informe Final de la Comisión de la Verdad.
+      </p>
+
+      <div class="dossier-metadata-strip">
+        <div>
+          <div class="meta-item-label">Coordinación Científica</div>
+          <div class="meta-item-val">Subagente Especialista en Amazonía & Memoria</div>
+        </div>
+        <div>
+          <div class="meta-item-label">Metodología Documental</div>
+          <div class="meta-item-val">Edafología Antropogénica, Arqueometría y CEV</div>
+        </div>
+        <div>
+          <div class="meta-item-label">Acervos de Archivo</div>
+          <div class="meta-item-val">NARA (EE.UU.), The National Archives (Kew), AGN & JEP</div>
+        </div>
+        <div>
+          <div class="meta-item-label">Pueblos & Ecosistemas</div>
+          <div class="meta-item-val">Yuri, Karijona, Murui-Muinane, Puré y Chiribiquete</div>
+        </div>
+      </div>
     </section>
 
-    <section class="era-layout">
-      
-      <div class="timeline-section">
-        
-        <!-- Palacio de Justicia -->
-        <div class="timeline-item">
-          <div class="timeline-year">1985</div>
-          <div class="timeline-content" data-drawer="drawer-palacio">
-            <span class="document-badge">Pérdida de Archivos Judiciales</span>
-            <h3>La Toma del Palacio de Justicia</h3>
-            <p>
-              El asalto del M-19 y la retoma militar que incendió miles de archivos de investigaciones judiciales críticas. Haz clic para ver detalles del impacto documental.
-            </p>
-            <div class="era-link">Abrir Detalles &rarr;</div>
+    <!-- Barra de Navegación Rápida Temática -->
+    <nav class="dossier-toc-nav" aria-label="Navegación del Dossier">
+      <div class="dossier-toc-label">Ejes de Estudio:</div>
+      <a href="#chiribiquete" class="toc-pill">1. Chiribiquete & Tepuyes</a>
+      <a href="#terra-preta" class="toc-pill">2. Terra Preta & Biochar</a>
+      <a href="#piavi" class="toc-pill">3. Pueblos Aislados (PIAVI)</a>
+      <a href="#farmacopea" class="toc-pill">4. Bioquímica Sagrada</a>
+      <a href="#genocidio-caucho" class="toc-pill">5. Genocidio Cauchero</a>
+      <a href="#predio-putumayo" class="toc-pill">6. Resguardo Predio Putumayo</a>
+      <a href="#fracturas-siglo-xx" class="toc-pill">7. Bananeras & Bogotazo</a>
+      <a href="#comision-verdad" class="toc-pill">8. Los 10 Tomos de la CEV</a>
+      <a href="#facsimiles" class="toc-pill">9. Archivos Facsimilares</a>
+      <a href="#glosario-cientifico" class="toc-pill">10. Glosario Maestro</a>
+    </nav>
+
+    <!-- =====================================================================
+         PARTE I: SECRETOS DOCUMENTADOS DE LA AMAZONÍA
+         ===================================================================== -->
+
+    <!-- SECCIÓN 1: SERRANÍA DE CHIRIBIQUETE -->
+    <section class="dossier-section" id="chiribiquete">
+      <div class="chapter-eyebrow">Secretos Documentados del Amazonas • Registro Arqueológico Pleistocénico</div>
+      <h2 class="chapter-title">Serranía de Chiribiquete: La Maloka Cósmica del Jaguar</h2>
+      <p class="chapter-subtitle">
+        Más de 75.000 pictografías rupestres documentadas formalmente a lo largo de 60 abrigos de tepuyes precámbricos (1.800 millones de años), con fechamientos estratigráficos de 20.000 años AP que derribaron el paradigma difusionista de Clovis.
+      </p>
+
+      <div class="smithsonian-grid">
+        <!-- Tarjeta 1: La Capilla Sixtina y la Litología -->
+        <article class="magazine-card">
+          <span class="card-kicker">Litología & Arqueoastronomía</span>
+          <h3 class="card-headline">Tepuyes del Escudo Guayanés y Pseudokarst Silíceo</h3>
+          <p class="card-body">
+            Ubicado en el interfluvio Caquetá-Guaviare, Chiribiquete emerge como un archipiélago de mesetas tabulares de cuarcita de la Formación Roraima/Araracuara. A lo largo de eones de meteorización tropical, la disolución de rocas de cuarzo esculpió cientos de abrigos rocosos bajo aleros colgantes. Investigaciones arqueoastronómicas revelan que abrigos emblemáticos (Abrigo del Arco, Abrigo de los Jaguares) poseen una orientación calculada para que los haces de luz del solsticio de junio y diciembre iluminen directamente los frisos sagrados.
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Pinturas registradas</span><span class="meta-val">>75.000 (est. +200.000)</span></li>
+            <li><span class="meta-name">Datación Carbono-14</span><span class="meta-val">~19.510 ± 450 AP (LGM)</span></li>
+            <li><span class="meta-name">Mineral de pigmento</span><span class="meta-val">Hematita ($\alpha\text{-Fe}_2\text{O}_3$) + Resinas</span></li>
+            <li><span class="meta-name">Reconocimiento</span><span class="meta-val">UNESCO Mixto (2018) • 4.26 M ha</span></li>
+          </ul>
+          <div class="timeline-content" data-drawer="drawer-chiribiquete" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Abrir Archivo Arqueológico Chiribiquete</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 2: Megafauna Pleistocénica Extinta -->
+        <article class="magazine-card">
+          <span class="card-kicker">Paleozoología de Campo</span>
+          <h3 class="card-headline">Megafauna Cuaternaria en los Farallones Rocosos</h3>
+          <p class="card-body">
+            En los paneles de Chiribiquete y la Serranía de La Lindosa (Cerro Azul, Guaviare), los artistas del Pleistoceno plasmaron de primera mano a las gigantescas criaturas con las que convivieron antes de su extinción masiva al inicio del Holoceno:
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Notiomastodon platensis</span><span class="meta-val">Mastodonte / Gonfoterio con defensas curvas</span></li>
+            <li><span class="meta-name">Eremotherium laurillardi</span><span class="meta-val">Perezoso gigante terrestre bípedo</span></li>
+            <li><span class="meta-name">Hippidion / Equus</span><span class="meta-val">Caballos salvajes pleistocénicos americanos</span></li>
+            <li><span class="meta-name">Toxodon platensis</span><span class="meta-val">Ungulado gigante de silueta corpulenta</span></li>
+          </ul>
+          <p class="card-body" style="font-size:0.85rem; color:#94a3b8;">
+            La correlación anatómica de estos animales confirma de manera inequívoca que la ocupación humana amazónica interactuó activamente con el bioma de sabana pleistocénica hace más de 12.000 a 19.000 años.
+          </p>
+          <div class="timeline-content" data-drawer="drawer-chiribiquete" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Ver Fichas Iconográficas & Megafauna</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Tarjeta 3: Teriomorfismo y Chamanismo Jaguar -->
+        <article class="magazine-card">
+          <span class="card-kicker">Cosmovisión Antropozoormórfica</span>
+          <h3 class="card-headline">El Culto al Hombre-Jaguar y la Hiperlordosis Ritual</h3>
+          <p class="card-body">
+            Para la tradición sagrada Karijona (quienes llaman a los tepuyes <em>Ite Okomo</em> o morada primordial de los creadores), <em>Panthera onca</em> es el señor del fuego y regulador del equilibrio ecológico. Los murales retratan con exactitud secuencias de transmutación: hombres cuyas extremidades adquieren garras y rosetas de felino. Asimismo, se documenta la hiperlordosis ritual: chamanes con el tórax arqueado en espasmo extático inducido por la inhalación de alcaloides indólicos (yopo/virola) mediante tubos dobles en 'V', simbolizando el vuelo del alma.
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Custodios ancestrales</span><span class="meta-val">Pueblo Karijona (Familia Caribe)</span></li>
+            <li><span class="meta-name">Parafernalia</span><span class="meta-val">Inhaladores en 'V', sonajas, coronas solares</span></li>
+            <li><span class="meta-name">Estado actual</span><span class="meta-val">Intangibilidad estricta • No turismo terrestre</span></li>
+          </ul>
+          <div class="timeline-content" data-drawer="drawer-chiribiquete" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Explorar Simbología & Cosmología</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: LA TERRA PRETA DO ÍNDIO -->
+    <section class="dossier-section" id="terra-preta">
+      <div class="chapter-eyebrow">Geoingeniería Prehispánica • Edafología Antropogénica</div>
+      <h2 class="chapter-title">La Terra Preta do Índio: Químico del Biochar y el Fin de la Selva Vacía</h2>
+      <p class="chapter-subtitle">
+        El hallazgo de horizontes de suelo artificial melánico de hasta 2 metros de espesor derribó la influyente tesis del determinismo ambiental de Betty Meggers, evidenciando densas civilizaciones agrícolas precolombinas de entre 5 y 10 millones de personas.
+      </p>
+
+      <!-- Comparador Edafológico -->
+      <div class="soil-comparator">
+        <div class="soil-column soil-oxisol">
+          <div class="soil-header">
+            <span>Suelo Natural Amazónico (Oxisol / Ferralsol)</span>
+            <span class="soil-tag">Pobreza Intrínseca</span>
+          </div>
+          <p style="font-size:0.85rem; line-height:1.6; color:#e2e8f0; margin-bottom:1rem;">
+            Predomina en el 75% de la cuenca. Altamente meteorizado, lavado por 3.500 mm de lluvia anual. La exuberancia de la selva virgen es un ciclo cerrado superficial: si se tala, colapsa en esterilidad.
+          </p>
+          <div class="soil-metric-row">
+            <span class="meta-name">Profundidad Horizonte A</span>
+            <span class="meta-val" style="color:#f87171;">5 a 10 cm (raquítico)</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">pH del Suelo</span>
+            <span class="meta-val" style="color:#f87171;">3.8 - 4.6 (fuertemente ácido)</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">Toxicidad Mineral</span>
+            <span class="meta-val" style="color:#f87171;">Alta saturación de $Al^{3+}$ citotóxico</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">Fósforo Biodisponible</span>
+            <span class="meta-val" style="color:#f87171;">< 3 a 5 mg/kg (fijado en goethita)</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">Capacidad de Intercambio (CIC)</span>
+            <span class="meta-val" style="color:#f87171;">4 - 10 cmol(+)/kg (muy baja)</span>
           </div>
         </div>
 
-        <!-- Acuerdo de Paz de 2016 -->
-        <div class="timeline-item">
-          <div class="timeline-year">2016</div>
-          <div class="timeline-content" data-drawer="drawer-acuerdopaz">
-            <span class="document-badge">Transición Política</span>
-            <h3>El Acuerdo de Paz y la Dirección de Archivo</h3>
-            <p>
-              La firma del acuerdo de paz y la recopilación sistemática de millones de registros sobre el despojo de tierras. Haz clic para abrir estadísticas.
-            </p>
-            <div class="era-link">Abrir Detalles &rarr;</div>
+        <div class="soil-column soil-terrapreta">
+          <div class="soil-header">
+            <span>Terra Preta do Índio (Antrosol Antropogénico)</span>
+            <span class="soil-tag">Bioingeniería Milenaria</span>
+          </div>
+          <p style="font-size:0.85rem; line-height:1.6; color:#e2e8f0; margin-bottom:1rem;">
+            Creado deliberadamente por poblaciones sedentarias mediante pirólisis amortiguada ('slash-and-char'), enmiendas cerámicas y bioapatita de fauna acuática. Mantiene su fertilidad tras siglos.
+          </p>
+          <div class="soil-metric-row">
+            <span class="meta-name">Profundidad Horizonte A</span>
+            <span class="meta-val" style="color:#4ade80;">40 cm a más de 2.0 metros</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">pH del Suelo</span>
+            <span class="meta-val" style="color:#4ade80;">6.0 - 6.8 (óptimo agronómico)</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">Toxicidad Mineral</span>
+            <span class="meta-val" style="color:#4ade80;">Cero toxicidad por aluminio libre</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">Fósforo Biodisponible</span>
+            <span class="meta-val" style="color:#4ade80;">200 - 800 mg/kg (hasta 200 veces más)</span>
+          </div>
+          <div class="soil-metric-row">
+            <span class="meta-name">Capacidad de Intercambio (CIC)</span>
+            <span class="meta-val" style="color:#4ade80;">30 - 60 cmol(+)/kg (retención colosal)</span>
           </div>
         </div>
-
-        <!-- Tensión Legal -->
-        <div class="timeline-item">
-          <div class="timeline-year">Leyes y Tensiones</div>
-          <div class="timeline-content" data-drawer="drawer-leyes">
-            <span class="document-badge">Debate Jurídico</span>
-            <h3>La Tensión entre Transparencia y Protección de Datos</h3>
-            <p>
-              El debate ético y legal sobre el acceso público a las identidades de las víctimas y victimarios. Haz clic para ver los dilemas legislativos.
-            </p>
-            <div class="era-link">Abrir Detalles &rarr;</div>
-          </div>
-        </div>
-
-        <!-- El Legado Transmedia de la Comisión de la Verdad -->
-        <div class="timeline-item">
-          <div class="timeline-year">Presente</div>
-          <div class="timeline-content" data-drawer="drawer-verdad">
-            <span class="document-badge">Legado Educativo</span>
-            <h3>La Plataforma Transmedia de la Comisión de la Verdad (CEV)</h3>
-            <p>
-              El informe final y el Legado Digital Transmedia para las escuelas del país. Haz clic para ver la ilustración de paz y estadísticas de testimonios.
-            </p>
-            <div class="era-link">Abrir Detalles &rarr;</div>
-          </div>
-        </div>
-
       </div>
 
+      <!-- Mecanismo Químico y Derribo del Mito -->
+      <div class="smithsonian-grid">
+        <article class="magazine-card">
+          <span class="card-kicker">Biogeoquímica & Recalcitrancia</span>
+          <h3 class="card-headline">Pirólisis Lenta y Cargas Negativas del Biochar</h3>
+          <p class="card-body">
+            La combustión anaeróbica lenta a 350°-500°C convirtió la madera en anillos aromáticos policíclicos condensados con enlaces $sp^2$ resistentes al ataque biológico por 2.000 a 4.000 años. Al oxidarse lentamente en el suelo, las láminas de biochar desarrollan grupos carboxilo ($-COOH$) e hidroxilo ($-OH$), cuyos aniones ($-COO^-$, $-O^-$) actúan como imanes que fijan cationes indispensables ($Ca^{2+}, Mg^{2+}, K^+, NH_4^+$), impidiendo su lavado pluvial. Con 200-450 $m^2/g$ de superficie porosa, alojan colonias protectoras de hongos micorrízicos y bacterias simbióticas.
+          </p>
+          <div class="timeline-content" data-drawer="drawer-terrapreta" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Ver Química del Biochar & Enmiendas</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="magazine-card">
+          <span class="card-kicker">Revolución Arqueológica</span>
+          <h3 class="card-headline">De Betty Meggers a las Ciudades Jardín del Xingu</h3>
+          <p class="card-body">
+            En 1971, Betty Meggers (Smithsonian) sentenció que la Amazonía era un "paraíso falsificado" biológicamente incapaz de sostener alta civilización. Excavaciones en Araracuara (Río Caquetá, Colombia) por Santiago Mora y Luisa F. Herrera demostraron ocupaciones sedentarias masivas de Terra Preta entre el 800 y 1500 d.C. En paralelo, Anna Roosevelt (Marajó) y Michael Heckenberger (Alto Xingu) revelaron ciudades jardín conectadas por calzadas de 20 metros de ancho, validando las crónicas de Gaspar de Carvajal (1542) sobre los señoríos ribereños de Machiparo.
+          </p>
+          <div class="timeline-content" data-drawer="drawer-terrapreta" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Ver Evidencias Araracuara & Xingu</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: PUEBLOS EN AISLAMIENTO VOLUNTARIO (PIAVI) -->
+    <section class="dossier-section" id="piavi">
+      <div class="chapter-eyebrow">Derechos Humanos Colectivos • Intangibilidad Territorial</div>
+      <h2 class="chapter-title">Pueblos en Aislamiento Voluntario (PIAVI): El Parque Río Puré y el No Contacto</h2>
+      <p class="chapter-subtitle">
+        Los pueblos Yuri, Passé y Carabayo en el PNN Río Puré (999.880 ha) no son sociedades "primitivas", sino colectivos que tomaron la decisión política reflexiva de aislarse para sobrevivir al terror de las caucherías y al exterminio por epidemias.
+      </p>
+
+      <div class="smithsonian-grid">
+        <article class="magazine-card">
+          <span class="card-kicker">Etnohistoria de Resistencia</span>
+          <h3 class="card-headline">El Enigma Desentrañado de los Carabayo (Yuri)</h3>
+          <p class="card-body">
+            Durante décadas, la literatura catalogó a los indígenas del río Bernardo como los "salvajes Carabayo", dándolos por extintos. El recordado antropólogo e investigador <strong>Roberto Franco García</strong> (1960-2014) demostró en su obra cumbre <em>Cariba Malo</em> que se trata de los descendientes legítimos del indómito pueblo Yuri, replegados en las cabeceras fluviales más impenetrables para no caer en el engranaje esclavo de la Casa Arana.
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Pueblos confirmados</span><span class="meta-val">Yuri (Aroje) y Passé (Arawak)</span></li>
+            <li><span class="meta-name">Área protegida</span><span class="meta-val">PNN Río Puré (creado 2002 • 999.880 ha)</span></li>
+            <li><span class="meta-name">Corredor biológico</span><span class="meta-val">Articulado con Vale do Javari (Brasil)</span></li>
+          </ul>
+          <div class="timeline-content" data-drawer="drawer-piavi" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Abrir Archivo PIAVI & Expediente Franco</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="magazine-card">
+          <span class="card-kicker">Doctrina Jurídica de Vanguardia</span>
+          <h3 class="card-headline">El Precedente de 1969 y el Decreto Ley 1232 de 2018</h3>
+          <p class="card-body">
+            En 1969, tras el secuestro forzado de una familia indígena por el colono Pedro Paciolla y su exhibición mediática en Bogotá, médicos y antropólogos como Roque Roldán forzaron su retorno ético a la selva en 1970 con un pacto estatal de no agresión. Este hito originó la doctrina colombiana de <strong>no contacto e intangibilidad territorial</strong>, consolidada jurídicamente en el <strong>Decreto Ley 1232 de 2018</strong>, que prohíbe todo acercamiento o explotación económica en sus dominios.
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Marco Normativo</span><span class="meta-val">Decreto Ley 1232 de 2018</span></li>
+            <li><span class="meta-name">Principio Rector</span><span class="meta-val">No contacto e intangibilidad absoluta</span></li>
+            <li><span class="meta-name">Amenaza Crítica</span><span class="meta-val">Minería ilegal de dragas & narcotráfico</span></li>
+          </ul>
+          <div class="timeline-content" data-drawer="drawer-piavi" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Ver Legislación & Protocolo 1232</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: BIOQUÍMICA DE LA SELVA (FARMACOPEA SAGRADA) -->
+    <section class="dossier-section" id="farmacopea">
+      <div class="chapter-eyebrow">Etnobotánica Médica • Neurofarmacología de la Selva</div>
+      <h2 class="chapter-title">Bioquímica Sagrada: Fitoquímica, Anestesiología y Gobernanza Ancestral</h2>
+      <p class="chapter-subtitle">
+        De la sinergia molecular del Yagé y el bloqueo neuromuscular del Curare que transformó la cirugía global en 1942, a la termodinámica del Mambeadero, la purga peptídica del Kambo y la cafeína de liberación sostenida del Yoco.
+      </p>
+
+      <div class="biochem-strip">
+        <!-- 1. YAGÉ -->
+        <div class="biochem-card">
+          <h4 class="biochem-title">
+            <span>Yagé / Ayahuasca</span>
+          </h4>
+          <div class="formula-tag">DMT (C₁₂H₁₆N₂) + Beta-Carbolinas RIMA</div>
+          <p class="biochem-desc">
+            <strong>La paradoja enzimática:</strong> La $N,N$-Dimetiltriptamina (DMT) de <em>Psychotria viridis</em> es inerte oralmente porque la monoamino oxidasa gástrica (MAO-A) la desamina al instante. El bejuco <em>Banisteriopsis caapi</em> aporta harmina y harmalina, inhibidores reversibles (RIMA) que bloquean la enzima, permitiendo que la DMT llegue intacta al cerebro, estimule receptores 5-$HT_{2A}$ y colapse la Red Neuronal por Defecto (DMN), facilitando neuroplasticidad y remisión de TEPT y depresión mayor severa.
+          </p>
+        </div>
+
+        <!-- 2. CURARE -->
+        <div class="biochem-card">
+          <h4 class="biochem-title">
+            <span>Curare (Veneno de Dardo)</span>
+          </h4>
+          <div class="formula-tag">d-Tubocurarina • Antagonista Nicotínico Nm</div>
+          <p class="biochem-desc">
+            <strong>Revolución médica de 1942:</strong> Extraído de <em>Chondrodendron tomentosum</em> y <em>Strychnos</em>. Bloquea competitivamente la acetilcolina en la placa motora, causando parálisis flácida respiratoria. Al ser polar, no cruza la barrera hematoencefálica (la presa retiene conciencia y audición intactas) ni se absorbe al comer la carne cocida. En 1942, Harold Griffith lo introdujo en cirugía, reemplazando niveles tóxicos de éter y fundando la anestesiología balanceada moderna.
+          </p>
+        </div>
+
+        <!-- 3. MAMBE Y AMBIL -->
+        <div class="biochem-card">
+          <h4 class="biochem-title">
+            <span>Mambe (Yúpuru) & Ambil</span>
+          </h4>
+          <div class="formula-tag">Extracción Alcalina Sublingual (pH 8.5-9.2)</div>
+          <p class="biochem-desc">
+            <strong>Bypass hepático y palabra dulce:</strong> El polvo de coca tostada (<em>Erythroxylum coca</em> var. <em>ipadu</em>) se mezcla con ceniza de yarumo (<em>Cecropia</em>) rica en $K_2CO_3$. Las sales elevan el pH oral, convirtiendo el alcaloide en base libre no ionizada que entra directamente por la mucosa sublingual a la vena cava sin degradación hepática. Junto al Ambil (pasta concentrada de tabaco <em>Nicotiana rustica</em> al 8-10%), conforma el rito nocturno del Mambeadero para discernir colectivamente sin violencia.
+          </p>
+        </div>
+
+        <!-- 4. KAMBO -->
+        <div class="biochem-card">
+          <h4 class="biochem-title">
+            <span>Kambo (Phyllomedusa bicolor)</span>
+          </h4>
+          <div class="formula-tag">Deltorfina, Dermorfina & Phyllocaeruleina</div>
+          <p class="biochem-desc">
+            <strong>El cóctel peptídico de Erspamer:</strong> La secreción cutánea contiene dermorfina y deltorfina (opioides 30-40 veces más potentes que la morfina sin causar apnea letal), phyllocaeruleina (activa peristaltismo para la purga biliosa), taquicininas vasodilatadoras y dermaseptinas que lisan bacterias multirresistentes. Usado por los cazadores para extirpar el <em>Panema</em> (niebla mental y desgano) e incrementar agudeza sensorial en la selva.
+          </p>
+        </div>
+
+        <!-- 5. YOCO -->
+        <div class="biochem-card">
+          <h4 class="biochem-title">
+            <span>Yoco (Paullinia yoco)</span>
+          </h4>
+          <div class="formula-tag">Cafeína Quelada en Taninos (2.8 - 4.5% peso seco)</div>
+          <p class="biochem-desc">
+            <strong>Energizante secular de liberación prolongada:</strong> Liana silvestre raspada en agua fría al amanecer por pueblos Siona y Kofán. Al no hervirse, la cafeína permanece acomplejada con proantocianidinas condensadas (taninos), liberándose lentamente en el intestino a lo largo de 8 a 12 horas sin generar taquicardia ni picos de rebote. Actúa como anorexígeno que permite jornadas extenuantes de cacería en ayuno.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         PARTE II: MEMORIA HISTÓRICA DEL SIGLO XX Y JUSTICIA TRANSICIONAL
+         ===================================================================== -->
+
+    <!-- SECCIÓN 5: GENOCIDIO CAUCHERO Y PREDIO PUTUMAYO -->
+    <section class="dossier-section" id="genocidio-caucho">
+      <div class="chapter-eyebrow">Memoria Histórica del Siglo XX • Holocausto Indígena & Soberanía</div>
+      <h2 class="chapter-title">El Genocidio Cauchero de la Casa Arana y la Gesta del Predio Putumayo</h2>
+      <p class="chapter-subtitle">
+        Entre 1885 y 1925, la fiebre mundial del caucho exterminó entre 40.000 y 70.000 indígenas amazónicos en La Chorrera y El Encanto. Seis décadas después, la resistencia comunitaria conquistó la constitución del Gran Resguardo Predio Putumayo (5.8 millones de hectáreas), el acto de restitución colectiva más grande del continente.
+      </p>
+
+      <div class="smithsonian-grid">
+        <!-- Casa Arana -->
+        <article class="magazine-card">
+          <span class="card-kicker">La Maquinaria del Terror Corporativo</span>
+          <h3 class="card-headline">The Peruvian Amazon Company y el Cepo Mortal</h3>
+          <p class="card-body">
+            Amparado en la falta de demarcación fronteriza y cotizando en la Bolsa de Londres en 1907, Julio César Arana instauró un régimen privado de esclavitud. Cuadrillas mercenarias armadas ('correrías') asaltaban las malokas. Los indígenas Murui-Muinane, Bora, Andoque y Ocaina debían entregar cuotas fijas de goma: si faltaba peso, sufrían azotes con látigos de cuero de manatí o eran encadenados al <em>cepo</em> hasta gangrenarse vivos. Pueblos enteros como los Resígaro y Nonuya quedaron reducidos a un puñado de sobrevivientes.
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Víctimas estimadas</span><span class="meta-val">40.000 a 70.000 vidas segadas</span></li>
+            <li><span class="meta-name">Denunciantes</span><span class="meta-val">Saldaña Rocca, Roger Casement, J.E. Rivera</span></li>
+            <li><span class="meta-name">Centros de concentración</span><span class="meta-val">La Chorrera (Igaraparana) y El Encanto</span></li>
+          </ul>
+          <div class="timeline-content" data-drawer="drawer-genocidio-arana" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Abrir Archivo Forense del Caucho</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Predio Putumayo -->
+        <article class="magazine-card" id="predio-putumayo">
+          <span class="card-kicker">Reparación Histórica & Corredor Triple A</span>
+          <h3 class="card-headline">Resolución 030 de 1988: 5.8 Millones de Hectáreas</h3>
+          <p class="card-body">
+            El 23 de abril de 1988, la alianza entre las autoridades tradicionales de La Chorrera y el antropólogo Martín von Hildebrand (gobierno de Virgilio Barco) dio fruto: la <strong>Resolución 030 del INCORA</strong> extinguió todos los títulos precarios de la Casa Arana y constituyó el <strong>Gran Resguardo Predio Putumayo con 5.836.990 hectáreas</strong> de propiedad colectiva inalienable (territorio mayor que Suiza o Países Bajos). Este hito sentó las bases para el reconocimiento constitucional de los resguardos en la Carta de 1991 (Arts. 329-330).
+          </p>
+          <ul class="card-meta-list">
+            <li><span class="meta-name">Área titulada</span><span class="meta-val">58.370 km² (5.836.990 ha)</span></li>
+            <li><span class="meta-name">Pueblos beneficiarios</span><span class="meta-val">Murui, Bora, Andoque, Ocaina, Muinane</span></li>
+            <li><span class="meta-name">Servicio Ecosistémico</span><span class="meta-val">Ríos Voladores: 20.000 M ton vapor/día a los Andes</span></li>
+          </ul>
+          <div class="timeline-content" data-drawer="drawer-predio-putumayo" style="cursor:pointer;">
+            <div class="dossier-action-btn">
+              <span>Ver Expediente Predio Putumayo</span>
+              <span>&rarr;</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 6: FRACTURAS DEL SIGLO XX: BANANERAS Y BOGOTAZO -->
+    <section class="dossier-section" id="fracturas-siglo-xx">
+      <div class="chapter-eyebrow">Historia Social del Conflicto • Archivos Desclasificados</div>
+      <h2 class="chapter-title">Las Grandes Fracturas: Bananeras (1928), El Bogotazo (1948) y las Etapas de la Guerra</h2>
+      <p class="chapter-subtitle">
+        El paso de la violencia laboral y el enclave bananero de la United Fruit Company a la insurrección urbana del 9 de abril y la conformación de los ciclos contemporáneos de conflicto armado.
+      </p>
+
+      <div class="dossier-timeline">
+        <!-- 1928 Bananeras -->
+        <div class="timeline-node">
+          <div class="node-epoch">5 y 6 de Diciembre de 1928 • Ciénaga, Magdalena</div>
+          <h3 class="node-title">La Masacre de las Bananeras</h3>
+          <p class="node-text">
+            Más de 25.000 obreros de la United Fruit Company convocaron una huelga pacífica con un pliego de 9 puntos (seguro de accidentes, habitaciones higiénicas, descanso dominical, pago en dinero efectivo y supresión de enganchadores intermediarios). El general Carlos Cortés Vargas expidió el Decreto No. 1 declarando a los obreros "cuadrilla de malhechores" y ordenó a los nidos de ametralladoras abrir fuego contra la multitud reunida en la estación de Ciénaga.
+          </p>
+          <div class="timeline-content" data-drawer="drawer-bananeras" style="cursor:pointer; margin-top:0.75rem;">
+            <span style="color:var(--accent); font-weight:700; font-size:0.85rem;">Ver cables diplomáticos desclasificados de EE.UU. (NARA) &rarr;</span>
+          </div>
+        </div>
+
+        <!-- 1948 Bogotazo -->
+        <div class="timeline-node">
+          <div class="node-epoch">9 de Abril de 1948 • Carrera Séptima con Calle 14, Bogotá</div>
+          <h3 class="node-title">El Bogotazo y el Magnicidio de Jorge Eliécer Gaitán</h3>
+          <p class="node-text">
+            El asesinato a tiros del caudillo popular desató una insurrección masiva, saqueos y el incendio del centro histórico de Bogotá. Entre las pérdidas irreparables figuró el archivo colonial y el <em>Acta original de la Independencia de Colombia de 1810</em>, calcinada en el despacho del Ministerio de Gobierno. El suceso inauguró el periodo de La Violencia bipartidista armada (chulavitas, pájaros y contraguerrillas) que dejó más de 200.000 muertos en los campos.
+          </p>
+          <div class="timeline-content" data-drawer="drawer-bogotazo" style="cursor:pointer; margin-top:0.75rem;">
+            <span style="color:var(--accent); font-weight:700; font-size:0.85rem;">Explorar el acervo fotográfico de Sady González & archivos perdidos &rarr;</span>
+          </div>
+        </div>
+
+        <!-- 1958 - 2016 Etapas del Conflicto -->
+        <div class="timeline-node">
+          <div class="node-epoch">1958 - 2016 • Dinámica Estructural</div>
+          <h3 class="node-title">Las Etapas del Conflicto Armado Interno</h3>
+          <p class="node-text">
+            La transición inconclusa del Frente Nacional, el bombardeo a Marquetalia (1964) y el nacimiento de las guerrillas (FARC, ELN, EPL, M-19); la narcotización y el Estatuto de Seguridad en los 80 con el exterminio de la Unión Patriótica (+5.000 víctimas) y el holocausto del Palacio de Justicia (1985); la escalada de terror de las AUC y las masacres rurales en los 90; la crisis de los Falsos Positivos (6.402 ejecuciones extrajudiciales) en los 2000; y la firma del Acuerdo del Teatro Colón en 2016 con la creación del Sistema Integral para la Paz.
+          </p>
+          <div class="timeline-content" data-drawer="drawer-acuerdopaz" style="cursor:pointer; margin-top:0.75rem;">
+            <span style="color:var(--accent); font-weight:700; font-size:0.85rem;">Consultar arquitectura restaurativa (JEP, CEV, UBPD) &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 7: COMISIÓN DE LA VERDAD (10 TOMOS) -->
+    <section class="dossier-section" id="comision-verdad">
+      <div class="chapter-eyebrow">Esclarecimiento Histórico • Informe Final 'Hay Futuro si Hay Verdad'</div>
+      <h2 class="chapter-title">El Informe Final de la Comisión de la Verdad: Los 10 Tomos Desclasificados</h2>
+      <p class="chapter-subtitle">
+        Fruto de 27.300 entrevistas y la escucha rigurosa a más de 30.000 voces en toda Colombia y 24 países del exilio bajo la presidencia del Padre Francisco de Roux, el Informe Final sintetiza las causas estructurales y los impactos humanos de seis décadas de confrontación armada.
+      </p>
+
+      <div class="tomos-grid">
+        <!-- Tomo 1 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 01 • ÉTICA & NACIÓN</div>
+          <h4 class="tomo-title">Convocatoria a la Paz Grande</h4>
+          <p class="tomo-sub">Declaración ética a la sociedad colombiana sobre la convivencia con el dolor de 9 millones de víctimas.</p>
+          <div class="tomo-quote-pill">"Llegó la hora de mirarnos a los ojos y reconocernos en el sufrimiento de los otros."</div>
+        </div>
+
+        <!-- Tomo 2 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 02 • CAUSAS ESTRUCTURALES</div>
+          <h4 class="tomo-title">Hallazgos y Recomendaciones</h4>
+          <p class="tomo-sub">Los 4 factores de persistencia: doctrina del enemigo interno, cuestión agraria y despojo, narcotráfico e impunidad judicial.</p>
+          <div class="tomo-quote-pill">"La guerra fue alimentada por decisiones políticas y mezquindad económica."</div>
+        </div>
+
+        <!-- Tomo 3 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 03 • HISTORIA FORENSE</div>
+          <h4 class="tomo-title">No Matarás</h4>
+          <p class="tomo-sub">Relato histórico del conflicto armado (1958-2016): guerrillas, paramilitarismo y agentes estatales.</p>
+          <div class="tomo-quote-pill">"Nada, absolutamente nada, justifica el asesinato de un semejante."</div>
+        </div>
+
+        <!-- Tomo 4 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 04 • GRAVES INFRACCIONES</div>
+          <h4 class="tomo-title">Hasta la Guerra Tiene Límites</h4>
+          <p class="tomo-sub">Violaciones a DDHH y DIH: 4.237 masacres, desaparición forzada, secuestro, minas y tortura.</p>
+          <div class="tomo-quote-pill">"Trataron a los civiles no como conciudadanos, sino como piezas prescindibles."</div>
+        </div>
+
+        <!-- Tomo 5 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 05 • GEOGRAFÍA DEL DOLOR</div>
+          <h4 class="tomo-title">Colombia Adentro</h4>
+          <p class="tomo-sub">Dinámicas en 14 regiones: del Urabá y Magdalena Medio al Pacífico, Caguán y la Amazonía.</p>
+          <div class="tomo-quote-pill">"La guerra tuvo nombres de veredas y ríos por donde bajaban cadáveres."</div>
+        </div>
+
+        <!-- Tomo 6 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 06 • GÉNERO & DIVERSIDAD</div>
+          <h4 class="tomo-title">Mi Cuerpo es la Verdad</h4>
+          <p class="tomo-sub">Impactos de la violencia sexual, patriarcal y homofóbica contra mujeres y personas LGBTIQ+.</p>
+          <div class="tomo-quote-pill">"Desde estos mismos cuerpos rotos renació la fuerza más indestructible."</div>
+        </div>
+
+        <!-- Tomo 7 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 07 • PUEBLOS ÉTNICOS</div>
+          <h4 class="tomo-title">Resistir No es Aguantar</h4>
+          <p class="tomo-sub">Daño biocultural y riesgo de exterminio en más de 65 pueblos indígenas y comunidades afrodescendientes.</p>
+          <div class="tomo-quote-pill">"Cuando bombardean la selva o envenenan el río, matan el alma de nuestro pueblo."</div>
+        </div>
+
+        <!-- Tomo 8 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 08 • DIÁSPORA GLOBAL</div>
+          <h4 class="tomo-title">La Colombia Fuera de Colombia</h4>
+          <p class="tomo-sub">Hito mundial: primer tomo de una comisión de la verdad dedicado al exilio forzado en 40 países.</p>
+          <div class="tomo-quote-pill">"Llevar la patria en una maleta rota con el miedo impregnado en los huesos."</div>
+        </div>
+
+        <!-- Tomo 9 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 09 • NIÑEZ EN LA GUERRA</div>
+          <h4 class="tomo-title">No es un Mal Menor</h4>
+          <p class="tomo-sub">Reclutamiento forzado de niñas y niños, escuelas transformadas en trincheras y orfandad.</p>
+          <div class="tomo-quote-pill">"Cambiaron el cuaderno y el trompo por un fusil que pesaba más que sus brazos."</div>
+        </div>
+
+        <!-- Tomo 10 -->
+        <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
+          <div class="tomo-number">TOMO 10 • POLIFONÍA CORAL</div>
+          <h4 class="tomo-title">Cuando los Pájaros no Cantaban</h4>
+          <p class="tomo-sub">Relatos íntimos sin intermediación: el testimonio desnudo de víctimas, buscadoras y combatientes.</p>
+          <div class="tomo-quote-pill">"Cuando entraban al pueblo disparando, hasta los pájaros dejaban de cantar."</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 8: VOCES TESTIMONIALES CORALES -->
+    <section class="dossier-section">
+      <div class="chapter-eyebrow">Memoria Oral & Fuentes Primarias • Archivo Viviente</div>
+      <h2 class="chapter-title">Voces de Resistencia: El Testimonio Inquebrantable</h2>
+      <p class="chapter-subtitle">
+        Citas textuales de los protagonistas de la historia: diplomáticos, líderes comunitarios, cronistas y defensores de derechos humanos que se negaron al silencio.
+      </p>
+
+      <div class="testimonial-mosaic">
+        <!-- Casement -->
+        <div class="testimonial-block">
+          <div class="testimonial-quote">
+            "He visto las cicatrices en las espaldas y muslos de niños y mujeres, cicatrices tan gruesas como mi dedo pulgar, producidas por los azotes del látigo de piel de danta... Los crímenes de la Peruvian Amazon Company son de la especie más atroz."
+          </div>
+          <div class="testimonial-author">Sir Roger Casement</div>
+          <div class="testimonial-role">Cónsul General Británico • Informe al Parlamento (1911)</div>
+        </div>
+
+        <!-- José Eustasio Rivera -->
+        <div class="testimonial-block">
+          <div class="testimonial-quote">
+            "¡Juégueme usted la cabeza y verá si la gano! ¡Yo he sido cauchero, yo soy cauchero! Viví entre el lodo, en la sombra de los árboles que no dejan ver el cielo, y vi hombres colgados de los pies ardiendo en mechas de petróleo... ¡Los devoró la selva!"
+          </div>
+          <div class="testimonial-author">José Eustasio Rivera</div>
+          <div class="testimonial-role">Abogado e Investigador • 'La Vorágine' (1924)</div>
+        </div>
+
+        <!-- Abuelo Murui -->
+        <div class="testimonial-block">
+          <div class="testimonial-quote">
+            "El caucho era el llanto blanco del árbol, pero se volvió la sangre de nuestro pueblo. En el cepo se pudrieron los capitanes y los médicos tradicionales. Arana no trajo riqueza; trajo la noche más larga de la selva. Hoy el Predio Putumayo nos devuelve la vida."
+          </div>
+          <div class="testimonial-author">Abuelo Tradicional Murui-Muinane</div>
+          <div class="testimonial-role">Memoria de La Chorrera • Gran Resguardo Predio Putumayo</div>
+        </div>
+
+        <!-- María Cano -->
+        <div class="testimonial-block">
+          <div class="testimonial-quote">
+            "En Ciénaga no se sofocó una rebelión; se degolló la esperanza de la clase obrera colombiana. Los muertos de las bananeras no descansarán mientras una compañía extranjera siga dictando el destino y la sangre de nuestros campesinos."
+          </div>
+          <div class="testimonial-author">María Cano ('La Flor del Trabajo')</div>
+          <div class="testimonial-role">Pionera Sindicalista • Lucha Agraria (1929)</div>
+        </div>
+
+        <!-- Gaitán -->
+        <div class="testimonial-block">
+          <div class="testimonial-quote">
+            "Dolorosamente sabemos que en este país el gobierno tiene la metralla homicida para los hijos de la patria y la rodilla temblorosa en tierra ante el oro americano."
+          </div>
+          <div class="testimonial-author">Jorge Eliécer Gaitán</div>
+          <div class="testimonial-role">Debate sobre la Masacre de las Bananeras en el Congreso (1929)</div>
+        </div>
+
+        <!-- Francisco de Roux -->
+        <div class="testimonial-block">
+          <div class="testimonial-quote">
+            "Les decimos a las Fuerzas Militares, a las FARC, a los paramilitares, al Estado y a la clase política: ¡Paren ya la guerra! La verdad es un bien público universal que cura nuestras heridas si tenemos la valentía colectiva de abrazarla."
+          </div>
+          <div class="testimonial-author">Padre Francisco de Roux, S.J.</div>
+          <div class="testimonial-role">Presidente de la Comisión para el Esclarecimiento de la Verdad (2022)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 9: ARCHIVOS FACSIMILARES DESCLASIFICADOS -->
+    <section class="dossier-section" id="facsimiles">
+      <div class="chapter-eyebrow">Documentos de Archivo • Acervos Históricos Internacionales</div>
+      <h2 class="chapter-title">Expedientes Facsimilares: Los Documentos de la Verdad</h2>
+      <p class="chapter-subtitle">
+        Reproducción de piezas de archivo custodiadas en los Archivos Nacionales de Estados Unidos (NARA), The National Archives de Londres, el Archivo General de la Nación y la Gaceta Oficial de Colombia.
+      </p>
+
+      <div class="facsimile-showcase">
+        <!-- Cable Caffery NARA -->
+        <div class="facsimile-card">
+          <div class="facsimile-stamp">DESCLASIFICADO</div>
+          <div class="facsimile-source">NARA RG 59 • DECIMAL FILE 821.5045/125</div>
+          <h4 class="facsimile-title">Cable Confidencial de Jefferson Caffery sobre Bananeras</h4>
+          <p class="facsimile-excerpt">
+            "Tengo el honor de informar que el representante de la United Fruit Company en Bogotá me informó hoy que el número total de huelguistas muertos por las autoridades militares excedió de mil ('exceeded 1,000'). Añadió que los cuerpos fueron transportados en trenes y arrojados al mar Caribe..."
+          </p>
+          <div class="facsimile-citation">
+            <span>Fecha: 16 de enero de 1929</span>
+            <span>Legación de EE.UU. en Bogotá</span>
+          </div>
+        </div>
+
+        <!-- The Blue Book Casement -->
+        <div class="facsimile-card">
+          <div class="facsimile-stamp">PARLIAMENTARY BLUE BOOK</div>
+          <div class="facsimile-source">THE NATIONAL ARCHIVES (KEW) • FO 881/9924</div>
+          <h4 class="facsimile-title">Informe Oficial de Roger Casement sobre el Putumayo</h4>
+          <p class="facsimile-excerpt">
+            "Las atrocidades cometidas contra los indios no fueron excesos aislados, sino un método comercial deliberado para imponer el rendimiento máximo de látex bajo terror físico... Hombres y mujeres azotados hasta el hueso y colocados en el cepo durante semanas sin sustento."
+          </p>
+          <div class="facsimile-citation">
+            <span>Presentado al Parlamento: 1912</span>
+            <span>Foreign Office, Londres</span>
+          </div>
+        </div>
+
+        <!-- Resolución 030 INCORA -->
+        <div class="facsimile-card">
+          <div class="facsimile-stamp">REPARACIÓN HISTÓRICA</div>
+          <div class="facsimile-source">INSTITUTO COLOMBIANO DE LA REFORMA AGRARIA</div>
+          <h4 class="facsimile-title">Resolución No. 030 del 23 de Abril de 1988 (Predio Putumayo)</h4>
+          <p class="facsimile-excerpt">
+            "Extínguense a favor de la Nación los pretendidos derechos de dominio derivados de la Casa Arana y constitúyese el Gran Resguardo Indígena Predio Putumayo, con superficie aproximada de casi seis millones de hectáreas, con carácter de propiedad colectiva inalienable, imprescriptible e inembargable..."
+          </p>
+          <div class="facsimile-citation">
+            <span>Gobierno: Virgilio Barco Vargas</span>
+            <span>Diario Oficial de Colombia</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 10: GLOSARIO CIENTÍFICO Y DE MEMORIA -->
+    <section class="dossier-section" id="glosario-cientifico">
+      <div class="chapter-eyebrow">Aparato Crítico • Terminología Etnográfica & Forense</div>
+      <h2 class="chapter-title">Glosario Maestro de Ciencia, Arqueología y Derechos Humanos</h2>
+      <p class="chapter-subtitle">
+        Filtra en tiempo real los conceptos clave documentados en las investigaciones científicas de la Amazonía y los autos judiciales del Sistema Integral para la Paz.
+      </p>
+
+      <div class="glossary-filter-bar">
+        <input type="text" id="dossier-glossary-search" class="glossary-input" placeholder="Buscar término científico (ej. Biochar, DMT, Antrosol, PIAVI, TOAR, Curare)...">
+      </div>
+
+      <div class="glossary-grid" id="glossary-container">
+        <!-- 1 -->
+        <div class="term-card">
+          <div class="term-name">Antrosol (Anthrosol)</div>
+          <div class="term-domain">Pedología / Ciencia del Suelo</div>
+          <div class="term-def">Suelo mineral cuyas propiedades físico-químicas, horizonte superficial y fertilidad han sido creados deliberadamente por la actividad humana acumulada durante siglos (ej. Terra Preta do Índio).</div>
+        </div>
+        <!-- 2 -->
+        <div class="term-card">
+          <div class="term-name">Biochar (Biocarbón)</div>
+          <div class="term-domain">Biogeoquímica de Suelos</div>
+          <div class="term-def">Carbón vegetal producido por pirólisis anaeróbica lenta a 350-500°C con estructura de anillos aromáticos condensados $sp^2$ recalcitrantes que fijan carbono e intercambian cationes por milenios.</div>
+        </div>
+        <!-- 3 -->
+        <div class="term-card">
+          <div class="term-name">DMT (N,N-Dimetiltriptamina)</div>
+          <div class="term-domain">Neuropsicofarmacología</div>
+          <div class="term-def">Alcaloide indólico análogo de la serotonina que actúa como agonista selectivo de receptores 5-$HT_{2A}$ y modula la Red Neuronal por Defecto (DMN) al asociarse con inhibidores reversibles RIMA.</div>
+        </div>
+        <!-- 4 -->
+        <div class="term-card">
+          <div class="term-name">d-Tubocurarina</div>
+          <div class="term-domain">Anestesiología / Farmacología</div>
+          <div class="term-def">Alcaloide bencilisoquinolínico biscuaternario del curare que antagoniza receptores colinérgicos en la placa motriz, causando parálisis muscular flácida sin afectar la conciencia del paciente.</div>
+        </div>
+        <!-- 5 -->
+        <div class="term-card">
+          <div class="term-name">PIAVI</div>
+          <div class="term-domain">Derecho Internacional de los DDHH</div>
+          <div class="term-def">Pueblos Indígenas en Aislamiento y en Contacto Inicial que deciden ejercer su autodeterminación manteniéndose al margen de la sociedad mayoritaria para salvaguardar su integridad física y cultural.</div>
+        </div>
+        <!-- 6 -->
+        <div class="term-card">
+          <div class="term-name">Ríos Voladores (Flying Rivers)</div>
+          <div class="term-domain">Hidrometeorología & Climatología</div>
+          <div class="term-def">Megacorrientes troposféricas de vapor bombeadas por la evapotranspiración de la selva amazónica (20.000 M ton/día) que nutren de lluvia las cuencas de los ríos Magdalena y Cauca en los Andes.</div>
+        </div>
+        <!-- 7 -->
+        <div class="term-card">
+          <div class="term-name">Metilmercurio ([CH₃Hg]⁺)</div>
+          <div class="term-domain">Toxicología Ambiental</div>
+          <div class="term-def">Catión organometálico lipofílico formado por metilación bacteriana del mercurio vertido por dragas ilegales que se biomagnifica en la ictiofauna carnívora causando daño neurológico irreversible.</div>
+        </div>
+        <!-- 8 -->
+        <div class="term-card">
+          <div class="term-name">TOAR</div>
+          <div class="term-domain">Justicia Transicional (JEP)</div>
+          <div class="term-def">Trabajos, Obras y Actividades con Contenido Restaurador-Reparador que imponen sanciones propias a comparecientes del conflicto que reconozcan verdad y responsabilidad temprana.</div>
+        </div>
+        <!-- 9 -->
+        <div class="term-card">
+          <div class="term-name">Teriomorfismo</div>
+          <div class="term-domain">Arqueología & Antropología</div>
+          <div class="term-def">Adopción de rasgos anatómicos animales por figuras humanas en estado de trance chamánico, ejemplificado en la metamorfosis hombre-jaguar en el arte rupestre pleistocénico de Chiribiquete.</div>
+        </div>
+        <!-- 10 -->
+        <div class="term-card">
+          <div class="term-name">Hee Yaia Roberi</div>
+          <div class="term-domain">Patrimonio Inmaterial UNESCO</div>
+          <div class="term-def">Sistema de saberes chamánicos de los Chamanes del Jaguar de Yuruparí en el río Pirá Paraná para la gestión termodinámica y el equilibrio biológico de la selva amazónica.</div>
+        </div>
+      </div>
     </section>
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
-       ========================================== -->
+  <!-- =====================================================================
+       PLANTILLAS DETALLADAS (TEMPLATES PARA DRAWERS DE JS/MAIN.JS)
+       ===================================================================== -->
 
-  <!-- Plantilla Palacio -->
-  <template id="drawer-palacio">
-    <div class="document-badge">Archivo Judicial</div>
-    <h2 class="title-font">Toma del Palacio de Justicia</h2>
-    <p>
-      La pérdida de archivos durante el incendio de 1985 representó un vacío de verdad para decenas de investigaciones críticas de derechos humanos y narcotráfico en la época, afectando directamente la reconstrucción de la memoria de las víctimas.
+  <!-- Plantilla 1: Chiribiquete -->
+  <template id="drawer-chiribiquete">
+    <div class="document-badge" style="background:rgba(212,175,55,0.15); color:var(--accent);">Arqueología Pleistocénica</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">Serranía de Chiribiquete: Arqueometría y Fechamientos</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      Las dataciones radiocarbónicas por Espectrometría de Masas con Aceleradores (AMS) efectuadas sobre fogones estratigráficos cerrados arrojaron fechas concluyentes de <strong>19.510 ± 450 años AP</strong>, correspondientes al Último Máximo Glacial. El análisis mineralógico confirma el uso de óxidos de hierro (hematita $\alpha\text{-Fe}_2\text{O}_3$ y limonita) amalgamados con resinas terpénicas vegetales de copal (<em>Protium</em>), látex de moráceas y ceras de abejas meliponas, formando una reacción diagenética vítrea impermeable al lavado pluvial por milenios.
     </p>
+    <div class="stat-box" style="margin-bottom:1.5rem;">
+      <h4 class="title-font" style="color:var(--accent);">Inventario de Abrigos Rocosos Emblemáticos</h4>
+      <p style="font-size:0.85rem; color:#94a3b8; margin-bottom:1rem;">
+        • <strong>Abrigo del Arco:</strong> Alineación solsticial milimétrica del haz de luz diurno.<br>
+        • <strong>Abrigo de los Jaguares:</strong> Frisos de metamorfosis teriomórfica y felinos colosales.<br>
+        • <strong>Abrigo de los Chamanes:</strong> Figuras en hiperlordosis ritual e inhalación de yopo.<br>
+        • <strong>La Lindosa (Cerro Azul):</strong> Friso continuo de 50 metros con megafauna pleistocénica.
+      </p>
+    </div>
   </template>
 
-  <!-- Plantilla Acuerdo -->
-  <template id="drawer-acuerdopaz">
-    <div class="document-badge">Acuerdo Final</div>
-    <h2 class="title-font">Justicia Transicional</h2>
-    <p>
-      El Sistema Integral de Verdad, Justicia, Reparación y No Repetición (SIVJRNR) ha sistematizado más de 3 millones de documentos sobre víctimas del conflicto armado colombiano en zonas de colonización agrícola.
-    </p>
-  </template>
-
-  <!-- Plantilla Leyes -->
-  <template id="drawer-leyes">
-    <div class="document-badge">Legislación de Derechos Humanos</div>
-    <h2 class="title-font">Privacidad vs. Memoria</h2>
-    <p>
-      El principal dilema jurídico radica en cómo equilibrar el derecho a la verdad consagrado en la Constitución de 1991 con la Ley 1581 de 2012 de Habeas Data, la cual prohíbe la difusión pública de nombres o testimonios de víctimas de agresiones físicas o de género sin consentimiento expreso.
-    </p>
-  </template>
-
-  <!-- Plantilla Verdad -->
-  <template id="drawer-verdad">
-    <div class="document-badge">Legado Transmedia</div>
-    <h2 class="title-font">La Comisión de la Verdad</h2>
-    <p>
-      La Comisión de la Verdad (CEV) recolectó miles de testimonios individuales y colectivos a lo largo de todo el territorio nacional, estructurando un archivo transmedia digital único para educar a las futuras generaciones sobre el valor de la convivencia pacífica.
-    </p>
-    <img src="assets/images/memoria_paz.png" alt="Ilustración conceptual de memoria, esperanza, paz y reconciliación en Colombia">
-    <p>
-      El informe final está compuesto por 10 tomos temáticos (incluyendo tomos específicos sobre mujeres, minorías étnicas e impactos territoriales en el campo).
+  <!-- Plantilla 2: Terra Preta -->
+  <template id="drawer-terrapreta">
+    <div class="document-badge" style="background:rgba(46,204,113,0.15); color:#2ecc71;">Edafología Molecular</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">Terra Preta do Índio: Edafología & Bioingeniería</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      Los antrosoles de Terra Preta representan el sumidero de carbono geológico más duradero creado por la humanidad. Su horizonte A melánico de hasta 2 metros de profundidad posee un pH neutro (6.0 a 6.8), eliminando la toxicidad del aluminio. Cada hectárea contiene entre 10 y 30 toneladas de fragmentos cerámicos triturados que previenen la compactación y aportan canales de drenaje, complementados por bioapatita cálcica ($\text{Ca}_{10}(\text{PO}_4)_6(\text{OH})_2$) proveniente de espinas de pescado y tortugas charapa (<em>Podocnemis expansa</em>).
     </p>
     <div class="stat-box">
-      <h4 class="title-font">Estadísticas del Proceso de Esclarecimiento (CEV)</h4>
-      <div class="chart-container">
+      <h4 class="title-font" style="color:var(--accent);">Excavaciones en Araracuara (Río Caquetá)</h4>
+      <p style="font-size:0.85rem; color:#94a3b8;">
+        Investigaciones pioneras de Santiago Mora, Luisa Fernanda Herrera e Inés Cavelier documentaron terrazas aluviales con más de 50 hectáreas de Terra Preta continua, con dataciones del 800 d.C. al 1500 d.C. dedicadas al monocultivo sostenido de maíz y palma de chontaduro (<em>Bactris gasipaes</em>).
+      </p>
+    </div>
+  </template>
+
+  <!-- Plantilla 3: PIAVI -->
+  <template id="drawer-piavi">
+    <div class="document-badge" style="background:rgba(56,189,248,0.15); color:#38bdf8;">Derechos Étnicos</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">Pueblos Indígenas en Aislamiento Voluntario</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      El Parque Nacional Natural Río Puré (999.880 ha) fue creado en 2002 con el fin exclusivo de proteger a los pueblos Yuri, Passé y grupos no identificados. En 2012, el etnohistoriador Roberto Franco García publicó <em>Cariba Malo</em>, desenmascarando el error colonial que los llamaba "salvajes Carabayo" y probando su linaje Yuri.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font" style="color:var(--accent);">Decreto Ley 1232 de 2018</h4>
+      <p style="font-size:0.85rem; color:#94a3b8;">
+        Consagra el Sistema Nacional de Prevención y Protección Integral para los Pueblos en Aislamiento, estipulando la intangibilidad territorial absoluta y prohibiendo de forma taxativa cualquier plan de contacto forzado o exploración minero-energética.
+      </p>
+    </div>
+  </template>
+
+  <!-- Plantilla 4: Genocidio Cauchero -->
+  <template id="drawer-genocidio-arana">
+    <div class="document-badge" style="background:rgba(192,57,43,0.15); color:#e74c3c;">Memoria Forense</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">El Genocidio de la Casa Arana (1885-1925)</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      La Peruvian Amazon Company Ltd., fundada por Julio César Arana y financiada en la City de Londres, administró las estaciones de La Chorrera y El Encanto. El sistema de endeudamiento forzoso y 'correrías' exterminó a más de 50.000 indígenas Murui, Bora, Andoque y Ocaina. Quienes no cumplían la cuota trimestral de caucho eran azotados con reatas de manatí o encerrados en el <em>cepo</em> hasta morir.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font" style="color:var(--accent);">El Libro Azul de Roger Casement (1912)</h4>
+      <p style="font-size:0.85rem; color:#94a3b8;">
+        Informe presentado ante la Cámara de los Comunes británica con testimonios jurados de mercenarios de Barbados. Desembocó en la disolución judicial obligatoria de la compañía en Londres y la denuncia consagrada por José Eustasio Rivera en <em>La Vorágine</em> (1924).
+      </p>
+    </div>
+  </template>
+
+  <!-- Plantilla 5: Predio Putumayo -->
+  <template id="drawer-predio-putumayo">
+    <div class="document-badge" style="background:rgba(46,204,113,0.15); color:#2ecc71;">Restitución Territorial</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">Gran Resguardo Indígena Predio Putumayo</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      La Resolución 030 de 1988 del INCORA extinguió las pretensiones privadas sobre 5.836.990 hectáreas entre los ríos Caquetá y Putumayo, otorgando propiedad colectiva e inalienable a las comunidades Murui, Bora, Andoque, Ocaina, Muinane, Nonuya y Carijona. Este megabloque es la columna del Corredor Triple A (Andes-Amazonía-Atlántico), cuyos árboles bombean 20.000 millones de toneladas de vapor de agua por día que nutren de lluvia a los páramos andinos y las ciudades de Colombia.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font" style="color:var(--accent);">Amenazas Contemporáneas Documentadas</h4>
+      <p style="font-size:0.85rem; color:#94a3b8;">
+        Minería aluvial de oro con dragas clandestinas que vierten mercurio elemental transformado en ion metilmercurio ($[CH_3Hg]^+$), con concentraciones de 15 a 45 ppm en cabello indígena (umbral OMS: 1.0 ppm), generando estragos neurológicos y síndrome de Minamata.
+      </p>
+    </div>
+  </template>
+
+  <!-- Plantilla 6: Bananeras -->
+  <template id="drawer-bananeras">
+    <div class="document-badge" style="background:rgba(243,156,18,0.15); color:var(--accent);">Lucha Agraria & Archivo NARA</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">La Masacre de las Bananeras (1928)</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      La huelga de más de 25.000 trabajadores contra la United Fruit Company exigía contrato directo, jornada dominical y pago en efectivo. En la madrugada del 6 de diciembre de 1928, en la plaza de la estación de Ciénaga, tropas militares dispararon ráfagas continuas de ametralladora contra la multitud desarmada.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font" style="color:var(--accent);">Los Despachos Diplomáticos Secretos (NARA RG 59)</h4>
+      <p style="font-size:0.85rem; color:#94a3b8;">
+        Los cables confidenciales del ministro estadounidense Jefferson Caffery reportaron a Washington que fuentes directas de la United Fruit Company admitieron más de 1.000 trabajadores muertos arrojados al mar y fosas comunes, desmintiendo la cifra oficial del gobierno colombiano de solo 9 fallecidos.
+      </p>
+    </div>
+  </template>
+
+  <!-- Plantilla 7: Bogotazo -->
+  <template id="drawer-bogotazo">
+    <div class="document-badge" style="background:rgba(192,57,43,0.15); color:#e74c3c;">Magnicidio & Archivos Perdidos</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">El Bogotazo y la Pérdida del Acta de 1810</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      El 9 de abril de 1948, el asesinato de Jorge Eliécer Gaitán desató la destrucción armada de Bogotá. Entre las pérdidas irreparables se encontró el ejemplar original manuscrito del <em>Acta de Independencia del 20 de julio de 1810</em>, consumida en el incendio del Palacio de Justicia y el Ministerio de Gobierno, así como expedientes penales y notariales centenarios.
+    </p>
+  </template>
+
+  <!-- Plantilla 8: Los 10 Tomos de la CEV -->
+  <template id="drawer-tomos-cev">
+    <div class="document-badge" style="background:rgba(46,134,193,0.15); color:var(--accent);">Comisión de la Verdad</div>
+    <h2 class="title-font" style="color:#fff; margin-bottom:0.75rem;">El Informe Final: 10 Tomos para el Futuro</h2>
+    <p style="font-size:0.95rem; line-height:1.7; color:#cbd5e1; margin-bottom:1.5rem;">
+      Presentado el 28 de junio de 2022 por el Padre Francisco de Roux tras escuchar a más de 30.000 víctimas. Sus 10 tomos abarcan desde la ética pública y las dinámicas regionales hasta el impacto en minorías étnicas, infancias reclutadas y el tomo pionero sobre el exilio forzado.
+    </p>
+    <div class="stat-box">
+      <h4 class="title-font" style="color:var(--accent);">Estadísticas Globales del Proceso de Esclarecimiento</h4>
+      <div class="chart-container" style="margin-top:1rem;">
         <div class="chart-bar-group">
           <div class="chart-bar-label">
-            <span>Testimonios individuales recolectados</span>
-            <span>~28.000 voces</span>
+            <span>Entrevistas individuales y colectivas</span>
+            <span>27.300 entrevistas</span>
           </div>
           <div class="chart-bar-bg">
             <div class="chart-bar-fill" data-width="95"></div>
@@ -170,24 +1631,95 @@
         </div>
         <div class="chart-bar-group">
           <div class="chart-bar-label">
-            <span>Organizaciones sociales aliadas</span>
-            <span>~3.000 colectivos</span>
+            <span>Países del exilio alcanzados</span>
+            <span>24 naciones</span>
           </div>
           <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="70"></div>
+            <div class="chart-bar-fill" data-width="80"></div>
+          </div>
+        </div>
+        <div class="chart-bar-group">
+          <div class="chart-bar-label">
+            <span>Informes y casos temáticos recibidos</span>
+            <span>1.925 acervos</span>
+          </div>
+          <div class="chart-bar-bg">
+            <div class="chart-bar-fill" data-width="88"></div>
           </div>
         </div>
       </div>
     </div>
   </template>
 
+  <!-- Plantillas Preexistentes para mantener retrocompatibilidad total -->
+  <template id="drawer-palacio">
+    <div class="document-badge">Archivo Judicial</div>
+    <h2 class="title-font">Toma del Palacio de Justicia (1985)</h2>
+    <p>
+      El asalto del M-19 y la retoma militar provocaron el incendio de miles de expedientes de extradición y narcotráfico, representando una de las pérdidas documentales más críticas del siglo XX.
+    </p>
+  </template>
+
+  <template id="drawer-acuerdopaz">
+    <div class="document-badge">Acuerdo del Colón</div>
+    <h2 class="title-font">El Sistema Integral para la Paz (JEP, CEV, UBPD)</h2>
+    <p>
+      Estructura de justicia restaurativa centrada en las víctimas. La JEP ha investigado macrocasos históricos (Falsos Positivos con 6.402 víctimas registradas, secuestro y reclutamiento ilícito), mientras la UBPD lidera la búsqueda de más de 104.000 desaparecidos.
+    </p>
+  </template>
+
+  <template id="drawer-leyes">
+    <div class="document-badge">Legislación de Derechos Humanos</div>
+    <h2 class="title-font">Privacidad vs. Memoria Histórica</h2>
+    <p>
+      El dilema jurídico entre el derecho constitucional a la verdad y la Ley 1581 de 2012 de Habeas Data para proteger la seguridad de los sobrevivientes sin censurar la verdad forense.
+    </p>
+  </template>
+
+  <template id="drawer-verdad">
+    <div class="document-badge">Legado Transmedia</div>
+    <h2 class="title-font">La Plataforma Transmedia de la CEV</h2>
+    <p>
+      Repositorio interactivo de acceso público con más de 15.000 horas de testimonios, cartografía del conflicto y recursos pedagógicos entregados al Archivo General de la Nación.
+    </p>
+  </template>
+
+  <!-- ==========================================
+       PIE DE PÁGINA INSTITUCIONAL
+       ========================================== -->
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Sección: Memoria y Paz.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Los datos y citas proceden del Legado Digital de la Comisión para el Esclarecimiento de la Verdad y la Jurisdicción Especial para la Paz.
+    <p>&copy; 2026 Colombianopedia • Dossier Especial: Memoria, Verdad y Secretos de la Amazonía.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.75;">
+      Fuentes Primarias: Instituto SINCHI • Parques Nacionales Naturales de Colombia • ICANH • Centro Nacional de Memoria Histórica • Legado Digital de la Comisión de la Verdad • Jurisdicción Especial para la Paz • The National Archives (Kew) • NARA (College Park).
     </p>
   </footer>
 
+  <!-- Scripts del Portal -->
   <script src="js/main.js"></script>
+
+  <!-- Script interactivo específico del Dossier para filtrado del Glosario -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const searchInput = document.getElementById('dossier-glossary-search');
+      const cards = document.querySelectorAll('#glossary-container .term-card');
+
+      if (searchInput && cards.length > 0) {
+        searchInput.addEventListener('input', (e) => {
+          const q = e.target.value.toLowerCase().trim();
+          cards.forEach(card => {
+            const name = card.querySelector('.term-name').textContent.toLowerCase();
+            const domain = card.querySelector('.term-domain').textContent.toLowerCase();
+            const def = card.querySelector('.term-def').textContent.toLowerCase();
+
+            if (name.includes(q) || domain.includes(q) || def.includes(q)) {
+              card.style.display = 'block';
+            } else {
+              card.style.display = 'none';
+            }
+          });
+        });
+      }
+    });
+  </script>
 </body>
 </html>

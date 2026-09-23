@@ -3,15 +3,940 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo de Culturas Prehispánicas - Colombia en el Tiempo</title>
-  <meta name="description" content="Catálogo completo de todas las culturas prehispánicas registradas en Colombia: Tumaco, Calima, Guane, Wayuu, San Agustín y más.">
+  <title>Gran Atlas Vivo de las 115 Naciones Indígenas - Colombianopedia</title>
+  <meta name="description" content="Atlas enciclopédico vivo de las 115 naciones indígenas originarias de Colombia: cosmovisiones, farmacopea ancestral, tecnologías de cultivo, arquitectura sagrada, resistencia y derechos constitucionales.">
   
   <link rel="stylesheet" href="css/style.css?v=1.2">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    /* ==========================================
+       ESTILOS DEL GRAN ATLAS INDÍGENA VIVO
+       ========================================== */
+
+    /* Corrección de maquetación: garantiza que el encabezado nunca solape el título */
+    .atlas-container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 2rem 2rem 5rem 2rem;
+      padding-top: calc(90px + 2rem);
+      min-height: calc(100vh - 160px);
+    }
+
+    @media (max-width: 768px) {
+      .atlas-container {
+        padding-top: calc(125px + 1.5rem);
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+
+    /* Hero específico del Atlas */
+    .atlas-hero {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .atlas-hero h1 {
+      font-family: var(--font-title);
+      font-size: 3.2rem;
+      line-height: 1.15;
+      margin: 0.8rem 0 1rem 0;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .atlas-hero p {
+      max-width: 860px;
+      margin: 0 auto 1.8rem auto;
+      font-size: 1.12rem;
+      line-height: 1.7;
+      color: var(--text-secondary);
+    }
+
+    @media (max-width: 768px) {
+      .atlas-hero h1 {
+        font-size: 2.1rem;
+      }
+      .atlas-hero p {
+        font-size: 0.98rem;
+      }
+    }
+
+    /* Franja de Métricas y Estadísticas Nacionales */
+    .atlas-stats-strip {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .atlas-stat-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(var(--bg-secondary-rgb), 0.7);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-card);
+      border-radius: 50px;
+      padding: 0.55rem 1.25rem;
+      font-size: 0.88rem;
+      color: var(--text-secondary);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .atlas-stat-pill strong {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    /* ==========================================
+       PANEL DE CONTROLES: BÚSQUEDA Y FILTROS
+       ========================================== */
+    .atlas-controls-panel {
+      background: rgba(var(--bg-secondary-rgb), 0.75);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+      border: 1px solid var(--border-card);
+      border-radius: 16px;
+      padding: 1.8rem;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Buscador Predictivo en Vivo */
+    .atlas-search-wrapper {
+      position: relative;
+      margin-bottom: 1.5rem;
+    }
+
+    .atlas-search-icon {
+      position: absolute;
+      left: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.25rem;
+      color: var(--accent);
+      pointer-events: none;
+    }
+
+    .atlas-search-input {
+      width: 100%;
+      padding: 1rem 3.5rem 1rem 3.2rem;
+      font-size: 1.05rem;
+      font-family: var(--font-text);
+      color: var(--text-primary);
+      background: rgba(0, 0, 0, 0.35);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      outline: none;
+      transition: all 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    .atlas-search-input:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 18px rgba(var(--accent-rgb), 0.3);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .atlas-search-clear {
+      position: absolute;
+      right: 1.2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      background: transparent;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 1.3rem;
+      cursor: pointer;
+      display: none;
+      transition: color 0.2s ease;
+    }
+
+    .atlas-search-clear:hover {
+      color: var(--accent);
+    }
+
+    /* Pills de Región Natural */
+    .atlas-filter-group {
+      margin-bottom: 1.2rem;
+    }
+
+    .atlas-filter-label {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-secondary);
+      margin-bottom: 0.6rem;
+      font-weight: 600;
+    }
+
+    .atlas-region-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+    }
+
+    .atlas-region-pill {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-card);
+      color: var(--text-secondary);
+      padding: 0.55rem 1.15rem;
+      border-radius: 30px;
+      font-size: 0.88rem;
+      font-family: var(--font-text);
+      cursor: pointer;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .atlas-region-pill:hover {
+      background: rgba(var(--accent-rgb), 0.1);
+      border-color: var(--accent);
+      color: var(--text-primary);
+    }
+
+    .atlas-region-pill.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #100804;
+      font-weight: 600;
+      box-shadow: 0 3px 12px rgba(var(--accent-rgb), 0.4);
+    }
+
+    /* Filtro Secundario por Familia Lingüística */
+    .atlas-secondary-filters {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-top: 1rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .atlas-family-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .atlas-family-select {
+      flex: 1;
+      padding: 0.65rem 1rem;
+      background: rgba(0, 0, 0, 0.4);
+      border: 1px solid var(--border-card);
+      border-radius: 8px;
+      color: var(--text-primary);
+      font-family: var(--font-text);
+      font-size: 0.9rem;
+      outline: none;
+      cursor: pointer;
+      transition: border-color 0.25s ease;
+    }
+
+    .atlas-family-select:focus {
+      border-color: var(--accent);
+    }
+
+    .atlas-results-summary {
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .atlas-results-badge {
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .atlas-btn-reset-small {
+      background: transparent;
+      border: 1px solid var(--border-card);
+      color: var(--text-secondary);
+      padding: 0.4rem 0.8rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .atlas-btn-reset-small:hover {
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--text-primary);
+      border-color: var(--accent);
+    }
+
+    /* ==========================================
+       INDICADOR DE CARGA ASÍNCRONA
+       ========================================== */
+    .atlas-loading-wrapper {
+      text-align: center;
+      padding: 4rem 1rem;
+      transition: opacity 0.4s ease;
+    }
+
+    .atlas-spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(var(--accent-rgb), 0.2);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: atlas-spin 1s linear infinite;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    @keyframes atlas-spin {
+      to { transform: rotate(360deg); }
+    }
+
+    .atlas-loading-text {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+    }
+
+    /* ==========================================
+       GRILLA DE TARJETAS CULTURALES (GLASSMORPHISM)
+       ========================================== */
+    .atlas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+      gap: 1.6rem;
+    }
+
+    @media (max-width: 600px) {
+      .atlas-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .atlas-card {
+      background: rgba(var(--bg-secondary-rgb), 0.65);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid var(--border-card);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+    }
+
+    .atlas-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .atlas-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(var(--accent-rgb), 0.4);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+    }
+
+    .atlas-card:hover::before {
+      opacity: 1;
+    }
+
+    .atlas-card-header {
+      margin-bottom: 1rem;
+    }
+
+    .atlas-card-title-group {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .atlas-card-num {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--accent);
+      opacity: 0.8;
+      letter-spacing: 0.05em;
+    }
+
+    .atlas-card-title {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      line-height: 1.25;
+      color: var(--text-primary);
+      margin: 0;
+      flex: 1;
+    }
+
+    .atlas-card-vernacular {
+      font-size: 0.88rem;
+      color: var(--accent-secondary);
+      font-style: italic;
+      margin-top: 0.25rem;
+    }
+
+    .atlas-card-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1rem;
+    }
+
+    .atlas-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      padding: 0.25rem 0.65rem;
+      border-radius: 6px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      line-height: 1.2;
+    }
+
+    .atlas-badge-family {
+      background: rgba(var(--accent-rgb), 0.12);
+      color: var(--accent);
+      border: 1px solid rgba(var(--accent-rgb), 0.25);
+    }
+
+    .atlas-badge-region {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+      border: 1px solid var(--border-card);
+    }
+
+    .atlas-badge-warning {
+      background: rgba(176, 58, 46, 0.15);
+      color: #e74c3c;
+      border: 1px solid rgba(176, 58, 46, 0.3);
+      font-weight: 600;
+    }
+
+    .atlas-card-meta {
+      background: rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      padding: 0.8rem;
+      margin-bottom: 1.2rem;
+      font-size: 0.83rem;
+    }
+
+    .atlas-meta-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .atlas-meta-row:last-child {
+      margin-bottom: 0;
+    }
+
+    .atlas-meta-label {
+      color: var(--text-secondary);
+      font-size: 0.72rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .atlas-meta-value {
+      color: var(--text-primary);
+      font-weight: 500;
+    }
+
+    .atlas-card-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding-top: 0.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .atlas-btn-explore {
+      background: transparent;
+      border: none;
+      color: var(--accent);
+      font-size: 0.88rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.25s ease;
+      padding: 0;
+    }
+
+    .atlas-card:hover .atlas-btn-explore {
+      gap: 0.7rem;
+    }
+
+    /* Estado vacío */
+    .atlas-empty-state {
+      grid-column: 1 / -1;
+      text-align: center;
+      padding: 5rem 1.5rem;
+      background: rgba(var(--bg-secondary-rgb), 0.4);
+      border: 1px dashed var(--border-card);
+      border-radius: 16px;
+    }
+
+    .atlas-empty-icon {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      opacity: 0.7;
+    }
+
+    .atlas-empty-state h3 {
+      font-family: var(--font-title);
+      color: var(--text-primary);
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .atlas-empty-state p {
+      color: var(--text-secondary);
+      max-width: 500px;
+      margin: 0 auto 1.5rem auto;
+    }
+
+    /* Resaltado de coincidencias en vivo */
+    mark.atlas-highlight {
+      background: rgba(var(--accent-rgb), 0.35);
+      color: #fff;
+      font-weight: 600;
+      padding: 0 3px;
+      border-radius: 3px;
+    }
+
+    /* ==========================================
+       PANEL DESLIZANTE LATERAL (DRAWER MONOGRÁFICO)
+       ========================================== */
+    .atlas-drawer-backdrop {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(6px);
+      -webkit-backdrop-filter: blur(6px);
+      z-index: 1040;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.35s ease;
+    }
+
+    .atlas-drawer-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .atlas-monograph-drawer {
+      position: fixed;
+      top: 0;
+      right: -750px;
+      width: 720px;
+      max-width: 95vw;
+      height: 100vh;
+      background: rgba(18, 11, 7, 0.98);
+      backdrop-filter: blur(28px);
+      -webkit-backdrop-filter: blur(28px);
+      border-left: 1px solid var(--border-card);
+      z-index: 1050;
+      transition: right 0.42s cubic-bezier(0.165, 0.84, 0.44, 1);
+      display: flex;
+      flex-direction: column;
+      box-shadow: -15px 0 45px rgba(0, 0, 0, 0.75);
+    }
+
+    [data-reading-mode="pergamino"] .atlas-monograph-drawer {
+      background: rgba(246, 238, 227, 0.98);
+    }
+
+    .atlas-monograph-drawer.open {
+      right: 0;
+    }
+
+    /* Bloqueo de scroll cuando el drawer está activo */
+    body.atlas-drawer-open {
+      overflow: hidden;
+    }
+
+    /* Cabecera del Drawer */
+    .atlas-drawer-header {
+      padding: 2.2rem 2.2rem 1.2rem 2.2rem;
+      border-bottom: 1px solid var(--border-card);
+      position: relative;
+      flex-shrink: 0;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .atlas-drawer-close-btn {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-card);
+      color: var(--text-secondary);
+      font-size: 1.6rem;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      line-height: 1;
+    }
+
+    .atlas-drawer-close-btn:hover {
+      background: rgba(var(--accent-rgb), 0.2);
+      color: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .atlas-drawer-title {
+      font-family: var(--font-title);
+      font-size: 2rem;
+      line-height: 1.15;
+      color: var(--text-primary);
+      margin: 0 0 0.4rem 0;
+      padding-right: 2.5rem;
+    }
+
+    .atlas-drawer-vernacular {
+      font-size: 1.1rem;
+      color: var(--accent-secondary);
+      font-style: italic;
+      margin-bottom: 0.8rem;
+    }
+
+    .atlas-drawer-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .atlas-drawer-meta-chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+    }
+
+    .atlas-drawer-chip strong {
+      color: var(--text-primary);
+    }
+
+    /* Pestañas del Drawer (6 tabs requeridas) */
+    .atlas-drawer-tabs-nav {
+      display: flex;
+      overflow-x: auto;
+      gap: 0.2rem;
+      padding: 0 1.5rem;
+      background: rgba(0, 0, 0, 0.35);
+      border-bottom: 1px solid var(--border-card);
+      flex-shrink: 0;
+      scrollbar-width: thin;
+    }
+
+    .atlas-drawer-tab {
+      background: transparent;
+      border: none;
+      border-bottom: 3px solid transparent;
+      color: var(--text-secondary);
+      padding: 0.9rem 1.1rem;
+      font-family: var(--font-text);
+      font-size: 0.88rem;
+      font-weight: 500;
+      cursor: pointer;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: all 0.2s ease;
+    }
+
+    .atlas-drawer-tab:hover {
+      color: var(--text-primary);
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .atlas-drawer-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+      font-weight: 600;
+      background: rgba(var(--accent-rgb), 0.05);
+    }
+
+    /* Contenedor del Contenido de Pestaña */
+    .atlas-drawer-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 2.2rem;
+    }
+
+    .atlas-tab-title {
+      font-family: var(--font-title);
+      font-size: 1.5rem;
+      color: var(--text-primary);
+      margin: 0 0 1.5rem 0;
+      border-bottom: 1px solid var(--border-card);
+      padding-bottom: 0.6rem;
+    }
+
+    /* Tarjetas de profundidad monográfica */
+    .atlas-monograph-card {
+      background: rgba(var(--bg-secondary-rgb), 0.5);
+      border: 1px solid var(--border-card);
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .atlas-monograph-card h4 {
+      font-family: var(--font-title);
+      font-size: 1.15rem;
+      color: var(--accent);
+      margin: 0 0 0.8rem 0;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .atlas-monograph-card p {
+      color: var(--text-secondary);
+      font-size: 0.98rem;
+      line-height: 1.75;
+      margin-bottom: 0.8rem;
+    }
+
+    .atlas-monograph-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    .atlas-subfield {
+      margin-bottom: 1rem;
+    }
+
+    .atlas-subfield strong {
+      color: var(--text-primary);
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.92rem;
+    }
+
+    .atlas-subfield p {
+      color: var(--text-secondary);
+      margin: 0;
+    }
+
+    .atlas-bullet-list {
+      margin: 0;
+      padding-left: 1.4rem;
+      color: var(--text-secondary);
+    }
+
+    .atlas-bullet-list li {
+      margin-bottom: 0.4rem;
+      line-height: 1.6;
+    }
+
+    /* Grid de características para tecnologías y arquitectura */
+    .atlas-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .atlas-feature-box {
+      background: rgba(0, 0, 0, 0.3);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 10px;
+      padding: 1.2rem;
+    }
+
+    .atlas-feature-box strong {
+      color: var(--accent);
+      display: block;
+      margin-bottom: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .atlas-feature-box p {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin: 0;
+      color: var(--text-secondary);
+    }
+
+    /* Tablas de Farmacopea y Botánica */
+    .atlas-table-responsive {
+      overflow-x: auto;
+      margin-top: 1rem;
+      border: 1px solid var(--border-card);
+      border-radius: 10px;
+    }
+
+    .atlas-data-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.88rem;
+      text-align: left;
+    }
+
+    .atlas-data-table th {
+      background: rgba(0, 0, 0, 0.5);
+      color: var(--accent);
+      padding: 0.8rem 1rem;
+      font-weight: 600;
+      border-bottom: 1px solid var(--border-card);
+      white-space: nowrap;
+    }
+
+    .atlas-data-table td {
+      padding: 0.85rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      color: var(--text-secondary);
+      line-height: 1.5;
+    }
+
+    .atlas-data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* Alertas de Protección y Derechos */
+    .atlas-alert-box {
+      border-radius: 10px;
+      padding: 1.25rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .atlas-alert-warning {
+      background: rgba(176, 58, 46, 0.15);
+      border: 1px solid rgba(176, 58, 46, 0.35);
+    }
+
+    .atlas-alert-warning h4 {
+      color: #e74c3c;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.05rem;
+    }
+
+    .atlas-alert-warning p {
+      color: #f5b7b1;
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    .atlas-alert-info {
+      background: rgba(46, 134, 193, 0.12);
+      border: 1px solid rgba(46, 134, 193, 0.3);
+    }
+
+    .atlas-alert-info h4 {
+      color: #5dade2;
+      margin: 0 0 0.5rem 0;
+      font-size: 1.05rem;
+    }
+
+    .atlas-alert-info p {
+      color: #d4e6f1;
+      margin: 0;
+      font-size: 0.92rem;
+      line-height: 1.6;
+    }
+
+    /* Línea de tiempo de líderes */
+    .atlas-timeline-list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-top: 1rem;
+    }
+
+    .atlas-timeline-entry {
+      background: rgba(0, 0, 0, 0.25);
+      border-left: 3px solid var(--accent);
+      padding: 0.9rem 1.2rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .atlas-timeline-entry strong {
+      display: block;
+      color: var(--text-primary);
+      margin: 0.4rem 0 0.3rem 0;
+      font-size: 1rem;
+    }
+
+    .atlas-timeline-entry p {
+      font-size: 0.88rem;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .atlas-code-block {
+      background: rgba(0, 0, 0, 0.4);
+      padding: 0.8rem;
+      border-radius: 6px;
+      font-size: 0.8rem;
+      color: var(--accent);
+      overflow-x: auto;
+    }
+
+    .atlas-mini-spinner {
+      width: 25px;
+      height: 25px;
+      border: 2px solid rgba(var(--accent-rgb), 0.2);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      animation: atlas-spin 0.8s linear infinite;
+      margin-bottom: 0.8rem;
+    }
+
+    .atlas-tab-loading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1rem;
+      color: var(--text-secondary);
+    }
+  </style>
 </head>
 <body data-theme="precolombina">
 
-  <!-- Encabezado Común -->
+  <!-- ==========================================
+       ENCABEZADO COMÚN DEL PORTAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -36,224 +961,206 @@
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
           <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
           <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
-          <a href="otras-culturas.html">Catálogo de Culturas</a>
+          <a href="otras-culturas.html" style="color: var(--accent); font-weight: 600;">Gran Atlas Indígena</a>
           <a href="ciudades-historicas.html">Ciudades y Nombres</a>
         </div>
       </div>
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
-        Arqueología y Legado
+  <!-- ==========================================
+       CONTENIDO PRINCIPAL DEL GRAN ATLAS
+       ========================================== -->
+  <main class="atlas-container">
+
+    <!-- Sección Hero del Atlas -->
+    <section class="atlas-hero" id="hero-section">
+      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent); display: inline-flex; margin-bottom: 0.8rem;">
+        Atlas Etnográfico Nacional / 115 Naciones Originarias
       </div>
-      <h1>Catálogo de Culturas Precolombinas</h1>
-      <p>Un inventario exhaustivo de las civilizaciones, sociedades y cacicazgos que habitaron el territorio colombiano antes del siglo XVI. Haz clic en las fichas para explorar sus costumbres, territorios y piezas de arte.</p>
+      <h1>Gran Atlas Vivo de los Pueblos Indígenas</h1>
+      <p>
+        Un inventario interactivo, riguroso y exhaustivo de las <strong>115 naciones originarias</strong> de Colombia reconocidas por la Constitución y la jurisprudencia constitucional. Explora en vivo sus cosmovisiones, farmacopea sagrada, tecnologías de cultivo, templos cósmicos y luchas de resistencia territorial.
+      </p>
+
+      <!-- Tira de Estadísticas Etnográficas -->
+      <div class="atlas-stats-strip">
+        <div class="atlas-stat-pill">
+          <span>🏛️</span>
+          <span>Pueblos Reconocidos: <strong>115 Naciones</strong></span>
+        </div>
+        <div class="atlas-stat-pill">
+          <span>🗣️</span>
+          <span>Diversidad: <strong>65+ Lenguas Vivas &bull; 14 Familias</strong></span>
+        </div>
+        <div class="atlas-stat-pill">
+          <span>🌿</span>
+          <span>Farmacopea: <strong>Plantas Maestras &bull; Chamanismo</strong></span>
+        </div>
+        <div class="atlas-stat-pill">
+          <span>⚖️</span>
+          <span>Salvaguarda: <strong>Auto 004/2009 Corte Constitucional</strong></span>
+        </div>
+      </div>
     </section>
 
-    <!-- Pestañas Geográficas -->
-    <div class="tabs">
-      <button class="tab-button active" onclick="openTab(event, 'suroccidente')">Área Suroccidental</button>
-      <button class="tab-button" onclick="openTab(event, 'central')">Área Central y Magdalena</button>
-      <button class="tab-button" onclick="openTab(event, 'caribe-norte')">Área Norte y Caribe</button>
-    </div>
+    <!-- Panel de Controles: Buscador y Filtros en Tiempo Real -->
+    <section class="atlas-controls-panel" aria-label="Controles de búsqueda y filtros del Atlas">
+      
+      <!-- Buscador Predictivo -->
+      <div class="atlas-search-wrapper">
+        <span class="atlas-search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="atlas-search-input" 
+          class="atlas-search-input" 
+          placeholder="Buscar por nombre común, autodenominación (Kággabba, Hiwi, Wounmeu...), departamento o lengua..." 
+          aria-label="Buscar pueblo indígena"
+          autocomplete="off"
+        >
+        <button type="button" id="atlas-search-clear" class="atlas-search-clear" aria-label="Limpiar búsqueda">&times;</button>
+      </div>
 
-    <!-- ==========================================
-         CONTENIDO DE PESTAÑAS
-         ========================================== -->
-
-    <!-- Área Suroccidental -->
-    <div id="suroccidente" class="tab-content active-content">
-      <div class="character-grid">
-        <!-- Tumaco -->
-        <div class="character-card" onclick="openCultureDrawer('tumaco')" style="cursor: pointer;">
-          <h3>Tumaco-La Tolita</h3>
-          <div class="character-role">Costas de Nariño y Ecuador</div>
-          <p>
-            Destacados por su arte cerámico realista, representaciones de rostros humanos con deformaciones cefálicas y su sofisticada metalurgia del platino, lograda siglos antes que en Europa.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
-        </div>
-
-        <!-- Calima -->
-        <div class="character-card" onclick="openCultureDrawer('calima')" style="cursor: pointer;">
-          <h3>Cultura Calima</h3>
-          <div class="character-role">Valle del Cauca</div>
-          <p>
-            Una de las tradiciones de orfebrería de oro más ricas de América, caracterizada por sus grandes pectorales repujados, narigueras gigantescas y alfileres con remates escultóricos.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
-        </div>
-
-        <!-- San Agustín -->
-        <div class="character-card" onclick="openCultureDrawer('sanagustin')" style="cursor: pointer;">
-          <h3>San Agustín</h3>
-          <div class="character-role">Alto Magdalena (Huila)</div>
-          <p>
-            Milenaria cultura famosa por sus cientos de estatuas de piedra tallada (monolitos) con rasgos antropomorfos y felinos, asociadas a complejos santuarios funerarios.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
-        </div>
-
-        <!-- Tierradentro -->
-        <div class="character-card" onclick="openCultureDrawer('tierradentro')" style="cursor: pointer;">
-          <h3>Tierradentro</h3>
-          <div class="character-role">Montañas del Cauca</div>
-          <p>
-            Conocida por sus hipogeos: monumentales tumbas colectivas subterráneas excavadas en la roca, con techos y columnas decorados con pinturas geométricas rojas y negras.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+      <!-- Filtro 1: Pestañas de Región Natural -->
+      <div class="atlas-filter-group">
+        <span class="atlas-filter-label">Filtrar por Región Natural:</span>
+        <div class="atlas-region-pills" role="tablist">
+          <button type="button" class="atlas-region-pill active" data-region="all" role="tab">
+            <span>🌐</span>
+            <span>Todos (115)</span>
+          </button>
+          <button type="button" class="atlas-region-pill" data-region="caribe_sierra" role="tab">
+            <span>🏖️</span>
+            <span>Caribe y Sierra Nevada (11)</span>
+          </button>
+          <button type="button" class="atlas-region-pill" data-region="pacifico_choco" role="tab">
+            <span>🌊</span>
+            <span>Pacífico y Chocó (7)</span>
+          </button>
+          <button type="button" class="atlas-region-pill" data-region="andes_macizo" role="tab">
+            <span>⛰️</span>
+            <span>Andes y Macizo (21)</span>
+          </button>
+          <button type="button" class="atlas-region-pill" data-region="orinoquia_sabanas" role="tab">
+            <span>🌾</span>
+            <span>Orinoquía y Sabanas (18)</span>
+          </button>
+          <button type="button" class="atlas-region-pill" data-region="amazonia_profunda" role="tab">
+            <span>🌳</span>
+            <span>Amazonía Profunda (58)</span>
+          </button>
         </div>
       </div>
-    </div>
 
-    <!-- Área Central -->
-    <div id="central" class="tab-content">
-      <div class="character-grid">
-        <!-- Guanes -->
-        <div class="character-card" onclick="openCultureDrawer('guanes')" style="cursor: pointer;">
-          <h3>Los Guanes</h3>
-          <div class="character-role">Santander</div>
-          <p>
-            Pueblo de agricultores y tejedores asentados en el cañón del Chicamocha. Destacaron por sus finas mantas de algodón pintadas y la conservación de momias en cuevas.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+      <!-- Filtro 2: Dropdown de Familia Lingüística & Resumen de Resultados -->
+      <div class="atlas-secondary-filters">
+        <div class="atlas-family-wrapper">
+          <span class="atlas-filter-label" style="margin-bottom: 0;">Familia Lingüística:</span>
+          <select id="atlas-family-select" class="atlas-family-select" aria-label="Filtrar por familia lingüística">
+            <option value="all">Todas las Familias Lingüísticas (115)</option>
+          </select>
         </div>
 
-        <!-- Pijaos -->
-        <div class="character-card" onclick="openCultureDrawer('pijaos')" style="cursor: pointer;">
-          <h3>Los Pijaos</h3>
-          <div class="character-role">Tolima y Huila</div>
-          <p>
-            Federación guerrera que ofreció una de las resistencias más feroces del continente contra la conquista española, dominando las cordilleras con guerra de guerrillas.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
-        </div>
-
-        <!-- Malagana -->
-        <div class="character-card" onclick="openCultureDrawer('malagana')" style="cursor: pointer;">
-          <h3>Cultura Malagana</h3>
-          <div class="character-role">Valle del Cauca</div>
-          <p>
-            Descubrimiento arqueológico reciente (1992). Reveló un estilo de orfebrería de oro pulido liso y máscaras funerarias de gran realismo y dimensiones.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
+        <div class="atlas-results-summary">
+          <span>Mostrando: <strong id="atlas-results-count" class="atlas-results-badge">115 de 115 naciones</strong></span>
+          <button type="button" id="atlas-reset-all" class="atlas-btn-reset-small">Restablecer Filtros</button>
         </div>
       </div>
+
+    </section>
+
+    <!-- Indicador de Carga Inicial -->
+    <div id="atlas-loading-indicator" class="atlas-loading-wrapper">
+      <div class="atlas-spinner"></div>
+      <p id="atlas-loading-text" class="atlas-loading-text">Sincronizando acervos etnográficos y censo maestro (1.87 MB)...</p>
     </div>
 
-    <!-- Área Norte -->
-    <div id="caribe-norte" class="tab-content">
-      <div class="character-grid">
-        <!-- Wayuu -->
-        <div class="character-card" onclick="openCultureDrawer('wayuu')" style="cursor: pointer;">
-          <h3>Los Wayuu</h3>
-          <div class="character-role">La Guajira</div>
-          <p>
-            Pueblo nómada que nunca fue sometido militarmente por la corona española, manteniendo su lengua, sus clanes matrilineales y su control sobre el desierto guajiro.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
-        </div>
-
-        <!-- Chimilas -->
-        <div class="character-card" onclick="openCultureDrawer('chimilas')" style="cursor: pointer;">
-          <h3>Los Chimilas</h3>
-          <div class="character-role">Valles del Magdalena y Cesar</div>
-          <p>
-            Grandes cazadores y recolectores del Caribe que defendieron sus tierras boscosas contra las expediciones de fundación costeras durante siglos.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Explorar &rarr;</span>
-        </div>
-      </div>
-    </div>
+    <!-- Grilla de Tarjetas Culturales -->
+    <section id="atlas-grid" class="atlas-grid" aria-label="Catálogo de las 115 Naciones Indígenas">
+      <!-- Inyectado dinámicamente por js/atlas-indigena.js -->
+    </section>
 
   </main>
 
   <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
+       PANEL DESLIZANTE LATERAL (DRAWER MONOGRÁFICO)
        ========================================== -->
-  <template id="cult-tumaco">
-    <div class="document-badge">Tumaco-La Tolita</div>
-    <h2 class="title-font">Arte Cerámico y Platino</h2>
-    <p>
-      Asentados en la frontera de Colombia y Ecuador, los artesanos de Tumaco plasmaron con gran fidelidad la vida cotidiana, enfermedades (como el labio leporino y el bocio), retratos y la vejez en arcilla. 
-    </p>
-    <p>
-      Fueron pioneros globales en fundir el **platino** mezclándolo con oro a través de la sinterización, una hazaña metalúrgica notable dada la altísima temperatura de fusión del platino (1768 °C).
-    </p>
-  </template>
+  <div id="atlas-backdrop" class="atlas-drawer-backdrop" aria-hidden="true"></div>
 
-  <template id="cult-calima">
-    <div class="document-badge">Cultura Calima</div>
-    <h2 class="title-font">Los Señores del Oro</h2>
-    <p>
-      El territorio Calima comprende tres fases culturales sucesivas: **Ilama, Yotoco y Sonso**. Sus caciques eran enterrados con imponentes ajuares de oro de tumbaga repujada, incluyendo narigueras colgantes y máscaras ceremoniales destinadas a transformar el rostro del gobernante en una deidad solar.
-    </p>
-  </template>
-
-  <template id="cult-sanagustin">
-    <div class="document-badge">San Agustín</div>
-    <h2 class="title-font">Monolitos y Tumbas</h2>
-    <p>
-      La estatuaria de San Agustín esculpió monolitos de piedra volcánica representando guerreros con armas de piedra, jaguares y chamanes en estado de trance (ojos almendrados y colmillos de jaguar cruzados). Sus hipogeos y dólmenes Funerarios marcaban tumbas de jefes políticos sagrados.
-    </p>
-  </template>
-
-  <template id="cult-tierradentro">
-    <div class="document-badge">Tierradentro</div>
-    <h2 class="title-font">Hipogeos Subterráneos</h2>
-    <p>
-      Las tumbas colectivas de Tierradentro son templos excavados bajo la tierra, sostenidos por pilares tallados y decorados con rombos, espirales y figuras geométricas pintadas con tintes minerales rojos y negros.
-    </p>
-  </template>
-
-  <template id="cult-guanes">
-    <div class="document-badge">Los Guanes</div>
-    <h2 class="title-font">Tejeduría y Momias</h2>
-    <p>
-      Los Guanes eran famosos por cultivar algodón y producir textiles decorados con motivos geométricos y zoomorfos. Momificaban a sus caciques colocándolos en posición fetal envueltos en mantas dentro de cuevas secas del cañón del Chicamocha.
-    </p>
-  </template>
-
-  <!-- Script de Pestañas y Drawer -->
-  <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active-content");
-      }
-      tablinks = document.getElementsByClassName("tab-button");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-      document.getElementById(tabName).classList.add("active-content");
-      evt.currentTarget.classList.add("active");
-    }
-
-    function openCultureDrawer(cultureId) {
-      const template = document.getElementById('cult-' + cultureId);
-      const drawer = document.querySelector('.detail-drawer');
-      const drawerContent = drawer.querySelector('.drawer-content');
+  <aside id="atlas-drawer" class="atlas-monograph-drawer" aria-labelledby="drawer-pueblo-title" role="dialog" aria-modal="true">
+    
+    <!-- Encabezado Fijo del Drawer -->
+    <div class="atlas-drawer-header">
+      <button type="button" id="drawer-close-btn" class="atlas-drawer-close-btn" aria-label="Cerrar panel monográfico">&times;</button>
       
-      if (template && drawer && drawerContent) {
-        drawerContent.innerHTML = '';
-        const clone = template.content.cloneNode(true);
-        drawerContent.appendChild(clone);
-        drawer.classList.add('open');
-      }
-    }
-  </script>
+      <h2 id="drawer-pueblo-title" class="atlas-drawer-title">Nombre del Pueblo</h2>
+      <div class="atlas-drawer-vernacular">
+        Autodenominación Vernácula: <em id="drawer-pueblo-vernacular">...</em>
+      </div>
 
+      <div class="atlas-drawer-badges">
+        <span id="drawer-pueblo-family" class="atlas-badge atlas-badge-family">...</span>
+        <span id="drawer-pueblo-region" class="atlas-badge atlas-badge-region">...</span>
+        <span id="drawer-pueblo-auto004" class="atlas-badge atlas-badge-warning" style="display: none;">⚖️ Auto 004</span>
+      </div>
+
+      <div class="atlas-drawer-meta-chips">
+        <div class="atlas-drawer-chip">
+          <span>📍 Territorio: <strong id="drawer-pueblo-depto">...</strong></span>
+        </div>
+        <div class="atlas-drawer-chip">
+          <span>👥 Demografía: <strong id="drawer-pueblo-demo">...</strong></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Barra de Pestañas Enciclopédicas (6 dimensiones) -->
+    <nav class="atlas-drawer-tabs-nav" role="tablist" aria-label="Dimensiones Monográficas">
+      <button type="button" class="atlas-drawer-tab active" data-tab="cosmovision" role="tab" aria-selected="true">
+        <span>🌌</span>
+        <span>Cosmovisión y Mitos</span>
+      </button>
+      <button type="button" class="atlas-drawer-tab" data-tab="medicina" role="tab" aria-selected="false">
+        <span>🌿</span>
+        <span>Medicina y Farmacopea</span>
+      </button>
+      <button type="button" class="atlas-drawer-tab" data-tab="tecnologias" role="tab" aria-selected="false">
+        <span>🌾</span>
+        <span>Tecnologías y Cultivo</span>
+      </button>
+      <button type="button" class="atlas-drawer-tab" data-tab="arquitectura" role="tab" aria-selected="false">
+        <span>🏛️</span>
+        <span>Arquitectura Sagrada</span>
+      </button>
+      <button type="button" class="atlas-drawer-tab" data-tab="lideres" role="tab" aria-selected="false">
+        <span>🏹</span>
+        <span>Líderes y Resistencia</span>
+      </button>
+      <button type="button" class="atlas-drawer-tab" data-tab="derechos" role="tab" aria-selected="false">
+        <span>⚖️</span>
+        <span>Derechos y Protección</span>
+      </button>
+    </nav>
+
+    <!-- Contenido Dinámico de la Pestaña Activa -->
+    <div id="drawer-tab-content" class="atlas-drawer-body">
+      <!-- Inyectado dinámicamente -->
+    </div>
+
+  </aside>
+
+  <!-- ==========================================
+       PIE DE PÁGINA
+       ========================================== -->
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Catálogo de Culturas Precolombinas.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Los acervos arqueológicos se encuentran custodiados en el Museo del Oro y el Instituto Colombiano de Antropología e Historia (ICANH).
+    <p>&copy; 2026 Colombia en el Tiempo &bull; Gran Atlas Vivo de los Pueblos Indígenas de Colombia.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.75;">
+      Fuentes y acervos documentales: Organización Nacional Indígena de Colombia (ONIC), Censo Nacional de Población y Vivienda (DANE), Instituto Colombiano de Antropología e Historia (ICANH), e informes de cumplimiento del Auto 004/2009 de la Corte Constitucional de Colombia.
     </p>
   </footer>
 
+  <!-- Scripts principales -->
   <script src="js/main.js"></script>
+  <script src="js/atlas-indigena.js"></script>
 </body>
 </html>
