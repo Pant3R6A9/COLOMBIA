@@ -3,15 +3,302 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Leyendas Ancestrales - Colombia en el Tiempo</title>
-  <meta name="description" content="Mitos sagrados y leyendas ancestrales de las culturas indígenas colombianas: Yurupary, Furatena, Goranchacha y Bochica.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>Atlas de Leyendas Ancestrales y Tradición Oral — Colombianopedia</title>
+  <meta name="description" content="El gran panteón de mitos, cosmogonías y leyendas de Colombia: Yurupary, Furatena, Goranchacha, Bochica, Bachué, la Madremonte, el Mohán, el Silbón y más.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --mystic-gold: #d4af37;
+      --emerald-selva: #10b981;
+      --purple-sacred: #a855f7;
+      --obsidian-dark: #07090e;
+      --obsidian-card: rgba(14, 18, 28, 0.82);
+      --border-mystic: rgba(212, 175, 55, 0.22);
+    }
+
+    .leyendas-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-leyendas {
+      background: linear-gradient(180deg, rgba(168,85,247,0.12) 0%, rgba(7,9,14,0) 100%),
+                  radial-gradient(circle at 50% 15%, rgba(212,175,55,0.12), transparent 70%);
+      border: 1px solid var(--border-mystic);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .hero-leyendas::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--purple-sacred), var(--mystic-gold), var(--emerald-selva), transparent);
+    }
+
+    .leyendas-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(168, 85, 247, 0.15);
+      border: 1px solid var(--purple-sacred);
+      border-radius: 50px;
+      color: #d8b4fe;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-leyendas h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-leyendas h1 span {
+      background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #c084fc 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Barra de Control y Búsqueda */
+    .filter-panel {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .search-input-leyendas {
+      width: 100%;
+      padding: 0.9rem 1.3rem;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--border-mystic);
+      border-radius: 8px;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 1rem;
+    }
+
+    .search-input-leyendas:focus {
+      outline: none;
+      border-color: var(--mystic-gold);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+
+    .region-pills-row {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .region-pill-btn {
+      padding: 0.5rem 1.1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      color: #94a3b8;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .region-pill-btn:hover {
+      color: #fff;
+      border-color: var(--mystic-gold);
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    .region-pill-btn.active {
+      background: var(--mystic-gold);
+      color: #000;
+      border-color: var(--mystic-gold);
+      font-weight: 700;
+    }
+
+    /* Grilla de Leyendas */
+    .leyendas-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .leyenda-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .leyenda-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--mystic-gold);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(168, 85, 247, 0.25);
+    }
+
+    .leyenda-header {
+      padding: 1.8rem 1.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .leyenda-badge-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--mystic-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .leyenda-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 0.4rem;
+    }
+
+    .leyenda-location {
+      font-size: 0.85rem;
+      color: #a855f7;
+    }
+
+    .leyenda-body {
+      padding: 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .leyenda-snippet {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .leyenda-teach {
+      background: rgba(16, 185, 129, 0.08);
+      border-left: 3px solid var(--emerald-selva);
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.82rem;
+      color: #6ee7b7;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .btn-read-legend {
+      width: 100%;
+      padding: 0.85rem;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--mystic-gold);
+      border-radius: 6px;
+      color: var(--mystic-gold);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-read-legend:hover {
+      background: var(--mystic-gold);
+      color: #000;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid var(--mystic-gold);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #fff; }
+  </style>
 </head>
 <body data-theme="precolombina">
 
-  <!-- Encabezado Común -->
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -19,7 +306,7 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
@@ -30,11 +317,11 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
-          <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
+          <a href="leyendas-ancestrales.html" class="active">Leyendas Ancestrales</a>
           <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
           <a href="otras-culturas.html">Catálogo de Culturas</a>
           <a href="ciudades-historicas.html">Ciudades y Nombres</a>
@@ -43,74 +330,192 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
-        Cosmogonías y Sagrado
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL LEYENDAS
+       ========================================== -->
+  <main class="leyendas-container">
+
+    <section class="hero-leyendas" id="hero-section">
+      <div class="leyendas-badge">
+        <span>📜</span> Panteón de Mitos & Tradición Oral <span>📜</span>
       </div>
-      <h1>Leyendas Ancestrales</h1>
-      <p>Explora los mitos fundacionales y espirituales que daban sentido al orden social, natural y sagrado de los pueblos originarios de Colombia.</p>
+      <h1>El Atlas Sagrado de la <span>Tradición Oral</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.15rem; line-height: 1.8;">
+        De la epopeya solar de Yurupary en las selvas del Vaupés a las lágrimas esmeralda de Furatena, el castigo cósmico de la Madremonte y el canto del Silbón en las sabanas del llano. Quince relatos fundacionales que custodian el equilibrio moral, la ecología de los ríos y el misterio de la tierra.
+      </p>
     </section>
 
-    <!-- Grilla de Leyendas -->
-    <div class="era-layout">
-      
-      <!-- Yurupary -->
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center; margin-bottom: 4rem;">
-        <div>
-          <span class="document-badge">Mito del Amazonas</span>
-          <h2 class="title-font" style="font-size: 2rem; margin-bottom: 1.5rem; color: var(--accent);">La Leyenda de Yurupary</h2>
-          <p style="margin-bottom: 1rem;">
-            Nacida en las selvas del Vaupés y la cuenca del río Negro, la leyenda de Yurupary (que significa *"hijo del sol"* o *"fruto engendrado de la tierra"*) relata las leyes fundamentales de organización social de las tribus amazónicas. 
-          </p>
-          <p>
-            Yurupary, un héroe mítico legislador, trajo del sol la flauta sagrada elaborada de madera de palma y enseñó las leyes de la selva, el control social y las máscaras ceremoniales. Su música sagrada estaba reservada exclusivamente a los hombres iniciados de la comunidad.
-          </p>
-        </div>
-        <div>
-          <img src="assets/images/precolombina_yurupary.jpg" alt="Representación mística de Yurupary en el Amazonas" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-card); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-        </div>
+    <!-- Barra de Filtros Reactivos -->
+    <div class="filter-panel">
+      <input type="text" class="search-input-leyendas" id="searchLegendInput" placeholder="Busca por mito o palabra clave: Yurupary, Mohán, Bachué, Esmeraldas, Río..." onkeyup="filterLegends()">
+
+      <div class="region-pills-row">
+        <button class="region-pill-btn active" onclick="setRegionFilter('todas', this)">Todas las Regiones (15)</button>
+        <button class="region-pill-btn" onclick="setRegionFilter('Amazonía', this)">Amazonía</button>
+        <button class="region-pill-btn" onclick="setRegionFilter('Andina', this)">Andina</button>
+        <button class="region-pill-btn" onclick="setRegionFilter('Caribe', this)">Caribe</button>
+        <button class="region-pill-btn" onclick="setRegionFilter('Orinoquía', this)">Orinoquía / Llanos</button>
+        <button class="region-pill-btn" onclick="setRegionFilter('Pacífica', this)">Pacífica</button>
       </div>
-
-      <!-- Furatena y Goranchacha -->
-      <div class="character-grid">
-        <!-- Furatena -->
-        <div class="character-card">
-          <h3>Furatena y el Origen de las Esmeraldas</h3>
-          <div class="character-role">Mito Muzo (Boyacá)</div>
-          <p>
-            El dios creador Are creó los dos sagrados picos de Boyacá, **Fura y Tena**, y sembró en ellos el espíritu de la fidelidad. Furatena, sin embargo, rompió el pacto. Al ver su falta, Tena murió de dolor. 
-          </p>
-          <p>
-            Al llorar sobre el cadáver de su compañero, las lágrimas de Furatena cayeron sobre la arcilla y se convirtieron en las resplandecientes esmeraldas verdes de Muzo, mientras que su sangre dio origen al río Minero.
-          </p>
-        </div>
-
-        <!-- Goranchacha -->
-        <div class="character-card">
-          <h3>Goranchacha: El Profeta del Sol</h3>
-          <div class="character-role">Mito Muisca (Hunza)</div>
-          <p>
-            Hijo de un rayo del sol (Sua) concebido por una joven de Guachetá. Goranchacha fue un sacerdote o profeta temido que viajó por el altiplano predicando el orden moral y construyendo un gran templo liso de piedra en Hunza (cerca de Tunja).
-          </p>
-          <p>
-            Antes de desaparecer misteriosamente, profetizó la llegada de una estirpe de hombres barbados y crueles que derribarían los santuarios de la Confederación.
-          </p>
-        </div>
-      </div>
-
     </div>
+
+    <!-- Contenedor Dinámico de Leyendas -->
+    <section class="leyendas-grid" id="legendsGrid">
+      <div style="color: #94a3b8; text-align: center; grid-column: 1 / -1; padding: 2rem;">
+        Cargando compendio etnográfico de leyendas...
+      </div>
+    </section>
 
   </main>
 
+  <!-- Modal Inmersivo de Lectura -->
+  <div class="modal-overlay" id="legendModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeLegendModal()">&times;</button>
+      <div id="modalLegendBody"></div>
+    </div>
+  </div>
+
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Leyendas Ancestrales.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Narrativas y cosmogonías recopiladas del Instituto Colombiano de Antropología e Historia.
-    </p>
+    <p>&copy; 2026 Colombianopedia — Atlas de Tradición Oral y Mitología. Basado en los archivos etnográficos del Instituto Colombiano de Antropología e Historia (ICANH).</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    let allLegends = [];
+    let currentRegion = 'todas';
+
+    async function loadLegendsData() {
+      try {
+        const response = await fetch('data/regiones_folclor_municipios.json');
+        if (!response.ok) throw new Error('Error al cargar datos');
+        const data = await response.json();
+        allLegends = data.atlas_mitos_leyendas || [];
+        renderLegends();
+      } catch (err) {
+        console.warn('Fallback a datos integrados:', err);
+        // Respaldo inmediato si el fetch local estuviera restringido
+        loadEmbeddedFallback();
+      }
+    }
+
+    function renderLegends() {
+      const container = document.getElementById('legendsGrid');
+      const query = document.getElementById('searchLegendInput').value.toLowerCase().trim();
+
+      const filtered = allLegends.filter(item => {
+        const matchRegion = currentRegion === 'todas' || (item.region_geografica && item.region_geografica.includes(currentRegion));
+        const matchQuery = !query || 
+          (item.titulo && item.titulo.toLowerCase().includes(query)) ||
+          (item.departamento_o_territorio && item.departamento_o_territorio.toLowerCase().includes(query)) ||
+          (item.relato_narrativo && item.relato_narrativo.toLowerCase().includes(query));
+        return matchRegion && matchQuery;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; color: #94a3b8; padding: 3rem;">
+            No se hallaron mitos que coincidan con la búsqueda.
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => `
+        <article class="leyenda-card">
+          <div class="leyenda-header">
+            <div class="leyenda-badge-pill">${item.clasificacion || 'Tradición Oral'}</div>
+            <h3>${item.titulo}</h3>
+            <div class="leyenda-location">📍 ${item.departamento_o_territorio || item.region_geografica}</div>
+          </div>
+          <div class="leyenda-body">
+            <p class="leyenda-snippet">
+              ${(item.relato_narrativo || '').substring(0, 160)}...
+            </p>
+            <div class="leyenda-teach">
+              <strong>Enseñanza Ecológica / Moral:</strong><br>
+              ${item.moraleja_o_sentido_pedagogico || 'Custodio del equilibrio natural.'}
+            </div>
+            <button class="btn-read-legend" onclick="openLegendModal('${item.id}')">
+              Leer Relato Completo &rarr;
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function setRegionFilter(region, btn) {
+      currentRegion = region;
+      document.querySelectorAll('.region-pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderLegends();
+    }
+
+    function filterLegends() {
+      renderLegends();
+    }
+
+    function openLegendModal(legendId) {
+      const item = allLegends.find(l => l.id === legendId);
+      if (!item) return;
+
+      const body = document.getElementById('modalLegendBody');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #d4af37; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          ${item.clasificacion} • ${item.region_geografica}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 0.5rem; line-height: 1.2;">
+          ${item.titulo}
+        </h2>
+        <div style="font-size: 0.9rem; color: #a855f7; margin-bottom: 1.2rem;">
+          Territorio: <strong>${item.departamento_o_territorio}</strong> • Origen: <em>${item.pueblo_o_cultura_origen || 'Tradición Mestiza y Campesina'}</em>
+        </div>
+
+        <div style="background: rgba(0,0,0,0.5); padding: 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 1.5rem;">
+          <strong style="color: #d4af37; font-size: 0.85rem; text-transform: uppercase; font-family: var(--font-mono);">Personajes Arquetípicos:</strong>
+          <p style="color: #e2e8f0; font-size: 0.92rem; margin-top: 0.3rem;">
+            ${Array.isArray(item.personajes_principales) ? item.personajes_principales.join(' • ') : item.personajes_principales}
+          </p>
+        </div>
+
+        <div style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8; margin-bottom: 1.5rem; white-space: pre-line;">
+          ${item.relato_narrativo}
+        </div>
+
+        <div style="background: rgba(16,185,129,0.08); border-left: 3px solid #10b981; padding: 1.2rem; border-radius: 0 8px 8px 0; margin-bottom: 1.5rem;">
+          <h4 style="color: #6ee7b7; font-family: var(--font-title); font-size: 1rem; margin-bottom: 0.3rem;">
+            Significado Ecológico y Comunitario
+          </h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            ${item.moraleja_o_sentido_pedagogico}
+          </p>
+        </div>
+
+        ${item.valor_etnografico_simbolico ? `
+          <div style="font-size: 0.85rem; color: #94a3b8; font-style: italic;">
+            ✦ ${item.valor_etnografico_simbolico}
+          </div>
+        ` : ''}
+      `;
+
+      document.getElementById('legendModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeLegendModal() {
+      document.getElementById('legendModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'legendModal') closeLegendModal();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeLegendModal();
+    });
+
+    // Iniciar carga al renderizar
+    loadLegendsData();
+  </script>
 </body>
 </html>

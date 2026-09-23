@@ -3,14 +3,265 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Conquista y Colonia - Colombia en el Tiempo</title>
-  <meta name="description" content="La irrupción colonial en el Nuevo Reino de Granada, la resistencia indígena y la Expedición Botánica.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>Conquista y Colonia: El Virreinato de la Nueva Granada — Colombianopedia</title>
+  <meta name="description" content="Museo interactivo del Nuevo Reino de Granada: las tres rutas conquistadoras de 1538, régimen virreinal, el cimarronaje de Palenque, la Rebelión de los Comuneros y la Expedición Botánica.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --gold-colonial: #d4af37;
+      --crimson-colonial: #b91c1c;
+      --navy-royal: #1e3a8a;
+      --parchment-bg: #f8fafc;
+      --obsidian-surface: #0a0e17;
+      --obsidian-card: rgba(15, 21, 32, 0.8);
+      --border-colonial: rgba(212, 175, 55, 0.22);
+    }
+
+    .colonia-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-colonia {
+      background: linear-gradient(180deg, rgba(185,28,28,0.12) 0%, rgba(10,14,23,0) 100%),
+                  radial-gradient(circle at 50% 15%, rgba(212,175,55,0.12), transparent 70%);
+      border: 1px solid var(--border-colonial);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .hero-colonia::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--crimson-colonial), var(--gold-colonial), var(--navy-royal), transparent);
+    }
+
+    .colonia-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(185, 28, 28, 0.15);
+      border: 1px solid var(--crimson-colonial);
+      border-radius: 50px;
+      color: #f87171;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-colonia h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-colonia h1 span {
+      background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #b91c1c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Telemetría Colonial */
+    .telemetry-colonia {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .telemetry-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1.4rem;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .telemetry-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-colonial);
+    }
+
+    .telemetry-val {
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold-colonial);
+      margin-bottom: 0.3rem;
+    }
+
+    .telemetry-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Línea de Capítulos Coloniales */
+    .chapters-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .chapter-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .chapter-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-colonial);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.25);
+    }
+
+    .chapter-header {
+      padding: 1.8rem 1.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .chapter-period {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--gold-colonial);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .chapter-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    .chapter-body {
+      padding: 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .chapter-desc {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-chapter {
+      width: 100%;
+      padding: 0.85rem;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--gold-colonial);
+      border-radius: 6px;
+      color: var(--gold-colonial);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-chapter:hover {
+      background: var(--gold-colonial);
+      color: #000;
+    }
+
+    /* Modal de Museo */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid var(--gold-colonial);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #fff; }
+  </style>
 </head>
 <body data-theme="colonia">
 
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -18,10 +269,10 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
-          <a href="colonia.html">Conquista y Colonia</a>
+          <a href="colonia.html" class="active">Conquista y Colonia</a>
           <a href="independencia.html">Independencia y Grito</a>
           <a href="siglo-xix.html">República (Siglo XIX)</a>
           <a href="siglo-xx.html">Tensiones del Siglo XX</a>
@@ -29,7 +280,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
@@ -42,184 +293,252 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(176,58,46,0.15); color: var(--accent);">
-        Siglos XVI - XVIII / Orden Virreinal
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL COLONIA
+       ========================================== -->
+  <main class="colonia-container">
+
+    <section class="hero-colonia" id="hero-section">
+      <div class="colonia-badge">
+        <span>⚔</span> Tres Siglos de Dominio Monárquico (1499 – 1810) <span>⚔</span>
       </div>
-      <h1>El Nuevo Reino de Granada</h1>
-      <p>El violento choque de la Conquista, el establecimiento administrativo virreinal, la resistencia jurídica indígena y las corrientes científicas ilustradas. Haz clic para abrir los documentos y estadísticas.</p>
+      <h1>El Virreinato del <span>Nuevo Reino de Granada</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.15rem; line-height: 1.8;">
+        Desde la colisión militar de la Conquista y el establecimiento de la Real Audiencia de Santafé, hasta el cimarronaje de Palenque, el estallido comunero de 1781 y la Ilustración científica de la Real Expedición Botánica.
+      </p>
     </section>
 
-    <section class="era-layout">
-      
-      <div class="timeline-section">
-        
-        <!-- Fundación y Penetración -->
-        <div class="timeline-item">
-          <div class="timeline-year">1525 - 1536</div>
-          <div class="timeline-content" data-drawer="drawer-fundacion">
-            <span class="document-badge">Conquista y Territorio</span>
-            <h3>La fundación de Santa Marta y la ruta del río Magdalena</h3>
-            <p>
-              El poblamiento hispánico en tierra firme y el Magdalena como vía principal. Haz clic para ver estadísticas de demografía y navegación colonial.
-            </p>
-            <div class="era-link">Ver Documentos &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Resistencia Jurídica -->
-        <div class="timeline-item">
-          <div class="timeline-year">1578</div>
-          <div class="timeline-content" data-drawer="drawer-torres">
-            <span class="document-badge">Archivo General de la Nación</span>
-            <h3>El Memorial de Agravios del Cacique Diego de Torres</h3>
-            <p>
-              El cacique mestizo Diego de Torres presenta peticiones ante la Corona en Madrid para defender a los Muiscas de los encomenderos. Haz clic para ver el expediente judicial.
-            </p>
-            <div class="era-link">Ver Documentos &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Geopolítica de San Andrés -->
-        <div class="timeline-item">
-          <div class="timeline-year">1803</div>
-          <div class="timeline-content" data-drawer="drawer-sanandres">
-            <span class="document-badge">Soberanía Marítima</span>
-            <h3>La Real Orden de 1803 y el Archipiélago de San Andrés</h3>
-            <p>
-              La base legal colonial que transfirió San Andrés y Providencia a la Nueva Granada. Haz clic para conocer los detalles del litigio internacional ante La Haya.
-            </p>
-            <div class="era-link">Ver Documentos &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Expedición Botánica y Comuneros -->
-        <div class="timeline-item">
-          <div class="timeline-year">1781 - 1783</div>
-          <div class="timeline-content" data-drawer="drawer-botanica">
-            <span class="document-badge">Ilustración y Rebelión</span>
-            <h3>La Expedición Botánica y la Revolución Comunera</h3>
-            <p>
-              El catastro científico y la rebelión fiscal popular del Socorro. Haz clic para ver el boceto de botánica e índices de recolección de plantas.
-            </p>
-            <div class="era-link">Ver Documentos &rarr;</div>
-          </div>
-        </div>
-
+    <!-- Telemetría Colonial -->
+    <section class="telemetry-colonia">
+      <div class="telemetry-card">
+        <div class="telemetry-val">1538</div>
+        <div class="telemetry-lbl">Año de Fundación de Santafé</div>
       </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">1717</div>
+        <div class="telemetry-lbl">Creación del Virreinato</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">1691</div>
+        <div class="telemetry-lbl">Libertad de San Basilio de Palenque</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">20.000+</div>
+        <div class="telemetry-lbl">Comuneros en Marcha a Zipaquirá</div>
+      </div>
+    </section>
 
+    <!-- Secciones Históricas -->
+    <section class="chapters-grid">
+      <!-- 1. El Encuentro de las Tres Conquistas -->
+      <article class="chapter-card">
+        <div class="chapter-header">
+          <div class="chapter-period">1536 – 1539</div>
+          <h3>El Choque de las Tres Rutas Colonizadoras</h3>
+        </div>
+        <div class="chapter-body">
+          <p class="chapter-desc">
+            En 1538 convergieron en la Sabana de Bogotá tres expediciones autónomas: Gonzalo Jiménez de Quesada (remontando el río Magdalena), Sebastián de Belalcázar (desde Quito y Cali) y el alemán Nicolás de Federmann (atravesando los Llanos y el Páramo de Sumapaz).
+          </p>
+          <button class="btn-chapter" onclick="openColoniaModal('tresrutas')">
+            Leer Expediente Documental &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 2. Instituciones Virreinales -->
+      <article class="chapter-card">
+        <div class="chapter-header">
+          <div class="chapter-period">Siglos XVI – XVIII</div>
+          <h3>La Encomienda, la Mita y los Resguardos</h3>
+        </div>
+        <div class="chapter-body">
+          <p class="chapter-desc">
+            La estructura socioeconómica impuesta por España: la Encomienda como servidumbre tributaria, la Mita minera en los aluviones de Mariquita y Marmato, y la creación tardía de Resguardos indígenas como freno a la catástrofe demográfica.
+          </p>
+          <button class="btn-chapter" onclick="openColoniaModal('instituciones')">
+            Leer Expediente Documental &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 3. Cartagena y Cimarronaje -->
+      <article class="chapter-card">
+        <div class="chapter-header">
+          <div class="chapter-period">1599 – 1691</div>
+          <h3>Cartagena de Indias y la Epopeya de Palenque</h3>
+        </div>
+        <div class="chapter-body">
+          <p class="chapter-desc">
+            Cartagena como el mayor puerto de trata negrera del Caribe hispano. Frente a la crueldad de las cadenas, Benkos Biohó lideró la fuga hacia los montes de María para fundar San Basilio de Palenque, logrando en 1691 la primera cédula real de libertad en América.
+          </p>
+          <button class="btn-chapter" onclick="openColoniaModal('palenque')">
+            Leer Expediente Documental &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 4. La Rebelión de los Comuneros -->
+      <article class="chapter-card">
+        <div class="chapter-header">
+          <div class="chapter-period">16 de Marzo de 1781</div>
+          <h3>La Insurrección de los Comuneros</h3>
+        </div>
+        <div class="chapter-body">
+          <p class="chapter-desc">
+            Manuela Beltrán arranca los edictos de la alcabala en El Socorro. Veinte mil campesinos y criollos marchan sobre Bogotá forzando las Capitulaciones de Zipaquirá, seguidas por la traición virreinal y el cruento descuartizamiento de José Antonio Galán.
+          </p>
+          <button class="btn-chapter" onclick="openColoniaModal('comuneros')">
+            Leer Expediente Documental &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 5. La Expedición Botánica -->
+      <article class="chapter-card">
+        <div class="chapter-header">
+          <div class="chapter-period">1783 – 1816</div>
+          <h3>La Real Expedición Botánica del Nuevo Reino</h3>
+        </div>
+        <div class="chapter-body">
+          <p class="chapter-desc">
+            Dirigida por don José Celestino Mutis en Mariquita y Santafé. Más de 6.000 láminas policromadas de botánica andina y el laboratorio intelectual donde sabios como Francisco José de Caldas y Jorge Tadeo Lozano concibieron la emancipación científica y política.
+          </p>
+          <button class="btn-chapter" onclick="openColoniaModal('botanica')">
+            Leer Expediente Documental &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 6. El Memorial del Cacique Diego de Torres -->
+      <article class="chapter-card">
+        <div class="chapter-header">
+          <div class="chapter-period">1578 – 1590</div>
+          <h3>La Resistencia Indígena en los Estrados de Madrid</h3>
+        </div>
+        <div class="chapter-body">
+          <p class="chapter-desc">
+            Hijo de un encomendero español y una cacica muisca de Turmequé, Diego de Torres viajó a pie y en galeón hasta Madrid para denunciar ante el rey Felipe II los despojos de tierras, violencias sexuales y maltratos perpetrados por la Real Audiencia.
+          </p>
+          <button class="btn-chapter" onclick="openColoniaModal('turmeque')">
+            Leer Expediente Documental &rarr;
+          </button>
+        </div>
+      </article>
     </section>
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
-       ========================================== -->
-
-  <!-- Plantilla Fundación -->
-  <template id="drawer-fundacion">
-    <div class="document-badge">Expediciones de Conquista</div>
-    <h2 class="title-font">Fundación y Magdalena</h2>
-    <p>
-      El Magdalena se convirtió en la autopista comercial del Virreinato. El transporte de oro, mercancías importadas y correos dependía del boga, una labor agotadora.
-    </p>
-    <div class="stat-box">
-      <h4 class="title-font">Colapso Demográfico Indígena (Estimaciones del s. XVI)</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Población Indígena Inicial (1500)</span>
-            <span>100% (Base)</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="100"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Población Indígena Residual (1600)</span>
-            <span>10% (Sobreviviente)</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="10"></div>
-          </div>
-        </div>
-      </div>
+  <!-- Modal de Museo Colonial -->
+  <div class="modal-overlay" id="coloniaModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeColoniaModal()">&times;</button>
+      <div id="modalColoniaBody"></div>
     </div>
-  </template>
-
-  <!-- Plantilla Diego de Torres -->
-  <template id="drawer-torres">
-    <div class="document-badge">Archivo de Indias</div>
-    <h2 class="title-font">El Cacique Diego de Torres</h2>
-    <p>
-      Hijo de español y mujer de la nobleza Muisca, Diego de Torres utilizó el derecho castellano para apelar contra el despojo. Viajó a España y expuso las quejas directamente a Felipe II.
-    </p>
-    <div class="document-view">
-[Expediente Colonia - AGN]
-"Diego de Torres, Cacique de Turmequé, pide el amparo de su Real Persona contra los oidores y encomenderos que a fuerza de azotes y prisiones nos impiden alegar derecho sobre las tierras."
-    </div>
-  </template>
-
-  <!-- Plantilla San Andrés -->
-  <template id="drawer-sanandres">
-    <div class="document-badge">Litigio Marítimo</div>
-    <h2 class="title-font">Soberanía e Historia</h2>
-    <p>
-      La Real Orden de 1803 declaró la agregación militar y administrativa del archipiélago al Virreinato de Santa Fe. Al heredarse los límites coloniales tras la independencia (uti possidetis juris), Colombia defendió con éxito su soberanía sobre las islas principales en la Corte Internacional de Justicia (La Haya).
-    </p>
-    <div class="stat-box">
-      <h4 class="title-font">Área de Frontera Marítima en Disputa</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Mar territorial e islas (Colombia)</span>
-            <span>100% Soberanía Ratificada</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <!-- Plantilla Expedición Botánica -->
-  <template id="drawer-botanica">
-    <div class="document-badge">Real Expedición Botánica</div>
-    <h2 class="title-font">Ciencia e Ilustración</h2>
-    <p>
-      La Expedición Botánica clasificó más de 20.000 plantas y produjo cerca de 6.000 espectaculares láminas iluminadas a mano.
-    </p>
-    <img src="assets/images/colonia_expedicion.png" alt="Dibujo Botánico de Mutis">
-    <p>
-      Las descripciones científicas sirvieron como cimiento del sentimiento patrio y de soberanía territorial de los criollos ilustrados que luego firmaron el Acta de 1810.
-    </p>
-    <div class="stat-box">
-      <h4 class="title-font">Censo de Láminas Científicas (1783-1816)</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Láminas Botánicas Dibujadas</span>
-            <span>~6.000 dibujos</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="85"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Sección: Conquista y Colonia.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Documentos históricos custodiados en la Sección Colonia del Archivo General de la Nación.
-    </p>
+    <p>&copy; 2026 Colombianopedia — Período Colonial e Ilustración Virreinal. Basado en fuentes del Archivo General de la Nación (AGN).</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const coloniaData = {
+      tresrutas: {
+        title: "El Encuentro Insólito en la Sabana de Bogotá (1538)",
+        badge: "Geopolítica de la Conquista",
+        content: `
+          <p>La fundación de Santafé de Bogotá en agosto de 1538 fue el desenlace de una de las casualidades geográficas más insólitas de la historia universal: tres expediciones conquistadoras, que habían partido de puntos cardinales opuestos ignorando la existencia de las demás, llegaron casi al mismo tiempo a la Sabana:</p>
+          <ul>
+            <li><strong>Gonzalo Jiménez de Quesada:</strong> Partió de Santa Marta en abril de 1536 con 800 soldados y remontó las selvas y ciénagas del río Magdalena. Solo 166 sobrevivieron para ascender la cordillera por Opón hasta los dominios del Zipa.</li>
+            <li><strong>Sebastián de Belalcázar:</strong> Lugarteniente de Pizarro en Perú, avanzó desde Quito hacia el norte fundando Popayán y Cali (1536) en busca del mítico País de la Canela y El Dorado.</li>
+            <li><strong>Nicolás de Federmann:</strong> Teniente de los banqueros Welser de Augsburgo, partió de Coro (Venezuela) y cruzó durante tres años las sabanas inundadas del Orinoco y los páramos glaciares del Sumapaz.</li>
+          </ul>
+          <p>Para evitar una guerra civil entre españoles, los tres capitanes pactaron nombrar alcaldes y regidores conjuntos y viajaron juntos a España en 1639 para dirimir sus títulos de gobernación ante el Consejo de Indias.</p>
+        `
+      },
+      instituciones: {
+        title: "La Mecánica del Dominio Colonial: Encomienda y Mita",
+        badge: "Régimen Social & Económico",
+        content: `
+          <p>El Imperio español organizó la mano de obra indígena mediante dos instituciones forzosas heredadas y adaptadas:</p>
+          <p><strong>La Encomienda:</strong> La Corona encomendaba un grupo de familias indígenas a un conquistador. El encomendero tenía la obligación de evangelizarlos y a cambio cobraba tributos en oro, mantas, maíz y trabajo directo. Esto devino en abusos brutales que diezmaron la población nativa en más de un 80% durante el siglo XVI.</p>
+          <p><strong>La Mita Minera:</strong> Trabajo rotativo y forzoso en las minas de veta y aluvión. Centros como Mariquita, Marmato y el Chocó devoraron miles de vidas indígenas y africanas para abastecer las arcas reales con el Quinto Real.</p>
+          <p>Para frenar el exterminio total, los visitadores reales del siglo XVII crearon los <strong>Resguardos</strong>: tierras colectivas inalienables administradas por cabildos indígenas, base de los títulos territoriales que sobreviven hoy en Colombia.</p>
+        `
+      },
+      palenque: {
+        title: "San Basilio de Palenque: El Primer Pueblo Libre de América",
+        badge: "Resistencia Afrodescendiente & Cimarronaje",
+        content: `
+          <p>Durante los siglos XVI y XVII, Cartagena de Indias fue el único puerto habilitado en el Atlántico sur para el ingreso de personas secuestradas de África. Se estima que más de 150.000 almas fueron desembarcadas en sus muelles para ser vendidas a las haciendas y minas de toda Sudamérica.</p>
+          <p>Frente a la ignominia de la esclavitud surgió el <strong>cimarronaje</strong>: la huida hacia la selva y la fundación de pueblos fortificados con empalizadas llamados <em>palenques</em>.</p>
+          <p>En 1599, <strong>Benkos Biohó</strong> (antiguo rey africano de los Bijagos) lideró una gran fuga militar y organizó una red de espías y guerreros en los Montes de María. Tras derrotar repetidas expediciones punitivas del gobernador de Cartagena, la Corona española no tuvo más opción que firmar una capitulación de paz en 1691 (ratificada por Real Cédula en 1713), reconociendo a Palenque como pueblo soberano, autónomo y libre de esclavitud, más de un siglo antes de la independencia criolla.</p>
+        `
+      },
+      comuneros: {
+        title: "La Insurrección de los Comuneros (1781)",
+        badge: "Grito Precursor de Libertad",
+        content: `
+          <p>El 16 de marzo de 1781, en la plaza de mercado del Socorro (Santander), una cigarrera llamada <strong>Manuela Beltrán</strong> arrancó y pisoteó el edicto que fijaba la subida del impuesto a la Armada de Barlovento y el estanco del tabaco y el aguardiente.</p>
+          <p>El grito <em>«¡Viva el Rey y muera el mal gobierno!»</em> se convirtió en un alzamiento masivo de campesinos, artesanos e indígenas. Veinte mil comuneros armados con lanzas y escopetas, dirigidos por Juan Francisco Berbeo, marcharon hacia la capital.</p>
+          <p>En Zipaquirá, a las puertas de Bogotá, el Virrey huyó a Cartagena y el Arzobispo Antonio Caballero y Góngora firmó las <strong>Capitulaciones de Zipaquirá</strong>, prometiendo derogar los impuestos y conceder cargos a los criollos. Pero una vez desmovilizado el grueso de los manifestantes, el gobierno virreinal declaró nulas las capitulaciones.</p>
+          <p>El líder campesino más radical, <strong>José Antonio Galán</strong>, continuó la rebelión hasta ser traicionado y apresado. En 1782 fue ahorcado y descuartizado en la Plaza Mayor de Santafé: su cabeza y extremidades fueron exhibidas en jaulas de hierro en las plazas de Guaduas, Mariquita y Socorro como escarmiento.</p>
+        `
+      },
+      botanica: {
+        title: "La Real Expedición Botánica del Nuevo Reino (1783)",
+        badge: "Ciencia, Ilustración e Insurgencia",
+        content: `
+          <p>Promovida por el arzobispo-virrey Caballero y Góngora y dirigida por el sabio gaditano <strong>José Celestino Mutis</strong>, la Expedición Botánica fue una de las empresas científicas más fructíferas de la Ilustración hispánica.</p>
+          <p>Durante más de tres décadas en Mariquita y Santafé, un equipo multidisciplinario recolectó y catalogó más de 20.000 especies de la flora neogranadina, prestando especial atención a las quinas medicinales (antimaláricas) y al té de Bogotá.</p>
+          <p>La expedición creó la célebre <strong>Escuela de Pintores de Mariquita</strong> (con virtuosos mestizos como Salvador Rizo y Francisco Javier Matís), cuyos folios iluminados en acuarela deslumbraron a Alejandro de Humboldt.</p>
+          <p>En los pasillos y laboratorios de la Expedición se formaron las mentes que diseñarían la república: Francisco José de Caldas (quien inventó el hipsómetro para medir alturas mediante el punto de ebullición del agua), Jorge Tadeo Lozano y Sinforoso Mutis. Al estallar la reconquista de 1816, el general español Pablo Morillo incautó el herbario y fusiló a los científicos patriotas.</p>
+        `
+      },
+      turmeque: {
+        title: "Diego de Torres: El Cacique Mestizo que Desafió a Felipe II",
+        badge: "Defensa Jurídica de los Derechos Indígenas",
+        content: `
+          <p>Hijo del hidalgo conquistador Juan de Torres y de la noble cacica muisca Catalina de Turmequé, Diego de Torres heredó en 1571 el cacicazgo de Turmequé. Al asumir el cargo, constató la voracidad de los corregidores y encomenderos españoles, que despojaban de tierras y forzaban a jornadas inhumanas a su gente.</p>
+          <p>En vez de recurrir a la violencia armada, Torres usó el propio derecho hispánico. Perseguido y encarcelado en Santafé, huyó disfrazado y cruzó el océano para presentarse en la corte de Madrid ante el Consejo de Indias y el mismísimo rey Felipe II.</p>
+          <p>Su <strong>Memorial de Agravios de 1584</strong> es uno de los textos jurídicos y humanitarios más conmovedores de la historia virreinal: describe con precisión notarial los abusos contra los indios y la corrupción de los oidores de la Real Audiencia. Su lucha abrió el camino para las reformas de protección agraria del siglo XVII.</p>
+        `
+      }
+    };
+
+    function openColoniaModal(key) {
+      const item = coloniaData[key];
+      if (!item) return;
+
+      const body = document.getElementById('modalColoniaBody');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #d4af37; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          ${item.badge}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 1.2rem; line-height: 1.2;">
+          ${item.title}
+        </h2>
+        <div style="color: #cbd5e1; font-size: 1rem; line-height: 1.75;">
+          ${item.content}
+        </div>
+      `;
+
+      document.getElementById('coloniaModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeColoniaModal() {
+      document.getElementById('coloniaModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'coloniaModal') closeColoniaModal();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeColoniaModal();
+    });
+  </script>
 </body>
 </html>

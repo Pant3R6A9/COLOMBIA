@@ -3,14 +3,779 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Siglo XIX - Colombia en el Tiempo</title>
-  <meta name="description" content="El camino hacia la abolición de la esclavitud en Colombia y el mapeo cartográfico de la Comisión Corográfica.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>El Siglo XIX: El Laboratorio Republicano (1819 - 1903) — Colombianopedia</title>
+  <meta name="description" content="Museo digital del siglo XIX en Colombia: vaivén constitucional (de Cúcuta a 1886), las 9 guerras civiles, la Comisión Corográfica, la Guerra de los Mil Días y la dolorosa secesión de Panamá.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Jerarquía Editorial Histórica -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    /* ==========================================================================
+       ESTILOS DE MUSEO: EL LABORATORIO REPUBLICANO DEL SIGLO XIX
+       ========================================================================== */
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+      
+      --crimson-conflict: #ef4444;
+      --crimson-dark: #991b1b;
+      --gold-primary: #d4af37;
+      --gold-light: #f5d061;
+      --gold-deep: #aa7c11;
+      --obsidian-base: #06080d;
+      --obsidian-surface: #0c1017;
+      --obsidian-card: rgba(14, 19, 29, 0.72);
+      --border-parchment: rgba(212, 175, 55, 0.22);
+      --border-danger: rgba(239, 68, 68, 0.35);
+    }
+
+    body {
+      background-color: var(--obsidian-base);
+      color: #e2e8f0;
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      line-height: 1.65;
+    }
+
+    /* REGLA P0 ESTRICTA: DESPEJE DE CABECERA INSTITUCIONAL */
+    .century-main-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+      position: relative;
+    }
+
+    /* Membrete de Archivo Nacional */
+    .archival-header-strip {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid var(--border-parchment);
+      margin-bottom: 2.5rem;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-secondary);
+    }
+
+    .archival-strip-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--gold-light);
+      background: rgba(212, 175, 55, 0.1);
+      padding: 0.3rem 0.75rem;
+      border-radius: 4px;
+      border: 1px solid rgba(212, 175, 55, 0.25);
+    }
+
+    /* Hero Monumental */
+    .hero-monumental-xix {
+      position: relative;
+      background: radial-gradient(ellipse at 50% 15%, rgba(212, 175, 55, 0.12) 0%, rgba(6, 8, 13, 0.95) 75%);
+      border: 1px solid var(--border-parchment);
+      border-radius: 16px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3.5rem;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8);
+      overflow: hidden;
+    }
+
+    .hero-monumental-xix::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary), var(--crimson-conflict), transparent);
+    }
+
+    .temporal-distinction-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--gold-primary);
+      padding: 0.5rem 1.2rem;
+      border-radius: 30px;
+      color: var(--gold-light);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+    }
+
+    .hero-monumental-xix h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+      line-height: 1.15;
+      color: #fff;
+      margin-bottom: 1.25rem;
+      text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9);
+    }
+
+    .hero-monumental-xix h1 .gold-accent {
+      background: linear-gradient(135deg, #fff2cf 0%, #f5d061 40%, #d4af37 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead-text {
+      font-size: 1.15rem;
+      line-height: 1.75;
+      color: #cbd5e1;
+      max-width: 960px;
+      margin-bottom: 2.2rem;
+      font-weight: 300;
+    }
+
+    /* Barra de Cifras del Siglo (HUD de Museo) */
+    .century-stats-hud {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 1.25rem;
+      margin-top: 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px dashed rgba(212, 175, 55, 0.25);
+    }
+
+    .stat-pill {
+      background: rgba(0, 0, 0, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 1.2rem;
+      transition: all 0.3s ease;
+    }
+
+    .stat-pill:hover {
+      border-color: var(--gold-primary);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    }
+
+    .stat-num {
+      font-family: var(--font-title);
+      font-size: 2rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: 0.35rem;
+    }
+
+    .stat-num.crimson {
+      color: var(--crimson-conflict);
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Títulos de Sección de Museo */
+    .museum-section-header {
+      margin-bottom: 2.5rem;
+      position: relative;
+    }
+
+    .section-eyebrow {
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      color: var(--gold-primary);
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-headline {
+      font-family: var(--font-title);
+      font-size: clamp(1.6rem, 2.8vw, 2.4rem);
+      color: #fff;
+      line-height: 1.25;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-subtext {
+      color: var(--text-secondary);
+      max-width: 820px;
+      font-size: 1rem;
+    }
+
+    /* MÓDULO 1: EL VAIVÉN CONSTITUCIONAL INTERACTIVO */
+    .constitution-module {
+      background: var(--obsidian-surface);
+      border: 1px solid var(--border-parchment);
+      border-radius: 16px;
+      padding: 2.5rem;
+      margin-bottom: 4.5rem;
+      box-shadow: 0 18px 45px rgba(0, 0, 0, 0.6);
+    }
+
+    .constitution-nav-tabs {
+      display: flex;
+      gap: 0.6rem;
+      overflow-x: auto;
+      padding-bottom: 1rem;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      scrollbar-width: thin;
+      scrollbar-color: var(--gold-deep) transparent;
+    }
+
+    .const-tab-btn {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      color: var(--text-secondary);
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      cursor: pointer;
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.2rem;
+    }
+
+    .const-tab-btn .tab-year {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--gold-light);
+    }
+
+    .const-tab-btn:hover {
+      background: rgba(212, 175, 55, 0.12);
+      border-color: var(--gold-primary);
+      color: #fff;
+    }
+
+    .const-tab-btn.active {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.22) 0%, rgba(14, 19, 29, 0.95) 100%);
+      border-color: var(--gold-primary);
+      color: #fff;
+      box-shadow: 0 0 20px rgba(212, 175, 55, 0.25);
+    }
+
+    .const-card-content {
+      display: none;
+      animation: fadeIn 0.35s ease forwards;
+    }
+
+    .const-card-content.active {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .const-card-content.active {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .const-text-pane h3 {
+      font-family: var(--font-title);
+      font-size: 1.8rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .const-subtitle {
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      color: var(--gold-primary);
+      margin-bottom: 1.25rem;
+    }
+
+    .const-text-pane p {
+      color: #cbd5e1;
+      margin-bottom: 1.2rem;
+      font-size: 0.98rem;
+    }
+
+    .parchment-facsimile {
+      background: linear-gradient(180deg, #181c24 0%, #10141c 100%);
+      border: 1px solid var(--border-parchment);
+      border-radius: 12px;
+      padding: 1.5rem;
+      position: relative;
+    }
+
+    .facsimile-seal {
+      position: absolute;
+      top: -14px;
+      right: 18px;
+      background: radial-gradient(circle, #b91c1c 0%, #450a0a 100%);
+      color: #fff;
+      font-family: var(--font-mono);
+      font-size: 0.65rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      text-transform: uppercase;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    .facsimile-quote {
+      font-family: 'Cinzel', serif;
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 0.95rem;
+      line-height: 1.6;
+      border-left: 3px solid var(--gold-primary);
+      padding-left: 1rem;
+      margin: 1rem 0;
+    }
+
+    .spec-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.85rem;
+      margin-top: 1rem;
+    }
+
+    .spec-table tr {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .spec-table td {
+      padding: 0.6rem 0;
+    }
+
+    .spec-table td:first-child {
+      color: var(--text-secondary);
+      font-weight: 500;
+      width: 45%;
+    }
+
+    .spec-table td:last-child {
+      color: #fff;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* MÓDULO 2: LAS 9 GUERRAS CIVILES NACIONALES */
+    .wars-timeline-module {
+      margin-bottom: 4.5rem;
+    }
+
+    .wars-interactive-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .war-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 1.75rem;
+      position: relative;
+      transition: all 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .war-card:hover {
+      border-color: var(--crimson-conflict);
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(239, 68, 68, 0.18);
+    }
+
+    .war-card.highlight {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 25px rgba(212, 175, 55, 0.2);
+    }
+
+    .war-card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 0.85rem;
+    }
+
+    .war-number {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--crimson-conflict);
+      background: rgba(239, 68, 68, 0.1);
+      border: 1px solid var(--border-danger);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .war-years {
+      font-family: var(--font-mono);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--gold-light);
+    }
+
+    .war-title {
+      font-family: var(--font-title);
+      font-size: 1.28rem;
+      color: #fff;
+      margin-bottom: 0.6rem;
+      line-height: 1.3;
+    }
+
+    .war-casus {
+      font-size: 0.88rem;
+      color: #94a3b8;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+      line-height: 1.6;
+    }
+
+    .war-meta-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem;
+      margin-bottom: 1rem;
+    }
+
+    .war-pill {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      padding: 0.2rem 0.5rem;
+      border-radius: 3px;
+      background: rgba(255, 255, 255, 0.05);
+      color: #cbd5e1;
+    }
+
+    .war-pill.winner {
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    .war-inspect-trigger {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      color: var(--gold-primary);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-top: auto;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 0.85rem;
+    }
+
+    /* MÓDULO 3: LA GUERRA DE LOS MIL DÍAS */
+    .mil-dias-showcase {
+      background: linear-gradient(145deg, #14080a 0%, #0c0910 50%, #06080d 100%);
+      border: 1px solid var(--border-danger);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      margin-bottom: 4.5rem;
+      position: relative;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    }
+
+    .mil-dias-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 900px) {
+      .mil-dias-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+    }
+
+    .tragedy-headline {
+      font-family: var(--font-display);
+      font-size: clamp(1.8rem, 3.2vw, 2.6rem);
+      color: #fff;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .palonegro-box {
+      background: rgba(239, 68, 68, 0.07);
+      border-left: 3px solid var(--crimson-conflict);
+      padding: 1.25rem;
+      border-radius: 0 8px 8px 0;
+      margin: 1.5rem 0;
+    }
+
+    .palonegro-box h4 {
+      font-family: var(--font-title);
+      color: #fca5a5;
+      margin-bottom: 0.35rem;
+      font-size: 1.05rem;
+    }
+
+    .palonegro-box p {
+      font-size: 0.92rem;
+      color: #f1f5f9;
+      line-height: 1.6;
+    }
+
+    .wisconsin-treaty-card {
+      background: rgba(18, 24, 38, 0.8);
+      border: 1px solid var(--border-parchment);
+      border-radius: 12px;
+      padding: 2rem;
+    }
+
+    /* MÓDULO 4: LA PÉRDIDA DE PANAMÁ */
+    .panama-module {
+      background: var(--obsidian-surface);
+      border: 1px solid var(--border-parchment);
+      border-radius: 16px;
+      padding: 3rem 2.5rem;
+      margin-bottom: 4.5rem;
+    }
+
+    .panama-grid {
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 2.5rem;
+    }
+
+    @media (max-width: 900px) {
+      .panama-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .chronicle-timeline {
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid rgba(212, 175, 55, 0.3);
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .chronicle-node {
+      position: relative;
+    }
+
+    .chronicle-node::before {
+      content: "";
+      position: absolute;
+      left: -1.95rem;
+      top: 0.25rem;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--gold-primary);
+      box-shadow: 0 0 10px var(--gold-light);
+    }
+
+    .chronicle-node.danger::before {
+      background: var(--crimson-conflict);
+      box-shadow: 0 0 10px var(--crimson-conflict);
+    }
+
+    .chronicle-year {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--gold-light);
+      font-weight: 700;
+    }
+
+    .chronicle-heading {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+      margin: 0.2rem 0 0.35rem 0;
+    }
+
+    .chronicle-body {
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+
+    /* MÓDULO 5: TRANSFORMACIONES SOCIALES Y COMISIÓN COROGRÁFICA */
+    .patrimonio-module {
+      margin-bottom: 4.5rem;
+    }
+
+    .patrimonio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 2rem;
+    }
+
+    .patrimonio-card {
+      background: var(--obsidian-card);
+      border: 1px solid var(--border-parchment);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s ease;
+    }
+
+    .patrimonio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.6);
+      border-color: var(--gold-primary);
+    }
+
+    .patrimonio-img-wrap {
+      width: 100%;
+      height: 220px;
+      background: #11141c;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .patrimonio-img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .patrimonio-card:hover .patrimonio-img-wrap img {
+      transform: scale(1.05);
+    }
+
+    .patrimonio-badge {
+      position: absolute;
+      top: 1rem;
+      left: 1rem;
+      background: rgba(6, 8, 13, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-light);
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.3rem 0.7rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+    }
+
+    .patrimonio-content {
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    .patrimonio-content h3 {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.75rem;
+    }
+
+    .patrimonio-content p {
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      line-height: 1.65;
+      margin-bottom: 1.25rem;
+      flex-grow: 1;
+    }
+
+    /* MODAL DE MUSEO UNIVERSAL */
+    .museum-modal-backdrop {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(4, 6, 10, 0.85);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      justify-content: center;
+      align-items: center;
+      padding: 1.5rem;
+      animation: fadeIn 0.25s ease forwards;
+    }
+
+    .museum-modal-backdrop.open {
+      display: flex;
+    }
+
+    .museum-modal-box {
+      background: #0d111a;
+      border: 1px solid var(--gold-primary);
+      border-radius: 16px;
+      max-width: 780px;
+      width: 100%;
+      max-height: 90vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 30px 70px rgba(0, 0, 0, 0.9), 0 0 30px rgba(212, 175, 55, 0.2);
+    }
+
+    .modal-close-btn {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      font-size: 1.2rem;
+      transition: all 0.2s ease;
+    }
+
+    .modal-close-btn:hover {
+      background: var(--crimson-conflict);
+      border-color: var(--crimson-conflict);
+    }
+
+    /* Animaciones */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body data-theme="siglo-xix">
 
+  <!-- ==========================================
+       CABECERA INSTITUCIONAL UNIFICADA
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -18,18 +783,18 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
           <a href="independencia.html">Independencia y Grito</a>
-          <a href="siglo-xix.html">República (Siglo XIX)</a>
+          <a href="siglo-xix.html" style="color: var(--accent-gold); font-weight: 700;">República (Siglo XIX)</a>
           <a href="siglo-xx.html">Tensiones del Siglo XX</a>
           <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
@@ -42,165 +807,819 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(39,174,96,0.15); color: var(--accent);">
-        1830 - 1899 / Consolidación y Mapeo
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL CON DESPEJE P0
+       ========================================== -->
+  <main class="container century-main-container" style="padding-top: calc(var(--header-height, 80px) + 2rem) !important;">
+
+    <!-- Membrete Archival Superior -->
+    <div class="archival-header-strip">
+      <div class="archival-strip-badge">
+        <span>🏛️</span> Acervo del Archivo General de la Nación & Biblioteca Nacional
       </div>
-      <h1>República y Territorio</h1>
-      <p>La abolición gradual de la esclavitud y la hazaña científica y artística de la Comisión Corográfica para inventariar y dibujar la joven nación. Haz clic para abrir los detalles y estadísticas.</p>
+      <div>Curaduría: Sección Historia Republicana • Módulo Editorial de Museo</div>
+      <div>Fondos: Manumisión, Gobernación, Guerras Civiles & Tratados</div>
+    </div>
+
+    <!-- Hero Monumental -->
+    <section class="hero-monumental-xix" id="hero-section">
+      <div class="temporal-distinction-badge">
+        <span>⚖️</span> El Laboratorio Republicano del Siglo XIX (1819 – 1903)
+      </div>
+
+      <h1>
+        La Forja de la República: <br>
+        <span class="gold-accent">Constituciones, Fuego & Soberanía</span>
+      </h1>
+
+      <p class="hero-lead-text">
+        Ochenta y cuatro años de audacia política, guerras fratricidas y ensayos institucionales que oscilaron entre el federalismo radical de nueve soberanías y el centralismo confesional de Núñez y Caro. Del colapso de la Gran Colombia a las trincheras calcinadas de Palonegro y la trágica pérdida del istmo de Panamá.
+      </p>
+
+      <!-- Barra HUD de Estadísticas del Siglo -->
+      <div class="century-stats-hud">
+        <div class="stat-pill">
+          <div class="stat-num">6</div>
+          <div class="stat-label">Grandes Constituciones</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-num crimson">9</div>
+          <div class="stat-label">Guerras Civiles Nacionales</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-num">10</div>
+          <div class="stat-label">Expediciones Corográficas</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-num crimson">+100.000</div>
+          <div class="stat-label">Bajas en los Mil Días</div>
+        </div>
+        <div class="stat-pill">
+          <div class="stat-num">75.517 km²</div>
+          <div class="stat-label">Mutilación de Panamá (1903)</div>
+        </div>
+      </div>
     </section>
 
-    <section class="era-layout">
-      
-      <div class="timeline-section">
-        
-        <!-- El Tránsito de la Esclavitud a la Emancipación -->
-        <div class="timeline-item">
-          <div class="timeline-year">1812 - 1852</div>
-          <div class="timeline-content" data-drawer="drawer-esclavitud">
-            <span class="document-badge">Leyes y Derechos Humanos</span>
-            <h3>El itinerario legal de la manumisión progresiva</h3>
-            <p>
-              El desmonte gradual de la servidumbre y el colapso del valor comercial de los esclavizados. Haz clic para ver el análisis de casos y gráficos de devaluación comercial.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
+    <!-- ==========================================
+         MÓDULO 1: EL VAIVÉN CONSTITUCIONAL
+         ========================================== -->
+    <section class="constitution-module" id="constituciones">
+      <div class="museum-section-header">
+        <div class="section-eyebrow">
+          <span>📜</span> Arquitectura Jurídica Nacional
         </div>
-
-        <!-- La Comisión Corográfica -->
-        <div class="timeline-item">
-          <div class="timeline-year">1850 - 1859</div>
-          <div class="timeline-content" data-drawer="drawer-comision">
-            <span class="document-badge">Cartografía y Arte</span>
-            <h3>La Comisión Corográfica de Agustín Codazzi</h3>
-            <p>
-              Mapeando las provincias de la Nueva Granada y dibujando las costumbres populares en acuarelas. Haz clic para ver la acuarela de época y detalles de las 10 expediciones.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Organización del Archivo Nacional -->
-        <div class="timeline-item">
-          <div class="timeline-year">1868</div>
-          <div class="timeline-content" data-drawer="drawer-archivo">
-            <span class="document-badge">Institucional</span>
-            <h3>Fundación del Archivo Nacional</h3>
-            <p>
-              La catalogación del patrimonio documental del país por don José María Vergara y Vergara. Haz clic para abrir el catálogo e índices temáticos.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
-        </div>
-
+        <h2 class="section-headline">El Vaivén Constitucional (1819 – 1886)</h2>
+        <p class="section-subtext">
+          Colombia no nació bajo una sola ley, sino bajo el pulso encarnizado de dos visiones irreconciliables: la autonomía de las provincias soberanas contra la espada unificadora del poder central. Explora las cartas magnas que cambiaron el nombre, la fe y el destino territorial del país.
+        </p>
       </div>
 
+      <!-- Selector de Pestañas Constitucionales -->
+      <div class="constitution-nav-tabs" role="tablist">
+        <button class="const-tab-btn active" onclick="switchConstitution('cucuta')" role="tab" aria-selected="true">
+          <span>Gran Colombia</span>
+          <span class="tab-year">1821 (Cúcuta)</span>
+        </button>
+        <button class="const-tab-btn" onclick="switchConstitution('nueva-granada')" role="tab" aria-selected="false">
+          <span>Rep. Nueva Granada</span>
+          <span class="tab-year">1832 (Santander)</span>
+        </button>
+        <button class="const-tab-btn" onclick="switchConstitution('confederacion')" role="tab" aria-selected="false">
+          <span>Confed. Granadina</span>
+          <span class="tab-year">1858 (Ospina R.)</span>
+        </button>
+        <button class="const-tab-btn" onclick="switchConstitution('rionegro')" role="tab" aria-selected="false">
+          <span>Estados Unidos de Col.</span>
+          <span class="tab-year">1863 (Rionegro)</span>
+        </button>
+        <button class="const-tab-btn" onclick="switchConstitution('regeneracion')" role="tab" aria-selected="false">
+          <span>La Regeneración</span>
+          <span class="tab-year">1886 (Núñez & Caro)</span>
+        </button>
+      </div>
+
+      <!-- Contenido 1: 1821 Cúcuta -->
+      <div id="const-cucuta" class="const-card-content active">
+        <div class="const-text-pane">
+          <div class="const-subtitle">CONSTITUCIÓN DE CÚCUTA • 30 DE AGOSTO DE 1821</div>
+          <h3>La Unión Continental de la Gran Colombia</h3>
+          <p>
+            Redactada en el Templo Histórico de Villa del Rosario de Cúcuta, proclamó el nacimiento formal de la República de Colombia, integrando las intendencias de la Nueva Granada, Venezuela y posteriormente Quito y Guayaquil bajo el liderazgo de Simón Bolívar y Francisco de Paula Santander.
+          </p>
+          <p>
+            Estableció un sistema centralista con un congreso bicameral y sentó las bases para el desmonte de las instituciones virreinales con la pionera <strong>Ley de Libertad de Vientres</strong> (manumisión de los hijos de esclavizados al cumplir los 18 años). Sin embargo, las enormes distancias territoriales, la ruina fiscal tras la gesta libertadora y las pugnas entre el mando militar bolivariano y los civilistas santanderistas condujeron a la disolución irrevocable de la unión en 1830.
+          </p>
+          <div class="parchment-facsimile" style="margin-top: 1.5rem;">
+            <div class="facsimile-quote">
+              "El pueblo soberano de Colombia, por medio de sus diputados congregados en Asamblea General... decreta la unión perpetua de los pueblos de Venezuela y la Nueva Granada."
+            </div>
+          </div>
+        </div>
+        <div class="const-sidebar-pane">
+          <div class="parchment-facsimile">
+            <span class="facsimile-seal">Ficha Técnica</span>
+            <table class="spec-table">
+              <tr><td>Nombre Oficial</td><td>República de Colombia</td></tr>
+              <tr><td>Forma de Estado</td><td>Centralismo Unitario</td></tr>
+              <tr><td>Período Presidencial</td><td>4 años (con reelección)</td></tr>
+              <tr><td>Religión</td><td>Católica como oficial</td></tr>
+              <tr><td>Voto</td><td>Censitario (letrados con renta)</td></tr>
+              <tr><td>Duración</td><td>1821 – 1830 (9 años)</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido 2: 1832 Nueva Granada -->
+      <div id="const-nueva-granada" class="const-card-content">
+        <div class="const-text-pane">
+          <div class="const-subtitle">CONSTITUCIÓN DEL ESTADO DE LA NUEVA GRANADA • 1 DE MARZO DE 1832</div>
+          <h3>El Repliegue Republicano y el Mandato de la Ley</h3>
+          <p>
+            Tras la separación definitiva de Venezuela (dirigida por José Antonio Páez) y de Ecuador (liderado por Juan José Flores), las provincias centrales se reorganizaron bajo la presidencia del General Francisco de Paula Santander. Esta carta consagró el principio de supremacía jurídica y división estricta de poderes: "las armas os han dado la independencia, las leyes os darán la libertad".
+          </p>
+          <p>
+            Redujo sustancialmente el poder del Ejecutivo para evitar el fantasma de la dictadura militar vitalicia bolivariana, otorgó mayor margen fiscal a las provincias y fortaleció el sistema de educación pública mediante colegios provinciales laicos y escuelas santanderinas.
+          </p>
+        </div>
+        <div class="const-sidebar-pane">
+          <div class="parchment-facsimile">
+            <span class="facsimile-seal">Ficha Técnica</span>
+            <table class="spec-table">
+              <tr><td>Nombre Oficial</td><td>República de la Nueva Granada</td></tr>
+              <tr><td>Forma de Estado</td><td>Centro-Federal Moderado</td></tr>
+              <tr><td>Período Presidencial</td><td>4 años (sin reelección)</td></tr>
+              <tr><td>Religión</td><td>Católica Apostólica Romana</td></tr>
+              <tr><td>Provincias</td><td>18 provincias iniciales</td></tr>
+              <tr><td>Hito Clave</td><td>Fin definitivo de la Gran Colombia</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido 3: 1858 Confederación Granadina -->
+      <div id="const-confederacion" class="const-card-content">
+        <div class="const-text-pane">
+          <div class="const-subtitle">CONSTITUCIÓN PARA LA CONFEDERACIÓN GRANADINA • 22 DE MAYO DE 1858</div>
+          <h3>El Primer Ensayo Federativo de Mariano Ospina Rodríguez</h3>
+          <p>
+            Bajo el gobierno del conservador Mariano Ospina Rodríguez, el país reconoció la irreprimible autonomía de sus regiones y formalizó la creación de ocho Estados Federados: Antioquia, Bolívar, Boyacá, Cauca, Cundinamarca, Magdalena, Panamá y Santander.
+          </p>
+          <p>
+            A pesar de ser una constitución conservadora en materia religiosa, otorgó una inmensa autonomía legislativa a los estados federados. No obstante, las leyes electorales y presupuestales dictadas en 1859 por el gobierno central de Bogotá provocaron la rebelión armada del presidente del Estado del Cauca, Tomás Cipriano de Mosquera, dando inicio a la guerra civil de 1860.
+          </p>
+        </div>
+        <div class="const-sidebar-pane">
+          <div class="parchment-facsimile">
+            <span class="facsimile-seal">Ficha Técnica</span>
+            <table class="spec-table">
+              <tr><td>Nombre Oficial</td><td>Confederación Granadina</td></tr>
+              <tr><td>Forma de Estado</td><td>Federación de 8 Estados</td></tr>
+              <tr><td>Período Presidencial</td><td>4 años</td></tr>
+              <tr><td>Moneda</td><td>Emisión libre estadual</td></tr>
+              <tr><td>Conflicto</td><td>Desembocó en la Guerra de 1860</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido 4: 1863 Rionegro -->
+      <div id="const-rionegro" class="const-card-content">
+        <div class="const-text-pane">
+          <div class="const-subtitle">CONSTITUCIÓN POLÍTICA DE LOS ESTADOS UNIDOS DE COLOMBIA • 8 DE MAYO DE 1863</div>
+          <h3>El Olimpo Radical de Rionegro: Federalismo Extremo</h3>
+          <p>
+            Fruto de la victoria de Tomás Cipriano de Mosquera en la guerra civil de 1860, la Convención de Rionegro (Antioquia) congregó a los pensadores liberales más doctrinarios del continente (Salvador Camacho Roldán, Manuel Murillo Toro, Eustorgio Salgar). Proclamó una federación de <strong>9 Estados Soberanos</strong>, cada uno con constitución, ejército, correos y régimen aduanero propio.
+          </p>
+          <p>
+            Consagró libertades civiles inauditas en la época: libertad absoluta de prensa sin responsabilidad previa, libre comercio e importación de armas y municiones, abolición de la pena de muerte, laicismo escolar obligatorio y la desamortización de bienes de manos muertas (expropiación de las tierras del clero católico). El escritor francés Víctor Hugo la calificó asombrado como <em>"una constitución hecha para ángeles, no para hombres"</em>.
+          </p>
+        </div>
+        <div class="const-sidebar-pane">
+          <div class="parchment-facsimile">
+            <span class="facsimile-seal">Ficha Técnica</span>
+            <table class="spec-table">
+              <tr><td>Nombre Oficial</td><td>Estados Unidos de Colombia</td></tr>
+              <tr><td>Forma de Estado</td><td>Federalismo Puro (9 Estados)</td></tr>
+              <tr><td>Período Presidencial</td><td>2 años (sin reelección)</td></tr>
+              <tr><td>Ejército</td><td>Guardia Nacional mínima</td></tr>
+              <tr><td>Pena de Muerte</td><td>Prohibida terminantemente</td></tr>
+              <tr><td>Vigencia</td><td>1863 – 1886 (23 años)</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contenido 5: 1886 La Regeneración -->
+      <div id="const-regeneracion" class="const-card-content">
+        <div class="const-text-pane">
+          <div class="const-subtitle">CONSTITUCIÓN POLÍTICA DE COLOMBIA • 4 DE AGOSTO DE 1886</div>
+          <h3>La Regeneración de Núñez y Caro: "Una Nación, un Dios, una Ley"</h3>
+          <p>
+            El caos de las continuas guerras interprovinciales y la debilidad del gobierno federal llevaron al liberal independiente Rafael Núñez a pactar con el Partido Conservador bajo la consigna: <em>"Regeneración administrativa fundamental o catástrofe"</em>. Tras aplastar la rebelión radical de 1885, Núñez declaró: <em>"La Constitución de 1863 ha dejado de existir"</em>.
+          </p>
+          <p>
+            Redactada por el humanista y gramático Miguel Antonio Caro, la Constitución de 1886 abolió la soberanía de los estados, transformándolos en departamentos subordinados al poder presidencial en Bogotá. Restauró el poder de la Iglesia Católica mediante el histórico Concordato de 1887 (delegándole la educación y el registro civil), creó el Banco Nacional emisor del papel moneda y otorgó al Presidente facultades extraordinarias en tiempos de turbación (Artículo 121). Tuvo una vigencia titánica de 105 años, hasta la Constitución de 1991.
+          </p>
+        </div>
+        <div class="const-sidebar-pane">
+          <div class="parchment-facsimile">
+            <span class="facsimile-seal">Ficha Técnica</span>
+            <table class="spec-table">
+              <tr><td>Nombre Oficial</td><td>República de Colombia</td></tr>
+              <tr><td>Forma de Estado</td><td>República Centralizada Unitaria</td></tr>
+              <tr><td>Período Presidencial</td><td>6 años (inicialmente)</td></tr>
+              <tr><td>Religión</td><td>Católica como elemento social</td></tr>
+              <tr><td>Pena de Muerte</td><td>Restaurada para delitos graves</td></tr>
+              <tr><td>Vigencia</td><td>1886 – 1991 (105 años)</td></tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MÓDULO 2: LAS 9 GUERRAS CIVILES NACIONALES
+         ========================================== -->
+    <section class="wars-timeline-module" id="guerras-civiles">
+      <div class="museum-section-header">
+        <div class="section-eyebrow">
+          <span>⚔️</span> La Sangre de la República
+        </div>
+        <h2 class="section-headline">Las 9 Guerras Civiles Nacionales (1839 – 1895)</h2>
+        <p class="section-subtext">
+          Más de medio centenar de asonadas locales y 9 confrontaciones que involucraron a la totalidad del territorio patrio. Caudillismos terratenientes, disputas confesionales por las almas de los niños en las escuelas y odios sectarios tiñeron los campos del siglo XIX. Haz clic en cada conflicto para abrir el expediente analítico.
+        </p>
+      </div>
+
+      <div class="wars-interactive-grid">
+        <!-- 1. Guerra de los Supremos -->
+        <div class="war-card" onclick="openWarModal('supremos')">
+          <div class="war-card-header">
+            <span class="war-number">Guerra I</span>
+            <span class="war-years">1839 – 1842</span>
+          </div>
+          <h3 class="war-title">Guerra de los Supremos</h3>
+          <p class="war-casus">
+            Detonada por la supresión de cuatro conventos menores en Pasto decretada por el Congreso para financiar escuelas públicas. Caudillos regionales ("Los Supremos") se levantaron contra el gobierno central de José Ignacio de Márquez.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">José María Obando</span>
+            <span class="war-pill">Pedro Alcántara Herrán</span>
+            <span class="war-pill winner">Victoria del Gobierno</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+
+        <!-- 2. Guerra Civil de 1851 -->
+        <div class="war-card" onclick="openWarModal('guerra1851')">
+          <div class="war-card-header">
+            <span class="war-number">Guerra II</span>
+            <span class="war-years">1851</span>
+          </div>
+          <h3 class="war-title">La Reacción Conservadora de 1851</h3>
+          <p class="war-casus">
+            Insurrección terrateniente en el Cauca y Antioquia contra las reformas radicales de José Hilario López: la abolición absoluta de la esclavitud, la expulsión de la Compañía de Jesús y la disolución de los resguardos indígenas.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">Julio Arboleda</span>
+            <span class="war-pill">José Hilario López</span>
+            <span class="war-pill winner">Triunfo Abolicionista</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+
+        <!-- 3. Guerra Civil de 1854 -->
+        <div class="war-card" onclick="openWarModal('melo1854')">
+          <div class="war-card-header">
+            <span class="war-number">Guerra III</span>
+            <span class="war-years">1854</span>
+          </div>
+          <h3 class="war-title">El Golpe de Melo y los Artesanos</h3>
+          <p class="war-casus">
+            El General José María Melo asume el poder mediante un golpe militar respaldado por las Sociedades Democráticas de artesanos de Bogotá, resistiendo las políticas librecambistas que arruinaban los telares y talleres criollos.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">Gólgotas vs Draconianos</span>
+            <span class="war-pill">Sitio a Bogotá</span>
+            <span class="war-pill winner">Alianza Bipartidista</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+
+        <!-- 4. Guerra Civil de 1860-1862 -->
+        <div class="war-card highlight" onclick="openWarModal('mosquera1860')">
+          <div class="war-card-header">
+            <span class="war-number" style="color: var(--gold-light); background: rgba(212,175,55,0.15); border-color: var(--gold-primary);">Guerra IV • Histórica</span>
+            <span class="war-years">1860 – 1862</span>
+          </div>
+          <h3 class="war-title">La Rebelión Triunfante de Mosquera</h3>
+          <p class="war-casus">
+            La única guerra civil en la historia de Colombia donde un bando insurrecto derrocó victoriosamente al gobierno central. Tomás Cipriano de Mosquera se alzó en el Cauca contra Mariano Ospina Rodríguez, tomó Bogotá y fundó el Olimpo Radical.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">T. C. de Mosquera</span>
+            <span class="war-pill">Desamortización de bienes</span>
+            <span class="war-pill winner">Victoria Insurgente</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+
+        <!-- 5. Guerra Civil de 1876-1877 -->
+        <div class="war-card" onclick="openWarModal('guerra1876')">
+          <div class="war-card-header">
+            <span class="war-number">Guerra V</span>
+            <span class="war-years">1876 – 1877</span>
+          </div>
+          <h3 class="war-title">La Guerra de las Escuelas</h3>
+          <p class="war-casus">
+            Rebelión conservadora provocada por la aplicación del Decreto Orgánico de Instrucción Pública de 1870, que decretaba la educación primaria como laica, gratuita y obligatoria, arrebatando a la Iglesia el control dogmático del aula.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">Batalla de Los Chancos</span>
+            <span class="war-pill">Aquileo Parra</span>
+            <span class="war-pill winner">Victoria Liberal Radical</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+
+        <!-- 6. Guerra Civil de 1884-1885 -->
+        <div class="war-card" onclick="openWarModal('guerra1885')">
+          <div class="war-card-header">
+            <span class="war-number">Guerra VI</span>
+            <span class="war-years">1884 – 1885</span>
+          </div>
+          <h3 class="war-title">El Derrumbe del Radicalismo</h3>
+          <p class="war-casus">
+            Los liberales radicales se levantaron en Santander contra el presidente Rafael Núñez por sus políticas proteccionistas y su acercamiento a la Iglesia. La victoria de las tropas leales a Núñez selló la muerte de la Constitución de 1863 y dio paso a la Carta de 1886.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">Batalla de La Humareda</span>
+            <span class="war-pill">Rafael Núñez</span>
+            <span class="war-pill winner">Nace la Regeneración</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+
+        <!-- 7. Guerra Civil de 1895 -->
+        <div class="war-card" onclick="openWarModal('guerra1895')">
+          <div class="war-card-header">
+            <span class="war-number">Guerra VII</span>
+            <span class="war-years">1895</span>
+          </div>
+          <h3 class="war-title">La Rebelión Liberal contra Caro</h3>
+          <p class="war-casus">
+            Alzamiento liberal liderado por Sixto Durán en Bogotá contra el régimen hegemónico y la censura de prensa de Miguel Antonio Caro. Fue sofocada en apenas dos meses por el general Rafael Reyes en la sangrienta Batalla de Enciso.
+          </p>
+          <div class="war-meta-pills">
+            <span class="war-pill">Miguel Antonio Caro</span>
+            <span class="war-pill">Rafael Reyes</span>
+            <span class="war-pill winner">Victoria Conservadora</span>
+          </div>
+          <div class="war-inspect-trigger">Examinar Expediente Bélico &rarr;</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MÓDULO 3: LA GUERRA DE LOS MIL DÍAS
+         ========================================== -->
+    <section class="mil-dias-showcase" id="mil-dias">
+      <div class="mil-dias-grid">
+        <div>
+          <div class="section-eyebrow" style="color: #fca5a5;">
+            <span>🩸</span> 17 de Octubre de 1899 – 21 de Noviembre de 1902
+          </div>
+          <h2 class="tragedy-headline">
+            La Guerra de los Mil Días: <br>
+            <span style="color: var(--crimson-conflict);">El Apocalipsis Fratricida</span>
+          </h2>
+          <p style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.7; margin-bottom: 1.5rem;">
+            El conflicto civil más devastador en los anales colombianos. La intransigencia del gobierno conservador de Manuel Antonio Sanclemente ante las demandas de reforma electoral y apertura de los liberales provocó un alzamiento en masa liderado por Paulo Emilio Villar en Santander.
+          </p>
+
+          <div class="palonegro-box">
+            <h4>La Carnicería de Palonegro (11 al 25 de mayo de 1900)</h4>
+            <p>
+              Quince días incesantes de combate cuerpo a cuerpo bajo el sol canicular cerca de Bucaramanga. Trincheras inundadas de sangre, bayonetas melladas y más de 4.000 cadáveres pudriéndose al aire libre sin sepultura. Palonegro quebró para siempre la fuerza convencional del ejército liberal.
+            </p>
+          </div>
+
+          <p style="color: #cbd5e1; font-size: 0.95rem;">
+            Tras Palonegro, el conflicto degeneró en una enconada guerra de guerrillas encabezada por <strong>Rafael Uribe Uribe</strong> en el Magdalena y los Andes centrales, y el general <strong>Benjamín Herrera</strong> en el istmo de Panamá.
+          </p>
+        </div>
+
+        <div>
+          <!-- Tarjeta del Acorazado Wisconsin -->
+          <div class="wisconsin-treaty-card">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.25rem;">
+              <span class="facsimile-seal" style="position: static;">Documento Diplomático</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--gold-light);">21 Noviembre 1902</span>
+            </div>
+
+            <h3 style="font-family: var(--font-title); font-size: 1.4rem; color: #fff; margin-bottom: 0.75rem;">
+              El Tratado del Acorazado USS Wisconsin
+            </h3>
+            <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1.2rem;">
+              Agotadas las arcas del país, con una hiperinflación que convirtió el papel moneda en basura y con el ejército liberal atrincherado en Panamá, se firmó la capitulación a bordo del buque de guerra norteamericano <em>USS Wisconsin</em> anclado en la bahía de Panamá.
+            </p>
+            <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1.5rem;">
+              El general liberal Benjamín Herrera y el conservador Víctor M. Salazar sellaron la paz bajo la mirada y tutela de los almirantes estadounidenses. El país quedaba en la ruina moral y fiscal, indefenso ante la inmediata amputación territorial del año siguiente.
+            </p>
+
+            <div style="background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 8px; border: 1px dashed rgba(212,175,55,0.3); font-size: 0.85rem;">
+              <strong style="color: var(--gold-light);">Balance Siniestro:</strong> Más de 100.000 muertos (2.5% de la población nacional), pueblos enteros calcinados, miles de niños huérfanos reclutados y la soberanía del istmo herida de muerte.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MÓDULO 4: LA PÉRDIDA DE PANAMÁ
+         ========================================== -->
+    <section class="panama-module" id="panama">
+      <div class="museum-section-header">
+        <div class="section-eyebrow">
+          <span>🌎</span> 3 de Noviembre de 1903
+        </div>
+        <h2 class="section-headline">La Pérdida de Panamá: La Amputación Soberana</h2>
+        <p class="section-subtext">
+          El colapso de la empresa francesa de Ferdinand de Lesseps, la indiferencia del gobierno central en Bogotá hacia las necesidades del istmo y la voracidad geopolítica del presidente estadounidense Theodore Roosevelt convergieron en la mayor herida territorial de Colombia.
+        </p>
+      </div>
+
+      <div class="panama-grid">
+        <div class="chronicle-timeline">
+          <div class="chronicle-node">
+            <div class="chronicle-year">1881 – 1889</div>
+            <div class="chronicle-heading">El Escándalo de Ferdinand de Lesseps</div>
+            <div class="chronicle-body">
+              La <em>Compagnie Universelle du Canal Interocéanique</em> emprende la excavación a nivel del mar. La malaria y la fiebre amarilla cobran la vida de más de 22.000 obreros antillanos y europeos. La bancarrota de la compañía arrastra a miles de ahorradores franceses y deja la zanja a merced del mejor postor.
+            </div>
+          </div>
+
+          <div class="chronicle-node danger">
+            <div class="chronicle-year">Enero – Agosto de 1903</div>
+            <div class="chronicle-heading">El Tratado Herrán-Hay y el Rechazo del Senado</div>
+            <div class="chronicle-body">
+              Firmado en Washington por Tomás Herrán y John Hay, concedía a Estados Unidos una franja de 10 kilómetros por 100 años a cambio de 10 millones de dólares. El Senado colombiano, en un acto de dignidad nacionalista pero de ceguera geopolítica, lo rechazó por unanimidad al considerarlo lesivo a la soberanía patria.
+            </div>
+          </div>
+
+          <div class="chronicle-node danger">
+            <div class="chronicle-year">3 de Noviembre de 1903</div>
+            <div class="chronicle-heading">La Diplomacia del Cañonero y la Secesión</div>
+            <div class="chronicle-body">
+              Roosevelt ordena el envío del crucero de guerra <em>USS Nashville</em> a la bahía de Colón para impedir que las tropas leales del batallón Tiradores de Colombia desembarquen para sofocar la conspiración orquestada por José Agustín Arango, Manuel Amador Guerrero y el banquero de la compañía del ferrocarril.
+            </div>
+          </div>
+
+          <div class="chronicle-node">
+            <div class="chronicle-year">18 de Noviembre de 1903</div>
+            <div class="chronicle-heading">El Tratado Hay-Bunau Varilla: La Venta del Canal</div>
+            <div class="chronicle-body">
+              En la sala de estar del Secretario John Hay en Washington, el aventurero francés Philippe Bunau-Varilla firma la cesión perpetua de la Zona del Canal a Estados Unidos sin la presencia ni la firma de un solo ciudadano panameño. Roosevelt declararía años más tarde con desparpajo: <em>"I took the Isthmus"</em> ("Yo tomé el istmo").
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="parchment-facsimile">
+            <span class="facsimile-seal">Impacto Nacional</span>
+            <h4 style="font-family: var(--font-title); font-size: 1.25rem; color: #fff; margin-bottom: 0.8rem;">
+              El Duelo de una República Mutilada
+            </h4>
+            <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1.2rem;">
+              La noticia tardó semanas en llegar a la capital por la precariedad de las comunicaciones telegráficas a través de la selva y el mar. Cuando Bogotá conoció la pérdida del departamento más codiciado del planeta, el estupor ciudadano fue inmenso.
+            </p>
+            <p style="font-size: 0.92rem; color: #cbd5e1; line-height: 1.6; margin-bottom: 1.2rem;">
+              El general Rafael Reyes fue enviado en misión de salvamento a Washington a bordo de vapores, pero fue recibido con frialdad absoluta: el gobierno estadounidense ya había reconocido a la nueva república panameña. El escudo nacional conservó en su franja inferior el istmo interoceánico como una amarga silueta de la geografía perdida.
+            </p>
+            <div style="border-top: 1px solid rgba(212,175,55,0.2); padding-top: 1rem; font-size: 0.85rem; color: var(--gold-light);">
+              En 1921, mediante el Tratado Thomson-Urrutia, Estados Unidos pagó a Colombia 25 millones de dólares como indemnización, dinero que financió la modernización bancaria y la Misión Kemmerer en los años veinte.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MÓDULO 5: GRANDES EXPEDICIONES Y TRANSFORMACIÓN SOCIAL
+         ========================================== -->
+    <section class="patrimonio-module" id="expediciones-sociedad">
+      <div class="museum-section-header">
+        <div class="section-eyebrow">
+          <span>🎨</span> Ciencia, Cartografía & Emancipación
+        </div>
+        <h2 class="section-headline">El Territorio Descubierto y los Hombres Libres</h2>
+        <p class="section-subtext">
+          A la par de las disputas de fusil y papel sellado, el siglo XIX presenció la mayor hazaña científica y artística del continente y la definitiva liberación de los hijos de la diáspora africana.
+        </p>
+      </div>
+
+      <div class="patrimonio-grid">
+        <!-- 1. Comisión Corográfica -->
+        <div class="patrimonio-card" onclick="openPatrimonioModal('corografica')">
+          <div class="patrimonio-img-wrap">
+            <span class="patrimonio-badge">Acuarela & Cartografía</span>
+            <img src="assets/images/siglo_xix_corografica.png" alt="Acuarela rural de la Comisión Corográfica de Agustín Codazzi">
+          </div>
+          <div class="patrimonio-content">
+            <h3>La Comisión Corográfica de Agustín Codazzi (1850 – 1859)</h3>
+            <p>
+              Diez grandes expediciones cruzando páramos helados, cañones y selvas vírgenes a lomo de mula. El militar e ingeniero italiano Agustín Codazzi, junto a los pintores Carmelo Fernández, Henry Price y Manuel María Paz, dibujó y cartografió por primera vez las provincias de la Nueva Granada.
+            </p>
+            <div class="war-inspect-trigger">Ver Acuarelas & Mapa de Codazzi &rarr;</div>
+          </div>
+        </div>
+
+        <!-- 2. Abolición de la Esclavitud -->
+        <div class="patrimonio-card" onclick="openPatrimonioModal('esclavitud')">
+          <div class="patrimonio-img-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #221510 0%, #0d0a08 100%);">
+            <span class="patrimonio-badge">Ley de la República</span>
+            <div style="font-size: 4rem; text-shadow: 0 0 20px rgba(212,175,55,0.4);">⛓️💥</div>
+          </div>
+          <div class="patrimonio-content">
+            <h3>La Abolición Definitiva de la Esclavitud (1851 – 1852)</h3>
+            <p>
+              El 21 de mayo de 1851, el presidente José Hilario López promulgó la ley que declaró libres a todos los esclavizados a partir del 1 de enero de 1852. Puso fin a tres siglos de ignominia colonial, detonando la guerra civil del 51 liderada por los amos mineros del Cauca y Antioquia.
+            </p>
+            <div class="war-inspect-trigger">Ver Tablas de Manumisión & Precios &rarr;</div>
+          </div>
+        </div>
+
+        <!-- 3. Archivo Nacional -->
+        <div class="patrimonio-card" onclick="openPatrimonioModal('archivo')">
+          <div class="patrimonio-img-wrap" style="display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, #101c24 0%, #080d12 100%);">
+            <span class="patrimonio-badge">1868 • Memoria Nacional</span>
+            <div style="font-size: 4rem; text-shadow: 0 0 20px rgba(56,189,248,0.4);">📜🏛️</div>
+          </div>
+          <div class="patrimonio-content">
+            <h3>Fundación del Archivo Nacional por Vergara y Vergara</h3>
+            <p>
+              En 1868, don José María Vergara y Vergara emprendió la titánica tarea de rescatar, despolvar y catalogar los miles de legajos manuscritos coloniales y republicanos dispersos en conventos y despachos ministeriales, fundando el actual Archivo General de la Nación.
+            </p>
+            <div class="war-inspect-trigger">Ver Catálogo de Fondos Históricos &rarr;</div>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
+       MODAL DE EXPEDIENTES DE MUSEO
        ========================================== -->
-
-  <!-- Plantilla Esclavitud -->
-  <template id="drawer-esclavitud">
-    <div class="document-badge">Manumisión Gradual</div>
-    <h2 class="title-font">Fin de la Esclavitud</h2>
-    <p>
-      La Ley de 1821 de Libertad de Partos dictaba que los hijos nacidos de madres esclavizadas eran libres pero debían servir a los amos bajo el patronato colonial hasta cumplir 18 años para amortizar los costos de su alimentación y crianza.
-    </p>
-    <p>
-      El análisis de los expedientes del Fondo Manumisión revela que, a medida que se acercaba el año de abolición absoluta (1852), los precios de los esclavizados sufrieron un colapso en el Chocó y el Cauca debido a que su período legal de servidumbre ya tenía un límite temporal fijo.
-    </p>
-    <div class="stat-box">
-      <h4 class="title-font">Distribución de Casos Registrados (1810-1851)</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Menor a 100 pesos (Menores de edad/ancianos)</span>
-            <span>425 casos</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="100"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Entre 100 y 200 pesos (Salud limitada)</span>
-            <span>312 casos</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="73"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Entre 200 y 300 pesos (Plenitud productiva)</span>
-            <span>289 casos</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="68"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Superior a 300 pesos (Minería fuerte)</span>
-            <span>352 casos</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="82"></div>
-          </div>
-        </div>
+  <div id="museumModal" class="museum-modal-backdrop" onclick="closeMuseumModal(event)">
+    <div class="museum-modal-box">
+      <button class="modal-close-btn" onclick="closeMuseumModalDirect()" aria-label="Cerrar">&times;</button>
+      <div id="modalDynamicContent">
+        <!-- Contenido inyectado por JavaScript -->
       </div>
     </div>
-  </template>
+  </div>
 
-  <!-- Plantilla Comisión Corográfica -->
-  <template id="drawer-comision">
-    <div class="document-badge">Comisión Corográfica</div>
-    <h2 class="title-font">Acuarelas y Mapas</h2>
-    <p>
-      Agustín Codazzi, militar y geógrafo italiano, lideró las expediciones cruzando cordilleras, selvas y llanuras. Acompañado por pintores, la Comisión produjo un inventario minucioso de la geografía, climas, y grupos humanos del país.
-    </p>
-    <img src="assets/images/siglo_xix_corografica.png" alt="Acuarela rural de la Comisión Corográfica de Codazzi">
-    <p>
-      Las acuarelas son una ventana etnográfica incalculable para observar los vestuarios de campesinos, indígenas, hacendados y las actividades comerciales del siglo XIX.
-    </p>
-    <div class="stat-box">
-      <h4 class="title-font">Alcance de la Comisión</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Expediciones de Campo</span>
-            <span>10 grandes viajes</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <!-- Plantilla Archivo -->
-  <template id="drawer-archivo">
-    <div class="document-badge">Archivo Nacional de Colombia</div>
-    <h2 class="title-font">Ordenamiento Archivístico</h2>
-    <p>
-      Don José María Vergara y Vergara ordenó centralizar y clasificar los papeles sueltos acumulados desde la época virreinal. Ideó una clasificación cronológica y temática pionera en América Latina, dividida en sección colonial y sección republicana.
-    </p>
-  </template>
-
+  <!-- Pie de Página Institucional -->
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Sección: Siglo XIX.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Los fondos gráficos e informes de la Comisión Corográfica reposan en la Biblioteca Nacional de Colombia.
+    <p>&copy; 2026 Colombianopedia — Gran Enciclopedia de la Memoria y la Historia Nacional.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.8rem; opacity: 0.7;">
+      Fuentes primarias: Archivo General de la Nación (AGN), Biblioteca Nacional de Colombia, Mapoteca Histórica de Agustín Codazzi.
     </p>
   </footer>
 
+  <!-- Script base del portal -->
   <script src="js/main.js"></script>
+
+  <!-- Lógica Interactiva Específica del Siglo XIX -->
+  <script>
+    // Conmutador de Pestañas Constitucionales
+    function switchConstitution(constId) {
+      document.querySelectorAll('.constitution-nav-tabs .const-tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.const-card-content').forEach(card => {
+        card.classList.remove('active');
+      });
+
+      const activeBtn = event.currentTarget;
+      activeBtn.classList.add('active');
+      activeBtn.setAttribute('aria-selected', 'true');
+
+      const target = document.getElementById('const-' + constId);
+      if (target) {
+        target.classList.add('active');
+      }
+    }
+
+    // Base de Datos de Expedientes de Guerras Civiles
+    const warDatabase = {
+      supremos: {
+        title: "Guerra de los Supremos (1839 – 1842)",
+        subtitle: "El alzamiento de los caudillos provinciales contra Santafé",
+        date: "Junio de 1839 – Marzo de 1842",
+        epicenter: "Pasto, Popayán, Tunja, Socorro, Santa Marta",
+        belligerents: "Gobierno Centralista de José Ignacio de Márquez vs. 'Jefes Supremos' (Obando, Reyes Patria, Carmona)",
+        casualties: "~4.000 bajas militares y miles de desplazados",
+        body: `
+          <p>La chispa que encendió la pradera fue de carácter religioso y local: una ley del Congreso de 1839 que suprimía cuatro conventos menores en Pasto con menos de ocho religiosos, para destinar sus rentas a la instrucción pública de la juventud. Los pastusos, de arraigada fe católica, se sublevaron con apoyo del clero.</p>
+          <p>El general José María Obando, temiendo ser procesado por el asesinato del Mariscal Sucre, se puso al frente del alzamiento en el sur proclamándose 'Director Supremo de la Guerra'. Rápidamente, comandantes de otras regiones (los 'Supremos') aprovecharon para rebelarse contra el centralismo bogotano y exigir un Estado federal.</p>
+          <div style="background: rgba(212,175,55,0.1); border-left: 3px solid #d4af37; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
+            <strong>Consecuencia Política:</strong> El gobierno de Márquez recurrió al auxilio del general Juan José Flores, presidente de Ecuador, lo que enfureció al patriotismo granadino pero permitió aplastar la rebelión. La victoria fortaleció al sector ministerial (conservador) que redactaría la Constitución autoritaria y clerical de 1843 con Pedro Alcántara Herrán.
+          </div>
+        `
+      },
+      guerra1851: {
+        title: "Guerra Civil de 1851: La Reacción Conservadora",
+        subtitle: "La resistencia armada de los amos esclavistas contra la libertad humana",
+        date: "Mayo – Septiembre de 1851",
+        epicenter: "Valle del Patía, Popayán, Pasto, Medellín, Guasca",
+        belligerents: "Gobierno Liberal de José Hilario López vs. Hacendados y Milicias Conservadoras",
+        casualties: "~1.500 combatientes",
+        body: `
+          <p>Tras la asunción de José Hilario López a la presidencia en 1849, el Partido Liberal impulsó un torbellino de reformas estructurales orientadas a liquidar los resabios feudales y coloniales: abolición sin condiciones de la esclavitud, expulsión de los jesuitas, libertad absoluta de cultos y desmonte del estanco del tabaco.</p>
+          <p>Los terratenientes mineros del sur y occidente, liderados por el poeta y hacendado Julio Arboleda en Popayán, y los conservadores antioqueños dirigidos por Eusebio Borrero, se levantaron en armas declarando que el gobierno atentaba contra el sagrado derecho de propiedad privada y las leyes de la Iglesia.</p>
+          <div style="background: rgba(16,185,129,0.1); border-left: 3px solid #10b981; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
+            <strong>Desenlace Libertario:</strong> El ejército constitucional y las milicias populares de artesanos y libertos aplastaron las fuerzas rebeldes en la Batalla de Rionegro. La Ley de Manumisión se consolidó y el 1 de enero de 1852 no quedó un solo ser humano esclavizado en suelo granadino.
+          </div>
+        `
+      },
+      melo1854: {
+        title: "El Golpe de José María Melo y los Artesanos (1854)",
+        subtitle: "La única revolución plebeya y proteccionista del siglo XIX",
+        date: "17 de Abril – 4 de Diciembre de 1854",
+        epicenter: "Bogotá y la Sabana",
+        belligerents: "Sociedades Democráticas de Artesanos y Gral. Melo vs. Alianza Bipartidista de Notables",
+        casualties: "~3.000 muertos en el asalto final a Bogotá",
+        body: `
+          <p>En abril de 1854, el general José María Melo dio un golpe militar y derrocó al presidente José María Obando. A diferencia de las demás guerras caudillistas, este conflicto tuvo una profunda base clasista: los artesanos bogotanos, organizados en las Sociedades Democráticas, exigían al gobierno aranceles proteccionistas para defender sus talleres de calzado, tejidos y herrería frente a la inundación de mercancías baratas británicas promovida por los jóvenes liberales 'gólgotas'.</p>
+          <p>Ante la insurrección de Melo y los artesanos, las élites liberales y conservadoras hicieron una tregua histórica, formaron un ejército conjunto de más de 11.000 hombres comandado por Tomás Cipriano de Mosquera, Pedro Alcántara Herrán y José Hilario López, y sitiaron Bogotá.</p>
+          <div style="background: rgba(239,68,68,0.1); border-left: 3px solid #ef4444; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
+            <strong>Juicio y Destierro:</strong> El 4 de diciembre de 1854 Bogotá fue tomada a sangre y fuego. Melo fue apresado y desterrado (muriendo años después fusilado en México junto a las tropas de Benito Juárez), y más de 200 artesanos líderes fueron deportados a las selvas pestilentes de Panamá en un dramático exterminio civil.
+          </div>
+        `
+      },
+      mosquera1860: {
+        title: "La Guerra Federal de 1860 – 1862",
+        subtitle: "La epopeya del General Mosquera y la caída del régimen de Ospina Rodríguez",
+        date: "Mayo de 1860 – Noviembre de 1862",
+        epicenter: "Cauca, Tolima, Santander, Boyacá y Toma de Bogotá",
+        belligerents: "Estados Soberanos Confederados (Mosquera) vs. Gobierno de Mariano Ospina Rodríguez",
+        casualties: "~8.000 bajas",
+        body: `
+          <p>El presidente conservador Mariano Ospina Rodríguez promovió en el Congreso leyes que cercenaban la autonomía electoral de los Estados soberanos creados por la Constitución de 1858. Tomás Cipriano de Mosquera, gobernador del Estado Soberano del Cauca, declaró la escisión del Cauca y la guerra abierta al régimen centralista.</p>
+          <p>Con un ejército multiétnico que unía a indígenas caucanos, negros del litoral pacífico y veteranos de las guerras independentistas, Mosquera avanzó por la cordillera, venció a las tropas conservadoras en Santa Bárbara de Cartago y entró triunfante en Bogotá en julio de 1861, encarcelando a Ospina Rodríguez y asumiendo poderes dictatoriales provisionales.</p>
+          <div style="background: rgba(212,175,55,0.15); border-left: 3px solid #d4af37; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
+            <strong>Hito Histórico:</strong> Es la única contienda civil en la historia republicana donde una fuerza insurgente venció militarmente al Estado central. De este triunfo brotó la célebre Convención de Rionegro y la Constitución Radical de 1863.
+          </div>
+        `
+      },
+      guerra1876: {
+        title: "La Guerra de las Escuelas (1876 – 1877)",
+        subtitle: "El combate armado por el laicismo escolar y el dogma de la fe",
+        date: "Julio de 1876 – Mayo de 1877",
+        epicenter: "Antioquia, Tolima, Cauca, Santander",
+        belligerents: "Gobierno Radical de Aquileo Parra vs. Conservadores y Obispos de Pasto y Popayán",
+        casualties: "~9.000 muertos",
+        body: `
+          <p>El Decreto Orgánico de Instrucción Pública Primaria de 1870 estipulaba que las escuelas estatales debían educar ciudadanos libres, racionales y cívicos, dejando la religión como materia optativa fuera de las horas de clase obligatorias. La jerarquía eclesiástica, encabezada por los obispos de Popayán y Pasto, consideró que la medida era impía y amenazó con la excomunión a los padres que enviaran a sus hijos a los colegios oficiales.</p>
+          <p>En 1876 estalló la rebelión armada. Los estados conservadores de Antioquia y Tolima marcharon sobre el Cauca y Cundinamarca bajo estandartes con la imagen del Sagrado Corazón de Jesús. Tras la pavorosa Batalla de Los Chancos (cerca de Buga), las fuerzas del presidente Aquileo Parra y del general Julián Trujillo lograron la capitulación de los rebeldes.</p>
+        `
+      },
+      guerra1885: {
+        title: "Guerra Civil de 1884 – 1885",
+        subtitle: "La batalla final que sepultó los Estados Unidos de Colombia",
+        date: "Agosto de 1884 – Agosto de 1885",
+        epicenter: "Santander, Magdalena, Cundinamarca",
+        belligerents: "Liberales Radicales del Olimpo vs. Alianza Nuñista (Independientes y Conservadores)",
+        casualties: "~6.000 bajas",
+        body: `
+          <p>Al llegar Rafael Núñez a su segunda presidencia en 1884 con el lema de reformar las bases fiscales y aplacar los desórdenes provinciales, los liberales radicales más ortodoxos sintieron que el mandatario traicionaba la pureza doctrinaria de Rionegro. El Estado Soberano de Santander se declaró en rebelión, secundado por Boyacá y Cundinamarca.</p>
+          <p>En el curso de la guerra, el general conservador Leonardo Canal y las fuerzas leales a Núñez libraron la legendaria Batalla de La Humareda en las orillas del río Magdalena el 17 de junio de 1885. Aunque la batalla fue tácticamente inconclusa y sangrienta, representó el suicidio militar del radicalismo.</p>
+          <div style="background: rgba(212,175,55,0.1); border-left: 3px solid #d4af37; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
+            <strong>El Nacimiento del Siglo de Núñez:</strong> Ante la rendición rebelde, Núñez pronunció desde el balcón presidencial la inmortal sentencia: <em>"La Constitución de Rionegro ha dejado de existir"</em>, convocando a la asamblea que redactaría la Carta Centralista de 1886.
+          </div>
+        `
+      },
+      guerra1895: {
+        title: "Guerra Civil de 1895",
+        subtitle: "El intento relámpago por quebrar el régimen de Miguel Antonio Caro",
+        date: "Enero – Marzo de 1895 (60 días)",
+        epicenter: "Cundinamarca, Boyacá y Santander",
+        belligerents: "Liberales Alzados vs. Tropas Gubernamentales del General Rafael Reyes",
+        casualties: "~2.500 bajas",
+        body: `
+          <p>Agotados por la férrea censura de la prensa opositora, la ley de los caballos (que permitía desterrar ovetenses sin juicio) y la imposibilidad de ganar escaños legislativos bajo el control electoral conservador, un ala del Partido Liberal se levantó en armas en enero de 1895.</p>
+          <p>El vicepresidente en ejercicio del poder, don Miguel Antonio Caro, reaccionó con implacable presteza: declaró el estado de sitio y nombró como general en jefe de operaciones a Rafael Reyes. En sesenta días vertiginosos, Reyes persiguió a las columnas rebeldes y las aniquiló en las batallas de La Tribuna y Enciso, obligando a los jefes liberales a capitular.</p>
+        `
+      }
+    };
+
+    // Base de Datos de Patrimonio y Ciencia
+    const patrimonioDatabase = {
+      corografica: {
+        title: "La Comisión Corográfica de Agustín Codazzi (1850 – 1859)",
+        badge: "Ciencia & Cartografía",
+        body: `
+          <p>Inspirada en las enseñanzas de Alejandro de Humboldt y por mandato del presidente Tomás Cipriano de Mosquera y Manuel Murillo Toro, la Comisión Corográfica fue una empresa científica monumental destinada a levantar el mapa oficial de la Nueva Granada y hacer un inventario sistemático de sus recursos naturales, vías fluviales, climas y grupos humanos.</p>
+          <p>Agustín Codazzi, cartógrafo y veterano de las guerras de independencia de Venezuela, recorrió con teodolitos y barómetros más de 20.000 kilómetros. Iba acompañado de destacados dibujantes: el venezolano <strong>Carmelo Fernández</strong>, el británico <strong>Henry Price</strong> y el gran pintor chocoano <strong>Manuel María Paz</strong>.</p>
+          <p>Las 151 acuarelas resultantes, custodiadas en la Biblioteca Nacional de Colombia, constituyen el documento gráfico más sublime de las identidades regionales del siglo XIX: retratan bogotanos aristocráticos en carruajes, indios paeces bajando de los nevados, bogas zambos impulsando champanes en el Magdalena y campesinas de ruana hilando en los valles andinos.</p>
+        `
+      },
+      esclavitud: {
+        title: "El Itinerario Legal de la Manumisión Progresiva",
+        badge: "Derechos Humanos & Legislación",
+        body: `
+          <p>La libertad de los afrodescendientes en Colombia no fue una concesión graciosa, sino una conquista arrancada tras décadas de cimarronaje, litigios en estrados judiciales y participación masiva en las tropas patriotas.</p>
+          <p>El camino institucional comenzó en el Congreso de Cúcuta de 1821 con la <strong>Ley de Libertad de Vientres</strong>, que obligaba a los amos a liberar a los recién nacidos pero los forzaba al patronato hasta los 18 años para amortizar los costos de su crianza.</p>
+          <p>Para la década de 1840, los fondos de manumisión provinciales (financiados con impuestos a las herencias) eran sistemáticamente desviados o dilatados por las juntas dominadas por amos. En 1851, el presidente José Hilario López expidió la ley definitiva que fijó el 1 de enero de 1852 como el día de la emancipación absoluta, indemnizando a los antiguos amos con bonos de deuda pública de la República.</p>
+        `
+      },
+      archivo: {
+        title: "Fundación y Ordenamiento del Archivo Nacional (1868)",
+        badge: "Acervo Documental de la Nación",
+        body: `
+          <p>Tras décadas de guerras civiles y quemas de archivos eclesiásticos y municipales, el historiador y literato José María Vergara y Vergara propuso al gobierno de los Estados Unidos de Colombia rescatar la memoria en papel de la república.</p>
+          <p>Mediante decreto de 1868 se organizó el Archivo Nacional, designando a Vergara como su primer director ad-honorem. En salones húmedos del antiguo convento de Santo Domingo, rescató toneladas de pliegos coloniales comidos por la polilla y diseñó una clasificación pionera en Hispanoamérica: Sección Colonial (tierras, resguardos, encomiendas, negros y esclavos) y Sección República (guerras civiles, relaciones exteriores, aduanas).</p>
+          <p>Este acervo fundacional es el que hoy custodia el Archivo General de la Nación (AGN) en Bogotá, salvaguardando los títulos originarios de las comunidades campesinas e indígenas de todo el país.</p>
+        `
+      }
+    };
+
+    // Funciones del Modal de Museo
+    function openWarModal(warKey) {
+      const war = warDatabase[warKey];
+      if (!war) return;
+
+      const modalContent = document.getElementById('modalDynamicContent');
+      modalContent.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #ef4444; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.15em;">
+          Expediente Bélico de Museo • Conflicto Nacional
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 1.85rem; color: #fff; line-height: 1.25; margin-bottom: 0.5rem;">
+          ${war.title}
+        </h2>
+        <div style="font-family: var(--font-mono); font-size: 0.85rem; color: #d4af37; margin-bottom: 1.5rem;">
+          ${war.subtitle}
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; background: rgba(0,0,0,0.5); padding: 1.2rem; border-radius: 8px; border: 1px solid rgba(255,255,255,0.08); margin-bottom: 1.5rem; font-size: 0.85rem;">
+          <div><strong style="color: #94a3b8;">Cronología:</strong><br><span style="color: #fff;">${war.date}</span></div>
+          <div><strong style="color: #94a3b8;">Teatro de Guerra:</strong><br><span style="color: #fff;">${war.epicenter}</span></div>
+          <div><strong style="color: #94a3b8;">Fuerzas en Pugna:</strong><br><span style="color: #fff;">${war.belligerents}</span></div>
+          <div><strong style="color: #94a3b8;">Saldo Estimado:</strong><br><span style="color: #f87171;">${war.casualties}</span></div>
+        </div>
+
+        <div style="color: #cbd5e1; font-size: 0.98rem; line-height: 1.7;">
+          ${war.body}
+        </div>
+      `;
+
+      document.getElementById('museumModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function openPatrimonioModal(patrimonioKey) {
+      const item = patrimonioDatabase[patrimonioKey];
+      if (!item) return;
+
+      const modalContent = document.getElementById('modalDynamicContent');
+      modalContent.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #d4af37; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.15em;">
+          ${item.badge}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 1.85rem; color: #fff; line-height: 1.25; margin-bottom: 1.5rem;">
+          ${item.title}
+        </h2>
+        <div style="color: #cbd5e1; font-size: 1rem; line-height: 1.75;">
+          ${item.body}
+        </div>
+      `;
+
+      document.getElementById('museumModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMuseumModal(event) {
+      if (event.target.id === 'museumModal') {
+        closeMuseumModalDirect();
+      }
+    }
+
+    function closeMuseumModalDirect() {
+      document.getElementById('museumModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    // Tecla ESC para cerrar modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeMuseumModalDirect();
+      }
+    });
+  </script>
 </body>
 </html>

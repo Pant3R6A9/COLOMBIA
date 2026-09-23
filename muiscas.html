@@ -3,15 +3,271 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Enciclopedia Muisca - Colombia en el Tiempo</title>
-  <meta name="description" content="Profundización en la civilización Muisca: costumbres, lengua Muysccubun, mitología, deidades, gobernantes y piezas del Museo del Oro.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>Los Muiscas: La Gran Confederación Chibcha — Colombianopedia</title>
+  <meta name="description" content="Monográfico exhaustivo de la civilización Muisca: Zipazgo y Zaqueato, mitos de origen (Chiminigagua, Bachué, Bochica), ceremonia de El Dorado, astronomía en Zaquenzipa y diccionario toponímico Muysccubun.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --gold-muisca: #d4af37;
+      --gold-light: #fef08a;
+      --emerald-muisca: #10b981;
+      --clay-terracotta: #c26d53;
+      --obsidian-dark: #07090e;
+      --obsidian-card: rgba(14, 18, 28, 0.8);
+      --border-gold: rgba(212, 175, 55, 0.25);
+    }
+
+    .muisca-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-muisca {
+      background: linear-gradient(180deg, rgba(212,175,55,0.12) 0%, rgba(7,9,14,0) 100%),
+                  radial-gradient(circle at 50% 10%, rgba(16,185,129,0.1), transparent 70%);
+      border: 1px solid var(--border-gold);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .hero-muisca::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-muisca), var(--emerald-muisca), transparent);
+    }
+
+    .muisca-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--gold-muisca);
+      border-radius: 50px;
+      color: var(--gold-muisca);
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-muisca h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-muisca h1 span {
+      background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #b45309 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Pestañas de Navegación del Monográfico */
+    .muisca-tabs-nav {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 1rem;
+    }
+
+    .muisca-tab-btn {
+      padding: 0.75rem 1.4rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 6px;
+      color: #94a3b8;
+      font-family: var(--font-title);
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+
+    .muisca-tab-btn:hover {
+      color: #fff;
+      border-color: var(--gold-muisca);
+      background: rgba(212, 175, 55, 0.08);
+    }
+
+    .muisca-tab-btn.active {
+      color: #000;
+      background: var(--gold-muisca);
+      border-color: var(--gold-muisca);
+      font-weight: 700;
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+    }
+
+    .tab-pane {
+      display: none;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .tab-pane.active {
+      display: block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Estructuras de contenido */
+    .power-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .power-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1.8rem;
+      border-top: 3px solid var(--gold-muisca);
+    }
+
+    .power-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .power-role {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: var(--emerald-muisca);
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+
+    /* Deidades Grid */
+    .deities-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .deity-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 1.8rem;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .deity-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-muisca);
+    }
+
+    .deity-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--gold-muisca);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .deity-card h4 {
+      font-family: var(--font-title);
+      font-size: 1.4rem;
+      color: #fff;
+      margin-bottom: 0.6rem;
+    }
+
+    /* Diccionario Muysccubun */
+    .search-box-muisca {
+      width: 100%;
+      padding: 1rem 1.4rem;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--border-gold);
+      border-radius: 8px;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .search-box-muisca:focus {
+      outline: none;
+      border-color: var(--gold-muisca);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+
+    .dict-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+
+    .dict-item {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 6px;
+      padding: 1.2rem;
+      transition: background 0.2s ease;
+    }
+
+    .dict-item:hover {
+      background: rgba(212, 175, 55, 0.05);
+      border-color: var(--gold-muisca);
+    }
+
+    .dict-word {
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--gold-light);
+      margin-bottom: 0.2rem;
+    }
+
+    .dict-meaning {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+  </style>
 </head>
 <body data-theme="precolombina">
 
-  <!-- Encabezado Común -->
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -19,9 +275,9 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
-          <a href="precolombina.html">Época Precolombina</a>
+          <a href="precolombina.html" class="active">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
           <a href="independencia.html">Independencia y Grito</a>
           <a href="siglo-xix.html">República (Siglo XIX)</a>
@@ -30,7 +286,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
@@ -43,381 +299,302 @@
     </nav>
   </header>
 
-  <!-- Contenedor Principal -->
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
-        Civilizaciones Prehispánicas
+  <!-- ==========================================
+       CONTENEDOR MONOGRÁFICO MUISCA
+       ========================================== -->
+  <main class="muisca-container">
+
+    <div style="margin-bottom: 1.5rem;">
+      <a href="precolombina.html" style="color: var(--gold-muisca); font-family: var(--font-title); font-size: 0.9rem; text-decoration: none; display: inline-flex; align-items: center; gap: 0.4rem;">
+        &larr; Volver al Panorama Precolombino General
+      </a>
+    </div>
+
+    <!-- Hero Monumental Muisca -->
+    <section class="hero-muisca" id="hero-section">
+      <div class="muisca-badge">
+        <span>✦</span> Gran Monográfico de la Confederación Chibcha <span>✦</span>
       </div>
-      <h1>Los Muiscas</h1>
-      <p>Una inmersión profunda en la Confederación Chibcha: su organización social en los valles andinos, su idioma, sus deidades cósmicas y sus gobernantes históricos.</p>
+      <h1>Los Muiscas: Los Hijos de <span>Bachué y el Sol</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.1rem; line-height: 1.8;">
+        Gobernantes de los altiplanos fríos de Cundinamarca y Boyacá, los Muiscas forjaron una de las cuatro confederaciones originarias más avanzadas de América. Señores de la sal, custodios de las esmeraldas y tejedores de mantas sagradas, su legado perdura en la toponimia de cada rincón de la Sabana de Bogotá.
+      </p>
     </section>
 
-    <!-- Botón para regresar a la página anterior -->
-    <div style="margin-bottom: 2rem; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
-      <a href="precolombina.html" class="btn btn-outline">&larr; Volver a Época Precolombina</a>
-      <div style="font-size: 0.85rem; color: var(--text-secondary);">
-        🎧 Activa el sonido ambiente en la esquina inferior izquierda
+    <!-- Navegación por Pestañas Monográficas -->
+    <div class="muisca-tabs-nav">
+      <button class="muisca-tab-btn active" onclick="switchMuiscaTab('territorio')">1. Territorio y Jerarquía Política</button>
+      <button class="muisca-tab-btn" onclick="switchMuiscaTab('mitologia')">2. Cosmogonía y Teogonía</button>
+      <button class="muisca-tab-btn" onclick="switchMuiscaTab('eldorado')">3. El Ritual de El Dorado</button>
+      <button class="muisca-tab-btn" onclick="switchMuiscaTab('astronomia')">4. Astronomía y Calendario</button>
+      <button class="muisca-tab-btn" onclick="switchMuiscaTab('diccionario')">5. Diccionario Muysccubun</button>
+    </div>
+
+    <!-- Pestaña 1: Territorio y Jerarquía Política -->
+    <section class="tab-pane active" id="pane-territorio">
+      <div style="max-width: 860px; margin: 0 auto 2.5rem; color: #cbd5e1; line-height: 1.7; font-size: 1.05rem;">
+        <p>
+          La sociedad Muisca estaba estructurada como una confederación de cacicazgos independientes pero enlazados por lazos lingüísticos, comerciales y ceremoniales. A la llegada de los españoles en 1537, existían dos grandes hegemonías territoriales que competían por la primacía, junto a dos centros religiosos de paz inviolable:
+        </p>
       </div>
-    </div>
 
-    <!-- Menú de Pestañas -->
-    <div class="tabs">
-      <button class="tab-button active" onclick="openTab(event, 'tab-territorio')">Territorio y Sociedad</button>
-      <button class="tab-button" onclick="openTab(event, 'tab-lengua')">Idioma Muysccubun</button>
-      <button class="tab-button" onclick="openTab(event, 'tab-mitologia')">Mitología y Dioses</button>
-      <button class="tab-button" onclick="openTab(event, 'tab-gobernantes')">Gobernantes e Historia</button>
-      <button class="tab-button" onclick="openTab(event, 'tab-galeria')">Piezas de Museo</button>
-    </div>
-
-    <!-- ==========================================
-         CONTENIDOS DE LAS PESTAÑAS
-         ========================================== -->
-
-    <!-- 1. Territorio y Sociedad -->
-    <div id="tab-territorio" class="tab-content active-content">
-      <h2 class="title-font" style="margin-bottom: 1.5rem;">Territorio, Minería y Economía</h2>
-      <p style="margin-bottom: 1.5rem;">
-        La Confederación Muisca ocupó las tierras altas del Altiplano Cundiboyacense (valles templados y fríos de Cundinamarca, Boyacá y el sur de Santander). Estaba dividida principalmente en dos grandes unidades políticas que rivalizaban entre sí, además de dos cacicazgos sagrados independientes:
-      </p>
-      
-      <div class="character-grid" style="margin-bottom: 3rem;">
-        <div class="character-card">
+      <div class="power-grid">
+        <div class="power-card">
+          <div class="power-role">Suroeste • Sabana de Bogotá</div>
           <h3>El Zipazgo de Bacatá</h3>
-          <div class="character-role">Suroeste - Bogotá</div>
-          <p>
-            Gobernado por el **Zipa**, controlaba cerca del 70% del territorio de la Confederación. Dominaba las valiosas minas de sal de Zipaquirá y Nemocón, y controlaba las ricas vegas agrícolas de la sabana de Bogotá.
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Gobernado por el <strong>Zipa</strong> (su último soberano libre fue Tisquesusa). Controlaba cerca del 70% del territorio y la población de la confederación, dominando las vegas agrícolas más ricas del altiplano y las colosales minas de sal de Zipaquirá y Nemocón.
           </p>
         </div>
-        <div class="character-card">
-          <h3>El Zacazgo de Hunza</h3>
-          <div class="character-role">Noreste - Tunja</div>
-          <p>
-            Gobernado por el **Zaque**, tenía un gran peso religioso y controlaba el área de Boyacá, caracterizada por la minería de esmeraldas de Somondoco y el comercio con los llanos orientales.
+
+        <div class="power-card">
+          <div class="power-role">Noreste • Valles de Tunja</div>
+          <h3>El Zaqueato de Hunza</h3>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Gobernado por el <strong>Zaque</strong> (cuyo último soberano fue Quemuenchatocha). Ejercía un influjo sagrado reverencial en Boyacá, dominando las minas de esmeraldas de Somondoco y Chivor y el paso comercial hacia los llanos del Casanare.
           </p>
         </div>
-        <div class="character-card">
-          <h3>El Cacicazgo de Iraca</h3>
-          <div class="character-role">Centro Sagrado - Sogamoso</div>
-          <p>
-            Gobernado por el **Sugamuxi** (Sumo Sacerdote), albergaba el Templo del Sol y era el epicentro espiritual y destino de peregrinaciones pacíficas de toda la confederación.
+
+        <div class="power-card">
+          <div class="power-role">Epicentro Espiritual • Sogamoso</div>
+          <h3>Cacicazgo de Iraca</h3>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Gobernado por el <strong>Sugamuxi</strong> (Sumo Sacerdote de Sué). En su suelo se levantaba el majestuoso <strong>Templo del Sol</strong>, santuario de columnas de guayacán forradas en láminas de oro a donde acudían en peregrinación pacífica todos los caciques.
           </p>
         </div>
-      </div>
 
-      <h3 class="title-font" style="margin-bottom: 1rem;">Comercio, Sal y Esmeraldas</h3>
-      <p style="margin-bottom: 1.5rem;">
-        Los Muiscas fueron conocidos como los "hombres de la sal" debido a la explotación a gran escala de las fuentes salinas de **Zipaquirá, Nemocón y Tausa**. Cocinaban la salmuera en vasijas de barro hasta obtener panes de sal sólidas. Estos panes se convirtieron en la principal divisa de intercambio del norte de los Andes, trocándose por algodón de las tierras bajas, oro del río Cauca y plumas exóticas de la Amazonía.
-      </p>
-
-      <h3 class="title-font" style="margin-bottom: 1rem;">Los Guerreros Guechas</h3>
-      <p>
-        La defensa del territorio estaba encomendada a los **Guechas**, guerreros de élite seleccionados por su fuerza física, valentía y disciplina. No formaban un ejército permanente, sino una guardia fronteriza para contener los asaltos de tribus guerreras como los Panches y los Muzos en las laderas del altiplano.
-      </p>
-    </div>
-
-    <!-- 2. Idioma Muysccubun (Diccionario Completo) -->
-    <div id="tab-lengua" class="tab-content">
-      <h2 class="title-font" style="margin-bottom: 1.5rem;">Diccionario Completo Muysccubun</h2>
-      <p style="margin-bottom: 2rem;">
-        Usa el buscador para filtrar términos o expresiones de la lengua de la Confederación Muisca.
-      </p>
-
-      <!-- Buscador -->
-      <div class="search-container">
-        <input type="text" id="diccionario-search" class="search-bar" placeholder="Escribe para buscar (ej. Sol, Luna, Guerrero)...">
-      </div>
-
-      <div class="glossary-grid" id="dictionary-list">
-        <!-- Palabras Generales -->
-        <div class="glossary-card">
-          <div class="glossary-word">Muysca</div>
-          <div class="glossary-meaning">Persona / Humano / Gente</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Muysccubun</div>
-          <div class="glossary-meaning">Idioma de la gente muisca</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Sua</div>
-          <div class="glossary-meaning">Sol / Padre cósmico</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Chía</div>
-          <div class="glossary-meaning">Luna / Diosa protectora</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Chib</div>
-          <div class="glossary-meaning">Báculo / Bastón de mando</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Guecha</div>
-          <div class="glossary-meaning">Guerrero valiente / Guardia</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Zhyquy</div>
-          <div class="glossary-meaning">Sacerdote / Sabio espiritual</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Yba</div>
-          <div class="glossary-meaning">Sangre / Sagrado / Oro</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Fiba</div>
-          <div class="glossary-meaning">Viento / Respiración</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Gua</div>
-          <div class="glossary-meaning">Montaña / Cerro</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Uba</div>
-          <div class="glossary-meaning">Rostro / Semilla</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Quihicha</div>
-          <div class="glossary-meaning">Pie / Cimiento</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Cuca</div>
-          <div class="glossary-meaning">Santuario / Escuela ceremonial</div>
-        </div>
-        <!-- Números -->
-        <div class="glossary-card">
-          <div class="glossary-word">Ata</div>
-          <div class="glossary-meaning">Número Uno (1)</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Boza</div>
-          <div class="glossary-meaning">Número Dos (2)</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Mica</div>
-          <div class="glossary-meaning">Número Tres (3)</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Muyca</div>
-          <div class="glossary-meaning">Número Cuatro (4)</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Esquicha</div>
-          <div class="glossary-meaning">Número Cinco (5)</div>
-        </div>
-        <!-- Lugares -->
-        <div class="glossary-card">
-          <div class="glossary-word">Bacatá</div>
-          <div class="glossary-meaning">Cercado fuera de la labranza (Bogotá)</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Hunza</div>
-          <div class="glossary-meaning">Cercado del Zaque (Tunja)</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Suamox</div>
-          <div class="glossary-meaning">Morada del Sol (Sogamoso)</div>
-        </div>
-        <!-- Expresiones -->
-        <div class="glossary-card">
-          <div class="glossary-word">Asyhy</div>
-          <div class="glossary-meaning">Saludo / Hola / Bienvenido</div>
-        </div>
-        <div class="glossary-card">
-          <div class="glossary-word">Chue cuta</div>
-          <div class="glossary-meaning">Adiós / Despedida</div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 3. Mitología y Dioses -->
-    <div id="tab-mitologia" class="tab-content">
-      <h2 class="title-font" style="margin-bottom: 1.5rem;">La Creación y los Dioses Muiscas</h2>
-      <p style="margin-bottom: 2rem;">
-        La cosmogonía Muisca concebía un universo originado en el pensamiento y la luz, con deidades tutelares asociadas a las fuerzas naturales.
-      </p>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start; margin-bottom: 3rem;">
-        <div>
-          <h3 class="title-font" style="color: var(--accent); margin-bottom: 1rem;">Bochica y el Salto del Tequendama</h3>
-          <p style="margin-bottom: 1rem;">
-            Bochica era el dios civilizador, un anciano con túnicas y báculo que enseñó a hilar el algodón, a tejer mantas y las normas morales. 
-          </p>
-          <p>
-            Según el mito, la diosa de la luna (Chía), resentida con los hombres, inundó la sabana de Bogotá desbordando los ríos Sopó y Tibitó. Ante la desesperación del pueblo, Bochica arrojó su báculo dorado (Chib) contra las inmensas rocas de los Andes orientales, abriendo paso a las aguas y creando el espectacular **Salto del Tequendama** para drenar la sabana.
-          </p>
-        </div>
-        <div>
-          <img src="assets/images/muisca_bochica.png" alt="Bochica abriendo el Salto del Tequendama con su báculo de oro" style="width: 100%; border-radius: 8px; border: 1px solid var(--border-card);">
-        </div>
-      </div>
-
-      <div class="character-grid" style="margin-bottom: 3rem;">
-        <div class="character-card">
-          <h3>Chiminigagua</h3>
-          <div class="character-role">Dios Creador</div>
-          <p>
-            La deidad suprema. Al principio del universo solo había oscuridad. Chiminigagua comenzó a brillar y arrojó del cielo grandes aves negras que soplaron aire luminoso por sus picos, llenando el cosmos de luz y permitiendo la creación de la vida.
-          </p>
-        </div>
-        <div class="character-card">
-          <h3>Bachué</h3>
-          <div class="character-role">Madre de la Humanidad</div>
-          <p>
-            Diosa que emergió de la gélida laguna de Iguaque (Boyacá) sosteniendo en sus brazos a un niño de tres años. Cuando el niño creció, poblaron el altiplano. Tras enseñar agricultura y paz, Bachué y su compañero regresaron a la laguna, convirtiéndose en serpientes sagradas.
+        <div class="power-card">
+          <div class="power-role">Defensa Fronteriza • Duitama</div>
+          <h3>Cacicazgo de Tundama</h3>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Cacique militar formidable que resistió con tenacidad feroz la invasión de los conquistadores en el pantano de la Ramada, liderando a los guerreros <strong>Guechas</strong> armados con macanas de chonta y dardos arrojadizos.
           </p>
         </div>
       </div>
+    </section>
 
-      <h3 class="title-font" style="margin-bottom: 1.5rem; color: var(--accent);">Nuevos Mitos: Chibchacum e Huitaca</h3>
-      <div class="character-grid">
-        <div class="character-card">
-          <h3>El Castigo de Chibchacum</h3>
-          <div class="character-role">Dios del Altiplano y los Temblores</div>
-          <p>
-            Chibchacum era el protector de los mercaderes y labradores, pero fue quien conspiró junto a Chía para inundar la sabana de Bogotá. En represalia, Bochica lo castigó a cargar la Tierra entera sobre sus hombros. Cuando Chibchacum se cansa y cambia el peso de un hombro al otro, se producen los violentos terremotos en el altiplano.
+    <!-- Pestaña 2: Cosmogonía y Teogonía -->
+    <section class="tab-pane" id="pane-mitologia">
+      <div style="max-width: 860px; margin: 0 auto 2.5rem; text-align: center; color: #cbd5e1;">
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 0.8rem;">
+          El Panteón Sagrado de los Valles Andinos
+        </h2>
+        <p style="line-height: 1.7;">
+          Para los Muiscas, la geografía no era inerte: las lagunas de páramo eran úteros cósmicos, los cerros eran deidades petrificadas y el sol y la luna regulaban el destino moral de la humanidad.
+        </p>
+      </div>
+
+      <div class="deities-grid">
+        <div class="deity-card">
+          <div class="deity-badge">El Origen del Cosmos</div>
+          <h4>Chiminigagua</h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            El Ser Supremo increado. En el inicio de los tiempos, cuando todo era oscuridad perpetua, Chiminigagua concibió la luz y envió por todo el firmamento grandes aves negras que arrojaban resplandores por sus picos, iluminando el universo.
           </p>
         </div>
-        <div class="character-card">
-          <h3>La Rebelión de Huitaca</h3>
-          <div class="character-role">Diosa de la Ebriedad y los Placeres</div>
-          <p>
-            Huitaca era una diosa de gran belleza que enseñó a los Muiscas a rebelarse contra las severas leyes morales y el orden de Bochica, incitándolos a la embriaguez con chicha de maíz y a los placeres carnales. Como castigo, Bochica la derrotó y la convirtió en lechuza, animal asociado a la noche y el misterio.
+
+        <div class="deity-card">
+          <div class="deity-badge">Madre de la Humanidad</div>
+          <h4>Bachué (Furachogua)</h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            De las aguas frías de la <strong>Laguna de Iguaque</strong> emergió una mujer radiante con un niño de tres años en brazos. Al crecer el niño, poblaron la tierra con su descendencia. En la vejez, ambos regresaron a la laguna convertidos en serpientes sagradas.
+          </p>
+        </div>
+
+        <div class="deity-card">
+          <div class="deity-badge">Civilizador Universal</div>
+          <h4>Bochica (Nemqueteba)</h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Anciano de barba blanca que llegó desde el oriente para enseñar las leyes, el cultivo del maíz y el hilado del algodón. Cuando la sabana se inundó por el enojo de Chibchacum, Bochica golpeó con su vara de oro los cerros de Tequendama, abriendo el majestuoso <strong>Salto del Tequendama</strong> para drenar las aguas.
+          </p>
+        </div>
+
+        <div class="deity-card">
+          <div class="deity-badge">Diosa de la Luna y la Noche</div>
+          <h4>Huitaca (Chía)</h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Mujer de deslumbrante belleza y espíritu rebelde que predicaba la alegría, la danza y el goce contra las rígidas normas de Bochica. Como castigo por haber instigado la gran inundación, fue convertida en la lechuza de la noche y llevada a alumbrar el cielo como la Luna (Chía).
+          </p>
+        </div>
+
+        <div class="deity-card">
+          <div class="deity-badge">Dios de la Agricultura y la Tierra</div>
+          <h4>Chibchacum</h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Protector de los labradores y mercaderes de sal. Ofendido por las faltas de los hombres, inundó la sabana con los ríos Sopó y Tibitó. Bochica lo condenó a cargar la tierra sobre sus hombros para siempre; cada vez que se cansa y cambia de hombro, la tierra tiembla.
+          </p>
+        </div>
+
+        <div class="deity-card">
+          <div class="deity-badge">Señor del Arcoíris</div>
+          <h4>Cuchavira</h4>
+          <p style="color: #cbd5e1; font-size: 0.92rem; line-height: 1.6;">
+            Aparecía en los cielos tras las tormentas para apaciguar las lluvias y proteger a las mujeres parturientas y a los caminantes. Se le ofrendaba oro fino y mantas tinturadas en agradecimiento por el cese de los diluvios.
           </p>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- 4. Gobernantes Históricos e Historia (Nemequene Code) -->
-    <div id="tab-gobernantes" class="tab-content">
-      <h2 class="title-font" style="margin-bottom: 1.5rem;">Gobernantes e Historia</h2>
-      <p style="margin-bottom: 2rem;">
-        Los gobernantes Muiscas mantuvieron el orden político y redactaron leyes tradicionales para regir la Confederación.
-      </p>
-
-      <div class="character-grid" style="margin-bottom: 3rem;">
-        <!-- Nemequene -->
-        <div class="character-card">
-          <h3>Nemequene</h3>
-          <div class="character-role">Zipa de Bacatá (c. 1490 - 1514)</div>
+    <!-- Pestaña 3: El Ritual de El Dorado -->
+    <section class="tab-pane" id="pane-eldorado">
+      <div style="background: var(--obsidian-card); border: 1px solid var(--border-gold); border-radius: 12px; padding: 2.5rem; margin-bottom: 2.5rem;">
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 1.2rem;">
+          La Verdad Detrás del Mito de El Dorado
+        </h2>
+        <div style="color: #cbd5e1; font-size: 1.05rem; line-height: 1.8;">
           <p>
-            Famoso estratega militar y legislador que consolidó la supremacía del Zipazgo sobre los cacicazgos locales, imponiendo castigos severos para asegurar la obediencia.
+            El cronista Juan Rodríguez Freyle, en su obra <em>El Carnero</em> (1636), describió el rito que encendió la codicia de Europa y lanzó expediciones mortales por las selvas de todo el continente:
           </p>
-        </div>
-
-        <!-- Tisquesusa -->
-        <div class="character-card">
-          <h3>Tisquesusa</h3>
-          <div class="character-role">Zipa de Bacatá (c. 1514 - 1537)</div>
+          <blockquote style="border-left: 3px solid var(--gold-muisca); padding-left: 1.5rem; margin: 1.5rem 0; font-style: italic; color: #fef08a;">
+            «El heredero al trono del Zipa era llevado a la Laguna de Guatavita. Allí lo desnudaban y lo untaban con una tierra pegajosa, y sobre ella le esparcían oro en polvo y molido, de tal manera que iba todo cubierto de este metal... En la balsa iba el indio dorado en pie, y a los pies un gran montón de oro y esmeraldas para ofrecer a su dios.»
+          </blockquote>
           <p>
-            Líder militar que enfrentó la invasión de Gonzalo Jiménez de Quesada en 1537. Siguiendo los augurios de sus sacerdotes, libró combates asimétricos y tácticos contra los españoles antes de morir en las colinas de Facatativá.
-          </p>
-        </div>
-
-        <!-- Aquiminzaque -->
-        <div class="character-card">
-          <h3>Aquiminzaque</h3>
-          <div class="character-role">Último Zaque de Hunza (&dagger; 1540)</div>
-          <p>
-            Inicialmente cooperó con los conquistadores, pero tras rebelarse por la imposición y abusos, fue apresado y ejecutado públicamente en Tunja por orden de Hernán Pérez de Quesada, extinguiéndose la dinastía sagrada del Zacazgo.
-          </p>
-        </div>
-      </div>
-
-      <h3 class="title-font" style="margin-bottom: 1.5rem; color: var(--accent);">El Código de Nemequene</h3>
-      <p style="margin-bottom: 1.5rem;">
-        Nemequene dictó el código penal y civil más antiguo registrado del territorio colombiano, enfocado en corregir los delitos sociales graves de forma inflexible:
-      </p>
-
-      <div class="law-card">
-        <h4>Ley contra el Homicidio</h4>
-        <p>Si un muysca comete homicidio, morirá de la misma forma en que mató a su víctima. Si el asesino es de la nobleza, su castigo será la expropiación de bienes y el destierro absoluto.</p>
-      </div>
-      <div class="law-card">
-        <h4>Ley contra el Hurto</h4>
-        <p>El ladrón sufrirá la amputación de la mano o será azotado públicamente. Si el hurto es reincidente, el criminal será condenado a la servidumbre o arrojado a las minas.</p>
-      </div>
-      <div class="law-card">
-        <h4>Ley de Cobardía para los Guechas</h4>
-        <p>Cualquier guerrero Guecha que muestre miedo o huya del campo de batalla contra los enemigos tradicionales (como los Panches) será despojado de sus armas, obligado a vestir mantas de mujer y a realizar labores domésticas.</p>
-      </div>
-    </div>
-
-    <!-- 5. Piezas de Museo (Museo del Oro) -->
-    <div id="tab-galeria" class="tab-content">
-      <h2 class="title-font" style="margin-bottom: 1.5rem;">Tesoros de la Orfebrería Muisca</h2>
-      <p style="margin-bottom: 2rem;">
-        La orfebrería Muisca es única en América debido al uso de figuras votivas (ofrendas) no destinadas a ser vestidas, sino a ser depositadas en santuarios subterráneos o lagos sagrados.
-      </p>
-
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: center;">
-        <div>
-          <h3 class="title-font" style="color: var(--accent); margin-bottom: 1rem;">El Tunjo de Oro</h3>
-          <p style="margin-bottom: 1rem;">
-            Un **Tunjo** es una figura antropomorfa plana, vaciada en una sola pieza de oro o tumbaga, caracterizada por hilos metálicos soldados al cuerpo que delimitan los ojos, la boca y la vestimenta.
+            Al alcanzar el centro de la laguna esmeralda, rodeada por el anfiteatro de páramo, el nuevo soberano arrojaba las ofrendas ceremoniales al fondo de las aguas mientras miles de indígenas encendían sahumerios de moque y tañían trompetas de caracol en las orillas.
           </p>
           <p>
-            No tenían funciones utilitarias ni de adorno personal: eran puentes espirituales entre el oferente y las deidades, guardados en vasijas de barro llamadas *ofrendatarios*.
-          </p>
-        </div>
-        <div style="text-align: center;">
-          <img src="assets/images/muisca_tunjo.png" alt="Auténtico Tunjo Muisca de Oro del Museo del Oro de Colombia" style="max-width: 320px; border-radius: 8px; border: 1px solid var(--border-card); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
-          <p style="font-size: 0.75rem; color: var(--text-secondary); margin-top: 0.5rem; font-style: italic;">
-            Pieza Real: Tunjo Muisca, Museo del Oro, Bogotá.
+            En 1969, tres campesinos en una cueva de Pasca (Cundinamarca) hallaron la célebre <strong>Balsa Muisca</strong>, una pieza en oro fundido a la cera perdida que representa con exactitud milimétrica la escena descrita por los cronistas, hoy resguardada en el Salón Dorado del Museo del Oro en Bogotá.
           </p>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Pestaña 4: Astronomía y Calendario -->
+    <section class="tab-pane" id="pane-astronomia">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2.5rem;">
+        <div style="background: var(--obsidian-card); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 2rem;">
+          <h3 style="font-family: var(--font-title); font-size: 1.5rem; color: #fff; margin-bottom: 1rem;">
+            El Observatorio de Saquenzipa
+          </h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.7;">
+            Conocido popularmente como <em>El Infiernito</em> cerca de Villa de Leyva, es un complejo arqueoastronómico compuesto por hileras de columnas monolíticas de piedra alineadas de oriente a occidente.
+          </p>
+          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.7; margin-top: 1rem;">
+            Los sacerdotes muiscas (*chyqy*) utilizaban la sombra proyectada por estos monolitos para fijar con precisión matemática los solsticios y equinoccios, determinando el inicio de las temporadas de siembra de maíz y la llegada de las heladas nocturnas.
+          </p>
+        </div>
+
+        <div style="background: var(--obsidian-card); border: 1px solid rgba(255,255,255,0.08); border-radius: 10px; padding: 2rem;">
+          <h3 style="font-family: var(--font-title); font-size: 1.5rem; color: #fff; margin-bottom: 1rem;">
+            El Calendario Zocam y las Fiestas Agrícolas
+          </h3>
+          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.7;">
+            El año muisca (*zocam*) se basaba en los ciclos lunares y constaba de meses de 30 soles. Cada ciclo de 20 años cerraba una era calendárica sagrada con sacrificios ceremoniales de ofrendas.
+          </p>
+          <p style="color: #cbd5e1; font-size: 0.95rem; line-height: 1.7; margin-top: 1rem;">
+            En las fiestas del <em>Huan</em> (cosecha del maíz), miles de campesinos bajaban de los cerros adornados con plumas y pinturas de bija para bailar en hileras tomados de las manos y beber chicha fermentada en tinajas de arcilla.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pestaña 5: Diccionario Muysccubun -->
+    <section class="tab-pane" id="pane-diccionario">
+      <div style="max-width: 860px; margin: 0 auto 2rem; text-align: center;">
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 0.5rem;">
+          El Idioma Muysccubun en la Toponimia Andina
+        </h2>
+        <p style="color: #94a3b8; font-size: 0.95rem;">
+          Cientos de pueblos, barrios y accidentes geográficos de Cundinamarca y Boyacá conservan sus nombres originarios chibchas. Utiliza el buscador para descubrir su significado:
+        </p>
+      </div>
+
+      <input type="text" class="search-box-muisca" id="dictSearchInput" placeholder="Busca por palabra: Bogotá, Suba, Usme, Chía, Zipaquirá..." onkeyup="filterDict()">
+
+      <div class="dict-grid" id="dictGridContainer">
+        <div class="dict-item" data-word="bogota bacata">
+          <div class="dict-word">Bacatá (Bogotá)</div>
+          <div class="dict-meaning">«Cercado fuera de la labranza» o «Remate de las vegas agrícolas». La capital imperial del Zipa.</div>
+        </div>
+
+        <div class="dict-item" data-word="zipaquira">
+          <div class="dict-word">Zipaquirá</div>
+          <div class="dict-meaning">«Cercado o pie del Zipa». Epicentro de las salinas de piedra más grandes del continente.</div>
+        </div>
+
+        <div class="dict-item" data-word="suba">
+          <div class="dict-word">Suba</div>
+          <div class="dict-meaning">«Flor del Sol» (de <em>Sua</em> = Sol y <em>Ba</em> = Flor). Colinas donde salía el sol para iluminar la sabana.</div>
+        </div>
+
+        <div class="dict-item" data-word="usme">
+          <div class="dict-word">Usme</div>
+          <div class="dict-meaning">«Tu nido» o «Nido de amor». Valle sagrado en la cuenca alta del río Tunjuelo.</div>
+        </div>
+
+        <div class="dict-item" data-word="usaquen">
+          <div class="dict-word">Usaquén</div>
+          <div class="dict-meaning">«Tierra del señor» o «Detrás del cerro». Resguardo colonial y señorío precolombino del oriente.</div>
+        </div>
+
+        <div class="dict-item" data-word="chia">
+          <div class="dict-word">Chía</div>
+          <div class="dict-meaning">«La Luna». Cacicazgo sagrado reservado para el sobrino sucesor del Zipa.</div>
+        </div>
+
+        <div class="dict-item" data-word="teusaquillo">
+          <div class="dict-word">Teusaquillo (Thybzacá)</div>
+          <div class="dict-meaning">«Cercado prestado» o sitio de recreo y descanso campestre del Zipa.</div>
+        </div>
+
+        <div class="dict-item" data-word="fontibon huntiba">
+          <div class="dict-word">Fontibón (Hyntiba)</div>
+          <div class="dict-meaning">«Capitán poderoso de la comarca». Paso obligado hacia las tierras cálidas de los Panches.</div>
+        </div>
+
+        <div class="dict-item" data-word="engativa ingativa">
+          <div class="dict-word">Engativá</div>
+          <div class="dict-meaning">«Capitán de la sabana florida» o «Cacique de los juncos».</div>
+        </div>
+
+        <div class="dict-item" data-word="bosa">
+          <div class="dict-word">Bosa</div>
+          <div class="dict-meaning">«El segundo» o «El cercado que guarda y defiende las mieses».</div>
+        </div>
+
+        <div class="dict-item" data-word="nemocon">
+          <div class="dict-word">Nemocón</div>
+          <div class="dict-meaning">«Lamento o llanto de los guerreros». Famosa por sus manantiales salinos subterráneos.</div>
+        </div>
+
+        <div class="dict-item" data-word="guatavita">
+          <div class="dict-word">Guatavita</div>
+          <div class="dict-meaning">«Fin de la labranza» o «Punta de la cumbre». Sede del cacique orfebre y la laguna de El Dorado.</div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
-  <!-- Script para la navegación de pestañas -->
-  <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active-content");
-      }
-      tablinks = document.getElementsByClassName("tab-button");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-      document.getElementById(tabName).classList.add("active-content");
-      evt.currentTarget.classList.add("active");
-
-      // Animar barras de estadísticas si existen en la pestaña activa
-      setTimeout(() => {
-        const activeTab = document.getElementById(tabName);
-        const fills = activeTab.querySelectorAll('.chart-bar-fill');
-        fills.forEach(fill => {
-          const width = fill.getAttribute('data-width');
-          fill.style.width = width + '%';
-        });
-      }, 50);
-    }
-
-    // Inicializar barras en la carga inicial
-    document.addEventListener('DOMContentLoaded', () => {
-      const activeTab = document.querySelector('.tab-content.active-content');
-      if (activeTab) {
-        setTimeout(() => {
-          const fills = activeTab.querySelectorAll('.chart-bar-fill');
-          fills.forEach(fill => {
-            const width = fill.getAttribute('data-width');
-            fill.style.width = width + '%';
-          });
-        }, 300);
-      }
-    });
-  </script>
-
+  <!-- Pie de Página Institucional -->
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Enciclopedia Muisca.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Contenidos académicos recopilados del Museo del Oro y publicaciones históricas del Banco de la República de Colombia.
-    </p>
+    <p>&copy; 2026 Colombianopedia — Monográfico Muisca. En colaboración con la cátedra de Lenguas Indígenas del Instituto Caro y Cuervo.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Lógica de Pestañas y Filtro -->
+  <script>
+    function switchMuiscaTab(tabId) {
+      document.querySelectorAll('.muisca-tab-btn').forEach(btn => btn.classList.remove('active'));
+      document.querySelectorAll('.tab-pane').forEach(pane => pane.classList.remove('active'));
+
+      event.target.classList.add('active');
+      const targetPane = document.getElementById('pane-' + tabId);
+      if (targetPane) targetPane.classList.add('active');
+    }
+
+    function filterDict() {
+      const q = document.getElementById('dictSearchInput').value.toLowerCase().trim();
+      const items = document.querySelectorAll('.dict-item');
+
+      items.forEach(item => {
+        const text = item.getAttribute('data-word') || '';
+        const fullContent = item.innerText.toLowerCase();
+        if (text.includes(q) || fullContent.includes(q)) {
+          item.style.display = 'block';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
 </body>
 </html>

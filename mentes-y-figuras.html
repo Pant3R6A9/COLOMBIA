@@ -3,15 +3,342 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mentes e Ilustres - Colombia en el Tiempo</title>
-  <meta name="description" content="Directorio interactivo de colombianos destacados en ciencias, medicina, artes, deportes y música global.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>Panteón de Mentes y Figuras Ilustres — Colombianopedia</title>
+  <meta name="description" content="Directorio y museo biográfico de los sabios, científicos, escritoras, artistas y líderes que han forjado el pensamiento, la ciencia y la cultura de Colombia.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --gold-intellect: #d4af37;
+      --cyan-science: #38bdf8;
+      --rose-art: #fb7185;
+      --emerald-social: #34d399;
+      --obsidian-surface: #07090e;
+      --obsidian-card: rgba(14, 19, 29, 0.82);
+      --border-intellect: rgba(212, 175, 55, 0.22);
+    }
+
+    .mentes-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-mentes {
+      background: linear-gradient(180deg, rgba(212,175,55,0.12) 0%, rgba(7,9,14,0) 100%),
+                  radial-gradient(circle at 50% 15%, rgba(56,189,248,0.12), transparent 70%);
+      border: 1px solid var(--border-intellect);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .hero-mentes::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-intellect), var(--cyan-science), var(--rose-art), transparent);
+    }
+
+    .mentes-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--gold-intellect);
+      border-radius: 50px;
+      color: #fef08a;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-mentes h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-mentes h1 span {
+      background: linear-gradient(135deg, #fef08a 0%, #d4af37 50%, #38bdf8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Telemetría */
+    .telemetry-mentes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .telemetry-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1.4rem;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .telemetry-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-intellect);
+    }
+
+    .telemetry-val {
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold-intellect);
+      margin-bottom: 0.3rem;
+    }
+
+    .telemetry-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Panel de Filtro */
+    .filter-mentes-panel {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-bottom: 3rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+    }
+
+    .search-input-mentes {
+      width: 100%;
+      padding: 0.9rem 1.3rem;
+      background: rgba(0, 0, 0, 0.6);
+      border: 1px solid var(--border-intellect);
+      border-radius: 8px;
+      color: #fff;
+      font-family: var(--font-body);
+      font-size: 1rem;
+    }
+
+    .search-input-mentes:focus {
+      outline: none;
+      border-color: var(--gold-intellect);
+      box-shadow: 0 0 15px rgba(212, 175, 55, 0.3);
+    }
+
+    .discipline-pills {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .discipline-btn {
+      padding: 0.5rem 1.1rem;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50px;
+      color: #94a3b8;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    .discipline-btn:hover {
+      color: #fff;
+      border-color: var(--gold-intellect);
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    .discipline-btn.active {
+      background: var(--gold-intellect);
+      color: #000;
+      border-color: var(--gold-intellect);
+      font-weight: 700;
+    }
+
+    /* Grilla de Ilustres */
+    .mentes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .mente-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .mente-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-intellect);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(212, 175, 55, 0.25);
+    }
+
+    .mente-header {
+      padding: 1.8rem 1.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .mente-field-badge {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      color: var(--gold-intellect);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .mente-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      color: #fff;
+      margin-bottom: 0.3rem;
+    }
+
+    .mente-dates {
+      font-family: var(--font-mono);
+      font-size: 0.82rem;
+      color: #38bdf8;
+    }
+
+    .mente-body {
+      padding: 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .mente-desc {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .mente-achievement {
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid var(--gold-intellect);
+      padding: 0.75rem 1rem;
+      border-radius: 0 6px 6px 0;
+      font-size: 0.85rem;
+      color: #e2e8f0;
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+
+    .btn-mente {
+      width: 100%;
+      padding: 0.85rem;
+      background: rgba(212, 175, 55, 0.1);
+      border: 1px solid var(--gold-intellect);
+      border-radius: 6px;
+      color: var(--gold-intellect);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-mente:hover {
+      background: var(--gold-intellect);
+      color: #000;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid var(--gold-intellect);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #fff; }
+  </style>
 </head>
 <body>
 
-  <!-- Encabezado Común -->
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -19,7 +346,7 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
@@ -30,12 +357,12 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
           <a href="leyendas-ancestrales.html">Leyendas Ancestrales</a>
-          <a href="mentes-y-figuras.html">Mentes e Ilustres</a>
+          <a href="mentes-y-figuras.html" class="active">Mentes e Ilustres</a>
           <a href="otras-culturas.html">Catálogo de Culturas</a>
           <a href="ciudades-historicas.html">Ciudades y Nombres</a>
         </div>
@@ -43,199 +370,386 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(212,175,55,0.15); color: var(--accent);">
-        Cultura y Saberes
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL MENTES E ILUSTRES
+       ========================================== -->
+  <main class="mentes-container">
+
+    <section class="hero-mentes" id="hero-section">
+      <div class="mentes-badge">
+        <span>✦</span> Gran Salón de Sabios, Creadores y Científicos <span>✦</span>
       </div>
-      <h1>Mentes y Figuras Ilustres</h1>
-      <p>Un tributo a los cerebros, atletas y creadores de Colombia que han dejado una huella indeleble tanto a nivel nacional como global. Haz clic en las tarjetas para explorar sus biografías y mayores logros.</p>
+      <h1>Panteón de <span>Mentes y Figuras Ilustres</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.15rem; line-height: 1.8;">
+        El inventario de la inteligencia, la sensibilidad y el coraje de Colombia ante el mundo: neurocientíficos de vanguardia, astrónomos de la NASA, pioneros de la literatura universal, artistas del dolor colectivo y líderes de la dignidad étnica.
+      </p>
     </section>
 
-    <!-- Pestañas de categorías -->
-    <div class="tabs">
-      <button class="tab-button active" onclick="openTab(event, 'ciencia')">Ciencia y Medicina</button>
-      <button class="tab-button" onclick="openTab(event, 'artes')">Literatura y Artes</button>
-      <button class="tab-button" onclick="openTab(event, 'deportes')">Deportes</button>
-      <button class="tab-button" onclick="openTab(event, 'musica')">Música e Impacto</button>
-    </div>
+    <!-- Telemetría -->
+    <section class="telemetry-mentes">
+      <div class="telemetry-card">
+        <div class="telemetry-val">Nobel 1982</div>
+        <div class="telemetry-lbl">Literatura Universal (Gabo)</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">NASA & Cerebro</div>
+        <div class="telemetry-lbl">Neurociencia & Geología Planetaria</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">1ª Vacuna</div>
+        <div class="telemetry-lbl">Sintética de Malaria donada a la OMS</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">200+ Años</div>
+        <div class="telemetry-lbl">De Ciencia y Pensamiento Crítico</div>
+      </div>
+    </section>
 
-    <!-- ==========================================
-         CONTENIDOS DE LAS PESTAÑAS
-         ========================================== -->
+    <!-- Barra de Búsqueda y Filtros de Disciplina -->
+    <div class="filter-mentes-panel">
+      <input type="text" class="search-input-mentes" id="searchMenteInput" placeholder="Busca por nombre, obra o campo: Llinás, Gabo, Botero, NASA, Medicina..." onkeyup="filterMentes()">
 
-    <!-- Ciencia y Medicina -->
-    <div id="ciencia" class="tab-content active-content">
-      <div class="character-grid">
-        <!-- Rodolfo Llinás -->
-        <div class="character-card" onclick="openFigureDrawer('llinas')" style="cursor: pointer;">
-          <h3>Rodolfo Llinás</h3>
-          <div class="character-role">Neurociencia de clase mundial</div>
-          <p>
-            Uno de los padres fundadores de la neurociencia moderna, conocido por proponer la ley de la no-conectividad y sus estudios sobre las células de Purkinje en el cerebelo.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-
-        <!-- Manuel Elkin Patarroyo -->
-        <div class="character-card" onclick="openFigureDrawer('patarroyo')" style="cursor: pointer;">
-          <h3>Manuel Elkin Patarroyo</h3>
-          <div class="character-role">Inmunología y Vacunas</div>
-          <p>
-            Creador de la primera vacuna sintética contra la malaria (SPF66) en los años 80, la cual donó a la Organización Mundial de la Salud (OMS) en favor de los países en desarrollo.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-
-        <!-- Adriana Ocampo -->
-        <div class="character-card" onclick="openFigureDrawer('ocampo')" style="cursor: pointer;">
-          <h3>Adriana Ocampo</h3>
-          <div class="character-role">Geología Planetaria y NASA</div>
-          <p>
-            Directora de programas científicos de la NASA, lideró expediciones para catalogar el cráter de impacto Chicxulub en México (el meteorito que extinguió los dinosaurios).
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
+      <div class="discipline-pills">
+        <button class="discipline-btn active" onclick="setDisciplineFilter('todas', this)">Todos los Campos</button>
+        <button class="discipline-btn" onclick="setDisciplineFilter('ciencia', this)">Ciencia & Medicina</button>
+        <button class="discipline-btn" onclick="setDisciplineFilter('letras', this)">Letras & Humanidades</button>
+        <button class="discipline-btn" onclick="setDisciplineFilter('social', this)">Pensamiento Social & Etnografía</button>
+        <button class="discipline-btn" onclick="setDisciplineFilter('artes', this)">Artes Visuales & Música</button>
+        <button class="discipline-btn" onclick="setDisciplineFilter('deportes', this)">Epopeya Deportiva</button>
       </div>
     </div>
 
-    <!-- Literatura y Artes -->
-    <div id="artes" class="tab-content">
-      <div class="character-grid">
-        <!-- Gabriel García Márquez -->
-        <div class="character-card" onclick="openFigureDrawer('gabo')" style="cursor: pointer;">
-          <h3>Gabriel García Márquez</h3>
-          <div class="character-role">Premio Nobel de Literatura 1982</div>
-          <p>
-            Creador del realismo mágico y autor de *Cien años de soledad*, una de las novelas más influyentes del siglo XX, retratando la memoria del Caribe colombiano.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-
-        <!-- Fernando Botero -->
-        <div class="character-card" onclick="openFigureDrawer('botero')" style="cursor: pointer;">
-          <h3>Fernando Botero</h3>
-          <div class="character-role">Pintura y Escultura Monumental</div>
-          <p>
-            Pintor y escultor célebre por sus figuras voluminosas de "boterismo", cuyas esculturas monumentales de bronce adornan avenidas principales de París, Madrid y Medellín.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Deportes -->
-    <div id="deportes" class="tab-content">
-      <div class="character-grid">
-        <!-- Mariana Pajón -->
-        <div class="character-card" onclick="openFigureDrawer('pajon')" style="cursor: pointer;">
-          <h3>Mariana Pajón</h3>
-          <div class="character-role">Doble Campeona Olímpica de BMX</div>
-          <p>
-            Apodada la *"Reina del BMX"*, es la deportista colombiana más laureada de la historia olímpica, ganando dos medallas de oro y una de plata en ciclismo.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-
-        <!-- Egan Bernal -->
-        <div class="character-card" onclick="openFigureDrawer('bernal')" style="cursor: pointer;">
-          <h3>Egan Bernal</h3>
-          <div class="character-role">Ganador del Tour de Francia 2019</div>
-          <p>
-            El primer ciclista latinoamericano en ganar el Tour de Francia (el trofeo más codiciado del ciclismo de ruta global) y campeón del Giro de Italia.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Música -->
-    <div id="musica" class="tab-content">
-      <div class="character-grid">
-        <!-- Totó la Momposina -->
-        <div class="character-card" onclick="openFigureDrawer('toto')" style="cursor: pointer;">
-          <h3>Totó la Momposina</h3>
-          <div class="character-role">Canto ancestral y cumbia</div>
-          <p>
-            La voz insignia del Caribe, difusora internacional de ritmos de tamboras, cumbia y bullerengue, cantando sobre las vidas de los pescadores del río Magdalena.
-          </p>
-          <span style="color: var(--accent); font-size: 0.8rem; text-transform: uppercase;">Ver Biografía &rarr;</span>
-        </div>
-      </div>
-    </div>
+    <!-- Grilla de Mentes Ilustres -->
+    <section class="mentes-grid" id="mentesGridContainer">
+      <!-- Se inyectan dinámicamente con JavaScript -->
+    </section>
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES BIOGRAFÍAS)
-       ========================================== -->
-  <template id="fig-llinas">
-    <div class="document-badge">Ciencia y Saberes</div>
-    <h2 class="title-font">Rodolfo Llinás</h2>
-    <p style="font-style: italic; opacity: 0.8;">Médico Neurofisiólogo (Bogotá, 1934)</p>
-    <p>
-      Llinás es un referente histórico de la medicina. Sus investigaciones en la Universidad de Nueva York y la NASA (estudiando el cerebelo bajo gravedad cero) redefinieron la comprensión de los circuitos de la conciencia humana. 
-    </p>
-    <p>
-      Es autor de la **Ley de Llinás** sobre la despolarización intrínseca de las neuronas, demostrando que el cerebro genera su propia actividad interna incluso en ausencia de estímulos sensoriales.
-    </p>
-  </template>
-
-  <template id="fig-gabo">
-    <div class="document-badge">Literatura</div>
-    <h2 class="title-font">Gabriel García Márquez</h2>
-    <p style="font-style: italic; opacity: 0.8;">Periodista y Nobel (Aracataca, 1927 - México, 2014)</p>
-    <p>
-      "Gabo" inmortalizó el alma del Caribe en la mítica aldea de **Macondo**. Su obra cimentó el "boom latinoamericano" y fue condecorado con el Nobel de Literatura en 1982.
-    </p>
-    <p>
-      Sus escritos unieron el periodismo riguroso de investigación (como *Relato de un náufrago* y *Noticia de un secuestro*) con las tradiciones orales populares.
-    </p>
-  </template>
-
-  <template id="fig-pajon">
-    <div class="document-badge">Deporte Olímpico</div>
-    <h2 class="title-font">Mariana Pajón Londoño</h2>
-    <p style="font-style: italic; opacity: 0.8;">BMX Racing (Medellín, 1991)</p>
-    <p>
-      Inició en el ciclismo BMX a los 4 años. Logró las medallas de oro en los Juegos Olímpicos de Londres 2012 y Río 2016, y una medalla de plata en Tokio 2020. Es un referente indiscutible de disciplina y superación atlética nacional.
-    </p>
-  </template>
-
-  <script>
-    function openTab(evt, tabName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tab-content");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].classList.remove("active-content");
-      }
-      tablinks = document.getElementsByClassName("tab-button");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].classList.remove("active");
-      }
-      document.getElementById(tabName).classList.add("active-content");
-      evt.currentTarget.classList.add("active");
-    }
-
-    function openFigureDrawer(figureId) {
-      const template = document.getElementById('fig-' + figureId);
-      const drawer = document.querySelector('.detail-drawer');
-      const drawerContent = drawer.querySelector('.drawer-content');
-      
-      if (template && drawer && drawerContent) {
-        drawerContent.innerHTML = '';
-        const clone = template.content.cloneNode(true);
-        drawerContent.appendChild(clone);
-        drawer.classList.add('open');
-      }
-    }
-  </script>
+  <!-- Modal de Biografía Exhaustiva -->
+  <div class="modal-overlay" id="menteModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeMenteModal()">&times;</button>
+      <div id="modalMenteBody"></div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Directorio de Mentes e Ilustres.</p>
+    <p>&copy; 2026 Colombianopedia — Directorio de Mentes y Figuras Ilustres de Colombia. Investigación respaldada en los archivos de la Academia Colombiana de Ciencias Exactas y el Instituto Caro y Cuervo.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const mentesData = [
+      // CIENCIA Y MEDICINA
+      {
+        id: 'llinas',
+        nombre: 'Rodolfo Llinás Riascos',
+        campo: 'ciencia',
+        disciplina: 'Neurofisiología & Biología Celular',
+        fechas: 'Bogotá, 1934 – Presente',
+        resumen: 'Uno de los padres fundadores de la neurociencia contemporánea. Director del departamento de Fisiología y Neurociencia de la Universidad de Nueva York y asesor principal del grupo de trabajo de neurobiología de la NASA.',
+        logro: 'Formuló la «Ley de Llinás» sobre las propiedades intrínsecas oscilatorias de las neuronas y dilucidó los circuitos tálamo-corticales que originan la conciencia humana.',
+        biografia: `
+          <p>Graduado de médico en la Universidad Javeriana y doctor en neurofisiología de la Universidad Nacional de Australia, Llinás transformó el paradigma científico que concebía al cerebro como un mero receptor pasivo de estímulos sensoriales.</p>
+          <p>Sus descubrimientos sobre los canales de calcio en las neuronas del calamar gigante y las células de Purkinje en el cerebelo abrieron el camino para comprender enfermedades como el Parkinson, el tinnitus y la depresión mayor mediante la magnetocefalografía.</p>
+          <p>Encabezó la emblemática Misión de Sabios de 1994 en Colombia con la célebre proclama educativa: <em>«Por la educación y el conocimiento, hacia el porvenir»</em>.</p>
+        `
+      },
+      {
+        id: 'patarroyo',
+        nombre: 'Manuel Elkin Patarroyo',
+        campo: 'ciencia',
+        disciplina: 'Inmunología & Vacunas Químicas',
+        fechas: 'Ataco (Tolima), 1946 – Presente',
+        resumen: 'Científico de renombre internacional, fundador del Instituto de Inmunología de Colombia (FIDIC). Creador de la primera vacuna sintética químicamente sintetizada del mundo contra la malaria humana (SPF66).',
+        logro: 'Donó en 1993 la patente mundial de la vacuna SPF66 a la Organización Mundial de la Salud (OMS) a nombre de Colombia, renunciando a cientos de millones de dólares en favor de los pueblos del tercer mundo.',
+        biografia: `
+          <p>Tras años de trabajo de campo en Leticia y las selvas del Amazonas, Patarroyo logró mapear los péptidos de invasión del parásito <em>Plasmodium falciparum</em> en los glóbulos rojos, sintetizando químicamente una vacuna libre de patógenos biológicos vivos.</p>
+          <p>Condecorado con el Premio Príncipe de Asturias de Investigación Científica y Técnica en 1994, ha dedicado más de cuatro décadas a la investigación biofísica de vacunas de segunda generación contra la tuberculosis, leishmaniasis y dengue.</p>
+        `
+      },
+      {
+        id: 'ocampo',
+        nombre: 'Adriana C. Ocampo Uria',
+        campo: 'ciencia',
+        disciplina: 'Geología Planetaria & Exploración Espacial (NASA)',
+        fechas: 'Barranquilla, 1955 – Presente',
+        resumen: 'Científica planetaria de la NASA y directora del programa Nuevas Fronteras (New Frontiers). Lideró la misión Juno a Júpiter y las investigaciones del cráter de impacto de Chicxulub.',
+        logro: 'Identificó los anillos satelitales que delimitaron el cráter de Chicxulub en Yucatán, confirmando la caída del bólido espacial que causó la extinción masiva de los dinosaurios hace 66 millones de años.',
+        biografia: `
+          <p>Comenzó como pasante voluntaria en el Laboratorio de Propulsión a Chorro (JPL) de la NASA durante la misión Viking a Marte. Ocampo coordinó expediciones geológicas en Belice y México para analizar las eyecciones minerales del asteroide asesino.</p>
+          <p>El asteroide 17712 fue bautizado oficialmente con el nombre de <em>Father-Ocampo</em> por la Unión Astronómica Internacional en su honor.</p>
+        `
+      },
+      {
+        id: 'caldas',
+        nombre: 'Francisco José de Caldas',
+        campo: 'ciencia',
+        disciplina: 'Física, Geografía & Astronomía',
+        fechas: 'Popayán, 1768 – Bogotá, 1816',
+        resumen: 'El «Sabio Caldas». Célebre científico autodidacta, primer director del Observatorio Astronómico Nacional de Santafé (1803) y pionero en correlacionar la altitud con la distribución de especies botánicas.',
+        logro: 'Inventó de forma independiente el hipsómetro, demostrando empíricamente que la altitud sobre el nivel del mar se puede medir con precisión exacta mediante la temperatura de ebullición del agua destilada.',
+        biografia: `
+          <p>Acompañó al barón Alejandro de Humboldt y a don José Celestino Mutis por los Andes ecuatoriales y granadinos, recolectando miles de especies vegetales y fijando las coordenadas geográficas de villas y montañas.</p>
+          <p>Comprometido con la causa independentista, diseñó fortificaciones militares y fundó talleres de artillería. Fusilado por el general español Pablo Morillo en 1816, su legado perdura como el mártir supremo de la ciencia americana.</p>
+        `
+      },
+
+      // LETRAS Y HUMANIDADES
+      {
+        id: 'gabo',
+        nombre: 'Gabriel García Márquez',
+        campo: 'letras',
+        disciplina: 'Periodismo & Literatura Universal',
+        fechas: 'Aracataca, 1927 – Ciudad de México, 2014',
+        resumen: 'Premio Nobel de Literatura 1982. Padre y arquitecto de Macondo y máxima cumbre del Realismo Mágico, transformó la narrativa universal con *Cien años de soledad*, *El amor en los tiempos del cólera* y *Crónica de una muerte anunciada*.',
+        logro: 'Universalizó la memoria, los dolores y el desmesurado encanto del Caribe colombiano, vendiendo más de 50 millones de ejemplares traducidos a 49 lenguas.',
+        biografia: `
+          <p>Inició su genio literario en las redacciones de <em>El Universal</em> de Cartagena y <em>El Espectador</em> de Bogotá, donde publicó en 1955 el <em>Relato de un náufrago</em> desafiando la censura de la dictadura militar.</p>
+          <p>En su discurso de recepción del Nobel, <em>La soledad de América Latina</em>, proclamó la urgencia de que el mundo comprendiera que los pueblos americanos tenían derecho a inventar su propio destino sin tutelas imperiales.</p>
+        `
+      },
+      {
+        id: 'cuervo',
+        nombre: 'Rufino José Cuervo',
+        campo: 'letras',
+        disciplina: 'Filología & Lingüística del Castellano',
+        fechas: 'Bogotá, 1844 – París, 1911',
+        resumen: 'El más insigne sabio de la lengua castellana en el siglo XIX. Autor de las *Apuntaciones críticas sobre el lenguaje bogotano* y del colosal *Diccionario de construcción y régimen de la lengua castellana*.',
+        logro: 'Consagró más de 40 años de su vida en París a recopilar los orígenes y evolución sintáctica de cada vocablo castellano desde el Cantar de mio Cid.',
+        biografia: `
+          <p>Junto a Miguel Antonio Caro fundó los estudios filológicos rigurosos en América del Sur. Para financiar sus investigaciones y la impresión de sus manuscritos, fundó junto a su hermano Ángel la cervecería Cuervo en Bogotá.</p>
+          <p>En su honor, el gobierno colombiano fundó en 1942 el célebre Instituto Caro y Cuervo, santuario de las investigaciones sobre el español y las lenguas indígenas del país.</p>
+        `
+      },
+      {
+        id: 'rivera',
+        nombre: 'José Eustasio Rivera',
+        campo: 'letras',
+        disciplina: 'Poesía, Novela & Denuncia Territorial',
+        fechas: 'San Mateo (Rivera, Huila), 1888 – Nueva York, 1928',
+        resumen: 'Autor de *La Vorágine* (1924), la gran epopeya selvática de la literatura hispanoamericana. Poeta del soneto en *Tierra de promisión* y abogado diplomático que investigó las fronteras amazónicas.',
+        logro: 'Denunció con crudeza testimonial inigualable el genocidio cauchero de la Casa Arana y la explotación esclava de los pueblos indígenas del Putumayo y Caquetá.',
+        biografia: `
+          <p>Como secretario de la Comisión Limítrofe Colombo-Venezolana, Rivera se adentró en las selvas vírgenes del Orinoco y el Amazonas, presenciando en carne viva el infierno de las caucherías.</p>
+          <p>Su célebre frase inicial —<em>«Jugué mi corazón al azar y me lo ganó la Violencia»</em>— resume el drama de un país que devoraba a sus propios hijos en las fronteras de la selva virgen.</p>
+        `
+      },
+
+      // PENSAMIENTO SOCIAL Y ETNOGRAFÍA
+      {
+        id: 'virginia',
+        nombre: 'Virginia Gutiérrez de Pineda',
+        campo: 'social',
+        disciplina: 'Antropología & Sociología de la Familia',
+        fechas: 'El Socorro, 1921 – Bogotá, 1999',
+        resumen: 'La antropóloga más influyente de Colombia. Rostro insigne del billete de $10.000 pesos. Revolucionó los estudios sociales al demostrar que en Colombia no existía un único modelo de familia, sino una rica diversidad regional.',
+        logro: 'Escribió obras fundacionales como *Familia y cultura en Colombia* (1968) y *Estructura, función y cambio de la familia en Colombia*, base de las políticas públicas contemporáneas.',
+        biografia: `
+          <p>Formada en el Instituto Etnológico Nacional con Paul Rivet, recorrió a pie y en canoa los ríos de la Guajira, el Chocó y los Andes para cartografiar los complejos familiares (andino, afrocolombiano, llanero y santandereano).</p>
+          <p>Fue pionera en visibilizar el rol central de las madres campesinas y populares en la economía nacional y en el sostenimiento del tejido comunitario.</p>
+        `
+      },
+      {
+        id: 'quintinlame',
+        nombre: 'Manuel Quintín Lame Chantre',
+        campo: 'social',
+        disciplina: 'Liderazgo Indígena, Filosofía & Derecho Ancestral',
+        fechas: 'El Borbollón (Cauca), 1880 – Ortega (Tolima), 1967',
+        resumen: 'Líder indígena nasa, combatiente y teórico del derecho colectivo. Autor de *Los pensamientos del indio que se educó dentro de las selvas colombianas*, obra cumbre de la filosofía originaria americana.',
+        logro: 'Encabezó el levantamiento pacífico y jurídico de recuperación de resguardos contra el terraje y los terratenientes feudales del Cauca y Tolima, sentando las bases del Consejo Regional Indígena del Cauca (CRIC).',
+        biografia: `
+          <p>Sufrió más de cien detenciones carcelarias y brutales torturas a lo largo de su vida, pero nunca claudicó. Utilizó el propio marco de la legislación colonial de resguardos (Ley 89 de 1890) para defender en los estrados judiciales los títulos inmemoriales de su pueblo.</p>
+          <p>Su pensamiento reivindicó a la Madre Tierra no como un bien negociable, sino como un ser vivo sagrado que no se vende ni se explota a destajo.</p>
+        `
+      },
+      {
+        id: 'falsborda',
+        nombre: 'Orlando Fals Borda',
+        campo: 'social',
+        disciplina: 'Sociología Crítica & Geografía Regional',
+        fechas: 'Barranquilla, 1925 – Bogotá, 2008',
+        resumen: 'Fundador de la primera Facultad de Sociología de América Latina en la Universidad Nacional (1959) junto a Camilo Torres Restrepo. Padre de la metodología de la Investigación Acción Participativa (IAP).',
+        logro: 'Creó la Investigación Acción Participativa (IAP), método científico que empodera a las comunidades campesinas e indígenas para producir su propio conocimiento liberador.',
+        biografia: `
+          <p>Autor de la monumental <em>Historia Doble de la Costa</em> (4 tomos), donde rescató la cultura anfibia de los pueblos del río Magdalena y San Jorge.</p>
+          <p>Elegido delegado a la Asamblea Nacional Constituyente de 1991, lideró la comisión de ordenamiento territorial para impulsar la autonomía de las regiones frente al centralismo bogotano.</p>
+        `
+      },
+
+      // ARTES PLÁSTICAS Y MÚSICA
+      {
+        id: 'debora',
+        nombre: 'Débora Arango Pérez',
+        campo: 'artes',
+        disciplina: 'Pintura Expresionista & Crítica Social',
+        fechas: 'Medellín, 1907 – Envigado, 2005',
+        resumen: 'Pintora pionera y rebelde del arte moderno. Rostro del billete de $2.000 pesos. Desafió la moral conservadora al pintar los primeros desnudos femeninos no idealizados y denunciar la violencia política en lienzos descarnados.',
+        logro: 'Sus obras sobre la dictadura, el 9 de abril y las cárceles de mujeres fueron censuradas y vetadas durante décadas hasta su consagración como la artista más valiente de la plástica nacional.',
+        biografia: `
+          <p>Discípula de Pedro Nel Gómez, Arango utilizó la acuarela y el óleo con una pincelada expresionista y feroz para retratar a las prostitutas, los borrachos, los presidiarios y las masacres bipartidistas en obras como <em>La República</em> y <em>El tren de la muerte</em>.</p>
+          <p>En 1986 donó más de 200 obras al Museo de Arte Moderno de Medellín (MAMM), asegurando que su testimonio plástico perteneciera al pueblo colombiano.</p>
+        `
+      },
+      {
+        id: 'botero',
+        nombre: 'Fernando Botero Angulo',
+        campo: 'artes',
+        disciplina: 'Pintura & Escultura Monumental',
+        fechas: 'Medellín, 1932 – Mónaco, 2023',
+        resumen: 'El artista plástico colombiano más célebre y cotizado del mundo. Creador del «Boterismo», estilo inconfundible de formas volumétricas, sensuales y monumentales.',
+        logro: 'Sus esculturas colosales de bronce han engalanado los Campos Elíseos de París, la Quinta Avenida de Nueva York y la Plaza Botero de Medellín. Donó cientos de obras millonarias al Museo de Antioquia y al Museo Botero del Banco de la República.',
+        biografia: `
+          <p>Aunque universalmente conocido por su exaltación festiva del volumen, Botero conmovió al mundo con sus series de denuncia: las 50 pinturas sobre la violencia en Colombia (el asesinato de Pablo Escobar, los carros bomba, los secuestros) y su desgarradora serie sobre las torturas militares en la prisión de Abu Ghraib en Irak.</p>
+        `
+      },
+      {
+        id: 'toto',
+        nombre: 'Totó la Momposina (Sonia Bazanta)',
+        campo: 'artes',
+        disciplina: 'Canto Ancestral, Cumbia & Tamboras',
+        fechas: 'Talaigua Nuevo (Bolívar), 1940 – Presente',
+        resumen: 'La cantadora mayor de Colombia. Heredera de cinco generaciones de músicos de la depresión momposina, llevó la cumbia, el chalupa, el garabato y el bullerengue a los escenarios más prestigiosos de los cinco continentes.',
+        logro: 'Acompañó con su tambor y su voz telúrica a Gabriel García Márquez en Estocolmo durante la entrega del Premio Nobel de Literatura en 1982, vistiendo polleras caribes ante los reyes de Suecia.',
+        biografia: `
+          <p>Hija de zapatero y bailadora tradicional, Totó investigó incansablemente la confluencia entre los tambores africanos, las gaitas indígenas zenúes y la lírica española en los pueblos ribereños del río Magdalena.</p>
+          <p>Premio Grammy Latino a la Excelencia Musical en 2013, su voz es la memoria viva del canto comunitario que acompaña la pesca y la vida campesina.</p>
+        `
+      },
+
+      // DEPORTE DE FRONTERA
+      {
+        id: 'pajon',
+        nombre: 'Mariana Pajón Londoño',
+        campo: 'deportes',
+        disciplina: 'Ciclismo BMX Racing',
+        fechas: 'Medellín, 1991 – Presente',
+        resumen: 'La «Reina del BMX». La deportista olímpica más laureada en la historia de Colombia, dueña de dos medallas de oro olímpicas (Londres 2012 y Río 2016) y una de plata (Tokio 2020).',
+        logro: 'Catorce veces campeona mundial UCI de BMX, referente indiscutible de constancia, técnica y resiliencia tras superar múltiples fracturas óseas a lo largo de su carrera.',
+        biografia: `
+          <p>Sobre su bicicleta desde los cuatro años, Mariana rompió barreras de género en un deporte de contacto y velocidad extrema que tradicionalmente marginaba a las mujeres.</p>
+          <p>A través de su fundación <em>Pedaleando por un Sueño</em>, ha construido pistas deportivas y promovido la educación para niños de escasos recursos en todo el territorio colombiano.</p>
+        `
+      },
+      {
+        id: 'bernal',
+        nombre: 'Egan Arley Bernal Gómez',
+        campo: 'deportes',
+        disciplina: 'Ciclismo de Ruta & Escalada Andina',
+        fechas: 'Bogotá / Zipaquirá, 1997 – Presente',
+        resumen: 'El prodigio de las cumbres andinas. Primer ciclista latinoamericano en conquistar el Tour de Francia (2019) y campeón del Giro de Italia (2021).',
+        logro: 'A los 22 años se convirtió en el tercer campeón más joven en los más de cien años de historia del Tour de Francia, vistiendo el Maillot Jaune en los Campos Elíseos de París.',
+        biografia: `
+          <p>Iniciado en el ciclomontañismo en los senderos de Zipaquirá, Bernal cautivó al pelotón internacional por su asombrosa capacidad de resistencia cardiovascular en puertos de alta montaña a más de 2.000 metros de altitud.</p>
+          <p>Tras sufrir un catastrófico accidente en 2022 que casi le cuesta la vida con más de 20 huesos fracturados, protagonizó un milagro de recuperación médica y regresó a competir al más alto nivel en las grandes vueltas europeas.</p>
+        `
+      }
+    ];
+
+    let currentDiscipline = 'todas';
+
+    function renderMentes() {
+      const container = document.getElementById('mentesGridContainer');
+      const query = document.getElementById('searchMenteInput').value.toLowerCase().trim();
+
+      const filtered = mentesData.filter(item => {
+        const matchField = currentDiscipline === 'todas' || item.campo === currentDiscipline;
+        const matchQuery = !query ||
+          item.nombre.toLowerCase().includes(query) ||
+          item.disciplina.toLowerCase().includes(query) ||
+          item.resumen.toLowerCase().includes(query) ||
+          item.logro.toLowerCase().includes(query);
+        return matchField && matchQuery;
+      });
+
+      if (filtered.length === 0) {
+        container.innerHTML = `
+          <div style="grid-column: 1 / -1; text-align: center; color: #94a3b8; padding: 3rem;">
+            No se hallaron figuras que coincidan con la búsqueda.
+          </div>
+        `;
+        return;
+      }
+
+      container.innerHTML = filtered.map(item => `
+        <article class="mente-card">
+          <div class="mente-header">
+            <div class="mente-field-badge">${item.disciplina}</div>
+            <h3>${item.nombre}</h3>
+            <div class="mente-dates">${item.fechas}</div>
+          </div>
+          <div class="mente-body">
+            <p class="mente-desc">${item.resumen}</p>
+            <div class="mente-achievement">
+              <strong style="color: #d4af37;">✦ Hito Mayor:</strong><br>
+              ${item.logro}
+            </div>
+            <button class="btn-mente" onclick="openMenteModal('${item.id}')">
+              Ver Biografía Completa &rarr;
+            </button>
+          </div>
+        </article>
+      `).join('');
+    }
+
+    function setDisciplineFilter(disc, btn) {
+      currentDiscipline = disc;
+      document.querySelectorAll('.discipline-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      renderMentes();
+    }
+
+    function filterMentes() {
+      renderMentes();
+    }
+
+    function openMenteModal(menteId) {
+      const item = mentesData.find(m => m.id === menteId);
+      if (!item) return;
+
+      const body = document.getElementById('modalMenteBody');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #d4af37; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          Expediente Biográfico Oficial • ${item.disciplina}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 0.3rem; line-height: 1.2;">
+          ${item.nombre}
+        </h2>
+        <div style="font-size: 0.9rem; color: #38bdf8; margin-bottom: 1.5rem;">
+          ${item.fechas}
+        </div>
+
+        <div style="background: rgba(212,175,55,0.08); border-left: 3px solid #d4af37; padding: 1.2rem; border-radius: 0 8px 8px 0; margin-bottom: 1.5rem;">
+          <strong style="color: #fef08a; font-family: var(--font-title); font-size: 0.95rem;">Aporte Cumbre a la Humanidad:</strong>
+          <p style="color: #cbd5e1; font-size: 0.92rem; margin-top: 0.4rem; line-height: 1.6;">
+            ${item.logro}
+          </p>
+        </div>
+
+        <div style="color: #cbd5e1; font-size: 1rem; line-height: 1.8; margin-bottom: 1rem;">
+          ${item.biografia}
+        </div>
+      `;
+
+      document.getElementById('menteModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenteModal() {
+      document.getElementById('menteModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'menteModal') closeMenteModal();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenteModal();
+    });
+
+    // Renderizado inicial
+    renderMentes();
+  </script>
 </body>
 </html>

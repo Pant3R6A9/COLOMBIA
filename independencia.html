@@ -3,14 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Independencia y República - Colombia en el Tiempo</title>
-  <meta name="description" content="Deconstrucción del mito del 20 de julio, juntas provinciales alternativas y la financiación de la independencia.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>Independencia y Grito Libertador (1810 - 1819) — Colombianopedia</title>
+  <meta name="description" content="Museo interactivo de la Independencia de Colombia: la traducción de los Derechos del Hombre por Nariño, el 20 de julio, el Régimen del Terror de Morillo, y la Campaña Libertadora de 1819.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --gold-liberty: #f59e0b;
+      --blue-gran-colombia: #2563eb;
+      --crimson-martyr: #dc2626;
+      --obsidian-surface: #070a10;
+      --obsidian-card: rgba(14, 20, 32, 0.8);
+      --border-liberty: rgba(245, 158, 11, 0.25);
+    }
+
+    .independencia-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-independencia {
+      background: linear-gradient(180deg, rgba(245,158,11,0.12) 0%, rgba(7,10,16,0) 100%),
+                  radial-gradient(circle at 50% 15%, rgba(37,99,235,0.15), transparent 70%);
+      border: 1px solid var(--border-liberty);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .hero-independencia::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, #f59e0b, #2563eb, #dc2626, transparent);
+    }
+
+    .independencia-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--gold-liberty);
+      border-radius: 50px;
+      color: #fbbf24;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-independencia h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.3rem, 5.5vw, 4rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-independencia h1 span {
+      background: linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #dc2626 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Telemetría */
+    .telemetry-independencia {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .telemetry-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1.4rem;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .telemetry-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-liberty);
+    }
+
+    .telemetry-val {
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold-liberty);
+      margin-bottom: 0.3rem;
+    }
+
+    .telemetry-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Grilla de Capítulos */
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .episode-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .episode-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-liberty);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.25);
+    }
+
+    .episode-header {
+      padding: 1.8rem 1.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .episode-period {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--gold-liberty);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .episode-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    .episode-body {
+      padding: 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .episode-desc {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-episode {
+      width: 100%;
+      padding: 0.85rem;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid var(--gold-liberty);
+      border-radius: 6px;
+      color: var(--gold-liberty);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-episode:hover {
+      background: var(--gold-liberty);
+      color: #000;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid var(--gold-liberty);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #fff; }
+  </style>
 </head>
 <body data-theme="independencia">
 
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -18,18 +268,18 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
-          <a href="independencia.html">Independencia y Grito</a>
+          <a href="independencia.html" class="active">Independencia y Grito</a>
           <a href="siglo-xix.html">República (Siglo XIX)</a>
           <a href="siglo-xx.html">Tensiones del Siglo XX</a>
           <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
@@ -42,151 +292,254 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(241,196,15,0.15); color: var(--accent);">
-        1810 - 1830 / Campañas Libertadoras
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL INDEPENDENCIA
+       ========================================== -->
+  <main class="independencia-container">
+
+    <section class="hero-independencia" id="hero-section">
+      <div class="independencia-badge">
+        <span>⚔</span> La Epopeya de la Emancipación (1810 – 1819) <span>⚔</span>
       </div>
-      <h1>Transición a la República</h1>
-      <p>La deconstrucción del mito centralista del 20 de julio de 1810, el realismo regional y el enorme esfuerzo fiscal de las Provincias Unidas. Haz clic para abrir la investigación.</p>
+      <h1>La Lucha por la <span>Libertad y la República</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.15rem; line-height: 1.8;">
+        De la traducción clandestina de los Derechos del Hombre por Antonio Nariño y el estallido del 20 de Julio, al doloroso asedio de Morillo en Cartagena, el martirio de la Pola y la carga inmortal de los 14 lanceros de Rondón en el Pantano de Vargas.
+      </p>
     </section>
 
-    <section class="era-layout">
-      
-      <div class="timeline-section">
-        
-        <!-- Desmitificando el 20 de julio -->
-        <div class="timeline-item">
-          <div class="timeline-year">1810</div>
-          <div class="timeline-content" data-drawer="drawer-juntas">
-            <span class="document-badge">Deconstrucción Histórica</span>
-            <h3>La Simultaneidad de las Juntas Provinciales</h3>
-            <p>
-              El Acta de 1810 en Santafé de Bogotá vs las autonomías federales. Haz clic para explorar la verdadera cronología regional de la independencia.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Realismo en Pasto -->
-        <div class="timeline-item">
-          <div class="timeline-year">1811 - 1824</div>
-          <div class="timeline-content" data-drawer="drawer-pasto">
-            <span class="document-badge">Resistencia Realista</span>
-            <h3>El Conflicto en Pasto y el Río Guaitara</h3>
-            <p>
-              El sur realista que defendió la soberanía de la Corona española. Haz clic para abrir estadísticas de campañas y detalles del arraigo monárquico.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
-        </div>
-
-        <!-- El Acta Encontrada en Silvia -->
-        <div class="timeline-item">
-          <div class="timeline-year">1948 - 2017</div>
-          <div class="timeline-content" data-drawer="drawer-acta">
-            <span class="document-badge">Hallazgo Documental</span>
-            <h3>La Copia Auténtica del Acta en Silvia, Cauca</h3>
-            <p>
-              La pérdida del original en el incendio de 1948 y el descubrimiento en Silvia. Haz clic para abrir los detalles archivísticos de este rescate.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Financiación de la Independencia -->
-        <div class="timeline-item">
-          <div class="timeline-year">1811 - 1816</div>
-          <div class="timeline-content" data-drawer="drawer-monedas">
-            <span class="document-badge">Numismática y Fiscal</span>
-            <h3>La Financiación de las Campañas Libertadoras</h3>
-            <p>
-              Acuñación provisional de monedas y emisiones locales. Haz clic para abrir la investigación numismática detallada y estadísticas fiscales.
-            </p>
-            <div class="era-link">Ver Investigación &rarr;</div>
-          </div>
-        </div>
-
+    <!-- Telemetría -->
+    <section class="telemetry-independencia">
+      <div class="telemetry-card">
+        <div class="telemetry-val">1793</div>
+        <div class="telemetry-lbl">Derechos del Hombre (Nariño)</div>
       </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">105 Días</div>
+        <div class="telemetry-lbl">Asedio de Morillo a Cartagena</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">14 Lanceros</div>
+        <div class="telemetry-lbl">Carga Decisiva de Rondón</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">7 de Agosto</div>
+        <div class="telemetry-lbl">Victoria del Puente de Boyacá</div>
+      </div>
+    </section>
 
+    <!-- Capítulos de la Independencia -->
+    <section class="episodes-grid">
+      <!-- 1. Los Precursores y Nariño -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">1793 – 1810</div>
+          <h3>Antonio Nariño y la Llama de los Derechos Humanos</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            En su imprenta clandestina <em>La Patriótica</em>, Antonio Nariño tradujo e imprimió por primera vez al castellano la <em>Declaración de los Derechos del Hombre y del Ciudadano</em>. Condenado a 30 años de prisión y destierro, regresó para liderar la causa republicana.
+          </p>
+          <button class="btn-episode" onclick="openIndependenciaModal('narino')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 2. El 20 de Julio de 1810 -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">20 de Julio de 1810</div>
+          <h3>El Grito de Santafé y el Florero de Llorente</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            Una operación política calculada por los criollos en las vísperas del día de mercado. La negativa del comerciante español José González Llorente de prestar un florero desató el motín popular que forzó la destitución del Virrey Amar y Borbón y el Acta del Cabildo Extraordinario.
+          </p>
+          <button class="btn-episode" onclick="openIndependenciaModal('veintejulio')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 3. La Patria Boba -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">1810 – 1816</div>
+          <h3>La Pugna Constitucional: Centralismo vs. Federalismo</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            El primer experimento republicano dividido: el Centralismo enérgico de Cundinamarca guiado por Nariño frente al Federalismo de las Provincias Unidas liderado por Camilo Torres. Una guerra civil intestina que dejó al país inerme ante el retorno del ejército imperial.
+          </p>
+          <button class="btn-episode" onclick="openIndependenciaModal('patriaboba')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 4. La Reconquista y el Régimen del Terror -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">1815 – 1816</div>
+          <h3>Pablo Morillo y el Holocausto de los Mártires</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            La llegada del Ejército Expedicionario de Costa Firme. Tras el asedio de 105 días que diezmó a Cartagena de Indias por inanición y cólera, el tribunal de guerra español fusiló a la élite intelectual: Policarpa Salavarrieta, Antonia Santos y el sabio Francisco José de Caldas.
+          </p>
+          <button class="btn-episode" onclick="openIndependenciaModal('terror')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 5. La Campaña Libertadora de 1819 -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">Junio – Agosto de 1819</div>
+          <h3>El Paso de los Andes y la Carga de Rondón</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            La hazaña táctica de Bolívar y Santander: atravesar las sabanas inundadas del Casanare y ascender las cumbres gélidas del Páramo de Pisba a 4.000 msnm. La carga salvadora de los 14 lanceros de Juan José Rondón en Pantano de Vargas y la victoria sellada en el Puente de Boyacá.
+          </p>
+          <button class="btn-episode" onclick="openIndependenciaModal('campana1819')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 6. El Congreso de Angostura -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">17 de Diciembre de 1819</div>
+          <h3>Nacimiento de la Gran Colombia</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            A orillas del río Orinoco, el Congreso de Angostura proclama la creación de la República de Colombia, unificando los antiguos territorios de la Nueva Granada, Venezuela y la presidencia de Quito, bajo la presidencia del Libertador Simón Bolívar.
+          </p>
+          <button class="btn-episode" onclick="openIndependenciaModal('angostura')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
     </section>
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
-       ========================================== -->
-
-  <!-- Plantilla Juntas -->
-  <template id="drawer-juntas">
-    <div class="document-badge">Autonomía Regional</div>
-    <h2 class="title-font">Independencias Regionales</h2>
-    <p>
-      El centralismo bogotano oscureció la realidad de que **Cartagena de Indias** fue la primera provincia en declarar la independencia absoluta de España el 11 de noviembre de 1811, mientras Santafé aún gobernaba bajo el Consejo de Regencia real.
-    </p>
-    <p>
-      La Constitución de Cartagena de 1812 declaró un Estado totalmente soberano y prohibió explícitamente la trata de esclavizados.
-    </p>
-  </template>
-
-  <!-- Plantilla Pasto -->
-  <template id="drawer-pasto">
-    <div class="document-badge">Campaña del Sur</div>
-    <h2 class="title-font">El Realismo de Pasto</h2>
-    <p>
-      La defensa pastusa de la Corona española se basaba en la defensa de sus propias tierras comunitarias y su autonomía religiosa. Las campañas de Antonio Nariño y Simón Bolívar en el sur encontraron una encarnizada guerra de guerrillas patiana que costó miles de vidas a las fuerzas republicanas.
-    </p>
-  </template>
-
-  <!-- Plantilla Acta de Silvia -->
-  <template id="drawer-acta">
-    <div class="document-badge">Archivo Histórico</div>
-    <h2 class="title-font">El Acta Rescatada</h2>
-    <p>
-      La tercera copia del Acta descubierta en Silvia, Cauca, en 2017, es un documento impreso de gran formato bajo la dirección del político Rafael Duque Uribe en París en 1890, reproduciendo con exactitud paleográfica las rúbricas que se perdieron en el Bogotazo de 1948.
-    </p>
-  </template>
-
-  <!-- Plantilla Monedas -->
-  <template id="drawer-monedas">
-    <div class="document-badge">Numismática Colonial</div>
-    <h2 class="title-font">Monedas de Emergencia</h2>
-    <p>
-      Para costear las tropas y la compra de armamento extranjero, la Casa de Moneda de Cartagena acuñó la primera moneda de cobre con una efigie indígena y una palmera, en lugar del busto del rey de España.
-    </p>
-    <div class="stat-box">
-      <h4 class="title-font">Emisión Estimada de Moneda Patriota (1811-1815)</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Acuñación Cobre (Cartagena)</span>
-            <span>~80.000 reales</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="80"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Acuñación Plata (Bogotá Nariño)</span>
-            <span>~50.000 reales</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="50"></div>
-          </div>
-        </div>
-      </div>
+  <!-- Modal de Museo Independencia -->
+  <div class="modal-overlay" id="independenciaModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeIndependenciaModal()">&times;</button>
+      <div id="modalIndependenciaBody"></div>
     </div>
-  </template>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Sección: Independencia.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Fuentes: Catálogo de Numismática de la Casa de Moneda (Banco de la República).
-    </p>
+    <p>&copy; 2026 Colombianopedia — Época de Independencia y Fundación Republicana. Basado en las Actas del Congreso de Angostura y los Partes de Guerra de 1819.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const independenciaData = {
+      narino: {
+        title: "Antonio Nariño y la Traducción que Cambió a América (1793)",
+        badge: "El Precursor de los Derechos Humanos",
+        content: `
+          <p>En diciembre de 1793, en Santafé de Bogotá, don Antonio Nariño imprimió de madrugada en su taller secreto un folleto de dos hojas: la traducción castellana de los 17 artículos de la <em>Déclaration des droits de l'homme et du citoyen</em>, aprobada por la Asamblea Francesa de 1789.</p>
+          <p>El texto consagraba que <em>«los hombres nacen y permanecen libres e iguales en derechos»</em> y que <em>«la soberanía reside esencialmente en la Nación»</em>. Enteradas las autoridades virreinales, Nariño fue arrestado, sus bienes confiscados y condenado a presidio en las mazmorras de Cádiz y el norte de África.</p>
+          <p>Fugado de prisión en Europa, regresó clandestinamente a la Nueva Granada para continuar la conspiración libertadora. Es reconocido como el padre ideológico de las libertades civiles en Colombia.</p>
+        `
+      },
+      veintejulio: {
+        title: "El 20 de Julio de 1810: Anatomía de una Insurrección",
+        badge: "El Cabildo Abierto de Santafé",
+        content: `
+          <p>El famoso episodio del 20 de julio no fue un arrebato espontáneo, sino un plan meticulosamente trazado por una junta clandestina de criollos reunida en el Observatorio Astronómico de Bogotá (entre ellos Camilo Torres, José María Carbonell y Francisco José de Caldas).</p>
+          <p>Aprovechando el gentío del viernes de mercado en la Plaza Mayor, Luis de Rubio fue a pedir prestado un florero dorado al comerciante peninsular José González Llorente para adornar una mesa en honor al comisionado regio Antonio Villavicencio.</p>
+          <p>La previsible negativa y los presuntos insultos de Llorente fueron el pretexto para encender los ánimos populares al grito de <em>«¡Nos desprecian a los americanos!»</em>. José María Carbonell corrió por los barrios populares de San Victorino incitando a los artesanos, lo que forzó al virrey Antonio Amar y Borbón a autorizar un Cabildo Abierto que terminó redactando el Acta de Independencia en la madrugada del 21 de julio.</p>
+        `
+      },
+      patriaboba: {
+        title: "La 'Patria Boba': El Dilema Centralismo vs. Federalismo (1810 - 1816)",
+        badge: "El Primer Laboratorio Constitucional",
+        content: `
+          <p>Apenas derrocado el poder virreinal, el territorio neogranadino se fracturó en una decena de juntas provinciales soberanas (Cartagena, Socorro, Tunja, Antioquia, Pamplona, Cali), cada una expidiendo su propia constitución.</p>
+          <p>Surgieron dos visiones irreconciliables:</p>
+          <ul>
+            <li><strong>El Centralismo (Antonio Nariño / Cundinamarca):</strong> Sostenía que ante la amenaza inminente de una reconquista española, solo un mando unificado, militarmente fuerte y centralizado desde Bogotá podía defender la república naciente.</li>
+            <li><strong>El Federalismo (Camilo Torres / Provincias Unidas):</strong> Defendía la autonomía absoluta de cada región y provincia, recelando del tradicional centralismo santafereño.</li>
+          </ul>
+          <p>La tensión derivó en la primera guerra civil fratricida de nuestra historia (1812-1814). Cuando Nariño cayó preso combatiendo a los realistas en el sur, la desunión facilitó la entrada implacable del ejército de reconquista español.</p>
+        `
+      },
+      terror: {
+        title: "El Régimen del Terror y el Heroísmo de los Mártires (1815 - 1816)",
+        badge: "El Martirologio Patriota",
+        content: `
+          <p>En agosto de 1815 arribó a Cartagena el general español Pablo Morillo con 60 navíos y 15.000 veteranos de las guerras napoleónicas. Tras un asedio de 105 días donde un tercio de la población cartagenera murió de hambre y peste, la plaza cayó y comenzó la sangrienta pacificación.</p>
+          <p>El Tribunal de Purificación y el Consejo de Guerra Permanente dictaron sentencias capitales inmediatas contra la intelectualidad republicana:</p>
+          <ul>
+            <li><strong>Policarpa Salavarrieta (La Pola):</strong> Fusilada por la espalda en la Plaza Mayor de Santafé el 14 de noviembre de 1817 por coordinar la red de espionaje patriota. Antes de morir exclamó: <em>«¡Pueblo indolente, cuán distinta sería hoy vuestra suerte si conocierais el precio de la libertad!»</em></li>
+            <li><strong>Antonia Santos:</strong> Fusilada en el Socorro en julio de 1819 por financiar y organizar la guerrilla de Coromoro.</li>
+            <li><strong>Francisco José de Caldas:</strong> Fusilado el 29 de octubre de 1816. Ante su pedido de clemencia para concluir sus investigaciones botánicas y geográficas, la tradición atribuye la célebre respuesta: <em>«España no necesita de sabios»</em>.</li>
+          </ul>
+        `
+      },
+      campana1819: {
+        title: "La Campaña Libertadora de 1819: El Paso de los Andes y Boyacá",
+        badge: "La Hazaña Militar Decisiva",
+        content: `
+          <p>En mayo de 1819, en la aldea de Setenta (Casanare), Simón Bolívar y Francisco de Paula Santander concibieron una marcha militar considerada entre las más audaces de la historia militar americana: tomar el camino más inhóspito para sorprender por la espalda a las tropas realistas de José María Barreiro.</p>
+          <p>El ejército patriota, compuesto en su mayoría por llaneros descalzos y la Legión Británica, cruzó durante semanas llanuras anegadas y ascendió las cumbres nevadas del <strong>Páramo de Pisba</strong> (a más de 4.000 metros de altitud). Centenares murieron congelados, pero lograron descender a los valles de Boyacá.</p>
+          <p>El 25 de julio, en la <strong>Batalla del Pantano de Vargas</strong>, cuando la derrota parecía inevitable, Bolívar pronunció la célebre orden: <em>«¡Coronel Rondón, salve usted la patria!»</em>. Rondón y sus 14 lanceros embistieron con fiereza salvaje desbaratando las filas españolas.</p>
+          <p>Doce días después, el <strong>7 de agosto de 1819</strong>, en el Puente de Boyacá, Santander y Anzoátegui cortaron el paso del ejército realista hacia Bogotá. El comandante Barreiro se rindió ante el joven soldado campesino Pedro Pascasio Martínez (quien rechazó un soborno de monedas de oro), sellando para siempre la independencia de la Nueva Granada.</p>
+        `
+      },
+      angostura: {
+        title: "El Congreso de Angostura y el Sueño de la Gran Colombia (1819)",
+        badge: "La Creación de la Gran República",
+        content: `
+          <p>Tras la victoria fulgurante en Boyacá, Bolívar regresó a Angostura (hoy Ciudad Bolívar, Venezuela) en diciembre de 1819 para presentar el triunfo neogranadino.</p>
+          <p>El 17 de diciembre de 1819, el Congreso expidió la <strong>Ley Fundamental de la República de Colombia</strong>, fusionando en una sola gran potencia continental a la Nueva Granada, Venezuela y Quito (Ecuador), dividida en tres departamentos territoriales: Cundinamarca, Venezuela y Quito.</p>
+          <p>Bolívar fue nombrado Presidente de la República y Santander Vicepresidente a cargo del poder ejecutivo en Bogotá, sentando las bases del Congreso Constituyente de Cúcuta de 1821.</p>
+        `
+      }
+    };
+
+    function openIndependenciaModal(key) {
+      const item = independenciaData[key];
+      if (!item) return;
+
+      const body = document.getElementById('modalIndependenciaBody');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #f59e0b; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          ${item.badge}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 1.2rem; line-height: 1.2;">
+          ${item.title}
+        </h2>
+        <div style="color: #cbd5e1; font-size: 1rem; line-height: 1.75;">
+          ${item.content}
+        </div>
+      `;
+
+      document.getElementById('independenciaModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeIndependenciaModal() {
+      document.getElementById('independenciaModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'independenciaModal') closeIndependenciaModal();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeIndependenciaModal();
+    });
+  </script>
 </body>
 </html>

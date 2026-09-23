@@ -3,14 +3,408 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Época Precolombina - Colombia en el Tiempo</title>
-  <meta name="description" content="Descubre las complejas culturas precolombinas del territorio colombiano: Muiscas, Taironas, Quimbayas y más.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>Época Precolombina: El Horizonte Ancestral — Colombianopedia</title>
+  <meta name="description" content="Museo interactivo de la Colombia Prehispánica: poblamiento temprano, grandes confederaciones (Muisca, Tairona, Quimbaya, Zenú, San Agustín), metalurgia de la tumbaga y cera perdida.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --gold-primary: #d4af37;
+      --gold-glow: rgba(212, 175, 55, 0.4);
+      --emerald-accent: #10b981;
+      --terracotta-accent: #e07a5f;
+      --obsidian-deep: #06080d;
+      --obsidian-card: rgba(13, 18, 28, 0.78);
+      --border-amber: rgba(212, 175, 55, 0.25);
+    }
+
+    /* Compensación estricta del Header fijo */
+    .precolombina-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-precolombina {
+      background: linear-gradient(180deg, rgba(212,175,55,0.08) 0%, rgba(6,8,13,0) 100%),
+                  radial-gradient(circle at 50% 20%, rgba(224,122,95,0.12), transparent 70%);
+      border: 1px solid var(--border-amber);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+    }
+
+    .hero-precolombina::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold-primary), var(--emerald-accent), var(--terracotta-accent), transparent);
+    }
+
+    .period-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      padding: 0.4rem 1.2rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--gold-primary);
+      border-radius: 50px;
+      color: var(--gold-primary);
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-precolombina h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5vw, 3.8rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.25rem;
+      text-shadow: 0 4px 20px rgba(0,0,0,0.8);
+    }
+
+    .hero-precolombina h1 span {
+      background: linear-gradient(135deg, #fce07a 0%, #d4af37 60%, #b8860b 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-lead {
+      max-width: 860px;
+      margin: 0 auto 2rem;
+      font-size: 1.15rem;
+      line-height: 1.8;
+      color: #cbd5e1;
+      font-weight: 300;
+    }
+
+    /* Telemetría Precolombina */
+    .telemetry-strip {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .telemetry-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1.4rem;
+      text-align: center;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+      backdrop-filter: blur(12px);
+    }
+
+    .telemetry-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--gold-primary);
+    }
+
+    .telemetry-value {
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--gold-primary);
+      margin-bottom: 0.3rem;
+    }
+
+    .telemetry-label {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Grilla de Culturas Emblemáticas */
+    .cultures-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .culture-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+
+    .culture-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--gold-primary);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px var(--gold-glow);
+    }
+
+    .culture-card-header {
+      padding: 1.8rem 1.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      position: relative;
+    }
+
+    .culture-chronology {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .culture-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.5rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .culture-region {
+      font-size: 0.85rem;
+      color: #94a3b8;
+    }
+
+    .culture-card-body {
+      padding: 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .culture-desc {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .culture-highlights {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .culture-pill {
+      font-family: var(--font-mono);
+      font-size: 0.72rem;
+      padding: 0.3rem 0.7rem;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 4px;
+      color: #e2e8f0;
+    }
+
+    .btn-culture-detail {
+      width: 100%;
+      padding: 0.85rem;
+      background: rgba(212, 175, 55, 0.12);
+      border: 1px solid var(--gold-primary);
+      border-radius: 6px;
+      color: var(--gold-primary);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-culture-detail:hover {
+      background: var(--gold-primary);
+      color: #000;
+      box-shadow: 0 0 15px var(--gold-glow);
+    }
+
+    /* Laboratorio de Metalurgia */
+    .metallurgy-section {
+      background: radial-gradient(circle at 80% 20%, rgba(212,175,55,0.09), transparent 60%),
+                  var(--obsidian-surface);
+      border: 1px solid var(--border-amber);
+      border-radius: 12px;
+      padding: 3rem 2.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .metallurgy-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 900px) {
+      .metallurgy-grid { grid-template-columns: 1fr; }
+    }
+
+    .metallurgy-steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .step-item {
+      display: flex;
+      gap: 1.2rem;
+      background: rgba(255, 255, 255, 0.03);
+      border-left: 3px solid var(--gold-primary);
+      padding: 1.2rem;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .step-num {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: var(--gold-primary);
+      line-height: 1;
+    }
+
+    .step-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      color: #fff;
+      margin-bottom: 0.4rem;
+    }
+
+    .step-desc {
+      font-size: 0.88rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* Simulador Interactivo de Tumbaga */
+    .alloy-simulator {
+      background: rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 10px;
+      padding: 2rem;
+    }
+
+    .alloy-preview {
+      height: 140px;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease, box-shadow 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .alloy-controls {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .slider-row {
+      display: flex;
+      flex-direction: column;
+      gap: 0.3rem;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      font-family: var(--font-mono);
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      accent-color: var(--gold-primary);
+    }
+
+    /* Modal Monográfico */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid var(--gold-primary);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9), 0 0 35px var(--gold-glow);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+      transition: color 0.2s ease;
+    }
+
+    .modal-close:hover {
+      color: #fff;
+    }
+  </style>
 </head>
 <body data-theme="precolombina">
 
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -18,9 +412,9 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
-          <a href="precolombina.html">Época Precolombina</a>
+          <a href="precolombina.html" class="active">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
           <a href="independencia.html">Independencia y Grito</a>
           <a href="siglo-xix.html">República (Siglo XIX)</a>
@@ -29,7 +423,7 @@
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
@@ -42,260 +436,537 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(229,152,102,0.15); color: var(--accent);">
-        Época Prehispánica / Origen
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL PRECOLOMBINO
+       ========================================== -->
+  <main class="precolombina-container">
+
+    <!-- Hero Monumental -->
+    <section class="hero-precolombina" id="hero-section">
+      <div class="period-badge">
+        <span>✦</span> Horizonte Prehispánico (20.000 AP – 1537 d.C.) <span>✦</span>
       </div>
-      <h1>El Territorio antes de los Colonos</h1>
-      <p>Explora a profundidad el legado de las sociedades prehispánicas. Haz clic en cualquiera de las secciones para abrir la ficha de investigación detallada, ilustraciones y estadísticas clave.</p>
+      <h1>El Territorio de los Señores del <span>Oro y el Barro</span></h1>
+      <p class="hero-lead">
+        Milenios antes de la conquista europea, el territorio colombiano albergó civilizaciones complejas con dominio magistral de la metalurgia, macroingeniería de canales inundables, urbanismo lítico en las nubes y cosmogonías profundamente enlazadas con la selva, el jaguar y los astros.
+      </p>
+      <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+        <a href="muiscas.html" class="btn btn-primary" style="padding: 0.85rem 1.8rem; font-family: var(--font-title); font-size: 0.95rem;">
+          Explorar Monográfico Muisca &rarr;
+        </a>
+        <a href="otras-culturas.html" class="btn btn-outline" style="padding: 0.85rem 1.8rem; font-family: var(--font-title); font-size: 0.95rem;">
+          Atlas de las 115 Naciones Originarias
+        </a>
+      </div>
     </section>
 
-    <section class="era-layout">
-      
-      <div class="timeline-section">
-        
-        <!-- Cultura Muisca -->
-        <div class="timeline-item">
-          <div class="timeline-year">Muiscas y la Confederación Chibcha</div>
-          <div class="timeline-content" data-drawer="drawer-muisca">
-            <span class="document-badge">Organización Social</span>
-            <h3>Los Señores del Altiplano Cundiboyacense</h3>
-            <p>
-              Una confederación política de cacicazgos con un avanzado sistema agrícola en terrazas y lagunas sagradas. Haz clic para explorar detalles de orfebrería, el ritual de Guatavita y demografía.
-            </p>
-            <div class="era-link">Abrir Investigación &rarr;</div>
-          </div>
-        </div>
+    <!-- Telemetría Histórica Prehispánica -->
+    <section class="telemetry-strip">
+      <div class="telemetry-card">
+        <div class="telemetry-value">20.000+</div>
+        <div class="telemetry-label">Años de Poblamiento Humano</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-value">500.000</div>
+        <div class="telemetry-label">Hectáreas de Canales Zenú</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-value">34.000+</div>
+        <div class="telemetry-label">Piezas en el Museo del Oro</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-value">115</div>
+        <div class="telemetry-label">Pueblos Originarios Documentados</div>
+      </div>
+    </section>
 
-        <!-- Cultura Tairona -->
-        <div class="timeline-item">
-          <div class="timeline-year">Taironas y la Sierra Nevada</div>
-          <div class="timeline-content" data-drawer="drawer-tairona">
-            <span class="document-badge">Ingeniería Lítica</span>
-            <h3>Los Constructores de la Sierra</h3>
-            <p>
-              Ingeniería ambiental y arquitectura circular de piedra en las alturas de la Sierra Nevada. Haz clic para abrir detalles urbanos, terrazas y la historia de Teyuna.
-            </p>
-            <div class="era-link">Abrir Investigación &rarr;</div>
-          </div>
+    <!-- Salón de las Grandes Culturas -->
+    <section style="margin-bottom: 3.5rem;">
+      <div style="border-bottom: 1px solid var(--border-amber); padding-bottom: 1rem; margin-bottom: 2.5rem; display: flex; justify-content: space-between; align-items: flex-end; flex-wrap: wrap; gap: 1rem;">
+        <div>
+          <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 0.15em;">
+            Cacicazgos & Confederaciones Mayores
+          </span>
+          <h2 style="font-family: var(--font-title); font-size: 2.2rem; color: #fff; margin-top: 0.3rem;">
+            Las 8 Sociedades Prehispánicas Cumbres
+          </h2>
         </div>
-
-        <!-- Cultura Quimbaya -->
-        <div class="timeline-item">
-          <div class="timeline-year">Orfebrería Quimbaya</div>
-          <div class="timeline-content" data-drawer="drawer-quimbaya">
-            <span class="document-badge">Técnica Metalúrgica</span>
-            <h3>Los Maestros del Oro y la Tumbaga</h3>
-            <p>
-              Avanzadas aleaciones metálicas y objetos escultóricos de poder político y sagrado. Haz clic para explorar técnicas metalúrgicas y la importancia del Poporo.
-            </p>
-            <div class="era-link">Abrir Investigación &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Cultura Zenú -->
-        <div class="timeline-item">
-          <div class="timeline-year">Cultura Zenú y el Drenaje Hidráulico</div>
-          <div class="timeline-content" data-drawer="drawer-zenu">
-            <span class="document-badge">Control del Agua</span>
-            <h3>Ingeniería Hidráulica en las Sabanas</h3>
-            <p>
-              Una de las obras de manejo hídrico más espectaculares del continente americano antiguo. Haz clic para ver mapas de canales y estadísticas de agricultura de inundación.
-            </p>
-            <div class="era-link">Abrir Investigación &rarr;</div>
-          </div>
-        </div>
-
+        <p style="color: #94a3b8; font-size: 0.9rem; max-width: 450px;">
+          Haz clic en cualquiera de las fichas para desplegar el expediente arqueológico completo con metalurgia, hábitat y organización sociopolítica.
+        </p>
       </div>
 
+      <div class="cultures-grid">
+        <!-- 1. Muiscas -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 600 d.C. – 1537 d.C.</div>
+            <h3>Confederación Muisca</h3>
+            <div class="culture-region">Altiplano Cundiboyacense (Bacatá, Hunza, Sugamuxi)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              La mayor confederación chibcha andina. Maestros de la explotación de salmuera en Zipaquirá y Nemocón, minería de esmeraldas y del ceremonial sagrado de ofrendas áureas en la Laguna de Guatavita que dio origen al mito universal de El Dorado.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Balsa Muisca</span>
+              <span class="culture-pill">Sal y Esmeraldas</span>
+              <span class="culture-pill">Camellones</span>
+              <span class="culture-pill">Guechas</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('muisca')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 2. Taironas -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 200 d.C. – 1600 d.C.</div>
+            <h3>Cultura Tairona</h3>
+            <div class="culture-region">Sierra Nevada de Santa Marta (Teyuna / Ciudad Perdida)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              Pioneros del urbanismo lítico en pendientes extremas. Levantaron más de 200 núcleos urbanos conectados por calzadas de piedra adoquinada, terrazas de contención de 9 metros y un manejo microclimático vertical desde el mar hasta las nieves perpetuas.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Ciudad Perdida (Teyuna)</span>
+              <span class="culture-pill">Terrazas de Piedra</span>
+              <span class="culture-pill">Orfebrería Antropomorfa</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('tairona')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 3. Quimbayas -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 500 a.C. – 1600 d.C.</div>
+            <h3>Cultura Quimbaya</h3>
+            <div class="culture-region">Cuenca Media del Río Cauca (Caldas, Quindío, Risaralda)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              Cúspide de la metalurgia en América. Desarrollaron la fundición a la cera perdida con núcleos huecos de carbón y arcilla, logrando figuras de realismo anatómico sin igual y el emblemático Poporo Quimbaya, hito fundacional del Museo del Oro.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Poporo Quimbaya</span>
+              <span class="culture-pill">Tumbaga Realista</span>
+              <span class="culture-pill">Cera Perdida Hueca</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('quimbaya')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 4. Zenúes -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 200 a.C. – 1000 d.C.</div>
+            <h3>Imperio Hidráulico Zenú</h3>
+            <div class="culture-region">Valles de los Ríos Sinú, San Jorge y Cauca</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              La mayor proeza de ingeniería hidrológica precolombina: excavaron una red de canales artificiales en medio millón de hectáreas de humedales para dominar las crecidas estacionales, enriquecer el suelo con limos fértiles y crear piscicultura intensiva.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Canales de Drenaje</span>
+              <span class="culture-pill">Filigrana de Oro</span>
+              <span class="culture-pill">Poblamiento en Lomas</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('zenu')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 5. San Agustín -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 1000 a.C. – 900 d.C.</div>
+            <h3>Cultura de San Agustín</h3>
+            <div class="culture-region">Alto Magdalena / Macizo Colombiano (Huila)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              La civilización megalítica más imponente del norte andino. Esculpieron en tobas volcánicas monumentales estatuas fúnebres de guerreros jaguar, deidades del inframundo y guardianes de tumbas con sarcófagos monolíticos de piedra policromada.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Megalitismo Escultórico</span>
+              <span class="culture-pill">Chamanes Jaguar</span>
+              <span class="culture-pill">Parque Arqueológico UNESCO</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('sanagustin')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 6. Tierradentro -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 600 d.C. – 900 d.C.</div>
+            <h3>Cultura de Tierradentro</h3>
+            <div class="culture-region">Cordillera Central (Inzá y Belalcázar, Cauca)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              Los arquitectos del inframundo. Excavaron hipogeos funerarios monumentales de hasta 9 metros de profundidad en la roca viva, con cámaras subterráneas sostenidas por columnas talladas y decoradas con pinturas geométricas rojas y negras.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Hipogeos Subterráneos</span>
+              <span class="culture-pill">Pintura Mural Fúnebre</span>
+              <span class="culture-pill">Patrimonio de la Humanidad</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('tierradentro')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 7. Calima -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 1500 a.C. – 1500 d.C.</div>
+            <h3>Cultura Calima</h3>
+            <div class="culture-region">Valle del Cauca (Ríos Calima y Dagua)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              Dividida en tres periodos cerámicos y metalúrgicos brillantes (Ilama, Yotoco y Sonso). Famosa por sus pectorales acorazonados gigantescos, narigueras de asombrosa opulencia y máscaras funerarias en láminas de oro de alta pureza.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Ilama, Yotoco y Sonso</span>
+              <span class="culture-pill">Pectorales Áureos Gigantes</span>
+              <span class="culture-pill">Alcarrazas zoomorfas</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('calima')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+
+        <!-- 8. Tumaco - La Tolita -->
+        <article class="culture-card">
+          <div class="culture-card-header">
+            <div class="culture-chronology">c. 600 a.C. – 400 d.C.</div>
+            <h3>Tumaco – La Tolita</h3>
+            <div class="culture-region">Litoral Pacífico Colombo-Ecuatoriano (Nariño y Esmeraldas)</div>
+          </div>
+          <div class="culture-card-body">
+            <p class="culture-desc">
+              Pioneros mundiales en la metalurgia del platino, logrando fundirlo milenios antes que en Europa gracias a la técnica de sinterización con oro. Su cerámica retrata de forma hiperrealista las enfermedades, maternidad, vejez y rituales de la costa manglar.
+            </p>
+            <div class="culture-highlights">
+              <span class="culture-pill">Pioneros del Platino</span>
+              <span class="culture-pill">Realismo Antropomorfo</span>
+              <span class="culture-pill">Canopla y Manglares</span>
+            </div>
+            <button class="btn-culture-detail" onclick="openCultureModal('tumaco')">
+              Inspeccionar Expediente Arqueológico &rarr;
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Laboratorio Metalúrgico: La Tumbaga y la Cera Perdida -->
+    <section class="metallurgy-section">
+      <div style="text-align: center; max-width: 800px; margin: 0 auto 2.5rem;">
+        <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--gold-primary); text-transform: uppercase; letter-spacing: 0.15em;">
+          Alquimia Ancestral del Fuego
+        </span>
+        <h2 style="font-family: var(--font-title); font-size: 2.2rem; color: #fff; margin-top: 0.3rem;">
+          La Ciencia de la Tumbaga y la Cera Perdida
+        </h2>
+        <p style="color: #cbd5e1; font-size: 1rem; line-height: 1.7;">
+          Los orfebres precolombinos no concebían el oro como simple valor de cambio comercial, sino como la encarnación solar y espiritual. Para dominar las bajas temperaturas y conseguir formas complejas, crearon aleaciones exactas de oro y cobre nativo.
+        </p>
+      </div>
+
+      <div class="metallurgy-grid">
+        <!-- Pasos del Proceso Metalúrgico -->
+        <div class="metallurgy-steps">
+          <div class="step-item">
+            <div class="step-num">01</div>
+            <div>
+              <div class="step-title">Modelado en Cera de Abejas</div>
+              <div class="step-desc">
+                Se esculpe la figura con minucioso detalle usando cera de abejas nativas sin aguijón (*Meliponas*) mezclada con resinas de copal para mayor maleabilidad.
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-num">02</div>
+            <div>
+              <div class="step-title">Molde Cerámico Refractario</div>
+              <div class="step-desc">
+                La pieza se recubre con sucesivas capas de arcilla fina y carbón vegetal pulverizado, dejando conductos y respiraderos para el flujo del metal.
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-num">03</div>
+            <div>
+              <div class="step-title">Vaciado de Metal Fundido</div>
+              <div class="step-desc">
+                El molde se calienta hasta que la cera se derrite y escapa. De inmediato, se vierte la tumbaga líquida a 900°C en el vacío dejado por la cera.
+              </div>
+            </div>
+          </div>
+
+          <div class="step-item">
+            <div class="step-num">04</div>
+            <div>
+              <div class="step-title">Dorado Superficial por Oxidación (*Mise en couleur*)</div>
+              <div class="step-desc">
+                La pieza se somete a recocido para oxidar el cobre de la superficie, sumergiéndola luego en jugos de plantas ácidas para disolverlo y hacer emerger una película de oro puro resplandeciente.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Simulador Interactivo de Proporciones -->
+        <div class="alloy-simulator">
+          <h3 style="font-family: var(--font-title); font-size: 1.3rem; color: #fff; margin-bottom: 0.5rem;">
+            Simulador de Aleación de Tumbaga
+          </h3>
+          <p style="font-size: 0.85rem; color: #94a3b8; margin-bottom: 1.5rem;">
+            Ajusta los controles para observar la temperatura de fusión, el color de la aleación y sus propiedades mecánicas:
+          </p>
+
+          <div class="alloy-preview" id="alloyPreviewBox" style="background: linear-gradient(135deg, #e5a93c, #c67d1d);">
+            <div id="alloyResultTitle" style="font-family: var(--font-title); font-size: 1.4rem; color: #fff; font-weight: 700; text-shadow: 0 2px 6px rgba(0,0,0,0.8);">
+              Tumbaga Quimbaya Áurea
+            </div>
+            <div id="alloyResultTemp" style="font-family: var(--font-mono); font-size: 0.85rem; color: #fef08a; margin-top: 0.3rem;">
+              Punto de Fusión: 880°C (Óptimo para fundición)
+            </div>
+          </div>
+
+          <div class="alloy-controls">
+            <div class="slider-row">
+              <div class="slider-header">
+                <span>Oro (Au)</span>
+                <span id="goldVal">65%</span>
+              </div>
+              <input type="range" id="goldSlider" min="10" max="90" value="65" oninput="updateAlloy()">
+            </div>
+
+            <div class="slider-row">
+              <div class="slider-header">
+                <span>Cobre (Cu)</span>
+                <span id="copperVal">30%</span>
+              </div>
+              <input type="range" id="copperSlider" min="5" max="80" value="30" oninput="updateAlloy()">
+            </div>
+
+            <div class="slider-row">
+              <div class="slider-header">
+                <span>Plata Nativa (Ag)</span>
+                <span id="silverVal">5%</span>
+              </div>
+              <input type="range" id="silverSlider" min="0" max="20" value="5" oninput="updateAlloy()">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
   </main>
 
   <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
+       MODAL DE EXPEDIENTE ARQUEOLÓGICO
        ========================================== -->
-
-  <!-- Plantilla Muisca -->
-  <template id="drawer-muisca">
-    <div class="document-badge">Ficha Arqueológica</div>
-    <h2 class="title-font">La Confederación Muisca</h2>
-    <p style="font-style: italic; opacity: 0.8;">Cultura del Altiplano Cundiboyacense (c. 800 - 1537 d.C.)</p>
-    
-    <img src="assets/images/precolombina_muisca.png" alt="Balsa Muisca del Dorado en Guatavita">
-    
-    <p>
-      La organización Muisca se dividía en dos grandes cacicazgos principales: el del **Zipa** en Bacatá (Bogotá) y el del **Zaque** en Hunza (Tunja). Su cohesión social dependía del intercambio comercial de sal marina, esmeraldas, mantas de algodón finamente tejidas y piezas ceremoniales de oro.
-    </p>
-    <p>
-      El ritual del Dorado se llevaba a cabo en la laguna de Guatavita cuando el cacique asumía el poder, cubriéndose de polvo de oro y sumergiéndose para ofrendar tesoros a los dioses del agua.
-    </p>
-
-    <a href="muiscas.html" class="btn btn-primary" style="margin-top: 0.5rem; margin-bottom: 1.5rem; width: 100%; justify-content: center;">
-      Entrar a la Enciclopedia Muisca &rarr;
-    </a>
-
-    <div class="stat-box">
-      <h4 class="title-font">Estimaciones Demográficas e Intercambio</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Población estimada (s. XVI)</span>
-            <span>650.000 hab.</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="90"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Producción de Sal (Cacicazgo de Zipa)</span>
-            <span>Alta (Excedente regional)</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="85"></div>
-          </div>
-        </div>
+  <div class="modal-overlay" id="cultureModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeCultureModal()">&times;</button>
+      <div id="modalBodyContent">
+        <!-- Inyección dinámica -->
       </div>
     </div>
-  </template>
+  </div>
 
-  <!-- Plantilla Tairona -->
-  <template id="drawer-tairona">
-    <div class="document-badge">Ficha Arqueológica</div>
-    <h2 class="title-font">Los Taironas</h2>
-    <p style="font-style: italic; opacity: 0.8;">Constructores de la Sierra Nevada (c. 200 - 1600 d.C.)</p>
-    
-    <img src="assets/images/precolombina_tairona.png" alt="Terrazas de Ciudad Perdida">
-    
-    <p>
-      Los Taironas dominaron la agricultura de montaña en pendientes escarpadas, diseñando terrazas sostenidas por muros de piedra de hasta 9 metros de altura. Su sistema de comunicación consistía en caminos de piedra adoquinados que conectaban cientos de aldeas circulares y centros urbanos en la Sierra.
-    </p>
-    <p>
-      Teyuna (Ciudad Perdida) posee más de 150 terrazas de piedra que servían como viviendas, centros rituales y depósitos de almacenamiento, constituyendo una obra maestra de planeación ecológica.
-    </p>
-
-    <div class="stat-box">
-      <h4 class="title-font">Ingeniería y Urbanismo</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Densidad de población (Teyuna)</span>
-            <span>Alta (~8.000 hab.)</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="75"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Pendiente de terrazas agrícolas</span>
-            <span>Hasta 45°</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="95"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <!-- Plantilla Quimbaya -->
-  <template id="drawer-quimbaya">
-    <div class="document-badge">Ficha Metalúrgica</div>
-    <h2 class="title-font">La Cultura Quimbaya</h2>
-    <p style="font-style: italic; opacity: 0.8;">Orfebres del Río Cauca (c. 500 a.C. - 1600 d.C.)</p>
-    
-    <img src="assets/images/precolombina_quimbaya.png" alt="Poporo Quimbaya de Oro en Museo">
-    
-    <p>
-      Famosos por su destreza en metalurgia, los Quimbayas crearon piezas tridimensionales de gran realismo. Inventaron sistemas de fundición a la cera perdida con núcleos de arcilla y carbón para hacer piezas huecas. 
-    </p>
-    <p>
-      La aleación de cobre y oro (tumbaga) facilitaba el vaciado a menores temperaturas y permitía dar un pulido dorado brillante al ácido. El Poporo Quimbaya (adquirido por el Banco de la República en 1939) marcó el nacimiento del Museo del Oro.
-    </p>
-
-    <div class="stat-box">
-      <h4 class="title-font">Composición Típica de la Tumbaga</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Contenido de Oro</span>
-            <span>60%</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="60"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Contenido de Cobre</span>
-            <span>30%</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="30"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Plata y otros metales</span>
-            <span>10%</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="10"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
-
-  <!-- Plantilla Zenú -->
-  <template id="drawer-zenu">
-    <div class="document-badge">Ficha Hidráulica</div>
-    <h2 class="title-font">El Imperio Hidráulico Zenú</h2>
-    <p style="font-style: italic; opacity: 0.8;">Control de Aguas en el Caribe (c. 200 a.C. - 1000 d.C.)</p>
-    
-    <p>
-      Los Zenúes modificaron el paisaje natural de las sabanas inundables construyendo canales perpendiculares a las corrientes de los ríos Sinú y San Jorge. Esta red regulaba la velocidad del agua y esparcía el limo fértil sobre los cultivos, permitiendo la agricultura intensiva.
-    </p>
-    <p>
-      También crearon canales de almacenamiento de agua dulce para las temporadas de sequía extrema, sirviendo a una red de pueblos distribuidos en montículos elevados que nunca se inundaban.
-    </p>
-
-    <div class="stat-box">
-      <h4 class="title-font">Dimensión del Manejo Hídrico</h4>
-      <div class="chart-container">
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Territorio intervenido por canales</span>
-            <span>500.000 Hectáreas</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="95"></div>
-          </div>
-        </div>
-        <div class="chart-bar-group">
-          <div class="chart-bar-label">
-            <span>Reducción de inundaciones domésticas</span>
-            <span>100%</span>
-          </div>
-          <div class="chart-bar-bg">
-            <div class="chart-bar-fill" data-width="100"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </template>
-
+  <!-- Pie de Página Institucional -->
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Sección: Época Prehispánica.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Documentos y descripciones basados en los archivos de la Red de Bibliotecas del Banco de la República y el Museo del Oro.
-    </p>
+    <p>&copy; 2026 Colombianopedia — Época Precolombina. Investigación fundamentada en los acervos del Museo del Oro y el ICANH.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <!-- Lógica Interactiva -->
+  <script>
+    const archaeologicalData = {
+      muisca: {
+        title: "Confederación Muisca del Altiplano",
+        region: "Cundinamarca y Boyacá",
+        period: "600 d.C. – 1537 d.C.",
+        pop: "~650.000 habitantes en valles interandinos",
+        content: `
+          <p>Los Muiscas constituyeron la estructura sociopolítica más centralizada de los Andes septentrionales. Su dominio no se basaba en la fuerza militar imperial, sino en un complejo sistema de alianzas confederadas entre el <strong>Zipazgo de Bacatá</strong> y el <strong>Zaqueato de Hunza</strong>, junto con centros sacerdotales autónomos como el Templo del Sol de Sogamoso (Iraca).</p>
+          <p>Eran los amos indiscutibles del comercio regional: producían panes de sal en las minas de Zipaquirá, Nemocón y Tausa que cambiaban por oro en bruto del río Cauca, mantas de algodón de Santander y plumas de la selva.</p>
+          <div style="background: rgba(212,175,55,0.08); border-left: 3px solid #d4af37; padding: 1rem; margin: 1.2rem 0; border-radius: 0 6px 6px 0;">
+            <strong style="color: #d4af37;">El Rito de Guatavita y El Dorado:</strong> El heredero al cacicazgo, desnudo y cubierto en resina de trementina y polvo de oro, navegaba al centro de la laguna en una balsa ceremonial de madera cargada de oro y esmeraldas para depositarlas en el fondo como ofrenda al dios Chie y la diosa Bachué.
+          </div>
+          <div style="margin-top: 1.5rem;">
+            <a href="muiscas.html" class="btn btn-primary" style="display: inline-block; width: 100%; text-align: center;">
+              Ir al Monográfico Completo de los Muiscas &rarr;
+            </a>
+          </div>
+        `
+      },
+      tairona: {
+        title: "Los Taironas y la Sierra Nevada",
+        region: "Magdalena, Cesar y La Guajira",
+        period: "200 d.C. – 1600 d.C.",
+        pop: "~300.000 habitantes en aldeas circulares",
+        content: `
+          <p>Habitantes de la montaña costera más alta del mundo, los Taironas diseñaron un urbanismo lítico en equilibrio perfecto con la pendiente. En <strong>Teyuna (Ciudad Perdida)</strong>, erigieron más de 150 terrazas de piedra conectadas por escalinatas y canales de desagüe pluvial que prevenían la erosión en una zona que recibe más de 4.000 mm de lluvia anual.</p>
+          <p>Su orfebrería destaca por figuras tridimensionales de hombres-murciélago y hombres-jaguar con máscaras y tocados de aves rapaces, simbolizando la transmutación chamánica. Son los ancestros directos de los pueblos Kogui, Wiwa, Arhuaco y Kankuamo.</p>
+        `
+      },
+      quimbaya: {
+        title: "Los Quimbayas: Maestros del Fuego",
+        region: "Eje Cafetero y Cuenca del Cauca",
+        period: "500 a.C. – 1600 d.C.",
+        pop: "~120.000 habitantes",
+        content: `
+          <p>Los Quimbayas alcanzaron la perfección técnica en la metalurgia americana. Desarrollaron técnicas de fundición a la cera perdida con núcleos huecos de arcilla y carbón para fabricar recipientes ceremoniales antropomorfos.</p>
+          <p>El <strong>Poporo Quimbaya</strong>, hallado en Yotoco y adquirido en 1939 por el Banco de la República, no sólo es una obra cumbre del arte universal sino un instrumento sagrado para el consumo de cal y hoja de coca (*ayú*), elemento catalizador de la meditación y el diálogo comunitario.</p>
+        `
+      },
+      zenu: {
+        title: "El Imperio Hidráulico Zenú",
+        region: "Sabanas de Córdoba, Sucre y Bolívar",
+        period: "200 a.C. – 1000 d.C.",
+        pop: "~500.000 habitantes",
+        content: `
+          <p>Durante más de mil años, los Zenúes controlaron las crecidas de los ríos Sinú y San Jorge mediante una colosal red de canales artificiales perpendiculares a las corrientes. Esta megaobra de 500.000 hectáreas desaceleraba las aguas torrenciales, canalizaba limos fértiles para la agricultura y permitía atrapar millones de peces en esteros regulados.</p>
+          <p>Su orfebrería de filigrana vaciada en oro permitía crear pectorales y narigueras trenzadas que imitaban los tejidos de caña flecha, tradición que aún perdura en el Sombrero Vueltiao contemporáneo.</p>
+        `
+      },
+      sanagustin: {
+        title: "La Escultura Megalítica de San Agustín",
+        region: "Alto Magdalena, Huila",
+        period: "1000 a.C. – 900 d.C.",
+        pop: "Centros ceremoniales de peregrinación panandina",
+        content: `
+          <p>En el nacimiento del río Magdalena se erigió el complejo funerario megalítico más extenso de América del Sur. Cientos de estatuas de piedra volcánica custodian tumbas cubiertas con montículos artificiales.</p>
+          <p>Las figuras retratan chamanes con colmillos de felino, dobles yo espirituales sobre la cabeza, mujeres pariendo a la humanidad y deidades del rayo y la lluvia, evidencia de una religión totémica milenaria anterior a la expansión chibcha e inca.</p>
+        `
+      },
+      tierradentro: {
+        title: "Tierradentro y los Templos Subterráneos",
+        region: "Macizo Colombiano, Inzá (Cauca)",
+        period: "600 d.C. – 900 d.C.",
+        pop: "Territorio sagrado de cámaras subterráneas",
+        content: `
+          <p>Tierradentro alberga los únicos <strong>hipogeos monumentales</strong> con pintura mural geométrica del continente. Excavados en la toba de las cumbres montañosas, descienden en espiral hasta profundidades de 9 metros.</p>
+          <p>En sus cámaras circulares, sostenidas por columnas talladas en la roca madre, se depositaban urnas funerarias con los restos óseos cremados de los antepasados, decoradas con diseños en zig-zag que representaban el tránsito del alma hacia el mundo subterráneo.</p>
+        `
+      },
+      calima: {
+        title: "El Esplendor Dorado de Calima",
+        region: "Valle del Cauca",
+        period: "1500 a.C. – 1500 d.C.",
+        pop: "Sociedades estratificadas de laderas fértiles",
+        content: `
+          <p>La cultura Calima se estratifica en tres horizontes culturales sucesivos: <strong>Ilama</strong> (cerámica realista con decoración incisa), <strong>Yotoco</strong> (la edad de oro con grandes pectorales martillados y máscaras de lámina pura) y <strong>Sonso</strong> (periodo tardío de piezas macizas y guerreros).</p>
+          <p>Sus tumbas de cancela han aportado al Museo del Oro algunas de las piezas más monumentales y brillantes de toda la arqueología precolombina.</p>
+        `
+      },
+      tumaco: {
+        title: "Tumaco – La Tolita: Platinistas del Pacífico",
+        region: "Costa Pacífica Nariñense y Manglares",
+        period: "600 a.C. – 400 d.C.",
+        pop: "Sociedad marina y ribereña de tolitas artificiales",
+        content: `
+          <p>Habitantes de los manglares y deltas del Pacífico, los artesanos de Tumaco fueron los primeros seres humanos en la historia en trabajar el platino. Como el platino se funde a una temperatura inalcanzable para hornos antiguos (1.768°C), inventaron la sinterización: unieron granos de platino con oro fundido a 1.000°C y martillaron en caliente la masa.</p>
+          <p>Sus esculturas en arcilla retratan con impresionante fidelidad antropológica cráneos deformados intencionalmente, rasgos de envejecimiento, patologías congénitas y danzas rituales con felinos.</p>
+        `
+      }
+    };
+
+    function openCultureModal(key) {
+      const data = archaeologicalData[key];
+      if (!data) return;
+
+      const body = document.getElementById('modalBodyContent');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #d4af37; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          Ficha Arqueológica Oficial • ${data.period}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 0.4rem; line-height: 1.2;">
+          ${data.title}
+        </h2>
+        <div style="font-size: 0.9rem; color: #38bdf8; margin-bottom: 1.5rem;">
+          Territorio: <strong>${data.region}</strong> • Densidad: ${data.pop}
+        </div>
+        <div style="color: #cbd5e1; font-size: 1rem; line-height: 1.75;">
+          ${data.content}
+        </div>
+      `;
+
+      document.getElementById('cultureModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCultureModal() {
+      document.getElementById('cultureModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'cultureModal') {
+        closeCultureModal();
+      }
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeCultureModal();
+    });
+
+    // Simulador de Tumbaga
+    function updateAlloy() {
+      const gold = parseInt(document.getElementById('goldSlider').value);
+      const copper = parseInt(document.getElementById('copperSlider').value);
+      const silver = parseInt(document.getElementById('silverSlider').value);
+
+      document.getElementById('goldVal').innerText = gold + '%';
+      document.getElementById('copperVal').innerText = copper + '%';
+      document.getElementById('silverVal').innerText = silver + '%';
+
+      const box = document.getElementById('alloyPreviewBox');
+      const title = document.getElementById('alloyResultTitle');
+      const temp = document.getElementById('alloyResultTemp');
+
+      // Cálculo de punto de fusión y gradiente visual
+      let meltingPoint = Math.round(1064 - (copper * 3.8));
+      if (meltingPoint < 860) meltingPoint = 860;
+
+      if (gold > 70) {
+        box.style.background = 'linear-gradient(135deg, #fef08a, #d4af37)';
+        box.style.boxShadow = '0 0 25px rgba(212,175,55,0.6)';
+        title.innerText = 'Tumbaga Áurea de Alto Quilate';
+        temp.innerText = `Punto de Fusión: ${meltingPoint}°C • Resplandor Solar Máximo`;
+      } else if (copper > 45) {
+        box.style.background = 'linear-gradient(135deg, #e07a5f, #b45309)';
+        box.style.boxShadow = '0 0 25px rgba(224,122,95,0.5)';
+        title.innerText = 'Tumbaga Roja / Guanín';
+        temp.innerText = `Punto de Fusión: ${meltingPoint}°C • Máxima Fluidez para Vaciado Fino`;
+      } else {
+        box.style.background = 'linear-gradient(135deg, #e5a93c, #c67d1d)';
+        box.style.boxShadow = '0 0 20px rgba(212,175,55,0.4)';
+        title.innerText = 'Tumbaga Balanceada Clásica';
+        temp.innerText = `Punto de Fusión: ${meltingPoint}°C • Ductilidad Perfecta`;
+      }
+    }
+  </script>
 </body>
 </html>

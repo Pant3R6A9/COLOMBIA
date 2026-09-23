@@ -3,14 +3,264 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>El Siglo XX - Colombia en el Tiempo</title>
-  <meta name="description" content="Conflictos agrarios, la Masacre de las Bananeras, el Bogotazo y la memoria fotográfica del siglo XX en Colombia.">
-  
-  <link rel="stylesheet" href="css/style.css?v=1.2">
+  <title>El Siglo XX: Tensiones, Rupturas y Renacimiento (1903 - 1999) — Colombianopedia</title>
+  <meta name="description" content="Museo interactivo del Siglo XX en Colombia: la Masacre de las Bananeras, la Revolución en Marcha, el Bogotazo del 9 de abril, el Frente Nacional, los años de fuego de 1985 y la Constitución de 1991.">
+  <meta name="theme-color" content="#06080d">
+
+  <!-- Tipografías de Museo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css?v=2.0">
   <link rel="expect" href="#hero-section" blocking="render">
+
+  <style>
+    :root {
+      --header-height: 80px;
+      --font-display: 'Cinzel Decorative', 'Cinzel', serif;
+      --font-title: 'Cinzel', serif;
+      --font-body: 'Plus Jakarta Sans', sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+
+      --crimson-conflict: #ef4444;
+      --amber-gold: #f59e0b;
+      --teal-constitution: #06b6d4;
+      --obsidian-surface: #07090e;
+      --obsidian-card: rgba(14, 19, 29, 0.8);
+      --border-twentieth: rgba(245, 158, 11, 0.22);
+    }
+
+    .siglo-xx-container {
+      padding-top: calc(var(--header-height, 80px) + 2rem) !important;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      padding-bottom: 5rem;
+    }
+
+    .hero-siglo-xx {
+      background: linear-gradient(180deg, rgba(239,68,68,0.12) 0%, rgba(7,9,14,0) 100%),
+                  radial-gradient(circle at 50% 15%, rgba(245,158,11,0.12), transparent 70%);
+      border: 1px solid var(--border-twentieth);
+      border-radius: 12px;
+      padding: 3.5rem 2.5rem;
+      margin-bottom: 3.5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 20px 45px rgba(0,0,0,0.7);
+    }
+
+    .hero-siglo-xx::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; height: 3px;
+      background: linear-gradient(90deg, transparent, #ef4444, #f59e0b, #06b6d4, transparent);
+    }
+
+    .siglo-xx-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1.1rem;
+      background: rgba(239, 68, 68, 0.15);
+      border: 1px solid #ef4444;
+      border-radius: 50px;
+      color: #fca5a5;
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-siglo-xx h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2.2rem, 5.2vw, 3.9rem);
+      color: #fff;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+
+    .hero-siglo-xx h1 span {
+      background: linear-gradient(135deg, #fde68a 0%, #f59e0b 50%, #ef4444 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* Telemetría */
+    .telemetry-siglo-xx {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .telemetry-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 8px;
+      padding: 1.4rem;
+      text-align: center;
+      backdrop-filter: blur(12px);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .telemetry-card:hover {
+      transform: translateY(-4px);
+      border-color: var(--amber-gold);
+    }
+
+    .telemetry-val {
+      font-family: var(--font-title);
+      font-size: 2.2rem;
+      font-weight: 800;
+      color: var(--amber-gold);
+      margin-bottom: 0.3rem;
+    }
+
+    .telemetry-lbl {
+      font-family: var(--font-mono);
+      font-size: 0.78rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* Grilla de Capítulos */
+    .episodes-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .episode-card {
+      background: var(--obsidian-card);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .episode-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--amber-gold);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px rgba(245, 158, 11, 0.25);
+    }
+
+    .episode-header {
+      padding: 1.8rem 1.8rem 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .episode-period {
+      font-family: var(--font-mono);
+      font-size: 0.75rem;
+      color: var(--amber-gold);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.4rem;
+    }
+
+    .episode-card h3 {
+      font-family: var(--font-title);
+      font-size: 1.45rem;
+      color: #fff;
+      line-height: 1.3;
+    }
+
+    .episode-body {
+      padding: 1.5rem 1.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .episode-desc {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      margin-bottom: 1.5rem;
+    }
+
+    .btn-episode {
+      width: 100%;
+      padding: 0.85rem;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid var(--amber-gold);
+      border-radius: 6px;
+      color: var(--amber-gold);
+      font-family: var(--font-title);
+      font-size: 0.88rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+
+    .btn-episode:hover {
+      background: var(--amber-gold);
+      color: #000;
+    }
+
+    /* Modal */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.88);
+      backdrop-filter: blur(16px);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal-dialog {
+      background: #0b0f19;
+      border: 1px solid var(--amber-gold);
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.9);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.2rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.8rem;
+      cursor: pointer;
+    }
+
+    .modal-close:hover { color: #fff; }
+  </style>
 </head>
 <body data-theme="siglo-xx">
 
+  <!-- ==========================================
+       BARRA DE NAVEGACIÓN INSTITUCIONAL
+       ========================================== -->
   <header>
     <a href="index.html" class="logo">
       COLOMBIA <span>EN EL TIEMPO</span>
@@ -18,18 +268,18 @@
     <nav>
       <a href="index.html">Inicio</a>
       <div class="dropdown">
-        <button class="dropdown-trigger">Épocas Históricas</button>
+        <button class="dropdown-trigger active" aria-haspopup="true" aria-expanded="false">Épocas Históricas</button>
         <div class="dropdown-content">
           <a href="precolombina.html">Época Precolombina</a>
           <a href="colonia.html">Conquista y Colonia</a>
           <a href="independencia.html">Independencia y Grito</a>
           <a href="siglo-xix.html">República (Siglo XIX)</a>
-          <a href="siglo-xx.html">Tensiones del Siglo XX</a>
+          <a href="siglo-xx.html" class="active">Tensiones del Siglo XX</a>
           <a href="memoria.html">Memoria y Paz (Siglo XXI)</a>
         </div>
       </div>
       <div class="dropdown">
-        <button class="dropdown-trigger">Módulos Enciclopedia</button>
+        <button class="dropdown-trigger" aria-haspopup="true" aria-expanded="false">Módulos Enciclopedia</button>
         <div class="dropdown-content">
           <a href="geografia-y-geologia.html">Mapa Geográfico y Fallas</a>
           <a href="iceberg-violencia.html">Iceberg de la Violencia</a>
@@ -42,129 +292,250 @@
     </nav>
   </header>
 
-  <main class="container">
-    
-    <section class="hero" id="hero-section">
-      <div class="document-badge" style="background: rgba(243,156,18,0.15); color: var(--accent);">
-        1900 - 1999 / Conflictos y Visualidades
+  <!-- ==========================================
+       CONTENEDOR PRINCIPAL SIGLO XX
+       ========================================== -->
+  <main class="siglo-xx-container">
+
+    <section class="hero-siglo-xx" id="hero-section">
+      <div class="siglo-xx-badge">
+        <span>⚡</span> De las Bananeras a la Séptima Papeleta (1903 – 1999) <span>⚡</span>
       </div>
-      <h1>Tensiones del Siglo XX</h1>
-      <p>La modernización económica, las luchas obreras y campesinas, las sacudidas políticas urbanas y los archivos visuales de la nación. Haz clic para explorar detalles.</p>
+      <h1>Tensiones, Rupturas y <span>Renacimiento del Siglo XX</span></h1>
+      <p style="max-width: 860px; margin: 0 auto; color: #cbd5e1; font-size: 1.15rem; line-height: 1.8;">
+        La centuria más vertiginosa y desgarradora de la nación: la Masacre de las Bananeras, el Bogotazo del 9 de abril que partió en dos la historia urbana, la alternancia del Frente Nacional, el holocausto del Palacio de Justicia y el nacimiento de un nuevo pacto social en la Constitución de 1991.
+      </p>
     </section>
 
-    <section class="era-layout">
-      
-      <div class="timeline-section">
-        
-        <!-- Guerra de los Mil Días y Panamá -->
-        <div class="timeline-item">
-          <div class="timeline-year">1899 - 1903</div>
-          <div class="timeline-content" data-drawer="drawer-panama">
-            <span class="document-badge">Guerra Civil y Pérdida</span>
-            <h3>La Guerra de los Mil Días y la Secesión de Panamá</h3>
-            <p>
-              La confrontación civil de fin de siglo y la separación del canal. Haz clic para ver detalles diplomáticos de las fronteras.
-            </p>
-            <div class="era-link">Explorar Detalles &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Masacre de las Bananeras -->
-        <div class="timeline-item">
-          <div class="timeline-year">1928</div>
-          <div class="timeline-content" data-drawer="drawer-bananeras">
-            <span class="document-badge">Lucha Agraria</span>
-            <h3>La Masacre de las Bananeras en Ciénaga, Magdalena</h3>
-            <p>
-              La huelga de la United Fruit Company y los reportes diplomáticos del suceso. Haz clic para ver la ilustración y el telegrama estadounidense.
-            </p>
-            <div class="era-link">Explorar Detalles &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Bogotazo -->
-        <div class="timeline-item">
-          <div class="timeline-year">1948</div>
-          <div class="timeline-content" data-drawer="drawer-bogotazo">
-            <span class="document-badge">Insurgencia Urbana</span>
-            <h3>El Bogotazo y el Asesinato de Gaitán</h3>
-            <p>
-              El magnicidio del líder popular Jorge Eliécer Gaitán y la pérdida definitiva del Acta de Independencia. Haz clic para ver detalles del archivo destruido.
-            </p>
-            <div class="era-link">Explorar Detalles &rarr;</div>
-          </div>
-        </div>
-
-        <!-- Fotoperiodismo y Archivos de Ultramar -->
-        <div class="timeline-item">
-          <div class="timeline-year">1970 - 1999</div>
-          <div class="timeline-content" data-drawer="drawer-viki">
-            <span class="document-badge">Memoria Visual</span>
-            <h3>El Archivo de Viki Ospina y los Raizales del Caribe</h3>
-            <p>
-              La fotografía de Viki Ospina en protestas obreras y el acervo audiovisual raizal. Haz clic para ver detalles del programa de televisión e imágenes familiares.
-            </p>
-            <div class="era-link">Explorar Detalles &rarr;</div>
-          </div>
-        </div>
-
+    <!-- Telemetría -->
+    <section class="telemetry-siglo-xx">
+      <div class="telemetry-card">
+        <div class="telemetry-val">1928</div>
+        <div class="telemetry-lbl">Huelga de las Bananeras (Ciénaga)</div>
       </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">9 de Abril</div>
+        <div class="telemetry-lbl">El Bogotazo y Caída de Gaitán</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">1985</div>
+        <div class="telemetry-lbl">Palacio de Justicia y Armero</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">1991</div>
+        <div class="telemetry-lbl">Constitución Política y Tutela</div>
+      </div>
+    </section>
 
+    <!-- Capítulos del Siglo XX -->
+    <section class="episodes-grid">
+      <!-- 1. Las Bananeras -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">Diciembre de 1928</div>
+          <h3>La Huelga y Masacre de las Bananeras</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            Más de 25.000 jornaleros de la <em>United Fruit Company</em> en Ciénaga exigieron contratos directos, pago en moneda nacional y hospitales de campaña. En la noche del 5 al 6 de diciembre, el general Carlos Cortés Vargas ordenó abrir fuego contra la multitud reunida en la estación del tren.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('bananeras')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 2. La República Liberal y López Pumarejo -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">1934 – 1938</div>
+          <h3>La 'Revolución en Marcha' y la Reforma Agraria</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            Alfonso López Pumarejo transformó la arquitectura estatal con la Constitución de 1936: estableció que «la propiedad es una función social que implica obligaciones», consagró la huelga como derecho y fundó la moderna Ciudad Universitaria de la Universidad Nacional.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('revolucion')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 3. El Bogotazo y La Violencia -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">9 de Abril de 1948</div>
+          <h3>El Magnicidio de Gaitán y el Estallido del 9 de Abril</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            A la 1:05 p.m., Jorge Eliécer Gaitán fue abaleado saliendo de su bufete en la carrera Séptima. La multitud linchó al asesino Juan Roa Sierra e incendió tranvías, iglesias y ministerios. El estallido detonó «La Violencia» bipartidista rural que cobró más de 200.000 vidas.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('bogotazo')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 4. La Dictadura y el Frente Nacional -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">1953 – 1974</div>
+          <h3>De la Dictadura de Rojas al Pacto del Frente Nacional</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            El golpe pacífico del general Gustavo Rojas Pinilla trajo la televisión y el voto para las mujeres (plebiscito de 1957). Para poner fin a la guerra partidista, liberales y conservadores sellaron en España el pacto de alternancia de 16 años del Frente Nacional.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('frentenacional')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 5. 1985: Años de Fuego -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">Noviembre de 1985</div>
+          <h3>El Holocausto del Palacio y la Noche de Armero</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            En un lapso de una semana, Colombia vivió dos de sus mayores heridas: la toma del Palacio de Justicia por el M-19 y la brutal retoma militar con tanques de guerra (6 y 7 de noviembre), seguida el 13 de noviembre por el deshielo del Nevado del Ruiz que sepultó al pueblo de Armero.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('anofuego')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 6. La Constitución de 1991 -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">1990 – 1991</div>
+          <h3>La Séptima Papeleta y la Asamblea Constituyente</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            Hastiados por el narcoterrorismo y los magnicidios de candidatos presidenciales (Galán, Pardo Leal, Jaramillo Ossa, Pizarro), los estudiantes impulsaron la inclusión de una papeleta extra en las urnas. La Constitución de 1991 consagró el Estado Social de Derecho y la Acción de Tutela.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('constitucion91')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
     </section>
 
   </main>
 
-  <!-- ==========================================
-       PLANTILLAS DETALLADAS (TEMPLATES)
-       ========================================== -->
-
-  <!-- Plantilla Panamá -->
-  <template id="drawer-panama">
-    <div class="document-badge">Sociedad Geográfica</div>
-    <h2 class="title-font">Separación de Panamá</h2>
-    <p>
-      La Guerra de los Mil Días (1899-1902) dejó al país en la bancarrota. En noviembre de 1903, con el apoyo de buques de guerra de Estados Unidos, Panamá declaró su separación, firmando el tratado para la construcción del canal interoceánico.
-    </p>
-  </template>
-
-  <!-- Plantilla Bananeras -->
-  <template id="drawer-bananeras">
-    <div class="document-badge">Documento Desclasificado</div>
-    <h2 class="title-font">La Masacre de 1928</h2>
-    <p>
-      El pliego de peticiones de los trabajadores exigía seguros de accidentes, habitaciones higiénicas, aumentos salariales y abolición del sistema de vales/comisarías de la United Fruit Company.
-    </p>
-    <img src="assets/images/siglo_xx_bananeras.png" alt="Ilustración de la huelga y protesta de las Bananeras en 1928">
-    <p>
-      La respuesta del general Cortés Vargas fue disparar contra la multitud en la estación del tren, justificando su actuar bajo el falso temor de una invasión militar de Estados Unidos para proteger las instalaciones de la multinacional.
-    </p>
-  </template>
-
-  <!-- Plantilla Bogotazo -->
-  <template id="drawer-bogotazo">
-    <div class="document-badge">9 de Abril de 1948</div>
-    <h2 class="title-font">Gaitán y el Incendio</h2>
-    <p>
-      Los disturbios tras el asesinato de Gaitán redujeron a cenizas el palacio municipal donde reposaba el Acta de Independencia de 1810 original. El país debió ampararse en las copias oficiales del Archivo Nacional para reconstruir las firmas del nacimiento republicano.
-    </p>
-  </template>
-
-  <!-- Plantilla Viki Ospina -->
-  <template id="drawer-viki">
-    <div class="document-badge">Archivos de Ultramar</div>
-    <h2 class="title-font">Archivos del Caribe Raizal</h2>
-    <p>
-      El patrimonio del archipiélago de San Andrés se conserva mediante colecciones fotográficas que registran la vida cotidiana y el programa de televisión de 760 horas *"The Raizal People and Culture"*, registrando la identidad cultural del Caribe colombiano anglófono y creole.
-    </p>
-  </template>
+  <!-- Modal de Museo Siglo XX -->
+  <div class="modal-overlay" id="sigloXXModal" onclick="closeModalOnBg(event)">
+    <div class="modal-dialog">
+      <button class="modal-close" onclick="closeSigloXXModal()">&times;</button>
+      <div id="modalSigloXXBody"></div>
+    </div>
+  </div>
 
   <footer>
-    <p>&copy; 2026 Colombia en el Tiempo. Sección: Siglo XX.</p>
-    <p style="margin-top: 0.5rem; font-size: 0.75rem; opacity: 0.7;">
-      Los acervos visuales y fotográficos pertenecen a los fondos del Archivo de Bogotá y la Biblioteca Luis Ángel Arango.
-    </p>
+    <p>&copy; 2026 Colombianopedia — Siglo XX Republicano. Investigación basada en los debates del Congreso de la República y el Informe Final de la Comisión de la Verdad.</p>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script>
+    const sigloXXData = {
+      bananeras: {
+        title: "La Masacre de las Bananeras en Ciénaga (1928)",
+        badge: "Movimiento Obrero & Soberanía Nacional",
+        content: `
+          <p>En noviembre de 1928 estalló la huelga obrera más grande de la historia colombiana: más de 25.000 trabajadores de los enclaves de la multinacional estadounidense <em>United Fruit Company</em> paralizaron las exportaciones en el departamento del Magdalena.</p>
+          <p>El pliego de peticiones era elemental: seguro obligatorio de accidentes, abolición del pago en vales o comisariatos de la compañía, descanso dominical remunerado y construcción de letrinas y hospitales para atender la malaria y fiebres tropicales.</p>
+          <p>Bajo la presión del embajador de Estados Unidos Jefferson Caffery (quien amenazó con el desembarco de marines norteamericanos para proteger los intereses de la empresa), el gobierno conservador de Miguel Abadía Méndez declaró el estado de sitio.</p>
+          <p>En la noche del 5 al 6 de diciembre de 1928, en la plaza de la estación de Ciénaga, el general Carlos Cortés Vargas apostó nidos de ametralladoras Browning y dio cinco minutos a miles de obreros con sus familias para dispersarse. Al toque de corneta se abrieron ráfagas continuas. Los cuerpos de los caídos fueron cargados en vagones de tren y arrojados al mar Caribe. Meses después, el joven abogado <strong>Jorge Eliécer Gaitán</strong> estremeció al Congreso Nacional con un debate histórico donde expuso cráneos de huelguistas perforados por balas oficiales.</p>
+        `
+      },
+      revolucion: {
+        title: "La 'Revolución en Marcha' de Alfonso López Pumarejo (1934 – 1938)",
+        badge: "Modernización del Estado & Derecho Social",
+        content: `
+          <p>La presidencia de Alfonso López Pumarejo representó el mayor intento reformista del siglo XX para sincronizar a Colombia con las demandas de una sociedad moderna e industrializada:</p>
+          <ul>
+            <li><strong>Reforma Constitucional de 1936:</strong> Modificó el sacrosanto principio individualista de la Constitución de 1886 al establecer que <em>«la propiedad privada es una función social que implica obligaciones»</em> y consagró el deber estatal de regular el trabajo.</li>
+            <li><strong>Ley 200 de 1936 (Ley de Tierras):</strong> Concedió títulos de propiedad a colonos y aparceros que demostraran posesión y explotación económica de baldíos por más de diez años, enfrentando el latifundismo improductivo.</li>
+            <li><strong>Reforma Educativa:</strong> Fundó el campus de la Universidad Nacional de Colombia en Bogotá («La Ciudad Blanca») para consolidarla como la cuna laica, científica y meritocrática de la nueva dirigencia del país.</li>
+          </ul>
+        `
+      },
+      bogotazo: {
+        title: "El Bogotazo: El Asesinato de Gaitán y la Furia Popular (1948)",
+        badge: "La Herida que Dividió al Siglo XX",
+        content: `
+          <p>El viernes 9 de abril de 1948, a la 1:05 de la tarde, el jefe único del Partido Liberal y seguro próximo presidente de la República, <strong>Jorge Eliécer Gaitán</strong>, salió de su oficina en el Edificio Agustín Nieto (Carrera 7 con Calle 14). Tres disparos efectuados por Juan Roa Sierra segaron su vida.</p>
+          <p>La noticia corrió por las emisoras de radio y la capital estalló en un violento frenesí de furia y dolor. La multitud destrozó a golpes al magnicida y arrastró su cadáver mutilado hasta las puertas del Palacio de San Carlos exigiendo la renuncia del presidente Mariano Ospina Pérez.</p>
+          <p>Los tranvías fueron volcados e incendiados, las licoreras saqueadas y decenas de edificios históricos, notarías, templos religiosos y despachos judiciales ardieron hasta los cimientos. El ejército disparó desde las terrazas contra los insurrectos armados con machetes y rifles robados de las ferreterías.</p>
+          <p>El saldo de más de 3.000 muertos en Bogotá desbordó la violencia a las zonas rurales de Tolima, Boyacá, Santander y los Llanos Orientales, dando origen a los grupos de choque partidista («Chulavitas» de la policía conservadora, bandas sicariales «Pájaros» y las autodefensas campesinas que años después devendrían en guerrillas de primera generación).</p>
+        `
+      },
+      frentenacional: {
+        title: "El Frente Nacional: El Pacto Bipartidista de 16 Años (1958 – 1974)",
+        badge: "Paz Institucional & Monopolio del Poder",
+        content: `
+          <p>Tras la caída de la dictadura militar del general Gustavo Rojas Pinilla en mayo de 1957 (quien en su mandato trajo la televisión nacional y reconoció en 1954 el derecho al voto femenino), los jefes de los dos partidos históricos —Alberto Lleras Camargo (Liberal) y Laureano Gómez (Conservador)— firmaron en Europa los pactos de Benidorm y Sitges.</p>
+          <p>Aprobado abrumadoramente en el <strong>Plebiscito de 1957</strong>, el Frente Nacional acordó la alternancia presidencial rigurosa durante cuatro periodos de gobierno (16 años) y el reparto por mitades de todos los ministerios, gobernaciones, juzgados y corporaciones legislativas.</p>
+          <p>Aunque el pacto logró apaciguar la guerra abierta entre banderas azules y rojas, cerró por completo el sistema político a terceras fuerzas, movimientos obreros y corrientes de izquierda, lo que catalizó la formación de guerrillas revolucionarias en la década de 1960 (FARC, ELN, EPL y posteriormente el M-19).</p>
+        `
+      },
+      anofuego: {
+        title: "Noviembre de 1985: La Semana más Trágica de la Historia",
+        badge: "Holocausto & Catástrofe Natural",
+        content: `
+          <p>En solo siete días de noviembre de 1985, Colombia quedó paralizada ante dos de los episodios más traumáticos de su memoria colectiva:</p>
+          <p><strong>El Holocausto del Palacio de Justicia (6 y 7 de noviembre):</strong> Un comando guerrillero del M-19 asaltó la sede de las altas cortes en la Plaza de Bolívar tomando como rehenes a más de 350 personas, incluidos los magistrados de la Corte Suprema que estudiaban la extradición de narcotraficantes. La retoma a sangre y fuego ejecutada por el Ejército con tanques EE-09 Cascavel derivó en un dantesco incendio que redujo a cenizas el edificio y miles de expedientes penales. Murieron 98 personas, incluidos 11 magistrados (entre ellos el presidente de la Corte Alfonso Reyes Echandía) y once trabajadores de la cafetería fueron desaparecidos forzadamente.</p>
+          <p><strong>La Noche de Armero (13 de noviembre):</strong> Apenas seis días después, una erupción del volcán Nevado del Ruiz derritió el 10% del casquete glacial, generando un colosal lahar de lodo, rocas y azufre que bajó a más de 50 km/h por el cañón del río Lagunilla. A las 11:30 de la noche, una ola de barro de 30 metros de altura sepultó en cuestión de minutos a la próspera ciudad de Armero (Tolima), cobrando la vida de más de 25.000 de sus 29.000 habitantes en la peor tragedia volcánica del hemisferio occidental.</p>
+        `
+      },
+      constitucion91: {
+        title: "La Constitución de 1991: El Gran Pacto Social de Paz",
+        badge: "Estado Social de Derecho & Pluralismo",
+        content: `
+          <p>A finales de los años 80, acorralada por el narcoterrorismo del Cartel de Medellín y el exterminio sistemático de los candidatos presidenciales Luis Carlos Galán, Bernardo Jaramillo Ossa y Carlos Pizarro, la juventud universitaria promovió el movimiento de la <strong>Séptima Papeleta</strong> en los comicios de marzo de 1990.</p>
+          <p>Más de dos millones de ciudadanos votaron a favor de convocar una Asamblea Nacional Constituyente. En una inédita sesión pluralista copresidida por Horacio Serpa (Liberal), Álvaro Gómez Hurtado (Conservador) y Antonio Navarro Wolff (M-19 desmovilizado), y con la participación de delegados indígenas (como Lorenzo Muelas) y afrodescendientes, se redactó la nueva Carta Magna.</p>
+          <p>La Constitución de 1991 proclamó a Colombia como un <strong>Estado Social de Derecho</strong>, pluralista, descentralizado y participativo; consagró la libertad de cultos; reconoció la propiedad colectiva de resguardos y comunidades negras; y creó la <strong>Acción de Tutela</strong>, el instrumento jurídico más revolucionario y democrático para la defensa inmediata de los derechos fundamentales de los ciudadanos ante los jueces.</p>
+        `
+      }
+    };
+
+    function openSigloXXModal(key) {
+      const item = sigloXXData[key];
+      if (!item) return;
+
+      const body = document.getElementById('modalSigloXXBody');
+      body.innerHTML = `
+        <div style="font-family: var(--font-mono); font-size: 0.75rem; color: #f59e0b; text-transform: uppercase; margin-bottom: 0.4rem; letter-spacing: 0.15em;">
+          ${item.badge}
+        </div>
+        <h2 style="font-family: var(--font-title); font-size: 2rem; color: #fff; margin-bottom: 1.2rem; line-height: 1.2;">
+          ${item.title}
+        </h2>
+        <div style="color: #cbd5e1; font-size: 1rem; line-height: 1.75;">
+          ${item.content}
+        </div>
+      `;
+
+      document.getElementById('sigloXXModal').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeSigloXXModal() {
+      document.getElementById('sigloXXModal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function closeModalOnBg(e) {
+      if (e.target.id === 'sigloXXModal') closeSigloXXModal();
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeSigloXXModal();
+    });
+  </script>
 </body>
 </html>
