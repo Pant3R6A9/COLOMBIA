@@ -1,0 +1,652 @@
+[
+  {
+    "id": "AGN-COL-1525-1540-FUNDACION-MAGDALENA-BOGAS",
+    "titulo": "Fundación del Eje Urbano Pionero y Ordenanzas de Navegación de los Bogas en el Río Grande de la Magdalena",
+    "fecha": "1525-07-29 / 1540-05-03 (Regulaciones ampliadas 1560-1601)",
+    "fondo_agn_referencia": "Archivo General de la Nación (AGN), Sección Colonia, Fondo Caminos y Calzadas / Fondo Poblaciones / Fondo Real Audiencia, Tomos 1, 3 y 12; Fondo Ríos y Canales, Legajo 2 (Signatura: AGN-SC-CAM-01-T3-F45-120)",
+    "fondo_agn_referencia_detalle": {
+      "institucion_custodia": "Archivo General de la Nación (AGN), Bogotá D.C., Colombia",
+      "seccion": "Sección Colonia",
+      "fondos_principales": [
+        "Fondo Caminos y Calzadas",
+        "Fondo Poblaciones",
+        "Fondo Real Audiencia",
+        "Fondo Ríos y Canales"
+      ],
+      "tomo_legajo": "Tomo 3, Legajos 1 y 12",
+      "folios": "ff. 45r - 120v",
+      "signatura_oficial": "AGN-SC-CAM-01-T3-F45-120",
+      "referencia_cruzada_archivo_indias": "Archivo General de Indias (AGI), Sevilla - Sección Patronato Real, Legajos 26 y 195; Sección Santa Fe, Legajos 64 y 533"
+    },
+    "resumen_historico": "El establecimiento del orden hispánico en el territorio del Nuevo Reino de Granada requirió la fundación sistemática de una red urbana estratégica que conectara las costas del mar Caribe con los valles interandinos y las altiplanicies densamente pobladas. Este proceso se consolidó a través de cuatro fundaciones cardinales: 1) Santa Marta (29 de julio de 1525, por Rodrigo de Bastidas), primera ciudad hispana permanente en territorio continental suramericano; 2) Cartagena de Indias (1 de junio de 1533, por Pedro de Heredia), dotada de una bahía abrigada inexpugnable convertida en apostadero de la Flota de Galeones; 3) Santafé de Bogotá (6 de agosto de 1538 por Gonzalo Jiménez de Quesada, con constitución formal del cabildo el 27 de abril de 1539 junto a Sebastián de Belalcázar y Nicolás de Federmán en la Sabana de Bacatá); y 4) Santa Cruz de Mompox (3 de mayo de 1540, por Juan de Santa Cruz y Alonso de Heredia), enclave fluvial insular que custodiaba el nexo entre la costa y el interior andino.\n\nLa articulación física, económica y administrativa de este vasto territorio dependió de forma absoluta de la navegación por el Río Grande de la Magdalena (el río Yuma ancestral). El río constituyó la 'autopista' virreinal por la cual ingresaban soldados, misioneros, mercancías ultramarinas, ganado y herramientas, y por donde salía el oro de aluvión y las esmeraldas hacia la Corona española. Sin embargo, remontar el río contra su impetuosa corriente y sus raudales demandó una fuerza de trabajo titánica: los 'bogas'.\n\nInicialmente, las huestes invasoras forzaron a miles de indígenas ribereños (malibúes, pacabuyes, pantágoras, carares y yariguíes) a propulsar canoas con remos y palancas. El desgaste físico atroz, las caídas a los remolinos y las fiebres palúdicas provocaron una mortandad catastrófica que exterminó a más del 80% de las poblaciones aborígenes ribereñas en menos de medio siglo. Ante este colapso y las denuncias de protectores eclesiásticos, la Real Audiencia de Santafé expidió las sucesivas Ordenanzas de Navegación del Río Magdalena (notablemente las ordenanzas de 1560, las de 1598 por el Oidor Antonio de Rocha y las del Presidente Juan de Borja a principios del siglo XVII). Dichas normas prohibieron el empleo forzado de indígenas y ordenaron la transición a cuadrillas de hombres afrodescendientes esclavizados y libertos. Se reglamentó el uso del 'champán' (embarcación de hasta 20 metros de eslora techada con arcos de bejuco y palma), tripulada por 12 a 24 bogas que, a fuerza de 'botador' (pértiga clavada en el fondo del río), empujaban la nave en extenuantes jornadas de 30 a 60 días hasta el puerto terminal del Salto de Honda.",
+    "protagonistas": [
+      {
+        "nombre": "Rodrigo de Bastidas",
+        "rol": "Gobernador y fundador de Santa Marta (1525)",
+        "filiacion": "Capitulante sevillano de la Corona Española",
+        "biografia_sucinta": "Estableció el primer campamento urbano hispánico permanente en la bahía de Santa Marta; promovió inicialmente tratados de paz y rescate de oro con los indígenas tagangas y gairas antes de ser apuñalado por sus propios oficiales amotinados."
+      },
+      {
+        "nombre": "Pedro de Heredia",
+        "rol": "Adelantado y fundador de Cartagena de Indias (1533)",
+        "filiacion": "Conquistador madrileño al servicio de la Corona",
+        "biografia_sucinta": "Fundó la ciudad sobre el poblado indígena de Calamarí con ayuda de la intérprete India Catalina; exploró las ricas sepulturas del Sinú y fortificó la bahía cartagenera."
+      },
+      {
+        "nombre": "Gonzalo Jiménez de Quesada",
+        "rol": "Adelantado, licenciado y fundador de Santafé de Bogotá (1538)",
+        "filiacion": "Jurista y capitán general de la expedición del río Magdalena",
+        "biografia_sucinta": "Remontó el Magdalena con bergantines y cuadrillas terrestres abriendo trochas por el Opón; doblegó a los zipas y zaques e instauró la capital del Nuevo Reino de Granada."
+      },
+      {
+        "nombre": "Juan de Santa Cruz y Alonso de Heredia",
+        "rol": "Fundadores de Santa Cruz de Mompox (1540)",
+        "filiacion": "Gobernadores de Cartagena y Santa Marta",
+        "biografia_sucinta": "Establecieron la villa en una estratégica isla fluvial sobre el brazo de Mompox, transformándola en el emporio logístico, aduanero y orfebre del río Magdalena."
+      },
+      {
+        "nombre": "Los Bogas del Río Magdalena",
+        "rol": "Fuerza laboral de navegantes y palanqueros fluviales",
+        "filiacion": "Indígenas ribereños (siglo XVI) y hombres afrodescendientes cimarrones, libres y esclavizados (siglos XVII-XIX)",
+        "biografia_sucinta": "Artífices materiales de la economía colonial. Con fuerza muscular prodigiosa y destreza hidrodinámica, impulsaron los champanes con botadores de madera dura desde Mompox hasta Honda, creando una cultura popular anfibia de cantos de boga, mitos y resistencia laboral."
+      },
+      {
+        "nombre": "Antonio de Rocha y Juan de Borja",
+        "rol": "Oidor y Presidente de la Real Audiencia de Santafé",
+        "filiacion": "Magistrados del gobierno virreinal",
+        "biografia_sucinta": "Redactaron y promulgaron las Ordenanzas del Río de la Magdalena para regular las tarifas de fletes, racionamiento de víveres, prohibición del trabajo forzado indígena y matrícula de bogas."
+      }
+    ],
+    "nombres_protagonistas": [
+      "Rodrigo de Bastidas",
+      "Pedro de Heredia",
+      "Gonzalo Jiménez de Quesada",
+      "Juan de Santa Cruz",
+      "Alonso de Heredia",
+      "Los Bogas del Río Magdalena",
+      "Antonio de Rocha",
+      "Juan de Borja"
+    ],
+    "texto_extracto_primario": "[AGN, Sección Colonia, Fondo Caminos y Calzadas, Tomo 3, ff. 52r-54v / Ordenanzas de la Real Audiencia de Santafé sobre la boga del Río Grande de la Magdalena]\n«Mandamos que ningún encomendero, mercader ni persona de cualquier estado, condición o preeminencia que sea, compela, apremie ni induzca por fuerza ni so color de concierto a ningún indio de su encomienda ni forastero a bogar en el Río Grande de la Magdalena ni en el de Cauca, por quanto de las informaciones recibidas por esta Real Audiencia consta haberse consumido e muerto infinito número de naturales por el rigor del excesivo trabajo, la destemplanza de los aires mortíferos e la ferocidad de las aguas, en grave ofensa a Dios Nuestro Señor y menoscabo de la Corona... Y ordenamos que de aquí adelante los dueños de canoas y champanes tripulen dichas embarcaciones con negros esclavos de su propiedad o con negros y mulatos horros y libres que voluntariamente se concertaren por su justo salario, tasándose en diez pesos de buen oro de veinte quilates por cada viaje de ida y vuelta desde la Villa de Santa Cruz de Mompox hasta los desembarcaderos del Salto y Puerto de San Bartolomé de Honda... Ítem, ordenamos que todo patrón de champán haya de dar a cada uno de sus bogas media libra de tasajo de vaca seco, ración competente de maíz molido e plátanos en cada día, proveyéndolos de sal e agua dulce para su sustento, sin consentir que se les carguen fardos de más de tres arrobas sobre sus espaldas ni que sean azotados ni maltratados de palabra ni de obra so pena de cincuenta pesos de oro para la Real Cámara...»",
+    "texto_extracto_primario_detalle": {
+      "tipo_documento": "Ordenanzas de Navegación y Trabajo Fluvial de la Real Audiencia de Santafé",
+      "fecha_registro": "1598-1601",
+      "lugar_emision": "Santafé de Bogotá, Nuevo Reino de Granada",
+      "emisor": "Real Audiencia y Cancillería Real de Santafé (Oidor Antonio de Rocha)",
+      "destinatarios": "Dueños de canoas, patrones de champanes, gobernadores de Cartagena y Santa Marta, y justicias mayores",
+      "transcripcion_paleografica": "Mandamos que ningún encomendero, mercader ni persona de cualquier estado, condición o preeminencia que sea, compela, apremie ni induzca por fuerza ni so color de concierto a ningún indio de su encomienda ni forastero a bogar en el Río Grande de la Magdalena ni en el de Cauca...",
+      "glosa_analitica": "El documento demuestra el colapso demográfico indígena en las riberas del Magdalena y la institucionalización jurídica de la mano de obra afrodescendiente esclavizada y liberta en los champanes, sentando el primer código laboral de navegación fluvial en Colombia."
+    },
+    "impacto_territorial": "Configuración espacial del Nuevo Reino de Granada en torno a una arteria fluvial de 1.000 km entre el Caribe y el corazón andino. Santa Marta y Cartagena operaron como bocas marítimas del comercio exterior; Mompox se transformó en el nodo de intersección fluvial de la depresión momposina; y Honda en el puerto terminal interior de transbordo a lomo de mula por el Camino Real hacia Santafé de Bogotá (vía Guaduas y Facatativá). El río Magdalena determinó el patrón demográfico lineal de Colombia, creó una cultura popular anfibia y afro-indígena ribereña, y mantuvo su rol de columna vertebral de la navegación nacional hasta bien entrado el siglo XX.",
+    "impacto_territorial_detalle": {
+      "regiones_afectadas": [
+        "Costa Caribe (Litoral de Santa Marta y Cartagena)",
+        "Depresión Momposina",
+        "Valle Medio del Magdalena (Barrancabermeja, San Bartolomé)",
+        "Alto Magdalena (Honda, Ambalema)",
+        "Altiplano Cundiboyacense (Santafé de Bogotá)"
+      ],
+      "nodos_urbanos_portuarios": [
+        "Santa Marta",
+        "Cartagena de Indias",
+        "Santa Cruz de Mompox",
+        "Barranca de Malambo",
+        "San Bartolomé de Honda",
+        "Santafé de Bogotá"
+      ],
+      "analisis_geopolitico_colonial": "La posesión del río aseguró el monopolio mercantil de la Carrera de Indias, la captación de tributos y la defensa frente a incursiones piratas que no podían navegar aguas arriba del Salto de Honda.",
+      "relevancia_actual": "Patrimonio histórico fluvial, desarrollo de los municipios ribereños del Magdalena y antecedentes de la infraestructura de transporte multimodal de Colombia."
+    },
+    "descriptores_tesauro_agn": [
+      "Navegación Fluvial",
+      "Bogas",
+      "Champanes",
+      "Río Grande de la Magdalena",
+      "Fundaciones Coloniales",
+      "Real Audiencia de Santafé",
+      "Trabajo Indígena",
+      "Esclavitud Africana",
+      "Puerto de Honda",
+      "Santa Cruz de Mompox"
+    ],
+    "analisis_sociojuridico": "Evidencia la tensión estructural del Derecho Indiano entre la legislación protectora de la Corona hacia los naturales ('República de Indios') y la dependencia económica inexorable de la fuerza motriz fluvial para el sostenimiento de la Real Hacienda, lo cual obligó a trasladar la servidumbre física a la población afrodescendiente."
+  },
+  {
+    "id": "AGN-COL-1578-1584-MEMORIAL-AGRAVIOS-DIEGO-TORRES",
+    "titulo": "El Memorial de Agravios del Cacique Diego de Torres y Moyachoque: Defensa Jurídica de la Nación Muisca ante Felipe II",
+    "fecha": "1578-1584",
+    "fondo_agn_referencia": "Archivo General de la Nación (AGN), Sección Colonia, Fondo Caciques e Indios, Tomos 18, 37 y 61; Legajo 4 (Signatura: AGN-SC-CI-18-T37-F112-245)",
+    "fondo_agn_referencia_detalle": {
+      "institucion_custodia": "Archivo General de la Nación (AGN), Bogotá D.C., Colombia",
+      "seccion": "Sección Colonia",
+      "fondos_principales": [
+        "Fondo Caciques e Indios",
+        "Fondo Juicios Criminales",
+        "Fondo Real Audiencia"
+      ],
+      "tomo_legajo": "Tomos 18, 37 y 61; Legajo 4 (Expediente del Cacicazgo de Turmequé)",
+      "folios": "ff. 112r - 245v",
+      "signatura_oficial": "AGN-SC-CI-18-T37-F112-245",
+      "referencia_cruzada_archivo_indias": "Archivo General de Indias (AGI), Sevilla - Sección Justicia, Legajos 89 y 533; Sección Patronato Real, Legajo 196; Sección Santa Fe, Legajos 64 y 83"
+    },
+    "resumen_historico": "Don Diego de Torres y Moyachoque (1549-1590), cacique mestizo de Turmequé, protagonizó uno de los episodios más heroicos y tempranos de resistencia jurídica indígena en la América del siglo XVI. Nacido de la unión legítima entre el conquistador español Juan de Torres y la cacica noble muisca Doña Catalina Moyachoque (hermana del anterior cacique de Turmequé, conforme a la regla de sucesión matrilineal muisca), dominaba con absoluta elocuencia la lengua castellana, el chibcha nativo, la retórica letrada y los entresijos del derecho indiano y castellano.\n\nTras heredar legítimamente el cacicazgo de Turmequé a la muerte de su tío materno, su medio hermano paterno —el encomendero blanco Pedro de Torres—, confabulado con los oidores corruptos de la Real Audiencia de Santafé (notablemente Francisco Briceño y Diego de Hidalgo Montemayor) y el patriciado encomendero de Tunja, promovió un pleito para despojarlo del título. Alegaban falsamente que su condición de 'mestizo sedicioso' le impedía ejercer autoridad sobre naturales, desatando una tenaz persecución penal que incluyó encarcelamientos arbitrarios y condenas de destierro.\n\nLejos de doblegarse, Diego de Torres utilizó el sistema letrado hispánico contra sus propios creadores. Huyó clandestinamente del virreinato y realizó dos viajes marítimos a pie y a vela hasta España en 1578 y 1584, logrando ser recibido en audiencia solemne en Madrid y El Escorial por el Rey Felipe II y el Real y Supremo Consejo de Indias. Allí presentó su célebre 'Memorial de Agravios', un alegato de derechos humanos de una lucidez sobrecogedora que trascendió su litigio particular para convertirse en la denuncia más completa y fundamentada contra las tiranías de la encomienda en el Nuevo Reino de Granada.\n\nEn su memorial denunció: 1) El cobro de tributos ilegales que quintuplicaban las tasas oficiales del visitador Venero de Leiva; 2) El trabajo esclavo forzado en las minas de esmeraldas de Muzo y de oro de Mariquita; 3) El despojo y usurpación de tierras fértiles de labranza y resguardo comunal indígena para estancias de ganado de los encomenderos; 4) El empleo de indios como bestias de carga (cargueros) por caminos de cordillera; 5) La violencia sexual sistemática y servidumbre impuesta a mujeres e hijas muiscas en cocinas y aposentos de españoles; y 6) El cohecho, recepción de sobornos y complicidad de los oidores de la Real Audiencia con la élite terrateniente. Su valentía motivó el envío regio del Visitador Juan Bautista de Monzón en 1579 para procesar a los oidores corruptos, desatando una verdadera guerra institucional en Santafé. Diego de Torres es reconocido hoy como el precursor continental de la defensa jurídica de los derechos de los pueblos indígenas.",
+    "protagonistas": [
+      {
+        "nombre": "Don Diego de Torres y Moyachoque",
+        "rol": "Cacique mestizo de Turmequé y procurador de la causa indígena",
+        "filiacion": "Nobleza muisca y linaje conquistador castellano",
+        "biografia_sucinta": "Cacique letrado bilingüe que viajó dos veces a la Corte de Madrid para exponer ante Felipe II las vejaciones de encomenderos y oidores contra la nación muisca."
+      },
+      {
+        "nombre": "Doña Catalina Moyachoque",
+        "rol": "Cacica noble muisca de Turmequé",
+        "filiacion": "Linaje dinástico muisca del Zaque de Tunja",
+        "biografia_sucinta": "Madre de Diego de Torres; transmitió legítimamente el cacicazgo de Turmequé a su hijo de acuerdo con la tradición de sucesión matrilineal aborigen."
+      },
+      {
+        "nombre": "Rey Felipe II de España",
+        "rol": "Monarca de la Corona de Castilla y de las Indias",
+        "filiacion": "Dinastía Habsburgo",
+        "biografia_sucinta": "Recibió personalmente al cacique en Madrid; ante la gravedad de las pruebas aportadas, ordenó abrir visita secreta y enviar al pesquisidor Juan Bautista de Monzón a Santafé."
+      },
+      {
+        "nombre": "Juan Bautista de Monzón",
+        "rol": "Visitador Regio y Juez de Residencia del Consejo de Indias",
+        "filiacion": "Funcionario letrado de la Corona Española",
+        "biografia_sucinta": "Comisionado en 1579 para auditar a la Audiencia de Santafé; confirmó la veracidad de las denuncias de Diego de Torres, enfrentándose a la mafia de oidores locales que intentó asesinarlo y encarcelarlo."
+      },
+      {
+        "nombre": "Pedro de Torres",
+        "rol": "Encomendero de Turmequé y hermano paterno antagonista",
+        "filiacion": "Hijo ilegítimo de Juan de Torres y encomendero criollo",
+        "biografia_sucinta": "Lideró la conspiración encomendera para usurpar el cacicazgo y las tierras comunales muiscas, hostigando judicial y militarmente a Don Diego."
+      },
+      {
+        "nombre": "Francisco Briceño y Diego de Hidalgo Montemayor",
+        "rol": "Oidores de la Real Audiencia de Santafé",
+        "filiacion": "Magistrados virreinales",
+        "biografia_sucinta": "Oidores acusados formalmente de recibir dádivas, sobornos y mercedes de tierras ilegales de los encomenderos de Tunja a cambio de encarcelar y despojar a los caciques naturales."
+      }
+    ],
+    "nombres_protagonistas": [
+      "Don Diego de Torres y Moyachoque",
+      "Doña Catalina Moyachoque",
+      "Rey Felipe II",
+      "Juan Bautista de Monzón",
+      "Pedro de Torres",
+      "Francisco Briceño",
+      "Diego de Hidalgo Montemayor"
+    ],
+    "texto_extracto_primario": "[AGN, Sección Colonia, Fondo Caciques e Indios, Tomo 18, ff. 112r-116v / Memorial autógrafo presentado por el Cacique de Turmequé a S.M. Don Felipe II]\n«Don Diego de Torres, cacique del pueblo de Turmequé en el Nuevo Reino de Granada, a Vuestra Real Majestad humildemente beso los pies y hago relación: Que los encomenderos y justicias de aquel Reino tratan a los pobres naturales como a bestias fieras, cargándolos en sus personas con fanegas de trigo e mercadurías por ásperos montes de ochenta leguas donde mueren sin confesión; e les toman sus labranzas e tierras fértiles para echar en ellas sus ganados mayores, dejándolos perecer de hambre; e les tasaron tributos tan descomunales en oro, mantas y lienzos que no pudiendo cumplirlos, los encierran en cepos, azotándolos cruelmente e cortándoles las narices e orejas; e no contentos con esto, les arrebatan a sus hijas y mujeres legítimas para sus deshonestidades e servicios de cocina sin pagarles salario alguno... Y asimismo hago saber a Vuestra Majestad cómo los señores oidores de la Real Audiencia de Santafé están confederados con los dichos encomenderos, de quienes reciben dádivas e cohechos manifiestos, persiguiendo a muerte a quien alza la voz por los indios... Por tanto, a Vuestra Majestad suplico, con las lágrimas de tantos millares de ánimas afligidas, mande proveer juez pesquisidor recto que ponga fin a tan atroces tiranías e restituya a los naturales sus tierras e libertades, según justicia divina e humana...»",
+    "texto_extracto_primario_detalle": {
+      "tipo_documento": "Memorial Judicial de Agravios y Petición de Amparo Real ante el Real Consejo de Indias",
+      "fecha_registro": "1584 (Presentación ante el Consejo de Indias en Madrid)",
+      "lugar_emision": "Madrid / San Lorenzo de El Escorial, Reino de España",
+      "emisor": "Don Diego de Torres y Moyachoque, Cacique de Turmequé",
+      "destinatario": "S.M. Don Felipe II, Rey Católico de España y de las Indias",
+      "transcripcion_paleografica": "Don Diego de Torres, cacique del pueblo de Turmequé en el Nuevo Reino de Granada, a Vuestra Real Majestad humildemente beso los pies y hago relación...",
+      "glosa_analitica": "El memorial trasciende la vindicación individual de un cacicazgo para alzarse como una impugnación sistemática del régimen de servidumbre indiana, el despojo territorial agrario y la venalidad judicial corporativa en el Nuevo Reino de Granada."
+    },
+    "impacto_territorial": "El memorial fracturó la hegemonía indisputada del régimen de encomienda en el Altiplano Cundiboyacense (especialmente en las provincias de Tunja, Santafé y Vélez). Desencadenó una severa intervención metropolitana mediante la Visita General de Monzón y obligó a la Corona a expedir las Reales Cédulas de 1589 y 1591 que ordenaron deslindar y amparar las tierras de comunidad. Esto culminó a partir de 1593 con la delimitación y titulación de los 'Resguardos Indígenas' por el Oidor Luis Henríquez en Cundinamarca y Boyacá, creando el modelo de propiedad territorial colectiva inalienable que sobrevive en la jurisprudencia constitucional colombiana contemporánea.",
+    "impacto_territorial_detalle": {
+      "regiones_afectadas": [
+        "Provincia de Tunja (Turmequé, Tibasosa, Duitama, Sogamoso)",
+        "Sabana de Santafé de Bogotá",
+        "Valle de Tenza",
+        "Provincia de Vélez"
+      ],
+      "ciudades_clave": [
+        "Turmequé",
+        "Tunja",
+        "Santafé de Bogotá"
+      ],
+      "reconfiguracion_espacial": "Demarcación de linderos entre las estancias ganaderas de hacendados españoles y las tierras comunales de labranza indígena, sentando las bases del mapa de resguardos coloniales.",
+      "relevancia_actual": "Piedra angular en el derecho constitucional étnico, el litigio de titulación de tierras indígenas y la defensa de los derechos humanos en América Latina."
+    },
+    "descriptores_tesauro_agn": [
+      "Caciques e Indios",
+      "Muiscas",
+      "Turmequé",
+      "Encomiendas",
+      "Memorial de Agravios",
+      "Felipe II",
+      "Resistencia Jurídica Indígena",
+      "Mestizaje",
+      "Resguardos Indígenas",
+      "Real Audiencia de Santafé"
+    ],
+    "analisis_sociojuridico": "Evidencia cómo los caciques letrados mestizos aprendieron a litigar dentro de las categorías canónicas y del ius gentium castellano, desactivando la excusa colonial de la 'minoría de edad jurídica' indígena y exigiendo el cumplimiento del pacto de vasallaje directo con el monarca sin intermediación encomendera."
+  },
+  {
+    "id": "AGN-COL-1713-PALENQUE-SAN-BASILIO-LIBRE",
+    "titulo": "Cédula Real y Capitulación de 1713: Reconocimiento Jurídico de San Basilio de Palenque como Primer Pueblo Libre de América",
+    "fecha": "1713-08-23 (Con antecedentes 1599-1621)",
+    "fondo_agn_referencia": "Archivo General de la Nación (AGN), Sección Colonia, Fondo Negros y Esclavos / Fondo Gobernación de Cartagena / Fondo Real Audiencia, Tomos 4, 11 y 15; Legajo Palenques y Cimarrones de la Costa (Signatura: AGN-SC-NE-04-T11-F210-318)",
+    "fondo_agn_referencia_detalle": {
+      "institucion_custodia": "Archivo General de la Nación (AGN), Bogotá D.C., Colombia",
+      "seccion": "Sección Colonia",
+      "fondos_principales": [
+        "Fondo Negros y Esclavos",
+        "Fondo Gobernación y Capitanía General de Cartagena",
+        "Fondo Real Audiencia"
+      ],
+      "tomo_legajo": "Tomos 4, 11 y 15; Legajo Palenques y Cimarrones de la Costa",
+      "folios": "ff. 210r - 318v",
+      "signatura_oficial": "AGN-SC-NE-04-T11-F210-318",
+      "referencia_cruzada_archivo_indias": "Archivo General de Indias (AGI), Sevilla - Sección Santa Fe, Legajo 247; Sección Gobierno, Audiencia de Cartagena de Indias"
+    },
+    "resumen_historico": "A finales del siglo XVI, Cartagena de Indias constituía el puerto negrero hegemónico y principal factoría de internación de seres humanos esclavizados de la América hispana. En 1599, Domingo Benkos Biohó (conocido en su tierra ancestral como el rey Biohó, oriundo de la región de los Bijagós / Guinea Bissau), tras ser vendido como esclavo al comerciante Juan Gómez Maldonado, protagonizó una audaz fuga junto a su esposa Wiwa, sus hijos y una treintena de esclavizados hacia las intrincadas ciénagas de la Matuna y los Montes de María.\n\nBiohó estructuró una férrea organización militar y política, erigió palizadas defensivas ('palenques') y tejió una red de espionaje dentro de las murallas de Cartagena que coordinaba fugas masivas. Su guerra asimétrica de guerrillas obligó en 1605 al Gobernador Jerónimo de Suazo y Casasola a capitular una tregua sin precedentes: se reconoció el autogobierno de los cimarrones, permitiéndoseles transitar armados por Cartagena y vestir indumentaria castellana. Sin embargo, en 1621, el Gobernador García Girón rompió vilmente el pacto: apresó a Benkos en un descuido y lo ejecutó en la horca en la Plaza Mayor de Cartagena el 16 de marzo de 1621, descuartizando su cuerpo para escarmentar a la población negra.\n\nLejos de sofocar la rebelión, el martirio de Biohó radicalizó la resistencia cimarrona. Durante más de un siglo, los palenqueros repelieron expediciones punitivas militares financiadas por el cabildo cartagenero. Refundaron sus aldeas fortificadas en las profundidades de la serranía de San Jacinto bajo el mando de capitanes como Domingo Criollo y Nicolás de Santa Teresa. Tras comprobar la inutilidad militar y el ruinoso coste fiscal de la guerra, las autoridades virreinales se vieron forzadas a negociar la paz definitiva.\n\nEn 1713, gracias a la mediación caritativa del Obispo de Cartagena, Fray Antonio María Cassiani, y por mandato regio ejecutado por el Gobernador Don Francisco de la Vega Cabrera mediante auto ratificado por Cédula Real, la Corona española reconoció formal y perpetuamente la libertad civil y soberanía de los habitantes de San Basilio de Palenque. El acuerdo consagró la delimitación territorial de sus tierras comunales libres de tributo, el derecho a elegir a sus propios capitanes y alcaldes, y el cese de toda persecución bélica, a cambio de no acoger en adelante a nuevos fugitivos. Este pacto convirtió a San Basilio de Palenque en el **primer pueblo libre de la América colonial**, más de un siglo antes de las independencias republicanas.\n\nSu aislamiento y victoria jurídica permitieron la preservación de tres patrimonios culturales únicos en el mundo: 1) La **lengua criolla palenquera (Ri Palenge)**, la única lengua criolla con base léxica castellana y estructura morfosintáctica y tonal bantú (kikongo y kimbundu) viva en América; 2) El sistema de cohesión social de los **Kuagros**, agrupaciones de edad solidarias que rigen de por vida el trabajo agrícola comunal, la defensa y los ritos; y 3) El ritual mortuorio del **Lumbalú**, ceremonia fúnebre de nueve noches donde, al compás del tambor sagrado pechiche, danzas rituales y cantos fúnebres de 'lecos', la comunidad despide el alma del difunto y la encamina de regreso a África.",
+    "protagonistas": [
+      {
+        "nombre": "Domingo Benkos Biohó",
+        "rol": "Rey cimarrón, estratega militar y fundador del Palenque de la Matuna",
+        "filiacion": "Nobleza africana de la etnia bioho (Guinea Bissau)",
+        "biografia_sucinta": "Líder de la gran insurrección cimarrona de 1599; obligó al gobernador español a pactar en 1605; ahorcado a traición en 1621, erigiéndose en el símbolo continental de la libertad afroamericana."
+      },
+      {
+        "nombre": "Wiwa",
+        "rol": "Reina cimarrona y cofundadora de la resistencia de los Montes de María",
+        "filiacion": "Matriarca africana",
+        "biografia_sucinta": "Esposa de Benkos Biohó; organizó la intendencia, el cuidado de familias en la manigua y las redes de seguridad alimentaria en los primeros palenques."
+      },
+      {
+        "nombre": "Nicolás de Santa Teresa",
+        "rol": "Capitán General del Palenque de San Basilio",
+        "filiacion": "Caudillo cimarrón palenquero de tercera generación",
+        "biografia_sucinta": "Comandante que negoció y firmó las capitulaciones de paz de 1713 con el obispo y el gobernador, asegurando la libertad jurídica perpetua de su pueblo."
+      },
+      {
+        "nombre": "Fray Antonio María Cassiani",
+        "rol": "Obispo de Cartagena de Indias",
+        "filiacion": "Jerarquía eclesiástica",
+        "biografia_sucinta": "Prelado que ofició como mediador neutral entre la Corona y los cimarrones; convenció a las autoridades coloniales de que la única paz viable era reconocer la libertad de San Basilio."
+      },
+      {
+        "nombre": "Don Francisco de la Vega Cabrera",
+        "rol": "Gobernador de la Provincia de Cartagena",
+        "filiacion": "Gobernador colonial español",
+        "biografia_sucinta": "Firmó y promulgó el auto gubernativo de concordia y reconocimiento territorial de San Basilio de Palenque en agosto de 1713."
+      },
+      {
+        "nombre": "La Comunidad Cimarrona de San Basilio",
+        "rol": "Custodios del patrimonio inmaterial y la soberanía comunal",
+        "filiacion": "Pueblo libre afrodescendiente",
+        "biografia_sucinta": "Preservadores milenarios de la lengua ri palenge, la institución del kuagro y el rito sagrado del Lumbalú con el tambor pechiche."
+      }
+    ],
+    "nombres_protagonistas": [
+      "Domingo Benkos Biohó",
+      "Wiwa",
+      "Nicolás de Santa Teresa",
+      "Fray Antonio María Cassiani",
+      "Francisco de la Vega Cabrera",
+      "La Comunidad Cimarrona de San Basilio"
+    ],
+    "texto_extracto_primario": "[AGN, Sección Colonia, Fondo Negros y Esclavos, Tomo 11, ff. 248r-252v / Autos de concordia y capitulaciones del Palenque de San Basilio de los Montes de María]\n«En la ciudad de Cartagena de Indias, a veinte y tres días del mes de agosto de mil setecientos y trece años... Visto el auto y capitulaciones celebradas con los negros cimarrones habitadores del Palenque de San Basilio en la Sierra de María, y habiendo mediado la piadosa interposición del Ilustrísimo Señor Doctor Don Fray Antonio María Cassiani, Dignísimo Obispo de esta Diócesis... Declaro y concedo: Que los referidos negros cimarrones que al presente habitan y pueblan dicho sitio de San Basilio gocen perpetuamente de entera libertad civil y política para sí y para sus descendientes, sin que jamás puedan ser reducidos a servidumbre ni molestados en sus personas por ningún vecino ni autoridad de esta Gobernación... Señalándoseles por término y linderos de sus tierras las que hasta hoy han poseído y labrado en dicha serranía para sus rozas y sementeras, con derecho de gobernarse por sus propios capitanes y alcaldes según policía cristiana... Con precisa e indispensable condición de que el Capitán Nicolás de Santa Teresa y demás capitulares de dicho pueblo hagan solemne juramento de no acoger ni encubrir en adelante a ningún esclavo fugitivo de haciendas comarcanas, obligándose a restituirlo fielmente a las justicias de Su Majestad... Y mandamos que se guarde, cumpla y ejecute esta concordia como auto capitular firme y valedero para siempre jamás... —Don Francisco de la Vega Cabrera. Por mandato de Su Señoría: Bartolomé de Vargas, Escribano Público.»",
+    "texto_extracto_primario_detalle": {
+      "tipo_documento": "Auto Gubernativo y Capitulación de Paz de Reconocimiento de Libertad y Fuero Autónomo",
+      "fecha_registro": "1713-08-23",
+      "lugar_emision": "Cartagena de Indias, Gobernación de Cartagena",
+      "emisor": "Gobernador Francisco de la Vega Cabrera y Obispo Fray Antonio María Cassiani",
+      "destinatario": "Capitán Nicolás de Santa Teresa y los habitantes del Palenque de San Basilio",
+      "transcripcion_paleografica": "En la ciudad de Cartagena de Indias, a veinte y tres días del mes de agosto de mil setecientos y trece años... Visto el auto y capitulaciones celebradas con los negros cimarrones habitadores del Palenque de San Basilio...",
+      "glosa_analitica": "Pacto diplomático-jurídico inédito en el que el poder colonial español claudicó su pretensión bélica y reconoció una república autónoma de hombres negros libres en el corazón del territorio colonial caribeño."
+    },
+    "impacto_territorial": "Creación del primer territorio liberado y jurídicamente autónomo para afrodescendientes en el continente americano. Reconfiguró la geografía de los Montes de María, rompió el circuito esclavista de las haciendas del Bajo Magdalena y Mahates, e inspiró redes de cimarronaje en toda la cuenca del Caribe. Declarado por la UNESCO en 2005 como 'Obra Maestra del Patrimonio Oral e Inmaterial de la Humanidad', San Basilio de Palenque representa el cimiento histórico de la etnoeducación, la titulación de territorios colectivos de comunidades negras y los derechos étnicos amparados por la Ley 70 de 1993 en Colombia.",
+    "impacto_territorial_detalle": {
+      "regiones_afectadas": [
+        "Montes de María (Bolívar y Sucre)",
+        "Serranía de San Jacinto",
+        "Provincia de Cartagena de Indias",
+        "Depresión del Canal del Dique"
+      ],
+      "ciudades_clave": [
+        "San Basilio de Palenque",
+        "Cartagena de Indias",
+        "Mahates",
+        "San Juan Nepomuceno"
+      ],
+      "reconfiguracion_espacial": "Consolidación de un enclave territorial de 4.000 hectáreas sustraído a las haciendas esclavistas, con ordenamiento urbano propio centrado en el arroyo y el kuagro.",
+      "relevancia_actual": "Cuna del patrimonio lingüístico afrolatinoamericano, autonomía comunal y símbolo mundial de la lucha contra la esclavitud y el racismo."
+    },
+    "descriptores_tesauro_agn": [
+      "Negros y Esclavos",
+      "Palenque de San Basilio",
+      "Benkos Biohó",
+      "Cimarronaje",
+      "Pueblo Libre",
+      "Cédula Real de 1713",
+      "Lengua Palenquera",
+      "Kuagro",
+      "Lumbalú",
+      "Montes de María"
+    ],
+    "analisis_sociojuridico": "Constituye un tratado de paz asimétrico en el que la Corona reconoció soberanía fáctica a sujetos catalogados previamente como 'res nullius' o 'bienes muebles fugitivos', quebrando la lógica de hierro del derecho de esclavitud romano-castellano."
+  },
+  {
+    "id": "AGN-COL-1803-REAL-ORDEN-SAN-ANDRES-MOSQUITOS",
+    "titulo": "La Real Orden del 20 de Noviembre de 1803: Segregación del Archipiélago de San Andrés y la Costa de Mosquitos al Virreinato de Santa Fe",
+    "fecha": "1803-11-20",
+    "fondo_agn_referencia": "Archivo General de la Nación (AGN), Sección Archivo Anexo / Sección Colonia, Fondo Historia / Fondo Virreyes / Fondo Secretaría de Guerra y Marina, Tomo 8, ff. 104r-106v (Signatura: AGN-SAA-H-08-F104-106)",
+    "fondo_agn_referencia_detalle": {
+      "institucion_custodia": "Archivo General de la Nación (AGN), Bogotá D.C., Colombia",
+      "seccion": "Sección Archivo Anexo y Sección Colonia",
+      "fondos_principales": [
+        "Fondo Historia",
+        "Fondo Virreyes",
+        "Fondo Secretaría de Guerra y Marina"
+      ],
+      "tomo_legajo": "Tomo 8; Legajo Asuntos Exteriores y Reales Órdenes",
+      "folios": "ff. 104r - 106v",
+      "signatura_oficial": "AGN-SAA-H-08-F104-106",
+      "referencia_cruzada_archivo_indias": "Archivo General de Indias (AGI), Sevilla - Sección Estado, Legajo 52; Archivo General de Simancas (AGS), Secretaría de Marina, Legajo 395"
+    },
+    "resumen_historico": "A finales del siglo XVIII, el archipiélago de San Andrés, Providencia y Santa Catalina, junto con la extensa Costa de Mosquitos (el litoral caribeño centroamericano comprendido entre el Cabo de Gracias a Dios y la desembocadura del río Chagres), se hallaban en una extrema fragilidad defensiva ante el hostigamiento de corsarios británicos, leñadores jamaiquinos y contrabandistas de maderas y textiles. Aunque nominalmente dependían de la Capitanía General de Guatemala, las autoridades de la Audiencia guatemalteca eran incapaces de aprovisionar, artillar o enviar tropas a estas islas debido a la distancia geográfica y la ausencia absoluta de una marina de guerra.\n\nFrente a este abandono, el Gobernador de las islas, Don Tomás O'Neille —un oficial católico de origen irlandés leal a la Corona española que dominaba el inglés y el castellano—, junto con los principales propietarios y colonos raizales e hispanos del archipiélago, elevaron sucesivos memoriales al monarca Carlos IV. En ellos suplicaron que San Andrés, Providencia y la Costa de Mosquitos fueran puestas bajo la dependencia naval y militar del Virreinato de Santa Fe de Bogotá, cuyos apostaderos de la Real Armada en Cartagena de Indias y Portobelo contaban con navíos de guerra, pertrechos y cercanía marítima para proteger a los habitantes.\n\nEl 20 de noviembre de 1803, despachando desde el Real Sitio de San Lorenzo de El Escorial, el Rey Carlos IV sancionó la trascendental **Real Orden del 20 de noviembre de 1803**, comunicada por su Ministro de Marina, Don José Antonio Caballero, al Virrey de Santa Fe (Pedro Mendinueta, y luego ejecutada por Antonio Amar y Borbón) y al Capitán General de Guatemala. La disposición ordenó con palmaria claridad: 1) Segregar las islas de San Andrés y la parte de la Costa de Mosquitos desde el cabo de Gracias a Dios hacia el río Chagres de la Capitanía General de Guatemala; 2) Ponerlas bajo la inmediata dependencia del Virreinato de Santa Fe, al igual que las provincias del Darién y el Chocó; y 3) Asignar a Tomás O'Neille un sueldo de dos mil pesos fuertes anuales sufragado íntegramente por las Cajas Reales de Santafé.\n\nEste acto administrativo colonial constituyó el título jurídico madre que heredó la República de Colombia tras su independencia de 1810, consagrado en el principio de derecho internacional público *Uti Possidetis Iuris* ('poseerás lo que poseías'). Fue el argumento probatorio axial invocado ininterrumpidamente por la cancillería colombiana en el diferendo limítrofe marítimo y territorial promovido por Nicaragua ante la Corte Internacional de Justicia (CIJ) de La Haya. En su histórica sentencia sobre excepciones preliminares del 13 de diciembre de 2007, la Corte de La Haya confirmó con carácter vinculante que la Real Orden de 1803 acreditó la plena e indiscutible soberanía de Colombia sobre las islas de San Andrés, Providencia y Santa Catalina, garantizando para siempre la soberanía insular colombiana.",
+    "protagonistas": [
+      {
+        "nombre": "Rey Carlos IV de España",
+        "rol": "Monarca del Imperio Español",
+        "filiacion": "Casa de Borbón",
+        "biografia_sucinta": "Emitió en El Escorial la Real Orden segregando el archipiélago y la costa de Mosquitos de Guatemala y anexándolos formalmente a Santa Fe."
+      },
+      {
+        "nombre": "José Antonio Caballero",
+        "rol": "Ministro de Marina de España",
+        "filiacion": "Gabinete real borbónico",
+        "biografia_sucinta": "Firmó y remitió la Real Orden de 1803 al Virrey neogranadino y a la Capitanía General de Guatemala."
+      },
+      {
+        "nombre": "Don Tomás O'Neille",
+        "rol": "Gobernador de las Islas de San Andrés y Providencia",
+        "filiacion": "Militar católico de origen irlandés asimilado a la Corona Española",
+        "biografia_sucinta": "Artífice político de la anexión; solicitó el amparo de Santafé para salvaguardar las islas del dominio corsario inglés; ratificado como gobernador con sueldo virreinal de Santafé."
+      },
+      {
+        "nombre": "Pedro Mendinueta y Antonio Amar y Borbón",
+        "rol": "Virreyes del Nuevo Reino de Granada",
+        "filiacion": "Máximas autoridades virreinales en Santafé",
+        "biografia_sucinta": "Recibieron y ejecutaron la Real Orden, proveyendo financiamiento, defensa naval desde Cartagena y nombramientos oficiales para las islas."
+      },
+      {
+        "nombre": "Población Raizal y Colonos Isleños",
+        "rol": "Habitantes y agricultores del Archipiélago de San Andrés",
+        "filiacion": "Comunidades anglo-afro-caribeñas y familias hispánicas",
+        "biografia_sucinta": "Respaldaron la administración neogranadina a cambio de garantías comerciales, libertad religiosa y protección artillera frente a piratas jamaiquinos."
+      }
+    ],
+    "nombres_protagonistas": [
+      "Rey Carlos IV de España",
+      "José Antonio Caballero",
+      "Don Tomás O'Neille",
+      "Pedro Mendinueta",
+      "Antonio Amar y Borbón",
+      "Población Raizal del Archipiélago"
+    ],
+    "texto_extracto_primario": "[AGN, Sección Archivo Anexo, Fondo Historia, Tomo 8, f. 104r / Fondo Virreyes / Real Orden de 20 de noviembre de 1803]\n«Ministerio de Marina. —El Rey ha resuelto que las islas de San Andrés y la parte de la Costa de Mosquitos desde el cabo de Gracias a Dios inclusive hacia el río Chagre, queden segregadas de la Capitanía General de Guatemala y dependientes del Virreinato de Santa Fe, del mismo modo que lo están las provincias del Chocó y el Darién; y que para el gobierno de dichas islas y costa se nombre a Don Tomás O'Neille con el sueldo de dos mil pesos fuertes anuales pagados de las Cajas Reales de Santa Fe... Lo que comunico a Vuestra Excelencia de Real Orden para su debido cumplimiento y que se libren las órdenes convenientes a fin de que se ponga en práctica sin dilación alguna... Dios guarde a Vuestra Excelencia muchos años. San Lorenzo, 20 de noviembre de 1803. —José Antonio Caballero. Al Señor Virrey de Santa Fe.»",
+    "texto_extracto_primario_detalle": {
+      "tipo_documento": "Real Orden Soberana de Segregación y Agregación Territorial y Jurisdiccional",
+      "fecha_registro": "1803-11-20",
+      "lugar_emision": "Palacio Real de San Lorenzo de El Escorial, Reino de España",
+      "emisor": "S.M. Don Carlos IV por la Secretaría de Marina (Ministro José Antonio Caballero)",
+      "destinatario": "Virrey del Nuevo Reino de Granada (Santafé) y Capitán General de Guatemala",
+      "transcripcion_paleografica": "Ministerio de Marina. —El Rey ha resuelto que las islas de San Andrés y la parte de la Costa de Mosquitos desde el cabo de Gracias a Dios inclusive hacia el río Chagre, queden segregadas de la Capitanía General de Guatemala...",
+      "glosa_analitica": "Disposición real incontrovertible de reordenamiento imperial que adscribió militar, fiscal y políticamente el Caribe occidental a la jurisdicción de Santafé de Bogotá."
+    },
+    "impacto_territorial": "Integración legal de un inmenso dominio insular y marítimo de más de 300.000 km² en el Caribe occidental al Virreinato de la Nueva Granada. Tras la independencia de 1810, este acto colonial fundamentó el principio de *Uti Possidetis Iuris*, permitiendo a Colombia repeler pretensiones limítrofes y consolidar la frontera marítima más septentrional de la República. Fue la base documental ratificada por la Corte Internacional de Justicia de La Haya (Fallo de 2007) para otorgar la soberanía territorial perpetua sobre San Andrés, Providencia y Santa Catalina a Colombia, amparando el archipiélago y la actual Reserva de Biosfera Seaflower.",
+    "impacto_territorial_detalle": {
+      "regiones_afectadas": [
+        "Archipiélago de San Andrés, Providencia y Santa Catalina",
+        "Cayos del Caribe Occidental (Roncador, Serrana, Quitasueño, Alburquerque, Serranilla)",
+        "Costa de Mosquitos (entre Cabo Gracias a Dios y Río Chagres)",
+        "Apostadero Naval de Cartagena de Indias"
+      ],
+      "ciudades_clave": [
+        "San Andrés",
+        "Providencia",
+        "Cartagena de Indias",
+        "Santafé de Bogotá"
+      ],
+      "reconfiguracion_espacial": "Traspaso de la soberanía defensiva naval desde la Capitanía de Guatemala al Virreinato neogranadino, creando un escudo exterior frente a la hegemonía naval británica.",
+      "relevancia_actual": "Pilar probatorio supremo ante la Corte Internacional de Justicia de La Haya en los litigios de 2007 y 2012 con Nicaragua y garantía de la soberanía insular colombiana."
+    },
+    "descriptores_tesauro_agn": [
+      "Real Orden de 1803",
+      "San Andrés y Providencia",
+      "Costa de Mosquitos",
+      "Uti Possidetis Iuris",
+      "Virreinato de Santa Fe",
+      "Capitanía General de Guatemala",
+      "Tomás O'Neille",
+      "Carlos IV",
+      "Derecho Internacional Marítimo",
+      "Corte de La Haya"
+    ],
+    "analisis_sociojuridico": "Evidencia cómo un documento de carácter militar y administrativo emanado de la potestad borbónica se transmuta, tras los procesos de descolonización americana, en el título jurídico vinculante de soberanía territorial interestatal en el derecho de gentes contemporáneo."
+  },
+  {
+    "id": "AGN-COL-1783-EXPEDICION-BOTANICA-MUTIS-CALDAS",
+    "titulo": "La Real Expedición Botánica del Nuevo Reino de Granada (1783-1816): Ilustración Científica, Iconografía de la Flora y Cuna Intelectual Republicana",
+    "fecha": "1783-04-29 / 1816",
+    "fondo_agn_referencia": "Archivo General de la Nación (AGN), Sección Colonia / Archivo Anexo, Fondo Historia Civil / Fondo Instrucción Pública / Fondo Asuntos Importantes, Tomo 14; Expedientes SAA-I.2,2,D.3 y D.16 (Signatura: AGN-SC-HC-14-T2-F1-180)",
+    "fondo_agn_referencia_detalle": {
+      "institucion_custodia": "Archivo General de la Nación (AGN), Bogotá D.C., Colombia",
+      "seccion": "Sección Colonia y Sección Archivo Anexo",
+      "fondos_principales": [
+        "Fondo Historia Civil",
+        "Fondo Instrucción Pública",
+        "Fondo Asuntos Importantes"
+      ],
+      "tomo_legajo": "Tomo 14; Expedientes SAA-I.2,2,D.3 y D.16 (Cuentas y patentes de la Expedición Botánica)",
+      "folios": "ff. 1r - 180v",
+      "signatura_oficial": "AGN-SC-HC-14-T2-F1-180",
+      "referencia_cruzada_archivo_indias": "Real Jardín Botánico de Madrid (CSIC), Colección Mutis (6.700 láminas botánicas al natural y manuscritos incautados por Morillo en 1816); Biblioteca Nacional de Colombia, Fondo José Celestino Mutis"
+    },
+    "resumen_historico": "El 29 de abril de 1783, tras dos décadas de peticiones elevadas por el sabio gaditano Don José Celestino Mutis (médico de cámara, matemático y sacerdote), el Virrey Arzobispo Don Antonio Caballero y Góngora decretó la fundación formal de la Real Expedición Botánica del Nuevo Reino de Granada, aprobada por Real Cédula de Carlos III el 1 de noviembre de 1783. Establecida inicialmente en Mariquita (privilegiada por su vecindad con el río Magdalena y su acceso a diversos pisos térmicos andinos) y trasladada definitivamente a Santafé de Bogotá en 1791, la Expedición se convirtió en la empresa científica más colosal y trascendente de la Ilustración en América.\n\nBajo la dirección de Mutis, la Expedición desplegó un catastro integral de la naturaleza virreinal: se recolectaron y clasificaron bajo el sistema linneano más de 20.000 especímenes vegetales en un herbario monumental. Se priorizó el estudio de la flora utilitaria y medicinal: la corteza de la quina (*Cinchona*) contra el paludismo y fiebres tercianas, el té de Bogotá (*Symplocos theiformis*), la canela de Andaquíes, la nuez moscada, el guaco (primer antiofídico científicamente verificado) y la ipecacuana.\n\nPara inmortalizar estos hallazgos, Mutis creó la **Escuela de Dibujo de la Expedición Botánica**, integrada por jóvenes artistas criollos y mestizos (como Salvador Rizo —mayordomo y director del taller—, Francisco Javier Matís —llamado por Alexander von Humboldt 'el mejor dibujante de flores del mundo'—, Antonio Silva y Pablo Antonio García). En este taller se perfeccionó una técnica plástica insuperable de témperas y acuarelas sobre papel de tina, empleando pigmentos vegetales y minerales autóctonos y un rigor anatómico microscópico que produjo cerca de 6.000 láminas de gran folio iluminadas a mano.\n\nLa incorporación del sabio payanés **Francisco José de Caldas** catapultó la expedición al rango de vanguardia mundial: Caldas formuló el método de la hipsometría termométrica (medición de alturas basada en el punto de ebullición del agua), fundó junto a Humboldt las bases planetarias de la fitogeografía (estudio de la distribución de plantas según los pisos altitudinales andinos) y asumió la dirección del **Observatorio Astronómico de Bogotá** (construido en 1803 en los jardines de la Expedición, el primero en la América continental).\n\nInesperadamente, la Expedición Botánica engendró la conciencia nacional que sepultó al virreinato: sus herbarios, gabinetes y observatorio fueron el punto de encuentro conspirativo de la generación ilustrada (Caldas, Jorge Tadeo Lozano, Sinforoso Mutis, Pedro Fermín de Vargas) que lideró el grito del 20 de julio de 1810. Durante la Reconquista española de 1816, el general Pablo Morillo fusiló a sus científicos insignia (incluido Caldas) e incautó más de 100 cajones con láminas, herbarios y manuscritos, remitiéndolos en galeras a España, donde hoy reposan en el Real Jardín Botánico de Madrid.",
+    "protagonistas": [
+      {
+        "nombre": "Don José Celestino Mutis",
+        "rol": "Director y Botánico en Jefe de la Real Expedición",
+        "filiacion": "Sacerdote, médico, matemático y científico ilustrado gaditano",
+        "biografia_sucinta": "Pionero del heliocentrismo copernicano en Santafé; dirigió durante 25 años la catalogación botánica linneana, fundó la Escuela de Dibujo e impulsó la medicina experimental."
+      },
+      {
+        "nombre": "Francisco José de Caldas",
+        "rol": "Geógrafo, botánico, hipsometrista y director del Observatorio Astronómico",
+        "filiacion": "Sabio ilustrado payanés y prócer patriota",
+        "biografia_sucinta": "Pionero mundial de la fitogeografía y la hipsometría; primer director del Observatorio Astronómico de Bogotá (1803); ejecutado en 1816 por las tropas realistas de Morillo."
+      },
+      {
+        "nombre": "Salvador Rizo",
+        "rol": "Mayordomo general y Director del Taller de Pintores",
+        "filiacion": "Pintor y administrador mestizo momposino",
+        "biografia_sucinta": "Mano derecha de Mutis; disciplinó el taller pictórico, perfeccionó la preparación de tintas autóctonas indelebles; fusilado por Morillo en Santafé en 1816."
+      },
+      {
+        "nombre": "Francisco Javier Matís",
+        "rol": "Maestro de pintura botánica y disector anatómico",
+        "filiacion": "Pintor y botánico guaduense",
+        "biografia_sucinta": "Considerado el más virtuoso dibujante de flores del orbe; asombró a Humboldt por su capacidad de analizar partes florales microscópicas a simple vista."
+      },
+      {
+        "nombre": "Don Antonio Caballero y Góngora",
+        "rol": "Virrey y Arzobispo del Nuevo Reino de Granada",
+        "filiacion": "Jerarca ilustrado del reformismo borbónico",
+        "biografia_sucinta": "Promulgó el decreto de creación de la Expedición en 1783 y destinó fondos del fisco real para adquirir bibliotecas, lupas, termómetros e instrumental europeo."
+      },
+      {
+        "nombre": "Jorge Tadeo Lozano",
+        "rol": "Zoólogo y catedrático de la Expedición Botánica",
+        "filiacion": "Aristócrata criollo, científico y político",
+        "biografia_sucinta": "Redactó la Memoria sobre las Serpientes; primer Presidente del Estado de Cundinamarca en 1811; mártir fusilado durante el Régimen del Terror español en 1816."
+      }
+    ],
+    "nombres_protagonistas": [
+      "José Celestino Mutis",
+      "Francisco José de Caldas",
+      "Salvador Rizo",
+      "Francisco Javier Matís",
+      "Antonio Caballero y Góngora",
+      "Jorge Tadeo Lozano"
+    ],
+    "texto_extracto_primario": "[AGN, Sección Colonia, Fondo Historia Civil, Tomo 14, ff. 18r-21v / Representación de Don José Celestino Mutis al Virrey Caballero y Góngora sobre el estado de la Flora]\n«Excelentísimo Señor Don Antonio Caballero y Góngora, Virrey, Gobernador y Capitán General... Don José Celestino Mutis, Director General de la Real Expedición Botánica, ante la justificación de Vuestra Excelencia con el más reverente rendimiento expone: Que desde el día veintinueve de abril del presente año de mil setecientos ochenta y tres en que se sirvió ordenar el inicio formal de los trabajos en esta villa de San Sebastián de Mariquita, no he perdonado fatiga ni desvelo para examinar, herborizar y dibujar las fecundas producciones de este virreinato... Hállanse ya coordinadas y retratadas al vivo por los hábiles pinceles de los jóvenes patricios que he instruido en la Escuela de Dibujo, más de trescientas especies de inestimable primor botánico, con sus disecciones florales y fructíferas... Y muy particularmente he fijado mi mayor atención en el precioso árbol de la Quina o Cascarilla, don supremo de la Providencia contra las fiebres tercianas, descubriendo en los montes de esta comarca hasta cuatro especies distintas —anaranjada, amarilla, roja y blanca—, logrando perfeccionar su beneficio para abastecer copiosamente las boticas reales y desterrar las falsificaciones con que los comerciantes extranjeros esquilman la Real Hacienda... Dios guarde a Vuestra Excelencia muchos años. Mariquita, 12 de diciembre de 1783. —Doctor José Celestino Mutis.»",
+    "texto_extracto_primario_detalle": {
+      "tipo_documento": "Representación y Memorial Científico Oficial ante el Virrey de la Nueva Granada",
+      "fecha_registro": "1783-12-12",
+      "lugar_emision": "San Sebastián de Mariquita, Provincia de Mariquita",
+      "emisor": "Dr. José Celestino Mutis, Director de la Real Expedición Botánica",
+      "destinatario": "Excmo. Sr. Virrey y Arzobispo Don Antonio Caballero y Góngora",
+      "transcripcion_paleografica": "Excelentísimo Señor Don Antonio Caballero y Góngora, Virrey, Gobernador y Capitán General... Don José Celestino Mutis, Director General de la Real Expedición Botánica...",
+      "glosa_analitica": "Testimonio documental del despegue del proyecto ilustrado más relevante de la ciencia neogranadina, articulando taxonomía botánica, salud pública y explotación de recursos estratégicos imperiales."
+    },
+    "impacto_territorial": "Levantamiento del primer inventario científico, taxonómico y fitogeográfico integral del territorio neogranadino (valle del Magdalena, Mariquita, Honda, vertientes de la cordillera Oriental, páramos andinos, Popayán y la Sabana de Bogotá). La erección del Observatorio Astronómico de Bogotá en 1803 fijó las coordenadas geográficas de la capital y funcionó como cuartel ideológico de la Independencia. La Expedición estructuró el sentimiento criollo de apropiación del territorio y fundó la tradición botánica y ambiental que hoy preserva el Instituto de Ciencias Naturales de la Universidad Nacional y el Real Jardín Botánico.",
+    "impacto_territorial_detalle": {
+      "regiones_afectadas": [
+        "Mariquita y vertientes del río Magdalena",
+        "Sabana de Santafé de Bogotá",
+        "Valle del Cauca y Altiplano de Popayán",
+        "Páramos de Sumapaz y Chingaza",
+        "Selvas de Andaquíes (Caquetá)"
+      ],
+      "ciudades_clave": [
+        "Mariquita",
+        "Honda",
+        "Santafé de Bogotá",
+        "Popayán"
+      ],
+      "reconfiguracion_espacial": "Primera cartografía física por pisos térmicos andinos y demarcación botánica de las especies según zonas de vida altitudinales.",
+      "relevancia_actual": "Patrimonio científico universal, banco genético y taxonómico de la biodiversidad colombiana e inspiración de la conservación ambiental moderna."
+    },
+    "descriptores_tesauro_agn": [
+      "Real Expedición Botánica",
+      "José Celestino Mutis",
+      "Francisco José de Caldas",
+      "Quina",
+      "Ilustración Neogranadina",
+      "Escuela de Dibujo de Mariquita",
+      "Observatorio Astronómico de Bogotá",
+      "Fitogeografía",
+      "Herbario Colonial",
+      "Salvador Rizo"
+    ],
+    "analisis_sociojuridico": "Evidencia el viraje de la monarquía borbónica hacia la ciencia utilitaria como instrumento de rentabilidad económica fiscal, y la contradicción irreconciliable que supuso formar una élite científica criolla que terminó empleando su conocimiento geográfico para independizarse de la metrópoli."
+  },
+  {
+    "id": "AGN-COL-1781-INSURRECCION-COMUNEROS-GALAN",
+    "titulo": "La Insurrección de los Comuneros (1781) y el Proceso Judicial contra José Antonio Galán: Rebelión Fiscal Popular y Ruptura del Orden Colonial",
+    "fecha": "1781-03-16 / 1782-01-30",
+    "fondo_agn_referencia": "Archivo General de la Nación (AGN), Sección Colonia, Fondo Comuneros / Fondo Causas Criminales / Fondo Milicias y Marina, Tomos 1, 2, 3 y 4 (Signatura: AGN-SC-COM-01-T2-F145-280)",
+    "fondo_agn_referencia_detalle": {
+      "institucion_custodia": "Archivo General de la Nación (AGN), Bogotá D.C., Colombia",
+      "seccion": "Sección Colonia",
+      "fondos_principales": [
+        "Fondo Comuneros",
+        "Fondo Causas Criminales",
+        "Fondo Milicias y Marina"
+      ],
+      "tomo_legajo": "Tomos 1, 2, 3 y 4; Legajo Causa Criminal contra José Antonio Galán y sus capitanes",
+      "folios": "ff. 145r - 280v",
+      "signatura_oficial": "AGN-SC-COM-01-T2-F145-280",
+      "referencia_cruzada_archivo_indias": "Archivo General de Indias (AGI), Sevilla - Sección Santa Fe, Legajos 598, 599 y 662 (Causas de la Sublevación del Común en el Nuevo Reino de Granada)"
+    },
+    "resumen_historico": "El 16 de marzo de 1781, en la plaza pública de la Villa del Socorro (provincia de Tunja), la cigarrera Manuela Beltrán protagonizó el acto catalizador de la mayor revuelta popular de la historia virreinal neogranadina: arrancó y pisoteó el edicto que fijaba el cobro de la reinstaurada 'Armada de Barlovento' y el gravamen a los hilados de algodón, exclamando ante una multitud indignada: '¡Viva el Rey y muera el mal gobierno!'. La chispa prendió en un pueblo estrangulado por las feroces reformas fiscales del Regente Visitador General Don Juan Francisco Gutiérrez de Piñeres, quien —en el marco de la guerra de España contra Inglaterra— impuso monopolios asfixiantes (estancos del tabaco y del aguardiente), duplicó la alcabala y gravó los artículos de primera necesidad.\n\nEl motín del Socorro mutó rápidamente en una insurrección armada coordinada. Se constituyó el Supremo Consejo de Guerra del Común, nombrando como Capitán General al criollo Juan Francisco Berbeo. Una fuerza de más de 20.000 hombres armados —artesanos mestizos, campesinos tabacaleros, tejedores y millares de indígenas capitaneados por el cacique Ambrosio Pisco (Señor de Chía y descendiente de los zipas)— avanzó arrolladoramente sobre la capital. Derrotaron a las fuerzas virreinales en el Puente Real de Vélez y obligaron al despavorido Regente Piñeres a huir hacia Honda.\n\nSitiada Santafé de Bogotá y sin tropas para resistir, la Real Audiencia comisionó al Arzobispo Antonio Caballero y Góngora y al Oidor Vasco y Vargas para negociar en Zipaquirá. El 8 de junio de 1781 se firmaron las célebres **Capitulaciones de Zipaquirá**: 35 capítulos que concedían: la abolición del estanco del tabaco, la supresión de la Armada de Barlovento, la reducción drástica de alcabalas, la preferencia absoluta para los criollos nacidos en América para ocupar cargos de gobernadores y corregidores, la exención de derechos eclesiásticos y la devolución de los resguardos y salinas de Zipaquirá a los pueblos indígenas.\n\nDesmovilizada la masa comunera tras una misa juramentada con el Santísimo Sacramento en Zipaquirá, la traición virreinal operó sin piedad: el Virrey Manuel Antonio Flórez y los Oidores de la Real Audiencia anularon secretamente las capitulaciones bajo reserva sacramental, tachándolas de 'nulas por haber sido arrancadas mediante fuerza y violencia sediciosa'.\n\n**José Antonio Galán**, sargento mayor comunero de Charalá y líder de los sectores más desposeídos, denunció la traición de la élite capitular de Berbeo. Radicalizó el movimiento con una campaña relámpago por el río Magdalena: liberó a cuadrillas de peones y esclavizados en las haciendas de Mariquita y Ambalema, abolió el cobro de tributos e incautó los caudales del estanco real de tabaco, preparando una segunda marcha popular sobre Santafé. Traicionado por antiguos capitanes comuneros en Chaguanete (Onzaga) en octubre de 1781, Galán fue conducido cargado de cadenas a Santafé. Tras un sumario inquisitorial, la Real Audiencia pronunció el **30 de enero de 1782** una de las sentencias más despiadadas de la jurisprudencia virreinal: condenó a Galán y a sus tenientes (Lorenzo Alcantuz, Isidro Molina y Manuel Ortiz) a morir en la horca, ser decapitados y descuartizados; su cabeza se expuso en una jaula de hierro en Guaduas, su mano derecha en El Socorro, su mano izquierda en San Gil, su pie derecho en Charalá y su pie izquierdo en Mogotes; sus bienes fueron confiscados, su casa quemada y sembrada de sal, y su descendencia declarada infame hasta la tercera generación. Su martirio sembró la semilla revolucionaria que florecería en 1810.",
+    "protagonistas": [
+      {
+        "nombre": "Manuela Beltrán",
+        "rol": "Cigarrera del Socorro e iniciadora del motín popular",
+        "filiacion": "Mestiza humilde de la Villa del Socorro",
+        "biografia_sucinta": "Rompió el edicto de impuestos borbónicos el 16 de marzo de 1781, encendiendo la mecha de la revolución del Común."
+      },
+      {
+        "nombre": "José Antonio Galán",
+        "rol": "Comandante comunero, líder de la radicalización popular armada y mártir",
+        "filiacion": "Mestizo labrador de Charalá (Santander)",
+        "biografia_sucinta": "Comandó la insurrección en el Magdalena; emancipó esclavizados y abolió tributos; condenado a morir descuartizado el 30 de enero de 1782."
+      },
+      {
+        "nombre": "Juan Francisco Berbeo",
+        "rol": "Comandante General del Supremo Consejo de Guerra del Común",
+        "filiacion": "Criollo acomodado, regidor del cabildo del Socorro",
+        "biografia_sucinta": "Lideró el ejército comunero hasta Zipaquirá y negoció las capitulaciones; aceptó la gobernación del Socorro dada por el virrey, distanciándose de Galán."
+      },
+      {
+        "nombre": "Ambrosio Pisco",
+        "rol": "Capitán General de los Indios del Común y Señor de Chía",
+        "filiacion": "Cacique noble muisca de Bogotá",
+        "biografia_sucinta": "Aglutinó a miles de indígenas armados exigiendo la restitución de tierras comunales y la propiedad de las salinas de Nemocón y Zipaquirá."
+      },
+      {
+        "nombre": "Lorenzo Alcantuz, Isidro Molina y Manuel Ortiz",
+        "rol": "Lugartenientes revolucionarios de Galán",
+        "filiacion": "Artesanos y labradores comuneros",
+        "biografia_sucinta": "Combatieron junto a Galán en la campaña libertaria del Magdalena y fueron ahorcados y desmembrados junto a él en Santafé en 1782."
+      },
+      {
+        "nombre": "Antonio Caballero y Góngora",
+        "rol": "Arzobispo de Santafé y posterior Virrey del Nuevo Reino",
+        "filiacion": "Jerarquía eclesiástica ilustrada",
+        "biografia_sucinta": "Artífice de la desactivación del movimiento en Zipaquirá; promovió el perdón a los criollos ricos pero autorizó la implacable cacería judicial de Galán."
+      },
+      {
+        "nombre": "Juan Francisco Gutiérrez de Piñeres",
+        "rol": "Regente Visitador General de la Real Hacienda",
+        "filiacion": "Alto burócrata fiscal peninsular borbónico",
+        "biografia_sucinta": "Diseñó el draconiano régimen impositivo causante del estallido; huyó despavorido por el río Magdalena ante el avance comunero."
+      }
+    ],
+    "nombres_protagonistas": [
+      "Manuela Beltrán",
+      "José Antonio Galán",
+      "Juan Francisco Berbeo",
+      "Ambrosio Pisco",
+      "Lorenzo Alcantuz",
+      "Isidro Molina",
+      "Manuel Ortiz",
+      "Antonio Caballero y Góngora",
+      "Juan Francisco Gutiérrez de Piñeres"
+    ],
+    "texto_extracto_primario": "[AGN, Sección Colonia, Fondo Comuneros, Tomo 2, ff. 215r-218v / Sentencia de muerte y suplicio dictada por la Real Audiencia contra José Antonio Galán]\n«Sentencia pronunciada por la Real Audiencia y Chancillería Real de Santafé de Bogotá, a treinta de enero de mil setecientos ochenta y dos años... En la causa criminal que de oficio de la Real Justicia se ha seguido contra José Antonio Galán, Isidro Molina, Lorenzo Alcantuz y Manuel Ortiz, reos convictos y confesos de alta traición, conmoción popular y rebelión contra la Corona... Fallamos: Que debemos condenar y condenamos a José Antonio Galán a que sea sacado de la cárcel donde se halla preso, arrastrado y llevado al lugar del suplicio en la Plaza Mayor, donde sea puesto en la horca hasta que naturalmente muera; de donde se le cortará la cabeza y el cuerpo será dividido en cuatro cuartos... La cabeza se conducirá a la villa de Guaduas para que se fije en una jaula de hierro en lugar público; la mano derecha se remitirá a la villa del Socorro; la mano izquierda a la de San Gil; el pie derecho a la de Charalá y el pie izquierdo a la de Mogotes... Declaramos todos sus bienes confiscados para la Real Cámara; mandamos que la casa en que vivía sea derribada y sembrada de sal, declarando su descendencia infame y no apta para obtener empleo, honra ni dignidad alguna en ningún tiempo, para que su memoria quede borrada de la faz de la tierra por tan horrendo atentado contra la Majestad Real... Y a los demás reos sentenciamos igualmente a muerte de horca y castigo corporal... Así lo pronunciamos, mandamos y firmamos. —Los Señores Oidores de la Real Audiencia de Santafé.»",
+    "texto_extracto_primario_detalle": {
+      "tipo_documento": "Auto de Sentencia Criminal por Crimen de Lesa Majestad, Sedición y Rebelión",
+      "fecha_registro": "1782-01-30",
+      "lugar_emision": "Santafé de Bogotá, Sala de Acuerdo de la Real Audiencia",
+      "emisor": "Oidores de la Real Audiencia y Chancillería de Santafé de Bogotá",
+      "destinatario": "Alguacil Mayor, verdugo real y justicias mayores de las villas del Socorro, San Gil, Guaduas, Charalá y Mogotes",
+      "transcripcion_paleografica": "Sentencia pronunciada por la Real Audiencia y Chancillería Real de Santafé de Bogotá, a treinta de enero de mil setecientos ochenta y dos años... En la causa criminal que de oficio de la Real Justicia se ha seguido contra José Antonio Galán...",
+      "glosa_analitica": "Monumento al terror penal absolutista de finales del siglo XVIII, diseñado para disciplinar mediante el desmembramiento del cuerpo del reo cualquier tentativa de sublevación popular contra la soberanía regia."
+    },
+    "impacto_territorial": "Primer levantamiento armado de escala interprovincial en el Nuevo Reino de Granada. Articuló por primera vez en un frente común de lucha a las provincias del Socorro, San Gil, Vélez, Tunja, Pamplona, Cundinamarca y el valle medio del río Magdalena (Honda, Mariquita, Ambalema). Demostró la vulnerabilidad militar absoluta de la capital virreinal y rompió para siempre la legitimidad moral del pacto colonial entre la monarquía española y los pueblos americanos. El suplicio de Galán fijó una memoria popular de resistencia que inspiró de forma directa los alzamientos patriotas de 1810 en el Socorro y Santafé.",
+    "impacto_territorial_detalle": {
+      "regiones_afectadas": [
+        "Provincia del Socorro y San Gil (Charalá, Simacota, Barichara)",
+        "Provincia de Tunja",
+        "Provincia de Vélez",
+        "Sabana de Bogotá y Zipaquirá",
+        "Valle del Magdalena (Mariquita, Ambalema, Honda, Guaduas)"
+      ],
+      "ciudades_clave": [
+        "El Socorro",
+        "San Gil",
+        "Charalá",
+        "Zipaquirá",
+        "Santafé de Bogotá",
+        "Honda",
+        "Guaduas"
+      ],
+      "reconfiguracion_espacial": "Marcha armada de 20.000 hombres desde Santander hasta las puertas de Santafé, rebasando los pasos de cordillera y evidenciando la fragilidad defensiva del centro del Virreinato.",
+      "relevancia_actual": "Gesta fundacional de la soberanía popular y los derechos laborales y tributarios en Colombia, conmemorada como el gran preludio popular de la Independencia."
+    },
+    "descriptores_tesauro_agn": [
+      "Insurrección de los Comuneros",
+      "José Antonio Galán",
+      "Manuela Beltrán",
+      "Capitulaciones de Zipaquirá",
+      "Villa del Socorro",
+      "Fondo Comuneros",
+      "Rebelión Fiscal",
+      "Reformas Borbónicas",
+      "Sentencia de 1782",
+      "Ambrosio Pisco"
+    ],
+    "analisis_sociojuridico": "Evidencia la fractura entre el derecho natural consuetudinario de resistencia a la tiranía fiscal alegado por el Común y el principio absolutista de lesa majestad esgrimido por la Corona, así como la instrumentalización de la fe católica mediante el juramento sacramental fingido de Zipaquirá para aplacar a las masas antes de ejecutar la represión militar."
+  }
+]

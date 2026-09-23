@@ -1,0 +1,2209 @@
+{
+  "metadata": {
+    "titulo": "Atlas de Geografía Regional, Red de Municipios Patrimoniales y Folclor Mitológico de Colombia",
+    "descripcion": "Capa de datos etnográfica, geográfica, arquitectónica y cosmogónica de Colombia. Recopila las 6 regiones naturales, 25 municipios patrimoniales emblemáticos y 15 mitos y tradiciones orales fundamentales.",
+    "autor": "Subagente Especialista en Geografía Regional, Municipios Patrimoniales y Folclor de Colombianopedia",
+    "version": "2.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "total_regiones": 6,
+    "total_municipios_patrimoniales": 25,
+    "total_mitos_leyendas": 15
+  },
+  "regiones_naturales": [
+    {
+      "id": "caribe",
+      "nombre": "Región Caribe",
+      "lema": "Cuna de la Cumbia, Arrecifes de Coral y Cumbres Nevadas Frente al Mar",
+      "superficie_aproximada_km2": 132288,
+      "porcentaje_territorio_nacional": "11.6%",
+      "departamentos": [
+        "Atlántico",
+        "Bolívar",
+        "Cesar",
+        "Córdoba",
+        "La Guajira",
+        "Magdalena",
+        "Sucre",
+        "Antioquia (Urabá norte)",
+        "Chocó (Acandí y Unguía)"
+      ],
+      "relieve": {
+        "descripcion_general": "Dominada por extensas planicies aluviales, sabanas ganaderas y la depresión Momposina, interrumpida abruptamente por el macizo montañoso litoral aislado más alto del planeta: la Sierra Nevada de Santa Marta. Al noreste se extiende la península árida de La Guajira con serranías medias (Macuira, Cosinas y Jarara).",
+        "principales_accidentes": [
+          "Sierra Nevada de Santa Marta (Pico Cristóbal Colón y Pico Simón Bolívar)",
+          "Serranía del Perijá (límite oriental con Venezuela)",
+          "Serranía de San Jacinto y Montes de María",
+          "Serranía de San Jerónimo y Ayapel",
+          "Depresión Momposina (zona de amortiguación hídrica)",
+          "Península de La Guajira y dunas de Taroa"
+        ],
+        "altura_maxima_msnm": 5775,
+        "punto_culminante": "Pico Cristóbal Colón / Pico Simón Bolívar (5.775 msnm)"
+      },
+      "clima": {
+        "clasificacion_koppen": "BWh / BSh (Árido y semiárido en La Guajira), Aw (Tropical de sabana en las llanuras), Af/Am (Tropical húmedo en Urabá), H (Pisos térmicos de montaña en la Sierra Nevada)",
+        "rango_temperatura": "De 0°C en los picos nevados a más de 38°C en el desierto guajiro y riberas del Magdalena",
+        "regimen_precipitaciones": "Marcada asimetría: menos de 300 mm anuales en la Alta Guajira; 1.000 a 1.500 mm en sabanas de Córdoba y Bolívar; hasta 3.000 mm en el Urabá caribeño. Estación seca prolongada de diciembre a abril.",
+        "fenomenos_climaticos": "Vientos alisios del noreste, brisas marinas (virazón), huracanes y tormentas tropicales oceánicas que rozan la península."
+      },
+      "cuencas_hidrograficas": {
+        "vertiente": "Vertiente del Mar Caribe",
+        "rios_principales": [
+          {
+            "nombre": "Río Magdalena",
+            "longitud_km": 1528,
+            "cuenca_o_afluente": "Arteria fluvial mayor de Colombia; desemboca en Bocas de Ceniza",
+            "importancia_ecologica_humana": "Eje de transporte histórico, pesca artesanal y soporte agrícola de todo el país."
+          },
+          {
+            "nombre": "Río Cauca",
+            "longitud_km": 1350,
+            "cuenca_o_afluente": "Afluente principal del Magdalena en el brazo de Loba",
+            "importancia_ecologica_humana": "Alimenta la cuenca baja cenagosa y regula el pulso de inundación caribeño."
+          },
+          {
+            "nombre": "Río Sinú",
+            "longitud_km": 415,
+            "cuenca_o_afluente": "Desemboca en Boca de Tinajones (Golfo de Morrosquillo)",
+            "importancia_ecologica_humana": "Riega el fértil valle del Sinú, hogar ancestral de la ingeniería hidráulica Zenú."
+          },
+          {
+            "nombre": "Río San Jorge",
+            "longitud_km": 368,
+            "cuenca_o_afluente": "Nace en el PNN Paramillo y drena hacia la Depresión Momposina",
+            "importancia_ecologica_humana": "Vital para la pesca de bagre, bocachico y ciénagas de Ayapel y San Marcos."
+          },
+          {
+            "nombre": "Río Cesar",
+            "longitud_km": 280,
+            "cuenca_o_afluente": "Corre entre la Sierra Nevada y la Serranía del Perijá hasta la Ciénaga de Zapatosa",
+            "importancia_ecologica_humana": "Corredor agropecuario y cultural de la tradición vallenata."
+          },
+          {
+            "nombre": "Río Ranchería",
+            "longitud_km": 248,
+            "cuenca_o_afluente": "Nace en la Sierra Nevada y desemboca en Riohacha",
+            "importancia_ecologica_humana": "Única fuente de agua dulce superficial permanente para la media y baja Guajira."
+          }
+        ],
+        "lagunas_cienegas_embalses": [
+          "Ciénaga Grande de Santa Marta (el complejo lagunar estuarino más grande del país)",
+          "Ciénaga de Zapatosa (la ciénaga dulceacuícola más extensa de Colombia)",
+          "Ciénaga de Ayapel",
+          "Ciénaga de Betancí"
+        ]
+      },
+      "parques_nacionales_naturales": [
+        {
+          "nombre": "PNN Tayrona",
+          "area_hectareas": 15000,
+          "ecosistemas_clave": "Bosque seco tropical, bosque húmedo, arrecifes coralinos, playas y ensenadas rocosas",
+          "fauna_flora_emblematica": "Mono tití cabeciblanco, jaguar, caimán aguja, corales cuerno de ciervo",
+          "importancia_conservacion": "Santuario de biodiversidad marina y territorio ancestral sagrado de los cuatro pueblos de la Sierra (Línea Negra)."
+        },
+        {
+          "nombre": "PNN Sierra Nevada de Santa Marta",
+          "area_hectareas": 383000,
+          "ecosistemas_clave": "Selva húmeda subandina, bosque de niebla, páramo y nieves perpetuas",
+          "fauna_flora_emblematica": "Cóndor andino, danta de páramo, periquito de Santa Marta, frailejones endémicos",
+          "importancia_conservacion": "Reserva de Biosfera UNESCO; mayor concentración de especies de aves endémicas de montaña en el mundo."
+        },
+        {
+          "nombre": "PNN Macuira",
+          "area_hectareas": 25000,
+          "ecosistemas_clave": "Oasis de bosque de niebla enano en medio del desierto guajiro",
+          "fauna_flora_emblematica": "Gavilán caminero, cardenal guajiro, cactus columnarios, orquídeas epífitas",
+          "importancia_conservacion": "Enclave bioclimático único donde los vientos alisios condensan agua dulce vital para los clanes Wayuu."
+        },
+        {
+          "nombre": "PNN Corales del Rosario y de San Bernardo",
+          "area_hectareas": 120000,
+          "ecosistemas_clave": "Arrecifes coralinos de plataforma, pastos marinos y manglares",
+          "fauna_flora_emblematica": "Tortuga carey, pez león (controlado), corales cerebro, delfín nariz de botella",
+          "importancia_conservacion": "La barrera submarina de coral más desarrollada y diversa de la costa continental colombiana."
+        }
+      ],
+      "pueblos_originarios": [
+        {
+          "nombre_etnia": "Wayuu",
+          "familia_linguistica": "Arawak (lengua Wayuunaiki)",
+          "localizacion_ancestral": "Península de La Guajira",
+          "cosmogonia_y_saberes": "Descendientes de Maleiwa (creador), Juya (la lluvia masculina) y Mma (la madre tierra fértil). Organizados en clanes matrilineales (Eiruku). Maestros del pastoreo, el tejido de chinchorros y wayucos con kanas (figuras geométricas sagradas), y la justicia restaurativa a través del palabrero (Pütchipü'üi, Patrimonio Inmaterial de la Humanidad UNESCO).",
+          "poblacion_aproximada_resguardo": "Más de 380.000 personas (el pueblo indígena más numeroso de Colombia)"
+        },
+        {
+          "nombre_etnia": "Kogui (Kággabba)",
+          "familia_linguistica": "Chibcha",
+          "localizacion_ancestral": "Vertiente norte y sur de la Sierra Nevada de Santa Marta",
+          "cosmogonia_y_saberes": "Se consideran los 'Hermanos Mayores', custodios espirituales del 'Corazón del Mundo'. Su vida está regida por la Ley de Origen dictada por la Gran Madre Sei. Los Mamos (sabios sacerdotes) se forman en la oscuridad durante años para comunicarse con el mundo espiritual (Aluna).",
+          "poblacion_aproximada_resguardo": "Aproximadamente 20.000 personas"
+        },
+        {
+          "nombre_etnia": "Arhuaco (Ika)",
+          "familia_linguistica": "Chibcha",
+          "localizacion_ancestral": "Vertiente sur y occidental de la Sierra Nevada (Valledupar, Pueblo Bello)",
+          "cosmogonia_y_saberes": "Guardianes de las lagunas glaciares y páramos sagrados. Portan el 'tutusoma' (gorro cónico blanco que simboliza los picos nevados) y tejen mochilas de lana de oveja con simbologías del universo y el pensamiento.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 34.000 personas"
+        },
+        {
+          "nombre_etnia": "Zenú",
+          "familia_linguistica": "Aislada / Chocó (antiguo Chibcha Zenú)",
+          "localizacion_ancestral": "Valles del Sinú y San Jorge, resguardo de San Andrés de Sotavento",
+          "cosmogonia_y_saberes": "Ingenieros hidráulicos prehispánicos que construyeron una red de canales de más de 500.000 hectáreas para controlar crecientes e irrigar cosechas. Creadores del 'Sombrero Vueltiao' tejido en caña flecha, Símbolo Cultural de la Nación.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 230.000 personas reconocidas"
+        }
+      ],
+      "relato_educativo": "Imagina una tierra donde puedes bañarte en las cálidas aguas turquesas del océano y, al levantar la mirada, contemplar picos nevados perpetuos a más de cinco kilómetros sobre el nivel del mar. La Región Caribe no es solo una postal costera: es un crisol donde confluyen el tambor africano, la flauta de millo indígena, las leyendas de hombres caimán y la memoria de los orfebres prehispánicos más virtuosos de América. Desde las dunas doradas de Taroa hasta los laberintos flotantes de Mompox, el Caribe enseña que el agua y la brisa tejen la historia humana."
+    },
+    {
+      "id": "pacifica",
+      "nombre": "Región Pacífica",
+      "lema": "El Pulso Esmeralda de la Selva Lluviosa y el Santuario de las Ballenas Yubartas",
+      "superficie_aproximada_km2": 83170,
+      "porcentaje_territorio_nacional": "7.3%",
+      "departamentos": [
+        "Chocó",
+        "Valle del Cauca (franja litoral de Buenaventura)",
+        "Cauca (litoral de Guapi y Timbiquí)",
+        "Nariño (costa de Tumaco, Barbacoas e Iscuandé)"
+      ],
+      "relieve": {
+        "descripcion_general": "Franja costera baja, húmeda y selvática flanqueada al oriente por las laderas empinadas de la Cordillera Occidental y al norte por las elevaciones selváticas de la Serranía del Baudó y del Darién. Costas accidentadas con acantilados, ensenadas profundas (Golfo de Tribugá, Bahía Solano), rías y densos manglares.",
+        "principales_accidentes": [
+          "Serranía del Baudó (cadena montañosa costera paralela al Pacífico)",
+          "Serranía del Darién (frontera natural con Panamá)",
+          "Piedemonte de la Cordillera Occidental",
+          "Ensenada de Utría y Bahía de Buenaventura",
+          "Golfos de Tortugas y San Juan",
+          "Playas de anidación y esteros fluviales de Nariño"
+        ],
+        "altura_maxima_msnm": 1810,
+        "punto_culminante": "Alto del Buey en la Serranía del Baudó (1.810 msnm)"
+      },
+      "clima": {
+        "clasificacion_koppen": "Af (Ecuatorial lluvioso perenne), con humedad relativa superior al 90%",
+        "rango_temperatura": "Entre 24°C y 30°C constantes durante todo el año",
+        "regimen_precipitaciones": "Uno de los lugares más pluviosos del planeta. En municipios como Lloró, Tutunendo y López de Micay caen entre 8.000 y 13.000 mm de lluvia al año, lloviendo casi 300 días anuales.",
+        "fenomenos_climaticos": "Zona de Convergencia Intertropical (ZCIT) permanente, marejadas oceánicas, brisas húmedas del suroeste y evaporación selvática masiva ('ríos voladores')."
+      },
+      "cuencas_hidrograficas": {
+        "vertiente": "Vertiente del Océano Pacífico (excepto el bajo Atrato que vierte al Golfo de Urabá)",
+        "rios_principales": [
+          {
+            "nombre": "Río San Juan",
+            "longitud_km": 380,
+            "cuenca_o_afluente": "El río más caudaloso de Suramérica por metro cuadrado de cuenca",
+            "importancia_ecologica_humana": "Carretera fluvial para comunidades afrodescendientes e indígenas Wounaan y Emberá."
+          },
+          {
+            "nombre": "Río Atrato",
+            "longitud_km": 750,
+            "cuenca_o_afluente": "Corre de sur a norte entre las cordilleras; desemboca en el Golfo de Urabá",
+            "importancia_ecologica_humana": "Sujeto de Derechos bioculturales por sentencia histórica de la Corte Constitucional (T-622 de 2016)."
+          },
+          {
+            "nombre": "Río Baudó",
+            "longitud_km": 180,
+            "cuenca_o_afluente": "Corre entre la serranía del Baudó y la cordillera Occidental",
+            "importancia_ecologica_humana": "Reserva de biodiversidad de peces dulceacuícolas y conexión comunitaria."
+          },
+          {
+            "nombre": "Río Patía (cuenca baja)",
+            "longitud_km": 400,
+            "cuenca_o_afluente": "Rompe la Cordillera Occidental en la Hoz de Minamá hacia el Pacífico",
+            "importancia_ecologica_humana": "El río más largo de la vertiente pacífica colombiana; delta rico en manglares."
+          },
+          {
+            "nombre": "Río Mira",
+            "longitud_km": 328,
+            "cuenca_o_afluente": "Nace en Ecuador y desemboca al sur de Tumaco",
+            "importancia_ecologica_humana": "Sustento pesquero y de transporte fronterizo binacional."
+          }
+        ],
+        "lagunas_cienegas_embalses": [
+          "Ciénaga de Unguía",
+          "Complejo de humedales del bajo Atrato",
+          "Esteros y bocanas de Sanquianga y Guapi"
+        ]
+      },
+      "parques_nacionales_naturales": [
+        {
+          "nombre": "PNN Ensenada de Utría",
+          "area_hectareas": 54300,
+          "ecosistemas_clave": "Selva pluvial tropical, manglares, arrecifes coralinos someros y litoral rocoso",
+          "fauna_flora_emblematica": "Ballena jorobada (yubarta), tortuga laúd, rana venenosa dorada, orquídeas negras",
+          "importancia_conservacion": "Sala de parto y crianza de ballenas jorobadas procedentes de la Antártida entre julio y noviembre."
+        },
+        {
+          "nombre": "PNN Gorgona",
+          "area_hectareas": 61687,
+          "ecosistemas_clave": "Isla de selva húmeda y arrecife coralino prístino del Pacífico oriental tropical",
+          "fauna_flora_emblematica": "Lagarto azul de Gorgona (endémico), serpientes de terciopelo, tiburón aleta blanca",
+          "importancia_conservacion": "Antigua prisión de máxima seguridad transformada en 'Isla Ciencia' y laboratorio biológico."
+        },
+        {
+          "nombre": "PNN Uramba Bahía Málaga",
+          "area_hectareas": 47094,
+          "ecosistemas_clave": "Esteros, acantilados de roca sedimentaria, cascadas y bosques de manglar",
+          "fauna_flora_emblematica": "Pardos marinos, manta rayas, garzas tigre, cangrejos azules",
+          "importancia_conservacion": "Zona de máxima concentración de cortejo y parición de cetáceos en el Pacífico colombiano."
+        },
+        {
+          "nombre": "PNN Los Katíos",
+          "area_hectareas": 72000,
+          "ecosistemas_clave": "Selvas inundables, ciénagas del Atrato y colinas del Darién",
+          "fauna_flora_emblematica": "Manatí del Caribe, jaguar, águila arpía, oso andino en zonas altas",
+          "importancia_conservacion": "Patrimonio de la Humanidad UNESCO; puente biológico fundamental entre Centroamérica y Suramérica."
+        }
+      ],
+      "pueblos_originarios": [
+        {
+          "nombre_etnia": "Emberá (Dobidá, Katío y Chamí)",
+          "familia_linguistica": "Chocó",
+          "localizacion_ancestral": "Riberas de los ríos Atrato, San Juan, Baudó y piedemonte cordillerano",
+          "cosmogonia_y_saberes": "Los Emberá Dobidá son 'la gente del río'. Su universo se divide en varios mundos regidos por Karagabí (el creador de las aguas y del árbol de Jennene). Maestros de la pintura corporal con tintes vegetales de jagua (kipará) que protege el espíritu y refleja el estatus, y de la talla en madera de guayacán.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 120.000 personas entre sus diversas ramas"
+        },
+        {
+          "nombre_etnia": "Wounaan (Waunana)",
+          "familia_linguistica": "Chocó",
+          "localizacion_ancestral": "Cuenca baja del río San Juan (Litoral de San Juan y Buenaventura)",
+          "cosmogonia_y_saberes": "Nacidos de la arcilla moldeada por Maach Aai (el Padre Creador). Reconocidos mundialmente por sus canastos 'werregue', tejidos con microfibras de la palma de werregue teñidas con cortezas naturales, tan tupidos que pueden contener agua.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 15.000 personas"
+        },
+        {
+          "nombre_etnia": "Awá (Kwaiker)",
+          "familia_linguistica": "Barbacoas",
+          "localizacion_ancestral": "Piedemonte costero de Nariño (Barbacoas, Tumaco, Ricaurte)",
+          "cosmogonia_y_saberes": "Se denominan 'hijos de la selva'. Consideran que la selva es un ser vivo que siente dolor cuando se tala o contamina. Sabios herbolarios y rastreadores en terrenos de niebla y lluvia perpetua.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 45.000 personas"
+        }
+      ],
+      "relato_educativo": "Viajar al Pacífico es adentrarse en un santuario donde la selva abraza al mar. En este rincón del mundo, los ríos no son fronteras sino senderos líquidos que las canoas recorren al compás del agua. Cada año, gigantescas ballenas jorobadas recorren 8.500 kilómetros desde las aguas gélidas de la Antártida para dar a luz en las cálidas bahías protegidas del Chocó y el Valle del Cauca. Entre el repique de la marimba de chonta (el 'piano de la selva') y la milenaria memoria de los pueblos Emberá y comunidades afrocolombianas, el Pacífico late como uno de los corazones biológicos y espirituales más puros del planeta."
+    },
+    {
+      "id": "andina",
+      "nombre": "Región Andina",
+      "lema": "El Espinazo de Tres Cordilleras, Cunas de Niebla, Café y Saberes Ancestrales",
+      "superficie_aproximada_km2": 282540,
+      "porcentaje_territorio_nacional": "24.7%",
+      "departamentos": [
+        "Antioquia",
+        "Boyacá",
+        "Caldas",
+        "Cauca (franja andina)",
+        "Cundinamarca",
+        "Huila",
+        "Nariño (altiplano y cordillera)",
+        "Norte de Santander",
+        "Quindío",
+        "Risaralda",
+        "Santander",
+        "Tolima",
+        "Valle del Cauca (vertientes cordilleranas)"
+      ],
+      "relieve": {
+        "descripcion_general": "La cordillera de los Andes penetra por el sur en el Nudo de los Pastos y se bifurca en el Macizo Colombiano en tres ramales colosales: la Cordillera Occidental, la Central (la más alta y volcánica) y la Oriental (la más ancha, con vastos altiplanos). Intercalados discurren los valles interandinos de los ríos Magdalena y Cauca.",
+        "principales_accidentes": [
+          "Macizo Colombiano (Estrella Fluvial de Colombia)",
+          "Nudo de los Pastos y Nudo de Paramillo",
+          "Cordillera Central con nevados del Ruiz, Tolima, Santa Isabel y Huila",
+          "Cordillera Oriental con la Sierra Nevada del Cocuy y Altiplano Cundiboyacense",
+          "Cañón del Chicamocha (uno de los más profundos del continente)",
+          "Páramo de Sumapaz (el complejo de páramo más grande de la Tierra)"
+        ],
+        "altura_maxima_msnm": 5364,
+        "punto_culminante": "Nevado del Huila (5.364 msnm) y Ritacuba Blanco en El Cocuy (5.330 msnm)"
+      },
+      "clima": {
+        "clasificacion_koppen": "Gradiente altitudinal completo: Cálido (0-1.000 msnm), Templado (1.000-2.000 msnm), Frío (2.000-3.000 msnm), Páramo (3.000-4.000 msnm) y Nival/Nieves perpetuas (>4.000 msnm)",
+        "rango_temperatura": "Desde temperaturas bajo cero en los glaciares (-5°C) hasta 32°C en el valle cálido del alto Magdalena",
+        "regimen_precipitaciones": "Bimodal en la mayor parte de la región (temporadas lluviosas en abril-mayo y octubre-noviembre). Varía de 800 mm anuales en cañones secos a más de 3.500 mm en vertientes cafeteras.",
+        "fenomenos_climaticos": "Heladas de madrugada en los altiplanos durante enero y agosto, neblina orográfica densa en bosques de niebla y oscilación del Fenómeno de El Niño/La Niña."
+      },
+      "cuencas_hidrograficas": {
+        "vertiente": "Macrocuenca Magdalena-Cauca (vierte al Caribe)",
+        "rios_principales": [
+          {
+            "nombre": "Río Magdalena (curso alto y medio)",
+            "longitud_km": 1528,
+            "cuenca_o_afluente": "Nace en la Laguna de la Magdalena en el Macizo Colombiano",
+            "importancia_ecologica_humana": "Columna vertebral geológica y civilizatoria de Colombia."
+          },
+          {
+            "nombre": "Río Cauca (curso alto y medio)",
+            "longitud_km": 1350,
+            "cuenca_o_afluente": "Nace en la Laguna del Buey (Macizo Colombiano) y recorre el valle interandino",
+            "importancia_ecologica_humana": "Riega el fértil valle geográfico de la caña y genera hidroelectricidad crucial."
+          },
+          {
+            "nombre": "Río Bogotá",
+            "longitud_km": 375,
+            "cuenca_o_afluente": "Nace en el páramo de Guacheneque y cae al Salto del Tequendama",
+            "importancia_ecologica_humana": "Abastece a más de diez millones de habitantes; objeto del mayor plan de recuperación ambiental."
+          },
+          {
+            "nombre": "Río Chicamocha",
+            "longitud_km": 275,
+            "cuenca_o_afluente": "Nace en Boyacá y esculpe el cañón santandereano antes de unirse al río Suárez",
+            "importancia_ecologica_humana": "Ecosistema xerofítico único con alta tasa de endemismo botánico."
+          },
+          {
+            "nombre": "Río Sogamoso",
+            "longitud_km": 135,
+            "cuenca_o_afluente": "Formado por la unión del Chicamocha y el Suárez; desemboca en el Magdalena",
+            "importancia_ecologica_humana": "Genera gran parte de la energía nacional (Central Hidroeléctrica Sogamoso)."
+          }
+        ],
+        "lagunas_cienegas_embalses": [
+          "Lago de Tota (el lago natural más grande de Colombia, 3.015 msnm)",
+          "Laguna de Guatavita (cuna sagrada de El Dorado)",
+          "Laguna de Iguaque (origen mitológico muisca de la humanidad)",
+          "Laguna de la Cocha (humedal Ramsar en Nariño)",
+          "Embalse del Peñol-Guatapé y Embalse de Betania"
+        ]
+      },
+      "parques_nacionales_naturales": [
+        {
+          "nombre": "PNN Los Nevados",
+          "area_hectareas": 58300,
+          "ecosistemas_clave": "Páramo, superpáramo y casquetes glaciares volcánicos (Ruiz, Tolima, Santa Isabel)",
+          "fauna_flora_emblematica": "Frailejón de Ruiz, cóndor de los Andes, loro coroniazul, puma andino",
+          "importancia_conservacion": "Fábrica de agua para más de 3 millones de habitantes y para el Paisaje Cultural Cafetero."
+        },
+        {
+          "nombre": "PNN Chingaza",
+          "area_hectareas": 76600,
+          "ecosistemas_clave": "Páramos de alta montaña, lagunas glaciares y selvas andinas de niebla",
+          "fauna_flora_emblematica": "Oso de anteojos, venado de cola blanca, frailejón 'Espeletia uribei', pato de los torrentes",
+          "importancia_conservacion": "Provee el 80% del agua potable que consume Bogotá a través del embalse de Chuza."
+        },
+        {
+          "nombre": "PNN El Cocuy",
+          "area_hectareas": 306000,
+          "ecosistemas_clave": "La mayor masa glaciar continua de Colombia con más de 25 picos nevados",
+          "fauna_flora_emblematica": "Águila real de montaña, frailejón plateado, chivito de los páramos",
+          "importancia_conservacion": "Territorio sagrado del pueblo originario U'wa (Tunebos), quienes defienden la nieve como la sangre de la Madre Tierra."
+        },
+        {
+          "nombre": "PNN Puracé",
+          "area_hectareas": 83000,
+          "ecosistemas_clave": "Cadena volcánica de los Coconucos, azufreras, lagunas y páramos",
+          "fauna_flora_emblematica": "Cóndor andino, danta de páramo, orquídeas miniatura, encenillos",
+          "importancia_conservacion": "Reserva de biosfera y cabecera de las 4 arterias fluviales más grandes del país (Magdalena, Cauca, Patía y Caquetá)."
+        }
+      ],
+      "pueblos_originarios": [
+        {
+          "nombre_etnia": "Nasa (Páez)",
+          "familia_linguistica": "Nasa Yuwe (lengua aislada)",
+          "localizacion_ancestral": "Tierradentro y cordillera Central del Cauca, Huila y Tolima",
+          "cosmogonia_y_saberes": "Guerreros y guardianes de la Madre Tierra (Uma Kiwe). Consideran que la naturaleza no es un recurso sino una madre sagrada. Organizados en Cabildos y la Guardia Indígena que defiende la vida con bastones de mando de chonta.",
+          "poblacion_aproximada_resguardo": "Más de 240.000 personas"
+        },
+        {
+          "nombre_etnia": "Misak (Guambianos)",
+          "familia_linguistica": "Barbacoas (lengua Namtrik)",
+          "localizacion_ancestral": "Silvia y laderas del volcán Piendamó (Cauca)",
+          "cosmogonia_y_saberes": "Hijos del agua de las lagunas y de la lluvia. Reconocidos por su vestimenta ceremonial de anaco azul rey y faldón negro, y su profundo concepto de la 'recuperación de la memoria y la tierra para recuperarlo todo'.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 23.000 personas"
+        },
+        {
+          "nombre_etnia": "Muisca (comunidades de memoria y cabildos)",
+          "familia_linguistica": "Chibcha (Muysc cubun)",
+          "localizacion_ancestral": "Altiplano Cundiboyacense (Bacatá, Hunza, Sugamuxi, Duitama)",
+          "cosmogonia_y_saberes": "Adoradores de Sué (el Sol) y Chía (la Luna). Su cosmogonía nació en la Laguna de Iguaque con Bachué. Grandes astrónomos, alfareros, agricultores de terrazas y orfebres de la cera perdida (balsas votivas y tunjos).",
+          "poblacion_aproximada_resguardo": "Más de 14.000 miembros en cabildos reconocidos (Suba, Bosa, Cota, Chía, Sesquilé)"
+        },
+        {
+          "nombre_etnia": "Pastos y Quillacingas",
+          "familia_linguistica": "Barbacoas / Quechua septentrional",
+          "localizacion_ancestral": "Altiplano Nariñense, volcán Galeras y cañón del Guáitara",
+          "cosmogonia_y_saberes": "Pueblos de profunda sabiduría agrícola andina, guardianes del sol de los pastos de ocho puntas y del cultivo de decenas de variedades de papas nativas, maíz y quinua.",
+          "poblacion_aproximada_resguardo": "Más de 160.000 personas"
+        }
+      ],
+      "relato_educativo": "La Región Andina es el corazón montañoso donde palpita la mayor parte de la población de Colombia. Aquí, la geografía no es plana: es un laberinto vertical donde en pocas horas de viaje se pasa del calor sofocante de los valles del río Magdalena a la niebla silenciosa de páramos milenarios cubiertos de frailejones que parecen centinelas del agua. Esta cordillera modeló el carácter laborioso de campesinos cafeteros, mineros de esmeraldas y artesanos de ruanas de lana, cimentando una civilización andina que dialoga entre la tecnología moderna y los secretos de las montañas sagradas."
+    },
+    {
+      "id": "orinoquia",
+      "nombre": "Región Orinoquía (Llanos Orientales)",
+      "lema": "El Océano Verde de Sabanas Infinitas, Cantos de Vaquería y Atardeceres de Fuego",
+      "superficie_aproximada_km2": 285437,
+      "porcentaje_territorio_nacional": "25.0%",
+      "departamentos": [
+        "Arauca",
+        "Casanare",
+        "Meta",
+        "Vichada"
+      ],
+      "relieve": {
+        "descripcion_general": "Vasta planicie horizontal aluvial y sedimentaria extendida desde el pie de monte de la Cordillera Oriental hasta las riberas del Río Orinoco. Se distingue entre la 'llanura inundable' (bancos de arena, bajos y esteros) y la 'altillanura disectada' no inundable al sur del río Meta, junto a formaciones antiguas del Escudo Guayanés como la Serranía de La Macarena.",
+        "principales_accidentes": [
+          "Serranía de La Macarena (isla biológica entre Andes, Amazonía y Orinoquía)",
+          "Piedemonte Llanero (franja de transición ecotonos cordillera-sabana)",
+          "Altillanura de la cuenca del río Vichada",
+          "Esteros del Camaguan y bancos de sabana",
+          "Afloramientos rocosos precámbricos del Escudo Guayanés en el Tuparro"
+        ],
+        "altura_maxima_msnm": 2615,
+        "punto_culminante": "Cumbre de la Serranía de La Macarena (2.615 msnm)"
+      },
+      "clima": {
+        "clasificacion_koppen": "Aw (Tropical de sabana con dos estaciones hipercontrastadas)",
+        "rango_temperatura": "Entre 25°C y 36°C constantes en el día",
+        "regimen_precipitaciones": "De 1.500 mm anuales en la frontera con Venezuela a más de 4.000 mm en el piedemonte llanero. El año se divide de forma estricta en 'verano' (diciembre a marzo, sequía y cuarteamiento de la tierra) e 'invierno' (abril a noviembre, grandes inundaciones de sabanas).",
+        "fenomenos_climaticos": "Espejismos térmicos en verano, tormentas eléctricas descomunales de sabana ('mangas de viento') y crecidas repentinas de ríos de piedemonte."
+      },
+      "cuencas_hidrograficas": {
+        "vertiente": "Vertiente del Río Orinoco",
+        "rios_principales": [
+          {
+            "nombre": "Río Meta",
+            "longitud_km": 1050,
+            "cuenca_o_afluente": "Nace de la unión del Upía, Cravo Sur y Humea; desemboca en el Orinoco en Puerto Carreño",
+            "importancia_ecologica_humana": "Gran autopista fluvial histórica de los Llanos, ruta de comercio y navegación."
+          },
+          {
+            "nombre": "Río Guaviare",
+            "longitud_km": 1497,
+            "cuenca_o_afluente": "Nace en la cordillera Oriental (río Guayabero) y marca el límite natural con la Amazonía",
+            "importancia_ecologica_humana": "Límite biogeográfico colosal y soporte de comunidades indígenas y pesqueras."
+          },
+          {
+            "nombre": "Río Arauca",
+            "longitud_km": 1050,
+            "cuenca_o_afluente": "Nace en el páramo de Almorzadero y marca la frontera septentrional",
+            "importancia_ecologica_humana": "Eje de vida de los indígenas U'wa y Betoye, y de la cultura llanera araucana."
+          },
+          {
+            "nombre": "Río Vichada",
+            "longitud_km": 580,
+            "cuenca_o_afluente": "Cruza la altillanura solitaria hacia el río Orinoco",
+            "importancia_ecologica_humana": "Hogar de comunidades Sikuani y zona de altísima biodiversidad dulceacuícola."
+          },
+          {
+            "nombre": "Río Casanare",
+            "longitud_km": 400,
+            "cuenca_o_afluente": "Nace en la Sierra Nevada del Cocuy y drena hacia el Meta",
+            "importancia_ecologica_humana": "Ruta de la independencia y soporte ganadero ancestral."
+          }
+        ],
+        "lagunas_cienegas_embalses": [
+          "Caño Cristales ('El río más hermoso del mundo' con Macarenia clavigera)",
+          "Laguna La Venturosa",
+          "Esteros de Maní y de Paz de Ariporo"
+        ]
+      },
+      "parques_nacionales_naturales": [
+        {
+          "nombre": "PNN Serranía de La Macarena",
+          "area_hectareas": 629280,
+          "ecosistemas_clave": "Selva húmeda, bosque de galería, sabanas amazónicas y cañones rocosos",
+          "fauna_flora_emblematica": "Planta acuática 'Macarenia clavigera' (da color fucsia al agua), jaguar, oso hormiguero gigante",
+          "importancia_conservacion": "Punto de encuentro evolutivo de tres provincias biogeográficas del continente."
+        },
+        {
+          "nombre": "PNN El Tuparro",
+          "area_hectareas": 548000,
+          "ecosistemas_clave": "Sabanas de altillanura, bosques de galería y los imponentes Raudales de Maipures en el Orinoco",
+          "fauna_flora_emblematica": "Nutria gigante de río, caimán del Orinoco (en peligro crítico), delfín rosado (tonina)",
+          "importancia_conservacion": "Reserva de Biosfera UNESCO; descrito por Alexander von Humboldt como la 'Octava Maravilla del Mundo'."
+        },
+        {
+          "nombre": "PNN Tinigua",
+          "area_hectareas": 214000,
+          "ecosistemas_clave": "Bosques tropicales húmedos y corredores fluviales del Guayabero",
+          "fauna_flora_emblematica": "Mono churruco, danta de tierras bajas, guacamaya roja, paujil tuberoso",
+          "importancia_conservacion": "Corredor biológico crítico entre la cordillera de los Andes y la Amazonía."
+        }
+      ],
+      "pueblos_originarios": [
+        {
+          "nombre_etnia": "Sikuani (Guahibo)",
+          "familia_linguistica": "Guahibo",
+          "localizacion_ancestral": "Llanuras y sabanas del Vichada, Meta y Casanare",
+          "cosmogonia_y_saberes": "Hijos de Kuwei (el gran héroe mítico que ordenó la tierra y dio el árbol de Kalavirnae con todos los alimentos). Antiguos nómadas de sabana que dominaban el ciclo estacional de cacería, recolección de semillas de moriche y cultivo de yuca brava para hacer casabe y fariña.",
+          "poblacion_aproximada_resguardo": "Más de 40.000 personas"
+        },
+        {
+          "nombre_etnia": "Achagua y Piapoco",
+          "familia_linguistica": "Arawak",
+          "localizacion_ancestral": "Riberas de los ríos Meta, Vichada y Guaviare",
+          "cosmogonia_y_saberes": "Grandes navegantes de los ríos llaneros que comerciaban con conchas 'quiripa' (la moneda de intercambio prehispánica de la Orinoquía). Maestros del conocimiento de la palma de moriche, 'el árbol de la vida'.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 12.000 personas combinadas"
+        },
+        {
+          "nombre_etnia": "U'wa (sector piedemonte y llanura)",
+          "familia_linguistica": "Chibcha",
+          "localizacion_ancestral": "Piedemonte araucano y vertiente oriental andina",
+          "cosmogonia_y_saberes": "Se consideran 'gente inteligente que sabe hablar'. Conciben el petróleo (Ruwa) como la sangre viva de la tierra que no debe ser extraída porque sostiene el equilibrio espiritual y físico de todo el cosmos.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 10.000 personas"
+        }
+      ],
+      "relato_educativo": "La Orinoquía es el horizonte sin fin donde la tierra se funde con el cielo en amaneceres que arden como brasas de fogón. En estas llanuras bravías, el hombre y el caballo aprendieron a respirar al mismo compás. Los 'Cantos de Trabajo de Llano' —declarados Patrimonio Inmaterial de la Humanidad por la UNESCO— son melodías a capela con las que los vaqueros calman al ganado durante las largas travesías a través de ríos colmados de anacondas y caimanes. Es una tierra de centauros mestizos, de palmares de moriche y de leyendas donde el coplero mide sus rimas cara a cara con el mismísimo Diablo."
+    },
+    {
+      "id": "amazonia",
+      "nombre": "Región Amazonía",
+      "lema": "El Pulmón del Mundo, Selvas del Jaguar y Catedrales de Piedra Precámbricas",
+      "superficie_aproximada_km2": 483119,
+      "porcentaje_territorio_nacional": "42.3%",
+      "departamentos": [
+        "Amazonas",
+        "Caquetá",
+        "Guainía",
+        "Guaviare",
+        "Putumayo",
+        "Vaupés"
+      ],
+      "relieve": {
+        "descripcion_general": "La región más extensa de Colombia, conformada por una inmensa penillanura selvática tropical del Terciario, disectada por ríos de proporciones gigantescas. Hacia el norte y oriente emergen majestuosos 'tepuyes' e inselbergs de roca arenisca milenaria pertenecientes al Escudo Guayanés, con paredes verticales que se alzan sobre el dosel verde de la selva.",
+        "principales_accidentes": [
+          "Serranía de Chiribiquete (mesetas y tepuyes de arenisca precámbrica)",
+          "Serranía de la Lindosa (afloramientos rocosos con arte rupestre monumental)",
+          "Mesa de Araracuara en el Caquetá",
+          "Cerro Campana y cerros de Mavecure (monolitos graníticos del Guainía)",
+          "Piedemonte amazónico en Putumayo y Caquetá",
+          "Trapecio Amazónico ribereño"
+        ],
+        "altura_maxima_msnm": 1000,
+        "punto_culminante": "Cumbres de los Tepuyes de Chiribiquete (aprox. 1.000 msnm)"
+      },
+      "clima": {
+        "clasificacion_koppen": "Af (Ecuatorial perhúmedo de selva lluviosa continua)",
+        "rango_temperatura": "Entre 24°C y 32°C constantes, con escasa oscilación térmica estacional",
+        "regimen_precipitaciones": "Entre 2.800 y 4.500 mm anuales. Lluvias torrenciales vespertinas casi a diario, que alimentan el ciclo de evapotranspiración de la selva virgen.",
+        "fenomenos_climaticos": "Evapotranspiración masiva que alimenta la corriente atmosférica de vapor ('ríos voladores' hacia los Andes) y el fenómeno del 'friaje' (descenso repentino de temperatura por vientos polares australes en junio y julio)."
+      },
+      "cuencas_hidrograficas": {
+        "vertiente": "Vertiente del Río Amazonas",
+        "rios_principales": [
+          {
+            "nombre": "Río Amazonas (tramo limítrofe)",
+            "longitud_km": 6800,
+            "cuenca_o_afluente": "Baña el Trapecio Amazónico colombiano por 116 km (Leticia y Puerto Nariño)",
+            "importancia_ecologica_humana": "El río más caudaloso y largo del mundo; autopista internacional de integración trinacional (Colombia, Perú y Brasil)."
+          },
+          {
+            "nombre": "Río Caquetá (Río Japurá en Brasil)",
+            "longitud_km": 2816,
+            "cuenca_o_afluente": "Nace en el Macizo Colombiano y cruza toda la Amazonía hasta el Amazonas",
+            "importancia_ecologica_humana": "Corredor biológico fundamental de peces migratorios gigantes como el pirarucú y los bagres plateados."
+          },
+          {
+            "nombre": "Río Putumayo (Içá en Brasil)",
+            "longitud_km": 1813,
+            "cuenca_o_afluente": "Nace en el nudo de los Pastos y forma la frontera con Ecuador y Perú",
+            "importancia_ecologica_humana": "Ruta fluvial milenaria de etnias amazónicas y testigo de la época del caucho."
+          },
+          {
+            "nombre": "Río Vaupés",
+            "longitud_km": 1050,
+            "cuenca_o_afluente": "Nace de la unión del Itilla y el Unilla; drena hacia el Río Negro",
+            "importancia_ecologica_humana": "Cuna mitológica de Yurupary; río de aguas oscuras ('río negro') ricas en taninos vegetales."
+          },
+          {
+            "nombre": "Río Guainía / Río Negro",
+            "longitud_km": 2250,
+            "cuenca_o_afluente": "Corre por el oriente y se conecta con el Orinoco a través del Canal del Casiquiare",
+            "importancia_ecologica_humana": "El mayor afluente de aguas negras del mundo, libre de mosquitos por su acidez natural."
+          },
+          {
+            "nombre": "Río Apaporis",
+            "longitud_km": 1370,
+            "cuenca_o_afluente": "Nace en la serranía de la Macarena y bordea Chiribiquete hacia el Caquetá",
+            "importancia_ecologica_humana": "Santuario fluvial sagrado; atraviesa cañones de roca y el imponente Raudal del Jirijirimo."
+          }
+        ],
+        "lagunas_cienegas_embalses": [
+          "Lagos de Tarapoto (sitio Ramsar en Puerto Nariño, santuario del delfín rosado)",
+          "Laguna del Caño Caimán",
+          "Complejo de rebalses y cochas del río Putumayo"
+        ]
+      },
+      "parques_nacionales_naturales": [
+        {
+          "nombre": "PNN Serranía de Chiribiquete",
+          "area_hectareas": 4268395,
+          "ecosistemas_clave": "Tepuyes rocosos precámbricos, bosques inundables, sabanas de arena blanca",
+          "fauna_flora_emblematica": "Jaguar (Panthera onca), colibrí de Chiribiquete, águila arpía, murciélago fantasma",
+          "importancia_conservacion": "Patrimonio Mixto (Cultural y Natural) de la Humanidad UNESCO; resguarda más de 75.000 pinturas rupestres ancestrales con hasta 20.000 años de antigüedad y pueblos indígenas en aislamiento voluntario."
+        },
+        {
+          "nombre": "PNN Amacayacu",
+          "area_hectareas": 293500,
+          "ecosistemas_clave": "Selva inundable de várzea y tierra firme del Trapecio Amazónico",
+          "fauna_flora_emblematica": "Tití leoncito (el mono más pequeño de América), flor de loto gigante (Victoria amazónica), delfín gris y rosado",
+          "importancia_conservacion": "Territorio ancestral del pueblo Tikuna; preservación de los bosques inundables más ricos del planeta."
+        },
+        {
+          "nombre": "PNN Yaigojé Apaporis",
+          "area_hectareas": 1056000,
+          "ecosistemas_clave": "Selva húmeda continua y sistemas de raudales rocosos",
+          "fauna_flora_emblematica": "Perro de agua gigante, caimán negro amazónico, peces eléctricos",
+          "importancia_conservacion": "Parque creado a solicitud de las comunidades indígenas para blindar el territorio contra la megaminería y proteger sitios sagrados de Yurupary."
+        },
+        {
+          "nombre": "Reserva Nacional Natural Nukak",
+          "area_hectareas": 855000,
+          "ecosistemas_clave": "Transición entre sabanas del Orinoco y selva densa amazónica",
+          "fauna_flora_emblematica": "Danta de selva, paujiles, palmas de seje y caraná",
+          "importancia_conservacion": "Territorio ancestral del pueblo Nukak Makú, nómadas de la selva."
+        }
+      ],
+      "pueblos_originarios": [
+        {
+          "nombre_etnia": "Huitoto (Murui-Muinane)",
+          "familia_linguistica": "Huitoto",
+          "localizacion_ancestral": "Ríos Caraparaná, Igaraparaná y Caquetá",
+          "cosmogonia_y_saberes": "Sobrevivientes heroicos de la barbarie de las fiebres del caucho (Casa Arana). Su conocimiento se transmite en el 'Mambeadero' de la Maloca nocturna mediante el uso sagrado del mambe (coca pulverizada con ceniza de yarumo) y el ambil (pasta concentrada de tabaco), símbolos de la palabra dulce, el consejo y la sanación comunitaria.",
+          "poblacion_aproximada_resguardo": "Más de 14.000 personas"
+        },
+        {
+          "nombre_etnia": "Tikuna",
+          "familia_linguistica": "Tikuna (lengua aislada)",
+          "localizacion_ancestral": "Riberas del río Amazonas y Lagos de Tarapoto",
+          "cosmogonia_y_saberes": "Originarios del caño Eware, nacidos cuando el héroe Ngutapa pescó a los primeros hombres del río. Famosos por la ceremonia de la 'Pelazón' (Fiesta de la Huito / iniciación femenina), la pintura vegetal y el tallado de madera de palo sangre.",
+          "poblacion_aproximada_resguardo": "Más de 18.000 personas en Colombia"
+        },
+        {
+          "nombre_etnia": "Tucano y Desano",
+          "familia_linguistica": "Tucano Oriental",
+          "localizacion_ancestral": "Cuenca del río Vaupés y Pira Paraná",
+          "cosmogonia_y_saberes": "Los hijos de la Serpiente Anaconda Ancestral (Canoa del Tiempo), que remontó el río de la leche dejando a las distintas etnias en sus sitios sagrados. Guardianes del conocimiento del Yurupary y de la elaboración de los bancos chamánicos de madera de jaguar.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 10.000 personas"
+        },
+        {
+          "nombre_etnia": "Nukak Makú",
+          "familia_linguistica": "Makú-Puinave",
+          "localizacion_ancestral": "Selvas interfluviales entre el Guaviare y el Inírida",
+          "cosmogonia_y_saberes": "Uno de los últimos pueblos seminómadas cazadores-recolectores de América, contactados apenas a finales del siglo XX. Maestros del uso de cerbatanas con curare, hamacas de fibra de cumare y lectura sutil de los ciclos biológicos de las frutas de la selva.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 1.000 personas en situación de alta vulnerabilidad"
+        }
+      ],
+      "relato_educativo": "La Amazonía es el templo vivo de la Tierra, una inmensidad verde que ocupa más del 40% del mapa de Colombia. Aquí no hay carreteras: la vida florece al compás de ríos colosales de aguas negras y bermejas que transportan el agua que refresca al planeta entero. En Chiribiquete, paredones de piedra de mil millones de años guardan decenas de miles de trazos en ocre rojo pintados por manos humanas hace veinte mil años, mostrando chigüiros gigantes y jaguares sagrados. La selva no es un vacío salvaje, sino una inmensa biblioteca viva donde cada árbol, liana y río tiene un dueño espiritual que exige respeto y reciprocidad."
+    },
+    {
+      "id": "insular",
+      "nombre": "Región Insular",
+      "lema": "El Mar de los Siete Colores, Arrecifes Oceánicos y Joyas Volcánicas del Pacífico",
+      "superficie_aproximada_km2": 300,
+      "porcentaje_territorio_nacional": "0.1% emergida (pero aporta más de 800.000 km2 de territorio marítimo exclusivo)",
+      "departamentos": [
+        "Archipiélago de San Andrés, Providencia y Santa Catalina",
+        "Bolívar (Islas del Rosario y San Bernardo)",
+        "Cauca (Isla Gorgona y Gorgonilla)",
+        "Valle del Cauca (Isla Malpelo)"
+      ],
+      "relieve": {
+        "descripcion_general": "Compuesta por islas oceánicas y continentales dispersas en dos océanos. En el mar Caribe occidental se ubica el archipiélago oceánico formado por atolones coralinos sobre basamento volcánico (San Andrés, Providencia y Santa Catalina) y cayos como Roncador, Serrana, Serranilla, Quitasueño y Alburquerque. En la costa caribe continental emergen archipiélagos calcáreos de plataforma (Rosario y San Bernardo). En el océano Pacífico destacan Isla Gorgona (isla continental volcánica selvática) y el Santuario de Malpelo (cima de una dorsal volcánica submarina que emerge en paredones escarpados).",
+        "principales_accidentes": [
+          "Loma de La Colina (The Hill, punto más alto de San Andrés, 85 msnm)",
+          "El Pico (The Peak, Providencia, 360 msnm)",
+          "Barrera arrecifal de Providencia (la tercera más extensa del planeta, 32 km de longitud)",
+          "Cayos de San Andrés (Johnny Cay, Haynes Cay, Rose Cay / El Acuario)",
+          "Dorsal volcánica submarina de Malpelo con picos emergidos verticales",
+          "Cerro La Trinidad en Isla Gorgona (338 msnm)"
+        ],
+        "altura_maxima_msnm": 360,
+        "punto_culminante": "The Peak (El Pico) en la Isla de Providencia (360 msnm)"
+      },
+      "clima": {
+        "clasificacion_koppen": "Aw (Tropical cálido marítimo en el Caribe insular) y Af (Ecuatorial oceánico hiperhúmedo en el Pacífico insular)",
+        "rango_temperatura": "Entre 26°C y 30°C promedio anual en San Andrés y Providencia; 25°C a 28°C en Gorgona",
+        "regimen_precipitaciones": "En San Andrés y Providencia: 1.600 a 1.900 mm anuales, con estación de secano de enero a mayo y de lluvias ciclónicas de junio a noviembre. En Gorgona y Malpelo: clima hiperhúmedo con lluvias de casi 7.000 mm anuales.",
+        "fenomenos_climaticos": "Huracanes del Caribe (categorías 1 a 5, como el histórico huracán Iota en 2020), vientos alisios del noreste y corrientes marinas de Humboldt y de Panamá en el Pacífico."
+      },
+      "cuencas_hidrograficas": {
+        "vertiente": "Cuencas oceánicas del Mar Caribe y Océano Pacífico",
+        "rios_principales": [
+          {
+            "nombre": "Acuíferos kársticos de San Andrés",
+            "longitud_km": 0,
+            "cuenca_o_afluente": "Lentes de agua dulce subterránea almacenada en calizas arrecifales",
+            "importancia_ecologica_humana": "Única fuente natural de agua potable para la población insular de San Andrés."
+          },
+          {
+            "nombre": "Freshwater Bay y arroyos de Providencia",
+            "longitud_km": 5,
+            "cuenca_o_afluente": "Microcuencas superficiales de montaña volcánica",
+            "importancia_ecologica_humana": "Alimentan el embalse de Freshwater y los manglares de McBean Lagoon."
+          },
+          {
+            "nombre": "Quebradas de Isla Gorgona",
+            "longitud_km": 3,
+            "cuenca_o_afluente": "Más de 25 riachuelos permanentes que brotan de la selva insular",
+            "importancia_ecologica_humana": "Histórica aguada dulce para piratas ingleses, conquistadores y fauna endémica."
+          }
+        ],
+        "lagunas_cienegas_embalses": [
+          "Big Pond (laguna de agua dulce en la cima de la colina de San Andrés)",
+          "Laguna de McBean (bahía y manglar hipersalino protegido en Providencia)",
+          "Laguna El Tunal en Isla Gorgona"
+        ]
+      },
+      "parques_nacionales_naturales": [
+        {
+          "nombre": "PNN Old Providence McBean Lagoon",
+          "area_hectareas": 995,
+          "ecosistemas_clave": "Manglares de borde y cuenca, praderas de pastos marinos y formaciones coralinas someras",
+          "fauna_flora_emblematica": "Cangrejo negro de Providencia (Gecarcinus ruricola), mangle negro y rojo, pez loro, mantarrayas",
+          "importancia_conservacion": "Núcleo de la Reserva de la Biosfera Seaflower (UNESCO); sitio de la célebre migración anual del cangrejo negro hacia el mar."
+        },
+        {
+          "nombre": "Santuario de Flora y Fauna Malpelo",
+          "area_hectareas": 2709400,
+          "ecosistemas_clave": "Roca volcánica submarina y ecosistemas pelágicos de mar abierto",
+          "fauna_flora_emblematica": "Tiburón martillo (grandes cardúmenes de hasta 300 individuos), tiburón sedoso, piquero de Nazca (la mayor colonia del mundo), lagarto de Malpelo",
+          "importancia_conservacion": "Patrimonio Natural de la Humanidad UNESCO; uno de los 5 mejores destinos de buceo oceánico con grandes depredadores del planeta."
+        },
+        {
+          "nombre": "PNN Gorgona",
+          "area_hectareas": 61687,
+          "ecosistemas_clave": "Selva pluvial ecuatorial insular y la mayor barrera de coral del Pacífico colombiano",
+          "fauna_flora_emblematica": "Lagarto azul de Gorgona (Anolis gorgonae), ballenas jorobadas, mono capuchino de Gorgona, perezoso de tres dedos",
+          "importancia_conservacion": "Santuario de anidación marina y corredor de alimentación de cetáceos y tortugas."
+        }
+      ],
+      "pueblos_originarios": [
+        {
+          "nombre_etnia": "Pueblo Raizal del Archipiélago",
+          "familia_linguistica": "Criollo Sanandresano (Creole de base léxica inglesa), inglés isleño y español",
+          "localizacion_ancestral": "Islas de San Andrés, Providencia y Santa Catalina",
+          "cosmogonia_y_saberes": "Comunidad étnica afroanglocaribeña nacida de la mixtura entre marineros puritanos ingleses, leñadores y esclavizados africanos desde el siglo XVII. Su identidad se apoya en la fe de las iglesias bautistas (como la First Baptist Church de 1844 en La Loma), la música con quijada de caballo ('horse jawbone'), guitarra y tináfono, la navegación marinera a vela tradicional ('catboat') y una arquitectura vernácula de madera caribeña montada sobre pilotes con techos a dos aguas.",
+          "poblacion_aproximada_resguardo": "Aproximadamente 30.000 habitantes raizales"
+        },
+        {
+          "nombre_etnia": "Vestigios y Memoria Arqueológica Tumaco-La Tolita en Gorgona",
+          "familia_linguistica": "Barbacoas / Extinta costera",
+          "localizacion_ancestral": "Isla Gorgona (Pacífico sur)",
+          "cosmogonia_y_saberes": "Los navegantes precolombinos de la cultura Tumaco utilizaban Gorgona como estación sagrada de abastecimiento y pesca de conchas spondylus y perlas entre el 1300 a.C. y el 500 d.C., dejando petroglifos grabados en piedras costeras pulidas por el oleaje.",
+          "poblacion_aproximada_resguardo": "Memoria arqueológica protegida en el PNN Gorgona"
+        }
+      ],
+      "relato_educativo": "¿Sabías que Colombia no solo tiene territorio continental, sino también un inmenso imperio azul que casi duplica su tamaño oceánico? En el Caribe, el archipiélago de San Andrés, Providencia y Santa Catalina despliega el 'Mar de los Siete Colores', una sinfonía de tonos esmeralda, aguamarina y azul marino que delata la profundidad de los arrecifes y la arena de coral molido. En Providencia, cada mayo ocurre un milagro: millones de cangrejos negros bajan de las montañas boscosas cruzando caminos y playas para depositar sus huevos en las olas. Y a cientos de millas en el Pacífico, el peñón de Malpelo se erige en la soledad del océano como el hogar de nubes de tiburones martillo. La Región Insular recuerda que Colombia es una nación caribeña y pacífica con vocación oceánica."
+    }
+  ],
+  "red_municipios_patrimoniales": [
+    {
+      "id": "barichara",
+      "nombre": "Barichara",
+      "departamento": "Santander",
+      "region_natural": "Región Andina",
+      "lema": "El Pueblito más Lindo de Colombia y el Templo de la Piedra Labrada",
+      "toponimia_indigena": {
+        "nombre_original": "Barichara",
+        "lengua_origen": "Guane (Familia Chibcha)",
+        "etimologia_significado": "Deriva del vocablo guane 'Barichara', que traduce 'lugar para el descanso', 'árbol con flores' o 'sitio de buen retiro junto al abismo'.",
+        "pueblo_originario_asociado": "Pueblo Guane, célebres alfareros, tejedores de mantas de algodón y maestros del tallado en piedra de la meseta del Yariguíes."
+      },
+      "fundacion": {
+        "ano": 1705,
+        "fecha_exacta": "1705 (Erección de capilla por la Virgen de la Roca) / 1714 (Fundación canónica formal)",
+        "fundadores": "Capitán Francisco Pradilla y Ayerbe junto a campesinos devotos locales",
+        "contexto_historico": "Nació tras la aparición milagrosa de la imagen de la Virgen tallada por el agua en una laja de piedra a un labriego en 1702. Se erigió una ermita y a su alrededor los artesanos levantaron uno de los trazados urbanos coloniales mejor planificados de la Nueva Granada."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial santandereano en piedra ocre labrada a mano y tapia pisada",
+        "materiales_tecnicas": [
+          "Tapia pisada (tierra arcillosa apisonada con cajones de madera)",
+          "Piedra arenisca de Barichara color ocre-dorado",
+          "Teja de barro cocido española",
+          "Maderas nobles locales (guayacán y cedro) en dinteles y portones"
+        ],
+        "elementos_iconicos": [
+          "Catedral de la Inmaculada Concepción (cúpula inspirada en San Pedro del Vaticano)",
+          "Capilla de Santa Bárbara en la parte alta de la meseta",
+          "Cementerio de Barichara con tumbas y mausoleos esculpidos en piedra por picapedreros locales",
+          "Camino Real de Geo von Lengerke hacia Guane empedrado en el siglo XIX"
+        ],
+        "estado_conservacion": "Excepcional; preservación estricta de fachadas blancas, zócalos de piedra y cero cableado aéreo visible."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (Decreto 1654 de 1978)",
+          "Miembro fundador de la Red Turística de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Capital nacional del oficio tradicional del picapedrero y de la arquitectura de tierra viva. Su microclima seco y luz dorada lo han convertido en epicentro de rodajes cinematográficos y del papel artesanal hecho de fibra de fique."
+      },
+      "relato_estudiantil": "Caminar por Barichara es como pisar un cuadro pintado con tierra, sol y miel. Cada calle está armada con lajas de piedra de un amarillo cálido que cambia de color a medida que cae el atardecer sobre el imponente cañón del río Suárez. En este pueblo no verás edificios de cemento ni ruidos estridentes: los maestros picapedreros siguen tallando rocas a golpe de cincel y combo, como lo hacían sus abuelos, mientras en los talleres de papel se cocinan hojas de fique y piña para escribir versos. Al llegar al mirador del salto, con el viento fresco de la cordillera en la cara, entiendes por qué los indígenas Guanes lo bautizaron como el 'lugar para el descanso'."
+    },
+    {
+      "id": "villa_de_leyva",
+      "nombre": "Villa de Leyva",
+      "departamento": "Boyacá",
+      "region_natural": "Región Andina",
+      "lema": "El Vasto Lienzo de Cal, Fósiles del Cretácico y Balcones Coloniales",
+      "toponimia_indigena": {
+        "nombre_original": "Valle de Zaquenzipa",
+        "lengua_origen": "Muysc cubun (Chibcha)",
+        "etimologia_significado": "Zaquenzipa designaba las 'tierras del zaque' o el valle sagrado de los lagos de iguaque y los observatorios astronómicos solares muiscas.",
+        "pueblo_originario_asociado": "Confederación Muisca del Zaque de Hunza (Tunja)."
+      },
+      "fundacion": {
+        "ano": 1572,
+        "fecha_exacta": "12 de junio de 1572",
+        "fundadores": "Capitán Hernán Suárez de Villalobos por orden de Andrés Díaz Venero de Leyva (primer Presidente de la Real Audiencia)",
+        "contexto_historico": "Fundada como 'Villa de Nuestra Señora de Santa María de Leyva' para servir de granero y despensa de trigo, cebada y aceite de oliva a las tropas de la Real Audiencia y dar tierras a los soldados españoles desmovilizados."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial castellano andaluz de los siglos XVI y XVII",
+        "materiales_tecnicas": [
+          "Piedra de río redondeada (canto rodado) en empedrados de plazas y calles",
+          "Adobe y tapia pisada enlucida con cal viva blanca",
+          "Madera tallada en balcones de celosía morisca",
+          "Teja de barro artesanal"
+        ],
+        "elementos_iconicos": [
+          "Plaza Mayor de Villa de Leyva (14.000 m2, la plaza empedrada más grande de Colombia)",
+          "Casa Museo del Precursor Antonio Nariño (fallecido allí en 1823)",
+          "Convento de las Carmelitas Descalzas y Templo de San Agustín",
+          "Claustro del Santo Ecce Homo (1620) en el desierto circundante"
+        ],
+        "estado_conservacion": "Monumento Nacional intacto; rigurosa normatividad urbanística colonial."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (Ley 82 de 1954)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna del Congreso de las Provincias Unidas de la Nueva Granada de 1812; yacimiento paleontológico de talla mundial con fósiles marinos de 115 millones de años (Kronosaurus boyacensis)."
+      },
+      "relato_estudiantil": "En Villa de Leyva el tiempo parece haberse congelado en una tarde de 1600. Su Plaza Mayor es tan gigantesca que caben varios campos de fútbol sobre un suelo de piedras pulidas por donde caminaron Antonio Nariño y los astrónomos indígenas. Lo más fascinante es que bajo sus calles coloniales duerme un océano prehistórico: hace más de cien millones de años este valle estaba sumergido bajo el mar, y hoy los niños pueden visitar el esqueleto fosilizado de un temible reptil marino carnívoro de doce metros de largo, el Kronosaurio. De noche, el viento baja del páramo de Iguaque y las estrellas brillan con una claridad mágica sobre los tejados blancos."
+    },
+    {
+      "id": "santa_cruz_de_mompox",
+      "nombre": "Santa Cruz de Mompox",
+      "departamento": "Bolívar",
+      "region_natural": "Región Caribe",
+      "lema": "La Ciudad Valerosa entre los Brazos del Magdalena y la Filigrana de Oro",
+      "toponimia_indigena": {
+        "nombre_original": "Mompoj",
+        "lengua_origen": "Malibú (Familia lingüística de la ribera magdalenense)",
+        "etimologia_significado": "Nombrado en honor al aguerrido Cacique Mompoj de la nación indígena Malibú, señor de las tierras e islas del brazo oriental del río Magdalena.",
+        "pueblo_originario_asociado": "Pueblo Malibú, célebres alfareros ribereños y comerciantes fluviales de la depresión momposina."
+      },
+      "fundacion": {
+        "ano": 1537,
+        "fecha_exacta": "3 de mayo de 1537",
+        "fundadores": "Alonso de Heredia (hermano del adelantado Pedro de Heredia, fundador de Cartagena)",
+        "contexto_historico": "Establecida como enclave estratégico y puerto seguro de trasbordo entre la costa atlántica de Cartagena y el interior del Nuevo Reino de Granada a lo largo del Río Magdalena."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial sevillano y mudéjar adaptado al trópico fluvial ribereño",
+        "materiales_tecnicas": [
+          "Ladrillo cocido y calicanto (mortero de cal, arena y clara de huevo o baba de nopal)",
+          "Albarradas de contención fluvial para resistir inundaciones",
+          "Hierro forjado en ventanas y rejas voladas 'panzudas'",
+          "Patios interiores andaluces con aljibes y corredores de ventilación cruzada"
+        ],
+        "elementos_iconicos": [
+          "Iglesia de Santa Bárbara con su torre octogonal campanario y balcón barroco único",
+          "Calle de la Albarrada a lo largo del río Magdalena",
+          "Colegio Universidad de San Pedro Apóstol (fundado en 1809)",
+          "Cementerio de Mompox con mausoleos blancos y gatos guardianes"
+        ],
+        "estado_conservacion": "Excepcional; preservación del tejido urbano colonial fluvial sin parangón en América."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Patrimonio Histórico y Cultural de la Humanidad UNESCO (inscrito en 1995)",
+          "Monumento Nacional de Colombia (1959)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Primera ciudad de la Nueva Granada en declarar la Independencia Absoluta de España el 6 de agosto de 1810 ('ser libres o morir'). Simón Bolívar proclamó: 'Si a Caracas debo la vida, a Mompox debo la gloria'."
+      },
+      "relato_estudiantil": "Mompox parece una isla de fantasía suspendida en las aguas del río Magdalena. Para llegar allí hay que cruzar ciénagas donde revolotean garzas blancas y caimanes toman el sol en las orillas. Al caminar por la orilla de su albarrada, entre casas centenarias pintadas de amarillo y rojo, escucharás el tintineo tenue de los talleres de orfebrería: allí, manos pacientes estiran el oro y la plata en hilos tan finos como cabellos humanos para tejer peces, flores y lágrimas de filigrana. Fue en este pueblo valiente donde Bolívar reclutó a los cuatrocientos hombres que iniciaron la legendaria Campaña Admirable para liberar a Venezuela."
+    },
+    {
+      "id": "santa_fe_de_antioquia",
+      "nombre": "Santa Fe de Antioquia",
+      "departamento": "Antioquia",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad Madre de Antioquia y la Puerta Colgante de Occidente",
+      "toponimia_indigena": {
+        "nombre_original": "Valle de Ebéjico / Catío",
+        "lengua_origen": "Chocó / Catío",
+        "etimologia_significado": "Tierras ribereñas de los caciques Toné y Guarcama entre el río Cauca y el río Tonusco.",
+        "pueblo_originario_asociado": "Nutabes y Tahamíes, orfebres del oro de aluvión y cultivadores de maíz en terrazas."
+      },
+      "fundacion": {
+        "ano": 1541,
+        "fecha_exacta": "4 de diciembre de 1541",
+        "fundadores": "Mariscal Jorge Robledo",
+        "contexto_historico": "Fundada originalmente en el valle de Ebéjico y trasladada en 1546 a su asiento actual junto al río Tonusco, convirtiéndose en la primera capital histórica y sede episcopal de la provincia de Antioquia durante más de dos siglos y medio."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial clásico de los siglos XVI al XVIII con adaptaciones de calor seco",
+        "materiales_tecnicas": [
+          "Tapia pisada de gran grosor para aislamiento térmico",
+          "Bahareque de cañabrava",
+          "Piedra labrada en portadas y basamentos",
+          "Teja de barro y carpintería en maderas tropicales finas"
+        ],
+        "elementos_iconicos": [
+          "Catedral Basílica de la Inmaculada Concepción (estilo neoclásico renacentista)",
+          "Puente de Occidente sobre el río Cauca (inaugurado en 1895 por José María Villa, joya de la ingeniería de puentes colgantes mundiales)",
+          "Iglesia de Santa Bárbara (la más antigua de la ciudad, barroco en ladrillo y piedra)",
+          "Plazoleta de la Chinca y casas de amplios zaguanes"
+        ],
+        "estado_conservacion": "Muy alto; conjunto histórico homogéneo protegido."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (Ley 163 de 1959)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna fundacional del pueblo antioqueño, sede de las reales fundiciones de oro de la Colonia y cuna del prócer Juan del Corral, quien declaró la libertad de vientres en 1814."
+      },
+      "relato_estudiantil": "Antes de que existiera la moderna Medellín, la capital de las montañas era Santa Fe de Antioquia, conocida con reverencia como 'La Ciudad Madre'. Sus calles empedradas guardan el aire cálido del cañón del río Cauca, perfumado por el aroma dulce de las frutas de tamarindo caramelizadas que venden en las esquinas. Al salir del centro histórico te encuentras de frente con el majestuoso Puente de Occidente: una proeza de madera y cables de acero de casi 300 metros de largo tendida sobre el indomable río Cauca a finales del siglo XIX, construida por un ingeniero paisa graduado en Nueva Jersey que trabajó en el mismísimo puente de Brooklyn."
+    },
+    {
+      "id": "salamina",
+      "nombre": "Salamina",
+      "departamento": "Caldas",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad de la Luz y la Catedral de la Filigrana en Madera de Café",
+      "toponimia_indigena": {
+        "nombre_original": "Sabana de Encimadas",
+        "lengua_origen": "Ansermas / Carrapas",
+        "etimologia_significado": "Territorio ancestral de los bravos indígenas Carrapas y Pozos en las cuchillas cordilleranas caldenses.",
+        "pueblo_originario_asociado": "Carrapas, afamados por su orfebrería de pectorales de oro fino y cultivos en laderas."
+      },
+      "fundacion": {
+        "ano": 1825,
+        "fecha_exacta": "8 de junio de 1825",
+        "fundadores": "Fermín López, Juan José Ospina y colonos antioqueños de la gesta colonizadora",
+        "contexto_historico": "Surgió como puesto de avanzada clave de la Colonización Antioqueña hacia el sur, levantada sobre el filo de una colina escarpada para dominar visualmente los valles cafeteros."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Arquitectura de la Colonización Antioqueña (Bahareque de guadua con ebanistería artística)",
+        "materiales_tecnicas": [
+          "Guadua angustifolia (el 'acero vegetal' sismorresistente)",
+          "Bahareque encañado y empañetado con boñiga, cal y arcilla",
+          "Talla artística en madera de cedro y comino en calados de puertas, aleros y balcones",
+          "Teja de barro cocido"
+        ],
+        "elementos_iconicos": [
+          "Tallas y calados del maestro ebanista Eliseo Tangarife (verdadero virtuoso del siglo XIX)",
+          "Basílica Menor de la Inmaculada Concepción con torre de madera sin clavos",
+          "Pila o fuente de agua de la Plaza de Bolívar (traída de París en 1898, réplica de la de Versalles)",
+          "Bosque de Palmas de Cera del Valle de la Samaria (San Félix)"
+        ],
+        "estado_conservacion": "Excepcional; uno de los pueblos más puros del Paisaje Cultural Cafetero."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1982)",
+          "Patrimonio de la Humanidad UNESCO como parte del Paisaje Cultural Cafetero de Colombia (2011)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Conocida como 'La Ciudad de la Luz' por haber sido cuna de destacados poetas, pensadores, pedagogos y músicos caldenses en los siglos XIX y XX."
+      },
+      "relato_estudiantil": "Salamina se asienta como un nido de águilas sobre la cresta de una montaña andina. Cuando la niebla matutina se disipa, revela una fantasía de balcones de madera tallada con figuras de flores, pájaros y celosías que parecen encajes de novia hechos con gubia. Aquí, los artesanos del siglo XIX, liderados por un campesino genio llamado Eliseo Tangarife, aprendieron a doblar y calar la madera de cedro para hacer portones que son obras de arte irrepetibles. Muy cerca, en el corregimiento de San Félix, crece el místico Valle de la Samaria, donde miles de palmas de cera gigantes se elevan más de sesenta metros hacia las nubes entre el frío de la cordillera."
+    },
+    {
+      "id": "mongui",
+      "nombre": "Monguí",
+      "departamento": "Boyacá",
+      "region_natural": "Región Andina",
+      "lema": "El Remanso Franciscano de Calicanto y la Capital Balonera de América",
+      "toponimia_indigena": {
+        "nombre_original": "Mongüí",
+        "lengua_origen": "Muysc cubun (Chibcha)",
+        "etimologia_significado": "Significa 'Baño de la esposa del Cacique' o 'Tierra de la naciente sagrada'.",
+        "pueblo_originario_asociado": "Cacicazgo de Monguí, tributario del poderoso Sugamuxi (Señor del Templo del Sol de Sogamoso)."
+      },
+      "fundacion": {
+        "ano": 1601,
+        "fecha_exacta": "31 de diciembre de 1601",
+        "fundadores": "Padres Franciscanos fray Alonso Sánchez Chamorro y el corregidor Gómez de Mena",
+        "contexto_historico": "Establecido como pueblo de doctrina indígena para concentrar a los nativos de las tribus Monguí, Duzagá y Morcote bajo el apostolado franciscano."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial religioso franciscano andino de piedra rústica y calicanto",
+        "materiales_tecnicas": [
+          "Piedra labrada rústica de canteras locales",
+          "Calicanto con mezcla de cal apagada, arena y sangre de buey o melaza",
+          "Muros dobles de adobe para combatir el frío del páramo",
+          "Tejas de barro y forja artesanal"
+        ],
+        "elementos_iconicos": [
+          "Puente Real de Calicanto (siglo XVII sobre el río Morro, construido con cal, arena y sangre bovina)",
+          "Basílica de Nuestra Señora de Monguí y Convento Franciscano (1603-1702)",
+          "Cuadros coloniales del maestro Gregorio Vásquez de Arce y Ceballos",
+          "Páramo de Ocetá (considerado uno de los páramos más hermosos del mundo con la Ciudad de Piedra)"
+        ],
+        "estado_conservacion": "Invariable; armonía pétrea y techos de teja uniforme."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1975)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Santuario de peregrinación mariana colonial y epicentro industrial artesanal del cosido a mano de balones de fútbol profesionales desde los años 1930."
+      },
+      "relato_estudiantil": "¿Te imaginas cruzar un puente colonial de piedra construido hace 400 años con una mezcla secreta de cal, arena y sangre de toro para que nunca se caiga? Ese es el Puente de Calicanto en Monguí. Al atravesarlo, te encuentras con un pueblo de postal andina donde los abuelos visten ruana de lana virgen de oveja mientras en casi todas las casas se fabrican balones de fútbol cosidos puntada a puntada con hilo encerado. Y justo arriba del pueblo se encuentra el Páramo de Ocetá: un jardín sagrado muisca donde los frailejones plateados crecen entre laberintos de roca natural conocidos como la 'Ciudad de Piedra'."
+    },
+    {
+      "id": "jardin",
+      "nombre": "Jardín",
+      "departamento": "Antioquia",
+      "region_natural": "Región Andina",
+      "lema": "El Edén de los Balcones Floridos y el Vuelo del Gallito de Roca",
+      "toponimia_indigena": {
+        "nombre_original": "Doicura / Chamí",
+        "lengua_origen": "Emberá Chamí",
+        "etimologia_significado": "Territorio ancestral de selva de niebla regado por ríos cristalinos habitado por los indígenas Chamíes.",
+        "pueblo_originario_asociado": "Resguardo Indígena Emberá Chamí de Cristianía (Karmata Rúa), guardianes ancestrales de la lengua y el telar de chaquiras."
+      },
+      "fundacion": {
+        "ano": 1863,
+        "fecha_exacta": "23 de mayo de 1863",
+        "fundadores": "Indalecio Peláez y colonos antioqueños de Amagá y Envigado",
+        "contexto_historico": "Fundado en una hondonada fértil rodeada de cascadas y bosques de niebla durante la última fase de la Colonización Antioqueña hacia el Suroeste; los fundadores exclamaron al divisarlo: '¡Esto es un verdadero jardín!'."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Tradición paisa de colonización con explosión cromática en carpintería",
+        "materiales_tecnicas": [
+          "Bahareque encañado en guadua",
+          "Madera aserrada y pintada en contrastes vivos (verde biche, azul añil, amarillo y fucsia)",
+          "Tapia pisada en basamentos",
+          "Teja de barro artesanal"
+        ],
+        "elementos_iconicos": [
+          "Basílica Menor de la Inmaculada Concepción (joya neogótica construida en piedra labrada a mano de la cantera de Serranías)",
+          "Plaza de Bolívar empedrada con mesas y sillas de madera pintadas a mano con motivos florales",
+          "Cueva del Esplendor (cascada subterránea dentro de una caverna rocosa)",
+          "Casas patrimoniales con patios llenos de orquídeas y anturios"
+        ],
+        "estado_conservacion": "Excelente; centro histórico con estricta paleta cromática protegida."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1985)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Ejemplo paradigmático de la cultura del café del suroeste antioqueño, reserva del ave nacional Gallito de Roca (Rupicola peruvianus) y vecindad con el resguardo indígena Emberá de Cristianía."
+      },
+      "relato_estudiantil": "En Jardín da la sensación de que cada rincón fue decorado por un pintor alegre. En su plaza principal, considerada una de las más bellas de Antioquia, la gente se sienta a conversar en sillas de madera pintadas con flores multicolores mientras saborea un tinto recién colado bajo la sombra de la imponente iglesia neogótica construida con piedras que los campesinos subían en mulas. Y a escasos minutos del parque urbano, en medio de la espesura del bosque, se puede observar de cerca al bellísimo Gallito de Roca con su plumaje rojo carmesí brillante danzando entre helechos gigantes."
+    },
+    {
+      "id": "jerico",
+      "nombre": "Jericó",
+      "departamento": "Antioquia",
+      "region_natural": "Región Andina",
+      "lema": "La Atenas del Suroeste, Cuna de la Santa Colombiana y del Carriel de Cuero",
+      "toponimia_indigena": {
+        "nombre_original": "Piedras de Támesis / Cartama",
+        "lengua_origen": "Cartama / Caramanta",
+        "etimologia_significado": "Tierras altas dominadas por los caciques Cartamas, expertos en fundición de oro bajo y terrazas agrícolas.",
+        "pueblo_originario_asociado": "Cartamas y Chamíes."
+      },
+      "fundacion": {
+        "ano": 1850,
+        "fecha_exacta": "28 de septiembre de 1850",
+        "fundadores": "Santiago Santamaría Bermúdez de Castro",
+        "contexto_historico": "Fundado en las faldas de la cordillera durante la expansión agrícola cafetera de mitad del siglo XIX; Santamaría donó los terrenos para crear una ciudad modelo de cultura y religiosidad."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Republicano y colonial tardío antioqueño con influencia clásica",
+        "materiales_tecnicas": [
+          "Bahareque de guadua",
+          "Tapia pisada de gran grosor",
+          "Madera calada en aleros, puertas y ventanas de doble batiente",
+          "Teja de barro"
+        ],
+        "elementos_iconicos": [
+          "Catedral de Nuestra Señora de las Mercedes (monumental estilo neoclásico de ladrillo cocido a la vista)",
+          "Casa Natal de Santa Laura Montoya Upegui (primera santa canonizada de Colombia)",
+          "Calle de los Cien Pasos (gradería monumental que comunica barrios altos)",
+          "Talleres de guarnicionería donde se elabora a mano el 'Carriel Jericoano'"
+        ],
+        "estado_conservacion": "Excepcional; más de 16 templos y capillas conservados y trama urbana intacta."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Bien de Interés Cultural del Ámbito Nacional (2018)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna del carriel antioqueño tradicional (con sus 12 o 16 bolsillos y secretos, Patrimonio Cultural de la Nación) y cuna de Santa Laura Montoya, pionera pedagoga que dedicó su vida a la defensa de los derechos de los pueblos indígenas selváticos."
+      },
+      "relato_estudiantil": "Subir a Jericó es llegar a un balcón sobre las nubes del suroeste antioqueño. Conocido como 'La Atenas del Suroeste' por su devoción al estudio, la música y las letras, este municipio es el hogar del famoso carriel paisa: una cartera de cuero de vaca con pelos que parece un acordeón y tiene hasta 16 bolsillos secretos donde los arrieros guardaban desde cartas de amor hasta pepitas de oro y reliquias de santos. En sus calles empedradas nació también Laura Montoya, una maestra valiente que a lomo de mula se internó en las selvas de Urabá y el Chocó para defender la dignidad de los pueblos originarios."
+    },
+    {
+      "id": "guatape",
+      "nombre": "Guatapé",
+      "departamento": "Antioquia",
+      "region_natural": "Región Andina",
+      "lema": "El Pueblo de los Zócalos de Colores y el Monolito Gigante de la Piedra",
+      "toponimia_indigena": {
+        "nombre_original": "Guatapé",
+        "lengua_origen": "Tahamí / Chibcha septentrional",
+        "etimologia_significado": "Bautizado en honor al virtuoso Cacique Guatapé, cuyo nombre aludía a 'piedras y aguas mansas' o 'lugar de remanso entre peñascos'.",
+        "pueblo_originario_asociado": "Tahamíes, agricultores y expertos en la explotación del cristal de roca y oro aluvial."
+      },
+      "fundacion": {
+        "ano": 1811,
+        "fecha_exacta": "4 de octubre de 1811",
+        "fundadores": "Presbítero Don Ramón Atuesta y campesinos de la región",
+        "contexto_historico": "Fundado como poblado rural agrícola que a finales del siglo XX transformó su economía con la construcción del gran embalse hidroeléctrico de Guatapé-El Peñol."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Arquitectura popular tradicional con arte narrativo en altorrelieve (Los Zócalos)",
+        "materiales_tecnicas": [
+          "Zócalos modelados a mano en cemento y yeso en la base exterior de las fachadas",
+          "Pintura en esmaltes de altísima resistencia",
+          "Bahareque y mampostería tradicional",
+          "Cubiertas de teja de barro"
+        ],
+        "elementos_iconicos": [
+          "Los Zócalos narrativos (relatan la historia familiar, oficios, animales y leyendas en cada casa)",
+          "Plazoleta de los Zócalos con gradas multicolores y cafés",
+          "Piedra del Peñol (monolito batolito de 220 metros de altura con 702 escalones empotrados)",
+          "Templo de Nuestra Señora del Carmen"
+        ],
+        "estado_conservacion": "Óptimo; tradición viva que se renueva y expande anualmente."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Bien de Interés Cultural y Patrimonio Municipal y Departamental",
+          "Pueblo de Interés Turístico y Cultural Nacional"
+        ],
+        "relevancia_historica_cultural": "Fenómeno etnográfico único en el mundo de arte popular comunitario en las fachadas urbanas, iniciado a comienzos del siglo XX por don José María Parra y hoy convertido en sello identitario global."
+      },
+      "relato_estudiantil": "¿Te imaginas vivir en un pueblo donde cada casa cuenta una historia en la parte baja de su pared? En Guatapé no hay paredes aburridas: cada vivienda tiene un 'zócalo' esculpido y pintado con colores vivos donde puedes ver figuras de mulas con leña, girasoles, carros antiguos, barcos de pesca o notas musicales que representan el oficio y los sueños de la familia que vive allí. Y al fondo del paisaje, como un gigante dormido en medio de un lago azul brillante salpicado de islas verdes, se levanta la milenaria Piedra del Peñol: una roca gigantesca de granito que los aventureros suben a pie por más de 700 escalones para contemplar una de las panorámicas más asombrosas del planeta."
+    },
+    {
+      "id": "cienaga",
+      "nombre": "Ciénaga",
+      "departamento": "Magdalena",
+      "region_natural": "Región Caribe",
+      "lema": "La Capital del Realismo Mágico, el Salitre y la Memoria Bananera",
+      "toponimia_indigena": {
+        "nombre_original": "Aldea Grande de Kosina",
+        "lengua_origen": "Chimila (Ette Ennaka)",
+        "etimologia_significado": "Poblado aborigen 'Kosina' situado a orillas de la gran albufera de agua salobre que nutre de peces y manglares la costa.",
+        "pueblo_originario_asociado": "Chimilas (Ette Ennaka) y Tayronas costeros."
+      },
+      "fundacion": {
+        "ano": 1521,
+        "fecha_exacta": "1521 (avanzada del fraile Tomás Ortiz) / Refundación formal en 1755 como San Juan Bautista de la Ciénaga",
+        "fundadores": "Fray Tomás Ortiz y colonizadores de la gobernación de Santa Marta",
+        "contexto_historico": "Erigido sobre el antiguo asentamiento de pescadores indígenas como punto de control entre la bahía de Santa Marta y la desembocadura del Magdalena."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Republicano caribeño y ecléctico francés de la 'Época del Oro Bananero'",
+        "materiales_tecnicas": [
+          "Mampostería de ladrillo con yesería importada y cornisas ornamentales",
+          "Hierro colado traído de Europa en barcos de la United Fruit Company",
+          "Pisos de baldosín hidráulico con mosaicos geométricos",
+          "Altos techos de madera y zinc para disipar el calor tropical"
+        ],
+        "elementos_iconicos": [
+          "Templete de la Plaza del Centenario (inspirado en el Templo de Vesta de Roma)",
+          "Palacio Municipal y Palacio de la Marquesa de Torre Hoyos",
+          "Estación del Ferrocarril de Ciénaga (escenario de la Masacre de las Bananeras de 1928)",
+          "Monumento a los Mártires de las Bananeras del maestro Rodrigo Arenas Betancourt"
+        ],
+        "estado_conservacion": "Conjunto republicano protegido por el Ministerio de Cultura."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (Sector Histórico, 1996)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna del compositor Guillermo Buitrago (pionero de la música vallenata popular con guitarra), escenario histórico real que inspiró la huelga bananera de 'Cien años de soledad' de Gabriel García Márquez y epicentro del Festival Nacional del Caimán Cienaguero."
+      },
+      "relato_estudiantil": "Ciénaga es el lugar donde la historia de Colombia y la literatura de Gabriel García Márquez se abrazan frente a la brisa marina. Sus elegantes mansiones de estilo republicano, con balcones de hierro forjado y cúpulas doradas, cuentan la época en que el banano era llamado 'el oro verde'. Pero sus calles también custodian la memoria de los trabajadores de 1928 en la plaza de la estación del tren. Y cada mes de enero, el pueblo se transforma en una fiesta rítmica sin igual cuando todos bailan al son de la leyenda de la niña Tomasita y el caimán travieso al repique de tambores y guitarras cienagueras."
+    },
+    {
+      "id": "honda",
+      "nombre": "Honda",
+      "departamento": "Tolima",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad de los Puentes y la Gran Garganta Portuaria del Nuevo Reino",
+      "toponimia_indigena": {
+        "nombre_original": "Ondama",
+        "lengua_origen": "Panche / Ondama (Familia Caribe)",
+        "etimologia_significado": "Bautizada por los bravos indígenas Ondamas, que habitaban la confluencia del río Gualí con el Magdalena; alude a las honduras y remolinos del raudal rocoso fluvial.",
+        "pueblo_originario_asociado": "Ondamas y Panches, guerreros fluviales indómitos que defendían los valles del alto Magdalena."
+      },
+      "fundacion": {
+        "ano": 1560,
+        "fecha_exacta": "24 de agosto de 1560 (Día de San Bartolomé)",
+        "fundadores": "Capitán Francisco Núñez Pedroso",
+        "contexto_historico": "Establecida en el 'Salto de Honda', el punto infranqueable para los grandes barcos y champanes que subían por el Magdalena debido a los rápidos rocosos, obligando al trasbordo terrestre de toda la carga hacia Santafé de Bogotá."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial portuario andaluz y puentes de hierro de la Revolución Industrial",
+        "materiales_tecnicas": [
+          "Mampostería de calicanto y piedra de río en cuestas y calzadas",
+          "Acueductos y albarradas coloniales para contener las avenidas del río Gualí",
+          "Hierro remachado británico en los puentes colgantes",
+          "Teja de barro y amplios aleros de sombra"
+        ],
+        "elementos_iconicos": [
+          "Calle de las Trampas (callejón sinuoso empedrado con arquitectura militar y civil colonial)",
+          "Puente Navarro (inaugurado en 1899, el primer puente de hierro colgante construido en Suramérica)",
+          "Catedral de Nuestra Señora del Rosario (siglo XVII)",
+          "Museo del Río Magdalena y Puerto de Arrancaplumas"
+        ],
+        "estado_conservacion": "Centro histórico y puentes protegidos con alta integridad patrimonial."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1977)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Primer puerto fluvial del interior de Colombia durante cuatro siglos. Por allí ingresaron las imprentas, los pianos, las ideas de la Ilustración, la Expedición Botánica y los libertadores rumbo a la capital."
+      },
+      "relato_estudiantil": "Imagina una ciudad donde el río ruge entre piedras y más de cuarenta puentes de todas las épocas cruzan las aguas. Eso es Honda. Durante la Colonia no había aviones ni autopistas: todo lo que venía de Europa —desde libros de la independencia hasta campanas de iglesias— subía en barcos por el río Magdalena hasta chocar con el peligroso 'Salto de Honda'. Allí, en la empinada y misteriosa 'Calle de las Trampas', las recuas de mulas cargaban los baúles para trepar la cordillera hasta Bogotá. Cruzar hoy el centenario Puente Navarro, el primer puente colgante de hierro de toda Sudamérica, es sentir el pulso de los antiguos navegantes bajo tus pies."
+    },
+    {
+      "id": "giron",
+      "nombre": "San Juan de Girón",
+      "departamento": "Santander",
+      "region_natural": "Región Andina",
+      "lema": "El Monumento Blanco de Faroles, Patios de Tabaco y Murallas Coloniales",
+      "toponimia_indigena": {
+        "nombre_original": "Macaregua / Yariguíes",
+        "lengua_origen": "Yariguí / Guane",
+        "etimologia_significado": "Tierras de vega fértil bañadas por el río de Oro habitadas por parcialidades indígenas Yariguíes y Guanes.",
+        "pueblo_originario_asociado": "Yariguíes y Guanes."
+      },
+      "fundacion": {
+        "ano": 1631,
+        "fecha_exacta": "15 de enero de 1631",
+        "fundadores": "Don Francisco Mantilla de los Ríos",
+        "contexto_historico": "Fundada con el nombre de 'San Juan Bautista de Girón' con título de Villa concedido por la Real Audiencia para pacificar las incursiones de los indígenas Yariguíes que amenazaban el comercio del río Magdalena y asegurar los lavaderos de oro."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial español purista de los siglos XVII y XVIII",
+        "materiales_tecnicas": [
+          "Muros gruesos de tapia pisada encalados rigurosamente de blanco puro",
+          "Carpintería de puertas y ventanales pintada en tono marrón colonial o madera natural",
+          "Calles empedradas con canto rodado de río y canal central de desagüe",
+          "Techo de teja de barro cocido a dos aguas y faroles coloniales de hierro en las esquinas"
+        ],
+        "elementos_iconicos": [
+          "Basílica Menor San Juan Bautista (con su cúpula dorada)",
+          "Capilla de las Nieves (con altar de madera y pan de oro)",
+          "Puente de Calicanto de los Músicos sobre la quebrada Las Nieves",
+          "Malecón del Río de Oro y casas con patios empedrados de tabaco"
+        ],
+        "estado_conservacion": "Excepcional; preservación total del blanco y marrón en todas las manzanas centrales."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (Decreto 264 de 1959)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Capital histórica del cultivo y torcido artesanal del tabaco en Santander y enclave colonial mejor preservado del área metropolitana de Bucaramanga."
+      },
+      "relato_estudiantil": "Al entrar a San Juan de Girón parece que el mundo hubiera decidido pintarse únicamente de blanco puro, marrón oscuro y teja colorada. No encontrarás letreros de neón ni edificios altos: sus calles están hechas de piedras redondas traídas del río hace trescientos años, iluminadas al anochecer por románticos faroles coloniales de hierro forjado. En sus casas de amplios zaguanes, las artesanas aún enrollan a mano las hojas aromáticas del tabaco santandereano, mientras en la plaza los niños disfrutan de los famosos 'raspados' de hielo con jarabes de frutas naturales bajo el sol caliente del cañón."
+    },
+    {
+      "id": "socorro",
+      "nombre": "Socorro",
+      "departamento": "Santander",
+      "region_natural": "Región Andina",
+      "lema": "La Cuna de la Libertad de América y el Grito de los Comuneros",
+      "toponimia_indigena": {
+        "nombre_original": "Guane / Valle de Chanchón",
+        "lengua_origen": "Guane (Chibcha)",
+        "etimologia_significado": "Territorio ancestral de labranzas y tejedurías de la nación Guane en las faldas de la cordillera.",
+        "pueblo_originario_asociado": "Pueblo Guane."
+      },
+      "fundacion": {
+        "ano": 1683,
+        "fecha_exacta": "16 de junio de 1683",
+        "fundadores": "José de Archila y José Díaz Sarmiento",
+        "contexto_historico": "Surgió como una parroquia de labradores que compraron las tierras del cacique de Chanchón; en 1771 el Rey Carlos III le concedió el título de 'Muy Noble y Leal Villa del Socorro'."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial y republicano monumental en piedra y mampostería maciza",
+        "materiales_tecnicas": [
+          "Piedra labrada de cantería santandereana",
+          "Mampostería de ladrillo cocido de gran escala",
+          "Tapia pisada en casonas señoriales",
+          "Portadas de arco de medio punto en piedra maciza"
+        ],
+        "elementos_iconicos": [
+          "Basílica Menor de Nuestra Señora del Socorro (una de las iglesias construidas totalmente en piedra más altas del continente)",
+          "Plaza de Mercado (declarada Monumento Nacional por su audaz bóveda de hormigón armado de 1948)",
+          "Parque de la Independencia (sitio histórico donde Manuela Beltrán rompió el edicto de los impuestos reales en 1781)",
+          "Casa de la Cultura y Museo de los Comuneros"
+        ],
+        "estado_conservacion": "Centro monumental e histórico protegido."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1963)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna de la Insurrección de los Comuneros de 1781, la primera gran rebelión popular de masas contra el imperio español en América. Cuna de próceres como Antonia Santos y José Acevedo y Gómez."
+      },
+      "relato_estudiantil": "En la plaza del Socorro ocurrió el chispazo que encendió la libertad de toda una nación. Era un día de mercado de 1781 cuando una valiente mujer santandereana llamada Manuela Beltrán, indignada por los tributos excesivos de la corona española, avanzó entre la multitud y arrancó de un solo golpe el edicto de impuestos reales al grito de '¡Viva el Rey y muera el mal gobierno!'. Ese acto heroico inició la marcha de 20.000 comuneros hacia la capital. Caminar hoy frente a su gigantesca basílica de piedra labrada es respirar el espíritu indomable de la gente que se atrevió a soñar con una patria libre."
+    },
+    {
+      "id": "pasto",
+      "nombre": "San Juan de Pasto",
+      "departamento": "Nariño",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad Teológica al Pie del Volcán Galeras y Cuna del Barniz Mopa-Mopa",
+      "toponimia_indigena": {
+        "nombre_original": "Valle de Atriz",
+        "lengua_origen": "Quillacinga / Pasto",
+        "etimologia_significado": "El Valle de Atriz traduce en lengua quillacinga 'tierra de labranza entre ríos' o 'seno verde al pie de la montaña de fuego'.",
+        "pueblo_originario_asociado": "Quillacingas ('hombres nariz de luna') y Pastos."
+      },
+      "fundacion": {
+        "ano": 1537,
+        "fecha_exacta": "1537 (fundación inicial por Sebastián de Belalcázar) / Asentamiento definitivo en 1539 por Lorenzo de Aldana",
+        "fundadores": "Lorenzo de Aldana y Sebastián de Belalcázar",
+        "contexto_historico": "Establecida en el fértil valle interandino al pie del volcán Urcunina (hoy volcán Galeras) como ciudad bisagra entre el Virreinato del Perú y el Nuevo Reino de Granada."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Barroco colonial andino, tallado en madera sacra y republicano neoclásico",
+        "materiales_tecnicas": [
+          "Piedra volcánica andesítica del Galeras tallada en portadas y basamentos",
+          "Adobe y tapia pisada",
+          "Talla dorada en madera de cedro en retablos e imaginería de la Escuela Quiteña",
+          "Teja de barro artesanal"
+        ],
+        "elementos_iconicos": [
+          "Templo de San Juan Bautista (siglo XVI con púlpito barroco dorado)",
+          "Templo de San Felipe Neri y Santuario de Las Lajas (en su cercanía comarcana)",
+          "Plaza de Nariño con el monumento al Precursor",
+          "Talleres artesanales del Barniz de Pasto (resina vegetal de mopa-mopa)"
+        ],
+        "estado_conservacion": "Centro histórico con profusión de templos coloniales excepcionalmente conservados."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "El Barniz de Pasto Mopa-Mopa: Patrimonio Cultural Inmaterial de la Humanidad UNESCO (2020)",
+          "Carnaval de Negros y Blancos de Pasto: Patrimonio Inmaterial de la Humanidad UNESCO (2009)",
+          "Centro Histórico Protegido de Interés Nacional"
+        ],
+        "relevancia_historica_cultural": "Capital cultural del suroccidente andino, guardiana de la técnica prehispánica única en el planeta del Barniz de Pasto y epicentro del carnaval más alegre e integrador de Colombia."
+      },
+      "relato_estudiantil": "Al pie del imponente volcán Galeras descansa San Juan de Pasto, una ciudad de templos barrocos resplandecientes donde el arte brota literalmente de la selva. En los talleres familiares, los maestros aplican el milenario 'Barniz de Pasto': una resina vegetal llamada mopa-mopa que se extrae de árboles silvestres de la selva del Putumayo; los artesanos la mastican pacientemente con la boca, la hierven y la estiran con manos y dientes hasta convertirla en una tela elástica más delgada que un pétalo de rosa para decorar copas y cofres de madera con figuras de colores inalterables que duran siglos. Y en enero, sus calles se llenan de sonrisas, espuma y carruajes monumentales donde todos nos pintamos de negro y blanco para celebrar la igualdad humana."
+    },
+    {
+      "id": "popayan",
+      "nombre": "Popayán",
+      "departamento": "Cauca",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad Blanca de Colombia, Santuario de la Semana Mayor y Capital Gastronómica",
+      "toponimia_indigena": {
+        "nombre_original": "Pubén",
+        "lengua_origen": "Pubenense (Coconuco / Guambiano)",
+        "etimologia_significado": "Bautizada por el legendario Cacique Payán, líder supremo de la Confederación de Pubén, que dominaba la meseta y el curso alto del río Cauca.",
+        "pueblo_originario_asociado": "Pubenenses, Coconucos, Guambianos y Yanaconas."
+      },
+      "fundacion": {
+        "ano": 1537,
+        "fecha_exacta": "13 de enero de 1537",
+        "fundadores": "Sebastián de Belalcázar",
+        "contexto_historico": "Fundada como capital de la Gobernación de Popayán, una de las demarcaciones más ricas del imperio colonial español que abarcaba desde el Chocó hasta el norte del actual Ecuador."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial clásico señorial andaluz y barroco eclesiástico del siglo XVIII",
+        "materiales_tecnicas": [
+          "Muros dobles de ladrillo y adobe encalados anualmente de blanco níveo",
+          "Pórticos y arquerías de piedra sillar en claustros universitarios",
+          "Carpintería de madera noble en balcones continuos y portones con aldabas de bronce",
+          "Teja de barro española"
+        ],
+        "elementos_iconicos": [
+          "Torre del Reloj (símbolo cívico erigido entre 1673 y 1682 en la Plaza de Caldas)",
+          "Puente del Humilladero (monumental acueducto y calzada de 12 arcos de ladrillo sobre la quebrada del Molino)",
+          "El Morro del Tulcán (pirámide prehispánica ceremonial sobre la cual se alza la ciudad)",
+          "Claustros de Santo Domingo, San Francisco y La Encarnación (actual Universidad del Cauca)"
+        ],
+        "estado_conservacion": "Impecablemente reconstruida tras el terremoto de 1983; conjunto colonial blanco más homogéneo del país."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Procesiones de Semana Santa de Popayán: Patrimonio Cultural Inmaterial de la Humanidad UNESCO (2009)",
+          "Primera Ciudad Gastronómica de la UNESCO en América Latina (Red de Ciudades Creativas, 2005)",
+          "Monumento Nacional de Colombia (1959)"
+        ],
+        "relevancia_historica_cultural": "Cuna de sabios universales como Francisco José de Caldas, poetas como Guillermo Valencia y más de una decena de presidentes de la República."
+      },
+      "relato_estudiantil": "Popayán deslumbra por su pulcritud: cada casa, convento y templo está rigurosamente pintado de blanco níveo, haciendo que la luz del sol andino se refleje como si estuvieras en una ciudad de mármol. Durante la Semana Santa, sus calles empedradas huelen a incienso, cera y flores mientras desfilan tallas de santos de madera dorada traídas de Sevilla y Quito hace cuatrocientos años, portadas sobre los hombros de generaciones de cargueros devotos. Además, es un paraíso gastronómico: allí probarás las empanaditas de pipián con ají de maní, el dulce de carantanta y la refrescante bebida de aplanchados que hacen las delicias de cualquier visitante."
+    },
+    {
+      "id": "lorica",
+      "nombre": "Santa Cruz de Lorica",
+      "departamento": "Córdoba",
+      "region_natural": "Región Caribe",
+      "lema": "La Ciudad Antigua y Señorial del Sinú y el Espejo Mudéjar Libanés",
+      "toponimia_indigena": {
+        "nombre_original": "Orecobiche / Lorica",
+        "lengua_origen": "Zenú (Valle del Sinú)",
+        "etimologia_significado": "Bautizada en tributo al Cacique Lorica, señor Zenú que gobernaba los playones e islas cenagosas del bajo río Sinú.",
+        "pueblo_originario_asociado": "Pueblo Zenú, artífices de las redes hidráulicas de canales y la orfebrería de oro tumbaga en filigrana."
+      },
+      "fundacion": {
+        "ano": 1776,
+        "fecha_exacta": "3 de mayo de 1776",
+        "fundadores": "Antonio de la Torre y Miranda",
+        "contexto_historico": "Fundada formalmente en la isla de Gualí durante las expediciones borbónicas de reorganización de poblaciones dispersas de las sabanas del Caribe colonial."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Ecléctico mudéjar, árabe-sirio-libanés y republicano caribeño",
+        "materiales_tecnicas": [
+          "Ladrillo a la vista con yeserías decorativas de arcos de herradura moriscos",
+          "Hierro forjado en celosías orientales",
+          "Estructuras portuarias sobre el río Sinú",
+          "Tejas coloniales y pisos de mosaico hidráulico importado"
+        ],
+        "elementos_iconicos": [
+          "Mercado Público de Lorica (Monumento Nacional a orillas del río Sinú, de inspiración mudéjar y colores vibrantes)",
+          "Palacio Municipal o Edificio González",
+          "Parroquia de Santa Cruz de Lorica",
+          "Malecón ribereño del Sinú y casonas de inmigrantes árabes"
+        ],
+        "estado_conservacion": "Conjunto histórico ribereño protegido y revitalizado en el Malecón."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (Sector Histórico y Mercado, 1996)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna de los escritores Manuel Zapata Olivella y David Sánchez Juliao; principal puerto fluvial de la inmigración sirio-libanesa a finales del siglo XIX, dando pie a una fusión cultural sin igual en América."
+      },
+      "relato_estudiantil": "Caminar por Santa Cruz de Lorica es como viajar mágicamente al Oriente Medio sin salir del Caribe colombiano. A orillas del caudaloso río Sinú se levanta su bellísimo mercado público, un edificio de arcos moriscos y colores amarillo y rojo donde los canoeros descargan plátano y bocachico fresco mientras en los restaurantes se sirve kibbeh árabe, tahine y berenjenas rellenas junto a tradicionales sancochos de pescado. Fue aquí donde crecieron los grandes narradores de la afrocolombianidad y el folclor costeño, bajo la brisa fresca de un río que canta historias de tres continentes."
+    },
+    {
+      "id": "buga",
+      "nombre": "Guadalajara de Buga",
+      "departamento": "Valle del Cauca",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad Señora y el Santuario del Cristo de las Aguas del Milagro",
+      "toponimia_indigena": {
+        "nombre_original": "Valle de los Bugaes",
+        "lengua_origen": "Buga / Carib (Familia lingüística Caribe)",
+        "etimologia_significado": "Buga designaba a la valerosa nación guerrera de los indígenas Bugaes que habitaban las estribaciones de la cordillera Central hacia el río Cauca.",
+        "pueblo_originario_asociado": "Bugaes y Gorrones."
+      },
+      "fundacion": {
+        "ano": 1570,
+        "fecha_exacta": "1555 (asentamiento original) / 4 de marzo de 1570 (traslado a orillas del río de las Piedras)",
+        "fundadores": "Góngora y Rodrigo Díez de Fuenmayor",
+        "contexto_historico": "Establecida con el nombre de 'Guadalajara de Buga' por la Real Cédula de Felipe II, consolidándose como centro agropecuario y ganadero estratégico del valle del río Cauca."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial señorial del siglo XVIII y monumental republicano del siglo XX",
+        "materiales_tecnicas": [
+          "Ladrillo cocido y tapia pisada",
+          "Piedra de río en calzadas históricas",
+          "Madera tallada en aleros y portadas",
+          "Teja de barro y carpintería sacra de gran formato"
+        ],
+        "elementos_iconicos": [
+          "Basílica del Señor de los Milagros (monumento de peregrinación internacional, bendecida en 1907)",
+          "Iglesia de Santo Domingo y Capilla del Santo Cristo",
+          "Teatro Municipal de Buga",
+          "Estación del Ferrocarril del Pacífico y Academia de Historia"
+        ],
+        "estado_conservacion": "Centro histórico protegido con estricta delimitación patrimonial."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1959)",
+          "Red de Pueblos Patrimonio de Colombia",
+          "Principal santuario de turismo religioso y peregrinación de Colombia"
+        ],
+        "relevancia_historica_cultural": "Famosa en todo el continente por la leyenda del Cristo de las Aguas aparecido a una humilde lavandera indígena en el siglo XVI, y por su papel en las guerras de Independencia en el Valle del Cauca."
+      },
+      "relato_estudiantil": "Guadalajara de Buga, conocida cariñosamente como 'La Ciudad Señora', combina la paz de un claustro colonial con la alegría de millones de peregrinos de todo el mundo. La leyenda cuenta que en el siglo XVI una anciana lavandera indígena ahorró durante años para comprar un crucifijo; sin embargo, al ver a un vecino a punto de ir a la cárcel por deudas, le entregó todas sus monedas. Días después, mientras lavaba en las corrientes del río Guadalajara, un pequeño madero en forma de cruz flotó milagrosamente hasta sus manos, creciendo con el tiempo hasta convertirse en el venerado Señor de los Milagros. Su basílica de torres rosadas es hoy un faro de esperanza y tradición andina."
+    },
+    {
+      "id": "salento",
+      "nombre": "Salento",
+      "departamento": "Quindío",
+      "region_natural": "Región Andina",
+      "lema": "El Padre del Quindío, Umbral de la Palma de Cera y Balcones del Valle de Cocora",
+      "toponimia_indigena": {
+        "nombre_original": "Boquía / Quimbaya",
+        "lengua_origen": "Quimbaya",
+        "etimologia_significado": "Tierras de niebla y bosques de cera habitadas por los antiguos Quimbayas, famosos por su metalurgia dorada en poporos y pectorales.",
+        "pueblo_originario_asociado": "Pueblo Quimbaya y Pijaos de cordillera."
+      },
+      "fundacion": {
+        "ano": 1842,
+        "fecha_exacta": "5 de enero de 1842",
+        "fundadores": "Ramón Elías Palau, Antonio Marín y presidiarios de la colonia penal de Boquía",
+        "contexto_historico": "Surgió a raíz de la apertura y mantenimiento del histórico 'Camino del Quindío', la temible trocha cordillerana que conectaba a Bogotá con Popayán transitada por Humboldt y el Libertador Simón Bolívar."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Vernácula de la Colonización Antioqueña (Bahareque de guadua)",
+        "materiales_tecnicas": [
+          "Guadua angustifolia Kunth en vigas, esterillas y columnas",
+          "Bahareque empañetado con boñiga y tierra amarilla",
+          "Pintura en colores brillantes contrastados (azul, naranja, amarillo y rojo)",
+          "Teja de barro tradicional"
+        ],
+        "elementos_iconicos": [
+          "Calle Real (calle 6ª con tiendas de artesanías, cafés y balcones florecidos)",
+          "Mirador de Salento y Alto de la Cruz (panorámica del Valle de Cocora y del casco urbano)",
+          "Templo de Nuestra Señora del Carmen en la Plaza de Bolívar",
+          "Valle de Cocora con los bosques de Palma de Cera del Quindío (Ceroxylon quindiuense, Árbol Nacional)"
+        ],
+        "estado_conservacion": "Muy alto atractivo turístico y arquitectura vernácula celosamente conservada."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Patrimonio de la Humanidad UNESCO como parte del Paisaje Cultural Cafetero de Colombia (2011)",
+          "Municipio Patrimonio del Paisaje Cultural Cafetero"
+        ],
+        "relevancia_historica_cultural": "El municipio más antiguo del Quindío ('Municipio Padre') y custodio del santuario ecológico del Árbol Nacional de Colombia: la Palma de Cera más alta del mundo."
+      },
+      "relato_estudiantil": "Salento parece una fiesta pintada a mano en lo alto de la montaña. Sus casas de dos pisos hechas de guadua crujen suavemente al caminar sobre sus pisos de madera, mientras los balcones se desbordan de geranios rojos y morados. Al final de su famosa Calle Real, una escalera de madera te lleva al mirador donde se abre ante tus ojos el legendario Valle de Cocora: un paisaje donde la niebla acaricia las copas de las palmas de cera, las más altas del planeta, que se elevan sesenta metros hacia el cielo como gigantes que custodian el hogar del loro orejiamarillo."
+    },
+    {
+      "id": "filandia",
+      "nombre": "Filandia",
+      "departamento": "Quindío",
+      "region_natural": "Región Andina",
+      "lema": "La Hidalga Centinela del Quindío y el Nido de los Maestros Tejedores de Canastos",
+      "toponimia_indigena": {
+        "nombre_original": "Filia Andina",
+        "lengua_origen": "Latín / Quimbaya",
+        "etimologia_significado": "Bautizada poéticamente a partir del latín 'Filia' (Hija) y 'Andes' (Los Andes), es decir: 'Hija de los Andes', levantada en la colina que dominaba el territorio del Cacique Chincora.",
+        "pueblo_originario_asociado": "Cacicazgo Quimbaya."
+      },
+      "fundacion": {
+        "ano": 1878,
+        "fecha_exacta": "20 de agosto de 1878",
+        "fundadores": "Felipe Meléndez y colonos antioqueños",
+        "contexto_historico": "Fundada en la meseta de la 'Colina Iluminada' durante el apogeo colonizador para el cultivo intensivo de café y el aprovechamiento de los bosques de bejuco silvestre."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonización Antioqueña pura con el mayor índice de autenticidad en bahareque",
+        "materiales_tecnicas": [
+          "Guadua y maderas nativas en entramados sismorresistentes",
+          "Bahareque tradicional encalado",
+          "Balcones esquineros monumentales y ventanas de postigo",
+          "Teja de barro artesanal"
+        ],
+        "elementos_iconicos": [
+          "Mirador Colina Iluminada (torre de madera de 27 metros con vista a 360° de tres departamentos)",
+          "Barrio San José y Calle del Tiempo Detenido",
+          "Parroquia María Inmaculada (una de las más grandes construidas en bahareque y madera)",
+          "Centro de Interpretación del Bejuco y el Canasto"
+        ],
+        "estado_conservacion": "Excepcional; reconocida por la Organización Mundial del Turismo (OMT) como uno de los 'Best Tourism Villages' del mundo."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Patrimonio de la Humanidad UNESCO dentro del Paisaje Cultural Cafetero de Colombia (2011)",
+          "Best Tourism Village por la Organización Mundial del Turismo (OMT - 2023)"
+        ],
+        "relevancia_historica_cultural": "Cuna del arte del tejido en bejuco de tripeperro y chusque para elaborar los canastos cafeteros recolectores tradicionales de Colombia."
+      },
+      "relato_estudiantil": "Si quieres ver cómo era exactamente un pueblo cafetero hace un siglo, tienes que visitar Filandia. Allí no hay prisas: los viejos campesinos se saludan con sombrero y poncho en la plaza, mientras en el Barrio San José los artesanos tejen bejucos silvestres recolectados en el bosque de niebla de Barbas-Bremen para crear canastos tan fuertes que resisten cosechas enteras de café maduro. Al subir al mirador de la Colina Iluminada en un día despejado, puedes ver al mismo tiempo las cumbres nevadas del Parque Nacional de los Nevados y los valles verdes que se pierden hacia el Pacífico."
+    },
+    {
+      "id": "aguadas",
+      "nombre": "Aguadas",
+      "departamento": "Caldas",
+      "region_natural": "Región Andina",
+      "lema": "La Ciudad de las Brumas, Cuna del Pasillo Colombiano y del Sombrero de Iraca",
+      "toponimia_indigena": {
+        "nombre_original": "Pácora / Concuy",
+        "lengua_origen": "Armas / Concuy",
+        "etimologia_significado": "Tierras de las aguadas y nieblas habitadas por los guerreros Concuyes y Armas.",
+        "pueblo_originario_asociado": "Indígenas Armas y Concuyes."
+      },
+      "fundacion": {
+        "ano": 1808,
+        "fecha_exacta": "5 de julio de 1808",
+        "fundadores": "Narciso Estrada y labradores antioqueños de Sonsón y Abejorral",
+        "contexto_historico": "Establecido como posta de descanso y refugio de arrieros en la ruta escarpada entre Antioquia y las provincias del sur del río Chinchiná."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonización Antioqueña escalonada en laderas empinadas",
+        "materiales_tecnicas": [
+          "Bahareque de guadua con cimientos de piedra",
+          "Casas de varios niveles que aprovechan la pendiente del terreno",
+          "Balcones corridos con barandillas de macana",
+          "Tejas de barro cocido"
+        ],
+        "elementos_iconicos": [
+          "Centro Histórico con sus calles en cuesta y bruma vespertina",
+          "Templo de la Inmaculada Concepción",
+          "Pueblito Viejo (recreación de la aldea pionera)",
+          "Museo Nacional del Sombrero (homenaje a las tejedoras de iraca)"
+        ],
+        "estado_conservacion": "Monumento Nacional muy bien preservado en su trazado andino."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (2001)",
+          "Patrimonio de la Humanidad UNESCO dentro del Paisaje Cultural Cafetero (2011)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna del célebre Sombrero Aguadeño (tejido a mano con palma de iraca o toquilla con denominación de origen) y sede del Festival Nacional del Pasillo Colombiano."
+      },
+      "relato_estudiantil": "En Aguadas la niebla baja de la montaña como un manto blanco y suave que envuelve las casas al caer la tarde, razón por la cual todos la llaman 'La Ciudad de las Brumas'. En los zaguanes frescos, las laboriosas abuelas y jóvenes aguadeñas tejen con dedos veloces las finísimas hebras de la palma de iraca para crear el Sombrero Aguadeño, tan flexible y resistente que puede doblarse y guardarse en un bolsillo sin perder su forma original. Y cada año, sus teatros y plazas vibran con el virtuosismo de las guitarras, tiples y bandolas del Festival Nacional del Pasillo Colombiano."
+    },
+    {
+      "id": "la_playa_de_belen",
+      "nombre": "La Playa de Belén",
+      "departamento": "Norte de Santander",
+      "region_natural": "Región Andina",
+      "lema": "El Pesebre Blanco del Catatumbo y el Umbral de los Estoraques de Piedra",
+      "toponimia_indigena": {
+        "nombre_original": "Patoco / Arato",
+        "lengua_origen": "Barí / Motilón",
+        "etimologia_significado": "Territorio quebrado de areniscas y quebradas habitado por los indígenas Patocos y Cariachiles.",
+        "pueblo_originario_asociado": "Patocos y Barí."
+      },
+      "fundacion": {
+        "ano": 1862,
+        "fecha_exacta": "4 de diciembre de 1862",
+        "fundadores": "María Antonia Claro, Juan Esteban Vega y colonos de Ocaña",
+        "contexto_historico": "Nació como un pequeño caserío alrededor de un oratorio levantado en un paraje de arenas blancas que los arrieros llamaban 'La Playa'."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial campesino homogéneo de postal blanca y roja",
+        "materiales_tecnicas": [
+          "Muros de tapia pisada pintados rigurosamente de blanco cal",
+          "Zócalos, puertas y ventanas pintados uniformemente en color pardo rojizo",
+          "Calles peatonales adoquinadas con jardineras floridas",
+          "Tejas de barro tradicionales perfectamente alineadas"
+        ],
+        "elementos_iconicos": [
+          "Centro urbano homogéneo (considerado el pueblo más ordenado y limpio de Norte de Santander)",
+          "Área Natural Única Los Estoraques (monumentales columnas y castillos de roca erosionada por milenios)",
+          "Parroquia San José",
+          "Mirador de la Virgen del Carmen"
+        ],
+        "estado_conservacion": "Rigurosamente preservado; impecable orden estético."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (2005)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Joya arquitectónica del nororiente colombiano y puerta de acceso al fascinante paisaje geológico de Los Estoraques, una de las formaciones rocosas más singulares de América Latina."
+      },
+      "relato_estudiantil": "Llegar a La Playa de Belén es como abrir la puerta a un pesebre de tamaño real. Cada casa, sin excepción, tiene paredes blancas como la leche, puertas de madera color arcilla y techos de teja de barro perfectamente idénticos, con macetas de flores que adornan las calles empedradas sin un solo papel en el suelo. Y a pocos pasos del pueblo se levanta un paisaje sacado de otro planeta: Los Estoraques, un laberinto de torres, columnas y castillos gigantes esculpidos por el viento y el agua en la roca durante millones de años, donde el viento canta entre los cañones."
+    },
+    {
+      "id": "guaduas",
+      "nombre": "Villa de Guaduas",
+      "departamento": "Cundinamarca",
+      "region_natural": "Región Andina",
+      "lema": "La Cuna de la Pola, Parada del Camino Real y Huerto de la Expedición Botánica",
+      "toponimia_indigena": {
+        "nombre_original": "Guaduas",
+        "lengua_origen": "Panche (Caribe)",
+        "etimologia_significado": "Bautizada por los bosques de bambú americano o 'guadua' que cubrían el valle templado.",
+        "pueblo_originario_asociado": "Nación Panche, feroces guerreros que dominaban las laderas hacia el Magdalena."
+      },
+      "fundacion": {
+        "ano": 1572,
+        "fecha_exacta": "20 de abril de 1572",
+        "fundadores": "Fray Francisco de la Parra y don Andrés Díaz Venero de Leyva",
+        "contexto_historico": "Establecido como pueblo de descanso obligatorio en el escabroso Camino Real que unía al puerto de Honda con Santafé de Bogotá."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial de paso con grandes patios de mulas y casonas de teja",
+        "materiales_tecnicas": [
+          "Tapia pisada y bahareque de guadua",
+          "Grandes portones de zaguán para carruajes y caballerías",
+          "Piedra en calzadas del Camino Real",
+          "Teja de barro cocido"
+        ],
+        "elementos_iconicos": [
+          "Casa Natal de Policarpa Salavarrieta 'La Pola' (heroína mártir de la Independencia)",
+          "Convento de la Soledad (donde se hospedaron Mutis, Caldas, Bolívar y Humboldt)",
+          "Piedra Capira (mirador del cañón del Magdalena y de los volcanes nevados)",
+          "Plaza de la Constitución y Catedral de San Miguel Arcángel"
+        ],
+        "estado_conservacion": "Centro Histórico protegido por el Ministerio de Cultura."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1959)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Cuna de Policarpa Salavarrieta; centro clave de recolección y aclimatación de plantas medicinales durante la Real Expedición Botánica del sabio José Celestino Mutis."
+      },
+      "relato_estudiantil": "En Guaduas late el coraje de las mujeres que hicieron posible la libertad de Colombia. En una sencilla casa de tapia y guadua creció Policarpa Salavarrieta, 'La Pola', la joven espía patriota que desafió al virreinato español y fue fusilada por defender la independencia. Guaduas era además la parada obligada donde los sabios de la Expedición Botánica, con José Celestino Mutis a la cabeza, descansaban mientras clasificaban la quina y las orquídeas recién descubiertas. Subir al mirador de la Piedra Capira al atardecer te permite contemplar, a lo lejos, el majestuoso río Magdalena plateado y los tres nevados de la cordillera Central alzándose en el horizonte."
+    },
+    {
+      "id": "pore",
+      "nombre": "Pore",
+      "departamento": "Casanare",
+      "region_natural": "Región Orinoquía (Llanos Orientales)",
+      "lema": "La Capital Histórica de la Nueva Granada y las Ruinas de los Centauros de la Libertad",
+      "toponimia_indigena": {
+        "nombre_original": "Pore",
+        "lengua_origen": "Achagua / Sáliba",
+        "etimologia_significado": "Bautizada en honor al río Pore y a los clanes indígenas Achaguas que habitaban las vegas sabaneras del piedemonte.",
+        "pueblo_originario_asociado": "Pueblos Achagua, Sáliba y Guahibo."
+      },
+      "fundacion": {
+        "ano": 1644,
+        "fecha_exacta": "5 de noviembre de 1644",
+        "fundadores": "Adriano de Vargas y fray Jerónimo de Escobar",
+        "contexto_historico": "Fundada con el nombre de 'San José de Pore' como ciudad de avanzada de la gobernación de los Llanos y sede de las opulentas haciendas ganaderas y misiones jesuíticas coloniales."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Ruinas monumentales coloniales de piedra de calicanto y arquitectura llanera tradicional",
+        "materiales_tecnicas": [
+          "Mampostería de calicanto y ladrillo cocido con argamasa jesuítica",
+          "Murallones y cárceles coloniales de piedra",
+          "Bahareque y palma de moriche en viviendas campesinas",
+          "Calles amplias orientadas para recibir la brisa de la sabana"
+        ],
+        "elementos_iconicos": [
+          "Ruinas coloniales de calicanto (muros de los templos y colegios jesuíticos del siglo XVII y XVIII)",
+          "Túneles y prisiones subterráneas de la época realista",
+          "Monumento a los Lanceros y al Ejército Libertador de 1819",
+          "Centro de memoria histórica de la gesta libertadora"
+        ],
+        "estado_conservacion": "Ruinas históricas consolidadas y protegidas como sitio arqueológico nacional."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (2021 / Ley 1999 de 2019 que exalta su papel en el Bicentenario)",
+          "Capital de la Nueva Granada (declarada formalmente por el Congreso de las Provincias Unidas en 1818)",
+          "Red de Pueblos Patrimonio de Colombia"
+        ],
+        "relevancia_historica_cultural": "Pore fue la capital provisoria de la República libre en 1818, cuartel general donde Simón Bolívar y Francisco de Paula Santander organizaron el Ejército Libertador con los llaneros descalzos antes de emprender la ascensión del páramo de Pisba."
+      },
+      "relato_estudiantil": "Caminar entre las gigantescas paredes de calicanto derruidas de Pore es tocar los cimientos mismos de la patria. Pocos saben que este tranquilo pueblo llanero fue durante meses la capital oficial de Colombia. Aquí, en medio del calor de la sabana y el canto de las alcaravanes, Bolívar y Santander reunieron a miles de valientes jinetes llaneros armados con lanzas que nunca antes habían visto una montaña de hielo. Desde estas ruinas partieron los lanceros que vencieron en el Pantano de Vargas y en el Puente de Boyacá, demostrando que desde los llanos infinitos se forjó la libertad de todo el continente."
+    },
+    {
+      "id": "mariquita",
+      "nombre": "San Sebastián de Mariquita",
+      "departamento": "Tolima",
+      "region_natural": "Región Andina",
+      "lema": "La Cuna de la Botánica Americana y la Morada de los Mangos de Oro",
+      "toponimia_indigena": {
+        "nombre_original": "Marquetones",
+        "lengua_origen": "Panche / Marquetón (Caribe)",
+        "etimologia_significado": "Bautizada por los aguerridos indígenas Marquetones, señores de los ríos Guarinó y Gualí.",
+        "pueblo_originario_asociado": "Marquetones, Panches y Gualíes."
+      },
+      "fundacion": {
+        "ano": 1551,
+        "fecha_exacta": "28 de agosto de 1551",
+        "fundadores": "Capitán Francisco Núñez Pedroso",
+        "contexto_historico": "Fundada con el nombre de 'San Sebastián de Mariquita' por la riqueza de sus minas de oro y plata (Minas de Santa Ana y las Lajas), convirtiéndose en una de las ciudades mineras coloniales más ricas de la corona."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Colonial minero y religioso del siglo XVI al XVIII",
+        "materiales_tecnicas": [
+          "Piedra labrada de cantería y ladrillo cocido colonial",
+          "Tapia pisada en viviendas con grandes solares arbolados",
+          "Teja de barro y carpintería de guayacán",
+          "Rejas coloniales de hierro forjado"
+        ],
+        "elementos_iconicos": [
+          "Casa de la Segunda Expedición Botánica (donde José Celestino Mutis instaló su taller de ilustradores botánicos)",
+          "Ermita del Señor de los Milagros (siglo XVI con Cristo negro tallado en madera)",
+          "Templo de San Sebastián (siglo XVI, una de las iglesias más antiguas de Colombia)",
+          "Ruinas de la Casa de la Moneda y fundición real"
+        ],
+        "estado_conservacion": "Centro histórico y monumentos botánicos restaurados y protegidos."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Monumento Nacional de Colombia (1974)",
+          "Bien de Interés Cultural del Ámbito Nacional"
+        ],
+        "relevancia_historica_cultural": "Sede durante más de dos décadas de la Real Expedición Botánica del Nuevo Reino de Granada (1783-1808); morada final del adelantado Gonzalo Jiménez de Quesada, fundador de Bogotá, quien falleció aquí en 1579."
+      },
+      "relato_estudiantil": "Mariquita es un oasis perfumado por árboles de mango gigantescos donde nació la ciencia en Colombia. En 1783, el sabio gaditano José Celestino Mutis eligió este municipio por su clima cálido y su cercanía con la selva andina para instalar el cuartel general de la Real Expedición Botánica. En sus casonas de piedra, jóvenes pintores criollos pasaron años dibujando con tintes vegetales miles de láminas botánicas tan precisas que hoy se consideran joyas del arte mundial. Además, en este suelo descansa la memoria de Gonzalo Jiménez de Quesada, el conquistador que fundó Bogotá."
+    },
+    {
+      "id": "san_jacinto",
+      "nombre": "San Jacinto",
+      "departamento": "Bolívar",
+      "region_natural": "Región Caribe",
+      "lema": "La Tierra de la Hamaca Grande, las Gaitas Ancestrales y la Cerámica más Antigua",
+      "toponimia_indigena": {
+        "nombre_original": "Mahates / Zenú de los Montes de María",
+        "lengua_origen": "Malibú / Zenú",
+        "etimologia_significado": "Territorio ancestral de alfareros precolombinos en las colinas de los Montes de María.",
+        "pueblo_originario_asociado": "Zenúes y Malibúes; yacimiento arqueológico de Puerto Hormiga y San Jacinto 1 (cerámica de más de 5.000 años de antigüedad, la más antigua de América)."
+      },
+      "fundacion": {
+        "ano": 1776,
+        "fecha_exacta": "8 de agosto de 1776",
+        "fundadores": "Antonio de la Torre y Miranda",
+        "contexto_historico": "Fundado durante la expedición borbónica de reagrupamiento de comunidades libres en el corazón de las serranías de los Montes de María."
+      },
+      "arquitectura": {
+        "estilo_predominante": "Vernácula caribeña de montaña de los Montes de María",
+        "materiales_tecnicas": [
+          "Bahareque con cañabrava y palma amarga",
+          "Madera aserrada y teja de barro o zinc",
+          "Talleres artesanales abiertos con telares verticales de madera",
+          "Patios con árboles frutales de corozo y tamarindo"
+        ],
+        "elementos_iconicos": [
+          "Museo Comunitario de San Jacinto (custodio de vestigios arqueológicos milenarios)",
+          "Talleres de telares verticales de hamacas sanjacinteras multicolores",
+          "Templo de San Jacinto de Polonia en la plaza principal",
+          "Talleres de luthería donde se construyen gaitas hembra y macho de cardón y cera de abeja"
+        ],
+        "estado_conservacion": "Fuerte preservación del patrimonio inmaterial, artesanal y musical."
+      },
+      "valor_patrimonial": {
+        "declaratorias_monumentales": [
+          "Patrimonio Cultural de la Nación por sus saberes artesanales textiles y musicales",
+          "Cuna de 'Los Gaiteros de San Jacinto' (Premio Grammy Latino 2007)",
+          "Capital artesanal y folclórica de los Montes de María"
+        ],
+        "relevancia_historica_cultural": "Cuna indiscutible de la música de gaita (instrumento indígena prehispánico de tubo de cactus con cabeza de cera de abejas y pluma de pato) y del tejido en telar vertical de la emblemática 'Hamaca Grande'."
+      },
+      "relato_estudiantil": "Al compás del viento de los Montes de María suena una melodía hipnótica que te eriza la piel: es la gaita indígena, un instrumento milenario fabricado con el tronco seco de un cactus y una boquilla hecha con pluma de pato y cera de abejas silvestres. San Jacinto es la capital mundial de esta música y el hogar de 'Los Gaiteros de San Jacinto', legendarios abuelos que llevaron el folclor campesino a ganar un premio Grammy internacional. Al caminar por sus calles verás en cada patio a mujeres tejiendo con hilos de colores en telares de madera la famosa 'Hamaca Grande' cantada por Adolfo Pacheco, en una tierra que es símbolo vivo de alegría, resistencia y paz."
+    }
+  ],
+  "atlas_mitos_leyendas": [
+    {
+      "id": "yurupary",
+      "titulo": "La Leyenda de Yurupary",
+      "clasificacion": "Mito Cosmogónico y Leyenda Legisladora",
+      "region_geografica": "Región Amazonía",
+      "departamento_o_territorio": "Vaupés (Ríos Pira Paraná, Vaupés e Isana)",
+      "pueblo_o_cultura_origen": "Pueblos Tucano Oriental, Desano, Cubeo y Tariano",
+      "personajes_principales": [
+        "Yurupary (héroe mítico solar legislador, engendrado del jugo de la fruta de seje)",
+        "Seucy (la doncella pura de la tierra)",
+        "Los ancianos de la tribu y los iniciados de la Maloca"
+      ],
+      "relato_narrativo": "En los albores del tiempo, cuando una terrible peste acabó con todos los hombres maduros de la selva y las mujeres asumieron el gobierno de las tribus, la hermosa doncella Seucy comió distraídamente del fruto silvestre del árbol de seje y quedó embarazada de un rayo de sol. De su vientre nació Yurupary, un niño de una hermosura resplandeciente que al crecer trajo consigo las leyes eternas de convivencia, cacería, respeto a los espíritus de la selva y ceremonias sagradas.\n\nYurupary trajo del cosmos la flauta sagrada tallada de madera de palma de chonta, cuyo sonido imita la voz del trueno y el rugido de los espíritus ancestrales. Estableció el ritual del 'Dabucurí' (fiesta de ofrenda y reciprocidad) e instituyó que los secretos de las flautas del Yurupary debían ser custodiados rigurosamente por los hombres iniciados en la oscuridad de la Maloca; ninguna mujer ni persona no iniciada podía contemplarlas bajo pena de perder el juicio o transformar el equilibrio cósmico. Cuando Yurupary cumplió su misión legisladora en la tierra, ascendió al cielo envuelto en llamas sobre una colina de piedra, dejando grabado en la memoria de los pueblos amazónicos que la ley no se negocia y que la selva es un templo sagrado que exige equilibrio absoluto.",
+      "moraleja_o_sentido_pedagogico": "Enseña el valor sagrado del respeto a las normas comunitarias, la preservación de los ritos de paso y el equilibrio indispensable entre la sociedad humana y los recursos vivos de la selva.",
+      "valor_etnografico_simbolico": "Es la epopeya fundacional más importante de la Amazonía noroccidental. Declarada Patrimonio Inmaterial de la Humanidad por la UNESCO bajo la denominación de 'Saberes tradicionales de los chamanes jaguares de Yuruparí' en 2011.",
+      "elementos_naturales_asociados": [
+        "Palma de seje",
+        "Madera de chonta",
+        "Ríos de aguas negras (Pira Paraná y Vaupés)",
+        "Truenos y fuego celeste"
+      ]
+    },
+    {
+      "id": "furatena",
+      "titulo": "Furatena y el Origen de las Esmeraldas",
+      "clasificacion": "Mito Cosmogónico y de Metamorfosis Telúrica",
+      "region_geografica": "Región Andina",
+      "departamento_o_territorio": "Boyacá (Occidente de Boyacá, municipios de Muzo, Quípama y Otanche)",
+      "pueblo_o_cultura_origen": "Nación Indígena Muzo (Familia Caribe)",
+      "personajes_principales": [
+        "Are (dios supremo creador)",
+        "Fura (la mujer primordial, símbolo de la tierra y la pasión)",
+        "Tena (el hombre primordial, símbolo de la fuerza y la fidelidad)",
+        "Zarbi (el forastero de ojos extraños que buscaba la flor de la juventud eterna)"
+      ],
+      "relato_narrativo": "El dios supremo Are descendió a las orillas del río sagrado Minero y moldeó con greda dos figuras humanas: al varón lo llamó Tena y a la mujer Fura. Al insuflarles aliento de vida, les entregó el dominio de las montañas y les impuso una sola condición para conservar la juventud perpetua y la inmortalidad: mantenerse fieles y amarse sin mancillar su pacto sagrado.\n\nDurante siglos, Fura y Tena vivieron en absoluta dicha, poblando los valles de labranzas y cantos. Pero un día llegó a las tierras de Muzo un apuesto forastero llamado Zarbi, quien suplicó a Fura que le ayudara a encontrar una mística flor escondida en la cúspide de las cordilleras que concedía el perdón y el alivio de todos los dolores. Fura acompañó a Zarbi por los riscos prohibidos y, deslumbrada por sus palabras, rompió el voto de fidelidad. En ese instante, su cabello juvenil se cubrió de canas y las arrugas de la vejez surcaron su rostro: la sentencia de la muerte había caído sobre la humanidad.\n\nAl descubrir la traición, Tena no clamó venganza; preso de una tristeza infinita, se clavó un puñal en el pecho en la cima de la montaña. Desesperada por el remordimiento, Fura sostuvo el cuerpo inerte de su amado durante tres días y tres noches, derramando un llanto desgarrador. Sus lágrimas, al chocar contra las rocas y las entrañas de la arcilla negra, fueron transformadas por el dios Are en deslumbrantes esmeraldas verdes hidrotermales, mientras que su sangre de dolor dio origen a las corrientes turbulentas del río Minero. Conmovido por su sufrimiento final, Are transformó a Fura y a Tena en dos colosales peñascos de roca frente a frente, separados por el abismo del cañón, para que vigilen por toda la eternidad el santuario verde de las esmeraldas más bellas del mundo.",
+      "moraleja_o_sentido_pedagogico": "Reflexiona sobre la responsabilidad de los actos, la fragilidad de la lealtad y cómo el dolor humano puede transformarse simbólicamente en la belleza mineral más pura de la naturaleza.",
+      "valor_etnografico_simbolico": "Explica cosmogónicamente por qué Colombia posee las esmeraldas más codiciadas del planeta en el cinturón esmeraldífero oriental y exalta la majestuosidad de los cerros tutelares Fura y Tena, venerados como centinelas sagrados.",
+      "elementos_naturales_asociados": [
+        "Cerros Fura y Tena (picos rocosos de 500 y 840 metros de altura sobre el río)",
+        "Río Minero",
+        "Arcillas esquistosas negras",
+        "Esmeraldas verdes"
+      ]
+    },
+    {
+      "id": "goranchacha",
+      "titulo": "Goranchacha: El Hijo del Sol y el Profeta de Piedra",
+      "clasificacion": "Mito Heroico y Profecía Indígena",
+      "region_geografica": "Región Andina",
+      "departamento_o_territorio": "Boyacá (Tunja / Cercado Grande de los Santuarios)",
+      "pueblo_o_cultura_origen": "Confederación Muisca (Hunza)",
+      "personajes_principales": [
+        "Goranchacha (profeta y legislador solar, hijo virgen concebido por un rayo de Sué)",
+        "La doncella de Guachetá",
+        "El Zaque de Hunza y los sacerdotes Chyky"
+      ],
+      "relato_narrativo": "Cuenta la tradición de los cronistas de Indias que en el pueblo de Guachetá corría la profecía de que el dios Sol (Sué) engendraría un hijo en una doncella que se expusiera desnuda a sus primeros rayos al despuntar el alba. La hija del cacique cumplió el rito sagrado y, nueve meses después, dio a luz una enorme y reluciente esmeralda. La joven envolvió la piedra entre mantas de algodón y, a los pocos días, la joya cobró vida y se transformó en un niño vigoroso al que llamaron Goranchacha.\n\nAl llegar a la adultez, Goranchacha asumió la misión sagrada de reformar las costumbres morales y religiosas de la Confederación Muisca. Viajó por todo el altiplano con una comitiva ceremonial y un paje que llevaba una cola de animal sagrado. Al llegar a Hunza (actual Tunja), fue proclamado gobernante supremo tras deponer al zaque tiránico. Allí mandó edificar un templo circular colosal sostenido por gigantescas columnas de piedra arenisca acarreadas por miles de hombres desde canteras remotas a lo largo de decenas de leguas sin que tocaran el suelo.\n\nGoranchacha castigaba severamente el engaño, la cobardía y la desobediencia civil. Sin embargo, su templo no llegó a terminarse. Un día, reuniendo a su pueblo en el Cercado de los Santuarios, el profeta anunció con voz solemne una espantosa visión: predijo que muy pronto llegarían desde el oriente hombres extraños de piel blanca, rostros barbados y armaduras de metal, montados sobre fieras veloces, que profanarían los templos de Chiminigagua y someterían a los señores muiscas a la servidumbre. Tras pronunciar la profecía, Goranchacha se internó en una cueva secreta de las montañas andinas y desapareció para siempre sin dejar rastro de su muerte.",
+      "moraleja_o_sentido_pedagogico": "Alerta sobre la importancia de la rectitud moral, el respeto a la memoria espiritual de los pueblos y la trágica clarividencia de los líderes ancestrales ante la catástrofe de la Conquista.",
+      "valor_etnografico_simbolico": "Explica las misteriosas columnas cilíndricas de piedra descubiertas por arqueólogos en los predios de la Universidad Pedagógica y Tecnológica de Colombia (UPTC) en Tunja y demuestra la compleja teología solar muisca.",
+      "elementos_naturales_asociados": [
+        "Rayos solares de Sué",
+        "Esmeraldas sagradas",
+        "Columnas megalíticas de piedra",
+        "Cercado Grande de los Santuarios"
+      ]
+    },
+    {
+      "id": "bochica_tequendama",
+      "titulo": "Bochica y el Salto del Tequendama",
+      "clasificacion": "Mito Civilizador y de Restauración Ecológica",
+      "region_geografica": "Región Andina",
+      "departamento_o_territorio": "Cundinamarca (Sabana de Bogotá y Soacha)",
+      "pueblo_o_cultura_origen": "Confederación Muisca (Bacatá)",
+      "personajes_principales": [
+        "Bochica (maestro civilizador solar, de túnica blanca y barba dorada)",
+        "Chibchacum (dios protector de los agricultores y orfebres, de carácter vengativo)",
+        "Huitaca (diosa rebelde de la embriaguez, el placer desmedido y la noche)",
+        "Los pobladores muiscas de la Sabana de Bacatá"
+      ],
+      "relato_narrativo": "En tiempos remotos, los habitantes de la Sabana de Bacatá se entregaron al desorden moral y olvidaron las leyes y ofrendas a los dioses, incitados por la bella y rebelde diosa Huitaca. Furioso por la ingratitud humana, el dios Chibchacum decidió castigarlos haciendo llover torrencialmente día y noche sin descanso, desbordando los cauces de los ríos Funza (Bogotá) y Siecha. Las aguas anegaron las labranzas, cubrieron los poblados y obligaron a los sobrevivientes a refugiarse aterrorizados en las cimas de los cerros de Monserrate y Guadalupe, viendo la sabana convertida en un mar furioso.\n\nAl borde del exterminio, los ancianos y caciques clamaron al cielo pidiendo piedad. Fue entonces cuando un resplandor dorado iluminó el cielo encapotado y sobre un hermoso arcoíris apareció Bochica: un anciano sabio de piel clara, túnica blanca resplandeciente, larga barba dorada hasta la cintura y un báculo de oro macizo en su mano derecha.\n\nBochica contempló la angustia de su pueblo y, dirigiéndose hacia el extremo suroccidental donde las montañas de roca aprisionaban las aguas, alzó su báculo divino e impartió un golpe colosal contra la gigantesca muralla de piedra. La roca se partió de inmediato, abriendo un abismo vertiginoso por donde las aguas represadas se precipitaron rugiendo con furia en una caída de casi 160 metros de altura, dando origen al majestuoso Salto del Tequendama. La sabana volvió a secarse y sus suelos quedaron fértiles para la agricultura. Como castigo, Bochica convirtió a Huitaca en lechuza nocturna y condenó a Chibchacum a cargar para siempre sobre sus hombros el peso del planeta Tierra; cada vez que Chibchacum se cansa y cambia de hombro, la tierra tiembla en las cordilleras de Colombia.",
+      "moraleja_o_sentido_pedagogico": "Promueve la sensatez, la sabiduría civilizatoria y el valor del conocimiento para superar los desastres naturales mediante obras en beneficio de la comunidad.",
+      "valor_etnografico_simbolico": "Mito fundacional de la geografía hídrica de la Sabana de Bogotá y explicación cosmológica muisca de los terremotos y del origen geológico del Salto del Tequendama.",
+      "elementos_naturales_asociados": [
+        "Salto del Tequendama (catarata de 157 metros)",
+        "Río Bogotá (Funza)",
+        "Arcoíris sagrado (Cuchavira)",
+        "Terremotos andinos"
+      ]
+    },
+    {
+      "id": "bachue_iguaque",
+      "titulo": "Bachué y la Laguna de Iguaque: El Origen de la Humanidad",
+      "clasificacion": "Mito Antropogónico y de Maternidad Cósmica",
+      "region_geografica": "Región Andina",
+      "departamento_o_territorio": "Boyacá (Laguna de Iguaque, municipios de Villa de Leyva y Chíquiza)",
+      "pueblo_o_cultura_origen": "Confederación Muisca",
+      "personajes_principales": [
+        "Bachué ('la de los pechos generosos', madre nutricia de la humanidad)",
+        "El niño sagrado (su compañero e hijo, futuro padre de los pueblos)",
+        "Las tribus muiscas descendientes"
+      ],
+      "relato_narrativo": "En una época en que la tierra estaba yerma, muda y despoblada, las gélidas y transparentes aguas de la Laguna de Iguaque, enclavada en lo más alto del páramo andino de Boyacá, comenzaron a agitarse suavemente. De la superficie surgió una mujer de belleza sobrehumana llamada Bachué ('la de los pechos generosos'), llevando de la mano a un niño de unos tres años de edad.\n\nBachué descendió con el infante al valle templado y construyó una choza. Cuando el niño alcanzó la madurez, se desposaron y comenzaron a recorrer los campos y valles. En cada viaje, Bachué daba a luz en cada parto a cuatro y seis hijos a la vez, poblando vertiginosamente todos los rincones del altiplano. Pero Bachué no solo engendró a la especie humana: les enseñó a sembrar el maíz y la quinua, a moldear vasijas de barro, a tejer mantas de algodón blanco decoradas con tintes de achiote, a elaborar tunjos de oro y a practicar la paz, la veneración a los dioses y el respeto entre vecinos.\n\nMuchos años después, cuando la tierra estuvo colmada de aldeas prósperas y los dos fundadores se hicieron ancianos de cabello blanco y andar encorvado, Bachué convocó a todos sus hijos y descendientes. Con lágrimas de gratitud, pronunció un último discurso encomendándoles la concordia y el amor a la tierra. Luego, acompañada por su esposo, caminó de regreso a las orillas frías de la sagrada Laguna de Iguaque. Al borde de las aguas, ambos cuerpos se transformaron en dos majestuosas serpientes cósmicas que se sumergieron para siempre en las profundidades de la laguna, convirtiéndose en espíritus tutelares que cuidan las fuentes de agua y la fertilidad de las cosechas.",
+      "moraleja_o_sentido_pedagogico": "Honra el origen sagrado de la vida, el liderazgo sabio y protector de las mujeres en la transmisión de la cultura y la obligación moral de vivir en armonía comunitaria.",
+      "valor_etnografico_simbolico": "Piedra angular de la cosmovisión muisca. Establece a las lagunas glaciares de páramo como úteros sagrados que nunca deben ser profanados ni desecados.",
+      "elementos_naturales_asociados": [
+        "Laguna sagrada de Iguaque",
+        "Frailejones y niebla de páramo",
+        "Serpiente sagrada de agua",
+        "Cultivos de maíz andino"
+      ]
+    },
+    {
+      "id": "la_madremonte",
+      "titulo": "La Madremonte: Guardiana de las Selvas y los Manantiales",
+      "clasificacion": "Leyenda Ecológica y de Protección Telúrica",
+      "region_geografica": "Región Andina y Vertientes Montañosas de Colombia",
+      "departamento_o_territorio": "Antioquia, Caldas, Tolima, Huila, Cundinamarca y Santander",
+      "pueblo_o_cultura_origen": "Folclor mestizo y campesino andino (con raíces indígenas Panches y Pijaos)",
+      "personajes_principales": [
+        "La Madremonte (madre selva personificada, mujer gigantesca vestida de hojas vivas y musgo)",
+        "Taladores ilegales, cazadores furtivos y acaparadores de tierra"
+      ],
+      "relato_narrativo": "Cuentan los viejos leñadores y campesinos de la cordillera que en lo más profundo de las selvas vírgenes y los bosques de niebla habita una mujer corpulenta y misteriosa que rige el destino de las montañas: la Madremonte. No viste ropas de tela, sino un manto tupido de hojas verdes, musgo húmedo, lianas silvestres y flores de zarcillo; su sombrero es una enredadera viva de bejucos que cubre su rostro, del cual solo asoman unos ojos brillantes como luciérnagas y colmillos que semejan raíces milenarias.\n\nLa Madremonte duerme en las cabeceras de los manantiales y se baña plácidamente bajo las cascadas cristalinas. Es la protectora implacable de la fauna y la flora. Cuando siente el filo de las hachas y motosierras talando árboles centenarios sin permiso, o cuando ve a cazadores codiciosos disparar a venados tiernos o guartinajas preñadas, su furia se desata como una fuerza elemental: se arroja furiosa a las aguas de las quebradas, enturbiándolas con lodo y hojas podridas, provocando crecientes e inundaciones violentas que destruyen las cercas de los terratenientes invasores.\n\nA los hombres perversos que destruyen los bosques o se pelean por linderos de tierra, la Madremonte les tiende emboscadas invisibles: les silba desde cuatro rumbos a la vez, cambia los senderos del monte y hace que la selva se cierre sobre ellos, extraviándolos durante días en lodazales impenetrables donde sufren fiebres delirantes hasta que aprenden a respetar el bosque sagrado.",
+      "moraleja_o_sentido_pedagogico": "Alerta ética sobre los peligros de la deforestación desmedida, el extractivismo voraz y la destrucción del agua, recordando que la naturaleza tiene límites y mecanismos implacables de defensa.",
+      "valor_etnografico_simbolico": "Personificación animista de la selva tropical húmeda andina como sujeto vivo con derechos implícitos en el imaginario popular rural.",
+      "elementos_naturales_asociados": [
+        "Nacimientos de agua y manantiales",
+        "Bosques de niebla y líquenes",
+        "Avenidas torrenciales y borrascas",
+        "Musgos y bejucos"
+      ]
+    },
+    {
+      "id": "el_mohan",
+      "titulo": "El Mohán: El Señor de las Aguas y los Remolinos del Magdalena",
+      "clasificacion": "Leyenda Anfibio-Telúrica y Chamánica",
+      "region_geografica": "Región Andina (Valle del Alto y Medio Magdalena)",
+      "departamento_o_territorio": "Tolima, Huila, Cundinamarca y Caldas",
+      "pueblo_o_cultura_origen": "Tradición ribereña mestiza y aborigen Pijao/Panche",
+      "personajes_principales": [
+        "El Mohán o Poira (antiguo chamán inmortal, ser anfibio de largas cabelleras)",
+        "Lavanderas de los ríos",
+        "Pescadores artesanales y canoeros"
+      ],
+      "relato_narrativo": "A orillas del gran río de la Magdalena, entre cuevas secretas cubiertas de arena dorada y charcas profundas donde el agua gira en remolinos traicioneros, habita el Mohán, también llamado el Poira. Quienes afirman haberlo visto lo describen como un anciano vigoroso de tez cobriza quemada por el sol, baja estatura pero complexión fornida, con una cabellera enmarañada y barba larguísima que le llega hasta los tobillos, uñas afiladas como garras de nutria y ojos incandescentes que brillan en la penumbra como brasas de carbón.\n\nEl Mohán es un viejo hechicero indígena que, ante la llegada de los conquistadores españoles, se refugió en las profundidades subacuáticas cargando sus tesoros de oro y se hizo inmortal mediante artes mágicas. Pasa las horas sentado sobre enormes lajas de piedra soleándose, tocando una pequeña guitarra o flauta de caña y fumando gruesos tabacos chicotes cuya brasa nunca se apaga, despidiendo un humo espeso que se confunde con la bruma del río.\n\nEs el amo absoluto de los cardúmenes de peces: si los pescadores son respetuosos, le dejan ofrendas de tabaco, aguardiente y salitre sobre las piedras, y él les entrega canoas colmadas de bocachicos y nicuros en las subiendan; pero si usan dinamita o redes prohibidas que matan a los alevines, el Mohán les enreda los anzuelos en los troncos sumergidos, vuelca sus canoas en los remolinos y hunde a los infractores. Asimismo, siente debilidad por las jóvenes lavanderas de cabellos largos y hermosos: cuando bajan a enjuagar ropa a la orilla, las hechiza con sus serenatas acuáticas y las arrastra a sus palacios sumergidos.",
+      "moraleja_o_sentido_pedagogico": "Regula éticamente las prácticas pesqueras tradicionales, sancionando la pesca destructiva y promoviendo el respeto reverencial a los peligros de los ríos caudalosos.",
+      "valor_etnografico_simbolico": "Supervivencia de la figura sagrada del 'Mohán' (chamán o sacerdote médico indígena) que en la colonia fue demonizado y transformado en leyenda ribereña de custodia acuática.",
+      "elementos_naturales_asociados": [
+        "Río Magdalena",
+        "Tabaco de hoja y humo",
+        "Remolinos fluviales y piedras lajas",
+        "Subienda de peces (bocachicos y bagres)"
+      ]
+    },
+    {
+      "id": "el_hombre_caiman",
+      "titulo": "El Hombre Caimán de Plato",
+      "clasificacion": "Leyenda de Metamorfosis y Sanción Social",
+      "region_geografica": "Región Caribe",
+      "departamento_o_territorio": "Magdalena (Municipio de Plato y riberas del bajo Magdalena)",
+      "pueblo_o_cultura_origen": "Folclor ribereño costeño / mestizaje afro-indígena",
+      "personajes_principales": [
+        "Saúl Montenegro (pescador y pícaro ribereño)",
+        "El brujo chamán de la Alta Guajira",
+        "Las lavanderas del caño",
+        "La madre de Saúl"
+      ],
+      "relato_narrativo": "En el municipio ribereño de Plato, a orillas del río Magdalena, vivía a mediados del siglo XX un hombre mujeriego y desocupado llamado Saúl Montenegro, cuya única pasión era espiar a escondidas a las muchachas del pueblo cuando iban a bañarse desnudas a las aguas mansas del caño. Temiendo ser descubierto a palos por los hermanos y padres de las jóvenes, Saúl viajó a las serranías de la Alta Guajira en busca de un viejo brujo versado en encantamientos antiguos.\n\nEl brujo le preparó dos pócimas mágicas guardadas en frascos de vidrio: un líquido rojo que, al untárselo en el cuerpo, lo transformaba inmediatamente en un caimán de río de piel escamosa para deslizarse bajo el agua sin levantar sospechas, y un líquido blanco que, al ser vertido sobre su lomo, le devolvía instantáneamente su forma humana original. Durante meses, con la complicidad de un amigo que sostenía el frasco en la orilla, Saúl disfrutó de su ardid nadando entre las lavanderas, quienes exclamaban admiradas por la docilidad del reptil.\n\nSin embargo, un fatídico mediodía, el amigo de Saúl no pudo acompañarlo y envió a otro compañero inexperto. Cuando Saúl, convertido en caimán, salió a la orilla del caño pidiendo su porción mágica, el nuevo ayudante se aterrorizó ante el tamaño de la fiera y soltó el frasco de líquido blanco; la botella se estrelló contra las piedras y solo unas pocas gotas salpicaron accidentalmente la cabeza de Saúl. En un segundo, su cabeza volvió a ser la de un hombre con ojos asustados, pero todo su cuerpo quedó petrificado para siempre como un caimán de garras y cola reptiliana. Rechazado con horror por su pueblo y perseguido por los cazadores, el Hombre Caimán huyó nadando aguas abajo por el río Magdalena hacia Bocas de Ceniza, consolado únicamente por su anciana madre, quien le llevaba queso y pan a las orillas solitarias hasta el día de su muerte.",
+      "moraleja_o_sentido_pedagogico": "Condena el voyerismo, la pérdida del respeto a la intimidad ajena y la transgresión irresponsable de los límites humanos mediante ardides deshonestos.",
+      "valor_etnografico_simbolico": "Icono festivo de la cultura costeña ribereña, celebrado anualmente en el 'Festival del Hombre Caimán' en Plato, y recogido en la célebre canción vallenata de José María Peñaranda.",
+      "elementos_naturales_asociados": [
+        "Caimán aguja del Magdalena (Crocodylus acutus)",
+        "Caños cenagosos de Plato",
+        "Pociones vegetales de La Guajira",
+        "Desembocadura en Bocas de Ceniza"
+      ]
+    },
+    {
+      "id": "la_patasola",
+      "titulo": "La Patasola: El Grito Solitario de las Selvas",
+      "clasificacion": "Leyenda Fantástica de Advertencia y Moral Campesina",
+      "region_geografica": "Región Andina y Vertiente Pacífica",
+      "departamento_o_territorio": "Tolima, Huila, Antioquia, Valle del Cauca y Cauca",
+      "pueblo_o_cultura_origen": "Tradición oral campesina andina",
+      "personajes_principales": [
+        "La Patasola (espectro femenino de una sola pierna que remata en pezuña de fiera)",
+        "Cazadores nocturnos, leñadores infieles y caminantes solitarios"
+      ],
+      "relato_narrativo": "En las espesuras de las selvas vírgenes y las lomas escarpadas de la cordillera habita uno de los espantos más temidos por arrieros y cazadores: la Patasola. La leyenda cuenta que en vida fue una mujer hermosa pero veleidosa que traicionó a su esposo campesino con el patrón de la hacienda. Al descubrirlos juntos en el maizal, el marido cegado por la furia cercenó de un solo tajo de machete una de las piernas de su esposa y la abandonó en la selva, donde la mujer murió desangrada, transformándose su espíritu en un alma en pena implacable.\n\nLa criatura vaga por los montes apoyada sobre una única pierna monstruosa que termina en una pezuña de fiera o pie invertido para despistar a sus perseguidores. Tiene el cabello ensortijado hasta los ojos, pechos caídos, boca grande con colmillos salientes y brazos alargados terminados en garras. A pesar de tener una sola extremidad, se desplaza a saltos descomunales más rápidos que el galope de un ciervo, subiendo laderas inaccesibles.\n\nPara atrapar a sus víctimas en la espesura de la noche, la Patasola apela al engaño: imita a la perfección el llanto lastimero de un bebé abandonado o los gemidos de auxilio de una doncella extraviada. Cuando los cazadores acuden conmovidos a prestar ayuda, el espectro se abalanza sobre ellos con su figura aterradora, los abraza con fuerza asfixiante y los chupa o los despeña en abismos profundos, castigando a quienes vagan de noche con malos pensamientos.",
+      "moraleja_o_sentido_pedagogico": "Previene a los jóvenes contra la infidelidad conyugal, el abandono familiar y la imprudencia de adentrarse de noche en zonas selváticas sin el debido respeto.",
+      "valor_etnografico_simbolico": "Mito de frontera agrícola que encarna el terror de los colonos del siglo XIX ante los peligros reales de la selva virgen y las fracturas morales de la vida comunitaria.",
+      "elementos_naturales_asociados": [
+        "Maleza espesa y trochas selváticas",
+        "Huellas invertidas en el barro",
+        "Abismos cordilleranos",
+        "Gritos nocturnos de animales de monte"
+      ]
+    },
+    {
+      "id": "el_silbon",
+      "titulo": "El Silbón de los Llanos: El Espectro del Saco de Huesos",
+      "clasificacion": "Leyenda de Terror y Justicia Filial",
+      "region_geografica": "Región Orinoquía (Llanos Orientales)",
+      "departamento_o_territorio": "Arauca, Casanare y Vichada (compartida con los llanos venezolanos)",
+      "pueblo_o_cultura_origen": "Folclor llanero tradicional colombo-venezolano",
+      "personajes_principales": [
+        "El Silbón (joven parricida condenado a vagar como espectro gigante cargando los huesos de su padre)",
+        "El padre asesinado",
+        "El abuelo justiciero y el perro 'Tiznado'",
+        "Borrachos, parranderos y vagabundos de sabana"
+      ],
+      "relato_narrativo": "En las inmensas sabanas de los Llanos Orientales, donde la noche cubre los esteros con un silencio denso, el viento suele traer un sonido que paraliza la sangre: un silbido tétrico, melodioso y penetrante que entona con precisión matemática las notas de la escala musical: do, re, mi, fa, sol, la, si.\n\nCuenta la historia que este espanto fue en vida un muchacho consentido y desalmado que jamás aprendió a trabajar ni a respetar a sus progenitores. Un día, al exigir a su padre que cazara una venada para calmar su capricho gastronómico, el padre regresó al rancho con las manos vacías por falta de presas. Enfurecido, el hijo se abalanzó sobre su propio padre y lo asesinó a sangre fría en la sabana, arrancándole las vísceras. Al descubrir el espantoso crimen, el abuelo del muchacho ató al asesino a un poste de guayacán, lo azotó sin descanso, frotó ají picante sobre sus heridas y le azuzó al perro rabioso 'Tiznado' para que lo persiguiera por toda la eternidad, maldiciéndolo a cargar para siempre en un saco de fique los huesos de su padre.\n\nEl Silbón se convirtió en un gigante huesudo de más de seis metros de altura que camina sobre las copas de los árboles de moriche. Su silbido encierra un engaño aterrador: cuando se escucha fuerte y nítido cerca de ti, significa que el Silbón está lejos en la sabana; pero cuando el silbido parece remoto, débil y apagado, ¡cuidado!, porque el espanto está parado exactamente a tu espalda. Suele llegar a los ranchos a la medianoche a contar los huesos de su saco; si nadie lo escucha, una persona de la casa amanece muerta al día siguiente.",
+      "moraleja_o_sentido_pedagogico": "Máxima advertencia moral llanera sobre el respeto sagrado a los padres, la condena del crimen filial y los peligros del vicio y la parranda irresponsable.",
+      "valor_etnografico_simbolico": "Pieza cumbre del folclor llanero, transmitida en coplas, romances y poemas criollos que acompañan las noches de vela en los hatos ganaderos.",
+      "elementos_naturales_asociados": [
+        "Silbido en notas musicales",
+        "Sabanas de estero y palmares de moriche",
+        "Saco de huesos resecos",
+        "Ladrido de perros justicieros"
+      ]
+    },
+    {
+      "id": "florentino_diablo",
+      "titulo": "Florentino y el Diablo: El Gran Contrapunteo en la Sabana",
+      "clasificacion": "Tradición Épica Oral y Poesía de Contrapunteo",
+      "region_geografica": "Región Orinoquía (Llanos Orientales)",
+      "departamento_o_territorio": "Arauca, Casanare y llanos del Meta",
+      "pueblo_o_cultura_origen": "Poesía popular llanera (inmortalizada por Alberto Arvelo Torrealba y versionada por copleros colombo-venezolanos)",
+      "personajes_principales": [
+        "Florentino Coronado (el mejor coplero y jinete de la sabana, 'el que cantó con el Diablo')",
+        "El Diablo / Mandinga (vestido de jinete negro en corcel azabache)",
+        "Los llaneros asistentes a la cantina de sabana"
+      ],
+      "relato_narrativo": "Florentino Coronado era el cantador más afamado de todos los Llanos: no había verso que no pudiera rimar ni fiesta de joropo donde su voz no saliera vencedora. Una noche de tormenta eléctrica en una pulpería solitaria de la sabana de Santa Inés, mientras Florentino afinaba su cuatro y repicaban los capachos, un jinete enigmático vestido rigurosamente de negro, montado sobre un brioso caballo azabache cuyos cascos no hacían ruido sobre el barro, cruzó la puerta y lo desafió a duelo de verso cantado.\n\nEl forastero no era otro que el Diablo en persona, quien venía dispuesto a llevarse el alma del mejor coplero de la tierra al inframundo si este titubeaba o repetía una sola rima. Comenzó entonces el duelo poético más legendario de la cultura llanera: el contrapunteo de Florentino y el Diablo. Durante horas y horas de la madrugada, mientras los relámpagos cruzaban el cielo oscuro, el Diablo lanzaba versos cargados de sombras, fuego y condenación eterna; pero Florentino, sereno y con el sombrero alón plantado, le respondía al instante con estrofas improvisadas que celebraban el valor de la sabana, la pureza de los ríos y el temple del hombre llanero.\n\nCuando la noche llegaba a su fin y las fuerzas humanas del coplero parecían desfallecer ante el acecho demoníaco, un rayo de sol dorado despuntó por el oriente de la sabana. Viendo la luz del alba, Florentino entonó su verso final invocando a la Virgen del Carmen, a la Santa Cruz de Mayo y a la Trinidad Divina. Derrotado por la poesía y la fe invicta del llanero, el Diablo dio un alarido estremecedor, su caballo se convirtió en una nube de azufre y desapareció en la llanura dejando a Florentino como el hombre que derrotó al mal con el poder de la palabra.",
+      "moraleja_o_sentido_pedagogico": "Exalta el poder supremo del intelecto, la agilidad mental, la palabra poética y la dignidad humana para vencer a las mayores fuerzas oscuras de la adversidad.",
+      "valor_etnografico_simbolico": "Cúspide de la tradición del 'Contrapunteo' llanero, que demuestra el genio repentista y el orgullo cultural de la sociedad vaquera de Colombia y Venezuela.",
+      "elementos_naturales_asociados": [
+        "Cuatro, arpa y maracas llaneras",
+        "Truenos y relámpagos de sabana",
+        "Amanecer llanero",
+        "Caballo azabache"
+      ]
+    },
+    {
+      "id": "la_llorona",
+      "titulo": "La Llorona: El Lamento Eterno de las Quebradas",
+      "clasificacion": "Leyenda de Pena, Culpa y Advertencia Ribereña",
+      "region_geografica": "Región Andina, Caribe y Pacífica (Tradición Pan-Colombiana)",
+      "departamento_o_territorio": "Todo el territorio nacional (riberas del Magdalena, Cauca, Sinú y piedemontes)",
+      "pueblo_o_cultura_origen": "Folclor colonial hispanoamericano mestizo",
+      "personajes_principales": [
+        "La Llorona (alma en pena de una madre vestida de blanco fúnebre con las manos ensangrentadas)",
+        "El hijo o hijos perdidos en las aguas",
+        "Vecinos ribereños y jóvenes desobedientes"
+      ],
+      "relato_narrativo": "Por las orillas de los ríos, cañadas, zanjones y lodazales de Colombia deambula en las noches sin luna una figura femenina fantasmal vestida con un camisón blanco harapiento, con el rostro cadavérico oculto tras una cabellera enmarañada y lágrimas secas petrificadas sobre sus mejillas. Lleva las manos crispadas y ensangrentadas hacia el cielo mientras exhala un llanto gutural y desgarrador que hace temblar a los animales del campo: '¡Aaaay, mis hijooos...! ¿Dónde están mis hijooos?'.\n\nLas distintas versiones regionales concuerdan en que fue una mujer humilde que, enloquecida por la desesperación, la pobreza extrema o el abandono de su amante, cometió el acto atroz de arrojar a su pequeño hijo recién nacido a las corrientes turbulentas de una quebrada crecida. Cuando recobró la razón y vio el cuerpecito arrastrado por el remolino, se lanzó al agua intentando salvarlo, pero la corriente se lo tragó para siempre.\n\nDesde entonces, su espíritu no tiene descanso ni en la tierra ni en el cielo. La Llorona busca incesantemente a sus hijos entre las piedras y playones de los ríos, levantando hojas secas y removiendo la arena con dedos huesudos. Cuando se acerca a los poblados, su gemido agudo hiela la sangre de los perros, que aúllan lastimeramente anunciando su paso, recordando a los padres la obligación sagrada de proteger con amor la vida de los niños.",
+      "moraleja_o_sentido_pedagogico": "Inculca la protección sagrada y cuidado incondicional hacia la niñez, advirtiendo sobre las secuelas destructivas de la culpa y la violencia intrafamiliar.",
+      "valor_etnografico_simbolico": "Una de las leyendas más arraigadas de la memoria oral campesina de toda Iberoamérica, adaptada a la geografía de los caudalosos y traicioneros ríos colombianos.",
+      "elementos_naturales_asociados": [
+        "Riberas y playones de río",
+        "Bruma nocturna y vientos helados",
+        "Aullido de perros de monte",
+        "Quebradas crecidas"
+      ]
+    },
+    {
+      "id": "la_mojana",
+      "titulo": "La Mojana: El Hada Dorada de las Ciénagas del Caribe",
+      "clasificacion": "Leyenda Ecológica y Mitología Acuática",
+      "region_geografica": "Región Caribe (Depresión Momposina y Subregión de La Mojana)",
+      "departamento_o_territorio": "Sucre, Bolívar, Córdoba y Antioquia (Cuencas del San Jorge, Cauca y Magdalena)",
+      "pueblo_o_cultura_origen": "Cultura anfibia cenagosa / tradición Zenú y mestiza ribereña",
+      "personajes_principales": [
+        "La Mojana (diminuta mujer acuática de larguísima cabellera dorada brillante)",
+        "Los niños curiosos y desobedientes de la ribera",
+        "Tortugas hicoteas, peces y caimanes de ciénaga"
+      ],
+      "relato_narrativo": "En las profundidades tranquilas de los complejos cenagosos de la región de La Mojana, donde los ríos Cauca, San Jorge y Magdalena se entrecruzan formando un inmenso laberinto verde de aguas y totorales, habita un ser mágico venerado por las comunidades de pescadores: La Mojana.\n\nEs descrita como una mujer diminuta pero de proporciones perfectas, de piel blanca y resplandeciente, cuyos cabellos son de oro puro y tan largos que le llegan hasta los talones, flotando sobre las aguas mansas como algas doradas. La Mojana habita en un palacio de cristal y nácar construido en el fondo de las ciénagas más hondas, rodeada de jardines acuáticos donde reposan las tortugas hicoteas, los manatíes y los peces dorados.\n\nEs la protectora suprema de la fauna anfibia y de las aves acuáticas migratorias. A los pescadores bondadosos les permite faenas generosas de bagre pintado y pacora; pero siente una fascinación irresistible por los niños pequeños de piel clara que juegan descuidados o desobedientes en las orillas del agua. Con un canto dulce semejante al silbido de los patos yuyos, La Mojana atrae a los niños hacia las profundidades, los envuelve con sus cabellos de oro y se los lleva a su palacio subacuático. Para evitar que La Mojana se lleve a los pequeños, las madres de los pueblos ribereños atan al cuello o a las muñecas de sus hijos cordones de lana bendecida teñidos de rojo o amuletos de azabache, impidiendo que el hechizo del hada de las ciénagas los toque.",
+      "moraleja_o_sentido_pedagogico": "Previene a los niños contra el peligro mortal de ahogamiento en ciénagas y caños profundos y fomenta el cuidado ecológico de los ecosistemas de humedal.",
+      "valor_etnografico_simbolico": "Encarna la fascinación y el misterio de la 'cultura anfibia' descrita por el sociólogo Orlando Fals Borda, donde la vida humana depende simbióticamente del agua y el pantano.",
+      "elementos_naturales_asociados": [
+        "Ciénagas y playones inundables",
+        "Cabello de oro y lirios acuáticos",
+        "Tortugas hicoteas y bagres",
+        "Cordones protectores rojos de azabache"
+      ]
+    },
+    {
+      "id": "pozo_donato_hunzahua",
+      "titulo": "El Pozo de Donato y la Tragedia del Zaque Hunzahua",
+      "clasificacion": "Leyenda Histórico-Mítica de Amor Prohibido y Tesoro Sagrado",
+      "region_geografica": "Región Andina",
+      "departamento_o_territorio": "Boyacá (Tunja / Antiguo Cercado de Hunza)",
+      "pueblo_o_cultura_origen": "Confederación Muisca (Hunza)",
+      "personajes_principales": [
+        "Hunzahua (poderoso Zaque de Hunza que dio su nombre a la ciudad de Tunja)",
+        "Noncetá (su hermosa hermana)",
+        "Faratacá (la madre enfurecida)",
+        "Don Jerónimo Donato de Rojas (conquistador español que intentó desecar la laguna)"
+      ],
+      "relato_narrativo": "Hunzahua era el gobernante más temido y poderoso de los Muiscas de Hunza (la actual Tunja). Se enamoró perdidamente de su propia hermana, la bella doncella Noncetá, desafiando las estrictas leyes de la Confederación que castigaban el incesto con la pena de muerte. Ocultando su amor prohibido, ambos huyeron hacia el mercado sagrado de Sugamuxi (Sogamoso), pero su madre, Faratacá, descubrió el secreto que mancillaba el linaje real.\n\nLlena de cólera y dolor, la madre sorprendió a su hija moliendo maíz para preparar chicha y la increpó agriamente. En medio del forcejeo, Faratacá golpeó con su vara de madera la gran vasija de barro cocido que contenía la chicha fermentada. La vasija se rompió en mil pedazos y el líquido embriagante comenzó a brotar de manera inagotable, inundando la hondonada hasta dar origen al misterioso pozo sagrado de Hunzahua (conocido hoy como el Pozo de Donato).\n\nAvergonzados y sabiéndose perseguidos por el oprobio, los amantes huyeron hacia el sur; en el camino, Noncetá dio a luz a un niño que se convirtió en una piedra sagrada en Susa, y al llegar al Salto del Tequendama, consumidos por la tristeza, los hermanos se abrazaron y se lanzaron al abismo, transformándose en dos peñascos gemelos. Siglos más tarde, durante la Conquista española, los sacerdotes y guerreros muiscas de Hunza arrojaron a las profundidades insondables del Pozo de Hunzahua toneladas de oro, esmeraldas y las andas sagradas del Zaque para que jamás cayeran en manos de los invasores. En el siglo XVII, el capitán español Jerónimo Donato de Rojas gastó toda su fortuna intentando desecar el pozo para extraer el tesoro; pero cuando las aguas parecían a punto de ceder, la tierra tembló, los obreros murieron aplastados y las aguas volvieron a brotar mágicamente hasta el tope, guardando el secreto indígena para siempre.",
+      "moraleja_o_sentido_pedagogico": "Advierte sobre las consecuencias trágicas del desacato a las normas comunitarias y exalta la resistencia cultural de los pueblos indígenas que prefirieron entregar sus riquezas a las aguas sagradas antes que al saqueo colonial.",
+      "valor_etnografico_simbolico": "Lugar emblemático de la ciudad de Tunja que vincula la toponimia de la capital boyacense (Hunza) con la memoria viva de la arqueología muisca.",
+      "elementos_naturales_asociados": [
+        "Pozo de Donato (ojo de agua dulce kárstico)",
+        "Chicha fermentada de maíz",
+        "Vasija de barro rota",
+        "Tesoros de oro y esmeraldas sumergidos"
+      ]
+    },
+    {
+      "id": "creacion_wayuu_maleiwa",
+      "titulo": "El Mito de la Creación Wayuu: Maleiwa, Juya, Pulowi y Mma",
+      "clasificacion": "Cosmogonía Primordial y Génesis Indígena",
+      "region_geografica": "Región Caribe",
+      "departamento_o_territorio": "La Guajira (Alta, Media y Baja Guajira / Serranía de Woumainkat)",
+      "pueblo_o_cultura_origen": "Pueblo Wayuu (Familia lingüística Arawak)",
+      "personajes_principales": [
+        "Maleiwa (el gran demiurgo creador y ordenador del pueblo Wayuu)",
+        "Juya (la lluvia masculina, errante, cazador celeste fecundador)",
+        "Mma (la madre tierra, receptora fecunda y nutricia)",
+        "Pulowi (fuerza femenina telúrica, misteriosa, asociada a la sequía, el mar y los lugares prohibidos)"
+      ],
+      "relato_narrativo": "En el principio de los tiempos no había hombres ni animales sobre la arena del desierto; solo existían los elementos cósmicos primordiales. Juya, la lluvia celeste y errante, miró hacia abajo y contempló a Mma, la madre tierra que dormía solitaria bajo el firmamento. Enamorado de ella, Juya cantó una canción profunda de truenos y dejó caer sobre el regazo de Mma una lluvia torrencial fecunda. Del vientre húmedo de Mma brotaron entonces las primeras plantas medicinales, las tunas y los cactus que adornan la península.\n\nDe esa unión nació también Maleiwa, el demiurgo sabio y organizador del universo. Maleiwa quiso que la tierra tuviera hijos conscientes que cuidaran el desierto y recordaran sus cantos. Subió a las laderas rocosas de la serranía de Woumainkat y con sus propias manos moldeó figuras de barro rojo húmedo: modeló hombres y mujeres fuertes, les sopló aliento en la nariz para que hablaran la lengua Wayuunaiki y les asignó a cada grupo un animal totémico protector (el halcón, la serpiente, el zorro, la garza blanca), dando origen a los clanes sagrados matrilineales (Eiruku).\n\nPara que la vida mantuviera su equilibrio sagrado, el universo quedó gobernado por la constante danza entre Juya (el esposo benévolo que trae la lluvia fertilizante y la bonanza) y Pulowi (la hermosa y temible mujer de las profundidades, dueña de las cavernas, el calor sofocante, los espejismos del desierto y los naufragios del mar). Los Wayuu aprendieron que no son dueños de la tierra, sino hijos del barro de Mma y del rocío de Juya, destinados a caminar con dignidad guiados por la palabra sabia y el pastoreo bajo el cielo sin límites de La Guajira.",
+      "moraleja_o_sentido_pedagogico": "Comunica la filiación cósmica entre los seres humanos y los elementos naturales, ensalzando el respeto a la madre tierra, el valor de la matrilinealidad y la convivencia pacífica mediante el diálogo.",
+      "valor_etnografico_simbolico": "Fundamento de la espiritualidad, organización social en clanes y derecho propio consuetudinario del pueblo Wayuu, el más numeroso y vital de Colombia.",
+      "elementos_naturales_asociados": [
+        "Juya (la lluvia y los truenos celestes)",
+        "Mma (la tierra y la arcilla roja)",
+        "Pulowi (las cavernas, el mar y la sequía)",
+        "Cactus de cardón y vientos alisios del desierto"
+      ]
+    }
+  ]
+}

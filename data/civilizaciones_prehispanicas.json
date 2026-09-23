@@ -1,0 +1,907 @@
+{
+  "metadata": {
+    "titulo": "Gran Compendio Arqueológico de las Civilizaciones Prehispánicas de Colombia",
+    "descripcion": "Capa exhaustiva de datos arqueológicos, etnohistóricos y metalúrgicos sobre las seis grandes tradiciones culturales y orfebres originarias del territorio colombiano. Elaborado con base en investigaciones del Instituto Colombiano de Antropología e Historia (ICANH) y el Museo del Oro del Banco de la República.",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026",
+    "autor": "Subagente Especialista en Arqueología y Civilizaciones Prehispánicas de Colombianopedia",
+    "total_civilizaciones": 6,
+    "culturas_incluidas": [
+      "Muiscas (Confederación Chibcha)",
+      "Taironas (Constructores de la Sierra Nevada)",
+      "Quimbayas (Maestros del Oro y la Tumbaga)",
+      "Zenúes (Ingenieros del Agua y la Filigrana)",
+      "Tumaco-La Tolita (Pioneros del Platino y el Realismo Médico)",
+      "San Agustín y Tierradentro (Megalitos del Alto Magdalena e Hipogeos del Macizo)"
+    ]
+  },
+  "civilizaciones": [
+    {
+      "id": "muiscas",
+      "nombre": "Muiscas (Confederación Chibcha)",
+      "periodo": {
+        "cronologia_general": "c. 600 d.C. - 1537 d.C.",
+        "antecedente_arqueologico": "Horizonte Herrera (c. 400 a.C. - 600 d.C.): Primeras ocupaciones agroalfareras sedentarias en el altiplano, cultivo de maíz y caza en lagunas.",
+        "fase_temprana": "Muisca Temprano (c. 600 - 1200 d.C.): Consolidación de cacicazgos locales, ocupación intensiva de valles aluviales, cerámica decorada con pintura roja sobre fondo blanco/naranja y aparición de la metalurgia votiva en tumbaga.",
+        "fase_tardia": "Muisca Tardío (c. 1200 - 1537 d.C.): Crecimiento demográfico masivo (estimado entre 600.000 y 1.000.000 de habitantes), consolidación de macro-cacicazgos confederados (Zipazgo y Zacazgo), densa red de mercados comarcales y auge de la orfebrería de tunjos votivos.",
+        "contacto_hispano": "1537 d.C., con la invasión de la expedición comandada por Gonzalo Jiménez de Quesada a través del río Magdalena y las tierras de Vélez hasta Bacatá."
+      },
+      "ubicacion_geografica": {
+        "region_geografica": "Altiplano Cundiboyacense (Cordillera Oriental de los Andes colombianos)",
+        "departamentos_actuales": [
+          "Cundinamarca",
+          "Boyacá",
+          "sur de Santander"
+        ],
+        "altitud_msnm": "2.000 a 3.100 msnm (pisos térmicos frío andino y páramo, con enclaves templados en vertientes)",
+        "ecosistemas_principales": [
+          "Sabana de Bogotá (antiguo lecho lacustre del Pleistoceno, llanura aluvial fértil)",
+          "Valles de Ubaté, Chiquinquirá y Moniquirá",
+          "Valles interandinos fríos de Tunja, Duitama y Sogamoso",
+          "Complejos de páramo sagrado: Sumapaz, Chingaza, Iguaque, Rabanal y Pisba"
+        ],
+        "centros_politicos_y_urbanos": [
+          "Bacatá (Funza / actual Bogotá): Sede del Zipa",
+          "Hunza (Tunja): Sede del Zaque",
+          "Sugamuxi (Sogamoso): Ciudad santa y santuario del Sol",
+          "Tundama (Duitama): Cacicazgo guerrero independiente",
+          "Guatavita: Cacicazgo sagrado de la orfebrería y el ritual de la laguna",
+          "Zipaquirá y Nemocón: Centros de explotación salinera",
+          "Somondoco y Chivor: Enclaves mineros de esmeraldas"
+        ],
+        "hidrografia_sagrada": [
+          "Laguna de Guatavita (Sesquilé): Escenario del rito de El Dorado",
+          "Laguna de Iguaque (Boyacá): Cuna mítica de Bachué y la humanidad",
+          "Laguna de Siecha (Guasca): Tríptico lacustre ceremonial",
+          "Laguna de Tota: El lago de agua dulce más grande de Colombia",
+          "Laguna de Fúquene: Lago sagrado y despensa pesquera del norte",
+          "Río Funza (Río Bogotá) y Salto del Tequendama: Desagüe mítico abierto por Bochica"
+        ]
+      },
+      "organizacion_social": {
+        "modelo_sociopolitico": "Confederación de cacicazgos estratificados, sin un poder centralizado absolutista, estructurada en redes de reciprocidad, parentesco matrilineal, tributo escalonado y alianzas militares y sagradas.",
+        "unidades_geopoliticas_mayores": {
+          "zipazgo_de_bacata": {
+            "gobernante": "El Zipa (residencia principal en Funza/Bacatá)",
+            "jurisdiccion": "Abarcaba cerca del 70% del territorio de la confederación, controlando la sabana de Bogotá, los valles de Fusagasugá, Ubaque, Guatavita, Ubaté y las cuencas del río Bogotá.",
+            "recursos_estrategicos": "Control directo de las colosales minas de sal de Zipaquirá, Nemocón y Tausa, y las ricas vegas agrícolas aluviales sujetas a drenaje.",
+            "gobernantes_historicos": [
+              "Meicuchuca",
+              "Saguamanchica",
+              "Nemequene",
+              "Tisquesusa",
+              "Sagipa (Zaquesazipa)"
+            ]
+          },
+          "zacazgo_de_hunza": {
+            "gobernante": "El Zaque (residencia principal en Hunza / Tunja)",
+            "jurisdiccion": "Dominaba la porción nororiental del altiplano (Boyacá), abarcando Ramiriquí, Turmequé, Tibaná, Boyacá y las estribaciones hacia los Llanos Orientales.",
+            "recursos_estrategicos": "Monopolio de los yacimientos de esmeraldas de Somondoco y rutas de intercambio con los pueblos de los Llanos (algodón, plumas, resinas de yopo).",
+            "gobernantes_historicos": [
+              "Hunzahúa",
+              "Michuá",
+              "Quemuenchatocha",
+              "Aquiminzaque"
+            ]
+          },
+          "cacicazgo_sagrado_de_sugamuxi": {
+            "gobernante": "El Sugamuxi o Sacerdote Supremo de Iracá (Sogamoso)",
+            "rol": "Teocracia pacifista independiente investida de autoridad sacra suprema; árbitro neutral en los conflictos bélicos entre el Zipa y el Zaque; custodios del Gran Templo del Sol (Sua)."
+          },
+          "cacicazgo_militar_de_tundama": {
+            "gobernante": "El Cacique Tundama (Duitama)",
+            "rol": "Señorío militar independiente de gran beligerancia; confederación septentrional de caciques que comandó una tenaz resistencia armada contra los conquistadores españoles en la Batalla del Pantano de la Guerra (1539)."
+          }
+        },
+        "estratos_sociales": [
+          {
+            "estamento": "Zipas y Zaques",
+            "descripcion": "Gobernantes supremos venerados como descendientes de las deidades celestes; transportados en andas de oro y madera fina, su mirada directa estaba vedada al común."
+          },
+          {
+            "estamento": "Usagues y Caciques Locales",
+            "descripcion": "Aristocracia comarcal que administraba los poblados (*uta*), organizaba los turnos de trabajo comunal y redistribuía los excedentes agrícolas."
+          },
+          {
+            "estamento": "Chyquy (Casta Sacerdotal)",
+            "descripcion": "Sacerdotes formados desde niños en escuelas sagradas (*cuca*) mediante rigurosos ayunos de 12 años, abstinencia sexual y meditación; encargados de consultar oráculos y depositar ofrendas en lagunas y cuevas."
+          },
+          {
+            "estamento": "Güechas (Guerreros de Élite)",
+            "descripcion": "Cuerpo militar permanente de hombres de fuerza y valor extraordinarios, entrenados en el manejo de dardos, propulsores, tiraderas y macanas de madera de chonta. Defendían las fronteras contra las incursiones de pueblos caribes (Panches, Muzos, Pijaos)."
+          },
+          {
+            "estamento": "Comunidad Tributaria (Pueblo Llano)",
+            "descripcion": "Agricultores, alfareros de Ráquira, hilanderos de mantas de algodón, y mineros de sal y esmeraldas que sostenían el sistema productivo."
+          }
+        ],
+        "sistema_sucesorio": "Sucesión matrilineal avuncular: el heredero del cacique no era su hijo biológico, sino el hijo mayor de su hermana mayor (sobrino uterino). Antes de asumir el mando, el futuro heredero era sometido a un largo encierro ritual de purificación y ayuno."
+      },
+      "tecnologia_destacada": {
+        "mineria_y_produccion_de_sal": {
+          "descripcion": "Explotación a escala industrial de salmueras subterráneas en Zipaquirá, Nemocón y Tausa. La salmuera era conducida por tuberías de madera y hervida en vasijas cónicas de cerámica (*gachas*). Al evaporarse el agua, la cerámica se rompía para extraer panes sólidos de sal compacta ('oro blanco').",
+          "impacto_economico": "La sal muisca constituyó la 'moneda' más fuerte de intercambio pan-andino, comercializada a lo largo de cientos de kilómetros por el valle del Magdalena hasta las costas del Caribe y las selvas del Amazonas."
+        },
+        "mineria_de_esmeraldas": {
+          "descripcion": "Extracción en pozos a cielo abierto en las escarpas de Somondoco y Chivor mediante cuñas de madera dura que se hinchaban con agua para fracturar la roca de lutita carbonosa.",
+          "significado": "Piedras de tonalidad verde intenso (*quybic*) consideradas gotas divinas del semen cósmico de Goranchacha y ofrendadas a las aguas y a los dioses."
+        },
+        "ingenieria_agricola_de_camellones": {
+          "descripcion": "Red masiva de canales de drenaje y camellones elevados de cultivo en la Sabana de Bogotá (valles de Funza, Chía, Suba). Los camellones protegían los cultivos de las inundaciones estacionales y mitigaban el efecto devastador de las heladas nocturnas andinas reteniendo el calor térmico del agua diurna.",
+          "cultivos_principales": [
+            "Maíz (aba)",
+            "Papa (yomza)",
+            "Quinua",
+            "Cubios",
+            "Ibias",
+            "Chugas",
+            "Fríjol",
+            "Arracacha"
+          ]
+        },
+        "industria_textil": {
+          "descripcion": "Tejeduría masiva de mantas de algodón hilado con volantes de huso en arcilla grabada; decoradas con tintes minerales y vegetales usando sellos planos y cilíndricos (*pintaderas*). Las mantas servían de vestimenta, mortaja funeraria, tributo y unidad de trueque de alto valor."
+        },
+        "orfebreria_votiva_en_tumbaga": {
+          "descripcion": "Especialización casi exclusiva en la elaboración de objetos de ofrenda no utilitarios (*tunjos*). Fundición a la cera perdida en tumbaga (aleación oro-cobre). A diferencia de otras culturas, los Muiscas dejaban deliberadamente las rebabas de fundición y la textura porosa rugosa del metal sin pulir, pues la pieza estaba destinada a comunicarse inmediatamente con el mundo divino bajo las aguas o en grietas de rocas."
+        }
+      },
+      "piezas_museo_oro": [
+        {
+          "registro_catalogo": "MO 11373 / O11373",
+          "nombre_pieza": "La Balsa Muisca (Balsa del Dorado)",
+          "material": "Tumbaga (80% oro, 20% cobre fundido en una sola colada)",
+          "dimensiones": "19.5 cm de largo x 10.1 cm de ancho x 10.2 cm de alto",
+          "peso_gramos": 287.5,
+          "origen_y_hallazgo": "Hallada en 1969 por campesinos en una cueva de la vereda Laja Pelada, municipio de Pasca (Cundinamarca), dentro de una vasija cerámo-funeraria.",
+          "descripcion_arqueologica": "Obra cumbre del arte orfebre prehispánico. Representa con minuciosidad la ceremonia de investidura del cacique en la laguna sagrada de Guatavita. En el centro de una balsa circular de cañas de oro se erige el cacique majestuoso, de mayor escala jerárquica, ataviado con diadema, nariguera y brazaletes, rodeado por doce figuras subordinadas entre remeros, sacerdotes con máscaras de jaguar y portaestandartes rituales."
+        },
+        {
+          "registro_catalogo": "MO 03496",
+          "nombre_pieza": "Tunjo Votivo de Guerrero Güecha",
+          "material": "Tumbaga fundida a la cera perdida",
+          "dimensiones": "14.2 cm de altura",
+          "descripcion_arqueologica": "Figura antropomorfa plana que representa a un soldado de élite güecha portando un propulsor de dardos en su mano diestra, escudo defensivo en la siniestra y una pechera triangular, con tocado de plumas estilizadas y el cuerpo desnudo."
+        },
+        {
+          "registro_catalogo": "MO 09842",
+          "nombre_pieza": "Pectoral Acorazonado Muisca",
+          "material": "Oro martillado y calado",
+          "dimensiones": "16.8 cm de ancho",
+          "descripcion_arqueologica": "Pectoral ceremonial de borde curvilíneo con representaciones caladas de aves solares y figuras gemelas bicéfalas, utilizado en el pecho por los caciques en las fiestas de la siembra y la cosecha."
+        },
+        {
+          "registro_catalogo": "MO 11374",
+          "nombre_pieza": "Diadema y Aros Craneales de Guatavita",
+          "material": "Lámina de oro repujada con colgantes móviles",
+          "descripcion_arqueologica": "Ornamento cefálico de gran delicadeza con láminas circulares suspendidas de alambres de oro que vibraban y tintineaban con el movimiento del mandatario, reflejando destellos cegadores bajo la luz del sol andino."
+        }
+      ],
+      "mitologia_y_dioses": {
+        "cosmovision": "El universo (*quyca*) era concebido como un orden cósmico sostenido por columnas sagradas de madera de guayacán, estructurado en tres planos: el mundo celeste de los astros, la tierra de los hombres y lagunas, y el inframundo acuático de los antepasados.",
+        "panteon_principal": [
+          {
+            "nombre": "Chiminigagua",
+            "epíteto": "El Ser Supremo Creador y Luz Primordial",
+            "mito": "En el principio era la noche y el vacío absoluto. Chiminigagua, fuerza luminosa e inmaterial, comenzó a brillar y creó enormes aves negras que surcaron el cosmos esparciendo por sus picos un aliento radiante de luz incandescente, haciendo brotar las montañas, las aguas y los seres vivos."
+          },
+          {
+            "nombre": "Bachué (o Furachogua)",
+            "epíteto": "Madre Nutricia de la Humanidad",
+            "mito": "Emergió de las aguas gélidas de la laguna de Iguaque llevando consigo de la mano a un niño de tres años. Cuando el niño creció, se desposaron y poblaron la Tierra con partos múltiples. Tras envejecer enseñando preceptos de paz y agricultura, ambos regresaron a la laguna sagrada de Iguaque y se transformaron en dos inmensas serpientes doradas que se sumergieron para siempre en el fondo."
+          },
+          {
+            "nombre": "Bochica (Nemqueteba / Xue)",
+            "epíteto": "Héroe Civilizador y Legislador Moral",
+            "mito": "Anciano sabio de piel blanca, ojos claros, barba larga y vestiduras de algodón que apareció por el oriente montado sobre un animal desconocido. Enseñó a los Muiscas a hilar el algodón, labrar la tierra, construir casas y respetar las leyes morales. Cuando Chibchacum castigó a la sabana con un diluvio, Bochica apareció sobre el arco iris y con su báculo de oro golpeó los peñascos, abriendo el majestuoso Salto del Tequendama para drenar las aguas."
+          },
+          {
+            "nombre": "Chibchacum",
+            "epíteto": "Deidad de la Agricultura, las Lluvias y los Orfebres",
+            "mito": "Protector original de los labradores; airado por los vicios y la soberbia de los hombres, desbordó los ríos Sopó y Tibitó anegando la sabana entera. Tras la intervención de Bochica, fue castigado a cargar sobre sus hombros el peso entero de la Tierra; cada vez que se fatiga y cambia de hombro, la tierra tiembla en el altiplano."
+          },
+          {
+            "nombre": "Sua y Chía",
+            "epíteto": "El Sol y la Luna",
+            "mito": "Sua (el Sol) encarnaba la energía creadora diurna, venerado en el fabuloso Templo del Sol de Sugamuxi. Chía (la Luna), deidad de la noche, el agua, la belleza femenina y las pasiones humanas, cuyo santuario principal se ubicaba en el municipio de Chía; asociada míticamente con Huitaca, la mujer rebelde que incitaba a la fiesta desenfrenada."
+          }
+        ],
+        "el_ritual_del_dorado": {
+          "escenario": "Laguna circular de Guatavita, cráter de hundimiento cárstico a 3.100 msnm.",
+          "ceremonia_liturgica": "Al asumir el poder un nuevo Zipa, se congregaban miles de indígenas de todo el altiplano en las faldas de la laguna. El heredero era desnudado en la orilla, untado completamente con resinas vegetales aromáticas de trementina y espolvoreado con fino polvo de oro mediante cañutos de pluma hasta convertirlo en una resplandeciente estatua viva: 'El Hombre Dorado'. Subía a una balsa de juncos acompañado de sus cuatro principales caciques y grandes pebeteros de sahumerio (*moque*). Al llegar al centro de la laguna sagrada, entre el sonido de fotutos de caracol y cánticos ceremoniales, arrojaba a las aguas profundas montones de esmeraldas y figurillas de oro (*tunjos*), y finalmente se zambullía en el agua para consagrar su cuerpo a la diosa de la laguna y sellar el pacto cósmico de fertilidad."
+        },
+        "lengua_muysccubun": {
+          "familia_linguistica": "Familia Chibcha (Chibchana)",
+          "importancia_historica": "Lengua general del Altiplano durante la Colonia temprana; documentada exhaustivamente por Fray Bernardo de Lugo en su 'Gramática en la lengua general del Nuevo Reyno, llamada mosca' (1619). Prohibida por cédula real de Carlos III en 1770 para forzar la hispanización.",
+          "lexico_clave_documentado": {
+            "muysca": "Persona, gente o ser humano",
+            "quyca": "Tierra, territorio, mundo",
+            "sie": "Agua, río",
+            "sua": "Sol",
+            "chia": "Luna",
+            "guecha": "Hombre valiente, guerrero",
+            "chyquy": "Sacerdote",
+            "tyba": "Jefe o capitán de linaje",
+            "aba": "Maíz",
+            "gacha": "Vasija de barro para hervir la sal"
+          },
+          "huella_toponimica_viva": [
+            "Bogotá: Derivado de 'Bacatá' (cercado fuera del sembrado)",
+            "Zipaquirá: Pie o cercado del Zipa",
+            "Facatativá: Cercado al final de la llanura",
+            "Chía: Luna / Tierra de la Luna",
+            "Fusagasugá: Mujer que se esconde tras las montañas",
+            "Bojacá: Cercado morado",
+            "Choachí: Ventana o mirador de la Luna",
+            "Tibaná, Tibasosa, Ubaté, Chiquinquirá, Sesquilé, Guatavita, Sogamoso, Duitama"
+          ]
+        }
+      },
+      "legado_vivo": {
+        "comunidades_actuales": [
+          "Cabildo Indígena Muisca de Suba (Bogotá D.C.)",
+          "Cabildo Indígena Muisca de Bosa (Bogotá D.C.)",
+          "Cabildo Indígena Muisca de Cota (Cundinamarca)",
+          "Cabildo Indígena Muisca de Chía (Cundinamarca)",
+          "Comunidad Muisca de Sesquilé y Gachancipá"
+        ],
+        "revitalizacion_linguistica_y_cultural": "Desde la década de 1990, los cabildos muiscas y lingüistas de la Universidad Nacional y de los Andes desarrollan talleres comunitarios de enseñanza del Muysccubun reconstruido, recuperando cantos ceremoniales, toponimias y cosmovisión.",
+        "chibchismos_en_el_espanol_colombiano": [
+          "Cuchuco: Sopa espesa de maíz o trigo pelado",
+          "Totuma: Recipiente vegetal derivado del calabazo",
+          "Chite: Exclamación para espantar animales",
+          "Chingue: Prenda ligera para bañarse",
+          "Curuba, Chua, Uchuva: Frutas andinas nativas",
+          "Guache: Originalmente 'joven guerrero' o varón audaz (degradado semánticamente en época colonial a 'hombre rudo')",
+          "Guaricha: Originalmente 'mujer joven, princesa o sabia' (degradado peyorativamente por el clero colonial)"
+        ],
+        "practicas_agroecologicas_vigentes": "Preservación comunitaria de bancos de semillas de papas nativas de páramo (papa chaucha, manzana, pacha negra), siembra según las fases lunares y cuidado de las lagunas del páramo como fuentes de vida innegociables."
+      }
+    },
+    {
+      "id": "taironas",
+      "nombre": "Taironas (Constructores de la Sierra Nevada)",
+      "periodo": {
+        "cronologia_general": "c. 200 d.C. - 1600 d.C.",
+        "periodo_nahuange": "Fase Nahuange (c. 200 - 900 d.C.): Asentamientos costeros y en bahías litorales (Nahuange, Concha, Chengue); orfebrería de cobre martillado y oro fino con formas biomorfas estilizadas, cerámica bicroma e intercambio marítimo caribeño.",
+        "periodo_tairona_clasico": "Fase Tairona Clásica (c. 900 - 1600 d.C.): Colonización y monumentalización de las vertientes medias y altas de la Sierra Nevada; edificación de cientos de ciudades de piedra intercomunicadas (Teyuna, Chairama); auge de la orfebrería de hombres-murciélago fundida a la cera perdida y densa agricultura en terrazas líticas.",
+        "resistencia_y_colapso": "Resistencia armada feroz e implacable contra los españoles durante casi 75 años desde la fundación de Santa Marta (1525). En 1599-1600, el gobernador Juan Guiral Velón desató una guerra de exterminio y tierra arrasada, capturando y descuartizando a los principales caciques; los sobrevivientes se dispersaron hacia las cumbres inaccesibles de la Sierra, salvaguardando su linaje genético y espiritual."
+      },
+      "ubicacion_geografica": {
+        "region_geografica": "Sierra Nevada de Santa Marta (el macizo montañoso costero aislado más elevado del planeta)",
+        "departamentos_actuales": [
+          "Magdalena",
+          "La Guajira",
+          "Cesar"
+        ],
+        "altitud_msnm": "Desde el nivel del mar (0 msnm) hasta los 2.500 msnm en sus núcleos urbanos y terrazas, con control ritual y astronómico que alcanzaba los picos nevados (Pico Cristóbal Colón y Pico Simón Bolívar, a 5.775 msnm).",
+        "gradiente_altitudinal_y_pisos_termicos": "Dominio maestro del modelo de 'microverticalidad ecológica': aprovechamiento simultáneo en pocas horas de marcha desde los arrecifes coralinos y manglares costeros (sal marina, moluscos, peces) hasta bosques secos tropicales, selvas húmedas nubladas y páramos glaciares.",
+        "ciudades_y_complejos_arqueologicos": [
+          "Teyuna (Ciudad Perdida / Buritaca 200): Situada a 900-1.300 msnm sobre la cuenca del río Buritaca; centro político-religioso supremo con más de 150 terrazas de piedra interconectadas.",
+          "Chairama (Pueblito Chayrama): Ubicado en el actual Parque Nacional Natural Tayrona, núcleo costero de gran densidad con canales, calzadas y más de 200 terrazas habitacionales.",
+          "Alto de Mira: Complejo arqueológico fortificado en el alto río Buritaca.",
+          "Pueblos de los valles de Bonda, Pocigüeica, Concha, Cinto, Gairaca y Chengue"
+        ],
+        "cuencas_fluviales_vitales": [
+          "Río Buritaca",
+          "Río Guachaca",
+          "Río Don Diego",
+          "Río Frío",
+          "Río Piedras",
+          "Río Palomino",
+          "Río Ranchería"
+        ]
+      },
+      "organizacion_social": {
+        "estructura_sociopolitica": "Federación descentralizada de señoríos y ciudades-estado independientes agrupadas en cuencas hidrográficas, conectadas por calzadas líticas, lazos matrimoniales y ceremonias religiosas compartidas.",
+        "estamentos_sociales": [
+          {
+            "estamento": "Naomas (Casta Sacerdotal y Chamánica)",
+            "descripcion": "Máxima autoridad espiritual y científica. Residían en los templos circulares de mayor escala (*caneyes* sagrados); dominaban la astronomía, los solsticios, el calendario agrícola, la botánica medicinal y la mediación con *Aluna* a través de transformaciones rituales en murciélago y felino."
+          },
+          {
+            "estamento": "Caciques Regionales",
+            "descripcion": "Líderes civiles y gobernantes de las ciudades-estado (como los caciques de Bonda y Pocigüeica). Portaban suntuosos pectorales de oro, tocados alados y narigueras bicéfalas como manifestación de su investidura."
+          },
+          {
+            "estamento": "Manicatos (Casta Guerrera)",
+            "descripcion": "Guerreros sumamente disciplinados reconocidos por su extraordinaria velocidad y puntería con arcos de madera de macana, flechas emponzoñadas con venenos botánicos y dardos de punta de espina de raya."
+          },
+          {
+            "estamento": "Especialistas Líticos y Orfebres",
+            "descripcion": "Canteros arquitectos que tallaban los muros y calzadas de granito, y maestros metalurgistas que fundían la tumbaga con técnicas de cera perdida."
+          },
+          {
+            "estamento": "Agricultores de Terrazas y Pescadores Marítimos",
+            "descripcion": "Base demográfica que articulaba el intercambio incesante de pescado seco y sal marina por mantas de algodón, coca y frutos de la alta montaña."
+          }
+        ],
+        "urbanismo_y_patron_espacial": "Sociedad plenamente urbana. Se han documentado más de 250 asentamientos líticos en la Sierra Nevada, albergando una población prehispánica calculada entre 300.000 y 500.000 habitantes en perfecta simbiosis ecológica con la selva tropical lluviosa."
+      },
+      "tecnologia_destacada": {
+        "arquitectura_litica_circular": {
+          "descripcion": "Basamentos y plataformas circulares perfectamente niveladas construidas con lajas de esquisto y bloques de granito ajustados en seco sin mortero ('anillos líticos'). Sobre estos cimientos de piedra se levantaban las paredes de madera incorruptible y los techos cónicos de paja y palma, evitando que la humedad del suelo pudriera la estructura.",
+          "adaptacion_sismica": "La disposición de los muros de contención curvilíneos disipaba la energía sísmica y las presiones hidrostáticas del terreno montañoso."
+        },
+        "ingenieria_antierosiva_y_drenaje_fluvial": {
+          "descripcion": "Impresionante red de canales superficiales y subterráneos empedrados, cunetas laterales, vertederos escalonados y muros de contención de hasta 9 metros de altura. En una de las regiones más lluviosas del planeta (más de 4.000 mm anuales), este sistema evacuaba los torrentes de agua pluvial sin socavar las terrazas habitacionales ni erosionar los suelos de cultivo."
+        },
+        "terrazas_de_cultivo_escalonadas": {
+          "descripcion": "Transformación de empinadas laderas de 30° a 50° de pendiente en andenes fértiles escalonados sostenidos por muros de piedra seca. Se practicaba el policultivo de maíz, frijol, yuca dulce, aguacate, ají, árboles frutales y extensos campos de algodón y coca (*Erythroxylum coca*), con sistemas de micro-riego por gravedad."
+        },
+        "red_vial_monumental": {
+          "descripcion": "Cientos de kilómetros de calzadas, caminos empedrados y escalinatas monumentales (la entrada principal a Teyuna cuenta con más de 1.200 peldaños de piedra continua que ascienden desde el lecho del río Buritaca) que aseguraban el tránsito peatonal rápido e inmune al fango."
+        },
+        "orfebreria_de_hombres_murcielago": {
+          "descripcion": "Maestría en la fundición a la cera perdida en tumbaga (aleación oro-cobre) con tratamiento superficial por oxidación controlada y decapado ácido ('mise en couleur') para aflorar el oro puro. Creación de pectorales antropomorfos tridimensionales con piezas móviles (placas pectorales colgantes) que vibraban emitiendo destellos solares y sonidos metálicos durante las danzas rituales."
+        }
+      },
+      "piezas_museo_oro": [
+        {
+          "registro_catalogo": "MO 11956 / O11956",
+          "nombre_pieza": "Pectoral Antropomorfo de Hombre-Murciélago",
+          "material": "Tumbaga fundida a la cera perdida con dorado enriquecido",
+          "dimensiones": "15.3 cm de alto x 13.1 cm de ancho",
+          "descripcion_arqueologica": "Cúspide de la iconografía tairona. Representa a un cacique o naoma en estado de éxtasis chamánico transformándose en murciélago: rostro con máscara facial provista de membrana nasal foliácea (*hoja nasal*), colmillos agudos, orejeras tubulares, un monumental tocado bicéfalo decorado con dos cabezas de aves rapaces proyectadas hacia adelante, y grandes alas laterales extendidas que enmarcan su pecho adornado con placas colgantes."
+        },
+        {
+          "registro_catalogo": "MO 05886 / O18518",
+          "nombre_pieza": "Colgante Antropomorfo con Tocado Calado Monumental",
+          "material": "Tumbaga dorada fundida a la cera perdida",
+          "dimensiones": "12.8 cm de altura",
+          "descripcion_arqueologica": "Figura masculina sentada sobre un banquillo ceremonial, portando cetros gemelos de mando en sus manos y un colosal tocado calado de múltiples niveles con volutas que representan la energía cósmica de las aves solares."
+        },
+        {
+          "registro_catalogo": "MO 28400",
+          "nombre_pieza": "Cascabel Escultórico Zoomorfo en Forma de Felino",
+          "material": "Fundición hueca a la cera perdida con esfera metálica interna",
+          "descripcion_arqueologica": "Cascabel de tumbaga que servía de sonajero litúrgico atado a los tobillos o muñecas de los danzantes ceremoniales, decorado con la efigie de un jaguar agazapado con fauces abiertas."
+        },
+        {
+          "registro_catalogo": "MO 02145",
+          "nombre_pieza": "Poporo Lítico Tairona en Nefrita Tallada",
+          "material": "Piedra verde semipreciosa (nefrita / serpentina pulida)",
+          "dimensiones": "9.5 cm de altura",
+          "descripcion_arqueologica": "Recipiente para cal viva tallado y pulido en roca dura con una perforación axial de simetría milimétrica, testimonio de la asombrosa destreza de los lapidarios taironas."
+        }
+      ],
+      "mitologia_y_dioses": {
+        "cosmovision_y_aluna": "Toda la realidad física tiene su origen en *Aluna*: el mundo espiritual, la memoria cósmica, el pensamiento abstracto y la matriz inmaterial donde la Gran Madre concibió el universo antes de que existiera la luz o la materia tangible. Vivir correctamente consiste en pensar en armonía con *Aluna*.",
+        "deidades_tutelares": [
+          {
+            "nombre": "Gauteovan",
+            "rol": "La Gran Madre Creadora Universal",
+            "mito": "Madre de todos los seres, de los espíritus, del sol y de las estrellas; concibió el mundo en su mente mientras todo estaba en silencio y oscuridad, tejiendo la Sierra Nevada como el huso cósmico del universo."
+          },
+          {
+            "nombre": "Pei",
+            "rol": "Señor de las Costas, el Mar y los Vientos Marinos",
+            "mito": "Divinidad que enseñó a los primeros hombres el arte de la navegación en canoas por el mar Caribe y las artes de la pesca con redes."
+          },
+          {
+            "nombre": "Seankua",
+            "rol": "Espíritu de las Piedras y los Cimientos Líticos",
+            "mito": "Deidad que bendijo las rocas de la Sierra para que los Taironas pudieran erigir sus terrazas y ciudades eternas sin ser derribadas por las lluvias."
+          }
+        ],
+        "el_simbolismo_del_hombre_murcielago": {
+          "significado_antropologico": "El murciélago (*Phyllostomidae*) encarna el mediador supremo entre la luz y las tinieblas. Habita en cuevas (el útero de la tierra), vuela en la noche sin estrellarse gracias a su percepción ultrasónica invisible y cuelga cabeza abajo, mirando el mundo desde una perspectiva invertida. El *naoma* se transforma ritualmente en hombre-murciélago para 'invertir la mirada profana', penetrar en la oscuridad de *Aluna* y sanar los desequilibrios ecológicos y comunitarios."
+        }
+      },
+      "legado_vivo": {
+        "pueblos_herederos_directos": [
+          {
+            "etnia": "Kogui (Kágaba)",
+            "idioma": "Kogui (Familia Chibcha)",
+            "poblacion_aprox": "15.000 habitantes",
+            "descripcion": "Los herederos culturales más directos y conservadores de la tradición tairona; habitan los valles altos de los ríos Don Diego, Buritaca y Palomino, vistiendo túnicas blancas de algodón y preservando intacta su vida sacerdotal."
+          },
+          {
+            "etnia": "Arhuaco (Ika / Ijka)",
+            "idioma": "Arhuaco (Familia Chibcha)",
+            "poblacion_aprox": "27.000 habitantes",
+            "descripcion": "Habitan la vertiente suroriental de la Sierra (Nabusímake, Cesar); grandes líderes políticos, tejedores de las célebres mochilas arhuacas de lana y guardianes de los derechos bioculturales de la montaña sagrada."
+          },
+          {
+            "etnia": "Wiwa (Damana)",
+            "idioma": "Damana (Familia Chibcha)",
+            "poblacion_aprox": "6.000 habitantes",
+            "descripcion": "Asentados en las vertientes del Cesar y La Guajira, reconocidos como los maestros de la palabra y los cantos ceremoniales de origen."
+          },
+          {
+            "etnia": "Kankuamo",
+            "idioma": "Español con pervivencia léxica kankuama",
+            "poblacion_aprox": "15.000 habitantes",
+            "descripcion": "Habitantes de las estribaciones orientales (Atánquez, Cesar); tras un intenso proceso de etnogénesis y resistencia, han recuperado sus cabildos, autoridades tradicionales y vestimenta ancestral."
+          }
+        ],
+        "la_ley_de_origen_y_el_corazon_del_mundo": "Los 4 pueblos se reconocen colectivamente como los 'Hermanos Mayores', custodios sagrados encomendados por la Madre para cuidar el 'Corazón del Mundo' (la Sierra Nevada). Conciben a la humanidad moderna occidental como los 'Hermanos Menores', cuyas industrias extractivas y destrucción ambiental amenazan con quebrar el equilibrio vital del planeta.",
+        "los_mamos_y_las_sagas": "Autoridades espirituales y filosóficas tradicionales. Los *Mamos* (hombres) y *Sagas* (mujeres) son seleccionados desde su nacimiento por adivinación y educados durante 18 años recluidos en templos oscuros (*Kankurwas*) aprendiendo astronomía, cantos sagrados, derecho consuetudinario y meditación ontológica.",
+        "el_poporo_y_el_mambeo_del_ayu": "Práctica viva cotidiana ininterrumpida desde época precolombina. Al alcanzar la adultez, el joven indígena recibe su *poporo* (calabazo seco pulido) y un punzón de madera; en él introduce la cal obtenida de conchas marinas calcinadas al fuego para mezclarla en la boca con hojas de coca tostada (*ayú*). El frotado del punzón sobre el cuello del poporo acumula una corona de carbonato de calcio que codifica sus pensamientos, oraciones y madurez espiritual: el poporo es su libro de vida."
+      }
+    },
+    {
+      "id": "quimbayas",
+      "nombre": "Quimbayas (Maestros del Oro y la Tumbaga)",
+      "periodo": {
+        "cronologia_general": "c. 500 a.C. - 1600 d.C.",
+        "quimbaya_clasico": "Período Quimbaya Clásico (c. 500 a.C. - 600/800 d.C.): Cumbre de la orfebrería universal; producción de magníficas esculturas antropomorfas y fitomorfas de bulto redondo en tumbaga dorada, poporos de proporciones matemáticas áureas, recipientes de cuerpo esferoidal y figuras de caciques desnudos con ojos entrecerrados en meditación contemplativa. Economía basada en agricultura de suelos volcánicos y minería aluvial.",
+        "quimbaya_tardio": "Período Quimbaya Tardío (c. 800 - 1600 d.C.): Reconfiguración sociocultural y demográfica profunda; diversificación estilística hacia formas geométricas planas, narigueras de alambre torcido, colgantes semicirculares, mayor proporción de cobre en las aleaciones, urnas cerámicas antropomorfas de cuello cilíndrico y tumbas de pozo con cámara lateral.",
+        "contacto_y_extincion": "En 1540, el capitán español Jorge Robledo ingresó a la provincia de Quimbaya sometiendo a los cacicazgos. Las brutales encomiendas, el desarraigo minero y las rebeliones aplastadas (como la gran rebelión indígena de 1542 y 1557) provocaron el exterminio y dispersión total de la población hacia finales del siglo XVI."
+      },
+      "ubicacion_geografica": {
+        "region_geografica": "Valle Medio del Río Cauca y vertientes templadas de las Cordilleras Central y Occidental",
+        "departamentos_actuales": [
+          "Quindío",
+          "Risaralda",
+          "Caldas",
+          "norte del Valle del Cauca",
+          "sur de Antioquia"
+        ],
+        "altitud_msnm": "800 a 2.000 msnm (pisos térmicos templado y subandino cálido)",
+        "suelos_y_relieve": "Paisaje de colinas onduladas modeladas por cenizas volcánicas hiperfértiles originadas en los volcanes del Complejo Ruiz-Tolima; densos guaduales nativos (*Guadua angustifolia*) y bosques de niebla.",
+        "cuencas_hidrograficas_principales": [
+          "Río Cauca (gran arteria fluvial de transporte e intercambio)",
+          "Río La Vieja",
+          "Río Otún",
+          "Río Chinchiná",
+          "Río Pozo",
+          "Río Consota (fuente de ricos manantiales de agua salada)"
+        ]
+      },
+      "organizacion_social": {
+        "modelo_politico": "Mosaico de cacicazgos autónomos vinculados por alianzas matrimoniales, comercio de salmueras de fuentes terrestres y redes orfebres. Cronistas españoles registraron más de 80 caciques en un territorio de apenas 100 kilómetros cuadrados.",
+        "estatus_del_orfebre": "Los metalurgistas gozaban de una jerarquía aristocrática y chamánica suprema; se les consideraba transformadores del fuego cósmico capaces de materializar la luz solar en objetos de poder para los gobernantes.",
+        "practicas_funerarias": "Construcción de monumentales tumbas de pozo vertical con cámara lateral excavadas en la toba volcánica a profundidades de 5 a 15 metros. Los grandes señores eran sepultados sobre lechos de esteras de caña rodeados de decenas de vasijas cerámicas ceremoniales, armas de chonta y extraordinarios ajuares de oro macizo y tumbaga."
+      },
+      "tecnologia_destacada": {
+        "metalurgia_de_la_tumbaga_y_propiedades_eutecticas": {
+          "descripcion": "Dominio de la aleación binaria de oro y cobre (*tumbaga* o *champi*). La mezcla de aproximadamente 70% oro y 30% cobre reduce el punto de fusión desde los 1064 °C (oro puro) hasta un punto eutéctico de ~850 °C. Esto permitía a los orfebres trabajar a menores temperaturas con hornos de carbón vegetal y sopladores de caña, logrando que el metal líquido fluyera con extraordinaria viscosidad y llenara hasta los detalles más diminutos del molde sin enfriarse prematuramente."
+        },
+        "enriquecimiento_superficial_mise_en_couleur": {
+          "descripcion": "Técnica de refinamiento químico y térmico. Tras vaciar la pieza de tumbaga, esta presentaba un aspecto rojizo oscuro debido a la presencia superficial de cobre. Los orfebres sometían la pieza a calentamiento reiterado al rojo para que el cobre superficial se oxidara en óxido cúprico; luego sumergían la pieza en baños ácidos preparados con extractos botánicos de plantas nativas ácidas del género *Oxalis* (acedera) o ácido acético. El baño ácido disolvía selectivamente el óxido de cobre sin alterar el oro. Repitiendo el proceso varias veces y finalizando con un bruñido enérgico con cuero y hematita, se formaba una película exterior de oro puro de micras de grosor que lucía idéntica al oro macizo de 24 quilates."
+        },
+        "fundicion_a_la_cera_perdida_con_nucleo_interno": {
+          "descripcion": "Invención magistral para fabricar recipientes huecos de paredes metálicas ultrafinas (como el célebre Poporo). Se modelaba primero el volumen interior de la pieza en una pasta refractaria de arcilla mezclada con carbón vegetal molido. Una vez seco este núcleo interno, se le recubría con una lámina uniforme de cera de abejas nativas (*Melipona*) del grosor exacto que tendrían las futuras paredes metálicas. Sobre la cera se insertaban pequeños clavos o tarugos metálicos para mantener sujeto el núcleo. Luego se aplicaba el molde exterior de barro refractario y se calentaba todo: la cera derretida se evacuaba por canales de salida ('cera perdida') y en su lugar se colaba el metal fundido. Al enfriarse, se retiraba el molde externo y se extraía el núcleo interno pulverizándolo a través de la boca del recipiente, logrando piezas metálicas herméticas, ligeras y con menos de 1 milímetro de espesor uniforme."
+        },
+        "quimica_de_la_salmuera_terrestre": {
+          "descripcion": "Aprovechamiento de manantiales salados brotados en laderas montañosas (río Consota). Concentración y secado en tinas de barro cocido para abastecer de sal mineral a todo el valle del río Cauca."
+        },
+        "mambeo_ritual_del_poporo": {
+          "descripcion": "El poporo funcionaba como un sofisticado laboratorio químico portátil: contenía cal viva (óxido/hidróxido de calcio) obtenida calcinando caracoles de río o conchas de conchales. El mambeador extraía con un punzón o aguja orfebre una pequeña porción de cal y la introducía en su bolo de hojas de coca tostada (*Erythroxylum*) alojado en la carrillera de la boca. La cal aumentaba el pH bucal liberando los alcaloides de la coca, permitiendo jornadas de trabajo sostenido, concentración meditativa y ceremonias de deliberación política comunitaria."
+        }
+      },
+      "piezas_museo_oro": [
+        {
+          "registro_catalogo": "MO 0001 / O00001",
+          "nombre_pieza": "El Poporo Quimbaya Clásico",
+          "material": "Tumbaga fundida a la cera perdida con núcleo interior y dorado superficial",
+          "dimensiones": "23.5 cm de altura x 11.4 cm de diámetro",
+          "peso_gramos": 777.7,
+          "origen_y_hallazgo": "Descubierto en el siglo XIX en una cámara funeraria del cerro El Pajarito, municipio de Yarumal (Antioquia). Adquirido el 22 de diciembre de 1939 por el Banco de la República; hito fundacional que motivó la creación oficial del Museo del Oro de Colombia.",
+          "descripcion_arqueologica": "La pieza más icónica y matemáticamente perfecta de la metalurgia prehispánica americana. Presenta un cuerpo globular estilizado inspirado en la silueta vegetal de un calabazo (*Lagenaria siceraria*), rematado en su parte superior por cuatro esferas perfectamente distribuidas y un cuello cilíndrico pulido con acabado de espejo. Demuestra un dominio sublime de la cera perdida con núcleo, con paredes de apenas 1.2 mm de espesor uniforme."
+        },
+        {
+          "registro_catalogo": "MO 06120 / O06120",
+          "nombre_pieza": "Estatuilla Antropomorfa de Cacique Quimbaya",
+          "material": "Tumbaga dorada fundida a la cera perdida",
+          "dimensiones": "22.8 cm de altura",
+          "descripcion_arqueologica": "Escultura tridimensional de un dignatario Quimbaya sentado con los pies descansando sobre una banqueta baja; torso desnudo de vientre suavemente distendido, rostro sereno con los ojos semicerrados ('ojos rasgados en grano de café') en estado de meditación profunda, portando pequeños poporos esféricos en sus manos."
+        },
+        {
+          "registro_catalogo": "MO 06125",
+          "nombre_pieza": "Casco o Tiara Repujada Quimbaya",
+          "material": "Lámina de oro martillada y repujada",
+          "dimensiones": "18.5 cm de diámetro",
+          "descripcion_arqueologica": "Ornamento craneal semiesférico utilizado por los soberanos en actos públicos solemnes, decorado con relieves que representan soles radiantes y aves de rapiña."
+        },
+        {
+          "registro_catalogo": "MO 06122 / MO 06123",
+          "nombre_pieza": "Alfileres de Poporo con Remates Zoomorfos Escultóricos",
+          "material": "Tumbaga fundida a la cera perdida",
+          "dimensiones": "Hasta 32 cm de longitud",
+          "descripcion_arqueologica": "Agujas estilizadas que servían para extraer la cal de los poporos, coronadas por figuras tridimensionales de lagartos, aves marinas, monos aulladores y figuras antropomorfas con extremidades móviles articuladas."
+        },
+        {
+          "registro_catalogo": "Tesoro de los Quimbayas (Colección en el Museo de América de Madrid)",
+          "nombre_pieza": "El Gran Ajuar Fúnebre de La Soledad (122 piezas orfebres)",
+          "material": "Oro de alta pureza y tumbaga",
+          "contexto_historico": "Descubierto en 1890 en el sitio La Soledad (cerca a Filandia, Quindío). En 1892, el presidente Carlos Holguín Mallarino lo regaló de manera unilateral a la reina regente María Cristina de España para exhibirlo en la Exposición Histórico-Americana de Madrid. El conjunto incluye las más célebres esculturas antropomorfas desnudas, poporos de frutos y trompetas orfebres. Es objeto de una orden judicial de repatriación por la Corte Constitucional de Colombia (Sentencia SU-649 de 2017)."
+        }
+      ],
+      "mitologia_y_dioses": {
+        "cosmovision_del_cuerpo_sagrado": "A diferencia de otras tradiciones que privilegiaban la metamorfosis monstruosa o zoomorfa, el arte Quimbaya Clásico concibió el cuerpo humano desnudo, proporcionado y sereno como el receptáculo supremo de lo sagrado. La serenidad de los rostros denota la templanza interior alcanzada a través de la meditación y el mambeo filosófico.",
+        "el_culto_solar_y_la_transmutacion": "El oro no representaba valor comercial de acumulación, sino la condensación física de los rayos del Sol (*Sua / Inti*), dotado de una energía fertilizadora imperecedera que protegía al cacique en su tránsito por el inframundo de las tinieblas.",
+        "metamorfosis_fitomorfa": "Fuerte comunión mística entre el ser humano y el mundo vegetal. Los poporos y las vasijas adoptan la forma de calabazos, calabazas, frutos de guanábana, mazorcas de maíz y palmas de chontaduro, sugiriendo que la vida del hombre madura y renace periódicamente como un fruto de la tierra."
+      },
+      "legado_vivo": {
+        "el_poporo_icono_de_la_nacion": "El Poporo Quimbaya es una de las mayores insignias de identidad de la República de Colombia; ha sido estampado en millones de billetes y monedas nacionales (moneda de $20 pesos, billetes antiguos de $10.000 pesos) y seleccionado como emblema cultural del país ante organismos multilaterales.",
+        "la_lucha_juridica_por_la_repatriacion_del_tesoro": "En 2017, la Corte Constitucional de Colombia emitió la histórica Sentencia SU-649 ordenando a la Presidencia de la República y la Cancillería adelantar todas las acciones diplomáticas y jurídicas necesarias para lograr la restitución y repatriación del 'Tesoro de los Quimbayas' custodiado en España, reconociéndolo como bien patrimonial fundamental inalienable e imprescriptible de la Nación.",
+        "paisaje_cultural_cafetero_de_la_unesco": "La geografía de laderas volcánicas fértiles modeladas por los Quimbayas en Quindío, Risaralda y Caldas alberga hoy el Paisaje Cultural Cafetero de Colombia, declarado Patrimonio Mundial de la Humanidad por la UNESCO en 2011, sustentado en la misma relación armónica con el relieve montañoso que inauguraron los primeros pobladores precolombinos."
+      }
+    },
+    {
+      "id": "zenues",
+      "nombre": "Zenúes (Ingenieros del Agua y la Filigrana)",
+      "periodo": {
+        "cronologia_general": "c. 200 a.C. - 1600 d.C.",
+        "periodo_hidraulico_monumental": "c. 200 a.C. - 1000 d.C.: Diseño, construcción y operación ininterrumpida de la colosal macro-red de drenaje artificial en la Depresión Momposina (500.000 a 650.000 hectáreas); asentamientos dispersos sobre camellones elevados y cúspide de la metalurgia en filigrana fundida.",
+        "periodo_tardio_y_los_tres_senorios": "c. 1000 - 1534 d.C.: Descentralización del manejo de los grandes canales y consolidación de tres grandes provincias geopolíticas complementarias: Finzenú, Panzenú y Zenufana; auge de los grandes santuarios funerarios de túmulos en el río Sinú.",
+        "conquista_y_saqueo": "En 1534, la expedición invasora de Pedro de Heredia penetró en el Finzenú saqueando sistemáticamente las ricas necrópolis de túmulos de oro de los señores zenúes. La resistencia indígena y la complejidad de las ciénagas permitieron la supervivencia comunitaria en comunidades del interior de las sabanas de Córdoba y Sucre."
+      },
+      "ubicacion_geografica": {
+        "region_geografica": "Llanuras del Caribe y Depresión Momposina (valles aluviales de los ríos Sinú, San Jorge, Cauca y bajo Magdalena)",
+        "departamentos_actuales": [
+          "Córdoba",
+          "Sucre",
+          "Bolívar",
+          "norte de Antioquia"
+        ],
+        "altitud_msnm": "10 a 200 msnm (llanuras aluviales bajas, pantanos estacionales y extensos humedales)",
+        "ecosistemas_acuaticos": [
+          "Complejo de ciénagas de la Depresión Momposina (la mayor cuenca sedimentaria inundable del norte de Suramérica)",
+          "Ciénaga de Ayapel (Córdoba)",
+          "Ciénaga de San Marcos y ciénagas del río San Jorge",
+          "Sabanas húmedas arboladas y bosques de galería de los ríos Sinú y San Jorge"
+        ],
+        "tres_provincias_territoriales_ancestrales": {
+          "finzenu": {
+            "ubicacion": "Valle del río Sinú hasta las costas del mar Caribe",
+            "rol": "Centro religioso, espiritual y necrópolis principal; gobernado tradicionalmente por una cacica suprema (como la célebre Cacica Toto), donde se erigían los túmulos funerarios de los grandes dignatarios de toda la confederación y se elaboraban tejidos finos y cesterías ceremoniales."
+          },
+          "panzenu": {
+            "ubicacion": "Cuenca del río San Jorge y llanuras adyacentes",
+            "rol": "El gran centro agropecuario y despensa productiva; concentraba la mayor densidad de camellones elevados y canales hidráulicos para el cultivo intensivo de alimentos y la piscicultura de humedal."
+          },
+          "zenufana": {
+            "ubicacion": "Serranía de San Jacinto, cuenca del río Nechí y bajo Cauca",
+            "rol": "El corazón minero y metalúrgico; controlaba los ricos placeres de oro aluvial y albergaba los grandes talleres orfebres que abastecían de filigrana fundida a toda la región caribeña."
+          }
+        }
+      },
+      "organizacion_social": {
+        "modelo_sociopolitico": "Confederación regional con marcada tradición matrilineal y coexistencia de liderazgo masculino y femenino. Las mujeres gozaban de un poder político, religioso y ritual preponderante.",
+        "estamentos_sociales": [
+          {
+            "estamento": "Cacicas y Caciques Supremos",
+            "descripcion": "Líderes de las provincias de Finzenú, Panzenú y Zenufana; portaban orejeras de filigrana dorada y pectorales mamiformes como símbolo de autoridad emanada de la Madre Tierra."
+          },
+          {
+            "estamento": "Sacerdotes Funerarios y Guardianes de las Necrópolis",
+            "descripcion": "Custodios de los grandes montículos funerarios que mantenían encendidos pebeteros de resina aromática y entonaban cantos fúnebres día y noche."
+          },
+          {
+            "estamento": "Ingenieros Hidráulicos y Maestros del Agua",
+            "descripcion": "Especialistas comunitarios encargados del trazado topográfico, limpieza estacional y apertura/cierre de compuertas y canales de la macro-red."
+          },
+          {
+            "estamento": "Maestros Orfebres de la Filigrana Fundida",
+            "descripcion": "Artífices radicados principalmente en Zenufana que modelaban hilos de cera para convertirlos en joyas de oro y tumbaga de complejidad insuperable."
+          },
+          {
+            "estamento": "Artesanas del Trenzado de Caña Flecha y Tintoreras",
+            "descripcion": "Mujeres encargadas de la recolección, ripiado, tinturado con lodos minerales y tejido de canastos, esteras y sombreros."
+          },
+          {
+            "estamento": "Pescadores y Agricultores Anfibios",
+            "descripcion": "Pobladores que combinaban la agricultura sobre los camellones con la pesca estacional de subienda en los canales artificiales."
+          }
+        ]
+      },
+      "tecnologia_destacada": {
+        "macroingenieria_hidraulica_500000_ha": {
+          "descripcion": "La mayor obra de ingeniería ambiental prehispánica de todo el continente americano, extendida sobre más de 500.000 a 650.000 hectáreas en las llanuras de inundación de los ríos San Jorge y Sinú. Consistió en un complejo sistema de canales artificiales perpendiculares y paralelos a los cauces de los ríos, alternados con camellones elevados de tierra de 1 a 4 metros de altura sobre el nivel máximo de aguas, que se extendían por kilómetros con orientación geométrica uniforme visible hoy desde imágenes satelitales.",
+          "dinamica_ecologica_de_inundacion": "Durante los 6 meses de lluvias torrenciales andinas, los ríos desbordados penetraban en la red de canales; la velocidad de la corriente se reducía drásticamente, evitando avalanchas destructivas y permitiendo que los sedimentos fértiles ricos en limo y nutrientes se decantaran pausadamente sobre las laderas de los camellones. Al llegar la época seca, los canales retenían agua dulce funcionando como inmensos reservorios, viveros de peces y trampas naturales donde quedaban atrapados millones de bocachicos, bagres y tortugas hicoteas, garantizando proteína y cosechas agrícolas durante todo el año."
+        },
+        "orfebreria_en_filigrana_fundida_a_la_cera_perdida": {
+          "descripcion": "Innovación metalúrgica exclusiva zenú. Mientras que la filigrana europea y asiática se elaboraba soldando minuciosamente con calor hilos de alambre metálico forjado, los Zenúes inventaron la 'filigrana fundida': modelaban finísimos filamentos de cera de abejas mezclada con resina vegetal de menos de 0.4 mm de grosor, trenzando una malla de encaje tridimensional con la forma del objeto; luego revestían el modelo en arcilla refractaria y vaciaban la pieza en metal fundido (tumbaga u oro) en una sola colada. El resultado era una pieza de calado abierto y ligereza aérea que reproducía a escala milimétrica el patrón de los canales de agua y los tejidos vegetales."
+        },
+        "cesteria_y_trenzado_en_cana_flecha": {
+          "planta_sagrada": "Caña flecha (Gynerium sagittatum), gramínea silvestre que crece en las márgenes de ríos y ciénagas.",
+          "procesamiento_de_la_fibra": "Corte manual de las hojas maduras, desveneje, raspado o 'ripiado' con cuchillo o concha para obtener la fibra vegetal flexible, y secado al sol para blanquearla ('fibra blanca').",
+          "quimica_mineral_del_tinturado_negro": "Para obtener la 'fibra negra', la caña flecha se somete a un baño en agua hervida con hojas de 'caña agria' (Costus spicatus) y 'bija', que abren los poros y fijan los taninos vegetales; posteriormente, las fibras se entierran durante días en lodazales negros de ciénaga ricos en óxidos de hierro y sulfuros. La reacción química entre los taninos botánicos y los iones de hierro produce una coloración negra azulada profunda, indeleble al sol y al agua.",
+          "origen_del_sombrero_vueltiao": "Invención y origen directo del tradicional Sombrero Vueltiao mediante el sistema ancestral de trenzado por pares de hebras (*ripas*): trenzas finas de 19, 21, 23, 27 y hasta 31 pares de fibras entrelazadas en espiral ('vueltas'), decoradas con complejas figuras geométricas (*pintas*) que narran la cosmovisión acuática del pueblo Zenú."
+        }
+      },
+      "piezas_museo_oro": [
+        {
+          "registro_catalogo": "MO 06020 / O06020",
+          "nombre_pieza": "Orejera Semilunar de Filigrana Fundida Zenú",
+          "material": "Tumbaga dorada fundida a la cera perdida en filigrana",
+          "dimensiones": "6.8 cm de ancho x 5.2 cm de alto",
+          "descripcion_arqueologica": "La obra más emblemática de la orfebrería caribeña. Orejera semicircular de calado abierto con un borde superior rígido donde se posan pequeñas aves acuáticas estilizadas; el cuerpo interior está compuesto por un tejido laberíntico de hilos de filigrana fundida en patrones de zigzag y espirales que evocan el movimiento ondulante de las aguas en los canales de drenaje."
+        },
+        {
+          "registro_catalogo": "MO 29800",
+          "nombre_pieza": "Remate de Bastón con Figura de Jaguar y Garza",
+          "material": "Tumbaga dorada fundida a la cera perdida",
+          "dimensiones": "11.2 cm de altura",
+          "descripcion_arqueologica": "Ornamento escultórico hueco que coronaba los bastones de mando de los caciques, representando a un felino agazapado en cuya espalda descansa una garza zancuda, símbolo de la alianza entre los señores de la tierra firme y las aves de los humedales."
+        },
+        {
+          "registro_catalogo": "MO 24278",
+          "nombre_pieza": "Pectoral Mamiforme Zenú",
+          "material": "Lámina de oro martillada y repujada con dorado intenso",
+          "dimensiones": "19.5 cm de ancho",
+          "descripcion_arqueologica": "Pectoral acorazonado con dos prominencias mamarias en alto relieve, utilizado por cacicas y sacerdotes para exaltar la fertilidad maternal de la tierra y la capacidad dadora de vida de las aguas del Sinú."
+        },
+        {
+          "registro_catalogo": "MO 07412",
+          "nombre_pieza": "Pinza Depilatoria Zoomorfa de Tumbaga",
+          "material": "Tumbaga fundida y martillada",
+          "descripcion_arqueologica": "Instrumento suntuario de aseo y preparación corporal ritual utilizado por la nobleza zenú antes de ingresar a los templos de Finzenú."
+        }
+      ],
+      "mitologia_y_dioses": {
+        "cosmovision_anfibia": "El mundo no fue creado para ser dominado por el hombre, sino para fluir con los ciclos del agua. Los ríos y las ciénagas no eran amenazas catastróficas, sino bendiciones temporales que renovaban la vida y la fertilidad de la tierra.",
+        "deidades_creadoras": [
+          {
+            "nombre": "Mexión y Manexca",
+            "rol": "Pareja Creadora Primordial",
+            "mito": "Mexión formó los cuerpos de los primeros seres humanos amasando arcilla de río mezclada con polvo de oro fino; Manexca, su compañera celestial de un solo seno (símbolo de la luna y la fertilidad femenina), enseñó a las mujeres el tejido de la caña flecha, sopló vida sobre los peces de las ciénagas y ordenó a los ríos detener sus inundaciones para que creciera el maíz."
+          },
+          {
+            "nombre": "La Cacica Toto",
+            "rol": "Madre Mítica y Soberana de Finzenú",
+            "mito": "Figura histórica y mítica venerada como protectora eterna de los ancestros sepultados bajo los grandes túmulos de tierra; en su honor se plantaban ceibas sagradas de cuyas ramas colgaban campanas de oro que cantaban con la brisa marina."
+          }
+        ],
+        "el_arbol_de_oro_sagrado": "Crónicas coloniales de 1534 narran que en el templo principal de Finzenú existía un santuario rodeado de árboles centenarios con campanas y láminas de oro colgadas que tintineaban al compás de los vientos alisios, conectando la copa de los árboles (el cielo) con las raíces enterradas en el agua subterránea."
+      },
+      "legado_vivo": {
+        "el_sombrero_vueltiao_simbolo_cultural_de_la_nacion": "El Sombrero Vueltiao fue reconocido formalmente como Símbolo Cultural de la Nación mediante la Ley 908 de 2004 por el Congreso de la República de Colombia. Es una pieza artesanal de fama planetaria, elaborada a mano exclusivamente por las familias indígenas Zenúes en el municipio de Tuchín y el Resguardo de San Andrés de Sotavento. Las 'pintas' del sombrero (diseños geométricos en blanco y negro) constituyen una verdadera escritura ideográfica: representan la flor del totumo, la pata de la rana, la espina de pescado, el ojo de la perdiz y el camino del agua.",
+        "el_pueblo_zenu_actual": "Comunidad de más de 60.000 indígenas organizados en cabildos reconocidos en el Resguardo de San Andrés de Sotavento (Córdoba y Sucre). Han librado valientes luchas agrarias por la recuperación de sus tierras ancestrales, manteniendo viva la lengua de señas del tejido, la medicina botánica tradicional y la música de pitos y tambores de gaita.",
+        "saberes_gastronomicos_del_humedal": "Cultura culinaria basada en la herencia anfibia zenú: el mote de queso con hojas de bleo o gurome, la mazamorra de plátano verde con leche, el bocachico frito con yuca y el dulce de frijol en Semana Santa."
+      }
+    },
+    {
+      "id": "tumaco-la-tolita",
+      "nombre": "Tumaco-La Tolita (Pioneros del Platino y el Realismo Médico)",
+      "periodo": {
+        "cronologia_general": "c. 600 a.C. - 400 d.C.",
+        "fase_temprana": "c. 600 a.C. - 300 a.C.: Primeras comunidades sedentarias de pescadores y agricultores de manglar en los estuarios de Nariño y Esmeraldas; inicios de la metalurgia en oro aluvial y alfarería modelada con incisiones geométricas.",
+        "fase_clasica_apogeo": "c. 300 a.C. - 250 d.C.: Esplendor monumental del centro ceremonial de la Isla de La Tolita (Ecuador) e islas de Tumaco (El Morro, Nariño); invención de la técnica de sinterización del platino con oro; producción masiva de cerámica hiperrealista con patologías médicas y chamanismo felino; construcción de montículos artificiales de tierra (*tolas*).",
+        "fase_declinacion": "c. 250 d.C. - 400 d.C.: Desarticulación progresiva de los centros ceremoniales provocada por catástrofes volcánicas en la cordillera andina (lluvias de ceniza), cambios eustáticos en el nivel del mar y reacomodo de los clanes hacia selvas interiores de los ríos Mira y Patía."
+      },
+      "ubicacion_geografica": {
+        "region_geografica": "Litoral del Océano Pacífico colombo-ecuatoriano (desde la bahía de Tumaco y bocanas del río Patía en Nariño, Colombia, hasta el delta del río Santiago y la Isla de La Tolita en Esmeraldas, Ecuador)",
+        "departamentos_actuales": [
+          "Nariño (Colombia)",
+          "Provincia de Esmeraldas (Ecuador)"
+        ],
+        "altitud_msnm": "0 a 100 msnm (nivel del mar, archipiélagos marinos, islas de marea y esteros fluviales)",
+        "ecosistemas_costeros": [
+          "Manglares gigantes de mangle rojo (Rhizophora mangle) y mangle negro (Avicennia germinans)",
+          "Estuarios y deltas anfibios de los ríos Mira, Patía, Rosario y Santiago",
+          "Selva pluvial hiperhúmeda del Chocó Biogeográfico (con precipitaciones anuales que superan los 5.000 mm)",
+          "Playas e islas de barrera arenosa sujetas al régimen de mareas del Pacífico"
+        ],
+        "centros_arqueologicos_clave": [
+          "Isla de El Morro (Bahía de Tumaco, Nariño): Gran necrópolis y talleres alfareros prehispánicos",
+          "Inguapí y Bucheli (Nariño): Asentamientos habitacionales con montículos de tierra",
+          "Isla de La Tolita (Desembocadura del río Santiago, Esmeraldas): El mayor centro ceremonial de montículos funerarios (*tolas*) del litoral pacífico suramericano"
+        ]
+      },
+      "organizacion_social": {
+        "modelo_sociopolitico": "Cacicazgos marítimo-fluviales complejos con centros ceremoniales de peregrinación regional erigidos sobre montículos artificiales de tierra (*tolas*).",
+        "estamentos_sociales": [
+          {
+            "estamento": "Caciques-Chamanes Sagrados",
+            "descripcion": "Líderes supremos que gobernaban desde la cúspide de las tolas ceremoniales; ejercían como intermediarios entre el cosmos celeste, la selva del jaguar y las profundidades del océano mediante trances alucinógenos."
+          },
+          {
+            "estamento": "Metalurgistas del Platino y el Oro",
+            "descripcion": "Casta altamente especializada de orfebres que manejaban el fuego y los minerales pesados aluviales; pioneros en resolver problemas físico-químicos que la metalurgia europea no logró superar hasta el siglo XIX."
+          },
+          {
+            "estamento": "Maestros Alfareros y Escultores Anatómicos",
+            "descripcion": "Artistas con un conocimiento clínico detallado de la morfología del cuerpo humano, la gestación, el envejecimiento y las enfermedades corporales."
+          },
+          {
+            "estamento": "Navegantes Marinos de Balsa",
+            "descripcion": "Comerciantes que surcaban las corrientes del Pacífico transportando la sagrada concha marina *Spondylus princeps* (alimento de los dioses), obsidiana volcánica andina, sal y esmeraldas."
+          },
+          {
+            "estamento": "Pescadores de Estero y Piangüeras de Manglar",
+            "descripcion": "Población base que recolectaba moluscos (piangua / *Anadara tuberculosa*), cangrejos de manglar y pescaba corvinas y tiburones."
+          }
+        ]
+      },
+      "tecnologia_destacada": {
+        "primer_sinterizado_de_platino_en_la_historia": {
+          "hito_cientifico_universal": "Primer pueblo en la historia de la humanidad en trabajar y manufacturar aleaciones maleables con platino.",
+          "el_desafio_fisico_quimico": "El platino puro posee un punto de fusión extremadamente alto de 1.768 °C (en comparación, el hierro funde a 1538 °C, el oro a 1064 °C y el cobre a 1083 °C). Ningún horno de combustión de carbón vegetal del mundo antiguo —ni en Egipto, Grecia, Roma o China— podía alcanzar semejante temperatura, limitados a un tope de ~1100 °C - 1200 °C con fuelles o sopletes de caña.",
+          "el_metodo_de_sinterizacion_en_estado_subsolido": "Los orfebres de Tumaco-La Tolita resolvieron esta barrera mediante la técnica que la metalurgia moderna denomina 'sinterización' o difusión atómica en fase líquida: mezclaron granos microscópicos de platino aluvial con polvo de oro sobre un lecho de carbón vegetal; al calentar la mezcla con sopletes de caña a ~1064 °C, el oro fundía y 'mojaba' los granos de platino, envolviéndolos y actuando como matriz aglutinante. Luego, mediante sucesivos ciclos alternados de martilleo cuidadoso en caliente y recocido térmico, los átomos de platino y oro se difundieron recíprocamente en estado sólido, consolidando una aleación homogénea, maleable y dúctil de un deslumbrante color blanco platinado con la que forjaron máscaras, alfileres, pectorales y adornos corporales.",
+          "cronologia_comparada": "Los artesanos de Tumaco lograron esta proeza tecnológica entre el 300 a.C. y el 100 d.C., es decir, cerca de 1.800 a 2.000 años antes de que los científicos europeos lograran aislar y fundir el platino (descrito por Antonio de Ulloa en 1735 y purificado en el siglo XIX por Wollaston)."
+        },
+        "ceramica_medica_hiperrealista": {
+          "descripcion": "La escuela escultórica en arcilla más descriptiva y realista del continente americano. A diferencia de las formas estilizadas o abstractas de otras culturas, los alfareros de Tumaco plasmaron con precisión anatómica clínica y rigor descriptivo las patologías humanas más complejas:",
+          "patologias_clinicas_documentadas": [
+            "Labio leporino y paladar hendido (fisura labio-alvéolo-palatina congénita)",
+            "Acondroplasia (enanismo con rizomelia, macrocefalia y puente nasal deprimido)",
+            "Bocio tiroideo endémico (voluminosa hipertrofia de la glándula tiroides por carencia de yodo)",
+            "Leishmaniasis mucosa o 'espundia' (destrucción ulcerosa severa del tabique nasal y labios)",
+            "Parálisis facial periférica (parálisis de Bell con asimetría labial y lagoftalmos ocular)",
+            "Mal de Pott (cifosis o joroba angular dorsal secundaria a tuberculosis ósea)",
+            "Acromegalia y gigantismo por hiperfunción hipofisaria",
+            "Estados fisiológicos: Mujeres en avanzado estado de gestación, partos gemelares y ancianos seniles con pliegues dérmicos y atrofia muscular profunda"
+          ]
+        },
+        "modificaciones_corporales_y_micro-orfebreria": {
+          "deformacion_craneal": "Práctica generalizada de deformación craneal artificial de tipo tabular erecta y oblicua mediante tablillas de madera y vendajes de algodón apretados en los lactantes.",
+          "micro_clavos_e_incrustaciones": "Fabricación de diminutas tachuelas y clavos de oro y platino de menos de 1.5 milímetros con cabezas soldadas, empleados para perforaciones en el tabique nasal, mejillas y labios, así como incrustaciones de láminas de oro en los incisivos dentales superiores."
+        },
+        "arquitectura_de_tolas": {
+          "descripcion": "Construcción de montículos artificiales de tierra apisonada de base elíptica de hasta 12 metros de altura y más de 100 metros de longitud en islotes de manglar, sirviendo para elevar los templos y viviendas por encima de las mareas extraordinarias y los aguajes del Pacífico."
+        }
+      },
+      "piezas_museo_oro": [
+        {
+          "registro_catalogo": "MO 28945 / O28945",
+          "nombre_pieza": "Máscara Antropomorfa de Oro con Ojos y Dientes de Platino",
+          "material": "Lámina de oro repujada con incrustaciones de platino sinterizado pulido",
+          "dimensiones": "18.2 cm de alto x 16.5 cm de ancho",
+          "descripcion_arqueologica": "Una de las piezas cumbres de la metalurgia universal. Rostro ceremonial antropomorfo con rasgos felinos donde los ojos almendrados y los colmillos caninos están elaborados con placas de platino sinterizado de color blanco plateado brillante, engastadas mediante pestañas dobladas sobre la lámina de oro, produciendo un violento contraste bicromático sagrado entre el sol (oro) y la luna (platino)."
+        },
+        {
+          "registro_catalogo": "MO 24128",
+          "nombre_pieza": "Pectoral Calado de Tumbaga y Láminas de Platino",
+          "material": "Tumbaga fundida y platino sinterizado",
+          "dimensiones": "14.8 cm de ancho",
+          "descripcion_arqueologica": "Pectoral calado de diseño geométrico que representa seres marinos híbridos (tiburones y aves pescadoras) adornado con pequeñas láminas colgantes de platino que producían destellos bajo el agua y el sol."
+        },
+        {
+          "registro_catalogo": "MO 22105",
+          "nombre_pieza": "Clavos Faciales y Adornos Labiales de Platino y Oro",
+          "material": "Platino sinterizado y oro",
+          "dimensiones": "Micro-piezas de 1 a 2 cm de longitud",
+          "descripcion_arqueologica": "Conjunto de tachuelas y agujas ornamentales utilizadas para perforaciones corporales rituales en el mentón y mejillas de los chamanes."
+        },
+        {
+          "registro_catalogo": "Colección ICANH / Museo del Oro - Serie Cerámica Médica Tumaco",
+          "nombre_pieza": "Cabezas Escultóricas de Arcilla con Patologías Clínicas",
+          "material": "Arcilla cocida con engobe y pigmentos minerales",
+          "descripcion_arqueologica": "Conjunto de cabezas fragmentarias recuperadas en las playas de El Morro y La Tolita que exhiben con hiperrealismo científico la deformación craneana tabular oblicua, ceguera por leucoma corneal, labio leporino y arrugas de la senectud."
+        }
+      ],
+      "mitologia_y_dioses": {
+        "el_culto_al_hombre_jaguar": "El jaguar (*Panthera onca*) era la fuerza cósmica primordial: señor de la noche selvática, de las mareas y del sol subterráneo. El chamán consumía potentes sustancias enteógenas (semillas de yopo / *Anadenanthera colubrina*, tabaco silvestre y savia de *Virola*) para experimentar la metamorfosis chamánica: rugir como felino, adquirir visión nocturna en el manglar y desprenderse de su condición humana para interceder ante los espíritus cósmicos.",
+        "monstruos_marinos_y_el_caiman_ancestral": "Veneración mística hacia los grandes depredadores del litoral pacífico: caimanes de aguja, mantarrayas y tiburones eran representados como deidades guardianas de los umbrales marinos.",
+        "la_transformacion_ontologica": "La mutilación corporal ritual, la deformación craneana y las incrustaciones de clavos de oro y platino no eran simples actos estéticos, sino signos sagrados que transformaban al individuo en un ser semidivino capaz de trascender la enfermedad y la muerte."
+      },
+      "legado_vivo": {
+        "el_manglar_como_territorio_ancestral": "Las poblaciones afrodescendientes e indígenas Awá y Eperara Siapidara que habitan hoy el litoral pacífico nariñense custodian el mismo ecosistema de esteros, manglares y ríos caudalosos donde floreció Tumaco-La Tolita, manteniendo prácticas tradicionales de recolección de piangua y navegación en potrillos de madera.",
+        "patrimonio_estudiado_por_la_medicina_moderna": "Las estatuillas cerámicas de Tumaco son estudiadas en congresos internacionales de genética médica, paleopatología y bioarqueología como el primer registro plástico de patologías congénitas del continente americano precolombino.",
+        "memoria_en_las_arenas_de_tumaco": "En las playas de la isla de El Morro y los esteros de Bocagrande, los concheros milenarios continúan arrojando fragmentos de cerámica con rostros prehispánicos tras cada aguaje, recordando a los habitantes del puerto su condición de herederos de una de las civilizaciones más fascinantes y sabias de América."
+      }
+    },
+    {
+      "id": "san-agustin-y-tierradentro",
+      "nombre": "San Agustín y Tierradentro (Megalitos del Alto Magdalena e Hipogeos del Macizo)",
+      "periodo": {
+        "cronologia_general": "c. 1000 a.C. - 1500 d.C.",
+        "periodizacion_san_agustin": {
+          "periodo_formativo": "c. 1000 a.C. - 1 d.C.: Primeros pobladores agroalfareros en el valle del alto Magdalena; cultivo de maíz, entierros simples en fosas y cerámica con incisiones.",
+          "clasico_regional_apogeo_megalitico": "c. 1 d.C. - 900 d.C.: Apogeo del culto funerario monumental; tallado masivo de más de 500 estatuas y monolitos de piedra volcánica; construcción de dólmenes, montículos artificiales de tierra y la Fuente Ceremonial de Lavapatas.",
+          "periodo_reciente": "c. 900 - 1500 d.C.: Cesa la talla de grandes monumentos megalíticos; la población se dispersa en aldeas agrícolas ribereñas hasta la llegada de las expediciones de Sebastián de Belalcázar en 1537."
+        },
+        "periodizacion_tierradentro": {
+          "auge_de_los_hipogeos": "c. 600 d.C. - 1200 d.C.: Excavación y decoración arquitectónica de los monumentales hipogeos subterráneos policromados tallados en la toba volcánica de las cumbres montañosas del cañón del río Páez; auge del entierro secundario en urnas cerámicas."
+        },
+        "declaratoria_unesco": "En 1995, la UNESCO inscribió formalmente en la lista de Patrimonio Mundial de la Humanidad tanto al 'Parque Arqueológico de San Agustín' como al 'Parque Arqueológico Nacional de Tierradentro', reconociéndolos como testimonios excepcionales y únicos de civilizaciones funerarias desaparecidas."
+      },
+      "ubicacion_geografica": {
+        "region_geografica": "Macizo Colombiano (nudo orográfico andino donde nacen los cuatro grandes ríos de Colombia: Magdalena, Cauca, Patía y Caquetá) y el cañón del río Páez",
+        "departamentos_actuales": [
+          "Huila: San Agustín, Isnos, San José de Isnos, Saladoblanco (Área Megalítica de San Agustín)",
+          "Cauca: Inzá, Belalcázar, cuenca del río Páez (Área de los Hipogeos de Tierradentro)"
+        ],
+        "altitud_msnm": "1.600 a 2.300 msnm en San Agustín; 1.500 a 2.600 msnm en Tierradentro (pisos templado y frío andino de alta montaña)",
+        "relieve_y_geologia": "Tierras volcánicas escarpadas modeladas por antiguos flujos piroclásticos y tobas blandas de ceniza volcánica compactada (*toba volcánica*), circundadas por cañones vertiginosos y cascadas monumentales (Estrecho del Magdalena, Salto de Bordones, Salto del Mortiño).",
+        "complejos_y_sitios_arqueologicos_clave": {
+          "san_agustin": [
+            "Mesitas A, B y C (San Agustín): Grandes montículos artificiales con templetes funerarios de lajas y estatuas de guerreros guardianes.",
+            "Alto de los Ídolos (Isnos): Montículos megalíticos unidos por una calzada artificial elevada; alberga las estatuas más monumentales (hasta 4 metros de altura).",
+            "Alto de las Piedras (Isnos): Famoso por la estatua del 'Doble Yo' de gran factura.",
+            "El Purutal: Santuario con estatuas que conservan intacta su policromía original milenaria en pigmentos amarillo, rojo y blanco.",
+            "La Chaquira: Figuras talladas in situ en las paredes rocosas del abismo que contemplan el cañón del río Magdalena.",
+            "Fuente Ceremonial de Lavapatas: Complejo laberinto de canales y figuras zoomorfas talladas directamente en el lecho rocoso de una quebrada.",
+            "El Tablón y La Pelota"
+          ],
+          "tierradentro": [
+            "Segovia (Inzá): El complejo más monumental y mejor decorado; alberga más de 25 hipogeos de gran escala con pintura geométrica intacta.",
+            "El Duende: Hipogeos excavados en el filo de la cuchilla montañosa con decoración en rojo y negro.",
+            "San Andrés: Hipogeos de gran profundidad con columnas centrales cuadrangulares.",
+            "El Aguacate: Hilera de tumbas subterráneas sobre una cresta montañosa de difícil acceso que domina el valle del río Páez.",
+            "El Tablón: Estatuaria megalítica con rasgos afines a San Agustín."
+          ]
+        }
+      },
+      "organizacion_social": {
+        "modelo_sociopolitico": "Sociedades teocráticas centradas en el culto sacerdotal fúnebre y el linaje de los antepasados divinizados. La legitimidad de los jefes no se sustentaba en ejércitos conquistadores, sino en su poder como mediadores mágicos con el mundo de los muertos y las fuerzas cósmicas del jaguar y el rayo.",
+        "estamentos_sociales": [
+          {
+            "estamento": "Caciques-Sacerdotes Funerarios",
+            "descripcion": "Líderes supremos que custodiaban los santuarios de montaña; a su muerte eran inhumados en sarcófagos monolíticos de piedra bajo túmulos vigilados por estatuas con su 'doble animal'."
+          },
+          {
+            "estamento": "Maestros Escultores de la Piedra (San Agustín)",
+            "descripcion": "Canteros de sublime talento que desbastaban y esculpían monolitos de andesita y toba volcánica usando percutores de basalto y cinceles de roca dura."
+          },
+          {
+            "estamento": "Arquitectos Subterráneos y Fresquistas (Tierradentro)",
+            "descripcion": "Especialistas que vaciaban la roca blanda de toba para crear hipogeos subterráneos con columnas sustentantes y pintaban frescos al temple con óxidos minerales."
+          },
+          {
+            "estamento": "Orfebres Laminares del Oro Martillado",
+            "descripcion": "Metalurgistas que confeccionaban pectorales de felinos, narigueras bicornes y diademas para los ajuares fúnebres."
+          },
+          {
+            "estamento": "Comunidades de Agricultores Andinos",
+            "descripcion": "Familias que cultivaban maíz, frijol, yuca de altura, maní y calabaza en las fértiles terrazas de ceniza volcánica."
+          }
+        ]
+      },
+      "tecnologia_destacada": {
+        "estatuaria_megalitica_monolitica_de_san_agustin": {
+          "descripcion": "El mayor conjunto de monumentos religiosos megalíticos y esculturas monolíticas de Suramérica, compuesto por más de 500 estatuas talladas en bloques de toba volcánica y andesita, con dimensiones que oscilan entre 1 y más de 4 metros de altura y pesos de varias toneladas.",
+          "iconografia_del_doble_yo_alter_ego": "La imagen icónica más profunda de San Agustín: representa a un sacerdote o guerrero humano coronado o cubierto por una segunda entidad zoomorfa gigante (jaguar, águila, serpiente o lagarto) que emerge desde su nuca o cabeza, personificando su espíritu protector o *alter ego* chamánico.",
+          "rasgos_estilisticos": "Rostros de ojos almendrados saltones, boca trapezoidal felina con colmillos triangulares cruzados, brazos pegados al cuerpo sosteniendo macanas o herramientas ceremoniales, tocados geométricos y figuras de niños en brazos (asociados a rituales propiciatorios de fertilidad o sucesión de linaje)."
+        },
+        "complejos_funerarios_dolmenicos_de_san_agustin": {
+          "descripcion": "Tumbas monumentales conformadas por grandes lajas planas de piedra montadas a modo de dólmenes (cámaras funerarias megalíticas) que contenían sarcófagos monolíticos tallados en piedra con tapas esculpidas. Todo el conjunto era cubierto por montículos artificiales de tierra de hasta 30 metros de diámetro (*colinas artificiales*), cuya entrada estaba custodiada por imponentes estatuas de guerreros monolíticos armados (*atlantes*)."
+        },
+        "la_fuente_ceremonial_de_lavapatas": {
+          "descripcion": "Obra cumbre de la ingeniería hidráulica sagrada y el arte rupestre precolombino. Se trata de un lecho rocoso natural de toba volcánica sobre una quebrada de montaña, esculpido meticulosamente con un laberinto de canales sinuosos, piletas escalonadas de almacenamiento, desniveles de cascadas y más de 30 figuras en bajorrelieve talladas en la roca viva (sapos, serpientes, lagartos, tortugas y rostros humanos). Servía para baños rituales lustrales, ceremonias de fecundidad agrícola y lectura oracular de las corrientes del agua."
+        },
+        "hipogeos_subterraneos_policromados_de_tierradentro": {
+          "descripcion": "Monumentales tumbas colectivas subterráneas excavadas a pico en la roca de toba volcánica de las cuchillas montañosas. Se componen de un pozo vertical de acceso de hasta 9 metros de profundidad dotado de una escalera helicoidal (en caracol) o de peldaños tallados en la roca viva, que desemboca en una monumental cámara principal de planta ovalada de hasta 12 metros de diámetro.",
+          "arquitectura_interior": "El techo abovedado de los hipogeos está sostenido por una, dos o tres robustas columnas centrales talladas en la misma matriz de roca volcánica, y el perímetro está flanqueado por nichos semicirculares excavados para albergar las urnas funerarias.",
+          "pintura_mural_al_fresco": "Las paredes, techos y columnas de los hipogeos están recubiertos por un revoque fino de estuco natural decorado con pinturas murales geométricas al temple: rombos concéntricos, triángulos yuxtapuestos, grecas, líneas en zigzag y rostros antropomorfos estilizados. Se emplearon pigmentos minerales naturales: rojo cinabrio u óxido de hierro (hematita), negro de humo / carbón vegetal o dióxido de manganeso, y blanco de caolín purificado."
+        },
+        "rito_del_entierro_secundario_en_urnas": {
+          "descripcion": "Práctica funeraria comunitaria en dos etapas: primero, el difunto era sepultado en una fosa individual primaria hasta la descomposición de los tejidos blandos; años después, la comunidad exhumaba cuidadosamente los huesos, los lavaba ceremonialmente y los depositaba en urnas cerámicas globulares de cuello cilíndrico decoradas con caras de antepasados modeladas e incisiones rellenas de cal blanca. Estas urnas se introducían solemnemente en los nichos de los hipogeos subterráneos, integrando los huesos del ancestro al panteón colectivo del clan."
+        }
+      },
+      "piezas_museo_oro": [
+        {
+          "registro_catalogo": "MO 06430 / O06430",
+          "nombre_pieza": "Pectoral de Oro Antropomorfo con Rasgos Felinos de San Agustín",
+          "material": "Lámina de oro martillada y recortada con relieves repujados",
+          "dimensiones": "12.4 cm de altura",
+          "descripcion_arqueologica": "Pectoral laminar que reproduce con asombrosa fidelidad la iconografía de las estatuas megalíticas: figura humana en cuclillas con colmillos cruzados de jaguar saliendo de las comisuras de su boca trapezoidal y tocado con espirales solares."
+        },
+        {
+          "registro_catalogo": "MO 25884",
+          "nombre_pieza": "Nariguera Mascariforme del Alto Magdalena",
+          "material": "Oro de alta pureza martillado con placas móviles colgantes",
+          "dimensiones": "16.5 cm de ancho",
+          "descripcion_arqueologica": "Ornamento nasal de grandes proporciones que al ser suspendido del tabique cubría completamente la boca del sacerdote, dotándolo de una apariencia felina dorada durante las ceremonias funerarias."
+        },
+        {
+          "registro_catalogo": "MO 24869",
+          "nombre_pieza": "Ajuar Fúnebre de Tierradentro en Oro Martillado",
+          "material": "Láminas de oro fino martillado",
+          "descripcion_arqueologica": "Conjunto votivo compuesto por diademas craneales lisas y cuentas de collar bicónicas encontradas en contextos fúnebres de las cámaras subterráneas del río Páez."
+        },
+        {
+          "registro_catalogo": "Colección ICANH - Parques Nacionales Arqueológicos",
+          "nombre_pieza": "Monolito del Doble Yo (Mesita B) y Urnas Funerarias de Segovia",
+          "material": "Andesita volcánica tallada / Arcilla cocida policromada",
+          "descripcion_arqueologica": "Las piezas monumentales in situ más famosas: la estatua del Doble Yo de San Agustín (con su guerrero felino superior sosteniendo una cabeza-trofeo) y las grandes urnas cerámicas de Tierradentro con rostros de ojos en grano de café que custodiaban los huesos de los ancestros en los hipogeos."
+        }
+      ],
+      "mitologia_y_dioses": {
+        "el_doble_yo_y_el_nahualismo": "Concepción chamánica andina según la cual el espíritu humano no está aislado en el cuerpo, sino indisolublemente unido a un animal sagrado protector (*nahual* o *alter ego*). El felino encarna el poder terrenal, el dominio de los músculos y la caza; el águila encarna la visión cenital del cosmos celeste; y la serpiente representa los misterios del inframundo y la sabiduría subterránea.",
+        "el_inframundo_como_utero_regenerador": "En Tierradentro, el hipogeo subterráneo no representaba una tumba de muerte definitiva o descomposición, sino el útero de piedra viva de la Madre Tierra (*Uma Kiwe*). Al descender los huesos lavados por las escaleras helicoidales hacia la oscuridad policromada de la cámara subterránea, los ancestros regresaban al seno fértil del mundo para fecundar las cosechas de maíz y garantizar la continuidad vital del linaje.",
+        "el_solsticio_y_la_chaquira": "Las estatuas de La Chaquira, esculpidas en el borde del abismo sobre el cañón del río Magdalena, están orientadas con precisión astronómica hacia el punto exacto por donde nace el Sol durante los solsticios, marcando el inicio del calendario agrícola y las temporadas de siembra."
+      },
+      "legado_vivo": {
+        "el_pueblo_originario_nasa_paez_de_tierradentro": "Los indígenas Nasa (Paeces) son los habitantes ancestrales y actuales del territorio de Tierradentro. Mantienen una conexión territorial y espiritual indisoluble con las montañas, los ríos y los sitios sagrados de los hipogeos, concibiendo su territorio (*Kiwe*) como un ser vivo dotado de espíritu.",
+        "la_espiritualidad_de_los_the_wala": "Los *The'Wala* (médicos tradicionales y sabios espirituales del pueblo Nasa) guían a la comunidad interpretando las señales del cuerpo, los vientos del cañón y los sueños premonitorios (*Ksxa'w*), realizando rituales de 'apagado del fuego' y armonización para sanar el territorio de las energías de violencia.",
+        "la_guardia_indigena_kiwe_thegnas": "Modelo de resistencia pacífica y soberanía territorial admirado mundialmente. Los guardias indígenas (*Kiwe Thegnas* / Defensores del Territorio) protegen sus comunidades desarmados, portando únicamente el bastón de mando de madera de chonta con cintas de colores verde y rojo, defendiendo la vida, la autonomía y la paz comunitaria.",
+        "la_cacica_gaitana_y_juan_tama": "Héroes históricos de la memoria y la dignidad del Macizo: la Cacica Gaitana (heroína yalcón que en 1538 federó a más de 10.000 guerreros para vengar la muerte de su hijo a manos del conquistador Pedro de Añasco, encarnando la dignidad anticolonial de Colombia); y Juan Tama de la Estrella (líder mítico e histórico del pueblo Nasa, hijo del trueno y de la estrella de agua, quien en el siglo XVII negoció ante la Corona los títulos de los resguardos ancestrales de Tierradentro)."
+      }
+    }
+  ]
+}

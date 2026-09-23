@@ -1,0 +1,840 @@
+{
+  "metadata": {
+    "titulo": "Capa de Datos: Siglo XX, Conflicto Armado y Construcción de la Paz en Colombia",
+    "subagente": "Subagente Especialista en Siglo XX, Conflicto y Memoria Histórica de Colombianopedia",
+    "version": "1.0.0",
+    "fecha_actualizacion": "2026-09-23",
+    "descripcion": "Base de datos estructurada con rigor académico, histórico y testimonial sobre los hitos del siglo XX colombiano, los ciclos de la violencia armada, las luchas sociales, la Constitución de 1991, el Proceso de Paz de 2016 y el Sistema Integral para la Paz.",
+    "marco_metodologico_y_normativo": [
+      "Ley 1448 de 2011 (Ley de Víctimas y Restitución de Tierras)",
+      "Acto Legislativo 01 de 2017 (Creación del Sistema Integral de Verdad, Justicia, Reparación y No Repetición)",
+      "Metodología del Centro Nacional de Memoria Histórica (CNMH): enfoque diferencial, acción sin daño y centralidad de las víctimas",
+      "Metodología de la Comisión para el Esclarecimiento de la Verdad (CEV): investigación extrajudicial amplia, escucha plural, contraste riguroso y análisis de factores de persistencia",
+      "Jurisprudencia de la Corte Constitucional de Colombia y la Corte Interamericana de Derechos Humanos (Corte IDH)"
+    ],
+    "fuentes_primarias_e_institucionales": [
+      "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición (CEV) - Informe Final 'Hay Futuro si Hay Verdad' (2022)",
+      "Centro Nacional de Memoria Histórica (CNMH) - Informes '¡Basta Ya!', 'El Placer', 'Tierras y Conflictos Rurales', 'Una Nación Desplazada', entre otros",
+      "Jurisdicción Especial para la Paz (JEP) - Autos de Determinación de Hechos y Conductas de los Macrocasos 01, 03, 04, 05, 07, 08, 09, 10 y 11",
+      "Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) - Plan Nacional de Búsqueda y registros del Universo de Desaparición",
+      "Unidad para la Atención y Reparación Integral a las Víctimas (UARIV) - Registro Único de Víctimas (RUV) / Red Nacional de Información (RNI)",
+      "Archivo General de la Nación de Colombia (AGN) - Fondos Presidenciales, Ministerio de Gobierno, Ministerio de Guerra y Derechos Humanos",
+      "Archivo de Bogotá - Acervos fotográficos de Sady González y Manuel H. Rodríguez; actas del Concejo Municipal",
+      "The National Archives (Kew, Reino Unido) - Foreign Office FO 881/9924 y FO 128/353 (Reportes de Sir Roger Casement sobre el Putumayo)",
+      "National Archives and Records Administration (NARA, College Park, EE.UU.) - Record Group 59 (Cables diplomáticos de Jefferson Caffery sobre la Masacre de las Bananeras)"
+    ]
+  },
+  "cifras_macro_conflicto": {
+    "fuente_primaria": "Registro Único de Víctimas (RUV) - Unidad para la Atención y Reparación Integral a las Víctimas (UARIV)",
+    "fecha_corte": "Consolidado histórico institucional (2026)",
+    "universo_total_victimas_registradas": 9682541,
+    "victimas_sujetos_atencion_y_reparacion": 7543210,
+    "porcentaje_poblacion_afectada": "Aproximadamente el 18.5% de la población nacional se encuentra registrada como víctima del conflicto armado interno",
+    "desglose_por_hecho_victimizante_ruv": [
+      {
+        "hecho": "Desplazamiento Forzado",
+        "victimas_registradas": 8524183,
+        "descripcion": "El hecho victimizante más masivo y extendido territorialmente en Colombia. Generó un despojo masivo de tierras rurales y una reconfiguración urbana forzada en cinturones de miseria de las principales capitales."
+      },
+      {
+        "hecho": "Homicidio en el Marco del Conflicto",
+        "victimas_registradas": 1075924,
+        "descripcion": "Asesinatos selectivos, masacres campesinas, ejecuciones extrajudiciales y muertes en combates o ataques armados contra poblaciones civiles."
+      },
+      {
+        "hecho": "Amenazas Graves y Sistemáticas",
+        "victimas_registradas": 624190,
+        "descripcion": "Amenazas de muerte dirigidas contra líderes sociales, defensores de DDHH, reclamantes de tierras, sindicalistas y comunidades organizadas."
+      },
+      {
+        "hecho": "Desaparición Forzada",
+        "victimas_registradas": 192840,
+        "descripcion": "Personas reportadas en el RUV (incluyendo víctimas directas y sus familiares con afectación psicosocial y jurídica). El universo proyectado por la UBPD supera las 104.000 a 120.000 personas desaparecidas directamente."
+      },
+      {
+        "hecho": "Pérdida de Bienes Muebles o Inmuebles / Despojo",
+        "victimas_registradas": 146312,
+        "descripcion": "Pérdida material directa de fincas, ganado, maquinaria y viviendas mediante abandono forzado y coacción armada."
+      },
+      {
+        "hecho": "Actos Terroristas, Atentados, Combates y Hostigamientos",
+        "victimas_registradas": 207450,
+        "descripcion": "Civiles víctimas de coches bomba, tomas guerrilleras a cascos urbanos con cilindros bomba, atentados a infraestructura y fuegos cruzados."
+      },
+      {
+        "hecho": "Secuestro / Tomas de Rehenes",
+        "victimas_registradas": 37628,
+        "descripcion": "Privaciones ilegítimas de la libertad perpetradas principalmente por las FARC-EP y el ELN con fines extorsivos, de canje político y control social."
+      },
+      {
+        "hecho": "Delitos contra la Libertad y la Integridad Sexual",
+        "victimas_registradas": 37190,
+        "descripcion": "Violaciones, torturas sexuales, esclavitud doméstica y servidumbre forzada cometidas desproporcionadamente contra mujeres, niñas y personas LGBTIQ+ por todos los actores armados, con especial predominio paramilitar."
+      },
+      {
+        "hecho": "Minas Antipersonal, Municiones sin Explosionar (MUSE) y Artefactos Explosivos Improvisados (AEI)",
+        "victimas_registradas": 12415,
+        "descripcion": "Colombia llegó a ser el segundo país del mundo con mayor número de víctimas por minas antipersonal, afectando severamente a campesinos, comunidades indígenas y miembros de la fuerza pública."
+      },
+      {
+        "hecho": "Vinculación y Reclutamiento Ilícito de Niños, Niñas y Adolescentes",
+        "victimas_registradas": 9940,
+        "descripcion": "Registros formales en el RUV; investigaciones judiciales de la JEP (Macrocaso 07) y la CEV calculan que más de 16.200 a 64.000 menores fueron incorporados forzosamente a filas armadas entre 1971 y 2016."
+      }
+    ],
+    "balance_integrado_cev_jep_hrdag": {
+      "muertes_totales_conflicto_estimadas_1958_2018": 450664,
+      "porcentaje_victimas_civiles_no_combatientes": 80.0,
+      "atribucion_porcentual_responsabilidad_homicidios": {
+        "grupos_paramilitares": 45.0,
+        "guerrillas_insurgentes_farc_eln_epl_m19_otros": 27.0,
+        "agentes_estatales_directos": 12.0,
+        "grupos_armados_no_identificados_o_alianzas_mixtas": 16.0
+      },
+      "masacres_documentadas_historicas": "Más de 4.237 masacres perpetradas en territorio colombiano entre 1958 y 2018",
+      "despojo_tierras_estimado": "Más de 6.5 a 8 millones de hectáreas abandonadas forzosamente o despojadas mediante coerción armada y fraudes notariales"
+    }
+  },
+  "capitulos_historicos": [
+    {
+      "id": "genocidio-caucho-casa-arana",
+      "numero": 1,
+      "titulo": "El Genocidio del Caucho / Fiebres de la Casa Arana",
+      "periodo": "1900 - 1915",
+      "subtitulo": "La extracción cauchera en la Amazonía, el holocausto indígena en La Chorrera y la denuncia pionera de Casement y Rivera",
+      "resumen_ejecutivo": "A principios del siglo XX, la demanda global de caucho para la industria automotriz y eléctrica desató en la Amazonía colombo-peruana (cuencas de los ríos Igaraparaná, Caraparaná y Caquetá-Putumayo) un régimen de terror, esclavitud y exterminio sistemático administrado por la Peruvian Amazon Company (Casa Arana). Más de 40.000 a 70.000 indígenas fueron asesinados o murieron por torturas, hambrunas forzadas y epidemias. La tragedia fue revelada internacionalmente por la investigación diplomática de Sir Roger Casement (1910-1912) y consagrada en la literatura forense y testimonial de 'La Vorágine' (1924) de José Eustasio Rivera.",
+      "antecedentes_y_contexto": {
+        "auge_mundial_caucho": "La segunda revolución industrial y la invención del neumático inflable (Dunlop, Goodyear) dispararon el valor internacional de la 'Castilla elástica' y el 'Hevea brasiliensis'.",
+        "ausencia_estatal_y_vacio_fronterizo": "La región del Putumayo y Caquetá carecía de delimitación fronteriza definitiva entre Colombia y Perú tras la Guerra de los Mil Días. En ese vacío soberano, la Casa Arana, fundada por el comerciante peruano Julio César Arana y registrada financieramente en la Bolsa de Londres en 1907 como 'Peruvian Amazon Company', operó como un Estado de facto privado con guardias armadas y moneda propia.",
+        "centros_de_operaciones": "Estaciones caucheras principales en La Chorrera (río Igaraparaná) y El Encanto (río Caraparaná), ramificadas en decenas de secciones de concentración como Matanzas, Atenas, La Sabana, Entre Ríos, Santa Catalina y Último Retiro."
+      },
+      "pueblos_indigenas_afectados": [
+        {
+          "pueblo": "Uitoto (Murui-Muinane)",
+          "impacto": "Constituían el grueso de la población de La Chorrera; su población fue diezmada en más de un 80%. Se destruyeron sus malocas sagradas y linajes de sabiduría chamánica."
+        },
+        {
+          "pueblo": "Bora",
+          "impacto": "Sometidos a trabajo forzado como cargueros humanos de fardos de caucho de más de 50 kg por trochas de selva bajo golpizas mortales."
+        },
+        {
+          "pueblo": "Ocaina",
+          "impacto": "Casi aniquilados por completo; sus clanes quedaron reducidos a unas pocas decenas de sobrevivientes dispersos."
+        },
+        {
+          "pueblo": "Andoque",
+          "impacto": "Resistieron ferozmente en las cabeceras de los ríos pero fueron cazados con perros dogos y fusiles Winchester por las cuadrillas de capataces."
+        },
+        {
+          "pueblo": "Nonuya, Muinane y Resígaro",
+          "impacto": "Llevados al borde irreversible de la extinción lingüística y física tras el desmembramiento de sus comunidades."
+        }
+      ],
+      "mecanismos_represivos_y_atrocidades": {
+        "sistema_del_correrio_y_endeude": "Se obligaba a los indígenas a entregar cuotas trimestrales de caucho llamadas 'fabricaciones'. Si la carga pesaba un kilo menos de lo exigido, comenzaban los castigos.",
+        "el_cepo": "Armazones de madera maciza con aberturas para piernas, brazos y cuello donde hombres, mujeres e hijos eran encadenados durante días o semanas sin agua ni comida, pudriéndose en sus propios excrementos hasta morir.",
+        "el_azote_y_mutilaciones": "Uso del látigo de cuero crudo de tapir ('tangarana' con espinas o ácido vegetal) que desgarraba carnes hasta el hueso. Prácticas sistemáticas de cercenamiento de orejas, narices, manos y penes.",
+        "tiro_al_blanco_humano_y_hogueras": "Capataces como Armando Normand quemaban vivos a indígenas bañados en queroseno o los utilizaban como blancos móviles para apuestas de tiro con fusil.",
+        "destruccion_alimentaria": "Prohibición a los indígenas de cultivar sus chagras tradicionales (yuca brava, plátano, coca ritual) bajo pena de muerte, para obligarlos a dedicarse 100% al raspado de la resina, provocando hambrunas masivas."
+      },
+      "cifras_victimas_y_demografia": {
+        "poblacion_previa_estimada": "Entre 50.000 y 100.000 indígenas habitaban la cuenca del Putumayo hacia 1900.",
+        "poblacion_sobreviviente_hacia_1915": "Aproximadamente 8.000 a 10.000 personas.",
+        "exterminio_directo_e_indirecto": "Más de 40.000 a 70.000 indígenas muertos por violencia homicida, tortura, extenuación y fiebres epidémicas importadas (viruela, sarampión, beriberi)."
+      },
+      "el_papel_de_roger_casement": {
+        "quien_fue": "Sir Roger Casement, diplomático británico y cónsul en Río de Janeiro, previamente célebre por haber destapado el genocidio del rey Leopoldo II en el Congo Belga en 1904.",
+        "mision_diplomatica_1910": "Enviado por el Foreign Secretary Sir Edward Grey tras las denuncias del ingeniero estadounidense Walter Ernest Hardenburg publicadas en 1909 en la revista londinense 'Truth'.",
+        "el_libro_azul_1912": "Informe oficial presentado ante el Parlamento Británico (Blue Book: 'Report by His Majesty's Consul-General at Rio de Janeiro on His Visits to the Putumayo District'). Documentó con minuciosidad judicial declaraciones juradas de capataces barbadenses de origen británico que habían sido reclutados como esbirros de la compañía.",
+        "impacto_politico": "Provocó la creación de un Comité Selecto de la Cámara de los Comunes en 1913 que declaró culpable de negligencia criminal a los directores británicos de la compañía y ordenó la liquidación forzosa de la Peruvian Amazon Company."
+      },
+      "la_voragine_de_jose_eustasio_rivera": {
+        "publicacion": "Novela publicada en Bogotá en 1924, celebrada como el hito fundacional de la literatura social y de denuncia territorial en Colombia.",
+        "origen_documental": "Rivera viajó a los Llanos Orientales y a la selva del Putumayo y Caquetá en 1922-1923 como secretario de la Comisión Limítrofe Colombo-Venezolana. Allí recopiló denuncias vivas de caucheros enfermos, fugitivos y capataces.",
+        "valor_forense": "Más que una obra de ficción romántica, 'La Vorágine' funciona como un expediente acusatorio contra el Estado colombiano por su indolencia y contra las casas mercantiles por su salvajismo extractivista.",
+        "citas_emblematicas": [
+          "¡Juégueme usted la cabeza y verá si la gano! ¡Yo he sido cauchero, yo soy cauchero! Viví entre el lodo, en la miseria, en la sombra de los árboles que no dejan ver el cielo, y vi hombres colgados de los pies ardiendo en mechas de petróleo...",
+          "Antes que me hubiera apasionado por mujer alguna, jugué mi corazón al azar y me lo ganó la Violencia.",
+          "¡Los devoró la selva!"
+        ]
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "Anciano Abuelo Murui (Tradición Oral de La Chorrera, recopilada por el CNMH)",
+          "rol": "Sobreviviente de linaje tradicional de La Chorrera",
+          "ano": "Tradición oral transmitida a generaciones contemporáneas",
+          "cita": "A nuestros abuelos no los consideraban gente. El caucho era el llanto blanco del árbol, pero se volvió la sangre de nuestro pueblo. En el cepo se pudrieron los capitanes y los médicos tradicionales. La Chorrera se llenó de huesos. Arana no trajo riqueza; trajo la noche más larga de la selva."
+        },
+        {
+          "testigo": "Sir Roger Casement",
+          "rol": "Cónsul General Británico e Investigador Especial",
+          "ano": "1911",
+          "cita": "Los crímenes imputados a muchos hombres que ahora están en el empleo de la Compañía Peruana del Amazonas en el Putumayo son de la especie más atroz: asesinatos a sangre fría, violaciones y flagelaciones constantes hasta la muerte (...) He visto las cicatrices en las espaldas y muslos de niños y mujeres, cicatrices tan gruesas como mi dedo pulgar, producidas por los azotes del látigo de piel de danta."
+        },
+        {
+          "testigo": "José Eustasio Rivera",
+          "rol": "Abogado, diplomático y autor de 'La Vorágine'",
+          "ano": "1924",
+          "cita": "En el silencio de la manigua se consumó el más grande crimen que la codicia humana haya perpetrado contra una raza inocente. La patria debe saber que sus fronteras del sur no fueron defendidas por ejércitos, sino regadas con la sangre de millares de indios martirizados en nombre del progreso."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "The National Archives (Kew, Richmond, UK) - Foreign Office FO 881/9924 (Original Casement Putumayo Reports, 1910-1911) y FO 128/353.",
+        "Archivo General de la Nación de Colombia - Fondo Ministerio de Relaciones Exteriores, Memorias de Relaciones Exteriores (1911-1920).",
+        "Biblioteca Nacional de Colombia - Manuscritos originales y primera edición de 'La Vorágine' (Editorial Cromos, Bogotá, 1924).",
+        "Archivo General de la Nación del Perú - Colección documental Casa Arana Hermanos y expedientes del Juzgado del Bajo Amazonas (Iquitos, 1911-1913)."
+      ],
+      "legado_y_no_repeticion": "El genocidio cauchero inauguró la lógica extractivista de 'zonas de sacrificio' en la Amazonía, patrón que se repitió a lo largo del siglo XX con la explotación maderera, petrolera y el narcotráfico. En 2012, el Estado colombiano pidió perdón público oficial en La Chorrera a los pueblos Uitoto, Bora, Ocaina y Muinane por su omisión y abandono histórico."
+    },
+    {
+      "id": "masacre-de-las-bananeras",
+      "numero": 2,
+      "titulo": "La Masacre de las Bananeras",
+      "periodo": "5 y 6 de diciembre de 1928",
+      "subtitulo": "La huelga de más de 25.000 obreros en Ciénaga contra la United Fruit Company y la subordinación estatal",
+      "resumen_ejecutivo": "En el departamento del Magdalena, más de 25.000 trabajadores de las plantaciones de banano declararon en noviembre de 1928 una huelga pacífica exigiendo condiciones laborales dignas frente al monopolio de la estadounidense United Fruit Company (UFC). En la madrugada del 6 de diciembre, en la plaza de la estación férrea de Ciénaga, el Ejército Nacional, comandado por el general Carlos Cortés Vargas, abrió fuego de ametralladora contra una multitud desarmada de miles de trabajadores y sus familias. El número real de víctimas mortales, ocultado por el gobierno de Miguel Abadía Méndez, osciló entre cientos y más de mil según cables diplomáticos desclasificados de Estados Unidos, convirtiéndose en el hito fundacional de la violencia antisindical moderna en Colombia.",
+      "antecedentes_y_contexto": {
+        "enclave_bananero_ufc": "Desde fines del siglo XIX, la United Fruit Company ('El Pulpo') controlaba la producción, el transporte férreo, el puerto marítimo de Santa Marta y el comercio de provisiones en la Zona Bananera del Magdalena.",
+        "sistema_de_explotacion": "La UFC no contrataba a los obreros de forma directa, sino a través de 'ajustadores' o contratistas intermediarios de enganche para evadir las responsabilidades legales de la incipiente legislación laboral colombiana. El pago se realizaba mediante vales o pagarés canjeables exclusivamente en las 'comisarías' de la propia compañía a precios inflados.",
+        "organizacion_sindical": "Nacimiento de la Unión Sindical de Trabajadores del Magdalena, asesorada y respaldada por líderes del Partido Socialista Revolucionario (PSR), entre ellos María Cano ('La Flor del Trabajo'), Raúl Eduardo Mahecha, Alberto Castrillón y Pedro M. del Río."
+      },
+      "el_pliego_de_peticiones_de_9_puntos": [
+        "1. Seguro colectivo obligatorio contra accidentes de trabajo para todos los operarios.",
+        "2. Reparación o indemnización justa por accidentes laborales sufridos en faenas agrícolas.",
+        "3. Habitaciones higiénicas y salubres para los campamentos de trabajadores, dotadas de agua potable y letrinas.",
+        "4. Descanso dominical remunerado conforme a las leyes nacionales.",
+        "5. Aumento salarial del 50% para los trabajadores que devengaban los jornales más bajos (menos de 100 pesos).",
+        "6. Supresión inmediata del sistema de pago mediante vales, pagarés o fichas; pago en dinero en efectivo de curso legal.",
+        "7. Pago de salarios de forma estrictamente semanal y en los lugares de labor.",
+        "8. Supresión definitiva del sistema de contratistas intermediarios de enganche y reconocimiento de la relación patronal directa con la United Fruit Company.",
+        "9. Suministro gratuito de servicios médicos y medicinas en dispensarios y hospitales de la compañía en la zona."
+      ],
+      "el_decreto_1_y_el_general_cortes_vargas": {
+        "declaracion_estado_sitio": "El gobierno conservador del presidente Miguel Abadía Méndez y el ministro de Guerra Ignacio Rengifo nombraron al general Carlos Cortés Vargas como Jefe Civil y Militar de la provincia de Santa Marta.",
+        "decreto_represivo": "En la noche del 5 de diciembre de 1928, Cortés Vargas expidió el Decreto No. 1 declarando a los huelguistas en masa como 'cuadrilla de malhechores' al margen de la ley y autorizando el uso de la fuerza letal.",
+        "el_tiroteo_en_la_estacion": "Hacia la 1:30 a.m. del 6 de diciembre, en la plaza de la estación de Ciénaga, donde pernoctaban más de 4.000 trabajadores acompañados de mujeres y niños, tropas del Batallón Pichincha emplazaron nidos de ametralladoras Colt. Tras dar tres toques de corneta dando cinco minutos para desalojar, Cortés Vargas ordenó disparar ráfagas continuas contra la multitud atrapada."
+      },
+      "cables_diplomaticos_desclasificados_eeuu": {
+        "importancia_historica": "Los despachos diplomáticos confidenciales enviados por la Legación de EE.UU. en Bogotá y el Consulado en Santa Marta al Departamento de Estado desmintieron la cifra oficial del gobierno de Abadía Méndez (que pretendía reducir los muertos a solo 9 o 13 huelguistas).",
+        "cable_jefferson_caffery_29_dic_1928": "El ministro estadounidense Jefferson Caffery reportó al Secretario de Estado Frank B. Kellogg: 'Tengo el honor de informar que el asesor jurídico de la United Fruit Company aquí en Bogotá me dijo hoy que el número total de huelguistas muertos por las autoridades militares colombianas durante los recientes disturbios alcanzó entre 500 y 600; mientras que las autoridades militares aseguran que no mataron a más de 68'.",
+        "cable_jefferson_caffery_16_ene_1929": "Caffery envió un nuevo despacho confidencial: 'Tengo el honor de informar que el representante de la United Fruit Company en Bogotá me informó hoy que el número total de huelguistas muertos por las autoridades militares excedió de mil ('exceeded 1,000')'. Añadía que los cadáveres habían sido arrojados en fosas comunes y transportados en trenes nocturnos para ser lanzados al mar Caribe.",
+        "amenaza_de_invasion_del_us_marine_corps": "Los cables demuestran que buques de guerra estadounidenses (USS Rochester) estaban anclados en aguas caribeñas listos para desembarcar marines si el gobierno colombiano no protegía las propiedades de la multinacional, argumento que Cortés Vargas utilizó para justificar la masacre como un 'acto de salvación patriótica'."
+      },
+      "el_debate_parlamentario_de_jorge_eliecer_gaitan_1929": {
+        "fechas": "Septiembre de 1929 en la Cámara de Representantes.",
+        "investigacion_de_campo": "Gaitán viajó personalmente al Magdalena, entrevistó a sobrevivientes, desenterró fosas comunes clandestinas en fincas bananeras y llevó al Congreso el cráneo perforado de un niño asesinado por las balas militares.",
+        "acusacion_historica": "Gaitán pronunció una de las piezas oratorias más célebres de la historia parlamentaria colombiana: 'Dolorosamente sabemos que en este país el gobierno tiene la metralla homicida para los hijos de la patria y la rodilla temblorosa en tierra ante el oro americano'."
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "General Carlos Cortés Vargas",
+          "rol": "Comandante Militar de la Plaza de Ciénaga",
+          "ano": "1929 (en su libro justificativo 'Los sucesos de las Bananeras')",
+          "cita": "Tenía el deber ineludible de cumplir la ley. De no haber actuado con la energía que lo hice, buques de guerra de la armada norteamericana habrían desembarcado en las costas de Santa Marta para defender las propiedades de sus connacionales. Preferí que corriera sangre colombiana por orden de un oficial colombiano a ver mancillado el suelo patrio por tropas extranjeras."
+        },
+        {
+          "testigo": "Alberto Castrillón",
+          "rol": "Líder sindical del Partido Socialista Revolucionario",
+          "ano": "1928",
+          "cita": "La multitud estaba allí congregada creyendo que venía el gobernador a resolver el conflicto. Nadie empuñaba un arma. Había mujeres amamantando a sus hijos. Cuando sonó el toque de corneta y vino el tableteo infernal de las ametralladoras, los cuerpos caían en racimos como caen los bananos cortados con machete."
+        },
+        {
+          "testigo": "María Cano ('La Flor del Trabajo')",
+          "rol": "Pionera sindicalista y defensora de los derechos laborales",
+          "ano": "1929",
+          "cita": "En Ciénaga no se sofocó una rebelión; se degolló la esperanza de la clase obrera colombiana. Los muertos de las bananeras no descansarán mientras una compañía extranjera siga dictando el destino y la sangre de nuestros campesinos."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "National Archives and Records Administration (NARA, College Park, MD, EE.UU.) - RG 59: General Records of the Department of State, Decimal Files 821.5045/1 a 821.5045/125.",
+        "Archivo General de la Nación de Colombia - Fondo Presidencia Miguel Abadía Méndez, Fondo Ministerio de Guerra (Decretos de Estado de Sitio y partes de guerra de la Tercera Brigada, 1928-1929).",
+        "Biblioteca del Congreso de Colombia - Anales de la Cámara de Representantes, Sesiones Ordinarias y Extraordinarias de Septiembre de 1929 (Debates de Jorge Eliécer Gaitán).",
+        "Archivo Histórico del Magdalena (Santa Marta) - Expedientes judiciales y notariales de la huelga bananera de 1928."
+      ],
+      "legado_y_no_repeticion": "La masacre precipitó la caída de la Hegemonía Conservadora en 1930 tras 44 años en el poder, dio paso a las reformas laborales de la 'Revolución en Marcha' de Alfonso López Pumarejo (Ley 200 de 1936) e inspiró el pasaje culminante de 'Cien años de soledad' de Gabriel García Márquez, donde el silencio oficial borra la memoria de los trenes cargados de muertos arrojados al mar."
+    },
+    {
+      "id": "el-bogotazo-magnicidio-gaitan",
+      "numero": 3,
+      "titulo": "El Bogotazo y el Magnicidio de Jorge Eliécer Gaitán",
+      "periodo": "9 de abril de 1948",
+      "subtitulo": "El asesinato del caudillo del pueblo, el estallido insurreccional urbano, la pérdida de los archivos fundacionales y la aceleración de La Violencia",
+      "resumen_ejecutivo": "A la 1:05 p.m. del viernes 9 de abril de 1948, el jurista y candidato presidencial liberal Jorge Eliécer Gaitán fue abaleado en el corazón de Bogotá al salir de su oficina por Juan Roa Sierra. Su muerte desató 'El Bogotazo', una gigantesca insurrección popular urbana con saqueos, asaltos a cuarteles e incendios que destruyeron el centro de la capital y el Palacio Municipal colonial, provocando la pérdida irremediable del Acta de Independencia de 1810 original. El magnicidio ocurrió en plena IX Conferencia Panamericana (creación de la OEA) y detonó la etapa más sangrienta de 'La Violencia' bipartidista rural y urbana, cobrando entre 200.000 y 300.000 vidas durante la década siguiente.",
+      "antecedentes_y_contexto": {
+        "figura_de_gaitan": "Líder indiscutible de las masas populares campesinas y obreras ('El Jefe'), precursor del movimiento unigaitanista. Su lema 'Yo no soy un hombre, soy un pueblo' sintetizaba el anhelo de democratización económica y moralización pública.",
+        "la_marcha_del_silencio_febrero_1948": "El 7 de febrero de 1948, Gaitán convocó en Bogotá a más de 100.000 personas que marcharon en absoluto mutismo portando crespones negros para exigir al presidente conservador Mariano Ospina Pérez el cese del exterminio campesino. En la 'Oración por la Paz', imploró: 'Señor Presidente: Os pedimos que cese la persecución de las autoridades... Os pedimos la paz y la piedad para la patria'.",
+        "la_ix_conferencia_panamericana": "Bogotá era sede de la cumbre continental liderada por el general George C. Marshall (Secretario de Estado de EE.UU.) que formalizó la fundación de la Organización de los Estados Americanos (OEA) y aprobó resoluciones anticomunistas en los albores de la Guerra Fría. Delegados estudiantiles latinoamericanos, incluido un joven Fidel Castro, estaban en Bogotá para un congreso paralelo."
+      },
+      "el_magnicidio_y_la_insurreccion": {
+        "los_hechos": "Al descender del edificio Agustín Nieto (Carrera 7a con Calle 14), Gaitán recibió tres impactos de bala en la espalda y el cuello propinados por Juan Roa Sierra. Fue trasladado a la Clínica Central, donde falleció a las 2:05 p.m.",
+        "el_linchamiento": "La multitud enardecida atrapó a Roa Sierra en una droguería vecina, lo molió a golpes, le amarró una corbata al cuello y arrastró su cadáver mutilado y desnudo por toda la Carrera Séptima hasta dejarlo frente a las puertas del Palacio de San Carlos (sede presidencial).",
+        "la_furia_popular_y_las_emisoras": "Los manifestantes asaltaron ferreterías para aprovisionarse de machetes y dinamita, saquearon almacenes y asaltaron la Estación Central de Policía, donde muchos agentes se sublevaron y entregaron sus fusiles al pueblo. Líderes gaitanistas y escritores tomaron los micrófonos de la Radiodifusora Nacional y Radio Santa Fe convocando a una junta revolucionaria."
+      },
+      "perdida_del_palacio_municipal_y_del_acta_de_1810": {
+        "el_incendio_del_palacio_municipal": "En la esquina suroriental de la Plaza de Bolívar, el histórico Palacio Municipal (construido sobre las antiguas Casas Consistoriales coloniales) fue atacado con bombas molotov e incendiado hasta los cimientos.",
+        "destruccion_irreversible_del_acta_de_1810": "En las arcas fuertes del archivo del Concejo reposaba el pergamino original del Acta del Cabildo Extraordinario de Santafé del 20 de julio de 1810, con las firmas originales de Camilo Torres, José Acevedo y Gómez, Joaquín Camacho y demás próceres. El documento original quedó reducido a cenizas.",
+        "perdida_documental_anexa": "Se destruyeron más de 300 volúmenes de libros capitulares del Cabildo desde 1538, catastros de tierras comunales indígenas de la Sabana de Bogotá y registros de las primeras décadas de la República. La memoria fundacional debió sustentarse en las copias oficiales conservadas en el Archivo General de la Nación.",
+        "otros_edificios_arrasados": "Fueron consumidos por el fuego el Ministerio de Gobierno, el Palacio Arzobispal, el Convento de San Francisco, el diario conservador 'El Siglo', el Teatro de la Comedia y tranvías urbanos enteros (más de 136 inmuebles destruidos en el centro)."
+      },
+      "escalada_de_la_violencia_bipartidista_1948_1958": {
+        "la_policia_chulavita": "Cuerpo policial reclutado prioritariamente en zonas ultraconservadoras de Boyacá (municipio de Boavita y vereda Chulavita), caracterizado por su brutalidad contrainsurgente contra poblaciones liberales.",
+        "los_pajaros": "Bandas de sicarios paramilitares pagados por terratenientes y gamonales conservadores en el Valle del Cauca, Quindío y Tolima, liderados por figuras siniestras como León María Lozano ('El Cóndor'), inmortalizado por Gustavo Álvarez Gardeazábal en 'Cóndores no entierran todos los días'.",
+        "resistencia_guerrillera_liberal": "Surgimiento de las 'Guerrillas Liberales del Llano' bajo el liderazgo de Guadalupe Salcedo, Dumar Aljure y Eduardo Franco Isaza, que controlaron extensos territorios de Casanare, Meta y Arauca.",
+        "autodefensas_campesinas": "Comunidades agrarias campesinas influenciadas por el Partido Comunista en Sumapaz, Viotá, Villarrica y Marquetalia, organizadas por Juan de la Cruz Varela para resistir el despojo de tierras.",
+        "costo_humano_global": "El Bogotazo dejó entre 3.000 y 5.000 muertos en la capital en tres días. A nivel nacional, el decenio de 'La Violencia' (1948-1958) causó entre 200.000 y 300.000 homicidios y el desplazamiento forzoso de más de 2 millones de campesinos."
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "Jorge Eliécer Gaitán",
+          "rol": "Candidato Presidencial y Líder Popular",
+          "ano": "7 de febrero de 1948 (Oración por la Paz)",
+          "cita": "Bajo el peso de una honda emoción me dirijo a vuestra excelencia, interpretando el querer y la voluntad de esta inmensa muchedumbre que oculta su ardiente corazón, lacerado por tanta injusticia, bajo un silencio impresionante (...) Señor Presidente: impedid la violencia. Todo lo que os pedimos es la defensa de la vida humana, que es lo mínimo que puede pedir un pueblo."
+        },
+        {
+          "testigo": "Sady González",
+          "rol": "Pionero del Fotoperiodismo Colombiano",
+          "ano": "9 de abril de 1948",
+          "cita": "Corrí con mi cámara Rolleiflex hacia la clínica y luego a las calles en llamas. La gente rompía vitrinas no solo por robar, sino por una furia atávica acumulada. Vi tranvías volcados convertidos en antorchas humanas y el cadáver de Roa arrastrado como una piltrafa. Sentí que se estaba quemando el corazón mismo de la República."
+        },
+        {
+          "testigo": "Amparo Jaramillo de Gaitán",
+          "rol": "Viuda de Jorge Eliécer Gaitán",
+          "ano": "10 de abril de 1948",
+          "cita": "No permitiré que entierren a Jorge Eliécer hasta que no caiga el presidente culpable de su sangre. Mi esposo fue sacrificado porque las oligarquías comprendieron que el pueblo iba a entrar con él victorioso al palacio del gobierno."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "Archivo de Bogotá - Fondo Fotográfico Sady González y Colección Manuel H. Rodríguez (más de 3.000 negativos originales del 9 de abril y los días sucesivos); Actas del Cabildo y expedientes de reconstrucción urbana.",
+        "Archivo General de la Nación de Colombia - Fondo Presidencia Mariano Ospina Pérez, Fondo Ministerio de Gobierno (Despachos telegráficos del estado de sitio, abril de 1948) y Fondo Copias Oficiales del Acta del 20 de Julio de 1810.",
+        "Foreign Office / The National Archives (Reino Unido) - Reporte del equipo investigativo de Scotland Yard contratado en 1948 por el gobierno colombiano para investigar el asesinato de Gaitán.",
+        "National Archives and Records Administration (NARA, EE.UU.) - RG 84 y RG 59: Informes de inteligencia de la Embajada de EE.UU. sobre la IX Conferencia Panamericana y el estallido del 9 de abril."
+      ],
+      "legado_y_no_repeticion": "El 9 de abril partió la historia colombiana en dos. Aniquiló la posibilidad de una transición democrática reformista por la vía electoral, arrojó a cientos de miles de campesinos a tomar las armas en el campo y sembró las raíces profundas de donde brotarían las guerrillas comunistas en la década de 1960. En homenaje a Gaitán y a las víctimas, el 9 de abril fue consagrado por la Ley 1448 de 2011 como el 'Día Nacional de la Memoria y la Solidaridad con las Víctimas'."
+    },
+    {
+      "id": "dictadura-rojas-pinilla-frente-nacional",
+      "numero": 4,
+      "titulo": "Dictadura de Gustavo Rojas Pinilla y el Pacto del Frente Nacional",
+      "periodo": "1953 - 1974",
+      "subtitulo": "Del golpe de opinión y la amnistía agraria a la represión autoritaria y el cierre paritario del poder",
+      "resumen_ejecutivo": "Para frenar la desbocada violencia bipartidista del gobierno conservador de Laureano Gómez, las élites políticas respaldaron el 13 de junio de 1953 el golpe militar del general Gustavo Rojas Pinilla ('golpe de opinión'). Rojas promovió la amnistía a las guerrillas liberales del Llano, modernizó la infraestructura nacional y reconoció los derechos políticos de las mujeres en 1954. No obstante, su régimen derivó en un autoritarismo represivo (masacre estudiantil de 1954, clausura de periódicos, masacre de la Santamaría). Para derrocarlo, los líderes tradicionales liberales y conservadores firmaron los pactos de Benidorm y Sitges, creando el 'Frente Nacional' (1958-1974): un sistema de alternancia presidencial exclusiva por 16 años y paridad del 50/50 burocrático que pacificó la pugna interpartidista de élites, pero clausuró la democracia a terceras fuerzas y propició el nacimiento de las guerrillas de las FARC, el ELN, el EPL y el M-19.",
+      "el_golpe_de_opinion_y_primeras_medidas": {
+        "fecha": "13 de junio de 1953.",
+        "contexto": "El presidente titular Laureano Gómez intentó destituir a Rojas Pinilla mientras se encontraba en ejercicio Roberto Urdaneta Arbeláez. Rojas asumió la presidencia con el lema 'Paz, Justicia y Libertad'. El jurista liberal Darío Echandía lo calificó como un 'golpe de opinión contra la ilegitimidad'.",
+        "la_amnistia_a_las_guerrillas_del_llano": "Rojas ofreció perdón judicial y ayuda económica. En Monterrey (Casanare), en julio y agosto de 1953, más de 3.500 combatientes liberales comandados por Guadalupe Salcedo entregaron sus fusiles. No obstante, el Estado incumplió las promesas de reforma agraria y Salcedo fue asesinado en Bogotá por la policía en 1957.",
+        "grandes_obras_e_instituciones": [
+          "Inauguración de la Televisión Nacional en Colombia el 13 de junio de 1954.",
+          "Construcción del Aeropuerto Internacional El Dorado de Bogotá.",
+          "Edificación del Centro Administrativo Nacional (CAN) y del Hospital Militar Central.",
+          "Creación del Servicio Nacional de Aprendizaje (SENA) en 1957.",
+          "Fundación del Banco Popular y la Secretaría Nacional de Asistencia Social (SENDAS), dirigida por su hija María Eugenia Rojas ('La Capitana')."
+        ],
+        "reconocimiento_del_voto_femenino": "La Asamblea Nacional Constituyente (ANAC) de Rojas aprobó el Acto Legislativo No. 3 del 25 de agosto de 1954 que reconoció formalmente el derecho de sufragio a las mujeres colombianas, fruto de la incansable lucha de líderes sufragistas como Esmeralda Arboleda y Josefina Valencia de Hubach. Las mujeres votaron por primera vez en las urnas en el plebiscito del 1 de diciembre de 1957."
+      },
+      "deriva_autoritaria_y_represion": {
+        "masacre_estudiantil_8_y_9_junio_1954": "El 8 de junio, en la Universidad Nacional de Bogotá, la policía dio muerte al estudiante de medicina Uriel Gutiérrez durante una conmemoración. Al día siguiente, 9 de junio, miles de estudiantes universitarios marcharon pacíficamente hacia el centro por la Carrera Séptima. Tropas del Batallón Colombia (veteranos de la Guerra de Corea) abrieron fuego a discreción: 11 estudiantes resultaron muertos y más de 40 heridos.",
+        "censura_y_clausura_de_prensa": "Clausura forzosa de los principales diarios nacionales opositores: 'El Tiempo' (agosto de 1955), 'El Espectador' y 'El Siglo'. Los periódicos debieron circular clandestinamente bajo cabezotes provisionales como 'Intermedio' y 'El Independiente'.",
+        "la_masacre_de_la_plaza_de_toros_la_santamaria": "El 5 de febrero de 1956, miembros del Servicio de Inteligencia Colombiano (SIC) vestidos de civil golpearon, acuchillaron y arrojaron de las graderías a los espectadores que no aplaudieron a María Eugenia Rojas o vitorearon a Alberto Lleras Camargo, dejando decenas de muertos y heridos.",
+        "la_tragedia_de_los_camiones_de_dinamita_en_cali": "El 7 de agosto de 1956, siete camiones militares cargados con 1.053 cajas de dinamita provenientes de Buenaventura explotaron en pleno centro de Cali, destruyendo 41 manzanas y provocando entre 1.300 y 4.000 muertos. La tragedia agravó el desprestigio del régimen militar."
+      },
+      "paro_civico_y_caida_de_rojas_1957": "El 10 de mayo de 1957, tras un masivo paro cívico patronal y huelga bancaria coordinada por los partidos tradicionales y las élites industriales, Rojas renunció y entregó el mando a una Junta Militar de Gobierno integrada por cinco generales.",
+      "el_pacto_del_frente_nacional_1958_1974": {
+        "los_acuerdos_de_espana": "Laureano Gómez (líder conservador) y Alberto Lleras Camargo (líder liberal) se reunieron en el exilio para sellar la Declaración de Benidorm (julio de 1956) y el Pacto de Sitges (julio de 1957).",
+        "plebiscito_de_1957": "El 1 de diciembre de 1957, con más de 4.1 millones de votos afirmativos, la ciudadanía ratificó el esquema del Frente Nacional y el voto universal de las mujeres.",
+        "mecanismo_institucional_paritario": "1) Alternancia presidencial obligatoria cada cuatro años entre liberales y conservadores durante 16 años (1958-1974). 2) Reparto paritario exacto (50% liberal, 50% conservador) de los escaños en Senado, Cámara de Representantes, Asambleas Departamentales, Concejos Municipales, ministerios y cortes judiciales.",
+        "los_cuatro_presidentes_frentenacionalistas": [
+          {
+            "periodo": "1958-1962",
+            "presidente": "Alberto Lleras Camargo",
+            "partido": "Liberal",
+            "hito": "Reinstitucionalización republicana, creación del INCORA (Ley 135 de 1961 de reforma agraria) y alineación con la Alianza para el Progreso de John F. Kennedy."
+          },
+          {
+            "periodo": "1962-1966",
+            "presidente": "Guillermo León Valencia",
+            "partido": "Conservador",
+            "hito": "Ofensiva contrainsurgente del 'Plan Lazo' y bombardeo a las 'Repúblicas Independientes' de Marquetalia, Río Chiquito y El Pato."
+          },
+          {
+            "periodo": "1966-1970",
+            "presidente": "Carlos Lleras Restrepo",
+            "partido": "Liberal",
+            "hito": "Reforma constitucional de 1968, modernización del Estado tecnocrático, fortalecimiento de la ANUC (Asociación Nacional de Usuarios Campesinos)."
+          },
+          {
+            "periodo": "1970-1974",
+            "presidente": "Misael Pastrana Borrero",
+            "partido": "Conservador",
+            "hito": "Pacto de Chicoral (1972) que desmanteló la reforma agraria y benefició a los terratenientes; sospecha de fraude electoral en los comicios del 19 de abril de 1970."
+          }
+        ]
+      },
+      "cierre_politico_y_nacimiento_de_las_guerrillas_modernas": {
+        "analisis_historico_cev_cnmh": "El Frente Nacional resolvió exitosamente la guerra intestina entre las élites bipartidistas, pero erigió una democracia asfixiante y excluyente que clausuró toda opción pacífica para la izquierda, los movimientos agrarios y las terceras fuerzas.",
+        "surgimiento_de_las_farc_1964": "Tras el ataque militar con más de 1.000 soldados y helicópteros contra 48 campesinos armados en Marquetalia (Tolima) comandados por Pedro Antonio Marín ('Manuel Marulanda Vélez' o 'Tirofijo'), nace el Bloque Sur que en 1966 adopta el nombre de Fuerzas Armadas Revolucionarias de Colombia (FARC).",
+        "surgimiento_del_eln_1964": "Inspirado por la Revolución Cubana, estudiantes y campesinos fundan el Ejército de Liberación Nacional en San Vicente de Chucurí (Santander). En 1965 se une el sacerdote y sociólogo Camilo Torres Restrepo, figura icónica de la Teología de la Liberación.",
+        "surgimiento_del_epl_1967": "Brazo armado del Partido Comunista de Colombia Marxista-Leninista (PCC-ML), de corte maoísta, asentado en el Alto Sinú y San Jorge.",
+        "surgimiento_del_m19_1974": "Nace a raíz del fraude electoral del 19 de abril de 1970 contra la candidatura presidencial del general Gustavo Rojas Pinilla (ANAPO). Fundado por Jaime Bateman Cayón, Álvaro Fayad, Iván Marino Ospina y Carlos Pizarro Leongómez como guerrilla urbana nacionalista."
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "Esmeralda Arboleda",
+          "rol": "Líder sufragista y primera mujer Senadora de la República",
+          "ano": "1954",
+          "cita": "La conquista del voto no es una concesión graciosa del poder masculino; es el reconocimiento tardío de la mitad de la patria que sostuvo los hogares mientras los hombres se desangraban en guerras fratricidas."
+        },
+        {
+          "testigo": "Alberto Lleras Camargo",
+          "rol": "Expresidente de la República y arquitecto del Frente Nacional",
+          "ano": "1957",
+          "cita": "No estamos fundando un paraíso; estamos cerrando las puertas del infierno de la guerra civil. La paridad es una medicina de emergencia, un pacto necesario para que conservadores y liberales aprendan a tolerarse en el poder sin exterminarse en las veredas."
+        },
+        {
+          "testigo": "Manuel Marulanda Vélez ('Tirofijo')",
+          "rol": "Comandante Fundador de las FARC-EP",
+          "ano": "1964 (Programa Agrario de los Guerrilleros de Marquetalia)",
+          "cita": "Somos campesinos que reclamamos tierra y justicia. El gobierno nos respondió con aviones, bombas y tropas traídas por el Plan Lazo de Estados Unidos. Nos cerraron todos los caminos de la paz; por eso nos levantamos en armas y no nos rendiremos."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "Archivo General de la Nación de Colombia - Actas de la Asamblea Nacional Constituyente (ANAC, 1953-1957); Fondos Presidenciales Alberto Lleras Camargo, Guillermo León Valencia, Carlos Lleras Restrepo y Misael Pastrana.",
+        "Hemeroteca Nacional Universitaria / Biblioteca Luis Ángel Arango - Colecciones completas de periódicos clausurados y cabezotes clandestinos ('Intermedio', 'El Independiente', 'El Siglo').",
+        "Archivo Histórico de la Universidad Nacional de Colombia - Expediente judicial y fotográfico de la Masacre del 8 y 9 de junio de 1954.",
+        "Pacto de Sitges y Declaración de Benidorm (textos originales preservados en la Colección Presidencial del AGN, 1956-1957)."
+      ],
+      "legado_y_no_repeticion": "El monopolio del poder político bipartidista incubó las tensiones sociopolíticas que nutrieron el conflicto armado interno de la segunda mitad del siglo XX. Enseñó la lección institucional de que la exclusión democrática engendra inevitablemente la violencia armada clandestina."
+    },
+    {
+      "id": "palacio-de-justicia-y-armero-1985",
+      "numero": 5,
+      "titulo": "Toma y Retoma del Palacio de Justicia y Tragedia de Armero",
+      "periodo": "Noviembre de 1985 (La 'Semana Negra')",
+      "subtitulo": "El holocausto judicial, la desaparición forzada en la Casa del Florero y la catástrofe telúrica sepultada por la negligencia estatal",
+      "resumen_ejecutivo": "En apenas siete días de noviembre de 1985, Colombia vivió dos de sus mayores traumas colectivos. El 6 y 7 de noviembre, la toma del Palacio de Justicia por el M-19 y la brutal retoma militar con blindados EE-09 Cascavel culminaron en el incendio de la sede judicial, la muerte de cerca de 100 personas (entre ellas 11 magistrados de la Corte Suprema), la incineración de miles de expedientes sobre narcotráfico y violaciones de DDHH, y la desaparición forzada sistemática de empleados de la cafetería y visitantes sacados vivos hacia la Casa del Florero. Exactamente seis días después, el 13 de noviembre, la erupción del volcán Nevado del Ruiz originó un lahar monumental que sepultó la ciudad de Armero (Tolima), cobrando más de 23.000 a 25.000 vidas, una tragedia anunciada con meses de antelación cuyos mapas de riesgo fueron desoídos con desidia por el Estado.",
+      "la_toma_del_palacio_de_justicia": {
+        "fecha": "6 y 7 de noviembre de 1985.",
+        "operacion_del_m19": "El comando guerrillero 'Iván Marino Ospina' del M-19 (35 combatientes liderados por Andrés Almarales, Alfonso Jácome y Luis Otero) ejecutó la 'Operación Antonio Nariño por los Derechos del Hombre'. Tomaron más de 350 rehenes para hacer un juicio político público al presidente Belisario Betancur por el rompimiento de las treguas de paz.",
+        "nexos_con_el_cartel_de_medellin": "Investigaciones históricas y judiciales (incluida la Comisión de la Verdad de 2010 sobre el Palacio de Justicia) establecieron que capos del narcotráfico ('Los Extraditables' encabezados por Pablo Escobar) aportaron recursos financieros y armas al M-19 para presionar el hundimiento del Tratado de Extradición a Estados Unidos y la quema de sus expedientes."
+      },
+      "la_retoma_militar_y_el_holocausto": {
+        "la_operacion_rastrillo": "La Brigada XIII del Ejército comandada por el general Jesús Armando Arias Cabrales y la Escuela de Caballería del coronel Alfonso Plazas Vega ejecutaron una retoma bélica implacable. Tanques pesados EE-09 Cascavel y transportes Urutú derribaron la puerta principal e ingresaron disparando cañonazos y ametralladoras.",
+        "negativa_al_cese_al_fuego": "El presidente de la Corte Suprema de Justicia, doctor Alfonso Reyes Echandía, clamó angustiosamente a través de la radio: '¡Por favor, que cese el fuego! ¡Es de vida o muerte! ¡El Ejército no dispara a la guerrilla, nos está disparando a nosotros!'. El presidente Belisario Betancur no respondió sus llamadas y delegó la dirección operativa exclusivamente en la cúpula militar.",
+        "el_incendio_y_perdida_de_archivos": "El cuarto piso y la biblioteca ardieron por completo. Se calcinaron más de 6.000 expedientes judiciales penales de máxima sensibilidad, incluidos los procesos por narcotráfico y extradición contra capos de Medellín y Cali, y los sumarios contra altos mandos militares acusados de torturas (caso de las Cuevas del Sacromonte bajo el Estatuto de Seguridad).",
+        "saldo_fatal": "Cerca de 100 personas muertas, entre ellas 11 magistrados de la Corte Suprema (Alfonso Reyes Echandía, Manuel Gaona Cruz, Darío Velásquez, Carlos Medellín Forero, Fabio Calderón Botero, Fanny González Franco, entre otros), magistrados auxiliares, conductores, guardias y guerrilleros."
+      },
+      "desapariciones_forzadas_en_la_casa_del_florero": {
+        "el_patron_de_traslado_y_filtro": "Las personas evacuadas con vida por el Ejército eran llevadas a la Casa del Florero (Museo del 20 de Julio), convertida en puesto de mando avanzado del B-2 (Inteligencia Militar). Quienes eran considerados 'sospechosos' de colaborar con la guerrilla fueron separados.",
+        "las_victimas_desaparecidas": "Empleados de la cafetería del Palacio: Carlos Augusto Rodríguez Vera, Cristina del Pilar Guarín Cortés, Bernardo Beltrán Hernández, David Suspes Celis, Luz Mary Portela, entre otros; y visitantes ocasionales como Irma Franco Pineda (militante del M-19 detenida con vida) y la abogada Norma Constanza Esguerra.",
+        "sentencia_corte_idh_2014": "La Corte Interamericana de Derechos Humanos condenó al Estado colombiano en el 'Caso Rodríguez Vera y otros vs. Colombia', determinando la existencia de un modus operandi sistemático de desaparición forzada, tortura y ejecuciones extrajudiciales cometidas por miembros del Ejército Nacional.",
+        "condenas_judiciales_en_colombia": "La justicia colombiana condenó al general Jesús Armando Arias Cabrales a 35 años de prisión como autor mediato de las desapariciones forzadas, y al coronel Edilberto Sánchez Sánchez (jefe del B-2)."
+      },
+      "la_tragedia_de_armero_13_noviembre_1985": {
+        "erupcion_del_nevado_del_ruiz": "A las 9:09 p.m. del 13 de noviembre, el volcán expulsó 35 millones de toneladas de material piroclástico. El calor derritió cerca del 10% del casquete glacial de la cumbre, generando cuatro gigantescos lahares (flujos de lodo, ceniza, agua y rocas) que avanzaron a más de 50 kilómetros por hora.",
+        "destruccion_total_de_armero": "Hacia las 11:30 p.m., una ola de lodo hirviente de más de 30 metros de altura arrasó por completo el municipio de Armero (Tolima) y afectó Chinchiná (Caldas). Murieron entre 23.000 y 25.000 personas de los casi 30.000 habitantes de la 'Ciudad Blanca'.",
+        "omayra_sanchez": "Niña de 13 años atrapada en el lodo y los escombros de su vivienda durante 60 horas. Su serenidad, lucidez y dolorosa agonía ante las cámaras de televisión del mundo se convirtieron en el símbolo universal de la tragedia y la impotencia ante la desidia gubernamental.",
+        "negligencia_estatal_y_mapas_desoidos": "Desde fines de 1984, Ingeominas y vulcanólogos internacionales advirtieron de la actividad sísmica. En octubre de 1985 se entregó formalmente el Mapa de Amenaza Volcánica que señalaba con 100% de probabilidad que Armero sería sepultado si el volcán entraba en erupción. El ministro de Minas Iván Duque Escobar y congresistas de la región desestimaron las advertencias en debates públicos tildándolas de 'alarmistas y apocalípticas'. No se impartió orden de evacuación.",
+        "la_tragedia_de_los_ninos_de_armero": "Cientos de niños sobrevivientes rescatados vivos del lodo fueron dispersados en hospitales y albergues de Bogotá, Ibagué y Cali, y dados en adopción de forma irregular o clandestina a familias extranjeras sin cruzar registros de ADN ni verificar a familiares vivos, generando una búsqueda que continúa abierta (caso investigado por la Fundación Armando Armero)."
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "Dr. Alfonso Reyes Echandía",
+          "rol": "Presidente de la Corte Suprema de Justicia",
+          "ano": "6 de noviembre de 1985 (Llamada transmitida por radio Todelar)",
+          "cita": "Habla el presidente de la Corte Suprema de Justicia. Es de vida o muerte: por favor, que cese el fuego de inmediato entre el Ejército y el M-19. Nos estamos muriendo todos aquí asfixiados por el humo... ¡Que cese el fuego, por Dios!"
+        },
+        {
+          "testigo": "Héctor Jaime Guarín",
+          "rol": "Padre de Cristina del Pilar Guarín (desaparecida de la cafetería)",
+          "ano": "Audiencias de la Comisión de la Verdad",
+          "cita": "A mi hija no se la tragó la tierra ni se quemó en el Palacio. La sacaron viva de la mano de un soldado, como quedó registrado en los videos de los noticieros. La llevaron al frente, a la Casa del Florero. Desde ese día, nos condenaron a una búsqueda que nos desgarró la vida entera."
+        },
+        {
+          "testigo": "Omayra Sánchez",
+          "rol": "Niña sobreviviente atrapada en el fango de Armero",
+          "ano": "15 de noviembre de 1985",
+          "cita": "Mamá, si me escuchas, yo creo que sí, reza para que yo pueda salir y que ellos me ayuden... Tengo miedo de que el agua suba más... Los quiero mucho a ti, a mi papá y a mi hermanito."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "Corte Interamericana de Derechos Humanos - Sentencia de 14 de noviembre de 2014 (Excepciones Preliminares, Fondo, Reparaciones y Costas), Caso Rodríguez Vera y otros (Desaparecidos del Palacio de Justicia) vs. Colombia.",
+        "Comisión de la Verdad sobre los Hechos del Palacio de Justicia - Informe Final de los Exmagistrados Nilson Pinilla, Jorge Aníbal Gómez y José Roberto Herrera (Bogotá, 2010).",
+        "Ingeominas (hoy Servicio Geológico Colombiano) - Mapa Preliminar de Riesgo Volcánico del Nevado del Ruiz (Octubre de 1985) y actas de reuniones de emergencia previas a la catástrofe.",
+        "Fundación Armando Armero - Archivo y Banco Genético de Búsqueda de Niños Perdidos de Armero."
+      ],
+      "legado_y_no_repeticion": "Noviembre de 1985 demostró la fragilidad extrema de la institucionalidad colombiana y la desconexión fatal del Estado central con las realidades territoriales. Obligó a crear el Sistema Nacional para la Prevención y Atención de Desastres (hoy UNGRD) y marcó para siempre a la justicia civil frente al desbordamiento militar."
+    },
+    {
+      "id": "asamblea-constituyente-constitucion-1991",
+      "numero": 6,
+      "titulo": "La Asamblea Nacional Constituyente y la Constitución de 1991",
+      "periodo": "1990 - 1991",
+      "subtitulo": "La Séptima Papeleta, el pacto de paz pluripartidista, el Estado Social de Derecho y la tutela como revolución ciudadana",
+      "resumen_ejecutivo": "A finales de la década de 1980, Colombia tocó fondo ante la guerra narcoterrorista del Cartel de Medellín, el exterminio sistemático de la Unión Patriótica y el asesinato de tres candidatos presidenciales en la campaña de 1990 (Luis Carlos Galán, Bernardo Jaramillo Ossa y Carlos Pizarro Leongómez). En respuesta ciudadana, el movimiento estudiantil impulsó la 'Séptima Papeleta' en las elecciones de 1990, propiciando la convocatoria de la Asamblea Nacional Constituyente de 1991. Presidida de manera tripartita por Antonio Navarro Wolff (M-19), Álvaro Gómez Hurtado y Horacio Serpa, la Asamblea redactó una Constitución de vanguardia que consagró a Colombia como un Estado Social de Derecho, reconoció la diversidad étnica y cultural, creó la Acción de Tutela y fundó la Corte Constitucional, la Defensoría del Pueblo y la Fiscalía General.",
+      "crisis_terminal_de_los_anos_80": {
+        "narcoterrorismo": "El Cartel de Medellín desató una ofensiva demencial con coches bomba en Bogotá, Medellín y Cali, la explosión en pleno vuelo del avión de Avianca (Vuelo 203 con 107 muertos en 1989) y la voladura del edificio central del DAS en Paloquemao.",
+        "magnicidios_presidenciales": [
+          "Luis Carlos Galán Sarmiento (Nuevo Liberalismo, asesinado en Soacha el 18 de agosto de 1989).",
+          "Bernardo Jaramillo Ossa (Unión Patriótica, asesinado en el aeropuerto El Dorado el 22 de marzo de 1990).",
+          "Carlos Pizarro Leongómez (Alianza Democrática M-19, asesinado en un avión en vuelo hacia Barranquilla el 26 de abril de 1990, apenas semanas después de haber firmado la paz)."
+        ],
+        "el_genocidio_de_la_up": "Más de 4.000 a 5.000 dirigentes, congresistas, alcaldes y militantes de la Unión Patriótica fueron asesinados por alianzas de paramilitares, agentes de inteligencia del Estado y capos del narcotráfico (declarado crimen de lesa humanidad y genocidio político por la Corte IDH en 2023)."
+      },
+      "el_movimiento_de_la_septima_papeleta": {
+        "origen_estudiantil": "Tras el asesinato de Galán, estudiantes de universidades públicas y privadas (Universidad del Rosario, Los Andes, Nacional, Externado, Javeriana) convocaron el 25 de agosto de 1989 a la multitudinaria 'Marcha del Silencio'.",
+        "la_papeleta_en_las_urnas": "Para las elecciones legislativas del 11 de marzo de 1990, los estudiantes promovieron que la ciudadanía depositara una papeleta adicional informal que rezaba: 'Voto por Colombia: Por una Asamblea Constituyente que reforme la Constitución Política'. Se contabilizaron más de 2 millones de votos simbólicos.",
+        "viabilidad_juridica": "El presidente Virgilio Barco expidió el Decreto de Estado de Sitio 927 de mayo de 1990 para contar oficialmente el voto constituyente en las elecciones presidenciales del 27 de mayo de 1990, el cual fue avalado históricamente por la Sala Constitucional de la Corte Suprema de Justicia."
+      },
+      "la_asamblea_constituyente_de_1991": {
+        "eleccion": "El 9 de diciembre de 1990 se eligieron los 70 delegatarios a la ANC mediante circunscripción nacional única, caracterizada por una pluralidad política inédita sin mayorías absolutas.",
+        "presidencia_tripartita_colegiada": [
+          "Antonio Navarro Wolff (Alianza Democrática M-19, guerrilla desmovilizada).",
+          "Álvaro Gómez Hurtado (Movimiento de Salvación Nacional / Partido Conservador).",
+          "Horacio Serpa Uribe (Partido Liberal Colombiano)."
+        ],
+        "participacion_plurietnica_y_social": "Participaron por primera vez con voz y voto líderes indígenas como Lorenzo Muelas Hurtado (AICO) y Francisco Rojas Birry (ONIC), delegados de minorías cristianas evangélicas (Jaime Ortiz Hurtado), sindicatos, juventudes y sectores independientes."
+      },
+      "transformaciones_y_conquistas_constitucionales": {
+        "estado_social_de_derecho": "El Artículo 1 define a Colombia no como un mero Estado formal de leyes, sino como un Estado Social de Derecho fundado en el respeto de la dignidad humana, el trabajo y la solidaridad de las personas, obligando a los poderes públicos a garantizar condiciones materiales mínimas de vida.",
+        "diversidad_etnica_y_cultural": "Ruptura histórica con el modelo monocultural de la Constitución de 1886. Los artículos 7, 8, 10, 68 y 70 reconocen y protegen la diversidad étnica y cultural de la nación, la cooficialidad de las lenguas indígenas en sus territorios y la autonomía comunitaria (Jurisdicción Especial Indígena, Art. 246; circunscripciones electorales especiales de paz y minorías; y posterior Ley 70 de 1993 de comunidades negras).",
+        "la_accion_de_tutela_art_86": "El recurso jurídico más revolucionario y apropiado por el pueblo colombiano. Mecanismo judicial preferente, sumario y sin abogados para reclamar la protección inmediata de los derechos constitucionales fundamentales frente a vulneraciones de autoridades o particulares. Ha salvado millones de vidas amparando el derecho a la salud, medicamentos, tratamientos y educación.",
+        "acciones_populares_y_del_medio_ambiente_art_88": "Creación de mecanismos colectivos para la defensa del medio ambiente, la moralidad administrativa y el espacio público (Consagración de la 'Constitución Ecológica').",
+        "nuevas_instituciones_democraticas": [
+          "Corte Constitucional de Colombia: Guardiana suprema de la Constitución, productora de una de las jurisprudencias en derechos humanos más garantistas y progresistas del hemisferio occidental.",
+          "Fiscalía General de la Nación: Separación de las funciones de investigación criminal de las labores de juzgamiento de los jueces.",
+          "Defensoría del Pueblo: Institución vigilante de los derechos humanos y garante de asistencia jurídica a los más vulnerables.",
+          "Banco de la República Independiente: Autonomía técnica de la banca central para prevenir la emisión inorgánica y controlar la inflación.",
+          "Mecanismos de Democracia Participativa: Plebiscito, referendo, consulta popular, cabildo abierto, iniciativa popular legislativa y revocatoria del mandato."
+        ]
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "Lorenzo Muelas Hurtado",
+          "rol": "Constituyente Indígena por AICO (Pueblo Guambiano)",
+          "ano": "1991 (Discurso en la Asamblea Constituyente)",
+          "cita": "Hermanos colombianos: después de 500 años de silencio, despojo y olvido, hoy venimos aquí con nuestros trajes y nuestros bastones de autoridad a decirles que siempre estuvimos antes de la República. No queremos privilegios; queremos respeto a nuestra tierra, a nuestra cultura y al derecho de ser nosotros mismos en nuestra propia patria."
+        },
+        {
+          "testigo": "Álvaro Gómez Hurtado",
+          "rol": "Copresidente de la Asamblea Nacional Constituyente",
+          "ano": "4 de julio de 1991 (Proclamación de la Constitución)",
+          "cita": "Esta Constitución no es la victoria de un partido sobre otro; es el acuerdo sobre lo fundamental. Hemos logrado sentarnos en la misma mesa antiguos combatientes alzados en armas y hombres de las instituciones tradicionales para darnos un estatuto de paz y convivencia."
+        },
+        {
+          "testigo": "Antonio Navarro Wolff",
+          "rol": "Copresidente de la Asamblea Nacional Constituyente (AD M-19)",
+          "ano": "1991",
+          "cita": "Dejamos las armas no para rendirnos, sino para participar en la construcción de una Colombia abierta y tolerante. La Constitución de 1991 demostró que las palabras son infinitamente más poderosas que las balas para transformar a un país."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "Gaceta Constitucional - Ediciones completas de la 1 a la 144 (Febrero a Julio de 1991), con las actas de sesiones plenarias y de comisiones temáticas.",
+        "Archivo General de la Nación de Colombia - Fondo Asamblea Nacional Constituyente de 1991 (Proyectos de articulado, grabaciones de audio y textos mecanografiados de ponencias).",
+        "Corte Constitucional de Colombia - Sentencias Hito fundacionales: T-406 de 1992 (Ciro Angarita sobre el Estado Social de Derecho) y C-221 de 1994 (Carlos Gaviria Díaz sobre libre desarrollo de la personalidad).",
+        "Archivo de la Presidencia de la República - Decretos 927 de 1990 y promulgación de la Constitución de 1991."
+      ],
+      "legado_y_no_repeticion": "La Carta Magna de 1991 redefinió la identidad ciudadana de Colombia y sigue siendo el pacto social y político más inclusivo de su historia contemporánea. Marcó la hoja de ruta jurídica e institucional sobre la cual se sustentaron posteriormente las negociaciones de paz de las décadas siguientes."
+    },
+    {
+      "id": "proceso-paz-2016-y-sistema-integral",
+      "numero": 7,
+      "titulo": "El Proceso de Paz de 2016 y el Sistema Integral para la Paz",
+      "periodo": "2012 - Presente",
+      "subtitulo": "El Acuerdo del Teatro Colón, la arquitectura transicional restaurativa (JEP, CEV, UBPD) y la síntesis de los 10 tomos del Informe Final de la Comisión de la Verdad",
+      "resumen_ejecutivo": "Tras cuatro años de negociaciones en La Habana, el Gobierno colombiano y la guerrilla de las FARC-EP firmaron en noviembre de 2016 el Acuerdo Final para la Terminación del Conflicto, logrando la desmovilización de más de 13.000 combatientes y la entrega de más de 8.900 armas a la ONU. El corazón del Acuerdo fue el Sistema Integral para la Paz (JEP, CEV y UBPD), diseñado bajo un enfoque pionero de justicia restaurativa centrada en las víctimas. El 28 de junio de 2022, la Comisión de la Verdad (CEV), presidida por el padre Francisco de Roux, entregó al país su monumental Informe Final de 10 tomos ('Hay Futuro si Hay Verdad'), fruto de escuchar a más de 30.000 personas en 27.300 entrevistas, desentrañando las causas estructurales y los impactos devastadores de 60 años de conflicto armado.",
+      "el_acuerdo_de_paz_de_2016": {
+        "fecha_firma": "24 de noviembre de 2016 en el Teatro Colón de Bogotá (tras la renegociación con sectores del 'No' que ganó el plebiscito del 2 de octubre de 2016).",
+        "firmantes": "Juan Manuel Santos Calderón (Presidente de la República de Colombia y Premio Nobel de la Paz 2016) y Rodrigo Londoño Echeverri 'Timochenko' (Comandante en Jefe del Estado Mayor Central de las FARC-EP).",
+        "los_seis_puntos_del_acuerdo": [
+          {
+            "punto": "1. Hacia un Nuevo Campo Colombiano: Reforma Rural Integral",
+            "contenido": "Creación del Fondo de Tierras de distribución gratuita (3 millones de hectáreas), formalización de 7 millones de hectáreas, y diseño de los Planes de Desarrollo con Enfoque Territorial (PDET) en los 170 municipios más golpeados por la guerra y el abandono."
+          },
+          {
+            "punto": "2. Participación Política: Apertura Democrática para Construir la Paz",
+            "contenido": "Garantías para la oposición política, Estatuto de la Oposición, y creación de 16 Circunscripciones Transitorias Especiales de Paz (CITREP) en la Cámara de Representantes para víctimas de territorios rurales."
+          },
+          {
+            "punto": "3. Fin del Conflicto: Cese al Fuego y Dejación de Armas",
+            "contenido": "Cese al fuego bilateral y definitivo supervisado por una Misión Política Especial de la ONU. Concentración en 26 Zonas Veredales Transitorias de Normalización (ZVTN), entrega y fundición de más de 8.994 armas individuales y colectivas, e inicio de la reincorporación social y económica."
+          },
+          {
+            "punto": "4. Solución al Problema de las Drogas Ilícitas",
+            "contenido": "Programa Nacional Integral de Sustitución de Cultivos de Uso Ilícito (PNIS) con familias campesinas cocaleras, diferenciación penal entre pequeños cultivadores y redes de narcotráfico, y abordaje del consumo de drogas como asunto de salud pública."
+          },
+          {
+            "punto": "5. Acuerdo sobre las Víctimas del Conflicto",
+            "contenido": "Creación del Sistema Integral de Verdad, Justicia, Reparación y No Repetición (SIVJRNR), integrado por la JEP, la CEV y la UBPD, fundamentado en la verdad plena y la justicia restaurativa."
+          },
+          {
+            "punto": "6. Implementación, Verificación y Refrendación",
+            "contenido": "Mecanismos de seguimiento y garantías institucionales (CSIVI), blindaje constitucional mediante el Acto Legislativo 02 de 2017 y acompañamiento de veeduría internacional (ONU, Unión Europea)."
+          }
+        ]
+      },
+      "arquitectura_del_sistema_integral_para_la_paz": {
+        "jep_jurisdiccion_especial_para_la_paz": {
+          "naturaleza": "Componente judicial del Sistema Integral, con rango constitucional (Acto Legislativo 01 de 2017).",
+          "modelo_restaurativo": "Aplica sanciones propias de 5 a 8 años consistentes en Trabajos, Obras y Actividades con Contenido Restaurador-Reparador (TOAR) a comparecientes que aporten verdad exhaustiva, detallada y reconozcan responsabilidad penal temprana. Quienes reconozcan tardíamente enfrentan sanciones alternativas de 5 a 8 años de prisión, y quienes nieguen su responsabilidad van a juicio adversarial con penas de hasta 20 años de cárcel ordinaria.",
+          "los_11_macrocasos_de_la_jep": [
+            {
+              "macrocaso": "Macrocaso 01",
+              "titulo": "Toma de rehenes, graves privaciones de la libertad y otros crímenes concurrentes cometidos por las FARC-EP",
+              "detalles": "Investiga la política sistemática de secuestros con fines de financiación y canje humanitario. Imputó a todo el antiguo Secretariado de las FARC por crímenes de guerra y de lesa humanidad."
+            },
+            {
+              "macrocaso": "Macrocaso 02",
+              "titulo": "Situación territorial de Tumaco, Barbacoas y Ricaurte (Nariño)",
+              "detalles": "Violaciones a DDHH contra pueblos indígenas awá y comunidades afrodescendientes en el Pacífico nariñense."
+            },
+            {
+              "macrocaso": "Macrocaso 03 (Hito Histórico)",
+              "titulo": "Asesinatos y desapariciones forzadas presentados ilegítimamente como bajas en combate por agentes del Estado ('Falsos Positivos')",
+              "detalles": "Determinó judicialmente que entre 2002 y 2008 miembros del Ejército Nacional asesinaron a por lo menos 6.402 civiles indefensos (jóvenes desempleados de Soacha, campesinos) para presentarlos como guerrilleros dados de baja en combate a cambio de permisos, condecoraciones y dinero en brigadas como La Popa (Cesar), Brigada Móvil 15 (Ocaña), Brigada XVI (Casanare), Antioquia y Meta."
+            },
+            {
+              "macrocaso": "Macrocaso 04",
+              "titulo": "Situación territorial de la región de Urabá",
+              "detalles": "Investiga crímenes cometidos en los municipios del Urabá antioqueño y chocoano entre 1986 y 2016."
+            },
+            {
+              "macrocaso": "Macrocaso 05",
+              "titulo": "Situación territorial de los municipios del norte del Cauca y sur del Valle del Cauca",
+              "detalles": "Violencia contra resguardos nasa, guambianos y consejos comunitarios afrodescendientes."
+            },
+            {
+              "macrocaso": "Macrocaso 06",
+              "titulo": "Victimización de miembros de la Unión Patriótica (UP)",
+              "detalles": "Investiga el plan de aniquilamiento de más de 5.000 miembros del partido político de izquierda por agentes estatales y paramilitares."
+            },
+            {
+              "macrocaso": "Macrocaso 07",
+              "titulo": "Reclutamiento y utilización de niñas, niños y adolescentes en el conflicto armado",
+              "detalles": "Investiga la vinculación forzada de menores de 18 años cometida masivamente por los frentes de las FARC-EP."
+            },
+            {
+              "macrocaso": "Macrocaso 08",
+              "titulo": "Crímenes cometidos por la fuerza pública, otros agentes del Estado o en asociación con paramilitares",
+              "detalles": "Focalizado en la connivencia estructural entre mandos militares, redes paramilitares (AUC) y terceros civiles financiadores."
+            },
+            {
+              "macrocaso": "Macrocaso 09",
+              "titulo": "Crímenes no amnistiables cometidos contra pueblos y territorios étnicos",
+              "detalles": "Impacto genocida y biocultural del conflicto sobre los pueblos indígenas, negros, afrocolombianos, palenqueros, raizales y Rrom a escala nacional."
+            },
+            {
+              "macrocaso": "Macrocaso 10",
+              "titulo": "Crímenes no amnistiables cometidos por miembros de las extintas FARC-EP por causa del conflicto armado",
+              "detalles": "Investiga masacres, desplazamientos forzados, empleo indiscriminado de cilindros bomba y minas antipersonal cometidas por bloques guerrilleros."
+            },
+            {
+              "macrocaso": "Macrocaso 11",
+              "titulo": "Violencia basada en género, violencia sexual, violencia reproductiva y otras violencias por causa del conflicto armado",
+              "detalles": "Aborda de manera transversal las violencias machistas, patriarcales y homofóbicas sufridas por mujeres y comunidades LGBTIQ+."
+            }
+          ]
+        },
+        "ubpd_unidad_de_busqueda_de_personas_dadas_por_desaparecidas": {
+          "naturaleza": "Entidad del Estado con rango constitucional, de carácter humanitario y extrajudicial.",
+          "mision": "Dirigir, coordinar y contribuir a la búsqueda, localización, recuperación, identificación y entrega digna de las personas dadas por desaparecidas en el contexto y en razón del conflicto armado.",
+          "dimension_del_desafio": "El Universo de Personas Dadas por Desaparecidas consolidado por la UBPD supera las 104.000 a 120.000 personas, una cifra superior a la sumatoria de las dictaduras de Argentina, Chile, Uruguay y Brasil combinadas.",
+          "acciones": "Diseño de 32 Planes Regionales de Búsqueda, intervención forense en cementerios municipales intervenidos (como Las Mercedes de Dabeiba, Antioquia, donde se descubrieron fosas clandestinas de falsos positivos militares) y tomas masivas de muestras de ADN a miles de familias buscadoras."
+        },
+        "cev_comision_para_el_esclarecimiento_de_la_verdad": {
+          "naturaleza": "Órgano constitucional autónomo, independiente y transitorio (operó entre noviembre de 2018 y agosto de 2022).",
+          "presidente": "Padre Francisco de Roux, S.J. (sacerdote, filósofo y economista colombiano dedicado a la paz territorial).",
+          "cifras_del_proceso_de_escucha": {
+            "personas_escuchadas": 30000,
+            "entrevistas_individuales_y_colectivas": 27300,
+            "informes_tematicos_recibidos": 1195,
+            "casos_colectivos_analizados": 730,
+            "encuentros_por_la_verdad": 10,
+            "dialogos_para_la_no_repeticion": 14,
+            "paises_del_exilio_cubiertos": 24
+          }
+        }
+      },
+      "sintesis_de_los_10_tomos_del_informe_final_cev": {
+        "titulo_general": "Hay Futuro si Hay Verdad",
+        "fecha_presentacion": "28 de junio de 2022",
+        "tomos": [
+          {
+            "tomo": "Tomo 1",
+            "nombre": "Convocatoria a la Paz Grande",
+            "subtitulo": "Declaración de la Comisión para el Esclarecimiento de la Verdad a la sociedad colombiana",
+            "sintesis": "Invocación ética, poética y política a la nación. Proclama que Colombia ha vivido en una ilusión de normalidad mientras convivía con la barbarie. Afirma con contundencia que el sufrimiento humano infligido a más de nueve millones de víctimas nos interpela a todos como sociedad. Plantea que la paz no es un pacto técnico entre cúpulas armadas, sino una transformación espiritual, ética y cultural colectiva: la 'Paz Grande'.",
+            "cita_clave": "Traemos un mensaje de dolor y de esperanza a la sociedad colombiana. Llegó la hora de mirarnos a los ojos y reconocernos en el sufrimiento de los otros, porque el dolor de las víctimas de cualquier bando es el dolor de toda la nación."
+          },
+          {
+            "tomo": "Tomo 2",
+            "nombre": "Hallazgos y Recomendaciones",
+            "subtitulo": "El corazón explicativo de las causas, factores de persistencia y la ruta de futuro",
+            "sintesis": "Desglosa los cuatro factores medulares de persistencia que impidieron frenar la guerra durante 60 años: 1) El modelo de seguridad nacional basado en la noción del 'enemigo interno' y la militarización de la protesta; 2) La cuestión agraria no resuelta, el despojo violento y la hiperconcentración latifundista de la tierra; 3) El narcotráfico como combustible financiero ilimitado y como captor de instituciones estatales y privadas; 4) La impunidad judicial estructural, la corrupción y el clientelismo que normalizaron la degradación institucional. Presenta recomendaciones obligatorias para el Estado.",
+            "cita_clave": "La guerra no fue inevitable ni una fatalidad biológica: fue alimentada por decisiones políticas, intereses económicos mezquinos y un sistema de justicia que premió la impunidad de los poderosos."
+          },
+          {
+            "tomo": "Tomo 3",
+            "nombre": "No Matarás",
+            "subtitulo": "Relato histórico del conflicto armado interno (1958 - 2016)",
+            "sintesis": "Recorrido exhaustivo por las fases históricas de la violencia contemporánea: la transición inconclusa del Frente Nacional, el surgimiento guerrillero, el Estatuto de Seguridad de Turbay Ayala (1978-1982), el advenimiento del narcotráfico y la conformación de los ejércitos paramilitares de las AUC con apoyo estatal en los años 90, la escalada bélica y ofensiva de la Seguridad Democrática (2002-2010), y la construcción de la vía negociada que condujo a La Habana.",
+            "cita_clave": "El imperativo supremo 'No Matarás' fue pisoteado en nombre de ideologías, de la defensa del orden o de la toma revolucionaria del poder. Nada, absolutamente nada, justifica el asesinato de un semejante."
+          },
+          {
+            "tomo": "Tomo 4",
+            "nombre": "Hasta la Guerra Tiene Límites",
+            "subtitulo": "Violaciones a los Derechos Humanos y graves infracciones al Derecho Internacional Humanitario",
+            "sintesis": "Documenta y tipifica con rigor probatorio los patrones criminales cometidos por todos los actores armados: masacres sistemáticas (más de 4.200 eventos), homicidios selectivos de líderes sociales, desaparición forzada generalizada, secuestro extorsivo y político como degradación absoluta de la libertad, torturas físicas y psicológicas en bases militares y campamentos insurgentes, bombardeos indiscriminados y el flagelo de las minas antipersonal sembradas en caminos veredales.",
+            "cita_clave": "Los combatientes traspasaron todas las fronteras de la ética humana y de los convenios de Ginebra. Trataron a los civiles no como conciudadanos a proteger, sino como piezas prescindibles o enemigos a exterminar."
+          },
+          {
+            "tomo": "Tomo 5",
+            "nombre": "Colombia Adentro",
+            "subtitulo": "Relatos y dinámicas regionales del conflicto en 14 territorios de la nación",
+            "sintesis": "Demuestra que la guerra se ensañó de forma diferencial y asimétrica según las geografías: la violencia terrateniente y contrainsurgente en el Urabá y Magdalena Medio; el confinamiento y despojo del Chocó y el Pacífico negro e indígena; el control fariano y los bombardeos en el Caguán y la Amazonía; la disputa por pozos petroleros en Arauca y el Catatumbo; y el sicariato narco-paramilitar y miliciano en las comunas populares de Medellín, Cali y Bogotá.",
+            "cita_clave": "La guerra no ocurrió en abstracto: tuvo nombres de veredas, de ríos donde bajaban cadáveres y de trochas donde campesinos tuvieron que abandonar para siempre la tierra de sus ancestros."
+          },
+          {
+            "tomo": "Tomo 6",
+            "nombre": "Mi Cuerpo es la Verdad",
+            "subtitulo": "Experiencias, impactos y resistencias de mujeres y personas LGBTIQ+ en el conflicto armado",
+            "sintesis": "Visibiliza cómo los cuerpos de las mujeres y de las personas con orientaciones sexuales e identidades de género diversas fueron utilizados como trofeos de guerra, territorios de conquista y herramientas de disciplinamiento machista. Analiza la violencia sexual sistemática, el embarazo y aborto forzados en las filas de las FARC, la esclavitud doméstica impuesta por los bloques paramilitares de las AUC y, al mismo tiempo, la admirable capacidad de las mujeres que buscaron a sus hijos y tejieron redes de resistencia civil que salvaron vidas.",
+            "cita_clave": "Sobre nuestros cuerpos marcaron el odio de la guerra. Pero desde estos mismos cuerpos rotos renació la fuerza más indestructible para tejer la memoria y exigir justicia."
+          },
+          {
+            "tomo": "Tomo 7",
+            "nombre": "Resistir No es Aguantar",
+            "subtitulo": "El impacto desproporcionado del conflicto armado sobre los pueblos étnicos de Colombia",
+            "sintesis": "Expone el riesgo inminente de exterminio físico y cultural de más de 65 pueblos indígenas, comunidades negras, afrocolombianas, raizales, palenqueras y el pueblo Rrom. La guerra destruyó sitios sagrados, fracturó los gobiernos ancestrales, profanó ríos y manglares, y causó el desplazamiento forzoso de comunidades enteras, constituyendo un daño biocultural irreparable al patrimonio de la humanidad.",
+            "cita_clave": "Para nosotros el territorio no es un pedazo de tierra negociable: el territorio es la madre, es el espíritu, es nuestra lengua. Cuando bombardean la selva o envenenan el río, están matando el alma misma de nuestro pueblo."
+          },
+          {
+            "tomo": "Tomo 8",
+            "nombre": "La Colombia Fuera de Colombia",
+            "subtitulo": "Las verdades del exilio, el refugio y la migración forzada transnacional",
+            "sintesis": "Hito pionero a nivel mundial: por primera vez una comisión de la verdad crea un tomo exclusivo para el exilio. Más de un millón de colombianos huyeron del país hacia 40 naciones de América Latina, Norteamérica y Europa para escapar del sicariato, las amenazas y el reclutamiento forzado. Narra el duelo del desarraigo, las barreras lingüísticas, la desprotección consular y las redes de solidaridad transnacionales.",
+            "cita_clave": "Llevar la patria en una maleta rota, cruzar fronteras con el miedo impregnado en los huesos y guardar silencio para que no te persigan en el exilio ha sido el destino silenciado de miles de colombianos."
+          },
+          {
+            "tomo": "Tomo 9",
+            "nombre": "No es un Mal Menor",
+            "subtitulo": "Niñas, niños y adolescentes en el conflicto armado",
+            "sintesis": "Examina la crueldad infringida a la infancia y juventud. Analiza el reclutamiento de menores por guerrillas y paramilitares, la vida en los campamentos armados, los fusilamientos por intentos de deserción, la orfandad masiva que dejó a cientos de miles de niños sin padres, la transformación de escuelas veredales en cuarteles de combate y la pérdida de la inocencia y el futuro de generaciones enteras.",
+            "cita_clave": "A un niño campesino le cambiaron el cuaderno y el trompo por un fusil que pesaba más que sus brazos. La sociedad colombiana no puede seguir considerando la destrucción de su infancia como un daño colateral."
+          },
+          {
+            "tomo": "Tomo 10",
+            "nombre": "Cuando los Pájaros no Cantaban",
+            "subtitulo": "Historias del conflicto armado en Colombia: testimonio coral y polifonía de la memoria",
+            "sintesis": "El tomo testimonial, íntimo y literario de la Comisión. Construye una arquitectura coral sin intermediarios analíticos, donde campesinos, madres buscadoras, soldados heridos, excombatientes y niños relatan con lenguaje directo la experiencia del horror, el estupor de las noches de combate, el duelo irresuelto de los desaparecidos y la chispa luminosa de la solidaridad comunitaria.",
+            "cita_clave": "Cuando entraban al pueblo disparando, hasta los pájaros dejaban de cantar en los árboles. Se hacía un silencio de muerte que todavía me retumba en el pecho cada vez que cae la noche."
+          },
+          {
+            "tomo": "Tomo de Recomendaciones",
+            "nombre": "Recomendaciones para la No Repetición",
+            "subtitulo": "Hacia la Paz Grande: agenda de transformaciones estructurales para Colombia",
+            "sintesis": "Hoja de ruta vinculante para el Estado y la sociedad civil. Exige reformas profundas: transformación de la Doctrina de Seguridad Nacional hacia el concepto de Seguridad Humana; separación de la Policía Nacional del Ministerio de Defensa; implementación integral del Punto Agrario del Acuerdo de Paz de 2016; cambio del paradigma punitivo prohibicionista de las drogas por una regulación centrada en la salud y el campesinado; desmantelamiento real del paramilitarismo y las mafias asociadas al poder político regional; y educación escolar en memoria y verdad histórica.",
+            "cita_clave": "La no repetición no es una promesa vacía: exige el coraje político e institucional de transformar las estructuras que hicieron posible la degradación moral y el exterminio de nuestros compatriotas."
+          }
+        ]
+      },
+      "testimonios_historicos": [
+        {
+          "testigo": "Padre Francisco de Roux, S.J.",
+          "rol": "Presidente de la Comisión para el Esclarecimiento de la Verdad (CEV)",
+          "ano": "28 de junio de 2022 (Acto de entrega del Informe Final)",
+          "cita": "Traemos una palabra que busca no ahondar la división, sino salvarnos juntos como seres humanos. Les decimos a las Fuerzas Militares, a las FARC, a los paramilitares, al Estado y a la clase política: ¡Paren ya la guerra! La verdad es un bien público universal que cura nuestras heridas si tenemos la valentía de abrazarla."
+        },
+        {
+          "testigo": "Carmenza Gómez",
+          "rol": "Madre de Soacha (Asociación MAFAPO - Madres de Falsos Positivos)",
+          "ano": "Audiencia pública de reconocimiento de la JEP",
+          "cita": "A mi hijo Víctor Fernando lo engañaron con una promesa de trabajo y apareció asesinado con uniforme militar en Ocaña. No eran guerrilleros, eran muchachos limpios y buenos. Nos dijeron locas y mentirosas, pero hoy el mundo sabe la verdad: a nuestros hijos los mató el propio Ejército para cobrar recompensas."
+        },
+        {
+          "testigo": "Rodrigo Londoño ('Timochenko')",
+          "rol": "Último Comandante de las FARC-EP y Firmante de Paz",
+          "ano": "24 de noviembre de 2016 (Firma en el Teatro Colón)",
+          "cita": "En nombre de las FARC-EP, pido perdón con el corazón en la mano a todas las víctimas del conflicto por todo el dolor que hayamos podido causar en esta guerra. Nuestro único instrumento a partir de este momento será la palabra y la lucha democrática."
+        }
+      ],
+      "referencias_archivo_y_documentos": [
+        "Plataforma Transmedia de la Comisión de la Verdad (comisiondelaverdad.co) - Acervo digital público con más de 15.000 horas de testimonios, mapas interactivos, audios y documentos desclasificados entregados al Archivo General de la Nación.",
+        "Jurisdicción Especial para la Paz (JEP) - Autos No. 019 de 2021 (Determinación de Hechos del Macrocaso 01 - Secuestro) y Auto 128 de 2021 (Determinación de Hechos Subcaso Norte de Santander - Macrocaso 03 Falsos Positivos).",
+        "Unidad para las Víctimas (UARIV) - Red Nacional de Información (RNI), Tableros dinámicos del Registro Único de Víctimas (RUV).",
+        "Acuerdo Final para la Terminación del Conflicto y la Construcción de una Paz Estable y Duradera (Texto oficial de 310 páginas, Presidencia de la República, Noviembre de 2016)."
+      ],
+      "legado_y_no_repeticion": "El Proceso de Paz de 2016 y el Informe Final de la CEV constituyen el esfuerzo de autoanálisis ético, forense y social más profundo en la historia republicana de Colombia. Dejaron en claro que la paz duradera solo es viable mediante el reconocimiento incondicional de la verdad de las víctimas y la superación de las desigualdades territoriales históricas."
+    }
+  ],
+  "glosario_conceptos_clave": [
+    {
+      "termino": "Estado Social de Derecho",
+      "definicion": "Modelo constitucional adoptado en 1991 que impone al Estado el deber activo y positivo de garantizar condiciones materiales reales de dignidad, igualdad de oportunidades, educación, salud y bienestar para todos los habitantes, superando la noción del mero Estado gendarme o liberal decimonónico."
+    },
+    {
+      "termino": "Justicia Transicional Restaurativa",
+      "definicion": "Enfoque de justicia aplicado en contextos de superación de conflictos armados masivos, donde el fin prioritario no es el castigo carcelario retributivo, sino la satisfacción integral de los derechos de las víctimas: verdad plena, reparación del daño causado, reconocimiento de responsabilidad y garantías efectivas de no repetición."
+    },
+    {
+      "termino": "Acción de Tutela",
+      "definicion": "Mecanismo preferente y expedito establecido por el artículo 86 de la Constitución de 1991, mediante el cual cualquier persona puede solicitar ante cualquier juez la protección inmediata de sus derechos constitucionales fundamentales cuando estos resulten vulnerados o amenazados por la acción u omisión de autoridades públicas o particulares."
+    },
+    {
+      "termino": "Ejecuciones Extrajudiciales ('Falsos Positivos')",
+      "definicion": "Término con el que se conoce el patrón sistemático y generalizado implementado por unidades del Ejército Nacional de Colombia entre 2002 y 2008, mediante el cual al menos 6.402 civiles inocentes fueron engañados, secuestrados y asesinados para ser presentados ilegítimamente como bajas guerrilleras en combate a cambio de incentivos económicos, medallas y permisos operacionales."
+    },
+    {
+      "termino": "Desaparición Forzada",
+      "definicion": "Privación ilegítima de la libertad de una persona por agentes del Estado o personas/grupos armados que actúan con su autorización o aquiescencia, seguida de la negativa a reconocer dicha privación de libertad o del ocultamiento deliberado de la suerte o paradero de la persona desaparecida."
+    },
+    {
+      "termino": "Enfoque Diferencial y de Género",
+      "definicion": "Principio metodológico y analítico que reconoce que el conflicto armado afectó con particular severidad y de maneras distintas a poblaciones en situación de vulnerabilidad o discriminación histórica: mujeres, personas LGBTIQ+, pueblos indígenas, afrocolombianos, niños y adultos mayores."
+    },
+    {
+      "termino": "Daño Biocultural",
+      "definicion": "Afectación integral sufrida por pueblos indígenas y afrodescendientes donde la agresión armada contra el medio ambiente (selvas, ríos, lagunas sagradas) destruye simultáneamente su tejido espiritual, lingüístico, alimentario y cultural ancestral."
+    },
+    {
+      "termino": "TOAR (Trabajos, Obras y Actividades con Contenido Restaurador)",
+      "definicion": "Sanciones propias impuestas por la JEP a los comparecientes que reconozcan verdad y responsabilidad, consistentes en acciones tangibles de desminado humanitario, búsqueda de personas desaparecidas, construcción de infraestructura comunitaria y recuperación ambiental en territorios afectados por la guerra."
+    }
+  ],
+  "repositorio_archivos_y_acervos": [
+    {
+      "nombre": "Plataforma Digital Transmedia de la Comisión de la Verdad",
+      "institucion": "Comisión de la Verdad / Archivo General de la Nación",
+      "acceso": "Digital público (comisiondelaverdad.co / archivogeneral.gov.co)",
+      "contenido": "Los 10 tomos del Informe Final, archivos de audio, cartografía del conflicto, testimonios desclasificados y recursos pedagógicos para escuelas."
+    },
+    {
+      "nombre": "Archivo Virtual de Derechos Humanos",
+      "institucion": "Centro Nacional de Memoria Histórica (CNMH)",
+      "acceso": "Digital y físico (Bogotá)",
+      "contenido": "Más de 400.000 documentos, archivos sindicales, testimonios de víctimas del paramilitarismo, guerrilla y agentes estatales, y archivos sonoros de comunidades rurales."
+    },
+    {
+      "nombre": "Fondo Documental Presidencial y de Derechos Humanos",
+      "institucion": "Archivo General de la Nación de Colombia (AGN)",
+      "acceso": "Sede Central AGN (Bogotá) y catálogo en línea",
+      "contenido": "Actas de la Asamblea Nacional Constituyente de 1991, decretos de estado de sitio, expedientes de La Violencia y documentación diplomática histórica."
+    },
+    {
+      "nombre": "Fondo Fotográfico Sady González y Manuel H. Rodríguez",
+      "institucion": "Archivo de Bogotá (Secretaría General de la Alcaldía Mayor)",
+      "acceso": "Archivo de Bogotá (Calle 6B No. 5-75)",
+      "contenido": "Miles de placas de vidrio y negativos originales que capturan el 9 de abril de 1948, la vida urbana de Bogotá en el siglo XX y la movilización popular gaitanista."
+    },
+    {
+      "nombre": "Foreign Office Archives: Putumayo & Casement Blue Book",
+      "institucion": "The National Archives (Kew, Richmond, Reino Unido)",
+      "acceso": "Físico y microfilmes (FO 881/9924; FO 128/353)",
+      "contenido": "Informes consulares, diarios de campo de Roger Casement, correspondencia con la Peruvian Amazon Company y testimonios de capataces barbadenses."
+    },
+    {
+      "nombre": "Department of State Records: Colombia Bananeras Crisis",
+      "institucion": "National Archives and Records Administration (NARA, College Park, EE.UU.)",
+      "acceso": "Físico y digital (Record Group 59, Decimal File 821.5045)",
+      "contenido": "Cables confidenciales de Jefferson Caffery y George Shaw sobre la huelga bananera, estimaciones secretas de muertos y amenazas de intervención militar."
+    }
+  ]
+}

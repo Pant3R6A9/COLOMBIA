@@ -1,0 +1,1020 @@
+{
+  "$schema": "https://colombianopedia.co/schemas/independencia_siglo_xix.v1.json",
+  "metadata": {
+    "titulo": "Capa de Datos de la Emancipación y las Guerras Civiles del Siglo XIX Republicano",
+    "subtitulo": "Deconstrucción historiográfica, fuentes archivísticas primarias (AGN), campañas bélicas, cartografía corográfica y dinámicas de conflicto civil (1810-1903)",
+    "version": "1.0.0",
+    "fecha_creacion": "2026-09-23",
+    "especialista": "Subagente Especialista en Independencia y Siglo XIX Republicano de Colombianopedia",
+    "licencia": "Creative Commons Atribución-CompartirIgual 4.0 Internacional (CC BY-SA 4.0)",
+    "ambito_espacio_temporal": {
+      "inicio": 1810,
+      "fin": 1903,
+      "territorio": "Virreinato de la Nueva Granada, Provincias Unidas de la Nueva Granada, Gran Colombia, República de la Nueva Granada, Confederación Granadina, Estados Unidos de Colombia y República de Colombia"
+    },
+    "fuentes_archivisticas_principales": [
+      {
+        "institucion": "Archivo General de la Nación (AGN) - Colombia",
+        "fondos": [
+          "Fondo Manumisión (Sección República)",
+          "Fondo Guerras Civiles (Sección República)",
+          "Fondo Archivo Histórico de la República (AHR)",
+          "Fondo Historia Militar y Marina",
+          "Fondo Curas y Obispos",
+          "Fondo Colegios y Universidades (Instrucción Pública)"
+        ]
+      },
+      {
+        "institucion": "Biblioteca Nacional de Colombia (BNC)",
+        "fondos": [
+          "Fondo Comisión Corográfica (Acuarelas y Manuscritos)",
+          "Fondo Anselmo Pineda",
+          "Fondo José María Vergara y Vergara",
+          "Hemeroteca Histórica (Gacetas Oficiales y Prensa Radical)"
+        ]
+      },
+      {
+        "institucion": "Archivo Central del Cauca (Popayán)",
+        "fondos": [
+          "Fondo Cabildo y Notarías",
+          "Expedientes de Hacendados y Cuadrillas Mineras de Barbacoas y Chocó"
+        ]
+      },
+      {
+        "institucion": "Academia Colombiana de Historia",
+        "fondos": [
+          "Colección de Documentos Inéditos para la Historia de Colombia",
+          "Papeles del General Santander y General Bolívar"
+        ]
+      }
+    ]
+  },
+  "juntas_provinciales_1810": {
+    "introduccion_historiografica": "La historiografía escolar tradicional consolidó el mito fundacional del 20 de julio de 1810 en Santafé de Bogotá como el día de la 'Independencia Nacional'. Las investigaciones contemporáneas (Margarita Garrido, Hermes Tovar Pinzón, Jorge Orlando Melo, Daniel Gutiérrez Ardila) demuestran que el 20 de julio no fue una ruptura republicana definitiva ni un movimiento unificado nacional, sino un cabildo extraordinario criollo en el que se juró fidelidad condicionada al rey Fernando VII. Meses y días antes, provincias periféricas ya habían derrocado autoridades españolas, y fueron villas y provincias como Mompox (6 de agosto de 1810) y Cartagena (11 de noviembre de 1811) las que proclamaron la independencia absoluta real.",
+    "desmitificacion_20_julio_bogotano": {
+      "mito_escolar": "El 20 de julio de 1810 Colombia nació como nación libre e independiente de España gracias a un motín popular espontáneo provocado por un florero prestado.",
+      "realidad_historiografica": [
+        "El Acta de Santafé juró obediencia expresa al monarca español Fernando VII ('depositario en el muy augusto y desgraciado Monarca don Fernando VII, con tal que venga a mandar entre nosotros').",
+        "El motín del florero de José González Llorente fue una provocación premeditada y cuidadosamente planificada en reuniones secretas celebradas en el Observatorio Astronómico dirigido por Francisco José de Caldas, con Camilo Torres Tenorio, Joaquín Camacho, José Acevedo y Gómez y los hermanos Morales.",
+        "La Junta Suprema de Santafé eligió inicialmente como presidente al mismísimo Virrey español Antonio Amar y Borbón. Fue únicamente por la presión plebeya radical liderada por José María Carbonell y los 'chisperos' de los barrios de San Victorino y Las Nieves que Amar y Borbón fue apartado y encarcelado días después (25 de julio).",
+        "Santafé intentó imponer su primacía virreinal centralista sobre las demás provincias del Nuevo Reino, lo que desató de inmediato el rechazo de las juntas de Cartagena, Santa Marta, Popayán y Pasto, incubando la primera guerra civil interprovincial ('Patria Boba', 1812-1815)."
+      ],
+      "cita_documental_acta_1810": {
+        "texto": "...depositario en el muy augusto y desgraciado Monarca don Fernando VII, con tal que venga a mandar entre nosotros, bajo las condiciones que se estipulen, y en el entretanto gobernará la Junta Suprema presidida por el Excelentísimo Señor Don Antonio Amar y Borbón...",
+        "fuente": "Acta del Cabildo Extraordinario de Santafé, folio 3, 20 de julio de 1810.",
+        "significado": "Evidencia documental irrefutable de que el movimiento de Santafé inició como una proclama juntista autonomista y fidelista ante la cautividad del Rey por Napoleón Bonaparte, no como una declaración de república soberana."
+      },
+      "actores_del_20_julio": [
+        {
+          "nombre": "José María Carbonell",
+          "rol": "Líder de los sectores populares y 'chisperos'",
+          "descripcion": "El verdadero motor plebeyo de la jornada. Agitó a las masas de artesanos y tenderos de San Victorino, exigiendo el cabildo abierto, la prisión del virrey y la participación del bajo pueblo, desafiando a los criollos letrados aristócratas."
+        },
+        {
+          "nombre": "José Acevedo y Gómez",
+          "rol": "Tribuno del Pueblo",
+          "descripcion": "Arengó a la multitud desde el balcón del cabildo con la célebre frase: 'Si perdéis este momento de efervescencia y calor... ved los calabozos, los grillos y las cadenas que os esperan'."
+        },
+        {
+          "nombre": "Camilo Torres Tenorio",
+          "rol": "Ideólogo y autor del Memorial de Agravios (1809)",
+          "descripcion": "Abogado caucano que articuló el descontento de la élite criolla ante la marginación política frente a los peninsulares."
+        },
+        {
+          "nombre": "Antonio Amar y Borbón",
+          "rol": "Virrey del Nuevo Reino de Granada",
+          "descripcion": "Treinta y tres virrey español, vacilante entre ceder al cabildo o reprimirlo. Aceptó la presidencia de la Junta hasta su confinamiento en el Convento de San Victorino."
+        }
+      ]
+    },
+    "cronologia_simultanea_juntas_provinciales": [
+      {
+        "lugar": "Quito (Presidencia dependiente del Virreinato)",
+        "fecha": "1809-08-10",
+        "descripcion": "Primer Grito de Independencia en el norte de Sudamérica. Destitución del conde Ruiz de Castilla. Aunque reprimida ferozmente en 1810 (Masacre de los próceres de Quito), encendió la mecha continental."
+      },
+      {
+        "lugar": "Cali (Cabildo Extraordinario)",
+        "fecha": "1810-07-03",
+        "descripcion": "El cabildo caleño, liderado por Joaquín de Caycedo y Cuero, desconoce la autoridad del gobernador realista de Popayán, Miguel Tacón, y se declara en autonomía 17 días antes que Bogotá."
+      },
+      {
+        "lugar": "Pamplona",
+        "fecha": "1810-07-04",
+        "descripcion": "El pueblo pamplonés asalta la casa del corregidor peninsular Juan Bastús y Faya, deponiéndolo y estableciendo una Junta Provincial Provisional."
+      },
+      {
+        "lugar": "El Socorro",
+        "fecha": "1810-07-10",
+        "descripcion": "Tras una masacre perpetrada por tropas españolas contra ciudadanos en la plaza pública, el cabildo y la plebe socorrana sitian al corregidor José Valdés y constituyen una junta revolucionaria popular diez días antes de Santafé."
+      },
+      {
+        "lugar": "Santafé de Bogotá",
+        "fecha": "1810-07-20",
+        "descripcion": "Estallido en la Plaza Mayor tras el incidente del florero de Llorente. Creación de la Junta Suprema del Reino de Santafé."
+      },
+      {
+        "lugar": "Villa Imperial de Santa Cruz de Mompox",
+        "fecha": "1810-08-06",
+        "descripcion": "Primera declaración de Independencia Absoluta de España y de cualquier potencia extranjera en todo el territorio colombiano actual."
+      },
+      {
+        "lugar": "Chocó (Quibdó)",
+        "fecha": "1810-08-31",
+        "descripcion": "Instalación de la Junta Provincial del Chocó desconociendo a las autoridades peninsulares y apoyando la causa emancipadora."
+      },
+      {
+        "lugar": "Cartagena de Indias",
+        "fecha": "1810-08-13 (Junta) y 1811-11-11 (Absoluta)",
+        "descripcion": "El 13 de agosto de 1810 depuso al gobernador Francisco de Montes. El 11 de noviembre de 1811 proclamó solemnemente la Independencia Absoluta."
+      },
+      {
+        "lugar": "Tunja",
+        "fecha": "1810-10-18",
+        "descripcion": "Cabildo abierto constituye la Junta Provincial de Tunja, declarando su soberanía e iniciando la redacción de la Constitución de la República de Tunja."
+      }
+    ],
+    "independencia_absoluta_mompox": {
+      "fecha": "1810-08-06",
+      "lugar": "Santa Cruz de Mompox (Provincia de Cartagena)",
+      "titulo_oficial": "Declaración Soberana de la Junta Gubernativa de Mompox",
+      "hitos_y_analisis": [
+        "Mompox, emporio comercial y estratégico puerto fluvial sobre el río Magdalena, rompió tajantemente con la ficción fernandina.",
+        "A diferencia del cabildo bogotano, el cabildo abierto momposino no juró sumisión a Fernando VII ni al Consejo de Regencia de Cádiz.",
+        "Se proclamó independiente no sólo de la metrópoli española, sino también de la Junta Provincial de Cartagena de Indias, lo que provocó que Cartagena despachara expediciones militares al mando del coronel Manuel del Castillo y Rada para sofocar la autonomía momposina en enero de 1811.",
+        "Fue la primera urbe de la actual Colombia en declararse formalmente 'libre, soberana e independiente de todo poder foráneo'."
+      ],
+      "cita_documental": {
+        "texto": "...ser absolutamente independientes de España y de cualquiera otra dominación extranjera, y de no reconocer otro gobierno que el que legítimamente se establezca por la voluntad de los pueblos reunidos en un cuerpo general supremo de la Nueva Granada...",
+        "fuente": "Acta de la Junta Gubernativa de Santa Cruz de Mompox, 6 de agosto de 1810. Archivo Histórico de Mompox / BNC."
+      }
+    },
+    "independencia_absoluta_cartagena": {
+      "fecha": "1811-11-11",
+      "lugar": "Cartagena de Indias (Plaza de Getsemaní y Palacio de Gobierno)",
+      "protagonistas": [
+        "Pedro Romero (Maestro herrero, mulato pardo y líder del arrabal de Getsemaní)",
+        "Gabriel Gutiérrez de Piñeres y Germán Gutiérrez de Piñeres (Líderes civiles radicales)",
+        "Manuel Rodríguez Torices (Presidente de la Junta y posterior gobernador)",
+        "Batallón de Lanceros y Milicias de Pardos de Getsemaní"
+      ],
+      "proceso_politico_y_militar": [
+        "La movilización popular armada de artesanos, albañiles, pescadores y mulatos de Getsemaní rodeó el Palacio de Gobierno congregado en cabildo extraordinario.",
+        "Armados de lanzas y fusiles, y encabezados por Pedro Romero, los lanceros exigieron a la Junta de Gobierno declarar de inmediato la independencia total, bajo amenaza de tomar el palacio por asalto.",
+        "Se abolió formal y perpetuamente la lealtad a la dinastía Borbón.",
+        "La Constitución del Estado Soberano de Cartagena de 1812: Se convirtió en el primer cuerpo constitucional de la América hispana que prohibió tajantemente en su articulado el tráfico trasatlántico de esclavizados (comercio de trata) y garantizó derechos políticos a los pardos y artesanos."
+      ],
+      "cita_documental": {
+        "texto": "...declaramos solemnemente, a la faz de todo el orbe, que el Estado de Cartagena de Indias es un Estado libre, soberano e independiente; que está absuelto de toda sumisión, vasallaje, obediencia y de todo otro vínculo de cualquiera naturaleza y condición que fuese con la corona de España; y que como tal puede hacer todo lo que hacen las naciones libres...",
+        "fuente": "Bando Solemne de la Independencia Absoluta de Cartagena de Indias, 11 de noviembre de 1811. Sala de Manuscritos BNC."
+      }
+    },
+    "el_acta_de_1810_quemada_en_1948": {
+      "custodia_original": "El manuscrito caligráfico original del Acta del Cabildo Extraordinario de Santafé del 20 de julio de 1810, firmado por 53 próceres y miembros capitulares, se resguardaba en el archivo del Palacio de Justicia y Ministerio de Gobierno en Bogotá.",
+      "siniestro_del_bogotazo": "El viernes 9 de abril de 1948, a raíz del magnicidio del caudillo liberal Jorge Eliécer Gaitán, turbas incendiaron varios edificios gubernamentales en el centro de la capital. El edificio donde reposaba el cuaderno original fue pasto de las llamas, perdiéndose para siempre el testimonio manuscrito original autógrafo.",
+      "supervivencia_archivistica": [
+        {
+          "pieza": "Edición Facsimilar Heliográfica de París (1890)",
+          "descripcion": "El diplomático e historiador caucano Rafael Duque Uribe contrató en París en 1890 con la imprenta Lemercier una edición de lujo facsimilar de gran formato. Reprodujo con exactitud fotolitográfica las firmas, dobleces y caracteres paleográficos del documento original antes de su destrucción."
+        },
+        {
+          "pieza": "El Hallazgo Documental en Silvia (Cauca, 2017)",
+          "descripcion": "En 2017, investigadores del Archivo General de la Nación y del ICANH identificaron en el archivo histórico municipal de Silvia (Cauca) un ejemplar original intacto de la edición oficial parisina de 1890, autenticado por el gobierno republicano, convirtiéndose en el registro visual de máxima fidelidad conservado."
+        },
+        {
+          "pieza": "Transcripciones Tipográficas de 1810 y Gacetas",
+          "descripcion": "El texto del Acta sobrevivió íntegro gracias a su publicación inmediata en la 'Gaceta Ministerial de Cundinamarca' y 'El Constitucional' entre julio y agosto de 1810."
+        }
+      ]
+    }
+  },
+  "campana_libertadora_1819": {
+    "contexto_estrategico": "Tras tres años de brutal represión monárquica bajo el 'Régimen del Terror' impuesto por el pacificador Pablo Morillo (1816-1819), Simón Bolívar concibió en el Congreso de Angostura (1819) la audaz invasión de la Nueva Granada. La idea táctica radicaba en atacar el corazón virreinal andino por la ruta más escarpada, inhóspita y climáticamente mortífera, donde el ejército realista del brigadier José María Barreiro jamás sospecharía la llegada de un ejército invasor.",
+    "fases_de_la_campana": [
+      {
+        "fase": "Concentración y Paso de los Llanos Inundados",
+        "fechas": "Mayo - Junio de 1819",
+        "detalles": "El ejército patriota partió de Mantecal (Venezuela) y se unió en Tame (Arauca) a la División de Casanare comandada por el general Francisco de Paula Santander el 12 de junio de 1819. Cruzaron ríos desbordados (Apure, Arauca, Casanare) con el agua al pecho en plena temporada de lluvias."
+      },
+      {
+        "fase": "Combate de Paya (Las Termópilas de Paya)",
+        "fechas": "1819-06-27",
+        "detalles": "Asalto victorioso patriota contra el fuerte realista de Paya en forma de trinchera triangular protegida por fosos y empalizadas. Despejó la entrada a la Cordillera Oriental."
+      },
+      {
+        "fase": "El Paso del Páramo de Pisba",
+        "fechas": "1819-07-02 a 1819-07-06",
+        "detalles": "Cruce de la cordillera a más de 3.900 msnm por senderos de herradura rocosos y peñascos verticales."
+      },
+      {
+        "fase": "Batalla del Pantano de Vargas",
+        "fechas": "1819-07-25",
+        "detalles": "Encuentro sangriento en las ciénagas de Paipa. Carga de los 14 lanceros de Rondón que salvó la suerte del ejército patriota."
+      },
+      {
+        "fase": "Batalla del Puente de Boyacá",
+        "fechas": "1819-08-07",
+        "detalles": "Destrucción definitiva de la Tercera División Realista y captura de Barreiro."
+      }
+    ],
+    "el_cruce_del_paramo_de_pisba": {
+      "altitud_maxima_msnm": 3950,
+      "condiciones_climaticas": "Temperaturas bajo cero, llovizna helada constante ('chipi-chipi'), neblina densa, vientos glaciales y terrenos fangosos impracticables.",
+      "costo_humano_y_material": [
+        "La casi totalidad de los caballos y mulas de carga perecieron desbarrancados o muertos por congelamiento en los pasos de Peña de Paya y Los Picachos.",
+        "Murieron cientos de soldados llaneros y legionarios británicos (Brigada Británica bajo el coronel James Rooke), acostumbrados al calor del trópico y vestidos con andrajos y camisas de bayeta húmeda.",
+        "Se perdió parte sustancial de la pólvora, el armamento pesado y los víveres; los fusiles llegaron inutilizados por el óxido."
+      ],
+      "apoteosis_popular_en_socha": {
+        "fecha": "1819-07-05",
+        "municipio": "Socha (Boyacá)",
+        "hecho_historico": "Al descender el ejército en condiciones esqueléticas y semidesnudas al valle de Socha, el párroco y las damas del pueblo convocaron a la población a una misa dominical. Ante el espectáculo de las tropas temblorosas, los campesinos e indígenas de Socha se despojaron de sus propias ruanas, camisas y sayales para vestir a los soldados libertadores ('Donación de Socha').",
+        "cita_memorias_oleary": {
+          "texto": "...el aspecto del ejército era el más lamentable que pudiera imaginarse: hombres sin camisa ni calzado, pálidos, enflaquecidos por el hambre y el frío intenso; la mayor parte de los caballos muertos en el camino... pero el patriotismo y generosidad de los habitantes de Socha y los pueblos vecinos proveyó con admirable entusiasmo cuanto se necesitaba...",
+          "fuente": "Daniel Florencio O'Leary, 'Memorias del General O'Leary', Tomo XVI, pág. 412."
+        }
+      }
+    },
+    "pantano_de_vargas": {
+      "fecha": "1819-07-25",
+      "lugar": "Paipa (Boyacá)",
+      "fuerzas_enfrentadas": {
+        "patriotas": "Aprox. 2.600 soldados (Bolívar, Santander, Anzoátegui, Rondón, Rooke)",
+        "realistas": "Aprox. 3.000 soldados veteranos (José María Barreiro, brigadier del rey)"
+      },
+      "desarrollo_del_combate": [
+        "Barreiro tomó temprano la posición dominante del cerro del Picacho y acorraló a las fuerzas patriotas en el fangal del pantano.",
+        "Durante seis horas de lucha encarnizada bajo lluvia incesante, las tropas republicanas sufrieron repetidos rechazos. El coronel británico James Rooke fue gravemente herido en su brazo izquierdo (amputado en el campo).",
+        "Hacia las 5:00 p.m., la infantería realista inició una carga en escalón que amenazaba con exterminar el flanco patriota.",
+        "En ese instante culminante, Bolívar, observando la catástrofe desde una colina, exclamó con amargura: '¡Se nos vino la caballería y se nos fue la tarde! ¡Coronel Rondón, salve usted la patria!'.",
+        "El coronel afrovenezolano Juan José Rondón respondió con fiereza épica: '¡Es que Rondón no ha peleado todavía!'.",
+        "Rondón convocó a sus jinetes de la caballería del Alto Llano: '¡Camaradas, los que sean valientes síganme!'. Catorce lanceros se lanzaron cuesta arriba en una carga demoledora rompiendo el frente realista."
+      ],
+      "los_14_lanceros_de_rondon": [
+        {
+          "nombre": "Juan José Rondón",
+          "origen": "Guárico (Venezuela)",
+          "rango": "Teniente Coronel Comandante"
+        },
+        {
+          "nombre": "Lucas Carvajal",
+          "origen": "El Tigre (Venezuela)",
+          "rango": "Capitán"
+        },
+        {
+          "nombre": "Julián Mellao",
+          "origen": "El Sombrero (Venezuela)",
+          "rango": "Teniente"
+        },
+        {
+          "nombre": "Bonifacio Gutiérrez",
+          "origen": "Casanare (Nueva Granada)",
+          "rango": "Sargento"
+        },
+        {
+          "nombre": "Domingo Mirabal",
+          "origen": "Apure (Venezuela)",
+          "rango": "Teniente"
+        },
+        {
+          "nombre": "Pedro Lancheros",
+          "origen": "Boyacá (Nueva Granada)",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "Cecilio Plata",
+          "origen": "Santander (Nueva Granada)",
+          "rango": "Cabo"
+        },
+        {
+          "nombre": "Saturnino Hurra",
+          "origen": "Casanare (Nueva Granada)",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "Miguel Lara",
+          "origen": "Venezuela",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "Pablo Matute",
+          "origen": "Casanare (Nueva Granada)",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "Celedonio Gómez",
+          "origen": "Boyacá (Nueva Granada)",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "José de la Cruz Leal",
+          "origen": "Venezuela",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "Juan Mellao",
+          "origen": "Venezuela",
+          "rango": "Soldado Lancero"
+        },
+        {
+          "nombre": "Inocencio Chincá",
+          "origen": "Tame, Arauca (Nueva Granada)",
+          "rango": "Sargento",
+          "nota": "Atravesó con su lanza al comandante realista Ramón Bedoya en combate singular; cayó herido mortalmente por bayoneta y murió tres días después."
+        }
+      ],
+      "frase_historica_rooke": "Al amputarle el brazo izquierdo deshecho por metralla, el cirujano levantó el miembro cercenado y Rooke, con la mano derecha, lo tomó y gritó: '¡Viva la Patria!'. El médico le preguntó: '¿Cuál patria, coronel, Inglaterra o Irlanda?'. Rooke replicó: '¡La que me ha de dar sepultura!'."
+    },
+    "batalla_del_puente_de_boyaca": {
+      "fecha": "1819-08-07",
+      "lugar": "Campo de Boyacá, orillas del río Teatinos (Boyacá)",
+      "movimiento_previo_de_jaque_mate": "El 5 de agosto Bolívar maniobró de noche y ocupó Tunja, interponiéndose entre Barreiro y la capital virreinal. Barreiro intentó rodear Tunja por Ventaquemada y cruzar el puente de Boyacá hacia Santafé.",
+      "acciones_tacticas": [
+        "Vanguardia patriota (General Santander): Sorprendió a la vanguardia realista del coronel Francisco Jiménez cuando apenas iniciaba el cruce del angosto puente de madera sobre el río Teatinos, dividiendo en dos al ejército español.",
+        "Cuerpo central y retaguardia (Bolívar y General Anzoátegui): Embistieron el grueso del ejército de Barreiro que quedó atrapado en el terraplén y la meseta sin poder maniobrar la artillería.",
+        "El combate duró escasas dos horas: el ejército realista se desintegró en pánico absoluto."
+      ],
+      "captura_de_barreiro_por_pedro_pascasio_martinez": {
+        "personajes": [
+          "Pedro Pascasio Martínez (Soldado niño de 12 años, natural de Belén, Boyacá)",
+          "El 'Negro José' (Soldado de caballería libertador)",
+          "José María Barreiro (Comandante en Jefe de la Tercera División del Ejército Realista)"
+        ],
+        "relato_documental": "Oculto entre unas rocas en los matorrales ribereños, Barreiro fue descubierto por el niño Pedro Pascasio, quien custodiaba los caballos del Libertador empuñando una lanza. Acorralado, el general español sacó una faja repleta de onzas de oro y se la ofreció al niño a cambio de permitirle huir hacia Santafé. Pascasio rechazó tajantemente el soborno: '¡No, yo soy patriota!', y junto al soldado José lo condujo a punta de lanza ante la presencia de Bolívar.",
+        "recompensa_de_bolivar": "Bolívar ascendió de inmediato al niño a sargento y le otorgó una gratificación de 100 pesos de la Real Hacienda capturada.",
+        "fuente_archivistica": "Archivo General de la Nación, República, Historia Militar, Tomo IV; Gaceta de Santafé de Bogotá, agosto de 1819."
+      },
+      "consecuencia_inmediata": "Al conocerse el parte de guerra en Santafé el 9 de agosto, el virrey Juan de Sámano huyó despavorido en la madrugada disfrazado de fraile o indígena rumbo a Honda y Cartagena, dejando intactas las arcas de la tesorería real con más de 500.000 pesos en oro y caudales."
+    }
+  },
+  "mujeres_de_la_independencia": {
+    "introduccion_historiografica": "La historiografía tradicional redujo la participación femenina a roles ornamentales o de simple sufrimiento familiar. Las fuentes primarias y revisiones historiográficas (Beatriz Castro Carvajal, Aída Martínez Carreño, Guiomar Dueñas) demuestran que las mujeres fueron organizadoras de redes clandestinas de espionaje militar, financistas de ejércitos irregulares, conspiradoras políticas de alto nivel y soldados combatientes en los campos de batalla.",
+    "biografias_exhaustivas": [
+      {
+        "nombre": "Policarpa Salavarrieta Ríos",
+        "alias": "La Pola",
+        "periodo_vital": "1795 (Guaduas, Cundinamarca) - 1817-11-14 (Santafé de Bogotá)",
+        "red_de_inteligencia": "Instalada en Santafé bajo la fachada de costurera y modista de damas de familias realistas peninsulares, recolectaba información estratégica sobre pertrechos, traslados de regimientos españoles y órdenes del virrey Juan de Sámano. Canalizaba dinero, fusiles, munición y salvoconductos para jóvenes que huían a engrosar las guerrillas patriotas en Casanare.",
+        "caida_y_juicio": "La red fue delatada al ser capturado en Sogamoso su prometido Alejo Sabaraín con listas y correspondencia cifrada interceptadas por el ejército realista. El Consejo de Guerra la condenó a muerte por traición a la Corona.",
+        "el_martirio_en_el_cadalso": "Fue conducida al patíbulo en la Plaza Mayor de Santafé el 14 de noviembre de 1817. Se negó a aceptar crucifijos de sacerdotes realistas que le exigían retractarse. Fue atada a un banquillo y fusilada por la espalda.",
+        "discurso_historico": {
+          "texto": "¡Pueblo indolente! ¡Cuán diversa sería hoy vuestra suerte si conocieseis el precio de la libertad! Pero no es tarde: ved que, aunque mujer y joven, me sobra valor para sufrir la muerte y mil muertes más, ¡y no olvidéis este ejemplo!",
+          "fuente": "Testimonios oculares registrados en el Diario de José María Caballero y Sumaria Judicial del Archivo Histórico Nacional (Bogotá)."
+        }
+      },
+      {
+        "nombre": "Antonia Santos Plata",
+        "alias": "La Heroína del Socorro y Charalá",
+        "periodo_vital": "1782 (Pinchote, Santander) - 1819-07-28 (El Socorro, Santander)",
+        "red_de_resistencia": "Fundadora, financista y jefa logística de la célebre 'Guerrilla de Coromoro' o 'Guerrilla de Charalá'. Transformó su hacienda 'El Hatillo' en cuartel general secreto, fábrica de pólvora, maestranza de armas y centro de espionaje.",
+        "impacto_militar_en_1819": "Su guerrilla hostigó, emboscó y fijó en territorio santandereano a las fuerzas realistas del coronel Lucas González, impidiéndole descender al altiplano cundiboyacense para sumarse al ejército de Barreiro. Esta contención desembocó en la sangrienta Batalla del Río Pienta en Charalá (4 de agosto de 1819), donde más de 300 campesinos ofrendaron sus vidas para sellar el triunfo patriota que ocurriría tres días después en Boyacá.",
+        "captura_y_fusilamiento": "Fue sorprendida en su hacienda el 12 de julio de 1819. Sentenciada a muerte, fue fusilada en la plaza de El Socorro el 28 de julio de 1819, escasos nueve días antes de Boyacá.",
+        "gesto_documentado": "Frente al pelotón de fusilamiento, entregó su anillo de esmeralda y sus joyas al oficial a cargo del piquete militar con serenidad absoluta, rogándole que ordenara a sus tiradores apuntar directo al corazón para una muerte limpia."
+      },
+      {
+        "nombre": "Simona Duque de Alzate",
+        "alias": "La Matrona Republicana de Marinilla",
+        "periodo_vital": "1773 (Marinilla, Antioquia) - 1858 (Marinilla, Antioquia)",
+        "gesta_patriotica": "Campesina humilde y viuda antioqueña. En 1819, ante la llegada del joven coronel José María Córdova a Marinilla para organizar el Ejército de Liberación de Antioquia tras la victoria de Boyacá, Simona se presentó en el cuartel y entregó voluntariamente a sus cinco hijos varones (Andrés, Antonio, Manuel, Salvador y Francisco) para servir a la causa de la República.",
+        "dignidad_civica_y_rechazo_de_pension": "En 1826, el vicepresidente general Francisco de Paula Santander y el Congreso de Colombia le otorgaron mediante decreto una pensión mensual vitalicia de 16 pesos en mérito a su desinteresado sacrificio. Simona Duque devolvió formalmente el subsidio a la Tesorería General, declarando que la República estaba empobrecida y endeudada, y que mientras sus manos tuvieran vigor para hilar y moler maíz, no sería jamás una carga fiscal para la patria por haber cumplido su deber de madre libre.",
+        "fuente": "Gaceta de Colombia, No. 248, 1826; Archivo Histórico de Antioquia (Medellín)."
+      },
+      {
+        "nombre": "Manuela Sáenz Aizpuru",
+        "alias": "La Libertadora del Libertador / Coronela del Ejército Grancolombiano",
+        "periodo_vital": "1797 (Quito) - 1856-11-23 (Paita, Perú)",
+        "protagonismo_politico_y_militar": [
+          "Precursora conspiradora en Lima contra el virrey Pezuela; condecorada por el general José de San Martín con la 'Orden del Sol' en 1822.",
+          "Conoció a Simón Bolívar en Quito en junio de 1822, convirtiéndose en su colaboradora política más íntima, estratega y custodia de su archivo confidencial.",
+          "Combatió vestida de uniforme militar en la Batalla de Pichincha y participó activamente en la logística militar y abastecimiento de las campañas de Junín y Ayacucho. El mariscal Antonio José de Sucre le reconoció formalmente el grado de Capitana y luego Coronela del Ejército Libertador."
+        ],
+        "la_noche_septembrina": {
+          "fecha": "1828-09-25",
+          "lugar": "Palacio de San Carlos (Bogotá)",
+          "accion": "Un comando de conspiradores liberales asaltó a medianoche el palacio presidencial para apuñalar a Bolívar. Alertada por los ladridos de los perros y los disparos a los centinelas, Manuela despertó a Bolívar, le impidió salir en ropa de dormir a enfrentar a los atacantes y lo empujó por una ventana que daba a la calle del Carmen / quebrada San Agustín. Desenvainó la espada, salió al encuentro de los conjurados (Florentino González, Pedro Carujo) y los engañó deliberadamente asegurando que Bolívar estaba en el consejo militar, ganando los minutos vitales que le salvaron la vida.",
+          "sobrenombre": "Bolívar la bautizó solemnemente a la mañana siguiente con el título imperecedero de 'La Libertadora del Libertador'."
+        },
+        "exilio_y_destino_archivistico": "Tras la muerte de Bolívar en 1830, el régimen de Santander la expulsó de Colombia en 1834. Se radicó en el desértico puerto pesquero de Paita (Perú), donde vivió en condiciones de pobreza elaborando dulces, tabaco y traduciendo cartas de marineros anglosajones. Custodió hasta su muerte cajones de correspondencia confidencial de Bolívar que luego entregó a diplomáticos e historiadores. Murió durante una epidemia de difteria; su cuerpo y pertenencias fueron arrojados a una fosa común y quemados para evitar contagios."
+      }
+    ],
+    "otras_figuras_relevantes": [
+      {
+        "nombre": "Mercedes Ábrego de Reyes",
+        "region": "Cúcuta (Norte de Santander)",
+        "martirio": "1813-10-21",
+        "accion": "Informante de los ejércitos patriotas y hábil bordadora; confeccionó y bordó primorosamente con hilos de oro la casaca militar que usó Simón Bolívar en la Campaña Admirable. Fue capturada por las tropas del coronel español Bartolomé Lizón y degollada en presencia de sus dos hijos menores en la plaza de Cúcuta."
+      },
+      {
+        "nombre": "Juana Velasco de Gallo",
+        "region": "Toca y Tunja (Boyacá)",
+        "accion": "Terrateniente y mecenas patriota conocida como 'La Heroína de Toca'. Al enterarse de la llegada de las tropas desnudas de Pisba, sacrificó su ganado, confeccionó centenares de uniformes y camisas con telares de sus haciendas, y donó su mejor yegua y sus caballos de casta a Simón Bolívar para que montara en Boyacá."
+      },
+      {
+        "nombre": "Matilde Anaray",
+        "region": "Socha (Boyacá)",
+        "accion": "Niña campesina de 13 años que encabezó la donación popular en Socha el 5 de julio de 1819, despojándose públicamente de sus vestiduras en el atrio de la iglesia para entregarlas a los soldados patriotas."
+      }
+    ]
+  },
+  "itinerario_abolicion_esclavitud": {
+    "marco_conceptual": "El desmonte de la institución esclavista en Colombia no fue una concesión benévola espontánea, sino un prolongado proceso de tensiones económicas, luchas cimarronas, pleitos judiciales de las comunidades afrodescendientes y feroces resistencias de la oligarquía hacendada y minera que se extendió desde el Congreso de Cúcuta (1821) hasta el gobierno liberal de José Hilario López (1851-1852).",
+    "ley_de_manumision_1821": {
+      "fecha_sancion": "1821-07-21",
+      "organo": "Congreso General de la Gran Colombia en Villa del Rosario de Cúcuta",
+      "firmantes": "Simón Bolívar (Presidente) y José Félix de Restrepo (Redactor intelectual)",
+      "principios_estructurales": [
+        {
+          "principio": "Libertad de Vientres (Libertad de Partos)",
+          "mecanismo": "Declaró libres a todos los hijos de mujeres esclavas nacidos después de la promulgación de la ley. Sin embargo, no gozaban de libertad real inmediata: quedaban sometidos al 'patronato' del amo de la madre hasta los 18 años de edad, obligados a trabajar gratuitamente para amortizar los supuestos gastos de su crianza y manutención."
+        },
+        {
+          "principio": "Prohibición del Tráfico y Comercio Internacional",
+          "mecanismo": "Quedó terminantemente prohibida la importación de nuevos esclavizados africanos a la República. Quien ingresara a territorio colombiano como esclavo quedaba automáticamente libre."
+        },
+        {
+          "principio": "Juntas de Manumisión Provinciales",
+          "mecanismo": "Comités locales encargados de recaudar un impuesto mortuorio especial (el 1% al 10% del caudal de herencias y sucesiones) con el fin de indemnizar a los amos y comprar anualmente la carta de libertad de los esclavos más ancianos y de mejor conducta, en ceremonias públicas celebradas cada 25 de diciembre o 20 de julio."
+        }
+      ],
+      "burlas_y_trampas_de_los_esclavistas": [
+        "Fraude en libros parroquiales: Los amos coludían con párrocos para registrar a niños nacidos después de julio de 1821 con fechas anteriores, manteniéndolos en servidumbre perpetua.",
+        "Exportación y trata clandestina: Se traficaron miles de jóvenes sometidos al patronato vendiéndolos ilegalmente a los mercados de Perú, Ecuador y Centroamérica a través de los puertos de Buenaventura, Tumaco e Iscuandé antes de que cumplieran los 18 años.",
+        "El retroceso conservador de 1842: Bajo la presidencia del general Pedro Alcántara Herrán y el ministro Mariano Ospina Rodríguez, se aprobó la Ley del 22 de junio de 1842 que aumentó el patronato forzoso de los jóvenes hasta los 25 años bajo el eufemismo de 'aprendizaje y concierto obligatorio', revirtiendo la libertad prometida."
+      ]
+    },
+    "ley_de_abolicion_definitiva_1851": {
+      "fecha_sancion": "1851-05-21",
+      "fecha_entrada_en_vigencia": "1852-01-01",
+      "presidente_sancionador": "José Hilario López (Gobierno Liberal Radical)",
+      "contexto_politico": "Parte de las 'Reformas del Medio Siglo' impulsadas por la alianza entre la juventud liberal 'gólgota', las Sociedades Democráticas de Artesanos y la movilización popular de los afrodescendientes liberales en el Valle del Patía, Cali y Cartagena.",
+      "articulo_primero_textual": {
+        "texto": "Desde el 1º de enero de 1852 serán libres todos los esclavos que haya en el territorio de la República de la Nueva Granada. En consecuencia, desde aquella fecha gozarán de los mismos derechos y tendrán los mismos deberes que la Constitución y las leyes garantizan e imponen a los demás granadinos.",
+        "fuente": "Gaceta Oficial de la República de la Nueva Granada, No. 1.214, Bogotá, 24 de mayo de 1851."
+      },
+      "el_sistema_de_indemnizacion_vales_de_manumision": [
+        "El Estado no expropió a los esclavizados sin indemnizar a los dueños: reconoció el 'derecho de propiedad' de los amos y creó los 'Vales y Bonos de Deuda por Manumisión' al 6% de interés anual.",
+        "Tabulador de tasación oficial: Se comisionó a peritos provinciales para evaluar el precio de cada ser humano según edad, sexo, fuerza física y estado de salud (los precios oficiales oscilaron entre 80 pesos para ancianos y enfermos, y 250 a 300 pesos para peones mineros y cortadores de caña en plenitud).",
+        "Especulación financiera: La emisión superó los 3.2 millones de pesos de deuda pública. Grandes prestamistas y agiotistas de Bogotá compraron los bonos devaluados a los hacendados empobrecidos por una fracción de su valor nominal para cobrar luego pingües intereses al Tesoro Nacional."
+      ],
+      "reaccion_violenta_esclavista": "La sanción de la ley fue el detonante inmediato de la Guerra Civil de 1851. Familias aristocráticas esclavistas del Cauca y Antioquia, lideradas por Julio Arboleda Pombo, tomaron las armas para derrocar a José Hilario López y frenar la manumisión."
+    },
+    "fondo_manumision_del_agn": {
+      "localizacion_archivistica": "Archivo General de la Nación (AGN), Bogotá D.C., Sección República, Fondo Manumisión.",
+      "composicion": "Más de 25 legajos y tomos manuscritos que contienen censos nominales, solicitudes de libertad, tasaciones de peritos, quejas por maltrato, compras de libertad y balances de las Juntas Provinciales de Manumisión entre 1821 y 1856.",
+      "provincias_con_mayor_densidad_documental": [
+        "Popayán y Valle del Cauca (Haciendas azucareras y ganaderas de los Arboleda, Mosquera y Borrero)",
+        "Barbacoas, Nóvita y Quibdó (Cuadrillas mineras de extracción de oro y platino)",
+        "Cartagena, Mompox y Santa Marta (Servidumbre urbana, transportes fluviales y fincas del litoral)",
+        "Mariquita y Antioquia (Minas de aluvión y trapiches paneleros)"
+      ],
+      "analisis_socioeconomico_del_colapso_de_precios": {
+        "fenomeno": "Entre 1845 y 1851, los expedientes del AGN demuestran un desplome vertical del precio de mercado de las personas esclavizadas en las subastas judiciales y remates testamentarios.",
+        "causa": "Al aproximarse el horizonte de la abolición ineludible y multiplicarse las huidas cimarronas hacia palenques protegidos en las selvas del Chocó y el Patía, los amos intentaron deshacerse desesperadamente de sus 'cuadrillas', rematándolas a precios irrisorios antes de la expiración del plazo legal del 1 de enero de 1852."
+      }
+    }
+  },
+  "comision_corografica": {
+    "introduccion_institucional": "La Comisión Corográfica de la Nueva Granada (1850-1859) fue la mayor empresa científica, cartográfica y visual de exploración estatal del siglo XIX en el norte de Sudamérica. Mandatada por la Ley del 29 de mayo de 1849 bajo la presidencia de Tomás Cipriano de Mosquera y contratada en 1850 por José Hilario López, tuvo como meta trazar el mapa físico y político de las provincias, levantar inventarios exhaustivos de recursos mineros, agrícolas y demográficos, y construir una representación etnográfica y visual de los diversos 'tipos humanos' que habitaban la joven República.",
+    "agustin_codazzi": {
+      "nombre_completo": "Agostino Codazzi",
+      "origen_y_trayectoria": "Nacido en Lugo (Italia, 1793). Veterano de las guerras napoleónicas en Europa; llegó a Sudamérica como corsario y artillero de la independencia al servicio de Simón Bolívar. Diseñó y publicó en 1840 el 'Atlas Físico y Político de Venezuela'. Contratado como Jefe y Director Científico de la Comisión Corográfica de la Nueva Granada en 1850.",
+      "metodologia_cientifica": "Combinó mediciones topográficas con barómetros de mercurio para calcular altitudes andinas, observaciones astronómicas de longitud y latitud mediante sextantes y cronómetros de precisión, y descripciones geológicas y de fertilidad de suelos en sus 'Memorias de Provincias'.",
+      "las_10_expediciones": [
+        "1ª Expedición (1850): Provincias del norte: Vélez, Socorro, Soto, Ocaña, Santander y Pamplona.",
+        "2ª Expedición (1851): Provincias de Tunja, Tundama y Casanare.",
+        "3ª Expedición (1852): Provincias de Córdova, Medellín, Antioquia y Mariquita.",
+        "4ª Expedición (1853): Provincias de Pasto, Túquerres, Popayán y Barbacoas.",
+        "5ª Expedición (1853): Provincias del Chocó (Quibdó, San Juan, Nóvita) y Buenaventura.",
+        "6ª Expedición (1855): Provincias de Bogotá, Tequendama y Neiva.",
+        "7ª Expedición (1856): Provincias de Mariquita, Cundinamarca y márgenes del Magdalena.",
+        "8ª Expedición (1857): Provincia de Panamá y Darién (exploración del canal interoceánico).",
+        "9ª Expedición (1857): Caquetá, San Martín y Amazonía.",
+        "10ª Expedición (1858-1859): Provincias de la Costa Atlántica (Cartagena, Sabanilla, Valledupar y Sierra Nevada de Santa Marta)."
+      ],
+      "muerte_en_el_terreno": "Falleció consumido por fiebres palúdicas el 7 de febrero de 1859 en el caserío de Espíritu Santo (hoy rebautizado Agustín Codazzi, Departamento del Cesar), mientras preparaba el ascenso a la Sierra Nevada de Santa Marta con sus instrumentos barométricos a cuestas."
+    },
+    "los_pintores_y_litografos": [
+      {
+        "nombre": "Carmelo Fernández",
+        "periodo_activo": "1850-1851 (1ª y 2ª expediciones)",
+        "origen": "San José de Guama (Venezuela), sobrino del general José Antonio Páez. Ingeniero y artista litógrafo.",
+        "estilo_y_aporte": "Pintó las primeras 30 láminas a la acuarela de la Comisión. Se caracterizó por un dibujo de estricto rigor geométrico, limpieza arquitectónica, exactitud topográfica y retrato de tipos sociales campesinos y mestizos en las provincias de Santander, Ocaña y Pamplona.",
+        "obras_destacadas": [
+          "Indios de la provincia de Pamplona",
+          "Campesinos del Socorro",
+          "Vista de la peña de Ocaña"
+        ]
+      },
+      {
+        "nombre": "Henry Price",
+        "periodo_activo": "1852 (3ª expedición)",
+        "origen": "Londres (Reino Unido), músico, comerciante y pintor aficionado avecindado en Bogotá.",
+        "estilo_y_aporte": "Acompañó la expedición por las provincias de Antioquia, Medellín, Córdova y Mariquita. Realizó 21 acuarelas donde sobresale la luminosidad atmosférica propia de la escuela inglesa de acuarela, el paisajismo romántico y el registro de la arriería y la minería antioqueña.",
+        "obras_destacadas": [
+          "Arrieros de Antioquia",
+          "Molino de pisones en Santa Rosa de Osos",
+          "Puente colgante de Ambalema"
+        ]
+      },
+      {
+        "nombre": "Manuel María Paz",
+        "periodo_activo": "1853-1859 (4ª a 10ª expediciones)",
+        "origen": "Almaguer (Cauca). Militar, cartógrafo y dibujante profesional.",
+        "estilo_y_aporte": "El más prolífico y representativo de los ilustradores de la Comisión: produjo más de 90 acuarelas. Con una mirada empática y humanista, retrató a las comunidades afrodescendientes mineras del Chocó, a los indígenas guambianos y paeces del Cauca, a los lanceros llaneros y a los bogas del Magdalena. Tras la muerte de Codazzi, completó los mapas y litografió en París junto al cartógrafo Manuel Ponce de León el monumental 'Atlas de los Estados Unidos de Colombia' (1865).",
+        "obras_destacadas": [
+          "Bogas del río Magdalena",
+          "Indios guambianos en Silvia",
+          "Lavadoras de oro en el Chocó",
+          "Tipo de la costa del Pacífico"
+        ]
+      }
+    ],
+    "manuel_ancizar_y_la_peregrinacion_de_alpha": {
+      "rol": "Secretario de la Comisión Corográfica en las expediciones del norte (1850-1851)",
+      "obra_cumbre": "La Peregrinación de Alpha (publicada por entregas en 1851-1852 y como libro en 1853)",
+      "analisis_literario_y_sociologico": "Manuel Ancízar inauguró la sociología empírica y la crónica de viaje científica en Colombia. Recorrió a pie y a caballo aldeas olvidadas, documentando con prosa vibrante y punzante la pobreza rural, las endemias de bocio (el 'coto' andino), las fiestas patronales, el aislamiento vial, el fervor cívico local y la herencia indígena muisca y guane en Boyacá y Santander."
+    },
+    "patrimonio_y_custodia": {
+      "resguardo": "Las 151 acuarelas originales de Fernández, Price y Paz reposan en la Biblioteca Nacional de Colombia (Fondo Comisión Corográfica).",
+      "reconocimiento_unesco": "Inscritas en el Registro de la 'Memoria del Mundo' de la UNESCO como uno de los acervos visuales y cartográficos fundacionales de la identidad latinoamericana del siglo XIX."
+    }
+  },
+  "guerras_civiles_nacionales": {
+    "introduccion_historiografica": "La historiografía política moderna (Malcolm Deas, Álvaro Tirado Mejía, Fernán González, Jorge Orlando Melo) contabiliza formalmente 9 guerras civiles de carácter general y alcance nacional a lo largo del siglo XIX colombiano, además de más de cincuenta insurrecciones y golpes provinciales. Las causas estructurales giraron en torno a: 1) el choque entre centralismo y federalismo; 2) el rol de la Iglesia Católica y la secularización estatal; 3) el control de los procesos electorales y la hegemonía burocrática partidista; y 4) el acceso a tierras y mano de obra tras el colapso del orden colonial.",
+    "listado_exhaustivo_de_las_9_guerras": [
+      {
+        "numero": 1,
+        "nombre": "Guerra de los Supremos (o Guerra de los Conventos)",
+        "periodo": "1839 - 1842",
+        "presidencia_gubernamental": "José Ignacio de Márquez (Gobierno 'Ministerial' / Protomoderado)",
+        "detonante_directo": "La aprobación de la Ley del 6 de junio de 1839 por el Congreso de la República, que ordenó clausurar cuatro conventos menores en la ciudad de Pasto (San Francisco, Santo Domingo, San Agustín y La Merced) que contaran con menos de ocho religiosos, para destinar sus rentas y edificios a la fundación de escuelas públicas primarias.",
+        "desarrollo_del_conflicto": [
+          "El sacerdote y teólogo pastuso Francisco de la Villota lideró un alzamiento popular en Pasto bajo la consigna de defensa de la religión y la soberanía local.",
+          "El general José María Obando, caudillo caucano y expresidente interino, al verse cercado por investigaciones judiciales sobre el asesinato del mariscal Antonio José de Sucre en Berruecos (1830), capitalizó el descontento del sur y se sublevó en julio de 1840, proclamándose defensor de la federación y la religión.",
+          "El alzamiento se propagó como reguero de pólvora por todo el país: caudillos militares provinciales de rango general se autoproclamaron 'Jefes Supremos' de sus territorios (Manuel González en el Socorro, Salvador Córdova en Antioquia, José María Tadeo Galindo en Ambalema, Francisco Carmona en Santa Marta).",
+          "El gobierno de Márquez recurrió al auxilio del general Juan José Flores, presidente de la República del Ecuador, quien invadió con tropas extranjeras el territorio neogranadino para combatir a Obando en Pasto, lo que causó indignación nacional.",
+          "Los generales Pedro Alcántara Herrán y Tomás Cipriano de Mosquera asumieron el mando militar gubernamental y derrotaron sucesivamente a los caudillos rebeldes en las batallas de Huilquipamba (1840), La Polonia (1840) y La Chanca (1841)."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Batalla de Huilquipamba",
+            "fecha": "1840-09-29",
+            "vencedor": "Tropas colombo-ecuatorianas de Herrán y Flores sobre Obando"
+          },
+          {
+            "nombre": "Batalla de La Chanca",
+            "fecha": "1841-07-11",
+            "vencedor": "General Tomás Cipriano de Mosquera sobre el 'Supremo' José María Obando"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "Aprobación de la Constitución centralista, autoritaria y clerical de 1843.",
+          "Consolidación de las dos grandes divisiones doctrinarias que a finales de la década cristalizaron formalmente en los manifiestos de los dos partidos históricos: el Partido Liberal (1848, Ezequiel Rojas) y el Partido Conservador (1849, Mariano Ospina Rodríguez y José Eusebio Caro)."
+        ]
+      },
+      {
+        "numero": 2,
+        "nombre": "Guerra Civil de 1851 (Insurrección Terrateniente-Esclavista)",
+        "periodo": "1851-05-22 a 1851-09-10",
+        "presidencia_gubernamental": "José Hilario López (Partido Liberal)",
+        "detonante_directo": "El paquete de transformaciones estructurales de las 'Reformas del Medio Siglo': principalmente la promulgación de la Ley del 21 de mayo de 1851 que decretaba la abolición definitiva de la esclavitud a partir del 1 de enero de 1852; la expulsión de los jesuitas (1850); la descentralización del impuesto de diezmos eclesiásticos; y la ley que permitía la elección popular de gobernadores y párrocos.",
+        "desarrollo_del_conflicto": [
+          "La aristocracia hacendada conservadora y los grandes propietarios de esclavos del Cauca, Antioquia y Cundinamarca consideraron las medidas un ataque directo a su derecho natural de propiedad y a la religión católica.",
+          "El terrateniente payanés Julio Arboleda Pombo encabezó el alzamiento armado en Popayán y Pasto, capturando prisioneros y vendiendo a decenas de ellos como esclavos en el norte de Ecuador para adquirir armas y pertrechos de contrabando.",
+          "En Antioquia se levantaron los hermanos Mariano y Pastor Ospina Rodríguez; en el Valle del Cauca el general Eusebio Borrero organizó divisiones rebeldes.",
+          "El gobierno liberal actuó con contundencia nombrando a los generales José María Obando y Tomás Herrera para comandar las fuerzas de la República.",
+          "El ejército nacional y milicias populares aplastaron a las fuerzas conservadoras en el combate de Rionegro (Antioquia) y recuperaron Popayán y Pasto."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Batalla de Rionegro",
+            "fecha": "1851-09-10",
+            "vencedor": "Fuerzas del gobierno liberal sobre las tropas conservadoras de Antioquia"
+          },
+          {
+            "nombre": "Combate del Patía",
+            "fecha": "1851-08-01",
+            "vencedor": "Tropas liberales de Obando dispersan a Julio Arboleda"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "Entrada en vigor inalterable de la abolición universal de la esclavitud el 1 de enero de 1852.",
+          "Aprobación de la Constitución Liberal de 1853, que instauró por primera vez el sufragio universal para varones mayores de edad, la separación absoluta entre la Iglesia y el Estado, la libertad plena de cultos, la abolición de la pena de muerte por delitos políticos y el matrimonio civil y divorcio vincular."
+        ]
+      },
+      {
+        "numero": 3,
+        "nombre": "Golpe Militar de Melo y Guerra Civil de 1854",
+        "periodo": "1854-04-17 a 1854-12-04",
+        "presidencia_gubernamental": "José María Obando (constitucional depuesto) / José María Melo (Jefe Supremo de facto)",
+        "detonante_directo": "El enfrentamiento socioeconómico e ideológico entre dos visiones antagónicas del liberalismo: los 'gólgotas' (élite civilista librecambista que promovía aranceles de importación casi nulos, perjudicando la manufactura criolla) y los 'draconianos' aliados a la Sociedad de Artesanos de Bogotá (pequeños sastres, zapateros, tejedores y carpinteros que exigían aranceles proteccionistas para defender el trabajo nacional).",
+        "desarrollo_del_conflicto": [
+          "El 17 de abril de 1854, el general José María Melo, comandante de la guarnición militar de Bogotá y veterano de las guerras de independencia, depuso al presidente constitucional José María Obando, clausuró el Congreso Nacional y se proclamó Jefe Supremo con el apoyo apasionado de los artesanos en armas.",
+          "Ante la insurrección popular-militar, la élite de los dos partidos históricos selló una alianza inédita conocida como 'la Alianza Constitucionalista' o 'unión de cachacos': Tomás Cipriano de Mosquera, José Hilario López, Pedro Alcántara Herrán y Tomás Herrera marcharon juntos sobre Bogotá con ejércitos reclutados en las provincias.",
+          "Melo resistió atrincherado en la capital durante ocho meses, convirtiendo a Bogotá en una fortaleza popular.",
+          "El 4 de diciembre de 1854, tres divisiones constitucionales atacaron la capital simultáneamente por San Diego, San Victorino y Egipto. Tras fieros combates callejeros en los que cayó muerto el general Tomás Herrera, las fuerzas de Melo capitularon."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Combate de Tiquiza",
+            "fecha": "1854-05-20",
+            "vencedor": "Fuerzas melistas contienen temporalmente el avance constitucionalista"
+          },
+          {
+            "nombre": "Toma Militar de Bogotá",
+            "fecha": "1854-12-04",
+            "vencedor": "Ejército constitucionalista de Mosquera, López y Herrán sobre Melo"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "Juicio y destierro del general José María Melo (quien partió a Centroamérica y México, donde combatió a las órdenes de Benito Juárez hasta ser fusilado en Chiapas en 1860).",
+          "Brutal castigo clasista contra los artesanos de Bogotá: más de un millar de sastres, carpinteros y zapateros fueron deportados a pie sin juicio hacia las selvas pantanosas e insalubres del río Chagres en Panamá para trabajos forzados en la construcción del ferrocarril interoceánico, donde perecieron en masa por malaria y cólera.",
+          "Triunfo hegemónico del librecambismo económico absoluto y desmonte del ejército profesional permanente."
+        ]
+      },
+      {
+        "numero": 4,
+        "nombre": "Guerra de las Soberanías (1860-1862) y Convención de Rionegro",
+        "periodo": "1860-05-08 a 1862-11-24",
+        "presidencia_gubernamental": "Mariano Ospina Rodríguez (Confederación Granadina / Partido Conservador)",
+        "detonante_directo": "La promulgación por el Congreso dominado por los conservadores de las leyes orgánicas de 1859 sobre elecciones e inspectores de orden público, mediante las cuales el gobierno central de Bogotá intervenía directamente en los comicios provinciales y vulneraba la autonomía de los Estados federados consagrada en la Constitución federalista de 1858.",
+        "desarrollo_del_conflicto": [
+          "El 8 de mayo de 1860, el gobernador del Estado Soberano del Cauca, general Tomás Cipriano de Mosquera, proclamó formalmente la separación del Cauca de la Confederación Granadina y declaró la guerra al gobierno central de Mariano Ospina Rodríguez.",
+          "Es la única guerra civil en la historia de Colombia donde una rebelión armada contra el gobierno nacional resultó plenamente triunfante.",
+          "Mosquera unió fuerzas con los Estados Soberanos de Bolívar, Santander y Tolima. Tras librar cruentos combates en Manizales y Campo Amalia, Mosquera sitió Bogotá.",
+          "El 18 de julio de 1861, las tropas rebeldes de Mosquera tomaron por asalto la capital. El presidente Mariano Ospina Rodríguez y su hermano Pastor fueron capturados y encerrados en las bóvedas de Bocachica en Cartagena.",
+          "Mosquera asumió poderes dictatoriales como Presidente Provisorio e implementó medidas anticlericales radicales: decretó la 'Desamortización de Bienes de Manos Muertas' (expropiación estatal de conventos, fincas y censos eclesiásticos acumulados durante la Colonia) y la expulsión fulminante de los jesuitas."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Batalla de Manizales",
+            "fecha": "1860-08-28",
+            "vencedor": "Acuerdo de tregua temporal violado posteriormente por Ospina"
+          },
+          {
+            "nombre": "Batalla de Santa Bárbara de Cartago",
+            "fecha": "1862-09-18",
+            "vencedor": "Tropas liberales de Mosquera y Santos Gutiérrez sobre las fuerzas conservadoras del Cauca"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "Convocatoria de la Convención Nacional de Rionegro (1863), integrada exclusivamente por delegatarios liberales radicales.",
+          "Promulgación de la Constitución de Rionegro de 1863 y nacimiento de los 'Estados Unidos de Colombia'.",
+          "Instauración del régimen federalista más extremo de América: nueve Estados Soberanos con ejércitos propios, legislación civil y penal autónoma, derecho de comerciar armas libremente, mandato presidencial recortado a tan solo dos años sin reelección consecutiva e inicio de la hegemonía del 'Olimpo Radical' (1863-1885)."
+        ]
+      },
+      {
+        "numero": 5,
+        "nombre": "Guerra de las Escuelas (1876-1877)",
+        "periodo": "1876-07-09 a 1877-05-19",
+        "presidencia_gubernamental": "Aquileo Parra (Partido Liberal Radical)",
+        "detonante_directo": "La reforma educativa secularizante consagrada en el Decreto Orgánico de Instrucción Pública Primaria de 1870 (gobierno de Eustorgio Salgar), que estableció la educación primaria gratuita, obligatoria, neutral en materia religiosa y universal en todo el país, contratando una misión pedagógica alemana y aplicando los métodos laicos del pedagogo suizo Johann Heinrich Pestalozzi.",
+        "desarrollo_del_conflicto": [
+          "La Iglesia Católica y el Partido Conservador consideraron la enseñanza pública neutral una 'agresión impía y atea' que corrompía el alma cristiana de la niñez colombiana.",
+          "Obispos como Carlos Bermúdez (Popayán), José Ignacio Montoya (Medellín) y Manuel Canuto Restrepo (Pasto) lanzaron anatemas, pastorales incendiarias y excomuniones masivas contra maestros oficiales, padres de familia que enviaran sus hijos a las escuelas públicas y funcionarios del gobierno radical.",
+          "En julio de 1876 estalló la rebelión armada conservadora desde los Estados Soberanos de Antioquia (gobernador Silverio Arango) y Tolima, expandiéndose al Cauca y Boyacá.",
+          "El gobierno federal de Aquileo Parra designó como comandante general del ejército al general liberal caucano Julián Trujillo Largacha.",
+          "El 31 de agosto de 1876 se libró la colosal Batalla de Los Chancos (cerca a Palmira, Valle del Cauca): choque sangriento donde las fuerzas liberales de Trujillo infligieron una aplastante derrota a los ejércitos conservadores de Sergio Arboleda y Pedro Joaquín Acosta.",
+          "En marzo de 1877 las fuerzas radicales sitiaron Manizales forzando la capitulación definitiva de los rebeldes antioqueños."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Batalla de Los Chancos",
+            "fecha": "1876-08-31",
+            "vencedor": "Ejército liberal radical de Julián Trujillo sobre el ejército conservador del Cauca y Tolima"
+          },
+          {
+            "nombre": "Batalla de La Donjuana",
+            "fecha": "1877-01-27",
+            "vencedor": "Tropas radicales de Fortunato Bernal sobre los conservadores de Santander"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "Victoria militar del liberalismo radical, pero a costa de la ruina fiscal irreversible de los Estados Unidos de Colombia.",
+          "El general triunfante Julián Trujillo fue elegido presidente de la República (1878-1880). En su posesión incorporó al gabinete al intelectual cartagenero Rafael Núñez como Ministro de Hacienda.",
+          "Desde la presidencia del Senado en 1878, Núñez pronunció la célebre advertencia profética: 'Hemos llegado a un punto en que estamos frente a este dilema: o una regeneración administrativa fundamental, o la catástrofe', marcando el inicio del ocaso del Olimpo Radical."
+        ]
+      },
+      {
+        "numero": 6,
+        "nombre": "Guerra Civil de 1884-1885 (El Fin del Olimpo Radical)",
+        "periodo": "1884-08-11 a 1885-11-20",
+        "presidencia_gubernamental": "Rafael Núñez (Segundo Mandato / Liberal Independiente respaldado por el Partido Conservador)",
+        "detonante_directo": "La escisión irreconciliable en el seno del Partido Liberal entre los 'Radicales' (intransigentes defensores del federalismo de Rionegro y el librecambio) y los 'Independientes' (encabezados por Rafael Núñez, defensores del proteccionismo económico, el centralismo estatal y el restablecimiento de relaciones armónicas con la Iglesia Católica).",
+        "desarrollo_del_conflicto": [
+          "En agosto de 1884, el presidente del Estado Soberano de Santander, Solón Wilches, y los radicales de Boyacá, Cundinamarca y Tolima se levantaron en armas contra Núñez, acusándolo de traidor y tirano por gobernar con el respaldo del Partido Conservador.",
+          "La guerra se extendió a todo el país y al río Magdalena. Los insurrectos radicales, bajo el mando de los generales Ricardo Gaitán Obeso y Gabriel Vargas Santos, bloquearon la navegación a vapor en el Magdalena y amenazaron con asaltar Bogotá.",
+          "El punto de inflexión bélico ocurrió el 17 de junio de 1885 en la Batalla de La Humareda (río Magdalena, departamento de Bolívar): un combate fluvial y terrestre descomunal donde, aunque las fuerzas radicales obtuvieron una victoria táctica momentánea, sufrieron la muerte de sus mejores oficiales y agotaron sus reservas de parque y munición.",
+          "Las tropas del gobierno de Núñez, reforzadas por contingentes conservadores bajo el mando del general Leonardo Canal y el general Mateo Mercado, aplastaron la rebelión en Santander y la Costa Caribe."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Batalla de La Humareda",
+            "fecha": "1885-06-17",
+            "vencedor": "Victoria pírrica de los radicales de Vargas Santos, pero aniquilación de su capacidad militar estratégica"
+          },
+          {
+            "nombre": "Batalla de Alto del Obispo",
+            "fecha": "1885-07-28",
+            "vencedor": "Fuerzas del gobierno de Núñez sofocan la insurrección en el Tolima"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "El 10 de septiembre de 1885, desde el balcón del Palacio Presidencial en Bogotá, el presidente Rafael Núñez proclamó ante la muchedumbre la lapidaria sentencia histórica: '¡La Constitución de 1863 ha dejado de existir!'.",
+          "Convocatoria inmediata al Consejo Nacional de Delegatarios para redactar una nueva Carta Política unitaria, abriendo paso a la era de 'La Regeneración' y sepultando definitivamente el modelo federalista de Rionegro."
+        ]
+      },
+      {
+        "numero": 7,
+        "nombre": "La Regeneración y la Constitución de 1886",
+        "periodo": "1886 (Promulgación: 1886-08-05)",
+        "presidencia_gubernamental": "Rafael Núñez (Presidente) / José María Campo Serrano (Sancionador) / Eliseo Payán (Vicepresidente)",
+        "ideologos_y_redactores": [
+          "Rafael Núñez: Poeta, estadista, autor del lema 'Regeneración o Catástrofe', formulador de las bases de la reforma política y monetaria.",
+          "Miguel Antonio Caro: Filósofo tomista, erudito humanista, gramático de la Real Academia y jurista, redactor directo de la casi totalidad del articulado de la Carta de 1886."
+        ],
+        "pilares_doctrinarios_y_estructurales": [
+          {
+            "pilar": "República Unitaria Centralista",
+            "mecanismo": "Abolió los nueve Estados Soberanos y transformó el territorio nacional en Departamentos gobernados por mandatarios de libre nombramiento y remoción por el Presidente de la República. Fórmula oficial: 'Centralización política y descentralización administrativa'."
+          },
+          {
+            "pilar": "Reincorporación de la Iglesia Católica",
+            "mecanismo": "Reconoció a la Religión Católica, Apostólica y Romana como la de la Nación y como 'elemento esencial del orden social'. Sellado con el Concordato de 1887 con la Santa Sede bajo el papa León XIII, confiriendo a la Iglesia el monopolio sobre la educación pública oficial, la censura de libros de texto, los cementerios y el registro civil de nacimientos y matrimonios."
+          },
+          {
+            "pilar": "Hiperpresidencialismo y Orden Público",
+            "mecanismo": "Fijó el período presidencial en seis años con posibilidad de reelección. Consagró el fatídico Artículo 121 ('Estado de Sitio'), que facultaba al Jefe de Estado para suspender las garantías constitucionales y gobernar mediante decretos con fuerza de ley ante cualquier turbación del orden público."
+          },
+          {
+            "pilar": "Régimen Punitivo y Prensa",
+            "mecanismo": "Restableció la pena de muerte para delitos atroces (homicidio premeditado, traición y asalto militar); limitó drásticamente la libertad de imprenta sometiendo periódicos a censura previa."
+          },
+          {
+            "pilar": "Monopolio de Emisión Monetaria",
+            "mecanismo": "Creación del Banco Nacional y establecimiento del curso forzoso del papel moneda emitido por el Estado, proscribiendo los billetes de bancos privados de los antiguos estados federales."
+          }
+        ],
+        "vigencia_historica": "Constituyó la carta fundamental más longeva de la historia de Colombia, rigiendo durante 105 años hasta su derogación por la Asamblea Nacional Constituyente y la Constitución de 1991."
+      },
+      {
+        "numero": 8,
+        "nombre": "Guerra Civil de 1895 (La Insurrección Relámpago)",
+        "periodo": "1895-01-23 a 1895-03-22",
+        "presidencia_gubernamental": "Miguel Antonio Caro (Vicepresidente en ejercicio del Poder Ejecutivo / Partido Nacional)",
+        "detonante_directo": "La asfixia institucional y electoral impuesta a la oposición liberal por el régimen conservador-nacionalista de la Regeneración; la aplicación implacable de la Ley 61 de 1888 ('Ley de los Caballos') que permitía arrestar, confinar y desterrar arbitrariamente a opositores sin fórmula de juicio; y el fraude electoral sistemático que marginó al liberalismo de toda representación parlamentaria.",
+        "desarrollo_del_conflicto": [
+          "Una conspiración liberal clandestina coordinada por el Directorio Nacional Liberal (Sixto Durán y Santiago Pérez Manosalva) planificó un alzamiento sincronizado en todo el país.",
+          "El gobierno de Caro descubrió la trama y arrestó preventivamente a los cabecillas en Bogotá la noche del 22 de enero de 1895.",
+          "Pese a quedar decapitada la dirección central, la rebelión armada estalló en las provincias de Cundinamarca, Boyacá, Tolima y Santander.",
+          "El gobierno de Caro designó al general Rafael Reyes comandante general de operaciones. Con una celeridad logística magistral, Reyes movilizó tropas por el río Magdalena y marchó sobre Santander.",
+          "El 15 de marzo de 1895, Reyes libró la decisiva Batalla de Enciso (Santander), infligiendo una derrota demoledora a los ejércitos rebeldes liberales comandados por el general Santos Acosta.",
+          "La guerra fue sofocada en sesenta días de intensos combates."
+        ],
+        "batallas_clave": [
+          {
+            "nombre": "Batalla de La Tribuna (Facatativá)",
+            "fecha": "1895-01-29",
+            "vencedor": "Fuerzas del gobierno dispersan a los rebeldes de Cundinamarca"
+          },
+          {
+            "nombre": "Batalla de Enciso",
+            "fecha": "1895-03-15",
+            "vencedor": "General Rafael Reyes liquida el ejército rebelde liberal de Santander"
+          }
+        ],
+        "consecuencias_institucionales": [
+          "Cierre hermético de cualquier apertura política por parte de la facción conservadora ultranacionalista de Miguel Antonio Caro.",
+          "Fractura al interior del Partido Conservador entre los 'Nacionales' (caristas intransigentes) y los 'Históricos' (liderados por Carlos Martínez Silva y Marceliano Vélez, partidarios de reformas electorales y libertad de prensa).",
+          "La persistencia de la exclusión política y la frustración radical crearon el caldo de cultivo que desató, cuatro años más tarde, la conflagración más devastadora de la historia republicana: la Guerra de los Mil Días."
+        ]
+      },
+      {
+        "numero": 9,
+        "nombre": "Guerra de los Mil Días (1899-1902) y la Separación de Panamá (1903)",
+        "periodo": "1899-10-17 a 1902-11-21 (Bélico) y 1903-11-03 (Separación del Istmo)",
+        "presidencia_gubernamental": "Manuel Antonio Sanclemente (1898-1900, conservador nacionalista de 86 años gobernando desde Villeta) / José Manuel Marroquín (1900-1904, conservador histórico tras el golpe de Estado del 31 de julio de 1900)",
+        "causas_estructurales": [
+          "Colapso catastrófico del precio internacional del café en los mercados de Nueva York y Londres (de 18 centavos de dólar por libra en 1895 a menos de 6 centavos en 1899), arruinando a hacendados y jornaleros.",
+          "Hiperinflación salvaje provocada por la emisión clandestina y masiva de más de 800 millones de pesos en papel moneda inconvertible por la Tesorería de la Regeneración para financiar el gasto público y militar.",
+          "Monopolio hegemónico conservador y fraude electoral cerrado que negaba escaños al liberalismo (que sólo contaba con dos parlamentarios en el Congreso Nacional).",
+          "Decisión de la facción 'belicista' del liberalismo (Paulo Emilio Villar, Rafael Uribe Uribe) de recurrir a la vía armada frente a la corriente civilista 'pacifista' (Aquileo Parra, Nicolás Esguerra)."
+        ],
+        "el_estallido": "Inició anticipadamente el 17 de octubre de 1899 en El Socorro (Santander), cuando Paulo Emilio Villar declaró la insurrección general contra el régimen regenerador.",
+        "grandes_batallas_convencionales": [
+          {
+            "nombre": "Batalla de Peralonso (o Batalla de La Lajas)",
+            "fechas": "1899-12-15 a 1899-12-16",
+            "lugar": "Puente de Lajas sobre el río Peralonso (cerca a La Amarilla, Norte de Santander)",
+            "protagonistas": "General Rafael Uribe Uribe y General Benjamín Herrera (Liberales) contra General Vicente Villamizar (Conservador)",
+            "desarrollo_y_hazana": "Tras horas de intenso intercambio artillero a orillas del río, las tropas del gobierno vacilaron. Uribe Uribe, sable en mano y bajo fuego concentrado de fusiles Máuser y ametralladoras Gatling, se lanzó a la carrera cruzando el angosto puente de maderas de Lajas seguido de un puñado de soldados decididos. La temeraria carga desmoralizó a las filas conservadoras que huyeron en desbandada.",
+            "resultado": "Aplastante victoria liberal: capturaron más de 2.000 fusiles, cañones Krupp, un millón de cartuchos y pertrechos que salvaron a la revolución."
+          },
+          {
+            "nombre": "Batalla de Palonegro",
+            "fechas": "1900-05-11 a 1900-05-25 (15 días ininterrumpidos de combate)",
+            "lugar": "Meseta y colinas de Palonegro (cerca a Bucaramanga y Lebrija, Santander)",
+            "magnitud": "La batalla campal más prolongada, masiva y sangrienta de toda la historia republicana de Sudamérica.",
+            "fuerzas": "Aprox. 15.000 soldados del ejército gubernamental (General Próspero Pinzón) contra 14.000 soldados del ejército liberal unido (Generales Gabriel Vargas Santos, Benjamín Herrera y Rafael Uribe Uribe).",
+            "dantesco_escenario": "Trincheras cavadas entre desfiladeros áridos, combate a bayoneta calada, machete y fusil cuerpo a cuerpo; sed abrasadora, falta total de alimentos y descomposición de miles de cadáveres insepultos bajo el sol canicular que provocaron epidemias de disentería, tifus y miasis entre combatientes de ambos bandos.",
+            "resultado_y_consecuencia": "Victoria decisiva de las fuerzas del gobierno conservador. Murieron cerca de 4.000 hombres en combate. Significó el quiebre definitivo del ejército regular liberal y el fin de la guerra convencional de grandes masas."
+          }
+        ],
+        "el_golpe_de_estado_de_1900": "En plena hecatombe bélica, el 31 de julio de 1900, una coalición de conservadores 'históricos' y militares encabezados por el vicepresidente José Manuel Marroquín depuso al anciano presidente Manuel Antonio Sanclemente en Villeta y asumió el control del Estado, profundizando la parálisis administrativa.",
+        "guerra_de_guerrillas_y_los_ninos_de_la_guerra": "Tras Palonegro, el conflicto derivó en una despiadada guerra de guerrillas rurales y cuadrillas autónomas sin mandos centralizados en Tolima, Boyacá, Huila y Cundinamarca, caracterizada por masacres, cortes de franela, tierra arrasada y reclutamiento masivo de niños campesinos huérfanos ('los niños soldados de la guerra') armados con rifles y machetes.",
+        "campana_de_panama": "El general Benjamín Herrera trasladó las operaciones al departamento de Panamá. Allí organizó un ejército revolucionario de élite que controló el interior, sitió Aguadulce y dominó militarmente las vías estratégicas entre el Caribe y el Pacífico, convirtiendo al Istmo en el último y más fuerte bastión liberal.",
+        "tratados_de_paz": [
+          {
+            "tratado": "Tratado de Neerlandia",
+            "fecha": "1902-10-24",
+            "lugar": "Hacienda bananera de Neerlandia (Ciénaga, Magdalena)",
+            "firmantes": "General Rafael Uribe Uribe y General Florentino Manjarrés (por el gobierno)",
+            "terminos": "Rendición honrosa de las fuerzas liberales del Magdalena, amnistía general y canje de prisioneros."
+          },
+          {
+            "tratado": "Tratado de Chinácota",
+            "fecha": "1902-11-03",
+            "lugar": "Chinácota (Norte de Santander)",
+            "firmantes": "Generales liberales Foción Soto y Felipe Estrada con el gobierno conservador.",
+            "terminos": "Capitulación militar del frente rebelde en los Santanderes."
+          },
+          {
+            "tratado": "Tratado del Wisconsin",
+            "fecha": "1902-11-21",
+            "lugar": "A bordo del acorazado de guerra estadounidense USS Wisconsin, anclado en la bahía de Panamá",
+            "firmantes": [
+              "General Benjamín Herrera y Doctor Lucas Caballero (por las fuerzas revolucionarias liberales)",
+              "General Alfredo Vázquez Cobo y General Víctor Manuel Salazar (por el gobierno conservador)",
+              "Contralmirante Silas Casey (Marina de los Estados Unidos, mediador y anfitrión)"
+            ],
+            "terminos_y_significado": "Puso fin formal a los 1.130 días de conflicto civil nacional. Garantizó la libertad de todos los presos políticos del país, amnistía jurídica total, retorno de bienes confiscados y el compromiso explícito del gobierno de convocar a elecciones para un nuevo Congreso Nacional que reformara las leyes tributarias y electorales."
+          }
+        ],
+        "balance_y_saldo_nacional": [
+          "Entre 80.000 y 100.000 muertos en combate, víctimas de epidemias y hambrunas (más del 2.5% de la población total del país, calculada entonces en 4 millones de habitantes).",
+          "Destrucción de la infraestructura agrícola cafetera y paralización de las líneas férreas y fluviales.",
+          "Ruina económica absoluta e hiperinflación con emisiones que depreciaron la moneda en más de un 10.000%."
+        ],
+        "separacion_de_panama_1903": {
+          "fecha": "1903-11-03",
+          "antecedentes": [
+            "El Istmo de Panamá había sufrido las peores devastaciones de la Guerra de los Mil Días y padecía un abandono administrativo histórico por el centralismo de Bogotá.",
+            "En enero de 1903 se firmó el Tratado Herrán-Hay entre Colombia y Estados Unidos para la concesión de la zona del canal interoceánico.",
+            "En agosto de 1903, el Senado de Colombia en Bogotá rechazó unánimemente el Tratado Herrán-Hay por considerar que la cesión de una franja de diez millas de soberanía territorial por 100 años prorrogables violaba la Constitución de 1886."
+          ],
+          "la_conspiracion_y_la_intervencion_de_eeuu": [
+            "El presidente norteamericano Theodore Roosevelt impulsó la doctrina de las cañoneras ('Big Stick') y pactó en secreto con el financista francés Philippe Bunau-Varilla y la junta separatista panameña liderada por José Agustín Arango y el doctor Manuel Amador Guerrero.",
+            "El 2 de noviembre de 1903, el buque de guerra estadounidense USS Nashville fondeó en el puerto de Colón con órdenes estrictas de la Casa Blanca de impedir a toda costa el desembarco y tránsito por ferrocarril de las tropas del Batallón Tiradores del ejército colombiano enviado a defender la soberanía nacional.",
+            "El soborno de oficiales colombianos y la complicidad de las autoridades del Ferrocarril de Panamá neutralizaron a los comandantes de Bogotá.",
+            "El 3 de noviembre de 1903, el Cabildo de la ciudad de Panamá proclamó la independencia y la creación de la República de Panamá.",
+            "Quince días después (18 de noviembre de 1903), Bunau-Varilla firmó en Washington el Tratado Hay-Bunau-Varilla, otorgando a los Estados Unidos a perpetuidad la soberanía y explotación de la Zona del Canal de Panamá."
+          ],
+          "impacto_en_la_conciencia_nacional": "La desmembración del Istmo de Panamá fue el golpe moral y geopolítico más traumático en la historia contemporánea de Colombia, obligando a las élites de ambos partidos a abandonar la vía armada y pactar la reforma constitucional pacifista de 1910 bajo el gobierno de Carlos E. Restrepo."
+        }
+      }
+    ]
+  },
+  "apendice_documental_y_estadisticas": {
+    "tasacion_manumision_agn_muestreo_1848_1851": [
+      {
+        "categoria_fuerza_laboral": "Menores de edad (0 a 14 años) y Ancianos (+50 años)",
+        "rango_tasacion_pesos_oro": "Menor a 100 pesos",
+        "porcentaje_muestreo_expedientes": 33.2,
+        "descripcion": "Individuos catalogados por las juntas provinciales con baja o nula capacidad de amortización laboral forzosa."
+      },
+      {
+        "categoria_fuerza_laboral": "Servicio doméstico y salud intermedia",
+        "rango_tasacion_pesos_oro": "100 a 200 pesos",
+        "porcentaje_muestreo_expedientes": 28.5,
+        "descripcion": "Mujeres cocineras, nodrizas, arrieros y peones con limitaciones de salud o edad madura."
+      },
+      {
+        "categoria_fuerza_laboral": "Adultos en plenitud productiva agrícola (18 a 35 años)",
+        "rango_tasacion_pesos_oro": "200 a 300 pesos",
+        "porcentaje_muestreo_expedientes": 25.1,
+        "descripcion": "Jornaleros de haciendas azucareras, cortadores de caña del Cauca y peones ganaderos."
+      },
+      {
+        "categoria_fuerza_laboral": "Minería especializada de aluvión (Chocó, Barbacoas, Antioquia)",
+        "rango_tasacion_pesos_oro": "Superior a 300 pesos",
+        "porcentaje_muestreo_expedientes": 13.2,
+        "descripcion": "Zambullidores de batea, expertos en laboreo de platino y oro en ríos de corriente rápida."
+      }
+    ],
+    "evolucion_constitucional_colombiana_siglo_xix": [
+      {
+        "ano": 1811,
+        "nombre": "Constitución de Cundinamarca",
+        "modelo": "Monárquica constitucional / Autonomista federal"
+      },
+      {
+        "ano": 1811,
+        "nombre": "Acta de Federación de las Provincias Unidas de la Nueva Granada",
+        "modelo": "Confederación federal provincial"
+      },
+      {
+        "ano": 1812,
+        "nombre": "Constitución del Estado de Cartagena de Indias",
+        "modelo": "República soberana / Prohibición de trata de esclavizados"
+      },
+      {
+        "ano": 1821,
+        "nombre": "Constitución de Cúcuta (Gran Colombia)",
+        "modelo": "República unitaria centralista / Libertad de partos"
+      },
+      {
+        "ano": 1830,
+        "nombre": "Constitución de la Gran Colombia",
+        "modelo": "Último intento bolivariano de unidad grancolombiana"
+      },
+      {
+        "ano": 1832,
+        "nombre": "Constitución de la Nueva Granada",
+        "modelo": "República unitaria moderada tras la disolución grancolombiana"
+      },
+      {
+        "ano": 1843,
+        "nombre": "Constitución de la Nueva Granada",
+        "modelo": "Centralismo autoritario y clerical post-Guerra de los Supremos"
+      },
+      {
+        "ano": 1853,
+        "nombre": "Constitución Neogranadina de 1853",
+        "modelo": "Liberalismo radical, voto universal y separación Iglesia-Estado"
+      },
+      {
+        "ano": 1858,
+        "nombre": "Constitución de la Confederación Granadina",
+        "modelo": "Federalismo formal bajo Mariano Ospina Rodríguez"
+      },
+      {
+        "ano": 1863,
+        "nombre": "Constitución de Rionegro (Estados Unidos de Colombia)",
+        "modelo": "Federalismo radical, 9 estados soberanos, laicismo pleno"
+      },
+      {
+        "ano": 1886,
+        "nombre": "Constitución Política de Colombia (La Regeneración)",
+        "modelo": "República unitaria centralista, hegemonía católica, hiperpresidencialismo"
+      }
+    ],
+    "citas_paleograficas_fundacionales": [
+      {
+        "id": "CITA-1810-SANTAFE",
+        "autor": "Cabildo Extraordinario de Santafé",
+        "fecha": "1810-07-20",
+        "fragmento": "depositario en el muy augusto y desgraciado Monarca don Fernando VII, con tal que venga a mandar entre nosotros...",
+        "ubicacion_archivo": "Archivo General de la Nación, Colección Bicentenario; Facsimilar París 1890."
+      },
+      {
+        "id": "CITA-1810-MOMPOX",
+        "autor": "Junta Gubernativa de Santa Cruz de Mompox",
+        "fecha": "1810-08-06",
+        "fragmento": "ser absolutamente independientes de España y de cualquiera otra dominación extranjera...",
+        "ubicacion_archivo": "Archivo Histórico de Mompox; BNC Sala Raros y Manuscritos."
+      },
+      {
+        "id": "CITA-1811-CARTAGENA",
+        "autor": "Junta Suprema de Cartagena de Indias",
+        "fecha": "1811-11-11",
+        "fragmento": "declaramos solemnemente, a la faz de todo el orbe, que el Estado de Cartagena de Indias es un Estado libre, soberano e independiente; que está absuelto de toda sumisión, vasallaje, obediencia y de todo otro vínculo de cualquiera naturaleza y condición con la corona de España...",
+        "ubicacion_archivo": "Biblioteca Nacional de Colombia, Hemeroteca Histórica."
+      },
+      {
+        "id": "CITA-1817-POLA",
+        "autor": "Policarpa Salavarrieta",
+        "fecha": "1817-11-14",
+        "fragmento": "¡Pueblo indolente! ¡Cuán diversa sería hoy vuestra suerte si conocieseis el precio de la libertad! Pero no es tarde: ved que, aunque mujer y joven, me sobra valor para sufrir la muerte y mil muertes más...",
+        "ubicacion_archivo": "Archivo Histórico Nacional, Manuscritos de Caballero; Proceso de Infidentes."
+      },
+      {
+        "id": "CITA-1819-VARGAS",
+        "autor": "Simón Bolívar y Juan José Rondón",
+        "fecha": "1819-07-25",
+        "fragmento": "— ¡Coronel Rondón, salve usted la patria! — ¡Es que Rondón no ha peleado todavía!",
+        "ubicacion_archivo": "Memorias del General O'Leary, Tomo XVI; Boletín de Historia y Antigüedades."
+      },
+      {
+        "id": "CITA-1851-ESCLAVITUD",
+        "autor": "José Hilario López (Presidente de la República)",
+        "fecha": "1851-05-21",
+        "fragmento": "Desde el 1º de enero de 1852 serán libres todos los esclavos que haya en el territorio de la República de la Nueva Granada...",
+        "ubicacion_archivo": "Gaceta Oficial No. 1.214; Archivo General de la Nación, Fondo Manumisión."
+      },
+      {
+        "id": "CITA-1885-NUNEZ",
+        "autor": "Rafael Núñez",
+        "fecha": "1885-09-10",
+        "fragmento": "¡La Constitución de 1863 ha dejado de existir!",
+        "ubicacion_archivo": "Diario Oficial de la República de Colombia, Septiembre de 1885."
+      },
+      {
+        "id": "CITA-1902-WISCONSIN",
+        "autor": "Generales Benjamín Herrera, Alfredo Vázquez Cobo y Silas Casey",
+        "fecha": "1902-11-21",
+        "fragmento": "Queda terminada para siempre en la República la guerra civil que empezó en octubre de 1899... Se garantiza la más amplia amnistía a todos los que hayan tomado parte en la contienda militar...",
+        "ubicacion_archivo": "Tratado de Paz del Wisconsin, Acta Original en el AGN y Archivo Diplomático de Cancillería."
+      }
+    ]
+  }
+}
