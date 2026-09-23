@@ -437,6 +437,134 @@ function initUniversalSearch() {
     });
   }
 
+  // Carga asíncrona de los 5 datasets JSON generados
+  let isDatasetsLoaded = false;
+  async function loadExternalDatasets() {
+    if (isDatasetsLoaded) return;
+    try {
+      const fetchPromises = [
+        fetch('data/civilizaciones_prehispanicas.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/colonia_documentos_agn.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/independencia_siglo_xix.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/siglo_xx_memoria.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/regiones_folclor_municipios.json').then(r => r.ok ? r.json() : null).catch(() => null)
+      ];
+
+      const [precolombina, colonia, sigloXIX, sigloXX, regiones] = await Promise.all(fetchPromises);
+
+      // 1. Civilizaciones Prehispánicas y Museo del Oro
+      if (precolombina && precolombina.civilizaciones) {
+        precolombina.civilizaciones.forEach(c => {
+          searchDatabase.push({
+            title: `${c.nombre} (${c.periodo})`,
+            category: "Civilización Prehispánica",
+            url: `precolombina.html#${c.id}`,
+            desc: `${c.ubicacion_geografica}. ${c.tecnologia_destacada ? c.tecnologia_destacada.substring(0, 120) + '...' : ''}`
+          });
+          if (c.piezas_museo_oro) {
+            c.piezas_museo_oro.forEach(p => {
+              searchDatabase.push({
+                title: `${p.nombre} [${p.codigo || 'Museo del Oro'}]`,
+                category: "Pieza Museo del Oro",
+                url: `precolombina.html#${c.id}`,
+                desc: (p.descripcion_tecnica || p.significado_simbolico || '').substring(0, 130) + '...'
+              });
+            });
+          }
+        });
+      }
+
+      // 2. Archivo Colonial AGN
+      if (Array.isArray(colonia)) {
+        colonia.forEach(doc => {
+          searchDatabase.push({
+            title: doc.titulo,
+            category: "Archivo Colonial AGN",
+            url: "colonia.html",
+            desc: `${doc.fecha}. ${doc.resumen_historico ? doc.resumen_historico.substring(0, 130) + '...' : ''}`
+          });
+        });
+      }
+
+      // 3. Independencia y Siglo XIX
+      if (sigloXIX) {
+        if (sigloXIX.campana_libertadora_1819 && sigloXIX.campana_libertadora_1819.hitos_estrategicos) {
+          sigloXIX.campana_libertadora_1819.hitos_estrategicos.forEach(h => {
+            searchDatabase.push({
+              title: h.denominacion || h.nombre,
+              category: "Independencia 1819",
+              url: "independencia.html",
+              desc: `${h.fecha || ''} - ${(h.importancia_tactica || h.descripcion || '')}`.substring(0, 140)
+            });
+          });
+        }
+        if (sigloXIX.guerras_civiles_nacionales && sigloXIX.guerras_civiles_nacionales.listado_exhaustivo_de_las_9_guerras) {
+          sigloXIX.guerras_civiles_nacionales.listado_exhaustivo_de_las_9_guerras.forEach(g => {
+            searchDatabase.push({
+              title: `${g.denominacion} (${g.periodo})`,
+              category: "Guerra Civil Siglo XIX",
+              url: "siglo-xix.html",
+              desc: (g.detonante_y_contexto || g.saldo_y_consecuencias || '').substring(0, 140)
+            });
+          });
+        }
+      }
+
+      // 4. Siglo XX y Memoria
+      if (sigloXX && sigloXX.capitulos_historicos) {
+        sigloXX.capitulos_historicos.forEach(cap => {
+          searchDatabase.push({
+            title: cap.titulo,
+            category: "Memoria Siglo XX / XXI",
+            url: "siglo-xx.html",
+            desc: (cap.resumen_ejecutivo || cap.contexto_historico || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 5. Regiones Naturales, Municipios Patrimoniales y Mitos
+      if (regiones) {
+        if (regiones.regiones_naturales) {
+          regiones.regiones_naturales.forEach(reg => {
+            searchDatabase.push({
+              title: `Región ${reg.nombre}`,
+              category: "Región Natural",
+              url: "ciudades-historicas.html",
+              desc: `${reg.relieve ? reg.relieve.descripcion.substring(0, 130) + '...' : ''}`
+            });
+          });
+        }
+        if (regiones.red_municipios_patrimoniales) {
+          regiones.red_municipios_patrimoniales.forEach(m => {
+            searchDatabase.push({
+              title: `${m.nombre} (${m.departamento}) - Toponimia: ${m.toponimia_aborigen ? m.toponimia_aborigen.origen : ''}`,
+              category: "Municipio Patrimonial",
+              url: "ciudades-historicas.html",
+              desc: `Fundado en ${m.fundacion ? m.fundacion.año : ''}. ${(m.estilo_arquitectonico ? m.estilo_arquitectonico.tecnicas_constructivas : '')}`.substring(0, 140)
+            });
+          });
+        }
+        if (regiones.atlas_mitos_y_leyendas) {
+          regiones.atlas_mitos_y_leyendas.forEach(l => {
+            searchDatabase.push({
+              title: `Mito: ${l.nombre}`,
+              category: "Mito y Leyenda",
+              url: "leyendas-ancestrales.html",
+              desc: `${l.region_de_origen}. ${(l.relato_narrativo ? l.relato_narrativo.substring(0, 130) + '...' : '')}`
+            });
+          });
+        }
+      }
+
+      isDatasetsLoaded = true;
+    } catch (err) {
+      console.warn("Carga parcial de datasets:", err);
+    }
+  }
+
+  // Cargar en segundo plano al iniciar
+  loadExternalDatasets();
+
   searchInput.addEventListener('input', (e) => {
     const q = cleanText(e.target.value.trim());
     if (!q) {
