@@ -447,10 +447,19 @@ function initUniversalSearch() {
         fetch('data/colonia_documentos_agn.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/independencia_siglo_xix.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/siglo_xx_memoria.json').then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch('data/regiones_folclor_municipios.json').then(r => r.ok ? r.json() : null).catch(() => null)
+        fetch('data/regiones_folclor_municipios.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/indigenas_caribe_sierra_nevada.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/indigenas_pacifico_choco.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/indigenas_andes_macizo.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/indigenas_orinoquia_sabanas.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/indigenas_amazonia_etnografia.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/secretos_amazonia_documentada.json').then(r => r.ok ? r.json() : null).catch(() => null)
       ];
 
-      const [precolombina, colonia, sigloXIX, sigloXX, regiones] = await Promise.all(fetchPromises);
+      const [
+        precolombina, colonia, sigloXIX, sigloXX, regiones,
+        indigCaribe, indigPacifico, indigAndes, indigOrinoquia, indigAmazonia, secretosAmazonia
+      ] = await Promise.all(fetchPromises);
 
       // 1. Civilizaciones Prehispánicas y Museo del Oro
       if (precolombina && precolombina.civilizaciones) {
@@ -554,6 +563,79 @@ function initUniversalSearch() {
             });
           });
         }
+      }
+
+      // 6. Pueblos Indígenas del Caribe y Sierra Nevada
+      if (indigCaribe && indigCaribe.pueblos) {
+        const caribePueblos = Array.isArray(indigCaribe.pueblos) ? indigCaribe.pueblos : Object.values(indigCaribe.pueblos);
+        caribePueblos.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.etnonimo} (${p.familia_linguistica || 'Caribe / Sierra'})`,
+            category: "Pueblo Indígena Caribe",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision_y_ley_de_origen || p.resumen || p.ubicacion_geografica || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 7. Pueblos Indígenas del Pacífico y Chocó
+      if (indigPacifico && indigPacifico.pueblos_indigenas) {
+        indigPacifico.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre} (${p.familia_linguistica})`,
+            category: "Pueblo Indígena Pacífico",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision || p.descripcion || p.territorio_y_distribucion || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 8. Pueblos Indígenas de los Andes y Macizo
+      if (indigAndes && indigAndes.pueblos_indigenas) {
+        indigAndes.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.denominacion || p.id} (${p.familia_linguistica || 'Andes'})`,
+            category: "Pueblo Indígena Andino",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision || p.descripcion_etnografica || p.territorio || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 9. Pueblos Indígenas de la Orinoquía y Llanos
+      if (indigOrinoquia && indigOrinoquia.pueblos_indigenas) {
+        indigOrinoquia.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.autodenominacion} (${p.familia_linguistica})`,
+            category: "Pueblo Indígena Orinoquía",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision || p.descripcion || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 10. Pueblos Indígenas de la Amazonía Profunda
+      if (indigAmazonia && indigAmazonia.pueblos_indigenas) {
+        indigAmazonia.pueblos_indigenas.forEach(p => {
+          searchDatabase.push({
+            title: `Pueblo ${p.nombre || p.autonimo} (${p.familia_linguistica})`,
+            category: "Pueblo Indígena Amazonía",
+            url: "otras-culturas.html",
+            desc: (p.cosmovision || p.resumen || p.territorio_y_cuencas || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 11. Secretos Documentados del Amazonas
+      if (secretosAmazonia && secretosAmazonia.secciones) {
+        Object.entries(secretosAmazonia.secciones).forEach(([key, sec]) => {
+          searchDatabase.push({
+            title: sec.titulo || key,
+            category: "Enigma Amazónico Documentado",
+            url: "memoria.html",
+            desc: (sec.resumen_cientifico || sec.descripcion || '').substring(0, 140)
+          });
+        });
       }
 
       isDatasetsLoaded = true;
