@@ -1197,6 +1197,104 @@
     if (headerResetBtn) {
       headerResetBtn.addEventListener('click', resetFilters);
     }
+
+    // 6. Botones de Citación y Exportación en el Drawer
+    const citeBtn = document.getElementById('drawer-cite-btn');
+    if (citeBtn) {
+      citeBtn.addEventListener('click', () => {
+        if (!State.currentOpenPueblo) return;
+        const p = State.currentOpenPueblo;
+        const cleanName = cleanString(p.nombre);
+        const url = `${window.location.origin}${window.location.pathname}?pueblo=${encodeURIComponent(cleanName)}`;
+        if (window.ColombianopediaCitations) {
+          window.ColombianopediaCitations.openModal({
+            title: `Etnografía, Cosmovisión y Memoria Ancestral del Pueblo ${p.nombre} (${p.familia})`,
+            author: `Colombianopedia & Censo Maestro Indígena`,
+            year: "2026",
+            bibtexKey: `etnografia_${cleanName}_2026`,
+            url: url,
+            note: `Monografía oficial de las 115 Naciones Indígenas de Colombia. Región: ${p.region}. Departamento: ${p.depto}.`
+          });
+        }
+      });
+    }
+
+    const exportBtn = document.getElementById('drawer-export-btn');
+    if (exportBtn) {
+      exportBtn.addEventListener('click', () => {
+        if (!State.currentOpenPueblo) return;
+        exportPuebloMarkdown(State.currentOpenPueblo);
+      });
+    }
+  }
+
+  function extractMarkdownFromHTML(html) {
+    if (!html) return 'Información en proceso de catalogación.';
+    const temp = document.createElement('div');
+    temp.innerHTML = html;
+    temp.querySelectorAll('h3, h4').forEach(h => {
+      h.innerHTML = `\n### ${h.textContent.trim()}\n`;
+    });
+    temp.querySelectorAll('li').forEach(li => {
+      li.innerHTML = `- ${li.textContent.trim()}`;
+    });
+    temp.querySelectorAll('blockquote').forEach(b => {
+      b.innerHTML = `\n> ${b.textContent.trim()}\n`;
+    });
+    temp.querySelectorAll('p').forEach(p => {
+      p.innerHTML = `\n${p.textContent.trim()}\n`;
+    });
+    return temp.textContent.replace(/\n\s*\n\s*\n/g, '\n\n').trim();
+  }
+
+  function exportPuebloMarkdown(p) {
+    const cleanName = cleanString(p.nombre);
+    const content = `# FICHA MONOGRÁFICA ENCICLOPÉDICA: PUEBLO ${p.nombre.toUpperCase()}
+**Autodenominación Vernácula:** ${p.vernacula}  
+**Familia Lingüística:** ${p.familia}  
+**Región Natural:** ${p.region}  
+**Departamentos / Cuencas:** ${p.depto}  
+**Demografía Censal (DANE/ONIC):** ${p.demografia}  
+**Amparo Constitucional:** ${p.isAuto004 ? 'Protegido bajo Auto 004/2009 de la Corte Constitucional (Pueblo en riesgo inminente de exterminio).' : 'Reconocimiento Constitucional Art. 7 C.P. 1991'}
+
+---
+
+## 1. COSMOVISIÓN Y MITOS DE ORIGEN
+${extractMarkdownFromHTML(generateTabContent(p, 'cosmovision'))}
+
+---
+
+## 2. MEDICINA TRADICIONAL Y FARMACOPEA BOTÁNICA
+${extractMarkdownFromHTML(generateTabContent(p, 'medicina'))}
+
+---
+
+## 3. TECNOLOGÍAS ANCESTRALES Y FORMAS DE CULTIVO
+${extractMarkdownFromHTML(generateTabContent(p, 'tecnologias'))}
+
+---
+
+## 4. ARQUITECTURA SAGRADA Y ESPACIO COMUNITARIO
+${extractMarkdownFromHTML(generateTabContent(p, 'arquitectura'))}
+
+---
+
+## 5. GRANDES LÍDERES, MEMORIA Y RESISTENCIA HISTÓRICA
+${extractMarkdownFromHTML(generateTabContent(p, 'lideres'))}
+
+---
+
+## 6. MARCO JURÍDICO, DERECHOS COLECTIVOS Y JURISPRUDENCIA
+${extractMarkdownFromHTML(generateTabContent(p, 'derechos'))}
+
+---
+*Documento exportado desde Colombianopedia — La Gran Enciclopedia de la Memoria, las Naciones Originarias y la Tierra (https://colombianopedia.vercel.app)*
+*Fuentes Oficiales: DANE, ONIC, Corte Constitucional de Colombia, Archivo General de la Nación (AGN) y Comisión de la Verdad (CEV).*
+`;
+
+    if (window.ColombianopediaCitations && window.ColombianopediaCitations.downloadFile) {
+      window.ColombianopediaCitations.downloadFile(`${cleanName}_ficha_monografica_colombianopedia.md`, content);
+    }
   }
 
   function resetFilters() {

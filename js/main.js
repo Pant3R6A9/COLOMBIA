@@ -183,125 +183,362 @@ function initDictionarySearch() {
 }
 
 /**
- * Sintetizador de sonido ambiental procedural (Viento Andino y Río)
- * utilizando Web Audio API sin requerir dependencias ni descargas.
+ * ==============================================================================
+ * SINTETIZADOR DE PAISAJES SONOROS REGIONALES (WEB AUDIO API PROCEDURAL)
+ * 4 Presets: Páramo Andino, Selva Amazónica, Océano Pacífico, Llanos Orientales
+ * ==============================================================================
  */
 function initAmbientAudioSynth() {
-  // Crear botón flotante
-  let btn = document.querySelector('.audio-toggle');
-  if (!btn) {
-    btn = document.createElement('button');
-    btn.className = 'audio-toggle';
-    btn.innerHTML = '🔊';
-    btn.title = 'Activar sonido ambiente andino';
-    document.body.appendChild(btn);
+  let container = document.querySelector('.audio-capsule-widget');
+  if (!container) {
+    container = document.createElement('div');
+    container.className = 'audio-capsule-widget';
+    container.innerHTML = `
+      <div class="audio-presets-popover" role="menu" aria-label="Seleccionar paisaje sonoro">
+        <button type="button" class="audio-preset-btn active" data-preset="paramo">🏔️ Páramo Andino</button>
+        <button type="button" class="audio-preset-btn" data-preset="amazonia">🌿 Selva Amazónica</button>
+        <button type="button" class="audio-preset-btn" data-preset="pacifico">🌊 Océano Pacífico</button>
+        <button type="button" class="audio-preset-btn" data-preset="llanos">🌾 Llanos Orientales</button>
+      </div>
+      <div class="audio-capsule-main" role="button" aria-expanded="false" aria-label="Control de audio ambiental">
+        <button type="button" class="audio-capsule-btn-toggle" title="Activar/Silenciar sonido ambiente">🔊</button>
+        <span class="audio-capsule-label">Páramo</span>
+        <span class="audio-capsule-arrow" style="font-size: 0.65rem; color: var(--accent-gold); transition: transform 0.2s;">▲</span>
+      </div>
+    `;
+    document.body.appendChild(container);
   }
+
+  const capsuleMain = container.querySelector('.audio-capsule-main');
+  const toggleBtn = container.querySelector('.audio-capsule-btn-toggle');
+  const labelEl = container.querySelector('.audio-capsule-label');
+  const arrowEl = container.querySelector('.audio-capsule-arrow');
+  const popover = container.querySelector('.audio-presets-popover');
+  const presetBtns = container.querySelectorAll('.audio-preset-btn');
 
   let audioCtx = null;
   let isPlaying = false;
-  let windSource = null;
-  let riverSource = null;
+  let currentPreset = localStorage.getItem('colombianopedia_audio_preset') || 'paramo';
+  let activeNodes = [];
   let masterGain = null;
+
+  const PRESET_NAMES = {
+    paramo: 'Páramo',
+    amazonia: 'Amazonía',
+    pacifico: 'Pacífico',
+    llanos: 'Llanos'
+  };
+
+  labelEl.textContent = PRESET_NAMES[currentPreset] || 'Páramo';
+
+  // Sincronizar botón activo
+  presetBtns.forEach(btn => {
+    btn.classList.toggle('active', btn.getAttribute('data-preset') === currentPreset);
+  });
 
   // Generador de ruido rosa/blanco
   function createNoiseBuffer(ctx) {
-    const bufferSize = ctx.sampleRate * 2; // 2 segundos de buffer
+    const bufferSize = ctx.sampleRate * 2;
     const buffer = ctx.createBuffer(1, bufferSize, ctx.sampleRate);
     const data = buffer.getChannelData(0);
-    let b0, b1, b2, b3, b4, b5, b6;
-    b0 = b1 = b2 = b3 = b4 = b5 = b6 = 0.0;
-
+    let b0 = 0, b1 = 0, b2 = 0, b3 = 0, b4 = 0, b5 = 0, b6 = 0;
     for (let i = 0; i < bufferSize; i++) {
       const white = Math.random() * 2 - 1;
-      // Filtro para ruido rosa (pink noise)
       b0 = 0.99886 * b0 + white * 0.0555179;
       b1 = 0.99332 * b1 + white * 0.0750759;
       b2 = 0.96900 * b2 + white * 0.1538520;
       b3 = 0.86650 * b3 + white * 0.3104856;
       b4 = 0.55000 * b4 + white * 0.5329522;
       b5 = -0.7616 * b5 - white * 0.0168980;
-      data[i] = b0 + b1 + b2 + b3 + b4 + b5 + b6 * 0.5362;
-      data[i] *= 0.11; // normalizar
+      data[i] = (b0 + b1 + b2 + b3 + b4 + b5 + b6 * 0.5362) * 0.11;
       b6 = white * 0.115926;
     }
     return buffer;
   }
 
+  function clearActiveNodes() {
+    activeNodes.forEach(node => {
+      try {
+        if (node.stop) node.stop();
+        if (node.disconnect) node.disconnect();
+      } catch (e) {}
+    });
+    activeNodes = [];
+  }
+
+  function buildPresetGraph(ctx, preset, targetGain) {
+    clearActiveNodes();
+    const noiseBuffer = createNoiseBuffer(ctx);
+
+    if (preset === 'paramo') {
+      // 1. VIENTO ANDINO
+      const windSource = ctx.createBufferSource();
+      windSource.buffer = noiseBuffer;
+      windSource.loop = true;
+
+      const windFilter = ctx.createBiquadFilter();
+      windFilter.type = 'bandpass';
+      windFilter.Q.value = 3.5;
+      windFilter.frequency.value = 380;
+
+      const lfo = ctx.createOscillator();
+      lfo.frequency.value = 0.11;
+      const lfoGain = ctx.createGain();
+      lfoGain.gain.value = 230;
+
+      lfo.connect(lfoGain);
+      lfoGain.connect(windFilter.frequency);
+      windSource.connect(windFilter);
+      windFilter.connect(targetGain);
+
+      lfo.start();
+      windSource.start();
+      activeNodes.push(windSource, lfo, windFilter, lfoGain);
+
+      // 2. ARROYO GLACIAR
+      const streamSource = ctx.createBufferSource();
+      streamSource.buffer = noiseBuffer;
+      streamSource.loop = true;
+
+      const streamFilter = ctx.createBiquadFilter();
+      streamFilter.type = 'lowpass';
+      streamFilter.frequency.value = 240;
+
+      streamSource.connect(streamFilter);
+      streamFilter.connect(targetGain);
+      streamSource.start();
+      activeNodes.push(streamSource, streamFilter);
+
+    } else if (preset === 'amazonia') {
+      // 1. LLUVIA EN DOSEL Y VEGETACIÓN TROPICAL
+      const rainSource = ctx.createBufferSource();
+      rainSource.buffer = noiseBuffer;
+      rainSource.loop = true;
+
+      const rainFilter = ctx.createBiquadFilter();
+      rainFilter.type = 'bandpass';
+      rainFilter.Q.value = 1.2;
+      rainFilter.frequency.value = 1400;
+
+      const rainGain = ctx.createGain();
+      rainGain.gain.value = 0.85;
+
+      rainSource.connect(rainFilter);
+      rainFilter.connect(rainGain);
+      rainGain.connect(targetGain);
+      rainSource.start();
+      activeNodes.push(rainSource, rainFilter, rainGain);
+
+      // 2. GRILLOS Y CICADAS NOCTURNAS PROCEDURALES
+      const cricketOsc = ctx.createOscillator();
+      cricketOsc.type = 'sine';
+      cricketOsc.frequency.value = 4300;
+
+      const cricketLFO = ctx.createOscillator();
+      cricketLFO.frequency.value = 15;
+      const cricketLFOGain = ctx.createGain();
+      cricketLFOGain.gain.value = 0.6;
+
+      const cricketEnvLFO = ctx.createOscillator();
+      cricketEnvLFO.frequency.value = 0.35;
+      const cricketEnvGain = ctx.createGain();
+      cricketEnvGain.gain.value = 0.08;
+
+      const cricketMasterGain = ctx.createGain();
+      cricketMasterGain.gain.value = 0.06;
+
+      cricketOsc.connect(cricketMasterGain);
+      cricketMasterGain.connect(targetGain);
+
+      cricketOsc.start();
+      cricketLFO.start();
+      cricketEnvLFO.start();
+      activeNodes.push(cricketOsc, cricketLFO, cricketLFOGain, cricketEnvLFO, cricketEnvGain, cricketMasterGain);
+
+    } else if (preset === 'pacifico') {
+      // 1. OLEAJE DEL OCÉANO PACÍFICO (Ciclos lentos de resaca)
+      const surfSource = ctx.createBufferSource();
+      surfSource.buffer = noiseBuffer;
+      surfSource.loop = true;
+
+      const surfFilter = ctx.createBiquadFilter();
+      surfFilter.type = 'lowpass';
+      surfFilter.Q.value = 1.8;
+      surfFilter.frequency.value = 350;
+
+      const surfGain = ctx.createGain();
+      surfGain.gain.value = 0.05;
+
+      const surfLFO = ctx.createOscillator();
+      surfLFO.frequency.value = 0.09;
+      const surfLFOGain = ctx.createGain();
+      surfLFOGain.gain.value = 0.45;
+
+      surfLFO.connect(surfLFOGain);
+      surfLFOGain.connect(surfGain.gain);
+      surfSource.connect(surfFilter);
+      surfFilter.connect(surfGain);
+      surfGain.connect(targetGain);
+
+      surfLFO.start();
+      surfSource.start();
+      activeNodes.push(surfSource, surfFilter, surfGain, surfLFO, surfLFOGain);
+
+      // 2. AGUACERO CÁLIDO TROPICAL
+      const seaRainSource = ctx.createBufferSource();
+      seaRainSource.buffer = noiseBuffer;
+      seaRainSource.loop = true;
+
+      const seaRainFilter = ctx.createBiquadFilter();
+      seaRainFilter.type = 'highpass';
+      seaRainFilter.frequency.value = 2600;
+      const seaRainGain = ctx.createGain();
+      seaRainGain.gain.value = 0.15;
+
+      seaRainSource.connect(seaRainFilter);
+      seaRainFilter.connect(seaRainGain);
+      seaRainGain.connect(targetGain);
+      seaRainSource.start();
+      activeNodes.push(seaRainSource, seaRainFilter, seaRainGain);
+
+    } else if (preset === 'llanos') {
+      // 1. VIENTO CÁLIDO DE SABANA ABIERTA
+      const plainsWind = ctx.createBufferSource();
+      plainsWind.buffer = noiseBuffer;
+      plainsWind.loop = true;
+
+      const plainsFilter = ctx.createBiquadFilter();
+      plainsFilter.type = 'bandpass';
+      plainsFilter.Q.value = 2.2;
+      plainsFilter.frequency.value = 620;
+
+      const plainsLFO = ctx.createOscillator();
+      plainsLFO.frequency.value = 0.16;
+      const plainsLFOGain = ctx.createGain();
+      plainsLFOGain.gain.value = 280;
+
+      plainsLFO.connect(plainsLFOGain);
+      plainsLFOGain.connect(plainsFilter.frequency);
+      plainsWind.connect(plainsFilter);
+      plainsFilter.connect(targetGain);
+
+      plainsLFO.start();
+      plainsWind.start();
+      activeNodes.push(plainsWind, plainsFilter, plainsLFO, plainsLFOGain);
+
+      // 2. SUSURRO DE MORICHAL Y HUMEDAL
+      const grassSource = ctx.createBufferSource();
+      grassSource.buffer = noiseBuffer;
+      grassSource.loop = true;
+
+      const grassFilter = ctx.createBiquadFilter();
+      grassFilter.type = 'lowpass';
+      grassFilter.frequency.value = 180;
+      const grassGain = ctx.createGain();
+      grassGain.gain.value = 0.5;
+
+      grassSource.connect(grassFilter);
+      grassFilter.connect(grassGain);
+      grassGain.connect(targetGain);
+      grassSource.start();
+      activeNodes.push(grassSource, grassFilter, grassGain);
+    }
+  }
+
   function startSound() {
-    audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    if (!audioCtx) {
+      audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+    }
+    if (audioCtx.state === 'suspended') {
+      audioCtx.resume();
+    }
+
     masterGain = audioCtx.createGain();
     masterGain.gain.setValueAtTime(0.001, audioCtx.currentTime);
-    masterGain.gain.linearRampToValueAtTime(0.2, audioCtx.currentTime + 2); // fade-in de 2 seg
+    masterGain.gain.linearRampToValueAtTime(0.22, audioCtx.currentTime + 1.8);
     masterGain.connect(audioCtx.destination);
 
-    const noiseBuffer = createNoiseBuffer(audioCtx);
-
-    // --- SINTETIZADOR DE VIENTO ---
-    windSource = audioCtx.createBufferSource();
-    windSource.buffer = noiseBuffer;
-    windSource.loop = true;
-
-    // Filtro pasa-banda dinámico para modular ráfagas de viento
-    const windFilter = audioCtx.createBiquadFilter();
-    windFilter.type = 'bandpass';
-    windFilter.Q.value = 4.0;
-    windFilter.frequency.value = 400;
-
-    // LFO (Oscilador de baja frecuencia) para modular el soplo
-    const lfo = audioCtx.createOscillator();
-    lfo.frequency.value = 0.12; // Modulación cada 8 segundos
-
-    const lfoGain = audioCtx.createGain();
-    lfoGain.gain.value = 250; // Amplitud del barrido del viento
-
-    lfo.connect(lfoGain);
-    lfoGain.connect(windFilter.frequency);
-    windSource.connect(windFilter);
-    windFilter.connect(masterGain);
-
-    lfo.start();
-    windSource.start();
-
-    // --- SINTETIZADOR DE RÍO / CASCADA ---
-    riverSource = audioCtx.createBufferSource();
-    riverSource.buffer = noiseBuffer;
-    riverSource.loop = true;
-
-    const riverFilter = audioCtx.createBiquadFilter();
-    riverFilter.type = 'lowpass';
-    riverFilter.frequency.value = 220; // Sonido amortiguado de agua corriente
-
-    riverSource.connect(riverFilter);
-    riverFilter.connect(masterGain);
-    riverSource.start();
+    buildPresetGraph(audioCtx, currentPreset, masterGain);
 
     isPlaying = true;
-    btn.innerHTML = '🔇';
-    btn.title = 'Silenciar ambiente';
+    capsuleMain.classList.add('playing');
+    toggleBtn.innerHTML = '🔇';
+    toggleBtn.title = 'Silenciar paisaje sonoro';
     document.querySelectorAll('.sound-bar').forEach(b => b.classList.add('playing'));
   }
 
   function stopSound() {
-    if (!audioCtx) return;
+    if (!audioCtx || !masterGain) return;
     masterGain.gain.setValueAtTime(masterGain.gain.value, audioCtx.currentTime);
-    masterGain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 1); // fade-out
+    masterGain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + 0.8);
     document.querySelectorAll('.sound-bar').forEach(b => b.classList.remove('playing'));
 
     setTimeout(() => {
-      if (windSource) windSource.stop();
-      if (riverSource) riverSource.stop();
-      audioCtx.close();
+      clearActiveNodes();
       isPlaying = false;
-      btn.innerHTML = '🔊';
-      btn.title = 'Activar sonido ambiente andino';
-    }, 1000);
+      capsuleMain.classList.remove('playing');
+      toggleBtn.innerHTML = '🔊';
+      toggleBtn.title = 'Activar paisaje sonoro';
+    }, 800);
   }
 
-  btn.addEventListener('click', () => {
+  function switchPreset(newPreset) {
+    if (newPreset === currentPreset && isPlaying) return;
+    currentPreset = newPreset;
+    localStorage.setItem('colombianopedia_audio_preset', currentPreset);
+    labelEl.textContent = PRESET_NAMES[currentPreset] || 'Páramo';
+
+    presetBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.getAttribute('data-preset') === currentPreset);
+    });
+
+    if (isPlaying && audioCtx && masterGain) {
+      masterGain.gain.linearRampToValueAtTime(0.02, audioCtx.currentTime + 0.4);
+      setTimeout(() => {
+        buildPresetGraph(audioCtx, currentPreset, masterGain);
+        masterGain.gain.linearRampToValueAtTime(0.22, audioCtx.currentTime + 1.2);
+      }, 420);
+    } else if (!isPlaying) {
+      startSound();
+    }
+  }
+
+  // Interacción: Toggle Play / Mute
+  capsuleMain.addEventListener('click', (e) => {
+    if (e.target === arrowEl || e.target.classList.contains('audio-capsule-arrow')) {
+      const isOpen = popover.classList.toggle('open');
+      arrowEl.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+      return;
+    }
     if (isPlaying) {
       stopSound();
     } else {
       startSound();
+    }
+  });
+
+  // Abrir menú con contextmenu
+  capsuleMain.addEventListener('contextmenu', (e) => {
+    e.preventDefault();
+    popover.classList.toggle('open');
+  });
+
+  // Selección de presets en popover
+  presetBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const p = btn.getAttribute('data-preset');
+      switchPreset(p);
+      popover.classList.remove('open');
+      arrowEl.style.transform = 'rotate(0deg)';
+    });
+  });
+
+  // Cerrar popover al hacer clic fuera
+  document.addEventListener('click', (e) => {
+    if (!container.contains(e.target)) {
+      popover.classList.remove('open');
+      arrowEl.style.transform = 'rotate(0deg)';
     }
   });
 }
@@ -1341,4 +1578,177 @@ function initHeroGoldenStardust() {
     renderLoop();
   });
 }
+
+/**
+ * ==============================================================================
+ * SISTEMA GLOBAL DE CITACIÓN ACADÉMICA Y EXPORTACIÓN DOCUMENTAL (APA / CHICAGO / BIBTEX)
+ * ==============================================================================
+ */
+window.ColombianopediaCitations = (function() {
+  function generateAPA(item) {
+    const author = item.author || "Colombianopedia";
+    const year = item.year || "2026";
+    const title = item.title;
+    const site = "La Gran Enciclopedia de la Memoria, las Naciones Originarias y la Tierra";
+    const url = item.url || window.location.href;
+    return `${author} (${year}). ${title}. En ${site}. Recuperado de ${url}`;
+  }
+
+  function generateChicago(item) {
+    const author = item.author || "Colombianopedia";
+    const year = item.year || "2026";
+    const title = item.title;
+    const site = "La Gran Enciclopedia de la Memoria, las Naciones Originarias y la Tierra";
+    const url = item.url || window.location.href;
+    return `${author}. "${title}." ${site}, ${year}. ${url}.`;
+  }
+
+  function generateBibTeX(item) {
+    const rawKey = (item.bibtexKey || item.title || 'documento')
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]/g, '_')
+      .substring(0, 24);
+    const key = `colombianopedia_${rawKey}_${item.year || '2026'}`;
+    const author = item.author || "Colombianopedia";
+    const title = item.title;
+    const year = item.year || "2026";
+    const url = item.url || window.location.href;
+    const note = item.note || "Acervo de Investigación Histórica, Etnográfica y Territorial de Colombia";
+    return `@online{${key},
+  author    = {${author}},
+  title     = {${title}},
+  year      = {${year}},
+  url       = {${url}},
+  publisher = {Colombianopedia},
+  note      = {${note}},
+  urldate   = {${new Date().toISOString().split('T')[0]}}
+}`;
+  }
+
+  function downloadFile(filename, content, type = 'text/markdown;charset=utf-8') {
+    const blob = new Blob([content], { type });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  }
+
+  function openModal(item) {
+    let backdrop = document.querySelector('.citation-modal-backdrop');
+    if (!backdrop) {
+      backdrop = document.createElement('div');
+      backdrop.className = 'citation-modal-backdrop';
+      backdrop.innerHTML = `
+        <div class="citation-modal-box" role="dialog" aria-modal="true" aria-label="Cita Académica">
+          <div class="citation-modal-header">
+            <div>
+              <span class="badge-pill badge-pill--gold" style="margin-bottom:0.4rem; display:inline-block; font-size:0.7rem;">ACERVO ACADÉMICO</span>
+              <h3 class="citation-modal-title" style="margin:0; font-family:var(--font-title); color:var(--text-primary); font-size:1.25rem;">Citar esta Investigación</h3>
+            </div>
+            <button type="button" class="citation-close-btn" aria-label="Cerrar modal">&times;</button>
+          </div>
+          
+          <div class="citation-tabs-nav" style="display:flex; gap:0.5rem; margin:1.2rem 0; border-bottom:1px solid var(--border-glass, rgba(255,255,255,0.1)); padding-bottom:0.6rem;">
+            <button type="button" class="citation-tab-btn active" data-format="apa">APA 7ª Edición</button>
+            <button type="button" class="citation-tab-btn" data-format="chicago">Chicago 17ª</button>
+            <button type="button" class="citation-tab-btn" data-format="bibtex">BibTeX</button>
+          </div>
+
+          <div class="citation-text-wrapper" style="position:relative;">
+            <textarea readonly class="citation-textarea" rows="4" style="width:100%; border-radius:8px; background:rgba(0,0,0,0.5); border:1px solid rgba(212,175,55,0.3); color:var(--text-primary); padding:1rem; font-family:var(--font-mono, monospace); font-size:0.85rem; line-height:1.6; resize:none; box-sizing:border-box; outline:none;"></textarea>
+          </div>
+
+          <div class="citation-modal-footer" style="display:flex; justify-content:space-between; align-items:center; margin-top:1.2rem; flex-wrap:wrap; gap:0.8rem;">
+            <span class="citation-feedback" style="font-size:0.8rem; color:var(--accent-emerald, #10b981); font-weight:600; display:none;">✓ Cita copiada al portapapeles</span>
+            <div style="display:flex; gap:0.6rem; margin-left:auto;">
+              <button type="button" class="pill-btn pill-btn--gold citation-copy-btn">
+                <span>📋</span> <span>Copiar Cita</span>
+              </button>
+              <button type="button" class="pill-btn citation-download-btn" style="background:rgba(255,255,255,0.08); color:var(--text-primary);">
+                <span>📥</span> <span>Descargar .bib</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      `;
+      document.body.appendChild(backdrop);
+
+      backdrop.querySelector('.citation-close-btn').addEventListener('click', () => {
+        backdrop.classList.remove('active');
+      });
+      backdrop.addEventListener('click', (e) => {
+        if (e.target === backdrop) backdrop.classList.remove('active');
+      });
+    }
+
+    const textarea = backdrop.querySelector('.citation-textarea');
+    const copyBtn = backdrop.querySelector('.citation-copy-btn');
+    const downloadBtn = backdrop.querySelector('.citation-download-btn');
+    const feedback = backdrop.querySelector('.citation-feedback');
+    const tabBtns = backdrop.querySelectorAll('.citation-tab-btn');
+
+    const updateContent = (format) => {
+      tabBtns.forEach(b => {
+        if (b.getAttribute('data-format') === format) {
+          b.classList.add('active');
+        } else {
+          b.classList.remove('active');
+        }
+      });
+
+      if (format === 'apa') {
+        textarea.value = generateAPA(item);
+        textarea.rows = 3;
+        downloadBtn.style.display = 'none';
+      } else if (format === 'chicago') {
+        textarea.value = generateChicago(item);
+        textarea.rows = 3;
+        downloadBtn.style.display = 'none';
+      } else if (format === 'bibtex') {
+        textarea.value = generateBibTeX(item);
+        textarea.rows = 7;
+        downloadBtn.style.display = 'inline-flex';
+      }
+    };
+
+    tabBtns.forEach(btn => {
+      btn.onclick = () => updateContent(btn.getAttribute('data-format'));
+    });
+
+    copyBtn.onclick = () => {
+      navigator.clipboard.writeText(textarea.value).then(() => {
+        feedback.style.display = 'inline-block';
+        copyBtn.querySelector('span:last-child').textContent = '¡Copiado!';
+        setTimeout(() => {
+          feedback.style.display = 'none';
+          copyBtn.querySelector('span:last-child').textContent = 'Copiar Cita';
+        }, 2200);
+      });
+    };
+
+    downloadBtn.onclick = () => {
+      const bib = generateBibTeX(item);
+      const filename = `${(item.bibtexKey || 'cita').toLowerCase().replace(/[^a-z0-9]/g, '_')}.bib`;
+      downloadFile(filename, bib, 'application/x-bibtex');
+    };
+
+    updateContent('apa');
+    backdrop.classList.add('active');
+  }
+
+  return {
+    generateAPA,
+    generateChicago,
+    generateBibTeX,
+    downloadFile,
+    openModal
+  };
+})();
+
 

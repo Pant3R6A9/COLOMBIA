@@ -41,6 +41,22 @@
   document.addEventListener('DOMContentLoaded', () => {
     setupTomoCardsInteractivity();
     setupForenseSearchFilter();
+
+    const dossierCiteBtn = document.getElementById('dossier-cite-btn');
+    if (dossierCiteBtn) {
+      dossierCiteBtn.addEventListener('click', () => {
+        if (window.ColombianopediaCitations) {
+          window.ColombianopediaCitations.openModal({
+            title: "Dossier Especial: Memoria, Verdad y Secretos de la Amazonía",
+            author: "Colombianopedia & Comisión para el Esclarecimiento de la Verdad",
+            year: "2026",
+            bibtexKey: "colombianopedia_memoria_amazonia_2026",
+            url: `${window.location.origin}/memoria.html`,
+            note: "Arqueología Pleistocénica de Chiribiquete, Terra Preta, Genocidio Cauchero e Informe Final de la CEV."
+          });
+        }
+      });
+    }
   });
 
   /**
@@ -85,6 +101,63 @@
 
     const content = drawer.querySelector('.drawer-content');
     content.innerHTML = renderTomoDetailedHTML(tomoNum, data);
+
+    // Inyectar barra de acciones académicas (Citar y Descargar)
+    const actionStrip = document.createElement('div');
+    actionStrip.className = 'tomo-actions-strip';
+    actionStrip.style.cssText = 'display:flex; gap:0.6rem; margin-bottom:1.2rem; flex-wrap:wrap;';
+    actionStrip.innerHTML = `
+      <button type="button" class="atlas-action-btn tomo-cite-btn" title="Citar este Tomo en APA 7, Chicago y BibTeX">
+        <span>📜</span> <span>Citar este Tomo</span>
+      </button>
+      <button type="button" class="atlas-action-btn atlas-action-btn--emerald tomo-export-btn" title="Descargar expediente en Markdown">
+        <span>📥</span> <span>Descargar Expediente (.md)</span>
+      </button>
+    `;
+
+    const subTitle = content.querySelector('div[style*="font-family:var(--font-mono)"]') || content.querySelector('h2');
+    if (subTitle) {
+      subTitle.after(actionStrip);
+    } else {
+      content.prepend(actionStrip);
+    }
+
+    actionStrip.querySelector('.tomo-cite-btn').addEventListener('click', () => {
+      const tomoTitle = content.querySelector('h2') ? content.querySelector('h2').textContent.trim() : `Tomo ${tomoNum}`;
+      if (window.ColombianopediaCitations) {
+        window.ColombianopediaCitations.openModal({
+          title: `Informe Final: Hay Futuro si Hay Verdad. Tomo ${String(tomoNum).padStart(2, '0')}: ${tomoTitle}`,
+          author: `Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición (CEV)`,
+          year: "2022",
+          bibtexKey: `cev_tomo_${tomoNum}_2022`,
+          url: `${window.location.origin}/memoria.html#comision-verdad`,
+          note: `Publicación oficial del Estado colombiano y el Sistema Integral para la Paz. Presidencia Padre Francisco de Roux.`
+        });
+      }
+    });
+
+    actionStrip.querySelector('.tomo-export-btn').addEventListener('click', () => {
+      const tomoTitle = content.querySelector('h2') ? content.querySelector('h2').textContent.trim() : `Tomo ${tomoNum}`;
+      const textData = content.innerText || content.textContent;
+      const mdContent = `# COMISIÓN DE LA VERDAD (CEV) — INFORME FINAL (2022)
+## TOMO ${String(tomoNum).padStart(2, '0')}: ${tomoTitle.toUpperCase()}
+**Entidad Responsable:** Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición  
+**Presidencia:** Padre Francisco de Roux  
+**Fecha Oficial:** 28 de junio de 2022  
+**Portal de Consulta:** Colombianopedia (https://colombianopedia.vercel.app/memoria.html)
+
+---
+
+${textData}
+
+---
+*Ficha descargada desde Colombianopedia — Acervo Nacional de la Memoria y la Paz.*
+`;
+      if (window.ColombianopediaCitations) {
+        window.ColombianopediaCitations.downloadFile(`cev_tomo_${String(tomoNum).padStart(2, '0')}_expediente.md`, mdContent);
+      }
+    });
+
     drawer.classList.add('open');
 
     // Inicializar pestañas internas del drawer
