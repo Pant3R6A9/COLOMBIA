@@ -1255,6 +1255,33 @@
       populateFamilySelect();
       setupEventListeners();
       renderCardsGrid();
+
+      // Enlace profundo (Deep Linking): Abrir monografía automáticamente si viene en URL (?pueblo= o #)
+      function handleDeepLink() {
+        const hash = window.location.hash.replace('#', '').trim();
+        const params = new URLSearchParams(window.location.search);
+        const qPueblo = params.get('pueblo') ? params.get('pueblo').trim() : '';
+        const target = qPueblo || hash;
+        if (target) {
+          const cleanTarget = cleanString(target);
+          const found = State.allPueblos.find(p => 
+            cleanString(p.nombre) === cleanTarget || 
+            cleanString(p.rawKey) === cleanTarget ||
+            cleanString(p.vernacula) === cleanTarget ||
+            cleanString(p.nombre).includes(cleanTarget)
+          );
+          if (found) {
+            setTimeout(() => {
+              openMonographDrawer(found);
+              const cardEl = document.querySelector(`[data-pueblo-key="${found.rawKey}"]`);
+              if (cardEl) cardEl.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }, 300);
+          }
+        }
+      }
+
+      handleDeepLink();
+      window.addEventListener('hashchange', handleDeepLink);
     } catch (err) {
       console.error('[Gran Atlas] Error durante la inicialización:', err);
       const grid = document.getElementById('atlas-grid');

@@ -4,7 +4,7 @@
  * =====================================================================
  */
 
-const CACHE_NAME = 'colombianopedia-v1.2';
+const CACHE_NAME = 'colombianopedia-v1.3';
 
 const PRECACHE_RESOURCES = [
   './',

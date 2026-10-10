@@ -475,9 +475,44 @@ function initUniversalSearch() {
         </div>
         <span class="search-category-pill">${item.category}</span>
       `;
+      row.addEventListener('click', () => {
+        closeSearch();
+      });
+      row.addEventListener('mouseenter', () => {
+        resultsContainer.querySelectorAll('.search-result-row.selected').forEach(r => r.classList.remove('selected'));
+        row.classList.add('selected');
+      });
       resultsContainer.appendChild(row);
     });
   }
+
+  // Navegación por teclado en resultados (Flecha Abajo, Flecha Arriba, Enter)
+  searchInput.addEventListener('keydown', (e) => {
+    const rows = resultsContainer.querySelectorAll('.search-result-row');
+    if (!rows.length) return;
+    let selectedIdx = Array.from(rows).findIndex(r => r.classList.contains('selected'));
+
+    if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      if (selectedIdx >= 0) rows[selectedIdx].classList.remove('selected');
+      selectedIdx = (selectedIdx + 1) % rows.length;
+      rows[selectedIdx].classList.add('selected');
+      rows[selectedIdx].scrollIntoView({ block: 'nearest' });
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      if (selectedIdx >= 0) rows[selectedIdx].classList.remove('selected');
+      selectedIdx = (selectedIdx - 1 + rows.length) % rows.length;
+      rows[selectedIdx].classList.add('selected');
+      rows[selectedIdx].scrollIntoView({ block: 'nearest' });
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (selectedIdx >= 0 && rows[selectedIdx]) {
+        const dest = rows[selectedIdx].href;
+        closeSearch();
+        window.location.href = dest;
+      }
+    }
+  });
 
   // Carga asíncrona de los 5 datasets JSON generados
   let isDatasetsLoaded = false;
@@ -504,14 +539,19 @@ function initUniversalSearch() {
         fetch('data/tribus_llanos_frontera.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/tribus_darien_caribe_remanente.json').then(r => r.ok ? r.json() : null).catch(() => null),
         fetch('data/tribus_andes_interandinos.json').then(r => r.ok ? r.json() : null).catch(() => null),
-        fetch('data/censo_maestro_115_pueblos_indigenas.json').then(r => r.ok ? r.json() : null).catch(() => null)
+        fetch('data/censo_maestro_115_pueblos_indigenas.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/cev_datos_forenses_dih.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/cev_hallazgos_recomendaciones.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/cev_relato_historico_etapas.json').then(r => r.ok ? r.json() : null).catch(() => null),
+        fetch('data/cev_territorio_etnico_humano.json').then(r => r.ok ? r.json() : null).catch(() => null)
       ];
 
       const [
         precolombina, colonia, sigloXIX, sigloXX, regiones,
         indigCaribe, indigPacifico, indigAndes, indigOrinoquia, indigAmazonia, secretosAmazonia,
         vaupesTukano, apaporisArawak, nomadasMaku, caquetaChiribiquete, guainiaInirida,
-        llanosFrontera, darienCaribe, andesInterandinos, censoMaestro
+        llanosFrontera, darienCaribe, andesInterandinos, censoMaestro,
+        cevForenses, cevHallazgos, cevRelato, cevTerritorio
       ] = await Promise.all(fetchPromises);
 
       // 1. Civilizaciones Prehispánicas y Museo del Oro
@@ -618,14 +658,15 @@ function initUniversalSearch() {
         }
       }
 
-      // 6. Pueblos Indígenas del Caribe y Sierra Nevada
+      // 6. Pueblos Indígenas del Caribe y Sierra Nevada (Deep link al drawer)
       if (indigCaribe && indigCaribe.pueblos) {
         const caribePueblos = Array.isArray(indigCaribe.pueblos) ? indigCaribe.pueblos : Object.values(indigCaribe.pueblos);
         caribePueblos.forEach(p => {
+          const name = p.nombre || p.etnonimo;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.etnonimo} (${p.familia_linguistica || 'Caribe / Sierra'})`,
+            title: `Pueblo ${name} (${p.familia_linguistica || 'Caribe / Sierra'})`,
             category: "Pueblo Indígena Caribe",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision_y_ley_de_origen || p.resumen || p.ubicacion_geografica || '').substring(0, 140)
           });
         });
@@ -637,7 +678,7 @@ function initUniversalSearch() {
           searchDatabase.push({
             title: `Pueblo ${p.nombre} (${p.familia_linguistica})`,
             category: "Pueblo Indígena Pacífico",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(p.nombre))}`,
             desc: (p.cosmovision || p.descripcion || p.territorio_y_distribucion || '').substring(0, 140)
           });
         });
@@ -646,10 +687,11 @@ function initUniversalSearch() {
       // 8. Pueblos Indígenas de los Andes y Macizo
       if (indigAndes && indigAndes.pueblos_indigenas) {
         indigAndes.pueblos_indigenas.forEach(p => {
+          const name = p.nombre || p.denominacion || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.denominacion || p.id} (${p.familia_linguistica || 'Andes'})`,
+            title: `Pueblo ${name} (${p.familia_linguistica || 'Andes'})`,
             category: "Pueblo Indígena Andino",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision || p.descripcion_etnografica || p.territorio || '').substring(0, 140)
           });
         });
@@ -658,10 +700,11 @@ function initUniversalSearch() {
       // 9. Pueblos Indígenas de la Orinoquía y Llanos
       if (indigOrinoquia && indigOrinoquia.pueblos_indigenas) {
         indigOrinoquia.pueblos_indigenas.forEach(p => {
+          const name = p.nombre || p.autodenominacion;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.autodenominacion} (${p.familia_linguistica})`,
+            title: `Pueblo ${name} (${p.familia_linguistica})`,
             category: "Pueblo Indígena Orinoquía",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision || p.descripcion || '').substring(0, 140)
           });
         });
@@ -670,10 +713,11 @@ function initUniversalSearch() {
       // 10. Pueblos Indígenas de la Amazonía Profunda
       if (indigAmazonia && indigAmazonia.pueblos_indigenas) {
         indigAmazonia.pueblos_indigenas.forEach(p => {
+          const name = p.nombre || p.autonimo;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.autonimo} (${p.familia_linguistica})`,
+            title: `Pueblo ${name} (${p.familia_linguistica})`,
             category: "Pueblo Indígena Amazonía",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision || p.resumen || p.territorio_y_cuencas || '').substring(0, 140)
           });
         });
@@ -694,10 +738,11 @@ function initUniversalSearch() {
       // 12. Clanes Tukano del Vaupés
       if (vaupesTukano && vaupesTukano.monografias_exhaustivas_de_las_ocho_naciones) {
         vaupesTukano.monografias_exhaustivas_de_las_ocho_naciones.forEach(p => {
+          const name = p.nombre_comun || p.nombre;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre_comun || p.nombre} (${p.filiacion_linguistica?.idioma || 'Tukano Oriental'})`,
+            title: `Pueblo ${name} (${p.filiacion_linguistica?.idioma || 'Tukano Oriental'})`,
             category: "Pueblo Indígena Vaupés",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision_y_filosofia?.mito_origen || p.resumen || p.significado_etnonimo || '').substring(0, 140)
           });
         });
@@ -706,10 +751,11 @@ function initUniversalSearch() {
       // 13. Clanes del Apaporis y Arawak
       if (apaporisArawak && apaporisArawak.naciones_indigenas) {
         apaporisArawak.naciones_indigenas.forEach(p => {
+          const name = p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.id} (${p.perfil_etnolinguistico?.afiliacion_linguistica || 'Apaporis'})`,
+            title: `Pueblo ${name} (${p.perfil_etnolinguistico?.afiliacion_linguistica || 'Apaporis'})`,
             category: "Pueblo Indígena Apaporis",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmologia_y_mitologia?.anaconda_canoa || p.resumen || '').substring(0, 140)
           });
         });
@@ -718,10 +764,11 @@ function initUniversalSearch() {
       // 14. Nómadas Nadahup / Makú
       if (nomadasMaku && nomadasMaku.monografias_detalladas_pueblos) {
         Object.values(nomadasMaku.monografias_detalladas_pueblos).forEach(p => {
+          const name = p.pueblo || p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.pueblo || p.nombre || p.id} (${p.linguistica?.familia || 'Nadahup / Makú'})`,
+            title: `Pueblo ${name} (${p.linguistica?.familia || 'Nadahup / Makú'})`,
             category: "Pueblo Indígena Nómada",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.etnoecologia_y_patron_nomada?.ciclos_estacionales || p.resumen || '').substring(0, 140)
           });
         });
@@ -730,10 +777,11 @@ function initUniversalSearch() {
       // 15. Caquetá, Putumayo y Chiribiquete
       if (caquetaChiribiquete && caquetaChiribiquete.pueblos_indigenas) {
         caquetaChiribiquete.pueblos_indigenas.forEach(p => {
+          const name = p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Caquetá / Putumayo'})`,
+            title: `Pueblo ${name} (${p.filiacion_linguistica?.familia || 'Caquetá / Putumayo'})`,
             category: "Pueblo Indígena Caquetá",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision_y_mitologia?.origen_sagrado || p.resumen || '').substring(0, 140)
           });
         });
@@ -742,10 +790,11 @@ function initUniversalSearch() {
       // 16. Cuenca de Guainía, Atabapo e Inírida
       if (guainiaInirida && guainiaInirida.pueblos_indigenas) {
         guainiaInirida.pueblos_indigenas.forEach(p => {
+          const name = p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Guainía / Río Negro'})`,
+            title: `Pueblo ${name} (${p.filiacion_linguistica?.familia || 'Guainía / Río Negro'})`,
             category: "Pueblo Indígena Guainía",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision_y_mitologia?.ciclo_mitico || p.resumen || '').substring(0, 140)
           });
         });
@@ -754,10 +803,11 @@ function initUniversalSearch() {
       // 17. Sabanas Fronterizas de Arauca y Vichada
       if (llanosFrontera && llanosFrontera.pueblos_indigenas_sabanas_fronterizas) {
         llanosFrontera.pueblos_indigenas_sabanas_fronterizas.forEach(p => {
+          const name = p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Llanos / Sabanas'})`,
+            title: `Pueblo ${name} (${p.filiacion_linguistica?.familia || 'Llanos / Sabanas'})`,
             category: "Pueblo Indígena Llanos",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision_y_espiritualidad?.origen_mitico || p.resumen || '').substring(0, 140)
           });
         });
@@ -766,10 +816,11 @@ function initUniversalSearch() {
       // 18. Darién y Caribe Remanente
       if (darienCaribe && darienCaribe.pueblos) {
         darienCaribe.pueblos.forEach(p => {
+          const name = p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Darién / Caribe'})`,
+            title: `Pueblo ${name} (${p.filiacion_linguistica?.familia || 'Darién / Caribe'})`,
             category: "Pueblo Indígena Darién / Caribe",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.cosmovision_y_espiritualidad?.origen_sagrado || p.resumen || '').substring(0, 140)
           });
         });
@@ -778,10 +829,11 @@ function initUniversalSearch() {
       // 19. Valles Interandinos y Cauca
       if (andesInterandinos && andesInterandinos.pueblos_indigenas) {
         andesInterandinos.pueblos_indigenas.forEach(p => {
+          const name = p.nombre || p.id;
           searchDatabase.push({
-            title: `Pueblo ${p.nombre || p.id} (${p.filiacion_linguistica?.familia || 'Andes Interandinos'})`,
+            title: `Pueblo ${name} (${p.filiacion_linguistica?.familia || 'Andes Interandinos'})`,
             category: "Pueblo Indígena Andino",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(name))}`,
             desc: (p.etnohistoria_y_resistencia?.origen_ancestral || p.resumen || '').substring(0, 140)
           });
         });
@@ -793,11 +845,168 @@ function initUniversalSearch() {
           searchDatabase.push({
             title: `Censo Oficial: Pueblo ${p.nombre} (${p.familia})`,
             category: "Censo Canónico 115 Pueblos",
-            url: "otras-culturas.html",
+            url: `otras-culturas.html?pueblo=${encodeURIComponent(cleanText(p.nombre))}`,
             desc: `Nación indígena colombiana en ${p.region} (${p.depto}). Familia lingüística: ${p.familia}. Reconocida por DANE y ONIC.`
           });
         });
       }
+
+      // 21. Comisión de la Verdad: Datos Forenses y DIH
+      if (cevForenses) {
+        if (cevForenses.cifras_consolidadas_verificadas) {
+          searchDatabase.push({
+            title: "CEV Cifra: 450.664 Homicidios en el Conflicto Armado",
+            category: "Comisión de la Verdad - Forense",
+            url: "memoria.html#cev-cifras",
+            desc: "Estimación estadística conjunta CEV-JEP-DNP (1985-2018) con modelo de captura-recaptura para superar el subregistro."
+          });
+          searchDatabase.push({
+            title: "CEV Cifra: 121.768 Desapariciones Forzadas",
+            category: "Comisión de la Verdad - Forense",
+            url: "memoria.html#cev-cifras",
+            desc: "Crímen de lesa humanidad documentado en alianza con la Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD)."
+          });
+          searchDatabase.push({
+            title: "CEV Cifra: 50.707 Secuestros y Tomas de Rehenes",
+            category: "Comisión de la Verdad - Forense",
+            url: "memoria.html#cev-cifras",
+            desc: "Violaciones al DIH perpetradas por FARC-EP y ELN con fines extorsivos, políticos y de control territorial."
+          });
+          searchDatabase.push({
+            title: "CEV Cifra: 8.000.000+ Desplazamientos Forzados",
+            category: "Comisión de la Verdad - Forense",
+            url: "memoria.html#cev-cifras",
+            desc: "Éxodo masivo de comunidades campesinas, afrodescendientes e indígenas hacia periferias urbanas."
+          });
+        }
+        if (cevForenses.macro_patrones_criminales_forenses) {
+          cevForenses.macro_patrones_criminales_forenses.forEach(pat => {
+            searchDatabase.push({
+              title: `Patrón DIH: ${pat.nombre}`,
+              category: "Macro-Patrón Criminal CEV",
+              url: "memoria.html#cev-patrones",
+              desc: `${pat.logica_operativa || ''}`.substring(0, 140)
+            });
+            if (pat.casos_emblematicos) {
+              pat.casos_emblematicos.forEach(c => {
+                searchDatabase.push({
+                  title: `Caso Judicial: ${c.nombre || c.caso || c.municipio}`,
+                  category: "Caso Emblemático DIH",
+                  url: "memoria.html#cev-casos",
+                  desc: `${c.departamento ? c.departamento + '. ' : ''}${c.ano ? c.ano + '. ' : ''}${(c.descripcion || c.impacto || '')}`.substring(0, 140)
+                });
+              });
+            }
+          });
+        }
+        if (cevForenses.archivo_testimonial_textual) {
+          cevForenses.archivo_testimonial_textual.forEach(t => {
+            searchDatabase.push({
+              title: `Testimonio CEV [${t.codigo_cev}]: ${t.testigo}`,
+              category: "Voz de la Verdad CEV",
+              url: "memoria.html#cev-testimonios",
+              desc: `"${(t.cita_textual || '').substring(0, 130)}..." (${t.fecha_evento || ''})`
+            });
+          });
+        }
+      }
+
+      // 22. Comisión de la Verdad: Hallazgos y Recomendaciones
+      if (cevHallazgos) {
+        if (cevHallazgos.cuatro_factores_persistencia) {
+          cevHallazgos.cuatro_factores_persistencia.forEach(f => {
+            searchDatabase.push({
+              title: `Persistencia del Conflicto: ${f.titulo}`,
+              category: "CEV - Hallazgos Centrales",
+              url: "memoria.html#cev-hallazgos",
+              desc: (f.diagnostico_cev || f.impacto_documentado || '').substring(0, 140)
+            });
+          });
+        }
+        if (cevHallazgos.bloques_recomendaciones_no_repeticion) {
+          cevHallazgos.bloques_recomendaciones_no_repeticion.forEach(r => {
+            searchDatabase.push({
+              title: `Recomendación No Repetición: ${r.nombre_eje}`,
+              category: "CEV - No Repetición",
+              url: "memoria.html#cev-recomendaciones",
+              desc: (r.descripcion || '').substring(0, 140)
+            });
+          });
+        }
+      }
+
+      // 23. Comisión de la Verdad: Relato Histórico y Etapas
+      if (cevRelato && cevRelato.periodizacion_cinco_etapas) {
+        cevRelato.periodizacion_cinco_etapas.forEach(e => {
+          searchDatabase.push({
+            title: `Etapa Histórica (${e.periodo_anos}): ${e.nombre_etapa}`,
+            category: "CEV - Relato Histórico",
+            url: "memoria.html#cev-etapas",
+            desc: (e.tesis_explicativa_cev || e.contexto_politico_nacional || '').substring(0, 140)
+          });
+        });
+      }
+
+      // 24. Comisión de la Verdad: Tomos Territoriales y Étnicos
+      if (cevTerritorio) {
+        if (cevTerritorio.tomo_05_catorce_macroregiones) {
+          cevTerritorio.tomo_05_catorce_macroregiones.forEach(m => {
+            searchDatabase.push({
+              title: `Macro-región CEV: ${m.nombre} (Tomo 05: Colombia Adentro)`,
+              category: "CEV - Macro-regiones",
+              url: "memoria.html#cev-macroregiones",
+              desc: `Departamentos: ${Array.isArray(m.departamentos) ? m.departamentos.join(', ') : m.departamentos}. ${(m.dinamica_central || '')}`.substring(0, 140)
+            });
+          });
+        }
+        searchDatabase.push({
+          title: "Tomo 06 CEV: Mi Cuerpo es la Verdad (Género y Diversidad)",
+          category: "CEV - Tomo Oficial",
+          url: "memoria.html#cev-genero",
+          desc: "Violencias diferenciales contra mujeres y personas LGBTIQ+ en el conflicto armado y resistencias comunitarias."
+        });
+        searchDatabase.push({
+          title: "Tomo 07 CEV: Resistencias de los Pueblos Étnicos",
+          category: "CEV - Tomo Oficial",
+          url: "memoria.html#cev-etnico",
+          desc: "Afectaciones colectivas a pueblos indígenas, afrocolombianos, negros, palenqueros y raizales."
+        });
+        searchDatabase.push({
+          title: "Tomo 08 CEV: La Colombia Fuera de Colombia (Exilio)",
+          category: "CEV - Tomo Oficial",
+          url: "memoria.html#cev-exilio",
+          desc: "Primer informe de una comisión de la verdad sobre víctimas forzadas a migrar al exterior (24 países)."
+        });
+        searchDatabase.push({
+          title: "Tomo 09 CEV: No es un Mal Menor (Niñez y Juventud)",
+          category: "CEV - Tomo Oficial",
+          url: "memoria.html#cev-ninez",
+          desc: "Impactos en la infancia, orfandad, escuelas atacadas y reclutamiento forzado durante la guerra."
+        });
+        searchDatabase.push({
+          title: "Tomo 10 CEV: Cuando los Pájaros no Cantaban (Polifonía)",
+          category: "CEV - Tomo Oficial",
+          url: "memoria.html#cev-testimonios",
+          desc: "Acervo de testimonios líricos, dolores y cantos de dignidad de las víctimas del conflicto colombiano."
+        });
+      }
+
+      // 25. Centro Geológico, Volcanes y Fallas Tectónicas
+      const geologiaNodos = [
+        { title: "Volcán Nevado del Ruiz (5.321 msnm)", category: "Geología y Volcanes", url: "geografia-y-geologia.html#ruiz", desc: "Estratovolcán activo en la Cordillera Central. Tragedia de Armero (1985) y monitoreo sismológico continuo del SGC." },
+        { title: "Volcán Galeras (4.276 msnm, Pasto)", category: "Geología y Volcanes", url: "geografia-y-geologia.html#galeras", desc: "Uno de los volcanes más activos de Colombia y del Cinturón de Fuego del Pacífico, dominando la ciudad de Pasto." },
+        { title: "Volcán Cerro Machín (Tolima)", category: "Geología y Volcanes", url: "geografia-y-geologia.html#machin", desc: "Volcán altamente explosivo en Cajamarca (Tolima). Anillos piroclásticos y vigilancia tectónica prioritaria." },
+        { title: "Volcán Nevado del Huila (5.364 msnm)", category: "Geología y Volcanes", url: "geografia-y-geologia.html#huila", desc: "Punto más alto de la Cordillera Central y territorio sagrado de la nación Nasa." },
+        { title: "Volcán Puracé (Cauca)", category: "Geología y Volcanes", url: "geografia-y-geologia.html#purace", desc: "Estratovolcán andino con fuentes termales y fumarolas sulfurosas en la cadena volcánica de los Coconucos." },
+        { title: "Volcán Cumbal (Nariño, 4.764 msnm)", category: "Geología y Volcanes", url: "geografia-y-geologia.html#cumbal", desc: "El gigante del nudo de los Pastos, con glaciares remanentes y lagunas volcánicas tutelares." },
+        { title: "Falla de Romeral (Sistema Tectónico Mayor)", category: "Tectónica y Fallas", url: "geografia-y-geologia.html#romeral", desc: "Mega-falla tectónica activa de rumbo norte-sur que separa la Cordillera Central de la Occidental." },
+        { title: "Falla de Algeciras (Huila / Caquetá)", category: "Tectónica y Fallas", url: "geografia-y-geologia.html#algeciras", desc: "Sistema tectónico transpresivo en el flanco oriental del Macizo Colombiano." },
+        { title: "Falla del Borde Llanero", category: "Tectónica y Fallas", url: "geografia-y-geologia.html#bordellanero", desc: "Frontera tectónica entre la Cordillera Oriental y la cuenca de los Llanos Orientales." },
+        { title: "Esmeraldas de Muzo, Coscuez y Chivor", category: "Riqueza Mineral", url: "geografia-y-geologia.html#esmeraldas", desc: "Los yacimientos de esmeraldas hidrotermales más puros y cotizados del planeta en las pizarras de Boyacá." },
+        { title: "Catedral y Salina de Zipaquirá", category: "Riqueza Mineral", url: "geografia-y-geologia.html#zipaquira", desc: "Domo de sal fósil de 250 millones de años (Cretácico), explotado desde tiempos precolombinos por los Muiscas." },
+        { title: "Alerta Ecológica: Río Atrato (Sentencia T-622/16)", category: "Alerta Ambiental", url: "geografia-y-geologia.html#atrato", desc: "Primer río de Colombia declarado sujeto de derechos ante la devastación de la minería de dragas y mercurio." }
+      ];
+      geologiaNodos.forEach(n => searchDatabase.push(n));
 
       isDatasetsLoaded = true;
     } catch (err) {
