@@ -1,0 +1,198 @@
+{
+  "metadatos": {
+    "titulo": "Informe Final de la Comisión de la Verdad - Tomo 04: Hasta la Guerra Tiene Límites",
+    "subtitulo": "Macro-patrones de Infracciones al Derecho Internacional Humanitario y Graves Violaciones a los Derechos Humanos (1958–2016)",
+    "entidad": "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición (CEV)",
+    "aliado_estadistico": "Human Rights Data Analysis Group (HRDAG) & Jurisdicción Especial para la Paz (JEP)",
+    "fecha_publicacion": "Junio de 2022",
+    "acervo_custodio": "Archivo General de la Nación & Legado Digital de la Comisión de la Verdad",
+    "universo_fuentes": "27.300 entrevistas a más de 30.000 personas, 1.195 informes presentados por organizaciones sociales, integración probabilística de 112 bases de datos de víctimas"
+  },
+  "cifras_consolidadas_verificadas": {
+    "homicidios_conflicto": {
+      "total_estimado_integrado": 450664,
+      "porcentaje_poblacion_civil": 80.0,
+      "porcentaje_combatientes": 20.0,
+      "distribucion_presunta_responsabilidad": {
+        "paramilitares": { "porcentaje": 45.0, "victimas_estimadas": 205000 },
+        "guerrillas": { "porcentaje": 27.0, "victimas_estimadas": 122000 },
+        "agentes_estatales_directos": { "porcentaje": 12.0, "victimas_estimadas": 56000 },
+        "agentes_estatales_en_connivencia": { "porcentaje": 4.0, "victimas_estimadas": 18000 },
+        "no_identificado_otros": { "porcentaje": 12.0, "victimas_estimadas": 49664 }
+      },
+      "pico_historico_anual": "Año 2002 (más de 28.000 homicidios registrados en un solo año)"
+    },
+    "desaparicion_forzada": {
+      "total_victimas_documentadas": 121768,
+      "comparativa_internacional": "Supera la suma conjunta de las dictaduras del Cono Sur (Argentina, Chile y Uruguay multiplicadas por cuatro)",
+      "distribucion_responsabilidad": {
+        "paramilitares": "48%",
+        "guerrillas": "24%",
+        "agentes_estatales": "16%",
+        "otros_o_sin_informacion": "12%"
+      },
+      "practicas_sistematicas": [
+        "Inhumación clandestina en fosas comunes en selvas y cementerios municipales sin rotular",
+        "Arrojo sistemático de cuerpos a ríos convertidos en fosas móviles (río Magdalena, río Cauca, río Atrato, río Catatumbo)",
+        "Incineración en hornos crematorios de ladrilleras y trapiches (Juan Frío, Norte de Santander)",
+        "Desmembramiento previo de cadáveres para evitar la flotabilidad en los afluentes"
+      ]
+    },
+    "secuestro_toma_rehenes": {
+      "total_victimas": 50770,
+      "responsabilidad_principal": {
+        "farc_ep": "61%",
+        "eln": "24%",
+        "paramilitares": "9%",
+        "otros_delincuencia": "6%"
+      },
+      "modalidades": [
+        "Pescas milagrosas (retenes viales masivos e indiscriminados en carreteras interdepartamentales)",
+        "Secuestro extorsivo con fines de financiación militar ('Ley 002' de las FARC-EP)",
+        "Secuestro político para forzar el 'Canje Humanitario' (congresistas, ministros, diputados, soldados y policías)",
+        "Tomas de rehenes prolongadas en campamentos de selva (hasta 12 años en cautiverio con alambradas de púas)"
+      ]
+    },
+    "desplazamiento_forzado": {
+      "total_victimas_acumuladas": 8243000,
+      "magnitud_global": "Segundo país con mayor desplazamiento interno en el planeta después de Siria",
+      "poblacion_afectada": "Aproximadamente el 18% de la población total de Colombia",
+      "impacto_territorial": "Afectación en 1.110 de los 1.122 municipios del país",
+      "tierras_despojadas_o_abandonadas": "Entre 6.5 y 8.3 millones de hectáreas de tierra productiva"
+    },
+    "masacres": {
+      "total_masacres_documentadas": 4237,
+      "definicion_operativa": "Homicidio simultáneo de 3 o más personas en estado de indefensión",
+      "total_victimas_en_masacres": 24500,
+      "responsabilidad_preponderante": "Paramilitares (más del 60% de los eventos de masacre documentados)",
+      "periodo_mas_critico": "1997 a 2003 (un promedio de 1.2 masacres por día en territorio nacional)"
+    },
+    "ejecuciones_extrajudiciales_falsos_positivos": {
+      "total_casos_priorizados_jep_cev": 6402,
+      "periodo_de_mayor_intensidad": "2002–2008 (durante la vigencia de incentivos monetarios y permisos por 'bajas en combate')",
+      "zonas_criticas": [
+        "Antioquia (IV Brigada - Oriente antioqueño y Dabeiba)",
+        "Costa Caribe (Batallón La Popa - Valledupar y Sierra Nevada)",
+        "Norte de Santander (Brigada Móvil 15 - Ocaña y Catatumbo con jóvenes traídos de Soacha)",
+        "Casanare (Brigada XVI)",
+        "Huila (Batallón Pizarro)",
+        "Meta (Batallón 21 Vargas)"
+      ],
+      "modus_operandi_documentado": "Reclutamiento con falsas promesas de empleo a jóvenes vulnerables o en situación de calle, traslado forzado interdepartamental, asesinato inmediato, colocación de armas sembradas y uniformes de combate sobre los cuerpos, y legalización judicial como 'guerrilleros abatidos en combate'."
+    },
+    "minas_antipersonal_municiones_sin_explotar": {
+      "total_victimas": 12100,
+      "porcentaje_fuerza_publica": 60.5,
+      "porcentaje_civiles_ninos_campesinos": 39.5,
+      "responsabilidad_preponderante": "Guerrillas de las FARC-EP y ELN (utilizadas como barreras defensivas de campamentos y cocales)",
+      "impacto_secundario": "Confinamiento absoluto de veredas enteras y abandono forzado de cosechas y escuelas rurales"
+    },
+    "violencia_sexual_reproductiva": {
+      "total_victimas_registradas": 32446,
+      "porcentaje_mujeres_y_ninas": 92.3,
+      "porcentaje_personas_lgbtiq": 4.1,
+      "practicas_documentadas": [
+        "Violación en grupo como castigo ejemplarizante en masacres paramilitares",
+        "Esclavitud doméstica y sexual forzada en campamentos armados",
+        "Abortos forzados sistemáticos en filas guerrilleras",
+        "Violencia correctiva y tortura motivada por prejuicio homofóbico y transfóbico"
+      ]
+    }
+  },
+  "macro_patrones_criminales_forenses": [
+    {
+      "id": "PATRON-01",
+      "nombre": "El Castigo Colectivo, la Sevicia y la Doctrina del 'Quitarle el Agua al Pez'",
+      "actores_principales": ["Autodefensas Unidas de Colombia (AUC)", "Fuerza Pública en omisión o colusión"],
+      "logica_operativa": "Bajo la doctrina de la contrainsurgencia radical, las comunidades campesinas fueron tipificadas no como civiles neutrales, sino como 'bases sociales de la guerrilla'. Las masacres públicas con motosierras, machetes y garrotes (como en El Salado, Chengue y Macayepo) tenían el propósito explícito de sembrar terror indeleble, provocar el éxodo masivo inmediato y permitir la compra forzada de tierras despojadas a precios irrisorios para proyectos agroindustriales y ganaderos.",
+      "casos_emblematicos": [
+        {
+          "caso": "Masacre de El Salado (Bolívar, 16–21 de febrero de 2000)",
+          "victimas_mortales": 60,
+          "perpetradores": "Bloque Héroes de los Montes de María (AUC) bajo alias 'Cadena' y 'Jorge 40'",
+          "hechos_documentados": "Durante seis días consecutivos, 450 paramilitares sitiaron el pueblo con complicidad por omisión de retenes de la Infantería de Marina. Instalaron un centro de tortura en la cancha de fútbol del pueblo, donde tocaron instrumentos musicales de la casa de la cultura mientras degollaban y ejecutaban a los pobladores."
+        },
+        {
+          "caso": "Masacre de Mapiripán (Meta, 15–20 de julio de 1997)",
+          "victimas_mortales": 49,
+          "perpetradores": "AUC con apoyo logístico de vuelos desde Urabá coordinados por mandos militares",
+          "hechos_documentados": "Paramilitares volaron desde Necoclí hasta San José del Guaviare en aviones oficiales, avanzaron escoltados por camiones y desmembraron vivos a pobladores arrojándolos al río Guaviare para abrir la ruta del narcotráfico hacia los llanos."
+        }
+      ]
+    },
+    {
+      "id": "PATRON-02",
+      "nombre": "El Secuestro Sistemático y la Economía de Guerra Insurgente",
+      "actores_principales": ["FARC-EP (Secretariado y Frentes territoriales)", "ELN"],
+      "logica_operativa": "Las FARC convirtieron la privación de la libertad en su mayor fuente de ingreso monetario a través de la 'Ley 002' del año 2000 (exigencia de tributos obligatorios a personas con patrimonio superior a un millón de dólares). Quien no pagaba era secuestrado y llevado a campamentos selváticos en condiciones infrahumanas: encadenados por el cuello, obligados a defecar en baldes frente a guardias armados y sometidos a marchas forzadas de meses. El ELN empleó secuestros masivos espectaculares (Iglesia La María en Cali, avión Fokker de Avianca) para forzar visibilidad política.",
+      "casos_emblematicos": [
+        {
+          "caso": "El Secuestro y Masacre de los 11 Diputados del Valle del Cauca (2002–2007)",
+          "victimas_mortales": 11,
+          "perpetradores": "Frente Urbano Manuel Cepeda Vargas y Columna Móvil Alirio Torres de las FARC-EP",
+          "hechos_documentados": "El 11 de abril de 2002, un comando guerrillero disfrazado de militares del Ejército ingresó a la Asamblea Departamental en pleno centro de Cali, engañó a los diputados alegando una amenaza de bomba y los secuestró en un bus. Tras cinco años de cautiverio en la selva del Pacífico, el 18 de junio de 2007 fueron acribillados con ráfagas de fusil por sus propios custodios en un confuso incidente de fuego amigo."
+        },
+        {
+          "caso": "El Atentado al Club El Nogal (Bogotá, 7 de febrero de 2003)",
+          "victimas_mortales": 36,
+          "heridos": 200,
+          "perpetradores": "Columna Móvil Teófilo Forero de las FARC-EP",
+          "hechos_documentados": "Coche bomba cargado con 200 kilogramos de explosivo C-4 y amonal detonado en el parqueadero de un club social en el norte de Bogotá, violando flagrantemente la distinción entre objetivos militares y civiles y marcando la llegada del terrorismo urbano a gran escala."
+        }
+      ]
+    },
+    {
+      "id": "PATRON-03",
+      "nombre": "La Doctrina de Bajas en Combate y las Ejecuciones Extrajudiciales Institucionales",
+      "actores_principales": ["Unidades del Ejército Nacional de Colombia", "Complicidades en el DAS y Medicina Legal"],
+      "logica_operativa": "La Directiva Ministerial 029 de 2005 y las directivas internas de comandantes de brigada y división establecieron una política perversa de estímulos institucionales: felicitaciones en el folio de vida, ascensos garantizados, planes de vacaciones y pagos en efectivo por cada 'baja' enemiga reportada. Al no poder producir suficientes bajas reales en combate, diversas unidades militares crearon redes sicariales con intermediarios para reclutar y trasladar a personas desvalidas (habitantes de calle, campesinos aislados, desempleados de Soacha, Ocaña y Pereira), ejecutarlas a sangre fría a corta distancia y plantarles fusiles y uniformes para registrarlas como bajas guerrilleras.",
+      "casos_emblematicos": [
+        {
+          "caso": "Los Jóvenes de Soacha (Cundinamarca) ejecutados en Ocaña (Norte de Santander, 2008)",
+          "victimas_documentadas": "Decenas de jóvenes humildes de la comuna de Cazucá y Soacha",
+          "perpetradores": "Brigada Móvil 15 y Batallón Santander",
+          "hechos_documentados": "Jóvenes como Fair Leonardo Porras (un joven con discapacidad cognitiva severa) fueron engañados con una falsa oferta de trabajo de recolección de café por $200.000 semanales. Fueron drogados, trasladados en bus a Ocaña y reportados asesinados como 'cabecillas guerrilleros muertos en combate' a menos de 48 horas de haber desaparecido de Soacha."
+        },
+        {
+          "caso": "Las Fosas Clandestinas del Cementerio Las Mercedes de Dabeiba (Antioquia)",
+          "victimas_exhumadas": "Más de 70 cuerpos no identificados recuperados por la JEP",
+          "perpetradores": "Batallón de Contraguerrilla N° 79",
+          "hechos_documentados": "Militares confesaron ante la JEP cómo enterraban clandestinamente a campesinos asesinados en fosas comunes del cementerio municipal para inflar las cifras operacionales del batallón durante la Operación Bastión."
+        }
+      ]
+    },
+    {
+      "id": "PATRON-04",
+      "nombre": "Los Hornos de la Muerte y la Industria de la Desaparición Fronteriza",
+      "actores_principales": ["Frente Fronteras del Bloque Catatumbo de las AUC (Salvatore Mancuso / Jorge Iván Laverde 'El Iguano')"],
+      "logica_operativa": "A partir de 2001, ante la presión de la Fiscalía y el hallazgo de fosas comunes que alertaban a los organismos de derechos humanos, la comandancia paramilitar de las AUC impartió la orden explícita de 'cero cuerpos'. En Juan Frío (municipio de Villa del Rosario, frontera con Venezuela), adaptaron hornos de ladrillo y construyeron incineradores artesanales con leña y combustible para calcinar a centenares de personas previamente torturadas, pulverizando sus huesos para borrar toda evidencia material y judicial del crimen.",
+      "casos_emblematicos": [
+        {
+          "caso": "Hornos Crematorios de Juan Frío (Villa del Rosario, Norte de Santander, 2001–2003)",
+          "victimas_estimadas": "Más de 500 personas calcinadas e incineradas",
+          "hechos_documentados": "Salvatore Mancuso reconoció formalmente ante la Comisión de la Verdad y la JEP la existencia y uso de estos hornos para exterminar a líderes comunales, supuestos auxiliadores de la guerrilla y transeúntes fronterizos, arrojando las cenizas restantes a las aguas del río Táchira."
+        }
+      ]
+    }
+  ],
+  "archivo_testimonial_textual": [
+    {
+      "codigo_cev": "TEST-CEV-BOJ-044",
+      "testigo": "Sobreviviente de la Iglesia de Bojayá (Chocó)",
+      "fecha_evento": "2 de mayo de 2002",
+      "cita_textual": "«El cilindro bomba de las FARC entró por el techo de la iglesia de San Pablo de Bellavista a las 11 de la mañana. Adentro estábamos más de 300 personas rezando porque afuera los paramilitares estaban usando nuestras casas como trinchera y los guerrilleros disparaban sin importar quién estuviera en medio. Cuando cayó el cilindro, todo fue un fogonazo de fuego y carne humana despedazada. Murieron 79 personas, de las cuales 48 eran niños. Los que sobrevivimos tuvimos que navegar el río Atrato entre cadáveres flotando bajo el tiroteo cruzado. Treinta años después, el olor a pólvora quemada todavía no se me quita del alma.»"
+    },
+    {
+      "codigo_cev": "TEST-CEV-MAFAPO-012",
+      "testigo": "Carmenza Gómez, Madre de Soacha (MAFAPO)",
+      "fecha_evento": "Septiembre de 2008",
+      "cita_textual": "«A mi hijo Víctor Fernando Gómez me lo desaparecieron un 23 de agosto de 2008 de la plaza de Soacha. Tenía 23 años y estaba desempleado. Tres días después, apareció reportado por el Ejército Nacional en Ocaña como un guerrillero muerto en combate con un fusil que ni siquiera sabía sostener en la mano izquierda siendo diestro. A nuestros hijos los mataron para ganarse unos días de permiso y unos pesos miserables de prima operacional. No descansaremos hasta que los altos generales que firmaron esas órdenes miren a los ojos al país y digan la verdad sin tapujos.»"
+    },
+    {
+      "codigo_cev": "TEST-CEV-MANCUSO-001",
+      "testigo": "Salvatore Mancuso, excomandante del Estado Mayor de las AUC",
+      "fecha_evento": "Audiencia Pública de Reconocimiento CEV - Mayo de 2021",
+      "cita_textual": "«Las Autodefensas no éramos una fuerza ajena al Estado: éramos el brazo clandestino y armado del Estado en los territorios. Coordinábamos operaciones con comandantes de brigada, nos entregaban listas de personas señaladas de subversivas elaboradas por los servicios de inteligencia del Estado, y operábamos con el apoyo económico de gremios ganaderos, bananeros y multinacionales. Los hornos de Juan Frío no se hicieron por iniciativa propia de un mando bajo: fue una política acordada para evitar que la Fiscalía siguiera encontrando fosas que perjudicaban la imagen institucional del gobierno.»"
+    }
+  ]
+}

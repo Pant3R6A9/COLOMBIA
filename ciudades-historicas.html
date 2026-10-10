@@ -493,34 +493,244 @@
   <script>
     // Base de datos calibrada de las 32 ciudades / capitales
     const citiesData = [
-      { id: "bogota", name: "Bogotá", originalName: "Bacatá", department: "Cundinamarca", x: 385, y: 430, region: "Andina", date: "1538", desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá." },
-      { id: "medellin", name: "Medellín", originalName: "Valle de Aburrá", department: "Antioquia", x: 285, y: 345, region: "Andina", date: "1675", desc: "Tierra de los Aburráes. Nombrada en honor a la villa extremeña de Medellín en España." },
-      { id: "cali", name: "Cali", originalName: "Lili", department: "Valle del Cauca", x: 235, y: 485, region: "Pacífica", date: "1536", desc: "Toma su nombre de la etnia Lili del Valle del Cauca, cruzada por el río del mismo nombre." },
-      { id: "barranquilla", name: "Barranquilla", originalName: "Sitio de Libres", department: "Atlántico", x: 315, y: 95, region: "Caribe", date: "1629", desc: "Fundada originalmente por pastores libres de control terrateniente en las riberas del Magdalena." },
-      { id: "cartagena", name: "Cartagena", originalName: "Calamarí", department: "Bolívar", x: 295, y: 115, region: "Caribe", date: "1533", desc: "Originalmente poblada por los indígenas caribes Calamarí ('cangrejo'). Rediseñada como fuerte militar colonial." },
+      { 
+        id: "bogota", 
+        name: "Bogotá", 
+        originalName: "Bacatá", 
+        department: "Cundinamarca", 
+        x: 385, 
+        y: 430, 
+        region: "Andina", 
+        date: "1538", 
+        desc: "En idioma muysccubun significaba 'cercado fuera de la labranza'. Centro político del Zipazgo muisca. Refundada como Santafé de Bogotá.",
+        cevData: {
+          macro: "Conflicto Urbano & Centro Político del País (CEV Tomo 5)",
+          patron: "Escenario de magnicidios de candidatos presidenciales (Galán, Pardo Leal, Jaramillo Ossa, Pizarro), atentados con explosivos (DAS 1989, Club El Nogal 2003 por las FARC), y principal ciudad receptora de más de 450.000 personas en situación de desplazamiento forzado. En Altos de Cazucá y Soacha se orquestó en 2008 el entramado de reclutamiento bajo engaño y ejecuciones extrajudiciales (Falsos Positivos) perpetrado por la Brigada XV.",
+          hitos: "Holocausto del Palacio de Justicia (1985), Carrobomba El Nogal (2003), Ejecuciones extrajudiciales de Soacha (2008)."
+        }
+      },
+      { 
+        id: "medellin", 
+        name: "Medellín", 
+        originalName: "Valle de Aburrá", 
+        department: "Antioquia", 
+        x: 285, 
+        y: 345, 
+        region: "Andina", 
+        date: "1675", 
+        desc: "Tierra de los Aburráes. Nombrada en honor a la villa extremeña de Medellín en España.",
+        cevData: {
+          macro: "Conflicto Urbano & Cooptación Territorial (CEV Tomo 5)",
+          patron: "Laboratorio de milicias populares revolucionarias en los 80, narcoterrorismo del Cartel de Medellín y posterior hegemonía del Bloque Cacique Nutibara (Don Berna) y la Oficina de Envigado. En octubre de 2002 se ejecutó la Operación Orión en la Comuna 13 con helicópteros artillados Black Hawk y fuerzas combinadas, seguida de desapariciones forzadas en 'La Escombrera', considerada la mayor fosa común urbana de América Latina.",
+          hitos: "Operación Orión (octubre 2002), La Escombrera, hegemonía de la Oficina de Envigado y pactos de fusil."
+        }
+      },
+      { 
+        id: "cali", 
+        name: "Cali", 
+        originalName: "Lili", 
+        department: "Valle del Cauca", 
+        x: 235, 
+        y: 485, 
+        region: "Pacífica", 
+        date: "1536", 
+        desc: "Toma su nombre de la etnia Lili del Valle del Cauca, cruzada por el río del mismo nombre.",
+        cevData: {
+          macro: "Valle del Cauca & Corredor Urbano del Pacífico (CEV Tomo 5)",
+          patron: "Centro financiero del Cartel de Cali en los años 80 y 90, seguido de la incursión del Bloque Calima de las AUC. El Distrito de Aguablanca albergó a más de 200.000 personas desplazadas del Litoral Pacífico. En 2021 fue el epicentro del Paro Nacional y Estallido Social, donde la CEV documentó el uso desproporcionado de armas letales y el fenómeno de civiles armados disparando en coordinación con la fuerza pública.",
+          hitos: "Secuestro en la Iglesia La María (1999, ELN), Masacre de El Naya (2001), Estallido Social (2021)."
+        }
+      },
+      { 
+        id: "barranquilla", 
+        name: "Barranquilla", 
+        originalName: "Sitio de Libres", 
+        department: "Atlántico", 
+        x: 315, 
+        y: 95, 
+        region: "Caribe", 
+        date: "1629", 
+        desc: "Fundada originalmente por pastores libres de control terrateniente en las riberas del Magdalena.",
+        cevData: {
+          macro: "Litoral Caribe & Captura de Rentas Portuarias (CEV Tomo 5)",
+          patron: "Eje portuario capturado por el Frente José Pablo Díaz del Bloque Norte de las AUC. Cooptación criminal de empresas de aseo, cooperativas de salud distrital y la Universidad del Atlántico (asesinato de líderes sindicales y del sociólogo Alfredo Correa de Andreis), facilitando además la exportación de cargamentos de cocaína por el río Magdalena.",
+          hitos: "Asesinato del profesor Alfredo Correa de Andreis (2004), captura de la red hospitalaria distrital, violencia antisindical."
+        }
+      },
+      { 
+        id: "cartagena", 
+        name: "Cartagena", 
+        originalName: "Calamarí", 
+        department: "Bolívar", 
+        x: 295, 
+        y: 115, 
+        region: "Caribe", 
+        date: "1533", 
+        desc: "Originalmente poblada por los indígenas caribes Calamarí ('cangrejo'). Rediseñada como fuerte militar colonial.",
+        cevData: {
+          macro: "Montes de María & Cinturón Costero de Exclusión (CEV Tomo 5)",
+          patron: "Destino receptor de más de 120.000 campesinos y comunidades afro desplazadas de Montes de María y el sur de Bolívar tras las masacres de El Salado y Chengue. Aguda segregación socioespacial entre la ciudad amurallada turística y los cinturones de miseria y bajamar de la Ciénaga de la Virgen y cerro de La Popa, con despojo de playones comunales.",
+          hitos: "Recepción de desplazados de Montes de María, despojo de territorios afro en La Boquilla, hostigamiento a reclamantes de tierras."
+        }
+      },
       { id: "santamarta", name: "Santa Marta", originalName: "Gaira / Teyuna", department: "Magdalena", x: 342, y: 90, region: "Caribe", date: "1525", desc: "La ciudad más antigua en pie de Colombia. Rodeada de los cacicazgos Tairona y el río Gaira." },
       { id: "tunja", name: "Tunja", originalName: "Hunza", department: "Boyacá", x: 395, y: 395, region: "Andina", date: "1539", desc: "Antigua Hunza, gran capital de la Confederación Muisca del norte, regida por el Zaque." },
       { id: "bucaramanga", name: "Bucaramanga", originalName: "Valle de los Guanes", department: "Santander", x: 388, y: 310, region: "Andina", date: "1622", desc: "Asentamiento minero en las tierras de los indígenas Guanes y Girón." },
-      { id: "popayan", name: "Popayán", originalName: "Pubén", department: "Cauca", x: 235, y: 530, region: "Andina", date: "1537", desc: "Sede del cacicazgo Pubenense en el alto río Cauca. Gran centro administrativo virreinal." },
+      { 
+        id: "popayan", 
+        name: "Popayán", 
+        originalName: "Pubén", 
+        department: "Cauca", 
+        x: 235, 
+        y: 530, 
+        region: "Andina", 
+        date: "1537", 
+        desc: "Sede del cacicazgo Pubenense en el alto río Cauca. Gran centro administrativo virreinal.",
+        cevData: {
+          macro: "Norte del Cauca & Macizo Andino (CEV Tomo 5)",
+          patron: "Capital histórica enfrentada a la tensión agraria y étnica del departamento. Epicentro de las movilizaciones y de la Minga Indígena del CRIC. La ciudad vivió tomas guerrilleras de las FARC, bloqueos a la Vía Panamericana y asesinatos selectivos de líderes indígenas y guardias kiwe thegnas.",
+          hitos: "Minga Social y Comunitaria, Masacre de El Naya (2001), resistencia de la Guardia Indígena frente a actores armados."
+        }
+      },
       { id: "pasto", name: "San Juan de Pasto", originalName: "Past Awá", department: "Nariño", x: 195, y: 600, region: "Andina", date: "1537", desc: "Del nombre de la comunidad indígena de los Pastos ('Gente de la tierra')." },
       { id: "leticia", name: "Leticia", originalName: "Huitoto / Tikuna", department: "Amazonas", x: 510, y: 885, region: "Amazonía", date: "1867", desc: "Territorio sagrado de clanes Tikuna, Cocama y Huitoto en las orillas del río Amazonas." },
       { id: "sanandres", name: "San Andrés", originalName: "Saturnina", department: "San Andrés y Providencia", x: 50, y: 55, region: "Insular", date: "1822 (adhesión)", desc: "Isla caribeña con un fuerte legado raizal, anglo-africano y marítimo." },
-      { id: "cucuta", name: "Cúcuta", originalName: "Guasimales / Cúcuto", department: "Norte de Santander", x: 430, y: 265, region: "Andina", date: "1733", desc: "Tierra gobernada por el Cacique Cúcuto. Famosa por sus cultivos de cacao coloniales." },
+      { 
+        id: "cucuta", 
+        name: "Cúcuta", 
+        originalName: "Guasimales / Cúcuto", 
+        department: "Norte de Santander", 
+        x: 430, 
+        y: 265, 
+        region: "Andina", 
+        date: "1733", 
+        desc: "Tierra gobernada por el Cacique Cúcuto. Famosa por sus cultivos de cacao coloniales.",
+        cevData: {
+          macro: "Catatumbo & Frontera Nororiental (CEV Tomo 5)",
+          patron: "Enclave fronterizo estratégico. El Bloque Catatumbo liderado por Salvatore Mancuso operó en el área metropolitana cometiendo homicidios selectivos y trasladando cientos de cuerpos hacia los hornos crematorios de Juan Frío (Villa del Rosario) para desaparecerlos de los censos de homicidios del Estado.",
+          hitos: "Hornos crematorios de Juan Frío, desaparición forzada transfronteriza y Masacre de La Gabarra (1999)."
+        }
+      },
       { id: "ibague", name: "Ibagué", originalName: "Valle de las Lanzas", department: "Tolima", x: 308, y: 440, region: "Andina", date: "1550", desc: "Asentamiento en el territorio del Cacique Ibagué de la etnia Pijao." },
       { id: "neiva", name: "Neiva", originalName: "Organos", department: "Huila", x: 295, y: 495, region: "Andina", date: "1612", desc: "Punto de partida de expediciones coloniales en territorio de indígenas Pijaos y Yalcones." },
-      { id: "quibdo", name: "Quibdó", originalName: "Citará", department: "Chocó", x: 220, y: 375, region: "Pacífica", date: "1664", desc: "Territorio de los indígenas Citaráes en las riberas selváticas del río Atrato." },
+      { 
+        id: "quibdo", 
+        name: "Quibdó", 
+        originalName: "Citará", 
+        department: "Chocó", 
+        x: 220, 
+        y: 375, 
+        region: "Pacífica", 
+        date: "1664", 
+        desc: "Territorio de los indígenas Citaráes en las riberas selváticas del río Atrato.",
+        cevData: {
+          macro: "Chocó & Cuenca del Río Atrato (CEV Tomo 5)",
+          patron: "Principal centro urbano del Chocó (más del 90% población afrocolombiana e indígena). Sufrió el confinamiento por el bloqueo fluvial del Atrato impuesto por las FARC y paramilitares, y la recepción masiva de víctimas de la masacre de Bojayá de 2002. En la última década padece fronteras invisibles y extorsión por bandas criminales y el Clan del Golfo.",
+          hitos: "Recepción de sobrevivientes de Bojayá (2002), Sentencia T-622/16 (Atrato Sujeto de Derechos), Paros Cívicos Chocoanos."
+        }
+      },
       { id: "villavicencio", name: "Villavicencio", originalName: "Gramalote", department: "Meta", x: 395, y: 475, region: "Orinoquía", date: "1840", desc: "Fundado como paso de ganado del altiplano a los llanos orientales de la cuenca." },
       { id: "yopal", name: "Yopal", originalName: "El Yopo", department: "Casanare", x: 440, y: 400, region: "Orinoquía", date: "1915", desc: "Llamada así por la abundancia del árbol de Yopo, cuyas semillas eran inhaladas ritualmente por indígenas." },
-      { id: "arauca", name: "Arauca", originalName: "Guahibo / Betoye", department: "Arauca", x: 490, y: 305, region: "Orinoquía", date: "1780", desc: "Tierra de pastores y llaneros en los límites con el río Arauca." },
+      { 
+        id: "arauca", 
+        name: "Arauca", 
+        originalName: "Guahibo / Betoye", 
+        department: "Arauca", 
+        x: 490, 
+        y: 305, 
+        region: "Orinoquía", 
+        date: "1780", 
+        desc: "Tierra de pastores y llaneros en los límites con el río Arauca.",
+        cevData: {
+          macro: "Orinoquía Fronteriza & Renta Petrolera (CEV Tomo 5)",
+          patron: "Territorio binacional marcado por la renta petrolera de Caño Limón y una feroz guerra territorial fratricida entre el ELN (Frente Domingo Laín) y el Frente 10 de las FARC. Campos minados en zonas rurales y confinamiento forzado de comunidades indígenas Hitnü en Caño Mochuelo.",
+          hitos: "Atentados al oleoducto Caño Limón-Coveñas, guerra FARC-ELN (2006-2010), confinamiento del pueblo Hitnü."
+        }
+      },
       { id: "mitu", name: "Mitú", originalName: "Vaupés", department: "Vaupés", x: 560, y: 630, region: "Amazonía", date: "1936", desc: "Capital en el corazón de la selva del Vaupés, cruzada por el mítico río de las flautas." },
       { id: "inirida", name: "Inírida", originalName: "Guainía", department: "Guainía", x: 615, y: 510, region: "Amazonía", date: "1963", desc: "Tierra de transición fluvial en el oriente del país." },
       { id: "puertocarreno", name: "Puerto Carreño", originalName: "Orinoco / Guahibo", department: "Vichada", x: 640, y: 305, region: "Orinoquía", date: "1913", desc: "Ubicada en la confluencia de los colosales ríos Meta y Orinoco." },
-      { id: "mocoa", name: "Mocoa", originalName: "Putumayo", department: "Putumayo", x: 220, y: 575, region: "Andina", date: "1563", desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico." },
-      { id: "florencia", name: "Florencia", originalName: "La Perdiz", department: "Caquetá", x: 305, y: 565, region: "Amazonía", date: "1902", desc: "Nacida como puerto de extracción de caucho a inicios del siglo XX." },
-      { id: "sanjose", name: "San José del Guaviare", originalName: "Guaviare", department: "Guaviare", x: 435, y: 530, region: "Amazonía", date: "1910", desc: "Frontera de transición ecológica entre los llanos y la selva densa." },
-      { id: "sincelejo", name: "Sincelejo", originalName: "Cacicazgo Zenú", department: "Sucre", x: 290, y: 145, region: "Caribe", date: "1775", desc: "Toma el nombre del cacique zenú de la región de las sabanas." },
+      { 
+        id: "mocoa", 
+        name: "Mocoa", 
+        originalName: "Putumayo", 
+        department: "Putumayo", 
+        x: 220, 
+        y: 575, 
+        region: "Andina", 
+        date: "1563", 
+        desc: "Fundación en las estribaciones andinas que descienden al piedemonte amazónico.",
+        cevData: {
+          macro: "Piedemonte Putumayense & Amazonía (CEV Tomo 5)",
+          patron: "Bisagra entre los Andes y la selva amazónica. Vivió el impacto histórico del genocidio cauchero de la Casa Arana a inicios del siglo XX y la violencia armada contemporánea por el control de la cuenca cocalera y los yacimientos petroleros, además de la vulnerabilidad socioecológica evidenciada en la avalancha de 2017.",
+          hitos: "Memoria del genocidio cauchero, violencia paramilitar del Bloque Sur Putumayo, tragedia socioambiental de 2017."
+        }
+      },
+      { 
+        id: "florencia", 
+        name: "Florencia", 
+        originalName: "La Perdiz", 
+        department: "Caquetá", 
+        x: 305, 
+        y: 565, 
+        region: "Amazonía", 
+        date: "1902", 
+        desc: "Nacida como puerto de extracción de caucho a inicios del siglo XX.",
+        cevData: {
+          macro: "Amazonía Profunda & Piedemonte Caqueteño (CEV Tomo 5)",
+          patron: "Principal enclave de colonización andino-amazónica y centro logístico estatal durante las negociaciones de paz del Caguán (1998-2002) y la posterior Operación Patriota. Escenario de bombardeos, estigmatización del campesinado cocalero y magnicidio de la familia Turbay Cote por las FARC en la vía Paujil.",
+          hitos: "Zona de Distensión del Caguán, Masacre de la familia Turbay Cote (2000), militarización de la base de Tres Esquinas."
+        }
+      },
+      { 
+        id: "sanjose", 
+        name: "San José del Guaviare", 
+        originalName: "Guaviare", 
+        department: "Guaviare", 
+        x: 435, 
+        y: 530, 
+        region: "Amazonía", 
+        date: "1910", 
+        desc: "Frontera de transición ecológica entre los llanos y la selva densa.",
+        cevData: {
+          macro: "Transición Amazonía-Orinoquía (CEV Tomo 5)",
+          patron: "Punto de contacto y despojo territorial contra el pueblo nómada Nukak Makú tras su contacto en 1988. Puerto fluvial cocalero sobre el río Guaviare disputado por el Frente 1 de las FARC y el Bloque Centauros de las AUC, con masacres sistemáticas en Barrancón y La Carpa.",
+          hitos: "Contacto violento y éxodo del pueblo Nukak (1988), Masacre de Mapiripán (traslado por el aeropuerto de San José), cultivos de uso ilícito."
+        }
+      },
+      { 
+        id: "sincelejo", 
+        name: "Sincelejo", 
+        originalName: "Cacicazgo Zenú", 
+        department: "Sucre", 
+        x: 290, 
+        y: 145, 
+        region: "Caribe", 
+        date: "1775", 
+        desc: "Toma el nombre del cacique zenú de la región de las sabanas.",
+        cevData: {
+          macro: "Sabanas de Sucre & Montes de María (CEV Tomo 5)",
+          patron: "Punto de abastecimiento y mando del Bloque Héroes de los Montes de María. Desde fincas y cabeceras de Sucre se coordinaron las masacres de Pichilín (1996), Macayepo (2000), El Salado (2000) y Chengue (2001), dejando a las sabanas como una de las subregiones con mayor concentración de tierras despojadas del Caribe.",
+          hitos: "Masacres de Chengue y El Salado, Parapolítica en la gobernación de Sucre (Salvador Arana), despojo de la ANUC."
+        }
+      },
       { id: "monteria", name: "Montería", originalName: "Valle del Sinú", department: "Córdoba", x: 260, y: 175, region: "Caribe", date: "1777", desc: "Fundada a orillas del río Sinú como sitio de cacería y agricultura." },
-      { id: "valledupar", name: "Valledupar", originalName: "Cacique Upar", department: "Cesar", x: 365, y: 120, region: "Caribe", date: "1550", desc: "Valle gobernado por el gran Cacique Chimila Upar. Cuna del vallenato." },
+      { 
+        id: "valledupar", 
+        name: "Valledupar", 
+        originalName: "Cacique Upar", 
+        department: "Cesar", 
+        x: 365, 
+        y: 120, 
+        region: "Caribe", 
+        date: "1550", 
+        desc: "Valle gobernado por el gran Cacique Chimila Upar. Cuna del vallenato.",
+        cevData: {
+          macro: "Sierra Nevada & Llanuras del Cesar (CEV Tomo 5)",
+          patron: "Centro neurálgico de operaciones del Bloque Norte de las AUC comandado por Rodrigo Tovar Pupo (Jorge 40). Epicentro del despojo de cientos de miles de hectáreas ganaderas, complicidad de élites políticas en el escándalo de la 'Parapolítica', y sistemático exterminio contra el pueblo indígena Kankuamo en corregimientos como Atánquez y Los Haticos.",
+          hitos: "Pacto de Chivolo (2000), genocidio de más de 400 comuneros Kankuamos, secuestros extorsivos de las FARC (frente 59)."
+        }
+      },
       { id: "riohacha", name: "Riohacha", originalName: "Süchiimma", department: "La Guajira", x: 388, y: 65, region: "Caribe", date: "1535", desc: "En idioma wayuunaiki significa 'Tierra del río'. Famosa por la extracción de perlas." },
       { id: "manizales", name: "Manizales", originalName: "Tierra de las Manizas", department: "Caldas", x: 292, y: 395, region: "Andina", date: "1849", desc: "Fundada por la Colonización Antioqueña. Toma su nombre de las piedras 'manizas'." },
       { id: "pereira", name: "Pereira", originalName: "Cartago Viejo", department: "Risaralda", x: 288, y: 408, region: "Andina", date: "1863", desc: "Ubicada en las antiguas ruinas coloniales de Cartago. Eje cafetero." },
@@ -795,6 +1005,7 @@
         <div class="city-meta">
           <span>Fundación: ${city.date}</span>
           <span>Región: ${city.region}</span>
+          ${city.cevData ? '<span style="color:#fdba74; font-weight:600; font-size:0.75rem; background:rgba(249,115,22,0.15); padding:1px 6px; border-radius:3px;">CEV Tomo 5</span>' : ''}
         </div>
         <p style="font-size: 0.85rem; line-height: 1.4; color: var(--text-secondary); margin: 0;">
           ${city.desc}
@@ -862,6 +1073,26 @@
           <p style="line-height: 1.7; color: var(--text-secondary); font-size: 1rem; text-align: justify;">
             ${city.desc}
           </p>
+
+          ${city.cevData ? `
+            <div style="margin-top: 1.5rem; background: rgba(224, 122, 95, 0.08); border: 1px solid rgba(249, 115, 22, 0.4); border-radius: 6px; padding: 1.25rem;">
+              <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.6rem;">
+                <span class="document-badge" style="background: rgba(249, 115, 22, 0.2); color: #fdba74; margin: 0; font-size: 0.75rem;">
+                  Memoria Histórica & Conflicto Urbano (CEV Tomo 5)
+                </span>
+                <span style="font-size: 0.7rem; color: #f97316; font-weight: 700; text-transform: uppercase;">Informe Final</span>
+              </div>
+              <h4 class="title-font" style="color: #fdba74; font-size: 1.05rem; margin-bottom: 0.4rem;">
+                ${city.cevData.macro}
+              </h4>
+              <p style="font-size: 0.88rem; line-height: 1.6; color: #cbd5e1; margin-bottom: 0.75rem; text-align: justify;">
+                ${city.cevData.patron}
+              </p>
+              <div style="border-top: 1px dashed rgba(249, 115, 22, 0.25); padding-top: 0.5rem; font-size: 0.8rem; color: #fdba74;">
+                <strong>Hitos Documentados:</strong> <span style="color: #cbd5e1;">${city.cevData.hitos}</span>
+              </div>
+            </div>
+          ` : ''}
         </div>
       `;
       

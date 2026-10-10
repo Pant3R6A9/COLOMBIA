@@ -1,0 +1,100 @@
+{
+  "metadatos": {
+    "titulo": "Informe Final de la Comisión de la Verdad - Tomo 02: Hallazgos y Recomendaciones",
+    "subtitulo": "Los Factores Estructurales de Persistencia de la Guerra y la Agenda de Transformaciones para la No Repetición",
+    "entidad": "Comisión para el Esclarecimiento de la Verdad, la Convivencia y la No Repetición (CEV)",
+    "presidente_cev": "Padre Francisco de Roux, S.J.",
+    "fecha_publicacion": "Junio de 2022"
+  },
+  "cuatro_factores_persistencia": [
+    {
+      "factor_id": "FACTOR-01",
+      "titulo": "La Doctrina de Seguridad Nacional y la Construcción del 'Enemigo Interno'",
+      "diagnostico_cev": "A lo largo de seis décadas, el Estado colombiano y sus fuerzas armadas operaron bajo una concepción de la seguridad moldeada por la Guerra Fría, en la cual el adversario político, el líder sindical, el campesino que marchaba por tierras o el defensor de derechos humanos no eran considerados conciudadanos en desacuerdo democrático, sino 'enemigos internos' que amenazaban la supervivencia de la nación. Esta doctrina legitimó la militarización de la vida civil, la estigmatización permanente de la protesta social y la delegación encubierta de la violencia letal en estructuras paramilitares, considerando las bajas y las violaciones a los derechos humanos como costos colaterales necesarios para mantener el orden.",
+      "impacto_documentado": "Normalización de la tortura en instalaciones oficiales, más de 6.402 ejecuciones extrajudiciales ('falsos positivos'), espionaje masivo e ilegal del DAS contra magistrados, periodistas y defensores de DD.HH., y una desconfianza histórica irreparable entre la ciudadanía rural y la Fuerza Pública."
+    },
+    {
+      "factor_id": "FACTOR-02",
+      "titulo": "La Cuestión Agraria Irresuelta, la Desigualdad Extrema y el Despojo de Tierras",
+      "diagnostico_cev": "Colombia posee una de las estructuras de propiedad de la tierra más concentradas e inequitativas del mundo (un coeficiente de Gini de tierras superior a 0.86, donde el 1% de las fincas de mayor tamaño concentra más del 81% de la tierra productiva). Históricamente, cada intento de reforma agraria pacífica o titulación a campesinos (Ley 200 de 1936, reforma de Carlos Lleras Restrepo en 1968) fue bloqueado o desmantelado violentamente por las élites terratenientes mediante pactos políticos (como el 'Pacto de Chicoral' de 1972) y la violencia paramilitar directa, resultando en el despojo violento de entre 6.5 y 8.3 millones de hectáreas de tierra fértil a familias campesinas, indígenas y afrodescendientes.",
+      "impacto_documentado": "Más de 8.2 millones de personas desplazadas forzadas viviendo en los cinturones de miseria de las ciudades capitales, mientras millones de hectáreas despojadas fueron reconvertidas en latifundios ganaderos improductivos o monocultivos agroindustriales sin consulta previa."
+    },
+    {
+      "factor_id": "FACTOR-03",
+      "titulo": "El Narcotráfico y la Economía Política de la Guerra",
+      "diagnostico_cev": "El narcotráfico no fue la causa originaria del conflicto armado, pero sí se convirtió a partir de la década de 1980 en el combustible financiero insaciable que degradó, prolongó y expandió la guerra hasta límites extremos. La política global y nacional de prohibición radical y 'guerra contra las drogas' fracasó rotundamente: en lugar de frenar el consumo o la producción, generó rentas ilícitas multimillonarias que corrompieron las instituciones del Estado, penetraron campañas presidenciales y legislativas (como la 'Parapolítica' y el 'Proceso 8.000'), y financiaron arsenales bélicos masivos tanto para los bloques paramilitares de las AUC como para los frentes guerrilleros de las FARC y el ELN.",
+      "impacto_documentado": "Tratamiento penal y militar a los campesinos cultivadores de hoja de coca (fumigaciones aéreas con glifosato que contaminaron fuentes hídricas y suelos fértiles), mientras las grandes redes de lavado de dinero financiero y tráfico transnacional de armas continuaron operando con impunidad en centros urbanos y paraísos fiscales."
+    },
+    {
+      "factor_id": "FACTOR-04",
+      "titulo": "El Régimen Político Centralista, la Impunidad Judicial y la Captura del Estado",
+      "diagnostico_cev": "Colombia combinó durante décadas una fachada de estabilidad constitucional y elecciones periódicas con un régimen político de facto clientelista, centralista y violento en las regiones. El sistema judicial ordinario mantuvo niveles de impunidad superiores al 90% para crímenes cometidos por actores de poder (paramilitares, narcotraficantes y agentes estatales vinculados a masacres), operando con lentitud y vulnerabilidad frente a presiones armadas. Los clanes políticos territoriales capturaron los presupuestos de regalías y las alcaldías locales en alianza con señores de la guerra armados para perpetuarse en el poder.",
+      "impacto_documentado": "Asesinato selectivo impune de miles de jueces, fiscales, periodistas e investigadores que intentaron esclarecer nexos entre el narcotráfico y el poder público (como Guillermo Cano, Rodrigo Lara Bonilla, Carlos Mauro Hoyos y los magistrados del Palacio de Justicia)."
+    }
+  ],
+  "bloques_recomendaciones_no_repeticion": [
+    {
+      "eje_id": "EJE-SEGURIDAD",
+      "nombre_eje": "1. Seguridad Ciudadana para la Paz y Nueva Doctrina Militar",
+      "descripcion": "Transformar la concepción de la seguridad hacia la 'Seguridad Humana', centrada en proteger la vida y los derechos fundamentales de las personas y no en la preservación ciega del orden establecido.",
+      "recomendaciones_clave": [
+        "Trasladar a la Policía Nacional fuera del Ministerio de Defensa Nacional para adscribirla a un nuevo Ministerio de la Paz y la Seguridad Ciudadana, despojándola de su carácter militar y devolviéndole su naturaleza civil y comunitaria.",
+        "Revisar y depurar la doctrina militar y policial, erradicando definitivamente el concepto de 'enemigo interno' y prohibiendo que el éxito operacional se mida mediante el conteo de cadáveres o 'bajas en combate'.",
+        "Reformar el fuero penal militar para garantizar que bajo ninguna circunstancia los tribunales militares asuman la investigación de violaciones a los derechos humanos o infracciones al DIH.",
+        "Garantizar la apertura total, desclasificación y custodia pública de los archivos de inteligencia y contrainteligencia de las fuerzas armadas relacionados con el conflicto armado."
+      ]
+    },
+    {
+      "eje_id": "EJE-TIERRAS",
+      "nombre_eje": "2. Paz Territorial y Reforma Rural Integral",
+      "descripcion": "Garantizar el acceso democrático a la tierra para las familias campesinas y proteger los territorios colectivos étnicos para desactivar el motor agrario del conflicto.",
+      "recomendaciones_clave": [
+        "Acelerar la implementación integral del Catastro Multipropósito y consolidar el Fondo de Tierras de distribución gratuita de 3 millones de hectáreas para campesinos sin tierra.",
+        "Acelerar las sentencias de restitución de tierras despojadas y proteger a los líderes y reclamantes de tierras contra los ataques de ejércitos antirrestitución.",
+        "Avanzar en el saneamiento y titulación colectiva de los resguardos indígenas y consejos comunitarios afrodescendientes, garantizando el derecho fundamental a la consulta previa, libre e informada.",
+        "Inversión masiva en bienes públicos rurales (vías terciarias, distritos de riego, créditos agrarios, salud y escuelas técnicas veredales)."
+      ]
+    },
+    {
+      "eje_id": "EJE-DROGAS",
+      "nombre_eje": "3. Transformación de la Política Frente al Narcotráfico y Sustancias Ilícitas",
+      "descripcion": "Superar el paradigma prohibicionista punitivo y transitar hacia una regulación responsable y la protección del campesinado cultivador.",
+      "recomendaciones_clave": [
+        "Liderar a nivel internacional el debate para transitar de la 'guerra contra las drogas' hacia la regulación legal estricta del mercado de la hoja de coca y sus derivados.",
+        "Suspender de forma definitiva e irreversible las aspersiones aéreas con glifosato y sustituirlas por programas de desarrollo alternativo concertados con las comunidades (PNIS).",
+        "Descriminalizar de manera efectiva y no penalizar a los pequeños campesinos cultivadores de coca, marihuana y amapola, tratándolos como sujetos de derechos económicos y no como criminales.",
+        "Concentrar la fuerza investigativa y policial en golpear las redes de lavado de activos en el sector financiero, el comercio de precursores químicos y los envíos marítimos masivos en puertos."
+      ]
+    },
+    {
+      "eje_id": "EJE-VICTIMAS",
+      "nombre_eje": "4. Centralidad de las Víctimas, Búsqueda de Desaparecidos y Reparación",
+      "descripcion": "Colocar el dolor, la dignidad y el derecho inalienable a la verdad de los más de 9 millones de víctimas como prioridad presupuestal del Estado.",
+      "recomendaciones_clave": [
+        "Otorgar presupuesto prioritario e independiente y fortalecer las facultades forenses de la Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD) para acelerar el hallazgo y entrega digna de los 121.768 desaparecidos.",
+        "Cumplir con la indemnización económica y los planes de reparación colectiva a comunidades campesinas y étnicas bajo la Ley de Víctimas, eliminando las trabas burocráticas.",
+        "Garantizar apoyo psicosocial permanente y con enfoque diferencial de género y étnico para superar los traumas colectivos y el dolor acumulado en los territorios más golpeados."
+      ]
+    },
+    {
+      "eje_id": "EJE-DEMOCRACIA",
+      "nombre_eje": "5. Ampliación Democrática y Protección del Liderazgo Social",
+      "descripcion": "Blindar la participación política sin armas y erradicar para siempre el asesinato como herramienta de competencia electoral.",
+      "recomendaciones_clave": [
+        "Desmontar integralmente las estructuras criminales sucesoras del paramilitarismo (Clan del Golfo/EGC y bandas aliadas) mediante sometimiento colectivo a la justicia.",
+        "Reforma integral al sistema político y electoral para desterrar la financiación ilícita de campañas y asegurar la representación efectiva de las curules de paz de las víctimas (CITREP).",
+        "Garantizar la protección material y jurídica inmediata y colectiva de los líderes sociales, defensores de DD.HH. y firmantes de paz."
+      ]
+    },
+    {
+      "eje_id": "EJE-PEDAGOGIA",
+      "nombre_eje": "6. Cultura de Paz, Educación y Preservación de la Memoria",
+      "descripcion": "Incorporar el Informe Final y los archivos de la verdad en las escuelas, universidades y el debate público nacional.",
+      "recomendaciones_clave": [
+        "Incluir los hallazgos y el acervo de la Comisión de la Verdad en los currículos educativos de primaria, bachillerato y educación superior como componente central de las ciencias sociales.",
+        "Blindar la autonomía científica y preservación del Centro Nacional de Memoria Histórica y del Museo de Memoria de Colombia contra cualquier intento de censura o negacionismo histórico.",
+        "Promover la desclasificación continua y preservación digital de los archivos judiciales y de derechos humanos para consulta libre de las nuevas generaciones."
+      ]
+    }
+  ]
+}

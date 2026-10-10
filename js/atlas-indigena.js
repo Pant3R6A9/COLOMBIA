@@ -767,6 +767,10 @@
             <strong>Decreto 1232 de 2018 (PIACI)</strong>
             <p>Establece el régimen de intangibilidad territorial y no contacto obligatorio para los <em>Pueblos Indígenas en Aislamiento Voluntario</em> (como los Yuri, Passé y Carabayo en el PNN Río Puré), previniendo su exterminio biológico.</p>
           </div>
+          <div class="atlas-feature-box" style="border-left: 3px solid #10b981;">
+            <strong>Comisión de la Verdad • Tomo 07 (2022)</strong>
+            <p>El informe <em>«Resistir No es Aguantar»</em> acreditó el <strong>Daño Biocultural</strong> y el riesgo de exterminio en 65 pueblos, concluyendo que la profanación de sitios sagrados y ríos rompe la pervivencia física y espiritual de la nación.</p>
+          </div>
         </div>
       </div>
     `;

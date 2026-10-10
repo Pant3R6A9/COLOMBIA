@@ -332,8 +332,8 @@
         <div class="telemetry-lbl">Huelga de las Bananeras (Ciénaga)</div>
       </div>
       <div class="telemetry-card">
-        <div class="telemetry-val">9 de Abril</div>
-        <div class="telemetry-lbl">El Bogotazo y Caída de Gaitán</div>
+        <div class="telemetry-val">1948</div>
+        <div class="telemetry-lbl">El Bogotazo y Ruptura Partidista</div>
       </div>
       <div class="telemetry-card">
         <div class="telemetry-val">1985</div>
@@ -342,6 +342,10 @@
       <div class="telemetry-card">
         <div class="telemetry-val">1991</div>
         <div class="telemetry-lbl">Constitución Política y Tutela</div>
+      </div>
+      <div class="telemetry-card">
+        <div class="telemetry-val">2016</div>
+        <div class="telemetry-lbl">Acuerdo de Paz y Comisión de la Verdad</div>
       </div>
     </section>
 
@@ -433,7 +437,7 @@
       <!-- 6. La Constitución de 1991 -->
       <article class="episode-card">
         <div class="episode-header">
-          <div class="episode-period">1990 – 1991</div>
+          <div class="episode-period">1990 – 1991 (CEV Tomo 3 // Etapa 3)</div>
           <h3>La Séptima Papeleta y la Asamblea Constituyente</h3>
         </div>
         <div class="episode-body">
@@ -441,6 +445,38 @@
             Hastiados por el narcoterrorismo y los magnicidios de candidatos presidenciales (Galán, Pardo Leal, Jaramillo Ossa, Pizarro), los estudiantes impulsaron la inclusión de una papeleta extra en las urnas. La Constitución de 1991 consagró el Estado Social de Derecho y la Acción de Tutela.
           </p>
           <button class="btn-episode" onclick="openSigloXXModal('constitucion91')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 7. Parapolítica y Seguridad Democrática -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">2002 – 2010 (CEV Tomo 3 // Etapa 4)</div>
+          <h3>Seguridad Democrática, Parapolítica y Falsos Positivos</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            Bajo el Plan Colombia y la Política de Seguridad Democrática, el Estado recuperó control de ejes viales y replegó a las guerrillas. Sin embargo, la CEV documentó el coste humano: la cooptación de más del 30% del Congreso por el paramilitarismo (Parapolítica) y 6.402 ejecuciones extrajudiciales ilegítimamente presentadas como bajas en combate.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('seguridaddemocratica')">
+            Explorar Expediente Histórico &rarr;
+          </button>
+        </div>
+      </article>
+
+      <!-- 8. El Acuerdo de Paz y la Verdad Histórica -->
+      <article class="episode-card">
+        <div class="episode-header">
+          <div class="episode-period">2012 – 2016+ (CEV Tomo 3 // Etapa 5)</div>
+          <h3>Los Diálogos de La Habana y el Sistema Integral para la Paz</h3>
+        </div>
+        <div class="episode-body">
+          <p class="episode-desc">
+            Tras cuatro años de negociaciones en Cuba, el Estado y las FARC-EP firmaron el Acuerdo Final para la Terminación del Conflicto. Se crearon la JEP, la UBPD y la Comisión para el Esclarecimiento de la Verdad, cuyo Informe Final (10 tomos) entregó al país el diagnóstico más riguroso sobre las raíces y el dolor de 60 años de guerra.
+          </p>
+          <button class="btn-episode" onclick="openSigloXXModal('acuerdopaz')">
             Explorar Expediente Histórico &rarr;
           </button>
         </div>
@@ -496,30 +532,68 @@
         `
       },
       frentenacional: {
-        title: "El Frente Nacional: El Pacto Bipartidista de 16 Años (1958 – 1974)",
-        badge: "Paz Institucional & Monopolio del Poder",
+        title: "El Frente Nacional y el Surgimiento de las Guerrillas (1958 – 1974)",
+        badge: "CEV Tomo 3 // Etapa 1: 1958 – 1977",
         content: `
-          <p>Tras la caída de la dictadura militar del general Gustavo Rojas Pinilla en mayo de 1957 (quien en su mandato trajo la televisión nacional y reconoció en 1954 el derecho al voto femenino), los jefes de los dos partidos históricos —Alberto Lleras Camargo (Liberal) y Laureano Gómez (Conservador)— firmaron en Europa los pactos de Benidorm y Sitges.</p>
-          <p>Aprobado abrumadoramente en el <strong>Plebiscito de 1957</strong>, el Frente Nacional acordó la alternancia presidencial rigurosa durante cuatro periodos de gobierno (16 años) y el reparto por mitades de todos los ministerios, gobernaciones, juzgados y corporaciones legislativas.</p>
-          <p>Aunque el pacto logró apaciguar la guerra abierta entre banderas azules y rojas, cerró por completo el sistema político a terceras fuerzas, movimientos obreros y corrientes de izquierda, lo que catalizó la formación de guerrillas revolucionarias en la década de 1960 (FARC, ELN, EPL y posteriormente el M-19).</p>
+          <p>Tras la caída de la dictadura del general Gustavo Rojas Pinilla (quien en su mandato trajo la televisión y reconoció en 1954 el derecho al voto femenino), los jefes liberales y conservadores sellaron los pactos de Benidorm y Sitges, aprobados en el <strong>Plebiscito de 1957</strong>.</p>
+          <p>El pacto acordó la alternancia presidencial durante 16 años y el reparto paritario del poder. La Comisión de la Verdad (Tomo 3: <em>No Matarás</em>) diagnosticó que este cierre democrático bloqueó a terceras fuerzas y criminalizó la protesta campesina:</p>
+          <ul>
+            <li><strong>Operación Marquetalia (mayo de 1964):</strong> El bombardeo estatal a las comunidades campesinas del sur del Tolima forzó la reorganización de las autodefensas agrarias comunistas dirigidas por Manuel Marulanda Vélez ('Tirofijo'), dando origen formal a las <strong>FARC</strong>. En ese mismo año surgió el <strong>ELN</strong> en Simacota (Santander) y en 1967 el <strong>EPL</strong> en el Alto Sinú.</li>
+            <li><strong>Decreto 3398 de 1965 / Ley 48 de 1968:</strong> Bajo la Doctrina de Seguridad Nacional estadounidense y la tesis del 'Enemigo Interno', el Estado facultó legalmente al Ministerio de Defensa para armar y entrenar a civiles en defensa contraguerrillera, cimiento institucional del posterior fenómeno paramilitar.</li>
+          </ul>
         `
       },
       anofuego: {
-        title: "Noviembre de 1985: La Semana más Trágica de la Historia",
-        badge: "Holocausto & Catástrofe Natural",
+        title: "Estatuto de Seguridad, Holocausto del Palacio y Genocidio de la UP",
+        badge: "CEV Tomo 3 // Etapa 2: 1978 – 1990",
         content: `
-          <p>En solo siete días de noviembre de 1985, Colombia quedó paralizada ante dos de los episodios más traumáticos de su memoria colectiva:</p>
-          <p><strong>El Holocausto del Palacio de Justicia (6 y 7 de noviembre):</strong> Un comando guerrillero del M-19 asaltó la sede de las altas cortes en la Plaza de Bolívar tomando como rehenes a más de 350 personas, incluidos los magistrados de la Corte Suprema que estudiaban la extradición de narcotraficantes. La retoma a sangre y fuego ejecutada por el Ejército con tanques EE-09 Cascavel derivó en un dantesco incendio que redujo a cenizas el edificio y miles de expedientes penales. Murieron 98 personas, incluidos 11 magistrados (entre ellos el presidente de la Corte Alfonso Reyes Echandía) y once trabajadores de la cafetería fueron desaparecidos forzadamente.</p>
-          <p><strong>La Noche de Armero (13 de noviembre):</strong> Apenas seis días después, una erupción del volcán Nevado del Ruiz derritió el 10% del casquete glacial, generando un colosal lahar de lodo, rocas y azufre que bajó a más de 50 km/h por el cañón del río Lagunilla. A las 11:30 de la noche, una ola de barro de 30 metros de altura sepultó en cuestión de minutos a la próspera ciudad de Armero (Tolima), cobrando la vida de más de 25.000 de sus 29.000 habitantes en la peor tragedia volcánica del hemisferio occidental.</p>
+          <p>La década de los 80 transformó el conflicto con la irrupción masiva de los dineros del narcotráfico y la intensificación de la doctrina contrainsurgente:</p>
+          <ul>
+            <li><strong>Estatuto de Seguridad (Decreto 1923 de 1978):</strong> El gobierno de Julio César Turbay confirió funciones de policía judicial a militares para juzgar civiles en consejos de guerra verbales, propiciando miles de detenciones arbitrarias y denuncias sistemáticas de torturas en las caballerizas de Usaquén.</li>
+            <li><strong>Surgimiento del Paramilitarismo Moderno (MAS, 1981):</strong> Tras el secuestro de Martha Nieves Ochoa por el M-19, narcotraficantes del Cartel de Medellín y oficiales del Ejército crearon en Puerto Boyacá el grupo 'Muerte a Secuestradores' (MAS) y la federación ACDEGAM.</li>
+            <li><strong>El Holocausto del Palacio de Justicia (6 y 7 de noviembre de 1985):</strong> La toma por un comando del M-19 y la brutal retoma militar con tanques de guerra dejó 98 muertos (incluidos 11 magistrados de la Corte Suprema) y once trabajadores de la cafetería desaparecidos forzadamente.</li>
+            <li><strong>Genocidio Político de la Unión Patriótica:</strong> Movimiento surgido de los Acuerdos de La Uribe de 1984. La CEV y la Corte Interamericana de Derechos Humanos (sentencia de 2023) acreditaron el exterminio de más de <strong>5.700 militantes</strong>, incluidos dos candidatos presidenciales (Jaime Pardo Leal en 1987 y Bernardo Jaramillo Ossa en 1990).</li>
+            <li><strong>La Tragedia de Armero (13 de noviembre de 1985):</strong> Erupción del volcán Nevado del Ruiz que provocó un colosal lahar sepultando a más de 25.000 personas en Tolima.</li>
+          </ul>
         `
       },
       constitucion91: {
-        title: "La Constitución de 1991: El Gran Pacto Social de Paz",
-        badge: "Estado Social de Derecho & Pluralismo",
+        title: "La Constitución de 1991 y la Paradoja de la Guerra Sucia",
+        badge: "CEV Tomo 3 // Etapa 3: 1991 – 2002",
         content: `
-          <p>A finales de los años 80, acorralada por el narcoterrorismo del Cartel de Medellín y el exterminio sistemático de los candidatos presidenciales Luis Carlos Galán, Bernardo Jaramillo Ossa y Carlos Pizarro, la juventud universitaria promovió el movimiento de la <strong>Séptima Papeleta</strong> en los comicios de marzo de 1990.</p>
-          <p>Más de dos millones de ciudadanos votaron a favor de convocar una Asamblea Nacional Constituyente. En una inédita sesión pluralista copresidida por Horacio Serpa (Liberal), Álvaro Gómez Hurtado (Conservador) y Antonio Navarro Wolff (M-19 desmovilizado), y con la participación de delegados indígenas (como Lorenzo Muelas) y afrodescendientes, se redactó la nueva Carta Magna.</p>
-          <p>La Constitución de 1991 proclamó a Colombia como un <strong>Estado Social de Derecho</strong>, pluralista, descentralizado y participativo; consagró la libertad de cultos; reconoció la propiedad colectiva de resguardos y comunidades negras; y creó la <strong>Acción de Tutela</strong>, el instrumento jurídico más revolucionario y democrático para la defensa inmediata de los derechos fundamentales de los ciudadanos ante los jueces.</p>
+          <p>La juventud promovió en 1990 la <strong>Séptima Papeleta</strong>, propiciando la Asamblea Nacional Constituyente y la promulgación de la Constitución de 1991, que fundó el Estado Social de Derecho, la tutela y el reconocimiento de la diversidad étnica y cultural.</p>
+          <p>Sin embargo, la Comisión de la Verdad constató una dramática paradoja: la década de mayor apertura democrática coincidió con la <strong>peor escalada letal del conflicto armado</strong>:</p>
+          <ul>
+            <li><strong>Expansión Paramilitar y CONVIVIR:</strong> A través del Decreto 356 de 1994 se promovieron cooperativas de vigilancia privada que sirvieron de fachada legal a las Autodefensas Unidas de Colombia (AUC), unificadas en 1997 por los hermanos Castaño, desatando masacres territoriales continuas (Mapiripán, Pichilín, La Gabarra, El Salado).</li>
+            <li><strong>Escalada Insurgente de las FARC:</strong> Aplican la 'pesca milagrosa', secuestros extorsivos de la 'Ley 002', cilindros bomba (Bojayá 2002) y ataques masivos a bases militares (Las Delicias, El Billar, Mitú).</li>
+            <li><strong>Fracaso del Caguán (1998–2002):</strong> Cuatro años de diálogos infructuosos en una zona de despeje de 42.000 km², culminando con el secuestro del senador Jorge Géchem y el rompimiento definitivo de las negociaciones por el presidente Andrés Pastrana.</li>
+          </ul>
+        `
+      },
+      seguridaddemocratica: {
+        title: "Seguridad Democrática, Parapolítica y Falsos Positivos",
+        badge: "CEV Tomo 3 // Etapa 4: 2002 – 2012",
+        content: `
+          <p>Durante los dos mandatos de Álvaro Uribe Vélez (2002–2010), el Estado ejecutó la Política de Defensa y Seguridad Democrática con apoyo financiero del Plan Colombia:</p>
+          <ul>
+            <li><strong>Operaciones de Gran Escala:</strong> Las Fuerzas Militares desplegaron la Operación Libertad I (Sumapaz), la Operación Orión (Comuna 13 de Medellín) y la Operación Patriota (Caguán), abatiendo a miembros del Secretariado de las FARC (Raúl Reyes en la Operación Fénix, 'Mono Jojoy' y 'Alfonso Cano').</li>
+            <li><strong>Ejecuciones Extrajudiciales ('Falsos Positivos'):</strong> La JEP (Caso 03) y la Comisión de la Verdad documentaron con rigor forense que al menos <strong>6.402 civiles inocentes</strong> (jóvenes campesinos, obreros y desempleados de Soacha, Huila, Meta, Casanare y Antioquia) fueron asesinados por unidades del Ejército y presentados ilegítimamente como bajas en combate para cobrar permisos, medallas y recompensas económicas bajo la Directiva Ministerial 029 de 2005.</li>
+            <li><strong>El Escándalo de la Parapolítica:</strong> Investigaciones de la Corte Suprema de Justicia llevaron a la condena de más de 60 congresistas por pactar alianzas electorales con los jefes de las AUC para 'refundar la patria' y cooptar alcaldías, gobernaciones y contratos públicos.</li>
+            <li><strong>Ley de Justicia y Paz (Ley 975 de 2005):</strong> Desmovilización de más de 30.000 paramilitares, truncada en 2008 cuando sus 14 principales cabecillas fueron extraditados de madrugada a Estados Unidos por cargos de narcotráfico.</li>
+          </ul>
+        `
+      },
+      acuerdopaz: {
+        title: "El Acuerdo Final de 2016 y el Sistema Integral para la Paz",
+        badge: "CEV Tomo 3 // Etapa 5: 2012 – 2016+",
+        content: `
+          <p>Tras cuatro años de negociaciones en La Habana entre el gobierno del presidente Juan Manuel Santos y la comandancia de las FARC-EP, el 24 de noviembre de 2016 se rubricó en el Teatro Colón de Bogotá el <strong>Acuerdo Final para la Terminación del Conflicto</strong>.</p>
+          <p>El pacto implicó la dejación y fundición de más de 8.900 armas bajo supervisión de la ONU y la reincorporación comunitaria de 13.000 excombatientes. En su punto 5 consagró el <strong>Sistema Integral para la Paz</strong>:</p>
+          <ul>
+            <li><strong>Jurisdicción Especial para la Paz (JEP):</strong> Mecanismo de justicia transicional restaurativa que imputó a la antigua cúpula de las FARC por crímenes de guerra y lesa humanidad en secuestros y tomas (Caso 01), y a excomandantes militares por ejecuciones extrajudiciales (Caso 03).</li>
+            <li><strong>Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD):</strong> Entidad humanitaria estatal con mandato técnico-científico para ubicar y dignificar a más de 121.000 personas desaparecidas forzadamente.</li>
+            <li><strong>Comisión para el Esclarecimiento de la Verdad (CEV):</strong> Liderada por el padre Francisco de Roux, recopiló más de 30.000 testimonios individuales y colectivos y, junto con el análisis estadístico de HRDAG, presentó al país en junio de 2022 su Informe Final (<em>«Hay Futuro si Hay Verdad»</em>, 10 tomos) con 88 recomendaciones de No Repetición.</li>
+          </ul>
         `
       }
     };

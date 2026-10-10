@@ -585,6 +585,38 @@
       filter: drop-shadow(0 0 16px rgba(16, 185, 129, 0.9));
     }
 
+    /* Macro-Regiones del Conflicto CEV Tomo 5 (Terracota y Neón de Alerta) */
+    .conflicto-region {
+      fill: rgba(224, 122, 95, 0.22);
+      stroke: #f97316;
+      stroke-width: 2px;
+      stroke-dasharray: 4 3;
+      filter: drop-shadow(0 0 10px rgba(249, 115, 22, 0.65));
+      cursor: pointer;
+      pointer-events: auto !important;
+      transition: all 0.3s ease;
+    }
+
+    .conflicto-region:hover {
+      fill: rgba(224, 122, 95, 0.5);
+      stroke: #ffedd5;
+      stroke-width: 3px;
+      stroke-dasharray: none;
+      filter: drop-shadow(0 0 20px rgba(249, 115, 22, 0.95));
+    }
+
+    .conflicto-nodo {
+      cursor: pointer;
+      pointer-events: auto !important;
+      transition: all 0.25s ease;
+    }
+
+    .conflicto-nodo:hover circle {
+      r: 8;
+      stroke: #fff;
+      stroke-width: 2.5;
+    }
+
     /* =====================================================================
        4. TARJETA HUD FLOTANTE DE INFORMACIÓN INMEDIATA
        ===================================================================== */
@@ -883,6 +915,21 @@
           <div class="switch-meta">
             <span class="switch-name">Pisos Altitudinales</span>
             <span class="switch-sub">Gradientes geológicos de cordillera</span>
+          </div>
+          <div class="switch-indicator"></div>
+        </button>
+
+        <button class="tactile-switch" id="sw-conflicto" onclick="toggleTacticalLayer('conflicto')">
+          <div class="switch-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="12" y1="8" x2="12" y2="12"/>
+              <line x1="12" y1="16" x2="12.01" y2="16"/>
+            </svg>
+          </div>
+          <div class="switch-meta">
+            <span class="switch-name">Macro-Regiones CEV</span>
+            <span class="switch-sub">Tomo 5: Colombia Adentro</span>
           </div>
           <div class="switch-indicator"></div>
         </button>
@@ -1228,6 +1275,90 @@
 
         </g>
 
+        <!-- ==========================================================
+             CAPA 4: MACRO-REGIONES CEV TOMO 5 (COLOMBIA ADENTRO)
+             ========================================================== -->
+        <g id="layer-conflicto" class="map-overlay-layer layer-hidden">
+          
+          <!-- 1. Urabá y Bajo Atrato -->
+          <polygon class="conflicto-region" points="230,230 275,220 285,280 240,290"
+                   onclick="openNodeDrawer('cev-macro-uraba')" />
+          <text x="242" y="258" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">URABÁ / DARIÉN</text>
+
+          <!-- 2. Magdalena Medio -->
+          <polygon class="conflicto-region" points="315,280 370,270 375,365 320,375"
+                   onclick="openNodeDrawer('cev-macro-magdalena-medio')" />
+          <text x="325" y="325" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">MAGDALENA MEDIO</text>
+
+          <!-- 3. Montes de María -->
+          <polygon class="conflicto-region" points="270,145 325,140 330,185 275,190"
+                   onclick="openNodeDrawer('cev-macro-montes-maria')" />
+          <text x="276" y="168" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">MONTES DE MARÍA</text>
+
+          <!-- 4. Chocó y Pacífico Norte -->
+          <polygon class="conflicto-region" points="195,330 245,320 240,430 190,420"
+                   onclick="openNodeDrawer('cev-macro-choco')" />
+          <text x="195" y="380" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">CHOCÓ / ATRATO</text>
+
+          <!-- 5. Pacífico Sur (Tumaco / Telembí) -->
+          <polygon class="conflicto-region" points="130,570 195,560 185,630 120,620"
+                   onclick="openNodeDrawer('cev-macro-pacifico-sur')" />
+          <text x="135" y="600" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">PACÍFICO SUR</text>
+
+          <!-- 6. Valle del Cauca y Norte del Cauca -->
+          <polygon class="conflicto-region" points="205,470 260,460 255,540 200,530"
+                   onclick="openNodeDrawer('cev-macro-valle-cauca')" />
+          <text x="208" y="505" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">VALLE / NORTE CAUCA</text>
+
+          <!-- 7. Catatumbo -->
+          <polygon class="conflicto-region" points="395,200 445,195 440,270 390,265"
+                   onclick="openNodeDrawer('cev-macro-catatumbo')" />
+          <text x="400" y="235" fill="#fdba74" font-family="'Cinzel', serif" font-size="7" font-weight="bold">CATATUMBO</text>
+
+          <!-- 8. Antioquia Central y Oriente Antioqueño -->
+          <polygon class="conflicto-region" points="275,335 325,330 330,385 280,390"
+                   onclick="openNodeDrawer('cev-macro-oriente-antioqueno')" />
+          <text x="282" y="360" fill="#fdba74" font-family="'Cinzel', serif" font-size="6.5" font-weight="bold">ORIENTE ANT.</text>
+
+          <!-- 9. Amazonía Profunda (Caquetá - Putumayo) -->
+          <polygon class="conflicto-region" points="260,570 460,560 450,680 250,670"
+                   onclick="openNodeDrawer('cev-macro-amazonia')" />
+          <text x="320" y="625" fill="#fdba74" font-family="'Cinzel', serif" font-size="7.5" font-weight="bold">AMAZONÍA / CAGUÁN</text>
+
+          <!-- 10. Orinoquía y Llanos Orientales -->
+          <polygon class="conflicto-region" points="430,350 590,340 580,480 420,470"
+                   onclick="openNodeDrawer('cev-macro-orinoquia')" />
+          <text x="475" y="415" fill="#fdba74" font-family="'Cinzel', serif" font-size="7.5" font-weight="bold">ORINOQUÍA / LLANOS</text>
+
+          <!-- 11. Sumapaz y Cundinamarca -->
+          <polygon class="conflicto-region" points="355,420 410,415 405,475 350,470"
+                   onclick="openNodeDrawer('cev-macro-sumapaz')" />
+          <text x="360" y="448" fill="#fdba74" font-family="'Cinzel', serif" font-size="6.5" font-weight="bold">SUMAPAZ</text>
+
+          <!-- 12. Tolima Grande y Huila -->
+          <polygon class="conflicto-region" points="275,445 325,440 320,530 270,520"
+                   onclick="openNodeDrawer('cev-macro-tolima-huila')" />
+          <text x="278" y="485" fill="#fdba74" font-family="'Cinzel', serif" font-size="6.5" font-weight="bold">TOLIMA / HUILA</text>
+
+          <!-- 13. Sierra Nevada y Perijá -->
+          <polygon class="conflicto-region" points="335,70 395,65 390,135 330,130"
+                   onclick="openNodeDrawer('cev-macro-sierra-caribe')" />
+          <text x="340" y="105" fill="#fdba74" font-family="'Cinzel', serif" font-size="6.5" font-weight="bold">SIERRA / PERIJÁ</text>
+
+          <!-- 14. Nodos de Conflicto Urbano -->
+          <g class="conflicto-nodo" onclick="openNodeDrawer('cev-macro-urbano')">
+            <circle cx="285" cy="345" r="5" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+            <circle cx="235" cy="485" r="5" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+            <circle cx="385" cy="430" r="5" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+            <circle cx="210" cy="480" r="4.5" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+            <circle cx="430" cy="265" r="4.5" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+            <text x="295" y="348" fill="#fca5a5" font-family="'Inter', sans-serif" font-size="6">Medellín</text>
+            <text x="395" y="433" fill="#fca5a5" font-family="'Inter', sans-serif" font-size="6">Bogotá</text>
+            <text x="245" y="488" fill="#fca5a5" font-family="'Inter', sans-serif" font-size="6">Cali</text>
+          </g>
+
+        </g>
+
       </svg>
 
       <!-- Barra de telemetría inferior -->
@@ -1553,6 +1684,206 @@
       <h4 class="title-font">Valores de Conservación</h4>
       <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Fauna protegida:</strong> Caimán del Orinoco (Crocodylus intermedius), nutria gigante y danta de sabana.</p>
       <p style="font-size:0.85rem;">• <strong>Pueblo Sikuani:</strong> Territorio ancestral de caza y recolección tradicional.</p>
+    </div>
+  </template>
+
+  <!-- ==========================================================
+       TEMPLATES MACRO-REGIONES CEV TOMO 5 (COLOMBIA ADENTRO)
+       ========================================================== -->
+  <template id="node-cev-macro-uraba">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 01</div>
+    <h2 class="title-font">Urabá, Darién y Bajo Atrato</h2>
+    <p>
+      Disputa geoestratégica por el corredor bioceánico entre el Caribe y el Pacífico, la frontera del Darién hacia Centroamérica y las tierras fértiles para agroindustria bananera y palma de aceite. Concurrencia de las FARC (Frentes 5 y 58), el EPL y el paramilitarismo de los hermanos Castaño (Bloque Bananero y Élmer Cárdenas).
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacres sistemáticas:</strong> Ejecuciones laborales en fincas bananeras (Honduras, La Negra, Bajo del Oso).</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Despojo de tierras colectivas:</strong> Apropiación ilegítima de territorios afro en Curvaradó y Jiguamiandó mediante empresas fachada de monocultivo de palma africana.</p>
+      <p style="font-size:0.85rem;">• <strong>Éxodo forzado:</strong> Desplazamiento forzado de más del 60% de la población campesina de Turbo, Apartadó y Carepa.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-magdalena-medio">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 02</div>
+    <h2 class="title-font">Magdalena Medio y Serranía de San Lucas</h2>
+    <p>
+      Eje fluvial del río Magdalena articulado con la riqueza de la refinería de Barrancabermeja y los yacimientos auríferos de San Lucas. Fue el <strong>laboratorio histórico del paramilitarismo moderno</strong> en Puerto Boyacá (ACDEGAM) y teatro de operaciones del ELN y las FARC.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Violencia antisindical:</strong> Exterminio sistemático de líderes sindicales de la Unión Sindical Obrera (USO) y campesinos pescadores.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacres urbanas:</strong> La incursión paramilitar del 16 de mayo de 1998 en Barrancabermeja (7 asesinados, 25 desaparecidos).</p>
+      <p style="font-size:0.85rem;">• <strong>Resistencia social:</strong> Creación de la Asociación Campesina del Valle del Río Cimitarra (ACVC) y Zonas de Reserva Campesina.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-montes-maria">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 03</div>
+    <h2 class="title-font">Montes de María y Sabanas del Caribe</h2>
+    <p>
+      Territorio agrícola estratégico entre Sucre y Bolívar. Tras la organización campesina de la ANUC en los años 70, la región fue castigada por el Bloque Héroes de los Montes de María de las AUC en connivencia con élites políticas y ganaderas locales.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Ciclo de masacres:</strong> El Salado (febrero 2000, más de 60 asesinados con torturas y tambores), Chengue (enero 2001, 27 personas asesinadas a golpes de almádana) y Macayepo (octubre 2000).</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Despojo masivo:</strong> Despoblamiento forzado de veredas enteras y compra masiva de predios a precios irrisorios por fondos fiduciarios.</p>
+      <p style="font-size:0.85rem;">• <strong>Resistencia cultural:</strong> Las tejedoras de Mampuján y la Ruta Pacífica de las Mujeres.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-choco">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 04</div>
+    <h2 class="title-font">Chocó y Litoral Pacífico Norte</h2>
+    <p>
+      Territorio de inmensa biodiversidad y población afrocolombiana e indígena Emberá. La cuenca del río Atrato sufrió el impacto de la guerra de posiciones entre las FARC y el Bloque Élmer Cárdenas, agravada por el abandono estructural estatal.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacre de Bojayá (2 de mayo de 2002):</strong> Un cilindro bomba lanzado por las FARC contra la iglesia donde se refugiaba la comunidad dejó al menos 79 muertos (incluidos 48 niños y niñas).</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Confinamiento y desterritorialización:</strong> Siembra de minas antipersonal en los ríos Baudó y Bojayá impidiendo la pesca y la agricultura tradicional.</p>
+      <p style="font-size:0.85rem;">• <strong>Protección biocultural:</strong> Sentencia T-622 de 2016 que declaró al río Atrato como Sujeto de Derechos.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-pacifico-sur">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 05</div>
+    <h2 class="title-font">Pacífico Sur (Tumaco, Telembí y Nariño)</h2>
+    <p>
+      Enclave geoestratégico del litoral Pacífico nariñense, puerto de exportación y frontera con Ecuador. Ha concentrado las mayores densidades de cultivos de hoja de coca del país, con una feroz disputa entre paramilitares (Bloque Libertadores del Sur), FARC y bandas criminales.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Violencia urbana:</strong> Prácticas de desmembramiento en "casas de pique" y control de esteros y barrios palafíticos en Tumaco.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Etnocidio del Pueblo Awá:</strong> Masacres de El Sande y Tortugaña-Telembí (2009), declarados en riesgo de exterminio físico y cultural por el Auto 004/2009 de la Corte Constitucional.</p>
+      <p style="font-size:0.85rem;">• <strong>Contaminación por minería ilegal:</strong> Vertimiento indiscriminado de mercurio en las cuencas de los ríos Mira y Telembí.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-valle-cauca">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 06</div>
+    <h2 class="title-font">Valle del Cauca y Norte del Cauca</h2>
+    <p>
+      Bisagra entre la agroindustria de la caña de azúcar, el puerto de Buenaventura y el macizo andino. Teatro de disputas por el control de la cordillera Occidental para la salida de cargamentos hacia el Pacífico.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacre de El Naya (Semana Santa de 2001):</strong> El Bloque Calima de las AUC recorrió la cordillera asesinando a más de 30 personas indígenas Nasa, campesinas y afrodescendientes.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Terror en Buenaventura:</strong> Fronteras invisibles urbanas, desmembramientos sistemáticos y desplazamiento de las comunidades del bajamar.</p>
+      <p style="font-size:0.85rem;">• <strong>Resistencia comunitaria:</strong> La Minga Social y Comunitaria del pueblo Nasa (CRIC) y la Guardia Indígena Kiwe Thegnas.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-catatumbo">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 07</div>
+    <h2 class="title-font">Catatumbo y Frontera Nororiental</h2>
+    <p>
+      Selva de frontera con Venezuela y enclave petrolero y cocalero. La incursión sangrienta del Bloque Catatumbo de las AUC (comandado por Salvatore Mancuso) en mayo de 1999 transformó la zona en un territorio de terror y desaparición forzada transfronteriza.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Hornos crematorios de Juan Frío:</strong> Instalación de hornos ladrilleros y de leña para incinerar cientos de cuerpos humanos y borrar el rastro forense de las desapariciones.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacre de La Gabarra (1999):</strong> Asesinatos selectivos y masivos en Tibú y las veredas productoras de coca.</p>
+      <p style="font-size:0.85rem;">• <strong>Pueblo Barí:</strong> Arrinconamiento territorial y militarización de sus sitios sagrados en la Serranía de los Motilones.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-oriente-antioqueno">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 08</div>
+    <h2 class="title-font">Antioquia Central y Oriente Antioqueño</h2>
+    <p>
+      Región de vocación campesina intervenida por grandes megaproyectos hidroeléctricos (embalses de Guatapé, El Peñol, Playas, San Carlos) que abastecen la energía de Colombia. Las FARC y el ELN operaron fuertemente en la zona hasta la contraofensiva paramilitar del Bloque Metro y Héroes de Granada.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Despoblamiento forzado:</strong> En municipios como San Carlos y Granada más del 70% de la población campesina se vio forzada a abandonar sus tierras.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Campos minados:</strong> Alta densidad de minas antipersonal sembradas por las FARC en caminos vecinales y escuelas rurales.</p>
+      <p style="font-size:0.85rem;">• <strong>Retorno digno:</strong> Experiencias pioneras de memoria y retorno comunitario impulsadas por la Asociación de Mujeres de Oriente Antioqueño (AMOR).</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-amazonia">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 09</div>
+    <h2 class="title-font">Amazonía Profunda (Caquetá, Guaviare y Putumayo)</h2>
+    <p>
+      Territorio de colonización campesina impulsada por los ciclos extractivos (quina, caucho, madera y coca). Fue la retaguardia histórica del Secretariado de las FARC-EP y sede de la Zona de Distensión del Caguán (1998-2002), seguida de la masiva contraofensiva militar de la <strong>Operación Patriota</strong>.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Bombardeos y aspersión aérea:</strong> Riego de miles de hectáreas con glifosato que contaminaron fuentes hídricas y destruyeron cultivos de pan coger de colonos e indígenas.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacre de El Tigre y El Placer (Putumayo, 1999):</strong> Incursión del Bloque Sur Putumayo de las AUC que dejó decenas de campesinos asesinados y cuerpos lanzados al río Guamuez.</p>
+      <p style="font-size:0.85rem;">• <strong>Pueblo Nukak Makú:</strong> Desplazamiento forzado desde su selva ancestral hacia basureros y asentamientos precarios en San José del Guaviare.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-orinoquia">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 10</div>
+    <h2 class="title-font">Orinoquía y Llanos Orientales</h2>
+    <p>
+      Llanuras de inmensa extensión donde la explotación petrolera (Caño Limón, Cusiana, Rubiales) y la ganadería extensiva convergieron con la guerra. Escenario de la penetración paramilitar de los hermanos Castaño hacia el oriente.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Masacre de Mapiripán (julio de 1997):</strong> Paramilitares transportados en aviones desde Urabá hasta San José del Guaviare torturaron y descuartizaron a decenas de pobladores durante cinco días.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Guerra fratricida paramilitar:</strong> Enfrentamiento entre el Bloque Centauros (Miguel Arroyave) y las Autodefensas Campesinas de Casanare (Buitragueños) con más de 1.000 muertos en sabanas abiertas.</p>
+      <p style="font-size:0.85rem;">• <strong>Despojo de baldíos:</strong> Acaparamiento ilegal de miles de hectáreas de origen baldío para proyectos agroindustriales a gran escala.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-sumapaz">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 11</div>
+    <h2 class="title-font">Altiplano Cundiboyacense y Páramo de Sumapaz</h2>
+    <p>
+      El páramo más grande del planeta conectando a Bogotá con los Llanos y el Huila. Cuna de las ligas campesinas de Juan de la Cruz Varela en los años 30 y corredor histórico del Bloque Oriental de las FARC (comandado por el Mono Jojoy) para intentar el cerco a la capital.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Operación Libertad I (2003):</strong> Gran ofensiva de la XIII Brigada del Ejército que rompió el cerco guerrillero, acompañada de estigmatización y detenciones masivas de líderes agrarios.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Guerra de las Esmeraldas (Boyacá):</strong> Disputa de poder y violencia sicarial entre clanes esmeralderos en el occidente de Boyacá conectada con el paramilitarismo de Puerto Boyacá.</p>
+      <p style="font-size:0.85rem;">• <strong>Zona de Reserva Campesina:</strong> Lucha comunitaria para la formalización de la ZRC de Sumapaz como garantía de pervivencia campesina en el páramo.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-tolima-huila">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 12</div>
+    <h2 class="title-font">Tolima Grande y Macizo Colombiano</h2>
+    <p>
+      Territorio fundacional de las guerrillas contemporáneas tras el bombardeo a la "república independiente" de Marquetalia en mayo de 1964. Espacio de aguda violencia bipartidista en los años 50 y posterior presencia de las FARC y el Bloque Tolima de las AUC.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Operación Soberanía (1964):</strong> Uso de bombas de fragmentación y desalojo de comunidades campesinas que dio nacimiento formal a las FARC.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Secuestros masivos y tomas guerrilleras:</strong> Ataques sistemáticos a estaciones de policía en cabeceras municipales de Tolima y Huila (Miraflores, Gigante, Algeciras).</p>
+      <p style="font-size:0.85rem;">• <strong>Desplazamiento indígena Pijao:</strong> Fragmentación de los resguardos del sur del Tolima (Coyaima, Natagaima) y asesinatos selectivos de gobernadores.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-sierra-caribe">
+    <div class="document-badge" style="background: rgba(249,115,22,0.18); color: #f97316;">CEV Tomo 5 // Macro-Región 13</div>
+    <h2 class="title-font">Sierra Nevada de Santa Marta y La Guajira</h2>
+    <p>
+      Montaña sagrada costera y península semidesértica. En los años 70 y 80 fue epicentro de la "bonanza marimbera", seguida del férreo control del Bloque Norte de las AUC y las bandas de Hernán Giraldo ("El Patrón de la Sierra").
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #f97316;">
+      <h4 class="title-font" style="color: #fdba74;">Impactos Forenses Documentados</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Violencia sexual sistemática:</strong> Crímenes de violencia sexual y esclavitud reproductiva cometidos por Hernán Giraldo contra niñas y adolescentes campesinas e indígenas de la Sierra.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Exterminio del Pueblo Kankuamo:</strong> Más de 400 líderes y comuneros kankuamos asesinados en las estribaciones de Valledupar y Atánquez.</p>
+      <p style="font-size:0.85rem;">• <strong>Masacre de Bahía Portete (2004):</strong> Incursión paramilitar en La Guajira contra el clan Wayuu Fince Epinayú, profanando cementerios ancestrales.</p>
+    </div>
+  </template>
+
+  <template id="node-cev-macro-urbano">
+    <div class="document-badge" style="background: rgba(239,68,68,0.2); color: #ef4444; border: 1px solid #ef4444;">CEV Tomo 5 // Macro-Región 14</div>
+    <h2 class="title-font">El Conflicto Urbano y las Grandes Capitales</h2>
+    <p>
+      El conflicto armado no fue un fenómeno exclusivamente rural: las grandes urbes colombianas funcionaron como centros de planeación, lavado de activos del narcotráfico, escenarios de magnicidios políticos y receptores de millones de personas desplazadas forzosamente.
+    </p>
+    <div class="stat-box" style="border-left: 3px solid #ef4444;">
+      <h4 class="title-font" style="color: #fca5a5;">Casos Emblemáticos en Ciudades Capitales</h4>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Medellín (Comuna 13):</strong> Operación Mariscal y Operación Orión (octubre de 2002), con empleo de helicópteros artillados y posterior entrega del territorio al Bloque Cacique Nutibara. "La Escombrera" se convirtió en la mayor fosa común urbana de la región.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Bogotá y Soacha:</strong> Asesinato de candidatos presidenciales (Galán, Pardo Leal, Jaramillo, Pizarro), el carrobomba al Club El Nogal (2003, FARC) y el reclutamiento forzado y ejecuciones extrajudiciales (Falsos Positivos) de jóvenes de Soacha por la Brigada XV en 2008.</p>
+      <p style="font-size:0.85rem; margin-bottom:0.5rem;">• <strong>Cali y Buenaventura:</strong> Disputa por el control de comunas del oriente (Aguablanca), estallido social, y el horror de las "casas de pique" en los barrios de bajamar de Buenaventura.</p>
+      <p style="font-size:0.85rem;">• <strong>Cúcuta:</strong> Centro de retaguardia y control sicarial transfronterizo del Bloque Catatumbo.</p>
     </div>
   </template>
 
@@ -1927,7 +2258,8 @@
       fallas: true,
       minerales: true,
       parques: true,
-      pisos: true
+      pisos: true,
+      conflicto: false
     };
 
     // Variables de zoom y pan del mapa
@@ -2028,6 +2360,9 @@
       } else if (layerKey === 'parques') {
         const layer = document.getElementById('layer-parques');
         if (layer) layer.classList.toggle('layer-hidden', !activeLayersState.parques);
+      } else if (layerKey === 'conflicto') {
+        const layer = document.getElementById('layer-conflicto');
+        if (layer) layer.classList.toggle('layer-hidden', !activeLayersState.conflicto);
       } else if (layerKey === 'pisos') {
         // Si se apagan los pisos, poner un relleno neutro obsidiana
         const depts = document.querySelectorAll('path.departamento');
@@ -2086,6 +2421,19 @@
           <div class="legend-chip">
             <div class="legend-color-box" style="background:rgba(16,185,129,0.3); border:1px solid #10b981;"></div>
             <span>PNN y Resguardos</span>
+          </div>
+        `;
+      }
+
+      if (activeLayersState.conflicto) {
+        html += `
+          <div class="legend-chip">
+            <div class="legend-color-box" style="background:#f97316; box-shadow:0 0 6px #f97316;"></div>
+            <span>Macro-Regiones CEV (Tomo 5)</span>
+          </div>
+          <div class="legend-chip">
+            <span style="color:#ef4444;">⦿</span>
+            <span>Nodos Urbanos de Conflicto</span>
           </div>
         `;
       }
@@ -2294,15 +2642,123 @@
           <p style="font-size:0.88rem; line-height:1.5;">${data.peoples}</p>
         </div>
 
-        <div class="stat-box" style="background:rgba(212,175,55,0.06); border-color:rgba(212,175,55,0.3);">
+        <div class="stat-box" style="background:rgba(212,175,55,0.06); border-color:rgba(212,175,55,0.3); margin-bottom:1.2rem;">
           <h4 class="title-font" style="color:#d4af37;">Hito Natural Destacado</h4>
           <p style="font-size:0.88rem; line-height:1.5;">${data.highlights}</p>
         </div>
+
+        ${getDeptCevConflictSnippet(deptName)}
       `;
 
       drawer.classList.add('open');
       if (backdrop) backdrop.classList.add('active');
       document.body.style.overflow = 'hidden';
+    }
+
+    const deptToCevMacroMap = {
+      "Antioquia": {
+        macro: "Urabá, Oriente y Magdalena Medio (Tomo 5)",
+        dinamica: "Disputa por corredores agroindustriales (banano y palma), hidroeléctricas en el Oriente y hegemonía urbana en Medellín (Comuna 13 / La Escombrera)."
+      },
+      "Chocó": {
+        macro: "Chocó y Litoral Pacífico Norte (Tomo 5)",
+        dinamica: "Confinamiento en la cuenca del río Atrato, desplazamiento de comunidades Emberá y afrocolombianas, y memoria de la Masacre de Bojayá (2002)."
+      },
+      "Bolívar": {
+        macro: "Montes de María y Sur de Bolívar (Tomo 5)",
+        dinamica: "Despojo masivo de tierras de la reforma campesina, minería en la Serranía de San Lucas y masacres de El Salado y Chengue."
+      },
+      "Sucre": {
+        macro: "Montes de María y Sabanas del Caribe (Tomo 5)",
+        dinamica: "Apropiación paramilitar del golfo de Morrosquillo, compra de predios a precio vil y persecución al movimiento campesino ANUC."
+      },
+      "Norte de Santander": {
+        macro: "Catatumbo y Frontera Nororiental (Tomo 5)",
+        dinamica: "Hornos crematorios de Juan Frío, desaparición transfronteriza y guerra de posiciones entre FARC, ELN, EPL y paramilitares."
+      },
+      "Santander": {
+        macro: "Magdalena Medio Santandereano (Tomo 5)",
+        dinamica: "Cuna de ACDEGAM en Puerto Boyacá, violencia antisindical contra trabajadores petroleros de la USO en Barrancabermeja."
+      },
+      "Valle del Cauca": {
+        macro: "Valle del Cauca y Pacífico (Tomo 5)",
+        dinamica: "Masacre de El Naya (2001), casas de pique en Buenaventura y corredor del narcotráfico entre la cordillera Occidental y el mar."
+      },
+      "Cauca": {
+        macro: "Norte del Cauca y Macizo (Tomo 5)",
+        dinamica: "Resistencia milenaria del pueblo Nasa, Guardia Indígena, estigmatización estatal y disputa territorial por la salida al Pacífico."
+      },
+      "Nariño": {
+        macro: "Pacífico Sur y Telembí (Tomo 5)",
+        dinamica: "Mayor concentración de enclaves cocaleros, confinamiento del pueblo Awá (Auto 004/2009) y violencia armada en Tumaco y Barbacoas."
+      },
+      "Putumayo": {
+        macro: "Amazonía y Piedemonte Putumayense (Tomo 5)",
+        dinamica: "Masacres de El Tigre y El Placer (1999) por el Bloque Sur Putumayo de las AUC, aspersión con glifosato y afectación a pueblos Siona y Kofán."
+      },
+      "Caquetá": {
+        macro: "Amazonía y Retaguardia del Caguán (Tomo 5)",
+        dinamica: "Sede de la Zona de Distensión (1998-2002), ofensiva militar de la Operación Patriota y bombardeos sobre áreas de colonización campesina."
+      },
+      "Meta": {
+        macro: "Orinoquía y Piedemonte Llanero (Tomo 5)",
+        dinamica: "Masacre de Mapiripán (1997), genocidio político de la Unión Patriótica y acaparamiento de baldíos para monocultivos y petróleo."
+      },
+      "Arauca": {
+        macro: "Orinoquía Fronteriza (Tomo 5)",
+        dinamica: "Guerra territorial FARC vs ELN, captura de regalías del oleoducto Caño Limón y confinamiento de resguardos Hitnü."
+      },
+      "Cesar": {
+        macro: "Sierra Nevada y Perijá (Tomo 5)",
+        dinamica: "Hegemonía del Bloque Norte de Jorge 40, despojo ganadero y persecución y asesinatos sistemáticos al pueblo Kankuamo."
+      },
+      "La Guajira": {
+        macro: "Sierra Nevada y Alta Guajira (Tomo 5)",
+        dinamica: "Masacre de Bahía Portete (2004) contra el pueblo Wayuu, violencia sexual de Hernán Giraldo y control paramilitar de puertos informales."
+      },
+      "Córdoba": {
+        macro: "Bajo Sinú y San Jorge (Tomo 5)",
+        dinamica: "Sede del cuartel general de las AUC (finca Las Tangas / Santa Fe de Ralito) y despojo masivo de fincas ganaderas."
+      },
+      "Tolima": {
+        macro: "Tolima Grande y Marquetalia (Tomo 5)",
+        dinamica: "Cuna de las FARC tras el bombardeo de Marquetalia (1964), tomas guerrilleras a pueblos cafeteros y violencia partidista de los 50."
+      },
+      "Huila": {
+        macro: "Tolima Grande y Piedemonte Andino (Tomo 5)",
+        dinamica: "Secuestros masivos de la columna móvil Teófilo Forero de las FARC (Edificio Miraflores) y operaciones contrainsurgentes en Algeciras."
+      },
+      "Cundinamarca": {
+        macro: "Altiplano y Páramo de Sumapaz (Tomo 5)",
+        dinamica: "Resistencia campesina de Sumapaz, Operación Libertad I (2003) y ejecuciones extrajudiciales de Soacha (Falsos Positivos)."
+      },
+      "Boyacá": {
+        macro: "Altiplano Cundiboyacense y Occidente Esmeraldero (Tomo 5)",
+        dinamica: "Violencia entre clanes esmeralderos en el cañón del río Minero, penetración paramilitar desde Puerto Boyacá y resistencia campesina."
+      },
+      "Guaviare": {
+        macro: "Amazonía y Transición Orinoquense (Tomo 5)",
+        dinamica: "Desplazamiento forzado de los últimos nómadas Nukak Makú (1988), control de pistas cocaleras y masacres en Barrancón."
+      },
+      "Casanare": {
+        macro: "Llanos y Piedemonte Casanareño (Tomo 5)",
+        dinamica: "Guerra entre las Autodefensas de 'Martín Llanos' y el Bloque Centauros, despojo de tierras y ejecuciones extrajudiciales de la Brigada XVI."
+      }
+    };
+
+    function getDeptCevConflictSnippet(deptName) {
+      const info = deptToCevMacroMap[deptName];
+      if (!info) return '';
+      return `
+        <div class="stat-box" style="background:rgba(224,122,95,0.08); border-color:rgba(249,115,22,0.4); margin-bottom:1.2rem;">
+          <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.4rem;">
+            <h4 class="title-font" style="color:#fdba74; margin:0; font-size:1rem;">Memoria y Conflicto Territorial (CEV Tomo 5)</h4>
+            <span style="font-size:0.7rem; background:rgba(249,115,22,0.2); color:#fdba74; padding:2px 6px; border-radius:4px; font-weight:600;">Informe Final</span>
+          </div>
+          <p style="font-size:0.85rem; color:#fbcfe8; margin-bottom:0.4rem;"><strong>Macro-Región:</strong> ${info.macro}</p>
+          <p style="font-size:0.85rem; line-height:1.5; color:#cbd5e1;">${info.dinamica}</p>
+        </div>
+      `;
     }
 
     function closeDrawer() {

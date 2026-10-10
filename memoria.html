@@ -1253,7 +1253,34 @@
         Fruto de 27.300 entrevistas y la escucha rigurosa a más de 30.000 voces en toda Colombia y 24 países del exilio bajo la presidencia del Padre Francisco de Roux, el Informe Final sintetiza las causas estructurales y los impactos humanos de seis décadas de confrontación armada.
       </p>
 
-      <div class="tomos-grid">
+      <!-- Telemetría Forense Verificada HRDAG-CEV -->
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; margin: 2rem 0; background: rgba(0,0,0,0.4); border: 1px solid rgba(212,175,55,0.25); border-radius: 8px; padding: 1.5rem;">
+        <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.08);">
+          <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 800; color: #ef4444;">450.664</div>
+          <div style="font-size: 0.75rem; color: #cbd5e1; text-transform: uppercase; margin-top: 0.3rem;">Homicidios (80% civiles)</div>
+        </div>
+        <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.08);">
+          <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 800; color: var(--accent-gold, #d4af37);">121.768</div>
+          <div style="font-size: 0.75rem; color: #cbd5e1; text-transform: uppercase; margin-top: 0.3rem;">Desaparición Forzada</div>
+        </div>
+        <div style="text-align: center; border-right: 1px solid rgba(255,255,255,0.08);">
+          <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 800; color: #38bdf8;">8.243.000</div>
+          <div style="font-size: 0.75rem; color: #cbd5e1; text-transform: uppercase; margin-top: 0.3rem;">Desplazados Forzados</div>
+        </div>
+        <div style="text-align: center;">
+          <div style="font-family: var(--font-mono); font-size: 1.8rem; font-weight: 800; color: #10b981;">6.402</div>
+          <div style="font-size: 0.75rem; color: #cbd5e1; text-transform: uppercase; margin-top: 0.3rem;">Falsos Positivos JEP/CEV</div>
+        </div>
+      </div>
+
+      <!-- Buscador Predictivo en los 10 Tomos -->
+      <div style="margin-bottom: 2rem; position: relative;">
+        <input type="text" id="cev-search-input" placeholder="🔍 Buscar por palabra clave, región, patrón o actor en los 10 tomos..." style="width: 100%; padding: 0.9rem 1.4rem; background: rgba(15,23,42,0.85); border: 1px solid rgba(212,175,55,0.3); border-radius: 6px; color: #fff; font-family: var(--font-body); font-size: 0.95rem; outline: none; transition: border-color 0.3s ease;">
+        <div style="font-size: 0.75rem; color: #94a3b8; margin-top: 0.4rem; display: flex; justify-content: space-between;">
+          <span>Haz clic en cualquier tomo para desplegar su monografía analítica, datos forenses y testimonios directos.</span>
+          <span style="color: var(--accent-gold); font-family: var(--font-mono);">Fuente: Legado Transmedia CEV (2022)</span>
+        </div>
+      </div>
         <!-- Tomo 1 -->
         <div class="tomo-card timeline-content" data-drawer="drawer-tomos-cev">
           <div class="tomo-number">TOMO 01 • ÉTICA & NACIÓN</div>
@@ -1724,6 +1751,7 @@
 
   <!-- Scripts del Portal -->
   <script src="js/main.js"></script>
+  <script src="js/centro-verdad.js" defer></script>
 
   <!-- Script interactivo específico del Dossier para filtrado del Glosario -->
   <script>

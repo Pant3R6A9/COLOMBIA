@@ -1,0 +1,191 @@
+{
+  "metadatos": {
+    "titulo": "Informe Final de la Comisión de la Verdad - Tomo 03: No Matarás",
+    "subtitulo": "Relato Histórico del Conflicto Armado en Colombia: Cinco Etapas de Confrontación y Rupturas (1958–2016)",
+    "entidad": "Comisión para el Esclarecimiento de la Verdad (CEV)",
+    "enfoque_metodologico": "Historiografía analítica, testimonios orales, archivos militares y desclasificados, actas de consejos de ministros y acuerdos de paz",
+    "fecha_publicacion": "Junio de 2022"
+  },
+  "periodizacion_cinco_etapas": [
+    {
+      "etapa_numero": 1,
+      "nombre_etapa": "De las Cenizas de La Violencia a la Guerra Fría y el Nacimiento de las Insurgencias",
+      "periodo_anos": "1958 – 1977",
+      "contexto_politico_nacional": "El Pacto del Frente Nacional (1958–1974) sellado entre liberales y conservadores para poner fin a 'La Violencia' partidista y derrocar a Gustavo Rojas Pinilla. Si bien pacificó las cúpulas bipartidistas en las ciudades, instituyó un régimen político hermético y excluyente que clausuró cualquier vía democrática para terceras fuerzas políticas, movimientos campesinos y sindicatos.",
+      "hitos_militares_y_sociales": [
+        {
+          "ano": 1964,
+          "hito": "Operación Soberanía y el Ataque a Marquetalia",
+          "descripcion": "El Ejército Nacional, con apoyo de helicópteros y asesoría estadounidense, lanzó un ataque masivo contra comunidades campesinas organizadas en el sur del Tolima y Huila, calificadas por Álvaro Gómez Hurtado como 'repúblicas independientes'. Los 48 campesinos liderados por Pedro Antonio Marín (Manuel Marulanda Vélez 'Tirofijo') rompieron el cerco militar y fundaron el Bloque Sur, que dos años después (1966) adoptó el nombre de Fuerzas Armadas Revolucionarias de Colombia (FARC)."
+        },
+        {
+          "ano": 1964,
+          "hito": "Fundación del Ejército de Liberación Nacional (ELN)",
+          "descripcion": "Inspirados en la Revolución Cubana y la teología de la liberación, estudiantes y campesinos en San Vicente de Chucurí (Santander) fundaron el ELN bajo el mando de Fabio Vásquez Castaño. La incorporación del sacerdote y sociólogo Camilo Torres Restrepo en 1965 le otorgó un poderoso influjo intelectual y ético, hasta su muerte en combate en Patio Cemento (1966)."
+        },
+        {
+          "ano": 1965,
+          "hito": "Institucionalización Legal del Paramilitarismo (Decreto 3398 de 1965 / Ley 48 de 1968)",
+          "descripcion": "El gobierno de Guillermo León Valencia expidió el Decreto 3398 (convertido en legislación permanente en 1968) que autorizó al Ministerio de Defensa Nacional a 'armar a civiles y comités de autodefensa' para apoyar a las tropas regulares en labores de orden público, sembrando el marco jurídico fundacional del paramilitarismo bajo la doctrina estadounidense de contrainsurgencia del general William P. Yarborough."
+        },
+        {
+          "ano": 1967,
+          "hito": "Surgimiento del EPL y la Anuc",
+          "descripcion": "Nacimiento del Ejército Popular de Liberación (EPL), brazo armado del Partido Comunista Marxista-Leninista, con fuerte presencia en el Alto Sinú y San Jorge. Paralelamente, nace la Asociación Nacional de Usuarios Campesinos (ANUC), que organizó la mayor ola de tomas de tierras pacíficas en la historia rural colombiana."
+        },
+        {
+          "ano": 1970,
+          "hito": "El Presunto Fraude del 19 de Abril y el Nacimiento del M-19",
+          "descripcion": "La controvertida elección presidencial del 19 de abril de 1970, en la que Misael Pastrana Borrero derrotó al general Rojas Pinilla tras un intempestivo corte de la transmisión radial de resultados, impulsó la creación de la guerrilla urbana Movimiento 19 de Abril (M-19), encabezada por Jaime Bateman Cayón, Álvaro Fayad e Iván Marino Ospina."
+        },
+        {
+          "ano": 1977,
+          "hito": "El Paro Cívico Nacional del 14 de Septiembre",
+          "descripcion": "La mayor huelga obrera y popular del siglo XX en Bogotá y principales ciudades, reprimida con saldo de decenas de manifestantes muertos bajo el gobierno de Alfonso López Michelsen, demostró la desconexión total entre las élites del Frente Nacional y las demandas urbanas."
+        }
+      ],
+      "tesis_explicativa_cev": "El conflicto no nació de la 'maldad intrínseca' de la sociedad, sino del cierre sistemático de los canales de participación política pacífica, la negativa rotunda de las élites agrarias a permitir una reforma rural y la adopción de una doctrina militar que consideró a cualquier reclamo campesino como una amenaza de la Guerra Fría."
+    },
+    {
+      "etapa_numero": 2,
+      "nombre_etapa": "El Estatuto de Seguridad, la Irrupción del Narcotráfico y el Genocidio Político",
+      "periodo_anos": "1978 – 1990",
+      "contexto_politico_nacional": "La década de la mutación radical: el gobierno de Julio César Turbay Ayala aplicó el 'Estatuto de Seguridad' (Decreto 1923 de 1978), militarizando la justicia y normalizando la tortura en instalaciones como las caballerizas de Usaquén. En simultáneo, los carteles de la droga (Medellín y Cali) acumularon un poder económico exorbitante, aliándose con hacendados y mandos militares para exterminar al movimiento social.",
+      "hitos_militares_y_sociales": [
+        {
+          "ano": 1981,
+          "hito": "Creación del MAS (Muerte a Secuestradores) en Puerto Boyacá",
+          "descripcion": "Tras el secuestro de Martha Nieves Ochoa por el M-19, 223 capos de la droga convocados por el Cartel de Medellín crearon el MAS, sellando la alianza fundacional del narcoparamilitarismo. En el Magdalena Medio, con la escuela de entrenamiento de mercenarios extranjeros como el israelí Yair Klein, nació el laboratorio paramilitar que exportó tácticas de exterminio a todo el país."
+        },
+        {
+          "ano": 1984,
+          "hito": "Acuerdos de La Uribe y Fundación de la Unión Patriótica (UP)",
+          "descripcion": "El presidente Belisario Betancur impulsó un audaz proceso de paz con las FARC, que dio origen a la Unión Patriótica como plataforma política civil y legal para la transición de la guerrilla a la democracia. La UP logró una votación histórica en las elecciones de 1986 con 14 congresistas, decenas de alcaldes y cientos de concejales."
+        },
+        {
+          "ano": 1985,
+          "hito": "La Tragedia del Palacio de Justicia (6 y 7 de Noviembre)",
+          "descripcion": "El M-19 se tomó el Palacio de Justicia en Bogotá con el comando 'Iván Marino Ospina'. La desmedida retoma militar del Ejército con tanques Cascavel y artillería pesada culminó con el incendio del edificio, la muerte de más de 100 personas (incluidos 11 magistrados de la Corte Suprema) y la desaparición forzada de empleados de la cafetería que salieron con vida en custodia militar."
+        },
+        {
+          "ano": 1986,
+          "hito": "El Exterminio Sistemático de la Unión Patriótica (Genocidio Político)",
+          "descripcion": "Entre 1984 y 2002, más de 5.700 integrantes de la UP fueron asesinados o desaparecidos por una alianza criminal entre paramilitares, narcotraficantes y agentes de inteligencia estatal (DAS y F-2). Fueron acribillados dos candidatos presidenciales sucesivos: Jaime Pardo Leal (1987) y Bernardo Jaramillo Ossa (1990)."
+        },
+        {
+          "ano": 1989,
+          "hito": "El Magnicidio de Luis Carlos Galán y el Narcoterrorismo",
+          "descripcion": "El Cartel de Medellín, en alianza con el narcotraficante Gonzalo Rodríguez Gacha 'El Mexicano' y sectores del DAS, asesinó en Soacha al candidato presidencial del Nuevo Liberalismo Luis Carlos Galán Sarmiento, desatando una oleada de coches bomba en Bogotá (atentado al avión de Avianca, bomba al edificio del DAS con 63 muertos)."
+        },
+        {
+          "ano": 1990,
+          "hito": "Paz y Desmovilización del M-19 y el Asesinato de Carlos Pizarro",
+          "descripcion": "El M-19 firmó la paz con el gobierno de Virgilio Barco y entregó sus armas en Santo Domingo (Cauca). Tan solo 48 días después de dejar las armas, su máximo comandante y candidato presidencial, Carlos Pizarro Leongómez, fue asesinado a bordo de un avión comercial en pleno vuelo por sicarios al servicio del paramilitarismo."
+        }
+      ],
+      "tesis_explicativa_cev": "En esta década el conflicto se volvió irreversiblemente letal porque el narcotráfico inyectó recursos ilimitados para la guerra, mientras sectores estatales delegaron la represión política en escuadrones de la muerte para aniquilar la opción de una izquierda democrática legal."
+    },
+    {
+      "etapa_numero": 3,
+      "nombre_etapa": "La Constitución del 91, la Expansión de las AUC y la Escalada Máxima de la Guerra",
+      "periodo_anos": "1991 – 2002",
+      "contexto_politico_nacional": "La promulgación de la Constitución de 1991 consagró el Estado Social de Derecho y la acción de tutela. Sin embargo, en lugar de desactivar el conflicto, la década vio la mayor paradoja colombiana: mientras la carta política proclamaba la paz, el país experimentó la peor carnicería de su historia por la simultánea expansión militar de las FARC y la confederación de las Autodefensas Unidas de Colombia (AUC).",
+      "hitos_militares_y_sociales": [
+        {
+          "ano": 1994,
+          "hito": "Creación de las Asociaciones Convivir",
+          "descripcion": "Durante el gobierno de César Gaviria y con impulso en Antioquia por el gobernador Álvaro Uribe Vélez, se crearon las Cooperativas de Vigilancia Rural (CONVIVIR) como cooperativas armadas legales. Muchas de ellas sirvieron de fachada legal, armamento y comunicaciones para la expansión territorial de los hermanos Carlos y Vicente Castaño Gil."
+        },
+        {
+          "ano": 1997,
+          "hito": "Fundación de las Autodefensas Unidas de Colombia (AUC)",
+          "descripcion": "En abril de 1997, los diversos grupos paramilitares regionales se unificaron bajo el mando de Carlos Castaño y Salvatore Mancuso, creando las AUC. Su objetivo explícito fue disputar militarmente los enclaves de las FARC en Urabá, Córdoba, Magdalena Medio y avanzar hacia el sur y los Llanos Orientales mediante una política deliberada de masacres y tierra arrasada."
+        },
+        {
+          "ano": 1996,
+          "hito": "La Ofensiva Estratégica de las FARC y las Tomas de Bases",
+          "descripcion": "Las FARC, aprovechando la debilidad política de Ernesto Samper por el 'Proceso 8.000', desplegaron ataques de masas a bases militares y cuarteles de policía: Las Delicias (Putumayo, 1996), El Billar (Caquetá, 1998) y la toma a sangre y fuego de la capital de Vaupés, Mitú (1998), tomando a cientos de soldados y policías como rehenes de guerra."
+        },
+        {
+          "ano": 1998,
+          "hito": "Los Diálogos de Paz del Caguán y la Zona de Despeje",
+          "descripcion": "El presidente Andrés Pastrana otorgó a las FARC una zona de despeje militar de 42.000 km² en cinco municipios del Meta y Caquetá (San Vicente del Caguán). Las FARC usaron el despeje no para pactar la paz, sino para pertrecharse militarmente, esconder secuestrados y aumentar sus frentes, mientras el gobierno negociaba con Washington el masivo paquete militar del 'Plan Colombia'."
+        },
+        {
+          "ano": 2002,
+          "hito": "Ruptura del Caguán y la Masacre de Bojayá",
+          "descripcion": "En febrero de 2002, tras el secuestro del senador Jorge Gechem en un avión comercial, Pastrana dio por terminada la zona de despeje. Tres meses después, el 2 de mayo de 2002, durante combates entre las FARC y paramilitares en el río Atrato, un cilindro bomba de la guerrilla cayó en la iglesia de Bojayá, matando a 79 civiles y marcando el punto de mayor degradación humanitaria de la guerra."
+        }
+      ],
+      "tesis_explicativa_cev": "El periodo 1996–2002 fue el cenit del horror en Colombia: la convergencia de dos maquinarias de guerra con recursos descomunales (la coca y el presupuesto militar) que convirtieron a las comunidades rurales en botín y carne de cañón."
+    },
+    {
+      "etapa_numero": 4,
+      "nombre_etapa": "Seguridad Democrática, Desmovilización Paramilitar y la Crisis de los Falsos Positivos",
+      "periodo_anos": "2002 – 2012",
+      "contexto_politico_nacional": "Bajo la presidencia de Álvaro Uribe Vélez (2002–2010), el Estado implementó la Política de Defensa y Seguridad Democrática (DSP), negando la existencia de un 'conflicto armado' y recalificando la situación como una 'amenaza terrorista contra la democracia'. El Estado retomó el control de las principales carreteras y centros urbanos, pero al costo de graves violaciones institucionales de derechos humanos.",
+      "hitos_militares_y_sociales": [
+        {
+          "ano": 2003,
+          "hito": "El Plan Patriota y la Ofensiva Militar Contra las FARC",
+          "descripcion": "La mayor ofensiva militar del Estado colombiano en su historia, con un despliegue de más de 100.000 soldados en las selvas del Caquetá, Meta y Guaviare, forzando el repliegue estratégico de las FARC hacia las fronteras y zonas montañosas profundas."
+        },
+        {
+          "ano": 2005,
+          "hito": "Desmovilización de las AUC (Ley 975 de Justicia y Paz)",
+          "descripcion": "Tras las negociaciones de Santa Fe de Ralito, más de 31.000 miembros de las AUC entregaron las armas. La Ley 975 de 2005 otorgó penas alternativas de 8 años de prisión a cambio de verdad y confesión. Sin embargo, en 2008, 14 máximos jefes paramilitares (incluidos Mancuso y 'Jorge 40') fueron extraditados sorpresivamente a Estados Unidos por cargos de narcotráfico, silenciando temporalmente sus declaraciones sobre sus vínculos con empresarios y políticos colombianos."
+        },
+        {
+          "ano": 2006,
+          "hito": "El Escándalo de la Parapolítica",
+          "descripcion": "Investigaciones de la Corte Suprema de Justicia (encabezadas por magistrados como Iván Velásquez) destaparon el pacto sistemático entre comandantes paramilitares y congresistas (Pacto de Ralito). Más de 60 congresistas, gobernadores y alcaldes fueron condenados penalmente por asociarse con las AUC para refundar la patria."
+        },
+        {
+          "ano": 2008,
+          "hito": "El Escándalo de las Ejecuciones Extrajudiciales ('Falsos Positivos')",
+          "descripcion": "La denuncia de las Madres de Soacha desató la destitución de 27 altos mandos militares y la renuncia del comandante del Ejército Mario Montoya Uribe. Investigaciones posteriores de la JEP acreditaron que al menos 6.402 jóvenes inocentes fueron asesinados por batallones del Ejército para inflar estadísticas de combate entre 2002 y 2008."
+        },
+        {
+          "ano": 2008,
+          "hito": "Muerte de la Vieja Guardia de las FARC",
+          "descripcion": "En marzo de 2008 murió Manuel Marulanda Vélez de muerte natural en la selva; Raúl Reyes murió en la Operación Fénix en territorio ecuatoriano; e Iván Ríos fue asesinado por su propio jefe de seguridad. Posteriormente cayeron el Mono Jojoy (2010) y el máximo comandante Alfonso Cano (2011)."
+        }
+      ],
+      "tesis_explicativa_cev": "La Seguridad Democrática logró acorralar militarmente a la insurgencia, pero su doctrina de exigir resultados operacionales a cualquier precio generó una crisis de legitimidad del Estado por las ejecuciones extrajudiciales y la penetración paramilitar en el Congreso."
+    },
+    {
+      "etapa_numero": 5,
+      "nombre_etapa": "Los Diálogos de La Habana y el Acuerdo Final de Paz",
+      "periodo_anos": "2012 – 2016",
+      "contexto_politico_nacional": "El presidente Juan Manuel Santos reconoció formalmente mediante la Ley de Víctimas y Restitución de Tierras (Ley 1448 de 2011) la existencia del 'conflicto armado interno', abriendo el camino para una solución política negociada con las FARC-EP tras medio siglo de confrontación armada.",
+      "hitos_militares_y_sociales": [
+        {
+          "ano": 2012,
+          "hito": "Apertura Pública de la Mesa de Conversaciones en La Habana",
+          "descripcion": "Tras meses de contactos secretos, las delegaciones del Gobierno Nacional (liderada por Humberto de la Calle) y de las FARC-EP (liderada por Luciano Marín 'Iván Márquez') instalaron formalmente la mesa de negociación en Oslo (Noruega) y La Habana (Cuba), bajo la mediación de Cuba y Noruega y el acompañamiento de Venezuela y Chile."
+        },
+        {
+          "ano": 2014,
+          "hito": "Participación de las Víctimas en la Mesa de Negociación",
+          "descripcion": "Por primera vez en un proceso de paz en el mundo, 60 víctimas de todos los actores del conflicto (víctimas de FARC, de agentes de Estado, de paramilitares y de minas) viajaron a La Habana para hablar directamente frente a los comandantes guerrilleros y delegados del Estado, colocando el principio de centralidad de las víctimas y verdad en el centro del acuerdo."
+        },
+        {
+          "ano": 2015,
+          "hito": "Creación del Sistema Integral de Verdad, Justicia, Reparación y No Repetición",
+          "descripcion": "El acuerdo diseñó una arquitectura transicional inédita: la Jurisdicción Especial para la Paz (JEP) con justicia restaurativa, la Comisión de la Verdad (CEV) para el esclarecimiento extrajudicial y la Unidad de Búsqueda de Personas dadas por Desaparecidas (UBPD)."
+        },
+        {
+          "ano": 2016,
+          "hito": "El Plebiscito del 2 de Octubre y el Acuerdo del Teatro Colón",
+          "descripcion": "Tras la firma solemne en Cartagena de Indias, el Acuerdo de Paz fue sometido a plebiscito el 2 de octubre de 2016, donde el 'No' se impuso por un estrecho margen de 50.2% frente al 49.8% del 'Sí'. Tras una renegociación que incorporó propuestas de los sectores del No, se firmó el Acuerdo Definitivo del Teatro Colón el 24 de noviembre de 2016 y fue refrendado por el Congreso de la República."
+        },
+        {
+          "ano": 2017,
+          "hito": "Dejación de Armas y Desmovilización Verificada por la ONU",
+          "descripcion": "Más de 13.000 combatientes de las FARC se concentraron en 26 Zonas Veredales Transitorias de Normalización (ZVTN), entregando a la Misión de Verificación de las Naciones Unidas un total de 8.994 armas individuales y toneladas de explosivos, cerrando la historia de la guerrilla más antigua del continente como actor alzado en armas."
+        }
+      ],
+      "tesis_explicativa_cev": "El Acuerdo de Paz de 2016 demostró que la guerra en Colombia sí tenía salida negociada y que la paz solo es duradera cuando pone en el centro el derecho inalienable de las víctimas a la verdad, la reparación integral y la no repetición."
+    }
+  ]
+}

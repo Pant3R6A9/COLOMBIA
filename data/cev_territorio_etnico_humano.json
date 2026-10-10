@@ -1,0 +1,185 @@
+{
+  "metadatos": {
+    "titulo": "Informe Final de la Comisión de la Verdad - Dimensión Territorial, Étnica, Humana y Testimonial",
+    "tomos_incluidos": [
+      "Tomo 05: Colombia Adentro (14 Macro-Regiones)",
+      "Tomo 06: Mi Cuerpo es la Verdad (Género y Diversidades)",
+      "Tomo 07: Resistir No es Aguantar (Pueblos Étnicos y Daño Biocultural)",
+      "Tomo 08: La Colombia Fuera de Colombia (Exilio y Diáspora)",
+      "Tomo 09: No es un Mal Menor (Niñez y Adolescencia)",
+      "Tomo 10: Cuando los Pájaros no Cantaban (Polifonía Testimonial)"
+    ],
+    "entidad": "Comisión para el Esclarecimiento de la Verdad (CEV)",
+    "fecha_publicacion": "Junio de 2022"
+  },
+  "tomo_05_catorce_macroregiones": [
+    {
+      "region_id": "REG-URABA",
+      "nombre": "1. Urabá, Darién y Bajo Atrato",
+      "departamentos": ["Antioquia", "Chocó"],
+      "dinamica_central": "Disputa geoestratégica por el corredor bioceánico entre el Caribe y el Pacífico, la frontera del Darién hacia Centroamérica y las tierras fértiles para agroindustria bananera y palma de aceite. Concurrencia de las FARC (Frentes 5 y 58), el EPL y el paramilitarismo de los hermanos Castaño (Bloque Bananero y Élmer Cárdenas).",
+      "impactos_documentados": "Masacres laborales sistemáticas en fincas bananeras (Honduras, La Negra, Bajo del Oso), despojo de títulos colectivos afro en Curvaradó y Jiguamiandó mediante empresas fachada de palma, y el desplazamiento de más del 60% de la población campesina de Turbo, Apartadó y Carepa."
+    },
+    {
+      "region_id": "REG-MAGDALENA-MEDIO",
+      "nombre": "2. Magdalena Medio y Serranía de San Lucas",
+      "departamentos": ["Santander", "Antioquia", "Bolívar", "Cesar"],
+      "dinamica_central": "Epicentro petrolero nacional (Barrancabermeja) y cuna del paramilitarismo moderno (Puerto Boyacá). Territorio de confrontación histórica entre sindicatos obreros de la USO, guerrilla del ELN y el Bloque Central Bolívar de las AUC bajo alias 'Macaco'.",
+      "impactos_documentados": "Asesinato selectivo de líderes sindicales y defensores de DD.HH., masacre del 16 de mayo de 1998 en Barrancabermeja (25 desaparecidos y 7 asesinados), control de la navegación fluvial y contaminación de ciénagas."
+    },
+    {
+      "region_id": "REG-MONTES-DE-MARIA",
+      "nombre": "3. Montes de María y Sabanas del Caribe",
+      "departamentos": ["Bolívar", "Sucre"],
+      "dinamica_central": "Territorio ancestral campesino de la ANUC disputado para la ganadería extensiva y corredores de narcotráfico hacia el Golfo de Morrosquillo. Presencia de los frentes 35 y 37 de las FARC y la violenta irrupción del Bloque Héroes de los Montes de María comandado por 'Cadena'.",
+      "impactos_documentados": "Más de 40 masacres entre 1999 y 2002 (El Salado, Chengue, Macayepo), despojo masivo de fincas campesinas para plantaciones de teca y palma, y el desplazamiento de más de 120.000 personas de Carmen de Bolívar, San Onofre y Ovejas."
+    },
+    {
+      "region_id": "REG-CHOCO-PACIFICO",
+      "nombre": "4. Chocó y Litoral Pacífico Norte",
+      "departamentos": ["Chocó"],
+      "dinamica_central": "Corredores fluviales de los ríos Atrato, San Juan y Baudó hacia el océano Pacífico. Riqueza maderera, minería de oro aluvial y cultivos de coca disputados entre el ELN (Frente de Guerra Occidental), las FARC y el Bloque Élmer Cárdenas de las AUC.",
+      "impactos_documentados": "La Masacre de Bojayá (2002) con 79 víctimas mortales, confinamiento crónico de comunidades indígenas Embera y Wounaan en las cabeceras de los ríos, y contaminación con mercurio de la cuenca del Atrato."
+    },
+    {
+      "region_id": "REG-PACIFICO-SUR",
+      "nombre": "5. Pacífico Sur (Tumaco, Telembí y Nariño)",
+      "departamentos": ["Nariño", "Cauca"],
+      "dinamica_central": "El mayor enclave cocalero de Colombia y salida marítima para lanchas rápidas y semisumergibles hacia Centroamérica. Dominio histórico de la Columna Móvil Daniel Aldana de las FARC y posterior confrontación con el Bloque Libertadores del Sur de las AUC.",
+      "impactos_documentados": "Masacres en Tumaco, Ricaurte y Barbacoas; confinamiento de la nación indígena Awá (masacres de El Sande y Tortugaña Telembí en 2009); y proliferación de minas antipersonal en selvas de manglar."
+    },
+    {
+      "region_id": "REG-CAUCA-VALLE",
+      "nombre": "6. Valle del Cauca y Norte del Cauca",
+      "departamentos": ["Valle del Cauca", "Cauca"],
+      "dinamica_central": "Confluencia de la agroindustria de caña de azúcar, los páramos de la cordillera Central (vía de escape hacia el Huila y Tolima) y los resguardos ancestrales de la nación Nasa. Presencia del Comando Conjunto Occidental de las FARC y Bloque Calima de las AUC.",
+      "impactos_documentados": "Masacre del Nilo (1991, 20 indígenas Nasa asesinados con complicidad policial), Masacre del Naya (2001, más de 40 campesinos e indígenas asesinados a lo largo de la cuenca del río Naya), y permanente militarización de municipios como Toribío, Caldono y Miranda."
+    },
+    {
+      "region_id": "REG-CATATUMBO",
+      "nombre": "7. Catatumbo y Frontera Nororiental",
+      "departamentos": ["Norte de Santander"],
+      "dinamica_central": "Frontera binacional con Venezuela, yacimientos petroleros de Tibú y enclave cocalero denso. Presencia simultánea de FARC, ELN, EPL (Los Pelusos) y la sanguinaria incursión del Bloque Catatumbo de las AUC liderado por Salvatore Mancuso a partir de 1999.",
+      "impactos_documentados": "Masacres de Tibú y La Gabarra (1999), hornos crematorios de Juan Frío para desaparición forzada masiva, y ataques sistemáticos a la infraestructura del oleoducto Caño Limón-Coveñas."
+    },
+    {
+      "region_id": "REG-ANTIOQUIA-EJE",
+      "nombre": "8. Antioquia Central y Oriente Antioqueño",
+      "departamentos": ["Antioquia", "Caldas", "Risaralda", "Quindío"],
+      "dinamica_central": "La disputa por los embalses hidroeléctricos del Oriente (Peñol, Guatapé, San Carlos), la autopista Medellín-Bogotá y el control de las comunas populares de Medellín. Bloques Metro y Cacique Nutibara de las AUC contra el ELN y FARC.",
+      "impactos_documentados": "Despoblamiento de municipios enteros en el Oriente antioqueño (San Carlos registró más de 30 masacres y el éxodo del 75% de sus habitantes), Operación Orión en la Comuna 13 de Medellín (octubre de 2002) con desapariciones masivas en la escombrera."
+    },
+    {
+      "region_id": "REG-AMAZONIA",
+      "nombre": "9. Amazonía Profunda (Caquetá, Guaviare y Putumayo)",
+      "departamentos": ["Caquetá", "Guaviare", "Putumayo", "Amazonas"],
+      "dinamica_central": "Retaguardia estratégica histórica del Secretariado de las FARC (Bloque Sur y Bloque Oriental), colonización cocalera en las cuencas de los ríos Caguán, Guayabero y Putumayo, y teatro de operaciones masivas de bombardeos del Plan Patriota.",
+      "impactos_documentados": "Masacre de El Tigre y El Placer en Putumayo (1999, AUC), tomas guerrilleras de Puerto Rico y Miraflores, y estigmatización universal de la población colona y cocalera como objetivo militar."
+    },
+    {
+      "region_id": "REG-ORINOQUIA",
+      "nombre": "10. Orinoquía y Llanos Orientales",
+      "departamentos": ["Meta", "Vichada", "Casanare", "Arauca"],
+      "dinamica_central": "Grandes sabanas ganaderas, pozos petroleros de Cusiana y Rubiales, y laboratorios de cocaína en las selvas de transición. Dominio de las FARC (Mono Jojoy) y sangrienta guerra paramilitar entre el Bloque Centauros y las Autodefensas Campesinas de Casanare ('Buitragueños').",
+      "impactos_documentados": "Masacre de Mapiripán (1997), desapariciones masivas en el cementerio de La Macarena, y despojo de sabanas ancestrales a pueblos indígenas Sikuani y Guahibo."
+    },
+    {
+      "region_id": "REG-SUMAPAZ-CUNDI",
+      "nombre": "11. Altiplano Cundiboyacense y Páramo de Sumapaz",
+      "departamentos": ["Cundinamarca", "Boyacá", "Bogotá D.C."],
+      "dinamica_central": "Corredor estratégico de las FARC para intentar cercar militarmente la capital Bogotá a través del Páramo de Sumapaz (Frente 53). Respuesta militar masiva con la Operación Libertad Uno (2003) para expulsar a la guerrilla de la sabana.",
+      "impactos_documentados": "Secuestros de finqueros en la Sabana de Bogotá, bombardeos en ecosistemas de páramo y estigmatización de las juntas campesinas de Sumapaz."
+    },
+    {
+      "region_id": "REG-TOLIMA-HUILA",
+      "nombre": "12. Tolima Grande y Macizo Colombiano",
+      "departamentos": ["Tolima", "Huila"],
+      "dinamica_central": "Cuna fundacional del conflicto campesino (Marquetalia, Riochiquito, El Pato) y corredor de comunicación entre los Andes y la Amazonía. Frentes 21 y 25 de las FARC contra el Ejército y grupos de autodefensa.",
+      "impactos_documentados": "Tomas guerrilleras continuas a Dolores, Roncesvalles y Prado; ejecuciones extrajudiciales en el Huila por el Batallón Pizarro; y despojo en distritos arroceros."
+    },
+    {
+      "region_id": "REG-SIERRA-CARIBE",
+      "nombre": "13. Sierra Nevada de Santa Marta y La Guajira",
+      "departamentos": ["Magdalena", "Cesar", "La Guajira"],
+      "dinamica_central": "El macizo litoral más alto del mundo como fortaleza geográfica para el narcotráfico y control de puertos carboníferos y marítimos. Dominio hegemónico del Bloque Norte de las AUC al mando de 'Jorge 40' y Hernán Giraldo.",
+      "impactos_documentados": "Masacres en Bahía Portete contra el pueblo Wayuu (2004), asesinato selectivo de Mamos y autoridades de los pueblos Arhuaco, Kogui y Wiwa, y violencia sexual sistemática contra niñas campesinas en la Troncal del Caribe."
+    },
+    {
+      "region_id": "REG-URBANO",
+      "nombre": "14. El Conflicto Urbano y las Ciudades Capitales",
+      "departamentos": ["Bogotá", "Medellín", "Cali", "Barranquilla", "Cúcuta", "Buenaventura"],
+      "dinamica_central": "Las ciudades como receptoras del éxodo forzado y campos de batalla soterrados: redes de sicariato de carteles, milicias urbanas guerrilleras, oficinas de cobro paramilitares (Oficina de Envigado) y operaciones militares de contrainsurgencia barrial.",
+      "impactos_documentados": "Atentado al Club El Nogal (Bogotá, 2003), casas de pique y desmembramiento en las bajamares de Buenaventura, y fronteras invisibles que dividieron comunas enteras en Medellín y Cali."
+    }
+  ],
+  "tomo_06_genero_y_diversidad": {
+    "diagnostico_central": "La violencia de género en el conflicto colombiano no fue un exceso incidental de combatientes descontrolados, sino un arma de guerra sistemática y planificada para destruir el tejido comunitario, castigar el liderazgo femenino y sancionar cualquier transgresión a los mandatos patriarcales.",
+    "cifras_clave": {
+      "victimas_violencia_sexual_documentadas": 32446,
+      "porcentaje_mujeres": 92.3,
+      "principales_actores": "Paramilitares (responsables de la mayor parte de violaciones grupales públicas) y guerrillas (responsables de servidumbre forzada y abortos coercitivos)"
+    },
+    "patrones_documentados": [
+      {
+        "patron": "El Cuerpo Femenino como Botín de Territorio",
+        "descripcion": "En masacres paramilitares, la violación sexual individual y colectiva se utilizaba deliberadamente para marcar la soberanía armada sobre el territorio de los hombres enemigos."
+      },
+      {
+        "patron": "Violencia Reproductiva en Filas Guerrilleras",
+        "descripcion": "En las FARC y ELN, la maternidad estaba terminantemente prohibida para las combatientes. Se impusieron abortos forzados avanzados en condiciones insalubres de campamento bajo amenaza de fusilamiento."
+      },
+      {
+        "patron": "Crímenes de Prejuicio y 'Limpieza Social' Contra Población LGBTIQ+",
+        "descripcion": "Tanto paramilitares como guerrilleros persiguieron, torturaron y asesinaron a personas trans, lesbianas y gais, forzando cortes de pelo públicos y desfiles denigrantes bajo la pretensión de 'limpiar la moralidad comunitaria'."
+      }
+    ],
+    "resistencias_destacadas": "El rol heroico de organizaciones como Madres de la Candelaria, MAFAPO (Madres de Soacha), Ruta Pacífica de las Mujeres y las Tejedoras de Mampuján, quienes transformaron el duelo en liderazgo político nacional."
+  },
+  "tomo_07_capitulo_etnico": {
+    "diagnostico_central": "El conflicto armado golpeó de forma desproporcionada y diferencial a los pueblos indígenas y a las comunidades negras, afrodescendientes, raizales y palenqueras. Para los pueblos ancestrales, la violencia no solo implicó la muerte física de sus miembros, sino el 'Daño Biocultural': la destrucción del río tutelar, la tala de la selva sagrada, la profanación de sitios de pagamento y el exterminio de las autoridades espirituales rompe la conexión cosmogónica con el cosmos.",
+    "pueblos_indigenas_en_riesgo": "Más de 65 naciones indígenas reconocidas en riesgo de exterminio físico y cultural por el Auto 004 de 2009 de la Corte Constitucional y confirmadas por la CEV (Nasa, Awá, Embera, Wayuu, Jiw, Nukak, Wiwa, Kankuamo, Coreguaje, Sikuani, entre otros).",
+    "afectaciones_afrodescendientes": [
+      "Masacre de Bojayá (2002) en el río Atrato: símbolo nacional del dolor negro.",
+      "Despojo sistemático de los territorios colectivos titulados bajo la Ley 70 de 1993 en el Chocó biogeográfico.",
+      "Confinamiento en bajamares de Buenaventura con 'casas de pique' y control territorial paramilitar.",
+      "Asesinato de cantadoras y líderes de alabaos que resguardaban la tradición oral fúnebre cimarrona."
+    ]
+  },
+  "tomo_08_exilio_diaspora": {
+    "hito_mundial": "La CEV de Colombia fue la primera comisión de la verdad en la historia universal en dedicar un tomo completo y exclusivo al exilio forzado transnacional.",
+    "magnitud": "Más de 1.000.000 de personas forzadas a huir de Colombia hacia el exterior entre 1958 y 2016.",
+    "geografia_exilio": "Presencia de víctimas en 24 países receptores principales, encabezados por Venezuela (más de 500.000 refugiados), Ecuador, España, Estados Unidos, Canadá, Chile, Francia, Suecia y Costa Rica.",
+    "perfiles_perseguidos": "Magistrados, jueces sin rostro, periodistas amenazados, líderes sindicales del petróleo y banano, defensores de DD.HH., militantes de la Unión Patriótica y familias campesinas completas que cruzaron ríos fronterizos con lo puesto.",
+    "impacto_psicosocial": "La 'muerte civil': pérdida de títulos profesionales, vivir en la clandestinidad migratoria, ruptura familiar intergeneracional y el duelo congelado por no poder regresar a enterrar a sus muertos."
+  },
+  "tomo_09_ninez_adolescencia": {
+    "diagnostico_central": "La guerra robó la infancia a generaciones enteras en la ruralidad colombiana. Los niños no fueron víctimas pasivas: fueron utilizados como combatientes, vigías, cargadores de explosivos y escudos humanos.",
+    "cifras_clave": {
+      "menores_reclutados_documentados": 16238,
+      "responsables_principales": "FARC-EP (más del 65% de casos documentados), seguidas por paramilitares y ELN",
+      "edad_promedio_de_reclutamiento": "Entre 12 y 15 años de edad"
+    },
+    "impactos_escolares_y_vitales": [
+      "Escuelas rurales transformadas en trincheras, cuarteles de tropas y campos minados con artefactos explosivos.",
+      "Asesinato de maestros rurales que se opusieron al reclutamiento forzado de sus estudiantes.",
+      "Orfandad masiva que empujó a menores desvalidos a ingresar a grupos armados en busca de alimentación y protección armada."
+    ]
+  },
+  "tomo_10_polifonia_testimonios": {
+    "naturaleza_del_acervo": "El Tomo 10 ('Cuando los Pájaros no Cantaban') renuncia al lenguaje analítico de las ciencias sociales para dar paso a la palabra directa y desnuda de las víctimas, los combatientes y la naturaleza.",
+    "extractos_testimoniales_emblematicos": [
+      {
+        "voz": "Cantadora de Alabaos de Bellavista (Chocó)",
+        "texto": "«Nosotros enterramos a nuestros muertos cantando porque el alabao es el barco que lleva el alma pura a donde Dios. Pero en Bojayá eran tantos los cuerpos despedazados que no teníamos voz para cantar. Tuvimos que cantar con la boca cerrada y los ojos llenos de ceniza para que las almas de las criaturas no se quedaran vagando en el monte.»"
+      },
+      {
+        "voz": "Campesino sobreviviente de San Carlos (Antioquia)",
+        "texto": "«En San Carlos se nos acabó el pueblo. Primero llegaron unos diciendo que nos mataban si no les dábamos comida; luego llegaron los otros diciendo que nos mataban por haberles dado comida. Al final no nos quedó ni el perro. Yo cerré la puerta con un candado de alambre y me fui caminando por la carretera sin mirar para atrás porque el que miraba para atrás se convertía en llanto.»"
+      },
+      {
+        "voz": "Excombatiente reclutado a los 13 años",
+        "texto": "«El fusil pesaba más que mi morral de escuela. Al principio uno llora todas las noches debajo del plástico en el monte pensando en la mamá, pero luego la selva y el miedo lo van endureciendo a uno hasta que uno se olvida de cómo era reírse.»"
+      }
+    ]
+  }
+}
