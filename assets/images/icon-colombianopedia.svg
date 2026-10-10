@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#141a24" />
+      <stop offset="100%" stop-color="#06080d" />
+    </radialGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="35%" stop-color="#d4af37" />
+      <stop offset="70%" stop-color="#b48318" />
+      <stop offset="100%" stop-color="#784e0c" />
+    </linearGradient>
+    <linearGradient id="emeraldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#34d399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <filter id="goldGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Fondo Obsidian Circular -->
+  <circle cx="256" cy="256" r="248" fill="url(#bgGlow)" stroke="url(#goldGrad)" stroke-width="8" />
+
+  <!-- Anillo Cosmológico Exterior (Sol de los Pastos) -->
+  <g stroke="url(#goldGrad)" stroke-width="3" fill="none" opacity="0.6">
+    <circle cx="256" cy="256" r="220" stroke-dasharray="8 6" />
+    <circle cx="256" cy="256" r="195" stroke-dasharray="4 4" />
+  </g>
+
+  <!-- Puntas Radiales Sagradas (8 Rumbos) -->
+  <g fill="url(#goldGrad)" filter="url(#goldGlow)" opacity="0.85">
+    <polygon points="256,45 268,105 244,105" />
+    <polygon points="256,467 268,407 244,407" />
+    <polygon points="45,256 105,244 105,268" />
+    <polygon points="467,256 407,244 407,268" />
+    <polygon points="107,107 155,145 137,163" />
+    <polygon points="405,405 357,367 375,349" />
+    <polygon points="405,107 367,155 349,137" />
+    <polygon points="107,405 145,357 163,375" />
+  </g>
+
+  <!-- Silueta Central Emblemática: Poporo Quimbaya Esculpido -->
+  <g fill="url(#goldGrad)" filter="url(#goldGlow)">
+    <!-- Base esférica inferior -->
+    <path d="M 216,400 C 170,400 150,340 160,290 C 170,240 210,225 210,225 L 302,225 C 302,225 342,240 352,290 C 362,340 342,400 296,400 Z" />
+    
+    <!-- Cuello estilizado -->
+    <rect x="236" y="170" width="40" height="60" rx="4" />
+    
+    <!-- Cúpula cuatrilobulada superior -->
+    <circle cx="206" cy="155" r="26" />
+    <circle cx="306" cy="155" r="26" />
+    <circle cx="236" cy="125" r="26" />
+    <circle cx="276" cy="125" r="26" />
+
+    <!-- Aguja sagrada / Poporo stick -->
+    <line x1="256" y1="80" x2="256" y2="200" stroke="#fef08a" stroke-width="4" stroke-linecap="round" />
+  </g>
+
+  <!-- Detalle Central de Esmeralda Muzo -->
+  <circle cx="256" cy="315" r="14" fill="url(#emeraldGrad)" stroke="#fef08a" stroke-width="2" />
+
+  <!-- Texto Perimetral Sutil -->
+  <text x="256" y="445" fill="#fef08a" font-family="'Cinzel', serif" font-size="20" font-weight="700" text-anchor="middle" letter-spacing="8">COLOMBIANOPEDIA</text>
+</svg>

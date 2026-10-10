@@ -1,0 +1,20 @@
+{
+  "name": "Colombianopedia — Gran Enciclopedia de la Memoria y la Tierra",
+  "short_name": "Colombianopedia",
+  "description": "Gran Enciclopedia de las 115 Naciones Originarias, Geología Tectónica, Épocas Históricas e Informe Final de la Comisión de la Verdad.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#06080d",
+  "theme_color": "#06080d",
+  "orientation": "any",
+  "scope": "./",
+  "categories": ["education", "reference", "history", "culture"],
+  "icons": [
+    {
+      "src": "assets/images/icon-colombianopedia.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

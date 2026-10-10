@@ -20,7 +20,45 @@ document.addEventListener('DOMContentLoaded', () => {
   initParallaxFallback();
   initMuseumCards3D();
   initHeroGoldenStardust();
+  initServiceWorkerAndPWA();
 });
+
+/**
+ * Registro de PWA (Service Worker, Manifest y Favicon)
+ */
+function initServiceWorkerAndPWA() {
+  if (!document.querySelector('link[rel="manifest"]')) {
+    const link = document.createElement('link');
+    link.rel = 'manifest';
+    link.href = 'manifest.json';
+    document.head.appendChild(link);
+  }
+  if (!document.querySelector('link[rel="icon"]')) {
+    const favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/svg+xml';
+    favicon.href = 'assets/images/icon-colombianopedia.svg';
+    document.head.appendChild(favicon);
+  }
+  if (!document.querySelector('meta[name="theme-color"]')) {
+    const meta = document.createElement('meta');
+    meta.name = 'theme-color';
+    meta.content = '#06080d';
+    document.head.appendChild(meta);
+  }
+
+  if ('serviceWorker' in navigator && (window.location.protocol === 'https:' || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then((reg) => {
+          console.log('[PWA] Service Worker activo con scope:', reg.scope);
+        })
+        .catch((err) => {
+          console.warn('[PWA] Service Worker registro omitido:', err);
+        });
+    });
+  }
+}
 
 /**
  * Revelado de elementos de la línea de tiempo mediante scroll
