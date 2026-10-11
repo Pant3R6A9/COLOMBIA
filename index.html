@@ -5,14 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Colombia en el Tiempo — La Gran Enciclopedia de la Memoria, las Naciones Originarias y la Tierra</title>
   <meta name="description" content="Portal monumental y oficial de memoria histórica de Colombia: 115 pueblos originarios, 20.000 años de arte rupestre, acervos del Archivo General de la Nación, geología y verdad.">
-  <meta name="theme-color" content="#070709">
 
-  <!-- Tipografías de Alta Jerarquía Histórica -->
+
+
+  <meta name="theme-color" content="#06080d">
+  <link rel="icon" type="image/svg+xml" href="assets/images/icon-colombianopedia.svg">
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Tipografías de Museo y Jerarquía Editorial -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Cinzel:wght@500;600;700;800;900&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="css/style.css?v=2.0">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 
   <style>
     /* ==========================================================
@@ -1208,7 +1213,7 @@
 
         <!-- 2 a 7. Dropdown de las 6 Épocas Históricas -->
         <div class="nav-dropdown">
-          <button class="dropdown-trigger-btn" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="dropdown-trigger-btn" aria-haspopup="true" aria-expanded="false">
             Épocas Históricas ▾
           </button>
           <ul class="nav-dropdown-menu">
@@ -1253,7 +1258,7 @@
 
         <!-- 8 a 14. Dropdown de los 7 Módulos de la Enciclopedia -->
         <div class="nav-dropdown">
-          <button class="dropdown-trigger-btn" aria-haspopup="true" aria-expanded="false">
+          <button type="button" class="dropdown-trigger-btn" aria-haspopup="true" aria-expanded="false">
             Módulos Enciclopedia ▾
           </button>
           <ul class="nav-dropdown-menu">
@@ -1270,17 +1275,17 @@
 
       <!-- Acciones de Cabecera: Buscador ⌘K y Selector de Modo Pergamino -->
       <div class="header-actions">
-        <button class="header-search-btn universal-search-trigger" aria-label="Abrir buscador universal (⌘K)">
+        <button type="button" class="header-search-btn universal-search-trigger" aria-label="Abrir buscador universal (⌘K)">
           <span>🔍</span>
           <span style="font-weight: 500;">Buscar</span>
           <span class="search-shortcut-badge">⌘K</span>
         </button>
 
-        <button class="reading-mode-toggle" id="readingModeToggle" title="Alternar Modo Lectura Pergamino">
+        <button type="button" class="reading-mode-toggle" id="readingModeToggle" title="Alternar Modo Lectura Pergamino">
           📜 <span>Pergamino</span>
         </button>
 
-        <button class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir menú de navegación">
+        <button type="button" class="mobile-menu-btn" id="mobileMenuToggle" aria-label="Abrir menú de navegación">
           ☰
         </button>
       </div>

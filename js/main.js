@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMuseumCards3D();
   initHeroGoldenStardust();
   initServiceWorkerAndPWA();
+  initMobileMenu();
 });
 
 /**
@@ -58,6 +59,57 @@ function initServiceWorkerAndPWA() {
         });
     });
   }
+}
+
+/**
+ * Control del menú de navegación móvil (drawer y dropdowns)
+ */
+function initMobileMenu() {
+  const toggleBtn = document.getElementById('mobileMenuToggle');
+  const navCluster = document.getElementById('mainNavLinks');
+  if (!toggleBtn || !navCluster) return;
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const isOpen = navCluster.classList.toggle('active');
+    toggleBtn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    toggleBtn.innerHTML = isOpen ? '✕' : '☰';
+  });
+
+  // Cerrar al hacer clic fuera
+  document.addEventListener('click', (e) => {
+    if (navCluster.classList.contains('active') && !navCluster.contains(e.target) && e.target !== toggleBtn) {
+      navCluster.classList.remove('active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+      toggleBtn.innerHTML = '☰';
+    }
+  });
+
+  // Cerrar al hacer clic en un enlace de navegación
+  navCluster.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      if (window.innerWidth <= 1024) {
+        navCluster.classList.remove('active');
+        toggleBtn.setAttribute('aria-expanded', 'false');
+        toggleBtn.innerHTML = '☰';
+      }
+    });
+  });
+
+  // Manejo táctil / clic para dropdowns en móvil
+  document.querySelectorAll('.dropdown-trigger-btn').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      if (window.innerWidth <= 1024) {
+        e.preventDefault();
+        e.stopPropagation();
+        const parent = btn.closest('.nav-dropdown');
+        if (parent) {
+          const isOpen = parent.classList.toggle('open');
+          btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        }
+      }
+    });
+  });
 }
 
 /**
